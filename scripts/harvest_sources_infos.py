@@ -42,7 +42,7 @@ GTFS_NAME_SUFFIX = "'s GTFS Schedule source"
 def save_content_to_file(content, data_path, filename):
     file_path = path.join(data_path, filename)
     with open(file_path, "w") as f:
-        json.dump(content, f)
+        json.dump(content, f, indent=4)
 
 
 def save_sources_infos(source_infos, data_path):

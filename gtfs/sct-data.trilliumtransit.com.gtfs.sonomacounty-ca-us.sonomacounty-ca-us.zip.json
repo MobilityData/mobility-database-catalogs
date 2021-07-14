@@ -1,1 +1,6 @@
-{"source_name": "SCT's GTFS Schedule source", "stable_url": "http://data.trilliumtransit.com/gtfs/sonomacounty-ca-us/sonomacounty-ca-us.zip", "backup_stable_url": "https://transitfeeds.com/p/sonoma-county-transit/419/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "SCT's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/sonomacounty-ca-us/sonomacounty-ca-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/sonoma-county-transit/419/latest/download",
+    "datatype": "GTFS"
+}

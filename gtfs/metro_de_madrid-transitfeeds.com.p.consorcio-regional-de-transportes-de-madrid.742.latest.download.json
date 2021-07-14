@@ -1,1 +1,5 @@
-{"source_name": "Metro de Madrid's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/consorcio-regional-de-transportes-de-madrid/742/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Metro de Madrid's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/consorcio-regional-de-transportes-de-madrid/742/latest/download",
+    "datatype": "GTFS"
+}

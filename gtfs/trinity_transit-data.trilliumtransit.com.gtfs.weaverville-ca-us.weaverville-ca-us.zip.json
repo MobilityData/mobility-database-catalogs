@@ -1,1 +1,6 @@
-{"source_name": "Trinity Transit's GTFS Schedule source", "stable_url": "http://data.trilliumtransit.com/gtfs/weaverville-ca-us/weaverville-ca-us.zip", "backup_stable_url": "https://transitfeeds.com/p/trinity-county-transportation-commission/428/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Trinity Transit's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/weaverville-ca-us/weaverville-ca-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/trinity-county-transportation-commission/428/latest/download",
+    "datatype": "GTFS"
+}

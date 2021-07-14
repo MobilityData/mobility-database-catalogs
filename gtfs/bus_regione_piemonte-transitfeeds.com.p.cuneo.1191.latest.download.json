@@ -1,1 +1,5 @@
-{"source_name": "Bus Regione Piemonte's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/cuneo/1191/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Bus Regione Piemonte's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/cuneo/1191/latest/download",
+    "datatype": "GTFS"
+}

@@ -1,1 +1,5 @@
-{"source_name": "STL's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/societe-de-transport-de-laval/38/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "STL's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/societe-de-transport-de-laval/38/latest/download",
+    "datatype": "GTFS"
+}

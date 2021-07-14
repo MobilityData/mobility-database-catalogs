@@ -1,1 +1,5 @@
-{"source_name": "Lawndale Beat's GTFS Schedule source", "stable_url": "http://data.trilliumtransit.com/gtfs/cityoflawndale-ca-us/cityoflawndale-ca-us.zip", "datatype": "GTFS"}
+{
+    "source_name": "Lawndale Beat's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/cityoflawndale-ca-us/cityoflawndale-ca-us.zip",
+    "datatype": "GTFS"
+}

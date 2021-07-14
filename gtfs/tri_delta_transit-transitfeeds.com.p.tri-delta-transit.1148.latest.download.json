@@ -1,1 +1,5 @@
-{"source_name": "Tri Delta Transit's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/tri-delta-transit/1148/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Tri Delta Transit's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/tri-delta-transit/1148/latest/download",
+    "datatype": "GTFS"
+}

@@ -1,1 +1,5 @@
-{"source_name": "Groome Transportation's GTFS Schedule source", "stable_url": "http://data.trilliumtransit.com/gtfs/groometransportation-us/groometransportation-us.zip", "datatype": "GTFS"}
+{
+    "source_name": "Groome Transportation's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/groometransportation-us/groometransportation-us.zip",
+    "datatype": "GTFS"
+}

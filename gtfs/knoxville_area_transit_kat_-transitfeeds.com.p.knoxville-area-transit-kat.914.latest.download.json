@@ -1,1 +1,5 @@
-{"source_name": "Knoxville Area Transit (KAT)'s GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/knoxville-area-transit-kat/914/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Knoxville Area Transit (KAT)'s GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/knoxville-area-transit-kat/914/latest/download",
+    "datatype": "GTFS"
+}

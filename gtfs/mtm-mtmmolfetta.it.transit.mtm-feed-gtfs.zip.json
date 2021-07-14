@@ -1,1 +1,6 @@
-{"source_name": "MTM's GTFS Schedule source", "stable_url": "http://www.mtmmolfetta.it/transit/mtm-feed-gtfs.zip", "backup_stable_url": "https://transitfeeds.com/p/mobilita-e-trasporti-molfetta/411/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "MTM's GTFS Schedule source",
+    "stable_url": "http://www.mtmmolfetta.it/transit/mtm-feed-gtfs.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/mobilita-e-trasporti-molfetta/411/latest/download",
+    "datatype": "GTFS"
+}

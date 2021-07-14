@@ -1,1 +1,6 @@
-{"source_name": "HDPT's GTFS Schedule source", "stable_url": "https://www.harrisonburgva.gov/sites/default/files/Transit/files/gtfs/google_transit_Working.zip", "backup_stable_url": "https://transitfeeds.com/p/harrisonburg-transit/589/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "HDPT's GTFS Schedule source",
+    "stable_url": "https://www.harrisonburgva.gov/sites/default/files/Transit/files/gtfs/google_transit_Working.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/harrisonburg-transit/589/latest/download",
+    "datatype": "GTFS"
+}

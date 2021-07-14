@@ -1,1 +1,6 @@
-{"source_name": "Lignes d'Azur's GTFS Schedule source", "stable_url": "http://opendata.nicecotedazur.org/data/dataset/export-quotidien-au-format-gtfs-du-reseau-de-transport-lignes-d-azur/resource/aacb4eea-d008-4b13-b17a-848b8ced7e03/download", "backup_stable_url": "https://transitfeeds.com/p/lignes-dazur/738/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Lignes d'Azur's GTFS Schedule source",
+    "stable_url": "http://opendata.nicecotedazur.org/data/dataset/export-quotidien-au-format-gtfs-du-reseau-de-transport-lignes-d-azur/resource/aacb4eea-d008-4b13-b17a-848b8ced7e03/download",
+    "backup_stable_url": "https://transitfeeds.com/p/lignes-dazur/738/latest/download",
+    "datatype": "GTFS"
+}

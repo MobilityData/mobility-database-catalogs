@@ -1,1 +1,6 @@
-{"source_name": "POSELY's GTFS Schedule source", "stable_url": "http://dev.hsl.fi/gtfs.waltti/posjoe.zip", "backup_stable_url": "https://transitfeeds.com/p/liikennevirasto/733/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "POSELY's GTFS Schedule source",
+    "stable_url": "http://dev.hsl.fi/gtfs.waltti/posjoe.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/liikennevirasto/733/latest/download",
+    "datatype": "GTFS"
+}

@@ -1,1 +1,5 @@
-{"source_name": "HVV's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/hamburger-verkehrsverbund-gmbh/1010/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "HVV's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/hamburger-verkehrsverbund-gmbh/1010/latest/download",
+    "datatype": "GTFS"
+}

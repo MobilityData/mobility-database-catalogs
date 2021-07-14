@@ -1,1 +1,6 @@
-{"source_name": "Malheur Council on Aging & Community Services's GTFS Schedule source", "stable_url": "http://oregon-gtfs.com/gtfs_data/mcacs-or-us/mcacs-or-us.zip", "backup_stable_url": "https://transitfeeds.com/p/malheur-council-on-aging-community-services/676/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Malheur Council on Aging & Community Services's GTFS Schedule source",
+    "stable_url": "http://oregon-gtfs.com/gtfs_data/mcacs-or-us/mcacs-or-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/malheur-council-on-aging-community-services/676/latest/download",
+    "datatype": "GTFS"
+}

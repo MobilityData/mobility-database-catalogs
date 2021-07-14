@@ -1,1 +1,5 @@
-{"source_name": "VRS's GTFS Schedule source", "stable_url": "http://download.vrsinfo.de/gtfs/google_transit.zip", "datatype": "GTFS"}
+{
+    "source_name": "VRS's GTFS Schedule source",
+    "stable_url": "http://download.vrsinfo.de/gtfs/google_transit.zip",
+    "datatype": "GTFS"
+}

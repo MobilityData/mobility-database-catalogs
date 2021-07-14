@@ -1,1 +1,5 @@
-{"source_name": "TMB's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/transports-metropolitans-de-barcelona-tmb/995/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "TMB's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/transports-metropolitans-de-barcelona-tmb/995/latest/download",
+    "datatype": "GTFS"
+}

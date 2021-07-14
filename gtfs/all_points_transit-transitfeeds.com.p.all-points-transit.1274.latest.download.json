@@ -1,1 +1,5 @@
-{"source_name": "All Points Transit's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/all-points-transit/1274/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "All Points Transit's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/all-points-transit/1274/latest/download",
+    "datatype": "GTFS"
+}

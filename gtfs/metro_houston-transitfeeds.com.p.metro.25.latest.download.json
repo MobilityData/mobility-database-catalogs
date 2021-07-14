@@ -1,1 +1,5 @@
-{"source_name": "METRO Houston's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/metro/25/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "METRO Houston's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/metro/25/latest/download",
+    "datatype": "GTFS"
+}

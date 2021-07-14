@@ -1,1 +1,5 @@
-{"source_name": "EMT's GTFS Schedule source", "stable_url": "https://opendata.vlci.valencia.es:8443/dataset/4645f8bf-28d7-4420-bab2-d5c5e7de2a5a/resource/11591648-a984-4d64-89e3-3730f3123403/download/googletransit.zip", "datatype": "GTFS"}
+{
+    "source_name": "EMT's GTFS Schedule source",
+    "stable_url": "https://opendata.vlci.valencia.es:8443/dataset/4645f8bf-28d7-4420-bab2-d5c5e7de2a5a/resource/11591648-a984-4d64-89e3-3730f3123403/download/googletransit.zip",
+    "datatype": "GTFS"
+}

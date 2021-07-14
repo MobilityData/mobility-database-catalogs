@@ -1,1 +1,6 @@
-{"source_name": "MCTA's GTFS Schedule source", "stable_url": "https://www.gomcta.com/google_transit.zip", "backup_stable_url": "https://transitfeeds.com/p/monroe-county-transportation-authority/662/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "MCTA's GTFS Schedule source",
+    "stable_url": "https://www.gomcta.com/google_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/monroe-county-transportation-authority/662/latest/download",
+    "datatype": "GTFS"
+}

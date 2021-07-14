@@ -1,1 +1,6 @@
-{"source_name": "Seattle Children's Hospital Shuttle's GTFS Schedule source", "stable_url": "http://developer.onebusaway.org/tmp/sound/gtfs/modified/98_gtfs.zip", "backup_stable_url": "https://transitfeeds.com/p/seattle-children-s-hospital/456/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Seattle Children's Hospital Shuttle's GTFS Schedule source",
+    "stable_url": "http://developer.onebusaway.org/tmp/sound/gtfs/modified/98_gtfs.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/seattle-children-s-hospital/456/latest/download",
+    "datatype": "GTFS"
+}

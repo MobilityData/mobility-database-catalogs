@@ -1,1 +1,6 @@
-{"source_name": "LANTA's GTFS Schedule source", "stable_url": "https://github.com/LANTA-Transportation-Authority/GTFS-data/blob/master/lanta_gtfs_feed.zip?raw=true", "backup_stable_url": "https://transitfeeds.com/p/lehigh-and-northampton-transportation-authority/612/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "LANTA's GTFS Schedule source",
+    "stable_url": "https://github.com/LANTA-Transportation-Authority/GTFS-data/blob/master/lanta_gtfs_feed.zip?raw=true",
+    "backup_stable_url": "https://transitfeeds.com/p/lehigh-and-northampton-transportation-authority/612/latest/download",
+    "datatype": "GTFS"
+}

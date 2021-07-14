@@ -1,1 +1,5 @@
-{"source_name": "Alhambra Community Transit's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/alhambra-community-transit/1312/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Alhambra Community Transit's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/alhambra-community-transit/1312/latest/download",
+    "datatype": "GTFS"
+}

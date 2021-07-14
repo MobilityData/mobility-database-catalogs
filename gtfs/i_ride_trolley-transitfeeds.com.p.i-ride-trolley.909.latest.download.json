@@ -1,1 +1,5 @@
-{"source_name": "I-Ride Trolley's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/i-ride-trolley/909/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "I-Ride Trolley's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/i-ride-trolley/909/latest/download",
+    "datatype": "GTFS"
+}

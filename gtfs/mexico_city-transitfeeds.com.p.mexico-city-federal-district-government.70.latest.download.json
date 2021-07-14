@@ -1,1 +1,5 @@
-{"source_name": "Mexico City's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/mexico-city-federal-district-government/70/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Mexico City's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/mexico-city-federal-district-government/70/latest/download",
+    "datatype": "GTFS"
+}

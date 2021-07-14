@@ -1,1 +1,6 @@
-{"source_name": "Mountain Transit's GTFS Schedule source", "stable_url": "http://data.trilliumtransit.com/gtfs/bigbear-ca-us/bigbear-ca-us.zip", "backup_stable_url": "https://transitfeeds.com/p/mountain-transit/600/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Mountain Transit's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/bigbear-ca-us/bigbear-ca-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/mountain-transit/600/latest/download",
+    "datatype": "GTFS"
+}

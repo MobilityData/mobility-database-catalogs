@@ -1,1 +1,6 @@
-{"source_name": "GATRA's GTFS Schedule source", "stable_url": "http://data.trilliumtransit.com/gtfs/gatra-ma-us/gatra-ma-us.zip", "backup_stable_url": "https://transitfeeds.com/p/massdot/98/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "GATRA's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/gatra-ma-us/gatra-ma-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/massdot/98/latest/download",
+    "datatype": "GTFS"
+}

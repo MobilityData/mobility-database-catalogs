@@ -1,1 +1,6 @@
-{"source_name": "Oulun joukkoliikenne's GTFS Schedule source", "stable_url": "http://www.transitdata.fi/oulu/google_transit.zip", "backup_stable_url": "https://transitfeeds.com/p/oulun-joukkoliikenne/729/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Oulun joukkoliikenne's GTFS Schedule source",
+    "stable_url": "http://www.transitdata.fi/oulu/google_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/oulun-joukkoliikenne/729/latest/download",
+    "datatype": "GTFS"
+}

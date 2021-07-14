@@ -1,1 +1,6 @@
-{"source_name": "MPK SA w Krakowie Tram's GTFS Schedule source", "stable_url": "ftp://ztp.krakow.pl/pliki-gtfs/GTFS_KRK_T.zip", "backup_stable_url": "https://transitfeeds.com/p/mpk-sa-w-krakowie/1105/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "MPK SA w Krakowie Tram's GTFS Schedule source",
+    "stable_url": "ftp://ztp.krakow.pl/pliki-gtfs/GTFS_KRK_T.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/mpk-sa-w-krakowie/1105/latest/download",
+    "datatype": "GTFS"
+}

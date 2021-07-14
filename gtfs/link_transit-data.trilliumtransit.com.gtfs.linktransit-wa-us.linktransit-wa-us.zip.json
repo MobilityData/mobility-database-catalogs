@@ -1,1 +1,6 @@
-{"source_name": "Link Transit's GTFS Schedule source", "stable_url": "http://data.trilliumtransit.com/gtfs/linktransit-wa-us/linktransit-wa-us.zip", "backup_stable_url": "https://transitfeeds.com/p/link-transit/392/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Link Transit's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/linktransit-wa-us/linktransit-wa-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/link-transit/392/latest/download",
+    "datatype": "GTFS"
+}

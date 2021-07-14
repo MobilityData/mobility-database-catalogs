@@ -1,1 +1,5 @@
-{"source_name": "NI-Estel\u00ed's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/alcaldia-esteli/1119/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "NI-Estel\u00ed's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/alcaldia-esteli/1119/latest/download",
+    "datatype": "GTFS"
+}

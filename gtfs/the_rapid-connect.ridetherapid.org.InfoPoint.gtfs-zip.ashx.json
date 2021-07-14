@@ -1,1 +1,6 @@
-{"source_name": "The Rapid's GTFS Schedule source", "stable_url": "http://connect.ridetherapid.org/InfoPoint/gtfs-zip.ashx", "backup_stable_url": "https://transitfeeds.com/p/the-rapid/380/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "The Rapid's GTFS Schedule source",
+    "stable_url": "http://connect.ridetherapid.org/InfoPoint/gtfs-zip.ashx",
+    "backup_stable_url": "https://transitfeeds.com/p/the-rapid/380/latest/download",
+    "datatype": "GTFS"
+}

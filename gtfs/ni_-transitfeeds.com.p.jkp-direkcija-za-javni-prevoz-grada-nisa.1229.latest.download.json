@@ -1,1 +1,5 @@
-{"source_name": "Ni\u0161's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/jkp-direkcija-za-javni-prevoz-grada-nisa/1229/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Ni\u0161's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/jkp-direkcija-za-javni-prevoz-grada-nisa/1229/latest/download",
+    "datatype": "GTFS"
+}

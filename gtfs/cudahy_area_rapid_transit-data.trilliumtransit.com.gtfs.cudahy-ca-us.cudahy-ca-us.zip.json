@@ -1,1 +1,5 @@
-{"source_name": "Cudahy Area Rapid Transit's GTFS Schedule source", "stable_url": "https://data.trilliumtransit.com/gtfs/cudahy-ca-us/cudahy-ca-us.zip", "datatype": "GTFS"}
+{
+    "source_name": "Cudahy Area Rapid Transit's GTFS Schedule source",
+    "stable_url": "https://data.trilliumtransit.com/gtfs/cudahy-ca-us/cudahy-ca-us.zip",
+    "datatype": "GTFS"
+}

@@ -1,1 +1,6 @@
-{"source_name": "Digital Matatus's GTFS Schedule source", "stable_url": "http://www.digitalmatatus.com/pdf/GTFS_DATA_1.zip", "backup_stable_url": "https://transitfeeds.com/p/university-of-nairobi/535/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Digital Matatus's GTFS Schedule source",
+    "stable_url": "http://www.digitalmatatus.com/pdf/GTFS_DATA_1.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/university-of-nairobi/535/latest/download",
+    "datatype": "GTFS"
+}

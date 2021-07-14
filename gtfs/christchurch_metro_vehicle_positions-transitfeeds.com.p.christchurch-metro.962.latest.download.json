@@ -1,1 +1,5 @@
-{"source_name": "Christchurch Metro Vehicle Positions's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/christchurch-metro/962/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Christchurch Metro Vehicle Positions's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/christchurch-metro/962/latest/download",
+    "datatype": "GTFS"
+}

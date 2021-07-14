@@ -1,1 +1,6 @@
-{"source_name": "Auckland Transport's GTFS Schedule source", "stable_url": "https://cdn01.at.govt.nz/data/gtfs.zip", "backup_stable_url": "https://transitfeeds.com/p/auckland-transport/124/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Auckland Transport's GTFS Schedule source",
+    "stable_url": "https://cdn01.at.govt.nz/data/gtfs.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/auckland-transport/124/latest/download",
+    "datatype": "GTFS"
+}

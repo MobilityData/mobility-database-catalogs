@@ -1,1 +1,6 @@
-{"source_name": "Metro Transit's GTFS Schedule source", "stable_url": "https://svc.metrotransit.org/mtgtfs/gtfs.zip", "backup_stable_url": "https://transitfeeds.com/p/metro-transit/179/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Metro Transit's GTFS Schedule source",
+    "stable_url": "https://svc.metrotransit.org/mtgtfs/gtfs.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/metro-transit/179/latest/download",
+    "datatype": "GTFS"
+}

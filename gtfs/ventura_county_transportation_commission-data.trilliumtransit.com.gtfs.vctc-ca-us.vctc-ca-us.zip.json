@@ -1,1 +1,6 @@
-{"source_name": "Ventura County Transportation Commission's GTFS Schedule source", "stable_url": "http://data.trilliumtransit.com/gtfs/vctc-ca-us/vctc-ca-us.zip", "backup_stable_url": "https://transitfeeds.com/p/ventura-county-transportation-commission/792/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Ventura County Transportation Commission's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/vctc-ca-us/vctc-ca-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/ventura-county-transportation-commission/792/latest/download",
+    "datatype": "GTFS"
+}

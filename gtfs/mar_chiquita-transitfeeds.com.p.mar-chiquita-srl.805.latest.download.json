@@ -1,1 +1,5 @@
-{"source_name": "Mar Chiquita's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/mar-chiquita-srl/805/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Mar Chiquita's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/mar-chiquita-srl/805/latest/download",
+    "datatype": "GTFS"
+}

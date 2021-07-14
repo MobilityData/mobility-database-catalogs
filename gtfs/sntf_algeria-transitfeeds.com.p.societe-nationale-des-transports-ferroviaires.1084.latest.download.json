@@ -1,1 +1,5 @@
-{"source_name": "SNTF Algeria's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/societe-nationale-des-transports-ferroviaires/1084/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "SNTF Algeria's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/societe-nationale-des-transports-ferroviaires/1084/latest/download",
+    "datatype": "GTFS"
+}

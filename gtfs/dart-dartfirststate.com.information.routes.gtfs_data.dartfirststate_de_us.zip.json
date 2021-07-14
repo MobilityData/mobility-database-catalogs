@@ -1,1 +1,6 @@
-{"source_name": "DART's GTFS Schedule source", "stable_url": "http://dartfirststate.com/information/routes/gtfs_data/dartfirststate_de_us.zip", "backup_stable_url": "https://transitfeeds.com/p/dart-first-state/209/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "DART's GTFS Schedule source",
+    "stable_url": "http://dartfirststate.com/information/routes/gtfs_data/dartfirststate_de_us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/dart-first-state/209/latest/download",
+    "datatype": "GTFS"
+}

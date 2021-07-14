@@ -1,1 +1,5 @@
-{"source_name": "MARTA's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/marta/65/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "MARTA's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/marta/65/latest/download",
+    "datatype": "GTFS"
+}

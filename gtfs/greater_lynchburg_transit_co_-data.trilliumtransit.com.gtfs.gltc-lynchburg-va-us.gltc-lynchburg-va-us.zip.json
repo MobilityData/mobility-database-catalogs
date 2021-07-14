@@ -1,1 +1,5 @@
-{"source_name": "Greater Lynchburg Transit Co.'s GTFS Schedule source", "stable_url": "http://data.trilliumtransit.com/gtfs/gltc-lynchburg-va-us/gltc-lynchburg-va-us.zip", "datatype": "GTFS"}
+{
+    "source_name": "Greater Lynchburg Transit Co.'s GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/gltc-lynchburg-va-us/gltc-lynchburg-va-us.zip",
+    "datatype": "GTFS"
+}

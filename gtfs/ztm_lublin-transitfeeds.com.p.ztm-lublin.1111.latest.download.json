@@ -1,1 +1,5 @@
-{"source_name": "ZTM Lublin's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/ztm-lublin/1111/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "ZTM Lublin's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/ztm-lublin/1111/latest/download",
+    "datatype": "GTFS"
+}

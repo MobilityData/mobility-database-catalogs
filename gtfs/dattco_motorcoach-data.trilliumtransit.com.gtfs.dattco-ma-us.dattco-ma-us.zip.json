@@ -1,1 +1,6 @@
-{"source_name": "DATTCO Motorcoach's GTFS Schedule source", "stable_url": "http://data.trilliumtransit.com/gtfs/dattco-ma-us/dattco-ma-us.zip", "backup_stable_url": "https://transitfeeds.com/p/massdot/112/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "DATTCO Motorcoach's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/dattco-ma-us/dattco-ma-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/massdot/112/latest/download",
+    "datatype": "GTFS"
+}

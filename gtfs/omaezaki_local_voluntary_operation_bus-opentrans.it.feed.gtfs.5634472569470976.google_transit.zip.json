@@ -1,1 +1,6 @@
-{"source_name": "Omaezaki Local Voluntary Operation Bus's GTFS Schedule source", "stable_url": "http://opentrans.it/feed/gtfs/5634472569470976/google_transit.zip", "backup_stable_url": "https://transitfeeds.com/p/opentransit/353/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Omaezaki Local Voluntary Operation Bus's GTFS Schedule source",
+    "stable_url": "http://opentrans.it/feed/gtfs/5634472569470976/google_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/opentransit/353/latest/download",
+    "datatype": "GTFS"
+}

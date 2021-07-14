@@ -1,1 +1,5 @@
-{"source_name": "Quadri orari traghetti's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/quadri-orari-traghetti/1169/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Quadri orari traghetti's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/quadri-orari-traghetti/1169/latest/download",
+    "datatype": "GTFS"
+}

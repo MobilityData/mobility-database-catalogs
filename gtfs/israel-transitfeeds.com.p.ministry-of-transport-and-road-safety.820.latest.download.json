@@ -1,1 +1,5 @@
-{"source_name": "Israel's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/ministry-of-transport-and-road-safety/820/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Israel's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/ministry-of-transport-and-road-safety/820/latest/download",
+    "datatype": "GTFS"
+}

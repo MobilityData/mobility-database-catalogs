@@ -1,1 +1,6 @@
-{"source_name": "Peter Pan's GTFS Schedule source", "stable_url": "http://data.trilliumtransit.com/gtfs/peterpan-ma-us/peterpan-ma-us.zip", "backup_stable_url": "https://transitfeeds.com/p/massdot/113/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Peter Pan's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/peterpan-ma-us/peterpan-ma-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/massdot/113/latest/download",
+    "datatype": "GTFS"
+}

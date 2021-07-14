@@ -1,1 +1,5 @@
-{"source_name": "Regional District of Nanaimo Transit System Real Time's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/regional-district-of-nanaimo-transit-system/1160/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Regional District of Nanaimo Transit System Real Time's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/regional-district-of-nanaimo-transit-system/1160/latest/download",
+    "datatype": "GTFS"
+}

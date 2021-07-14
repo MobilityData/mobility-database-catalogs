@@ -1,1 +1,5 @@
-{"source_name": "Libellus's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/mazamet/1218/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Libellus's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/mazamet/1218/latest/download",
+    "datatype": "GTFS"
+}

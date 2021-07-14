@@ -1,1 +1,6 @@
-{"source_name": "VIA Rail Canada's GTFS Schedule source", "stable_url": "https://www.viarail.ca/sites/all/files/gtfs/viarail.zip", "backup_stable_url": "https://transitfeeds.com/p/via-rail-canada/971/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "VIA Rail Canada's GTFS Schedule source",
+    "stable_url": "https://www.viarail.ca/sites/all/files/gtfs/viarail.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/via-rail-canada/971/latest/download",
+    "datatype": "GTFS"
+}

@@ -1,1 +1,5 @@
-{"source_name": "Campbell River's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/campbell-river-transit-system/1244/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Campbell River's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/campbell-river-transit-system/1244/latest/download",
+    "datatype": "GTFS"
+}

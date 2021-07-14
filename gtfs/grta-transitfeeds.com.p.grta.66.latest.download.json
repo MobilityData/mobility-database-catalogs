@@ -1,1 +1,5 @@
-{"source_name": "GRTA's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/grta/66/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "GRTA's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/grta/66/latest/download",
+    "datatype": "GTFS"
+}

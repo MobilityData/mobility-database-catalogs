@@ -1,1 +1,6 @@
-{"source_name": "Bullhead Area Transit System's GTFS Schedule source", "stable_url": "http://data.trilliumtransit.com/gtfs/bullheadareatransit-az-us/bullheadareatransit-az-us.zip", "backup_stable_url": "https://transitfeeds.com/p/bullhead-area-transit-system/670/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Bullhead Area Transit System's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/bullheadareatransit-az-us/bullheadareatransit-az-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/bullhead-area-transit-system/670/latest/download",
+    "datatype": "GTFS"
+}

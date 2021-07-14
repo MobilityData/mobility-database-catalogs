@@ -1,1 +1,5 @@
-{"source_name": "RAB - DB ZugBus Regionalverkehr Alb-Bodensee's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/rab-db-zugbus-regionalverkehr-alb-bodensee/1238/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "RAB - DB ZugBus Regionalverkehr Alb-Bodensee's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/rab-db-zugbus-regionalverkehr-alb-bodensee/1238/latest/download",
+    "datatype": "GTFS"
+}

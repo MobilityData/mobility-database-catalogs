@@ -1,1 +1,5 @@
-{"source_name": "Turlock Transit's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/turlock-transit/1288/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Turlock Transit's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/turlock-transit/1288/latest/download",
+    "datatype": "GTFS"
+}

@@ -1,1 +1,6 @@
-{"source_name": "Bogor Angkots's GTFS Schedule source", "stable_url": "https://github.com/michielbdejong/bogor-angkot-gtfs/blob/master/release/gtfs.zip?raw=true", "backup_stable_url": "https://transitfeeds.com/p/bogor-angkots/725/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Bogor Angkots's GTFS Schedule source",
+    "stable_url": "https://github.com/michielbdejong/bogor-angkot-gtfs/blob/master/release/gtfs.zip?raw=true",
+    "backup_stable_url": "https://transitfeeds.com/p/bogor-angkots/725/latest/download",
+    "datatype": "GTFS"
+}

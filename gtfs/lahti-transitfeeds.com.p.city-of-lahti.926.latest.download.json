@@ -1,1 +1,5 @@
-{"source_name": "Lahti's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/city-of-lahti/926/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Lahti's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/city-of-lahti/926/latest/download",
+    "datatype": "GTFS"
+}

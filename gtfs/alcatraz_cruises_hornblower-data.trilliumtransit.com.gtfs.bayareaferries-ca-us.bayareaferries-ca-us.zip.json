@@ -1,1 +1,5 @@
-{"source_name": "Alcatraz Cruises - Hornblower's GTFS Schedule source", "stable_url": "http://data.trilliumtransit.com/gtfs/bayareaferries-ca-us/bayareaferries-ca-us.zip", "datatype": "GTFS"}
+{
+    "source_name": "Alcatraz Cruises - Hornblower's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/bayareaferries-ca-us/bayareaferries-ca-us.zip",
+    "datatype": "GTFS"
+}

@@ -1,1 +1,6 @@
-{"source_name": "OCTA's GTFS Schedule source", "stable_url": "https://octa.net/current/google_transit.zip", "backup_stable_url": "https://transitfeeds.com/p/orange-county-transportation-authority/197/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "OCTA's GTFS Schedule source",
+    "stable_url": "https://octa.net/current/google_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/orange-county-transportation-authority/197/latest/download",
+    "datatype": "GTFS"
+}

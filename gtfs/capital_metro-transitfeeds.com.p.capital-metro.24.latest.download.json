@@ -1,1 +1,5 @@
-{"source_name": "Capital Metro's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/capital-metro/24/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Capital Metro's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/capital-metro/24/latest/download",
+    "datatype": "GTFS"
+}

@@ -1,1 +1,5 @@
-{"source_name": "Coach Company's GTFS Schedule source", "stable_url": "http://data.trilliumtransit.com/gtfs/coachcompany-ma-us/coachcompany-ma-us.zip", "datatype": "GTFS"}
+{
+    "source_name": "Coach Company's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/coachcompany-ma-us/coachcompany-ma-us.zip",
+    "datatype": "GTFS"
+}

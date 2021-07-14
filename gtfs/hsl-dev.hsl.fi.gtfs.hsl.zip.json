@@ -1,1 +1,6 @@
-{"source_name": "HSL's GTFS Schedule source", "stable_url": "http://dev.hsl.fi/gtfs/hsl.zip", "backup_stable_url": "https://transitfeeds.com/p/helsinki-regional-transport/735/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "HSL's GTFS Schedule source",
+    "stable_url": "http://dev.hsl.fi/gtfs/hsl.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/helsinki-regional-transport/735/latest/download",
+    "datatype": "GTFS"
+}

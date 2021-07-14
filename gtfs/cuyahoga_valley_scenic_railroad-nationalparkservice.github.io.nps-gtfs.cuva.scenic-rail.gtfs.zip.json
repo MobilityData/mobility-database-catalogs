@@ -1,1 +1,6 @@
-{"source_name": "Cuyahoga Valley Scenic Railroad's GTFS Schedule source", "stable_url": "https://nationalparkservice.github.io/nps-gtfs/cuva/scenic-rail/gtfs.zip", "backup_stable_url": "https://transitfeeds.com/p/national-park-service/618/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Cuyahoga Valley Scenic Railroad's GTFS Schedule source",
+    "stable_url": "https://nationalparkservice.github.io/nps-gtfs/cuva/scenic-rail/gtfs.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/national-park-service/618/latest/download",
+    "datatype": "GTFS"
+}

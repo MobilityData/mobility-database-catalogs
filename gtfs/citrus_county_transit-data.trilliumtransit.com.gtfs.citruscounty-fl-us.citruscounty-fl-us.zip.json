@@ -1,1 +1,6 @@
-{"source_name": "Citrus County Transit's GTFS Schedule source", "stable_url": "http://data.trilliumtransit.com/gtfs/citruscounty-fl-us/citruscounty-fl-us.zip", "backup_stable_url": "https://transitfeeds.com/p/citrus-county-transit/550/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Citrus County Transit's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/citruscounty-fl-us/citruscounty-fl-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/citrus-county-transit/550/latest/download",
+    "datatype": "GTFS"
+}

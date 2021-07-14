@@ -1,1 +1,6 @@
-{"source_name": "Kelowna's GTFS Schedule source", "stable_url": "https://www.bctransit.com/data/gtfs/internet/KelownaGTFS_20180529.zip", "backup_stable_url": "https://transitfeeds.com/p/bc-transit/690/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Kelowna's GTFS Schedule source",
+    "stable_url": "https://www.bctransit.com/data/gtfs/internet/KelownaGTFS_20180529.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/bc-transit/690/latest/download",
+    "datatype": "GTFS"
+}

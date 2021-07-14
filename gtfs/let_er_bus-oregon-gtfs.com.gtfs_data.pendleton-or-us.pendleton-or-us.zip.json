@@ -1,1 +1,5 @@
-{"source_name": "Let'er Bus's GTFS Schedule source", "stable_url": "http://oregon-gtfs.com/gtfs_data/pendleton-or-us/pendleton-or-us.zip", "datatype": "GTFS"}
+{
+    "source_name": "Let'er Bus's GTFS Schedule source",
+    "stable_url": "http://oregon-gtfs.com/gtfs_data/pendleton-or-us/pendleton-or-us.zip",
+    "datatype": "GTFS"
+}

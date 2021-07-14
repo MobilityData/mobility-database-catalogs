@@ -1,1 +1,6 @@
-{"source_name": "Byron Easybus's GTFS Schedule source", "stable_url": "https://addtransit.com/gtfsfile/54743/ByronEasybus.zip", "backup_stable_url": "https://transitfeeds.com/p/byron-easybus/737/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Byron Easybus's GTFS Schedule source",
+    "stable_url": "https://addtransit.com/gtfsfile/54743/ByronEasybus.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/byron-easybus/737/latest/download",
+    "datatype": "GTFS"
+}

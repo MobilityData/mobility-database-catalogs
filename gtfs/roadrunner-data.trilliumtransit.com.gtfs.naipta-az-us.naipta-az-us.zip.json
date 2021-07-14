@@ -1,1 +1,6 @@
-{"source_name": "RoadRunner's GTFS Schedule source", "stable_url": "http://data.trilliumtransit.com/gtfs/naipta-az-us/naipta-az-us.zip", "backup_stable_url": "https://transitfeeds.com/p/sedona-roadrunner/244/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "RoadRunner's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/naipta-az-us/naipta-az-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/sedona-roadrunner/244/latest/download",
+    "datatype": "GTFS"
+}

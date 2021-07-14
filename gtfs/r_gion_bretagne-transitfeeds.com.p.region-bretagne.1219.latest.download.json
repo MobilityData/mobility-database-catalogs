@@ -1,1 +1,5 @@
-{"source_name": "R\u00e9gion Bretagne's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/region-bretagne/1219/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "R\u00e9gion Bretagne's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/region-bretagne/1219/latest/download",
+    "datatype": "GTFS"
+}

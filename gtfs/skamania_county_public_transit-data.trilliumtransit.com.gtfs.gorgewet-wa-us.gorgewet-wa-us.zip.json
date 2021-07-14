@@ -1,1 +1,6 @@
-{"source_name": "Skamania County Public Transit's GTFS Schedule source", "stable_url": "http://data.trilliumtransit.com/gtfs/gorgewet-wa-us/gorgewet-wa-us.zip", "backup_stable_url": "https://transitfeeds.com/p/skamania-county-public-transit/678/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Skamania County Public Transit's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/gorgewet-wa-us/gorgewet-wa-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/skamania-county-public-transit/678/latest/download",
+    "datatype": "GTFS"
+}

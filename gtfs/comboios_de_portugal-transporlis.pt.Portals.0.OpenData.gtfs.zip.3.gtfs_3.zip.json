@@ -1,1 +1,5 @@
-{"source_name": "Comboios de Portugal's GTFS Schedule source", "stable_url": "https://www.transporlis.pt/Portals/0/OpenData/gtfs/zip/3/gtfs_3.zip", "datatype": "GTFS"}
+{
+    "source_name": "Comboios de Portugal's GTFS Schedule source",
+    "stable_url": "https://www.transporlis.pt/Portals/0/OpenData/gtfs/zip/3/gtfs_3.zip",
+    "datatype": "GTFS"
+}

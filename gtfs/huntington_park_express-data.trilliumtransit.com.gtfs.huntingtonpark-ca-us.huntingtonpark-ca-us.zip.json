@@ -1,1 +1,5 @@
-{"source_name": "Huntington Park Express's GTFS Schedule source", "stable_url": "https://data.trilliumtransit.com/gtfs/huntingtonpark-ca-us/huntingtonpark-ca-us.zip", "datatype": "GTFS"}
+{
+    "source_name": "Huntington Park Express's GTFS Schedule source",
+    "stable_url": "https://data.trilliumtransit.com/gtfs/huntingtonpark-ca-us/huntingtonpark-ca-us.zip",
+    "datatype": "GTFS"
+}

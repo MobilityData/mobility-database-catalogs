@@ -1,1 +1,6 @@
-{"source_name": "LPT's GTFS Schedule source", "stable_url": "http://www.thaitransit.org/CM/South/south_route2.zip", "backup_stable_url": "https://transitfeeds.com/p/lampoon-pattana-transport/796/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "LPT's GTFS Schedule source",
+    "stable_url": "http://www.thaitransit.org/CM/South/south_route2.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/lampoon-pattana-transport/796/latest/download",
+    "datatype": "GTFS"
+}

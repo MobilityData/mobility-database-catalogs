@@ -1,1 +1,6 @@
-{"source_name": "T3 Transit's GTFS Schedule source", "stable_url": "http://t3.thebus.ca/gtfs/gtfs.zip", "backup_stable_url": "https://transitfeeds.com/p/t3-transit/591/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "T3 Transit's GTFS Schedule source",
+    "stable_url": "http://t3.thebus.ca/gtfs/gtfs.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/t3-transit/591/latest/download",
+    "datatype": "GTFS"
+}

@@ -1,1 +1,6 @@
-{"source_name": "CCT's GTFS Schedule source", "stable_url": "https://www.arcgis.com/home/item.html?id=1ce8e370a12c41b5854d8baa21f8451c", "backup_stable_url": "https://transitfeeds.com/p/cobb-community-transit/372/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "CCT's GTFS Schedule source",
+    "stable_url": "https://www.arcgis.com/home/item.html?id=1ce8e370a12c41b5854d8baa21f8451c",
+    "backup_stable_url": "https://transitfeeds.com/p/cobb-community-transit/372/latest/download",
+    "datatype": "GTFS"
+}

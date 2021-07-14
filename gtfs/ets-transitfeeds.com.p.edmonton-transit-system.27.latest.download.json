@@ -1,1 +1,5 @@
-{"source_name": "ETS's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/edmonton-transit-system/27/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "ETS's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/edmonton-transit-system/27/latest/download",
+    "datatype": "GTFS"
+}

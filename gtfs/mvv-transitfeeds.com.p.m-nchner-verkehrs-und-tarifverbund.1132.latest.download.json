@@ -1,1 +1,5 @@
-{"source_name": "MVV's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/m-nchner-verkehrs-und-tarifverbund/1132/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "MVV's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/m-nchner-verkehrs-und-tarifverbund/1132/latest/download",
+    "datatype": "GTFS"
+}

@@ -1,1 +1,6 @@
-{"source_name": "Marche's GTFS Schedule source", "stable_url": "http://www.trasporti.marche.it/downloads/opendata/GTFS_TRASPORTI_UNIFICATO_13-07-2016.zip", "backup_stable_url": "https://transitfeeds.com/p/region-marche/740/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Marche's GTFS Schedule source",
+    "stable_url": "http://www.trasporti.marche.it/downloads/opendata/GTFS_TRASPORTI_UNIFICATO_13-07-2016.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/region-marche/740/latest/download",
+    "datatype": "GTFS"
+}

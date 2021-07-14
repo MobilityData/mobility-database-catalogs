@@ -1,1 +1,6 @@
-{"source_name": "UDASH's GTFS Schedule source", "stable_url": "http://data.trilliumtransit.com/gtfs/udash-mt-us/udash-mt-us.zip", "backup_stable_url": "https://transitfeeds.com/p/udash/764/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "UDASH's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/udash-mt-us/udash-mt-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/udash/764/latest/download",
+    "datatype": "GTFS"
+}

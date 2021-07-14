@@ -1,1 +1,6 @@
-{"source_name": "MRC de Deux-Montagnes's GTFS Schedule source", "stable_url": "http://www.amt.qc.ca/xdata/mrc2m/google_transit.zip", "backup_stable_url": "https://transitfeeds.com/p/agence-metropolitaine-de-transport/141/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "MRC de Deux-Montagnes's GTFS Schedule source",
+    "stable_url": "http://www.amt.qc.ca/xdata/mrc2m/google_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/agence-metropolitaine-de-transport/141/latest/download",
+    "datatype": "GTFS"
+}

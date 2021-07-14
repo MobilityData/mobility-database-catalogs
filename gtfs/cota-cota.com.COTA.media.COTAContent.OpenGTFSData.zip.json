@@ -1,1 +1,6 @@
-{"source_name": "COTA's GTFS Schedule source", "stable_url": "https://www.cota.com/COTA/media/COTAContent/OpenGTFSData.zip", "backup_stable_url": "https://transitfeeds.com/p/central-ohio-transit-authority/216/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "COTA's GTFS Schedule source",
+    "stable_url": "https://www.cota.com/COTA/media/COTAContent/OpenGTFSData.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/central-ohio-transit-authority/216/latest/download",
+    "datatype": "GTFS"
+}

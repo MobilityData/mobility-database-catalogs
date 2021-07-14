@@ -1,1 +1,6 @@
-{"source_name": "Trenord's GTFS Schedule source", "stable_url": "https://www.dati.lombardia.it/download/3z4k-mxz9/application%2Fzip", "backup_stable_url": "https://transitfeeds.com/p/trenord/724/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Trenord's GTFS Schedule source",
+    "stable_url": "https://www.dati.lombardia.it/download/3z4k-mxz9/application%2Fzip",
+    "backup_stable_url": "https://transitfeeds.com/p/trenord/724/latest/download",
+    "datatype": "GTFS"
+}

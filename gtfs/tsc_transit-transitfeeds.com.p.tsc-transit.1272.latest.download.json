@@ -1,1 +1,5 @@
-{"source_name": "TSC Transit's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/tsc-transit/1272/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "TSC Transit's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/tsc-transit/1272/latest/download",
+    "datatype": "GTFS"
+}

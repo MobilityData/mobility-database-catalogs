@@ -1,1 +1,5 @@
-{"source_name": "Cedar Rapids Transit's GTFS Schedule source", "stable_url": "http://data.trilliumtransit.com/gtfs/cedarrapids-ia-us/cedarrapids-ia-us.zip", "datatype": "GTFS"}
+{
+    "source_name": "Cedar Rapids Transit's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/cedarrapids-ia-us/cedarrapids-ia-us.zip",
+    "datatype": "GTFS"
+}

@@ -1,1 +1,6 @@
-{"source_name": "CAMBUS's GTFS Schedule source", "stable_url": "http://data.trilliumtransit.com/gtfs/cambus-ia-us/cambus-ia-us.zip", "backup_stable_url": "https://transitfeeds.com/p/cambus/1024/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "CAMBUS's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/cambus-ia-us/cambus-ia-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/cambus/1024/latest/download",
+    "datatype": "GTFS"
+}

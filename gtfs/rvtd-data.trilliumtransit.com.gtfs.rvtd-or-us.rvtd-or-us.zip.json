@@ -1,1 +1,6 @@
-{"source_name": "RVTD's GTFS Schedule source", "stable_url": "http://data.trilliumtransit.com/gtfs/rvtd-or-us/rvtd-or-us.zip", "backup_stable_url": "https://transitfeeds.com/p/rogue-valley-transportation-district/478/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "RVTD's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/rvtd-or-us/rvtd-or-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/rogue-valley-transportation-district/478/latest/download",
+    "datatype": "GTFS"
+}

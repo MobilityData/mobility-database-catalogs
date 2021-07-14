@@ -1,1 +1,6 @@
-{"source_name": "Kingston Transit's GTFS Schedule source", "stable_url": "https://api.cityofkingston.ca/gtfs/gtfs.zip", "backup_stable_url": "https://transitfeeds.com/p/city-of-kingston/779/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Kingston Transit's GTFS Schedule source",
+    "stable_url": "https://api.cityofkingston.ca/gtfs/gtfs.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/city-of-kingston/779/latest/download",
+    "datatype": "GTFS"
+}

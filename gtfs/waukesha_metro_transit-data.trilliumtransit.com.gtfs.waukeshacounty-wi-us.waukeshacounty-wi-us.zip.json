@@ -1,1 +1,6 @@
-{"source_name": "Waukesha Metro Transit's GTFS Schedule source", "stable_url": "http://data.trilliumtransit.com/gtfs/waukeshacounty-wi-us/waukeshacounty-wi-us.zip", "backup_stable_url": "https://transitfeeds.com/p/waukesha-metro-transit/604/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Waukesha Metro Transit's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/waukeshacounty-wi-us/waukeshacounty-wi-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/waukesha-metro-transit/604/latest/download",
+    "datatype": "GTFS"
+}

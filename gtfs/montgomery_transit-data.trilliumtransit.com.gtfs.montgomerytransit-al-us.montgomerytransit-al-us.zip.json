@@ -1,1 +1,6 @@
-{"source_name": "Montgomery Transit's GTFS Schedule source", "stable_url": "http://data.trilliumtransit.com/gtfs/montgomerytransit-al-us/montgomerytransit-al-us.zip", "backup_stable_url": "https://transitfeeds.com/p/montgomery-transit/674/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Montgomery Transit's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/montgomerytransit-al-us/montgomerytransit-al-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/montgomery-transit/674/latest/download",
+    "datatype": "GTFS"
+}

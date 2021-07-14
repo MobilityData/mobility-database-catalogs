@@ -1,1 +1,6 @@
-{"source_name": "S-Bahn Stuttgart's GTFS Schedule source", "stable_url": "http://download-data.deutschebahn.com/static/datasets/sbahn_stuttgart_gtfs/017_001_S-Bahn_Stuttgart_J19.zip", "backup_stable_url": "https://transitfeeds.com/p/deutsche-bahn-stuttgart/1035/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "S-Bahn Stuttgart's GTFS Schedule source",
+    "stable_url": "http://download-data.deutschebahn.com/static/datasets/sbahn_stuttgart_gtfs/017_001_S-Bahn_Stuttgart_J19.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/deutsche-bahn-stuttgart/1035/latest/download",
+    "datatype": "GTFS"
+}

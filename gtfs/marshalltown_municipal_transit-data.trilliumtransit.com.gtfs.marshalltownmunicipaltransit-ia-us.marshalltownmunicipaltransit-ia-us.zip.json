@@ -1,1 +1,6 @@
-{"source_name": "Marshalltown Municipal Transit's GTFS Schedule source", "stable_url": "http://data.trilliumtransit.com/gtfs/marshalltownmunicipaltransit-ia-us/marshalltownmunicipaltransit-ia-us.zip", "backup_stable_url": "https://transitfeeds.com/p/marshalltown-municipal-transit/938/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Marshalltown Municipal Transit's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/marshalltownmunicipaltransit-ia-us/marshalltownmunicipaltransit-ia-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/marshalltown-municipal-transit/938/latest/download",
+    "datatype": "GTFS"
+}

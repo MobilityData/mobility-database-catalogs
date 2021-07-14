@@ -1,1 +1,5 @@
-{"source_name": "South Portland Bus's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/city-of-south-portland/1152/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "South Portland Bus's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/city-of-south-portland/1152/latest/download",
+    "datatype": "GTFS"
+}

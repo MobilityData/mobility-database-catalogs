@@ -1,1 +1,6 @@
-{"source_name": "TTE Urbano's GTFS Schedule source", "stable_url": "http://www.ttesercizio.it/opendata/google_transit_urbano_tte.zip", "backup_stable_url": "https://transitfeeds.com/p/trentino-trasporti-esercizio/613/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "TTE Urbano's GTFS Schedule source",
+    "stable_url": "http://www.ttesercizio.it/opendata/google_transit_urbano_tte.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/trentino-trasporti-esercizio/613/latest/download",
+    "datatype": "GTFS"
+}

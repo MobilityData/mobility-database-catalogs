@@ -1,1 +1,6 @@
-{"source_name": "Jyv\u00e4skyl\u00e4's GTFS Schedule source", "stable_url": "http://data.jyvaskyla.fi/tiedostot/linkkidata.zip", "backup_stable_url": "https://transitfeeds.com/p/city-of-jyvaskyla/728/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Jyv\u00e4skyl\u00e4's GTFS Schedule source",
+    "stable_url": "http://data.jyvaskyla.fi/tiedostot/linkkidata.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/city-of-jyvaskyla/728/latest/download",
+    "datatype": "GTFS"
+}

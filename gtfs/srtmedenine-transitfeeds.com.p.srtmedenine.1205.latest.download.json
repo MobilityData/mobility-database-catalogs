@@ -1,1 +1,5 @@
-{"source_name": "SRTMedenine's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/srtmedenine/1205/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "SRTMedenine's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/srtmedenine/1205/latest/download",
+    "datatype": "GTFS"
+}

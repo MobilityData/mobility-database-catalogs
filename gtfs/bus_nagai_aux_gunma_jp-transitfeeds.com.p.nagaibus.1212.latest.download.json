@@ -1,1 +1,5 @@
-{"source_name": "bus-nagai-aux-gunma-jp's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/nagaibus/1212/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "bus-nagai-aux-gunma-jp's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/nagaibus/1212/latest/download",
+    "datatype": "GTFS"
+}

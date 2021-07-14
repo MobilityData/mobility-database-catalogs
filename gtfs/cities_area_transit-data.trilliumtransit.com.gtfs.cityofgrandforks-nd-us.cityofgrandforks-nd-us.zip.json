@@ -1,1 +1,6 @@
-{"source_name": "Cities Area Transit's GTFS Schedule source", "stable_url": "http://data.trilliumtransit.com/gtfs/cityofgrandforks-nd-us/cityofgrandforks-nd-us.zip", "backup_stable_url": "https://transitfeeds.com/p/cities-area-transit/834/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Cities Area Transit's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/cityofgrandforks-nd-us/cityofgrandforks-nd-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/cities-area-transit/834/latest/download",
+    "datatype": "GTFS"
+}

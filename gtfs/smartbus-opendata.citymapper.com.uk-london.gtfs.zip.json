@@ -1,1 +1,6 @@
-{"source_name": "Smartbus's GTFS Schedule source", "stable_url": "http://opendata.citymapper.com/uk-london/gtfs.zip", "backup_stable_url": "https://transitfeeds.com/p/citymapper/894/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Smartbus's GTFS Schedule source",
+    "stable_url": "http://opendata.citymapper.com/uk-london/gtfs.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/citymapper/894/latest/download",
+    "datatype": "GTFS"
+}

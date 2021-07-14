@@ -1,1 +1,5 @@
-{"source_name": "TriMet's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/trimet/43/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "TriMet's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/trimet/43/latest/download",
+    "datatype": "GTFS"
+}

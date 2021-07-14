@@ -1,1 +1,5 @@
-{"source_name": "Metro-North Railroad's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/mta/87/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Metro-North Railroad's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/mta/87/latest/download",
+    "datatype": "GTFS"
+}

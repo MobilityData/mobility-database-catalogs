@@ -1,1 +1,5 @@
-{"source_name": "BATA's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/bay-area-transit-authority/1144/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "BATA's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/bay-area-transit-authority/1144/latest/download",
+    "datatype": "GTFS"
+}

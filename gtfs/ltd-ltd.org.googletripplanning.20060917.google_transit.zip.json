@@ -1,1 +1,6 @@
-{"source_name": "LTD's GTFS Schedule source", "stable_url": "http://www.ltd.org/googletripplanning/20060917/google_transit.zip", "backup_stable_url": "https://transitfeeds.com/p/lane-transit-district/314/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "LTD's GTFS Schedule source",
+    "stable_url": "http://www.ltd.org/googletripplanning/20060917/google_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/lane-transit-district/314/latest/download",
+    "datatype": "GTFS"
+}

@@ -1,1 +1,6 @@
-{"source_name": "ATOC's GTFS Schedule source", "stable_url": "https://s3.eu-west-2.amazonaws.com/feeds.planar.network/gb-rail-latest.zip", "backup_stable_url": "https://transitfeeds.com/p/association-of-train-operating-companies/284/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "ATOC's GTFS Schedule source",
+    "stable_url": "https://s3.eu-west-2.amazonaws.com/feeds.planar.network/gb-rail-latest.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/association-of-train-operating-companies/284/latest/download",
+    "datatype": "GTFS"
+}

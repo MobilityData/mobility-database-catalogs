@@ -1,1 +1,5 @@
-{"source_name": "IDFM's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/ile-de-france-mobilite/1214/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "IDFM's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/ile-de-france-mobilite/1214/latest/download",
+    "datatype": "GTFS"
+}

@@ -1,1 +1,6 @@
-{"source_name": "People Mover's GTFS Schedule source", "stable_url": "http://gtfs.muni.org/People_Mover.gtfs.zip", "backup_stable_url": "https://transitfeeds.com/p/people-mover/370/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "People Mover's GTFS Schedule source",
+    "stable_url": "http://gtfs.muni.org/People_Mover.gtfs.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/people-mover/370/latest/download",
+    "datatype": "GTFS"
+}

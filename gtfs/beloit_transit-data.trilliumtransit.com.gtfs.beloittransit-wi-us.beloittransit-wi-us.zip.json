@@ -1,1 +1,6 @@
-{"source_name": "Beloit Transit's GTFS Schedule source", "stable_url": "http://data.trilliumtransit.com/gtfs/beloittransit-wi-us/beloittransit-wi-us.zip", "backup_stable_url": "https://transitfeeds.com/p/beloit-transit/762/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Beloit Transit's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/beloittransit-wi-us/beloittransit-wi-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/beloit-transit/762/latest/download",
+    "datatype": "GTFS"
+}

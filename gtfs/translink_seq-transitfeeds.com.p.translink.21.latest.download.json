@@ -1,1 +1,5 @@
-{"source_name": "TransLink SEQ's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/translink/21/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "TransLink SEQ's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/translink/21/latest/download",
+    "datatype": "GTFS"
+}

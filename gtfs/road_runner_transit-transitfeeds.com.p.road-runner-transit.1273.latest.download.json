@@ -1,1 +1,5 @@
-{"source_name": "Road Runner Transit's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/road-runner-transit/1273/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Road Runner Transit's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/road-runner-transit/1273/latest/download",
+    "datatype": "GTFS"
+}

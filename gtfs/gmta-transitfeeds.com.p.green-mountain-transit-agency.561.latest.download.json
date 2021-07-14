@@ -1,1 +1,5 @@
-{"source_name": "GMTA's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/green-mountain-transit-agency/561/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "GMTA's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/green-mountain-transit-agency/561/latest/download",
+    "datatype": "GTFS"
+}

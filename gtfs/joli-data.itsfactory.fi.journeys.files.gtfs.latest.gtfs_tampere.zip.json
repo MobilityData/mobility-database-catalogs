@@ -1,1 +1,6 @@
-{"source_name": "JOLI's GTFS Schedule source", "stable_url": "http://data.itsfactory.fi/journeys/files/gtfs/latest/gtfs_tampere.zip", "backup_stable_url": "https://transitfeeds.com/p/tampereen-joukkoliikenne/727/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "JOLI's GTFS Schedule source",
+    "stable_url": "http://data.itsfactory.fi/journeys/files/gtfs/latest/gtfs_tampere.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/tampereen-joukkoliikenne/727/latest/download",
+    "datatype": "GTFS"
+}

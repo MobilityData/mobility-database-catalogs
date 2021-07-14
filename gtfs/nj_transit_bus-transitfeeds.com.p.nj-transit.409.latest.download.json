@@ -1,1 +1,5 @@
-{"source_name": "NJ Transit Bus's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/nj-transit/409/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "NJ Transit Bus's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/nj-transit/409/latest/download",
+    "datatype": "GTFS"
+}

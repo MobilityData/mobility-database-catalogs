@@ -1,1 +1,5 @@
-{"source_name": "BCRTA's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/butler-county-regional-transit-authority/1158/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "BCRTA's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/butler-county-regional-transit-authority/1158/latest/download",
+    "datatype": "GTFS"
+}

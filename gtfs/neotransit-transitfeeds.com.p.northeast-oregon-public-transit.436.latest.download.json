@@ -1,1 +1,5 @@
-{"source_name": "Neotransit's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/northeast-oregon-public-transit/436/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Neotransit's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/northeast-oregon-public-transit/436/latest/download",
+    "datatype": "GTFS"
+}

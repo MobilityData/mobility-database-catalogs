@@ -1,1 +1,6 @@
-{"source_name": "ECO Transit's GTFS Schedule source", "stable_url": "http://data.trilliumtransit.com/gtfs/ecotransit-co-us/ecotransit-co-us.zip", "backup_stable_url": "https://transitfeeds.com/p/eco-transit/753/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "ECO Transit's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/ecotransit-co-us/ecotransit-co-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/eco-transit/753/latest/download",
+    "datatype": "GTFS"
+}

@@ -1,1 +1,5 @@
-{"source_name": "HofBus -Feed's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/hofbus/1197/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "HofBus -Feed's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/hofbus/1197/latest/download",
+    "datatype": "GTFS"
+}

@@ -1,1 +1,6 @@
-{"source_name": "Verde Lynx's GTFS Schedule source", "stable_url": "http://data.trilliumtransit.com/gtfs/verdelynx-az-us/verdelynx-az-us.zip", "backup_stable_url": "https://transitfeeds.com/p/verde-lynx/245/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Verde Lynx's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/verdelynx-az-us/verdelynx-az-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/verde-lynx/245/latest/download",
+    "datatype": "GTFS"
+}

@@ -1,1 +1,6 @@
-{"source_name": "EMT's GTFS Schedule source", "stable_url": "https://servicios.emtmadrid.es:8443/gtfs/transitemt.zip", "backup_stable_url": "https://transitfeeds.com/p/emt-madrid/212/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "EMT's GTFS Schedule source",
+    "stable_url": "https://servicios.emtmadrid.es:8443/gtfs/transitemt.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/emt-madrid/212/latest/download",
+    "datatype": "GTFS"
+}

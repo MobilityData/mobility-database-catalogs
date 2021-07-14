@@ -1,1 +1,5 @@
-{"source_name": "Santa Barbara MTD's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/santa-barbara-mtd/1156/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Santa Barbara MTD's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/santa-barbara-mtd/1156/latest/download",
+    "datatype": "GTFS"
+}

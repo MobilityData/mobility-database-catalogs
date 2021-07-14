@@ -1,1 +1,6 @@
-{"source_name": "Western Chiang Mai's GTFS Schedule source", "stable_url": "http://www.thaitransit.org/CM/East/east_route.zip", "backup_stable_url": "https://transitfeeds.com/p/coopthai-nct/799/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Western Chiang Mai's GTFS Schedule source",
+    "stable_url": "http://www.thaitransit.org/CM/East/east_route.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/coopthai-nct/799/latest/download",
+    "datatype": "GTFS"
+}

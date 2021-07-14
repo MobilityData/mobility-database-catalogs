@@ -1,1 +1,6 @@
-{"source_name": "Franklin RTA's GTFS Schedule source", "stable_url": "https://www.mass.gov/doc/franklin-rta-gtfs-files-zip-file-12292014/download", "backup_stable_url": "https://transitfeeds.com/p/massdot/97/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Franklin RTA's GTFS Schedule source",
+    "stable_url": "https://www.mass.gov/doc/franklin-rta-gtfs-files-zip-file-12292014/download",
+    "backup_stable_url": "https://transitfeeds.com/p/massdot/97/latest/download",
+    "datatype": "GTFS"
+}

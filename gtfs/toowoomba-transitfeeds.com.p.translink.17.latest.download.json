@@ -1,1 +1,5 @@
-{"source_name": "Toowoomba's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/translink/17/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Toowoomba's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/translink/17/latest/download",
+    "datatype": "GTFS"
+}

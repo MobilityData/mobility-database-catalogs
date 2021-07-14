@@ -1,1 +1,5 @@
-{"source_name": "Broward County Transit's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/broward-county-transit/49/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Broward County Transit's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/broward-county-transit/49/latest/download",
+    "datatype": "GTFS"
+}

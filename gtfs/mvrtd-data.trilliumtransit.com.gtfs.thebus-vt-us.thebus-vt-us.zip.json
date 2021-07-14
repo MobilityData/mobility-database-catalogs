@@ -1,1 +1,6 @@
-{"source_name": "MVRTD's GTFS Schedule source", "stable_url": "http://data.trilliumtransit.com/gtfs/thebus-vt-us/thebus-vt-us.zip", "backup_stable_url": "https://transitfeeds.com/p/marble-valley-regional-transit-district/565/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "MVRTD's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/thebus-vt-us/thebus-vt-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/marble-valley-regional-transit-district/565/latest/download",
+    "datatype": "GTFS"
+}

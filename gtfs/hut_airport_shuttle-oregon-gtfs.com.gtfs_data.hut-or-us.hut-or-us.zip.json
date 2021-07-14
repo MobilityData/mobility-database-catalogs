@@ -1,1 +1,6 @@
-{"source_name": "HUT Airport Shuttle's GTFS Schedule source", "stable_url": "http://oregon-gtfs.com/gtfs_data/hut-or-us/hut-or-us.zip", "backup_stable_url": "https://transitfeeds.com/p/hut-airport-shuttle/467/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "HUT Airport Shuttle's GTFS Schedule source",
+    "stable_url": "http://oregon-gtfs.com/gtfs_data/hut-or-us/hut-or-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/hut-airport-shuttle/467/latest/download",
+    "datatype": "GTFS"
+}

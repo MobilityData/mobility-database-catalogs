@@ -1,1 +1,5 @@
-{"source_name": "Trenes Argentinos's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/trenes-argentinos/1036/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Trenes Argentinos's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/trenes-argentinos/1036/latest/download",
+    "datatype": "GTFS"
+}

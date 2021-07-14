@@ -1,1 +1,6 @@
-{"source_name": "University of Michigan Transit Services's GTFS Schedule source", "stable_url": "http://ltp.umich.edu/gtfs/google_transit.zip", "backup_stable_url": "https://transitfeeds.com/p/university-of-michigan-parking-transportation-services/316/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "University of Michigan Transit Services's GTFS Schedule source",
+    "stable_url": "http://ltp.umich.edu/gtfs/google_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/university-of-michigan-parking-transportation-services/316/latest/download",
+    "datatype": "GTFS"
+}

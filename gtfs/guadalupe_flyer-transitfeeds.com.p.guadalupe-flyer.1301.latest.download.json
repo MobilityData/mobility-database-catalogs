@@ -1,1 +1,5 @@
-{"source_name": "Guadalupe Flyer's GTFS Schedule source", "stable_url": "https://transitfeeds.com/p/guadalupe-flyer/1301/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "Guadalupe Flyer's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/guadalupe-flyer/1301/latest/download",
+    "datatype": "GTFS"
+}

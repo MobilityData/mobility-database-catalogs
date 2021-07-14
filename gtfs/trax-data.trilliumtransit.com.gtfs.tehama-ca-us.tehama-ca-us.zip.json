@@ -1,1 +1,6 @@
-{"source_name": "TRAX's GTFS Schedule source", "stable_url": "http://data.trilliumtransit.com/gtfs/tehama-ca-us/tehama-ca-us.zip", "backup_stable_url": "https://transitfeeds.com/p/tehama-rural-area-express/494/latest/download", "datatype": "GTFS"}
+{
+    "source_name": "TRAX's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/tehama-ca-us/tehama-ca-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/tehama-rural-area-express/494/latest/download",
+    "datatype": "GTFS"
+}

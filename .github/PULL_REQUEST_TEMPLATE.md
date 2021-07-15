@@ -6,7 +6,6 @@ This PR contains changes to
 
 - Please insert the name of the source file you created or modified here.
 
-
 Please make sure these boxes are checked before submitting your pull request - thanks!
 
 - [ ] Make sure the source file you have created or modified is following the right template in the `templates` folder

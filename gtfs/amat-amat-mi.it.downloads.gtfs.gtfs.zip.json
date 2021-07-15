@@ -1,0 +1,6 @@
+{
+    "source_name": "AMAT's GTFS Schedule source",
+    "stable_url": "https://www.amat-mi.it/downloads/gtfs/gtfs.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/agenzia-mobilita-ambiente-territorio/341/latest/download",
+    "datatype": "GTFS"
+}

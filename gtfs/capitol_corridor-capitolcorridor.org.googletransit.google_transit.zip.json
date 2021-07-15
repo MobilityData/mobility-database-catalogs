@@ -1,0 +1,6 @@
+{
+    "source_name": "Capitol Corridor's GTFS Schedule source",
+    "stable_url": "http://www.capitolcorridor.org/googletransit/google_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/capitol-corridor/825/latest/download",
+    "datatype": "GTFS"
+}

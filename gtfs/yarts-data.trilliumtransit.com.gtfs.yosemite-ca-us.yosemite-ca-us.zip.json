@@ -1,0 +1,6 @@
+{
+    "source_name": "YARTS's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/yosemite-ca-us/yosemite-ca-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/yosemite-area-regional-transportation-system/155/latest/download",
+    "datatype": "GTFS"
+}

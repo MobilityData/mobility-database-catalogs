@@ -1,0 +1,6 @@
+{
+    "source_name": "MCAT's GTFS Schedule source",
+    "stable_url": "https://realtimemcat.availtec.com/InfoPoint/resources/gtfs/gtfs.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/manatee-county-area-transit-manatee-county/396/latest/download",
+    "datatype": "GTFS"
+}

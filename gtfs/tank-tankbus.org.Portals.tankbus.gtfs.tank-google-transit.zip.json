@@ -1,0 +1,6 @@
+{
+    "source_name": "TANK's GTFS Schedule source",
+    "stable_url": "https://www.tankbus.org/Portals/tankbus/gtfs/tank-google-transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/transit-authority-of-northern-kentucky/302/latest/download",
+    "datatype": "GTFS"
+}

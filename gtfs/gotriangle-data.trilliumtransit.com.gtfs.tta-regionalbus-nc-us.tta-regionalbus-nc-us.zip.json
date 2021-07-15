@@ -1,0 +1,6 @@
+{
+    "source_name": "GoTriangle's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/tta-regionalbus-nc-us/tta-regionalbus-nc-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/triangle-transit/385/latest/download",
+    "datatype": "GTFS"
+}

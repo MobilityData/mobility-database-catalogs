@@ -1,0 +1,6 @@
+{
+    "source_name": "Ketchikan Gateway Borough's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/ketchikan-ak-us/ketchikan-ak-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/ketchikan-gateway-borough/775/latest/download",
+    "datatype": "GTFS"
+}

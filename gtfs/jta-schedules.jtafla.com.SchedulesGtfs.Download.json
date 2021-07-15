@@ -1,0 +1,6 @@
+{
+    "source_name": "JTA's GTFS Schedule source",
+    "stable_url": "https://schedules.jtafla.com/SchedulesGtfs/Download",
+    "backup_stable_url": "https://transitfeeds.com/p/jacksonville-transportation-authority/331/latest/download",
+    "datatype": "GTFS"
+}

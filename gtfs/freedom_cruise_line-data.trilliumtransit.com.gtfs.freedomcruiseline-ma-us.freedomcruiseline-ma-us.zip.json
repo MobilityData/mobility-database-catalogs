@@ -1,0 +1,6 @@
+{
+    "source_name": "Freedom Cruise Line's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/freedomcruiseline-ma-us/freedomcruiseline-ma-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/massdot/646/latest/download",
+    "datatype": "GTFS"
+}

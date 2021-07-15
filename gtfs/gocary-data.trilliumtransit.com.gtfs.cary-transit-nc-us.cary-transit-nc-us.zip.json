@@ -1,0 +1,6 @@
+{
+    "source_name": "GoCary's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/cary-transit-nc-us/cary-transit-nc-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/cary-transit/366/latest/download",
+    "datatype": "GTFS"
+}

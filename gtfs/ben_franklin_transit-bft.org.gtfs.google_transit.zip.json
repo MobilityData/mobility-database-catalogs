@@ -1,0 +1,6 @@
+{
+    "source_name": "Ben Franklin Transit's GTFS Schedule source",
+    "stable_url": "https://www.bft.org/gtfs/google_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/ben-franklin-transit/915/latest/download",
+    "datatype": "GTFS"
+}

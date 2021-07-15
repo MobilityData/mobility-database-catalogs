@@ -1,0 +1,5 @@
+{
+    "source_name": "Nantou's GTFS Schedule source",
+    "stable_url": "http://tcbnb.maxwin.com.tw/bnb/api/gtfs/nt/latest",
+    "datatype": "GTFS"
+}

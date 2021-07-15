@@ -1,0 +1,6 @@
+{
+    "source_name": "DASH Bus's GTFS Schedule source",
+    "stable_url": "http://www.dashbus.com/google_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/alexandria-transit-company/423/latest/download",
+    "datatype": "GTFS"
+}

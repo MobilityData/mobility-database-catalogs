@@ -1,0 +1,6 @@
+{
+    "source_name": "Bay State Cruise Company's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/baystatecruisecompany-ma-us/baystatecruisecompany-ma-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/massdot/643/latest/download",
+    "datatype": "GTFS"
+}

@@ -1,0 +1,6 @@
+{
+    "source_name": "El Dorado Transit's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/eldoradotransit-ca-us/eldoradotransit-ca-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/el-dorado-transit/680/latest/download",
+    "datatype": "GTFS"
+}

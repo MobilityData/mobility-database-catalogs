@@ -1,0 +1,6 @@
+{
+    "source_name": "Big Blue Bus's GTFS Schedule source",
+    "stable_url": "http://gtfs.bigbluebus.com/current.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/city-of-santa-monica/260/latest/download",
+    "datatype": "GTFS"
+}

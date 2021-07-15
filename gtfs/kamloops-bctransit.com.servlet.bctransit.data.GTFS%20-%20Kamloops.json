@@ -1,0 +1,6 @@
+{
+    "source_name": "Kamloops's GTFS Schedule source",
+    "stable_url": "http://bctransit.com/servlet/bctransit/data/GTFS%20-%20Kamloops",
+    "backup_stable_url": "https://transitfeeds.com/p/bc-transit/689/latest/download",
+    "datatype": "GTFS"
+}

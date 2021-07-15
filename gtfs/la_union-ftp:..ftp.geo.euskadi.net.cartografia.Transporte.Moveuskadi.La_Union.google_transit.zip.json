@@ -1,0 +1,6 @@
+{
+    "source_name": "La Union's GTFS Schedule source",
+    "stable_url": "ftp://ftp.geo.euskadi.net/cartografia/Transporte/Moveuskadi/La_Union/google_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/la-union/659/latest/download",
+    "datatype": "GTFS"
+}

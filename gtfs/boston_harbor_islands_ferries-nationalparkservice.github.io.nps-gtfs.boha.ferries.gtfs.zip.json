@@ -1,0 +1,6 @@
+{
+    "source_name": "Boston Harbor Islands Ferries's GTFS Schedule source",
+    "stable_url": "https://nationalparkservice.github.io/nps-gtfs/boha/ferries/gtfs.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/national-park-service/617/latest/download",
+    "datatype": "GTFS"
+}

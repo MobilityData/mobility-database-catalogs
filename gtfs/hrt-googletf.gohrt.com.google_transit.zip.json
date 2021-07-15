@@ -1,0 +1,6 @@
+{
+    "source_name": "HRT's GTFS Schedule source",
+    "stable_url": "http://googletf.gohrt.com/google_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/hampton-roads-transit/358/latest/download",
+    "datatype": "GTFS"
+}

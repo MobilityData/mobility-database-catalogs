@@ -1,0 +1,6 @@
+{
+    "source_name": "SBB CFF FFS's GTFS Schedule source",
+    "stable_url": "https://opentransportdata.swiss/de/dataset/timetable-2021-gtfs2020/permalink",
+    "backup_stable_url": "https://transitfeeds.com/p/sbb-cff-ffs/793/latest/download",
+    "datatype": "GTFS"
+}

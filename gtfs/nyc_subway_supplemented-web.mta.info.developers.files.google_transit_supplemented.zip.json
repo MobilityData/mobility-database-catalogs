@@ -1,0 +1,6 @@
+{
+    "source_name": "NYC Subway Supplemented's GTFS Schedule source",
+    "stable_url": "http://web.mta.info/developers/files/google_transit_supplemented.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/mta/886/latest/download",
+    "datatype": "GTFS"
+}

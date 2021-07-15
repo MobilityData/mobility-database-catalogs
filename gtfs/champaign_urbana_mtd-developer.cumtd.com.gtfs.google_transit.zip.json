@@ -1,0 +1,6 @@
+{
+    "source_name": "Champaign-Urbana MTD's GTFS Schedule source",
+    "stable_url": "https://developer.cumtd.com/gtfs/google_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/champaign-urbana-mass-transit-district/162/latest/download",
+    "datatype": "GTFS"
+}

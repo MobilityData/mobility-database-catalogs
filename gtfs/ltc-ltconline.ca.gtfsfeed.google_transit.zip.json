@@ -1,0 +1,6 @@
+{
+    "source_name": "LTC's GTFS Schedule source",
+    "stable_url": "http://www.ltconline.ca/gtfsfeed/google_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/london-transit-commission/831/latest/download",
+    "datatype": "GTFS"
+}

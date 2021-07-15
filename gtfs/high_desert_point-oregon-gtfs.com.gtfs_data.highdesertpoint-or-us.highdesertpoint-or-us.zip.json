@@ -1,0 +1,6 @@
+{
+    "source_name": "High Desert Point's GTFS Schedule source",
+    "stable_url": "http://oregon-gtfs.com/gtfs_data/highdesertpoint-or-us/highdesertpoint-or-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/tac-transportation/466/latest/download",
+    "datatype": "GTFS"
+}

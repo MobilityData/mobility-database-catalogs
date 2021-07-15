@@ -1,0 +1,6 @@
+{
+    "source_name": "Bilbobus's GTFS Schedule source",
+    "stable_url": "ftp://ftp.geo.euskadi.net/cartografia/Transporte/Moveuskadi/Bilbobus/google_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/bilbobus/654/latest/download",
+    "datatype": "GTFS"
+}

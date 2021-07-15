@@ -1,0 +1,6 @@
+{
+    "source_name": "Tri-Rail's GTFS Schedule source",
+    "stable_url": "http://www.tri-rail.com/GTDF/Current/google_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/south-florida-regional-transportation-authority/699/latest/download",
+    "datatype": "GTFS"
+}

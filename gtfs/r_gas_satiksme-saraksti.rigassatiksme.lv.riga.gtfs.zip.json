@@ -1,0 +1,6 @@
+{
+    "source_name": "R\u012bgas Satiksme's GTFS Schedule source",
+    "stable_url": "http://saraksti.rigassatiksme.lv/riga/gtfs.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/rigas-satiksme/333/latest/download",
+    "datatype": "GTFS"
+}

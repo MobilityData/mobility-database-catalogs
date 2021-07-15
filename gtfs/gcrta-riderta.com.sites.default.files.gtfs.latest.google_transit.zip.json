@@ -1,0 +1,6 @@
+{
+    "source_name": "GCRTA's GTFS Schedule source",
+    "stable_url": "http://www.riderta.com/sites/default/files/gtfs/latest/google_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/greater-cleveland-regional-transit-authority/214/latest/download",
+    "datatype": "GTFS"
+}

@@ -1,0 +1,6 @@
+{
+    "source_name": "RGRTA's GTFS Schedule source",
+    "stable_url": "http://scheduledata.rgrta.com/google_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/rochester-genesee-regional-transportation-authority/231/latest/download",
+    "datatype": "GTFS"
+}

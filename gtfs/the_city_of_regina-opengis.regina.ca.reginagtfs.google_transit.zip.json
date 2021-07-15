@@ -1,0 +1,6 @@
+{
+    "source_name": "The City of Regina's GTFS Schedule source",
+    "stable_url": "https://opengis.regina.ca/reginagtfs/google_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/the-city-of-regina/830/latest/download",
+    "datatype": "GTFS"
+}

@@ -1,0 +1,6 @@
+{
+    "source_name": "Port Authority's GTFS Schedule source",
+    "stable_url": "https://www.portauthority.org/developerresources/",
+    "backup_stable_url": "https://transitfeeds.com/p/port-authority-of-allegheny-county/274/latest/download",
+    "datatype": "GTFS"
+}

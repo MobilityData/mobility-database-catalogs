@@ -1,0 +1,6 @@
+{
+    "source_name": "South Shore Line's GTFS Schedule source",
+    "stable_url": "http://www.mysouthshoreline.com/google/google_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/south-shore-line/863/latest/download",
+    "datatype": "GTFS"
+}

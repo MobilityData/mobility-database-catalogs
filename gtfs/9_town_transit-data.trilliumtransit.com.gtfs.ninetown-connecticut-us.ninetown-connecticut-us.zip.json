@@ -1,0 +1,6 @@
+{
+    "source_name": "9 Town Transit's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/ninetown-connecticut-us/ninetown-connecticut-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/9-town-transit/752/latest/download",
+    "datatype": "GTFS"
+}

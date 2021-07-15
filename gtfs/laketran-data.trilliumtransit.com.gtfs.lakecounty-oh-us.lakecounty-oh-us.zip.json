@@ -1,0 +1,6 @@
+{
+    "source_name": "Laketran's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/lakecounty-oh-us/lakecounty-oh-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/laketran/718/latest/download",
+    "datatype": "GTFS"
+}

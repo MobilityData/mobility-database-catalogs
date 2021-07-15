@@ -1,0 +1,6 @@
+{
+    "source_name": "Elevated Transit's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/elevatedtransit-ut-us/elevatedtransit-ut-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/elevated-transit/609/latest/download",
+    "datatype": "GTFS"
+}

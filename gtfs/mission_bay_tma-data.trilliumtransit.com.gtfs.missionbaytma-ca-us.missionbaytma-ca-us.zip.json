@@ -1,0 +1,6 @@
+{
+    "source_name": "Mission Bay TMA's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/missionbaytma-ca-us/missionbaytma-ca-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/mission-bay-tma/952/latest/download",
+    "datatype": "GTFS"
+}

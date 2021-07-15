@@ -1,0 +1,6 @@
+{
+    "source_name": "Autolinee Varesine's GTFS Schedule source",
+    "stable_url": "http://www.ctpi.it/Google_Transit/google_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/autolinee-varesine/661/latest/download",
+    "datatype": "GTFS"
+}

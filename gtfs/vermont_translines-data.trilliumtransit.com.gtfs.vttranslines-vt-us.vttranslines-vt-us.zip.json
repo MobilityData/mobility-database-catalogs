@@ -1,0 +1,6 @@
+{
+    "source_name": "Vermont Translines's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/vttranslines-vt-us/vttranslines-vt-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/vermont-translines/566/latest/download",
+    "datatype": "GTFS"
+}

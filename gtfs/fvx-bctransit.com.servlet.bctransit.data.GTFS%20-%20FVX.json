@@ -1,0 +1,6 @@
+{
+    "source_name": "FVX's GTFS Schedule source",
+    "stable_url": "http://bctransit.com/servlet/bctransit/data/GTFS%20-%20FVX",
+    "backup_stable_url": "https://transitfeeds.com/p/bc-transit/697/latest/download",
+    "datatype": "GTFS"
+}

@@ -1,0 +1,6 @@
+{
+    "source_name": "Codiac Transpo's GTFS Schedule source",
+    "stable_url": "https://www7.moncton.ca/opendata/google_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/codiac-transpo/829/latest/download",
+    "datatype": "GTFS"
+}

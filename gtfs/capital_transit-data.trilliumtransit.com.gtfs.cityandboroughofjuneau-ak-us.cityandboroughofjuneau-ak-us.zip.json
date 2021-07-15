@@ -1,0 +1,6 @@
+{
+    "source_name": "Capital Transit's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/cityandboroughofjuneau-ak-us/cityandboroughofjuneau-ak-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/capital-transit/698/latest/download",
+    "datatype": "GTFS"
+}

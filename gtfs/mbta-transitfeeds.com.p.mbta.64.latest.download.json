@@ -1,0 +1,5 @@
+{
+    "source_name": "MBTA's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/mbta/64/latest/download",
+    "datatype": "GTFS"
+}

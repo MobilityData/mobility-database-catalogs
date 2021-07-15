@@ -1,0 +1,6 @@
+{
+    "source_name": "ATAF's GTFS Schedule source",
+    "stable_url": "http://dati.toscana.it/dataset/8bb8f8fe-fe7d-41d0-90dc-49f2456180d1/resource/a53a10ae-4d08-4f41-a9d0-0b99826ff00c/download/ataflinea.gtfs",
+    "backup_stable_url": "https://transitfeeds.com/p/azienda-trasporti-dellarea-fiorentina/739/latest/download",
+    "datatype": "GTFS"
+}

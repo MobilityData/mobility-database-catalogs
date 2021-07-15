@@ -1,0 +1,6 @@
+{
+    "source_name": "Mobilit\u00e0's GTFS Schedule source",
+    "stable_url": "http://dati.muovi.roma.it/gtfs/rome_static_gtfs.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/roma-servizi-per-la-mobilita/542/latest/download",
+    "datatype": "GTFS"
+}

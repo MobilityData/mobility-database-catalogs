@@ -1,0 +1,6 @@
+{
+    "source_name": "Red Apple Transit's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/redappletransit-nm-us/redappletransit-nm-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/red-apple-transit/766/latest/download",
+    "datatype": "GTFS"
+}

@@ -1,0 +1,6 @@
+{
+    "source_name": "Artxanda Funicular's GTFS Schedule source",
+    "stable_url": "ftp://ftp.geo.euskadi.net/cartografia/Transporte/Moveuskadi/FunicularArtxanda/google_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/artxanda-funicular/657/latest/download",
+    "datatype": "GTFS"
+}

@@ -1,0 +1,6 @@
+{
+    "source_name": "BJCTA MAX's GTFS Schedule source",
+    "stable_url": "https://maxtransit.org/rider-tools/gtfs-information/",
+    "backup_stable_url": "https://transitfeeds.com/p/birmingham-jefferson-county-transit-authority/683/latest/download",
+    "datatype": "GTFS"
+}

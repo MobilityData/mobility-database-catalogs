@@ -1,0 +1,6 @@
+{
+    "source_name": "Asheville Transit Service's GTFS Schedule source",
+    "stable_url": "http://www.trilliumtransit.com/transit_feeds/asheville-nc-us/asheville-nc-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/asheville-transit-service/152/latest/download",
+    "datatype": "GTFS"
+}

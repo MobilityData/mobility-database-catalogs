@@ -1,0 +1,6 @@
+{
+    "source_name": "Wheels's GTFS Schedule source",
+    "stable_url": "http://www.wheelsbus.com/wp-content/uploads/2017/08/google_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/livermore-amador-valley-transit-authority/701/latest/download",
+    "datatype": "GTFS"
+}

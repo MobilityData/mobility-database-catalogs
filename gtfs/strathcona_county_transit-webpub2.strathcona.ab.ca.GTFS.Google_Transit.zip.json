@@ -1,0 +1,6 @@
+{
+    "source_name": "Strathcona County Transit's GTFS Schedule source",
+    "stable_url": "http://webpub2.strathcona.ab.ca/GTFS/Google_Transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/strathcona-county-transit/364/latest/download",
+    "datatype": "GTFS"
+}

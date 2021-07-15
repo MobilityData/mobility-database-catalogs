@@ -1,0 +1,6 @@
+{
+    "source_name": "St Albert Transit's GTFS Schedule source",
+    "stable_url": "https://stalbert.ca/site/assets/files/3840/google_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/st-albert-transit/498/latest/download",
+    "datatype": "GTFS"
+}

@@ -1,0 +1,6 @@
+{
+    "source_name": "KCATA's GTFS Schedule source",
+    "stable_url": "http://www.kc-metro.com/gtf/google_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/kansas-city-area-transportation-authority/382/latest/download",
+    "datatype": "GTFS"
+}

@@ -1,0 +1,6 @@
+{
+    "source_name": "Madera County Transit's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/maderactc-ca-us/maderactc-ca-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/madera-county-transit/415/latest/download",
+    "datatype": "GTFS"
+}

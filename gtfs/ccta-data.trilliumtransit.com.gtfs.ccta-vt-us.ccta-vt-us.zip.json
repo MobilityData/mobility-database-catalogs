@@ -1,0 +1,6 @@
+{
+    "source_name": "CCTA's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/ccta-vt-us/ccta-vt-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/chittenden-county-transportation-authority/558/latest/download",
+    "datatype": "GTFS"
+}

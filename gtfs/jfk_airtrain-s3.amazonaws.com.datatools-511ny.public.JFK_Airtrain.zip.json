@@ -1,0 +1,6 @@
+{
+    "source_name": "JFK Airtrain's GTFS Schedule source",
+    "stable_url": "https://s3.amazonaws.com/datatools-511ny/public/JFK_Airtrain.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/jfk-airtrain/433/latest/download",
+    "datatype": "GTFS"
+}

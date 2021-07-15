@@ -1,0 +1,6 @@
+{
+    "source_name": "Renfe Cercanias/Rodalies's GTFS Schedule source",
+    "stable_url": "http://data.renfe.com/dataset/77525d66-f095-46d0-80c0-37f735d4342f/resource/6f1523c6-a9e3-48e3-9ace-bb107a762be6/download/fomento_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/renfe/1016/latest/download",
+    "datatype": "GTFS"
+}

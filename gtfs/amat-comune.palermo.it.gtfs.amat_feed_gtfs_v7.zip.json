@@ -1,0 +1,6 @@
+{
+    "source_name": "AMAT's GTFS Schedule source",
+    "stable_url": "http://www.comune.palermo.it/gtfs/amat_feed_gtfs_v7.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/amat-palermo-spa/540/latest/download",
+    "datatype": "GTFS"
+}

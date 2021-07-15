@@ -1,0 +1,6 @@
+{
+    "source_name": "Wave Transit's GTFS Schedule source",
+    "stable_url": "https://www.wavetransit.com/gtransit/google_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/wave-transit/633/latest/download",
+    "datatype": "GTFS"
+}

@@ -1,0 +1,6 @@
+{
+    "source_name": "The Victoria Clipper's GTFS Schedule source",
+    "stable_url": "https://github.com/zacs/victoriaclipper-gtfs/raw/master/build/clipper.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/the-victoria-clipper/800/latest/download",
+    "datatype": "GTFS"
+}

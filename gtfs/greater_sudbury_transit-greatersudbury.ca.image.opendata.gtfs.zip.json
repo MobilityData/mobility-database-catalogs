@@ -1,0 +1,6 @@
+{
+    "source_name": "Greater Sudbury Transit's GTFS Schedule source",
+    "stable_url": "http://www.greatersudbury.ca/image/opendata/gtfs.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/greater-sudbury-transit/712/latest/download",
+    "datatype": "GTFS"
+}

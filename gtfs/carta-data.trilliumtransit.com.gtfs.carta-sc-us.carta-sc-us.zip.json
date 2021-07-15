@@ -1,0 +1,6 @@
+{
+    "source_name": "CARTA's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/carta-sc-us/carta-sc-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/charleston-area-regional-transportation-authority/537/latest/download",
+    "datatype": "GTFS"
+}

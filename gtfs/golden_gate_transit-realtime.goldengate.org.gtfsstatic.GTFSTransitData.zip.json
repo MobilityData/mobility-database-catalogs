@@ -1,0 +1,6 @@
+{
+    "source_name": "Golden Gate Transit's GTFS Schedule source",
+    "stable_url": "https://realtime.goldengate.org/gtfsstatic/GTFSTransitData.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/golden-gate-bridge-highway-transportation-district/349/latest/download",
+    "datatype": "GTFS"
+}

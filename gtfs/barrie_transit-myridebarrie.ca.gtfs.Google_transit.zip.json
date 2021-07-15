@@ -1,0 +1,6 @@
+{
+    "source_name": "Barrie Transit's GTFS Schedule source",
+    "stable_url": "http://www.myridebarrie.ca/gtfs/Google_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/barrie-transit/522/latest/download",
+    "datatype": "GTFS"
+}

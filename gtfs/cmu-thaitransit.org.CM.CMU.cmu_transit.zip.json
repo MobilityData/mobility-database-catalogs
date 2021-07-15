@@ -1,0 +1,6 @@
+{
+    "source_name": "CMU's GTFS Schedule source",
+    "stable_url": "http://www.thaitransit.org/CM/CMU/cmu_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/chiang-mai-university/788/latest/download",
+    "datatype": "GTFS"
+}

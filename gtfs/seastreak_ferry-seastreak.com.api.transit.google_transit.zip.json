@@ -1,0 +1,6 @@
+{
+    "source_name": "Seastreak Ferry's GTFS Schedule source",
+    "stable_url": "http://seastreak.com/api/transit/google_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/massdot/649/latest/download",
+    "datatype": "GTFS"
+}

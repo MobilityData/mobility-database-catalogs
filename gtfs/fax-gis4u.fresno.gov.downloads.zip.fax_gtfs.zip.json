@@ -1,0 +1,6 @@
+{
+    "source_name": "FAX's GTFS Schedule source",
+    "stable_url": "https://gis4u.fresno.gov/downloads/zip/fax_gtfs.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/fresno-area-express/315/latest/download",
+    "datatype": "GTFS"
+}

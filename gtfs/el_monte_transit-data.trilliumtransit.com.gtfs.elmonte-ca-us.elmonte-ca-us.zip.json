@@ -1,0 +1,6 @@
+{
+    "source_name": "El Monte Transit's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/elmonte-ca-us/elmonte-ca-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/el-monte-transit/903/latest/download",
+    "datatype": "GTFS"
+}

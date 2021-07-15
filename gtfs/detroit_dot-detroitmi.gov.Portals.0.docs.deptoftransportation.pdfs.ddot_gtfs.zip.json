@@ -1,0 +1,6 @@
+{
+    "source_name": "Detroit DOT's GTFS Schedule source",
+    "stable_url": "https://www.detroitmi.gov/Portals/0/docs/deptoftransportation/pdfs/ddot_gtfs.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/detroit-department-of-transportation/299/latest/download",
+    "datatype": "GTFS"
+}

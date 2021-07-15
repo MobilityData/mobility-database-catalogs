@@ -1,0 +1,5 @@
+{
+    "source_name": "Embark's GTFS Schedule source",
+    "stable_url": "https://transitfeeds.com/p/embark/520/latest/download",
+    "datatype": "GTFS"
+}

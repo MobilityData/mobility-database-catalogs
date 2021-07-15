@@ -1,0 +1,6 @@
+{
+    "source_name": "MetroTas Burnie's GTFS Schedule source",
+    "stable_url": "http://www.metrotas.com.au/wp-content/uploads/transit/Burnie/google_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/metrotas/313/latest/download",
+    "datatype": "GTFS"
+}

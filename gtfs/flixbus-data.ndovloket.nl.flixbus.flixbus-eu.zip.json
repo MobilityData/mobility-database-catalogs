@@ -1,0 +1,6 @@
+{
+    "source_name": "FlixBus's GTFS Schedule source",
+    "stable_url": "http://data.ndovloket.nl/flixbus/flixbus-eu.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/flixbus/795/latest/download",
+    "datatype": "GTFS"
+}

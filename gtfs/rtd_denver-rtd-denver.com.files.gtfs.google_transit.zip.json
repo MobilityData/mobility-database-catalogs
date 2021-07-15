@@ -1,0 +1,6 @@
+{
+    "source_name": "RTD Denver's GTFS Schedule source",
+    "stable_url": "https://rtd-denver.com/files/gtfs/google_transit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/rtd-denver/188/latest/download",
+    "datatype": "GTFS"
+}

@@ -1,0 +1,5 @@
+{
+    "source_name": "Bean Shuttle's GTFS Schedule source",
+    "stable_url": "http://gtfs.beanshuttle.com/google_transit.zip",
+    "datatype": "GTFS"
+}

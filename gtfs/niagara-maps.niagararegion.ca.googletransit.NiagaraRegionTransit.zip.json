@@ -1,0 +1,6 @@
+{
+    "source_name": "Niagara's GTFS Schedule source",
+    "stable_url": "https://maps.niagararegion.ca/googletransit/NiagaraRegionTransit.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/regional-municipality-of-niagara/741/latest/download",
+    "datatype": "GTFS"
+}

@@ -1,0 +1,6 @@
+{
+    "source_name": "Pace Bus's GTFS Schedule source",
+    "stable_url": "http://www.pacebus.com/gtfs/gtfs.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/pace/171/latest/download",
+    "datatype": "GTFS"
+}

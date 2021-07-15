@@ -1,0 +1,6 @@
+{
+    "source_name": "Gwinnett County Transit's GTFS Schedule source",
+    "stable_url": "http://data.trilliumtransit.com/gtfs/gwinnettcountytransit-ga-us/gwinnettcountytransit-ga-us.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/gwinnett-county-transit/862/latest/download",
+    "datatype": "GTFS"
+}

@@ -1,0 +1,6 @@
+{
+    "source_name": "Metro Transit's GTFS Schedule source",
+    "stable_url": "http://transitdata.cityofmadison.com/GTFS/mmt_gtfs.zip",
+    "backup_stable_url": "https://transitfeeds.com/p/metro-transit-madison/181/latest/download",
+    "datatype": "GTFS"
+}

@@ -5,7 +5,6 @@ name: Python CI
 
 on:
   pull_request:
-    branches: [ main ]
     types: [ labeled ]
 
 jobs:

@@ -1,7 +1,7 @@
 ---
 name: New GTFS source
 about: Pull request to add a new GTFS source to the catalogs.
-title: "feat: add new GTFS source \[SOURCE_NAME\]"
+title: "feat: add new GTFS source `SOURCE_NAME`"
 labels: 'new-gtfs-source'
 assignees: ''
 reviewers: 'maximearmstrong'

@@ -5,7 +5,7 @@ name: Python CI
 
 on:
   pull_request:
-    branch: [ new-gtfs-sources ]
+    branches: [ new-gtfs-sources ]
 
 jobs:
   build:

@@ -4,6 +4,8 @@
 name: Python CI
 
 on:
+  push:
+    branches: [ new-gtfs-sources ]
   pull_request:
     branches: [ new-gtfs-sources ]
 

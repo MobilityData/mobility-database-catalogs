@@ -4,11 +4,7 @@
 name: Python CI
 
 on:
-  push:
-    branches: [ master ]
-    types: [ labeled ]
   pull_request:
-    branches: [ master ]
     types: [ labeled ]
 
 

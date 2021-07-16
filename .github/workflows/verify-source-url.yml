@@ -4,6 +4,8 @@
 name: Python CI
 
 on:
+  push:
+    types: [ labeled ]
   pull_request:
     types: [ labeled ]
 
@@ -30,6 +32,7 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Set up Get All Changed Files action
         uses: jitterbit/get-changed-files@v1
+        continue-on-error: true
       - name: Verify source url
         run: |
           # stop the build if the source url submitted already exists on the database

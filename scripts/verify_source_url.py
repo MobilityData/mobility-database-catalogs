@@ -60,9 +60,7 @@ if __name__ == '__main__':
     try:
         source_entity = wbi_core.ItemEngine(
             data=core_props_data,
-            core_props={
-                os.environ[STABLE_URL_PROPERTY],
-            },
+            core_props={STABLE_URL_PROPERTY},
             core_prop_match_thresh=core_props_threshold,
         )
     except ManualInterventionReqException as mi:

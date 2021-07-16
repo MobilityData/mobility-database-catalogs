@@ -6,10 +6,11 @@ name: Python CI
 on:
   pull_request:
     branches: [ main ]
+    types: [ labeled ]
 
 jobs:
   build:
-    if: contains(github.event.pull_request.labels.*.name, 'new-gtfs-source')
+    if: ${{ github.event.label.name == 'new-gtfs-source' }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -28,11 +29,8 @@ jobs:
           sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
           sudo apt-get update
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-      - name: Set up Get All Changed Files action
-        id: files
-        uses: jitterbit/get-changed-files@v1
-        continue-on-error: true
       - name: Verify source url
+        uses: jitterbit/get-changed-files@v1
         run: |
           # stop the build if the source url submitted already exists on the database
           for changed_file in ${{ steps.files.outputs.added_modified }}; do

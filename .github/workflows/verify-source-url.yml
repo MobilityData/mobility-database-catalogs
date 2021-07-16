@@ -1,13 +1,13 @@
 # This workflow will install Python dependencies, run tests and lint with a variety of Python versions
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
-name: Python CI
+name: Verify source URL CI
 
 on:
   push:
-    branches: [ new-gtfs-sources ]
+    branches: [ new-source, modify-source ]
   pull_request:
-    branches: [ new-gtfs-sources ]
+    branches: [ new-source, modify-source ]
 
 jobs:
   build:
@@ -37,5 +37,7 @@ jobs:
         run: |
           # stop the build if the source url submitted already exists on the database
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
-            python ./scripts/verify_source_url.py -f "$changed_file"
+            if [ "$( dirname $( dirname "$changed_file" ) )" = "catalogs" ]; then
+              python ./scripts/verify_source_url.py -f "$changed_file"
+            fi
           done

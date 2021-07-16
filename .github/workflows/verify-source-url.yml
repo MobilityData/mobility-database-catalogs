@@ -31,7 +31,8 @@ jobs:
         id: files
         uses: jitterbit/get-changed-files@v1
         continue-on-error: true
-      - run: |
+      - name: Verify source url
+        run: |
           # stop the build if the source url submitted already exists on the database
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
             python ./scripts/verify_source_url.py -f "$changed_file"

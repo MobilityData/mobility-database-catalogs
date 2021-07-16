@@ -31,7 +31,8 @@ jobs:
           sudo apt-get update
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Set up Get All Changed Files action
-        uses: Ana06/get-changed-files@v1.2
+        uses: jitterbit/get-changed-files@v1
+        continue-on-error: true
       - name: Verify source url
         run: |
           # stop the build if the source url submitted already exists on the database

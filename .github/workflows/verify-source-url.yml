@@ -37,7 +37,7 @@ jobs:
         run: |
           # stop the build if the source url submitted already exists on the database
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
-            if [ "$( dirname $( dirname "$changed_file" ) )" -eq "catalogs" ]; then
+            if [ "$( dirname $( dirname "$changed_file" ) )" = "catalogs" ]; then
               python ./scripts/verify_source_url.py -f "$changed_file"
             fi
           done

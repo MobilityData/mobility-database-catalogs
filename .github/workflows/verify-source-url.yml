@@ -5,12 +5,10 @@ name: Python CI
 
 on:
   pull_request:
-    branches: [ main ]
-    types: [ labeled ]
+    branch: [ new-gtfs-sources ]
 
 jobs:
   build:
-    if: ${{ github.event.label.name == 'new-gtfs-source' }}
     runs-on: ubuntu-latest
     strategy:
       matrix:

@@ -1,5 +1,5 @@
 {
     "source_name": "Test's GTFS Schedule source",
-    "stable_url": "http://test.com/dataset.zip",
+    "stable_url": "http://test.com/data.zip",
     "datatype": "GTFS"
 } 

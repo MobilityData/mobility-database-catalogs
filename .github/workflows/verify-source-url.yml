@@ -4,14 +4,12 @@
 name: Python CI
 
 on:
-  push:
-    types: [ labeled ]
   pull_request:
-    types: [ labeled ]
+    branches: [ main ]
 
 jobs:
   build:
-    if: ${{ github.event.label.name == 'new-gtfs-source' }}
+    if: contains(github.event.pull_request.labels.*.name, 'new-gtfs-source')
     runs-on: ubuntu-latest
     strategy:
       matrix:

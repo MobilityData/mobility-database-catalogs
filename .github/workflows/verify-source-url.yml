@@ -28,8 +28,9 @@ jobs:
           sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
           sudo apt-get update
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-      - name: Verify source url
+      - name: Set up Get All Changed Files action
         uses: jitterbit/get-changed-files@v1
+      - name: Verify source url
         run: |
           # stop the build if the source url submitted already exists on the database
           for changed_file in ${{ steps.files.outputs.added_modified }}; do

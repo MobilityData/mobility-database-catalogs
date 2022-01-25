@@ -1,6 +1,0 @@
-{
-    "source_name": "CHT's GTFS Schedule source",
-    "stable_url": "http://data.trilliumtransit.com/gtfs/chapel-hill-transit-nc-us/chapel-hill-transit-nc-us.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/chapel-hill-transit/367/latest/download",
-    "datatype": "GTFS"
-}

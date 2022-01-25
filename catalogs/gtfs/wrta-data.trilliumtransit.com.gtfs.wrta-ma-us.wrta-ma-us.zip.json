@@ -1,6 +1,0 @@
-{
-    "source_name": "WRTA's GTFS Schedule source",
-    "stable_url": "http://data.trilliumtransit.com/gtfs/wrta-ma-us/wrta-ma-us.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/massdot/108/latest/download",
-    "datatype": "GTFS"
-}

@@ -1,6 +1,0 @@
-{
-    "source_name": "Atlanta Streetcar's GTFS Schedule source",
-    "stable_url": "http://documents.atlantaregional.com/transitdata/gtfs_ASC.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/city-of-atlanta/424/latest/download",
-    "datatype": "GTFS"
-}

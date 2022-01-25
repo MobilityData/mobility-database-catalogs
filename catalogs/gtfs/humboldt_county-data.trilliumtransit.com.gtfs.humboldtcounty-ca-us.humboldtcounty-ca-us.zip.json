@@ -1,6 +1,0 @@
-{
-    "source_name": "Humboldt County's GTFS Schedule source",
-    "stable_url": "http://data.trilliumtransit.com/gtfs/humboldtcounty-ca-us/humboldtcounty-ca-us.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/arcata-mad-river-transit-system/148/latest/download",
-    "datatype": "GTFS"
-}

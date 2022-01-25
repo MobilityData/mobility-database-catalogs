@@ -1,6 +1,0 @@
-{
-    "source_name": "Klamath Shuttle's GTFS Schedule source",
-    "stable_url": "http://oregon-gtfs.com/gtfs_data/klamathshuttle-or-us/klamathshuttle-or-us.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/klamath-shuttle/606/latest/download",
-    "datatype": "GTFS"
-}

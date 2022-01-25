@@ -1,6 +1,0 @@
-{
-    "source_name": "Metz's GTFS Schedule source",
-    "stable_url": "https://si.metzmetropole.fr/fiches/opendata/gtfs_current.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/metz-metropole/850/latest/download",
-    "datatype": "GTFS"
-}

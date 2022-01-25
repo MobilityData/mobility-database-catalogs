@@ -1,6 +1,0 @@
-{
-    "source_name": "Maanteeamet's GTFS Schedule source",
-    "stable_url": "http://www.peatus.ee/gtfs/gtfs.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/maanteeamet/510/latest/download",
-    "datatype": "GTFS"
-}

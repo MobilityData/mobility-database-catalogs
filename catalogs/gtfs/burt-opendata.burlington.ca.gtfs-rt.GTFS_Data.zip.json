@@ -1,6 +1,0 @@
-{
-    "source_name": "BURT's GTFS Schedule source",
-    "stable_url": "http://opendata.burlington.ca/gtfs-rt/GTFS_Data.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/burlington-transit/294/latest/download",
-    "datatype": "GTFS"
-}

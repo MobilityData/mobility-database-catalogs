@@ -1,6 +1,0 @@
-{
-    "source_name": "Joensuu's GTFS Schedule source",
-    "stable_url": "http://dev.hsl.fi/gtfs.waltti/joensuu.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/city-of-joensuu/732/latest/download",
-    "datatype": "GTFS"
-}

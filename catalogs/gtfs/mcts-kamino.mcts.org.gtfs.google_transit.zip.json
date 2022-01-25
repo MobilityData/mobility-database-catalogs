@@ -1,6 +1,0 @@
-{
-    "source_name": "MCTS's GTFS Schedule source",
-    "stable_url": "http://kamino.mcts.org/gtfs/google_transit.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/milwaukee-county-transit-system/182/latest/download",
-    "datatype": "GTFS"
-}

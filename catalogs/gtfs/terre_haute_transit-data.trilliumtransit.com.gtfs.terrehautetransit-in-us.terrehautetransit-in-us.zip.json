@@ -1,6 +1,0 @@
-{
-    "source_name": "Terre Haute Transit's GTFS Schedule source",
-    "stable_url": "http://data.trilliumtransit.com/gtfs/terrehautetransit-in-us/terrehautetransit-in-us.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/terre-haute-transit/672/latest/download",
-    "datatype": "GTFS"
-}

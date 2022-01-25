@@ -1,6 +1,0 @@
-{
-    "source_name": "STS's GTFS Schedule source",
-    "stable_url": "http://data.trilliumtransit.com/gtfs/stagecoach-vt-us/stagecoach-vt-us.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/stagecoach-transportation-services/564/latest/download",
-    "datatype": "GTFS"
-}

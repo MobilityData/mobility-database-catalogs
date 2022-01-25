@@ -1,6 +1,0 @@
-{
-    "source_name": "SCAT's GTFS Schedule source",
-    "stable_url": "ftp://ftp.scgov.net/pub/scat/SCATGTFS.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/sarasota-county-area-transit/376/latest/download",
-    "datatype": "GTFS"
-}

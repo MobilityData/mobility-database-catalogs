@@ -1,6 +1,0 @@
-{
-    "source_name": "Trambaix's GTFS Schedule source",
-    "stable_url": "https://opendata.tram.cat/GTFS/zip/TBX.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/tram-trambaix/996/latest/download",
-    "datatype": "GTFS"
-}

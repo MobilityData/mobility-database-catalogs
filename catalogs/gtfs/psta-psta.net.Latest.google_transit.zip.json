@@ -1,6 +1,0 @@
-{
-    "source_name": "PSTA's GTFS Schedule source",
-    "stable_url": "http://www.psta.net/Latest/google_transit.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/psta/225/latest/download",
-    "datatype": "GTFS"
-}

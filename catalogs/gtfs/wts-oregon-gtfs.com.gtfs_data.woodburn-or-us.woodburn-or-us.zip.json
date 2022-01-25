@@ -1,6 +1,0 @@
-{
-    "source_name": "WTS's GTFS Schedule source",
-    "stable_url": "http://oregon-gtfs.com/gtfs_data/woodburn-or-us/woodburn-or-us.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/woodburn-transit-service/489/latest/download",
-    "datatype": "GTFS"
-}

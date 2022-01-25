@@ -1,6 +1,0 @@
-{
-    "source_name": "GoRaleigh's GTFS Schedule source",
-    "stable_url": "http://data.trilliumtransit.com/gtfs/capital-area-transit-nc-us/capital-area-transit-nc-us.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/go-raleigh/365/latest/download",
-    "datatype": "GTFS"
-}

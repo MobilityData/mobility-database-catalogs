@@ -1,6 +1,0 @@
-{
-    "source_name": "Yunlin's GTFS Schedule source",
-    "stable_url": "http://tcbnb.maxwin.com.tw/bnb/api/gtfs/yl/latest",
-    "backup_stable_url": "https://transitfeeds.com/p/taiwan/957/latest/download",
-    "datatype": "GTFS"
-}

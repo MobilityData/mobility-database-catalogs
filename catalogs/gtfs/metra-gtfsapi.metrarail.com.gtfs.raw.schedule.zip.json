@@ -1,6 +1,0 @@
-{
-    "source_name": "Metra's GTFS Schedule source",
-    "stable_url": "https://gtfsapi.metrarail.com/gtfs/raw/schedule.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/metra/169/latest/download",
-    "datatype": "GTFS"
-}

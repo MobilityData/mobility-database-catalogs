@@ -1,6 +1,0 @@
-{
-    "source_name": "RATP's GTFS Schedule source",
-    "stable_url": "http://dataratp.download.opendatasoft.com/RATP_GTFS_FULL.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/regie-autonome-des-transports-parisiens/413/latest/download",
-    "datatype": "GTFS"
-}

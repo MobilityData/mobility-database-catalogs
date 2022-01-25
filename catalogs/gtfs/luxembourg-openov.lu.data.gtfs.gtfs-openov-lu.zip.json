@@ -1,6 +1,0 @@
-{
-    "source_name": "Luxembourg's GTFS Schedule source",
-    "stable_url": "http://openov.lu/data/gtfs/gtfs-openov-lu.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/openov/621/latest/download",
-    "datatype": "GTFS"
-}

@@ -1,6 +1,0 @@
-{
-    "source_name": "BC Ferries's GTFS Schedule source",
-    "stable_url": "http://data.trilliumtransit.com/gtfs/bcferries-bc-ca/bcferries-bc-ca.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/bc-ferries/916/latest/download",
-    "datatype": "GTFS"
-}

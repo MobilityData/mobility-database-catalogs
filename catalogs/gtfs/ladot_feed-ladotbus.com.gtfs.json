@@ -1,6 +1,0 @@
-{
-    "source_name": "LADOT  Feed's GTFS Schedule source",
-    "stable_url": "https://ladotbus.com/gtfs",
-    "backup_stable_url": "https://transitfeeds.com/p/ladot-transit-services/303/latest/download",
-    "datatype": "GTFS"
-}

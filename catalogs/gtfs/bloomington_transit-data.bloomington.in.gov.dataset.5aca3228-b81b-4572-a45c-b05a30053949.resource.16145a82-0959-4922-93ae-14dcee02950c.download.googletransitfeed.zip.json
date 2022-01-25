@@ -1,6 +1,0 @@
-{
-    "source_name": "Bloomington Transit's GTFS Schedule source",
-    "stable_url": "https://data.bloomington.in.gov/dataset/5aca3228-b81b-4572-a45c-b05a30053949/resource/16145a82-0959-4922-93ae-14dcee02950c/download/googletransitfeed.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/bloomington-transit/377/latest/download",
-    "datatype": "GTFS"
-}

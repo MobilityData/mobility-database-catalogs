@@ -1,6 +1,0 @@
-{
-    "source_name": "LYNX's GTFS Schedule source",
-    "stable_url": "http://www.golynx.com/lynxmap/GoLYNX_data/google_transit.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/central-florida-regional-transportation-authority/373/latest/download",
-    "datatype": "GTFS"
-}

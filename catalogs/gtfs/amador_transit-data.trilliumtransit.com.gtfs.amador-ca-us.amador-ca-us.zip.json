@@ -1,6 +1,0 @@
-{
-    "source_name": "Amador Transit's GTFS Schedule source",
-    "stable_url": "http://data.trilliumtransit.com/gtfs/amador-ca-us/amador-ca-us.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/amador-transit/390/latest/download",
-    "datatype": "GTFS"
-}

@@ -1,0 +1,104 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "The Mobility Catalogs static source schema.",
+  "type": "object",
+  "properties": {
+    "mdb_source_id": {
+      "type": "string",
+      "description": "The Mobility Database ID of the source."
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the source."
+    },
+    "location": {
+      "type": "string",
+      "description": "The location name of the source."
+    },
+    "country_code": {
+      "type": "string",
+      "description": "The country code of the source."
+    },
+    "bounding_box": {
+      "type": "object",
+      "description": "The bounding box of the source.",
+      "oneOf": [
+        {
+          "properties": {
+            "minimum_latitude": {
+              "type": "number",
+              "minimum": -90,
+              "maximum": 90
+            },
+            "maximum_latitude": {
+              "type": "number",
+              "minimum": -90,
+              "maximum": 90
+            },
+            "minimum_longitude": {
+              "type": "number",
+              "minimum": -180,
+              "maximum": 180
+            },
+            "maximum_longitude": {
+              "type": "number",
+              "minimum": -180,
+              "maximum": 180
+            }
+          }
+        },
+        {
+          "properties": {
+            "minimum_latitude": {
+              "type": "null"
+            },
+            "maximum_latitude": {
+              "type": "null"
+            },
+            "minimum_longitude": {
+              "type": "null"
+            },
+            "maximum_longitude": {
+              "type": "null"
+            }
+          }
+        }
+      ],
+      "required": ["minimum_latitude", "maximum_latitude", "minimum_longitude", "maximum_longitude"],
+    },
+    "data_type": {
+      "type": "string",
+      "description": "The data type of the source.",
+      "enum": ["gtfs"]
+    },
+    "providers": {
+      "type": "array",
+      "description": "The providers of the source.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "urls": {
+      "type": "object",
+      "properties": {
+        "auto_discovery": {
+          "type": "string",
+          "description": "The stable auto-discovery url of the source as given by the provider.",
+          "pattern": "^(http|https|ftp):\/\/[a-zA-Z0-9.,~#{}():&/%='?_/-]+$"
+        },
+        "license": {
+          "type": "string",
+          "description": "The url to the license of the source as given by the provider.",
+          "pattern": "^(http|https|ftp):\/\/[a-zA-Z0-9.,~#{}():&/%='?_/-]+$"
+        },
+        "latest_dataset": {
+          "type": "string",
+          "description": "The Mobility Archives stable url for the latest dataset version of the source.",
+          "pattern": "^(http|https|ftp):\/\/[a-zA-Z0-9.,~#{}():&/%='?_/-]+$"
+        }
+      },
+      "required": ["auto_discovery", "license", "latest_dataset"]
+    }
+  },
+  "required": ["mdb_source_id", "name", "location", "country_code", "bounding_box", "providers", "urls"]
+}

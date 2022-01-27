@@ -3,7 +3,7 @@ import os
 import gtfs_kit
 from requests.exceptions import MissingSchema
 from pandas.errors import ParserError
-from constants import (
+from tools.constants import (
     STOP_LAT,
     STOP_LON,
     MDB_SOURCE_ID_TEMPLATE,
@@ -11,8 +11,13 @@ from constants import (
 )
 
 
+#########################
+# I/O FUNCTIONS
+#########################
+
+
 def aggregate(catalog_root):
-    """Aggregate the sources of a catalog.
+    """Aggregates the sources of a catalog.
     :param catalog_root: The path to the root of the catalog folder.
     :return: The sources of the catalog.
     """
@@ -24,12 +29,20 @@ def aggregate(catalog_root):
     return catalog
 
 
-def to_json(path, entity):
+def to_json(path, obj):
+    """Saves a JSON object to the file with the given path.
+    :param path: The path to the file.
+    :param obj: The JSON compatible object to save.
+    """
     with open(path, "w") as fp:
-        json.dump(entity, fp)
+        json.dump(obj, fp)
 
 
 def from_json(path):
+    """Loads a JSON object from the file at the given path.
+    :param path: The path to the file.
+    :return: The JSON object.
+    """
     with open(path, "r") as fp:
         entity = json.load(fp)
     return entity
@@ -37,6 +50,11 @@ def from_json(path):
 
 def to_csv(path, catalog):
     raise NotImplementedError
+
+
+#########################
+# VERIFICATION FUNCTIONS
+#########################
 
 
 def are_overlapping_boxes(
@@ -49,7 +67,7 @@ def are_overlapping_boxes(
     filter_minimum_longitude,
     filter_maximum_longitude,
 ):
-    """Verify if two boxes are overlapping in two dimension.
+    """Verifies if two boxes are overlapping in two dimension.
     :param source_minimum_latitude: The minimum latitude coordinate of the source box.
     :param source_maximum_latitude: The maximum latitude coordinate of the source box.
     :param source_minimum_longitude: The minimum longitude coordinate of the source box.
@@ -76,7 +94,7 @@ def are_overlapping_boxes(
 def are_overlapping_edges(
     source_minimum, source_maximum, filter_minimum, filter_maximum
 ):
-    """Verify if two edges are overlapping in one dimension.
+    """Verifies if two edges are overlapping in one dimension.
     :param source_minimum: The minimum coordinate of the source edge.
     :param source_maximum: The maximum coordinate of the source edge.
     :param filter_minimum: The minimum coordinate of the filter edge.
@@ -85,14 +103,14 @@ def are_overlapping_edges(
     Returns False if one or more coordinates are None.
     """
     return (
-        source_maximum >= filter_minimum and filter_maximum >= source_minimum
+        source_maximum > filter_minimum and filter_maximum > source_minimum
         if None not in [source_minimum, source_maximum, filter_minimum, filter_maximum]
         else False
     )
 
 
 def is_readable(url, load_func):
-    """Verify if a given source URL is readable, ie. a valid dataset can be downloaded from it.
+    """Verifies if a given source URL is readable, ie. a valid dataset can be downloaded from it.
     :param url: The URL where to download the source dataset.
     :param load_func: The load function to use.
     :return: True if readable, raise an exception if a problem occurs.
@@ -108,8 +126,13 @@ def is_readable(url, load_func):
     return True
 
 
+#########################
+# CREATION FUNCTIONS
+#########################
+
+
 def identify_source(name, country_code, data_type):
-    """Identity a MDB source with a MDB ID.
+    """Identities a MDB source with a MDB ID.
     :param name: The name of the entity.
     :param data_type: The data type of the entity.
     :param country_code: The country code of the entity.
@@ -121,7 +144,7 @@ def identify_source(name, country_code, data_type):
 
 
 def create_latest_url(mdb_source_id, extension):
-    """Create the latest url for a MDB Source.
+    """Creates the latest url for a MDB Source.
     :param mdb_source_id: The MDB Source ID.
     :param extension: The dataset extension.
     :return: The latest url.
@@ -137,7 +160,7 @@ def create_latest_url(mdb_source_id, extension):
 
 
 def load_gtfs(url):
-    """Load a GTFS dataset from the passed URL.
+    """Loads a GTFS dataset from the passed URL.
     :param url: The URL where to download the GTFS dataset.
     :return: The GTFS dataset representation given by GTFS Kit.
     """
@@ -145,7 +168,7 @@ def load_gtfs(url):
 
 
 def extract_gtfs_bounding_box(url):
-    """Extract a GTFS source bounding box using the `stops` file from the GTFS dataset.
+    """Extracts a GTFS source bounding box using the `stops` file from the GTFS dataset.
     :param url: The URL where to download the GTFS dataset.
     :return: The coordinates of the bounding box as floats.
     """

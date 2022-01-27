@@ -88,7 +88,7 @@ def add_source(
             path=os.path.join(
                 PROJECT_ROOT, data_type_map[PATH_FROM_ROOT], f"{mdb_source_id}.{JSON}"
             ),
-            entity=source,
+            obj=source,
         )
         return source
 
@@ -128,7 +128,7 @@ def update_source(
     if license_url is not None:
         source[URLS][LICENSE] = license_url
 
-    to_json(path=source_path, entity=source)
+    to_json(path=source_path, obj=source)
     return source
 
 

@@ -1,5 +1,15 @@
-from os.path import join
-from tools.helpers import *
+import os
+from tools.helpers import (
+    aggregate,
+    is_readable,
+    identify_source,
+    extract_gtfs_bounding_box,
+    are_overlapping_boxes,
+    load_gtfs,
+    create_latest_url,
+    to_json,
+    from_json,
+)
 from tools.constants import (
     STATIC,
     GTFS,
@@ -75,7 +85,7 @@ def add_source(
             },
         }
         to_json(
-            path=join(
+            path=os.path.join(
                 PROJECT_ROOT, data_type_map[PATH_FROM_ROOT], f"{mdb_source_id}.{JSON}"
             ),
             entity=source,
@@ -94,7 +104,7 @@ def update_source(
 ):
     """Update a source in the Mobility Catalogs."""
     data_type_map = globals()[f"{data_type.upper()}_MAP"]
-    source_path = join(
+    source_path = os.path.join(
         PROJECT_ROOT, data_type_map[PATH_FROM_ROOT], f"{mdb_source_id}.{JSON}"
     )
     source = from_json(path=source_path)
@@ -125,7 +135,7 @@ def update_source(
 def get_sources(source_type=STATIC):
     """Get the sources of the Mobility Catalogs."""
     source_type_map = globals()[f"{source_type.upper()}_MAP"]
-    catalog_root = join(PROJECT_ROOT, source_type_map[PATH_FROM_ROOT])
+    catalog_root = os.path.join(PROJECT_ROOT, source_type_map[PATH_FROM_ROOT])
     return aggregate(catalog_root)
 
 

@@ -71,13 +71,6 @@
       "description": "The data type of the source.",
       "enum": ["gtfs"]
     },
-    "providers": {
-      "type": "array",
-      "description": "The providers of the source.",
-      "items": {
-        "type": "string"
-      }
-    },
     "urls": {
       "type": "object",
       "properties": {
@@ -100,5 +93,5 @@
       "required": ["auto_discovery", "license", "latest_dataset"]
     }
   },
-  "required": ["mdb_source_id", "name", "location", "country_code", "bounding_box", "providers", "urls"]
+  "required": ["mdb_source_id", "name", "location", "country_code", "bounding_box", "data_type", "urls"]
 }

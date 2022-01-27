@@ -84,13 +84,13 @@
           "description": "The url to the license of the source as given by the provider.",
           "pattern": "^(http|https|ftp):\/\/[a-zA-Z0-9.,~#{}():&/%='?_/-]+$"
         },
-        "latest_dataset": {
+        "latest": {
           "type": "string",
           "description": "The Mobility Archives stable url for the latest dataset version of the source.",
           "pattern": "^(http|https|ftp):\/\/[a-zA-Z0-9.,~#{}():&/%='?_/-]+$"
         }
       },
-      "required": ["auto_discovery", "license", "latest_dataset"]
+      "required": ["auto_discovery", "license", "latest"]
     }
   },
   "required": ["mdb_source_id", "name", "location", "country_code", "bounding_box", "data_type", "urls"]

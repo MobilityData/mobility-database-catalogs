@@ -1,5 +1,5 @@
-import os
-import tools.helpers as helpers
+from os.path import join
+from tools.helpers import *
 from tools.constants import (
     STATIC,
     GTFS,
@@ -42,8 +42,8 @@ def add_source(
 ):
     """Add a new source to the Mobility Catalogs."""
     data_type_map = globals()[f"{data_type.upper()}_MAP"]
-    if helpers.is_readable(url=auto_discovery_url, load_func=data_type_map[LOAD_FUNC]):
-        mdb_source_id = helpers.identify_source(
+    if is_readable(url=auto_discovery_url, load_func=data_type_map[LOAD_FUNC]):
+        mdb_source_id = identify_source(
             name=name, country_code=country_code, data_type=data_type
         )
         (
@@ -51,8 +51,8 @@ def add_source(
             maximum_latitude,
             minimum_longitude,
             maximum_longitude,
-        ) = helpers.extract_gtfs_bounding_box(url=auto_discovery_url)
-        latest_url = helpers.create_latest_url(
+        ) = extract_gtfs_bounding_box(url=auto_discovery_url)
+        latest_url = create_latest_url(
             mdb_source_id=mdb_source_id, extension=data_type_map[EXTENSION]
         )
 
@@ -74,8 +74,8 @@ def add_source(
                 LATEST: latest_url,
             },
         }
-        helpers.to_json(
-            path=os.path.join(
+        to_json(
+            path=join(
                 PROJECT_ROOT, data_type_map[PATH_FROM_ROOT], f"{mdb_source_id}.{JSON}"
             ),
             entity=source,
@@ -94,12 +94,12 @@ def update_source(
 ):
     """Update a source in the Mobility Catalogs."""
     data_type_map = globals()[f"{data_type.upper()}_MAP"]
-    source_path = os.path.join(
+    source_path = join(
         PROJECT_ROOT, data_type_map[PATH_FROM_ROOT], f"{mdb_source_id}.{JSON}"
     )
-    source = helpers.from_json(path=source_path)
+    source = from_json(path=source_path)
 
-    if auto_discovery_url is not None and helpers.is_readable(
+    if auto_discovery_url is not None and is_readable(
         url=auto_discovery_url, load_func=data_type_map[LOAD_FUNC]
     ):
         source[URLS][AUTO_DISCOVERY] = auto_discovery_url
@@ -108,7 +108,7 @@ def update_source(
             source[BOUNDING_BOX][MAXIMUM_LATITUDE],
             source[BOUNDING_BOX][MINIMUM_LONGITUDE],
             source[BOUNDING_BOX][MAXIMUM_LONGITUDE],
-        ) = helpers.extract_gtfs_bounding_box(url=auto_discovery_url)
+        ) = extract_gtfs_bounding_box(url=auto_discovery_url)
     if name is not None:
         source[NAME] = name
     if location is not None:
@@ -118,15 +118,15 @@ def update_source(
     if license_url is not None:
         source[URLS][LICENSE] = license_url
 
-    helpers.to_json(path=source_path, entity=source)
+    to_json(path=source_path, entity=source)
+    return source
 
 
 def get_sources(source_type=STATIC):
     """Get the sources of the Mobility Catalogs."""
-    catalog_root = os.path.join(
-        PROJECT_ROOT, globals()[f"{source_type.upper()}_MAP"][PATH_FROM_ROOT]
-    )
-    return helpers.aggregate(catalog_root)
+    source_type_map = globals()[f"{source_type.upper()}_MAP"]
+    catalog_root = join(PROJECT_ROOT, source_type_map[PATH_FROM_ROOT])
+    return aggregate(catalog_root)
 
 
 def get_sources_by_bounding_box(
@@ -140,7 +140,7 @@ def get_sources_by_bounding_box(
     return [
         source
         for source in get_sources(source_type=source_type)
-        if helpers.are_overlapping_boxes(
+        if are_overlapping_boxes(
             source_minimum_latitude=source[BOUNDING_BOX][MINIMUM_LATITUDE],
             source_maximum_latitude=source[BOUNDING_BOX][MAXIMUM_LATITUDE],
             source_minimum_longitude=source[BOUNDING_BOX][MINIMUM_LONGITUDE],

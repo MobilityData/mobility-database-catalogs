@@ -35,7 +35,7 @@ def to_json(path, obj):
     :param obj: The JSON compatible object to save.
     """
     with open(path, "w") as fp:
-        json.dump(obj, fp)
+        json.dump(obj, fp, indent=4)
 
 
 def from_json(path):

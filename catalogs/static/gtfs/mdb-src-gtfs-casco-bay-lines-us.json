@@ -1,1 +1,18 @@
-{"mdb_source_id": "mdb-src-gtfs-casco-bay-lines-us", "name": "Casco Bay Lines", "location": "Maine", "country_code": "US", "bounding_box": {"minimum_latitude": 43.655373, "maximum_latitude": 43.71619, "minimum_longitude": -70.248666, "maximum_longitude": -70.11018}, "data_type": "gtfs", "urls": {"auto_discovery": "http://smttracker.com/downloads/gtfs/cascobaylines-portland-me-usa.zip", "license": "https://smttracker.com/developer-terms-of-use/", "latest": "https://storage.googleapis.com/storage/v1/b/archives_latest/o/mdb-src-gtfs-casco-bay-lines-us.zip?alt=media"}}
+{
+    "mdb_source_id": "mdb-src-gtfs-casco-bay-lines-us",
+    "name": "Casco Bay Lines",
+    "location": "Maine",
+    "country_code": "US",
+    "bounding_box": {
+        "minimum_latitude": 43.655373,
+        "maximum_latitude": 43.71619,
+        "minimum_longitude": -70.248666,
+        "maximum_longitude": -70.11018
+    },
+    "data_type": "gtfs",
+    "urls": {
+        "auto_discovery": "http://smttracker.com/downloads/gtfs/cascobaylines-portland-me-usa.zip",
+        "license": "https://smttracker.com/developer-terms-of-use/",
+        "latest": "https://storage.googleapis.com/storage/v1/b/archives_latest/o/mdb-src-gtfs-casco-bay-lines-us.zip?alt=media"
+    }
+}

@@ -116,11 +116,11 @@ def is_readable(url, load_func):
     :return: True if readable, raise an exception if a problem occurs.
     """
     try:
-        globals()[load_func](url)
-    except (TypeError, MissingSchema, ParserError) as e:
+        load_func(url)
+    except Exception as e:
         raise (
-            f"Exception '{e}' occurred while reading the GTFS dataset with the GTFS kit library."
-            f"The dataset downloaded with the auto-discovery URL must be a valid GTFS zip file.\n"
+            f"Exception '{e}' occurred while reading the dataset. "
+            f"The dataset downloaded with the auto-discovery URL must be a valid dataset.\n"
             f"Please contact emma@mobilitydata.org for assistance.\n"
         )
     return True
@@ -139,7 +139,9 @@ def identify_source(name, country_code, data_type):
     :return: The MDB Source ID.
     """
     return MDB_SOURCE_ID_TEMPLATE.format(
-        name=name, data_type=data_type, country_code=country_code
+        name=name.lower().replace(" ", "-"),
+        data_type=data_type,
+        country_code=country_code.lower(),
     )
 
 
@@ -164,7 +166,24 @@ def load_gtfs(url):
     :param url: The URL where to download the GTFS dataset.
     :return: The GTFS dataset representation given by GTFS Kit.
     """
-    return gtfs_kit.read_feed(url, dist_units="km")
+    try:
+        dataset = gtfs_kit.read_feed(url, dist_units="km")
+    except TypeError as te:
+        raise TypeError(
+            f"TypeError exception '{te}' occurred while reading the GTFS dataset with the GTFS kit library."
+            f"The dataset must be a valid GTFS zip file or URL.\n"
+        )
+    except MissingSchema as ms:
+        raise MissingSchema(
+            f"MissingSchema exception '{ms}' occurred while opening the GTFS dataset with the GTFS kit library."
+            f"The dataset must be a valid GTFS zip file or URL.\n"
+        )
+    except ParserError as pe:
+        raise ParserError(
+            f"ParserError exception {pe} found while parsing the GTFS dataset with the GTFS kit library."
+            f"The dataset must be a valid GTFS zip file or URL.\n"
+        )
+    return dataset
 
 
 def extract_gtfs_bounding_box(url):

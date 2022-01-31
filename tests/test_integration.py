@@ -13,4 +13,4 @@ def test_catalogs_static_gtfs_json_schema():
     )
     schema = from_json(static_source_schema_path)
     for source in get_sources(source_type=GTFS):
-        validate(source, schema)
+        validate(instance=source, schema=schema)

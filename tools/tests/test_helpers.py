@@ -5,7 +5,10 @@ import pandas as pd
 
 
 class TestVerificationFunctions(TestCase):
-    def test_are_overlapping_edges(self):
+    def setUp(self):
+        self.test_url = "some_url"
+
+    def test_are_overlapping_crossing_edges(self):
         test_source_minimum = 45.000000
         test_source_maximum = 46.000000
         test_filter_minimum = 45.500000
@@ -19,6 +22,7 @@ class TestVerificationFunctions(TestCase):
         )
         self.assertTrue(under_test)
 
+    def test_are_overlapping_included_edges(self):
         test_source_minimum = 45.000000
         test_source_maximum = 46.000000
         test_filter_minimum = 45.250000
@@ -45,6 +49,7 @@ class TestVerificationFunctions(TestCase):
         )
         self.assertTrue(under_test)
 
+    def test_are_not_overlapping_touching_edges(self):
         test_source_minimum = 45.000000
         test_source_maximum = 45.500000
         test_filter_minimum = 45.500000
@@ -71,6 +76,7 @@ class TestVerificationFunctions(TestCase):
         )
         self.assertFalse(under_test)
 
+    def test_are_not_overlapping_edges(self):
         test_source_minimum = 44.000000
         test_source_maximum = 45.000000
         test_filter_minimum = 46.000000
@@ -84,6 +90,7 @@ class TestVerificationFunctions(TestCase):
         )
         self.assertFalse(under_test)
 
+    def test_are_not_overlapping_none_edges(self):
         test_source_minimum = None
         test_source_maximum = None
         test_filter_minimum = None
@@ -99,14 +106,14 @@ class TestVerificationFunctions(TestCase):
 
     @patch("tools.helpers.are_overlapping_edges")
     def test_are_overlapping_boxes(self, mock_edges):
-        test_source_minimum_latitude = 0.000000
-        test_source_maximum_latitude = 0.000000
-        test_source_minimum_longitude = 0.000000
-        test_source_maximum_longitude = 0.000000
-        test_filter_minimum_latitude = 0.000000
-        test_filter_maximum_latitude = 0.000000
-        test_filter_minimum_longitude = 0.000000
-        test_filter_maximum_longitude = 0.000000
+        test_source_minimum_latitude = Mock()
+        test_source_maximum_latitude = Mock()
+        test_source_minimum_longitude = Mock()
+        test_source_maximum_longitude = Mock()
+        test_filter_minimum_latitude = Mock()
+        test_filter_maximum_latitude = Mock()
+        test_filter_minimum_longitude = Mock()
+        test_filter_maximum_longitude = Mock()
 
         mock_edges.side_effect = [True, True]
         under_test = are_overlapping_boxes(
@@ -161,26 +168,26 @@ class TestVerificationFunctions(TestCase):
         self.assertFalse(under_test)
 
     @patch("tools.helpers.load_gtfs")
-    def test_is_readable(self, mock_load_func):
-        test_url = "test_url"
-
+    def test_is_not_readable(self, mock_load_func):
         mock_load_func.side_effect = Mock(side_effect=TypeError())
         self.assertRaises(
-            Exception, is_readable, url=test_url, load_func=mock_load_func
+            Exception, is_readable, url=self.test_url, load_func=mock_load_func
         )
 
         mock_load_func.side_effect = Mock(side_effect=MissingSchema())
         self.assertRaises(
-            Exception, is_readable, url=test_url, load_func=mock_load_func
+            Exception, is_readable, url=self.test_url, load_func=mock_load_func
         )
 
         mock_load_func.side_effect = Mock(side_effect=ParserError())
         self.assertRaises(
-            Exception, is_readable, url=test_url, load_func=mock_load_func
+            Exception, is_readable, url=self.test_url, load_func=mock_load_func
         )
 
+    @patch("tools.helpers.load_gtfs")
+    def test_is_readable(self, mock_load_func):
         mock_load_func.side_effect = "some_dataset"
-        under_test = is_readable(url=test_url, load_func=mock_load_func)
+        under_test = is_readable(url=self.test_url, load_func=mock_load_func)
         self.assertTrue(under_test)
 
 

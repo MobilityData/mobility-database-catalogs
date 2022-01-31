@@ -213,66 +213,81 @@ class TestCreationFunctions(TestCase):
 
 
 class TestGtfsSpecificFunctions(TestCase):
+    def setUp(self):
+        self.test_url = "some_url"
+
     @patch("tools.helpers.gtfs_kit.read_feed")
-    def test_load_gtfs(self, mock_gtfs_kit):
-        test_url = "test_url"
-        test_dataset = "some_gtfs_dataset"
-
-        mock_gtfs_kit.return_value = test_dataset
-        under_test = load_gtfs(url=test_url)
-        self.assertEqual(under_test, test_dataset)
-
+    def test_not_loading_gtfs(self, mock_gtfs_kit):
         mock_gtfs_kit.side_effect = Mock(side_effect=TypeError())
         self.assertRaises(
             TypeError,
             load_gtfs,
-            url=test_url,
+            url=self.test_url,
         )
 
         mock_gtfs_kit.side_effect = Mock(side_effect=MissingSchema())
         self.assertRaises(
             MissingSchema,
             load_gtfs,
-            url=test_url,
+            url=self.test_url,
         )
 
         mock_gtfs_kit.side_effect = Mock(side_effect=ParserError())
         self.assertRaises(
             ParserError,
             load_gtfs,
-            url=test_url,
+            url=self.test_url,
         )
 
-    @patch("tools.helpers.load_gtfs")
-    def test_extract_gtfs_bounding_box(self, mock_load_gtfs):
-        test_url = "test_url"
-        test_bounding_box = (None, None, None, None)
+    @patch("tools.helpers.gtfs_kit.read_feed")
+    def test_loading_gtfs(self, mock_gtfs_kit):
+        test_dataset = "some_gtfs_dataset"
+        mock_gtfs_kit.return_value = test_dataset
+        under_test = load_gtfs(url=self.test_url)
+        self.assertEqual(under_test, test_dataset)
 
+    @patch("tools.helpers.load_gtfs")
+    def test_extract_gtfs_bounding_box_none_stops(self, mock_load_gtfs):
+        test_bounding_box = (None, None, None, None)
         test_stops = None
         type(mock_load_gtfs.return_value).stops = test_stops
-        under_test = extract_gtfs_bounding_box(url=test_url)
+        under_test = extract_gtfs_bounding_box(url=self.test_url)
         self.assertEqual(under_test, test_bounding_box)
 
+    @patch("tools.helpers.load_gtfs")
+    def test_extract_gtfs_bounding_box_empty_dataframe(self, mock_load_gtfs):
+        test_bounding_box = (None, None, None, None)
         test_stops = pd.DataFrame()
         type(mock_load_gtfs.return_value).stops = test_stops
-        under_test = extract_gtfs_bounding_box(url=test_url)
+        under_test = extract_gtfs_bounding_box(url=self.test_url)
         self.assertEqual(under_test, test_bounding_box)
 
+    @patch("tools.helpers.load_gtfs")
+    def test_extract_gtfs_bounding_box_missing_columns(self, mock_load_gtfs):
+        test_bounding_box = (None, None, None, None)
         test_stops = pd.DataFrame({"some_column": []})
         type(mock_load_gtfs.return_value).stops = test_stops
-        under_test = extract_gtfs_bounding_box(url=test_url)
+        under_test = extract_gtfs_bounding_box(url=self.test_url)
         self.assertEqual(under_test, test_bounding_box)
 
+    @patch("tools.helpers.load_gtfs")
+    def test_extract_gtfs_bounding_box_empty_columns(self, mock_load_gtfs):
+        test_bounding_box = (None, None, None, None)
         test_stops = pd.DataFrame({STOP_LAT: [], STOP_LON: []})
         type(mock_load_gtfs.return_value).stops = test_stops
-        under_test = extract_gtfs_bounding_box(url=test_url)
+        under_test = extract_gtfs_bounding_box(url=self.test_url)
         self.assertEqual(under_test, test_bounding_box)
 
+    @patch("tools.helpers.load_gtfs")
+    def test_extract_gtfs_bounding_box_nan_values(self, mock_load_gtfs):
+        test_bounding_box = (None, None, None, None)
         test_stops = pd.DataFrame({STOP_LAT: [pd.NA], STOP_LON: [pd.NA]})
         type(mock_load_gtfs.return_value).stops = test_stops
-        under_test = extract_gtfs_bounding_box(url=test_url)
+        under_test = extract_gtfs_bounding_box(url=self.test_url)
         self.assertEqual(under_test, test_bounding_box)
 
+    @patch("tools.helpers.load_gtfs")
+    def test_extract_gtfs_bounding_box_stops_present(self, mock_load_gtfs):
         test_bounding_box = (44.00000, 45.000000, -110.000000, -109.000000)
 
         test_stops = pd.DataFrame(
@@ -282,5 +297,5 @@ class TestGtfsSpecificFunctions(TestCase):
             }
         )
         type(mock_load_gtfs.return_value).stops = test_stops
-        under_test = extract_gtfs_bounding_box(url=test_url)
+        under_test = extract_gtfs_bounding_box(url=self.test_url)
         self.assertEqual(under_test, test_bounding_box)

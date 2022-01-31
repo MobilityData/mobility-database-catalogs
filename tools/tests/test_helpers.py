@@ -1,4 +1,4 @@
-from unittest import TestCase
+from unittest import TestCase, skip
 from unittest.mock import patch, Mock
 from tools.helpers import *
 import pandas as pd
@@ -299,3 +299,33 @@ class TestGtfsSpecificFunctions(TestCase):
         type(mock_load_gtfs.return_value).stops = test_stops
         under_test = extract_gtfs_bounding_box(url=self.test_url)
         self.assertEqual(under_test, test_bounding_box)
+
+
+class TestInOutFunctions(TestCase):
+    @patch("tools.helpers.open")
+    @patch("tools.helpers.json.dump")
+    def test_to_json(self, mock_json, mock_open):
+        test_path = "some_path"
+        test_obj = {"some_key": "some_value"}
+
+        under_test = to_json(path=test_path, obj=test_obj)
+        self.assertIsNone(under_test)
+        mock_open.assert_called_once()
+        mock_json.assert_called_once()
+
+    @patch("tools.helpers.open")
+    @patch("tools.helpers.json.load")
+    def test_from_json(self, mock_json, mock_open):
+        test_path = "some_path"
+        test_obj = {"some_key": "some_value"}
+
+        mock_json.return_value = test_obj
+
+        under_test = from_json(path=test_path)
+        self.assertEqual(under_test, test_obj)
+        mock_open.assert_called_once()
+        mock_json.assert_called_once()
+
+    @skip
+    def test_to_csv(self):
+        raise NotImplementedError

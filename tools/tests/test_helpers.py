@@ -302,13 +302,14 @@ class TestGtfsSpecificFunctions(TestCase):
 
 
 class TestInOutFunctions(TestCase):
+    def setUp(self):
+        self.test_path = "some_path"
+        self.test_obj = {"some_key": "some_value"}
+
     @patch("tools.helpers.open")
     @patch("tools.helpers.json.dump")
     def test_to_json(self, mock_json, mock_open):
-        test_path = "some_path"
-        test_obj = {"some_key": "some_value"}
-
-        under_test = to_json(path=test_path, obj=test_obj)
+        under_test = to_json(path=self.test_path, obj=self.test_obj)
         self.assertIsNone(under_test)
         mock_open.assert_called_once()
         mock_json.assert_called_once()
@@ -316,15 +317,29 @@ class TestInOutFunctions(TestCase):
     @patch("tools.helpers.open")
     @patch("tools.helpers.json.load")
     def test_from_json(self, mock_json, mock_open):
-        test_path = "some_path"
-        test_obj = {"some_key": "some_value"}
-
-        mock_json.return_value = test_obj
-
-        under_test = from_json(path=test_path)
-        self.assertEqual(under_test, test_obj)
+        mock_json.return_value = self.test_obj
+        under_test = from_json(path=self.test_path)
+        self.assertEqual(under_test, self.test_obj)
         mock_open.assert_called_once()
         mock_json.assert_called_once()
+
+    @patch("tools.helpers.os.walk")
+    @patch("tools.helpers.os.path.join")
+    @patch("tools.helpers.open")
+    @patch("tools.helpers.json.load")
+    def test_aggregate(self, mock_json, mock_open, mock_path, mock_walk):
+        mock_walk.return_value = [
+            ("/catalogs", ("static",), ()),
+            ("/catalogs/static", ("gtfs",), ()),
+            ("/catalogs/static/gtfs", (), ("some_source.json", "another_source.json")),
+        ]
+        mock_json.return_value = self.test_obj
+        under_test = aggregate(catalog_root=self.test_path)
+        self.assertEqual(under_test, [self.test_obj, self.test_obj])
+        self.assertEqual(mock_walk.call_count, 1)
+        self.assertEqual(mock_path.call_count, 2)
+        self.assertEqual(mock_open.call_count, 2)
+        self.assertEqual(mock_json.call_count, 2)
 
     @skip
     def test_to_csv(self):

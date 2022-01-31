@@ -161,26 +161,24 @@ class TestVerificationFunctions(TestCase):
 
     @patch("tools.helpers.load_gtfs")
     def test_is_readable(self, mock_load_func):
-        mock_load_func.side_effect = Mock(side_effect=TypeError())
         test_url = "test_url"
+
+        mock_load_func.side_effect = Mock(side_effect=TypeError())
         self.assertRaises(
             Exception, is_readable, url=test_url, load_func=mock_load_func
         )
 
         mock_load_func.side_effect = Mock(side_effect=MissingSchema())
-        test_url = "test_url"
         self.assertRaises(
             Exception, is_readable, url=test_url, load_func=mock_load_func
         )
 
         mock_load_func.side_effect = Mock(side_effect=ParserError())
-        test_url = "test_url"
         self.assertRaises(
             Exception, is_readable, url=test_url, load_func=mock_load_func
         )
 
         mock_load_func.side_effect = "some_dataset"
-        test_url = "test_url"
         under_test = is_readable(url=test_url, load_func=mock_load_func)
         self.assertTrue(under_test)
 
@@ -204,3 +202,35 @@ class TestCreationFunctions(TestCase):
             mdb_source_id=test_mdb_source_id, extension=test_extension
         )
         self.assertEqual(under_test, test_latest_url)
+
+
+class TestGtfsSpecificFunctions(TestCase):
+    @patch("tools.helpers.gtfs_kit.read_feed")
+    def test_load_gtfs(self, mock_gtfs_kit):
+        test_url = "test_url"
+        test_dataset = "some_gtfs_dataset"
+
+        mock_gtfs_kit.return_value = test_dataset
+        under_test = load_gtfs(url=test_url)
+        self.assertEqual(under_test, test_dataset)
+
+        mock_gtfs_kit.side_effect = Mock(side_effect=TypeError())
+        self.assertRaises(
+            TypeError,
+            load_gtfs,
+            url=test_url,
+        )
+
+        mock_gtfs_kit.side_effect = Mock(side_effect=MissingSchema())
+        self.assertRaises(
+            MissingSchema,
+            load_gtfs,
+            url=test_url,
+        )
+
+        mock_gtfs_kit.side_effect = Mock(side_effect=ParserError())
+        self.assertRaises(
+            ParserError,
+            load_gtfs,
+            url=test_url,
+        )

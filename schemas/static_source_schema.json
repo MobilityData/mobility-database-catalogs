@@ -64,7 +64,7 @@
           }
         }
       ],
-      "required": ["minimum_latitude", "maximum_latitude", "minimum_longitude", "maximum_longitude"],
+      "required": ["minimum_latitude", "maximum_latitude", "minimum_longitude", "maximum_longitude"]
     },
     "data_type": {
       "type": "string",

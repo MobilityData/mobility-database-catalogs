@@ -19,6 +19,9 @@ MDB_ARCHIVES_LATEST_URL_TEMPLATE = "https://storage.googleapis.com/storage/v1/b/
 STATIC_CATALOG_PATH_FROM_ROOT = "catalogs/static"
 GTFS_CATALOG_PATH_FROM_ROOT = "catalogs/static/gtfs"
 
+# SCHEMAS FILES
+STATIC_SOURCE_SCHEMA_PATH_FROM_ROOT = "schemas/static_source_schema.json"
+
 # STATIC_SCHEMA
 MDB_SOURCE_ID = "mdb_source_id"
 NAME = "name"

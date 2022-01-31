@@ -1,6 +1,7 @@
 from unittest import TestCase
 from unittest.mock import patch, Mock
 from tools.helpers import *
+import pandas as pd
 
 
 class TestVerificationFunctions(TestCase):
@@ -234,3 +235,45 @@ class TestGtfsSpecificFunctions(TestCase):
             load_gtfs,
             url=test_url,
         )
+
+    @patch("tools.helpers.load_gtfs")
+    def test_extract_gtfs_bounding_box(self, mock_load_gtfs):
+        test_url = "test_url"
+        test_bounding_box = (None, None, None, None)
+
+        test_stops = None
+        type(mock_load_gtfs.return_value).stops = test_stops
+        under_test = extract_gtfs_bounding_box(url=test_url)
+        self.assertEqual(under_test, test_bounding_box)
+
+        test_stops = pd.DataFrame()
+        type(mock_load_gtfs.return_value).stops = test_stops
+        under_test = extract_gtfs_bounding_box(url=test_url)
+        self.assertEqual(under_test, test_bounding_box)
+
+        test_stops = pd.DataFrame({"some_column": []})
+        type(mock_load_gtfs.return_value).stops = test_stops
+        under_test = extract_gtfs_bounding_box(url=test_url)
+        self.assertEqual(under_test, test_bounding_box)
+
+        test_stops = pd.DataFrame({STOP_LAT: [], STOP_LON: []})
+        type(mock_load_gtfs.return_value).stops = test_stops
+        under_test = extract_gtfs_bounding_box(url=test_url)
+        self.assertEqual(under_test, test_bounding_box)
+
+        test_stops = pd.DataFrame({STOP_LAT: [pd.NA], STOP_LON: [pd.NA]})
+        type(mock_load_gtfs.return_value).stops = test_stops
+        under_test = extract_gtfs_bounding_box(url=test_url)
+        self.assertEqual(under_test, test_bounding_box)
+
+        test_bounding_box = (44.00000, 45.000000, -110.000000, -109.000000)
+
+        test_stops = pd.DataFrame(
+            {
+                STOP_LAT: [44.000000, 45.000000, pd.NA],
+                STOP_LON: [-110.000000, -109.000000, pd.NA],
+            }
+        )
+        type(mock_load_gtfs.return_value).stops = test_stops
+        under_test = extract_gtfs_bounding_box(url=test_url)
+        self.assertEqual(under_test, test_bounding_box)

@@ -192,14 +192,18 @@ def extract_gtfs_bounding_box(url):
     :return: The coordinates of the bounding box as floats.
     """
     dataset = load_gtfs(url)
+    stops = dataset.stops
+
     stops_required_columns = {STOP_LAT, STOP_LON}
-    stops_are_present = dataset.stops is not None and stops_required_columns.issubset(
-        dataset.stops.columns
+    stops_are_present = (
+        stops is not None
+        and stops_required_columns.issubset(stops.columns)
+        and not (stops[STOP_LAT].dropna().empty or stops[STOP_LON].dropna().empty)
     )
 
-    minimum_latitude = dataset.stops[STOP_LAT].min() if stops_are_present else None
-    maximum_latitude = dataset.stops[STOP_LAT].max() if stops_are_present else None
-    minimum_longitude = dataset.stops[STOP_LON].min() if stops_are_present else None
-    maximum_longitude = dataset.stops[STOP_LON].max() if stops_are_present else None
+    minimum_latitude = stops[STOP_LAT].dropna().min() if stops_are_present else None
+    maximum_latitude = stops[STOP_LAT].dropna().max() if stops_are_present else None
+    minimum_longitude = stops[STOP_LON].dropna().min() if stops_are_present else None
+    maximum_longitude = stops[STOP_LON].dropna().max() if stops_are_present else None
 
     return minimum_latitude, maximum_latitude, minimum_longitude, maximum_longitude

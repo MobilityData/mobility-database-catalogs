@@ -2,6 +2,7 @@ import json
 import os
 import gtfs_kit
 from requests.exceptions import MissingSchema
+import pandas as pd
 from pandas.errors import ParserError
 from tools.constants import (
     STOP_LAT,
@@ -48,8 +49,11 @@ def from_json(path):
     return entity
 
 
-def to_csv(path, catalog):
-    raise NotImplementedError
+def to_csv(path, catalog, columns):
+    catalog = pd.json_normalize(catalog)
+    if columns is not None:
+        catalog = catalog[columns]
+    catalog.to_csv(path, sep=",", index=False)
 
 
 #########################

@@ -1,0 +1,39 @@
+name: Mobility Catalogs integration tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.9]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install flake8 pytest wheel numpy
+          sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
+          sudo apt-get update
+          sudo apt-get install gdal-bin python3-gdal
+          sudo apt-get install libgdal-dev
+          pip install GDAL==$(gdal-config --version) --global-option=build_ext --global-option="-I/usr/include/gdal"
+          sudo apt-get install libspatialindex-dev
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: Integration tests with pytest
+        run: |
+          pytest -v ./tests/test_integration.py --html=mobility-catalogs-integration-tests-report.html --self-contained-html
+      - name: Upload the HTML artifact
+        uses: actions/upload-artifact@v1
+        with:
+          name: mobility-catalogs-integration-tests-report-v${{ github.run_id }}.${{ github.run_number }}
+          path: mobility-catalogs-integration-tests-report.html

@@ -1,2 +1,156 @@
-# mobility-catalogs
+# The Mobility Catalogs
+________________
+[![Integration tests](https://github.com/MobilityData/mobility-catalogs/actions/workflows/integration_tests.yml/badge.svg?branch=issue%2F343%2Fcatalogs-prototype)](https://github.com/MobilityData/mobility-catalogs/actions/workflows/integration_tests.yml) [![Unit tests](https://github.com/MobilityData/mobility-catalogs/actions/workflows/unit_tests.yml/badge.svg?branch=issue%2F343%2Fcatalogs-prototype)](https://github.com/MobilityData/mobility-catalogs/actions/workflows/unit_tests.yml) [![Export catalogs to CSV](https://github.com/MobilityData/mobility-catalogs/actions/workflows/export_to_csv.yml/badge.svg?branch=issue%2F343%2Fcatalogs-prototype)](https://github.com/MobilityData/mobility-catalogs/actions/workflows/export_to_csv.yml) [![Join the MobilityData chat](https://badgen.net/badge/slack/%20/green?icon=slack)](https://bit.ly/mobilitydata-slack)
+
 The Catalogs of Sources of the Mobility Database.
+
+This README contains information for the [prototype branch](https://github.com/MobilityData/mobility-catalogs/tree/issue/343%2Fcatalogs-prototype) of this project, which is under active development.
+
+## Introduction
+________________
+
+Mobility Catalogs is a project that provides both source catalogs for mobility data types, such as GTFS schedules, and the code to manipulate them.
+
+## Installation
+________________
+
+### Requirements
+
+#### MacOs
+
+To use and run this project properly, you must install all its requirements. Make sure Python 3.9+ and Pip are installed:
+```
+$ python3 --version
+$ pip --version
+```
+
+If not, install them with:
+```
+$ brew install python3.9
+$ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+$ sudo python get-pip.py
+```
+
+Make sure both GDAL and RTree (Libspatialindex) libraries are installed on your computer, which are required for one of the project dependencies, the [GTFS Kit Library](https://pypi.org/project/gtfs-kit/):
+```
+$ brew install GDAL
+$ brew install spatialindex
+```
+
+It is recommended to set up a virtual environment before installing the requirements. To set up and activate a Python 3.9 virtual environment, enter the following commands:
+```
+$ python3.9 -m venv env
+$ source env/bin/activate
+```
+
+Once your virtual environment is activated, enter the following command to install the project requirements:
+```
+(env) $ pip install -r requirements.txt
+```
+
+To deactivate your virtual environment, enter the following command:
+```
+(env) $ deactivate
+```
+
+If you are working with IntelliJ or PyCharm, it is possible to use this virtual environment within the IDE. To do so, follow the instructions to create a virtual environment [here](https://www.jetbrains.com/help/idea/creating-virtual-environment.html).
+
+### Repository
+
+To use it, clone the project on your local machine using HTTP with the following commands:
+```
+$ git clone https://github.com/MobilityData/mobility-catalogs.git
+$ cd mobility-catalogs
+```
+
+## Using the Mobility Catalogs
+________________
+
+### Setup
+Follow the steps described in the [Installation](#installation) section.
+
+### Run it
+To use the Mobility Catalogs, go to the cloned project root, open the Python interpreter and import the project operations:
+```
+$ cd mobility-catalogs
+$ python
+>>> from tools.operations import *
+```
+
+To get the sources:
+```
+>>> get_sources()
+```
+
+To get the sources by location:
+```
+>>> get_sources_by_location(location="London, Ontario")
+```
+
+To get the sources by country code:
+```
+>>> get_sources_by_country_code(country_code="CA")
+```
+
+To get the sources by bounding box:
+```
+>>> get_sources_by_bounding_box(
+        minimum_latitude=42.75,
+        maximum_latitude=43.25,
+        minimum_longitude=-81.50,
+        maximum_longitude=-81.05
+    )
+```
+
+To add a new source:
+```
+>>> add_source(
+        name="Your Source Name", 
+        location="Your Source Location", 
+        country_code="Your Source Country Code", 
+        auto_discovery_url="https://your.source.stable.discovery.url", 
+        license_url="https://your.source.license.url", 
+        data_type=GTFS
+    )
+```
+
+To update a source:
+```
+>>> update_source(
+        mdb_source_id="mdb-src-gtfs-your-source-id", 
+        name=None,
+        location=None,
+        country_code=None,
+        auto_discovery_url=None,
+        license_url=None,
+        data_type=GTFS,
+    )
+```
+
+## The Core Parts
+________________
+
+### Catalogs
+
+Contains the sources of the Mobility Catalogs. Every single source is represented by a JSON file. The sources can be aggregated by criteria using our `tools.operations` functions.
+
+### Tools
+
+Contains the tools to search, add and update the sources. The `tools.operations` module contains the project operations (get, add and update). The `tools.helpers` module contains helper functions that support the `tools.operations` module. The `tools.constants` module contains the project constants.
+
+### Schemas
+
+Contains the JSON schemas used to validate the sources in the integration tests.
+
+
+## Integration Tests
+________________
+In order to avoid invalid sources in the Mobility Catalogs, any modification made in the repository, addition or update, must pass the integration tests before being merged into the project. The integration tests are listed in the [Test Integration](/tests/test_integration.py) module
+
+## License
+________________
+Code licensed under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0).
+
+## Contributing
+________________
+We welcome contributions to the project! Please check out our [Contribution guidelines](/CONTRIBUTING.md) for details. 

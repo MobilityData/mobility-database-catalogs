@@ -1,5 +1,5 @@
 # The Mobility Catalogs
-________________
+
 [![Integration tests](https://github.com/MobilityData/mobility-catalogs/actions/workflows/integration_tests.yml/badge.svg?branch=issue%2F343%2Fcatalogs-prototype)](https://github.com/MobilityData/mobility-catalogs/actions/workflows/integration_tests.yml) [![Unit tests](https://github.com/MobilityData/mobility-catalogs/actions/workflows/unit_tests.yml/badge.svg?branch=issue%2F343%2Fcatalogs-prototype)](https://github.com/MobilityData/mobility-catalogs/actions/workflows/unit_tests.yml) [![Export catalogs to CSV](https://github.com/MobilityData/mobility-catalogs/actions/workflows/export_to_csv.yml/badge.svg?branch=issue%2F343%2Fcatalogs-prototype)](https://github.com/MobilityData/mobility-catalogs/actions/workflows/export_to_csv.yml) [![Join the MobilityData chat](https://badgen.net/badge/slack/%20/green?icon=slack)](https://bit.ly/mobilitydata-slack)
 
 The Catalogs of Sources of the Mobility Database.
@@ -7,12 +7,10 @@ The Catalogs of Sources of the Mobility Database.
 This README contains information for the [prototype branch](https://github.com/MobilityData/mobility-catalogs/tree/issue/343%2Fcatalogs-prototype) of this project, which is under active development.
 
 ## Introduction
-________________
 
 Mobility Catalogs is a project that provides both source catalogs for mobility data types, such as GTFS schedules, and the code to manipulate them.
 
 ## Installation
-________________
 
 ### Requirements
 
@@ -64,7 +62,6 @@ $ cd mobility-catalogs
 ```
 
 ## Using the Mobility Catalogs
-________________
 
 ### Setup
 Follow the steps described in the [Installation](#installation) section.
@@ -128,7 +125,6 @@ To update a source:
 ```
 
 ## The Core Parts
-________________
 
 ### Catalogs
 
@@ -144,13 +140,13 @@ Contains the JSON schemas used to validate the sources in the integration tests.
 
 
 ## Integration Tests
-________________
+
 In order to avoid invalid sources in the Mobility Catalogs, any modification made in the repository, addition or update, must pass the integration tests before being merged into the project. The integration tests are listed in the [Test Integration](/tests/test_integration.py) module
 
 ## License
-________________
+
 Code licensed under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0).
 
 ## Contributing
-________________
+
 We welcome contributions to the project! Please check out our [Contribution guidelines](/CONTRIBUTING.md) for details. 

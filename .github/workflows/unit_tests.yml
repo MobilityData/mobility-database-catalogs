@@ -31,7 +31,7 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Unit tests with pytest
         run: |
-          pytest --ignore=./mobility_catalogs/tests/test_integration.py --html=mobility-catalogs-unit-tests-report.html --self-contained-html
+          pytest --ignore=./tests/test_integration.py --html=mobility-catalogs-unit-tests-report.html --self-contained-html
       - name: Upload the HTML artifact
         uses: actions/upload-artifact@v1
         with:

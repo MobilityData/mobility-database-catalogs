@@ -1,6 +1,0 @@
-{
-    "source_name": "Spirit Bus's GTFS Schedule source",
-    "stable_url": "http://data.trilliumtransit.com/gtfs/montereypark-ca-us/montereypark-ca-us.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/spirit-bus/757/latest/download",
-    "datatype": "GTFS"
-}

@@ -1,6 +1,0 @@
-{
-    "source_name": "WCDOT's GTFS Schedule source",
-    "stable_url": "https://s3.amazonaws.com/datatools-511ny/public/Westchester_County_Bee-Line_System.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/westchester-county-department-of-transportation/434/latest/download",
-    "datatype": "GTFS"
-}

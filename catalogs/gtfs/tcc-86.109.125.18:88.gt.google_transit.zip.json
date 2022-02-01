@@ -1,6 +1,0 @@
-{
-    "source_name": "TCC's GTFS Schedule source",
-    "stable_url": "http://86.109.125.18:88/gt/google_transit.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/transporte-urbano-comarcal-de-pamplona/499/latest/download",
-    "datatype": "GTFS"
-}

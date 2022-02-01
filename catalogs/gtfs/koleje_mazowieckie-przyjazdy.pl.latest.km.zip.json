@@ -1,6 +1,0 @@
-{
-    "source_name": "Koleje Mazowieckie's GTFS Schedule source",
-    "stable_url": "https://przyjazdy.pl/latest/km.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/koleje-mazowieckie/789/latest/download",
-    "datatype": "GTFS"
-}

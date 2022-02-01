@@ -1,6 +1,0 @@
-{
-    "source_name": "Transport for Greater Manchester's GTFS Schedule source",
-    "stable_url": "http://odata.tfgm.com/opendata/downloads/TfGMgtfs.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/transport-for-greater-manchester/224/latest/download",
-    "datatype": "GTFS"
-}

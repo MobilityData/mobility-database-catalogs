@@ -1,6 +1,0 @@
-{
-    "source_name": "Puget Sound Region's GTFS Schedule source",
-    "stable_url": "http://developer.onebusaway.org/tmp/sound/gtfs/modified/gtfs_puget_sound_consolidated.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/puget-sound-region/1014/latest/download",
-    "datatype": "GTFS"
-}

@@ -1,6 +1,0 @@
-{
-    "source_name": "dBus's GTFS Schedule source",
-    "stable_url": "ftp://ftp.geo.euskadi.net/cartografia/Transporte/Moveuskadi/ATTG/dbus/google_transit.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/compania-del-tranvia-de-san-sebastian/702/latest/download",
-    "datatype": "GTFS"
-}

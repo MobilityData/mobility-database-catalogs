@@ -1,6 +1,0 @@
-{
-    "source_name": "LA Metro Rail's GTFS Schedule source",
-    "stable_url": "https://gitlab.com/LACMTA/gtfs_rail/raw/master/gtfs_rail.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/la-metro/677/latest/download",
-    "datatype": "GTFS"
-}

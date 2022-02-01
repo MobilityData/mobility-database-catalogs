@@ -1,6 +1,0 @@
-{
-    "source_name": "Thunder Bay Transit's GTFS Schedule source",
-    "stable_url": "http://api.nextlift.ca/gtfs.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/thunder-bay-transit/201/latest/download",
-    "datatype": "GTFS"
-}

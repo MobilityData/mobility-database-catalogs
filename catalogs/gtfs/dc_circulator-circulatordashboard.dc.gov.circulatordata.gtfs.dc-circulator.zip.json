@@ -1,6 +1,0 @@
-{
-    "source_name": "DC Circulator's GTFS Schedule source",
-    "stable_url": "http://circulatordashboard.dc.gov/circulatordata/gtfs/dc-circulator.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/wmata/884/latest/download",
-    "datatype": "GTFS"
-}

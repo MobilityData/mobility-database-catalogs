@@ -1,6 +1,0 @@
-{
-    "source_name": "MOOver's GTFS Schedule source",
-    "stable_url": "http://data.trilliumtransit.com/gtfs/dvtamoover-vt-us/dvtamoover-vt-us.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/the-moover/560/latest/download",
-    "datatype": "GTFS"
-}

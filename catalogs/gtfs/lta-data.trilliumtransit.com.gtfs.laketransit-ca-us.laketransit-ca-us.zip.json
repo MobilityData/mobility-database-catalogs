@@ -1,6 +1,0 @@
-{
-    "source_name": "LTA's GTFS Schedule source",
-    "stable_url": "http://data.trilliumtransit.com/gtfs/laketransit-ca-us/laketransit-ca-us.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/lake-transit-authority/598/latest/download",
-    "datatype": "GTFS"
-}

@@ -1,6 +1,0 @@
-{
-    "source_name": "SEPTA Rail's GTFS Schedule source",
-    "stable_url": "https://github.com/septadev/GTFS/releases",
-    "backup_stable_url": "https://transitfeeds.com/p/septa/262/latest/download",
-    "datatype": "GTFS"
-}

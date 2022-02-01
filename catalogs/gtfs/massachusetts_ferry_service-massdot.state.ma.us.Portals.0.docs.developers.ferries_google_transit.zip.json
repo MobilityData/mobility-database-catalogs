@@ -1,6 +1,0 @@
-{
-    "source_name": "Massachusetts Ferry Service's GTFS Schedule source",
-    "stable_url": "http://www.massdot.state.ma.us/Portals/0/docs/developers/ferries_google_transit.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/massdot/109/latest/download",
-    "datatype": "GTFS"
-}

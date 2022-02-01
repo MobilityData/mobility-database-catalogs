@@ -1,6 +1,0 @@
-{
-    "source_name": "Metrowest RTA's GTFS Schedule source",
-    "stable_url": "http://vc.mwrta.com/gtfs/google_transit.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/massdot/101/latest/download",
-    "datatype": "GTFS"
-}

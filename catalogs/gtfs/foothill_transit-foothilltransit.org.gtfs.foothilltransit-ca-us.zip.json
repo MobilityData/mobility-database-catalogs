@@ -1,6 +1,0 @@
-{
-    "source_name": "Foothill Transit's GTFS Schedule source",
-    "stable_url": "http://foothilltransit.org/gtfs/foothilltransit-ca-us.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/foothill-transit/506/latest/download",
-    "datatype": "GTFS"
-}

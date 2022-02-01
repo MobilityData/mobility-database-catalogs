@@ -1,6 +1,0 @@
-{
-    "source_name": "Norway's GTFS Schedule source",
-    "stable_url": "https://storage.googleapis.com/marduk-production/outbound/gtfs/rb_norway-aggregated-gtfs.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/norsk-reiseinformasjon-as/791/latest/download",
-    "datatype": "GTFS"
-}

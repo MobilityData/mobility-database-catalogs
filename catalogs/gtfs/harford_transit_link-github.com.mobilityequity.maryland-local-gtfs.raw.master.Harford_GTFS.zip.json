@@ -1,6 +1,0 @@
-{
-    "source_name": "Harford Transit LINK's GTFS Schedule source",
-    "stable_url": "https://github.com/mobilityequity/maryland-local-gtfs/raw/master/Harford_GTFS.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/harford-transit/572/latest/download",
-    "datatype": "GTFS"
-}

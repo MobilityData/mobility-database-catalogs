@@ -1,6 +1,0 @@
-{
-    "source_name": "Valley Metro's GTFS Schedule source",
-    "stable_url": "http://data.trilliumtransit.com/gtfs/roanoke-va-us/roanoke-va-us.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/valley-metro-roanoke/404/latest/download",
-    "datatype": "GTFS"
-}

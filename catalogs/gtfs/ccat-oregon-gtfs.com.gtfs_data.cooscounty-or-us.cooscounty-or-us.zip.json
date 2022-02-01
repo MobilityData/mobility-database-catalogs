@@ -1,6 +1,0 @@
-{
-    "source_name": "CCAT's GTFS Schedule source",
-    "stable_url": "http://oregon-gtfs.com/gtfs_data/cooscounty-or-us/cooscounty-or-us.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/coos-county-area-transit/458/latest/download",
-    "datatype": "GTFS"
-}

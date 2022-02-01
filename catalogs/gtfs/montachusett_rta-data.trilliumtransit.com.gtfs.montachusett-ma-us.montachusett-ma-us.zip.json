@@ -1,6 +1,0 @@
-{
-    "source_name": "Montachusett RTA's GTFS Schedule source",
-    "stable_url": "http://data.trilliumtransit.com/gtfs/montachusett-ma-us/montachusett-ma-us.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/massdot/102/latest/download",
-    "datatype": "GTFS"
-}

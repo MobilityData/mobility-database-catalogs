@@ -1,6 +1,0 @@
-{
-    "source_name": "ZDiTM's GTFS Schedule source",
-    "stable_url": "https://www.zditm.szczecin.pl/rozklady/GTFS/latest/google_gtfs.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/zditm-szczecin/587/latest/download",
-    "datatype": "GTFS"
-}

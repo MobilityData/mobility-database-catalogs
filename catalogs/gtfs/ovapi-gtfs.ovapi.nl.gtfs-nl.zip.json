@@ -1,6 +1,0 @@
-{
-    "source_name": "OVapi's GTFS Schedule source",
-    "stable_url": "http://gtfs.ovapi.nl/gtfs-nl.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/ov/814/latest/download",
-    "datatype": "GTFS"
-}

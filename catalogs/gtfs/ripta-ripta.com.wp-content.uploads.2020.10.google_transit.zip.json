@@ -1,6 +1,0 @@
-{
-    "source_name": "RIPTA's GTFS Schedule source",
-    "stable_url": "https://www.ripta.com/wp-content/uploads/2020/10/google_transit.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/rhode-island-public-transit-authority/363/latest/download",
-    "datatype": "GTFS"
-}

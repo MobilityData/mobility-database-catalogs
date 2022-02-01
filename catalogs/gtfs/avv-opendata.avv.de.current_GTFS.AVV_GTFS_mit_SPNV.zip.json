@@ -1,6 +1,0 @@
-{
-    "source_name": "AVV's GTFS Schedule source",
-    "stable_url": "http://opendata.avv.de/current_GTFS/AVV_GTFS_mit_SPNV.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/aachener-verkehrsverbund/836/latest/download",
-    "datatype": "GTFS"
-}

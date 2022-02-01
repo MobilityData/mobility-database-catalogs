@@ -1,6 +1,0 @@
-{
-    "source_name": "NCSU's GTFS Schedule source",
-    "stable_url": "http://data.trilliumtransit.com/gtfs/ncsu-wolfline-nc-us/ncsu-wolfline-nc-us.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/north-carolina-state-university/387/latest/download",
-    "datatype": "GTFS"
-}

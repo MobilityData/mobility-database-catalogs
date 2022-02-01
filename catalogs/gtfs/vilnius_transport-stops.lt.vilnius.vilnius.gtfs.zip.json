@@ -1,6 +1,0 @@
-{
-    "source_name": "Vilnius Transport's GTFS Schedule source",
-    "stable_url": "http://www.stops.lt/vilnius/vilnius/gtfs.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/vilnius-transport/635/latest/download",
-    "datatype": "GTFS"
-}

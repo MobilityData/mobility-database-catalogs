@@ -1,6 +1,0 @@
-{
-    "source_name": "Community Transit's GTFS Schedule source",
-    "stable_url": "https://www.communitytransit.org/docs/default-source/open-data/gtfs/current.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/community-transit/454/latest/download",
-    "datatype": "GTFS"
-}

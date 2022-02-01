@@ -1,6 +1,0 @@
-{
-    "source_name": "Tar River Transit's GTFS Schedule source",
-    "stable_url": "http://data.trilliumtransit.com/gtfs/tarriver-nc-us/tarriver-nc-us.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/tar-river-transit/751/latest/download",
-    "datatype": "GTFS"
-}

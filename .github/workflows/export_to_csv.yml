@@ -34,12 +34,12 @@ jobs:
         uses: jannekem/run-python-script-action@v1
         with:
           script: |
-            from mobility_catalogs.tools.operations import get_sources
-            from mobility_catalogs.tools.helpers import to_csv
-            from mobility_catalogs.tools.constants import GTFS
-            path = "./catalog_static_gtfs.csv"
-            catalog = get_sources(source_type=GTFS)
-            columns = [
+            import pandas as pd
+            import os
+            import json
+
+            GTFS_CSV_PATH = "./catalog_static_gtfs.csv"
+            GTFS_CSV_COLUMNS = [
               'mdb_source_id',
               'name',
               'location',
@@ -53,7 +53,28 @@ jobs:
               'bounding_box.minimum_longitude',
               'bounding_box.maximum_longitude'
             ]
-            to_csv(path=path, catalog=catalog, columns=columns)
+
+            # tools.constants.GTFS
+            GTFS = "gtfs"
+
+            # tools.constants.GTFS_CATALOG_PATH_FROM_ROOT
+            GTFS_CATALOG_PATH_FROM_ROOT = "mobility_catalogs/catalogs/static/gtfs"
+
+            # tools.operations.get_sources
+            catalog_root = os.path.join(".", GTFS_CATALOG_PATH_FROM_ROOT)
+            # tools.helpers.aggregate
+            catalog = []
+            for path, sub_dirs, files in os.walk(catalog_root):
+                for file in files:
+                    with open(os.path.join(path, file)) as fp:
+                        catalog.append(json.load(fp))
+
+            # tools.helpers.to_csv
+            catalog = pd.json_normalize(catalog)
+            if columns is not None:
+                catalog = catalog[GTFS_CSV_COLUMNS]
+            catalog.to_csv(GTFS_CSV_PATH, sep=",", index=False)
+
       - name: Upload the GTFS Catalog CSV artifact
         uses: actions/upload-artifact@v1
         with:

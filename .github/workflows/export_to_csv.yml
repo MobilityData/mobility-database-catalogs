@@ -69,10 +69,12 @@ jobs:
                         catalog.append(json.load(fp))
 
             # tools.helpers.to_csv
+            path = GTFS_CSV_PATH
+            columns = GTFS_CSV_COLUMNS
             catalog = pd.json_normalize(catalog)
             if columns is not None:
-                catalog = catalog[GTFS_CSV_COLUMNS]
-            catalog.to_csv(GTFS_CSV_PATH, sep=",", index=False)
+                catalog = catalog[columns]
+            catalog.to_csv(path, sep=",", index=False)
 
       - name: Upload the GTFS Catalog CSV artifact
         uses: actions/upload-artifact@v1

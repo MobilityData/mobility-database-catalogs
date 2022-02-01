@@ -34,9 +34,9 @@ jobs:
         uses: jannekem/run-python-script-action@v1
         with:
           script: |
-            from tools.operations import get_sources
-            from tools.helpers import to_csv
-            from tools.constants import GTFS
+            from mobility_catalogs.tools.operations import get_sources
+            from mobility_catalogs.tools.helpers import to_csv
+            from mobility_catalogs.tools.constants import GTFS
             path = "./catalog_static_gtfs.csv"
             catalog = get_sources(source_type=GTFS)
             columns = [

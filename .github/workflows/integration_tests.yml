@@ -31,7 +31,7 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Integration tests with pytest
         run: |
-          pytest -v ./tests/test_integration.py --html=mobility-catalogs-integration-tests-report.html --self-contained-html
+          pytest -v ./mobility_catalogs/tests/test_integration.py --html=mobility-catalogs-integration-tests-report.html --self-contained-html
       - name: Upload the HTML artifact
         uses: actions/upload-artifact@v1
         with:

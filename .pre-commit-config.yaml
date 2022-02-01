@@ -8,7 +8,7 @@ repos:
       hooks:
         - id: pytest-unit-tests-check
           name: pytest-unit-tests-check
-          entry: pytest --ignore=tests/test_integration.py
+          entry: pytest --ignore=./mobility_catalogs/tests/test_integration.py
           language: system
           pass_filenames: false
           always_run: true
@@ -16,7 +16,7 @@ repos:
       hooks:
         - id: pytest-integration-tests-check
           name: pytest-integration-tests-check
-          entry: pytest -v ./tests/test_integration.py
+          entry: pytest -v ./mobility_catalogs/tests/test_integration.py
           language: system
           pass_filenames: false
           always_run: true

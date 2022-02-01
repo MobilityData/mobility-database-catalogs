@@ -1,5 +1,5 @@
 import os
-from tools.helpers import (
+from mobility_catalogs.tools.helpers import (
     aggregate,
     is_readable,
     identify_source,
@@ -10,7 +10,7 @@ from tools.helpers import (
     to_json,
     from_json,
 )
-from tools.constants import (
+from mobility_catalogs.tools.constants import (
     STATIC,
     GTFS,
     PATH_FROM_ROOT,

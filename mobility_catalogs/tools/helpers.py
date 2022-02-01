@@ -4,7 +4,7 @@ import gtfs_kit
 from requests.exceptions import MissingSchema
 import pandas as pd
 from pandas.errors import ParserError
-from tools.constants import (
+from mobility_catalogs.tools.constants import (
     STOP_LAT,
     STOP_LON,
     MDB_SOURCE_ID_TEMPLATE,

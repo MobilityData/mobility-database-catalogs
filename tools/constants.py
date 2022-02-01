@@ -1,7 +1,3 @@
-# CATALOG TYPES
-STATIC = "static"
-REALTIME = "realtime"
-
 # DATA TYPES
 GTFS = "gtfs"
 
@@ -16,11 +12,12 @@ MDB_SOURCE_ID_TEMPLATE = "mdb-src-{data_type}-{name}-{country_code}"
 MDB_ARCHIVES_LATEST_URL_TEMPLATE = "https://storage.googleapis.com/storage/v1/b/archives_latest/o/{mdb_source_id}.{extension}?alt=media"
 
 # CATALOG ROOTS
-STATIC_CATALOG_PATH_FROM_ROOT = "catalogs/static"
-GTFS_CATALOG_PATH_FROM_ROOT = "catalogs/static/gtfs"
+GTFS_CATALOG_PATH_FROM_ROOT = "catalogs/gtfs/schedules"
 
 # SCHEMAS FILES
-STATIC_SOURCE_SCHEMA_PATH_FROM_ROOT = "schemas/static_source_schema.json"
+GTFS_SCHEDULES_SOURCE_SCHEMA_PATH_FROM_ROOT = (
+    "schemas/gtfs_schedules_source_schema.json"
+)
 
 # STATIC_SCHEMA
 MDB_SOURCE_ID = "mdb_source_id"

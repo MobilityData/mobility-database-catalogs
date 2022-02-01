@@ -11,11 +11,9 @@ from tools.helpers import (
     from_json,
 )
 from tools.constants import (
-    STATIC,
     GTFS,
     PATH_FROM_ROOT,
     LOAD_FUNC,
-    STATIC_CATALOG_PATH_FROM_ROOT,
     GTFS_CATALOG_PATH_FROM_ROOT,
     EXTENSION,
     ZIP,
@@ -37,8 +35,6 @@ from tools.constants import (
 )
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
-
-STATIC_MAP = {PATH_FROM_ROOT: STATIC_CATALOG_PATH_FROM_ROOT}
 
 GTFS_MAP = {
     PATH_FROM_ROOT: GTFS_CATALOG_PATH_FROM_ROOT,
@@ -132,9 +128,9 @@ def update_source(
     return source
 
 
-def get_sources(source_type=STATIC):
+def get_sources(data_type=GTFS):
     """Get the sources of the Mobility Catalogs."""
-    source_type_map = globals()[f"{source_type.upper()}_MAP"]
+    source_type_map = globals()[f"{data_type.upper()}_MAP"]
     catalog_root = os.path.join(PROJECT_ROOT, source_type_map[PATH_FROM_ROOT])
     return aggregate(catalog_root)
 
@@ -144,12 +140,12 @@ def get_sources_by_bounding_box(
     maximum_latitude,
     minimum_longitude,
     maximum_longitude,
-    source_type=STATIC,
+    data_type=GTFS,
 ):
     """Get the sources included in the geographical bounding box."""
     return [
         source
-        for source in get_sources(source_type=source_type)
+        for source in get_sources(data_type=data_type)
         if are_overlapping_boxes(
             source_minimum_latitude=source[BOUNDING_BOX][MINIMUM_LATITUDE],
             source_maximum_latitude=source[BOUNDING_BOX][MAXIMUM_LATITUDE],
@@ -165,28 +161,28 @@ def get_sources_by_bounding_box(
 
 def get_sources_by_location(
     location,
-    source_type=STATIC,
+    data_type=GTFS,
 ):
     """Get the sources located at the given location."""
     return [
         source
-        for source in get_sources(source_type=source_type)
+        for source in get_sources(data_type=data_type)
         if source[LOCATION] == location
     ]
 
 
 def get_sources_by_country_code(
     country_code,
-    source_type=STATIC,
+    data_type=GTFS,
 ):
     """Get the sources located at the given location."""
     return [
         source
-        for source in get_sources(source_type=source_type)
+        for source in get_sources(data_type=data_type)
         if source[COUNTRY_CODE] == country_code
     ]
 
 
-def get_latest_datasets(source_type=STATIC):
+def get_latest_datasets(data_type=GTFS):
     """Get latest datasets of the Mobility Catalogs."""
-    return [source[URLS][LATEST] for source in get_sources(source_type=source_type)]
+    return [source[URLS][LATEST] for source in get_sources(data_type=data_type)]

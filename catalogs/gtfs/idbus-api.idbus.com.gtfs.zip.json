@@ -1,6 +1,0 @@
-{
-    "source_name": "iDBUS's GTFS Schedule source",
-    "stable_url": "https://api.idbus.com/gtfs.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/idbus/519/latest/download",
-    "datatype": "GTFS"
-}

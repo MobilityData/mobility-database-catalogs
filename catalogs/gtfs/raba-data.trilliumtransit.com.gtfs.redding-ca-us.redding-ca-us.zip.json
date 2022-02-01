@@ -1,6 +1,0 @@
-{
-    "source_name": "RABA's GTFS Schedule source",
-    "stable_url": "http://data.trilliumtransit.com/gtfs/redding-ca-us/redding-ca-us.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/redding-area-bus-authority/346/latest/download",
-    "datatype": "GTFS"
-}

@@ -1,6 +1,0 @@
-{
-    "source_name": "Weekendbus's GTFS Schedule source",
-    "stable_url": "http://apps.weekendbus.hu/gtfs/google_transit.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/weekendbus/887/latest/download",
-    "datatype": "GTFS"
-}

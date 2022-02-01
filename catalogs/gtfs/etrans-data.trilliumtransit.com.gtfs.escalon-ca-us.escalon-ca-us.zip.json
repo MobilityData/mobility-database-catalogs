@@ -1,6 +1,0 @@
-{
-    "source_name": "eTrans's GTFS Schedule source",
-    "stable_url": "http://data.trilliumtransit.com/gtfs/escalon-ca-us/escalon-ca-us.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/city-of-escalon/601/latest/download",
-    "datatype": "GTFS"
-}

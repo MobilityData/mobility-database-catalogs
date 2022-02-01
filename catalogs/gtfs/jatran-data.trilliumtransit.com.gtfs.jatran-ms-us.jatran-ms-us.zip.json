@@ -1,6 +1,0 @@
-{
-    "source_name": "JATRAN's GTFS Schedule source",
-    "stable_url": "http://data.trilliumtransit.com/gtfs/jatran-ms-us/jatran-ms-us.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/jatran/555/latest/download",
-    "datatype": "GTFS"
-}

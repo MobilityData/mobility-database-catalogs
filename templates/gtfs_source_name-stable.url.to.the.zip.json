@@ -1,6 +1,0 @@
-{
-  "source_name": "Insert the source name here.",
-  "stable_url": "Insert the stable URL here.",
-  "backup_stable_url": "Insert the backup stable URL here. If there is NO stable backup URL, please delete this line.",
-  "datatype": "GTFS"
-}

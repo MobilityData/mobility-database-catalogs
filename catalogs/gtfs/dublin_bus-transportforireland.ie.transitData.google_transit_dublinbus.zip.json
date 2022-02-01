@@ -1,6 +1,0 @@
-{
-    "source_name": "Dublin Bus's GTFS Schedule source",
-    "stable_url": "http://www.transportforireland.ie/transitData/google_transit_dublinbus.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/transport-for-ireland/782/latest/download",
-    "datatype": "GTFS"
-}

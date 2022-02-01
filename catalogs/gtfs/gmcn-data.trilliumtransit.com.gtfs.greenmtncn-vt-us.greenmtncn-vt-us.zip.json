@@ -1,6 +1,0 @@
-{
-    "source_name": "GMCN's GTFS Schedule source",
-    "stable_url": "http://data.trilliumtransit.com/gtfs/greenmtncn-vt-us/greenmtncn-vt-us.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/green-mountain-community-network/562/latest/download",
-    "datatype": "GTFS"
-}

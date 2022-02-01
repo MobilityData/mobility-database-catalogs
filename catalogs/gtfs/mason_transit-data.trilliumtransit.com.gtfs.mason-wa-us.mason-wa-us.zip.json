@@ -1,6 +1,0 @@
-{
-    "source_name": "Mason Transit's GTFS Schedule source",
-    "stable_url": "http://data.trilliumtransit.com/gtfs/mason-wa-us/mason-wa-us.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/mason-transit/590/latest/download",
-    "datatype": "GTFS"
-}

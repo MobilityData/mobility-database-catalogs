@@ -1,6 +1,0 @@
-{
-    "source_name": "Transit Windsor's GTFS Schedule source",
-    "stable_url": "https://opendata.citywindsor.ca/Uploads/google_transit.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/city-of-windsor/778/latest/download",
-    "datatype": "GTFS"
-}

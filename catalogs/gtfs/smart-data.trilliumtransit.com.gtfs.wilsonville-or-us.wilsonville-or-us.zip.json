@@ -1,6 +1,0 @@
-{
-    "source_name": "SMART's GTFS Schedule source",
-    "stable_url": "http://data.trilliumtransit.com/gtfs/wilsonville-or-us/wilsonville-or-us.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/wilsonville-transit/429/latest/download",
-    "datatype": "GTFS"
-}

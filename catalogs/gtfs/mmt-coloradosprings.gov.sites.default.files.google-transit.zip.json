@@ -1,6 +1,0 @@
-{
-    "source_name": "MMT's GTFS Schedule source",
-    "stable_url": "https://coloradosprings.gov/sites/default/files/google-transit.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/mountain-metropolitan-transit/374/latest/download",
-    "datatype": "GTFS"
-}

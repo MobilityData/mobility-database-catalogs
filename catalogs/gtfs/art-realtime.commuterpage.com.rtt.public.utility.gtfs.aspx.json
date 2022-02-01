@@ -1,6 +1,0 @@
-{
-    "source_name": "ART's GTFS Schedule source",
-    "stable_url": "http://realtime.commuterpage.com/rtt/public/utility/gtfs.aspx",
-    "backup_stable_url": "https://transitfeeds.com/p/arlington-transit/149/latest/download",
-    "datatype": "GTFS"
-}

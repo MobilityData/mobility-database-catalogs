@@ -1,6 +1,0 @@
-{
-    "source_name": "De Lijn's GTFS Schedule source",
-    "stable_url": "http://gtfs.irail.be/de-lijn/de_lijn-gtfs.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/vlaamse-vervoersmaatschappij-de-lijn/530/latest/download",
-    "datatype": "GTFS"
-}

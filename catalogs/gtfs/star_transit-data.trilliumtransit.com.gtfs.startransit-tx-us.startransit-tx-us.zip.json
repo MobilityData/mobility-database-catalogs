@@ -1,6 +1,0 @@
-{
-    "source_name": "STAR Transit's GTFS Schedule source",
-    "stable_url": "http://data.trilliumtransit.com/gtfs/startransit-tx-us/startransit-tx-us.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/star-transit/745/latest/download",
-    "datatype": "GTFS"
-}

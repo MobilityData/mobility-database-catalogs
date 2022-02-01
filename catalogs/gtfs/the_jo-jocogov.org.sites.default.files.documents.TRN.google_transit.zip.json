@@ -1,6 +1,0 @@
-{
-    "source_name": "The JO's GTFS Schedule source",
-    "stable_url": "http://www.jocogov.org/sites/default/files/documents/TRN/google_transit.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/the-jo/632/latest/download",
-    "datatype": "GTFS"
-}

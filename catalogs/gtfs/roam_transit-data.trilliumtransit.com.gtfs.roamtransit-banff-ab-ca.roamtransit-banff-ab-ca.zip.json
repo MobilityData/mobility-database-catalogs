@@ -1,6 +1,0 @@
-{
-    "source_name": "Roam Transit's GTFS Schedule source",
-    "stable_url": "http://data.trilliumtransit.com/gtfs/roamtransit-banff-ab-ca/roamtransit-banff-ab-ca.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/roam-transit/953/latest/download",
-    "datatype": "GTFS"
-}

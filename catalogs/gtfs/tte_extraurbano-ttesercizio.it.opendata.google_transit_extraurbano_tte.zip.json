@@ -1,6 +1,0 @@
-{
-    "source_name": "TTE Extraurbano's GTFS Schedule source",
-    "stable_url": "http://www.ttesercizio.it/opendata/google_transit_extraurbano_tte.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/trentino-trasporti-esercizio/614/latest/download",
-    "datatype": "GTFS"
-}

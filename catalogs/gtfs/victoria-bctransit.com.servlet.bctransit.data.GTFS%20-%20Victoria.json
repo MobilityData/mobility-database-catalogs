@@ -1,6 +1,0 @@
-{
-    "source_name": "Victoria's GTFS Schedule source",
-    "stable_url": "http://bctransit.com/servlet/bctransit/data/GTFS%20-%20Victoria",
-    "backup_stable_url": "https://transitfeeds.com/p/bc-transit/695/latest/download",
-    "datatype": "GTFS"
-}

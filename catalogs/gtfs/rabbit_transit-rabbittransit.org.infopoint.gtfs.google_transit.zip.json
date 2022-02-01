@@ -1,6 +1,0 @@
-{
-    "source_name": "Rabbit Transit's GTFS Schedule source",
-    "stable_url": "http://www.rabbittransit.org/infopoint/gtfs/google_transit.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/rabbit-transit/383/latest/download",
-    "datatype": "GTFS"
-}

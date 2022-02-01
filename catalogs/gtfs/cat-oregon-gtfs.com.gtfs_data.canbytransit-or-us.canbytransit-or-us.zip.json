@@ -1,6 +1,0 @@
-{
-    "source_name": "CAT's GTFS Schedule source",
-    "stable_url": "http://oregon-gtfs.com/gtfs_data/canbytransit-or-us/canbytransit-or-us.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/canby-area-transit/608/latest/download",
-    "datatype": "GTFS"
-}

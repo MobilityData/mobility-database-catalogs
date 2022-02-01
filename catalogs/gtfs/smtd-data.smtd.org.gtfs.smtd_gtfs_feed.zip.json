@@ -1,6 +1,0 @@
-{
-    "source_name": "SMTD's GTFS Schedule source",
-    "stable_url": "http://data.smtd.org/gtfs/smtd_gtfs_feed.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/springfield-mass-transit-district/534/latest/download",
-    "datatype": "GTFS"
-}

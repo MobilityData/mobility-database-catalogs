@@ -1,6 +1,0 @@
-{
-    "source_name": "NMBS-SNCB's GTFS Schedule source",
-    "stable_url": "https://gtfs.irail.be/nmbs/gtfs/latest.zip",
-    "backup_stable_url": "https://transitfeeds.com/p/societe-nationale-des-chemins-de-fer-belges/528/latest/download",
-    "datatype": "GTFS"
-}

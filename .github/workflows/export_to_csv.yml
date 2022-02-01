@@ -1,4 +1,4 @@
-name: Export to CSV script
+name: Export catalogs to CSV
 
 on:
   push:

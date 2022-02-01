@@ -1,4 +1,4 @@
-name: Mobility Catalogs integration tests
+name: Integration tests
 
 on:
   push:

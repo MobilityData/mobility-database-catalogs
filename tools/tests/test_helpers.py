@@ -1,6 +1,6 @@
 from unittest import TestCase, skip
 from unittest.mock import patch, Mock
-from mobility_catalogs.tools.helpers import *
+from tools.helpers import *
 import pandas as pd
 
 
@@ -104,7 +104,7 @@ class TestVerificationFunctions(TestCase):
         )
         self.assertFalse(under_test)
 
-    @patch("mobility_catalogs.tools.helpers.are_overlapping_edges")
+    @patch("tools.helpers.are_overlapping_edges")
     def test_are_overlapping_boxes(self, mock_edges):
         test_source_minimum_latitude = Mock()
         test_source_maximum_latitude = Mock()
@@ -167,7 +167,7 @@ class TestVerificationFunctions(TestCase):
         )
         self.assertFalse(under_test)
 
-    @patch("mobility_catalogs.tools.helpers.load_gtfs")
+    @patch("tools.helpers.load_gtfs")
     def test_is_not_readable(self, mock_load_func):
         mock_load_func.side_effect = Mock(side_effect=TypeError())
         self.assertRaises(
@@ -184,7 +184,7 @@ class TestVerificationFunctions(TestCase):
             Exception, is_readable, url=self.test_url, load_func=mock_load_func
         )
 
-    @patch("mobility_catalogs.tools.helpers.load_gtfs")
+    @patch("tools.helpers.load_gtfs")
     def test_is_readable(self, mock_load_func):
         mock_load_func.side_effect = "some_dataset"
         under_test = is_readable(url=self.test_url, load_func=mock_load_func)
@@ -216,7 +216,7 @@ class TestGtfsSpecificFunctions(TestCase):
     def setUp(self):
         self.test_url = "some_url"
 
-    @patch("mobility_catalogs.tools.helpers.gtfs_kit.read_feed")
+    @patch("tools.helpers.gtfs_kit.read_feed")
     def test_not_loading_gtfs(self, mock_gtfs_kit):
         mock_gtfs_kit.side_effect = Mock(side_effect=TypeError())
         self.assertRaises(
@@ -239,14 +239,14 @@ class TestGtfsSpecificFunctions(TestCase):
             url=self.test_url,
         )
 
-    @patch("mobility_catalogs.tools.helpers.gtfs_kit.read_feed")
+    @patch("tools.helpers.gtfs_kit.read_feed")
     def test_loading_gtfs(self, mock_gtfs_kit):
         test_dataset = "some_gtfs_dataset"
         mock_gtfs_kit.return_value = test_dataset
         under_test = load_gtfs(url=self.test_url)
         self.assertEqual(under_test, test_dataset)
 
-    @patch("mobility_catalogs.tools.helpers.load_gtfs")
+    @patch("tools.helpers.load_gtfs")
     def test_extract_gtfs_bounding_box_none_stops(self, mock_load_gtfs):
         test_bounding_box = (None, None, None, None)
         test_stops = None
@@ -254,7 +254,7 @@ class TestGtfsSpecificFunctions(TestCase):
         under_test = extract_gtfs_bounding_box(url=self.test_url)
         self.assertEqual(under_test, test_bounding_box)
 
-    @patch("mobility_catalogs.tools.helpers.load_gtfs")
+    @patch("tools.helpers.load_gtfs")
     def test_extract_gtfs_bounding_box_empty_dataframe(self, mock_load_gtfs):
         test_bounding_box = (None, None, None, None)
         test_stops = pd.DataFrame()
@@ -262,7 +262,7 @@ class TestGtfsSpecificFunctions(TestCase):
         under_test = extract_gtfs_bounding_box(url=self.test_url)
         self.assertEqual(under_test, test_bounding_box)
 
-    @patch("mobility_catalogs.tools.helpers.load_gtfs")
+    @patch("tools.helpers.load_gtfs")
     def test_extract_gtfs_bounding_box_missing_columns(self, mock_load_gtfs):
         test_bounding_box = (None, None, None, None)
         test_stops = pd.DataFrame({"some_column": []})
@@ -270,7 +270,7 @@ class TestGtfsSpecificFunctions(TestCase):
         under_test = extract_gtfs_bounding_box(url=self.test_url)
         self.assertEqual(under_test, test_bounding_box)
 
-    @patch("mobility_catalogs.tools.helpers.load_gtfs")
+    @patch("tools.helpers.load_gtfs")
     def test_extract_gtfs_bounding_box_empty_columns(self, mock_load_gtfs):
         test_bounding_box = (None, None, None, None)
         test_stops = pd.DataFrame({STOP_LAT: [], STOP_LON: []})
@@ -278,7 +278,7 @@ class TestGtfsSpecificFunctions(TestCase):
         under_test = extract_gtfs_bounding_box(url=self.test_url)
         self.assertEqual(under_test, test_bounding_box)
 
-    @patch("mobility_catalogs.tools.helpers.load_gtfs")
+    @patch("tools.helpers.load_gtfs")
     def test_extract_gtfs_bounding_box_nan_values(self, mock_load_gtfs):
         test_bounding_box = (None, None, None, None)
         test_stops = pd.DataFrame({STOP_LAT: [pd.NA], STOP_LON: [pd.NA]})
@@ -286,7 +286,7 @@ class TestGtfsSpecificFunctions(TestCase):
         under_test = extract_gtfs_bounding_box(url=self.test_url)
         self.assertEqual(under_test, test_bounding_box)
 
-    @patch("mobility_catalogs.tools.helpers.load_gtfs")
+    @patch("tools.helpers.load_gtfs")
     def test_extract_gtfs_bounding_box_stops_present(self, mock_load_gtfs):
         test_bounding_box = (44.00000, 45.000000, -110.000000, -109.000000)
 
@@ -306,16 +306,16 @@ class TestInOutFunctions(TestCase):
         self.test_path = "some_path"
         self.test_obj = {"some_key": "some_value"}
 
-    @patch("mobility_catalogs.tools.helpers.open")
-    @patch("mobility_catalogs.tools.helpers.json.dump")
+    @patch("tools.helpers.open")
+    @patch("tools.helpers.json.dump")
     def test_to_json(self, mock_json, mock_open):
         under_test = to_json(path=self.test_path, obj=self.test_obj)
         self.assertIsNone(under_test)
         mock_open.assert_called_once()
         mock_json.assert_called_once()
 
-    @patch("mobility_catalogs.tools.helpers.open")
-    @patch("mobility_catalogs.tools.helpers.json.load")
+    @patch("tools.helpers.open")
+    @patch("tools.helpers.json.load")
     def test_from_json(self, mock_json, mock_open):
         mock_json.return_value = self.test_obj
         under_test = from_json(path=self.test_path)
@@ -323,10 +323,10 @@ class TestInOutFunctions(TestCase):
         mock_open.assert_called_once()
         mock_json.assert_called_once()
 
-    @patch("mobility_catalogs.tools.helpers.os.walk")
-    @patch("mobility_catalogs.tools.helpers.os.path.join")
-    @patch("mobility_catalogs.tools.helpers.open")
-    @patch("mobility_catalogs.tools.helpers.json.load")
+    @patch("tools.helpers.os.walk")
+    @patch("tools.helpers.os.path.join")
+    @patch("tools.helpers.open")
+    @patch("tools.helpers.json.load")
     def test_aggregate(self, mock_json, mock_open, mock_path, mock_walk):
         mock_walk.return_value = [
             ("/catalogs", ("static",), ()),

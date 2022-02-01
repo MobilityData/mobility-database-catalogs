@@ -1,8 +1,8 @@
 import os
 from jsonschema import validate
-from mobility_catalogs.tools.helpers import from_json
-from mobility_catalogs.tools.operations import get_sources
-from mobility_catalogs.tools.constants import GTFS, STATIC_SOURCE_SCHEMA_PATH_FROM_ROOT
+from tools.helpers import from_json
+from tools.operations import get_sources
+from tools.constants import GTFS, STATIC_SOURCE_SCHEMA_PATH_FROM_ROOT
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
 

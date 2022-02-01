@@ -1,5 +1,6 @@
 import json
 import os
+import datetime
 import gtfs_kit
 from requests.exceptions import MissingSchema
 import pandas as pd
@@ -157,6 +158,18 @@ def create_latest_url(mdb_source_id, extension):
     """
     return MDB_ARCHIVES_LATEST_URL_TEMPLATE.format(
         mdb_source_id=mdb_source_id, extension=extension
+    )
+
+
+def get_iso_time():
+    """Get the current UTC time in ISO 8601 format.
+    :return: The current UTC time in ISO 8601 format.
+    """
+    return (
+        datetime.datetime.utcnow()
+        .replace(tzinfo=datetime.timezone.utc)
+        .replace(microsecond=0)
+        .isoformat()
     )
 
 

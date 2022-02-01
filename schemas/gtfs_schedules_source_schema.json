@@ -44,6 +44,10 @@
               "type": "number",
               "minimum": -180,
               "maximum": 180
+            },
+            "extracted_on": {
+              "type": "string",
+              "format": "date-time"
             }
           }
         },
@@ -60,11 +64,15 @@
             },
             "maximum_longitude": {
               "type": "null"
+            },
+            "extracted_on": {
+              "type": "string",
+              "format": "date-time"
             }
           }
         }
       ],
-      "required": ["minimum_latitude", "maximum_latitude", "minimum_longitude", "maximum_longitude"]
+      "required": ["minimum_latitude", "maximum_latitude", "minimum_longitude", "maximum_longitude", "extracted_on"]
     },
     "data_type": {
       "type": "string",

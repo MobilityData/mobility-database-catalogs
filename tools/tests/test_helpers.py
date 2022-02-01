@@ -2,6 +2,7 @@ from unittest import TestCase, skip
 from unittest.mock import patch, Mock
 from tools.helpers import *
 import pandas as pd
+from freezegun import freeze_time
 
 
 class TestVerificationFunctions(TestCase):
@@ -210,6 +211,12 @@ class TestCreationFunctions(TestCase):
             mdb_source_id=test_mdb_source_id, extension=test_extension
         )
         self.assertEqual(under_test, test_latest_url)
+
+    @freeze_time("2022-01-01")
+    def test_get_iso_time(self):
+        test_time = "2022-01-01T00:00:00+00:00"
+        under_test = get_iso_time()
+        self.assertEqual(under_test, test_time)
 
 
 class TestGtfsSpecificFunctions(TestCase):

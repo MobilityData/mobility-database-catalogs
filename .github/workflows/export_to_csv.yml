@@ -50,7 +50,8 @@ jobs:
               'bounding_box.minimum_latitude',
               'bounding_box.maximum_latitude',
               'bounding_box.minimum_longitude',
-              'bounding_box.maximum_longitude'
+              'bounding_box.maximum_longitude',
+              'bounding_box.extracted_on'
             ]
 
             # tools.constants.GTFS

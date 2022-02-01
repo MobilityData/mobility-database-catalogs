@@ -9,6 +9,7 @@ from tools.helpers import (
     create_latest_url,
     to_json,
     from_json,
+    get_iso_time,
 )
 from tools.constants import (
     GTFS,
@@ -27,6 +28,7 @@ from tools.constants import (
     MAXIMUM_LATITUDE,
     MINIMUM_LONGITUDE,
     MAXIMUM_LONGITUDE,
+    EXTRACTED_ON,
     DATA_TYPE,
     URLS,
     AUTO_DISCOVERY,
@@ -61,6 +63,7 @@ def add_source(
         latest_url = create_latest_url(
             mdb_source_id=mdb_source_id, extension=data_type_map[EXTENSION]
         )
+        extraction_time = get_iso_time()
 
         source = {
             MDB_SOURCE_ID: mdb_source_id,
@@ -72,6 +75,7 @@ def add_source(
                 MAXIMUM_LATITUDE: maximum_latitude,
                 MINIMUM_LONGITUDE: minimum_longitude,
                 MAXIMUM_LONGITUDE: maximum_longitude,
+                EXTRACTED_ON: extraction_time,
             },
             DATA_TYPE: data_type,
             URLS: {
@@ -115,6 +119,7 @@ def update_source(
             source[BOUNDING_BOX][MINIMUM_LONGITUDE],
             source[BOUNDING_BOX][MAXIMUM_LONGITUDE],
         ) = extract_gtfs_bounding_box(url=auto_discovery_url)
+        source[BOUNDING_BOX][EXTRACTED_ON] = get_iso_time()
     if name is not None:
         source[NAME] = name
     if location is not None:

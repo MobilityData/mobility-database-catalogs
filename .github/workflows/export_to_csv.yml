@@ -58,7 +58,7 @@ jobs:
             GTFS = "gtfs"
 
             # tools.constants.GTFS_CATALOG_PATH_FROM_ROOT
-            GTFS_CATALOG_PATH_FROM_ROOT = "catalogs/static/gtfs"
+            GTFS_CATALOG_PATH_FROM_ROOT = "catalogs/gtfs/schedules"
 
             # tools.operations.get_sources
             catalog_root = os.path.join(".", GTFS_CATALOG_PATH_FROM_ROOT)

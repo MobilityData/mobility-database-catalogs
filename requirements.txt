@@ -10,6 +10,7 @@ distlib==0.3.4
 filelock==3.4.2
 Fiona==1.8.20
 folium==0.12.1.post1
+freezegun==1.1.0
 geopandas==0.10.2
 gtfs-kit==5.2.0
 identify==2.4.5

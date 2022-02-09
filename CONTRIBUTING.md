@@ -73,12 +73,12 @@ To contribute operations to the mobility catalogs, it is suggested that you foll
 3. Contribute the constants needed for your operation under `tools.constants`.
 4. Contribute the unit tests for every function or operation you added.
 
-### Coding style
+## Coding style
 "Sticking to a single consistent and documented coding style for this project is important to ensure that code reviewers dedicate their attention to the functionality of the validation, as opposed to disagreements about the coding style (and avoid [bike-shedding](https://en.wikipedia.org/wiki/Law_of_triviality))."
 
 This project uses [the Black code formatter](https://github.com/psf/black), which is compliant with [PEP8](https://www.python.org/dev/peps/pep-0008/), the style guide for Python code. A [pre-commit](https://pre-commit.com/) hook file is provided with the repo so it is easy to apply Black before each commit. A CI workflow is testing the code pushed in a pull request to make sure it is PEP8 compliant.
 
-### How to run tests locally
+## How to run tests locally
 This project includes unit and integration tests in order to:
 1. Verify the implementation behaves as expected in tests as well as on real data
 2. Make sure any new code does not break existing code

@@ -24,12 +24,12 @@ Contains the JSON schemas used to validate the sources in the integration tests.
 
 ## Data Structure
 
-|     Field Name     |  Required from users  |                                                                              Definition                                                                             | 
-|:------------------:|:---------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------:|---|---|
+|     Field Name     |  Required from users  |                                                                              Definition                                                                             |
+|:------------------:|:---------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------:
 | MDB Source ID      | No - system generated | Unique identifier following the structure: mdbsrc-provider-subdivisionname-countrycode-numericalid. 63 character maximum based on Google Cloud Storage limits.      |   |   |
 | Data Type          | Yes                   | The data format that the source uses, e.g GTFS, GTFS-RT.                                                                                                            |   |   |
-| Country Code       | Yes                   | ISO 3166-1 alpha-2 code designating the country where the system is located. For a list of valid codes see here.                                                    |   |   |
-| Subdivision name   | Yes                   | ISO 3166-2 subdivision name designating the subdivision (e.g province, state, region) where the system is located. For a list of valid names see here.              |   |   |
+| Country Code       | Yes                   | ISO 3166-1 alpha-2 code designating the country where the system is located. For a list of valid codes [see here](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).                                                    |   |   |
+| Subdivision name   | Yes                   | ISO 3166-2 subdivision name designating the subdivision (e.g province, state, region) where the system is located. For a list of valid names [see here](https://unece.org/trade/uncefact/unlocode-country-subdivisions-iso-3166-2).              |   |   |
 | Municipality       | Yes                   | Primary municipality in which the transit system is located.                                                                                                        |   |   |
 | Provider           | Yes                   | Name of the transit provider.                                                                                                                                       |   |   |
 | Name               | Optional              | An optional description of the data source, e.g to specify if the data source is an aggregate of multiple providers, or which network is represented by the source. |   |   |

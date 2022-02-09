@@ -6,7 +6,7 @@ The Mobility Database Catalogs is a project that provides a list of open mobilit
 
 This README contains information for the [prototype branch](https://github.com/MobilityData/mobility-catalogs/tree/issue/343%2Fcatalogs-prototype) of this project, which is under active development.
 
-You can view our release plan for V1 here.
+[You can view our release plan for V1 here](https://github.com/MobilityData/mobility-database-catalogs/issues/30).
 
 ## The Core Parts
 
@@ -24,7 +24,7 @@ Contains the JSON schemas used to validate the sources in the integration tests.
 
 ## Data Structure
 
-|     Field Name     |  Required from users  |                                                                              Definition                                                                             |   |   |
+|     Field Name     |  Required from users  |                                                                              Definition                                                                             | 
 |:------------------:|:---------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------:|---|---|
 | MDB Source ID      | No - system generated | Unique identifier following the structure: mdbsrc-provider-subdivisionname-countrycode-numericalid. 63 character maximum based on Google Cloud Storage limits.      |   |   |
 | Data Type          | Yes                   | The data format that the source uses, e.g GTFS, GTFS-RT.                                                                                                            |   |   |

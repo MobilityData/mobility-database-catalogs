@@ -1,14 +1,43 @@
-# The Mobility Catalogs
+# The Mobility Database Catalogs
 
 [![Integration tests](https://github.com/MobilityData/mobility-catalogs/actions/workflows/integration_tests.yml/badge.svg?branch=issue%2F343%2Fcatalogs-prototype)](https://github.com/MobilityData/mobility-catalogs/actions/workflows/integration_tests.yml) [![Unit tests](https://github.com/MobilityData/mobility-catalogs/actions/workflows/unit_tests.yml/badge.svg?branch=issue%2F343%2Fcatalogs-prototype)](https://github.com/MobilityData/mobility-catalogs/actions/workflows/unit_tests.yml) [![Export catalogs to CSV](https://github.com/MobilityData/mobility-catalogs/actions/workflows/export_to_csv.yml/badge.svg?branch=issue%2F343%2Fcatalogs-prototype)](https://github.com/MobilityData/mobility-catalogs/actions/workflows/export_to_csv.yml) [![Join the MobilityData chat](https://badgen.net/badge/slack/%20/green?icon=slack)](https://bit.ly/mobilitydata-slack)
 
-The Catalogs of Sources of the Mobility Database.
+The Mobility Database Catalogs is a project that provides a list of open mobility data sources from across the world, and the code to filter and manipulate them.
 
 This README contains information for the [prototype branch](https://github.com/MobilityData/mobility-catalogs/tree/issue/343%2Fcatalogs-prototype) of this project, which is under active development.
 
-## Introduction
+You can view our release plan for V1 here.
 
-Mobility Catalogs is a project that provides both source catalogs for mobility data types, such as GTFS schedules, and the code to manipulate them.
+## The Core Parts
+
+### Catalogs
+
+Contains the sources of the Mobility Catalogs. Every single source is represented by a JSON file. The sources can be aggregated by criteria using our `tools.operations` functions.
+
+### Tools
+
+Contains the tools to search, add and update the sources. The `tools.operations` module contains the project operations (get, add and update). The `tools.helpers` module contains helper functions that support the `tools.operations` module. The `tools.constants` module contains the project constants.
+
+### Schemas
+
+Contains the JSON schemas used to validate the sources in the integration tests.
+
+## Data Structure
+
+|     Field Name     |  Required from users  |                                                                              Definition                                                                             |   |   |
+|:------------------:|:---------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------:|---|---|
+| MDB Source ID      | No - system generated | Unique identifier following the structure: mdbsrc-provider-subdivisionname-countrycode-numericalid. 63 character maximum based on Google Cloud Storage limits.      |   |   |
+| Data Type          | Yes                   | The data format that the source uses, e.g GTFS, GTFS-RT.                                                                                                            |   |   |
+| Country Code       | Yes                   | ISO 3166-1 alpha-2 code designating the country where the system is located. For a list of valid codes see here.                                                    |   |   |
+| Subdivision name   | Yes                   | ISO 3166-2 subdivision name designating the subdivision (e.g province, state, region) where the system is located. For a list of valid names see here.              |   |   |
+| Municipality       | Yes                   | Primary municipality in which the transit system is located.                                                                                                        |   |   |
+| Provider           | Yes                   | Name of the transit provider.                                                                                                                                       |   |   |
+| Name               | Optional              | An optional description of the data source, e.g to specify if the data source is an aggregate of multiple providers, or which network is represented by the source. |   |   |
+| Auto-Discovery URL | Yes                   | URL that automatically opens the source.                                                                                                                            |   |   |
+| Latest dataset URL | No - system generated | A stable URL for the latest dataset of a source.                                                                                                                    |   |   |
+| License URL        | Optional              | The transit provider’s license information.                                                                                                                         |   |   |
+| Bounding box       | No - system generated | This is the bounding box of the data source when it was first added to the catalog. It includes the date and timestamp the bounding box was extracted on in UTC.       |   |   |
+
 
 ## Installation
 
@@ -102,11 +131,11 @@ To get the sources by bounding box:
 To add a new source:
 ```
 >>> add_source(
-        name="Your Source Name", 
-        location="Your Source Location", 
-        country_code="Your Source Country Code", 
-        auto_discovery_url="https://your.source.stable.discovery.url", 
-        license_url="https://your.source.license.url", 
+        name="Your Source Name",
+        location="Your Source Location",
+        country_code="Your Source Country Code",
+        auto_discovery_url="https://your.source.stable.discovery.url",
+        license_url="https://your.source.license.url",
         data_type=GTFS
     )
 ```
@@ -114,7 +143,7 @@ To add a new source:
 To update a source:
 ```
 >>> update_source(
-        mdb_source_id="mdb-src-gtfs-your-source-id", 
+        mdb_source_id="mdb-src-gtfs-your-source-id",
         name=None,
         location=None,
         country_code=None,
@@ -124,21 +153,6 @@ To update a source:
     )
 ```
 
-## The Core Parts
-
-### Catalogs
-
-Contains the sources of the Mobility Catalogs. Every single source is represented by a JSON file. The sources can be aggregated by criteria using our `tools.operations` functions.
-
-### Tools
-
-Contains the tools to search, add and update the sources. The `tools.operations` module contains the project operations (get, add and update). The `tools.helpers` module contains helper functions that support the `tools.operations` module. The `tools.constants` module contains the project constants.
-
-### Schemas
-
-Contains the JSON schemas used to validate the sources in the integration tests.
-
-
 ## Integration Tests
 
 In order to avoid invalid sources in the Mobility Catalogs, any modification made in the repository, addition or update, must pass the integration tests before being merged into the project. The integration tests are listed in the [Test Integration](/tests/test_integration.py) module
@@ -147,6 +161,8 @@ In order to avoid invalid sources in the Mobility Catalogs, any modification mad
 
 Code licensed under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0).
 
+Individual transit data sources are subject to the terms & conditions of their own respective data provider. If you are a transit provider and there is a data source that should not be included in the repository, please contact emma@mobilitydata.org and we'll remove it as soon as possible.
+
 ## Contributing
 
-We welcome contributions to the project! Please check out our [Contribution guidelines](/CONTRIBUTING.md) for details. 
+We welcome contributions to the project! Please check out our [Contribution guidelines](/CONTRIBUTING.md) for details.

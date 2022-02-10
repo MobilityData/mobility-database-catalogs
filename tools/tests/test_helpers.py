@@ -194,12 +194,13 @@ class TestVerificationFunctions(TestCase):
 
 class TestCreationFunctions(TestCase):
     def test_identify_source(self):
-        test_name = "Some Name"
+        test_provider = "Some Provider"
+        test_subdivision_name = "Some Subdivision Name"
         test_country_code = "CA"
         test_data_type = "gtfs"
-        test_mdb_source_id = "mdb-src-gtfs-some-name-ca"
+        test_mdb_source_id = "mdbsrc-gtfs-some-provider-some-subdivision-name-ca"
         under_test = identify_source(
-            name=test_name, country_code=test_country_code, data_type=test_data_type
+            provider=test_provider, subdivision_name=test_subdivision_name, country_code=test_country_code, data_type=test_data_type
         )
         self.assertEqual(under_test, test_mdb_source_id)
 

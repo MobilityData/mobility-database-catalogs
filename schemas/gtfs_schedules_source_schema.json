@@ -5,101 +5,116 @@
   "properties": {
     "mdb_source_id": {
       "type": "string",
-      "description": "The Mobility Database ID of the source."
-    },
-    "name": {
-      "type": "string",
-      "description": "The name of the source."
-    },
-    "location": {
-      "type": "string",
-      "description": "The location name of the source."
-    },
-    "country_code": {
-      "type": "string",
-      "description": "The country code of the source."
-    },
-    "bounding_box": {
-      "type": "object",
-      "description": "The bounding box of the source.",
-      "oneOf": [
-        {
-          "properties": {
-            "minimum_latitude": {
-              "type": "number",
-              "minimum": -90,
-              "maximum": 90
-            },
-            "maximum_latitude": {
-              "type": "number",
-              "minimum": -90,
-              "maximum": 90
-            },
-            "minimum_longitude": {
-              "type": "number",
-              "minimum": -180,
-              "maximum": 180
-            },
-            "maximum_longitude": {
-              "type": "number",
-              "minimum": -180,
-              "maximum": 180
-            },
-            "extracted_on": {
-              "type": "string",
-              "format": "date-time"
-            }
-          }
-        },
-        {
-          "properties": {
-            "minimum_latitude": {
-              "type": "null"
-            },
-            "maximum_latitude": {
-              "type": "null"
-            },
-            "minimum_longitude": {
-              "type": "null"
-            },
-            "maximum_longitude": {
-              "type": "null"
-            },
-            "extracted_on": {
-              "type": "string",
-              "format": "date-time"
-            }
-          }
-        }
-      ],
-      "required": ["minimum_latitude", "maximum_latitude", "minimum_longitude", "maximum_longitude", "extracted_on"]
+      "description": "Unique identifier following the structure: mdbsrc-datatype-provider-subdivision-name-country-code."
     },
     "data_type": {
       "type": "string",
-      "description": "The data type of the source.",
+      "description": "The data format that the source uses, e.g gtfs, gtfs-rt.",
       "enum": ["gtfs"]
+    },
+    "provider": {
+      "type": "string",
+      "description": "Name of the transit provider."
+    },
+    "name": {
+      "type": "string",
+      "description": "An optional description of the data source, e.g to specify if the data source is an aggregate of multiple providers, or which network is represented by the source."
+    },
+    "location": {
+      "type": "object",
+      "description": "The location information of the source.",
+      "properties": {
+        "country_code": {
+          "type": "string",
+          "description": "ISO 3166-1 alpha-2 code designating the country where the system is located."
+        },
+        "subdivision_name": {
+          "type": "string",
+          "description": "ISO 3166-2 subdivision name designating the subdivision (e.g province, state, region) where the system is located."
+        },
+        "municipality": {
+          "type": "string",
+          "description": "Primary municipality in which the transit system is located."
+        },
+        "bounding_box": {
+          "type": "object",
+          "description": "This is the bounding box of the data source when it was first added to the catalog. It includes the date and timestamp the bounding box was extracted in UTC.",
+          "oneOf": [
+            {
+              "properties": {
+                "minimum_latitude": {
+                  "type": "number",
+                  "minimum": -90,
+                  "maximum": 90
+                },
+                "maximum_latitude": {
+                  "type": "number",
+                  "minimum": -90,
+                  "maximum": 90
+                },
+                "minimum_longitude": {
+                  "type": "number",
+                  "minimum": -180,
+                  "maximum": 180
+                },
+                "maximum_longitude": {
+                  "type": "number",
+                  "minimum": -180,
+                  "maximum": 180
+                },
+                "extracted_on": {
+                  "type": "string",
+                  "format": "date-time"
+                }
+              }
+            },
+            {
+              "properties": {
+                "minimum_latitude": {
+                  "type": "null"
+                },
+                "maximum_latitude": {
+                  "type": "null"
+                },
+                "minimum_longitude": {
+                  "type": "null"
+                },
+                "maximum_longitude": {
+                  "type": "null"
+                },
+                "extracted_on": {
+                  "type": "string",
+                  "format": "date-time"
+                }
+              }
+            }
+          ],
+          "required": ["minimum_latitude", "maximum_latitude", "minimum_longitude", "maximum_longitude", "extracted_on"]
+        }
+      },
+      "required": ["country_code", "subdivision_name", "municipality", "bounding_box"]
     },
     "urls": {
       "type": "object",
       "properties": {
         "auto_discovery": {
           "type": "string",
-          "description": "The stable auto-discovery url of the source as given by the provider.",
+          "description": "URL that automatically opens the source.",
           "pattern": "^(http|https|ftp):\/\/[a-zA-Z0-9.,~#{}():&/%='?_/-]+$"
         },
         "license": {
           "type": "string",
-          "description": "The url to the license of the source as given by the provider.",
+          "description": "The transit provider’s license information.",
           "pattern": "^(http|https|ftp):\/\/[a-zA-Z0-9.,~#{}():&/%='?_/-]+$"
         },
         "latest": {
           "type": "string",
-          "description": "The Mobility Archives stable url for the latest dataset version of the source.",
+          "description": "A stable URL for the latest dataset of a source.",
           "pattern": "^(http|https|ftp):\/\/[a-zA-Z0-9.,~#{}():&/%='?_/-]+$"
         }
       },
-      "required": ["auto_discovery", "license", "latest"]
+      "required": ["auto_discovery", "latest"]
     }
   },
-  "required": ["mdb_source_id", "name", "location", "country_code", "bounding_box", "data_type", "urls"]
+  "required": ["mdb_source_id", "data_type", "provider", "location", "urls"]
 }

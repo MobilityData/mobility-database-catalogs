@@ -136,17 +136,19 @@ def is_readable(url, load_func):
 #########################
 
 
-def identify_source(name, country_code, data_type):
+def identify_source(provider, subdivision_name, country_code, data_type):
     """Identities a MDB source with a MDB ID.
-    :param name: The name of the entity.
-    :param data_type: The data type of the entity.
+    :param provider: The name of the entity.
+    :param subdivision_name: The subdivision name of the entity.
     :param country_code: The country code of the entity.
+    :param data_type: The data type of the entity.
     :return: The MDB Source ID.
     """
     return MDB_SOURCE_ID_TEMPLATE.format(
-        name=name.lower().replace(" ", "-"),
-        data_type=data_type,
+        provider=provider.lower().replace(" ", "-"),
+        subdivision_name=subdivision_name.lower().replace(" ", "-"),
         country_code=country_code.lower(),
+        data_type=data_type,
     )
 
 

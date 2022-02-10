@@ -108,9 +108,9 @@ To get the sources:
 >>> get_sources()
 ```
 
-To get the sources by location:
+To get the sources by subdivision name:
 ```
->>> get_sources_by_location(location="London, Ontario")
+>>> get_sources_by_subdivision_name(subdivision_name="Ontario")
 ```
 
 To get the sources by country code:
@@ -131,22 +131,26 @@ To get the sources by bounding box:
 To add a new source:
 ```
 >>> add_source(
-        name="Your Source Name",
-        location="Your Source Location",
+        provider="Your Source Provider Name",
         country_code="Your Source Country Code",
+        subdivision_name="Your Source Subdivision Name",
+        municipality="Your Source Municipality",
         auto_discovery_url="https://your.source.stable.discovery.url",
-        license_url="https://your.source.license.url",
-        data_type=GTFS
+        license_url=None,
+        name=None,
+        data_type=GTFS,
     )
 ```
 
 To update a source:
 ```
->>> update_source(
-        mdb_source_id="mdb-src-gtfs-your-source-id",
+>>> update_source(        
+        mdb_source_id="mdbsrc-gtfs-your-source-id",
+        provider=None,
         name=None,
-        location=None,
         country_code=None,
+        subdivision_name=None,
+        municipality=None,
         auto_discovery_url=None,
         license_url=None,
         data_type=GTFS,

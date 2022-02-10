@@ -31,12 +31,14 @@ The easiest way to add a source is to use the operation `tools.operations.add_so
 Note that if different than the default value `tools.constants.GTFS`, the data type must be taken from the `data_type` field enum values, which can be discovered in the appropriate JSON schema.
 ```
 >>> add_source(
-        name="Your Source Name",
-        location="Your Source Location",
+        provider="Your Source Provider Name",
         country_code="Your Source Country Code",
+        subdivision_name="Your Source Subdivision Name",
+        municipality="Your Source Municipality",
         auto_discovery_url="https://your.source.stable.discovery.url",
-        license_url="https://your.source.license.url",
-        data_type=GTFS
+        license_url=None,
+        name=None,
+        data_type=GTFS,
     )
 ```
 
@@ -49,13 +51,15 @@ Note that if different than the default value `tools.constants.GTFS`, the data t
 
 ```
 >>> update_source(
-        mdb_source_id="mdb-src-gtfs-your-source-id",
+        mdb_source_id="mdbsrc-gtfs-your-source-id",
+        provider=None,
         name=None,
-        location=None,
         country_code=None,
+        subdivision_name=None,
+        municipality=None,
         auto_discovery_url=None,
         license_url=None,
-        data_type=GTFS
+        data_type=GTFS,
     )
 ```
 

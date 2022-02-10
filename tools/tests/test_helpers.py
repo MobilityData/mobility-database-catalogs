@@ -200,7 +200,10 @@ class TestCreationFunctions(TestCase):
         test_data_type = "gtfs"
         test_mdb_source_id = "mdbsrc-gtfs-some-provider-some-subdivision-name-ca"
         under_test = identify_source(
-            provider=test_provider, subdivision_name=test_subdivision_name, country_code=test_country_code, data_type=test_data_type
+            provider=test_provider,
+            subdivision_name=test_subdivision_name,
+            country_code=test_country_code,
+            data_type=test_data_type,
         )
         self.assertEqual(under_test, test_mdb_source_id)
 

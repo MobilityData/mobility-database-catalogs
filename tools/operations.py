@@ -49,13 +49,23 @@ GTFS_MAP = {
 
 
 def add_source(
-    provider, country_code, subdivision_name, municipality, auto_discovery_url, license_url=None, name=None, data_type=GTFS
+    provider,
+    country_code,
+    subdivision_name,
+    municipality,
+    auto_discovery_url,
+    license_url=None,
+    name=None,
+    data_type=GTFS,
 ):
     """Add a new source to the Mobility Catalogs."""
     data_type_map = globals()[f"{data_type.upper()}_MAP"]
     if is_readable(url=auto_discovery_url, load_func=data_type_map[LOAD_FUNC]):
         mdb_source_id = identify_source(
-            provider=provider, subdivision_name=subdivision_name, country_code=country_code, data_type=data_type
+            provider=provider,
+            subdivision_name=subdivision_name,
+            country_code=country_code,
+            data_type=data_type,
         )
         (
             minimum_latitude,

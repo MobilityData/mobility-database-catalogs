@@ -40,18 +40,20 @@ jobs:
             GTFS_CSV_PATH = "./catalog_gtfs_schedules.csv"
             GTFS_CSV_COLUMNS = [
               'mdb_source_id',
-              'name',
-              'location',
-              'country_code',
               'data_type',
+              'location.country_code',
+              'location.subdivision_name',
+              'location.municipality',
+              'provider',
+              'name',
               'urls.auto_discovery',
-              'urls.license',
               'urls.latest',
-              'bounding_box.minimum_latitude',
-              'bounding_box.maximum_latitude',
-              'bounding_box.minimum_longitude',
-              'bounding_box.maximum_longitude',
-              'bounding_box.extracted_on'
+              'urls.license',
+              'location.bounding_box.minimum_latitude',
+              'location.bounding_box.maximum_latitude',
+              'location.bounding_box.minimum_longitude',
+              'location.bounding_box.maximum_longitude',
+              'location.bounding_box.extracted_on'
             ]
 
             # tools.constants.GTFS

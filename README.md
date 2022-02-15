@@ -38,6 +38,9 @@ Contains the JSON schemas used to validate the sources in the integration tests.
 | License URL        | Optional              | The transit provider’s license information.                                                                                                                         |   |   |
 | Bounding box       | No - system generated | This is the bounding box of the data source when it was first added to the catalog. It includes the date and timestamp the bounding box was extracted on in UTC.       |   |   |
 
+## GTFS Realtime Data Structure
+
+Still in progress. [Please review the working document to provide your feedback](https://docs.google.com/document/d/1Mlz3AXHItInitsOEAKKi8hZV9d3t3gpFbyIZGm67ESU/edit#heading=h.88f252jw0urf).
 
 ## Installation
 

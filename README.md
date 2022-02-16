@@ -8,6 +8,17 @@ This README contains information for the [prototype branch](https://github.com/M
 
 [You can view our release plan for V1 here](https://github.com/MobilityData/mobility-database-catalogs/issues/30).
 
+## Table of Contents
+
+* [The Core Parts](#the-core-parts)
+* [GTFS Schedule Data Structure](#gtfs-schedule-data-structure)
+* [GTFS Realtime Data Structure](#gtfs-realtime-data-structure)
+* [Installation](#installation)
+* [Using the Mobility Catalogs](#using-the-mobility-catalogs)
+* [Integration Tests](#integration-tests)
+* [License](#license)
+* [Contributing](#contributing)
+
 ## The Core Parts
 
 ### Catalogs

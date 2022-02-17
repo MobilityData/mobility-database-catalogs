@@ -67,6 +67,22 @@ def add_source(
             country_code=country_code,
             data_type=data_type,
         )
+
+        # Stop the process if adding the source will overwrite another one
+        source_path = os.path.join(
+            PROJECT_ROOT, data_type_map[PATH_FROM_ROOT], f"{mdb_source_id}.{JSON}"
+        )
+        if os.path.exists(source_path):
+            raise FileExistsError(
+                f"Exception occurred while adding the source. "
+                f"Impossible to add the source without overwriting an existing source.\n"
+                f'Another source exists with a MDB Source ID created from provider "{provider}", '
+                f'subdivision name "{subdivision_name}", country code "{country_code}" and '
+                f'data type "{data_type}".\n'
+                f"Please contact emma@mobilitydata.org for assistance.\n"
+            )
+
+        # Continue the process otherwise
         (
             minimum_latitude,
             maximum_latitude,

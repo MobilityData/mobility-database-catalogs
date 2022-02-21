@@ -1,0 +1,186 @@
+# The Mobility Database Catalogs
+
+[![Integration tests](https://github.com/MobilityData/mobility-catalogs/actions/workflows/integration_tests.yml/badge.svg?branch=issue%2F343%2Fcatalogs-prototype)](https://github.com/MobilityData/mobility-catalogs/actions/workflows/integration_tests.yml) [![Unit tests](https://github.com/MobilityData/mobility-catalogs/actions/workflows/unit_tests.yml/badge.svg?branch=issue%2F343%2Fcatalogs-prototype)](https://github.com/MobilityData/mobility-catalogs/actions/workflows/unit_tests.yml) [![Export catalogs to CSV](https://github.com/MobilityData/mobility-catalogs/actions/workflows/export_to_csv.yml/badge.svg?branch=issue%2F343%2Fcatalogs-prototype)](https://github.com/MobilityData/mobility-catalogs/actions/workflows/export_to_csv.yml) [![Join the MobilityData chat](https://badgen.net/badge/slack/%20/green?icon=slack)](https://bit.ly/mobilitydata-slack)
+
+The Mobility Database Catalogs is a project that provides a list of open mobility data sources from across the world, and the code to filter and manipulate them.
+
+This README contains information for the [prototype branch](https://github.com/MobilityData/mobility-catalogs/tree/issue/343%2Fcatalogs-prototype) of this project, which is under active development.
+
+[You can view our release plan for V1 here](https://github.com/MobilityData/mobility-database-catalogs/issues/30).
+
+## Table of Contents
+
+* [The Core Parts](#the-core-parts)
+* [GTFS Schedule Data Structure](#gtfs-schedule-data-structure)
+* [GTFS Realtime Data Structure](#gtfs-realtime-data-structure)
+* [Installation](#installation)
+* [Using the Mobility Catalogs](#using-the-mobility-catalogs)
+* [Integration Tests](#integration-tests)
+* [License](#license)
+* [Contributing](#contributing)
+
+## The Core Parts
+
+### Catalogs
+
+Contains the sources of the Mobility Catalogs. Every single source is represented by a JSON file. The sources can be aggregated by criteria using our `tools.operations` functions.
+
+### Tools
+
+Contains the tools to search, add and update the sources. The `tools.operations` module contains the project operations (get, add and update). The `tools.helpers` module contains helper functions that support the `tools.operations` module. The `tools.constants` module contains the project constants.
+
+### Schemas
+
+Contains the JSON schemas used to validate the sources in the integration tests.
+
+## GTFS Schedule Data Structure
+
+|     Field Name     |  Required from users  |                                                                              Definition                                                                             |
+|:------------------:|:---------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------:
+| MDB Source ID      | No - system generated | Unique identifier following the structure: mdbsrc-provider-subdivision-name-country-code.      |   |   |
+| Data Type          | Yes                   | The data format that the source uses: GTFS.                                                                                                            |   |   |
+| Country Code       | Yes                   | ISO 3166-1 alpha-2 code designating the country where the system is located. For a list of valid codes [see here](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).                                                    |   |   |
+| Subdivision name   | Yes                   | ISO 3166-2 subdivision name designating the subdivision (e.g province, state, region) where the system is located. For a list of valid names [see here](https://unece.org/trade/uncefact/unlocode-country-subdivisions-iso-3166-2).              |   |   |
+| Municipality       | Yes                   | Primary municipality in which the transit system is located.                                                                                                        |   |   |
+| Provider           | Yes                   | Name of the transit provider.                                                                                                                                       |   |   |
+| Name               | Optional              | An optional description of the data source, e.g to specify if the data source is an aggregate of multiple providers, or which network is represented by the source. |   |   |
+| Auto-Discovery URL | Yes                   | URL that automatically opens the source.                                                                                                                            |   |   |
+| Latest dataset URL | No - system generated | A stable URL for the latest dataset of a source.                                                                                                                    |   |   |
+| License URL        | Optional              | The transit provider’s license information.                                                                                                                         |   |   |
+| Bounding box       | No - system generated | This is the bounding box of the data source when it was first added to the catalog. It includes the date and timestamp the bounding box was extracted on in UTC.       |   |   |
+
+## GTFS Realtime Data Structure
+
+Still in progress. [Please review the working document to provide your feedback](https://docs.google.com/document/d/1Mlz3AXHItInitsOEAKKi8hZV9d3t3gpFbyIZGm67ESU/edit#heading=h.88f252jw0urf).
+
+## Installation
+
+### Requirements
+
+#### MacOs
+
+To use and run this project properly, you must install all its requirements. Make sure Python 3.9+ and Pip are installed:
+```
+$ python3 --version
+$ pip --version
+```
+
+If not, install them with:
+```
+$ brew install python3.9
+$ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+$ sudo python get-pip.py
+```
+
+Make sure both GDAL and RTree (Libspatialindex) libraries are installed on your computer, which are required for one of the project dependencies, the [GTFS Kit Library](https://pypi.org/project/gtfs-kit/):
+```
+$ brew install GDAL
+$ brew install spatialindex
+```
+
+It is recommended to set up a virtual environment before installing the requirements. To set up and activate a Python 3.9 virtual environment, enter the following commands:
+```
+$ python3.9 -m venv env
+$ source env/bin/activate
+```
+
+Once your virtual environment is activated, enter the following command to install the project requirements:
+```
+(env) $ pip install -r requirements.txt
+```
+
+To deactivate your virtual environment, enter the following command:
+```
+(env) $ deactivate
+```
+
+If you are working with IntelliJ or PyCharm, it is possible to use this virtual environment within the IDE. To do so, follow the instructions to create a virtual environment [here](https://www.jetbrains.com/help/idea/creating-virtual-environment.html).
+
+### Repository
+
+To use it, clone the project on your local machine using HTTP with the following commands:
+```
+$ git clone https://github.com/MobilityData/mobility-catalogs.git
+$ cd mobility-catalogs
+```
+
+## Using the Mobility Catalogs
+
+### Setup
+Follow the steps described in the [Installation](#installation) section.
+
+### Run it
+To use the Mobility Catalogs, go to the cloned project root, open the Python interpreter and import the project operations:
+```
+$ cd mobility-catalogs
+$ python
+>>> from tools.operations import *
+```
+
+To get the sources:
+```
+>>> get_sources()
+```
+
+To get the sources by subdivision name:
+```
+>>> get_sources_by_subdivision_name(subdivision_name="Ontario")
+```
+
+To get the sources by country code:
+```
+>>> get_sources_by_country_code(country_code="CA")
+```
+
+To get the sources by bounding box:
+```
+>>> get_sources_by_bounding_box(
+        minimum_latitude=42.75,
+        maximum_latitude=43.25,
+        minimum_longitude=-81.50,
+        maximum_longitude=-81.05
+    )
+```
+
+To add a new source:
+```
+>>> add_source(
+        provider="Your Source Provider Name",
+        country_code="Your Source Country Code",
+        subdivision_name="Your Source Subdivision Name",
+        municipality="Your Source Municipality",
+        auto_discovery_url="https://your.source.stable.discovery.url",
+        license_url=None,
+        name=None,
+        data_type=GTFS,
+    )
+```
+
+To update a source:
+```
+>>> update_source(        
+        mdb_source_id="mdbsrc-gtfs-your-source-id",
+        provider=None,
+        name=None,
+        country_code=None,
+        subdivision_name=None,
+        municipality=None,
+        auto_discovery_url=None,
+        license_url=None,
+        data_type=GTFS,
+    )
+```
+
+## Integration Tests
+
+In order to avoid invalid sources in the Mobility Catalogs, any modification made in the repository, addition or update, must pass the integration tests before being merged into the project. The integration tests are listed in the [Test Integration](/tests/test_integration.py) module
+
+## License
+
+Code licensed under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0).
+
+Individual transit data sources are subject to the terms & conditions of their own respective data provider. If you are a transit provider and there is a data source that should not be included in the repository, please contact emma@mobilitydata.org and we'll remove it as soon as possible.
+
+## Contributing
+
+We welcome contributions to the project! Please check out our [Contribution guidelines](/CONTRIBUTING.md) for details.

@@ -27,6 +27,11 @@ def test_catalogs_static_gtfs_source_ids_uniqueness():
     assert len(set(source_ids)) == len(source_ids)
 
 
+def test_catalogs_static_gtfs_source_ids_are_incremental():
+    source_ids = [source[MDB_SOURCE_ID] for source in get_sources(data_type=GTFS)]
+    assert sorted(source_ids) == list(range(1, len(source_ids) + 1))
+
+
 def test_catalogs_static_gtfs_auto_discovery_urls_uniqueness():
     auto_discovery_urls = [
         source[URLS][AUTO_DISCOVERY] for source in get_sources(data_type=GTFS)

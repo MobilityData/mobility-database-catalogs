@@ -15,12 +15,10 @@ MDB_ARCHIVES_LATEST_URL_TEMPLATE = (
 
 # CATALOG ROOTS
 SOURCE_CATALOG_PATH_FROM_ROOT = "catalogs/sources"
-GTFS_CATALOG_PATH_FROM_ROOT = "catalogs/sources/gtfs/schedules"
+GTFS_CATALOG_PATH_FROM_ROOT = "catalogs/sources/gtfs/schedule"
 
 # SCHEMAS FILES
-GTFS_SCHEDULES_SOURCE_SCHEMA_PATH_FROM_ROOT = (
-    "schemas/gtfs_schedules_source_schema.json"
-)
+GTFS_SCHEDULE_SOURCE_SCHEMA_PATH_FROM_ROOT = "schemas/gtfs_schedule_source_schema.json"
 
 # STATIC_SCHEMA
 MDB_SOURCE_ID = "mdb_source_id"

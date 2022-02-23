@@ -220,9 +220,9 @@ class TestCreationFunctions(TestCase):
         mock_walk.return_value = [
             ("/catalogs", ("sources",), ()),
             ("/catalogs/sources", ("gtfs",), ()),
-            ("/catalogs/sources/gtfs", ("schedules",), ()),
+            ("/catalogs/sources/gtfs", ("schedule",), ()),
             (
-                "/catalogs/sources/gtfs/schedules",
+                "/catalogs/sources/gtfs/schedule",
                 (),
                 ("some_source.json", "another_source.json"),
             ),
@@ -415,9 +415,9 @@ class TestInOutFunctions(TestCase):
         mock_walk.return_value = [
             ("/catalogs", ("sources",), ()),
             ("/catalogs/sources", ("gtfs",), ()),
-            ("/catalogs/sources/gtfs", ("schedules",), ()),
+            ("/catalogs/sources/gtfs", ("schedule",), ()),
             (
-                "/catalogs/sources/gtfs/schedules",
+                "/catalogs/sources/gtfs/schedule",
                 (),
                 ("some-source.json", "another-source.json"),
             ),
@@ -439,9 +439,9 @@ class TestInOutFunctions(TestCase):
         mock_walk.return_value = [
             ("/catalogs", ("sources",), ()),
             ("/catalogs/sources", ("gtfs",), ()),
-            ("/catalogs/sources/gtfs", ("schedules",), ()),
+            ("/catalogs/sources/gtfs", ("schedule",), ()),
             (
-                "/catalogs/sources/gtfs/schedules",
+                "/catalogs/sources/gtfs/schedule",
                 (),
                 ("some-source-1.json", "another-source-2.json"),
             ),
@@ -449,5 +449,5 @@ class TestInOutFunctions(TestCase):
         test_mdb_id = 2
         under_test = find_file(catalog_root=self.test_path, mdb_id=test_mdb_id)
         self.assertEqual(
-            under_test, "/catalogs/sources/gtfs/schedules/another-source-2.json"
+            under_test, "/catalogs/sources/gtfs/schedule/another-source-2.json"
         )

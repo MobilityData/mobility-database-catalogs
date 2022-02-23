@@ -2,22 +2,23 @@ import os
 from tools.helpers import (
     aggregate,
     is_readable,
-    identify_source,
+    identify,
     extract_gtfs_bounding_box,
     are_overlapping_boxes,
     load_gtfs,
     create_latest_url,
+    create_filename,
     to_json,
     from_json,
     get_iso_time,
+    find_file,
 )
 from tools.constants import (
     GTFS,
     PATH_FROM_ROOT,
     LOAD_FUNC,
+    SOURCE_CATALOG_PATH_FROM_ROOT,
     GTFS_CATALOG_PATH_FROM_ROOT,
-    EXTENSION,
-    ZIP,
     JSON,
     MDB_SOURCE_ID,
     NAME,
@@ -44,7 +45,6 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
 GTFS_MAP = {
     PATH_FROM_ROOT: GTFS_CATALOG_PATH_FROM_ROOT,
     LOAD_FUNC: load_gtfs,
-    EXTENSION: ZIP,
 }
 
 
@@ -61,11 +61,8 @@ def add_source(
     """Add a new source to the Mobility Catalogs."""
     data_type_map = globals()[f"{data_type.upper()}_MAP"]
     if is_readable(url=auto_discovery_url, load_func=data_type_map[LOAD_FUNC]):
-        mdb_source_id = identify_source(
-            provider=provider,
-            subdivision_name=subdivision_name,
-            country_code=country_code,
-            data_type=data_type,
+        mdb_source_id = identify(
+            catalog_root=os.path.join(PROJECT_ROOT, SOURCE_CATALOG_PATH_FROM_ROOT)
         )
         (
             minimum_latitude,
@@ -74,7 +71,11 @@ def add_source(
             maximum_longitude,
         ) = extract_gtfs_bounding_box(url=auto_discovery_url)
         latest_url = create_latest_url(
-            mdb_source_id=mdb_source_id, extension=data_type_map[EXTENSION]
+            country_code=country_code,
+            subdivision_name=subdivision_name,
+            provider=provider,
+            data_type=data_type,
+            mdb_source_id=mdb_source_id,
         )
         extraction_time = get_iso_time()
 
@@ -109,7 +110,16 @@ def add_source(
 
         to_json(
             path=os.path.join(
-                PROJECT_ROOT, data_type_map[PATH_FROM_ROOT], f"{mdb_source_id}.{JSON}"
+                PROJECT_ROOT,
+                data_type_map[PATH_FROM_ROOT],
+                create_filename(
+                    country_code=country_code,
+                    subdivision_name=subdivision_name,
+                    provider=provider,
+                    data_type=data_type,
+                    mdb_source_id=mdb_source_id,
+                    extension=JSON,
+                ),
             ),
             obj=source,
         )
@@ -129,8 +139,9 @@ def update_source(
 ):
     """Update a source in the Mobility Catalogs."""
     data_type_map = globals()[f"{data_type.upper()}_MAP"]
-    source_path = os.path.join(
-        PROJECT_ROOT, data_type_map[PATH_FROM_ROOT], f"{mdb_source_id}.{JSON}"
+    source_path = find_file(
+        catalog_root=os.path.join(PROJECT_ROOT, SOURCE_CATALOG_PATH_FROM_ROOT),
+        mdb_id=mdb_source_id,
     )
     source = from_json(path=source_path)
 

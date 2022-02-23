@@ -6,8 +6,9 @@ from tools.helpers import (
     is_readable,
     MissingSchema,
     ParserError,
-    identify_source,
+    identify,
     create_latest_url,
+    create_filename,
     get_iso_time,
     load_gtfs,
     extract_gtfs_bounding_box,
@@ -16,6 +17,8 @@ from tools.helpers import (
     to_json,
     from_json,
     aggregate,
+    normalize,
+    find_file,
 )
 import pandas as pd
 from freezegun import freeze_time
@@ -209,28 +212,82 @@ class TestVerificationFunctions(TestCase):
 
 
 class TestCreationFunctions(TestCase):
-    def test_identify_source(self):
-        test_provider = "Some Provider"
-        test_subdivision_name = "Some Subdivision Name"
-        test_country_code = "CA"
-        test_data_type = "gtfs"
-        test_mdb_source_id = "mdbsrc-gtfs-some-provider-some-subdivision-name-ca"
-        under_test = identify_source(
-            provider=test_provider,
-            subdivision_name=test_subdivision_name,
-            country_code=test_country_code,
-            data_type=test_data_type,
-        )
-        self.assertEqual(under_test, test_mdb_source_id)
+    def setUp(self):
+        self.test_path = "some_path"
 
-    def test_create_latest_url(self):
-        test_mdb_source_id = "mdb-src-gtfs-some-name-ca"
-        test_extension = "zip"
-        test_latest_url = "https://storage.googleapis.com/storage/v1/b/archives_latest/o/mdb-src-gtfs-some-name-ca.zip?alt=media"
+    @patch("tools.helpers.os.walk")
+    def test_identify(self, mock_walk):
+        mock_walk.return_value = [
+            ("/catalogs", ("sources",), ()),
+            ("/catalogs/sources", ("gtfs",), ()),
+            ("/catalogs/sources/gtfs", ("schedule",), ()),
+            (
+                "/catalogs/sources/gtfs/schedule",
+                (),
+                ("some_source.json", "another_source.json"),
+            ),
+        ]
+        under_test = identify(catalog_root=self.test_path)
+        self.assertEqual(under_test, 3)
+        self.assertEqual(mock_walk.call_count, 1)
+
+    @patch("tools.helpers.create_filename")
+    def test_create_latest_url(self, mock_filename):
+        mock_filename.return_value = "ca-some-subdivision-name-some-provider-gtfs-1.zip"
+        test_country_code = "CA"
+        test_subdivision_name = "Some Subdivision Name"
+        test_provider = "Some Provider"
+        test_data_type = "gtfs"
+        test_mdb_source_id = "1"
+        test_latest_url = "https://storage.googleapis.com/storage/v1/b/archives_latest/o/ca-some-subdivision-name-some-provider-gtfs-1.zip?alt=media"
         under_test = create_latest_url(
-            mdb_source_id=test_mdb_source_id, extension=test_extension
+            country_code=test_country_code,
+            subdivision_name=test_subdivision_name,
+            provider=test_provider,
+            data_type=test_data_type,
+            mdb_source_id=test_mdb_source_id,
         )
         self.assertEqual(under_test, test_latest_url)
+        self.assertEqual(mock_filename.call_count, 1)
+
+    def test_create_filename(self):
+        test_country_code = "CA"
+        test_subdivision_name = "Some Subdivision Name"
+        test_provider = "Some Provider"
+        test_data_type = "gtfs"
+        test_mdb_source_id = "1"
+        test_extension = "zip"
+        test_filename = "ca-some-subdivision-name-some-provider-gtfs-1.zip"
+        under_test = create_filename(
+            country_code=test_country_code,
+            subdivision_name=test_subdivision_name,
+            provider=test_provider,
+            data_type=test_data_type,
+            mdb_source_id=test_mdb_source_id,
+            extension=test_extension,
+        )
+        self.assertEqual(under_test, test_filename)
+
+    def test_normalize(self):
+        test_string = "test"
+        under_test = normalize(test_string)
+        self.assertEqual(under_test, "test")
+
+        test_string = "Some Test"
+        under_test = normalize(test_string)
+        self.assertEqual(under_test, "some-test")
+
+        test_string = "Some ~Test &!"
+        under_test = normalize(test_string)
+        self.assertEqual(under_test, "some-test")
+
+        test_string = "1000 +=+=== Some    ******* ~Test &!"
+        under_test = normalize(test_string)
+        self.assertEqual(under_test, "1000-some-test")
+
+        test_string = "SOURCE's test..."
+        under_test = normalize(test_string)
+        self.assertEqual(under_test, "sources-test")
 
     @freeze_time("2022-01-01")
     def test_get_iso_time(self):
@@ -356,9 +413,14 @@ class TestInOutFunctions(TestCase):
     @patch("tools.helpers.json.load")
     def test_aggregate(self, mock_json, mock_open, mock_path, mock_walk):
         mock_walk.return_value = [
-            ("/catalogs", ("static",), ()),
-            ("/catalogs/static", ("gtfs",), ()),
-            ("/catalogs/static/gtfs", (), ("some_source.json", "another_source.json")),
+            ("/catalogs", ("sources",), ()),
+            ("/catalogs/sources", ("gtfs",), ()),
+            ("/catalogs/sources/gtfs", ("schedule",), ()),
+            (
+                "/catalogs/sources/gtfs/schedule",
+                (),
+                ("some-source.json", "another-source.json"),
+            ),
         ]
         mock_json.return_value = self.test_obj
         under_test = aggregate(catalog_root=self.test_path)
@@ -371,3 +433,21 @@ class TestInOutFunctions(TestCase):
     @skip
     def test_to_csv(self):
         raise NotImplementedError
+
+    @patch("tools.helpers.os.walk")
+    def test_find_file(self, mock_walk):
+        mock_walk.return_value = [
+            ("/catalogs", ("sources",), ()),
+            ("/catalogs/sources", ("gtfs",), ()),
+            ("/catalogs/sources/gtfs", ("schedule",), ()),
+            (
+                "/catalogs/sources/gtfs/schedule",
+                (),
+                ("some-source-1.json", "another-source-2.json"),
+            ),
+        ]
+        test_mdb_id = 2
+        under_test = find_file(catalog_root=self.test_path, mdb_id=test_mdb_id)
+        self.assertEqual(
+            under_test, "/catalogs/sources/gtfs/schedule/another-source-2.json"
+        )

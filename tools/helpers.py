@@ -8,8 +8,9 @@ from pandas.errors import ParserError
 from tools.constants import (
     STOP_LAT,
     STOP_LON,
-    MDB_SOURCE_ID_TEMPLATE,
     MDB_ARCHIVES_LATEST_URL_TEMPLATE,
+    MDB_SOURCE_FILENAME,
+    ZIP,
 )
 
 
@@ -55,6 +56,18 @@ def to_csv(path, catalog, columns):
     if columns is not None:
         catalog = catalog[columns]
     catalog.to_csv(path, sep=",", index=False)
+
+
+def find_file(catalog_root, mdb_id):
+    file_path = None
+    for path, sub_dirs, files in os.walk(catalog_root):
+        for file in files:
+            # Split the filename string under the format
+            # "filename-prefix-mdb-id.extension" to extract the mdb_id
+            if file.split(".")[0].split("-")[-1] == str(mdb_id):
+                file_path = os.path.join(path, file)
+                break
+    return file_path
 
 
 #########################
@@ -136,30 +149,62 @@ def is_readable(url, load_func):
 #########################
 
 
-def identify_source(provider, subdivision_name, country_code, data_type):
-    """Identities a MDB source with a MDB ID.
+def identify(catalog_root):
+    """Identities a MDB entity with a MDB ID.
+    The MDB Entity ID is a numeric identifier, which is assigned incrementally.
+    :return: The MDB Entity ID.
+    """
+    return sum(len(files) for path, sub_dirs, files in os.walk(catalog_root)) + 1
+
+
+def create_latest_url(
+    country_code, subdivision_name, provider, data_type, mdb_source_id
+):
+    """Creates the latest url for a MDB Source.
     :param provider: The name of the entity.
     :param subdivision_name: The subdivision name of the entity.
     :param country_code: The country code of the entity.
     :param data_type: The data type of the entity.
-    :return: The MDB Source ID.
-    """
-    return MDB_SOURCE_ID_TEMPLATE.format(
-        provider=provider.lower().replace(" ", "-"),
-        subdivision_name=subdivision_name.lower().replace(" ", "-"),
-        country_code=country_code.lower(),
-        data_type=data_type,
-    )
-
-
-def create_latest_url(mdb_source_id, extension):
-    """Creates the latest url for a MDB Source.
     :param mdb_source_id: The MDB Source ID.
-    :param extension: The dataset extension.
     :return: The latest url.
     """
     return MDB_ARCHIVES_LATEST_URL_TEMPLATE.format(
-        mdb_source_id=mdb_source_id, extension=extension
+        filename=create_filename(
+            country_code=country_code,
+            subdivision_name=subdivision_name,
+            provider=provider,
+            data_type=data_type,
+            mdb_source_id=mdb_source_id,
+            extension=ZIP,
+        )
+    )
+
+
+def create_filename(
+    country_code, subdivision_name, provider, data_type, mdb_source_id, extension
+):
+    """Creates the latest url for a MDB Source.
+    :param provider: The name of the entity.
+    :param subdivision_name: The subdivision name of the entity.
+    :param country_code: The country code of the entity.
+    :param data_type: The data type of the entity.
+    :param mdb_source_id: The MDB Source ID.
+    :param extension: The extension of the file.
+    :return: The filename.
+    """
+    return MDB_SOURCE_FILENAME.format(
+        country_code=normalize(country_code),
+        subdivision_name=normalize(subdivision_name),
+        provider=normalize(provider),
+        data_type=data_type,
+        mdb_source_id=mdb_source_id,
+        extension=extension,
+    )
+
+
+def normalize(string):
+    return "-".join(
+        ("".join(s for s in string.lower() if s.isalnum() or s == " ")).split()
     )
 
 

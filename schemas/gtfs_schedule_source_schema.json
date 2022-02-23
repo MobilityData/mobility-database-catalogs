@@ -1,11 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "The GTFS Schedules source schema of the Mobility Catalogs.",
+  "title": "The GTFS Schedule source schema of the Mobility Catalogs.",
   "type": "object",
   "properties": {
     "mdb_source_id": {
-      "type": "string",
-      "description": "Unique identifier following the structure: mdbsrc-datatype-provider-subdivision-name-country-code."
+      "type": "number",
+      "description": "Unique numerical identifier."
     },
     "data_type": {
       "type": "string",

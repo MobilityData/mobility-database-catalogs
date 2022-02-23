@@ -5,19 +5,20 @@ GTFS = "gtfs"
 STOP_LAT = "stop_lat"
 STOP_LON = "stop_lon"
 
-# IDS TEMPLATE
-MDB_SOURCE_ID_TEMPLATE = "mdbsrc-{data_type}-{provider}-{subdivision_name}-{country_code}"
+# FILENAME TEMPLATE
+MDB_SOURCE_FILENAME = "{country_code}-{subdivision_name}-{provider}-{data_type}-{mdb_source_id}.{extension}"
 
 # ARCHIVES TEMPLATE
-MDB_ARCHIVES_LATEST_URL_TEMPLATE = "https://storage.googleapis.com/storage/v1/b/archives_latest/o/{mdb_source_id}.{extension}?alt=media"
+MDB_ARCHIVES_LATEST_URL_TEMPLATE = (
+    "https://storage.googleapis.com/storage/v1/b/archives_latest/o/{filename}?alt=media"
+)
 
 # CATALOG ROOTS
-GTFS_CATALOG_PATH_FROM_ROOT = "catalogs/gtfs/schedules"
+SOURCE_CATALOG_PATH_FROM_ROOT = "catalogs/sources"
+GTFS_CATALOG_PATH_FROM_ROOT = "catalogs/sources/gtfs/schedule"
 
 # SCHEMAS FILES
-GTFS_SCHEDULES_SOURCE_SCHEMA_PATH_FROM_ROOT = (
-    "schemas/gtfs_schedules_source_schema.json"
-)
+GTFS_SCHEDULE_SOURCE_SCHEMA_PATH_FROM_ROOT = "schemas/gtfs_schedule_source_schema.json"
 
 # STATIC_SCHEMA
 MDB_SOURCE_ID = "mdb_source_id"
@@ -42,6 +43,5 @@ LATEST = "latest"
 # OTHER
 PATH_FROM_ROOT = "path_from_root"
 LOAD_FUNC = "load_func"
-EXTENSION = "extension"
 ZIP = "zip"
 JSON = "json"

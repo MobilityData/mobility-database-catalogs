@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": "mdbsrc-gtfs-casco-bay-lines-maine-us",
+    "mdb_source_id": 1,
     "data_type": "gtfs",
     "provider": "Casco Bay Lines",
     "location": {
@@ -11,11 +11,11 @@
             "maximum_latitude": 43.71619,
             "minimum_longitude": -70.248666,
             "maximum_longitude": -70.11018,
-            "extracted_on": "2022-02-10T22:15:48+00:00"
+            "extracted_on": "2022-02-22T19:51:22+00:00"
         }
     },
     "urls": {
         "auto_discovery": "http://smttracker.com/downloads/gtfs/cascobaylines-portland-me-usa.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/archives_latest/o/mdbsrc-gtfs-casco-bay-lines-maine-us.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/archives_latest/o/us-maine-casco-bay-lines-gtfs-1.zip?alt=media"
     }
 }

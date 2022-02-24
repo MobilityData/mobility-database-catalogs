@@ -14,7 +14,7 @@ This README contains information for the [prototype branch](https://github.com/M
 * [GTFS Schedule Data Structure](#gtfs-schedule-data-structure)
 * [GTFS Realtime Data Structure](#gtfs-realtime-data-structure)
 * [Installation](#installation)
-* [Using the Mobility Catalogs](#using-the-mobility-catalogs)
+* [Using the Mobility Database Catalogs](#using-the-mobility-database-catalogs)
 * [Integration Tests](#integration-tests)
 * [License](#license)
 * [Contributing](#contributing)
@@ -23,7 +23,7 @@ This README contains information for the [prototype branch](https://github.com/M
 
 ### Catalogs
 
-Contains the sources of the Mobility Catalogs. Every single source is represented by a JSON file. The sources can be aggregated by criteria using our `tools.operations` functions.
+Contains the sources of the Mobility Database Catalogs. Every single source is represented by a JSON file. The sources can be aggregated by criteria using our `tools.operations` functions.
 
 ### Tools
 
@@ -104,13 +104,13 @@ $ git clone https://github.com/MobilityData/mobility-catalogs.git
 $ cd mobility-catalogs
 ```
 
-## Using the Mobility Catalogs
+## Using the Mobility Database Catalogs
 
 ### Setup
 Follow the steps described in the [Installation](#installation) section.
 
 ### Run it
-To use the Mobility Catalogs, go to the cloned project root, open the Python interpreter and import the project operations:
+To use the Mobility Database Catalogs, go to the cloned project root, open the Python interpreter and import the project operations:
 ```
 $ cd mobility-catalogs
 $ python
@@ -173,7 +173,7 @@ To update a source:
 
 ## Integration Tests
 
-In order to avoid invalid sources in the Mobility Catalogs, any modification made in the repository, addition or update, must pass the integration tests before being merged into the project. The integration tests are listed in the [Test Integration](/tests/test_integration.py) module
+In order to avoid invalid sources in the Mobility Database Catalogs, any modification made in the repository, addition or update, must pass the integration tests before being merged into the project. The integration tests are listed in the [Test Integration](/tests/test_integration.py) module
 
 ## License
 

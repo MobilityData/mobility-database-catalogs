@@ -11,7 +11,7 @@ We encourage contributors to format pull request titles following the Convention
 Have you encountered an error? A critical step in troubleshooting is being able to reproduce the problem. You can [create a bug ticket](https://github.com/MobilityData/mobility-database-catalogs/issues/new?assignees=maximearmstrong&labels=&template=bug_report.md&title=%5BBUG%5D) with reproduction steps and we will review it.
 
 ## Contributing data
-To contribute data to the mobility catalogs, it is suggested that you follow the steps below.
+To contribute data to the mobility database catalogs, it is suggested that you follow the steps below.
 
 Note that adding or updating sources manually is possible, although not recommended as it increases the risk of introducing incorrect or invalid information into your branch and pull request.
 
@@ -64,7 +64,7 @@ Note that if different than the default value `tools.constants.GTFS`, the data t
 ```
 
 ## Contributing operations
-To contribute operations to the mobility catalogs, it is suggested that you follow the steps below.
+To contribute operations to the mobility database catalogs, it is suggested that you follow the steps below.
 
 ### Prepare to contribute operation
 1. Check our operations under `tools.operations` to see if the operation you want to add is not already implemented.

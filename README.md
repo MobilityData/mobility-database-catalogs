@@ -100,8 +100,8 @@ If you are working with IntelliJ or PyCharm, it is possible to use this virtual 
 
 To use it, clone the project on your local machine using HTTP with the following commands:
 ```
-$ git clone https://github.com/MobilityData/mobility-catalogs.git
-$ cd mobility-catalogs
+$ git clone https://github.com/MobilityData/mobility-database-catalogs.git
+$ cd mobility-database-catalogs
 ```
 
 ## Using the Mobility Database Catalogs

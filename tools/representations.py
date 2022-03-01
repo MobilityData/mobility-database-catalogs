@@ -101,14 +101,16 @@ class SourcesCatalog(Catalog):
         return self.catalog.get(source_id)
 
     def get_sources(self):
-        return self.catalog
+        return {
+            source_id: source.as_json() for source_id, source in self.catalog.items()
+        }
 
     def get_sources_by_bounding_box(
         self, minimum_latitude, maximum_latitude, minimum_longitude, maximum_longitude
     ):
         return {
-            source_id: source
-            for source_id, source in self.get_sources().items()
+            source_id: source.as_json()
+            for source_id, source in self.catalog.items()
             if source.is_overlapping_bounding_box(
                 minimum_latitude, maximum_latitude, minimum_longitude, maximum_longitude
             )
@@ -116,22 +118,22 @@ class SourcesCatalog(Catalog):
 
     def get_sources_by_subdivision_name(self, subdivision_name):
         return {
-            source_id: source
-            for source_id, source in self.get_sources().items()
+            source_id: source.as_json()
+            for source_id, source in self.catalog.items()
             if source.has_subdivision_name(subdivision_name)
         }
 
     def get_sources_by_country_code(self, country_code):
         return {
-            source_id: source
-            for source_id, source in self.get_sources().items()
+            source_id: source.as_json()
+            for source_id, source in self.catalog.items()
             if source.has_country_code(country_code)
         }
 
     def get_latest_datasets(self):
         return {
-            source_id: source
-            for source_id, source in self.get_sources().items()
+            source_id: source.latest_url
+            for source_id, source in self.catalog.items()
             if source.has_latest_dataset()
         }
 

@@ -1,6 +1,6 @@
 # DATA TYPES
 GTFS = "gtfs"
-GTFS_RT = "gtfs-rt"
+GTFS_RT = "gtfs_rt"
 
 # GTFS CONSTANTS
 STOP_LAT = "stop_lat"
@@ -21,6 +21,8 @@ ENTITY_CLS = "entity_cls"
 ID_KEY = "id_key"
 UNKNOWN = "unknown"
 FILENAME = "filename"
+CATALOGS = "catalogs"
+ALL = "all"
 
 # CATALOG ROOTS
 SOURCE_CATALOG_PATH_FROM_ROOT = "catalogs/sources"
@@ -30,6 +32,7 @@ GTFS_REALTIME_CATALOG_PATH = "gtfs/realtime"
 
 # SCHEMAS FILES
 GTFS_SCHEDULE_SOURCE_SCHEMA_PATH_FROM_ROOT = "schemas/gtfs_schedule_source_schema.json"
+GTFS_REALTIME_SOURCE_SCHEMA_PATH_FROM_ROOT = "schemas/gtfs_realtime_source_schema.json"
 
 # GTFS SCHEDULE & REALTIME CONSTANTS
 MDB_SOURCE_ID = "mdb_source_id"

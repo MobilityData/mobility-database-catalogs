@@ -9,8 +9,8 @@
     },
     "data_type": {
       "type": "string",
-      "description": "The data format that the source uses, e.g gtfs, gtfs-rt.",
-      "enum": ["gtfs-rt"]
+      "description": "The data format that the source uses, e.g gtfs, gtfs_rt.",
+      "enum": ["gtfs_rt"]
     },
     "provider": {
       "type": "string",
@@ -21,7 +21,7 @@
       "description": "An optional description of the data source, e.g to specify if the data source is an aggregate of multiple providers, or which network is represented by the source."
     },
     "static_reference": {
-      "type": "string",
+      "type": "number",
       "description": "The unique identifier (mdb_source_id) of the GTFS Schedule static reference for this GTFS Realtime source. Although optional, if not provided, the location of this source will be set to unknown."
     },
     "urls": {

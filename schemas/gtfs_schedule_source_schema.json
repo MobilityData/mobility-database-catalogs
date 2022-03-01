@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "The Mobility Catalogs static source schema.",
+  "title": "The GTFS Schedule source schema of the Mobility Catalogs.",
   "type": "object",
   "properties": {
     "mdb_source_id": {

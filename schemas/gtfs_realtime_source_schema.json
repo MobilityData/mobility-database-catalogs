@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "The GTFS Realtime source schema of the Mobility Catalogs.",
+  "type": "object",
+  "properties": {
+    "mdb_source_id": {
+      "type": "number",
+      "description": "Unique numerical identifier."
+    },
+    "data_type": {
+      "type": "string",
+      "description": "The data format that the source uses, e.g gtfs, gtfs-rt.",
+      "enum": ["gtfs-rt"]
+    },
+    "provider": {
+      "type": "string",
+      "description": "Name of the transit provider."
+    },
+    "name": {
+      "type": "string",
+      "description": "An optional description of the data source, e.g to specify if the data source is an aggregate of multiple providers, or which network is represented by the source."
+    },
+    "static_reference": {
+      "type": "string",
+      "description": "The unique identifier (mdb_source_id) of the GTFS Schedule static reference for this GTFS Realtime source. Although optional, if not provided, the location of this source will be set to unknown."
+    },
+    "urls": {
+      "type": "object",
+      "properties": {
+        "realtime_vehicle_positions": {
+          "type": "string",
+          "description": "URL that serves the Vehicle Positions entities for this GTFS Realtime source.",
+          "pattern": "^(http|https|ftp):\/\/[a-zA-Z0-9.,~#{}():&/%='?_/-]+$"
+        },
+        "realtime_trip_updates": {
+          "type": "string",
+          "description": "URL that serves the Trip Updates entities for this GTFS Realtime source.",
+          "pattern": "^(http|https|ftp):\/\/[a-zA-Z0-9.,~#{}():&/%='?_/-]+$"
+        },
+        "realtime_alerts": {
+          "type": "string",
+          "description": "URL that serves the Service Alerts entities for this GTFS Realtime source.",
+          "pattern": "^(http|https|ftp):\/\/[a-zA-Z0-9.,~#{}():&/%='?_/-]+$"
+        }
+      },
+      "anyOf": [{
+        "required" : ["realtime_vehicle_positions"]
+      }, {
+        "required" : ["realtime_trip_updates"]
+      }, {
+        "required" : ["realtime_alerts"]
+      }]
+    }
+  },
+  "required": ["mdb_source_id", "data_type", "provider", "urls"]
+}

@@ -4,8 +4,8 @@
   "type": "object",
   "properties": {
     "mdb_source_id": {
-      "type": "string",
-      "description": "Unique identifier following the structure: mdbsrc-datatype-provider-subdivision-name-country-code."
+      "type": "number",
+      "description": "Unique numerical identifier."
     },
     "data_type": {
       "type": "string",

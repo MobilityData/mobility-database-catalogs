@@ -6,6 +6,7 @@
     "static_reference": 3,
     "urls": {
         "realtime_vehicle_positions": "http://www.myridebarrie.ca/gtfs/GTFS_VehiclePositions.pb",
-        "realtime_trip_updates": "http://www.myridebarrie.ca/gtfs/GTFS_TripUpdates.pb"
+        "realtime_trip_updates": "http://www.myridebarrie.ca/gtfs/GTFS_TripUpdates.pb",
+        "realtime_alerts": "http://www.myridebarrie.ca/gtfs/GTFS_ServiceAlerts.pb"
     }
 }

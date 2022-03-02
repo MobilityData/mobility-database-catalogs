@@ -26,7 +26,8 @@ ALL = "all"
 
 # CATALOG ROOTS
 SOURCE_CATALOG_PATH_FROM_ROOT = "catalogs/sources"
-GTFS_CATALOG_PATH_FROM_ROOT = "catalogs/sources/gtfs/schedule"
+GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT = "catalogs/sources/gtfs/schedule"
+GTFS_REALTIME_CATALOG_PATH_FROM_ROOT = "catalogs/sources/gtfs/realtime"
 GTFS_SCHEDULE_CATALOG_PATH = "gtfs/schedule"
 GTFS_REALTIME_CATALOG_PATH = "gtfs/realtime"
 

@@ -29,7 +29,7 @@ jobs:
           pip install GDAL==$(gdal-config --version) --global-option=build_ext --global-option="-I/usr/include/gdal"
           sudo apt-get install libspatialindex-dev
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-      - name: Export the GTFS Schedules catalog as CSV
+      - name: Export the catalog of sources as CSV
         uses: jannekem/run-python-script-action@v1
         with:
           script: |
@@ -37,8 +37,8 @@ jobs:
             import os
             import json
 
-            GTFS_CSV_PATH = "./catalog_gtfs_schedules.csv"
-            GTFS_CSV_COLUMNS = [
+            CSV_PATH = "./catalog_sources.csv"
+            CSV_COLUMNS = [
               'mdb_source_id',
               'data_type',
               'location.country_code',
@@ -46,9 +46,13 @@ jobs:
               'location.municipality',
               'provider',
               'name',
+              'static_reference',
               'urls.auto_discovery',
               'urls.latest',
               'urls.license',
+              'urls.realtime_vehicle_positions',
+              'urls.realtime_trip_updates',
+              'urls.realtime_alerts',
               'location.bounding_box.minimum_latitude',
               'location.bounding_box.maximum_latitude',
               'location.bounding_box.minimum_longitude',
@@ -59,28 +63,41 @@ jobs:
             # tools.constants.GTFS
             GTFS = "gtfs"
 
-            # tools.constants.GTFS_CATALOG_PATH_FROM_ROOT
-            GTFS_CATALOG_PATH_FROM_ROOT = "catalogs/sources/gtfs/schedule"
+            # tools.constants.GTFS_RT
+            GTFS = "gtfs_rt"
+
+            # tools.constants.MDB_SOURCE_ID
+            MDB_SOURCE_ID = "mdb_source_id"
+
+            # tools.constants.GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT
+            GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT = "catalogs/sources/gtfs/schedule"
+
+            # tools.constants.GTFS_REALTIME_CATALOG_PATH_FROM_ROOT
+            GTFS_REALTIME_CATALOG_PATH_FROM_ROOT = "catalogs/sources/gtfs/realtime"
 
             # tools.operations.get_sources
-            catalog_root = os.path.join(".", GTFS_CATALOG_PATH_FROM_ROOT)
-            # tools.helpers.aggregate
-            catalog = []
-            for path, sub_dirs, files in os.walk(catalog_root):
-                for file in files:
-                    with open(os.path.join(path, file)) as fp:
-                        catalog.append(json.load(fp))
+            gtfs_schedule_catalog_path = os.path.join(".", GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT)
+            gtfs_realtime_catalog_path = os.path.join(".", GTFS_REALTIME_CATALOG_PATH_FROM_ROOT)
+            catalog = {}
+                for catalog_path in [gtfs_schedule_catalog_path, gtfs_realtime_catalog_path]
+                    for path, sub_dirs, files in os.walk(catalog_path):
+                        for file in files:
+                            with open(os.path.join(path, file)) as fp:
+                                entity_json = json.load(fp)
+                                entity_id = entity_json[MDB_SOURCE_ID]
+                                catalog[entity_id] = entity_json
+            dict(sorted(catalog.items()))
 
             # tools.helpers.to_csv
-            path = GTFS_CSV_PATH
-            columns = GTFS_CSV_COLUMNS
+            path = CSV_PATH
+            columns = CSV_COLUMNS
             catalog = pd.json_normalize(catalog)
             if columns is not None:
                 catalog = catalog[columns]
             catalog.to_csv(path, sep=",", index=False)
 
-      - name: Upload the GTFS Schedules Catalog CSV artifact
+      - name: Upload the catalog of sources CSV artifact
         uses: actions/upload-artifact@v1
         with:
-          name: catalog-gtfs-schedules-csv-v${{ github.run_id }}.${{ github.run_number }}
-          path: ./catalog_gtfs_schedules.csv
+          name: catalog-sources-csv-v${{ github.run_id }}.${{ github.run_number }}
+          path: ./catalog_sources.csv

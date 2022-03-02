@@ -60,14 +60,16 @@ jobs:
               'location.bounding_box.extracted_on'
             ]
 
-            # tools.constants.GTFS
+            # tools.constants
             GTFS = "gtfs"
-
-            # tools.constants.GTFS_RT
-            GTFS = "gtfs_rt"
-
-            # tools.constants.MDB_SOURCE_ID
+            GTFS_RT = "gtfs_rt"
             MDB_SOURCE_ID = "mdb_source_id"
+            DATA_TYPE = "data_type"
+            LOCATION = "location"
+            COUNTRY_CODE = "country_code"
+            SUBDIVISION_NAME = "subdivision_name"
+            MUNICIPALITY = "municipality"
+            STATIC_REFERENCE = "static_reference"
 
             # tools.constants.GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT
             GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT = "catalogs/sources/gtfs/schedule"
@@ -86,6 +88,15 @@ jobs:
                             entity_json = json.load(fp)
                             entity_id = entity_json[MDB_SOURCE_ID]
                             catalog[entity_id] = entity_json
+            # Complete the GTFS Realtime Sources with the location information from their static reference
+            for source_id, source in catalog.items()
+                if source.get(DATA_TYPE) == GTFS_RT:
+                    if source.get(STATIC_REFERENCE) is not None and catalog.get(STATIC_REFERENCE, {}).get(LOCATION) is not None:
+                        source[LOCATION] = catalog.get(STATIC_REFERENCE, {}).get(LOCATION)
+                    else
+                        source[LOCATION] = {COUNTRY_CODE: UNKNOWN, SUBDIVISION_NAME: UNKNOWN, MUNICIPALITY: UNKNOWN}
+                    catalog[source_id] = source
+            # Sort the catalog and convert it to a list
             catalog = list(dict(sorted(catalog.items())).values())
 
             # tools.helpers.to_csv
@@ -94,6 +105,8 @@ jobs:
             catalog = pd.json_normalize(catalog)
             if columns is not None:
                 catalog = catalog[columns]
+            if "static_reference" in catalog:
+                catalog.static_reference = catalog.static_reference.astype(int)
             catalog.to_csv(path, sep=",", index=False)
 
       - name: Upload the catalog of sources CSV artifact

@@ -318,7 +318,7 @@ class GtfsScheduleSource(Source):
     def update(self, **kwargs):
         auto_discovery_url = kwargs.get(AUTO_DISCOVERY)
         if auto_discovery_url is not None and is_readable(
-            url=auto_discovery_url, load_func=load_gtfs()
+            url=auto_discovery_url, load_func=load_gtfs
         ):
             self.auto_discovery_url = auto_discovery_url
             (

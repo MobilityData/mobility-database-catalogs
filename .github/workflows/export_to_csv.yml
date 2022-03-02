@@ -79,7 +79,7 @@ jobs:
             gtfs_schedule_catalog_path = os.path.join(".", GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT)
             gtfs_realtime_catalog_path = os.path.join(".", GTFS_REALTIME_CATALOG_PATH_FROM_ROOT)
             catalog = {}
-            for catalog_path in [gtfs_schedule_catalog_path, gtfs_realtime_catalog_path]
+            for catalog_path in [gtfs_schedule_catalog_path, gtfs_realtime_catalog_path]:
                 for path, sub_dirs, files in os.walk(catalog_path):
                     for file in files:
                         with open(os.path.join(path, file)) as fp:

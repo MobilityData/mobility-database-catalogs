@@ -145,6 +145,15 @@ class SourcesCatalog(Catalog):
             self.save(entity)
         return self.catalog
 
+    def update(self, **kwargs):
+        mdb_source_id = kwargs.pop(MDB_SOURCE_ID)
+        source = self.get_source(source_id=mdb_source_id)
+        if source is not None:
+            entity = source.update(mdb_source_id=mdb_source_id, **kwargs)
+            self.catalog[mdb_source_id] = entity
+            self.save(entity)
+        return self.catalog
+
     def save(self, entity):
         return to_json(
             path=os.path.join(
@@ -154,9 +163,6 @@ class SourcesCatalog(Catalog):
             ),
             obj=entity.as_json(),
         )
-
-    def update(self):
-        pass
 
 
 class GtfsScheduleSourcesCatalog(SourcesCatalog):
@@ -228,16 +234,17 @@ class Source(ABC):
         pass
 
     @abstractmethod
-    def update(self):
+    def update(self, **kwargs):
         pass
 
     @classmethod
     @abstractmethod
-    def build(cls):
+    def build(cls, **kwargs):
         pass
 
+    @classmethod
     @abstractmethod
-    def schematize(self, **kwargs):
+    def schematize(cls, **kwargs):
         pass
 
     def as_json(self):
@@ -256,7 +263,7 @@ class GtfsScheduleSource(Source):
         self.bbox_max_lat = bounding_box.pop(MAXIMUM_LATITUDE)
         self.bbox_min_lon = bounding_box.pop(MINIMUM_LONGITUDE)
         self.bbox_max_lon = bounding_box.pop(MAXIMUM_LONGITUDE)
-        self.bbox_extracted_time = bounding_box.pop(EXTRACTED_ON)
+        self.bbox_extracted_on = bounding_box.pop(EXTRACTED_ON)
         urls = kwargs.pop(URLS, {})
         self.auto_discovery_url = urls.pop(AUTO_DISCOVERY)
         self.latest_url = urls.pop(LATEST)
@@ -275,7 +282,7 @@ class GtfsScheduleSource(Source):
             MAXIMUM_LATITUDE: self.bbox_max_lat,
             MINIMUM_LONGITUDE: self.bbox_min_lon,
             MAXIMUM_LONGITUDE: self.bbox_max_lon,
-            EXTRACTED_ON: self.bbox_extracted_time,
+            EXTRACTED_ON: self.bbox_extracted_on,
             AUTO_DISCOVERY: self.auto_discovery_url,
             LATEST: self.latest_url,
             LICENSE: self.license_url,
@@ -308,21 +315,51 @@ class GtfsScheduleSource(Source):
     def has_latest_dataset(self):
         return self.latest_url is not None
 
-    def update(self):
-        pass
+    def update(self, **kwargs):
+        auto_discovery_url = kwargs.get(AUTO_DISCOVERY)
+        if auto_discovery_url is not None and is_readable(
+            url=auto_discovery_url, load_func=load_gtfs()
+        ):
+            self.auto_discovery_url = auto_discovery_url
+            (
+                self.bbox_min_lat,
+                self.bbox_max_lat,
+                self.bbox_min_lon,
+                self.bbox_max_lon,
+            ) = extract_gtfs_bounding_box(url=auto_discovery_url)
+            self.bbox_extracted_on = get_iso_time()
+        provider = kwargs.get(PROVIDER)
+        if provider is not None:
+            self.provider = provider
+        name = kwargs.get(NAME)
+        if name is not None:
+            self.name = name
+        country_code = kwargs.get(COUNTRY_CODE)
+        if country_code is not None:
+            self.country_code = country_code
+        subdivision_name = kwargs.get(SUBDIVISION_NAME)
+        if subdivision_name is not None:
+            self.subdivision_name = subdivision_name
+        municipality = kwargs.get(MUNICIPALITY)
+        if municipality is not None:
+            self.municipality = municipality
+        license_url = kwargs.get(LICENSE)
+        if license_url is not None:
+            self.license_url = license_url
+        return self
 
     @classmethod
     def build(cls, **kwargs):
         instance = None
-        source_url = kwargs.get(AUTO_DISCOVERY)
-        if is_readable(url=source_url, load_func=load_gtfs):
+        auto_discovery_url = kwargs.get(AUTO_DISCOVERY)
+        if is_readable(url=auto_discovery_url, load_func=load_gtfs):
             data_type = GTFS
             (
                 minimum_latitude,
                 maximum_latitude,
                 minimum_longitude,
                 maximum_longitude,
-            ) = extract_gtfs_bounding_box(url=source_url)
+            ) = extract_gtfs_bounding_box(url=auto_discovery_url)
             extracted_on = get_iso_time()
             filename = create_filename(
                 country_code=kwargs.get(COUNTRY_CODE),
@@ -453,8 +490,26 @@ class GtfsRealtimeSource(Source):
     def has_latest_dataset(self):
         return False
 
-    def update(self):
-        pass
+    def update(self, **kwargs):
+        provider = kwargs.get(PROVIDER)
+        if provider is not None:
+            self.provider = provider
+        name = kwargs.get(NAME)
+        if name is not None:
+            self.name = name
+        static_reference = kwargs.get(STATIC_REFERENCE)
+        if static_reference is not None:
+            self.static_reference = static_reference
+        vehicle_positions_url = kwargs.get(REALTIME_VEHICLE_POSITIONS)
+        if vehicle_positions_url is not None:
+            self.vehicle_positions_url = vehicle_positions_url
+        trip_updates_url = kwargs.get(REALTIME_TRIP_UPDATES)
+        if trip_updates_url is not None:
+            self.trip_updates_url = trip_updates_url
+        service_alerts_url = kwargs.get(REALTIME_ALERTS)
+        if service_alerts_url is not None:
+            self.service_alerts_url = service_alerts_url
+        return self
 
     @classmethod
     def build(cls, **kwargs):

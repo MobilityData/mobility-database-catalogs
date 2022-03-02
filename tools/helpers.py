@@ -45,18 +45,6 @@ def to_csv(path, catalog, columns):
     catalog.to_csv(path, sep=",", index=False)
 
 
-def find_file(catalog_root, mdb_id):
-    file_path = None
-    for path, sub_dirs, files in os.walk(catalog_root):
-        for file in files:
-            # Split the filename string under the format
-            # "filename-prefix-mdb-id.extension" to extract the mdb_id
-            if file.split(".")[0].split("-")[-1] == str(mdb_id):
-                file_path = os.path.join(path, file)
-                break
-    return file_path
-
-
 #########################
 # VERIFICATION FUNCTIONS
 #########################

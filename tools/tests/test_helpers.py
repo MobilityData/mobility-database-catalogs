@@ -16,7 +16,6 @@ from tools.helpers import (
     to_json,
     from_json,
     normalize,
-    find_file,
 )
 import pandas as pd
 from freezegun import freeze_time
@@ -392,21 +391,3 @@ class TestInOutFunctions(TestCase):
     @skip
     def test_to_csv(self):
         raise NotImplementedError
-
-    @patch("tools.helpers.os.walk")
-    def test_find_file(self, mock_walk):
-        mock_walk.return_value = [
-            ("/catalogs", ("sources",), ()),
-            ("/catalogs/sources", ("gtfs",), ()),
-            ("/catalogs/sources/gtfs", ("schedule",), ()),
-            (
-                "/catalogs/sources/gtfs/schedule",
-                (),
-                ("some-source-1.json", "another-source-2.json"),
-            ),
-        ]
-        test_mdb_id = 2
-        under_test = find_file(catalog_root=self.test_path, mdb_id=test_mdb_id)
-        self.assertEqual(
-            under_test, "/catalogs/sources/gtfs/schedule/another-source-2.json"
-        )

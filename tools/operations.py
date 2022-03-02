@@ -1,30 +1,12 @@
 import os
-from tools.helpers import (
-    is_readable,
-    extract_gtfs_bounding_box,
-    to_json,
-    from_json,
-    get_iso_time,
-    find_file,
-)
 from tools.constants import (
     GTFS,
     GTFS_RT,
-    LOAD_FUNC,
-    SOURCE_CATALOG_PATH_FROM_ROOT,
     NAME,
     PROVIDER,
-    LOCATION,
     COUNTRY_CODE,
     SUBDIVISION_NAME,
     MUNICIPALITY,
-    BOUNDING_BOX,
-    MINIMUM_LATITUDE,
-    MAXIMUM_LATITUDE,
-    MINIMUM_LONGITUDE,
-    MAXIMUM_LONGITUDE,
-    EXTRACTED_ON,
-    URLS,
     AUTO_DISCOVERY,
     LICENSE,
     STATIC_REFERENCE,
@@ -33,6 +15,7 @@ from tools.constants import (
     REALTIME_ALERTS,
     CATALOGS,
     ALL,
+    MDB_SOURCE_ID,
 )
 from tools.representations import GtfsScheduleSourcesCatalog, GtfsRealtimeSourcesCatalog
 
@@ -53,7 +36,7 @@ def add_gtfs_realtime_source(
     service_alerts_url=None,
     name=None,
 ):
-    """Add a new GTFS Rsource to the Mobility Catalogs."""
+    """Add a new GTFS Realtime source to the Mobility Catalogs."""
     catalog = GtfsRealtimeSourcesCatalog()
     data = {
         PROVIDER: provider,
@@ -64,6 +47,30 @@ def add_gtfs_realtime_source(
         NAME: name,
     }
     catalog.add(**data)
+    return catalog
+
+
+def update_gtfs_realtime_source(
+    mdb_source_id,
+    provider=None,
+    static_reference=None,
+    vehicle_positions_url=None,
+    trip_updates_url=None,
+    service_alerts_url=None,
+    name=None,
+):
+    """Update a new GTFS Realtime source to the Mobility Catalogs."""
+    catalog = GtfsRealtimeSourcesCatalog()
+    data = {
+        MDB_SOURCE_ID: mdb_source_id,
+        PROVIDER: provider,
+        STATIC_REFERENCE: static_reference,
+        REALTIME_VEHICLE_POSITIONS: vehicle_positions_url,
+        REALTIME_TRIP_UPDATES: trip_updates_url,
+        REALTIME_ALERTS: service_alerts_url,
+        NAME: name,
+    }
+    catalog.update(**data)
     return catalog
 
 
@@ -91,7 +98,7 @@ def add_gtfs_schedule_source(
     return catalog
 
 
-def update_source(
+def update_gtfs_schedule_source(
     mdb_source_id,
     provider=None,
     name=None,
@@ -100,42 +107,21 @@ def update_source(
     municipality=None,
     auto_discovery_url=None,
     license_url=None,
-    data_type=GTFS,
 ):
-    """Update a source in the Mobility Catalogs."""
-    data_type_map = globals()[f"{data_type.upper()}_MAP"]
-    source_path = find_file(
-        catalog_root=os.path.join(PROJECT_ROOT, SOURCE_CATALOG_PATH_FROM_ROOT),
-        mdb_id=mdb_source_id,
-    )
-    source = from_json(path=source_path)
-
-    if auto_discovery_url is not None and is_readable(
-        url=auto_discovery_url, load_func=data_type_map[LOAD_FUNC]
-    ):
-        source[URLS][AUTO_DISCOVERY] = auto_discovery_url
-        (
-            source[LOCATION][BOUNDING_BOX][MINIMUM_LATITUDE],
-            source[LOCATION][BOUNDING_BOX][MAXIMUM_LATITUDE],
-            source[LOCATION][BOUNDING_BOX][MINIMUM_LONGITUDE],
-            source[LOCATION][BOUNDING_BOX][MAXIMUM_LONGITUDE],
-        ) = extract_gtfs_bounding_box(url=auto_discovery_url)
-        source[BOUNDING_BOX][EXTRACTED_ON] = get_iso_time()
-    if provider is not None:
-        source[PROVIDER] = provider
-    if name is not None:
-        source[NAME] = name
-    if country_code is not None:
-        source[LOCATION][COUNTRY_CODE] = country_code
-    if subdivision_name is not None:
-        source[LOCATION][SUBDIVISION_NAME] = SUBDIVISION_NAME
-    if municipality is not None:
-        source[LOCATION][MUNICIPALITY] = municipality
-    if license_url is not None:
-        source[URLS][LICENSE] = license_url
-
-    to_json(path=source_path, obj=source)
-    return source
+    """Update a GTFS Schedule source in the Mobility Catalogs."""
+    catalog = GtfsScheduleSourcesCatalog()
+    data = {
+        MDB_SOURCE_ID: mdb_source_id,
+        PROVIDER: provider,
+        COUNTRY_CODE: country_code,
+        SUBDIVISION_NAME: subdivision_name,
+        MUNICIPALITY: municipality,
+        AUTO_DISCOVERY: auto_discovery_url,
+        LICENSE: license_url,
+        NAME: name,
+    }
+    catalog.update(**data)
+    return catalog
 
 
 def get_sources(data_type=ALL):

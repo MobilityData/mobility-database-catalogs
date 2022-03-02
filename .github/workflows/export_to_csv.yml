@@ -89,11 +89,11 @@ jobs:
                             entity_id = entity_json[MDB_SOURCE_ID]
                             catalog[entity_id] = entity_json
             # Complete the GTFS Realtime Sources with the location information from their static reference
-            for source_id, source in catalog.items()
+            for source_id, source in catalog.items():
                 if source.get(DATA_TYPE) == GTFS_RT:
                     if source.get(STATIC_REFERENCE) is not None and catalog.get(STATIC_REFERENCE, {}).get(LOCATION) is not None:
                         source[LOCATION] = catalog.get(STATIC_REFERENCE, {}).get(LOCATION)
-                    else
+                    else:
                         source[LOCATION] = {COUNTRY_CODE: UNKNOWN, SUBDIVISION_NAME: UNKNOWN, MUNICIPALITY: UNKNOWN}
                     catalog[source_id] = source
             # Sort the catalog and convert it to a list

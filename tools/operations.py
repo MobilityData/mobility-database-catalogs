@@ -21,11 +21,11 @@ from tools.representations import GtfsScheduleSourcesCatalog, GtfsRealtimeSource
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
 
-GTFS_MAP = {CATALOGS: [GtfsScheduleSourcesCatalog]}
+GTFS_MAP = {CATALOGS: ["GtfsScheduleSourcesCatalog"]}
 
-GTFS_RT_MAP = {CATALOGS: [GtfsRealtimeSourcesCatalog]}
+GTFS_RT_MAP = {CATALOGS: ["GtfsRealtimeSourcesCatalog"]}
 
-ALL_MAP = {CATALOGS: [GtfsScheduleSourcesCatalog, GtfsRealtimeSourcesCatalog]}
+ALL_MAP = {CATALOGS: ["GtfsScheduleSourcesCatalog", "GtfsRealtimeSourcesCatalog"]}
 
 
 def add_gtfs_realtime_source(
@@ -129,8 +129,7 @@ def get_sources(data_type=ALL):
     source_type_map = globals()[f"{data_type.upper()}_MAP"]
     sources = {}
     for catalog_cls in source_type_map[CATALOGS]:
-        catalog = catalog_cls()
-        sources.update(catalog.get_sources())
+        sources.update(globals()[f"{catalog_cls}"]().get_sources())
     return dict(sorted(sources.items()))
 
 
@@ -145,9 +144,8 @@ def get_sources_by_bounding_box(
     source_type_map = globals()[f"{data_type.upper()}_MAP"]
     sources = {}
     for catalog_cls in source_type_map[CATALOGS]:
-        catalog = catalog_cls()
         sources.update(
-            catalog.get_sources_by_bounding_box(
+            globals()[f"{catalog_cls}"]().get_sources_by_bounding_box(
                 minimum_latitude=minimum_latitude,
                 maximum_latitude=maximum_latitude,
                 minimum_longitude=minimum_longitude,
@@ -165,9 +163,10 @@ def get_sources_by_subdivision_name(
     source_type_map = globals()[f"{data_type.upper()}_MAP"]
     sources = {}
     for catalog_cls in source_type_map[CATALOGS]:
-        catalog = catalog_cls()
         sources.update(
-            catalog.get_sources_by_subdivision_name(subdivision_name=subdivision_name)
+            globals()[f"{catalog_cls}"]().get_sources_by_subdivision_name(
+                subdivision_name=subdivision_name
+            )
         )
     return dict(sorted(sources.items()))
 
@@ -180,8 +179,11 @@ def get_sources_by_country_code(
     source_type_map = globals()[f"{data_type.upper()}_MAP"]
     sources = {}
     for catalog_cls in source_type_map[CATALOGS]:
-        catalog = catalog_cls()
-        sources.update(catalog.get_sources_by_country_code(country_code=country_code))
+        sources.update(
+            globals()[f"{catalog_cls}"]().get_sources_by_country_code(
+                country_code=country_code
+            )
+        )
     return dict(sorted(sources.items()))
 
 
@@ -190,6 +192,5 @@ def get_latest_datasets(data_type=ALL):
     source_type_map = globals()[f"{data_type.upper()}_MAP"]
     sources = {}
     for catalog_cls in source_type_map[CATALOGS]:
-        catalog = catalog_cls()
-        sources.update(catalog.get_latest_datasets())
+        sources.update(globals()[f"{catalog_cls}"]().get_latest_datasets())
     return dict(sorted(sources.items()))

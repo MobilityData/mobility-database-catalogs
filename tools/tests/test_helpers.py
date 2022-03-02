@@ -6,7 +6,6 @@ from tools.helpers import (
     is_readable,
     MissingSchema,
     ParserError,
-    identify,
     create_latest_url,
     create_filename,
     get_iso_time,
@@ -16,7 +15,6 @@ from tools.helpers import (
     STOP_LON,
     to_json,
     from_json,
-    aggregate,
     normalize,
     find_file,
 )
@@ -215,22 +213,6 @@ class TestCreationFunctions(TestCase):
     def setUp(self):
         self.test_path = "some_path"
 
-    @patch("tools.helpers.os.walk")
-    def test_identify(self, mock_walk):
-        mock_walk.return_value = [
-            ("/catalogs", ("sources",), ()),
-            ("/catalogs/sources", ("gtfs",), ()),
-            ("/catalogs/sources/gtfs", ("schedule",), ()),
-            (
-                "/catalogs/sources/gtfs/schedule",
-                (),
-                ("some_source.json", "another_source.json"),
-            ),
-        ]
-        under_test = identify(catalog_root=self.test_path)
-        self.assertEqual(under_test, 3)
-        self.assertEqual(mock_walk.call_count, 1)
-
     @patch("tools.helpers.create_filename")
     def test_create_latest_url(self, mock_filename):
         mock_filename.return_value = "ca-some-subdivision-name-some-provider-gtfs-1.zip"
@@ -406,29 +388,6 @@ class TestInOutFunctions(TestCase):
         self.assertEqual(under_test, self.test_obj)
         mock_open.assert_called_once()
         mock_json.assert_called_once()
-
-    @patch("tools.helpers.os.walk")
-    @patch("tools.helpers.os.path.join")
-    @patch("tools.helpers.open")
-    @patch("tools.helpers.json.load")
-    def test_aggregate(self, mock_json, mock_open, mock_path, mock_walk):
-        mock_walk.return_value = [
-            ("/catalogs", ("sources",), ()),
-            ("/catalogs/sources", ("gtfs",), ()),
-            ("/catalogs/sources/gtfs", ("schedule",), ()),
-            (
-                "/catalogs/sources/gtfs/schedule",
-                (),
-                ("some-source.json", "another-source.json"),
-            ),
-        ]
-        mock_json.return_value = self.test_obj
-        under_test = aggregate(catalog_root=self.test_path)
-        self.assertEqual(under_test, [self.test_obj, self.test_obj])
-        self.assertEqual(mock_walk.call_count, 1)
-        self.assertEqual(mock_path.call_count, 2)
-        self.assertEqual(mock_open.call_count, 2)
-        self.assertEqual(mock_json.call_count, 2)
 
     @skip
     def test_to_csv(self):

@@ -50,7 +50,7 @@ jobs:
             URLS = "urls"
             AUTO_DISCOVERY = "auto_discovery"
             LATEST = "latest"
-
+            print(os.environ)
             changed_files = os.getenv(CHANGED_FILES, "").split()
             print(changed_files)
             changed_files = [file for file in changed_files if GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT in changed_files]

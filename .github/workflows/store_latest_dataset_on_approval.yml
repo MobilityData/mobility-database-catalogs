@@ -1,0 +1,66 @@
+name: Store latest dataset on approval
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  pre_ci:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.9]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest wheel numpy
+          sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
+          sudo apt-get update
+          sudo apt-get install gdal-bin python3-gdal
+          sudo apt-get install libgdal-dev
+          pip install GDAL==$(gdal-config --version) --global-option=build_ext --global-option="-I/usr/include/gdal"
+          sudo apt-get install libspatialindex-dev
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+  get_urls:
+    needs: [ pre_ci ]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get added and modified files
+        uses: jitterbit/get-changed-files@v1
+      - name: Get the urls
+        uses: jannekem/run-python-script-action@v1
+        env:
+          CHANGED_FILES: ${{ steps.files.outputs.added_modified }}
+        with:
+          script: |
+            import os
+            import json
+
+            CHANGED_FILES = "CHANGED_FILES"
+            GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT = "catalogs/sources/gtfs/schedule"
+            ROOT = "."
+            URLS = "urls"
+            AUTO_DISCOVERY = "auto_discovery"
+            LATEST = "latest"
+
+            changed_files = os.get(CHANGED_FILES, "").split()
+            print(changed_files)
+            changed_files = [file for file in changed_files if GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT in changed_files]
+
+            for file in changed_files:
+                base = os.path.splitext(os.path.basename(file))[0]
+                with open(os.path.join(ROOT, file)) as fp:
+                    file_json = json.load(fp)
+                    auto_discovery_url = file_json.get(URLS, {}).get(AUTO_DISCOVERY)
+                    latest_url = file_json.get(URLS, {}).get(LATEST)
+                print(base)
+                print(auto_discovery_url)
+                print(auto_discovery_url)

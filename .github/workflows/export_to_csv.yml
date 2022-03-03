@@ -106,9 +106,7 @@ jobs:
             catalog = pd.json_normalize(catalog)
             if columns is not None:
                 catalog = catalog[columns]
-            if "static_reference" in catalog:
-                catalog.static_reference = catalog.static_reference.astype(int)
-            catalog.to_csv(path, sep=",", index=False)
+            catalog.to_csv(path, sep=",", index=False, float_format="%.0f")
 
       - name: Upload the catalog of sources CSV artifact
         uses: actions/upload-artifact@v1

@@ -122,54 +122,81 @@ To get the sources:
 >>> get_sources()
 ```
 
-To get the sources by subdivision name:
+To get the sources by subdivision name, where `$SUBDIVISION_NAME` is a ISO 3166-2 subdivision name:
 ```
->>> get_sources_by_subdivision_name(subdivision_name="Ontario")
-```
-
-To get the sources by country code:
-```
->>> get_sources_by_country_code(country_code="CA")
+>>> get_sources_by_subdivision_name(subdivision_name=$SUBDIVISION_NAME)
 ```
 
-To get the sources by bounding box:
+To get the sources by country code, where `$COUNTRY_CODE` is a ISO 3166-1 alpha-2 code:
+```
+>>> get_sources_by_country_code(country_code=$COUNTRY_CODE)
+
+```
+
+To get the sources by bounding box, where `$MINIMUM_LATITUDE` `$MAXIMUM_LATITUDE` `$MINIMUM_LONGITUDE` and `$MAXIMUM_LONGITUDE` are expressed as floats:
 ```
 >>> get_sources_by_bounding_box(
-        minimum_latitude=42.75,
-        maximum_latitude=43.25,
-        minimum_longitude=-81.50,
-        maximum_longitude=-81.05
+        minimum_latitude=$MINIMUM_LATITUDE,
+        maximum_latitude=$MAXIMUM_LATITUDE,
+        minimum_longitude=$MINIMUM_LONGITUDE,
+        maximum_longitude=$MAXIMUM_LONGITUDE
     )
 ```
 
-To add a new source:
+
+To add a new GTFS Schedule source:
 ```
->>> add_source(
-        provider="Your Source Provider Name",
-        country_code="Your Source Country Code",
-        subdivision_name="Your Source Subdivision Name",
-        municipality="Your Source Municipality",
-        auto_discovery_url="https://your.source.stable.discovery.url",
-        license_url=None,
-        name=None,
-        data_type=GTFS,
+>>> add_gtfs_schedule_source(
+        provider=$YOUR_SOURCE_PROVIDER_NAME,
+        country_code=$YOUR_SOURCE_COUNTRY_CODE,
+        subdivision_name=$YOUR_SOURCE_SUBDIVISION_NAME,
+        municipality=$YOUR_SOURCE_MUNICIPALITY,
+        auto_discovery_url=$YOUR_SOURCE_STABLE_DISCOVERY_URL,
+        license_url=$OPTIONAL_LICENSE_URL,
+        name=$OPTIONAL_SOURCE_NAME
     )
 ```
 
-To update a source:
+To add a new GTFS Realtime source:
 ```
->>> update_source(        
-        mdb_source_id="mdbsrc-gtfs-your-source-id",
-        provider=None,
-        name=None,
-        country_code=None,
-        subdivision_name=None,
-        municipality=None,
-        auto_discovery_url=None,
-        license_url=None,
-        data_type=GTFS,
+>>> add_gtfs_realtime_source(
+        provider=$YOUR_SOURCE_PROVIDER_NAME,
+        static_reference=$OPTIONAL_STATIC_REFERENCE_NUMERICAL_ID,
+        vehicle_positions_url=$OPTIONAL_VEHICLE_POSITIONS_URL,
+        trip_updates_url=$OPTIONAL_TRIP_UPDATES_URL,
+        service_alerts_url=$OPTIONAL_SERVICE_ALERTS_URL,
+        name=$OPTIONAL_SOURCE_NAME
     )
 ```
+
+To update a GTFS Schedule source:
+```
+>>> update_gtfs_schedule_source(
+        mdb_source_id=$YOUR_SOURCE_NUMERICAL_ID,
+        provider=$OPTIONAL_SOURCE_PROVIDER_NAME,
+        name=$OPTIONAL_SOURCE_NAME,
+        country_code=$OPTIONAL_SOURCE_COUNTRY_CODE,
+        subdivision_name=$OPTIONAL_SOURCE_SUBDIVISION_NAME,
+        municipality=$OPTIONAL_SOURCE_MUNICIPALITY,
+        auto_discovery_url=$OPTIONAL_SOURCE_STABLE_DISCOVERY_URL,
+        license_url=$OPTIONAL_LICENSE_URL
+    )
+```
+
+To update a GTFS Realtime source:
+
+```
+>>> update_gtfs_realtime_source(
+        mdb_source_id=$YOUR_SOURCE_NUMERICAL_ID,
+        provider=$OPTIONAL_SOURCE_PROVIDER_NAME,
+        static_reference=$OPTIONAL_STATIC_REFERENCE_NUMERICAL_ID,
+        vehicle_positions_url=$OPTIONAL_VEHICLE_POSITIONS_URL,
+        trip_updates_url=$OPTIONAL_TRIP_UPDATES_URL,
+        service_alerts_url=$OPTIONAL_SERVICE_ALERTS_URL,
+        name=$OPTIONAL_SOURCE_NAME
+    )
+```
+
 
 ## Integration Tests
 

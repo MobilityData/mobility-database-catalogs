@@ -35,37 +35,30 @@ jobs:
     steps:
       - name: Get added and modified files
         uses: jitterbit/get-changed-files@v1
-        env:
-          CHANGED_FILES: ${{ steps.files.outputs.added_modified }}
-      - name: Get the urls
-        uses: jannekem/run-python-script-action@v1
-        with:
-          script: |
-            import os
-            import json
+        shell: python
+        run: |
+          import os
+          import json
 
-            CHANGED_FILES = "CHANGED_FILES"
-            GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT = "catalogs/sources/gtfs/schedule"
-            ROOT = "."
-            URLS = "urls"
-            AUTO_DISCOVERY = "auto_discovery"
-            LATEST = "latest"
-            GITHUB_ENV = "GITHUB_ENV"
+          CHANGED_FILES = "CHANGED_FILES"
+          GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT = "catalogs/sources/gtfs/schedule"
+          ROOT = "."
+          URLS = "urls"
+          AUTO_DISCOVERY = "auto_discovery"
+          LATEST = "latest"
 
-            with open(os.getenv(GITHUB_ENV), "r") as file:
-                print([line.rstrip() for line in file])
-                github_env = {key: value for key, value in (item.split("=") for item in [line.rstrip() for line in file])}
+          changed_files = ${{ steps.files.outputs.all }}
+          changed_files = [file for file in changed_files if GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT in changed_files]
 
-            changed_files = github_env.get(CHANGED_FILES, "").split()
-            print(changed_files)
-            changed_files = [file for file in changed_files if GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT in changed_files]
+          for file in changed_files:
+              base = os.path.splitext(os.path.basename(file))[0]
+              with open(os.path.join(ROOT, file)) as fp:
+                  file_json = json.load(fp)
+                  auto_discovery_url = file_json.get(URLS, {}).get(AUTO_DISCOVERY)
+                  latest_url = file_json.get(URLS, {}).get(LATEST)
+              print(base)
+              print(auto_discovery_url)
+              print(auto_discovery_url)
 
-            for file in changed_files:
-                base = os.path.splitext(os.path.basename(file))[0]
-                with open(os.path.join(ROOT, file)) as fp:
-                    file_json = json.load(fp)
-                    auto_discovery_url = file_json.get(URLS, {}).get(AUTO_DISCOVERY)
-                    latest_url = file_json.get(URLS, {}).get(LATEST)
-                print(base)
-                print(auto_discovery_url)
-                print(auto_discovery_url)
+
+

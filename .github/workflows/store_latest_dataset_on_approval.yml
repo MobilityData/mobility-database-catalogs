@@ -35,10 +35,10 @@ jobs:
     steps:
       - name: Get added and modified files
         uses: jitterbit/get-changed-files@v1
-      - name: Get the urls
-        uses: jannekem/run-python-script-action@v1
         env:
           CHANGED_FILES: ${{ steps.files.outputs.added_modified }}
+      - name: Get the urls
+        uses: jannekem/run-python-script-action@v1
         with:
           script: |
             import os

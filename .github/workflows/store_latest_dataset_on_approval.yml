@@ -52,8 +52,9 @@ jobs:
             LATEST = "latest"
             GITHUB_ENV = "GITHUB_ENV"
 
-            with open(os.getenv(GITHUB_ENV), 'r') as file:
-                github_env = {key: value for key, value in (item.split('=') for item in [line.rstrip() for line in file])}
+            with open(os.getenv(GITHUB_ENV), "r") as file:
+                print([line.rstrip() for line in file])
+                github_env = {key: value for key, value in (item.split("=") for item in [line.rstrip() for line in file])}
 
             changed_files = github_env.get(CHANGED_FILES, "").split()
             print(changed_files)

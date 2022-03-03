@@ -8,32 +8,55 @@ from tools.constants import (
     MDB_SOURCE_ID,
     URLS,
     AUTO_DISCOVERY,
+    ALL,
+    GTFS_RT,
+    GTFS_REALTIME_SOURCE_SCHEMA_PATH_FROM_ROOT,
 )
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
 
 
-def test_catalogs_static_gtfs_json_schema():
-    static_source_schema_path = os.path.join(
+def test_catalogs_sources_gtfs_schedule_json_schema():
+    source_schema_path = os.path.join(
         PROJECT_ROOT, GTFS_SCHEDULE_SOURCE_SCHEMA_PATH_FROM_ROOT
     )
-    schema = from_json(static_source_schema_path)
-    for source in get_sources(data_type=GTFS):
+    schema = from_json(source_schema_path)
+    for source in get_sources(data_type=GTFS).values():
         validate(instance=source, schema=schema)
 
 
-def test_catalogs_static_gtfs_source_ids_uniqueness():
-    source_ids = [source[MDB_SOURCE_ID] for source in get_sources(data_type=GTFS)]
+def test_catalogs_sources_gtfs_schedule_source_ids_uniqueness():
+    source_ids = [
+        source[MDB_SOURCE_ID] for source in get_sources(data_type=GTFS).values()
+    ]
     assert len(set(source_ids)) == len(source_ids)
 
 
-def test_catalogs_static_gtfs_source_ids_are_incremental():
-    source_ids = [source[MDB_SOURCE_ID] for source in get_sources(data_type=GTFS)]
+def test_catalogs_sources_gtfs_realtime_json_schema():
+    source_schema_path = os.path.join(
+        PROJECT_ROOT, GTFS_REALTIME_SOURCE_SCHEMA_PATH_FROM_ROOT
+    )
+    schema = from_json(source_schema_path)
+    for source in get_sources(data_type=GTFS_RT).values():
+        validate(instance=source, schema=schema)
+
+
+def test_catalogs_sources_gtfs_realtime_source_ids_uniqueness():
+    source_ids = [
+        source[MDB_SOURCE_ID] for source in get_sources(data_type=GTFS_RT).values()
+    ]
+    assert len(set(source_ids)) == len(source_ids)
+
+
+def test_catalogs_gtfs_source_ids_are_incremental():
+    source_ids = [
+        source[MDB_SOURCE_ID] for source in get_sources(data_type=ALL).values()
+    ]
     assert sorted(source_ids) == list(range(1, len(source_ids) + 1))
 
 
-def test_catalogs_static_gtfs_auto_discovery_urls_uniqueness():
+def test_catalogs_sources_gtfs_schedule_auto_discovery_urls_uniqueness():
     auto_discovery_urls = [
-        source[URLS][AUTO_DISCOVERY] for source in get_sources(data_type=GTFS)
+        source[URLS][AUTO_DISCOVERY] for source in get_sources(data_type=GTFS).values()
     ]
     assert len(set(auto_discovery_urls)) == len(auto_discovery_urls)

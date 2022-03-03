@@ -19,19 +19,6 @@ from tools.constants import (
 #########################
 
 
-def aggregate(catalog_root):
-    """Aggregates the sources of a catalog.
-    :param catalog_root: The path to the root of the catalog folder.
-    :return: The sources of the catalog.
-    """
-    catalog = []
-    for path, sub_dirs, files in os.walk(catalog_root):
-        for file in files:
-            with open(os.path.join(path, file)) as fp:
-                catalog.append(json.load(fp))
-    return catalog
-
-
 def to_json(path, obj):
     """Saves a JSON object to the file with the given path.
     :param path: The path to the file.
@@ -56,18 +43,6 @@ def to_csv(path, catalog, columns):
     if columns is not None:
         catalog = catalog[columns]
     catalog.to_csv(path, sep=",", index=False)
-
-
-def find_file(catalog_root, mdb_id):
-    file_path = None
-    for path, sub_dirs, files in os.walk(catalog_root):
-        for file in files:
-            # Split the filename string under the format
-            # "filename-prefix-mdb-id.extension" to extract the mdb_id
-            if file.split(".")[0].split("-")[-1] == str(mdb_id):
-                file_path = os.path.join(path, file)
-                break
-    return file_path
 
 
 #########################
@@ -147,14 +122,6 @@ def is_readable(url, load_func):
 #########################
 # CREATION FUNCTIONS
 #########################
-
-
-def identify(catalog_root):
-    """Identities a MDB entity with a MDB ID.
-    The MDB Entity ID is a numeric identifier, which is assigned incrementally.
-    :return: The MDB Entity ID.
-    """
-    return sum(len(files) for path, sub_dirs, files in os.walk(catalog_root)) + 1
 
 
 def create_latest_url(

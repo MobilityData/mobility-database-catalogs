@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 3,
+    "data_type": "gtfs",
+    "provider": "Barrie Transit",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Ontario",
+        "municipality": "Barrie",
+        "bounding_box": {
+            "minimum_latitude": 44.3218044,
+            "maximum_latitude": 44.42020676,
+            "minimum_longitude": -79.74063237,
+            "maximum_longitude": -79.61089569,
+            "extracted_on": "2022-03-01T22:43:25+00:00"
+        }
+    },
+    "urls": {
+        "auto_discovery": "http://www.myridebarrie.ca/gtfs/Google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/archives_latest/o/ca-ontario-barrie-transit-gtfs-3.zip?alt=media"
+    }
+}

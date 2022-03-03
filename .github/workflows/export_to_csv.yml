@@ -106,7 +106,9 @@ jobs:
             catalog = pd.json_normalize(catalog)
             if columns is not None:
                 catalog = catalog[columns]
-            catalog.to_csv(path, sep=",", index=False, float_format="%.0f")
+            if STATIC_REFERENCE in catalog:
+                df[STATIC_REFERENCE] = df[STATIC_REFERENCE].astype('Int64')
+            catalog.to_csv(path, sep=",", index=False")
 
       - name: Upload the catalog of sources CSV artifact
         uses: actions/upload-artifact@v1

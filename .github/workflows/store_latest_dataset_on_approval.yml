@@ -35,6 +35,7 @@ jobs:
     steps:
       - name: Get added and modified files
         uses: jitterbit/get-changed-files@v1
+      - name: Extract the auto-discovery and latest urls
         shell: python
         run: |
           import os

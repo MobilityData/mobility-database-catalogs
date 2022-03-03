@@ -92,7 +92,7 @@ jobs:
             # Complete the GTFS Realtime Sources with the location information from their static reference
             for source_id, source in catalog.items():
                 if source.get(DATA_TYPE) == GTFS_RT:
-                    if source.get(STATIC_REFERENCE) is not None and catalog.get(STATIC_REFERENCE, {}).get(LOCATION) is not None:
+                    if source.get(STATIC_REFERENCE) is not None and catalog.get(source.get(STATIC_REFERENCE), {}).get(LOCATION) is not None:
                         source[LOCATION] = catalog.get(STATIC_REFERENCE, {}).get(LOCATION)
                     else:
                         source[LOCATION] = {COUNTRY_CODE: UNKNOWN, SUBDIVISION_NAME: UNKNOWN, MUNICIPALITY: UNKNOWN}

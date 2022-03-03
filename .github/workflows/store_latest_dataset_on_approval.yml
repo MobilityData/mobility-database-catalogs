@@ -50,8 +50,12 @@ jobs:
             URLS = "urls"
             AUTO_DISCOVERY = "auto_discovery"
             LATEST = "latest"
-            print(os.environ)
-            changed_files = os.getenv(CHANGED_FILES, "").split()
+            GITHUB_ENV = "GITHUB_ENV"
+
+            with open(os.getenv(GITHUB_ENV), 'r') as file:
+                github_env = {key: value for key, value in (item.split('=') for item in [line.rstrip() for line in file])}
+
+            changed_files = github_env(CHANGED_FILES, "").split()
             print(changed_files)
             changed_files = [file for file in changed_files if GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT in changed_files]
 

@@ -70,6 +70,7 @@ jobs:
             SUBDIVISION_NAME = "subdivision_name"
             MUNICIPALITY = "municipality"
             STATIC_REFERENCE = "static_reference"
+            UNKNOWN = "unknown"
 
             # tools.constants.GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT
             GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT = "catalogs/sources/gtfs/schedule"

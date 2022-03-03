@@ -107,7 +107,7 @@ jobs:
             if columns is not None:
                 catalog = catalog[columns]
             if STATIC_REFERENCE in catalog:
-                df[STATIC_REFERENCE] = df[STATIC_REFERENCE].astype('Int64')
+                catalog[STATIC_REFERENCE] = catalog[STATIC_REFERENCE].astype('Int64')
             catalog.to_csv(path, sep=",", index=False)
 
       - name: Upload the catalog of sources CSV artifact

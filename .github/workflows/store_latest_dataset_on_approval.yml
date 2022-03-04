@@ -34,6 +34,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - run: |
+          pip install numpy
       - name: Get added and modified files
         id: files
         uses: jitterbit/get-changed-files@v1

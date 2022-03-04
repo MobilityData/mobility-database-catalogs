@@ -25,7 +25,7 @@ jobs:
       - name: Get added and modified files
         id: files
         uses: jitterbit/get-changed-files@v1
-      - name: Create a matrix with the auto-discovery and latest urls
+      - name: Create URLs matrix with the auto-discovery and latest URLs
         shell: python
         run: |
           import os
@@ -35,6 +35,7 @@ jobs:
           # OS constants
           ROOT = os.getcwd()
           GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT = "catalogs/sources/gtfs/schedule"
+          MATRIX_FILE = "urls_matrix.json"
 
           # File constants
           URLS = "urls"
@@ -55,7 +56,7 @@ jobs:
           urls = {}
           for file in changed_files:
               base = os.path.splitext(os.path.basename(file))[0]
-              with open(os.path.join(ROOT, file)) as fp:
+              with open(os.path.join(ROOT, file), "r") as fp:
                   file_json = json.load(fp)
                   auto_discovery_url = file_json.get(URLS, {}).get(AUTO_DISCOVERY)
                   latest_url = file_json.get(URLS, {}).get(LATEST)
@@ -83,4 +84,20 @@ jobs:
               job_data = {DATA: urls_data_string.replace("}{", "} {")}
               urls_data.append(job_data)
           matrix_data = {INCLUDE: urls_data}
-          print(matrix_data)
+
+          with open(os.path.join(ROOT, MATRIX_FILE), "w") as fp:
+              file_json = json.dump(matrix_data, fp)
+      - name: Set URLs matrix
+        id: set-matrix
+        run: |
+          DATASETS=$(jq . ./urls_matrix.json -c)
+          echo $DATASETS
+          echo "::set-output name=matrix::$DATASETS"
+      - name: Persist URLs matrix artifact
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: urls_matrix
+          path: ./urls_matrix.json
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}

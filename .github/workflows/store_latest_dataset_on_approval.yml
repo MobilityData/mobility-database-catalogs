@@ -140,6 +140,7 @@ jobs:
           AUTO_DISCOVERY = "auto_discovery"
           LATEST = "latest"
 
+          print(${{ matrix.data }})
           jobs = "${{ matrix.data }}".split()
           for job in jobs:
               job_json = json.loads(job)

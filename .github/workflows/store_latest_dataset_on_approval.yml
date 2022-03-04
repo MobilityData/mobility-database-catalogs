@@ -123,6 +123,34 @@ jobs:
           pip install GDAL==$(gdal-config --version) --global-option=build_ext --global-option="-I/usr/include/gdal"
           sudo apt-get install libspatialindex-dev
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-      - name: Echo URLs matrix
+      - name: Process URLs jobs
+        shell: python
         run: |
-          echo ${{ matrix.data }}
+          import os
+          import json
+
+          print(${{ matrix.data }})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

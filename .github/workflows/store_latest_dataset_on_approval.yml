@@ -44,7 +44,7 @@ jobs:
 
           CHANGED_FILES = "CHANGED_FILES"
           GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT = "catalogs/sources/gtfs/schedule"
-          ROOT = "."
+          ROOT = os.getcwd()
           URLS = "urls"
           AUTO_DISCOVERY = "auto_discovery"
           LATEST = "latest"

@@ -141,7 +141,6 @@ jobs:
           LATEST = "latest"
 
           jobs = """${{ matrix.data }}""".split()
-          print(jobs)
           for job in jobs:
               job_json = json.loads(job)
               base = job_json[BASE]

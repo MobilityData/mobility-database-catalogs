@@ -75,7 +75,7 @@ jobs:
                     file_base = job.pop()
                     file_information = {
                         BASE: file_base,
-                        AUTO_DISCOVERY: urls[file_key][AUTO_DISCOVERY],
+                        AUTO_DISCOVERY: urls[file_base][AUTO_DISCOVERY],
                         LATEST: urls[file_base][LATEST]
                     }
                     urls_data_string = urls_data_string + json.dumps(

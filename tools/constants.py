@@ -11,7 +11,7 @@ MDB_SOURCE_FILENAME = "{country_code}-{subdivision_name}-{provider}-{data_type}-
 
 # ARCHIVES TEMPLATE
 MDB_ARCHIVES_LATEST_URL_TEMPLATE = (
-    "https://storage.googleapis.com/storage/v1/b/latest/o/{filename}?alt=media"
+    "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/{filename}?alt=media"
 )
 
 # CATALOG CONSTANTS

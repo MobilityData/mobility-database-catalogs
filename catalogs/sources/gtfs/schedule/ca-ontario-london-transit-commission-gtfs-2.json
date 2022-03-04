@@ -18,6 +18,6 @@
     "urls": {
         "auto_discovery": "http://www.londontransit.ca/gtfsfeed/google_transit.zip",
         "license": "https://www.londontransit.ca/open-data/ltcs-open-data-terms-of-use/",
-        "latest": "https://storage.googleapis.com/storage/v1/b/latest/o/ca-ontario-london-transit-commission-gtfs-2.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-london-transit-commission-gtfs-2.zip?alt=media"
     }
 }

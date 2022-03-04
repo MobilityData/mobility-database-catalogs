@@ -38,7 +38,7 @@ jobs:
         id: files
         uses: jitterbit/get-changed-files@v1
       - name: Create a matrix with the auto-discovery and latest urls
-        shell: python
+        shell: python3.9
         run: |
           import os
           import json

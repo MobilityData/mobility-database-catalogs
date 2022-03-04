@@ -33,6 +33,7 @@ jobs:
     needs: [ pre_ci ]
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Get added and modified files
         id: files
         uses: jitterbit/get-changed-files@v1
@@ -51,8 +52,6 @@ jobs:
 
           changed_files = "${{ steps.files.outputs.all }}".split()
           changed_files = [file for file in changed_files if GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT in file]
-
-          print(os.walk(ROOT))
 
           for file in changed_files:
               base = os.path.splitext(os.path.basename(file))[0]

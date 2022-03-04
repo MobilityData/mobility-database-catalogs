@@ -49,8 +49,8 @@ jobs:
           AUTO_DISCOVERY = "auto_discovery"
           LATEST = "latest"
 
-          changed_files = "${{ steps.files.outputs.all }}"
-          changed_files = [file for file in changed_files if GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT in changed_files]
+          changed_files = "${{ steps.files.outputs.all }}".split()
+          changed_files = [file for file in changed_files if GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT in file]
 
           for file in changed_files:
               base = os.path.splitext(os.path.basename(file))[0]

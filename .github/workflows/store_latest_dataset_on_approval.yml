@@ -102,7 +102,7 @@ jobs:
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
   store-datasets:
-    needs: [ gets-urls ]
+    needs: [ get-urls ]
     runs-on: ubuntu-latest
     strategy:
       matrix: ${{ fromJson(needs.gets-urls.outputs.matrix) }}

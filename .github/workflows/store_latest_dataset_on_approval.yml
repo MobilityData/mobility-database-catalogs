@@ -101,7 +101,7 @@ jobs:
           path: ./urls_matrix.json
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
-  store-datasets:
+  download-datasets:
     needs: [ get-urls ]
     runs-on: ubuntu-latest
     strategy:
@@ -168,14 +168,29 @@ jobs:
               zip_file = zip_file_req.content
               with open(zip_path, "wb") as f:
                   f.write(zip_file)
-      - name: Set up and authorize Cloud
-        uses: google-github-actions/auth@v0
+      - name: Persist datasets artifact
+        uses: actions/upload-artifact@v2
         with:
-          credentials_json: ${{ secrets.ARCHIVE_DATASET_SA_KEY }}
-      - name: Upload datasets to Google Cloud Storage
-        id: upload-datasets
-        uses: google-github-actions/upload-cloud-storage@main
-        with:
+          name: datasets
           path: datasets
-          destination: mdb-latest
-          parent: false
+      store-datasets:
+        needs: [ download-datasets ]
+        runs-on: ubuntu-latest
+        steps:
+          - uses: actions/checkout@v2
+          - name: Download datasets artifact
+          - uses: actions/download-artifact@master
+            with:
+              name: datasets
+              path: datasets
+          - name: Set up and authorize Cloud
+            uses: google-github-actions/auth@v0
+            with:
+              credentials_json: ${{ secrets.ARCHIVE_DATASET_SA_KEY }}
+          - name: Upload datasets to Google Cloud Storage
+            id: upload-datasets
+            uses: google-github-actions/upload-cloud-storage@main
+            with:
+              path: datasets
+              destination: mdb-latest
+              parent: false

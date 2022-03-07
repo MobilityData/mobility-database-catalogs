@@ -7,7 +7,7 @@ on:
 
 jobs:
   get-urls:
-    if: github.event.review.state == 'approved' && contains(github.event.pull_request.title, '[SOURCES]')
+    if: contains(github.event.pull_request.title, '[SOURCES]')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

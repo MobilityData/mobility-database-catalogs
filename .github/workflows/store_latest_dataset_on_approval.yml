@@ -3,7 +3,8 @@ name: Store latest datasets on approval
 on:
   pull_request_review:
     types: [ submitted ]
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   get-urls:

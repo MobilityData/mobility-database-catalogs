@@ -1,13 +1,15 @@
 name: Store latest datasets on approval
 
 on:
+  pull_request:
+    branches: [ main ]
   pull_request_review:
     types: [ submitted ]
     branches: [ main ]
 
 jobs:
   get-urls:
-    if: github.event.review.state == "approved"
+    if: contains(github.event.pull_request.title, "[SOURCES]")
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

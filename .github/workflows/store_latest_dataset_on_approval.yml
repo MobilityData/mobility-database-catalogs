@@ -58,9 +58,9 @@ jobs:
                   auto_discovery_url = file_json.get(URLS, {}).get(AUTO_DISCOVERY)
                   latest_url = file_json.get(URLS, {}).get(LATEST)
                   if auto_discovery_url is None:
-                      raise ValueError(f"File {file} is missing its auto-discovery url.")
+                      raise ValueError(f"{base}: Missing auto-discovery url.")
                   if latest_url is None:
-                      raise ValueError(f"File {file} is missing its latest url.")
+                      raise ValueError(f"{base}: Missing latest url.")
                   urls[base] = {AUTO_DISCOVERY: auto_discovery_url, LATEST: latest_url}
 
           urls_data = []
@@ -147,8 +147,8 @@ jobs:
                   gtfs_kit.read_feed(url, dist_units="km")
               except Exception as e:
                   raise Exception(
-                      f"Exception {e} found while parsing the GTFS dataset with the GTFS kit library."
-                      f"The dataset must be a valid GTFS zip file or URL.\n"
+                      f"{base}: Exception {e} found while parsing the GTFS dataset with the GTFS kit library."
+                      f"The dataset for the source must be a valid GTFS zip file or URL.\n"
                   )
 
               # Download the dataset
@@ -159,7 +159,7 @@ jobs:
                   zip_file_req.raise_for_status()
               except Exception as e:
                   raise Exception(
-                      f"Exception {e} occurred when downloading URL.\n"
+                      f"{base}: Exception {e} occurred when downloading URL {url}.\n"
                   )
               zip_file = zip_file_req.content
               with open(zip_path, "wb") as f:
@@ -235,6 +235,6 @@ jobs:
                   gtfs_kit.read_feed(url, dist_units="km")
               except Exception as e:
                   raise Exception(
-                      f"Exception {e} found while parsing the GTFS dataset with the GTFS kit library."
+                      f"{base}: Exception {e} found while parsing the GTFS dataset with the GTFS kit library."
                       f"The dataset must be a valid GTFS zip file or URL.\n"
                   )

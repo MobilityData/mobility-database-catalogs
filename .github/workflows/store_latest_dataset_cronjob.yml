@@ -199,7 +199,7 @@ jobs:
         with:
           name: datasets
           path: datasets
-      - name: Persist Download URLS report artifact
+      - name: Persist Download datasets report artifact
         if: always()
         uses: actions/upload-artifact@v2
         with:
@@ -261,7 +261,7 @@ jobs:
           LATEST = "latest"
 
           # Report constants
-          VALIDATE_DATASETS_REPORT = "validate_datasets_report.txt"
+          VALIDATE_LATEST_REPORT = "validate_latest_report.txt"
 
           jobs = """${{ matrix.data }}""".split()
           for job in jobs:
@@ -280,11 +280,11 @@ jobs:
                       f"{base}: FAILURE! Exception {e} found while parsing the GTFS dataset with the GTFS kit library. "
                       f"The dataset must be a valid GTFS zip file or URL.\n"
                   )
-              with open(VALIDATE_DATASETS_REPORT, "a") as fp:
+              with open(VALIDATE_LATEST_REPORT, "a") as fp:
                   fp.write(file_log)
-      - name: Persist Validate URLS report artifact
+      - name: Persist Validate latest datasets report artifact
         if: always()
         uses: actions/upload-artifact@v2
         with:
-          name: validate_datasets_report
-          path: ./validate_datasets_report.txt
+          name: validate_latest_report
+          path: ./validate_latest_report.txt

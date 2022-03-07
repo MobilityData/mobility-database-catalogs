@@ -1,8 +1,6 @@
 name: Store latest datasets on approval
 
 on:
-  pull_request:
-    branches: [ main ]
   pull_request_review:
     types: [ submitted ]
     branches: [ main ]
@@ -13,79 +11,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Set up Python 3.9
-        uses: actions/setup-python@v2
+      - name: Download URLs matrix artifact
+        uses: dawidd6/action-download-artifact@v2
         with:
-          python-version: 3.9
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install wheel numpy
-      - name: Get added and modified files
-        id: files
-        uses: jitterbit/get-changed-files@v1
-      - name: Create URLs matrix with the auto-discovery and latest URLs
-        shell: python
-        run: |
-          import os
-          import json
-          import numpy as np
-
-          # OS constants
-          ROOT = os.getcwd()
-          GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT = "catalogs/sources/gtfs/schedule"
-          MATRIX_FILE = "urls_matrix.json"
-
-          # File constants
-          URLS = "urls"
-          AUTO_DISCOVERY = "auto_discovery"
-          LATEST = "latest"
-
-          # Github constants
-          MAX_JOB_NUMBER = 256
-
-          # Matrix constants
-          INCLUDE = "include"
-          DATA = "data"
-          BASE = "base"
-
-          changed_files = "${{ steps.files.outputs.added_modified }}".split()
-          changed_files = [file for file in changed_files if GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT in file]
-
-          urls = {}
-          for file in changed_files:
-              base = os.path.splitext(os.path.basename(file))[0]
-              with open(os.path.join(ROOT, file), "r") as fp:
-                  file_json = json.load(fp)
-                  auto_discovery_url = file_json.get(URLS, {}).get(AUTO_DISCOVERY)
-                  latest_url = file_json.get(URLS, {}).get(LATEST)
-                  if auto_discovery_url is None:
-                      raise ValueError(f"{base}: Missing auto-discovery url.")
-                  if latest_url is None:
-                      raise ValueError(f"{base}: Missing latest url.")
-                  urls[base] = {AUTO_DISCOVERY: auto_discovery_url, LATEST: latest_url}
-
-          urls_data = []
-          jobs = np.array_split(list(urls.keys()), min(MAX_JOB_NUMBER, len(list(urls.keys()))))
-          jobs = [list(job) for job in jobs]
-          for job in jobs:
-              urls_data_string = ""
-              while len(job) > 0:
-                  file_base = job.pop()
-                  file_information = {
-                      BASE: file_base,
-                      AUTO_DISCOVERY: urls[file_base][AUTO_DISCOVERY],
-                      LATEST: urls[file_base][LATEST]
-                  }
-                  urls_data_string = urls_data_string + json.dumps(
-                      file_information, separators=(",", ":")
-                  )
-              job_data = {DATA: urls_data_string.replace("}{", "} {")}
-              urls_data.append(job_data)
-          matrix_data = {INCLUDE: urls_data}
-
-          with open(os.path.join(ROOT, MATRIX_FILE), "w") as fp:
-              file_json = json.dump(matrix_data, fp)
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          workflow: download_latest_datasets_on_ready_for_review.yml
+          workflow_conclusion: success
+          pr: ${{ github.event.review.pull_request.number }}
+          name: urls_matrix
       - name: Set URLs matrix
         id: set-matrix
         run: |
@@ -107,65 +40,14 @@ jobs:
       matrix: ${{ fromJson(needs.get-urls.outputs.matrix) }}
     steps:
       - uses: actions/checkout@v2
-      - name: Set up Python 3.9
-        uses: actions/setup-python@v2
+      - name: Download datasets artifact
+        uses: dawidd6/action-download-artifact@v2
         with:
-          python-version: 3.9
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install pytest wheel numpy
-          sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
-          sudo apt-get update
-          sudo apt-get install gdal-bin python3-gdal
-          sudo apt-get install libgdal-dev
-          pip install GDAL==$(gdal-config --version) --global-option=build_ext --global-option="-I/usr/include/gdal"
-          sudo apt-get install libspatialindex-dev
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-      - name: Validate and download the datasets
-        shell: python
-        run: |
-          import os
-          import json
-          import gtfs_kit
-          import requests
-
-          # OS constants
-          ROOT = os.getcwd()
-          DATASETS = "datasets"
-
-          # Jobs constants
-          BASE = "base"
-          AUTO_DISCOVERY = "auto_discovery"
-
-          jobs = """${{ matrix.data }}""".split()
-          for job in jobs:
-              job_json = json.loads(job)
-              base = job_json[BASE]
-              url = job_json[AUTO_DISCOVERY]
-
-              # Make sure that the dataset is a readable GTFS Schedule dataset
-              try:
-                  gtfs_kit.read_feed(url, dist_units="km")
-              except Exception as e:
-                  raise Exception(
-                      f"{base}: Exception {e} found while parsing the GTFS dataset with the GTFS kit library."
-                      f"The dataset for the source must be a valid GTFS zip file or URL.\n"
-                  )
-
-              # Download the dataset
-              zip_path = os.path.join(ROOT, DATASETS, f"{base}.zip")
-              os.makedirs(os.path.dirname(zip_path), exist_ok=True)
-              try:
-                  zip_file_req = requests.get(url, allow_redirects=True)
-                  zip_file_req.raise_for_status()
-              except Exception as e:
-                  raise Exception(
-                      f"{base}: Exception {e} occurred when downloading URL {url}.\n"
-                  )
-              zip_file = zip_file_req.content
-              with open(zip_path, "wb") as f:
-                  f.write(zip_file)
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          workflow: download_latest_datasets_on_ready_for_review.yml
+          workflow_conclusion: success
+          pr: ${{ github.event.review.pull_request.number }}
+          name: datasets
       - name: Persist datasets artifact
         uses: actions/upload-artifact@v2
         with:

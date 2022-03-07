@@ -179,7 +179,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Download datasets artifact
-      - uses: actions/download-artifact@master
+        uses: actions/download-artifact@master
         with:
           name: datasets
           path: datasets

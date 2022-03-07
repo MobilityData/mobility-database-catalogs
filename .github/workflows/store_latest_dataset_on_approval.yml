@@ -1,13 +1,13 @@
 name: Store latest datasets on approval
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
+  pull_request_review:
+    types: [ submitted ]
     branches: [ main ]
 
 jobs:
   get-urls:
+    if: github.event.review.state == "approved"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -212,7 +212,7 @@ jobs:
           pip install GDAL==$(gdal-config --version) --global-option=build_ext --global-option="-I/usr/include/gdal"
           sudo apt-get install libspatialindex-dev
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-      - name: Validate and download the datasets
+      - name: Validate the latest datasets
         shell: python
         run: |
           import os

@@ -9,7 +9,7 @@ on:
 
 jobs:
   get-urls:
-    if: contains(github.event.pull_request.title, '[SOURCES]') 
+    if: contains(github.event.pull_request.title, '[SOURCES]')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -49,7 +49,7 @@ jobs:
           DATA = "data"
           BASE = "base"
 
-          changed_files = "${{ steps.files.outputs.all }}".split()
+          changed_files = "${{ steps.files.outputs.added_modified }}".split()
           changed_files = [file for file in changed_files if GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT in file]
 
           urls = {}

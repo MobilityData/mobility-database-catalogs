@@ -11,7 +11,7 @@ We encourage contributors to format pull request titles following the Convention
 Have you encountered an error? A critical step in troubleshooting is being able to reproduce the problem. You can [create a bug ticket](https://github.com/MobilityData/mobility-database-catalogs/issues/new?assignees=maximearmstrong&labels=&template=bug_report.md&title=%5BBUG%5D) with reproduction steps and we will review it.
 
 ## Contributing data
-To contribute data to the mobility database catalogs, it is suggested that you follow the steps below.
+To contribute data to the Mobility Database catalogs, it is suggested that you follow the steps below.
 
 Note that adding or updating sources manually is possible, although not recommended as it increases the risk of introducing incorrect or invalid information into your branch and pull request.
 
@@ -20,8 +20,24 @@ Note that your contribution must pass all of our tests, as implemented in the CI
 ### Prepare to contribute data
 Check our sources to see if any of them match the one you want to add or update.
 
-If yes, please go to Update a source.
-Otherwise, please go to Add a source.
+If yes, please update the source.
+Otherwise, please add the source.
+
+### Contribution flow
+
+To contribute data to the Mobility Database catalogs, please follow these steps:
+1. Clone our repository on your local machine using the HTTPS protocol `git clone https://github.com/MobilityData/mobility-database-catalogs.git`.
+2. Create a new branch for your contribution `git checkout -b $YOUR_NEW_BRANCH`. Note that you can list the existing branches with `git branch -a` to make sure your branch name is not already used.
+3. Set up the Python environment following the instructions in our README.md.
+4. Contribute data.
+5. Test your contribution.
+6. Add your contribution files to the git staging area with `git add $YOUR_FILES` where `$YOUR_FILES` is a list of files or the directory where your modifications are. 
+7. Commit your contribution including a message explaining your contribution with `git commit -m "$YOUR_COMMIT_MESSAGE"`.
+8. Push your contribution to your branch on the origin repository with `git push origin $YOUR_NEW_BRANCH`
+9. Go to the repository pull requests [page](https://github.com/MobilityData/mobility-database-catalogs/pulls) and open a **draft** pull request with your branch. Your pull request **must** include the string "[SOURCES]" at the end of its title. Eg. "feat: Add Montreal GTFS Source [SOURCES]"
+10. Modify your contribution as many times as needed following steps 4 to 8.
+11. When your contribution is ready, convert your pull request from draft to ready for review and request a review from a team member at Mobility Data. Not that if you need to modify your contribution after this step, you will be asked to convert your pull request back to draft.
+12. Once your pull request is converted to ready for review and that all the checks have passed, we will approve and merge it.
 
 ### Contribute data
 

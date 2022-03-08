@@ -3,7 +3,7 @@ from tools.constants import (
     GTFS,
     GTFS_RT,
     NAME,
-    PROVIDER,
+    AGENCY,
     COUNTRY_CODE,
     SUBDIVISION_NAME,
     MUNICIPALITY,
@@ -29,7 +29,7 @@ ALL_MAP = {CATALOGS: ["GtfsScheduleSourcesCatalog", "GtfsRealtimeSourcesCatalog"
 
 
 def add_gtfs_realtime_source(
-    provider,
+    agency,
     static_reference=None,
     vehicle_positions_url=None,
     trip_updates_url=None,
@@ -39,7 +39,7 @@ def add_gtfs_realtime_source(
     """Add a new GTFS Realtime source to the Mobility Catalogs."""
     catalog = GtfsRealtimeSourcesCatalog()
     data = {
-        PROVIDER: provider,
+        AGENCY: agency,
         STATIC_REFERENCE: static_reference,
         REALTIME_VEHICLE_POSITIONS: vehicle_positions_url,
         REALTIME_TRIP_UPDATES: trip_updates_url,
@@ -52,7 +52,7 @@ def add_gtfs_realtime_source(
 
 def update_gtfs_realtime_source(
     mdb_source_id,
-    provider=None,
+    agency=None,
     static_reference=None,
     vehicle_positions_url=None,
     trip_updates_url=None,
@@ -63,7 +63,7 @@ def update_gtfs_realtime_source(
     catalog = GtfsRealtimeSourcesCatalog()
     data = {
         MDB_SOURCE_ID: mdb_source_id,
-        PROVIDER: provider,
+        AGENCY: agency,
         STATIC_REFERENCE: static_reference,
         REALTIME_VEHICLE_POSITIONS: vehicle_positions_url,
         REALTIME_TRIP_UPDATES: trip_updates_url,
@@ -75,7 +75,7 @@ def update_gtfs_realtime_source(
 
 
 def add_gtfs_schedule_source(
-    provider,
+    agency,
     country_code,
     subdivision_name,
     municipality,
@@ -86,7 +86,7 @@ def add_gtfs_schedule_source(
     """Add a new GTFS Schedule source to the Mobility Catalogs."""
     catalog = GtfsScheduleSourcesCatalog()
     data = {
-        PROVIDER: provider,
+        AGENCY: agency,
         COUNTRY_CODE: country_code,
         SUBDIVISION_NAME: subdivision_name,
         MUNICIPALITY: municipality,
@@ -100,7 +100,7 @@ def add_gtfs_schedule_source(
 
 def update_gtfs_schedule_source(
     mdb_source_id,
-    provider=None,
+    agency=None,
     name=None,
     country_code=None,
     subdivision_name=None,
@@ -112,7 +112,7 @@ def update_gtfs_schedule_source(
     catalog = GtfsScheduleSourcesCatalog()
     data = {
         MDB_SOURCE_ID: mdb_source_id,
-        PROVIDER: provider,
+        AGENCY: agency,
         COUNTRY_CODE: country_code,
         SUBDIVISION_NAME: subdivision_name,
         MUNICIPALITY: municipality,

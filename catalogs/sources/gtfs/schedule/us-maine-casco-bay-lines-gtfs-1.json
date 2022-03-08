@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 1,
     "data_type": "gtfs",
-    "provider": "Casco Bay Lines",
+    "agency": "Casco Bay Lines",
     "name": "Casco Bay Lines GTFS Schedule source",
     "location": {
         "country_code": "US",

@@ -13,7 +13,7 @@ from tools.representations import (
     PATH,
     MDB_SOURCE_ID,
     DATA_TYPE,
-    PROVIDER,
+    AGENCY,
     NAME,
     COUNTRY_CODE,
     SUBDIVISION_NAME,
@@ -281,7 +281,7 @@ class TestGtfsScheduleSource(TestCase):
         self.test_kwargs = {
             MDB_SOURCE_ID: self.test_mdb_source_id,
             DATA_TYPE: self.test_data_type,
-            PROVIDER: self.test_provider,
+            AGENCY: self.test_provider,
             NAME: self.test_name,
             FILENAME: self.test_filename,
             COUNTRY_CODE: self.test_country_code,
@@ -299,7 +299,7 @@ class TestGtfsScheduleSource(TestCase):
         self.test_schema = {
             MDB_SOURCE_ID: self.test_mdb_source_id,
             DATA_TYPE: self.test_data_type,
-            PROVIDER: self.test_provider,
+            AGENCY: self.test_provider,
             NAME: self.test_name,
             LOCATION: {
                 COUNTRY_CODE: self.test_country_code,
@@ -401,7 +401,7 @@ class TestGtfsScheduleSource(TestCase):
         self.assertEqual(under_test.bbox_min_lon, self.test_min_lon)
         self.assertEqual(under_test.bbox_max_lon, self.test_max_lon)
         self.assertEqual(under_test.bbox_extracted_on, self.test_extracted_on)
-        self.assertEqual(under_test.provider, self.test_provider)
+        self.assertEqual(under_test.agency, self.test_provider)
         self.assertEqual(under_test.name, self.test_name)
         self.assertEqual(under_test.country_code, self.test_country_code)
         self.assertEqual(under_test.subdivision_name, self.test_subdivision_name)
@@ -429,7 +429,7 @@ class TestGtfsScheduleSource(TestCase):
         mock_time.return_value = test_extracted_on
         under_test = instance.update(
             **{
-                PROVIDER: test_provider,
+                AGENCY: test_provider,
                 NAME: test_name,
                 AUTO_DISCOVERY: test_auto_discovery_url,
                 COUNTRY_CODE: test_country_code,
@@ -444,7 +444,7 @@ class TestGtfsScheduleSource(TestCase):
         self.assertEqual(under_test.bbox_min_lon, test_min_lon)
         self.assertEqual(under_test.bbox_max_lon, test_max_lon)
         self.assertEqual(under_test.bbox_extracted_on, test_extracted_on)
-        self.assertEqual(under_test.provider, test_provider)
+        self.assertEqual(under_test.agency, test_provider)
         self.assertEqual(under_test.name, test_name)
         self.assertEqual(under_test.country_code, test_country_code)
         self.assertEqual(under_test.subdivision_name, test_subdivision_name)
@@ -528,7 +528,7 @@ class TestGtfsRealtimeSource(TestCase):
         self.test_kwargs = {
             MDB_SOURCE_ID: self.test_mdb_source_id,
             DATA_TYPE: self.test_data_type,
-            PROVIDER: self.test_provider,
+            AGENCY: self.test_provider,
             NAME: self.test_name,
             FILENAME: self.test_filename,
             STATIC_REFERENCE: self.test_static_reference,
@@ -539,7 +539,7 @@ class TestGtfsRealtimeSource(TestCase):
         self.test_schema = {
             MDB_SOURCE_ID: self.test_mdb_source_id,
             DATA_TYPE: self.test_data_type,
-            PROVIDER: self.test_provider,
+            AGENCY: self.test_provider,
             NAME: self.test_name,
             STATIC_REFERENCE: self.test_static_reference,
             URLS: {
@@ -632,7 +632,7 @@ class TestGtfsRealtimeSource(TestCase):
     def test_update(self, mock_static_catalog):
         instance = GtfsRealtimeSource(filename=self.test_filename, **self.test_schema)
         under_test = instance.update(**{})
-        self.assertEqual(under_test.provider, self.test_provider)
+        self.assertEqual(under_test.agency, self.test_provider)
         self.assertEqual(under_test.name, self.test_name)
         self.assertEqual(under_test.static_reference, self.test_static_reference)
         self.assertEqual(
@@ -648,7 +648,7 @@ class TestGtfsRealtimeSource(TestCase):
         test_service_alerts_url = "another_service_alerts_url"
         under_test = instance.update(
             **{
-                PROVIDER: test_provider,
+                AGENCY: test_provider,
                 NAME: test_name,
                 STATIC_REFERENCE: test_static_reference,
                 REALTIME_VEHICLE_POSITIONS: test_vehicle_positions_url,
@@ -656,7 +656,7 @@ class TestGtfsRealtimeSource(TestCase):
                 REALTIME_ALERTS: test_service_alerts_url,
             }
         )
-        self.assertEqual(under_test.provider, test_provider)
+        self.assertEqual(under_test.agency, test_provider)
         self.assertEqual(under_test.name, test_name)
         self.assertEqual(under_test.static_reference, test_static_reference)
         self.assertEqual(under_test.vehicle_positions_url, test_vehicle_positions_url)

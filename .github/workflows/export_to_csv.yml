@@ -44,7 +44,7 @@ jobs:
               'location.country_code',
               'location.subdivision_name',
               'location.municipality',
-              'provider',
+              'agency',
               'name',
               'static_reference',
               'urls.auto_discovery',

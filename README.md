@@ -42,11 +42,11 @@ Contains the JSON schemas used to validate the sources in the integration tests.
 | Country Code       | Yes                   | ISO 3166-1 alpha-2 code designating the country where the system is located. For a list of valid codes [see here](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).                                                    |   |   |
 | Subdivision name   | Yes                   | ISO 3166-2 subdivision name designating the subdivision (e.g province, state, region) where the system is located. For a list of valid names [see here](https://unece.org/trade/uncefact/unlocode-country-subdivisions-iso-3166-2).              |   |   |
 | Municipality       | Yes                   | Primary municipality in which the transit system is located.                                                                                                        |   |   |
-| Provider           | Yes                   | Name of the transit provider.                                                                                                                                       |   |   |
-| Name               | Optional              | An optional description of the data source, e.g to specify if the data source is an aggregate of multiple providers, or which network is represented by the source. |   |   |
+| Agency           | Yes                   | Name of the transit agency.                                                                                                                                       |   |   |
+| Name               | Optional              | An optional description of the data source, e.g to specify if the data source is an aggregate of information from multiple agencies, or which network is represented by the source. |   |   |
 | Auto-Discovery URL | Yes                   | URL that automatically opens the source.                                                                                                                            |   |   |
 | Latest dataset URL | No - system generated | A stable URL for the latest dataset of a source.                                                                                                                    |   |   |
-| License URL        | Optional              | The transit provider’s license information.                                                                                                                         |   |   |
+| License URL        | Optional              | The transit agency’s license information.                                                                                                                         |   |   |
 | Bounding box       | No - system generated | This is the bounding box of the data source when it was first added to the catalog. It includes the date and timestamp the bounding box was extracted on in UTC.       |   |   |
 
 ## GTFS Realtime Data Structure
@@ -55,13 +55,13 @@ Contains the JSON schemas used to validate the sources in the integration tests.
 |:------------------:|:---------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------:
 | MDB Source ID      | No - system generated | Unique numerical identifier.      |   |   |
 | Data Type          | Yes                   | The data format that the source uses: GTFS_RT.                                                                                                            |   |   |
-| Provider           | Yes                   | Name of the transit provider.                                                                                                                                       |   |   |
-| Name               | Optional              | An optional description of the data source, e.g to specify if the data source is an aggregate of multiple providers, or which network is represented by the source. |   |   |
+| Agency           | Yes                   | Name of the transit agency.                                                                                                                                       |   |   |
+| Name               | Optional              | An optional description of the data source, e.g to specify if the data source is an aggregate of information from multiple agencies, or which network is represented by the source. |   |   |
 | Static Reference | Optional                   | The MDB ID of the GTFS Schedule source associated with the Realtime source. If this is not provided, the country code, subdivision, and municipality will display as "Unknown" in the CSV export. The bounding box will appear blank. If the MDB ID of the GTFS Schedule source is provided, the country code, subdivision, municipality and bounding box fields will match the information in the static reference.                                                                                                                  |   |   |
 | Vehicle Positions URL | Optional | The Vehicle Positions URL.                                                                                                                   |   |   |
 | Trip Updates URL | Optional | The Trip Updates URL.                                                                                                                   |   |   |
 | Service Alerts URL | Optional | The Service Alerts URL.                                                                                                                   |   |   |
-| License URL        | Optional              | The transit provider’s license information.                                                                                                                         |   |   |
+| License URL        | Optional              | The transit agency’s license information.                                                                                                                         |   |   |
 
 ## Installation
 
@@ -157,7 +157,7 @@ To get the sources by bounding box, where `$MINIMUM_LATITUDE` `$MAXIMUM_LATITUDE
 To add a new GTFS Schedule source:
 ```
 >>> add_gtfs_schedule_source(
-        provider=$YOUR_SOURCE_PROVIDER_NAME,
+        agency=$YOUR_SOURCE_AGENCY_NAME,
         country_code=$YOUR_SOURCE_COUNTRY_CODE,
         subdivision_name=$YOUR_SOURCE_SUBDIVISION_NAME,
         municipality=$YOUR_SOURCE_MUNICIPALITY,
@@ -170,7 +170,7 @@ To add a new GTFS Schedule source:
 To add a new GTFS Realtime source:
 ```
 >>> add_gtfs_realtime_source(
-        provider=$YOUR_SOURCE_PROVIDER_NAME,
+        agency=$YOUR_SOURCE_AGENCY_NAME,
         static_reference=$OPTIONAL_STATIC_REFERENCE_NUMERICAL_ID,
         vehicle_positions_url=$OPTIONAL_VEHICLE_POSITIONS_URL,
         trip_updates_url=$OPTIONAL_TRIP_UPDATES_URL,
@@ -183,7 +183,7 @@ To update a GTFS Schedule source:
 ```
 >>> update_gtfs_schedule_source(
         mdb_source_id=$YOUR_SOURCE_NUMERICAL_ID,
-        provider=$OPTIONAL_SOURCE_PROVIDER_NAME,
+        agency=$OPTIONAL_SOURCE_AGENCY_NAME,
         name=$OPTIONAL_SOURCE_NAME,
         country_code=$OPTIONAL_SOURCE_COUNTRY_CODE,
         subdivision_name=$OPTIONAL_SOURCE_SUBDIVISION_NAME,
@@ -198,7 +198,7 @@ To update a GTFS Realtime source:
 ```
 >>> update_gtfs_realtime_source(
         mdb_source_id=$YOUR_SOURCE_NUMERICAL_ID,
-        provider=$OPTIONAL_SOURCE_PROVIDER_NAME,
+        agency=$OPTIONAL_SOURCE_AGENCY_NAME,
         static_reference=$OPTIONAL_STATIC_REFERENCE_NUMERICAL_ID,
         vehicle_positions_url=$OPTIONAL_VEHICLE_POSITIONS_URL,
         trip_updates_url=$OPTIONAL_TRIP_UPDATES_URL,
@@ -216,7 +216,7 @@ In order to avoid invalid sources in the Mobility Database Catalogs, any modific
 
 Code licensed under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0).
 
-Individual transit data sources are subject to the terms & conditions of their own respective data provider. If you are a transit provider and there is a data source that should not be included in the repository, please contact emma@mobilitydata.org and we'll remove it as soon as possible.
+Individual transit data sources are subject to the terms & conditions of their own respective data provider. If you are a transit agency and there is a data source that should not be included in the repository, please contact emma@mobilitydata.org and we'll remove it as soon as possible.
 
 ## Contributing
 

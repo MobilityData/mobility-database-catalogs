@@ -18,14 +18,14 @@ from tools.operations import (
 class TestOperations(TestCase):
     @patch("tools.operations.GtfsRealtimeSourcesCatalog", autospec=True)
     def test_add_gtfs_realtime_source(self, mock_catalog):
-        test_provider = "test_provider"
+        test_agency = "test_agency"
         test_name = "test_name"
         test_static_reference = "test_static_reference"
         test_vehicle_positions_url = "test_vehicle_positions_url"
         test_trip_updates_url = "test_trip_updates_url"
         test_service_alerts_url = "test_service_alerts_url"
         under_test = add_gtfs_realtime_source(
-            provider=test_provider,
+            agency=test_agency,
             name=test_name,
             static_reference=test_static_reference,
             vehicle_positions_url=test_vehicle_positions_url,
@@ -39,7 +39,7 @@ class TestOperations(TestCase):
     @patch("tools.operations.GtfsRealtimeSourcesCatalog", autospec=True)
     def test_update_gtfs_realtime_source(self, mock_catalog):
         test_mdb_source_id = "test_mdb_source_id"
-        test_provider = "test_provider"
+        test_agency = "test_agency"
         test_name = "test_name"
         test_static_reference = "test_static_reference"
         test_vehicle_positions_url = "test_vehicle_positions_url"
@@ -47,7 +47,7 @@ class TestOperations(TestCase):
         test_service_alerts_url = "test_service_alerts_url"
         under_test = update_gtfs_realtime_source(
             mdb_source_id=test_mdb_source_id,
-            provider=test_provider,
+            agency=test_agency,
             name=test_name,
             static_reference=test_static_reference,
             vehicle_positions_url=test_vehicle_positions_url,
@@ -60,7 +60,7 @@ class TestOperations(TestCase):
 
     @patch("tools.operations.GtfsScheduleSourcesCatalog", autospec=True)
     def test_add_gtfs_schedule_source(self, mock_catalog):
-        test_provider = "test_provider"
+        test_agency = "test_agency"
         test_name = "test_name"
         test_country_code = "test_country_code"
         test_subdivision_name = "test_subdivision_name"
@@ -68,7 +68,7 @@ class TestOperations(TestCase):
         test_auto_discovery_url = "test_auto_discovery_url"
         test_license_url = "test_license_url"
         under_test = add_gtfs_schedule_source(
-            provider=test_provider,
+            agency=test_agency,
             name=test_name,
             country_code=test_country_code,
             subdivision_name=test_subdivision_name,
@@ -83,7 +83,7 @@ class TestOperations(TestCase):
     @patch("tools.operations.GtfsScheduleSourcesCatalog", autospec=True)
     def test_update_gtfs_schedule_source(self, mock_catalog):
         test_mdb_source_id = "test_mdb_source_id"
-        test_provider = "test_provider"
+        test_agency = "test_agency"
         test_name = "test_name"
         test_country_code = "test_country_code"
         test_subdivision_name = "test_subdivision_name"
@@ -92,7 +92,7 @@ class TestOperations(TestCase):
         test_license_url = "test_license_url"
         under_test = update_gtfs_schedule_source(
             mdb_source_id=test_mdb_source_id,
-            provider=test_provider,
+            agency=test_agency,
             name=test_name,
             country_code=test_country_code,
             subdivision_name=test_subdivision_name,

@@ -46,7 +46,7 @@ The easiest way to add a GTFS Schedule source is to use the operation `tools.ope
 
 ```
 >>> add_gtfs_schedule_source(
-        provider=$YOUR_SOURCE_PROVIDER_NAME,
+        agency=$YOUR_SOURCE_AGENCY_NAME,
         country_code=$YOUR_SOURCE_COUNTRY_CODE,
         subdivision_name=$YOUR_SOURCE_SUBDIVISION_NAME,
         municipality=$YOUR_SOURCE_MUNICIPALITY,
@@ -61,7 +61,7 @@ The easiest way to add a GTFS Realtime source is to use the operation `tools.ope
 
 ```
 >>> add_gtfs_realtime_source(
-        provider=$YOUR_SOURCE_PROVIDER_NAME,
+        agency=$YOUR_SOURCE_AGENCY_NAME,
         static_reference=$OPTIONAL_STATIC_REFERENCE_NUMERICAL_ID,
         vehicle_positions_url=$OPTIONAL_VEHICLE_POSITIONS_URL,
         trip_updates_url=$OPTIONAL_TRIP_UPDATES_URL,
@@ -73,12 +73,12 @@ The easiest way to add a GTFS Realtime source is to use the operation `tools.ope
 #### Update a GTFS Schedule source
 The easiest way to update a GTFS Schedule source is to use the operation `tools.operations.update_gtfs_schedule_source` through the Python interpreter or in your scripts.
 
-Note that only the parameters for which the provided value will differ from the default value `None` will be updated. Only the following parameters can be updated: `provider`, `name`, `country_code`, `subdivision_name`, `municipality`, `auto_discovery_url` and `license_url`.
+Note that only the parameters for which the provided value will differ from the default value `None` will be updated. Only the following parameters can be updated: `agency`, `name`, `country_code`, `subdivision_name`, `municipality`, `auto_discovery_url` and `license_url`.
 
 ```
 >>> update_gtfs_schedule_source(
         mdb_source_id=$YOUR_SOURCE_NUMERICAL_ID,
-        provider=$OPTIONAL_SOURCE_PROVIDER_NAME,
+        agency=$OPTIONAL_SOURCE_AGENCY_NAME,
         name=$OPTIONAL_SOURCE_NAME,
         country_code=$OPTIONAL_SOURCE_COUNTRY_CODE,
         subdivision_name=$OPTIONAL_SOURCE_SUBDIVISION_NAME,
@@ -91,12 +91,12 @@ Note that only the parameters for which the provided value will differ from the 
 #### Update a GTFS Realtime source
 The easiest way to update a GTFS Realtime source is to use the operation `tools.operations.update_gtfs_realtime_source` through the Python interpreter or in your scripts.
 
-Note that only the parameters for which the provided value will differ from the default value `None` will be updated. Only the following parameters can be updated: `provider`, `name`, `static_reference`, `vehicle_positions_url`, `trip_updates_url` and `service_alerts_url`.
+Note that only the parameters for which the provided value will differ from the default value `None` will be updated. Only the following parameters can be updated: `agency`, `name`, `static_reference`, `vehicle_positions_url`, `trip_updates_url` and `service_alerts_url`.
 
 ```
 >>> update_gtfs_realtime_source(
         mdb_source_id=$YOUR_SOURCE_NUMERICAL_ID,
-        provider=$OPTIONAL_SOURCE_PROVIDER_NAME,
+        agency=$OPTIONAL_SOURCE_AGENCY_NAME,
         static_reference=$OPTIONAL_STATIC_REFERENCE_NUMERICAL_ID,
         vehicle_positions_url=$OPTIONAL_VEHICLE_POSITIONS_URL,
         trip_updates_url=$OPTIONAL_TRIP_UPDATES_URL,

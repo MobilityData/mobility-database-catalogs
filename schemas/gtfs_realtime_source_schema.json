@@ -12,9 +12,9 @@
       "description": "The data format that the source uses, e.g gtfs, gtfs_rt.",
       "enum": ["gtfs_rt"]
     },
-    "provider": {
+    "agency": {
       "type": "string",
-      "description": "Name of the transit provider."
+      "description": "Name of the transit agency."
     },
     "name": {
       "type": "string",
@@ -52,5 +52,5 @@
       }]
     }
   },
-  "required": ["mdb_source_id", "data_type", "provider", "urls"]
+  "required": ["mdb_source_id", "data_type", "agency", "urls"]
 }

@@ -17,7 +17,7 @@ from tools.constants import (
     GTFS_REALTIME_CATALOG_PATH,
     MDB_SOURCE_ID,
     DATA_TYPE,
-    PROVIDER,
+    AGENCY,
     NAME,
     LOCATION,
     COUNTRY_CODE,
@@ -203,7 +203,7 @@ class Source(ABC):
     def __init__(self, **kwargs):
         self.mdb_source_id = kwargs.pop(MDB_SOURCE_ID)
         self.data_type = kwargs.pop(DATA_TYPE)
-        self.provider = kwargs.pop(PROVIDER)
+        self.agency = kwargs.pop(AGENCY)
         self.name = kwargs.pop(NAME, None)
         self.filename = kwargs.pop(FILENAME)
 
@@ -273,7 +273,7 @@ class GtfsScheduleSource(Source):
         attributes = {
             MDB_SOURCE_ID: self.mdb_source_id,
             DATA_TYPE: self.data_type,
-            PROVIDER: self.provider,
+            AGENCY: self.agency,
             NAME: self.name,
             COUNTRY_CODE: self.country_code,
             SUBDIVISION_NAME: self.subdivision_name,
@@ -328,9 +328,9 @@ class GtfsScheduleSource(Source):
                 self.bbox_max_lon,
             ) = extract_gtfs_bounding_box(url=auto_discovery_url)
             self.bbox_extracted_on = get_iso_time()
-        provider = kwargs.get(PROVIDER)
-        if provider is not None:
-            self.provider = provider
+        agency = kwargs.get(AGENCY)
+        if agency is not None:
+            self.agency = agency
         name = kwargs.get(NAME)
         if name is not None:
             self.name = name
@@ -364,7 +364,7 @@ class GtfsScheduleSource(Source):
             filename = create_filename(
                 country_code=kwargs.get(COUNTRY_CODE),
                 subdivision_name=kwargs.get(SUBDIVISION_NAME),
-                provider=kwargs.get(PROVIDER),
+                agency=kwargs.get(AGENCY),
                 data_type=data_type,
                 mdb_source_id=kwargs.get(MDB_SOURCE_ID),
                 extension=JSON,
@@ -372,7 +372,7 @@ class GtfsScheduleSource(Source):
             latest = create_latest_url(
                 country_code=kwargs.get(COUNTRY_CODE),
                 subdivision_name=kwargs.get(SUBDIVISION_NAME),
-                provider=kwargs.get(PROVIDER),
+                agency=kwargs.get(AGENCY),
                 data_type=data_type,
                 mdb_source_id=kwargs.get(MDB_SOURCE_ID),
             )
@@ -394,7 +394,7 @@ class GtfsScheduleSource(Source):
         schema = {
             MDB_SOURCE_ID: kwargs.pop(MDB_SOURCE_ID),
             DATA_TYPE: kwargs.pop(DATA_TYPE),
-            PROVIDER: kwargs.pop(PROVIDER),
+            AGENCY: kwargs.pop(AGENCY),
             NAME: kwargs.pop(NAME, None),
             LOCATION: {
                 COUNTRY_CODE: kwargs.pop(COUNTRY_CODE),
@@ -436,7 +436,7 @@ class GtfsRealtimeSource(Source):
         attributes = {
             MDB_SOURCE_ID: self.mdb_source_id,
             DATA_TYPE: self.data_type,
-            PROVIDER: self.provider,
+            AGENCY: self.agency,
             NAME: self.name,
             STATIC_REFERENCE: self.static_reference,
             REALTIME_VEHICLE_POSITIONS: self.vehicle_positions_url,
@@ -491,9 +491,9 @@ class GtfsRealtimeSource(Source):
         return False
 
     def update(self, **kwargs):
-        provider = kwargs.get(PROVIDER)
-        if provider is not None:
-            self.provider = provider
+        agency = kwargs.get(AGENCY)
+        if agency is not None:
+            self.agency = agency
         name = kwargs.get(NAME)
         if name is not None:
             self.name = name
@@ -529,7 +529,7 @@ class GtfsRealtimeSource(Source):
         filename = create_filename(
             country_code=country_code,
             subdivision_name=subdivision_name,
-            provider=kwargs.get(PROVIDER),
+            agency=kwargs.get(AGENCY),
             data_type=data_type,
             mdb_source_id=kwargs.get(MDB_SOURCE_ID),
             extension=JSON,
@@ -543,7 +543,7 @@ class GtfsRealtimeSource(Source):
         schema = {
             MDB_SOURCE_ID: kwargs.pop(MDB_SOURCE_ID),
             DATA_TYPE: kwargs.pop(DATA_TYPE),
-            PROVIDER: kwargs.pop(PROVIDER),
+            AGENCY: kwargs.pop(AGENCY),
             NAME: kwargs.pop(NAME, None),
             STATIC_REFERENCE: kwargs.pop(STATIC_REFERENCE, None),
             URLS: {

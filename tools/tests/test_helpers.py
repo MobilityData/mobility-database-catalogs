@@ -214,17 +214,17 @@ class TestCreationFunctions(TestCase):
 
     @patch("tools.helpers.create_filename")
     def test_create_latest_url(self, mock_filename):
-        mock_filename.return_value = "ca-some-subdivision-name-some-provider-gtfs-1.zip"
+        mock_filename.return_value = "ca-some-subdivision-name-some-agency-gtfs-1.zip"
         test_country_code = "CA"
         test_subdivision_name = "Some Subdivision Name"
-        test_provider = "Some Provider"
+        test_agency = "Some Agency"
         test_data_type = "gtfs"
         test_mdb_source_id = "1"
-        test_latest_url = "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-some-subdivision-name-some-provider-gtfs-1.zip?alt=media"
+        test_latest_url = "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-some-subdivision-name-some-agency-gtfs-1.zip?alt=media"
         under_test = create_latest_url(
             country_code=test_country_code,
             subdivision_name=test_subdivision_name,
-            provider=test_provider,
+            agency=test_agency,
             data_type=test_data_type,
             mdb_source_id=test_mdb_source_id,
         )
@@ -234,15 +234,15 @@ class TestCreationFunctions(TestCase):
     def test_create_filename(self):
         test_country_code = "CA"
         test_subdivision_name = "Some Subdivision Name"
-        test_provider = "Some Provider"
+        test_agency = "Some Agency"
         test_data_type = "gtfs"
         test_mdb_source_id = "1"
         test_extension = "zip"
-        test_filename = "ca-some-subdivision-name-some-provider-gtfs-1.zip"
+        test_filename = "ca-some-subdivision-name-some-agency-gtfs-1.zip"
         under_test = create_filename(
             country_code=test_country_code,
             subdivision_name=test_subdivision_name,
-            provider=test_provider,
+            agency=test_agency,
             data_type=test_data_type,
             mdb_source_id=test_mdb_source_id,
             extension=test_extension,

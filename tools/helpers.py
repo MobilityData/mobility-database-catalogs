@@ -124,11 +124,9 @@ def is_readable(url, load_func):
 #########################
 
 
-def create_latest_url(
-    country_code, subdivision_name, provider, data_type, mdb_source_id
-):
+def create_latest_url(country_code, subdivision_name, agency, data_type, mdb_source_id):
     """Creates the latest url for a MDB Source.
-    :param provider: The name of the entity.
+    :param agency: The agency of the entity.
     :param subdivision_name: The subdivision name of the entity.
     :param country_code: The country code of the entity.
     :param data_type: The data type of the entity.
@@ -139,7 +137,7 @@ def create_latest_url(
         filename=create_filename(
             country_code=country_code,
             subdivision_name=subdivision_name,
-            provider=provider,
+            agency=agency,
             data_type=data_type,
             mdb_source_id=mdb_source_id,
             extension=ZIP,
@@ -148,10 +146,10 @@ def create_latest_url(
 
 
 def create_filename(
-    country_code, subdivision_name, provider, data_type, mdb_source_id, extension
+    country_code, subdivision_name, agency, data_type, mdb_source_id, extension
 ):
     """Creates the latest url for a MDB Source.
-    :param provider: The name of the entity.
+    :param agency: The name of the entity.
     :param subdivision_name: The subdivision name of the entity.
     :param country_code: The country code of the entity.
     :param data_type: The data type of the entity.
@@ -162,7 +160,7 @@ def create_filename(
     return MDB_SOURCE_FILENAME.format(
         country_code=normalize(country_code),
         subdivision_name=normalize(subdivision_name),
-        provider=normalize(provider),
+        agency=normalize(agency),
         data_type=data_type,
         mdb_source_id=mdb_source_id,
         extension=extension,

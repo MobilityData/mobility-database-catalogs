@@ -7,7 +7,9 @@ STOP_LAT = "stop_lat"
 STOP_LON = "stop_lon"
 
 # FILENAME TEMPLATE
-MDB_SOURCE_FILENAME = "{country_code}-{subdivision_name}-{provider}-{data_type}-{mdb_source_id}.{extension}"
+MDB_SOURCE_FILENAME = (
+    "{country_code}-{subdivision_name}-{agency}-{data_type}-{mdb_source_id}.{extension}"
+)
 
 # ARCHIVES TEMPLATE
 MDB_ARCHIVES_LATEST_URL_TEMPLATE = (
@@ -38,7 +40,7 @@ GTFS_REALTIME_SOURCE_SCHEMA_PATH_FROM_ROOT = "schemas/gtfs_realtime_source_schem
 # GTFS SCHEDULE & REALTIME CONSTANTS
 MDB_SOURCE_ID = "mdb_source_id"
 DATA_TYPE = "data_type"
-PROVIDER = "provider"
+AGENCY = "agency"
 NAME = "name"
 LOCATION = "location"
 COUNTRY_CODE = "country_code"

@@ -3,11 +3,11 @@ name: Download latest datasets on ready for review
 on:
   pull_request:
     branches: [ main ]
-    types: [ ready_for_review ]
+    types: [ opened, reopened, review_requested, ready_for_review ]
 
 jobs:
   get-urls:
-    if: contains(github.event.pull_request.title, '[SOURCES]')
+    if: github.event.pull_request.draft == false && contains(github.event.pull_request.title, '[SOURCES]')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

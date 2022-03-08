@@ -36,8 +36,6 @@ jobs:
   download-datasets:
     needs: [ get-urls ]
     runs-on: ubuntu-latest
-    strategy:
-      matrix: ${{ fromJson(needs.get-urls.outputs.matrix) }}
     steps:
       - uses: actions/checkout@v2
       - name: Download datasets artifact
@@ -48,6 +46,7 @@ jobs:
           workflow_conclusion: success
           pr: ${{ github.event.review.pull_request.number }}
           name: datasets
+          path: datasets
       - name: Persist datasets artifact
         uses: actions/upload-artifact@v2
         with:

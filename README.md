@@ -55,17 +55,13 @@ Contains the JSON schemas used to validate the sources in the integration tests.
 |:------------------:|:---------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------:
 | MDB Source ID      | No - system generated | Unique numerical identifier.      |   |   |
 | Data Type          | Yes                   | The data format that the source uses: GTFS.                                                                                                            |   |   |
-| Country Code       | Yes                   | ISO 3166-1 alpha-2 code designating the country where the system is located. For a list of valid codes [see here](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).                                                    |   |   |
-| Subdivision name   | Yes                   | ISO 3166-2 subdivision name designating the subdivision (e.g province, state, region) where the system is located. For a list of valid names [see here](https://unece.org/trade/uncefact/unlocode-country-subdivisions-iso-3166-2).              |   |   |
-| Municipality       | Yes                   | Primary municipality in which the transit system is located.                                                                                                        |   |   |
 | Provider           | Yes                   | Name of the transit provider.                                                                                                                                       |   |   |
 | Name               | Optional              | An optional description of the data source, e.g to specify if the data source is an aggregate of multiple providers, or which network is represented by the source. |   |   |
-| Static Reference | Optional                   | The MDB ID of the GTFS Schedule source associated with the Realtime source. If this is not provided, the country code, subdivision, municipality and bounding box will display as "Unknown" in the CSV export.                                                                                                                   |   |   |
+| Static Reference | Optional                   | The MDB ID of the GTFS Schedule source associated with the Realtime source. If this is not provided, the country code, subdivision, municipality and bounding box will display as "Unknown" in the CSV export. If it is provided, these CSV fields will match the information in the static reference.                                                                                                                  |   |   |
 | Vehicle Positions URL | Optional | The Vehicle Positions URL.                                                                                                                   |   |   |
 | Trip Updates URL | Optional | The Trip Updates URL.                                                                                                                   |   |   |
 | Service Alerts URL | Optional | The Service Alerts URL.                                                                                                                   |   |   |
 | License URL        | Optional              | The transit provider’s license information.                                                                                                                         |   |   |
-| Bounding box       | No - system generated | This is the bounding box of the static reference's GTFS schedule data source. It includes the date and timestamp the bounding box was extracted on in UTC.       |   |   |
 
 ## Installation
 

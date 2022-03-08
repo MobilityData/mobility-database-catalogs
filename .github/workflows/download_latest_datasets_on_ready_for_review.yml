@@ -2,7 +2,7 @@ name: Download latest datasets on ready for review
 
 on:
   pull_request:
-    branches: [ main ]
+    branches: [ main ] 
 
 jobs:
   get-urls:

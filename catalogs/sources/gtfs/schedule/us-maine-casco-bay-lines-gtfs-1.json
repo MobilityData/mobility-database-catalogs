@@ -2,6 +2,7 @@
     "mdb_source_id": 1,
     "data_type": "gtfs",
     "provider": "Casco Bay Lines",
+    "name": "Casco Bay Lines GTFS Schedule source",
     "location": {
         "country_code": "US",
         "subdivision_name": "Maine",
@@ -16,6 +17,6 @@
     },
     "urls": {
         "auto_discovery": "http://smttracker.com/downloads/gtfs/cascobaylines-portland-me-usa.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/archives_latest/o/us-maine-casco-bay-lines-gtfs-1.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maine-casco-bay-lines-gtfs-1.zip?alt=media"
     }
 }

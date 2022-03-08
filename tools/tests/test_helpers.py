@@ -220,7 +220,7 @@ class TestCreationFunctions(TestCase):
         test_provider = "Some Provider"
         test_data_type = "gtfs"
         test_mdb_source_id = "1"
-        test_latest_url = "https://storage.googleapis.com/storage/v1/b/archives_latest/o/ca-some-subdivision-name-some-provider-gtfs-1.zip?alt=media"
+        test_latest_url = "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-some-subdivision-name-some-provider-gtfs-1.zip?alt=media"
         under_test = create_latest_url(
             country_code=test_country_code,
             subdivision_name=test_subdivision_name,

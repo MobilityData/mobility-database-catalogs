@@ -2,6 +2,7 @@
     "mdb_source_id": 3,
     "data_type": "gtfs",
     "provider": "Barrie Transit",
+    "name": "Barrie Transit GTFS Schedule source",
     "location": {
         "country_code": "CA",
         "subdivision_name": "Ontario",
@@ -16,6 +17,6 @@
     },
     "urls": {
         "auto_discovery": "http://www.myridebarrie.ca/gtfs/Google_transit.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/archives_latest/o/ca-ontario-barrie-transit-gtfs-3.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-barrie-transit-gtfs-3.zip?alt=media"
     }
 }

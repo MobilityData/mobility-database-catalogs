@@ -16,7 +16,7 @@
         }
     },
     "urls": {
-        "auto_discovery": "http://smttracker.com/downloads/gtfs/cascobaylines-portland-me-usa.zip",
+        "direct_download": "http://smttracker.com/downloads/gtfs/cascobaylines-portland-me-usa.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maine-casco-bay-lines-gtfs-1.zip?alt=media"
     }
 }

@@ -7,7 +7,7 @@ from tools.constants import (
     COUNTRY_CODE,
     SUBDIVISION_NAME,
     MUNICIPALITY,
-    AUTO_DISCOVERY,
+    DIRECT_DOWNLOAD,
     LICENSE,
     STATIC_REFERENCE,
     REALTIME_VEHICLE_POSITIONS,
@@ -77,7 +77,7 @@ def update_gtfs_realtime_source(
 def add_gtfs_schedule_source(
     provider,
     country_code,
-    auto_discovery_url,
+    direct_download_url,
     subdivision_name=None,
     municipality=None,
     license_url=None,
@@ -90,7 +90,7 @@ def add_gtfs_schedule_source(
         COUNTRY_CODE: country_code,
         SUBDIVISION_NAME: subdivision_name,
         MUNICIPALITY: municipality,
-        AUTO_DISCOVERY: auto_discovery_url,
+        DIRECT_DOWNLOAD: direct_download_url,
         LICENSE: license_url,
         NAME: name,
     }
@@ -105,7 +105,7 @@ def update_gtfs_schedule_source(
     country_code=None,
     subdivision_name=None,
     municipality=None,
-    auto_discovery_url=None,
+    direct_download_url=None,
     license_url=None,
 ):
     """Update a GTFS Schedule source in the Mobility Catalogs."""
@@ -116,7 +116,7 @@ def update_gtfs_schedule_source(
         COUNTRY_CODE: country_code,
         SUBDIVISION_NAME: subdivision_name,
         MUNICIPALITY: municipality,
-        AUTO_DISCOVERY: auto_discovery_url,
+        DIRECT_DOWNLOAD: direct_download_url,
         LICENSE: license_url,
         NAME: name,
     }

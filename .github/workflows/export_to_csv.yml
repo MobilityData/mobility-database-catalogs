@@ -47,7 +47,7 @@ jobs:
               'provider',
               'name',
               'static_reference',
-              'urls.auto_discovery',
+              'urls.direct_download',
               'urls.latest',
               'urls.license',
               'urls.realtime_vehicle_positions',

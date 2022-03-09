@@ -30,7 +30,7 @@ from tools.constants import (
     MAXIMUM_LONGITUDE,
     EXTRACTED_ON,
     URLS,
-    AUTO_DISCOVERY,
+    DIRECT_DOWNLOAD,
     LICENSE,
     LATEST,
     STATIC_REFERENCE,
@@ -265,7 +265,7 @@ class GtfsScheduleSource(Source):
         self.bbox_max_lon = bounding_box.pop(MAXIMUM_LONGITUDE)
         self.bbox_extracted_on = bounding_box.pop(EXTRACTED_ON)
         urls = kwargs.pop(URLS, {})
-        self.auto_discovery_url = urls.pop(AUTO_DISCOVERY)
+        self.direct_download_url = urls.pop(DIRECT_DOWNLOAD)
         self.latest_url = urls.pop(LATEST)
         self.license_url = urls.pop(LICENSE, None)
 
@@ -283,7 +283,7 @@ class GtfsScheduleSource(Source):
             MINIMUM_LONGITUDE: self.bbox_min_lon,
             MAXIMUM_LONGITUDE: self.bbox_max_lon,
             EXTRACTED_ON: self.bbox_extracted_on,
-            AUTO_DISCOVERY: self.auto_discovery_url,
+            DIRECT_DOWNLOAD: self.direct_download_url,
             LATEST: self.latest_url,
             LICENSE: self.license_url,
         }
@@ -316,17 +316,17 @@ class GtfsScheduleSource(Source):
         return self.latest_url is not None
 
     def update(self, **kwargs):
-        auto_discovery_url = kwargs.get(AUTO_DISCOVERY)
-        if auto_discovery_url is not None and is_readable(
-            url=auto_discovery_url, load_func=load_gtfs
+        direct_download_url = kwargs.get(DIRECT_DOWNLOAD)
+        if direct_download_url is not None and is_readable(
+            url=direct_download_url, load_func=load_gtfs
         ):
-            self.auto_discovery_url = auto_discovery_url
+            self.direct_download_url = direct_download_url
             (
                 self.bbox_min_lat,
                 self.bbox_max_lat,
                 self.bbox_min_lon,
                 self.bbox_max_lon,
-            ) = extract_gtfs_bounding_box(url=auto_discovery_url)
+            ) = extract_gtfs_bounding_box(url=direct_download_url)
             self.bbox_extracted_on = get_iso_time()
         provider = kwargs.get(PROVIDER)
         if provider is not None:
@@ -351,15 +351,15 @@ class GtfsScheduleSource(Source):
     @classmethod
     def build(cls, **kwargs):
         instance = None
-        auto_discovery_url = kwargs.get(AUTO_DISCOVERY)
-        if is_readable(url=auto_discovery_url, load_func=load_gtfs):
+        direct_download_url = kwargs.get(DIRECT_DOWNLOAD)
+        if is_readable(url=direct_download_url, load_func=load_gtfs):
             data_type = GTFS
             (
                 minimum_latitude,
                 maximum_latitude,
                 minimum_longitude,
                 maximum_longitude,
-            ) = extract_gtfs_bounding_box(url=auto_discovery_url)
+            ) = extract_gtfs_bounding_box(url=direct_download_url)
             extracted_on = get_iso_time()
             subdivision_name = kwargs.get(SUBDIVISION_NAME)
             subdivision_name = (
@@ -413,7 +413,7 @@ class GtfsScheduleSource(Source):
                 },
             },
             URLS: {
-                AUTO_DISCOVERY: kwargs.pop(AUTO_DISCOVERY),
+                DIRECT_DOWNLOAD: kwargs.pop(DIRECT_DOWNLOAD),
                 LATEST: kwargs.pop(LATEST),
                 LICENSE: kwargs.pop(LICENSE, None),
             },

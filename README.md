@@ -44,7 +44,7 @@ Contains the JSON schemas used to validate the sources in the integration tests.
 | Municipality       | Optional              | Primary municipality in which the transit system is located.                                                                                                        |   |   |
 | Provider           | Yes                   | Name of the transit provider.                                                                                                                                       |   |   |
 | Name               | Optional              | An optional description of the data source, e.g to specify if the data source is an aggregate of multiple providers, or which network is represented by the source. |   |   |
-| Auto-Discovery URL | Yes                   | URL that automatically opens the source.                                                                                                                            |   |   |
+| Direct download URL | Yes                  | URL that automatically opens the source.                                                                                                                            |   |   |
 | Latest dataset URL | No - system generated | A stable URL for the latest dataset of a source.                                                                                                                    |   |   |
 | License URL        | Optional              | The transit provider’s license information.                                                                                                                         |   |   |
 | Bounding box       | No - system generated | This is the bounding box of the data source when it was first added to the catalog. It includes the date and timestamp the bounding box was extracted on in UTC.       |   |   |
@@ -159,7 +159,7 @@ To add a new GTFS Schedule source:
 >>> add_gtfs_schedule_source(
         provider=$YOUR_SOURCE_PROVIDER_NAME,
         country_code=$YOUR_SOURCE_COUNTRY_CODE,
-        auto_discovery_url=$YOUR_SOURCE_STABLE_DISCOVERY_URL,
+        direct_download_url=$YOUR_SOURCE_DIRECT_DOWNLOAD_URL,
         subdivision_name=$OPTIONAL_SUBDIVISION_NAME,
         municipality=$OPTIONAL_MUNICIPALITY,
         license_url=$OPTIONAL_LICENSE_URL,
@@ -188,7 +188,7 @@ To update a GTFS Schedule source:
         country_code=$OPTIONAL_SOURCE_COUNTRY_CODE,
         subdivision_name=$OPTIONAL_SOURCE_SUBDIVISION_NAME,
         municipality=$OPTIONAL_SOURCE_MUNICIPALITY,
-        auto_discovery_url=$OPTIONAL_SOURCE_STABLE_DISCOVERY_URL,
+        direct_download_url=$OPTIONAL_SOURCE_DIRECT_DOWNLOAD_URL,
         license_url=$OPTIONAL_LICENSE_URL
     )
 ```

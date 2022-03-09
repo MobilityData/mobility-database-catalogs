@@ -7,7 +7,7 @@ from tools.constants import (
     GTFS_SCHEDULE_SOURCE_SCHEMA_PATH_FROM_ROOT,
     MDB_SOURCE_ID,
     URLS,
-    AUTO_DISCOVERY,
+    DIRECT_DOWNLOAD,
     ALL,
     GTFS_RT,
     GTFS_REALTIME_SOURCE_SCHEMA_PATH_FROM_ROOT,
@@ -57,6 +57,6 @@ def test_catalogs_gtfs_source_ids_are_incremental():
 
 def test_catalogs_sources_gtfs_schedule_auto_discovery_urls_uniqueness():
     auto_discovery_urls = [
-        source[URLS][AUTO_DISCOVERY] for source in get_sources(data_type=GTFS).values()
+        source[URLS][DIRECT_DOWNLOAD] for source in get_sources(data_type=GTFS).values()
     ]
     assert len(set(auto_discovery_urls)) == len(auto_discovery_urls)

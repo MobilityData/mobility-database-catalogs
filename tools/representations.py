@@ -256,8 +256,8 @@ class GtfsScheduleSource(Source):
         super().__init__(**kwargs)
         location = kwargs.pop(LOCATION, {})
         self.country_code = location.pop(COUNTRY_CODE)
-        self.subdivision_name = location.pop(SUBDIVISION_NAME)
-        self.municipality = location.pop(MUNICIPALITY)
+        self.subdivision_name = location.pop(SUBDIVISION_NAME, None)
+        self.municipality = location.pop(MUNICIPALITY, None)
         bounding_box = location.pop(BOUNDING_BOX, {})
         self.bbox_min_lat = bounding_box.pop(MINIMUM_LATITUDE)
         self.bbox_max_lat = bounding_box.pop(MAXIMUM_LATITUDE)
@@ -361,9 +361,13 @@ class GtfsScheduleSource(Source):
                 maximum_longitude,
             ) = extract_gtfs_bounding_box(url=direct_download_url)
             extracted_on = get_iso_time()
+            subdivision_name = kwargs.get(SUBDIVISION_NAME)
+            subdivision_name = (
+                subdivision_name if subdivision_name is not None else UNKNOWN
+            )
             filename = create_filename(
                 country_code=kwargs.get(COUNTRY_CODE),
-                subdivision_name=kwargs.get(SUBDIVISION_NAME),
+                subdivision_name=subdivision_name,
                 provider=kwargs.get(PROVIDER),
                 data_type=data_type,
                 mdb_source_id=kwargs.get(MDB_SOURCE_ID),
@@ -371,7 +375,7 @@ class GtfsScheduleSource(Source):
             )
             latest = create_latest_url(
                 country_code=kwargs.get(COUNTRY_CODE),
-                subdivision_name=kwargs.get(SUBDIVISION_NAME),
+                subdivision_name=subdivision_name,
                 provider=kwargs.get(PROVIDER),
                 data_type=data_type,
                 mdb_source_id=kwargs.get(MDB_SOURCE_ID),
@@ -398,8 +402,8 @@ class GtfsScheduleSource(Source):
             NAME: kwargs.pop(NAME, None),
             LOCATION: {
                 COUNTRY_CODE: kwargs.pop(COUNTRY_CODE),
-                SUBDIVISION_NAME: kwargs.pop(SUBDIVISION_NAME),
-                MUNICIPALITY: kwargs.pop(MUNICIPALITY),
+                SUBDIVISION_NAME: kwargs.pop(SUBDIVISION_NAME, None),
+                MUNICIPALITY: kwargs.pop(MUNICIPALITY, None),
                 BOUNDING_BOX: {
                     MINIMUM_LATITUDE: kwargs.pop(MINIMUM_LATITUDE),
                     MAXIMUM_LATITUDE: kwargs.pop(MAXIMUM_LATITUDE),
@@ -418,6 +422,10 @@ class GtfsScheduleSource(Source):
             del schema[NAME]
         if schema[URLS][LICENSE] is None:
             del schema[URLS][LICENSE]
+        if schema[LOCATION][SUBDIVISION_NAME] is None:
+            del schema[LOCATION][SUBDIVISION_NAME]
+        if schema[LOCATION][MUNICIPALITY] is None:
+            del schema[LOCATION][MUNICIPALITY]
         return schema
 
 
@@ -526,6 +534,7 @@ class GtfsRealtimeSource(Source):
         subdivision_name = (
             static_source.subdivision_name if static_source is not None else UNKNOWN
         )
+        subdivision_name = subdivision_name if subdivision_name is not None else UNKNOWN
         filename = create_filename(
             country_code=country_code,
             subdivision_name=subdivision_name,

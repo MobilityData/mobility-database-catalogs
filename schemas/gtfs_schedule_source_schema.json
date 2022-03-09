@@ -92,7 +92,7 @@
           "required": ["minimum_latitude", "maximum_latitude", "minimum_longitude", "maximum_longitude", "extracted_on"]
         }
       },
-      "required": ["country_code", "subdivision_name", "municipality", "bounding_box"]
+      "required": ["country_code", "bounding_box"]
     },
     "urls": {
       "type": "object",

@@ -40,8 +40,8 @@ Contains the JSON schemas used to validate the sources in the integration tests.
 | MDB Source ID      | No - system generated | Unique numerical identifier.      |   |   |
 | Data Type          | Yes                   | The data format that the source uses: GTFS.                                                                                                            |   |   |
 | Country Code       | Yes                   | ISO 3166-1 alpha-2 code designating the country where the system is located. For a list of valid codes [see here](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).                                                    |   |   |
-| Subdivision name   | Yes                   | ISO 3166-2 subdivision name designating the subdivision (e.g province, state, region) where the system is located. For a list of valid names [see here](https://unece.org/trade/uncefact/unlocode-country-subdivisions-iso-3166-2).              |   |   |
-| Municipality       | Yes                   | Primary municipality in which the transit system is located.                                                                                                        |   |   |
+| Subdivision name   | Optional              | ISO 3166-2 subdivision name designating the subdivision (e.g province, state, region) where the system is located. For a list of valid names [see here](https://unece.org/trade/uncefact/unlocode-country-subdivisions-iso-3166-2).              |   |   |
+| Municipality       | Optional              | Primary municipality in which the transit system is located.                                                                                                        |   |   |
 | Provider           | Yes                   | Name of the transit provider.                                                                                                                                       |   |   |
 | Name               | Optional              | An optional description of the data source, e.g to specify if the data source is an aggregate of multiple providers, or which network is represented by the source. |   |   |
 | Direct download URL | Yes                  | URL that automatically opens the source.                                                                                                                            |   |   |
@@ -159,9 +159,9 @@ To add a new GTFS Schedule source:
 >>> add_gtfs_schedule_source(
         provider=$YOUR_SOURCE_PROVIDER_NAME,
         country_code=$YOUR_SOURCE_COUNTRY_CODE,
-        subdivision_name=$YOUR_SOURCE_SUBDIVISION_NAME,
-        municipality=$YOUR_SOURCE_MUNICIPALITY,
-        direct_download_url=$YOUR_SOURCE_STABLE_DISCOVERY_URL,
+        direct_download_url=$YOUR_SOURCE_DIRECT_DOWNLOAD_URL,
+        subdivision_name=$OPTIONAL_SUBDIVISION_NAME,
+        municipality=$OPTIONAL_MUNICIPALITY,
         license_url=$OPTIONAL_LICENSE_URL,
         name=$OPTIONAL_SOURCE_NAME
     )
@@ -188,7 +188,7 @@ To update a GTFS Schedule source:
         country_code=$OPTIONAL_SOURCE_COUNTRY_CODE,
         subdivision_name=$OPTIONAL_SOURCE_SUBDIVISION_NAME,
         municipality=$OPTIONAL_SOURCE_MUNICIPALITY,
-        direct_download_url=$OPTIONAL_SOURCE_STABLE_DISCOVERY_URL,
+        direct_download_url=$OPTIONAL_SOURCE_DIRECT_DOWNLOAD_URL,
         license_url=$OPTIONAL_LICENSE_URL
     )
 ```

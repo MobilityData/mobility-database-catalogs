@@ -15,7 +15,7 @@ To contribute data to the Mobility Database catalogs, it is suggested that you f
 
 Note that adding or updating sources manually is possible, although not recommended as it increases the risk of introducing incorrect or invalid information into your branch and pull request.
 
-Note that your contribution must pass all of our tests, as implemented in the CI workflows of this project repository, to be merged into the main branch. To pass our tests, make sure that your contribution conforms to the appropriate JSON schema and that the ID and auto-discovery URL values contributed for a source are unique across the Mobility Database Catalogs.
+Note that your contribution must pass all of our tests, as implemented in the CI workflows of this project repository, to be merged into the main branch. To pass our tests, make sure that your contribution conforms to the appropriate JSON schema and that the ID and direct download URL values contributed for a source are unique across the Mobility Database Catalogs.
 
 ### Prepare to contribute data
 Check our sources to see if any of them match the one you want to add or update.
@@ -50,7 +50,7 @@ The easiest way to add a GTFS Schedule source is to use the operation `tools.ope
         country_code=$YOUR_SOURCE_COUNTRY_CODE,
         subdivision_name=$YOUR_SOURCE_SUBDIVISION_NAME,
         municipality=$YOUR_SOURCE_MUNICIPALITY,
-        auto_discovery_url=$YOUR_SOURCE_STABLE_DISCOVERY_URL,
+        direct_download_url=$YOUR_SOURCE_STABLE_DISCOVERY_URL,
         license_url=$OPTIONAL_LICENSE_URL,
         name=$OPTIONAL_SOURCE_NAME
     )
@@ -73,7 +73,7 @@ The easiest way to add a GTFS Realtime source is to use the operation `tools.ope
 #### Update a GTFS Schedule source
 The easiest way to update a GTFS Schedule source is to use the operation `tools.operations.update_gtfs_schedule_source` through the Python interpreter or in your scripts.
 
-Note that only the parameters for which the provided value will differ from the default value `None` will be updated. Only the following parameters can be updated: `provider`, `name`, `country_code`, `subdivision_name`, `municipality`, `auto_discovery_url` and `license_url`.
+Note that only the parameters for which the provided value will differ from the default value `None` will be updated. Only the following parameters can be updated: `provider`, `name`, `country_code`, `subdivision_name`, `municipality`, `direct_download_url` and `license_url`.
 
 ```
 >>> update_gtfs_schedule_source(
@@ -83,7 +83,7 @@ Note that only the parameters for which the provided value will differ from the 
         country_code=$OPTIONAL_SOURCE_COUNTRY_CODE,
         subdivision_name=$OPTIONAL_SOURCE_SUBDIVISION_NAME,
         municipality=$OPTIONAL_SOURCE_MUNICIPALITY,
-        auto_discovery_url=$OPTIONAL_SOURCE_STABLE_DISCOVERY_URL,
+        direct_download_url=$OPTIONAL_SOURCE_STABLE_DISCOVERY_URL,
         license_url=$OPTIONAL_LICENSE_URL
     )
 ```

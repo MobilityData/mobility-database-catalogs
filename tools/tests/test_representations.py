@@ -23,7 +23,7 @@ from tools.representations import (
     MINIMUM_LONGITUDE,
     MAXIMUM_LONGITUDE,
     EXTRACTED_ON,
-    AUTO_DISCOVERY,
+    DIRECT_DOWNLOAD,
     LATEST,
     LICENSE,
     URLS,
@@ -275,7 +275,7 @@ class TestGtfsScheduleSource(TestCase):
         self.test_min_lon = "some_min_lon"
         self.test_max_lon = "some_max_lon"
         self.test_extracted_on = "some_extraction_time"
-        self.test_auto_discovery_url = "some_auto_discovery_url"
+        self.test_direct_download_url = "some_direct_download_url"
         self.test_latest_url = "some_latest_url"
         self.test_license_url = "some_license_url"
         self.test_kwargs = {
@@ -292,7 +292,7 @@ class TestGtfsScheduleSource(TestCase):
             MINIMUM_LONGITUDE: self.test_min_lon,
             MAXIMUM_LONGITUDE: self.test_max_lon,
             EXTRACTED_ON: self.test_extracted_on,
-            AUTO_DISCOVERY: self.test_auto_discovery_url,
+            DIRECT_DOWNLOAD: self.test_direct_download_url,
             LATEST: self.test_latest_url,
             LICENSE: self.test_license_url,
         }
@@ -314,7 +314,7 @@ class TestGtfsScheduleSource(TestCase):
                 },
             },
             URLS: {
-                AUTO_DISCOVERY: self.test_auto_discovery_url,
+                DIRECT_DOWNLOAD: self.test_direct_download_url,
                 LATEST: self.test_latest_url,
                 LICENSE: self.test_license_url,
             },
@@ -395,7 +395,7 @@ class TestGtfsScheduleSource(TestCase):
     def test_update(self, mock_read_func, mock_bounding_box, mock_time):
         instance = GtfsScheduleSource(filename=self.test_filename, **self.test_schema)
         under_test = instance.update(**{})
-        self.assertEqual(under_test.auto_discovery_url, self.test_auto_discovery_url)
+        self.assertEqual(under_test.direct_download_url, self.test_direct_download_url)
         self.assertEqual(under_test.bbox_min_lat, self.test_min_lat)
         self.assertEqual(under_test.bbox_max_lat, self.test_max_lat)
         self.assertEqual(under_test.bbox_min_lon, self.test_min_lon)
@@ -407,7 +407,7 @@ class TestGtfsScheduleSource(TestCase):
         self.assertEqual(under_test.subdivision_name, self.test_subdivision_name)
         self.assertEqual(under_test.municipality, self.test_municipality)
         self.assertEqual(under_test.license_url, self.test_license_url)
-        test_auto_discovery_url = "another_auto_discovery_url"
+        test_direct_download_url = "another_direct_download_url"
         test_min_lat = "another_min_lat"
         test_max_lat = "another_max_lat"
         test_min_lon = "another_min_lon"
@@ -431,14 +431,14 @@ class TestGtfsScheduleSource(TestCase):
             **{
                 PROVIDER: test_provider,
                 NAME: test_name,
-                AUTO_DISCOVERY: test_auto_discovery_url,
+                DIRECT_DOWNLOAD: test_direct_download_url,
                 COUNTRY_CODE: test_country_code,
                 SUBDIVISION_NAME: test_subdivision_name,
                 MUNICIPALITY: test_municipality,
                 LICENSE: test_license_url,
             }
         )
-        self.assertEqual(under_test.auto_discovery_url, test_auto_discovery_url)
+        self.assertEqual(under_test.direct_download_url, test_direct_download_url)
         self.assertEqual(under_test.bbox_min_lat, test_min_lat)
         self.assertEqual(under_test.bbox_max_lat, test_max_lat)
         self.assertEqual(under_test.bbox_min_lon, test_min_lon)

@@ -97,7 +97,7 @@
     "urls": {
       "type": "object",
       "properties": {
-        "auto_discovery": {
+        "direct_download": {
           "type": "string",
           "description": "URL that automatically opens the source.",
           "pattern": "^(http|https|ftp):\/\/[a-zA-Z0-9.,~#{}():&/%='?_/-]+$"
@@ -113,7 +113,7 @@
           "pattern": "^(http|https|ftp):\/\/[a-zA-Z0-9.,~#{}():&/%='?_/-]+$"
         }
       },
-      "required": ["auto_discovery", "latest"]
+      "required": ["direct_download", "latest"]
     }
   },
   "required": ["mdb_source_id", "data_type", "provider", "location", "urls"]

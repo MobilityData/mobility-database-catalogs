@@ -65,7 +65,7 @@ class TestOperations(TestCase):
         test_country_code = "test_country_code"
         test_subdivision_name = "test_subdivision_name"
         test_municipality = "test_municipality"
-        test_auto_discovery_url = "test_auto_discovery_url"
+        test_direct_download_url = "test_direct_download_url"
         test_license_url = "test_license_url"
         under_test = add_gtfs_schedule_source(
             provider=test_provider,
@@ -73,7 +73,7 @@ class TestOperations(TestCase):
             country_code=test_country_code,
             subdivision_name=test_subdivision_name,
             municipality=test_municipality,
-            auto_discovery_url=test_auto_discovery_url,
+            direct_download_url=test_direct_download_url,
             license_url=test_license_url,
         )
         self.assertEqual(under_test, mock_catalog())
@@ -88,7 +88,7 @@ class TestOperations(TestCase):
         test_country_code = "test_country_code"
         test_subdivision_name = "test_subdivision_name"
         test_municipality = "test_municipality"
-        test_auto_discovery_url = "test_auto_discovery_url"
+        test_direct_download_url = "test_direct_download_url"
         test_license_url = "test_license_url"
         under_test = update_gtfs_schedule_source(
             mdb_source_id=test_mdb_source_id,
@@ -97,7 +97,7 @@ class TestOperations(TestCase):
             country_code=test_country_code,
             subdivision_name=test_subdivision_name,
             municipality=test_municipality,
-            auto_discovery_url=test_auto_discovery_url,
+            direct_download_url=test_direct_download_url,
             license_url=test_license_url,
         )
         self.assertEqual(under_test, mock_catalog())

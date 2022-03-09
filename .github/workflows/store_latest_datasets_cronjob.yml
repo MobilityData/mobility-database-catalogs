@@ -20,7 +20,7 @@ jobs:
       - name: Get added and modified files
         id: files
         uses: jitterbit/get-changed-files@v1
-      - name: Create URLs matrix with the auto-discovery and latest URLs
+      - name: Create URLs matrix with the direct download and latest URLs
         shell: python
         run: |
           import os
@@ -34,7 +34,7 @@ jobs:
 
           # File constants
           URLS = "urls"
-          AUTO_DISCOVERY = "auto_discovery"
+          DIRECT_DOWNLOAD = "direct_download"
           LATEST = "latest"
 
           # Github constants
@@ -55,17 +55,17 @@ jobs:
               base = os.path.splitext(os.path.basename(file))[0]
               with open(os.path.join(ROOT, GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT, file), "r") as fp:
                   file_json = json.load(fp)
-                  auto_discovery_url = file_json.get(URLS, {}).get(AUTO_DISCOVERY)
+                  direct_download_url = file_json.get(URLS, {}).get(DIRECT_DOWNLOAD)
                   latest_url = file_json.get(URLS, {}).get(LATEST)
-                  if auto_discovery_url is None or latest_url is None:
+                  if direct_download_url is None or latest_url is None:
                       file_log = (
-                          f"{base}: FAILURE! Auto-discovery URL is {auto_discovery_url} and latest URL is {latest_url}. "
+                          f"{base}: FAILURE! Direct download URL is {direct_download_url} and latest URL is {latest_url}. "
                           f"Both URLS must be defined to update the source latest URL.\n"
                       )
                   else:
-                      urls[base] = {AUTO_DISCOVERY: auto_discovery_url, LATEST: latest_url}
+                      urls[base] = {DIRECT_DOWNLOAD: direct_download_url, LATEST: latest_url}
                       file_log = (
-                          f"{base}: SUCCESS! Both auto-discovery and latest URLs were fetched.\n"
+                          f"{base}: SUCCESS! Both direct download and latest URLs were fetched.\n"
                       )
                   with open(GET_URLS_REPORT, "a") as fp:
                       fp.write(file_log)
@@ -79,7 +79,7 @@ jobs:
                   file_base = job.pop()
                   file_information = {
                       BASE: file_base,
-                      AUTO_DISCOVERY: urls[file_base][AUTO_DISCOVERY],
+                      DIRECT_DOWNLOAD: urls[file_base][DIRECT_DOWNLOAD],
                       LATEST: urls[file_base][LATEST]
                   }
                   urls_data_string = urls_data_string + json.dumps(
@@ -147,7 +147,7 @@ jobs:
 
           # Jobs constants
           BASE = "base"
-          AUTO_DISCOVERY = "auto_discovery"
+          DIRECT_DOWNLOAD = "direct_download"
 
           # Report constants
           DOWNLOAD_DATASETS_REPORT = "download_datasets_report.txt"
@@ -156,7 +156,7 @@ jobs:
           for job in jobs:
               job_json = json.loads(job)
               base = job_json[BASE]
-              url = job_json[AUTO_DISCOVERY]
+              url = job_json[DIRECT_DOWNLOAD]
 
               # Make sure that the dataset is a readable GTFS Schedule dataset
               is_readable = True

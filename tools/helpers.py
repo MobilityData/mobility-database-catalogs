@@ -113,7 +113,7 @@ def is_readable(url, load_func):
     except Exception as e:
         raise (
             f"Exception '{e}' occurred while reading the dataset. "
-            f"The dataset downloaded with the auto-discovery URL must be a valid dataset.\n"
+            f"The dataset downloaded with the direct download URL must be a valid dataset.\n"
             f"Please contact emma@mobilitydata.org for assistance.\n"
         )
     return True

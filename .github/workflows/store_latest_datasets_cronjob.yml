@@ -17,9 +17,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install wheel numpy
-      - name: Get added and modified files
-        id: files
-        uses: jitterbit/get-changed-files@v1
       - name: Create URLs matrix with the auto-discovery and latest URLs
         shell: python
         run: |

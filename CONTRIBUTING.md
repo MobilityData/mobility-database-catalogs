@@ -48,9 +48,9 @@ The easiest way to add a GTFS Schedule source is to use the operation `tools.ope
 >>> add_gtfs_schedule_source(
         provider=$YOUR_SOURCE_PROVIDER_NAME,
         country_code=$YOUR_SOURCE_COUNTRY_CODE,
-        subdivision_name=$YOUR_SOURCE_SUBDIVISION_NAME,
-        municipality=$YOUR_SOURCE_MUNICIPALITY,
         auto_discovery_url=$YOUR_SOURCE_STABLE_DISCOVERY_URL,
+        subdivision_name=$OPTIONAL_SUBDIVISION_NAME,
+        municipality=$OPTIONAL_MUNICIPALITY,
         license_url=$OPTIONAL_LICENSE_URL,
         name=$OPTIONAL_SOURCE_NAME
     )

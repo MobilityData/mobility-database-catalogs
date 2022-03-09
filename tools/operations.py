@@ -77,9 +77,9 @@ def update_gtfs_realtime_source(
 def add_gtfs_schedule_source(
     provider,
     country_code,
-    subdivision_name,
-    municipality,
     auto_discovery_url,
+    subdivision_name=None,
+    municipality=None,
     license_url=None,
     name=None,
 ):

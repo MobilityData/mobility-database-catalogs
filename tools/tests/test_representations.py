@@ -1,5 +1,6 @@
 from unittest import TestCase
 from unittest.mock import patch, MagicMock
+from copy import deepcopy
 from tools.representations import (
     Catalog,
     SourcesCatalog,
@@ -480,7 +481,7 @@ class TestGtfsScheduleSource(TestCase):
         mock_time.return_value = "some_time"
         mock_filename.return_value = "some_filename"
         mock_latest_url.return_value = "some_latest_url"
-        mock_schema.return_value = self.test_schema
+        mock_schema.return_value = deepcopy(self.test_schema)
         del self.test_kwargs[DATA_TYPE]
         del self.test_kwargs[MINIMUM_LATITUDE]
         del self.test_kwargs[MAXIMUM_LATITUDE]
@@ -491,14 +492,30 @@ class TestGtfsScheduleSource(TestCase):
         under_test = GtfsScheduleSource.build(**self.test_kwargs)
         self.assertIsNotNone(under_test)
 
+        del self.test_kwargs[NAME]
+        del self.test_kwargs[LICENSE]
+        del self.test_kwargs[SUBDIVISION_NAME]
+        del self.test_kwargs[MUNICIPALITY]
+        del self.test_schema[NAME]
+        del self.test_schema[URLS][LICENSE]
+        del self.test_schema[LOCATION][SUBDIVISION_NAME]
+        del self.test_schema[LOCATION][MUNICIPALITY]
+        mock_schema.return_value = deepcopy(self.test_schema)
+        under_test = GtfsScheduleSource.build(**self.test_kwargs)
+        self.assertIsNotNone(under_test)
+
     def test_schematize(self):
         under_test = GtfsScheduleSource.schematize(**self.test_kwargs)
         self.assertDictEqual(under_test, self.test_schema)
 
         del self.test_kwargs[NAME]
         del self.test_kwargs[LICENSE]
+        del self.test_kwargs[SUBDIVISION_NAME]
+        del self.test_kwargs[MUNICIPALITY]
         del self.test_schema[NAME]
         del self.test_schema[URLS][LICENSE]
+        del self.test_schema[LOCATION][SUBDIVISION_NAME]
+        del self.test_schema[LOCATION][MUNICIPALITY]
         under_test = GtfsScheduleSource.schematize(**self.test_kwargs)
         self.assertDictEqual(under_test, self.test_schema)
 

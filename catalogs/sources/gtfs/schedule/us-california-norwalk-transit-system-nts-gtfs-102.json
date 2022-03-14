@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 102,
+    "data_type": "gtfs",
+    "provider": "Norwalk Transit System (NTS)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Los Angeles",
+        "bounding_box": {
+            "minimum_latitude": 33.8654944889,
+            "maximum_latitude": 34.0724551769048,
+            "minimum_longitude": -118.133963901,
+            "maximum_longitude": -117.959304257,
+            "extracted_on": "2022-03-14T20:12:35+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/nts-ca-us/nts-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-norwalk-transit-system-nts-gtfs-102.zip?alt=media"
+    }
+}

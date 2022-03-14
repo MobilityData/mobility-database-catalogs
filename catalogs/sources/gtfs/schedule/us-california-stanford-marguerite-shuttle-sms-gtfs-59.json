@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 59,
+    "data_type": "gtfs",
+    "provider": "Stanford Marguerite Shuttle (SMS)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Stanford",
+        "bounding_box": {
+            "minimum_latitude": 37.39404,
+            "maximum_latitude": 37.589874,
+            "minimum_longitude": -122.23088832,
+            "maximum_longitude": -121.975618,
+            "extracted_on": "2022-03-14T20:09:08+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transportation-forms.stanford.edu/google/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-stanford-marguerite-shuttle-sms-gtfs-59.zip?alt=media"
+    }
+}

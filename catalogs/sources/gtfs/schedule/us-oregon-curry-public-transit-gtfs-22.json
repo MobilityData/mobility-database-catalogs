@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 22,
+    "data_type": "gtfs",
+    "provider": "Curry Public Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Brookings",
+        "bounding_box": {
+            "minimum_latitude": 41.9570322655811,
+            "maximum_latitude": 43.4160571073338,
+            "minimum_longitude": -124.498078553064,
+            "maximum_longitude": -124.203528654532,
+            "extracted_on": "2022-03-14T20:06:46+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://oregon-gtfs.trilliumtransit.com/gtfs_data/currypublictransit-or-us/currypublictransit-brookings-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-curry-public-transit-gtfs-22.zip?alt=media"
+    }
+}

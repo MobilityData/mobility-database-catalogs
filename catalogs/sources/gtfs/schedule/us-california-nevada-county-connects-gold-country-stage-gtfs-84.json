@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 84,
+    "data_type": "gtfs",
+    "provider": "Nevada County Connects (Gold Country Stage)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Nevada County",
+        "bounding_box": {
+            "minimum_latitude": 38.90302085,
+            "maximum_latitude": 39.3707053363352,
+            "minimum_longitude": -121.20505269,
+            "maximum_longitude": -120.990358820743,
+            "extracted_on": "2022-03-14T20:11:32+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/goldcountrystage-ca-us/goldcountrystage-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-nevada-county-connects-gold-country-stage-gtfs-84.zip?alt=media",
+        "license": "http://creativecommons.org/licenses/by/4.0/"
+    }
+}

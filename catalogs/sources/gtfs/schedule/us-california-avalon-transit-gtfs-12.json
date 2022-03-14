@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 12,
+    "data_type": "gtfs",
+    "provider": "Avalon Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Long Beach",
+        "bounding_box": {
+            "minimum_latitude": 33.3265468093768,
+            "maximum_latitude": 33.350836003873,
+            "minimum_longitude": -118.340356050519,
+            "maximum_longitude": -118.32185964799,
+            "extracted_on": "2022-03-14T20:04:57+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/avalon-ca-us/avalon-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-avalon-transit-gtfs-12.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 92,
+    "data_type": "gtfs",
+    "provider": "Amador Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Jackson",
+        "bounding_box": {
+            "minimum_latitude": 38.29376141,
+            "maximum_latitude": 38.57956697,
+            "minimum_longitude": -121.5038998,
+            "maximum_longitude": -120.512016,
+            "extracted_on": "2022-03-14T20:11:58+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/amador-ca-us/amador-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-amador-transit-gtfs-92.zip?alt=media"
+    }
+}

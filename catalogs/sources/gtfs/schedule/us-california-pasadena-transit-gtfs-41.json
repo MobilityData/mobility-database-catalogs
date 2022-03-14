@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 41,
+    "data_type": "gtfs",
+    "provider": "Pasadena Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Pasadena",
+        "bounding_box": {
+            "minimum_latitude": 34.127464,
+            "maximum_latitude": 34.197933,
+            "minimum_longitude": -118.185589,
+            "maximum_longitude": -118.068852,
+            "extracted_on": "2022-03-14T20:07:56+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://rt.pasadenatransit.net/rtt/public/utility/gtfs.aspx",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-pasadena-transit-gtfs-41.zip?alt=media",
+        "license": "https://www.cityofpasadena.net/pasadena-transit/real-time-applications/"
+    }
+}

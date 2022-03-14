@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 5,
+    "data_type": "gtfs",
+    "provider": "St Lawrence County Public Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Canton",
+        "bounding_box": {
+            "minimum_latitude": 44.148476,
+            "maximum_latitude": 44.979369,
+            "minimum_longitude": -75.75695,
+            "maximum_longitude": -74.611761,
+            "extracted_on": "2022-03-14T20:02:31+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/St_Lawrence_County_Public_Transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-st-lawrence-county-public-transit-gtfs-5.zip?alt=media",
+        "license": "https://data.ny.gov/download/77gx-ii52/application/pdf"
+    }
+}

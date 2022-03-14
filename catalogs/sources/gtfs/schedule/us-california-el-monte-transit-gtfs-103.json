@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 103,
+    "data_type": "gtfs",
+    "provider": "El Monte Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "El Monte",
+        "bounding_box": {
+            "minimum_latitude": 34.043981602068,
+            "maximum_latitude": 34.09689398778,
+            "minimum_longitude": -118.0686841,
+            "maximum_longitude": -118.00382343434,
+            "extracted_on": "2022-03-14T20:12:38+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/elmonte-ca-us/elmonte-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-el-monte-transit-gtfs-103.zip?alt=media"
+    }
+}

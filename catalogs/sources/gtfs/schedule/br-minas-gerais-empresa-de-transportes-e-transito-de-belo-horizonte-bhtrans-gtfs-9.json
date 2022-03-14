@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 9,
+    "data_type": "gtfs",
+    "provider": "Empresa de Transportes e Transito de Belo Horizonte (BHTRANS)",
+    "location": {
+        "country_code": "BR",
+        "subdivision_name": "Minas Gerais",
+        "municipality": "Belo Horizonte",
+        "bounding_box": {
+            "minimum_latitude": -20.0284450406583,
+            "maximum_latitude": -19.7762119628908,
+            "minimum_longitude": -44.0594627202399,
+            "maximum_longitude": -43.8624469938131,
+            "extracted_on": "2022-03-14T20:04:15+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://ckan.pbh.gov.br/dataset/77764a7e-63fc-4111-ace3-fb7d3037953a/resource/f0fa78dc-74c3-49fa-8971-c310a76a07fa/download/gtfsfiles.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/br-minas-gerais-empresa-de-transportes-e-transito-de-belo-horizonte-bhtrans-gtfs-9.zip?alt=media",
+        "license": "https://dados.pbh.gov.br/dataset/gtfs-estatico-do-sistema-convencional"
+    }
+}

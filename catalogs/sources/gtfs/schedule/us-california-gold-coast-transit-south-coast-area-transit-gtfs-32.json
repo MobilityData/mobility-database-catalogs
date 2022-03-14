@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 32,
+    "data_type": "gtfs",
+    "provider": "Gold Coast Transit, South Coast Area Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Oxnard",
+        "bounding_box": {
+            "minimum_latitude": 34.14269871250784,
+            "maximum_latitude": 34.44820108297236,
+            "minimum_longitude": -119.30746185,
+            "maximum_longitude": -119.13247253857648,
+            "extracted_on": "2022-03-14T20:07:30+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.goldcoasttransit.org/images/GTFS/GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-gold-coast-transit-south-coast-area-transit-gtfs-32.zip?alt=media",
+        "license": "http://www.goldcoasttransit.org/2-uncategorised/250-gtfs-data-download"
+    }
+}

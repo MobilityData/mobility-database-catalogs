@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 77,
+    "data_type": "gtfs",
+    "provider": "Placer County Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Sacremento",
+        "bounding_box": {
+            "minimum_latitude": 38.5727195121879,
+            "maximum_latitude": 39.2071204380246,
+            "minimum_longitude": -121.503338951854,
+            "maximum_longitude": -120.810972099331,
+            "extracted_on": "2022-03-14T20:11:07+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/placercounty-ca-us/placercounty-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-placer-county-transit-gtfs-77.zip?alt=media"
+    }
+}

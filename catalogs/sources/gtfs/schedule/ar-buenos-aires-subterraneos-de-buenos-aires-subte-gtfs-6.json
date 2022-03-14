@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 6,
+    "data_type": "gtfs",
+    "provider": "Subterráneos de Buenos Aires (SUBTE)",
+    "location": {
+        "country_code": "AR",
+        "subdivision_name": "Buenos Aires",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2022-03-14T20:02:35+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://cdn.buenosaires.gob.ar/datosabiertos/datasets/sbase/subte-gtfs/subte-gtfs-zip.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ar-buenos-aires-subterraneos-de-buenos-aires-subte-gtfs-6.zip?alt=media",
+        "license": "https://data.buenosaires.gob.ar/dataset/subte-gtfs"
+    }
+}

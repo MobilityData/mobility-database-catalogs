@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 54,
+    "data_type": "gtfs",
+    "provider": "Caltrain",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "San Francisco",
+        "bounding_box": {
+            "minimum_latitude": 37.003485,
+            "maximum_latitude": 37.776404,
+            "minimum_longitude": -122.411709050687,
+            "maximum_longitude": -121.566088,
+            "extracted_on": "2022-03-14T20:08:51+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/caltrain-ca-us/caltrain-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-caltrain-gtfs-54.zip?alt=media"
+    }
+}

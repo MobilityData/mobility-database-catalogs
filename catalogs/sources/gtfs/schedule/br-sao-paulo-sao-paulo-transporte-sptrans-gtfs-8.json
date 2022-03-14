@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 8,
+    "data_type": "gtfs",
+    "provider": "São Paulo Transporte (SPTrans)",
+    "location": {
+        "country_code": "BR",
+        "subdivision_name": "São Paulo",
+        "municipality": "São Paulo",
+        "bounding_box": {
+            "minimum_latitude": -23.911109,
+            "maximum_latitude": -23.195643,
+            "minimum_longitude": -46.983928,
+            "maximum_longitude": -46.18493,
+            "extracted_on": "2022-03-14T20:03:17+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/transitland/gtfs-archives-not-hosted-elsewhere/blob/master/sao-paulo-sptrans.zip?raw=true",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/br-sao-paulo-sao-paulo-transporte-sptrans-gtfs-8.zip?alt=media"
+    }
+}

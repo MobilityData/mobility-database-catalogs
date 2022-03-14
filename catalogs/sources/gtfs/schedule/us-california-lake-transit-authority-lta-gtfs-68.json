@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 68,
+    "data_type": "gtfs",
+    "provider": "Lake Transit Authority (LTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "bounding_box": {
+            "minimum_latitude": 38.542878,
+            "maximum_latitude": 39.1896831,
+            "minimum_longitude": -123.2264562,
+            "maximum_longitude": -122.475567,
+            "extracted_on": "2022-03-14T20:10:32+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/laketransit-ca-us/laketransit-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-lake-transit-authority-lta-gtfs-68.zip?alt=media"
+    }
+}

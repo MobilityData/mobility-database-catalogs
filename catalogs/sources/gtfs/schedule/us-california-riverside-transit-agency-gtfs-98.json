@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 98,
+    "data_type": "gtfs",
+    "provider": "Riverside Transit Agency",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Riverside",
+        "bounding_box": {
+            "minimum_latitude": 33.452304,
+            "maximum_latitude": 34.10009,
+            "minimum_longitude": -117.915548,
+            "maximum_longitude": -116.875799,
+            "extracted_on": "2022-03-14T20:12:24+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.riversidetransit.com/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-riverside-transit-agency-gtfs-98.zip?alt=media"
+    }
+}

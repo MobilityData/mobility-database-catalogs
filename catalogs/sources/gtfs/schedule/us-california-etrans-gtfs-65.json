@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 65,
+    "data_type": "gtfs",
+    "provider": "eTrans",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Escalon",
+        "bounding_box": {
+            "minimum_latitude": 37.685265,
+            "maximum_latitude": 37.80286,
+            "minimum_longitude": -121.215854287148,
+            "maximum_longitude": -120.98274,
+            "extracted_on": "2022-03-14T20:09:23+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/escalon-ca-us/escalon-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-etrans-gtfs-65.zip?alt=media"
+    }
+}

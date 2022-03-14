@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 31,
+    "data_type": "gtfs",
+    "provider": "Ventura County Transportation Commission",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Santa Barbara",
+        "bounding_box": {
+            "minimum_latitude": 34.15384,
+            "maximum_latitude": 34.4439177,
+            "minimum_longitude": -119.865593734324,
+            "maximum_longitude": -118.588218,
+            "extracted_on": "2022-03-14T20:07:23+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/vctc-ca-us/vctc-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-ventura-county-transportation-commission-gtfs-31.zip?alt=media"
+    }
+}

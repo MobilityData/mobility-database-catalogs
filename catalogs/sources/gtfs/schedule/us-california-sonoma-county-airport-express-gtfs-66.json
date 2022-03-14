@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 66,
+    "data_type": "gtfs",
+    "provider": "Sonoma County Airport Express",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "San Mateo",
+        "bounding_box": {
+            "minimum_latitude": 37.615612,
+            "maximum_latitude": 38.5100997340212,
+            "minimum_longitude": -122.805338301203,
+            "maximum_longitude": -122.212134,
+            "extracted_on": "2022-03-14T20:09:25+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/airportexpressinc-ca-us/airportexpressinc-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-sonoma-county-airport-express-gtfs-66.zip?alt=media"
+    }
+}

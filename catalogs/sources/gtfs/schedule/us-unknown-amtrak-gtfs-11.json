@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 11,
+    "data_type": "gtfs",
+    "provider": "Amtrak",
+    "location": {
+        "country_code": "US",
+        "bounding_box": {
+            "minimum_latitude": 25.849554,
+            "maximum_latitude": 49.273757,
+            "minimum_longitude": -124.16933,
+            "maximum_longitude": -69.965541,
+            "extracted_on": "2022-03-14T20:04:54+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-unknown-amtrak-gtfs-11.zip?alt=media"
+    }
+}

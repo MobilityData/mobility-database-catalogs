@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 56,
+    "data_type": "gtfs",
+    "provider": "Monterey-Salinas Transit (MST)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Monterey",
+        "bounding_box": {
+            "minimum_latitude": 35.615187,
+            "maximum_latitude": 36.909498,
+            "minimum_longitude": -121.936046,
+            "maximum_longitude": -120.680343,
+            "extracted_on": "2022-03-14T20:08:57+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.mst.org/google/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-montereysalinas-transit-mst-gtfs-56.zip?alt=media",
+        "license": "https://mst.org/about-mst/developer-resources/"
+    }
+}

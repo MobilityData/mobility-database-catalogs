@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 95,
+    "data_type": "gtfs",
+    "provider": "Jump Around Carson",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Nevada",
+        "municipality": "Carson City",
+        "bounding_box": {
+            "minimum_latitude": 39.11556,
+            "maximum_latitude": 39.20368,
+            "minimum_longitude": -119.79043,
+            "maximum_longitude": -119.72803,
+            "extracted_on": "2022-03-14T20:12:17+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://r.peaktransit.com/res/76/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-nevada-jump-around-carson-gtfs-95.zip?alt=media"
+    }
+}

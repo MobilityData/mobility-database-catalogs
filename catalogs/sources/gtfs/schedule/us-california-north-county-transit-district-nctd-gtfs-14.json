@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 14,
+    "data_type": "gtfs",
+    "provider": "North County Transit District (NCTD)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "San Diego",
+        "bounding_box": {
+            "minimum_latitude": 32.716895,
+            "maximum_latitude": 33.394164,
+            "minimum_longitude": -117.514206,
+            "maximum_longitude": -116.869776,
+            "extracted_on": "2022-03-14T20:05:11+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.gonctd.com/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-north-county-transit-district-nctd-gtfs-14.zip?alt=media"
+    }
+}

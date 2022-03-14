@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 58,
+    "data_type": "gtfs",
+    "provider": "San Benito County Express (SBCE)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Hollister",
+        "bounding_box": {
+            "minimum_latitude": 36.828106,
+            "maximum_latitude": 37.004068,
+            "minimum_longitude": -121.570689082146,
+            "maximum_longitude": -121.366669,
+            "extracted_on": "2022-03-14T20:09:05+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/sanbenitocounty-ca-us/sanbenitocounty-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-san-benito-county-express-sbce-gtfs-58.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 99,
+    "data_type": "gtfs",
+    "provider": "Victor Valley Transit Authority (VVTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Hesperia",
+        "bounding_box": {
+            "minimum_latitude": 34.072411,
+            "maximum_latitude": 35.273818,
+            "minimum_longitude": -117.64669,
+            "maximum_longitude": -116.609954,
+            "extracted_on": "2022-03-14T20:12:29+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/victorville-ca-us/victorville-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-victor-valley-transit-authority-vvta-gtfs-99.zip?alt=media"
+    }
+}

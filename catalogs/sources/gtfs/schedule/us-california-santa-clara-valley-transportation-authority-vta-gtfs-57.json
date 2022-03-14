@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 57,
+    "data_type": "gtfs",
+    "provider": "Santa Clara Valley Transportation Authority (VTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "San Jose",
+        "bounding_box": {
+            "minimum_latitude": 36.974922,
+            "maximum_latitude": 37.458086,
+            "minimum_longitude": -122.173639,
+            "maximum_longitude": -121.549029,
+            "extracted_on": "2022-03-14T20:09:03+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.vta.org/gtfs_vta.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-santa-clara-valley-transportation-authority-vta-gtfs-57.zip?alt=media"
+    }
+}

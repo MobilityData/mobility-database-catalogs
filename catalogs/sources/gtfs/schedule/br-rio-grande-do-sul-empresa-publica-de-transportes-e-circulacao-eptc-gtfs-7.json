@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 7,
+    "data_type": "gtfs",
+    "provider": "Empresa Publica de Transportes e Circula\u00e7\u00e3o (EPTC)",
+    "location": {
+        "country_code": "BR",
+        "subdivision_name": "Rio Grande do Sul",
+        "municipality": "Porto Alegre",
+        "bounding_box": {
+            "minimum_latitude": -30.241904,
+            "maximum_latitude": -29.970497,
+            "minimum_longitude": -51.280762,
+            "maximum_longitude": -51.02079,
+            "extracted_on": "2022-03-14T20:03:02+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://dadosabertos.poa.br/dataset/1fe9c2c1-9fbe-48ea-841b-61e30597ecd6/resource/b3bce61f-78ee-49eb-be57-6236d82bd5e0/download/outputfiles.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/br-rio-grande-do-sul-empresa-publica-de-transportes-e-circulacao-eptc-gtfs-7.zip?alt=media",
+        "license": "http://datapoa.com.br/dataset/gtfs"
+    }
+}

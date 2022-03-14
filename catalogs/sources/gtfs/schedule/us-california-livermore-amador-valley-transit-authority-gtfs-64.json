@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 64,
+    "data_type": "gtfs",
+    "provider": "Livermore Amador Valley Transit Authority",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Livermore",
+        "bounding_box": {
+            "minimum_latitude": 37.631448,
+            "maximum_latitude": 37.732502,
+            "minimum_longitude": -121.98229,
+            "maximum_longitude": -121.717493,
+            "extracted_on": "2022-03-14T20:09:22+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://webwatch.lavta.org/TMGTFSRealTimeWebService/GTFS-Static/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-livermore-amador-valley-transit-authority-gtfs-64.zip?alt=media"
+    }
+}

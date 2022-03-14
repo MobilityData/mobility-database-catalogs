@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 26,
+    "data_type": "gtfs",
+    "provider": "Santa Maria Area Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Santa Maria",
+        "bounding_box": {
+            "minimum_latitude": 34.595943118981,
+            "maximum_latitude": 34.98595,
+            "minimum_longitude": -120.52211,
+            "maximum_longitude": -120.140531457672,
+            "extracted_on": "2022-03-14T20:06:55+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/smat-ca-us/smat-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-santa-maria-area-transit-gtfs-26.zip?alt=media"
+    }
+}

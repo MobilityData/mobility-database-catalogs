@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 83,
+    "data_type": "gtfs",
+    "provider": "GrapeLine",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Lodi",
+        "bounding_box": {
+            "minimum_latitude": 38.101806,
+            "maximum_latitude": 38.1457562509751,
+            "minimum_longitude": -121.309442,
+            "maximum_longitude": -121.252695,
+            "extracted_on": "2022-03-14T20:11:28+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.lodi.gov/DocumentCenter/View/2453/lodi_gtfs-ZIP",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-grapeline-gtfs-83.zip?alt=media"
+    }
+}

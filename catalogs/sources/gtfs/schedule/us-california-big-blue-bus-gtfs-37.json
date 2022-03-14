@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 37,
+    "data_type": "gtfs",
+    "provider": "Big Blue Bus",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Santa Monica ",
+        "bounding_box": {
+            "minimum_latitude": 33.929498,
+            "maximum_latitude": 34.075669,
+            "minimum_longitude": -118.549205,
+            "maximum_longitude": -118.237266,
+            "extracted_on": "2022-03-14T20:07:49+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://gtfs.bigbluebus.com/current.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-big-blue-bus-gtfs-37.zip?alt=media"
+    }
+}

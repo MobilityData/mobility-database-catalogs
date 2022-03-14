@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 16,
+    "data_type": "gtfs",
+    "provider": "Laguna Beach Transit (LBT)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Laguna Beach",
+        "bounding_box": {
+            "minimum_latitude": 33.476315,
+            "maximum_latitude": 33.656395,
+            "minimum_longitude": -117.799868,
+            "maximum_longitude": -117.716808,
+            "extracted_on": "2022-03-14T20:06:26+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/lagunabeach-ca-us/lagunabeach-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-laguna-beach-transit-lbt-gtfs-16.zip?alt=media"
+    }
+}

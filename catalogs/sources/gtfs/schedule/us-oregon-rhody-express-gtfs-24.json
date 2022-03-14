@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 24,
+    "data_type": "gtfs",
+    "provider": "Rhody Express",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Florence",
+        "bounding_box": {
+            "minimum_latitude": 43.9663292158148,
+            "maximum_latitude": 44.00783688,
+            "minimum_longitude": -124.118156,
+            "maximum_longitude": -124.086991158899,
+            "extracted_on": "2022-03-14T20:06:49+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/rhodyexpress-or-us/rhodyexpress-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-rhody-express-gtfs-24.zip?alt=media"
+    }
+}

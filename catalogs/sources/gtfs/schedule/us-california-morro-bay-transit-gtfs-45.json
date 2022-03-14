@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 45,
+    "data_type": "gtfs",
+    "provider": "Morro Bay Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Morro Bay",
+        "bounding_box": {
+            "minimum_latitude": 35.3469986712409,
+            "maximum_latitude": 35.4033897704827,
+            "minimum_longitude": -120.867305248975,
+            "maximum_longitude": -120.840760767459,
+            "extracted_on": "2022-03-14T20:08:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://mjcaction.com/MJC_GTFS_Public/morrobay_google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-morro-bay-transit-gtfs-45.zip?alt=media"
+    }
+}

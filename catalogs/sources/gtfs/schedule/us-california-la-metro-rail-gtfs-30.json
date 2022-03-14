@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 30,
+    "data_type": "gtfs",
+    "provider": "LA Metro Rail",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Los Angeles",
+        "bounding_box": {
+            "minimum_latitude": 33.76804,
+            "maximum_latitude": 34.16906,
+            "minimum_longitude": -118.49189,
+            "maximum_longitude": -117.89085,
+            "extracted_on": "2022-03-14T20:07:18+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gitlab.com/LACMTA/gtfs_rail/raw/master/gtfs_rail.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-la-metro-rail-gtfs-30.zip?alt=media"
+    }
+}

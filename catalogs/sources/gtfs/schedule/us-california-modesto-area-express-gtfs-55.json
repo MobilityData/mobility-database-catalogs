@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 55,
+    "data_type": "gtfs",
+    "provider": "Modesto Area Express",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Modesto",
+        "bounding_box": {
+            "minimum_latitude": 37.580162,
+            "maximum_latitude": 37.954866,
+            "minimum_longitude": -121.898961218,
+            "maximum_longitude": -120.9133,
+            "extracted_on": "2022-03-14T20:08:53+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.modestoareaexpress.com/preview-gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-modesto-area-express-gtfs-55.zip?alt=media"
+    }
+}

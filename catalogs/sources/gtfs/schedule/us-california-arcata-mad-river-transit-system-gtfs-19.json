@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 19,
+    "data_type": "gtfs",
+    "provider": "Arcata & Mad River Transit System",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Arcata",
+        "bounding_box": {
+            "minimum_latitude": 40.0680453004959,
+            "maximum_latitude": 41.061448107054,
+            "minimum_longitude": -124.223416986081,
+            "maximum_longitude": -123.631606,
+            "extracted_on": "2022-03-14T20:06:35+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/humboldtcounty-ca-us/humboldtcounty-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-arcata-mad-river-transit-system-gtfs-19.zip?alt=media"
+    }
+}

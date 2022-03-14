@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 67,
+    "data_type": "gtfs",
+    "provider": "Golden Gate Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "San Francisco",
+        "bounding_box": {
+            "minimum_latitude": 37.777609,
+            "maximum_latitude": 38.472081,
+            "minimum_longitude": -122.740448,
+            "maximum_longitude": -122.26649,
+            "extracted_on": "2022-03-14T20:10:29+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://realtime.goldengate.org/gtfsstatic/GTFSTransitData.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-golden-gate-transit-gtfs-67.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 76,
+    "data_type": "gtfs",
+    "provider": "Fairfield and Suisun Transit  (FAST Transit)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Fairfield",
+        "bounding_box": {
+            "minimum_latitude": 37.9054783569681,
+            "maximum_latitude": 38.584657,
+            "minimum_longitude": -122.317048,
+            "maximum_longitude": -121.496009650077,
+            "extracted_on": "2022-03-14T20:11:03+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/fairfield-ca-us/fairfield-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-fairfield-and-suisun-transit-fast-transit-gtfs-76.zip?alt=media"
+    }
+}

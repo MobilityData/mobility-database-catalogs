@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 156,
+    "data_type": "gtfs",
+    "provider": "Groome Transportation - Arizona Shuttle",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Arizona",
+        "bounding_box": {
+            "minimum_latitude": 32.2282,
+            "maximum_latitude": 36.053855,
+            "minimum_longitude": -112.469814502514,
+            "maximum_longitude": -110.878153,
+            "extracted_on": "2022-03-14T21:15:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/arizonashuttle-az-us/arizonashuttle-az-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-arizona-groome-transportation-arizona-shuttle-gtfs-156.zip?alt=media"
+    }
+}

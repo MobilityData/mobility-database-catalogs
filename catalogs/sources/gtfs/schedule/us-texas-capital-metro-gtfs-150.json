@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 150,
+    "data_type": "gtfs",
+    "provider": "Capital Metro",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Texas",
+        "municipality": "Austin",
+        "bounding_box": {
+            "minimum_latitude": 30.147252,
+            "maximum_latitude": 30.587897,
+            "minimum_longitude": -97.9911,
+            "maximum_longitude": -97.370389,
+            "extracted_on": "2022-03-14T21:14:09+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.texas.gov/download/r4v4-vz24/application/zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-texas-capital-metro-gtfs-150.zip?alt=media",
+        "license": "https://www.capmetro.org/metrolabs/"
+    }
+}

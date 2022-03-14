@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 105,
+    "data_type": "gtfs",
+    "provider": "Duarte Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Duarte",
+        "bounding_box": {
+            "minimum_latitude": 34.1255727,
+            "maximum_latitude": 34.1515031,
+            "minimum_longitude": -117.9888608,
+            "maximum_longitude": -117.9324427,
+            "extracted_on": "2022-03-14T21:11:55+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/duartetransit-ca-us/duartetransit-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-duarte-transit-gtfs-105.zip?alt=media"
+    }
+}

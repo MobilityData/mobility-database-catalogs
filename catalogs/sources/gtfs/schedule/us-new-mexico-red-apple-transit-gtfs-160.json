@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 160,
+    "data_type": "gtfs",
+    "provider": "Red Apple Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New Mexico",
+        "municipality": "Farmington",
+        "bounding_box": {
+            "minimum_latitude": 36.7009555,
+            "maximum_latitude": 36.8269741,
+            "minimum_longitude": -108.3599403,
+            "maximum_longitude": -107.9791283,
+            "extracted_on": "2022-03-14T21:15:04+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/redappletransit-nm-us/redappletransit-nm-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-mexico-red-apple-transit-gtfs-160.zip?alt=media"
+    }
+}

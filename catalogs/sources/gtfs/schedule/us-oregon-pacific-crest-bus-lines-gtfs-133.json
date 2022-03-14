@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 133,
+    "data_type": "gtfs",
+    "provider": "Pacific Crest Bus Lines",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Eugene",
+        "bounding_box": {
+            "minimum_latitude": 42.2067453083721,
+            "maximum_latitude": 44.7365194756296,
+            "minimum_longitude": -124.213689565659,
+            "maximum_longitude": -121.161056,
+            "extracted_on": "2022-03-14T21:13:17+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/pacificcrest-or-us/pacificcrest-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-pacific-crest-bus-lines-gtfs-133.zip?alt=media"
+    }
+}

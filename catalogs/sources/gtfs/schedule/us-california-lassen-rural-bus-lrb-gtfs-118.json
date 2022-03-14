@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 118,
+    "data_type": "gtfs",
+    "provider": "Lassen Rural Bus (LRB)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Susanville",
+        "bounding_box": {
+            "minimum_latitude": 40.026325,
+            "maximum_latitude": 40.7193838449299,
+            "minimum_longitude": -121.230736,
+            "maximum_longitude": -120.103928,
+            "extracted_on": "2022-03-14T21:12:38+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/lassen-ca-us/lassen-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-lassen-rural-bus-lrb-gtfs-118.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 111,
+    "data_type": "gtfs",
+    "provider": "SunTran Utah",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Utah",
+        "municipality": "St. George",
+        "bounding_box": {
+            "minimum_latitude": 37.061946,
+            "maximum_latitude": 37.188009,
+            "minimum_longitude": -113.679685,
+            "maximum_longitude": -113.490836,
+            "extracted_on": "2022-03-14T21:12:20+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.fivecounty.utah.gov/transit/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-utah-suntran-utah-gtfs-111.zip?alt=media"
+    }
+}

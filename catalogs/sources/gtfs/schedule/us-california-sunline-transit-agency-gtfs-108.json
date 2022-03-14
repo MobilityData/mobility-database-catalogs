@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 108,
+    "data_type": "gtfs",
+    "provider": "SunLine Transit Agency",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Thousand Palms",
+        "bounding_box": {
+            "minimum_latitude": 33.522632,
+            "maximum_latitude": 34.179853,
+            "minimum_longitude": -117.326156,
+            "maximum_longitude": -115.921462,
+            "extracted_on": "2022-03-14T21:12:01+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.sunline.org/transit/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-sunline-transit-agency-gtfs-108.zip?alt=media"
+    }
+}

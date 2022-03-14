@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 171,
+    "data_type": "gtfs",
+    "provider": "Pocatello Regional Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Idaho",
+        "municipality": "Pocatello",
+        "bounding_box": {
+            "minimum_latitude": 42.8234842,
+            "maximum_latitude": 42.93489,
+            "minimum_longitude": -112.4958565,
+            "maximum_longitude": -112.3898471,
+            "extracted_on": "2022-03-14T21:15:45+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://pocatellotransit.com/gtfs/pocatello-regional-transit-gtfs.zip?v=current",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-idaho-pocatello-regional-transit-gtfs-171.zip?alt=media"
+    }
+}

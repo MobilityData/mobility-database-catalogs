@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 122,
+    "data_type": "gtfs",
+    "provider": "Rogue Valley Transportation District (RVTD)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Medford",
+        "bounding_box": {
+            "minimum_latitude": 42.175814788092,
+            "maximum_latitude": 42.481486,
+            "minimum_longitude": -122.9667,
+            "maximum_longitude": -122.671537,
+            "extracted_on": "2022-03-14T21:12:48+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/rvtd-or-us/rvtd-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-rogue-valley-transportation-district-rvtd-gtfs-122.zip?alt=media"
+    }
+}

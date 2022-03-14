@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 175,
+    "data_type": "gtfs",
+    "provider": "Winter Park Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Winter Park",
+        "bounding_box": {
+            "minimum_latitude": 39.875221225649,
+            "maximum_latitude": 40.092112815711,
+            "minimum_longitude": -105.94675589542,
+            "maximum_longitude": -105.755830246798,
+            "extracted_on": "2022-03-14T21:15:54+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/winterpark-co-us/winterpark-co-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-winter-park-transit-gtfs-175.zip?alt=media"
+    }
+}

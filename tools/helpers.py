@@ -111,7 +111,7 @@ def is_readable(url, load_func):
     try:
         load_func(url)
     except Exception as e:
-        raise (
+        raise Exception(
             f"Exception '{e}' occurred while reading the dataset. "
             f"The dataset downloaded with the direct download URL must be a valid dataset.\n"
             f"Please contact emma@mobilitydata.org for assistance.\n"

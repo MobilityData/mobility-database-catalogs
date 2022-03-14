@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 138,
+    "data_type": "gtfs",
+    "provider": "Cascades East Transit  (CET)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Bend",
+        "bounding_box": {
+            "minimum_latitude": 43.67033,
+            "maximum_latitude": 44.7779309239482,
+            "minimum_longitude": -121.678688,
+            "maximum_longitude": -120.842453,
+            "extracted_on": "2022-03-14T21:13:24+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/cascadeseast-or-us/cascadeseast-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-cascades-east-transit-cet-gtfs-138.zip?alt=media"
+    }
+}

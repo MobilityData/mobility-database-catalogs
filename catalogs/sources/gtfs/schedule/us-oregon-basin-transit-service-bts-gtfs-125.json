@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 125,
+    "data_type": "gtfs",
+    "provider": "Basin Transit Service  (BTS)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Klamath Falls",
+        "bounding_box": {
+            "minimum_latitude": 42.174625,
+            "maximum_latitude": 42.5752845423563,
+            "minimum_longitude": -121.874721,
+            "maximum_longitude": -121.271743550926,
+            "extracted_on": "2022-03-14T21:12:52+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/basin-or-us/basin-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-basin-transit-service-bts-gtfs-125.zip?alt=media"
+    }
+}

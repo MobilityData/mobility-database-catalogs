@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 121,
+    "data_type": "gtfs",
+    "provider": "Josephine County Transit (JCT)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Grants Pass",
+        "bounding_box": {
+            "minimum_latitude": 42.162895,
+            "maximum_latitude": 42.69524,
+            "minimum_longitude": -123.650417,
+            "maximum_longitude": -122.871036,
+            "extracted_on": "2022-03-14T21:12:44+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/josephinecounty-or-us/josephinecounty-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-josephine-county-transit-jct-gtfs-121.zip?alt=media"
+    }
+}

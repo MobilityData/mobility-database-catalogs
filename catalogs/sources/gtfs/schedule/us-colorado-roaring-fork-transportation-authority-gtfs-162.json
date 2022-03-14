@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 162,
+    "data_type": "gtfs",
+    "provider": "Roaring Fork Transportation Authority",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado ",
+        "municipality": "Aspen",
+        "bounding_box": {
+            "minimum_latitude": 39.0997929,
+            "maximum_latitude": 39.5715695,
+            "minimum_longitude": -107.7839413,
+            "maximum_longitude": -106.8009104,
+            "extracted_on": "2022-03-14T21:15:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/rfta-co-us/rfta-co-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-roaring-fork-transportation-authority-gtfs-162.zip?alt=media"
+    }
+}

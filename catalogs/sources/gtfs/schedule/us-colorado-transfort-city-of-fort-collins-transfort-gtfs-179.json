@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 179,
+    "data_type": "gtfs",
+    "provider": "Transfort \u2013 City of Fort Collins (Transfort)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Fort Collins",
+        "bounding_box": {
+            "minimum_latitude": 40.005197,
+            "maximum_latitude": 40.615324,
+            "minimum_longitude": -105.276138,
+            "maximum_longitude": -104.996501,
+            "extracted_on": "2022-03-14T21:16:05+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.ridetransfort.com/img/site_specific/uploads/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-transfort-city-of-fort-collins-transfort-gtfs-179.zip?alt=media",
+        "license": "http://www.ridetransfort.com/img/site_specific/uploads/Transfort_GTFS_License_Agreement.pdf"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 148,
+    "data_type": "gtfs",
+    "provider": "Sun Metro",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Texas",
+        "municipality": "El Paso",
+        "bounding_box": {
+            "minimum_latitude": 31.584279,
+            "maximum_latitude": 31.960464,
+            "minimum_longitude": -106.624945,
+            "maximum_longitude": -106.216594,
+            "extracted_on": "2022-03-14T21:13:58+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://transit.sunmetro.net/google_transit/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-texas-sun-metro-gtfs-148.zip?alt=media"
+    }
+}

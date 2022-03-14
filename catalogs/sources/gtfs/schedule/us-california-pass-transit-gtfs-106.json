@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 106,
+    "data_type": "gtfs",
+    "provider": "PASS Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Beaumont",
+        "bounding_box": {
+            "minimum_latitude": 33.9132530168794,
+            "maximum_latitude": 34.1001200694937,
+            "minimum_longitude": -117.29498155813,
+            "maximum_longitude": -116.799803651382,
+            "extracted_on": "2022-03-14T21:11:57+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/beaumont-ca-us/beaumont-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-pass-transit-gtfs-106.zip?alt=media"
+    }
+}

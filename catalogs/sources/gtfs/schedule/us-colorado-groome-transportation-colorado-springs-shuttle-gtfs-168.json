@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 168,
+    "data_type": "gtfs",
+    "provider": "Groome Transportation - Colorado Springs Shuttle",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Colorado Springs",
+        "bounding_box": {
+            "minimum_latitude": 38.7966284379563,
+            "maximum_latitude": 39.850194,
+            "minimum_longitude": -104.866849332176,
+            "maximum_longitude": -104.672462,
+            "extracted_on": "2022-03-14T21:15:33+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/coloradoshuttle-co-us/coloradoshuttle-co-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-groome-transportation-colorado-springs-shuttle-gtfs-168.zip?alt=media"
+    }
+}

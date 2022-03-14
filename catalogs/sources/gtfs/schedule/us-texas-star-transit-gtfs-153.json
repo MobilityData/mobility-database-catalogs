@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 153,
+    "data_type": "gtfs",
+    "provider": "STAR Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Texas",
+        "municipality": "Dallas",
+        "bounding_box": {
+            "minimum_latitude": 32.564837,
+            "maximum_latitude": 32.7657540972602,
+            "minimum_longitude": -96.946236,
+            "maximum_longitude": -96.249843,
+            "extracted_on": "2022-03-14T21:14:21+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/startransit-tx-us/startransit-tx-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-texas-star-transit-gtfs-153.zip?alt=media"
+    }
+}

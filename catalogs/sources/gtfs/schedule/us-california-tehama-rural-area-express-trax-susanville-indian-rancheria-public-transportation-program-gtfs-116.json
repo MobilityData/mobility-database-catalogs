@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 116,
+    "data_type": "gtfs",
+    "provider": "Tehama Rural Area Express (TRAX), Susanville Indian Rancheria Public Transportation Program",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Red Bluff",
+        "bounding_box": {
+            "minimum_latitude": 39.7487666060753,
+            "maximum_latitude": 40.58389179,
+            "minimum_longitude": -122.459110730898,
+            "maximum_longitude": -120.657032132149,
+            "extracted_on": "2022-03-14T21:12:33+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/tehama-ca-us/tehama-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-tehama-rural-area-express-trax-susanville-indian-rancheria-public-transportation-program-gtfs-116.zip?alt=media"
+    }
+}

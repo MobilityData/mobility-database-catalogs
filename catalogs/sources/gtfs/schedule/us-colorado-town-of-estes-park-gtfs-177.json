@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 177,
+    "data_type": "gtfs",
+    "provider": "Town of Estes Park",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Estes Park",
+        "bounding_box": {
+            "minimum_latitude": 40.338083,
+            "maximum_latitude": 40.401946,
+            "minimum_longitude": -105.586316,
+            "maximum_longitude": -105.482392,
+            "extracted_on": "2022-03-14T21:15:56+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://nationalparkservice.github.io/nps-gtfs/romo-epshuttles/shuttles/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-town-of-estes-park-gtfs-177.zip?alt=media"
+    }
+}

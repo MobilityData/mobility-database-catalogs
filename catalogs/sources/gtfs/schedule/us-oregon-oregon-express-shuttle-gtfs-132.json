@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 132,
+    "data_type": "gtfs",
+    "provider": "Oregon Express Shuttle",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Albany",
+        "bounding_box": {
+            "minimum_latitude": 44.0431237157416,
+            "maximum_latitude": 45.58905,
+            "minimum_longitude": -123.28133,
+            "maximum_longitude": -122.59229,
+            "extracted_on": "2022-03-14T21:13:15+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/oregonexpressshuttle-or-us/oregonexpressshuttle-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-oregon-express-shuttle-gtfs-132.zip?alt=media"
+    }
+}

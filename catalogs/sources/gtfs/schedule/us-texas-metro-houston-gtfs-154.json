@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 154,
+    "data_type": "gtfs",
+    "provider": "METRO Houston",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Texas",
+        "municipality": "Houston",
+        "bounding_box": {
+            "minimum_latitude": 29.531098,
+            "maximum_latitude": 30.30941,
+            "minimum_longitude": -95.776256,
+            "maximum_longitude": -94.986966,
+            "extracted_on": "2022-03-14T21:14:55+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.ridemetro.org/Downloads/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-texas-metro-houston-gtfs-154.zip?alt=media",
+        "license": "https://www.ridemetro.org/Pages/DigitalAssets.aspx"
+    }
+}

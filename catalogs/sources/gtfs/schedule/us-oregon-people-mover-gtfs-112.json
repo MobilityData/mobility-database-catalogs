@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 112,
+    "data_type": "gtfs",
+    "provider": "People Mover",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "bounding_box": {
+            "minimum_latitude": 43.5730477,
+            "maximum_latitude": 46.0523909,
+            "minimum_longitude": -121.300789,
+            "maximum_longitude": -116.9382,
+            "extracted_on": "2022-03-14T21:12:26+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/peoplemover-or-us/peoplemover-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-people-mover-gtfs-112.zip?alt=media"
+    }
+}

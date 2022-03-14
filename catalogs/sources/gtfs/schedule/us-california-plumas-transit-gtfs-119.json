@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 119,
+    "data_type": "gtfs",
+    "provider": "Plumas Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Chico",
+        "bounding_box": {
+            "minimum_latitude": 39.766285,
+            "maximum_latitude": 40.3123914556704,
+            "minimum_longitude": -121.240784,
+            "maximum_longitude": -120.460815,
+            "extracted_on": "2022-03-14T21:12:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/plumas-ca-us/plumas-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-plumas-transit-gtfs-119.zip?alt=media"
+    }
+}

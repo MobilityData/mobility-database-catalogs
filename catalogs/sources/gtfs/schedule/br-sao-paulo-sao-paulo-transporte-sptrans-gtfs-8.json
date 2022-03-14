@@ -1,11 +1,11 @@
 {
     "mdb_source_id": 8,
     "data_type": "gtfs",
-    "provider": "S\u00e3o Paulo Transporte (SPTrans)",
+    "provider": "São Paulo Transporte (SPTrans)",
     "location": {
         "country_code": "BR",
-        "subdivision_name": "S\u00e3o Paulo ",
-        "municipality": "S\u00e3o Paulo ",
+        "subdivision_name": "São Paulo ",
+        "municipality": "São Paulo ",
         "bounding_box": {
             "minimum_latitude": -23.911109,
             "maximum_latitude": -23.195643,

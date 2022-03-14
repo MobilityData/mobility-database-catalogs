@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 17,
+    "data_type": "gtfs",
+    "provider": "Yuma County Intergovernmental Public Transportation Authority (YCIPTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Arizona",
+        "municipality": "Yuma",
+        "bounding_box": {
+            "minimum_latitude": 32.484682743136176,
+            "maximum_latitude": 32.79171205546877,
+            "minimum_longitude": -115.56963801383972,
+            "maximum_longitude": -114.1335509410652,
+            "extracted_on": "2022-03-14T16:40:33+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.ycipta.org/gtfs/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-arizona-yuma-county-intergovernmental-public-transportation-authority-ycipta-gtfs-17.zip?alt=media"
+    }
+}

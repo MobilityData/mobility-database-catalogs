@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 176,
+    "data_type": "gtfs",
+    "provider": "ECO Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Eagle County",
+        "bounding_box": {
+            "minimum_latitude": 39.2422533,
+            "maximum_latitude": 39.6977981,
+            "minimum_longitude": -107.063881,
+            "maximum_longitude": -106.2909511,
+            "extracted_on": "2022-03-14T16:52:08+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/ecotransit-co-us/ecotransit-co-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-eco-transit-gtfs-176.zip?alt=media"
+    }
+}

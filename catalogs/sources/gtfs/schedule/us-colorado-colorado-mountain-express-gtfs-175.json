@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 175,
+    "data_type": "gtfs",
+    "provider": "Colorado Mountain Express",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado ",
+        "municipality": "Denver",
+        "bounding_box": {
+            "minimum_latitude": 39.18745,
+            "maximum_latitude": 39.848793529552,
+            "minimum_longitude": -107.32773,
+            "maximum_longitude": -104.67285727756,
+            "extracted_on": "2022-03-14T16:52:05+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/cme-co-us/cme-co-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-colorado-mountain-express-gtfs-175.zip?alt=media"
+    }
+}

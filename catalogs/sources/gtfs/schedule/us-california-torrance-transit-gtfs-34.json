@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 34,
+    "data_type": "gtfs",
+    "provider": "Torrance Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Torrance",
+        "bounding_box": {
+            "minimum_latitude": 33.768128,
+            "maximum_latitude": 34.059919,
+            "minimum_longitude": -118.399852,
+            "maximum_longitude": -118.189549,
+            "extracted_on": "2022-03-14T16:41:29+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transit.torranceca.gov/home/showdocument?id=16673",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-torrance-transit-gtfs-34.zip?alt=media",
+        "license": "https://transit.torranceca.gov/home/showdocument?id=6052"
+    }
+}

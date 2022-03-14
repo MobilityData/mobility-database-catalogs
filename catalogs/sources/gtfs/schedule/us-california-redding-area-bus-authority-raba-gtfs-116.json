@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 116,
+    "data_type": "gtfs",
+    "provider": "Redding Area Bus Authority (RABA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Redding",
+        "bounding_box": {
+            "minimum_latitude": 40.432539731191,
+            "maximum_latitude": 40.888921,
+            "minimum_longitude": -122.570969723353,
+            "maximum_longitude": -121.65358,
+            "extracted_on": "2022-03-14T16:48:07+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/redding-ca-us/redding-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-redding-area-bus-authority-raba-gtfs-116.zip?alt=media"
+    }
+}

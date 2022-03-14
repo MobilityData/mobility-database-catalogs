@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 137,
+    "data_type": "gtfs",
+    "provider": "LINX Transit, Linn-Benton Loop, Albany Transit System",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Albany",
+        "bounding_box": {
+            "minimum_latitude": 44.515628,
+            "maximum_latitude": 44.657,
+            "minimum_longitude": -123.273597394,
+            "maximum_longitude": -122.899202,
+            "extracted_on": "2022-03-14T16:48:58+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/albanytransit-or-us/albanytransit-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-linx-transit-linnbenton-loop-albany-transit-system-gtfs-137.zip?alt=media"
+    }
+}

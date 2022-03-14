@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 20,
+    "data_type": "gtfs",
+    "provider": "Redwood Coast Transit (RCT)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Crescent City",
+        "bounding_box": {
+            "minimum_latitude": 40.868565,
+            "maximum_latitude": 41.957411,
+            "minimum_longitude": -124.216937405798,
+            "maximum_longitude": -123.96551954304,
+            "extracted_on": "2022-03-14T16:40:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/delnorte-ca-us/delnorte-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-redwood-coast-transit-rct-gtfs-20.zip?alt=media"
+    }
+}

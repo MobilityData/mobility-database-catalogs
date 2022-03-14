@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 145,
+    "data_type": "gtfs",
+    "provider": "Mountain Rides Transportation Authority  (MRTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Idaho",
+        "municipality": "Ketchum",
+        "bounding_box": {
+            "minimum_latitude": 43.4524983137032,
+            "maximum_latitude": 43.7199139686023,
+            "minimum_longitude": -114.4052723050118,
+            "maximum_longitude": -114.2553716897965,
+            "extracted_on": "2022-03-14T16:49:11+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/mountainrides-id-us/mountainrides-id-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-idaho-mountain-rides-transportation-authority-mrta-gtfs-145.zip?alt=media"
+    }
+}

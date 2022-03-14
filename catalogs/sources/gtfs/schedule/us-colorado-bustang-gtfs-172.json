@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 172,
+    "data_type": "gtfs",
+    "provider": "Bustang",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado ",
+        "municipality": "Denver",
+        "bounding_box": {
+            "minimum_latitude": 37.272749883951,
+            "maximum_latitude": 40.589906,
+            "minimum_longitude": -108.564255876715,
+            "maximum_longitude": -102.61859,
+            "extracted_on": "2022-03-14T16:51:46+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/bustang-co-us/bustang-co-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-bustang-gtfs-172.zip?alt=media"
+    }
+}

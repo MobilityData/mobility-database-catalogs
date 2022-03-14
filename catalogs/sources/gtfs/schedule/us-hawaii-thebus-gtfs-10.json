@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 10,
+    "data_type": "gtfs",
+    "provider": "TheBus",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Hawaii",
+        "municipality": "Honolulu",
+        "bounding_box": {
+            "minimum_latitude": 21.255957,
+            "maximum_latitude": 21.70327,
+            "minimum_longitude": -158.228463,
+            "maximum_longitude": -157.662429,
+            "extracted_on": "2022-03-14T16:38:56+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://webapps.thebus.org/transitdata/Production/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-hawaii-thebus-gtfs-10.zip?alt=media"
+    }
+}

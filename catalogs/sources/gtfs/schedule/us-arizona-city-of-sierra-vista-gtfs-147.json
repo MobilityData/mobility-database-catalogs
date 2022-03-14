@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 147,
+    "data_type": "gtfs",
+    "provider": "City of Sierra Vista",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Arizona",
+        "municipality": "Sierra Vista",
+        "bounding_box": {
+            "minimum_latitude": 31.528526,
+            "maximum_latitude": 31.565626,
+            "minimum_longitude": -110.353191,
+            "maximum_longitude": -110.23233,
+            "extracted_on": "2022-03-14T16:49:15+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://demopro.nationalrtap.org/admin/GTFSzipFiles/3746/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-arizona-city-of-sierra-vista-gtfs-147.zip?alt=media"
+    }
+}

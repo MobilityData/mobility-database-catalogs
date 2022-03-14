@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 132,
+    "data_type": "gtfs",
+    "provider": "Diamond Express",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Oakridge",
+        "bounding_box": {
+            "minimum_latitude": 43.742044,
+            "maximum_latitude": 44.0551965657442,
+            "minimum_longitude": -123.094219662968,
+            "maximum_longitude": -122.460348,
+            "extracted_on": "2022-03-14T16:48:39+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/diamondexpress-or-us/diamondexpress-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-diamond-express-gtfs-132.zip?alt=media"
+    }
+}

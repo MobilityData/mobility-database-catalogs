@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 48,
+    "data_type": "gtfs",
+    "provider": "Porterville Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Tulare",
+        "bounding_box": {
+            "minimum_latitude": 36.027009,
+            "maximum_latitude": 36.098346,
+            "minimum_longitude": -119.079056,
+            "maximum_longitude": -118.77602944931,
+            "extracted_on": "2022-03-14T16:42:04+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/porterville-ca-us/porterville-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-porterville-transit-gtfs-48.zip?alt=media"
+    }
+}

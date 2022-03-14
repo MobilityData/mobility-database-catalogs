@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 76,
+    "data_type": "gtfs",
+    "provider": "El Dorado Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "bounding_box": {
+            "minimum_latitude": 38.551646,
+            "maximum_latitude": 38.957753,
+            "minimum_longitude": -121.502804,
+            "maximum_longitude": -119.942393,
+            "extracted_on": "2022-03-14T16:43:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/eldoradotransit-ca-us/eldoradotransit-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-el-dorado-transit-gtfs-76.zip?alt=media"
+    }
+}

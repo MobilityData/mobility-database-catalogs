@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 143,
+    "data_type": "gtfs",
+    "provider": "Malheur Council on Aging & Community Services",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Ontario",
+        "bounding_box": {
+            "minimum_latitude": 43.876076,
+            "maximum_latitude": 44.0356123,
+            "minimum_longitude": -117.2416815,
+            "maximum_longitude": -116.9238317,
+            "extracted_on": "2022-03-14T16:49:07+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/mcacs-or-us/mcacs-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-malheur-council-on-aging-community-services-gtfs-143.zip?alt=media"
+    }
+}

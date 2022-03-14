@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 62,
+    "data_type": "gtfs",
+    "provider": "Commute.org San Mateo County Shuttles",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "San Mateo",
+        "bounding_box": {
+            "minimum_latitude": 37.423779,
+            "maximum_latitude": 37.7211495911134,
+            "minimum_longitude": -122.469273263981,
+            "maximum_longitude": -122.142022,
+            "extracted_on": "2022-03-14T16:43:05+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/commute-ca-us/commute-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-commuteorg-san-mateo-county-shuttles-gtfs-62.zip?alt=media"
+    }
+}

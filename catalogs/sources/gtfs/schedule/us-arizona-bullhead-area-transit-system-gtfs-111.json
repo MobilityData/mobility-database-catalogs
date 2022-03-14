@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 111,
+    "data_type": "gtfs",
+    "provider": "Bullhead Area Transit System",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Arizona",
+        "municipality": "Bullhead City",
+        "bounding_box": {
+            "minimum_latitude": 35.049874201132,
+            "maximum_latitude": 35.165897,
+            "minimum_longitude": -114.64066405236,
+            "maximum_longitude": -114.53114181833,
+            "extracted_on": "2022-03-14T16:47:38+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/bullheadareatransit-az-us/bullheadareatransit-az-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-arizona-bullhead-area-transit-system-gtfs-111.zip?alt=media"
+    }
+}

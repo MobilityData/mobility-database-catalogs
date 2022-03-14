@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 93,
+    "data_type": "gtfs",
+    "provider": "City of Madera ",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Madera",
+        "bounding_box": {
+            "minimum_latitude": 36.924336241916,
+            "maximum_latitude": 36.9830004943818,
+            "minimum_longitude": -120.103310277225,
+            "maximum_longitude": -119.99758478924,
+            "extracted_on": "2022-03-14T16:47:01+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/cityofmadera-ca-us/cityofmadera-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-city-of-madera-gtfs-93.zip?alt=media"
+    }
+}

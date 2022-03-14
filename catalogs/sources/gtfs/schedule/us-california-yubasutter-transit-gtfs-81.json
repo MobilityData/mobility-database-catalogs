@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 81,
+    "data_type": "gtfs",
+    "provider": "Yuba-Sutter Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Yuba City",
+        "bounding_box": {
+            "minimum_latitude": 38.572670409003,
+            "maximum_latitude": 39.4572019644274,
+            "minimum_longitude": -121.67273923052,
+            "maximum_longitude": -121.25373447668,
+            "extracted_on": "2022-03-14T16:43:56+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/yubasutter-ca-us/yubasutter-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-yubasutter-transit-gtfs-81.zip?alt=media"
+    }
+}

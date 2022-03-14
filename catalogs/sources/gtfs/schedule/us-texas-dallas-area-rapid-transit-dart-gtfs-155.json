@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 155,
+    "data_type": "gtfs",
+    "provider": "Dallas Area Rapid Transit (DART)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Texas",
+        "municipality": "Dallas",
+        "bounding_box": {
+            "minimum_latitude": 32.55906,
+            "maximum_latitude": 33.084348,
+            "minimum_longitude": -97.328201,
+            "maximum_longitude": -96.562516,
+            "extracted_on": "2022-03-14T16:49:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.dart.org/transitdata/latest/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-texas-dallas-area-rapid-transit-dart-gtfs-155.zip?alt=media",
+        "license": "https://ridedart.com/business-center/developer-resources"
+    }
+}

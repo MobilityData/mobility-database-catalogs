@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 40,
+    "data_type": "gtfs",
+    "provider": "Simi Valley Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Simi Valley",
+        "bounding_box": {
+            "minimum_latitude": 34.22958457,
+            "maximum_latitude": 34.3021463101492,
+            "minimum_longitude": -118.83637467254,
+            "maximum_longitude": -118.598911921367,
+            "extracted_on": "2022-03-14T16:41:45+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/simivalley-ca-us/simivalley-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-simi-valley-transit-gtfs-40.zip?alt=media"
+    }
+}

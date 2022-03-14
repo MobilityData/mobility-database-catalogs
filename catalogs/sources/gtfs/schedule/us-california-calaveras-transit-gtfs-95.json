@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 95,
+    "data_type": "gtfs",
+    "provider": "Calaveras Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "San Andreas",
+        "bounding_box": {
+            "minimum_latitude": 37.932161,
+            "maximum_latitude": 38.398985,
+            "minimum_longitude": -120.8387301,
+            "maximum_longitude": -120.347157,
+            "extracted_on": "2022-03-14T16:47:06+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/calaveras-ca-us/calaveras-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-calaveras-transit-gtfs-95.zip?alt=media"
+    }
+}

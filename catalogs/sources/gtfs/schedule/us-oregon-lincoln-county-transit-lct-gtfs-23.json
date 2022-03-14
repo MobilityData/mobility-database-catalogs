@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 23,
+    "data_type": "gtfs",
+    "provider": "Lincoln County Transit  (LCT)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Newport",
+        "bounding_box": {
+            "minimum_latitude": 44.3116263048855,
+            "maximum_latitude": 45.01935811,
+            "minimum_longitude": -124.105422953253,
+            "maximum_longitude": -123.10286,
+            "extracted_on": "2022-03-14T16:40:47+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/lincolncounty-or-us/lincolncounty-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-lincoln-county-transit-lct-gtfs-23.zip?alt=media"
+    }
+}

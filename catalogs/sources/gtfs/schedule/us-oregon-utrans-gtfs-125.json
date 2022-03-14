@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 125,
+    "data_type": "gtfs",
+    "provider": "UTrans",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Roseburg",
+        "bounding_box": {
+            "minimum_latitude": 42.737182450611,
+            "maximum_latitude": 43.695870028905,
+            "minimum_longitude": -124.17377849378,
+            "maximum_longitude": -123.01875661,
+            "extracted_on": "2022-03-14T16:48:28+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/umpquatransit-or-us/umpquatransit-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-utrans-gtfs-125.zip?alt=media"
+    }
+}

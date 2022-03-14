@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 151,
+    "data_type": "gtfs",
+    "provider": "Carlsbad Municipal Transit System",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New Mexico",
+        "municipality": "Carlsbad",
+        "bounding_box": {
+            "minimum_latitude": 32.3748,
+            "maximum_latitude": 32.4425,
+            "minimum_longitude": -104.2649,
+            "maximum_longitude": -104.221,
+            "extracted_on": "2022-03-14T16:49:33+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/ethan-nelson/carlsbadnmtransit/blob/master/gtfs-odbl/carlsbadtransit-odbl.zip?raw=true",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-mexico-carlsbad-municipal-transit-system-gtfs-151.zip?alt=media"
+    }
+}

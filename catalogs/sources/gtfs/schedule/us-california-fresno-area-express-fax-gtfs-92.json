@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 92,
+    "data_type": "gtfs",
+    "provider": "Fresno Area Express (FAX)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Fresno",
+        "bounding_box": {
+            "minimum_latitude": 36.681009,
+            "maximum_latitude": 36.888538,
+            "minimum_longitude": -119.908969,
+            "maximum_longitude": -119.677657,
+            "extracted_on": "2022-03-14T16:47:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://gis4u.fresno.gov/downloads/fax_gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-fresno-area-express-fax-gtfs-92.zip?alt=media"
+    }
+}

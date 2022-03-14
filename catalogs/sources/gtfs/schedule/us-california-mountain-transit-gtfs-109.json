@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 109,
+    "data_type": "gtfs",
+    "provider": "Mountain Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Big Bear ",
+        "bounding_box": {
+            "minimum_latitude": 34.1005,
+            "maximum_latitude": 34.272346961248,
+            "minimum_longitude": -117.326256,
+            "maximum_longitude": -116.790527,
+            "extracted_on": "2022-03-14T16:47:34+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/bigbear-ca-us/bigbear-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-mountain-transit-gtfs-109.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 43,
+    "data_type": "gtfs",
+    "provider": "San Luis Obispo Regional Transit Authority (SLORTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "San Luis Obispo",
+        "bounding_box": {
+            "minimum_latitude": 34.944001,
+            "maximum_latitude": 35.752511,
+            "minimum_longitude": -121.186588,
+            "maximum_longitude": -120.413275,
+            "extracted_on": "2022-03-14T16:41:54+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://slo.connexionz.net/rtt/public/resource/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-san-luis-obispo-regional-transit-authority-slorta-gtfs-43.zip?alt=media"
+    }
+}

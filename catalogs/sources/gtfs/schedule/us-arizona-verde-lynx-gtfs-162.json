@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 162,
+    "data_type": "gtfs",
+    "provider": "Verde Lynx",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Arizona",
+        "municipality": "Cottonwood",
+        "bounding_box": {
+            "minimum_latitude": 34.7372657347743,
+            "maximum_latitude": 38.554464,
+            "minimum_longitude": -121.427752,
+            "maximum_longitude": -111.76015,
+            "extracted_on": "2022-03-14T16:51:07+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/verdelynx-az-us/verdelynx-az-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-arizona-verde-lynx-gtfs-162.zip?alt=media"
+    }
+}

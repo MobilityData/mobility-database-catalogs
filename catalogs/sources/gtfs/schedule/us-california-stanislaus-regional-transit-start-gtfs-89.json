@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 89,
+    "data_type": "gtfs",
+    "provider": "Stanislaus Regional Transit (StaRT)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Modesto",
+        "bounding_box": {
+            "minimum_latitude": 37.25707509,
+            "maximum_latitude": 37.77173034,
+            "minimum_longitude": -121.897639,
+            "maximum_longitude": -120.488203167915,
+            "extracted_on": "2022-03-14T16:46:51+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/stanislaus-ca-us/stanislaus-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-stanislaus-regional-transit-start-gtfs-89.zip?alt=media"
+    }
+}

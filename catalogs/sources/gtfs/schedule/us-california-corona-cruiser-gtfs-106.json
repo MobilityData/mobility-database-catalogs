@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 106,
+    "data_type": "gtfs",
+    "provider": "Corona Cruiser",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Corona",
+        "bounding_box": {
+            "minimum_latitude": 33.813968645208,
+            "maximum_latitude": 33.8990059361134,
+            "minimum_longitude": -117.6013863782,
+            "maximum_longitude": -117.50625785349,
+            "extracted_on": "2022-03-14T16:47:29+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/corona-ca-us/corona-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-corona-cruiser-gtfs-106.zip?alt=media"
+    }
+}

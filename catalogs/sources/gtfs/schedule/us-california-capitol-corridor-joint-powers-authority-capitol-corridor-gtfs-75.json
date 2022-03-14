@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 75,
+    "data_type": "gtfs",
+    "provider": "Capitol Corridor Joint Powers Authority (Capitol Corridor)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Oakland",
+        "bounding_box": {
+            "minimum_latitude": 37.329935,
+            "maximum_latitude": 39.099809,
+            "minimum_longitude": -122.410306,
+            "maximum_longitude": -120.952693,
+            "extracted_on": "2022-03-14T16:43:39+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.capitolcorridor.org/googletransit/GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-capitol-corridor-joint-powers-authority-capitol-corridor-gtfs-75.zip?alt=media",
+        "license": "https://www.capitolcorridor.org/developer_resources/#terms"
+    }
+}

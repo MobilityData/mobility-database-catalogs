@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 102,
+    "data_type": "gtfs",
+    "provider": "Anaheim Resort Transportation (ART)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Anaheim",
+        "bounding_box": {
+            "minimum_latitude": 33.77473,
+            "maximum_latitude": 33.85486,
+            "minimum_longitude": -117.99815,
+            "maximum_longitude": -117.83989,
+            "extracted_on": "2022-03-14T16:47:23+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/anaheim-ca-us/anaheim-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-anaheim-resort-transportation-art-gtfs-102.zip?alt=media"
+    }
+}

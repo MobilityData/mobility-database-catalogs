@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 88,
+    "data_type": "gtfs",
+    "provider": "Merced County Transit (The Bus)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Merced",
+        "bounding_box": {
+            "minimum_latitude": 36.9645033416456,
+            "maximum_latitude": 37.5217855174328,
+            "minimum_longitude": -121.020239964565,
+            "maximum_longitude": -120.248,
+            "extracted_on": "2022-03-14T16:46:49+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/mercedthebus-ca-us/mercedthebus-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-merced-county-transit-the-bus-gtfs-88.zip?alt=media"
+    }
+}

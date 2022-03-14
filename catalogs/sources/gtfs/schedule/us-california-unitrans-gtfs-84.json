@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 84,
+    "data_type": "gtfs",
+    "provider": "Unitrans",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Davis",
+        "bounding_box": {
+            "minimum_latitude": 38.530406,
+            "maximum_latitude": 38.573359,
+            "minimum_longitude": -121.789079,
+            "maximum_longitude": -121.683489,
+            "extracted_on": "2022-03-14T16:44:03+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://unitrans.ucdavis.edu/media/gtfs/Unitrans_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-unitrans-gtfs-84.zip?alt=media",
+        "license": "https://unitrans.ucdavis.edu/about/gtfs/"
+    }
+}

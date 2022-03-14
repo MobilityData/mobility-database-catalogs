@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 130,
+    "data_type": "gtfs",
+    "provider": "Cherriots",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Salem",
+        "bounding_box": {
+            "minimum_latitude": 44.749211,
+            "maximum_latitude": 45.310938,
+            "minimum_longitude": -123.31752,
+            "maximum_longitude": -122.416812,
+            "extracted_on": "2022-03-14T16:48:37+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.cherriots.org/media/doc/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-cherriots-gtfs-130.zip?alt=media",
+        "license": "https://www.cherriots.org/datalicense/"
+    }
+}

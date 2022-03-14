@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 164,
+    "data_type": "gtfs",
+    "provider": "Grand Valley Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "bounding_box": {
+            "minimum_latitude": 39.03089843,
+            "maximum_latitude": 39.16440652,
+            "minimum_longitude": -108.73842357,
+            "maximum_longitude": -108.34844192,
+            "extracted_on": "2022-03-14T16:51:11+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://emap.mesacounty.us/datadownload/Google_Transit_Feed/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-grand-valley-transit-gtfs-164.zip?alt=media"
+    }
+}

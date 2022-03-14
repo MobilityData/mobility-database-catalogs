@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 51,
+    "data_type": "gtfs",
+    "provider": "Mission Bay Transportation Management Association (TMA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "San Francisco",
+        "bounding_box": {
+            "minimum_latitude": 37.766910305944,
+            "maximum_latitude": 37.7919901456108,
+            "minimum_longitude": -122.41602803586,
+            "maximum_longitude": -122.38623989798,
+            "extracted_on": "2022-03-14T16:42:25+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/missionbaytma-ca-us/missionbaytma-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-mission-bay-transportation-management-association-tma-gtfs-51.zip?alt=media"
+    }
+}

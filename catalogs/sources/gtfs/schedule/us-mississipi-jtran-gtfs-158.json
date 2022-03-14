@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 158,
+    "data_type": "gtfs",
+    "provider": "JTRAN",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Mississipi",
+        "municipality": "Jackson",
+        "bounding_box": {
+            "minimum_latitude": 32.2419270099218,
+            "maximum_latitude": 32.4002295047721,
+            "minimum_longitude": -90.27725556,
+            "maximum_longitude": -90.1110177815618,
+            "extracted_on": "2022-03-14T16:51:02+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/jatran-ms-us/jatran-ms-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-mississipi-jtran-gtfs-158.zip?alt=media"
+    }
+}

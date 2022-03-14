@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 53,
+    "data_type": "gtfs",
+    "provider": "Bay Area Rapid Transit (BART)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "San Francisco",
+        "bounding_box": {
+            "minimum_latitude": 37.368473,
+            "maximum_latitude": 38.01891,
+            "minimum_longitude": -122.468908,
+            "maximum_longitude": -121.780346,
+            "extracted_on": "2022-03-14T16:42:29+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.bart.gov/dev/schedules/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-bay-area-rapid-transit-bart-gtfs-53.zip?alt=media",
+        "license": "http://www.bart.gov/schedules/developers/developer-license-agreement"
+    }
+}

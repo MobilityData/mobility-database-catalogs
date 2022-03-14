@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 122,
+    "data_type": "gtfs",
+    "provider": "Regional Transportation Commission (RTC)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Nevada",
+        "bounding_box": {
+            "minimum_latitude": 39.157417,
+            "maximum_latitude": 39.65477,
+            "minimum_longitude": -119.897018,
+            "maximum_longitude": -119.697891,
+            "extracted_on": "2022-03-14T16:48:22+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/rtc-nv-us/rtc-nv-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-nevada-regional-transportation-commission-rtc-gtfs-122.zip?alt=media",
+        "license": "https://www.rtcwashoe.com/terms-of-use/"
+    }
+}

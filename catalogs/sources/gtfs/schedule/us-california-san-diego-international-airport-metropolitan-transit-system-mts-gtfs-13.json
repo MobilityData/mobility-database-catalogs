@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 13,
+    "data_type": "gtfs",
+    "provider": "San Diego International Airport, Metropolitan Transit System (MTS)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "San Diego",
+        "bounding_box": {
+            "minimum_latitude": 32.542819141808,
+            "maximum_latitude": 33.256886800725,
+            "minimum_longitude": -117.277923661848,
+            "maximum_longitude": -116.184457875596,
+            "extracted_on": "2022-03-14T16:39:15+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.sdmts.com/google_transit_files/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-san-diego-international-airport-metropolitan-transit-system-mts-gtfs-13.zip?alt=media",
+        "license": "https://www.sdmts.com/business-center-developers/terms-and-conditions"
+    }
+}

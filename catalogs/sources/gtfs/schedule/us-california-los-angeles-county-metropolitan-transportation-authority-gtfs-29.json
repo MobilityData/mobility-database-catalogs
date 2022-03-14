@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 29,
+    "data_type": "gtfs",
+    "provider": " Los Angeles County Metropolitan Transportation Authority",
+    "name": "Bus",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Los Angeles",
+        "bounding_box": {
+            "minimum_latitude": 33.706853,
+            "maximum_latitude": 34.326157,
+            "minimum_longitude": -118.860915,
+            "maximum_longitude": -117.913475,
+            "extracted_on": "2022-03-14T16:41:09+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gitlab.com/LACMTA/gtfs_bus/raw/master/gtfs_bus.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-los-angeles-county-metropolitan-transportation-authority-gtfs-29.zip?alt=media",
+        "license": "http://developer.metro.net/the-basics/policies/terms-and-conditions/"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 117,
+    "data_type": "gtfs",
+    "provider": "Trinity Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Redding",
+        "bounding_box": {
+            "minimum_latitude": 40.552313101815,
+            "maximum_latitude": 40.939975,
+            "minimum_longitude": -123.631417798777,
+            "maximum_longitude": -122.353498489549,
+            "extracted_on": "2022-03-14T16:48:09+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/weaverville-ca-us/weaverville-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-trinity-transit-gtfs-117.zip?alt=media"
+    }
+}

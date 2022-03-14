@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 57,
+    "data_type": "gtfs",
+    "provider": "Santa Cruz Metropolitan Transit District",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Santa Cruz",
+        "bounding_box": {
+            "minimum_latitude": 36.90448,
+            "maximum_latitude": 37.338436,
+            "minimum_longitude": -122.195023,
+            "maximum_longitude": -121.732437,
+            "extracted_on": "2022-03-14T16:42:51+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://scmtd.com/google_transit/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-santa-cruz-metropolitan-transit-district-gtfs-57.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 38,
+    "data_type": "gtfs",
+    "provider": "Culver City Bus ",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Culver City",
+        "bounding_box": {
+            "minimum_latitude": 33.929593,
+            "maximum_latitude": 34.068294,
+            "minimum_longitude": -118.471525,
+            "maximum_longitude": -118.36869,
+            "extracted_on": "2022-03-14T16:41:42+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.culvercity.org/files/assets/public/documents/information-technology/maps/culvergtfs_06_01_2021.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-culver-city-bus-gtfs-38.zip?alt=media"
+    }
+}

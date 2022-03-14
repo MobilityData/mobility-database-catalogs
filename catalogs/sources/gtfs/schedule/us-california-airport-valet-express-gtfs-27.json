@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 27,
+    "data_type": "gtfs",
+    "provider": "Airport Valet Express",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Bakersfield",
+        "bounding_box": {
+            "minimum_latitude": 33.942609,
+            "maximum_latitude": 35.3533707819563,
+            "minimum_longitude": -119.062001238098,
+            "maximum_longitude": -118.398682,
+            "extracted_on": "2022-03-14T16:40:54+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/airportvaletexpress-ca-us/airportvaletexpress-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-airport-valet-express-gtfs-27.zip?alt=media"
+    }
+}

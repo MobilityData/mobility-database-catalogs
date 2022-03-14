@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 47,
+    "data_type": "gtfs",
+    "provider": "Kern Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Bakersfield",
+        "bounding_box": {
+            "minimum_latitude": 34.4136741299023,
+            "maximum_latitude": 35.77525384,
+            "minimum_longitude": -119.694137,
+            "maximum_longitude": -117.6462533,
+            "extracted_on": "2022-03-14T16:42:03+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/kerncounty-ca-us/kerncounty-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-kern-transit-gtfs-47.zip?alt=media"
+    }
+}

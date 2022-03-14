@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 149,
+    "data_type": "gtfs",
+    "provider": "Valley Metro (VM)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Arizona",
+        "municipality": "Phoenix",
+        "bounding_box": {
+            "minimum_latitude": 32.382706,
+            "maximum_latitude": 33.743306,
+            "minimum_longitude": -112.872185,
+            "maximum_longitude": -111.660913,
+            "extracted_on": "2022-03-14T16:49:28+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://phoenixopendata.com/dataset/3eae9a4a-98b9-40c8-8df7-8c00c1756235/resource/28ccc0a5-49c8-495c-b91f-193de5ce2cb7/download/googletransit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-arizona-valley-metro-vm-gtfs-149.zip?alt=media",
+        "license": "http://www.opendefinition.org/licenses/odc-by"
+    }
+}

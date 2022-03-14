@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 90,
+    "data_type": "gtfs",
+    "provider": "Yosemite Area Regional Transportation System (YARTS)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Merced",
+        "bounding_box": {
+            "minimum_latitude": 36.738144,
+            "maximum_latitude": 37.980406,
+            "minimum_longitude": -120.515457,
+            "maximum_longitude": -118.964912,
+            "extracted_on": "2022-03-14T16:46:55+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/yosemite-ca-us/yosemite-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-yosemite-area-regional-transportation-system-yarts-gtfs-90.zip?alt=media"
+    }
+}

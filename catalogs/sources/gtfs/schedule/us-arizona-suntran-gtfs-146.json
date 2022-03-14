@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 146,
+    "data_type": "gtfs",
+    "provider": "SunTran",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Arizona",
+        "municipality": "Tucson",
+        "bounding_box": {
+            "minimum_latitude": 31.868367,
+            "maximum_latitude": 32.484435,
+            "minimum_longitude": -112.872267,
+            "maximum_longitude": -110.772465,
+            "extracted_on": "2022-03-14T16:49:15+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.suntran.com/wp-content/uploads/2021/08/SunTranGTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-arizona-suntran-gtfs-146.zip?alt=media",
+        "license": "https://www.suntran.com/developers_terms.php"
+    }
+}

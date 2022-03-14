@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 33,
+    "data_type": "gtfs",
+    "provider": "Thousand Oaks Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Thousand Oaks",
+        "bounding_box": {
+            "minimum_latitude": 34.021383769332,
+            "maximum_latitude": 34.285345,
+            "minimum_longitude": -118.981959,
+            "maximum_longitude": -118.815668825,
+            "extracted_on": "2022-03-14T16:41:25+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/thousandoaks-ca-us/thousandoaks-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-thousand-oaks-transit-gtfs-33.zip?alt=media"
+    }
+}

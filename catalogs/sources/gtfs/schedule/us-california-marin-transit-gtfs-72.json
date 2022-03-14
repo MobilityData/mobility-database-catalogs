@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 72,
+    "data_type": "gtfs",
+    "provider": "Marin Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "San Francisco",
+        "bounding_box": {
+            "minimum_latitude": 37.857136,
+            "maximum_latitude": 38.124256,
+            "minimum_longitude": -122.851524,
+            "maximum_longitude": -122.4561,
+            "extracted_on": "2022-03-14T16:43:31+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.marintransit.org/data/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-marin-transit-gtfs-72.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 46,
+    "data_type": "gtfs",
+    "provider": "Golden Empire Transit District (GET)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Bakersfield",
+        "bounding_box": {
+            "minimum_latitude": 34.976628,
+            "maximum_latitude": 35.447091,
+            "minimum_longitude": -119.145718,
+            "maximum_longitude": -118.91409,
+            "extracted_on": "2022-03-14T16:41:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://eta.getbus.org/rtt/public/utility/gtfs.aspx",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-golden-empire-transit-district-get-gtfs-46.zip?alt=media"
+    }
+}

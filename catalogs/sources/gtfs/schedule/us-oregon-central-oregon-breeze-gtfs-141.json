@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 141,
+    "data_type": "gtfs",
+    "provider": "Central Oregon Breeze",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Bend",
+        "bounding_box": {
+            "minimum_latitude": 44.058324,
+            "maximum_latitude": 45.589073,
+            "minimum_longitude": -122.677383,
+            "maximum_longitude": -121.13298,
+            "extracted_on": "2022-03-14T16:49:05+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/cobreeze-or-us/cobreeze-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-central-oregon-breeze-gtfs-141.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 39,
+    "data_type": "gtfs",
+    "provider": "Spirit Bus",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Monterey Park",
+        "bounding_box": {
+            "minimum_latitude": 34.0365252,
+            "maximum_latitude": 34.0697248,
+            "minimum_longitude": -118.1686876,
+            "maximum_longitude": -118.1088128,
+            "extracted_on": "2022-03-14T16:41:43+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/montereypark-ca-us/montereypark-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-spirit-bus-gtfs-39.zip?alt=media"
+    }
+}

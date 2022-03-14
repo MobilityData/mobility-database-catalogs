@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 161,
+    "data_type": "gtfs",
+    "provider": "Cottonwood Area Transit (CAT)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Arizona",
+        "municipality": "Cottonwood",
+        "bounding_box": {
+            "minimum_latitude": 34.6901,
+            "maximum_latitude": 34.87282,
+            "minimum_longitude": -112.06924,
+            "maximum_longitude": -111.76015,
+            "extracted_on": "2022-03-14T16:51:06+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/cottonwood-az-us/cottonwood-az-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-arizona-cottonwood-area-transit-cat-gtfs-161.zip?alt=media"
+    }
+}

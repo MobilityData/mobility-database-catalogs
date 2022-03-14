@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 131,
+    "data_type": "gtfs",
+    "provider": "City 2 City Shuttle",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Eugene",
+        "bounding_box": {
+            "minimum_latitude": 44.0433463805757,
+            "maximum_latitude": 45.5891390943276,
+            "minimum_longitude": -123.074482932092,
+            "maximum_longitude": -122.592041363794,
+            "extracted_on": "2022-03-14T16:48:38+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/citytocityshuttle-or-us/citytocityshuttle-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-city-2-city-shuttle-gtfs-131.zip?alt=media"
+    }
+}

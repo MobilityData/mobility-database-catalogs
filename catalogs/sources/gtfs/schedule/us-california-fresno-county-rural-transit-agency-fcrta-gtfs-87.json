@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 87,
+    "data_type": "gtfs",
+    "provider": "Fresno County Rural Transit Agency (FCRTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Fresno",
+        "bounding_box": {
+            "minimum_latitude": 36.134471,
+            "maximum_latitude": 36.868542,
+            "minimum_longitude": -120.463387,
+            "maximum_longitude": -119.312622,
+            "extracted_on": "2022-03-14T16:46:46+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/fresnocounty-ca-us/fresnocounty-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-fresno-county-rural-transit-agency-fcrta-gtfs-87.zip?alt=media"
+    }
+}

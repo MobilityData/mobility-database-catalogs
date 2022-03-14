@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 74,
+    "data_type": "gtfs",
+    "provider": "Santa Rosa CityBus",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Santa Rosa",
+        "bounding_box": {
+            "minimum_latitude": 38.401882,
+            "maximum_latitude": 38.486115,
+            "minimum_longitude": -122.769814,
+            "maximum_longitude": -122.653511,
+            "extracted_on": "2022-03-14T16:43:36+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://srcity.org/DocumentCenter/View/21635/google_transit",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-santa-rosa-citybus-gtfs-74.zip?alt=media"
+    }
+}

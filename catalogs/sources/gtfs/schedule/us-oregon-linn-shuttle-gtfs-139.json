@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 139,
+    "data_type": "gtfs",
+    "provider": "Linn Shuttle",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Sweet Home",
+        "bounding_box": {
+            "minimum_latitude": 44.348301,
+            "maximum_latitude": 44.6391624771784,
+            "minimum_longitude": -123.115110397339,
+            "maximum_longitude": -121.996021,
+            "extracted_on": "2022-03-14T16:49:01+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/linnshuttle-or-us/linnshuttle-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-linn-shuttle-gtfs-139.zip?alt=media",
+        "license": "https://oregon-gtfs.trilliumtransit.com"
+    }
+}

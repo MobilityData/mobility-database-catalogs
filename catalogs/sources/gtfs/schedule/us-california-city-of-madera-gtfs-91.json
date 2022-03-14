@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 91,
     "data_type": "gtfs",
-    "provider": "City of Madera ",
+    "provider": "City of Madera",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

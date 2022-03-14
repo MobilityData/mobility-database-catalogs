@@ -4,8 +4,8 @@
     "provider": "São Paulo Transporte (SPTrans)",
     "location": {
         "country_code": "BR",
-        "subdivision_name": "São Paulo ",
-        "municipality": "São Paulo ",
+        "subdivision_name": "São Paulo",
+        "municipality": "São Paulo",
         "bounding_box": {
             "minimum_latitude": -23.911109,
             "maximum_latitude": -23.195643,

@@ -5,7 +5,7 @@
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
-        "municipality": "Santa Monica ",
+        "municipality": "Santa Monica",
         "bounding_box": {
             "minimum_latitude": 33.929498,
             "maximum_latitude": 34.075669,

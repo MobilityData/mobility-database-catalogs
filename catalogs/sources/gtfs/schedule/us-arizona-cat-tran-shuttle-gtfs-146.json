@@ -5,7 +5,7 @@
     "location": {
         "country_code": "US",
         "subdivision_name": "Arizona",
-        "municipality": "Tucson ",
+        "municipality": "Tucson",
         "bounding_box": {
             "minimum_latitude": 32.2176728,
             "maximum_latitude": 32.2717141860996,

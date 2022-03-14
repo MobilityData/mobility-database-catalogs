@@ -4,7 +4,7 @@
     "provider": "Rocky Mountain National Park Shuttles",
     "location": {
         "country_code": "US",
-        "subdivision_name": "Colorado ",
+        "subdivision_name": "Colorado",
         "bounding_box": {
             "minimum_latitude": 40.310401,
             "maximum_latitude": 40.378788,

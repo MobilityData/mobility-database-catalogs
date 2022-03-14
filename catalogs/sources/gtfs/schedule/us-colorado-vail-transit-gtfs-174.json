@@ -4,7 +4,7 @@
     "provider": "Vail Transit",
     "location": {
         "country_code": "US",
-        "subdivision_name": "Colorado ",
+        "subdivision_name": "Colorado",
         "municipality": "Vail",
         "bounding_box": {
             "minimum_latitude": 39.6184584,

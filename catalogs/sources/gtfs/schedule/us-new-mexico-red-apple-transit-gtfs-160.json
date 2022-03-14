@@ -5,7 +5,7 @@
     "location": {
         "country_code": "US",
         "subdivision_name": "New Mexico",
-        "municipality": "Farmington ",
+        "municipality": "Farmington",
         "bounding_box": {
             "minimum_latitude": 36.7009555,
             "maximum_latitude": 36.8269741,

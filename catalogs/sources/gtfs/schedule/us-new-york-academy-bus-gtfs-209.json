@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 209,
+    "data_type": "gtfs",
+    "provider": "Academy Bus",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "New York City",
+        "bounding_box": {
+            "minimum_latitude": 39.951653,
+            "maximum_latitude": 40.764429,
+            "minimum_longitude": -74.891731,
+            "maximum_longitude": -73.971167,
+            "extracted_on": "2022-03-15T17:42:33+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Academy_Express_-_Staten_Island.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-academy-bus-gtfs-209.zip?alt=media"
+    }
+}

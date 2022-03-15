@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 257,
+    "data_type": "gtfs",
+    "provider": "Clackamas Community College (CCC) Xpress",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "bounding_box": {
+            "minimum_latitude": 45.3220761144049,
+            "maximum_latitude": 45.43618452638,
+            "minimum_longitude": -122.582843,
+            "maximum_longitude": -122.568429,
+            "extracted_on": "2022-03-15T17:44:20+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/cccxpress-or-us/cccxpress-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-clackamas-community-college-ccc-xpress-gtfs-257.zip?alt=media"
+    }
+}

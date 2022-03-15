@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 253,
+    "data_type": "gtfs",
+    "provider": "Ride Connection",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Portland",
+        "bounding_box": {
+            "minimum_latitude": 45.147045,
+            "maximum_latitude": 45.617867,
+            "minimum_longitude": -123.143750977524,
+            "maximum_longitude": -121.996403,
+            "extracted_on": "2022-03-15T17:44:16+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/rideconnection-or-us/rideconnection-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-ride-connection-gtfs-253.zip?alt=media"
+    }
+}

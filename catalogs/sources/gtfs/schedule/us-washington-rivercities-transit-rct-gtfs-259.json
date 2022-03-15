@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 259,
+    "data_type": "gtfs",
+    "provider": "RiverCities Transit (RCT)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "municipality": "Longview",
+        "bounding_box": {
+            "minimum_latitude": 46.1171342383932,
+            "maximum_latitude": 46.17482997,
+            "minimum_longitude": -123.023364220386,
+            "maximum_longitude": -122.8794183,
+            "extracted_on": "2022-03-15T17:44:25+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/rivercitiestransit-wa-us/rivercitiestransit-wa-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-rivercities-transit-rct-gtfs-259.zip?alt=media"
+    }
+}

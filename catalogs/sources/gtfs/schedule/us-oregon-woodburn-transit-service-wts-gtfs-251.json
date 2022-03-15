@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 251,
+    "data_type": "gtfs",
+    "provider": "Woodburn Transit Service (WTS)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Woodburn",
+        "bounding_box": {
+            "minimum_latitude": 44.979376,
+            "maximum_latitude": 45.1565210390247,
+            "minimum_longitude": -122.979012,
+            "maximum_longitude": -122.830040925148,
+            "extracted_on": "2022-03-15T17:44:13+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/woodburn-or-us/woodburn-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-woodburn-transit-service-wts-gtfs-251.zip?alt=media"
+    }
+}

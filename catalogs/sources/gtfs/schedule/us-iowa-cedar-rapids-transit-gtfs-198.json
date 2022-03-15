@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 198,
+    "data_type": "gtfs",
+    "provider": "Cedar Rapids Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Iowa",
+        "municipality": "Cedar Rapids",
+        "bounding_box": {
+            "minimum_latitude": 41.88927863,
+            "maximum_latitude": 42.05866359,
+            "minimum_longitude": -91.75489032,
+            "maximum_longitude": -91.5454324636,
+            "extracted_on": "2022-03-15T17:41:39+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/cedarrapids-ia-us/cedarrapids-ia-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-iowa-cedar-rapids-transit-gtfs-198.zip?alt=media"
+    }
+}

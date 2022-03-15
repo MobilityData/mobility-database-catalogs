@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 186,
+    "data_type": "gtfs",
+    "provider": "Jonesboro Economical Transportation (JET)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Arkansas",
+        "municipality": "Jonesboro",
+        "bounding_box": {
+            "minimum_latitude": 35.78435,
+            "maximum_latitude": 35.87903,
+            "minimum_longitude": -90.72583,
+            "maximum_longitude": -90.62452,
+            "extracted_on": "2022-03-15T17:40:56+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.jonesboro.org/DocumentCenter/View/2432",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-arkansas-jonesboro-economical-transportation-jet-gtfs-186.zip?alt=media"
+    }
+}

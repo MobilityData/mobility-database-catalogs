@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 225,
+    "data_type": "gtfs",
+    "provider": "Anchorage People Mover",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Alaska",
+        "municipality": "Anchorage",
+        "bounding_box": {
+            "minimum_latitude": 61.099553,
+            "maximum_latitude": 61.327765,
+            "minimum_longitude": -149.979292,
+            "maximum_longitude": -149.570576,
+            "extracted_on": "2022-03-15T17:43:02+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://gtfs.muni.org/People_Mover.gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-alaska-anchorage-people-mover-gtfs-225.zip?alt=media"
+    }
+}

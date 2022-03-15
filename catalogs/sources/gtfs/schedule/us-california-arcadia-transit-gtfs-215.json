@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 215,
+    "data_type": "gtfs",
+    "provider": "Arcadia Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Arcadia",
+        "bounding_box": {
+            "minimum_latitude": 34.107294,
+            "maximum_latitude": 34.152812,
+            "minimum_longitude": -118.064574,
+            "maximum_longitude": -118.018327,
+            "extracted_on": "2022-03-15T17:42:45+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/arcadia-ca-us/arcadia-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-arcadia-transit-gtfs-215.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 227,
+    "data_type": "gtfs",
+    "provider": "Bellflower Bus",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Bellflower",
+        "bounding_box": {
+            "minimum_latitude": 33.865684,
+            "maximum_latitude": 33.909496,
+            "minimum_longitude": -118.142691,
+            "maximum_longitude": -118.108606,
+            "extracted_on": "2022-03-15T17:43:05+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/bellflower-ca-us/bellflower-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-bellflower-bus-gtfs-227.zip?alt=media"
+    }
+}

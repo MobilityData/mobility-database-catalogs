@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 187,
+    "data_type": "gtfs",
+    "provider": "Kansas City Area Transportation Authority (KCATA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Missouri",
+        "municipality": "Kansas City",
+        "bounding_box": {
+            "minimum_latitude": 38.767456,
+            "maximum_latitude": 39.30926,
+            "minimum_longitude": -95.262773,
+            "maximum_longitude": -94.27259,
+            "extracted_on": "2022-03-15T17:41:03+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.kc-metro.com/gtf/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-missouri-kansas-city-area-transportation-authority-kcata-gtfs-187.zip?alt=media"
+    }
+}

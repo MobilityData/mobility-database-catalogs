@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 230,
+    "data_type": "gtfs",
+    "provider": "Bent County Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Las Animas",
+        "bounding_box": {
+            "minimum_latitude": 37.971134,
+            "maximum_latitude": 38.153546,
+            "minimum_longitude": -103.555608,
+            "maximum_longitude": -102.609512,
+            "extracted_on": "2022-03-15T17:43:08+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/bentcounty-co-us/bentcounty-co-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-bent-county-transit-gtfs-230.zip?alt=media"
+    }
+}

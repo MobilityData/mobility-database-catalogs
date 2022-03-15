@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 243,
+    "data_type": "gtfs",
+    "provider": "Inter-Island Ferry",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Alaska",
+        "municipality": "Klawock ",
+        "bounding_box": {
+            "minimum_latitude": 55.267992850502,
+            "maximum_latitude": 55.4904042,
+            "minimum_longitude": -132.62209827778,
+            "maximum_longitude": -131.5681712827,
+            "extracted_on": "2022-03-15T17:43:34+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/interisland-ak-us/interisland-ak-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-alaska-inter-island-ferry-gtfs-243.zip?alt=media"
+    }
+}

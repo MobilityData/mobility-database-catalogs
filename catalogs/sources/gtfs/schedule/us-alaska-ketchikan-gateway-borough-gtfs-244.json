@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 244,
+    "data_type": "gtfs",
+    "provider": "Ketchikan Gateway Borough",
+    "name": "The Bus",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Alaska",
+        "municipality": "Ketchikan",
+        "bounding_box": {
+            "minimum_latitude": 55.3012741,
+            "maximum_latitude": 55.46752692,
+            "minimum_longitude": -131.8199521,
+            "maximum_longitude": -131.5323131,
+            "extracted_on": "2022-03-15T17:43:36+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/kgb-ak-us/kgb-ak-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-alaska-ketchikan-gateway-borough-gtfs-244.zip?alt=media"
+    }
+}

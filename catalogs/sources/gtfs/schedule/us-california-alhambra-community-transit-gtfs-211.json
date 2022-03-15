@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 211,
+    "data_type": "gtfs",
+    "provider": "Alhambra Community Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Alhambra",
+        "bounding_box": {
+            "minimum_latitude": 34.0632123260011,
+            "maximum_latitude": 34.099084205323,
+            "minimum_longitude": -118.172849994219,
+            "maximum_longitude": -118.111230539029,
+            "extracted_on": "2022-03-15T17:42:37+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/alhambra-ca-us/alhambra-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-alhambra-community-transit-gtfs-211.zip?alt=media"
+    }
+}

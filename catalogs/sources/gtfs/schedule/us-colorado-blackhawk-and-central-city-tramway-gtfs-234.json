@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 234,
+    "data_type": "gtfs",
+    "provider": "Blackhawk and Central City Tramway",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "bounding_box": {
+            "minimum_latitude": 39.798227,
+            "maximum_latitude": 39.8021812172629,
+            "minimum_longitude": -105.51270199162,
+            "maximum_longitude": -105.482782,
+            "extracted_on": "2022-03-15T17:43:21+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/blackhawktramway-co-us/blackhawktramway-co-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-blackhawk-and-central-city-tramway-gtfs-234.zip?alt=media"
+    }
+}

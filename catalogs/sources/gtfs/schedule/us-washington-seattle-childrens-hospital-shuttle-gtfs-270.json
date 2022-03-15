@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 270,
+    "data_type": "gtfs",
+    "provider": "Seattle Children's Hospital Shuttle",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "bounding_box": {
+            "minimum_latitude": 47.650082,
+            "maximum_latitude": 47.678731,
+            "minimum_longitude": -122.317474,
+            "maximum_longitude": -122.256796,
+            "extracted_on": "2022-03-15T17:45:17+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.sound.obaweb.org/prod/98_gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-seattle-childrens-hospital-shuttle-gtfs-270.zip?alt=media"
+    }
+}

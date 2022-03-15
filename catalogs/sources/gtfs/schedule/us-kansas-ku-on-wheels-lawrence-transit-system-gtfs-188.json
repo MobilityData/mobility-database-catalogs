@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 188,
+    "data_type": "gtfs",
+    "provider": "KU on Wheels & Lawrence Transit System",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Kansas",
+        "municipality": "Lawrence",
+        "bounding_box": {
+            "minimum_latitude": 38.92462422,
+            "maximum_latitude": 39.000906,
+            "minimum_longitude": -95.33271,
+            "maximum_longitude": -95.18171654,
+            "extracted_on": "2022-03-15T17:41:06+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://assets.lawrenceks.org/assets/gis/google-transit/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-kansas-ku-on-wheels-lawrence-transit-system-gtfs-188.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 214,
+    "data_type": "gtfs",
+    "provider": "Antelope Valley Transit Authority (AVTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Lancaster",
+        "bounding_box": {
+            "minimum_latitude": 34.043438,
+            "maximum_latitude": 34.718879,
+            "minimum_longitude": -118.597604,
+            "maximum_longitude": -117.8236947,
+            "extracted_on": "2022-03-15T17:42:44+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.avta.com/userfiles/files/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-antelope-valley-transit-authority-avta-gtfs-214.zip?alt=media"
+    }
+}

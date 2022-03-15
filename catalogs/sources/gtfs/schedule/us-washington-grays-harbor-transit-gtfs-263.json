@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 263,
+    "data_type": "gtfs",
+    "provider": "Grays Harbor Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "municipality": "Aberdeen",
+        "bounding_box": {
+            "minimum_latitude": 46.7172576515543,
+            "maximum_latitude": 47.474577,
+            "minimum_longitude": -124.293883,
+            "maximum_longitude": -122.900592684745,
+            "extracted_on": "2022-03-15T17:44:31+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://mjcaction.com/MJC_GTFS_Public/graysharbor_google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-grays-harbor-transit-gtfs-263.zip?alt=media"
+    }
+}

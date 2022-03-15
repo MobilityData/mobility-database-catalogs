@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 204,
+    "data_type": "gtfs",
+    "provider": "Mason City Public Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Iowa",
+        "municipality": "Mason City",
+        "bounding_box": {
+            "minimum_latitude": 43.12889880784,
+            "maximum_latitude": 43.169472329595,
+            "minimum_longitude": -93.267866896241,
+            "maximum_longitude": -93.130789378269,
+            "extracted_on": "2022-03-15T17:41:50+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/masoncity-ia-us/masoncity-ia-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-iowa-mason-city-public-transit-gtfs-204.zip?alt=media"
+    }
+}

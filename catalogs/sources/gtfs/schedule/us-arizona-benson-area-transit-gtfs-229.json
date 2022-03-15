@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 229,
+    "data_type": "gtfs",
+    "provider": "Benson Area Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Arizona",
+        "municipality": "Benson",
+        "bounding_box": {
+            "minimum_latitude": 31.9605125138286,
+            "maximum_latitude": 31.9730373580076,
+            "minimum_longitude": -110.314375760002,
+            "maximum_longitude": -110.285654261814,
+            "extracted_on": "2022-03-15T17:43:07+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/benson-az-us/benson-az-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-arizona-benson-area-transit-gtfs-229.zip?alt=media"
+    }
+}

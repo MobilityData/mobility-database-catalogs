@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 201,
+    "data_type": "gtfs",
+    "provider": "Metro Rock Island County Metropolitan Mass Transit District",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Illinois",
+        "municipality": "Rock Island",
+        "bounding_box": {
+            "minimum_latitude": 41.41090532837012,
+            "maximum_latitude": 41.55671667777778,
+            "minimum_longitude": -90.63877833333332,
+            "maximum_longitude": -90.21917333333334,
+            "extracted_on": "2022-03-15T17:41:47+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.gogreenmetro.com/latest/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-illinois-metro-rock-island-county-metropolitan-mass-transit-district-gtfs-201.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 216,
+    "data_type": "gtfs",
+    "provider": "Arvin Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Arvin",
+        "bounding_box": {
+            "minimum_latitude": 34.9762807989774,
+            "maximum_latitude": 35.4098552664964,
+            "minimum_longitude": -119.038573243251,
+            "maximum_longitude": -118.824334301576,
+            "extracted_on": "2022-03-15T17:42:46+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/arvin-ca-us/arvin-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-arvin-transit-gtfs-216.zip?alt=media"
+    }
+}

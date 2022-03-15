@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 275,
+    "data_type": "gtfs",
+    "provider": "Link Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "municipality": "Wenatchee ",
+        "bounding_box": {
+            "minimum_latitude": 47.2921153198261,
+            "maximum_latitude": 47.8850234593722,
+            "minimum_longitude": -120.674893575413,
+            "maximum_longitude": -119.980455199371,
+            "extracted_on": "2022-03-15T17:45:29+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/linktransit-wa-us/linktransit-wa-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-link-transit-gtfs-275.zip?alt=media"
+    }
+}

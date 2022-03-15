@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 193,
+    "data_type": "gtfs",
+    "provider": "Des Moines Area Regional Transit Authority (DART)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Iowa",
+        "municipality": "Des Moines",
+        "bounding_box": {
+            "minimum_latitude": 41.511765,
+            "maximum_latitude": 41.732874,
+            "minimum_longitude": -93.832726,
+            "maximum_longitude": -93.466485,
+            "extracted_on": "2022-03-15T17:41:30+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.ridedart.com/gtfs/data/gtfsdata",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-iowa-des-moines-area-regional-transit-authority-dart-gtfs-193.zip?alt=media"
+    }
+}

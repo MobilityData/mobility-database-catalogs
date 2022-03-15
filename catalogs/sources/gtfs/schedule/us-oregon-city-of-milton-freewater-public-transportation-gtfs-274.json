@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 274,
+    "data_type": "gtfs",
+    "provider": "City of Milton-Freewater Public Transportation",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Milton-Freewater",
+        "bounding_box": {
+            "minimum_latitude": 45.91563132,
+            "maximum_latitude": 46.065943241891,
+            "minimum_longitude": -118.401544,
+            "maximum_longitude": -118.3308595,
+            "extracted_on": "2022-03-15T17:45:27+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/milton-freewater-or-us/milton-freewater-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-city-of-milton-freewater-public-transportation-gtfs-274.zip?alt=media"
+    }
+}

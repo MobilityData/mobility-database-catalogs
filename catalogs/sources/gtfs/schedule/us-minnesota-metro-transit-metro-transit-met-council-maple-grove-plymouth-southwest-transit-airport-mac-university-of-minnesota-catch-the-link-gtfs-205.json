@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 205,
+    "data_type": "gtfs",
+    "provider": "Metro Transit, Metro Transit (Met Council), Maple Grove, Plymouth, SouthWest Transit, Airport (MAC), University of Minnesota, Catch the Link",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Minnesota",
+        "municipality": "Minneapolis",
+        "bounding_box": {
+            "minimum_latitude": 44.725492,
+            "maximum_latitude": 45.560123,
+            "minimum_longitude": -94.157367,
+            "maximum_longitude": -92.805903,
+            "extracted_on": "2022-03-15T17:42:14+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://svc.metrotransit.org/mtgtfs/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-minnesota-metro-transit-metro-transit-met-council-maple-grove-plymouth-southwest-transit-airport-mac-university-of-minnesota-catch-the-link-gtfs-205.zip?alt=media"
+    }
+}

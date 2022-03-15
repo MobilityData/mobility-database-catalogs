@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 196,
+    "data_type": "gtfs",
+    "provider": "Coralville Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Iowa",
+        "municipality": "Coralville",
+        "bounding_box": {
+            "minimum_latitude": 41.66034191106,
+            "maximum_latitude": 41.75054803919,
+            "minimum_longitude": -91.614688763131,
+            "maximum_longitude": -91.534762424275,
+            "extracted_on": "2022-03-15T17:41:35+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/coralvilletransitsystem-ia-us/coralvilletransitsystem-ia-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-iowa-coralville-transit-gtfs-196.zip?alt=media"
+    }
+}

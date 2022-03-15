@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 210,
+    "data_type": "gtfs",
+    "provider": "Allen County Regional Transit Authority",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Ohio",
+        "municipality": "Lima",
+        "bounding_box": {
+            "minimum_latitude": 40.686444269947,
+            "maximum_latitude": 40.9021584330236,
+            "minimum_longitude": -84.3395975534096,
+            "maximum_longitude": -83.8710286672719,
+            "extracted_on": "2022-03-15T17:42:36+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/acrta-oh-us/acrta-oh-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-ohio-allen-county-regional-transit-authority-gtfs-210.zip?alt=media"
+    }
+}

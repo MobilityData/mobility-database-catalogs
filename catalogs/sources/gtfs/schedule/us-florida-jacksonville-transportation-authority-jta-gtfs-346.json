@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 346,
+    "data_type": "gtfs",
+    "provider": "Jacksonville Transportation Authority (JTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Florida",
+        "municipality": "Jacksonville",
+        "bounding_box": {
+            "minimum_latitude": 29.935837,
+            "maximum_latitude": 30.624756,
+            "minimum_longitude": -81.890433,
+            "maximum_longitude": -81.337585,
+            "extracted_on": "2022-03-15T21:16:43+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://schedules.jtafla.com/schedulesgtfs/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-jacksonville-transportation-authority-jta-gtfs-346.zip?alt=media"
+    }
+}

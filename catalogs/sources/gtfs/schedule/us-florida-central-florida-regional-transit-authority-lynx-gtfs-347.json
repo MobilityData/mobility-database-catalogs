@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 347,
+    "data_type": "gtfs",
+    "provider": "Central Florida Regional Transit Authority (LYNX)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Florida",
+        "municipality": "Orlando",
+        "bounding_box": {
+            "minimum_latitude": 28.10932,
+            "maximum_latitude": 28.814992,
+            "minimum_longitude": -81.67681,
+            "maximum_longitude": -81.205343,
+            "extracted_on": "2022-03-15T21:16:50+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://gtfsrt.golynx.com/gtfsrt/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-central-florida-regional-transit-authority-lynx-gtfs-347.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 343,
+    "data_type": "gtfs",
+    "provider": "SunTran",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Florida",
+        "municipality": "Ocala",
+        "bounding_box": {
+            "minimum_latitude": 29.080028,
+            "maximum_latitude": 29.2235704574326,
+            "minimum_longitude": -82.1875092501465,
+            "maximum_longitude": -81.980081,
+            "extracted_on": "2022-03-15T21:16:33+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/suntran-fl-us/suntran-fl-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-suntran-gtfs-343.zip?alt=media"
+    }
+}

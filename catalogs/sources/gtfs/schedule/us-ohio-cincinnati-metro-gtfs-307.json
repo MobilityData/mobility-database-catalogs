@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 307,
+    "data_type": "gtfs",
+    "provider": "Cincinnati Metro",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Ohio",
+        "municipality": "Cincinnati",
+        "bounding_box": {
+            "minimum_latitude": 39.06428,
+            "maximum_latitude": 39.35716,
+            "minimum_longitude": -84.793912,
+            "maximum_longitude": -84.259938,
+            "extracted_on": "2022-03-15T21:14:24+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.go-metro.com/uploads/GTFS/google_transit_info.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-ohio-cincinnati-metro-gtfs-307.zip?alt=media"
+    }
+}

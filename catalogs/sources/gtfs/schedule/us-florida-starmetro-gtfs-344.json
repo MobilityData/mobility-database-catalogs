@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 344,
+    "data_type": "gtfs",
+    "provider": "StarMetro",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Florida",
+        "municipality": "Tallahassee",
+        "bounding_box": {
+            "minimum_latitude": 30.376031971848,
+            "maximum_latitude": 30.54344948,
+            "minimum_longitude": -84.36447298,
+            "maximum_longitude": -84.20215136,
+            "extracted_on": "2022-03-15T21:16:38+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/starmetro-fl-us/starmetro-fl-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-starmetro-gtfs-344.zip?alt=media"
+    }
+}

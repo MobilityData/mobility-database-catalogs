@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 302,
+    "data_type": "gtfs",
+    "provider": "Corning Erwin Area Transit System (CEATS)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Elmira",
+        "bounding_box": {
+            "minimum_latitude": 42.11544,
+            "maximum_latitude": 42.182297,
+            "minimum_longitude": -77.14164,
+            "maximum_longitude": -76.97059,
+            "extracted_on": "2022-03-15T21:14:15+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Corning_Erwin_Area_Transit_System_CEATS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-corning-erwin-area-transit-system-ceats-gtfs-302.zip?alt=media"
+    }
+}

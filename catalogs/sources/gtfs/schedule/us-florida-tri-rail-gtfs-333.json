@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 333,
+    "data_type": "gtfs",
+    "provider": "Tri-Rail",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Florida",
+        "municipality": "Pompano Beach",
+        "bounding_box": {
+            "minimum_latitude": 25.7959403992,
+            "maximum_latitude": 26.7587432861,
+            "minimum_longitude": -80.2596206665,
+            "maximum_longitude": -80.062538147,
+            "extracted_on": "2022-03-15T21:16:15+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.tri-rail.com/GTDF/Current/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-tri-rail-gtfs-333.zip?alt=media"
+    }
+}

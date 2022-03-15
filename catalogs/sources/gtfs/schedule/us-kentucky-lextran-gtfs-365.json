@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 365,
+    "data_type": "gtfs",
+    "provider": "Lextran",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Kentucky",
+        "municipality": "Lexington",
+        "bounding_box": {
+            "minimum_latitude": 37.97065,
+            "maximum_latitude": 38.108089,
+            "minimum_longitude": -84.604828,
+            "maximum_longitude": -84.40544099999998,
+            "extracted_on": "2022-03-15T21:17:32+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://lextran.com/wp-content/uploads/2021/05/GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-kentucky-lextran-gtfs-365.zip?alt=media"
+    }
+}

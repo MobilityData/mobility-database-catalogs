@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 280,
+    "data_type": "gtfs",
+    "provider": "Island Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "bounding_box": {
+            "minimum_latitude": 47.9232804750302,
+            "maximum_latitude": 48.463003,
+            "minimum_longitude": -122.751929,
+            "maximum_longitude": -122.196879,
+            "extracted_on": "2022-03-15T21:13:24+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/islandtransit-wa-us/islandtransit-wa-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-island-transit-gtfs-280.zip?alt=media"
+    }
+}

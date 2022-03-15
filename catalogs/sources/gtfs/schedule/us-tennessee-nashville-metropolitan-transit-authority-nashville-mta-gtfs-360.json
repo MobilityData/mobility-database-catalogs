@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 360,
+    "data_type": "gtfs",
+    "provider": "Nashville Metropolitan Transit Authority (Nashville MTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Tennessee",
+        "municipality": "Nashville",
+        "bounding_box": {
+            "minimum_latitude": 35.7416,
+            "maximum_latitude": 36.525005,
+            "minimum_longitude": -87.379122,
+            "maximum_longitude": -86.29724,
+            "extracted_on": "2022-03-15T21:17:20+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.nashvillemta.org/GoogleExport/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-tennessee-nashville-metropolitan-transit-authority-nashville-mta-gtfs-360.zip?alt=media"
+    }
+}

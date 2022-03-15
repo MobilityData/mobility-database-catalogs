@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 300,
+    "data_type": "gtfs",
+    "provider": "Catalina Flyer",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "bounding_box": {
+            "minimum_latitude": 33.3447667724262,
+            "maximum_latitude": 33.6028311986186,
+            "minimum_longitude": -118.322060998279,
+            "maximum_longitude": -117.899246237566,
+            "extracted_on": "2022-03-15T21:14:09+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/catalinaflyer-ca-us/catalinaflyer-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-catalina-flyer-gtfs-300.zip?alt=media"
+    }
+}

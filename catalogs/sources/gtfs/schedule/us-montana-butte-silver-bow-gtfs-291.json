@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 291,
+    "data_type": "gtfs",
+    "provider": "Butte-Silver Bow",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Montana",
+        "municipality": "Butte",
+        "bounding_box": {
+            "minimum_latitude": 45.937727,
+            "maximum_latitude": 46.029995,
+            "minimum_longitude": -112.561443,
+            "maximum_longitude": -112.477421,
+            "extracted_on": "2022-03-15T21:13:55+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/butte-mt-us/butte-mt-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-montana-butte-silver-bow-gtfs-291.zip?alt=media"
+    }
+}

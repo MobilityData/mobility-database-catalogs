@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 331,
+    "data_type": "gtfs",
+    "provider": "Miami-Dade Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Florida",
+        "municipality": "Miami",
+        "bounding_box": {
+            "minimum_latitude": 24.71614,
+            "maximum_latitude": 26.123095,
+            "minimum_longitude": -81.075723,
+            "maximum_longitude": -80.12016,
+            "extracted_on": "2022-03-15T21:16:04+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.miamidade.gov/transit/googletransit/current/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-miami-dade-transit-gtfs-331.zip?alt=media"
+    }
+}

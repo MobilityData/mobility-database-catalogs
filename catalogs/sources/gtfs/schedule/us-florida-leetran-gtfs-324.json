@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 324,
+    "data_type": "gtfs",
+    "provider": "LeeTran",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Florida",
+        "municipality": "Fort Myers",
+        "bounding_box": {
+            "minimum_latitude": 26.272102,
+            "maximum_latitude": 26.723837,
+            "minimum_longitude": -82.017588,
+            "maximum_longitude": -81.597666,
+            "extracted_on": "2022-03-15T21:15:05+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.leegov.com/leetran/Documents/GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-leetran-gtfs-324.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 330,
+    "data_type": "gtfs",
+    "provider": "Broward County Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Florida",
+        "municipality": "Fort Lauderdale",
+        "bounding_box": {
+            "minimum_latitude": 25.761776,
+            "maximum_latitude": 26.350899,
+            "minimum_longitude": -80.428505,
+            "maximum_longitude": -80.075905,
+            "extracted_on": "2022-03-15T21:15:55+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.broward.org/bct/documents/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-broward-county-transit-gtfs-330.zip?alt=media"
+    }
+}

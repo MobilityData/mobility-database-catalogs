@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 315,
+    "data_type": "gtfs",
+    "provider": "Corpus Christi Regional Transportation Authority",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Texas",
+        "municipality": "Corpus Christi",
+        "bounding_box": {
+            "minimum_latitude": 27.602014,
+            "maximum_latitude": 27.914794,
+            "minimum_longitude": -97.685155,
+            "maximum_longitude": -97.051109,
+            "extracted_on": "2022-03-15T21:14:37+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.ccrta.org/gtfs/ccrta-gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-texas-corpus-christi-regional-transportation-authority-gtfs-315.zip?alt=media"
+    }
+}

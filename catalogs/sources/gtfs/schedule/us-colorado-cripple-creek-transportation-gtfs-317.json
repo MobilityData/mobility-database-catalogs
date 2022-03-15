@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 317,
+    "data_type": "gtfs",
+    "provider": "Cripple Creek Transportation",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Cripple Creek",
+        "bounding_box": {
+            "minimum_latitude": 38.710403,
+            "maximum_latitude": 38.996448,
+            "minimum_longitude": -105.178926,
+            "maximum_longitude": -105.054586,
+            "extracted_on": "2022-03-15T21:14:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/cripplecreek-co-us/cripplecreek-co-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-cripple-creek-transportation-gtfs-317.zip?alt=media"
+    }
+}

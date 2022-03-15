@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 283,
+    "data_type": "gtfs",
+    "provider": "Washington State Ferries",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "municipality": "Seattle",
+        "bounding_box": {
+            "minimum_latitude": 47.30555,
+            "maximum_latitude": 48.643641,
+            "minimum_longitude": -123.398411,
+            "maximum_longitude": -122.304313,
+            "extracted_on": "2022-03-15T21:13:30+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://business.wsdot.wa.gov/Transit/csv_files/wsf/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-washington-state-ferries-gtfs-283.zip?alt=media"
+    }
+}

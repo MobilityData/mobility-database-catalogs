@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 371,
+    "data_type": "gtfs",
+    "provider": "Buc Shuttle",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Georgia",
+        "municipality": "Atlanta",
+        "bounding_box": {
+            "minimum_latitude": 33.845189225652,
+            "maximum_latitude": 33.852441312646,
+            "minimum_longitude": -84.37951760612631,
+            "maximum_longitude": -84.344229214656,
+            "extracted_on": "2022-03-15T21:18:23+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://documents.atlantaregional.com/transitdata/gtfs_Buc.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-georgia-buc-shuttle-gtfs-371.zip?alt=media"
+    }
+}

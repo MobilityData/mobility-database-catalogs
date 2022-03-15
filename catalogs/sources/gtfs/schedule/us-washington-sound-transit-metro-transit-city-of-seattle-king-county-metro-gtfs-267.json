@@ -16,6 +16,6 @@
     },
     "urls": {
         "direct_download": "http://metro.kingcounty.gov/GTFS/google_transit.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-sound-transit-metro-transit-city-of-seattle---king-county-metro-gtfs-267.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-sound-transit-metro-transit-city-of-seattle-king-county-metro-gtfs-267.zip?alt=media"
     }
 }

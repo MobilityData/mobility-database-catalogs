@@ -16,6 +16,6 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/cambus-ia-us/cambus-ia-us.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-iowa-university-of-iowa---cambus-cambus-gtfs-197.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-iowa-university-of-iowa-cambus-cambus-gtfs-197.zip?alt=media"
     }
 }

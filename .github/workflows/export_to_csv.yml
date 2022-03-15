@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  export-to-csv:
     runs-on: ubuntu-latest
     strategy:
       matrix:

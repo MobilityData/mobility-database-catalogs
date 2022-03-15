@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 281,
+    "data_type": "gtfs",
+    "provider": "Puget Sound Express",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "bounding_box": {
+            "minimum_latitude": 48.1170139763824,
+            "maximum_latitude": 48.5356985322927,
+            "minimum_longitude": -123.015597760677,
+            "maximum_longitude": -122.751901745796,
+            "extracted_on": "2022-03-15T21:13:24+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://mjcaction.com/MJC_GTFS_Public/pse_google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-puget-sound-express-gtfs-281.zip?alt=media"
+    }
+}

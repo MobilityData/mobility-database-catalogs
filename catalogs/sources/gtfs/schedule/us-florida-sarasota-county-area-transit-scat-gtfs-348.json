@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 348,
+    "data_type": "gtfs",
+    "provider": "Sarasota County Area Transit (SCAT)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Florida",
+        "municipality": "Sarasota",
+        "bounding_box": {
+            "minimum_latitude": 27.951516,
+            "maximum_latitude": 28.755067,
+            "minimum_longitude": -80.873802,
+            "maximum_longitude": -80.566966,
+            "extracted_on": "2022-03-15T21:16:53+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/spacecoast-fl-us/spacecoast-fl-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-sarasota-county-area-transit-scat-gtfs-348.zip?alt=media"
+    }
+}

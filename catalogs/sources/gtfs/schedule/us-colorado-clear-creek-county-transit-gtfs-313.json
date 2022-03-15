@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 313,
+    "data_type": "gtfs",
+    "provider": "Clear Creek County Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Georgetown",
+        "bounding_box": {
+            "minimum_latitude": 39.6932238397198,
+            "maximum_latitude": 39.766353,
+            "minimum_longitude": -105.728448,
+            "maximum_longitude": -105.328169,
+            "extracted_on": "2022-03-15T21:14:33+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/clearcreek-co-us/clearcreek-co-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-clear-creek-county-transit-gtfs-313.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 345,
+    "data_type": "gtfs",
+    "provider": "Gainesville Regional Transit System",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Florida",
+        "municipality": "Gainesville",
+        "bounding_box": {
+            "minimum_latitude": 29.6001677847958,
+            "maximum_latitude": 29.7150360778361,
+            "minimum_longitude": -82.4422097140819,
+            "maximum_longitude": -82.2639662041154,
+            "extracted_on": "2022-03-15T21:16:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://ftis.org/PostFileDownload.aspx?id=468A0",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-gainesville-regional-transit-system-gtfs-345.zip?alt=media"
+    }
+}

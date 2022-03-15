@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 328,
+    "data_type": "gtfs",
+    "provider": "Manatee County Area Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Florida",
+        "bounding_box": {
+            "minimum_latitude": 27.337532,
+            "maximum_latitude": 27.811755,
+            "minimum_longitude": -82.780151,
+            "maximum_longitude": -82.451716,
+            "extracted_on": "2022-03-15T21:15:39+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://ftis.org/PostFileDownload.aspx?id=342A0",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-manatee-county-area-transit-gtfs-328.zip?alt=media"
+    }
+}

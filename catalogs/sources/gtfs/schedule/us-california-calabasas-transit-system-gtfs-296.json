@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 296,
+    "data_type": "gtfs",
+    "provider": "Calabasas Transit System",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Los Angeles",
+        "bounding_box": {
+            "minimum_latitude": 34.1267823551685,
+            "maximum_latitude": 34.1646773952993,
+            "minimum_longitude": -118.714712146685,
+            "maximum_longitude": -118.609714786109,
+            "extracted_on": "2022-03-15T21:14:04+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/calabasas-ca-us/calabasas-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-calabasas-transit-system-gtfs-296.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 353,
+    "data_type": "gtfs",
+    "provider": "Huntsville Shuttle",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Alabama",
+        "municipality": "Huntsville",
+        "bounding_box": {
+            "minimum_latitude": 34.665653,
+            "maximum_latitude": 34.793232,
+            "minimum_longitude": -86.678083,
+            "maximum_longitude": -86.540532,
+            "extracted_on": "2022-03-15T21:17:07+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://maps.hsvcity.com/GoogleTransit/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-alabama-huntsville-shuttle-gtfs-353.zip?alt=media"
+    }
+}

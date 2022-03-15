@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 318,
+    "data_type": "gtfs",
+    "provider": "Cudahy Area Rapid Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Cudahy",
+        "bounding_box": {
+            "minimum_latitude": 33.9579518395426,
+            "maximum_latitude": 33.9677414111609,
+            "minimum_longitude": -118.194687121803,
+            "maximum_longitude": -118.174558102071,
+            "extracted_on": "2022-03-15T21:14:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/cudahy-ca-us/cudahy-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-cudahy-area-rapid-transit-gtfs-318.zip?alt=media"
+    }
+}

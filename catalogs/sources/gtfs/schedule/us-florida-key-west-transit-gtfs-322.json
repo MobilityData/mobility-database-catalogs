@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 322,
+    "data_type": "gtfs",
+    "provider": "Key West Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Florida",
+        "municipality": "Key West",
+        "bounding_box": {
+            "minimum_latitude": 24.5477227066457,
+            "maximum_latitude": 24.732427,
+            "minimum_longitude": -81.806246,
+            "maximum_longitude": -81.018977,
+            "extracted_on": "2022-03-15T21:14:54+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/keywest-fl-us/keywest-fl-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-key-west-transit-gtfs-322.zip?alt=media"
+    }
+}

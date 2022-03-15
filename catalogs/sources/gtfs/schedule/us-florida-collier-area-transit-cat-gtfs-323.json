@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 323,
+    "data_type": "gtfs",
+    "provider": "Collier Area Transit (CAT)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Florida",
+        "municipality": "Naples",
+        "bounding_box": {
+            "minimum_latitude": 25.91208645,
+            "maximum_latitude": 26.44474102,
+            "minimum_longitude": -81.828441,
+            "maximum_longitude": -81.38958483,
+            "extracted_on": "2022-03-15T21:14:55+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://ftis.org/PostFileDownload.aspx?id=396A0",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-collier-area-transit-cat-gtfs-323.zip?alt=media"
+    }
+}

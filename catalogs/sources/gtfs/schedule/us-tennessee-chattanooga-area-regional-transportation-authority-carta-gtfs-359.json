@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 359,
+    "data_type": "gtfs",
+    "provider": "Chattanooga Area Regional Transportation Authority (CARTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Tennessee",
+        "municipality": "Chattanooga",
+        "bounding_box": {
+            "minimum_latitude": 34.984097,
+            "maximum_latitude": 35.13868,
+            "minimum_longitude": -85.327397,
+            "maximum_longitude": -85.127349,
+            "extracted_on": "2022-03-15T21:17:15+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.gocarta.org/wp-content/uploads/2020/10/GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-tennessee-chattanooga-area-regional-transportation-authority-carta-gtfs-359.zip?alt=media"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 287,
+    "data_type": "gtfs",
+    "provider": "Community Transit (CT)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "bounding_box": {
+            "minimum_latitude": 47.592129,
+            "maximum_latitude": 48.278539,
+            "minimum_longitude": -122.38471,
+            "maximum_longitude": -121.601001,
+            "extracted_on": "2022-03-15T21:13:44+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.communitytransit.org/docs/default-source/open-data/gtfs/current.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-community-transit-ct-gtfs-287.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 349,
+    "data_type": "gtfs",
+    "provider": "Votran",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Florida",
+        "municipality": "Daytona Beach",
+        "bounding_box": {
+            "minimum_latitude": 28.856002,
+            "maximum_latitude": 29.383995,
+            "minimum_longitude": -81.506774,
+            "maximum_longitude": -80.847351,
+            "extracted_on": "2022-03-15T21:16:56+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://ftis.org/PostFileDownload.aspx?id=425A0",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-votran-gtfs-349.zip?alt=media"
+    }
+}

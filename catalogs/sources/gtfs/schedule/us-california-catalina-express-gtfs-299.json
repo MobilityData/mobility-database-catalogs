@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 299,
+    "data_type": "gtfs",
+    "provider": "Catalina Express",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Long Beach",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2022-03-15T21:14:08+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gitlab.com/LACMTA/gtfs_lax/-/archive/master/gtfs_lax-master.zip?path=catalina_express",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-catalina-express-gtfs-299.zip?alt=media"
+    }
+}

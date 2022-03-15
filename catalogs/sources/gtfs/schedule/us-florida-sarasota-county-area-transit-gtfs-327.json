@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 327,
+    "data_type": "gtfs",
+    "provider": "Sarasota County Area Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Florida",
+        "municipality": "Sarasota",
+        "bounding_box": {
+            "minimum_latitude": 27.038871,
+            "maximum_latitude": 27.493355,
+            "minimum_longitude": -82.587857,
+            "maximum_longitude": -82.205356,
+            "extracted_on": "2022-03-15T21:15:37+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://ftis.org/PostFileDownload.aspx?id=457A0",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-sarasota-county-area-transit-gtfs-327.zip?alt=media"
+    }
+}

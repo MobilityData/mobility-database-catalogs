@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 295,
+    "data_type": "gtfs",
+    "provider": "Streamline",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Montana",
+        "municipality": "Bozeman",
+        "bounding_box": {
+            "minimum_latitude": 45.6541275,
+            "maximum_latitude": 45.7826988079724,
+            "minimum_longitude": -111.184985360032,
+            "maximum_longitude": -110.571949822501,
+            "extracted_on": "2022-03-15T21:14:03+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/streamlinetransit-mt-us/streamlinetransit-mt-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-montana-streamline-gtfs-295.zip?alt=media"
+    }
+}

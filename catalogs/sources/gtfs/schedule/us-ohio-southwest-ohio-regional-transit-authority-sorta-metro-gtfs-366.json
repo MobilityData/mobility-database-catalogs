@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 366,
+    "data_type": "gtfs",
+    "provider": "Southwest Ohio Regional Transit Authority (SORTA Metro)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Ohio",
+        "municipality": "Cincinnati",
+        "bounding_box": {
+            "minimum_latitude": 39.06428,
+            "maximum_latitude": 39.35716,
+            "minimum_longitude": -84.793912,
+            "maximum_longitude": -84.259938,
+            "extracted_on": "2022-03-15T21:17:37+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.go-metro.com/uploads/GTFS/google_transit_info.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-ohio-southwest-ohio-regional-transit-authority-sorta-metro-gtfs-366.zip?alt=media"
+    }
+}

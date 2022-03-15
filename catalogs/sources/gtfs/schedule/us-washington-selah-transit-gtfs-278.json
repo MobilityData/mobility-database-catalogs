@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 278,
+    "data_type": "gtfs",
+    "provider": "Selah Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "municipality": "Selah",
+        "bounding_box": {
+            "minimum_latitude": 46.5616046,
+            "maximum_latitude": 46.6771065,
+            "minimum_longitude": -120.5622804,
+            "maximum_longitude": -120.4793143,
+            "extracted_on": "2022-03-15T21:13:20+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://trilliumtransit.com/transit_feeds/selah-wa-us/selah-wa-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-selah-transit-gtfs-278.zip?alt=media"
+    }
+}

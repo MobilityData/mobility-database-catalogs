@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 303,
+    "data_type": "gtfs",
+    "provider": "Central Transit Ellensburg",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "bounding_box": {
+            "minimum_latitude": 46.98130558,
+            "maximum_latitude": 47.233944,
+            "minimum_longitude": -121.024028,
+            "maximum_longitude": -120.522715,
+            "extracted_on": "2022-03-15T21:14:16+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://mjcaction.com/MJC_GTFS_Public/centraltransit_google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-central-transit-ellensburg-gtfs-303.zip?alt=media"
+    }
+}

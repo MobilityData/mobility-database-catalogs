@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 354,
+    "data_type": "gtfs",
+    "provider": "Cobb Community Transit (CCT)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Georgia",
+        "municipality": "Marietta",
+        "bounding_box": {
+            "minimum_latitude": 33.75039,
+            "maximum_latitude": 34.077357,
+            "minimum_longitude": -84.656428,
+            "maximum_longitude": -84.384289,
+            "extracted_on": "2022-03-15T21:17:11+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.arcgis.com/sharing/rest/content/items/1ce8e370a12c41b5854d8baa21f8451c/data",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-georgia-cobb-community-transit-cct-gtfs-354.zip?alt=media"
+    }
+}

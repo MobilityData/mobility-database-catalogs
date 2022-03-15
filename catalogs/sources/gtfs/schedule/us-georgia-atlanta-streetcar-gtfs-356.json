@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 356,
+    "data_type": "gtfs",
+    "provider": "Atlanta Streetcar",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Georgia",
+        "municipality": "Atlanta",
+        "bounding_box": {
+            "minimum_latitude": 33.7542955,
+            "maximum_latitude": 33.7595003,
+            "minimum_longitude": -84.3919955,
+            "maximum_longitude": -84.3746846,
+            "extracted_on": "2022-03-15T21:17:12+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://documents.atlantaregional.com/transitdata/gtfs_ASC.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-georgia-atlanta-streetcar-gtfs-356.zip?alt=media"
+    }
+}

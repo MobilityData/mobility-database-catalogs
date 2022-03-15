@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 309,
+    "data_type": "gtfs",
+    "provider": "City of Fountain Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Colorado Springs",
+        "bounding_box": {
+            "minimum_latitude": 38.6644033378998,
+            "maximum_latitude": 38.8956100585436,
+            "minimum_longitude": -104.859622660021,
+            "maximum_longitude": -104.681221924795,
+            "extracted_on": "2022-03-15T21:14:27+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/cityoffountaintransit-co-us/cityoffountaintransit-co-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-city-of-fountain-transit-gtfs-309.zip?alt=media"
+    }
+}

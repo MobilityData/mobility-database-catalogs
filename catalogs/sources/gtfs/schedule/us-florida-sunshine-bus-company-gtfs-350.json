@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 350,
+    "data_type": "gtfs",
+    "provider": "Sunshine Bus Company",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Florida",
+        "municipality": "Saint Augustine",
+        "bounding_box": {
+            "minimum_latitude": 29.6378981415515,
+            "maximum_latitude": 30.18280175,
+            "minimum_longitude": -81.6059567468163,
+            "maximum_longitude": -81.2547616730411,
+            "extracted_on": "2022-03-15T21:16:58+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/sunshinebuscompany-fl-us/sunshinebuscompany-fl-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-sunshine-bus-company-gtfs-350.zip?alt=media"
+    }
+}

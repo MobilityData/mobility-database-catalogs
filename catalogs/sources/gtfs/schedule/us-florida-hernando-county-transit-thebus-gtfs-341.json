@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 341,
+    "data_type": "gtfs",
+    "provider": "Hernando County Transit (TheBus)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Florida",
+        "municipality": "Brooksville",
+        "bounding_box": {
+            "minimum_latitude": 28.40039824,
+            "maximum_latitude": 28.595345,
+            "minimum_longitude": -82.66114094,
+            "maximum_longitude": -82.37722793,
+            "extracted_on": "2022-03-15T21:16:30+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/thehernandoexpress-fl-us/thehernandoexpress-fl-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-hernando-county-transit-thebus-gtfs-341.zip?alt=media"
+    }
+}

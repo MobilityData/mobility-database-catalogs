@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 293,
+    "data_type": "gtfs",
+    "provider": "University of Montana (UDASH)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Montana",
+        "municipality": "Missoula",
+        "bounding_box": {
+            "minimum_latitude": 46.845,
+            "maximum_latitude": 46.871871,
+            "minimum_longitude": -114.022311,
+            "maximum_longitude": -113.975603,
+            "extracted_on": "2022-03-15T21:14:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/udash-mt-us/udash-mt-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-montana-university-of-montana-udash-gtfs-293.zip?alt=media"
+    }
+}

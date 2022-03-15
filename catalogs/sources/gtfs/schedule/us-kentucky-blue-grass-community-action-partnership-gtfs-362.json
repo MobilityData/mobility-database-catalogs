@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 362,
+    "data_type": "gtfs",
+    "provider": "Blue Grass Community Action Partnership",
+    "name": "Bluegrass Ultra-Transit Service",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Kentucky",
+        "bounding_box": {
+            "minimum_latitude": 37.615264,
+            "maximum_latitude": 38.2321,
+            "minimum_longitude": -84.8984452721203,
+            "maximum_longitude": -84.4789953029549,
+            "extracted_on": "2022-03-15T21:17:23+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/bgcap-ky-us/bgcap-ky-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-kentucky-blue-grass-community-action-partnership-gtfs-362.zip?alt=media"
+    }
+}

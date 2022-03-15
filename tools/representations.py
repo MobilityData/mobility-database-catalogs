@@ -287,7 +287,7 @@ class GtfsScheduleSource(Source):
             LATEST: self.latest_url,
             LICENSE: self.license_url,
         }
-        return json.dumps(self.schematize(**attributes))
+        return json.dumps(self.schematize(**attributes), ensure_ascii=False)
 
     def __repr__(self):
         return f"GtfsScheduleSource({self.__str__()})"
@@ -451,7 +451,7 @@ class GtfsRealtimeSource(Source):
             REALTIME_TRIP_UPDATES: self.trip_updates_url,
             REALTIME_ALERTS: self.service_alerts_url,
         }
-        return json.dumps(self.schematize(**attributes))
+        return json.dumps(self.schematize(**attributes), ensure_ascii=False)
 
     def __repr__(self):
         return f"GtfsRealtimeSource({self.__str__()})"

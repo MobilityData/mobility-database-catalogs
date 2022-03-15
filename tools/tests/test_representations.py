@@ -265,7 +265,7 @@ class TestGtfsScheduleSource(TestCase):
     def setUp(self):
         self.test_mdb_source_id = "some_numerical_id"
         self.test_data_type = "some_data_type"
-        self.test_provider = "some_provider"
+        self.test_provider = "some_provider_with_accents_éàç"
         self.test_name = "some_name"
         self.test_filename = "some_filename"
         self.test_country_code = "some_country_code"
@@ -327,7 +327,7 @@ class TestGtfsScheduleSource(TestCase):
         mock_schema.return_value = self.test_schema
         instance = GtfsScheduleSource(filename=self.test_filename, **self.test_schema)
         under_test = instance.__str__()
-        self.assertEqual(under_test, json.dumps(self.test_schema))
+        self.assertEqual(under_test, json.dumps(self.test_schema, ensure_ascii=False))
 
     @patch("tools.representations.GtfsScheduleSource.__str__")
     def test_repr(self, mock_str):
@@ -535,7 +535,7 @@ class TestGtfsRealtimeSource(TestCase):
     def setUp(self):
         self.test_mdb_source_id = "some_numerical_id"
         self.test_data_type = "some_data_type"
-        self.test_provider = "some_provider"
+        self.test_provider = "some_provider_with_accents_éàç"
         self.test_name = "some_name"
         self.test_filename = "some_filename"
         self.test_static_reference = "some_static_reference"
@@ -573,7 +573,7 @@ class TestGtfsRealtimeSource(TestCase):
         mock_schema.return_value = self.test_schema
         instance = GtfsRealtimeSource(filename=self.test_filename, **self.test_schema)
         under_test = instance.__str__()
-        self.assertEqual(under_test, json.dumps(self.test_schema))
+        self.assertEqual(under_test, json.dumps(self.test_schema, ensure_ascii=False))
 
     @patch("tools.representations.GtfsRealtimeSource.static_catalog")
     @patch("tools.representations.GtfsRealtimeSource.__str__")
@@ -719,7 +719,6 @@ class TestGtfsRealtimeSource(TestCase):
     def test_get_static_source(self, mock_static_catalog):
         test_static_source = "some_static_source"
         mock_static_catalog.get_source.return_value = test_static_source
-        print(mock_static_catalog)
         under_test = GtfsRealtimeSource.get_static_source(self.test_static_reference)
         self.assertEqual(under_test, test_static_source)
 

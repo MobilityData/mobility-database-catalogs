@@ -95,12 +95,8 @@ jobs:
                     if source.get(STATIC_REFERENCE) is not None and catalog.get(source.get(STATIC_REFERENCE), {}).get(LOCATION) is not None:
                         source[LOCATION] = catalog.get(source.get(STATIC_REFERENCE), {}).get(LOCATION)
                     else:
-                        source[LOCATION] = {COUNTRY_CODE: UNKNOWN, SUBDIVISION_NAME: UNKNOWN, MUNICIPALITY: UNKNOWN}
-                if source.get(LOCATION, {}).get(SUBDIVISION_NAME) is None:
-                    source[LOCATION][SUBDIVISION_NAME] = UNKNOWN
-                if source.get(LOCATION, {}).get(MUNICIPALITY) is None:
-                    source[LOCATION][MUNICIPALITY] = UNKNOWN
-                catalog[source_id] = source
+                        source[LOCATION] = {COUNTRY_CODE: UNKNOWN}
+                    catalog[source_id] = source
             # Sort the catalog and convert it to a list
             catalog = list(dict(sorted(catalog.items())).values())
 

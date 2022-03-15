@@ -270,6 +270,10 @@ class TestCreationFunctions(TestCase):
         under_test = normalize(test_string)
         self.assertEqual(under_test, "sources-test")
 
+        test_string = "SOURCé-çø-čõå-ćō-cåã."
+        under_test = normalize(test_string)
+        self.assertEqual(under_test, "source-co-coa-co-caa")
+
     @freeze_time("2022-01-01")
     def test_get_iso_time(self):
         test_time = "2022-01-01T00:00:00+00:00"

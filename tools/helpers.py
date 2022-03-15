@@ -5,6 +5,7 @@ import gtfs_kit
 from requests.exceptions import MissingSchema
 import pandas as pd
 from pandas.errors import ParserError
+from unidecode import unidecode
 from tools.constants import (
     STOP_LAT,
     STOP_LON,
@@ -170,9 +171,11 @@ def create_filename(
 
 
 def normalize(string):
-    return "-".join(
-        ("".join(s for s in string.lower() if s.isalnum() or s == " ")).split()
+    string = "-".join(
+        ("".join(s for s in string.lower() if s.isalnum() or s in [" ", "-"])).split()
     )
+    string = unidecode(string, "utf-8")
+    return unidecode(string)
 
 
 def get_iso_time():

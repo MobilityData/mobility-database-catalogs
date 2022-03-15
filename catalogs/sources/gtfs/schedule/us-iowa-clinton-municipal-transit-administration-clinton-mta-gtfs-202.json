@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 202,
+    "data_type": "gtfs",
+    "provider": "Clinton Municipal Transit Administration (Clinton MTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Iowa",
+        "municipality": "Clinton",
+        "bounding_box": {
+            "minimum_latitude": 41.814816020445,
+            "maximum_latitude": 41.887103994511,
+            "minimum_longitude": -90.25437316662,
+            "maximum_longitude": -90.176788336577,
+            "extracted_on": "2022-03-15T17:41:48+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/clintonmta-ia-us/clintonmta-ia-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-iowa-clinton-municipal-transit-administration-clinton-mta-gtfs-202.zip?alt=media"
+    }
+}

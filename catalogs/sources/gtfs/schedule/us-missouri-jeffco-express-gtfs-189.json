@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 189,
+    "data_type": "gtfs",
+    "provider": "JeffCo Express",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Missouri",
+        "municipality": "St. Louis",
+        "bounding_box": {
+            "minimum_latitude": 38.13287285,
+            "maximum_latitude": 38.5095497153418,
+            "minimum_longitude": -90.6538801515205,
+            "maximum_longitude": -90.35315012,
+            "extracted_on": "2022-03-15T17:41:07+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/jeffersoncounty-mo-us/jeffersoncounty-mo-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-missouri-jeffco-express-gtfs-189.zip?alt=media"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 262,
+    "data_type": "gtfs",
+    "provider": "Skamania County Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "bounding_box": {
+            "minimum_latitude": 45.533467,
+            "maximum_latitude": 45.741076,
+            "minimum_longitude": -122.650095,
+            "maximum_longitude": -121.19185,
+            "extracted_on": "2022-03-15T17:44:30+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/skamaniacounty-wa-us/skamaniacounty-wa-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-skamania-county-transit-gtfs-262.zip?alt=media"
+    }
+}

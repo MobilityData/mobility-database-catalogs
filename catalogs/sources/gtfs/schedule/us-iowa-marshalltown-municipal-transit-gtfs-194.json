@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 194,
+    "data_type": "gtfs",
+    "provider": "Marshalltown Municipal Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Iowa",
+        "municipality": "Marshalltown",
+        "bounding_box": {
+            "minimum_latitude": 42.001345427954,
+            "maximum_latitude": 42.0630934764924,
+            "minimum_longitude": -92.9366935666204,
+            "maximum_longitude": -92.8861078870026,
+            "extracted_on": "2022-03-15T17:41:32+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/marshalltownmunicipaltransit-ia-us/marshalltownmunicipaltransit-ia-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-iowa-marshalltown-municipal-transit-gtfs-194.zip?alt=media"
+    }
+}

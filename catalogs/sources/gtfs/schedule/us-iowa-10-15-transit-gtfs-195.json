@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 195,
+    "data_type": "gtfs",
+    "provider": "10-15 Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Iowa",
+        "municipality": "Ottumwa",
+        "bounding_box": {
+            "minimum_latitude": 40.993499836155,
+            "maximum_latitude": 41.312688620846,
+            "minimum_longitude": -92.669851610855,
+            "maximum_longitude": -92.374030358351,
+            "extracted_on": "2022-03-15T17:41:33+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/10-15transit-ia-us/10-15transit-ia-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-iowa-10-15-transit-gtfs-195.zip?alt=media"
+    }
+}

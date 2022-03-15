@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 223,
+    "data_type": "gtfs",
+    "provider": "Bay Area Transportation Authority",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Michigan",
+        "municipality": "Traverse City",
+        "bounding_box": {
+            "minimum_latitude": 44.5768836504099,
+            "maximum_latitude": 45.129802,
+            "minimum_longitude": -85.769084,
+            "maximum_longitude": -85.3471678875275,
+            "extracted_on": "2022-03-15T17:42:57+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/5109/BATA_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-michigan-bay-area-transportation-authority-gtfs-223.zip?alt=media"
+    }
+}

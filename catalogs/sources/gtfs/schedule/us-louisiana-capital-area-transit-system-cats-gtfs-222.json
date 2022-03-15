@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 222,
+    "data_type": "gtfs",
+    "provider": "Capital Area Transit System (CATS)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Louisiana",
+        "municipality": "Baton Rouge",
+        "bounding_box": {
+            "minimum_latitude": 30.346346,
+            "maximum_latitude": 30.594509,
+            "minimum_longitude": -91.200005,
+            "maximum_longitude": -91.000862,
+            "extracted_on": "2022-03-15T17:42:56+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/transitland/gtfs-archives-not-hosted-elsewhere/raw/master/f-baton~rouge~cats.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-louisiana-capital-area-transit-system-cats-gtfs-222.zip?alt=media"
+    }
+}

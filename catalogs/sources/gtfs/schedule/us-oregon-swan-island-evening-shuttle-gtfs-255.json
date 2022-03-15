@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 255,
+    "data_type": "gtfs",
+    "provider": "Swan Island Evening Shuttle",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Portland",
+        "bounding_box": {
+            "minimum_latitude": 45.5183498528882,
+            "maximum_latitude": 45.572858,
+            "minimum_longitude": -122.718875009787,
+            "maximum_longitude": -122.665648,
+            "extracted_on": "2022-03-15T17:44:18+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/swanisland-or-us/swanisland-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-swan-island-evening-shuttle-gtfs-255.zip?alt=media"
+    }
+}

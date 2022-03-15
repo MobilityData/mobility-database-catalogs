@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 231,
+    "data_type": "gtfs",
+    "provider": "Bethesda Circulator",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Maryland",
+        "municipality": "Bethesda",
+        "bounding_box": {
+            "minimum_latitude": 38.978095,
+            "maximum_latitude": 38.99237,
+            "minimum_longitude": -77.103033,
+            "maximum_longitude": -77.091436,
+            "extracted_on": "2022-03-15T17:43:09+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/transitland/gtfs-archives-not-hosted-elsewhere/raw/master/bethesdacirculator-md-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maryland-bethesda-circulator-gtfs-231.zip?alt=media"
+    }
+}

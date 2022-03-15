@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 247,
+    "data_type": "gtfs",
+    "provider": "TriMet, Portland Streetcar",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Portland",
+        "bounding_box": {
+            "minimum_latitude": 45.285216,
+            "maximum_latitude": 45.637726,
+            "minimum_longitude": -123.115448,
+            "maximum_longitude": -122.333048,
+            "extracted_on": "2022-03-15T17:44:07+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://developer.trimet.org/schedule/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-trimet-portland-streetcar-gtfs-247.zip?alt=media"
+    }
+}

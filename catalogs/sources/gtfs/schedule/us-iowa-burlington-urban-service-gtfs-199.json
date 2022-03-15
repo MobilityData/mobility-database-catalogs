@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 199,
+    "data_type": "gtfs",
+    "provider": "Burlington Urban Service",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Iowa",
+        "municipality": "Burlington",
+        "bounding_box": {
+            "minimum_latitude": 40.7746289,
+            "maximum_latitude": 40.8342948,
+            "minimum_longitude": -91.175124,
+            "maximum_longitude": -91.0985631,
+            "extracted_on": "2022-03-15T17:41:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/burlington-ia-us/burlington-ia-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-iowa-burlington-urban-service-gtfs-199.zip?alt=media"
+    }
+}

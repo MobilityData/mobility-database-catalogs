@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 233,
+    "data_type": "gtfs",
+    "provider": "Birnie Bus",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Utica",
+        "bounding_box": {
+            "minimum_latitude": 42.307476,
+            "maximum_latitude": 44.163689,
+            "minimum_longitude": -77.884659,
+            "maximum_longitude": -74.752197,
+            "extracted_on": "2022-03-15T17:43:20+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Birnie_Bus.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-birnie-bus-gtfs-233.zip?alt=media"
+    }
+}

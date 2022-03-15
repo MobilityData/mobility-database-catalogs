@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 197,
+    "data_type": "gtfs",
+    "provider": "University of Iowa - CAMBUS (CAMBUS)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Iowa",
+        "municipality": "Iowa City",
+        "bounding_box": {
+            "minimum_latitude": 41.654493,
+            "maximum_latitude": 41.718345747258,
+            "minimum_longitude": -91.605722815901,
+            "maximum_longitude": -91.532009,
+            "extracted_on": "2022-03-15T17:41:37+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/cambus-ia-us/cambus-ia-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-iowa-university-of-iowa---cambus-cambus-gtfs-197.zip?alt=media"
+    }
+}

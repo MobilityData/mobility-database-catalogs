@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 208,
+    "data_type": "gtfs",
+    "provider": "Eau Claire Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Wisconsin",
+        "municipality": "Eau Claire",
+        "bounding_box": {
+            "minimum_latitude": 44.76862,
+            "maximum_latitude": 44.87229,
+            "minimum_longitude": -91.548513,
+            "maximum_longitude": -91.42714,
+            "extracted_on": "2022-03-15T17:42:30+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www-ecbus-org.site.atfni.com/build_data_feed.phtml",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-wisconsin-eau-claire-transit-gtfs-208.zip?alt=media"
+    }
+}

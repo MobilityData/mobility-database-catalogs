@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 272,
+    "data_type": "gtfs",
+    "provider": "Kayak Transit (CTUIR)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Pendleton",
+        "bounding_box": {
+            "minimum_latitude": 45.3193040477042,
+            "maximum_latitude": 46.0661407,
+            "minimum_longitude": -119.499208245983,
+            "maximum_longitude": -118.077631,
+            "extracted_on": "2022-03-15T17:45:22+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/ctuir-or-us/ctuir-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-kayak-transit-ctuir-gtfs-272.zip?alt=media"
+    }
+}

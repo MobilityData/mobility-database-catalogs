@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 242,
+    "data_type": "gtfs",
+    "provider": "Pacific Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "municipality": "Aberdeen",
+        "bounding_box": {
+            "minimum_latitude": 46.19019607,
+            "maximum_latitude": 46.97647798,
+            "minimum_longitude": -124.05531183,
+            "maximum_longitude": -123.73147396,
+            "extracted_on": "2022-03-15T17:43:33+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://mjcaction.com/MJC_GTFS_Public/pacific_google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-pacific-transit-gtfs-242.zip?alt=media"
+    }
+}

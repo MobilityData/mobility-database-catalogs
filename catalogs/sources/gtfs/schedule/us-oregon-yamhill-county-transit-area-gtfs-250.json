@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 250,
+    "data_type": "gtfs",
+    "provider": "Yamhill County Transit Area",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Yamhill",
+        "bounding_box": {
+            "minimum_latitude": 44.951319,
+            "maximum_latitude": 45.521608,
+            "minimum_longitude": -123.617235,
+            "maximum_longitude": -122.768607,
+            "extracted_on": "2022-03-15T17:44:11+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://ycta.connexionz.net/rtt/public/resource/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-yamhill-county-transit-area-gtfs-250.zip?alt=media"
+    }
+}

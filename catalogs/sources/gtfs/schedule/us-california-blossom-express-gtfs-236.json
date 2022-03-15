@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 236,
+    "data_type": "gtfs",
+    "provider": "Blossom Express",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Ripon",
+        "bounding_box": {
+            "minimum_latitude": 37.6893884368282,
+            "maximum_latitude": 37.753899387218,
+            "minimum_longitude": -121.142215569397,
+            "maximum_longitude": -121.050065418927,
+            "extracted_on": "2022-03-15T17:43:26+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/blossomexpress-ca-us/blossomexpress-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-blossom-express-gtfs-236.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 666,
+    "data_type": "gtfs",
+    "provider": "Byron Easybus",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "New South Wales",
+        "municipality": "Byron Bay",
+        "bounding_box": {
+            "minimum_latitude": -28.869311578117728,
+            "maximum_latitude": -27.38539101196501,
+            "minimum_longitude": 153.018619,
+            "maximum_longitude": 153.61247062683103,
+            "extracted_on": "2022-03-16T22:00:16+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://addtransit.com/gtfsfile/54743/ByronEasybus.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-new-south-wales-byron-easybus-gtfs-666.zip?alt=media"
+    }
+}

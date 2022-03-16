@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 698,
+    "data_type": "gtfs",
+    "provider": "Fraser Valley Express",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "British Columbia",
+        "municipality": "Fraser Valley",
+        "bounding_box": {
+            "minimum_latitude": 49.03258,
+            "maximum_latitude": 49.247973,
+            "minimum_longitude": -122.895491,
+            "maximum_longitude": -121.955443,
+            "extracted_on": "2022-03-16T22:05:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.bctransit.com/data/gtfs/fraser-valley-express.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-fraser-valley-express-gtfs-698.zip?alt=media",
+        "license": "https://www.bctransit.com/open-data/terms-of-use"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 716,
+    "data_type": "gtfs",
+    "provider": "Saskatoon Transit",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Saskatchewan",
+        "municipality": "Saskatoon",
+        "bounding_box": {
+            "minimum_latitude": 52.078661,
+            "maximum_latitude": 52.202189,
+            "minimum_longitude": -106.760746,
+            "maximum_longitude": -106.550137,
+            "extracted_on": "2022-03-16T22:06:20+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://apps2.saskatoon.ca/app/data/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-saskatchewan-saskatoon-transit-gtfs-716.zip?alt=media"
+    }
+}

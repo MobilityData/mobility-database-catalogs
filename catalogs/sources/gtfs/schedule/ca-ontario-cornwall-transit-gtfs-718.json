@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 718,
+    "data_type": "gtfs",
+    "provider": "Cornwall Transit",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Ontario",
+        "municipality": "Cornwall",
+        "bounding_box": {
+            "minimum_latitude": 45.0104676437,
+            "maximum_latitude": 45.0626772444,
+            "minimum_longitude": -74.77124,
+            "maximum_longitude": -74.67393,
+            "extracted_on": "2022-03-16T22:06:29+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://metrolinx.tmix.se/gtfs/gtfs-cornwall.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-cornwall-transit-gtfs-718.zip?alt=media"
+    }
+}

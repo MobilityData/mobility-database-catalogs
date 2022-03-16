@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 726,
+    "data_type": "gtfs",
+    "provider": "Durham Region Transit",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Ontario",
+        "municipality": "Durham",
+        "bounding_box": {
+            "minimum_latitude": 43.774936,
+            "maximum_latitude": 44.112316,
+            "minimum_longitude": -79.252857,
+            "maximum_longitude": -78.674384,
+            "extracted_on": "2022-03-16T22:07:08+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://maps.durham.ca/OpenDataGTFS/GTFS_Durham_TXT.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-durham-region-transit-gtfs-726.zip?alt=media"
+    }
+}

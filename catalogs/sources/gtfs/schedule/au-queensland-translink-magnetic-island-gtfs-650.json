@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 650,
+    "data_type": "gtfs",
+    "provider": "Translink Magnetic Island",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "Queensland",
+        "municipality": "Magnetic Island",
+        "bounding_box": {
+            "minimum_latitude": -19.180021,
+            "maximum_latitude": -19.117094,
+            "minimum_longitude": 146.837611,
+            "maximum_longitude": 146.868939,
+            "extracted_on": "2022-03-16T21:18:34+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfsrt.api.translink.com.au/GTFS/MAG_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-translink-magnetic-island-gtfs-650.zip?alt=media",
+        "license": "https://www.data.qld.gov.au/dataset/general-transit-feed-specification-gtfs-qconnect/resource/81030a70-b1e1-4cb1-b7ae-67051d1368e5"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 708,
+    "data_type": "gtfs",
+    "provider": "Prince George Transit",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "British Columbia",
+        "municipality": "Prince George",
+        "bounding_box": {
+            "minimum_latitude": 53.830781,
+            "maximum_latitude": 54.010517,
+            "minimum_longitude": -122.830644,
+            "maximum_longitude": -122.737908,
+            "extracted_on": "2022-03-16T22:05:15+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.bctransit.com/data/gtfs/prince-george.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-prince-george-transit-gtfs-708.zip?alt=media"
+    }
+}

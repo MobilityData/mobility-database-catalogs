@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 683,
+    "data_type": "gtfs",
+    "provider": "Department of Transport - Public Transport",
+    "name": "Alice Springs public bus network",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "Northern Territory",
+        "municipality": "Alice Springs",
+        "bounding_box": {
+            "minimum_latitude": -23.777408,
+            "maximum_latitude": -23.668637,
+            "minimum_longitude": 133.826057,
+            "maximum_longitude": 133.903218,
+            "extracted_on": "2022-03-16T22:01:42+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://dipl.nt.gov.au/data-feeds/bus-gtfs/google-transit-alice-springs.zip?v=0.7.0",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-northern-territory-department-of-transport-public-transport-gtfs-683.zip?alt=media"
+    }
+}

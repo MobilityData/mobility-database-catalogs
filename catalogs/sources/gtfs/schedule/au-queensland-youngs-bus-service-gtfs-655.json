@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 655,
+    "data_type": "gtfs",
+    "provider": "Youngs Bus Service",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "Queensland",
+        "municipality": "Rockhampton",
+        "bounding_box": {
+            "minimum_latitude": -23.638604,
+            "maximum_latitude": -23.099773,
+            "minimum_longitude": 150.387628,
+            "maximum_longitude": 150.826186,
+            "extracted_on": "2022-03-16T21:18:51+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfsrt.api.translink.com.au/GTFS/YEP_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-youngs-bus-service-gtfs-655.zip?alt=media",
+        "license": "https://www.data.qld.gov.au/dataset/general-transit-feed-specification-gtfs-qconnect/resource/63dec6b1-bb77-470f-bb34-54fa0db3d6a7"
+    }
+}

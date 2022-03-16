@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 684,
+    "data_type": "gtfs",
+    "provider": "De Lijn",
+    "location": {
+        "country_code": "BE",
+        "subdivision_name": "Vlaams Gewest",
+        "bounding_box": {
+            "minimum_latitude": 50.6451,
+            "maximum_latitude": 51.5605,
+            "minimum_longitude": 2.58059,
+            "maximum_longitude": 5.88695,
+            "extracted_on": "2022-03-16T22:03:20+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://gtfs.irail.be/de-lijn/de_lijn-gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/be-vlaams-gewest-de-lijn-gtfs-684.zip?alt=media"
+    }
+}

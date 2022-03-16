@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 733,
+    "data_type": "gtfs",
+    "provider": "Kingston Transit",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Ontario",
+        "municipality": "Kingston",
+        "bounding_box": {
+            "minimum_latitude": 44.2175,
+            "maximum_latitude": 44.27897,
+            "minimum_longitude": -76.66738,
+            "maximum_longitude": -76.43906,
+            "extracted_on": "2022-03-16T22:08:47+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://api.cityofkingston.ca/gtfs/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-kingston-transit-gtfs-733.zip?alt=media"
+    }
+}

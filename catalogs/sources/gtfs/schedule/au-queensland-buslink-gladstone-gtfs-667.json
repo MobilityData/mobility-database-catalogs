@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 667,
+    "data_type": "gtfs",
+    "provider": "Buslink Gladstone",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "Queensland",
+        "municipality": "Gladstone",
+        "bounding_box": {
+            "minimum_latitude": -23.960521,
+            "maximum_latitude": -23.838753,
+            "minimum_longitude": 151.21067,
+            "maximum_longitude": 151.370321,
+            "extracted_on": "2022-03-16T22:00:20+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfsrt.api.translink.com.au/GTFS/GLT_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-buslink-gladstone-gtfs-667.zip?alt=media"
+    }
+}

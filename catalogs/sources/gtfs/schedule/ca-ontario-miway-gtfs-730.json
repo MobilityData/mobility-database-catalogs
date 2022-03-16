@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 730,
+    "data_type": "gtfs",
+    "provider": "MiWay",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Ontario",
+        "municipality": "Mississauga",
+        "bounding_box": {
+            "minimum_latitude": 43.469292,
+            "maximum_latitude": 43.838069,
+            "minimum_longitude": -79.797795,
+            "maximum_longitude": -79.512874,
+            "extracted_on": "2022-03-16T22:07:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.miapp.ca/GTFS/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-miway-gtfs-730.zip?alt=media",
+        "license": "https://www.mississauga.ca/miway-transit/developer-download/"
+    }
+}

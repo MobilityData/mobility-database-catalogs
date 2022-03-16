@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 653,
+    "data_type": "gtfs",
+    "provider": "Bus Queensland Toowoomba (Bus Qld Toowoomba)",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "Queensland",
+        "municipality": "Toowoomba",
+        "bounding_box": {
+            "minimum_latitude": -27.611151,
+            "maximum_latitude": -27.258647,
+            "minimum_longitude": 151.869525,
+            "maximum_longitude": 152.06874,
+            "extracted_on": "2022-03-16T21:18:44+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfsrt.api.translink.com.au/GTFS/TWB_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-bus-queensland-toowoomba-bus-qld-toowoomba-gtfs-653.zip?alt=media",
+        "license": "https://www.data.qld.gov.au/dataset/general-transit-feed-specification-gtfs-qconnect/resource/48501fd9-148b-4b96-a9fa-b412d768048c"
+    }
+}

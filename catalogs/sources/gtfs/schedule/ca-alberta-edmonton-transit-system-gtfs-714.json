@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 714,
+    "data_type": "gtfs",
+    "provider": "Edmonton Transit System",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Alberta",
+        "municipality": "Edmonton",
+        "bounding_box": {
+            "minimum_latitude": 53.302688,
+            "maximum_latitude": 53.704407,
+            "minimum_longitude": -113.934884,
+            "maximum_longitude": -113.218139,
+            "extracted_on": "2022-03-16T22:06:03+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.edmonton.ca/TMGTFSRealTimeWebService/GTFS/GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-alberta-edmonton-transit-system-gtfs-714.zip?alt=media",
+        "license": "https://data.strathcona.ca/Transportation/Transit-Bus-Schedule-GTFS-Data-Feed-Zip-File/2ek5-rxs5/data?no_mobile=true"
+    }
+}

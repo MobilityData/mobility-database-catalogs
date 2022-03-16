@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 672,
+    "data_type": "gtfs",
+    "provider": "Duffy's Buses and Stewarts & Sons Coaches",
+    "name": "Bundaberg",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "Queensland",
+        "municipality": "Bundaberg",
+        "bounding_box": {
+            "minimum_latitude": -24.921379,
+            "maximum_latitude": -24.695965,
+            "minimum_longitude": 152.239464,
+            "maximum_longitude": 152.492233,
+            "extracted_on": "2022-03-16T22:00:48+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfsrt.api.translink.com.au/GTFS/BUN_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-duffys-buses-and-stewarts-sons-coaches-gtfs-672.zip?alt=media",
+        "license": "https://www.data.qld.gov.au/dataset/general-transit-feed-specification-gtfs-qconnect/resource/699184c3-8c0e-44db-8a83-7e23709aefbe"
+    }
+}

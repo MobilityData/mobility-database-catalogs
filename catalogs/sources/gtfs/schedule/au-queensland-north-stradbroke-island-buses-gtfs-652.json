@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 652,
+    "data_type": "gtfs",
+    "provider": "North Stradbroke Island Buses",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "Queensland",
+        "municipality": "Brisbane",
+        "bounding_box": {
+            "minimum_latitude": -27.50324,
+            "maximum_latitude": -27.394988,
+            "minimum_longitude": 153.40117,
+            "maximum_longitude": 153.543723,
+            "extracted_on": "2022-03-16T21:18:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfsrt.api.translink.com.au/GTFS/NSI_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-north-stradbroke-island-buses-gtfs-652.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 669,
+    "data_type": "gtfs",
+    "provider": "Christensens Bus and Coach",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "Queensland",
+        "municipality": "Caboolture",
+        "bounding_box": {
+            "minimum_latitude": -27.103209,
+            "maximum_latitude": -26.923223,
+            "minimum_longitude": 152.564827,
+            "maximum_longitude": 152.963944,
+            "extracted_on": "2022-03-16T22:00:39+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfsrt.api.translink.com.au/GTFS/KIL_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-christensens-bus-and-coach-gtfs-669.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 681,
+    "data_type": "gtfs",
+    "provider": "MetroTas Burnie",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "Tasmania",
+        "municipality": "Burnie",
+        "bounding_box": {
+            "minimum_latitude": -41.55744214603599,
+            "maximum_latitude": -40.7606108112925,
+            "minimum_longitude": 145.12451253471826,
+            "maximum_longitude": 147.1571264979121,
+            "extracted_on": "2022-03-16T22:01:29+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.metrotas.com.au/wp-content/uploads/transit/Burnie/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-tasmania-metrotas-burnie-gtfs-681.zip?alt=media"
+    }
+}

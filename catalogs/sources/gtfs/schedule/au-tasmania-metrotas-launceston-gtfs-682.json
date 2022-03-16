@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 682,
+    "data_type": "gtfs",
+    "provider": "MetroTas Launceston",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "Tasmania",
+        "municipality": "Launceston",
+        "bounding_box": {
+            "minimum_latitude": -42.88489072090745,
+            "maximum_latitude": -41.00315447,
+            "minimum_longitude": 146.8052311,
+            "maximum_longitude": 148.3035978,
+            "extracted_on": "2022-03-16T22:01:36+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.metrotas.com.au/wp-content/uploads/transit/Launceston/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-tasmania-metrotas-launceston-gtfs-682.zip?alt=media"
+    }
+}

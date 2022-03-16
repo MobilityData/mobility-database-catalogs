@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 649,
+    "data_type": "gtfs",
+    "provider": "Port Phillip Ferries",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "Victoria",
+        "bounding_box": {
+            "minimum_latitude": -38.14312171418421,
+            "maximum_latitude": -37.81696682290608,
+            "minimum_longitude": 144.36218577889218,
+            "maximum_longitude": 144.9450472321603,
+            "extracted_on": "2022-03-16T21:18:30+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/PPF-GTFS/GTFS/raw/main/GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-victoria-port-phillip-ferries-gtfs-649.zip?alt=media"
+    }
+}

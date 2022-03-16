@@ -171,6 +171,7 @@ def create_filename(
 
 
 def normalize(string):
+    string = string.split(",")[0]
     string = "-".join(
         ("".join(s for s in string.lower() if s.isalnum() or s in [" ", "-"])).split()
     )

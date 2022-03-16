@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 430,
+    "data_type": "gtfs",
+    "provider": "Marble Valley Regional Transit District (MVRTD)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Vermont",
+        "municipality": "Rutland",
+        "bounding_box": {
+            "minimum_latitude": 43.16363,
+            "maximum_latitude": 44.0107548649426,
+            "minimum_longitude": -73.27599,
+            "maximum_longitude": -72.70519444,
+            "extracted_on": "2022-03-16T15:33:48+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/thebus-vt-us/thebus-vt-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-vermont-marble-valley-regional-transit-district-mvrtd-gtfs-430.zip?alt=media"
+    }
+}

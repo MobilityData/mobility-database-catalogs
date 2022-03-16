@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 203,
+    "data_type": "gtfs",
+    "provider": "Dodger Area Rapid Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Iowa",
+        "municipality": "Fort Dodge",
+        "bounding_box": {
+            "minimum_latitude": 42.4761248,
+            "maximum_latitude": 42.536627119116,
+            "minimum_longitude": -94.223038545239,
+            "maximum_longitude": -94.148164198338,
+            "extracted_on": "2022-03-15T17:41:49+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/dart-ia-us/dart-ia-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-iowa-dodger-area-rapid-transit-gtfs-203.zip?alt=media"
+    }
+}

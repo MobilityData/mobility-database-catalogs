@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 470,
+    "data_type": "gtfs",
+    "provider": "Maryland Transit Administration Metro Subway",
+    "name": "Metro SubwayLink",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Maryland",
+        "bounding_box": {
+            "minimum_latitude": 39.2893568,
+            "maximum_latitude": 39.4081468,
+            "minimum_longitude": -76.780768,
+            "maximum_longitude": -76.594107,
+            "extracted_on": "2022-03-16T17:23:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://mdotmta-gtfs.s3.amazonaws.com/mdotmta_gtfs_metro.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maryland-maryland-transit-administration-metro-subway-gtfs-470.zip?alt=media"
+    }
+}

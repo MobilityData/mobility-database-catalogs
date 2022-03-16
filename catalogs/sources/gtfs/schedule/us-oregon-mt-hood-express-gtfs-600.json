@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 600,
+    "data_type": "gtfs",
+    "provider": "Mt Hood Express",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Sandy",
+        "bounding_box": {
+            "minimum_latitude": 45.285866,
+            "maximum_latitude": 45.502997144364,
+            "minimum_longitude": -122.427862,
+            "maximum_longitude": -121.7089955,
+            "extracted_on": "2022-03-16T20:10:31+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/mt-hood-express/473/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-mt-hood-express-gtfs-600.zip?alt=media"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 439,
+    "data_type": "gtfs",
+    "provider": "MetroWest Regional Transit Authority (MWRTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Massachusetts",
+        "bounding_box": {
+            "minimum_latitude": 42.1274170057426,
+            "maximum_latitude": 42.4000957548676,
+            "minimum_longitude": -71.61249,
+            "maximum_longitude": -71.2431033696594,
+            "extracted_on": "2022-03-16T15:34:16+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://vc.mwrta.com/gtfs/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-metrowest-regional-transit-authority-mwrta-gtfs-439.zip?alt=media"
+    }
+}

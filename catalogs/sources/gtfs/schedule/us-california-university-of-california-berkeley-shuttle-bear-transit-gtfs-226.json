@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 226,
+    "data_type": "gtfs",
+    "provider": "University of California Berkeley Shuttle (Bear Transit)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Berkeley",
+        "bounding_box": {
+            "minimum_latitude": 37.8641395035463,
+            "maximum_latitude": 37.9170547484884,
+            "minimum_longitude": -122.338632368571,
+            "maximum_longitude": -122.238629251794,
+            "extracted_on": "2022-03-15T17:43:04+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/beartransit-ca-us/beartransit-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-university-of-california-berkeley-shuttle-bear-transit-gtfs-226.zip?alt=media"
+    }
+}

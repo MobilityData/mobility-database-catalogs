@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 597,
+    "data_type": "gtfs",
+    "provider": "Connecticut Transit",
+    "name": "Hartford Line - Rail",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Connecticut",
+        "bounding_box": {
+            "minimum_latitude": 41.29732995,
+            "maximum_latitude": 42.1063349,
+            "minimum_longitude": -72.92619467,
+            "maximum_longitude": -72.5933969,
+            "extracted_on": "2022-03-16T20:10:21+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.hartfordline.com/files/gtfs/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-connecticut-connecticut-transit-gtfs-597.zip?alt=media"
+    }
+}

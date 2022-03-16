@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 591,
+    "data_type": "gtfs",
+    "provider": "Petersburg Area Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Virginia",
+        "municipality": "Petersburg",
+        "bounding_box": {
+            "minimum_latitude": 37.1803868625173,
+            "maximum_latitude": 37.5404865378737,
+            "minimum_longitude": -77.467684930818,
+            "maximum_longitude": -77.2861622676174,
+            "extracted_on": "2022-03-16T20:10:13+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/petersburg-va-us/petersburg-va-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-petersburg-area-transit-gtfs-591.zip?alt=media"
+    }
+}

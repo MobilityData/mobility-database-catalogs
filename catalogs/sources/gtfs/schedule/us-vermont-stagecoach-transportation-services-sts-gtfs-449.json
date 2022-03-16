@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 449,
+    "data_type": "gtfs",
+    "provider": "Stagecoach Transportation Services (STS)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Vermont",
+        "municipality": "Orange County",
+        "bounding_box": {
+            "minimum_latitude": 43.586506,
+            "maximum_latitude": 44.2601842,
+            "minimum_longitude": -72.841917,
+            "maximum_longitude": -72.023504,
+            "extracted_on": "2022-03-16T15:34:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/stagecoach-vt-us/stagecoach-vt-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-vermont-stagecoach-transportation-services-sts-gtfs-449.zip?alt=media"
+    }
+}

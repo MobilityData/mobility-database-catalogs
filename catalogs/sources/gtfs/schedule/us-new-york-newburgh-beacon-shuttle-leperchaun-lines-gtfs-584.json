@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 584,
+    "data_type": "gtfs",
+    "provider": "Newburgh Beacon Shuttle (Leperchaun Lines)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Poughkeepsie",
+        "bounding_box": {
+            "minimum_latitude": 41.498394,
+            "maximum_latitude": 41.517948,
+            "minimum_longitude": -74.100904,
+            "maximum_longitude": -73.984502,
+            "extracted_on": "2022-03-16T20:10:04+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Newburgh_Beacon_Shuttle.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-newburgh-beacon-shuttle-leperchaun-lines-gtfs-584.zip?alt=media",
+        "license": "https://data.ny.gov/download/77gx-ii52/application/pdf"
+    }
+}

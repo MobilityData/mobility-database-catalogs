@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 527,
+    "data_type": "gtfs",
+    "provider": "Westchester County Bee-Line System (WCDOT)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "White Plains",
+        "bounding_box": {
+            "minimum_latitude": 40.74128,
+            "maximum_latitude": 41.421923,
+            "minimum_longitude": -73.989067,
+            "maximum_longitude": -73.659724,
+            "extracted_on": "2022-03-16T17:27:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Westchester_County_Bee-Line_System.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-westchester-county-bee-line-system-wcdot-gtfs-527.zip?alt=media"
+    }
+}

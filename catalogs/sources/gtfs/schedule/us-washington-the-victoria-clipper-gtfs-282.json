@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 282,
+    "data_type": "gtfs",
+    "provider": "The Victoria Clipper",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "municipality": "Seattle",
+        "bounding_box": {
+            "minimum_latitude": 47.61356252137029,
+            "maximum_latitude": 48.535661235575695,
+            "minimum_longitude": -123.37359488010404,
+            "maximum_longitude": -122.35349714756012,
+            "extracted_on": "2022-03-15T21:13:27+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://addtransit.com/gtfsfile/42017/TheVictoriaClipper.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-the-victoria-clipper-gtfs-282.zip?alt=media"
+    }
+}

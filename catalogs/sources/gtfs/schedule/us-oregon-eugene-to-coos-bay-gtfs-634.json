@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 634,
+    "data_type": "gtfs",
+    "provider": "Eugene to Coos Bay",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Eugene",
+        "bounding_box": {
+            "minimum_latitude": 43.3690937400976,
+            "maximum_latitude": 44.291248,
+            "minimum_longitude": -124.213689565659,
+            "maximum_longitude": -116.958099,
+            "extracted_on": "2022-03-16T20:11:35+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/eugenetocoosbay-or-us/eugenetocoosbay-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-eugene-to-coos-bay-gtfs-634.zip?alt=media"
+    }
+}

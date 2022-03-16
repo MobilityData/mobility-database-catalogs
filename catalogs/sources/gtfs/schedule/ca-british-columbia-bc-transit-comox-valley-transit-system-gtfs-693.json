@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 693,
+    "data_type": "gtfs",
+    "provider": "BC Transit (Comox Valley Transit System)",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "British Columbia",
+        "municipality": "Comox Valley",
+        "bounding_box": {
+            "minimum_latitude": 49.472244,
+            "maximum_latitude": 49.873376,
+            "minimum_longitude": -125.147712,
+            "maximum_longitude": -124.795209,
+            "extracted_on": "2022-03-16T22:04:14+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://comox.mapstrat.com/current/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-transit-comox-valley-transit-system-gtfs-693.zip?alt=media",
+        "license": "https://www.bctransit.com/open-data/terms-of-use"
+    }
+}

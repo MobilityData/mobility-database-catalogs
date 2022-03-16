@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 623,
+    "data_type": "gtfs",
+    "provider": "Go West Shuttle",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "bounding_box": {
+            "minimum_latitude": 34.0022032814329,
+            "maximum_latitude": 34.0868832783108,
+            "minimum_longitude": -117.954219468385,
+            "maximum_longitude": -117.872601420076,
+            "extracted_on": "2022-03-16T20:11:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/westcovina-ca-us/westcovina-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-go-west-shuttle-gtfs-623.zip?alt=media"
+    }
+}

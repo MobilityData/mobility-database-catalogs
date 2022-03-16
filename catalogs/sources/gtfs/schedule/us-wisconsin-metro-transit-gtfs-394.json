@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 394,
+    "data_type": "gtfs",
+    "provider": "Metro Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Wisconsin",
+        "municipality": "Madison",
+        "bounding_box": {
+            "minimum_latitude": 42.987718,
+            "maximum_latitude": 43.176537,
+            "minimum_longitude": -89.563863,
+            "maximum_longitude": -89.244818,
+            "extracted_on": "2022-03-16T15:30:23+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://transitdata.cityofmadison.com/GTFS/mmt_gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-wisconsin-metro-transit-gtfs-394.zip?alt=media"
+    }
+}

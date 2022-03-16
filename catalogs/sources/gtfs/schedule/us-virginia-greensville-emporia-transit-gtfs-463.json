@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 463,
+    "data_type": "gtfs",
+    "provider": "Greensville Emporia Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Virginia",
+        "municipality": "Greensville",
+        "bounding_box": {
+            "minimum_latitude": 36.6780173514517,
+            "maximum_latitude": 36.7364475332836,
+            "minimum_longitude": -77.5642245870908,
+            "maximum_longitude": -77.5147472038461,
+            "extracted_on": "2022-03-16T15:35:04+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/get-va-us/get-va-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-greensville-emporia-transit-gtfs-463.zip?alt=media"
+    }
+}

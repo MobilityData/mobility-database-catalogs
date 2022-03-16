@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 219,
+    "data_type": "gtfs",
+    "provider": "Baldwin Park Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Baldwin Park",
+        "bounding_box": {
+            "minimum_latitude": 34.0633818198338,
+            "maximum_latitude": 34.1059616341679,
+            "minimum_longitude": -117.997131929879,
+            "maximum_longitude": -117.944715604821,
+            "extracted_on": "2022-03-15T17:42:51+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/baldwinpark-ca-us/baldwinpark-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-baldwin-park-transit-gtfs-219.zip?alt=media"
+    }
+}

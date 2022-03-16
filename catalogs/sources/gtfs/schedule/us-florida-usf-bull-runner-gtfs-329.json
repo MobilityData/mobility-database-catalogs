@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 329,
+    "data_type": "gtfs",
+    "provider": "USF Bull Runner",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Florida",
+        "municipality": "Tampa",
+        "bounding_box": {
+            "minimum_latitude": 28.0434346203,
+            "maximum_latitude": 28.0803911041,
+            "minimum_longitude": -82.4349528551,
+            "maximum_longitude": -82.401586175,
+            "extracted_on": "2022-03-15T21:15:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/CUTR-at-USF/bullrunner-gtfs-realtime-generator/raw/master/bullrunner-gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-usf-bull-runner-gtfs-329.zip?alt=media"
+    }
+}

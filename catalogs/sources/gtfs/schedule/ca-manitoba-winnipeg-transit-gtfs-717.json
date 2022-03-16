@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 717,
+    "data_type": "gtfs",
+    "provider": "Winnipeg Transit",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Manitoba",
+        "municipality": "Winnipeg",
+        "bounding_box": {
+            "minimum_latitude": 49.763940715545736,
+            "maximum_latitude": 49.96947367856984,
+            "minimum_longitude": -97.32299682965768,
+            "maximum_longitude": -96.96269333563112,
+            "extracted_on": "2022-03-16T22:06:27+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://gtfs.winnipegtransit.com/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-manitoba-winnipeg-transit-gtfs-717.zip?alt=media"
+    }
+}

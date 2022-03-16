@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 618,
+    "data_type": "gtfs",
+    "provider": "Harbor Connector",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Maryland",
+        "municipality": "Baltimore",
+        "bounding_box": {
+            "minimum_latitude": 39.2759223488919,
+            "maximum_latitude": 39.2839428588262,
+            "minimum_longitude": -76.6070138686386,
+            "maximum_longitude": -76.5740556363514,
+            "extracted_on": "2022-03-16T20:11:02+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/harborconnector-md-us/harborconnector-md-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maryland-harbor-connector-gtfs-618.zip?alt=media"
+    }
+}

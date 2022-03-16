@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 405,
+    "data_type": "gtfs",
+    "provider": "National Park Service ",
+    "name": "Cuyahoga Valley Scenic Railroad",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Ohio",
+        "municipality": "Brecksville",
+        "bounding_box": {
+            "minimum_latitude": 41.089484,
+            "maximum_latitude": 41.392676,
+            "minimum_longitude": -81.630857,
+            "maximum_longitude": -81.514958,
+            "extracted_on": "2022-03-16T15:32:20+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://nationalparkservice.github.io/nps-gtfs/cuva/scenic-rail/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-ohio-national-park-service-gtfs-405.zip?alt=media",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+}

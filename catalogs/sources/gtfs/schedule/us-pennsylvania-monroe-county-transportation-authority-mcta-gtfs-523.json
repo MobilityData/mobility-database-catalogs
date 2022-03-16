@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 523,
+    "data_type": "gtfs",
+    "provider": "Monroe County Transportation Authority (MCTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Pennsylvania",
+        "bounding_box": {
+            "minimum_latitude": 40.9825553894,
+            "maximum_latitude": 41.2190895081,
+            "minimum_longitude": -75.427269,
+            "maximum_longitude": -75.155083,
+            "extracted_on": "2022-03-16T17:27:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.gomcta.com/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-pennsylvania-monroe-county-transportation-authority-mcta-gtfs-523.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 181,
+    "data_type": "gtfs",
+    "provider": "University of Colorado Boulder",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Boulder",
+        "bounding_box": {
+            "minimum_latitude": 39.99664,
+            "maximum_latitude": 40.017101,
+            "minimum_longitude": -105.275559,
+            "maximum_longitude": -105.24371,
+            "extracted_on": "2022-03-15T17:40:47+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/universitycoloradoboulder-co-us/universitycoloradoboulder-co-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-university-of-colorado-boulder-gtfs-181.zip?alt=media"
+    }
+}

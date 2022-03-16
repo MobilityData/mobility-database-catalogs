@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 566,
+    "data_type": "gtfs",
+    "provider": "Lewis County Public Transportation",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Lowville",
+        "bounding_box": {
+            "minimum_latitude": 43.076425,
+            "maximum_latitude": 44.043536,
+            "minimum_longitude": -75.951539,
+            "maximum_longitude": -74.968202,
+            "extracted_on": "2022-03-16T20:09:38+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Lewis_County.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-lewis-county-public-transportation-gtfs-566.zip?alt=media",
+        "license": "https://data.ny.gov/download/77gx-ii52/application/pdf"
+    }
+}

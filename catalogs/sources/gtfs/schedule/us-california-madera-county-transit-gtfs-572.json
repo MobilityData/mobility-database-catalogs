@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 572,
+    "data_type": "gtfs",
+    "provider": "Madera County Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Madera",
+        "bounding_box": {
+            "minimum_latitude": 36.8516460649093,
+            "maximum_latitude": 37.337971,
+            "minimum_longitude": -120.275078,
+            "maximum_longitude": -119.497243593285,
+            "extracted_on": "2022-03-16T20:09:48+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/maderactc-ca-us/maderactc-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-madera-county-transit-gtfs-572.zip?alt=media"
+    }
+}

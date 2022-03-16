@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 241,
+    "data_type": "gtfs",
+    "provider": "Butte Regional Transit (B-Line)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Montana",
+        "municipality": "Butte",
+        "bounding_box": {
+            "minimum_latitude": 39.3632006265641,
+            "maximum_latitude": 39.8491485326975,
+            "minimum_longitude": -121.898691618365,
+            "maximum_longitude": -121.463442830053,
+            "extracted_on": "2022-03-15T17:43:33+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.blinetransit.com/documents/Google%20Transit/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-montana-butte-regional-transit-b-line-gtfs-241.zip?alt=media"
+    }
+}

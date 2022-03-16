@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 522,
+    "data_type": "gtfs",
+    "provider": "JFK Airtrain",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "New York City",
+        "bounding_box": {
+            "minimum_latitude": 40.642004,
+            "maximum_latitude": 40.698942,
+            "minimum_longitude": -73.829638,
+            "maximum_longitude": -73.780067,
+            "extracted_on": "2022-03-16T17:26:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Airtrain_JFK.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-jfk-airtrain-gtfs-522.zip?alt=media",
+        "license": "https://data.ny.gov/download/77gx-ii52/application/pdf"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 297,
+    "data_type": "gtfs",
+    "provider": "Camarillo Area Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Camarillo",
+        "bounding_box": {
+            "minimum_latitude": 34.2160754754535,
+            "maximum_latitude": 34.243015,
+            "minimum_longitude": -119.074177,
+            "maximum_longitude": -118.974631,
+            "extracted_on": "2022-03-15T21:14:05+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/camarillo-ca-us/camarillo-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-camarillo-area-transit-gtfs-297.zip?alt=media"
+    }
+}

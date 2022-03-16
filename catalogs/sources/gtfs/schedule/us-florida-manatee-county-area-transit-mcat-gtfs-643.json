@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 643,
+    "data_type": "gtfs",
+    "provider": "Manatee County Area Transit (MCAT)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Florida",
+        "municipality": "Bradenton",
+        "bounding_box": {
+            "minimum_latitude": 27.33753195,
+            "maximum_latitude": 27.81173,
+            "minimum_longitude": -82.780321,
+            "maximum_longitude": -82.45171619,
+            "extracted_on": "2022-03-16T20:12:03+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/manatee-fl-us/manatee-fl-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-manatee-county-area-transit-mcat-gtfs-643.zip?alt=media"
+    }
+}

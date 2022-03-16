@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 363,
+    "data_type": "gtfs",
+    "provider": "Bloomington Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Indiana",
+        "municipality": "Bloomington",
+        "bounding_box": {
+            "minimum_latitude": 39.1213376974018,
+            "maximum_latitude": 39.208469,
+            "minimum_longitude": -86.5918779373169,
+            "maximum_longitude": -86.471773982048,
+            "extracted_on": "2022-03-15T21:17:24+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.bloomington.in.gov/dataset/5aca3228-b81b-4572-a45c-b05a30053949/resource/16145a82-0959-4922-93ae-14dcee02950c/download/googletransitfeed.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-indiana-bloomington-transit-gtfs-363.zip?alt=media"
+    }
+}

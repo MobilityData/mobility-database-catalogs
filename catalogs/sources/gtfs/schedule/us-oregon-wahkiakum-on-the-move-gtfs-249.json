@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 249,
+    "data_type": "gtfs",
+    "provider": "Wahkiakum on the Move",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Astoria",
+        "bounding_box": {
+            "minimum_latitude": 46.11987482,
+            "maximum_latitude": 46.37641594,
+            "minimum_longitude": -123.80452661,
+            "maximum_longitude": -122.90088792271,
+            "extracted_on": "2022-03-15T17:44:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/wotm-wa-us/wotm-wa-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-wahkiakum-on-the-move-gtfs-249.zip?alt=media"
+    }
+}

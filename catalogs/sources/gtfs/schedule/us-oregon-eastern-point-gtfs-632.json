@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 632,
+    "data_type": "gtfs",
+    "provider": "Eastern Point",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Ontario",
+        "bounding_box": {
+            "minimum_latitude": 43.54207602,
+            "maximum_latitude": 44.058021435071,
+            "minimum_longitude": -121.301143956693,
+            "maximum_longitude": -116.951137,
+            "extracted_on": "2022-03-16T20:11:32+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/easternpoint-or-us/easternpoint-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-eastern-point-gtfs-632.zip?alt=media"
+    }
+}

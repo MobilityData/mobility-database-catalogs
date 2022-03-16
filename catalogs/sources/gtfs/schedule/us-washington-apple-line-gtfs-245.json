@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 245,
+    "data_type": "gtfs",
+    "provider": "Apple Line",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "municipality": "Wenatchee",
+        "bounding_box": {
+            "minimum_latitude": 47.00766572,
+            "maximum_latitude": 48.61034629,
+            "minimum_longitude": -120.5861511,
+            "maximum_longitude": -117.4069488,
+            "extracted_on": "2022-03-15T17:43:39+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://business.wsdot.wa.gov/Transit/csv_files/InterCityBus/WSDOT_GTFS_Intercity.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-apple-line-gtfs-245.zip?alt=media"
+    }
+}

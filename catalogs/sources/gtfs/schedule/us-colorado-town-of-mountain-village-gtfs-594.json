@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 594,
+    "data_type": "gtfs",
+    "provider": "Town of Mountain Village",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Town of Mountain Village",
+        "bounding_box": {
+            "minimum_latitude": 37.93133,
+            "maximum_latitude": 37.947176,
+            "minimum_longitude": -107.881954,
+            "maximum_longitude": -107.807134,
+            "extracted_on": "2022-03-16T20:10:18+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/mountainvillage-co-us/mountainvillage-co-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-town-of-mountain-village-gtfs-594.zip?alt=media"
+    }
+}

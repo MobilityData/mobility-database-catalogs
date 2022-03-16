@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 671,
+    "data_type": "gtfs",
+    "provider": "Polleys Coaches",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "Queensland",
+        "municipality": "Gympie",
+        "bounding_box": {
+            "minimum_latitude": -26.223348,
+            "maximum_latitude": -25.901583,
+            "minimum_longitude": 152.639085,
+            "maximum_longitude": 153.091887,
+            "extracted_on": "2022-03-16T22:00:45+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfsrt.api.translink.com.au/GTFS/GYM_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-polleys-coaches-gtfs-671.zip?alt=media"
+    }
+}

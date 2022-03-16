@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 352,
+    "data_type": "gtfs",
+    "provider": "Charleston Area Regional Transportation Authority (CARTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "South Carolina",
+        "municipality": "Charleston",
+        "bounding_box": {
+            "minimum_latitude": 32.569305235571,
+            "maximum_latitude": 33.581350752655,
+            "minimum_longitude": -80.5739342489342,
+            "maximum_longitude": -79.4640023086412,
+            "extracted_on": "2022-03-15T21:17:05+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/carta-sc-us/carta-sc-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-south-carolina-charleston-area-regional-transportation-authority-carta-gtfs-352.zip?alt=media"
+    }
+}

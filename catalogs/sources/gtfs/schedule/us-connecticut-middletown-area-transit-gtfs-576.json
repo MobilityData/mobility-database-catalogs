@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 576,
+    "data_type": "gtfs",
+    "provider": "Middletown Area Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Connecticut",
+        "bounding_box": {
+            "minimum_latitude": 41.5034374574747,
+            "maximum_latitude": 41.6087292654757,
+            "minimum_longitude": -72.809799,
+            "maximum_longitude": -72.4877517383079,
+            "extracted_on": "2022-03-16T20:09:52+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/middletown-ct-us/middletown-ct-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-connecticut-middletown-area-transit-gtfs-576.zip?alt=media"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 694,
+    "data_type": "gtfs",
+    "provider": "BC Transit (Cowichan Valley Regional Transit System)",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "British Columbia",
+        "bounding_box": {
+            "minimum_latitude": 48.418266,
+            "maximum_latitude": 48.998334,
+            "minimum_longitude": -124.218623,
+            "maximum_longitude": -123.364449,
+            "extracted_on": "2022-03-16T22:04:16+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.bctransit.com/data/gtfs/cowichan-valley.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-transit-cowichan-valley-regional-transit-system-gtfs-694.zip?alt=media"
+    }
+}

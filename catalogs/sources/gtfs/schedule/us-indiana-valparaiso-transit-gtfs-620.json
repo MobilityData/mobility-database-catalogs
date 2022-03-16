@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 620,
+    "data_type": "gtfs",
+    "provider": "Valparaiso Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Indiana",
+        "municipality": "Gary",
+        "bounding_box": {
+            "minimum_latitude": 41.4552612,
+            "maximum_latitude": 41.886761,
+            "minimum_longitude": -87.635139,
+            "maximum_longitude": -87.0139127,
+            "extracted_on": "2022-03-16T20:11:05+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/valpotransit-chi-us/valpotransit-chi-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-indiana-valparaiso-transit-gtfs-620.zip?alt=media"
+    }
+}

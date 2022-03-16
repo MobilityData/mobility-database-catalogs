@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 711,
+    "data_type": "gtfs",
+    "provider": "Roam Transit",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Alberta",
+        "municipality": "Banff",
+        "bounding_box": {
+            "minimum_latitude": 50.8997692685086,
+            "maximum_latitude": 51.4252040530679,
+            "minimum_longitude": -116.212714404789,
+            "maximum_longitude": -114.0599361464,
+            "extracted_on": "2022-03-16T22:05:18+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/roamtransit-banff-ab-ca/roamtransit-banff-ab-ca.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-alberta-roam-transit-gtfs-711.zip?alt=media"
+    }
+}

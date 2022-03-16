@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 437,
+    "data_type": "gtfs",
+    "provider": "Massachusetts Bay Transportation Authority (MBTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Massachusetts",
+        "municipality": "Boston",
+        "bounding_box": {
+            "minimum_latitude": 41.581289,
+            "maximum_latitude": 42.797837,
+            "minimum_longitude": -71.848488,
+            "maximum_longitude": -70.276583,
+            "extracted_on": "2022-03-16T15:34:14+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://cdn.mbta.com/MBTA_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-massachusetts-bay-transportation-authority-mbta-gtfs-437.zip?alt=media",
+        "license": "https://www.mass.gov/files/documents/2017/10/27/develop_license_agree_0.pdf"
+    }
+}

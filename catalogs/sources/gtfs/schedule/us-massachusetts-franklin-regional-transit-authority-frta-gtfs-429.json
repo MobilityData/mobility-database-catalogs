@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 429,
+    "data_type": "gtfs",
+    "provider": "Franklin Regional Transit Authority (FRTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Massachusetts",
+        "municipality": "Franklin",
+        "bounding_box": {
+            "minimum_latitude": 42.3176604081528,
+            "maximum_latitude": 42.6280840552401,
+            "minimum_longitude": -72.8769354295876,
+            "maximum_longitude": -72.2627100720056,
+            "extracted_on": "2022-03-16T15:33:46+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/frta-ma-us/frta-ma-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-franklin-regional-transit-authority-frta-gtfs-429.zip?alt=media"
+    }
+}

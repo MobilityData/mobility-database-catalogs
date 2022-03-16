@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 364,
+    "data_type": "gtfs",
+    "provider": "Transit Authority of River City (TARC)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Kentucky",
+        "municipality": "Louisville",
+        "bounding_box": {
+            "minimum_latitude": 38.056361,
+            "maximum_latitude": 38.383253,
+            "minimum_longitude": -85.904275,
+            "maximum_longitude": -85.502994,
+            "extracted_on": "2022-03-15T21:17:29+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://googletransit.ridetarc.org/feed/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-kentucky-transit-authority-of-river-city-tarc-gtfs-364.zip?alt=media"
+    }
+}

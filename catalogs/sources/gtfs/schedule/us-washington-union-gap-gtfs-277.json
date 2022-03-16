@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 277,
+    "data_type": "gtfs",
+    "provider": "Union Gap",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "municipality": "Yakima",
+        "bounding_box": {
+            "minimum_latitude": 46.536388,
+            "maximum_latitude": 46.577649,
+            "minimum_longitude": -120.520256,
+            "maximum_longitude": -120.475399,
+            "extracted_on": "2022-03-15T17:45:32+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/uniongap-wa-us/uniongap-wa-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-union-gap-gtfs-277.zip?alt=media"
+    }
+}

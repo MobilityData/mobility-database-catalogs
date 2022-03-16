@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 703,
+    "data_type": "gtfs",
+    "provider": "BC Transit (Vernon Regional Transit System)",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "British Columbia",
+        "municipality": "Kelowna",
+        "bounding_box": {
+            "minimum_latitude": 49.939561,
+            "maximum_latitude": 50.551067,
+            "minimum_longitude": -119.406769,
+            "maximum_longitude": -118.962945,
+            "extracted_on": "2022-03-16T22:05:06+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.bctransit.com/data/gtfs/vernon.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-transit-vernon-regional-transit-system-gtfs-703.zip?alt=media"
+    }
+}

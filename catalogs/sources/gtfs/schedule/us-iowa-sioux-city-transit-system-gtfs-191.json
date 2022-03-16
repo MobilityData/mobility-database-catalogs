@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 191,
+    "data_type": "gtfs",
+    "provider": "Sioux City Transit System",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Iowa",
+        "municipality": "Sioux City",
+        "bounding_box": {
+            "minimum_latitude": 42.399216844341,
+            "maximum_latitude": 42.545166582532,
+            "minimum_longitude": -96.497762,
+            "maximum_longitude": -96.32917641277,
+            "extracted_on": "2022-03-15T17:41:26+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/siouxcity-ia-us/siouxcity-ia-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-iowa-sioux-city-transit-system-gtfs-191.zip?alt=media"
+    }
+}

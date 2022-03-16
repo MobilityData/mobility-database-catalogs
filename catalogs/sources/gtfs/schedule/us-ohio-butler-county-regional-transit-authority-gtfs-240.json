@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 240,
+    "data_type": "gtfs",
+    "provider": "Butler County Regional Transit Authority",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Ohio",
+        "municipality": "Hamilton",
+        "bounding_box": {
+            "minimum_latitude": 39.2832317,
+            "maximum_latitude": 39.540703,
+            "minimum_longitude": -84.7675,
+            "maximum_longitude": -84.315188,
+            "extracted_on": "2022-03-15T17:43:31+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.butlercountyrta.com/wp-content/uploads/2019/11/Bcrta-GTFS-1.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-ohio-butler-county-regional-transit-authority-gtfs-240.zip?alt=media"
+    }
+}

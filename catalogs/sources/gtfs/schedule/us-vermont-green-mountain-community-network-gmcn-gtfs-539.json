@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 539,
+    "data_type": "gtfs",
+    "provider": "Green Mountain Community Network (GMCN)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Vermont",
+        "municipality": "Bennington",
+        "bounding_box": {
+            "minimum_latitude": 42.69515,
+            "maximum_latitude": 43.188563940883,
+            "minimum_longitude": -73.247172,
+            "maximum_longitude": -72.8519291383657,
+            "extracted_on": "2022-03-16T17:27:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/greenmtncn-vt-us/greenmtncn-vt-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-vermont-green-mountain-community-network-gmcn-gtfs-539.zip?alt=media"
+    }
+}

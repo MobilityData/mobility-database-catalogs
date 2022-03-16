@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 290,
+    "data_type": "gtfs",
+    "provider": "Spokane Transit Authority (STA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "municipality": "Spokane",
+        "bounding_box": {
+            "minimum_latitude": 47.476671,
+            "maximum_latitude": 47.768898,
+            "minimum_longitude": -117.705755,
+            "maximum_longitude": -117.075949,
+            "extracted_on": "2022-03-15T21:13:54+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.spokanetransit.com/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-spokane-transit-authority-sta-gtfs-290.zip?alt=media"
+    }
+}

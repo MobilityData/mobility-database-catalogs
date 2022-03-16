@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 410,
+    "data_type": "gtfs",
+    "provider": "Laketran",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Ohio",
+        "municipality": "Cleveland",
+        "bounding_box": {
+            "minimum_latitude": 41.4969731269463,
+            "maximum_latitude": 41.8417784065152,
+            "minimum_longitude": -81.7001491308301,
+            "maximum_longitude": -81.008756071851,
+            "extracted_on": "2022-03-16T15:32:51+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/lakecounty-oh-us/lakecounty-oh-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-ohio-laketran-gtfs-410.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 563,
+    "data_type": "gtfs",
+    "provider": "La Puente LINK",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "La Puente",
+        "bounding_box": {
+            "minimum_latitude": 34.0093465695576,
+            "maximum_latitude": 34.0554403598575,
+            "minimum_longitude": -117.980788784323,
+            "maximum_longitude": -117.924657370715,
+            "extracted_on": "2022-03-16T20:09:35+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/lapuente-ca-us/lapuente-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-la-puente-link-gtfs-563.zip?alt=media"
+    }
+}

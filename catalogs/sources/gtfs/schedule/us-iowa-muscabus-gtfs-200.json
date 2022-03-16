@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 200,
+    "data_type": "gtfs",
+    "provider": "MuscaBus",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Iowa",
+        "municipality": "Muscatine",
+        "bounding_box": {
+            "minimum_latitude": 41.399477,
+            "maximum_latitude": 41.474813,
+            "minimum_longitude": -91.085022,
+            "maximum_longitude": -91.000096,
+            "extracted_on": "2022-03-15T17:41:42+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/muscabus-ia-us/muscabus-ia-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-iowa-muscabus-gtfs-200.zip?alt=media"
+    }
+}

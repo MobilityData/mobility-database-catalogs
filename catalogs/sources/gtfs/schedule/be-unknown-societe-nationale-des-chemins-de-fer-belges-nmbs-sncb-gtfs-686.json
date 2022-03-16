@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 686,
+    "data_type": "gtfs",
+    "provider": "Société nationale des chemins de fer belges (NMBS-SNCB)",
+    "location": {
+        "country_code": "BE",
+        "bounding_box": {
+            "minimum_latitude": 48.86667,
+            "maximum_latitude": 52.35,
+            "minimum_longitude": 2.333333,
+            "maximum_longitude": 6.133333,
+            "extracted_on": "2022-03-16T22:03:50+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.irail.be/nmbs/gtfs/latest.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/be-unknown-societe-nationale-des-chemins-de-fer-belges-nmbs-sncb-gtfs-686.zip?alt=media"
+    }
+}

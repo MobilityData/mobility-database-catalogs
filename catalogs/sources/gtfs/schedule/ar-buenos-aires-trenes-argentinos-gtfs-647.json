@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 647,
+    "data_type": "gtfs",
+    "provider": "Trenes Argentinos",
+    "location": {
+        "country_code": "AR",
+        "subdivision_name": "Buenos Aires",
+        "bounding_box": {
+            "minimum_latitude": -35.8738929,
+            "maximum_latitude": -34.0979051,
+            "minimum_longitude": -59.4336661,
+            "maximum_longitude": -57.8954007,
+            "extracted_on": "2022-03-16T21:17:16+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://cdn.buenosaires.gob.ar/datosabiertos/datasets/trenes-gtfs/trenes-gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ar-buenos-aires-trenes-argentinos-gtfs-647.zip?alt=media",
+        "license": "https://data.buenosaires.gob.ar/dataset/trenes-gtfs"
+    }
+}

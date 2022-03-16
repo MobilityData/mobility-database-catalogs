@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 481,
+    "data_type": "gtfs",
+    "provider": "Potomac and Rappahannock Transportation Commission (PRTC)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Virginia",
+        "municipality": "Woodbridge",
+        "bounding_box": {
+            "minimum_latitude": 38.475418,
+            "maximum_latitude": 38.931923,
+            "minimum_longitude": -77.637254,
+            "maximum_longitude": -76.992477,
+            "extracted_on": "2022-03-16T17:24:07+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.prtctransit.org/feeds/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-potomac-and-rappahannock-transportation-commission-prtc-gtfs-481.zip?alt=media"
+    }
+}

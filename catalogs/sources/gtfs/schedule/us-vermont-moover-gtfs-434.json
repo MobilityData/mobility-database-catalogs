@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 434,
+    "data_type": "gtfs",
+    "provider": "MOOver",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Vermont",
+        "municipality": "Wilmington",
+        "bounding_box": {
+            "minimum_latitude": 42.7664048,
+            "maximum_latitude": 43.704185,
+            "minimum_longitude": -73.1980097605743,
+            "maximum_longitude": -72.227364677934,
+            "extracted_on": "2022-03-16T15:34:02+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/dvtamoover-vt-us/dvtamoover-vt-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-vermont-moover-gtfs-434.zip?alt=media"
+    }
+}

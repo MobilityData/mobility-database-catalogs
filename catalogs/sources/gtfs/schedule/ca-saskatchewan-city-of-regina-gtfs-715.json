@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 715,
+    "data_type": "gtfs",
+    "provider": "City of Regina",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Saskatchewan",
+        "municipality": "Regina",
+        "bounding_box": {
+            "minimum_latitude": 50.40078,
+            "maximum_latitude": 50.50887,
+            "minimum_longitude": -104.7079,
+            "maximum_longitude": -104.503773,
+            "extracted_on": "2022-03-16T22:06:08+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://opengis.regina.ca/reginagtfs/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-saskatchewan-city-of-regina-gtfs-715.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 217,
+    "data_type": "gtfs",
+    "provider": "Auburn Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Auburn",
+        "bounding_box": {
+            "minimum_latitude": 38.878361,
+            "maximum_latitude": 38.931944,
+            "minimum_longitude": -121.082945,
+            "maximum_longitude": -121.035781594468,
+            "extracted_on": "2022-03-15T17:42:48+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/auburntransit-ca-us/auburntransit-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-auburn-transit-gtfs-217.zip?alt=media"
+    }
+}

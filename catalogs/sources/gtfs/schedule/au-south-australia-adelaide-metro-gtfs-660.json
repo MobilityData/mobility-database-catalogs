@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 660,
+    "data_type": "gtfs",
+    "provider": "Adelaide Metro",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "South Australia",
+        "municipality": "Adelaide",
+        "bounding_box": {
+            "minimum_latitude": -35.339223,
+            "maximum_latitude": -34.571043,
+            "minimum_longitude": 138.445316,
+            "maximum_longitude": 139.036087,
+            "extracted_on": "2022-03-16T21:38:51+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.adelaidemetro.com.au/v1/static/latest/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-south-australia-adelaide-metro-gtfs-660.zip?alt=media"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 185,
+    "data_type": "gtfs",
+    "provider": "Wichita Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Kansas",
+        "municipality": "Witchita",
+        "bounding_box": {
+            "minimum_latitude": 37.605752,
+            "maximum_latitude": 37.757113,
+            "minimum_longitude": -97.466211,
+            "maximum_longitude": -97.189472,
+            "extracted_on": "2022-03-15T17:40:55+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/transitland/gtfs-archives-not-hosted-elsewhere/blob/master/wichita-transit.zip?raw=true",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-kansas-wichita-transit-gtfs-185.zip?alt=media",
+        "license": "https://github.com/transitland/gtfs-archives-not-hosted-elsewhere/blob/master/wichita-transit-license.pdf"
+    }
+}

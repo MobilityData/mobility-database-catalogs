@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 601,
+    "data_type": "gtfs",
+    "provider": "Logan Express",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Massachusetts",
+        "municipality": "Boston",
+        "bounding_box": {
+            "minimum_latitude": 42.21736,
+            "maximum_latitude": 42.51759,
+            "minimum_longitude": -71.39341,
+            "maximum_longitude": -71.017076,
+            "extracted_on": "2022-03-16T20:10:33+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/loganexpress-ma-us/loganexpress-ma-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-logan-express-gtfs-601.zip?alt=media"
+    }
+}

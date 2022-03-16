@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 570,
+    "data_type": "gtfs",
+    "provider": "Lynwood Trolley / Breeze",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Los Angeles",
+        "bounding_box": {
+            "minimum_latitude": 33.9076946648605,
+            "maximum_latitude": 33.9452214237674,
+            "minimum_longitude": -118.239279931577,
+            "maximum_longitude": -118.180320930699,
+            "extracted_on": "2022-03-16T20:09:45+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/lynwood-ca-us/lynwood-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-lynwood-trolley-breeze-gtfs-570.zip?alt=media"
+    }
+}

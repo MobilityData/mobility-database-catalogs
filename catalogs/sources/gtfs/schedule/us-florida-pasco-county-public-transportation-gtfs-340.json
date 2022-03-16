@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 340,
+    "data_type": "gtfs",
+    "provider": "Pasco County Public Transportation",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Florida",
+        "municipality": "Spring Hill",
+        "bounding_box": {
+            "minimum_latitude": 28.14146,
+            "maximum_latitude": 28.465932,
+            "minimum_longitude": -82.758257,
+            "maximum_longitude": -82.170562,
+            "extracted_on": "2022-03-15T21:16:29+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/pascocountypublictransit-fl-us/pascocountypublictransit-fl-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-pasco-county-public-transportation-gtfs-340.zip?alt=media"
+    }
+}

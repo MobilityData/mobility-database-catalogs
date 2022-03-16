@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 628,
+    "data_type": "gtfs",
+    "provider": "Union City Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "bounding_box": {
+            "minimum_latitude": 37.567764,
+            "maximum_latitude": 37.612185,
+            "minimum_longitude": -122.082768,
+            "maximum_longitude": -122.002866,
+            "extracted_on": "2022-03-16T20:11:22+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/unioncity-ca-us/unioncity-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-union-city-transit-gtfs-628.zip?alt=media"
+    }
+}

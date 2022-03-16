@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 543,
+    "data_type": "gtfs",
+    "provider": "Addison County Transit (ACTR)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Vermont",
+        "municipality": "Burlington",
+        "bounding_box": {
+            "minimum_latitude": 43.607222,
+            "maximum_latitude": 44.480452,
+            "minimum_longitude": -73.262769,
+            "maximum_longitude": -72.9503,
+            "extracted_on": "2022-03-16T17:28:03+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/addisoncounty-vt-us/addisoncounty-vt-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-vermont-addison-county-transit-actr-gtfs-543.zip?alt=media"
+    }
+}

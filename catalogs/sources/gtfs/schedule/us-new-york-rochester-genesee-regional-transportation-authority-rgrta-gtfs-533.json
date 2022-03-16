@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 533,
+    "data_type": "gtfs",
+    "provider": "Rochester-Genesee Regional Transportation Authority (RGRTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Rochester",
+        "bounding_box": {
+            "minimum_latitude": 42.526438,
+            "maximum_latitude": 43.297343,
+            "minimum_longitude": -78.141093,
+            "maximum_longitude": -76.99341,
+            "extracted_on": "2022-03-16T17:27:38+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://scheduledata.rgrta.com/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-rochester-genesee-regional-transportation-authority-rgrta-gtfs-533.zip?alt=media"
+    }
+}

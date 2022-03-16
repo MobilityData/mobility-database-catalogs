@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 648,
+    "data_type": "gtfs",
+    "provider": "Wiener Lokalbahnen (WLB), Wiener Linien",
+    "location": {
+        "country_code": "AT",
+        "subdivision_name": "Wien",
+        "bounding_box": {
+            "minimum_latitude": 47.9995020902886,
+            "maximum_latitude": 48.3011051975429,
+            "minimum_longitude": 16.1977025532707,
+            "maximum_longitude": 16.5494019702052,
+            "extracted_on": "2022-03-16T21:18:29+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.wienerlinien.at/ogd_realtime/doku/ogd/gtfs/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/at-wien-wiener-lokalbahnen-wlb-gtfs-648.zip?alt=media"
+    }
+}

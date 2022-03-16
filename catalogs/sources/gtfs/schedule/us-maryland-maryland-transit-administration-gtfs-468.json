@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 468,
+    "data_type": "gtfs",
+    "provider": "Maryland Transit Administration",
+    "name": "MARC Train",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Maryland",
+        "municipality": "Baltimore",
+        "bounding_box": {
+            "minimum_latitude": 38.899036,
+            "maximum_latitude": 39.558089,
+            "minimum_longitude": -77.961655,
+            "maximum_longitude": -76.07318,
+            "extracted_on": "2022-03-16T17:23:39+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://mdotmta-gtfs.s3.amazonaws.com/mdotmta_gtfs_marc.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maryland-maryland-transit-administration-gtfs-468.zip?alt=media"
+    }
+}

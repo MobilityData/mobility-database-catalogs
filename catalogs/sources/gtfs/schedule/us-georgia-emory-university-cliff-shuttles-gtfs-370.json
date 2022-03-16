@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 370,
+    "data_type": "gtfs",
+    "provider": "Emory University Cliff Shuttles",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Georgia",
+        "municipality": "Atlanta",
+        "bounding_box": {
+            "minimum_latitude": 33.774499558823095,
+            "maximum_latitude": 33.80119548687,
+            "minimum_longitude": -84.325291336459,
+            "maximum_longitude": -84.29636358836,
+            "extracted_on": "2022-03-15T21:18:22+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://documents.atlantaregional.com/transitdata/gtfs_CCTMA.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-georgia-emory-university-cliff-shuttles-gtfs-370.zip?alt=media"
+    }
+}

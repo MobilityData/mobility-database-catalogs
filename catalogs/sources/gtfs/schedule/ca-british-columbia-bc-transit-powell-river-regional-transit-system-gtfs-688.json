@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 688,
+    "data_type": "gtfs",
+    "provider": "BC Transit (Powell River Regional Transit System)",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "British Columbia",
+        "municipality": "Powell River",
+        "bounding_box": {
+            "minimum_latitude": 49.653951,
+            "maximum_latitude": 49.981554,
+            "minimum_longitude": -124.760471,
+            "maximum_longitude": -124.178869,
+            "extracted_on": "2022-03-16T22:04:01+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.bctransit.com/data/gtfs/powell-river.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-transit-powell-river-regional-transit-system-gtfs-688.zip?alt=media",
+        "license": "https://www.bctransit.com/open-data/terms-of-use"
+    }
+}

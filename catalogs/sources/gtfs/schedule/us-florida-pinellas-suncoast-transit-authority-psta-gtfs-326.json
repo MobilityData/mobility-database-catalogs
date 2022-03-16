@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 326,
+    "data_type": "gtfs",
+    "provider": "Pinellas Suncoast Transit Authority (PSTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Florida",
+        "municipality": "Pinellas",
+        "bounding_box": {
+            "minimum_latitude": 27.70473,
+            "maximum_latitude": 28.15529,
+            "minimum_longitude": -82.850532,
+            "maximum_longitude": -82.453755,
+            "extracted_on": "2022-03-15T21:15:34+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.psta.net/latest/Google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-pinellas-suncoast-transit-authority-psta-gtfs-326.zip?alt=media"
+    }
+}

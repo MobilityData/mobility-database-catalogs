@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 611,
+    "data_type": "gtfs",
+    "provider": "Graham Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Virginia",
+        "municipality": "Bluefield",
+        "bounding_box": {
+            "minimum_latitude": 37.2322934348219,
+            "maximum_latitude": 37.3073947649655,
+            "minimum_longitude": -81.3460041737645,
+            "maximum_longitude": -81.2347962623343,
+            "extracted_on": "2022-03-16T20:10:49+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/grahamtransit-va-us/grahamtransit-va-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-graham-transit-gtfs-611.zip?alt=media"
+    }
+}

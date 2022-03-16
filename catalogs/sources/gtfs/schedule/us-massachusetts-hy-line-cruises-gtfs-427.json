@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 427,
+    "data_type": "gtfs",
+    "provider": "Hy-Line Cruises",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Massachusetts",
+        "municipality": "New Bedford",
+        "bounding_box": {
+            "minimum_latitude": 41.2846768091449,
+            "maximum_latitude": 41.6482986856447,
+            "minimum_longitude": -70.5587982204256,
+            "maximum_longitude": -70.0947968479691,
+            "extracted_on": "2022-03-16T15:33:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/hylinecruises-ma-us/hylinecruises-ma-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-hy-line-cruises-gtfs-427.zip?alt=media"
+    }
+}

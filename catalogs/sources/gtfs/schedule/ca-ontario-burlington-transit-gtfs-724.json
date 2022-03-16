@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 724,
+    "data_type": "gtfs",
+    "provider": "Burlington Transit",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Ontario",
+        "municipality": "Burlington",
+        "bounding_box": {
+            "minimum_latitude": 43.256679,
+            "maximum_latitude": 43.411717,
+            "minimum_longitude": -79.892603,
+            "maximum_longitude": -79.725184,
+            "extracted_on": "2022-03-16T22:06:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://opendata.burlington.ca/gtfs-rt/GTFS_Data.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-burlington-transit-gtfs-724.zip?alt=media",
+        "license": "https://cob.burlington.opendata.arcgis.com/"
+    }
+}

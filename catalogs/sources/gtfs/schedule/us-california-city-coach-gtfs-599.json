@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 599,
+    "data_type": "gtfs",
+    "provider": "City Coach",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Vacaville",
+        "bounding_box": {
+            "minimum_latitude": 38.32518498,
+            "maximum_latitude": 38.3978029,
+            "minimum_longitude": -122.00789,
+            "maximum_longitude": -121.93363,
+            "extracted_on": "2022-03-16T20:10:28+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/vacavillecitycoach-ca-us/vacavillecitycoach-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-city-coach-gtfs-599.zip?alt=media"
+    }
+}

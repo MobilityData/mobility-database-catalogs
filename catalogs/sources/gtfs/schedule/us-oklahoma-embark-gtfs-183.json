@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 183,
+    "data_type": "gtfs",
+    "provider": "Embark",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oklahoma",
+        "municipality": "Oklahoma City",
+        "bounding_box": {
+            "minimum_latitude": 35.201592,
+            "maximum_latitude": 35.614976,
+            "minimum_longitude": -97.654389,
+            "maximum_longitude": -97.300641,
+            "extracted_on": "2022-03-15T17:40:52+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://embarkok.com/data/gtfs/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oklahoma-embark-gtfs-183.zip?alt=media"
+    }
+}

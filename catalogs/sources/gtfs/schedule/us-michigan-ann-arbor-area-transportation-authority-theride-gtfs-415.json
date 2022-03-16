@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 415,
+    "data_type": "gtfs",
+    "provider": "Ann Arbor Area Transportation Authority (TheRide)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Michigan",
+        "municipality": "Ann Arbor",
+        "bounding_box": {
+            "minimum_latitude": 42.189301,
+            "maximum_latitude": 42.317717,
+            "minimum_longitude": -83.843184,
+            "maximum_longitude": -83.553954,
+            "extracted_on": "2022-03-16T15:33:09+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.theride.org/sites/default/files/google/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-michigan-ann-arbor-area-transportation-authority-theride-gtfs-415.zip?alt=media"
+    }
+}

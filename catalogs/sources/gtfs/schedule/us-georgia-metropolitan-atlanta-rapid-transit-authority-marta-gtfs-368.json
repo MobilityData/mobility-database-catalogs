@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 368,
+    "data_type": "gtfs",
+    "provider": "Metropolitan Atlanta Rapid Transit Authority (MARTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Georgia",
+        "municipality": "Atlanta",
+        "bounding_box": {
+            "minimum_latitude": 33.432372,
+            "maximum_latitude": 34.105822,
+            "minimum_longitude": -84.669803,
+            "maximum_longitude": -84.083398,
+            "extracted_on": "2022-03-15T21:18:15+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.itsmarta.com/google_transit_feed/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-georgia-metropolitan-atlanta-rapid-transit-authority-marta-gtfs-368.zip?alt=media"
+    }
+}

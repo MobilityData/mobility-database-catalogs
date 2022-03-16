@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 213,
+    "data_type": "gtfs",
+    "provider": "Amarillo City Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Texas",
+        "municipality": "Amarillo",
+        "bounding_box": {
+            "minimum_latitude": 35.14924024,
+            "maximum_latitude": 35.247835,
+            "minimum_longitude": -101.938349,
+            "maximum_longitude": -101.764893,
+            "extracted_on": "2022-03-15T17:42:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://code.amarillo.gov/gtfs/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-texas-amarillo-city-transit-gtfs-213.zip?alt=media"
+    }
+}

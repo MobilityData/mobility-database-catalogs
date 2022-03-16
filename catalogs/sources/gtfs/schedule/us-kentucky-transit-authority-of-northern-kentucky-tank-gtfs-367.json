@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 367,
+    "data_type": "gtfs",
+    "provider": "Transit Authority of Northern Kentucky (TANK)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Kentucky",
+        "municipality": "Fort Wright",
+        "bounding_box": {
+            "minimum_latitude": 38.9554999983947,
+            "maximum_latitude": 39.116476000458,
+            "minimum_longitude": -84.728163998601,
+            "maximum_longitude": -84.4007943982551,
+            "extracted_on": "2022-03-15T21:17:44+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.tankbus.org/Portals/tankbus/gtfs/tank-google-transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-kentucky-transit-authority-of-northern-kentucky-tank-gtfs-367.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 342,
+    "data_type": "gtfs",
+    "provider": "LakeXpress",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Florida",
+        "municipality": "Leesburg",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2022-03-15T21:16:32+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://ftis.org/PostFileDownload.aspx?id=450A0",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-lakexpress-gtfs-342.zip?alt=media"
+    }
+}

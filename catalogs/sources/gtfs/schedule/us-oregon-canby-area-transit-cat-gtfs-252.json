@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 252,
+    "data_type": "gtfs",
+    "provider": "Canby Area Transit (CAT)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Canby",
+        "bounding_box": {
+            "minimum_latitude": 45.1511972,
+            "maximum_latitude": 45.359991,
+            "minimum_longitude": -122.8349536,
+            "maximum_longitude": -122.604267,
+            "extracted_on": "2022-03-15T17:44:14+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/canbytransit-or-us/canbytransit-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-canby-area-transit-cat-gtfs-252.zip?alt=media"
+    }
+}

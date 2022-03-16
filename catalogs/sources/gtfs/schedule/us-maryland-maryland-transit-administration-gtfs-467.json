@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 467,
+    "data_type": "gtfs",
+    "provider": "Maryland Transit Administration",
+    "name": "Commuter Bus",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Maryland",
+        "bounding_box": {
+            "minimum_latitude": 38.349762,
+            "maximum_latitude": 39.601879,
+            "minimum_longitude": -77.732109,
+            "maximum_longitude": -76.091627,
+            "extracted_on": "2022-03-16T17:23:38+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://mdotmta-gtfs.s3.amazonaws.com/mdotmta_gtfs_commuterbus.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maryland-maryland-transit-administration-gtfs-467.zip?alt=media"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 610,
+    "data_type": "gtfs",
+    "provider": "GoWal",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Florida",
+        "bounding_box": {
+            "minimum_latitude": 30.3395255098718,
+            "maximum_latitude": 30.722111,
+            "minimum_longitude": -86.1807470036327,
+            "maximum_longitude": -86.1105577,
+            "extracted_on": "2022-03-16T20:10:47+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/gowal-fl-us/gowal-fl-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-gowal-gtfs-610.zip?alt=media"
+    }
+}

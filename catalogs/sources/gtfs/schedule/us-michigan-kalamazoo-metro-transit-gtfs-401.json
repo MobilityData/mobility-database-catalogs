@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 401,
+    "data_type": "gtfs",
+    "provider": "Kalamazoo Metro Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Michigan",
+        "bounding_box": {
+            "minimum_latitude": 42.164711,
+            "maximum_latitude": 42.332886,
+            "minimum_longitude": -85.681808,
+            "maximum_longitude": -85.51024599999998,
+            "extracted_on": "2022-03-16T15:32:02+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.kmetro.com/sites/default/files/public/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-michigan-kalamazoo-metro-transit-gtfs-401.zip?alt=media"
+    }
+}

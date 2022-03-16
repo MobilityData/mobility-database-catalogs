@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 457,
+    "data_type": "gtfs",
+    "provider": "Dutchess County",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Poughkeepsie",
+        "bounding_box": {
+            "minimum_latitude": 41.494007,
+            "maximum_latitude": 42.059944,
+            "minimum_longitude": -73.984616,
+            "maximum_longitude": -73.557752,
+            "extracted_on": "2022-03-16T15:34:58+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Dutchess_County_Transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-dutchess-county-gtfs-457.zip?alt=media"
+    }
+}

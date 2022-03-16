@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 555,
+    "data_type": "gtfs",
+    "provider": "DATTCO Motorcoach",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Massachusetts",
+        "bounding_box": {
+            "minimum_latitude": 41.632089,
+            "maximum_latitude": 42.350314,
+            "minimum_longitude": -71.075101,
+            "maximum_longitude": -70.91187,
+            "extracted_on": "2022-03-16T17:28:39+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/dattco-ma-us/dattco-ma-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-dattco-motorcoach-gtfs-555.zip?alt=media"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 432,
+    "data_type": "gtfs",
+    "provider": "Worcester Regional Transit Authority (WRTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Massachusetts",
+        "municipality": "Worcester",
+        "bounding_box": {
+            "minimum_latitude": 42.02741795,
+            "maximum_latitude": 42.355472,
+            "minimum_longitude": -72.102675,
+            "maximum_longitude": -71.57,
+            "extracted_on": "2022-03-16T15:33:56+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/wrta-ma-us/wrta-ma-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-worcester-regional-transit-authority-wrta-gtfs-432.zip?alt=media",
+        "license": "https://www.massdot.state.ma.us/Portals/0/docs/developers/develop_license_agree.pdf"
+    }
+}

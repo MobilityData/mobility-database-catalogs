@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 461,
+    "data_type": "gtfs",
+    "provider": "Farmville Area Bus",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Virginia",
+        "bounding_box": {
+            "minimum_latitude": 37.0880984473502,
+            "maximum_latitude": 37.3181906185174,
+            "minimum_longitude": -78.6811734495777,
+            "maximum_longitude": -78.3386927157542,
+            "extracted_on": "2022-03-16T15:35:03+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/farmville-va-us/farmville-va-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-farmville-area-bus-gtfs-461.zip?alt=media"
+    }
+}

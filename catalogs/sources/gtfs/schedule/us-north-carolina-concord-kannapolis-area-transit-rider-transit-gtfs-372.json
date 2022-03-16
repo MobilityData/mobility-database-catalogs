@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 372,
+    "data_type": "gtfs",
+    "provider": "Concord Kannapolis Area Transit (Rider Transit)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "North Carolina",
+        "municipality": "Concord",
+        "bounding_box": {
+            "minimum_latitude": 35.311442261538,
+            "maximum_latitude": 35.5339389,
+            "minimum_longitude": -80.745853381315,
+            "maximum_longitude": -80.5786545,
+            "extracted_on": "2022-03-16T15:26:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/ckrider-nc-us/ckrider-nc-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-north-carolina-concord-kannapolis-area-transit-rider-transit-gtfs-372.zip?alt=media"
+    }
+}

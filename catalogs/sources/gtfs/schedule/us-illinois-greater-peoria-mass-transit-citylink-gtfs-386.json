@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 386,
+    "data_type": "gtfs",
+    "provider": "Greater Peoria Mass Transit (CityLink)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Illinois",
+        "municipality": "Peoria",
+        "bounding_box": {
+            "minimum_latitude": 40.5385321,
+            "maximum_latitude": 40.925506,
+            "minimum_longitude": -89.694888,
+            "maximum_longitude": -89.4816969907029,
+            "extracted_on": "2022-03-16T15:27:32+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/ridecitylink-il-us/ridecitylink-il-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-illinois-greater-peoria-mass-transit-citylink-gtfs-386.zip?alt=media"
+    }
+}

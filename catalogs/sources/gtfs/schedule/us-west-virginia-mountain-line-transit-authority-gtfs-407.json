@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 407,
+    "data_type": "gtfs",
+    "provider": "Mountain Line Transit Authority",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "West Virginia",
+        "municipality": "Morgantown",
+        "bounding_box": {
+            "minimum_latitude": 39.33224485,
+            "maximum_latitude": 40.49581962,
+            "minimum_longitude": -80.33817757,
+            "maximum_longitude": -79.83257174,
+            "extracted_on": "2022-03-16T15:32:27+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://site.busride.org/google/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-west-virginia-mountain-line-transit-authority-gtfs-407.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 398,
+    "data_type": "gtfs",
+    "provider": "Valley Transit (WI)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Wisconsin",
+        "municipality": "Appleton",
+        "bounding_box": {
+            "minimum_latitude": 44.15416046,
+            "maximum_latitude": 44.31200921,
+            "minimum_longitude": -88.495233167,
+            "maximum_longitude": -88.26613093,
+            "extracted_on": "2022-03-16T15:31:46+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://gis.appleton.org/DataDownload/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-wisconsin-valley-transit-wi-gtfs-398.zip?alt=media"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 431,
+    "data_type": "gtfs",
+    "provider": "Massachusetts Area Express (MAX)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Massachusetts",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2022-03-16T15:33:49+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/truenorthtransit-ma-us/truenorthtransit-ma-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-massachusetts-area-express-max-gtfs-431.zip?alt=media"
+    }
+}

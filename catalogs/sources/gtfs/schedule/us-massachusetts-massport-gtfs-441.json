@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 441,
+    "data_type": "gtfs",
+    "provider": "Massport",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Massachusetts",
+        "municipality": "Boston",
+        "bounding_box": {
+            "minimum_latitude": 42.217363,
+            "maximum_latitude": 42.5413002813199,
+            "minimum_longitude": -71.397808,
+            "maximum_longitude": -70.9488375344756,
+            "extracted_on": "2022-03-16T15:34:21+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/massport-ma-us/massport-ma-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-massport-gtfs-441.zip?alt=media",
+        "license": "http://www.massport.com/media/1651/massportdatalicenseagreement.pdf"
+    }
+}

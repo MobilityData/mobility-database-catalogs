@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 412,
+    "data_type": "gtfs",
+    "provider": "Erie Metropolitan Transit Authority",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Pennsylvania",
+        "municipality": "Erie",
+        "bounding_box": {
+            "minimum_latitude": 41.871983,
+            "maximum_latitude": 42.21981,
+            "minimum_longitude": -80.368614,
+            "maximum_longitude": -79.611465,
+            "extracted_on": "2022-03-16T15:32:58+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/eriemta-pa-us/eriemta-pa-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-pennsylvania-erie-metropolitan-transit-authority-gtfs-412.zip?alt=media"
+    }
+}

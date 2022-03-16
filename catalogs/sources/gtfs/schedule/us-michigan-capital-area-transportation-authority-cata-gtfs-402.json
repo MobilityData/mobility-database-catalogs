@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 402,
+    "data_type": "gtfs",
+    "provider": "Capital Area Transportation Authority (CATA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Michigan",
+        "municipality": "Lansing",
+        "bounding_box": {
+            "minimum_latitude": 42.565736,
+            "maximum_latitude": 42.774685,
+            "minimum_longitude": -84.630626,
+            "maximum_longitude": -84.174003,
+            "extracted_on": "2022-03-16T15:32:07+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://developers.cata.org/gtfsdownload.ashx?key=5b4690ed-0a69-4320-897b-7d92def4b96f&data=base",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-michigan-capital-area-transportation-authority-cata-gtfs-402.zip?alt=media",
+        "license": "https://www.cata.org/Portals/0/CATAGTFSLicenseAgreement20150323.pdf"
+    }
+}

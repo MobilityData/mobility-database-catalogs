@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 409,
+    "data_type": "gtfs",
+    "provider": "Port Authority of Allegheny County",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Pennsylvania",
+        "municipality": "Pittsburgh",
+        "bounding_box": {
+            "minimum_latitude": 40.273078,
+            "maximum_latitude": 40.667597,
+            "minimum_longitude": -80.258865,
+            "maximum_longitude": -79.70545,
+            "extracted_on": "2022-03-16T15:32:49+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.portauthority.org/developerresources/GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-pennsylvania-port-authority-of-allegheny-county-gtfs-409.zip?alt=media",
+        "license": "https://www.portauthority.org/business-center/developer-resources/developer-license-agreement/"
+    }
+}

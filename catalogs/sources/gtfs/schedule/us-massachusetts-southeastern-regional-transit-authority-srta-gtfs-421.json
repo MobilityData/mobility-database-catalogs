@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 421,
+    "data_type": "gtfs",
+    "provider": "Southeastern Regional Transit Authority (SRTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Massachusetts",
+        "bounding_box": {
+            "minimum_latitude": 41.596421,
+            "maximum_latitude": 41.781218,
+            "minimum_longitude": -71.220374,
+            "maximum_longitude": -70.879291,
+            "extracted_on": "2022-03-16T15:33:32+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/srta-ma-us/srta-ma-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-southeastern-regional-transit-authority-srta-gtfs-421.zip?alt=media"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 423,
+    "data_type": "gtfs",
+    "provider": "Cuttyhunk Ferry Company",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Massachusetts",
+        "bounding_box": {
+            "minimum_latitude": 41.4242219874925,
+            "maximum_latitude": 41.6337519346306,
+            "minimum_longitude": -70.9230147120056,
+            "maximum_longitude": -70.9185246941147,
+            "extracted_on": "2022-03-16T15:33:36+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/cuttyhunkferryco-ma-us/cuttyhunkferryco-ma-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-cuttyhunk-ferry-company-gtfs-423.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 419,
+    "data_type": "gtfs",
+    "provider": "Vineyard Fast Ferry",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Rhode Island",
+        "municipality": "North Kingstown",
+        "bounding_box": {
+            "minimum_latitude": 41.4587850841284,
+            "maximum_latitude": 41.5866697425203,
+            "minimum_longitude": -71.412781177771,
+            "maximum_longitude": -70.5543602749786,
+            "extracted_on": "2022-03-16T15:33:24+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/vineyardfastferry-ri-us/vineyardfastferry-ri-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-rhode-island-vineyard-fast-ferry-gtfs-419.zip?alt=media"
+    }
+}

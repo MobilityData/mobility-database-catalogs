@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 420,
+    "data_type": "gtfs",
+    "provider": "Martha's Vineyard Transit Authority",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Massachusetts",
+        "municipality": "New Bedford",
+        "bounding_box": {
+            "minimum_latitude": 41.3235,
+            "maximum_latitude": 41.48053,
+            "minimum_longitude": -70.83645,
+            "maximum_longitude": -70.51051,
+            "extracted_on": "2022-03-16T15:33:26+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/marthasvineyard-ma-us/marthasvineyard-ma-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-marthas-vineyard-transit-authority-gtfs-420.zip?alt=media"
+    }
+}

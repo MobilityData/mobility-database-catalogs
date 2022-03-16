@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 460,
+    "data_type": "gtfs",
+    "provider": "Express Arrow",
+    "location": {
+        "country_code": "US",
+        "bounding_box": {
+            "minimum_latitude": 39.750401,
+            "maximum_latitude": 45.790281,
+            "minimum_longitude": -109.060475,
+            "maximum_longitude": -95.899628,
+            "extracted_on": "2022-03-16T15:35:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://mjcaction.com/MJC_GTFS_Public/expressarrow_google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-unknown-express-arrow-gtfs-460.zip?alt=media"
+    }
+}

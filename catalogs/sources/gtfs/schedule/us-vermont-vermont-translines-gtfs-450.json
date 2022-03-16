@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 450,
+    "data_type": "gtfs",
+    "provider": "Vermont Translines",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Vermont",
+        "bounding_box": {
+            "minimum_latitude": 42.641635,
+            "maximum_latitude": 44.59499685,
+            "minimum_longitude": -73.8091885,
+            "maximum_longitude": -72.27192866,
+            "extracted_on": "2022-03-16T15:34:43+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/vttranslines-vt-us/vttranslines-vt-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-vermont-vermont-translines-gtfs-450.zip?alt=media"
+    }
+}

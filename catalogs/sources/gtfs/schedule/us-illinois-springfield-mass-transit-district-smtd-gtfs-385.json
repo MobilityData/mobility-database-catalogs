@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 385,
+    "data_type": "gtfs",
+    "provider": "Springfield Mass Transit District (SMTD)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Illinois",
+        "municipality": "Springfield",
+        "bounding_box": {
+            "minimum_latitude": 39.667827,
+            "maximum_latitude": 39.898621,
+            "minimum_longitude": -89.75837,
+            "maximum_longitude": -89.527032,
+            "extracted_on": "2022-03-16T15:27:28+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.smtd.org/gtfs/smtd_gtfs_feed.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-illinois-springfield-mass-transit-district-smtd-gtfs-385.zip?alt=media"
+    }
+}

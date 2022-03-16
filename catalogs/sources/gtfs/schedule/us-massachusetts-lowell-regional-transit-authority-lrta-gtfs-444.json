@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 444,
+    "data_type": "gtfs",
+    "provider": "Lowell Regional Transit Authority (LRTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Massachusetts",
+        "municipality": "Lowell",
+        "bounding_box": {
+            "minimum_latitude": 42.480542,
+            "maximum_latitude": 42.699281,
+            "minimum_longitude": -71.46796401,
+            "maximum_longitude": -71.1743667754631,
+            "extracted_on": "2022-03-16T15:34:27+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/lowell-ma-us/lowell-ma-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-lowell-regional-transit-authority-lrta-gtfs-444.zip?alt=media"
+    }
+}

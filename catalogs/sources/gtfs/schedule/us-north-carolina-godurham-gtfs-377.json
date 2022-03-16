@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 377,
+    "data_type": "gtfs",
+    "provider": "GoDurham",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "North Carolina",
+        "municipality": "Durham",
+        "bounding_box": {
+            "minimum_latitude": 35.793469,
+            "maximum_latitude": 36.101322,
+            "minimum_longitude": -78.996621,
+            "maximum_longitude": -78.70905,
+            "extracted_on": "2022-03-16T15:27:09+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/durham-area-transit-authority-nc-us/durham-area-transit-authority-nc-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-north-carolina-godurham-gtfs-377.zip?alt=media"
+    }
+}

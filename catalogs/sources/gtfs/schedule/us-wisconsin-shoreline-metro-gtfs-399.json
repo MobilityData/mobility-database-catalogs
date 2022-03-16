@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 399,
+    "data_type": "gtfs",
+    "provider": "Shoreline Metro",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Wisconsin",
+        "municipality": "Sheboygan",
+        "bounding_box": {
+            "minimum_latitude": 43.7019726454334,
+            "maximum_latitude": 43.7830422,
+            "minimum_longitude": -87.82449695,
+            "maximum_longitude": -87.7010930156421,
+            "extracted_on": "2022-03-16T15:31:48+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/sheboygan-wi-us/sheboygan-wi-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-wisconsin-shoreline-metro-gtfs-399.zip?alt=media"
+    }
+}

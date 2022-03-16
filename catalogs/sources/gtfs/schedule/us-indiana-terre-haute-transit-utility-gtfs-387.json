@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 387,
+    "data_type": "gtfs",
+    "provider": "Terre Haute Transit Utility",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Indiana",
+        "municipality": "Terre Haute",
+        "bounding_box": {
+            "minimum_latitude": 39.343986233746,
+            "maximum_latitude": 39.52053,
+            "minimum_longitude": -87.4559616112519,
+            "maximum_longitude": -87.33167,
+            "extracted_on": "2022-03-16T15:27:33+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/terrehautetransit-in-us/terrehautetransit-in-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-indiana-terre-haute-transit-utility-gtfs-387.zip?alt=media"
+    }
+}

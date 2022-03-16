@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 473,
+    "data_type": "gtfs",
+    "provider": "Hampton Roads Transit (HRT)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Virginia",
+        "municipality": "Hampton",
+        "bounding_box": {
+            "minimum_latitude": 36.709858,
+            "maximum_latitude": 37.286199,
+            "minimum_longitude": -76.708169,
+            "maximum_longitude": -75.972374,
+            "extracted_on": "2022-03-16T17:23:52+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://googletf.gohrt.com/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-hampton-roads-transit-hrt-gtfs-473.zip?alt=media"
+    }
+}

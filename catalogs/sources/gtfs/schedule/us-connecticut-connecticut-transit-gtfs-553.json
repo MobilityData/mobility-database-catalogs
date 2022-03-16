@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 553,
+    "data_type": "gtfs",
+    "provider": "Connecticut Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Connecticut",
+        "bounding_box": {
+            "minimum_latitude": 40.997976,
+            "maximum_latitude": 42.02084,
+            "minimum_longitude": -73.773703,
+            "maximum_longitude": -71.794509,
+            "extracted_on": "2022-03-16T17:28:35+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.cttransit.com/sites/default/files/gtfs/googlect_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-connecticut-connecticut-transit-gtfs-553.zip?alt=media",
+        "license": "https://www.cttransit.com/about/developers/terms-of-use"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 483,
+    "data_type": "gtfs",
+    "provider": "Fairfax Connector",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Virginia",
+        "municipality": "Fairfax",
+        "bounding_box": {
+            "minimum_latitude": 38.68777,
+            "maximum_latitude": 39.013594,
+            "minimum_longitude": -77.465336,
+            "maximum_longitude": -77.023716,
+            "extracted_on": "2022-03-16T17:24:19+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.fairfaxcounty.gov/connector/sites/connector/files/Assets/connector_gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-fairfax-connector-gtfs-483.zip?alt=media",
+        "license": "https://www.fairfaxcounty.gov/connector/bustracker/data"
+    }
+}

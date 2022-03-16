@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 536,
+    "data_type": "gtfs",
+    "provider": "Chenango First Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Norwich",
+        "bounding_box": {
+            "minimum_latitude": 42.22937,
+            "maximum_latitude": 42.739931,
+            "minimum_longitude": -75.78323,
+            "maximum_longitude": -75.331977,
+            "extracted_on": "2022-03-16T17:27:50+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Chenango_First_Transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-chenango-first-transit-gtfs-536.zip?alt=media",
+        "license": "https://data.ny.gov/download/77gx-ii52/application/pdf"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 478,
+    "data_type": "gtfs",
+    "provider": "Virginia Railway Express (VRE)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Virginia",
+        "bounding_box": {
+            "minimum_latitude": 38.22099,
+            "maximum_latitude": 38.89955,
+            "minimum_longitude": -77.52548,
+            "maximum_longitude": -77.00472,
+            "extracted_on": "2022-03-16T17:24:02+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.vre.org/gtfs/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-virginia-railway-express-vre-gtfs-478.zip?alt=media"
+    }
+}

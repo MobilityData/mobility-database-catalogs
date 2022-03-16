@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 529,
+    "data_type": "gtfs",
+    "provider": "Norwalk Transit District",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Connecticut",
+        "municipality": "Stamford",
+        "bounding_box": {
+            "minimum_latitude": 41.021576,
+            "maximum_latitude": 41.236248,
+            "minimum_longitude": -73.63086699999998,
+            "maximum_longitude": -73.036446,
+            "extracted_on": "2022-03-16T17:27:22+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.norwalktransit.com/s/GTFS_Data.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-connecticut-norwalk-transit-district-gtfs-529.zip?alt=media"
+    }
+}

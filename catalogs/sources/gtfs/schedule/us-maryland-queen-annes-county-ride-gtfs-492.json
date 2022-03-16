@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 492,
+    "data_type": "gtfs",
+    "provider": "Queen Anne's County Ride",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Maryland",
+        "bounding_box": {
+            "minimum_latitude": 38.763999,
+            "maximum_latitude": 39.046898,
+            "minimum_longitude": -76.543942,
+            "maximum_longitude": -76.055024,
+            "extracted_on": "2022-03-16T17:24:44+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/mobilityequity/maryland-local-gtfs/raw/master/QA_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maryland-queen-annes-county-ride-gtfs-492.zip?alt=media"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 496,
+    "data_type": "gtfs",
+    "provider": "Peter Pan",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Massachusetts",
+        "bounding_box": {
+            "minimum_latitude": 38.89758,
+            "maximum_latitude": 42.732892537699,
+            "minimum_longitude": -77.030038,
+            "maximum_longitude": -69.9736910800041,
+            "extracted_on": "2022-03-16T17:24:52+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/peterpan-ma-us/peterpan-ma-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-peter-pan-gtfs-496.zip?alt=media"
+    }
+}

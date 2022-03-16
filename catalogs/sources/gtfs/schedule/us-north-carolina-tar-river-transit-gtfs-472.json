@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 472,
+    "data_type": "gtfs",
+    "provider": "Tar River Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "North Carolina",
+        "municipality": "Rocky Mount",
+        "bounding_box": {
+            "minimum_latitude": 35.9165111341703,
+            "maximum_latitude": 36.0626996354895,
+            "minimum_longitude": -77.8990993389975,
+            "maximum_longitude": -77.745024054245,
+            "extracted_on": "2022-03-16T17:23:47+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/tarriver-nc-us/tarriver-nc-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-north-carolina-tar-river-transit-gtfs-472.zip?alt=media"
+    }
+}

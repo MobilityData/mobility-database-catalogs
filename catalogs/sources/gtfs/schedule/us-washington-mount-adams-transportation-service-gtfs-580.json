@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 580,
+    "data_type": "gtfs",
+    "provider": "Mount Adams Transportation Service",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "bounding_box": {
+            "minimum_latitude": 45.533467,
+            "maximum_latitude": 46.593247,
+            "minimum_longitude": -122.650095,
+            "maximum_longitude": -119.102094,
+            "extracted_on": "2022-03-16T20:09:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/mountadams-wa-us/mountadams-wa-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-mount-adams-transportation-service-gtfs-580.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 561,
+    "data_type": "gtfs",
+    "provider": "Los Angeles County Shuttles",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Los Angeles",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2022-03-16T20:09:33+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gitlab.com/LACMTA/gtfs_lax/-/archive/master/gtfs_lax-master.zip?path=la_county",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-los-angeles-county-shuttles-gtfs-561.zip?alt=media"
+    }
+}

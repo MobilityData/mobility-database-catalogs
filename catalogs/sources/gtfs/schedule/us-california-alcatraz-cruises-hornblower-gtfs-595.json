@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 595,
+    "data_type": "gtfs",
+    "provider": "Alcatraz Cruises - Hornblower, Angel Island Tiburon Ferry, Blue & Gold Fleet",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "San Francisco",
+        "bounding_box": {
+            "minimum_latitude": 37.795497,
+            "maximum_latitude": 37.872939,
+            "minimum_longitude": -122.478275,
+            "maximum_longitude": -122.393365,
+            "extracted_on": "2022-03-16T20:10:19+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/bayareaferries-ca-us/bayareaferries-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-alcatraz-cruises-hornblower-gtfs-595.zip?alt=media"
+    }
+}

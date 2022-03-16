@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 569,
+    "data_type": "gtfs",
+    "provider": "Citibus",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Texas",
+        "municipality": "Lubbock",
+        "bounding_box": {
+            "minimum_latitude": 33.5195921229278,
+            "maximum_latitude": 33.6561989783133,
+            "minimum_longitude": -101.948367108508,
+            "maximum_longitude": -101.799039221073,
+            "extracted_on": "2022-03-16T20:09:43+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/lubbock-tx-us/lubbock-tx-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-texas-citibus-gtfs-569.zip?alt=media"
+    }
+}

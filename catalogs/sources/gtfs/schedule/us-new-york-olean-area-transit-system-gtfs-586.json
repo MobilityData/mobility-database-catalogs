@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 586,
+    "data_type": "gtfs",
+    "provider": "Olean Area Transit System",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Olean",
+        "bounding_box": {
+            "minimum_latitude": 42.066323,
+            "maximum_latitude": 42.220286,
+            "minimum_longitude": -78.767734,
+            "maximum_longitude": -78.276716,
+            "extracted_on": "2022-03-16T20:10:06+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Olean_Area_Transit_System.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-olean-area-transit-system-gtfs-586.zip?alt=media"
+    }
+}

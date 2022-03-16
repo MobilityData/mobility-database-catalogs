@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 567,
+    "data_type": "gtfs",
+    "provider": "L.E.W.I.S. Mountain Highway Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "bounding_box": {
+            "minimum_latitude": 46.522289458157,
+            "maximum_latitude": 46.7171997017871,
+            "minimum_longitude": -122.979824299701,
+            "maximum_longitude": -121.675902753039,
+            "extracted_on": "2022-03-16T20:09:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/lmht-morton-us/lmht-morton-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-lewis-mountain-highway-transit-gtfs-567.zip?alt=media"
+    }
+}

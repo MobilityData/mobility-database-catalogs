@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 607,
+    "data_type": "gtfs",
+    "provider": "Home James",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Boulder",
+        "bounding_box": {
+            "minimum_latitude": 39.8475614987303,
+            "maximum_latitude": 40.2570157561979,
+            "minimum_longitude": -105.939539015688,
+            "maximum_longitude": -104.672864277409,
+            "extracted_on": "2022-03-16T20:10:42+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/homejames-co-us/homejames-co-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-home-james-gtfs-607.zip?alt=media"
+    }
+}

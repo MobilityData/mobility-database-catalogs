@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 606,
+    "data_type": "gtfs",
+    "provider": "Get Around Town Express",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Los Angeles",
+        "bounding_box": {
+            "minimum_latitude": 33.9159852759617,
+            "maximum_latitude": 33.9592318964122,
+            "minimum_longitude": -118.225215727351,
+            "maximum_longitude": -118.163997470108,
+            "extracted_on": "2022-03-16T20:10:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/getaroundtownexpress-ca-us/getaroundtownexpress-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-get-around-town-express-gtfs-606.zip?alt=media"
+    }
+}

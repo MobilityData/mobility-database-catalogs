@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 585,
+    "data_type": "gtfs",
+    "provider": "South Shore Line",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Indiana",
+        "municipality": "South Bend",
+        "bounding_box": {
+            "minimum_latitude": 41.597858,
+            "maximum_latitude": 41.8841667,
+            "minimum_longitude": -87.6230556,
+            "maximum_longitude": -86.310951,
+            "extracted_on": "2022-03-16T20:10:05+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.mysouthshoreline.com/google/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-indiana-south-shore-line-gtfs-585.zip?alt=media"
+    }
+}

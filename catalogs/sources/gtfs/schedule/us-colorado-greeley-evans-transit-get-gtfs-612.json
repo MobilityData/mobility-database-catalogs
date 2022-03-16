@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 612,
+    "data_type": "gtfs",
+    "provider": "Greeley-Evans Transit (GET)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Greeley",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2022-03-16T20:10:50+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://nextcloud.greeleygov.com/index.php/s/yf5gysdomcLyCib/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-greeley-evans-transit-get-gtfs-612.zip?alt=media"
+    }
+}

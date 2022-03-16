@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 609,
+    "data_type": "gtfs",
+    "provider": "Glendora Transportation Division",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "bounding_box": {
+            "minimum_latitude": 34.0833929992766,
+            "maximum_latitude": 34.1468809776457,
+            "minimum_longitude": -117.89009,
+            "maximum_longitude": -117.838194,
+            "extracted_on": "2022-03-16T20:10:45+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/glendora-ca-us/glendora-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-glendora-transportation-division-gtfs-609.zip?alt=media"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 574,
+    "data_type": "gtfs",
+    "provider": "Makah Public Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "bounding_box": {
+            "minimum_latitude": 48.345925,
+            "maximum_latitude": 48.370977,
+            "minimum_longitude": -124.672653,
+            "maximum_longitude": -124.587256,
+            "extracted_on": "2022-03-16T20:09:49+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://mjcaction.com/MJC_GTFS_Public/makah_google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-makah-public-transit-gtfs-574.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 608,
+    "data_type": "gtfs",
+    "provider": "WinTran",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Virginia",
+        "municipality": "Winchester",
+        "bounding_box": {
+            "minimum_latitude": 39.13712,
+            "maximum_latitude": 39.2084813977251,
+            "minimum_longitude": -78.19513,
+            "maximum_longitude": -78.143465090073,
+            "extracted_on": "2022-03-16T20:10:44+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/wintran-va-us/wintran-va-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-wintran-gtfs-608.zip?alt=media"
+    }
+}

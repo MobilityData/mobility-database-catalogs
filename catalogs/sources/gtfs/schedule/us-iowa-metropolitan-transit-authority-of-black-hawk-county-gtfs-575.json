@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 575,
+    "data_type": "gtfs",
+    "provider": "Metropolitan Transit Authority of Black Hawk County",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Iowa",
+        "municipality": "Waterloo",
+        "bounding_box": {
+            "minimum_latitude": 42.429376,
+            "maximum_latitude": 42.539077,
+            "minimum_longitude": -92.473383,
+            "maximum_longitude": -92.298033,
+            "extracted_on": "2022-03-16T20:09:50+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://mettransit.org/sites/default/files/MET_Transit_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-iowa-metropolitan-transit-authority-of-black-hawk-county-gtfs-575.zip?alt=media"
+    }
+}

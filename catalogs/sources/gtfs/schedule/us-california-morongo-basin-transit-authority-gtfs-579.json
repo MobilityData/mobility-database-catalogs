@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 579,
+    "data_type": "gtfs",
+    "provider": "Morongo Basin Transit Authority",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Palm Springs",
+        "bounding_box": {
+            "minimum_latitude": 33.823284,
+            "maximum_latitude": 34.266281881282,
+            "minimum_longitude": -116.583611,
+            "maximum_longitude": -116.036545,
+            "extracted_on": "2022-03-16T20:09:58+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/morongobasin-ca-us/morongobasin-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-morongo-basin-transit-authority-gtfs-579.zip?alt=media"
+    }
+}

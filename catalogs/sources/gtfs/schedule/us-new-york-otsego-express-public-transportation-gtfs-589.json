@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 589,
+    "data_type": "gtfs",
+    "provider": "Otsego Express Public Transportation",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Cooperstown",
+        "bounding_box": {
+            "minimum_latitude": 42.296663,
+            "maximum_latitude": 42.883622,
+            "minimum_longitude": -75.414187,
+            "maximum_longitude": -74.671786,
+            "extracted_on": "2022-03-16T20:10:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Otsego_Express_Public_Transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-otsego-express-public-transportation-gtfs-589.zip?alt=media"
+    }
+}

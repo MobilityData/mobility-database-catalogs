@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 578,
+    "data_type": "gtfs",
+    "provider": "Moorpark City Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Moorpark",
+        "bounding_box": {
+            "minimum_latitude": 34.26332,
+            "maximum_latitude": 34.3020749386964,
+            "minimum_longitude": -118.90097,
+            "maximum_longitude": -118.835209,
+            "extracted_on": "2022-03-16T20:09:56+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/moorparkcitytransit-ca-us/moorparkcitytransit-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-moorpark-city-transit-gtfs-578.zip?alt=media"
+    }
+}

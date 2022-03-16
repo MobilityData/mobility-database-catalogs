@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 602,
+    "data_type": "gtfs",
+    "provider": "Memphis Area Transit Authoritiy",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Tennessee",
+        "municipality": "Memphis",
+        "bounding_box": {
+            "minimum_latitude": 35.001607,
+            "maximum_latitude": 35.269264,
+            "minimum_longitude": -90.127347,
+            "maximum_longitude": -89.754447,
+            "extracted_on": "2022-03-16T20:10:36+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.matatransit.com/assets/2/6/Memphis_TN_transitfeed2.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-tennessee-memphis-area-transit-authoritiy-gtfs-602.zip?alt=media"
+    }
+}

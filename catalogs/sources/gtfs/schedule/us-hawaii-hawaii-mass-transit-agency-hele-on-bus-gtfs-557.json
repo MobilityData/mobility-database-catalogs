@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 557,
+    "data_type": "gtfs",
+    "provider": "Hawai'i Mass Transit Agency (Hele-On Bus)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Hawaii",
+        "municipality": "Hawai'i Island",
+        "bounding_box": {
+            "minimum_latitude": 19.060278,
+            "maximum_latitude": 20.238104,
+            "minimum_longitude": -156.0404873,
+            "maximum_longitude": -154.8897767,
+            "extracted_on": "2022-03-16T20:09:27+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.heleonbus.org/transit-info-and-statistics/MTA_FEED4.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-hawaii-hawaii-mass-transit-agency-hele-on-bus-gtfs-557.zip?alt=media"
+    }
+}

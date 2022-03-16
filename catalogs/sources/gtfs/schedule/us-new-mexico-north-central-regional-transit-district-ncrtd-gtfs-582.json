@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 582,
+    "data_type": "gtfs",
+    "provider": "North Central Regional Transit District (NCRTD)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New Mexico",
+        "bounding_box": {
+            "minimum_latitude": 35.000311,
+            "maximum_latitude": 36.978963,
+            "minimum_longitude": -108.18002,
+            "maximum_longitude": -105.209957,
+            "extracted_on": "2022-03-16T20:10:02+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.ncrtd.org/wp-content/uploads/2021/05/gtfs-5.12.21.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-mexico-north-central-regional-transit-district-ncrtd-gtfs-582.zip?alt=media"
+    }
+}

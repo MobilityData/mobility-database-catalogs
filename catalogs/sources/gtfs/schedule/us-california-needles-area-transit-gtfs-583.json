@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 583,
+    "data_type": "gtfs",
+    "provider": "Needles Area Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Needles",
+        "bounding_box": {
+            "minimum_latitude": 34.821873,
+            "maximum_latitude": 34.851116701061,
+            "minimum_longitude": -114.62423844998,
+            "maximum_longitude": -114.595169,
+            "extracted_on": "2022-03-16T20:10:03+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/needles-ca-us/needles-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-needles-area-transit-gtfs-583.zip?alt=media"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 624,
+    "data_type": "gtfs",
+    "provider": "Rhode Island Public Transit Authority",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Rhode Island",
+        "bounding_box": {
+            "minimum_latitude": 41.372687,
+            "maximum_latitude": 42.016993,
+            "minimum_longitude": -71.829808,
+            "maximum_longitude": -71.154292,
+            "extracted_on": "2022-03-16T20:11:14+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.ripta.com/wp-content/uploads/2022/01/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-rhode-island-rhode-island-public-transit-authority-gtfs-624.zip?alt=media"
+    }
+}

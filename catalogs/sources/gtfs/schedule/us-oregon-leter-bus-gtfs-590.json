@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 590,
+    "data_type": "gtfs",
+    "provider": "Let'er Bus",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Pendleton",
+        "bounding_box": {
+            "minimum_latitude": 45.6451995398724,
+            "maximum_latitude": 45.6884126437407,
+            "minimum_longitude": -118.840975383736,
+            "maximum_longitude": -118.749787194685,
+            "extracted_on": "2022-03-16T20:10:11+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/pendleton-or-us/pendleton-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-leter-bus-gtfs-590.zip?alt=media"
+    }
+}

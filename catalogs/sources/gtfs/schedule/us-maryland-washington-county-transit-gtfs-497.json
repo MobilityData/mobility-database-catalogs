@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 497,
+    "data_type": "gtfs",
+    "provider": "Washington County Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Maryland",
+        "bounding_box": {
+            "minimum_latitude": 39.5997022863592,
+            "maximum_latitude": 39.719788562,
+            "minimum_longitude": -77.821214,
+            "maximum_longitude": -77.57312,
+            "extracted_on": "2022-03-16T17:24:53+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/mobilityequity/maryland-local-gtfs/raw/master/WC_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maryland-washington-county-transit-gtfs-497.zip?alt=media"
+    }
+}

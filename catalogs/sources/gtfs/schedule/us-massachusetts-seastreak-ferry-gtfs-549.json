@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 549,
+    "data_type": "gtfs",
+    "provider": "Seastreak Ferry",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Massachusetts",
+        "bounding_box": {
+            "minimum_latitude": 40.409395,
+            "maximum_latitude": 41.815975,
+            "minimum_longitude": -74.034889,
+            "maximum_longitude": -70.096322,
+            "extracted_on": "2022-03-16T17:28:16+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://seastreak.com/api/transit/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-seastreak-ferry-gtfs-549.zip?alt=media"
+    }
+}

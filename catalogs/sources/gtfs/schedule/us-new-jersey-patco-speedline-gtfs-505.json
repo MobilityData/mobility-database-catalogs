@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 505,
+    "data_type": "gtfs",
+    "provider": "PATCO Speedline",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New Jersey",
+        "bounding_box": {
+            "minimum_latitude": 39.833809,
+            "maximum_latitude": 39.951152,
+            "minimum_longitude": -75.167792,
+            "maximum_longitude": -75.000325,
+            "extracted_on": "2022-03-16T17:25:05+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.ridepatco.org/developers/PortAuthorityTransitCorporation.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-jersey-patco-speedline-gtfs-505.zip?alt=media"
+    }
+}

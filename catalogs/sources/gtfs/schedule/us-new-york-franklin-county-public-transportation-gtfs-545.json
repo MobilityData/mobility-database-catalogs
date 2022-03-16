@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 545,
+    "data_type": "gtfs",
+    "provider": "Franklin County Public Transportation",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "North Malone",
+        "bounding_box": {
+            "minimum_latitude": 44.219766,
+            "maximum_latitude": 44.989507,
+            "minimum_longitude": -74.567492,
+            "maximum_longitude": -73.468206,
+            "extracted_on": "2022-03-16T17:28:05+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Franklin_County_Public_Transportation.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-franklin-county-public-transportation-gtfs-545.zip?alt=media"
+    }
+}

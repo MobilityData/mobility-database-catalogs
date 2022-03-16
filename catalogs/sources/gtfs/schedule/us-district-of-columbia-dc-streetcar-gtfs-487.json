@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 487,
+    "data_type": "gtfs",
+    "provider": "DC Streetcar",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "District of Columbia",
+        "municipality": "Washington",
+        "bounding_box": {
+            "minimum_latitude": 38.897421983202,
+            "maximum_latitude": 38.90030625,
+            "minimum_longitude": -77.00466218,
+            "maximum_longitude": -76.9667291977875,
+            "extracted_on": "2022-03-16T17:24:31+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/dcstreetcar-dc-us/dcstreetcar-dc-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-district-of-columbia-dc-streetcar-gtfs-487.zip?alt=media"
+    }
+}

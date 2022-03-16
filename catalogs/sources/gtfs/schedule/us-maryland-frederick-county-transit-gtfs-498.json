@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 498,
+    "data_type": "gtfs",
+    "provider": "Frederick County TransIT",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Maryland",
+        "municipality": "Frederick",
+        "bounding_box": {
+            "minimum_latitude": 39.27394213,
+            "maximum_latitude": 39.70535974,
+            "minimum_longitude": -77.66505541,
+            "maximum_longitude": -77.31736153,
+            "extracted_on": "2022-03-16T17:24:54+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://maps.frederickcountymd.gov/google/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maryland-frederick-county-transit-gtfs-498.zip?alt=media"
+    }
+}

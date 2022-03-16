@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 516,
+    "data_type": "gtfs",
+    "provider": "MTA New York City Transit (MTA)",
+    "name": "Subway",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "New York City",
+        "bounding_box": {
+            "minimum_latitude": 40.512764,
+            "maximum_latitude": 40.903125,
+            "minimum_longitude": -74.251961,
+            "maximum_longitude": -73.755405,
+            "extracted_on": "2022-03-16T17:26:43+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://web.mta.info/developers/data/nyct/subway/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-mta-new-york-city-transit-mta-gtfs-516.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 546,
+    "data_type": "gtfs",
+    "provider": "North Country Express Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Plattsburg",
+        "bounding_box": {
+            "minimum_latitude": 44.662523,
+            "maximum_latitude": 44.933975,
+            "minimum_longitude": -74.989121,
+            "maximum_longitude": -73.435809,
+            "extracted_on": "2022-03-16T17:28:06+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/North_Country_Express.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-north-country-express-transit-gtfs-546.zip?alt=media"
+    }
+}

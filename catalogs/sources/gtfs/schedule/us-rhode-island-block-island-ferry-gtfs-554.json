@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 554,
+    "data_type": "gtfs",
+    "provider": "Block Island Ferry",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Rhode Island",
+        "municipality": "Newport",
+        "bounding_box": {
+            "minimum_latitude": 41.1737044812591,
+            "maximum_latitude": 41.704592042552,
+            "minimum_longitude": -71.5566758629379,
+            "maximum_longitude": -71.164247226387,
+            "extracted_on": "2022-03-16T17:28:37+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/blockislandferry-ri-us/blockislandferry-ri-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-rhode-island-block-island-ferry-gtfs-554.zip?alt=media"
+    }
+}

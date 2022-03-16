@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 531,
+    "data_type": "gtfs",
+    "provider": "Access Allegany",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "bounding_box": {
+            "minimum_latitude": 42.000082,
+            "maximum_latitude": 42.462679,
+            "minimum_longitude": -78.467724,
+            "maximum_longitude": -77.764518,
+            "extracted_on": "2022-03-16T17:27:27+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Access_Allegany.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-access-allegany-gtfs-531.zip?alt=media",
+        "license": "https://data.ny.gov/download/77gx-ii52/application/pdf"
+    }
+}

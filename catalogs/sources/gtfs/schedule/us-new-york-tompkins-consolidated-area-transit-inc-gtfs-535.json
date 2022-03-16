@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 535,
+    "data_type": "gtfs",
+    "provider": "Tompkins Consolidated Area Transit Inc",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Ithaca",
+        "bounding_box": {
+            "minimum_latitude": 42.3278999329,
+            "maximum_latitude": 42.590713501,
+            "minimum_longitude": -76.678131,
+            "maximum_longitude": -76.280907,
+            "extracted_on": "2022-03-16T17:27:49+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/tcat-gtfs/tcat-ny-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-tompkins-consolidated-area-transit-inc-gtfs-535.zip?alt=media"
+    }
+}

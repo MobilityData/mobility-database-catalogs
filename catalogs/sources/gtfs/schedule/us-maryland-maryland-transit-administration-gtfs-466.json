@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 466,
+    "data_type": "gtfs",
+    "provider": "Maryland Transit Administration",
+    "name": "Local Bus",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Maryland",
+        "bounding_box": {
+            "minimum_latitude": 38.978294,
+            "maximum_latitude": 39.502231,
+            "minimum_longitude": -76.889459,
+            "maximum_longitude": -76.379313,
+            "extracted_on": "2022-03-16T17:23:35+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://mdotmta-gtfs.s3.amazonaws.com/mdotmta_gtfs_localbus.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maryland-maryland-transit-administration-gtfs-466.zip?alt=media"
+    }
+}

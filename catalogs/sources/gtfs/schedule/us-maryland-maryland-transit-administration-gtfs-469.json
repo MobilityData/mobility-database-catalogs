@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 469,
+    "data_type": "gtfs",
+    "provider": "Maryland Transit Administration",
+    "name": "Light Rail",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Maryland",
+        "bounding_box": {
+            "minimum_latitude": 39.171932,
+            "maximum_latitude": 39.496307,
+            "minimum_longitude": -76.673208,
+            "maximum_longitude": -76.61611,
+            "extracted_on": "2022-03-16T17:23:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://mdotmta-gtfs.s3.amazonaws.com/mdotmta_gtfs_lightrail.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maryland-maryland-transit-administration-gtfs-469.zip?alt=media"
+    }
+}

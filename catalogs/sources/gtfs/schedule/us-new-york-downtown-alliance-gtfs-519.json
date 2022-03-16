@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 519,
+    "data_type": "gtfs",
+    "provider": "Downtown Alliance",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "New York City",
+        "bounding_box": {
+            "minimum_latitude": 40.7023239883,
+            "maximum_latitude": 40.717257,
+            "minimum_longitude": -74.0180646256,
+            "maximum_longitude": -74.001689,
+            "extracted_on": "2022-03-16T17:26:46+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://mjcaction.com/MJC_GTFS_Public/downtown_nyc_google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-downtown-alliance-gtfs-519.zip?alt=media"
+    }
+}

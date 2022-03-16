@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 507,
+    "data_type": "gtfs",
+    "provider": "MTA Long Island Rail Road",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Long Island",
+        "bounding_box": {
+            "minimum_latitude": 40.590181700395,
+            "maximum_latitude": 41.099709911981,
+            "minimum_longitude": -73.993584084919,
+            "maximum_longitude": -71.953881026163,
+            "extracted_on": "2022-03-16T17:25:17+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://web.mta.info/developers/data/lirr/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-mta-long-island-rail-road-gtfs-507.zip?alt=media",
+        "license": "http://web.mta.info/developers/developer-data-terms.html"
+    }
+}

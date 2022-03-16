@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 542,
+    "data_type": "gtfs",
+    "provider": "Greater Glens Falls Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Saratoga Springs",
+        "bounding_box": {
+            "minimum_latitude": 43.24191,
+            "maximum_latitude": 43.557696,
+            "minimum_longitude": -73.720295,
+            "maximum_longitude": -73.580627,
+            "extracted_on": "2022-03-16T17:28:01+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Greater_Glens_Falls_Transit_System.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-greater-glens-falls-transit-gtfs-542.zip?alt=media"
+    }
+}

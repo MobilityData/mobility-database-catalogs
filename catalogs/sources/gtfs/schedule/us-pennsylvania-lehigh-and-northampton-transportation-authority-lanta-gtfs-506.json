@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 506,
+    "data_type": "gtfs",
+    "provider": "Lehigh and Northampton Transportation Authority (LANTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Pennsylvania",
+        "municipality": "Allentown",
+        "bounding_box": {
+            "minimum_latitude": 40.527096,
+            "maximum_latitude": 40.884444,
+            "minimum_longitude": -75.659283,
+            "maximum_longitude": -75.204932,
+            "extracted_on": "2022-03-16T17:25:09+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/LANTA-Transportation-Authority/GTFS-data/raw/master/lanta_gtfs_feed.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-pennsylvania-lehigh-and-northampton-transportation-authority-lanta-gtfs-506.zip?alt=media"
+    }
+}

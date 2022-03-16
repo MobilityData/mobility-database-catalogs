@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 551,
+    "data_type": "gtfs",
+    "provider": "9 Town Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Connecticut",
+        "municipality": "Centerbrook",
+        "bounding_box": {
+            "minimum_latitude": 41.2614311359534,
+            "maximum_latitude": 41.5612866,
+            "minimum_longitude": -72.657961881914,
+            "maximum_longitude": -72.0934518,
+            "extracted_on": "2022-03-16T17:28:19+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/ninetown-connecticut-us/ninetown-connecticut-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-connecticut-9-town-transit-gtfs-551.zip?alt=media"
+    }
+}

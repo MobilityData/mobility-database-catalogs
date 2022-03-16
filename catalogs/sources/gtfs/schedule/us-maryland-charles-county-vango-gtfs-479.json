@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 479,
+    "data_type": "gtfs",
+    "provider": "Charles County VanGo",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Maryland",
+        "municipality": "St. Charles",
+        "bounding_box": {
+            "minimum_latitude": 38.365716,
+            "maximum_latitude": 38.676048,
+            "minimum_longitude": -77.220834,
+            "maximum_longitude": -76.772132,
+            "extracted_on": "2022-03-16T17:24:03+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/mobilityequity/maryland-local-gtfs/raw/master/Charles_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maryland-charles-county-vango-gtfs-479.zip?alt=media",
+        "license": "http://www.mdtrip.org/commuter-tools/developer-resources/"
+    }
+}

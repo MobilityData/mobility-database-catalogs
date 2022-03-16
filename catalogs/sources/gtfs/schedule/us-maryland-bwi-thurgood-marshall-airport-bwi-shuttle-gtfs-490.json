@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 490,
+    "data_type": "gtfs",
+    "provider": "BWI Thurgood Marshall Airport (BWI) Shuttle",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Maryland",
+        "municipality": "Baltimore",
+        "bounding_box": {
+            "minimum_latitude": 39.1792093971593,
+            "maximum_latitude": 39.1925816967402,
+            "minimum_longitude": -76.6942399031105,
+            "maximum_longitude": -76.658497,
+            "extracted_on": "2022-03-16T17:24:42+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/mobilityequity/maryland-local-gtfs/raw/master/BWI_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maryland-bwi-thurgood-marshall-airport-bwi-shuttle-gtfs-490.zip?alt=media"
+    }
+}

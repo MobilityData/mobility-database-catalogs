@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 488,
+    "data_type": "gtfs",
+    "provider": "Ride On",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Maryland",
+        "municipality": "Montgomery",
+        "bounding_box": {
+            "minimum_latitude": 38.93569,
+            "maximum_latitude": 39.288508,
+            "minimum_longitude": -77.418659,
+            "maximum_longitude": -76.930802,
+            "extracted_on": "2022-03-16T17:24:38+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.montgomerycountymd.gov/DOT-Transit/Resources/Files/GTFS/RideOnGTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maryland-ride-on-gtfs-488.zip?alt=media"
+    }
+}

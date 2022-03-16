@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 530,
+    "data_type": "gtfs",
+    "provider": "Greater Bridgeport Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Connecticut",
+        "municipality": "Bridgeport",
+        "bounding_box": {
+            "minimum_latitude": 41.117939,
+            "maximum_latitude": 41.320393,
+            "minimum_longitude": -73.415092,
+            "maximum_longitude": -73.032364,
+            "extracted_on": "2022-03-16T17:27:26+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/gbt-ct-us/gbt-ct-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-connecticut-greater-bridgeport-transit-gtfs-530.zip?alt=media"
+    }
+}

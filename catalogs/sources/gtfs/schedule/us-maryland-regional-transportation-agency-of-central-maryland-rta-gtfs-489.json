@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 489,
+    "data_type": "gtfs",
+    "provider": "Regional Transportation Agency of Central Maryland (RTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Maryland",
+        "bounding_box": {
+            "minimum_latitude": 38.999445,
+            "maximum_latitude": 39.29077,
+            "minimum_longitude": -76.91581,
+            "maximum_longitude": -76.724395,
+            "extracted_on": "2022-03-16T17:24:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/centralmarylandrta-md-us/centralmarylandrta-md-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maryland-regional-transportation-agency-of-central-maryland-rta-gtfs-489.zip?alt=media"
+    }
+}

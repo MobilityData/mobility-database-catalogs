@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 537,
+    "data_type": "gtfs",
+    "provider": "Berkshire Regional Transit Authority (BRTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Massachusetts",
+        "municipality": "Berkshire",
+        "bounding_box": {
+            "minimum_latitude": 42.1741759759195,
+            "maximum_latitude": 42.717058,
+            "minimum_longitude": -73.3809157013355,
+            "maximum_longitude": -73.091904220562,
+            "extracted_on": "2022-03-16T17:27:52+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/berkshire-ma-us/berkshire-ma-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-berkshire-regional-transit-authority-brta-gtfs-537.zip?alt=media"
+    }
+}

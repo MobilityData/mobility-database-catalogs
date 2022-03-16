@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 552,
+    "data_type": "gtfs",
+    "provider": "Southeast Area Transit District",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Connecticut",
+        "municipality": "Preston",
+        "bounding_box": {
+            "minimum_latitude": 41.3099310659131,
+            "maximum_latitude": 41.6137083625167,
+            "minimum_longitude": -72.210556,
+            "maximum_longitude": -71.8349448409511,
+            "extracted_on": "2022-03-16T17:28:22+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/seatbus-ct-us/seatbus-ct-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-connecticut-southeast-area-transit-district-gtfs-552.zip?alt=media"
+    }
+}

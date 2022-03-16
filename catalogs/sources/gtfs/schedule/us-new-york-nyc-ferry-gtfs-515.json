@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 515,
+    "data_type": "gtfs",
+    "provider": "NYC Ferry",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "New York City",
+        "bounding_box": {
+            "minimum_latitude": 40.566157,
+            "maximum_latitude": 40.805455,
+            "minimum_longitude": -74.074171,
+            "maximum_longitude": -73.769134,
+            "extracted_on": "2022-03-16T17:26:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://nycferry.connexionz.net/rtt/public/utility/gtfs.aspx",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-nyc-ferry-gtfs-515.zip?alt=media",
+        "license": "https://www.ferry.nyc/developer-tools/"
+    }
+}

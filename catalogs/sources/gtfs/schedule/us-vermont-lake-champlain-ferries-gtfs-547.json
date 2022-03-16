@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 547,
+    "data_type": "gtfs",
+    "provider": "Lake Champlain Ferries",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Vermont",
+        "municipality": "Burlington",
+        "bounding_box": {
+            "minimum_latitude": 44.301404212561,
+            "maximum_latitude": 44.699028441487,
+            "minimum_longitude": -73.403367449566,
+            "maximum_longitude": -73.2212047725063,
+            "extracted_on": "2022-03-16T17:28:07+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/lctferries-vt-us/lctferries-vt-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-vermont-lake-champlain-ferries-gtfs-547.zip?alt=media"
+    }
+}

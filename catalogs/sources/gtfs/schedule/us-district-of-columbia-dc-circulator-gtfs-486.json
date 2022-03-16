@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 486,
+    "data_type": "gtfs",
+    "provider": "DC Circulator",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "District of Columbia",
+        "municipality": "Washington",
+        "bounding_box": {
+            "minimum_latitude": 38.845883,
+            "maximum_latitude": 38.928722,
+            "minimum_longitude": -77.071558,
+            "maximum_longitude": -76.975457,
+            "extracted_on": "2022-03-16T17:24:30+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://extranet.ddot.dc.gov/ddot_data/gtfs/dc-circulator.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-district-of-columbia-dc-circulator-gtfs-486.zip?alt=media",
+        "license": "https://octo.dc.gov/page/district-columbia-data-policy"
+    }
+}

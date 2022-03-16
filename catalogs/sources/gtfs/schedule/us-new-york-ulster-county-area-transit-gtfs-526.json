@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 526,
+    "data_type": "gtfs",
+    "provider": "Ulster County Area Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Poughkeepsie",
+        "bounding_box": {
+            "minimum_latitude": 41.49979,
+            "maximum_latitude": 42.14243,
+            "minimum_longitude": -74.50313,
+            "maximum_longitude": -73.9284,
+            "extracted_on": "2022-03-16T17:27:05+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/UCAT_Ulster_County_Area_Transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-ulster-county-area-transit-gtfs-526.zip?alt=media"
+    }
+}

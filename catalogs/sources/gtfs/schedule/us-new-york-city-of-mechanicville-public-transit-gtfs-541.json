@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 541,
+    "data_type": "gtfs",
+    "provider": "City of Mechanicville Public Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Mechanicville",
+        "bounding_box": {
+            "minimum_latitude": 42.896694,
+            "maximum_latitude": 42.910148,
+            "minimum_longitude": -73.693199,
+            "maximum_longitude": -73.682921,
+            "extracted_on": "2022-03-16T17:28:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/City_of_Mechanicville_Public_Transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-city-of-mechanicville-public-transit-gtfs-541.zip?alt=media"
+    }
+}

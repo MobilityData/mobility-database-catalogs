@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 465,
+    "data_type": "gtfs",
+    "provider": "Niagara Frontier Transportation Authority (NFTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Buffalo",
+        "bounding_box": {
+            "minimum_latitude": 42.570072,
+            "maximum_latitude": 43.17006,
+            "minimum_longitude": -79.117122,
+            "maximum_longitude": -78.607822,
+            "extracted_on": "2022-03-16T17:23:28+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.nfta.com/metro/__googletransit/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-niagara-frontier-transportation-authority-nfta-gtfs-465.zip?alt=media"
+    }
+}

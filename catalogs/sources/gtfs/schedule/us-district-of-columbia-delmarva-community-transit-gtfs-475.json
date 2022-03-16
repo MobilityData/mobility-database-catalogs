@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 475,
+    "data_type": "gtfs",
+    "provider": "Delmarva Community Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "District of Columbia",
+        "municipality": "Kent",
+        "bounding_box": {
+            "minimum_latitude": 38.366366,
+            "maximum_latitude": 39.281552,
+            "minimum_longitude": -76.23424,
+            "maximum_longitude": -75.596215,
+            "extracted_on": "2022-03-16T17:23:56+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/mobilityequity/maryland-local-gtfs/raw/master/Delmarva_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-district-of-columbia-delmarva-community-transit-gtfs-475.zip?alt=media",
+        "license": "https://github.com/mobilityequity/maryland-local-gtfs/blob/master/README.md"
+    }
+}

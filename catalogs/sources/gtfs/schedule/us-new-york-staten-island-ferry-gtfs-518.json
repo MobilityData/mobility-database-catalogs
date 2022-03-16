@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 518,
+    "data_type": "gtfs",
+    "provider": "Staten Island Ferry",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "New York City",
+        "bounding_box": {
+            "minimum_latitude": 40.644169,
+            "maximum_latitude": 40.70136,
+            "minimum_longitude": -74.072201,
+            "maximum_longitude": -74.012666,
+            "extracted_on": "2022-03-16T17:26:46+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.nyc.gov/html/dot/downloads/misc/siferry-gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-staten-island-ferry-gtfs-518.zip?alt=media"
+    }
+}

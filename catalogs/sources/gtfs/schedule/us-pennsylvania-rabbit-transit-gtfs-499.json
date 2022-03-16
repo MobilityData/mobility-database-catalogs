@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 499,
+    "data_type": "gtfs",
+    "provider": "Rabbit Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Pennsylvania",
+        "municipality": "York",
+        "bounding_box": {
+            "minimum_latitude": 39.39941459,
+            "maximum_latitude": 40.29388372,
+            "minimum_longitude": -77.27423287,
+            "maximum_longitude": -76.50190692,
+            "extracted_on": "2022-03-16T17:24:56+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.rabbittransit.org/infopoint/gtfs/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-pennsylvania-rabbit-transit-gtfs-499.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 517,
+    "data_type": "gtfs",
+    "provider": "Port Authority Trans-Hudson (PATH)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New Jersey",
+        "municipality": "Jersey City",
+        "bounding_box": {
+            "minimum_latitude": 40.7118,
+            "maximum_latitude": 40.7495,
+            "minimum_longitude": -74.1649,
+            "maximum_longitude": -73.9876,
+            "extracted_on": "2022-03-16T17:26:45+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/path-nj-us/path-nj-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-jersey-port-authority-trans-hudson-path-gtfs-517.zip?alt=media"
+    }
+}

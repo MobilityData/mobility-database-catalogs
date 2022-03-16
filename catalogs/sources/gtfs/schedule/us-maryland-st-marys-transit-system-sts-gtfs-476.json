@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 476,
+    "data_type": "gtfs",
+    "provider": "St. Mary's Transit System (STS)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Maryland",
+        "bounding_box": {
+            "minimum_latitude": 38.108913,
+            "maximum_latitude": 38.500123,
+            "minimum_longitude": -76.832048,
+            "maximum_longitude": -76.365933,
+            "extracted_on": "2022-03-16T17:23:57+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/mobilityequity/maryland-local-gtfs/raw/master/SM_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maryland-st-marys-transit-system-sts-gtfs-476.zip?alt=media",
+        "license": "https://github.com/mobilityequity/maryland-local-gtfs/blob/master/README.md"
+    }
+}

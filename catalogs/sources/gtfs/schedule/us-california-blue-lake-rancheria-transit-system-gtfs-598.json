@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 598,
+    "data_type": "gtfs",
+    "provider": "Blue Lake Rancheria Transit System",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Blue Lake",
+        "bounding_box": {
+            "minimum_latitude": 40.0680453004959,
+            "maximum_latitude": 41.061448107054,
+            "minimum_longitude": -124.223416986081,
+            "maximum_longitude": -123.631606,
+            "extracted_on": "2022-03-16T20:10:26+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/blue-lake-rancheria-transit-system/1142/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-blue-lake-rancheria-transit-system-gtfs-598.zip?alt=media"
+    }
+}

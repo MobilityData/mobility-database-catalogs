@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 558,
+    "data_type": "gtfs",
+    "provider": "Huntington Park Express",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Huntington Park",
+        "bounding_box": {
+            "minimum_latitude": 33.9633554216803,
+            "maximum_latitude": 33.9891364484214,
+            "minimum_longitude": -118.238692091684,
+            "maximum_longitude": -118.192457392484,
+            "extracted_on": "2022-03-16T20:09:28+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/huntingtonpark-ca-us/huntingtonpark-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-huntington-park-express-gtfs-558.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 629,
+    "data_type": "gtfs",
+    "provider": "Chittenden County Transportation Authority  (CCTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Vermont",
+        "municipality": "Burlington",
+        "bounding_box": {
+            "minimum_latitude": 44.010319,
+            "maximum_latitude": 44.99747,
+            "minimum_longitude": -73.29892,
+            "maximum_longitude": -72.02065,
+            "extracted_on": "2022-03-16T20:11:27+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/ccta-vt-us/ccta-vt-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-vermont-chittenden-county-transportation-authority-ccta-gtfs-629.zip?alt=media"
+    }
+}

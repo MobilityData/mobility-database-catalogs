@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 565,
+    "data_type": "gtfs",
+    "provider": "City of Las Vegas",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Nevada",
+        "municipality": "Las Vegas",
+        "bounding_box": {
+            "minimum_latitude": 36.1478325021643,
+            "maximum_latitude": 36.172628431689,
+            "minimum_longitude": -115.157172813709,
+            "maximum_longitude": -115.13942,
+            "extracted_on": "2022-03-16T20:09:37+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/lasvegasloop-nv-us/lasvegasloop-nv-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-nevada-city-of-las-vegas-gtfs-565.zip?alt=media"
+    }
+}

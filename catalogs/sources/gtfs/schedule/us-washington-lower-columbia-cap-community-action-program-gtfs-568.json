@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 568,
+    "data_type": "gtfs",
+    "provider": "Lower Columbia CAP (Community Action Program)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "municipality": "Longview",
+        "bounding_box": {
+            "minimum_latitude": 45.6906915250296,
+            "maximum_latitude": 46.283358015664,
+            "minimum_longitude": -122.934549104713,
+            "maximum_longitude": -122.66373300428,
+            "extracted_on": "2022-03-16T20:09:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/lowercolumbiacap-wa-us/lowercolumbiacap-wa-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-lower-columbia-cap-community-action-program-gtfs-568.zip?alt=media"
+    }
+}

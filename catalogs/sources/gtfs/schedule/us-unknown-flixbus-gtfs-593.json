@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 593,
+    "data_type": "gtfs",
+    "provider": "Flixbus",
+    "location": {
+        "country_code": "US",
+        "bounding_box": {
+            "minimum_latitude": 25.7782,
+            "maximum_latitude": 42.343998,
+            "minimum_longitude": -118.449001,
+            "maximum_longitude": -71.061576,
+            "extracted_on": "2022-03-16T20:10:17+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.ndovloket.nl/flixbus/flixbus-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-unknown-flixbus-gtfs-593.zip?alt=media"
+    }
+}

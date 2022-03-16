@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 646,
+    "data_type": "gtfs",
+    "provider": "Tulare County Area Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Tulare",
+        "bounding_box": {
+            "minimum_latitude": 35.761867,
+            "maximum_latitude": 36.545631,
+            "minimum_longitude": -119.486362,
+            "maximum_longitude": -118.815159,
+            "extracted_on": "2022-03-16T20:12:13+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/tcat-flex-ca-us/tcat-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-tulare-county-area-transit-gtfs-646.zip?alt=media"
+    }
+}

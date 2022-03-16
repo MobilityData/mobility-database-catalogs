@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 625,
+    "data_type": "gtfs",
+    "provider": "Gulf Coast Center",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Texas",
+        "bounding_box": {
+            "minimum_latitude": 28.9438134,
+            "maximum_latitude": 29.5135344528876,
+            "minimum_longitude": -95.4648053214995,
+            "maximum_longitude": -94.89328642,
+            "extracted_on": "2022-03-16T20:11:17+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/gulfcoastcenter-tx-us/gulfcoastcenter-tx-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-texas-gulf-coast-center-gtfs-625.zip?alt=media"
+    }
+}

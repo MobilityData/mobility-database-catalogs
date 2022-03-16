@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 577,
+    "data_type": "gtfs",
+    "provider": "Montebello Bus Lines",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Montebello",
+        "bounding_box": {
+            "minimum_latitude": 33.891737,
+            "maximum_latitude": 34.1110781039375,
+            "minimum_longitude": -118.266356,
+            "maximum_longitude": -117.994749,
+            "extracted_on": "2022-03-16T20:09:55+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/montebello-ca-us/montebello-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-montebello-bus-lines-gtfs-577.zip?alt=media"
+    }
+}

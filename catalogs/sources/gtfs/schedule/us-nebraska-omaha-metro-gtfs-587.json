@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 587,
+    "data_type": "gtfs",
+    "provider": "Omaha Metro",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Nebraska",
+        "municipality": "Omaha",
+        "bounding_box": {
+            "minimum_latitude": 41.1405456595003,
+            "maximum_latitude": 41.345776,
+            "minimum_longitude": -96.196039,
+            "maximum_longitude": -95.89996,
+            "extracted_on": "2022-03-16T20:10:08+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/omaha-metro/TrapezeExport/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-nebraska-omaha-metro-gtfs-587.zip?alt=media"
+    }
+}

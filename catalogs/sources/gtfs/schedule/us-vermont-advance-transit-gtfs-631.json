@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 631,
+    "data_type": "gtfs",
+    "provider": "Advance Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Vermont",
+        "municipality": "Hartford",
+        "bounding_box": {
+            "minimum_latitude": 43.625202179,
+            "maximum_latitude": 43.729133606,
+            "minimum_longitude": -72.3435561363965,
+            "maximum_longitude": -72.0132064819,
+            "extracted_on": "2022-03-16T20:11:31+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/advancetransit-vt-us/advancetransit-vt-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-vermont-advance-transit-gtfs-631.zip?alt=media"
+    }
+}

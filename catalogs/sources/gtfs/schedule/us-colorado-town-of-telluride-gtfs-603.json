@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 603,
+    "data_type": "gtfs",
+    "provider": "Town of Telluride",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Montrose",
+        "bounding_box": {
+            "minimum_latitude": 37.93503,
+            "maximum_latitude": 37.94021,
+            "minimum_longitude": -107.82207,
+            "maximum_longitude": -107.80002,
+            "extracted_on": "2022-03-16T20:10:38+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/telluride-co-us/telluride-co-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-town-of-telluride-gtfs-603.zip?alt=media"
+    }
+}

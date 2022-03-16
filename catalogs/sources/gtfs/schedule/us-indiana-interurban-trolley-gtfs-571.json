@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 571,
+    "data_type": "gtfs",
+    "provider": "Interurban Trolley",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Indiana",
+        "municipality": "Indianapolis",
+        "bounding_box": {
+            "minimum_latitude": 41.554451,
+            "maximum_latitude": 41.739892,
+            "minimum_longitude": -86.180541,
+            "maximum_longitude": -85.789122,
+            "extracted_on": "2022-03-16T20:09:46+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://macog.com/google/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-indiana-interurban-trolley-gtfs-571.zip?alt=media"
+    }
+}

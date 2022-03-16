@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 605,
+    "data_type": "gtfs",
+    "provider": "Canby Ferry",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Portland",
+        "bounding_box": {
+            "minimum_latitude": 45.2989871385735,
+            "maximum_latitude": 45.3010657654158,
+            "minimum_longitude": -122.692828552403,
+            "maximum_longitude": -122.692637681176,
+            "extracted_on": "2022-03-16T20:10:39+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/canbyferry-or-us/canbyferry-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-canby-ferry-gtfs-605.zip?alt=media"
+    }
+}

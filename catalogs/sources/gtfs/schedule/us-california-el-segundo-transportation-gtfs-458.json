@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 458,
+    "data_type": "gtfs",
+    "provider": "El Segundo Transportation",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "El Segundo",
+        "bounding_box": {
+            "minimum_latitude": 33.9046426047857,
+            "maximum_latitude": 33.9309324789624,
+            "minimum_longitude": -118.421993344071,
+            "maximum_longitude": -118.380819763092,
+            "extracted_on": "2022-03-16T15:34:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/elsegundo-ca-us/elsegundo-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-el-segundo-transportation-gtfs-458.zip?alt=media"
+    }
+}

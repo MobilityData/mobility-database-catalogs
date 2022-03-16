@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 400,
+    "data_type": "gtfs",
+    "provider": "The Rapid",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Michigan",
+        "municipality": "Grand Rapids",
+        "bounding_box": {
+            "minimum_latitude": 42.8408508301,
+            "maximum_latitude": 43.6899757385,
+            "minimum_longitude": -85.909981,
+            "maximum_longitude": -85.481773,
+            "extracted_on": "2022-03-16T15:32:01+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://connect.ridetherapid.org/InfoPoint/gtfs-zip.ashx",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-michigan-the-rapid-gtfs-400.zip?alt=media"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 433,
+    "data_type": "gtfs",
+    "provider": "Montachusett Regional Transit Authority (MART)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Massachusetts",
+        "bounding_box": {
+            "minimum_latitude": 42.261459,
+            "maximum_latitude": 42.68395858,
+            "minimum_longitude": -72.31539171,
+            "maximum_longitude": -71.273123,
+            "extracted_on": "2022-03-16T15:34:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/montachusett-ma-us/montachusett-ma-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-montachusett-regional-transit-authority-mart-gtfs-433.zip?alt=media"
+    }
+}

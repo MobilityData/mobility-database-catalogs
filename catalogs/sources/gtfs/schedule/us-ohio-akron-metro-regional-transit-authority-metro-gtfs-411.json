@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 411,
+    "data_type": "gtfs",
+    "provider": "Akron Metro Regional Transit Authority (METRO)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Ohio",
+        "municipality": "Akron",
+        "bounding_box": {
+            "minimum_latitude": 40.915395,
+            "maximum_latitude": 41.513944,
+            "minimum_longitude": -81.697065,
+            "maximum_longitude": -81.403724,
+            "extracted_on": "2022-03-16T15:32:55+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.akronmetro.org/Data/Sites/2/gtfs-data/akronmetrogtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-ohio-akron-metro-regional-transit-authority-metro-gtfs-411.zip?alt=media"
+    }
+}

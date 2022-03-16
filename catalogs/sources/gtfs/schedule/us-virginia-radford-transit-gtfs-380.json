@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 380,
+    "data_type": "gtfs",
+    "provider": "Radford Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Virginia",
+        "municipality": "Radford",
+        "bounding_box": {
+            "minimum_latitude": 37.1057438,
+            "maximum_latitude": 37.230850967,
+            "minimum_longitude": -80.6963474,
+            "maximum_longitude": -80.400214,
+            "extracted_on": "2022-03-16T15:27:12+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://passio3.com/radford/passioTransit/gtfs/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-radford-transit-gtfs-380.zip?alt=media"
+    }
+}

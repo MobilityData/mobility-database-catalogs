@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 383,
+    "data_type": "gtfs",
+    "provider": "DowneyLINK",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "bounding_box": {
+            "minimum_latitude": 33.9068190625008,
+            "maximum_latitude": 33.9667896649685,
+            "minimum_longitude": -118.15607158901,
+            "maximum_longitude": -118.102802806934,
+            "extracted_on": "2022-03-16T15:27:18+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/downey-ca-us/downey-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-downeylink-gtfs-383.zip?alt=media"
+    }
+}

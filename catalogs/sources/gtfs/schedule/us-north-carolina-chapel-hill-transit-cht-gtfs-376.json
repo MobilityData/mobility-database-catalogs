@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 376,
+    "data_type": "gtfs",
+    "provider": "Chapel Hill Transit (CHT)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "North Carolina",
+        "municipality": "Chapel Hill",
+        "bounding_box": {
+            "minimum_latitude": 35.8540611778005,
+            "maximum_latitude": 35.9760638362239,
+            "minimum_longitude": -79.1016391513517,
+            "maximum_longitude": -78.996655130862,
+            "extracted_on": "2022-03-16T15:27:06+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/chapel-hill-transit-nc-us/chapel-hill-transit-nc-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-north-carolina-chapel-hill-transit-cht-gtfs-376.zip?alt=media"
+    }
+}

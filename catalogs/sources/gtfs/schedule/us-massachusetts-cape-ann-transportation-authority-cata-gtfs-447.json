@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 447,
+    "data_type": "gtfs",
+    "provider": "Cape Ann Transportation Authority (CATA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Massachusetts",
+        "bounding_box": {
+            "minimum_latitude": 42.5419781,
+            "maximum_latitude": 42.68462803,
+            "minimum_longitude": -70.9430737,
+            "maximum_longitude": -70.5986306,
+            "extracted_on": "2022-03-16T15:34:34+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/capeann-ma-us/capeann-ma-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-cape-ann-transportation-authority-cata-gtfs-447.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 442,
+    "data_type": "gtfs",
+    "provider": "Middlesex 3 TMA",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Massachusetts",
+        "municipality": "Billerica",
+        "bounding_box": {
+            "minimum_latitude": 42.3630156894176,
+            "maximum_latitude": 42.530488,
+            "minimum_longitude": -71.277932,
+            "maximum_longitude": -71.0583318073749,
+            "extracted_on": "2022-03-16T15:34:23+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/middlesex-ma-us/middlesex-ma-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-middlesex-3-tma-gtfs-442.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 435,
+    "data_type": "gtfs",
+    "provider": "Bay State Cruise Company",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Massachusetts",
+        "municipality": "Boston",
+        "bounding_box": {
+            "minimum_latitude": 42.0491174432191,
+            "maximum_latitude": 42.3512795450525,
+            "minimum_longitude": -71.0397913869914,
+            "maximum_longitude": -70.1819217022952,
+            "extracted_on": "2022-03-16T15:34:03+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/baystatecruisecompany-ma-us/baystatecruisecompany-ma-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-bay-state-cruise-company-gtfs-435.zip?alt=media"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 424,
+    "data_type": "gtfs",
+    "provider": "Patriots Party Boats",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Massachusetts",
+        "bounding_box": {
+            "minimum_latitude": 41.4586245799043,
+            "maximum_latitude": 41.543803470417,
+            "minimum_longitude": -70.6070370790062,
+            "maximum_longitude": -70.5544496890602,
+            "extracted_on": "2022-03-16T15:33:36+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/patriotpartyboats-ma-us/patriotpartyboats-ma-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-patriots-party-boats-gtfs-424.zip?alt=media"
+    }
+}

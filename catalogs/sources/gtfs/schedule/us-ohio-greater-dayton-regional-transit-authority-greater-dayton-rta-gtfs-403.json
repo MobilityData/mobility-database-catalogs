@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 403,
+    "data_type": "gtfs",
+    "provider": "Greater Dayton Regional Transit Authority (Greater Dayton RTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Ohio",
+        "municipality": "Dayton",
+        "bounding_box": {
+            "minimum_latitude": 39.60158,
+            "maximum_latitude": 39.922275,
+            "minimum_longitude": -84.330089,
+            "maximum_longitude": -84.05722,
+            "extracted_on": "2022-03-16T15:32:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://proc.greaterdaytonrta.org/gtfs/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-ohio-greater-dayton-regional-transit-authority-greater-dayton-rta-gtfs-403.zip?alt=media"
+    }
+}

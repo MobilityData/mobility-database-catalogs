@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 462,
+    "data_type": "gtfs",
+    "provider": "Gallup Express",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New Mexico",
+        "municipality": "Gallup",
+        "bounding_box": {
+            "minimum_latitude": 35.502151,
+            "maximum_latitude": 35.628107,
+            "minimum_longitude": -108.837665,
+            "maximum_longitude": -108.606142,
+            "extracted_on": "2022-03-16T15:35:03+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://mjcaction.com/MJC_GTFS_Public/gallupexpress_google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-mexico-gallup-express-gtfs-462.zip?alt=media"
+    }
+}

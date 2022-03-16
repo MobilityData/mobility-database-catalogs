@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 378,
+    "data_type": "gtfs",
+    "provider": "Duke University",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "North Carolina",
+        "municipality": "Durham",
+        "bounding_box": {
+            "minimum_latitude": 35.994104,
+            "maximum_latitude": 36.021022,
+            "minimum_longitude": -78.95535554,
+            "maximum_longitude": -78.9037367360214,
+            "extracted_on": "2022-03-16T15:27:11+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/duke-nc-us/duke-nc-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-north-carolina-duke-university-gtfs-378.zip?alt=media"
+    }
+}

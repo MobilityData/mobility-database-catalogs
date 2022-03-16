@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 406,
+    "data_type": "gtfs",
+    "provider": "Greater Cleveland Regional Transit Authority",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Ohio",
+        "municipality": "Cleveland",
+        "bounding_box": {
+            "minimum_latitude": 41.227828,
+            "maximum_latitude": 41.637051,
+            "minimum_longitude": -81.96736,
+            "maximum_longitude": -81.437811,
+            "extracted_on": "2022-03-16T15:32:25+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.riderta.com/sites/default/files/gtfs/latest/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-ohio-greater-cleveland-regional-transit-authority-gtfs-406.zip?alt=media",
+        "license": "http://www.riderta.com/developers"
+    }
+}

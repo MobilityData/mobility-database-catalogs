@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 384,
+    "data_type": "gtfs",
+    "provider": "Indian Trails, Detroit Ann Arbor Express",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Michigan",
+        "bounding_box": {
+            "minimum_latitude": 41.60434849,
+            "maximum_latitude": 47.1269625,
+            "minimum_longitude": -92.1007644,
+            "maximum_longitude": -83.052111,
+            "extracted_on": "2022-03-16T15:27:23+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/indiantrails-mi-us/indiantrails-mi-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-michigan-indian-trails-detroit-ann-arbor-express-gtfs-384.zip?alt=media"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 452,
+    "data_type": "gtfs",
+    "provider": "Lakes Region Explorer",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Maine",
+        "bounding_box": {
+            "minimum_latitude": 43.6584,
+            "maximum_latitude": 44.0533,
+            "minimum_longitude": -70.7135435945,
+            "maximum_longitude": -70.2595,
+            "extracted_on": "2022-03-16T15:34:47+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://trilliumtransit.com/transit_feeds/rtp-me-us/rtp-me-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maine-lakes-region-explorer-gtfs-452.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 446,
+    "data_type": "gtfs",
+    "provider": "Boston Harbor Islands Ferries",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Massachusetts",
+        "municipality": "Boston",
+        "bounding_box": {
+            "minimum_latitude": 42.254056,
+            "maximum_latitude": 42.3604543,
+            "minimum_longitude": -71.0505213,
+            "maximum_longitude": -70.9016389,
+            "extracted_on": "2022-03-16T15:34:31+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://nationalparkservice.github.io/nps-gtfs/boha/ferries/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-boston-harbor-islands-ferries-gtfs-446.zip?alt=media"
+    }
+}

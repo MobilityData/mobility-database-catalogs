@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 397,
+    "data_type": "gtfs",
+    "provider": "GO Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Wisconsin",
+        "municipality": "Oshkosh",
+        "bounding_box": {
+            "minimum_latitude": 43.981736,
+            "maximum_latitude": 44.1866,
+            "minimum_longitude": -88.61613,
+            "maximum_longitude": -88.463707,
+            "extracted_on": "2022-03-16T15:31:45+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/oshkosh-wi-us/oshkosh-wi-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-wisconsin-go-transit-gtfs-397.zip?alt=media"
+    }
+}

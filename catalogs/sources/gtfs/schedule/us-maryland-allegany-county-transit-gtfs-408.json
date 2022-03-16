@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 408,
+    "data_type": "gtfs",
+    "provider": "Allegany County Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Maryland",
+        "municipality": "Allegany",
+        "bounding_box": {
+            "minimum_latitude": 39.480576,
+            "maximum_latitude": 39.70507,
+            "minimum_longitude": -79.045373,
+            "maximum_longitude": -78.71361,
+            "extracted_on": "2022-03-16T15:32:29+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/mobilityequity/maryland-local-gtfs/raw/master/Allegany_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maryland-allegany-county-transit-gtfs-408.zip?alt=media"
+    }
+}

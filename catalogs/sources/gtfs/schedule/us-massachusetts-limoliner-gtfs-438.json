@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 438,
+    "data_type": "gtfs",
+    "provider": "LimoLiner",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Massachusetts",
+        "municipality": "Boston",
+        "bounding_box": {
+            "minimum_latitude": 42.29195,
+            "maximum_latitude": 42.351074,
+            "minimum_longitude": -71.49106,
+            "maximum_longitude": -71.070511,
+            "extracted_on": "2022-03-16T15:34:16+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/limoliner-ma-us/limoliner-ma-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-limoliner-gtfs-438.zip?alt=media"
+    }
+}

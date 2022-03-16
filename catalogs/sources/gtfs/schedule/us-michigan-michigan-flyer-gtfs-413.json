@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 413,
+    "data_type": "gtfs",
+    "provider": "Michigan Flyer",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Michigan",
+        "municipality": "Detroit",
+        "bounding_box": {
+            "minimum_latitude": 42.2078480306562,
+            "maximum_latitude": 42.7353459492649,
+            "minimum_longitude": -84.4802281279614,
+            "maximum_longitude": -83.3462025983948,
+            "extracted_on": "2022-03-16T15:33:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/michiganflyer-mi-us/michiganflyer-mi-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-michigan-michigan-flyer-gtfs-413.zip?alt=media"
+    }
+}

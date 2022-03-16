@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 654,
+    "data_type": "gtfs",
+    "provider": "Haidleys Panoramic Coaches",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "Queensland",
+        "municipality": "Warwick",
+        "bounding_box": {
+            "minimum_latitude": -28.238421,
+            "maximum_latitude": -28.194167,
+            "minimum_longitude": 151.985483,
+            "maximum_longitude": 152.044586,
+            "extracted_on": "2022-03-16T21:18:48+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfsrt.api.translink.com.au/GTFS/WAR_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-haidleys-panoramic-coaches-gtfs-654.zip?alt=media",
+        "license": "https://www.data.qld.gov.au/dataset/general-transit-feed-specification-gtfs-qconnect/resource/4b6cc276-0d70-4c9c-adac-0b8cb384268a"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 676,
+    "data_type": "gtfs",
+    "provider": "Whitsunday Transit",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "Queensland",
+        "municipality": "Proserpine",
+        "bounding_box": {
+            "minimum_latitude": -20.406011,
+            "maximum_latitude": -20.264272,
+            "minimum_longitude": 148.57356,
+            "maximum_longitude": 148.785562,
+            "extracted_on": "2022-03-16T22:00:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfsrt.api.translink.com.au/GTFS/WHT_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-whitsunday-transit-gtfs-676.zip?alt=media"
+    }
+}

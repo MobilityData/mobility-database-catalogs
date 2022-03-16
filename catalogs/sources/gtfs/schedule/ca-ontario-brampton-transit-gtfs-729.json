@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 729,
+    "data_type": "gtfs",
+    "provider": "Brampton Transit",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Ontario",
+        "municipality": "Brampton",
+        "bounding_box": {
+            "minimum_latitude": 43.547852,
+            "maximum_latitude": 43.819111,
+            "minimum_longitude": -79.861496,
+            "maximum_longitude": -79.527649,
+            "extracted_on": "2022-03-16T22:07:33+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.brampton.ca/EN/City-Hall/OpenGov/Open-Data-Catalogue/Documents/Google_Transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-brampton-transit-gtfs-729.zip?alt=media"
+    }
+}

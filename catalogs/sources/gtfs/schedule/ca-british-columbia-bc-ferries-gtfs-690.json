@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 690,
+    "data_type": "gtfs",
+    "provider": "BC Ferries",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "British Columbia",
+        "municipality": "Vancouver",
+        "bounding_box": {
+            "minimum_latitude": 48.5772095826738,
+            "maximum_latitude": 54.2977845717889,
+            "minimum_longitude": -132.010339,
+            "maximum_longitude": -123.12942224916,
+            "extracted_on": "2022-03-16T22:04:07+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/bcferries-bc-ca/bcferries-bc-ca.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-ferries-gtfs-690.zip?alt=media"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 702,
+    "data_type": "gtfs",
+    "provider": "BC Transit (Whistler Transit System)",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "British Columbia",
+        "municipality": "Whistler",
+        "bounding_box": {
+            "minimum_latitude": 50.077122,
+            "maximum_latitude": 50.159071,
+            "minimum_longitude": -123.043635,
+            "maximum_longitude": -122.926836,
+            "extracted_on": "2022-03-16T22:05:05+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://whistler.mapstrat.com/current/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-transit-whistler-transit-system-gtfs-702.zip?alt=media",
+        "license": "https://www.bctransit.com/open-data/terms-of-use"
+    }
+}

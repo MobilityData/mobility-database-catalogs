@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 728,
+    "data_type": "gtfs",
+    "provider": "York Region Transit",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Ontario",
+        "municipality": "York",
+        "bounding_box": {
+            "minimum_latitude": 43.720413,
+            "maximum_latitude": 44.32131,
+            "minimum_longitude": -79.659289,
+            "maximum_longitude": -79.212178,
+            "extracted_on": "2022-03-16T22:07:23+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.yrt.ca/google/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-york-region-transit-gtfs-728.zip?alt=media"
+    }
+}

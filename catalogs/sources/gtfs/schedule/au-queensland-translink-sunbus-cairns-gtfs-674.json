@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 674,
+    "data_type": "gtfs",
+    "provider": "TransLink Sunbus Cairns",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "Queensland",
+        "municipality": "Cairns",
+        "bounding_box": {
+            "minimum_latitude": -17.104064,
+            "maximum_latitude": -16.743567,
+            "minimum_longitude": 145.663264,
+            "maximum_longitude": 145.786494,
+            "extracted_on": "2022-03-16T22:00:53+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfsrt.api.translink.com.au/GTFS/CNS_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-translink-sunbus-cairns-gtfs-674.zip?alt=media",
+        "license": "https://www.data.qld.gov.au/dataset/general-transit-feed-specification-gtfs-qconnect/resource/9850f8e5-f572-4de7-97c5-84d45526f9bd"
+    }
+}

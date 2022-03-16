@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 673,
+    "data_type": "gtfs",
+    "provider": "Trans North Innisfail",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "Queensland",
+        "bounding_box": {
+            "minimum_latitude": -17.543952,
+            "maximum_latitude": -16.819678,
+            "minimum_longitude": 145.424125,
+            "maximum_longitude": 146.076331,
+            "extracted_on": "2022-03-16T22:00:50+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfsrt.api.translink.com.au/GTFS/INN_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-trans-north-innisfail-gtfs-673.zip?alt=media"
+    }
+}

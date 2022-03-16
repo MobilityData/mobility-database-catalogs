@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 670,
+    "data_type": "gtfs",
+    "provider": "Glass House Country Coaches",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "Queensland",
+        "bounding_box": {
+            "minimum_latitude": -26.808098,
+            "maximum_latitude": -26.61763,
+            "minimum_longitude": 152.850518,
+            "maximum_longitude": 152.966173,
+            "extracted_on": "2022-03-16T22:00:42+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfsrt.api.translink.com.au/GTFS/MAL_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-glass-house-country-coaches-gtfs-670.zip?alt=media"
+    }
+}

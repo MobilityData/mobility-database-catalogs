@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 692,
+    "data_type": "gtfs",
+    "provider": "BC Transit - Regional District of Nanaimo (RDN) Transit System",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "British Columbia",
+        "municipality": "Nanaimo",
+        "bounding_box": {
+            "minimum_latitude": 48.774918,
+            "maximum_latitude": 49.464455,
+            "minimum_longitude": -124.72594,
+            "maximum_longitude": -123.701411,
+            "extracted_on": "2022-03-16T22:04:12+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://nanaimo.mapstrat.com/current/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-transit-regional-district-of-nanaimo-rdn-transit-system-gtfs-692.zip?alt=media"
+    }
+}

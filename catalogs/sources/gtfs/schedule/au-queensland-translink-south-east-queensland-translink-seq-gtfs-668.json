@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 668,
+    "data_type": "gtfs",
+    "provider": "Translink South East Queensland (Translink SEQ)",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "Queensland",
+        "bounding_box": {
+            "minimum_latitude": -28.172196,
+            "maximum_latitude": -26.15939,
+            "minimum_longitude": 152.124238,
+            "maximum_longitude": 153.543374,
+            "extracted_on": "2022-03-16T22:00:35+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfsrt.api.translink.com.au/GTFS/SEQ_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-translink-south-east-queensland-translink-seq-gtfs-668.zip?alt=media",
+        "license": "https://data.qld.gov.au/dataset/general-transit-feed-specification-gtfs-seq/resource/be7f19e5-3ee8-4396-b9eb-46f6b4ce8039"
+    }
+}

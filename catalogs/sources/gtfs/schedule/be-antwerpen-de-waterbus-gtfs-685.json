@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 685,
+    "data_type": "gtfs",
+    "provider": "De Waterbus",
+    "location": {
+        "country_code": "BE",
+        "subdivision_name": "Antwerpen",
+        "bounding_box": {
+            "minimum_latitude": 51.1431779315168,
+            "maximum_latitude": 51.302229653616,
+            "minimum_longitude": 4.286191463470459,
+            "maximum_longitude": 4.5152118,
+            "extracted_on": "2022-03-16T22:03:23+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://addtransit.com/gtfsfile/85165/DeWaterbus.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/be-antwerpen-de-waterbus-gtfs-685.zip?alt=media"
+    }
+}

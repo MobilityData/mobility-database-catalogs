@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 680,
+    "data_type": "gtfs",
+    "provider": "Department of Transport, Public Transport",
+    "name": "Darwin public bus network",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "Northern Territory",
+        "municipality": "Darwin",
+        "bounding_box": {
+            "minimum_latitude": -12.673611,
+            "maximum_latitude": -12.35262,
+            "minimum_longitude": 130.82082,
+            "maximum_longitude": 131.131822,
+            "extracted_on": "2022-03-16T22:01:23+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://dipl.nt.gov.au/data-feeds/bus-gtfs/google-transit-darwin.zip?v=0.16.0",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-northern-territory-department-of-transport-gtfs-680.zip?alt=media",
+        "license": "https://dipl.nt.gov.au/data/bus-timetable-data-and-geographic-information"
+    }
+}

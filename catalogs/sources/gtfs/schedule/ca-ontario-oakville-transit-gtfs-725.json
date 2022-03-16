@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 725,
+    "data_type": "gtfs",
+    "provider": "Oakville Transit",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Ontario",
+        "municipality": "Oakville",
+        "bounding_box": {
+            "minimum_latitude": 43.372358,
+            "maximum_latitude": 43.543996,
+            "minimum_longitude": -79.829729,
+            "maximum_longitude": -79.632124,
+            "extracted_on": "2022-03-16T22:07:04+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.arcgis.com/sharing/rest/content/items/d78a1c1ad6a940009de8b68839a8f606/data",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-oakville-transit-gtfs-725.zip?alt=media",
+        "license": "http://www.oakville.ca/data/oakville-transit-route-information.html"
+    }
+}

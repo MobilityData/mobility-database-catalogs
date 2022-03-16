@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 719,
+    "data_type": "gtfs",
+    "provider": "Muncie Indiana Transit System (MITS)",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Indiana",
+        "municipality": "Muncie",
+        "bounding_box": {
+            "minimum_latitude": 40.154119,
+            "maximum_latitude": 40.231927,
+            "minimum_longitude": -85.442719,
+            "maximum_longitude": -85.329372,
+            "extracted_on": "2022-03-16T22:06:32+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.mitsbus.org/wp-content/uploads/2016/11/GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-indiana-muncie-indiana-transit-system-mits-gtfs-719.zip?alt=media"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 723,
+    "data_type": "gtfs",
+    "provider": "Hamilton Street Railway",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Ontario",
+        "municipality": "Hamilton",
+        "bounding_box": {
+            "minimum_latitude": 43.156343,
+            "maximum_latitude": 43.326073,
+            "minimum_longitude": -80.031354,
+            "maximum_longitude": -79.692514,
+            "extracted_on": "2022-03-16T22:06:57+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://googlehsrdocs.hamilton.ca/",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-hamilton-street-railway-gtfs-723.zip?alt=media",
+        "license": "https://www.hamilton.ca/city-initiatives/strategies-actions/open-accessible-data"
+    }
+}

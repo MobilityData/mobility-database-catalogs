@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 712,
+    "data_type": "gtfs",
+    "provider": "Calgary Transit",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Alberta",
+        "municipality": "Calgary",
+        "bounding_box": {
+            "minimum_latitude": 50.854661,
+            "maximum_latitude": 51.184083,
+            "minimum_longitude": -114.269483,
+            "maximum_longitude": -113.821508,
+            "extracted_on": "2022-03-16T22:05:29+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.calgary.ca/download/npk7-z3bj/application%2Fzip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-alberta-calgary-transit-gtfs-712.zip?alt=media",
+        "license": "https://data.calgary.ca/stories/s/u45n-7awa/"
+    }
+}

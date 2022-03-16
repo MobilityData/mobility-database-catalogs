@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 678,
+    "data_type": "gtfs",
+    "provider": "Mackay Transit Coaches",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "Queensland",
+        "municipality": "Mackay",
+        "bounding_box": {
+            "minimum_latitude": -21.422896,
+            "maximum_latitude": -21.002182,
+            "minimum_longitude": 148.863599,
+            "maximum_longitude": 149.226987,
+            "extracted_on": "2022-03-16T22:01:06+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfsrt.api.translink.com.au/GTFS/MKY_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-mackay-transit-coaches-gtfs-678.zip?alt=media",
+        "license": "https://www.data.qld.gov.au/dataset/general-transit-feed-specification-gtfs-qconnect/resource/03426b3e-1ea6-4878-bd9b-cfaef7ca2b1d?truncate=30&inner_span=True"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 713,
+    "data_type": "gtfs",
+    "provider": "Red Deer Transit",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Alberta",
+        "municipality": "Red Deer",
+        "bounding_box": {
+            "minimum_latitude": 52.204934,
+            "maximum_latitude": 52.315697,
+            "minimum_longitude": -113.859632,
+            "maximum_longitude": -113.746221,
+            "extracted_on": "2022-03-16T22:05:39+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://webmap.reddeer.ca/transit/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-alberta-red-deer-transit-gtfs-713.zip?alt=media"
+    }
+}

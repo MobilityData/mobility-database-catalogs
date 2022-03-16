@@ -55,8 +55,8 @@ def test_catalogs_gtfs_source_ids_are_incremental():
     assert sorted(source_ids) == list(range(1, len(source_ids) + 1))
 
 
-def test_catalogs_sources_gtfs_schedule_auto_discovery_urls_uniqueness():
-    auto_discovery_urls = [
+def test_catalogs_sources_gtfs_schedule_direct_download_urls_uniqueness():
+    direct_download_urls = [
         source[URLS][DIRECT_DOWNLOAD] for source in get_sources(data_type=GTFS).values()
     ]
-    assert len(set(auto_discovery_urls)) == len(auto_discovery_urls)
+    assert len(set(direct_download_urls)) == len(direct_download_urls)

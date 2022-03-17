@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1084,
+    "data_type": "gtfs",
+    "provider": "SWEG Markgräflerland",
+    "location": {
+        "country_code": "DE",
+        "subdivision_name": "Baden-Württemberg",
+        "municipality": "Freiburg",
+        "bounding_box": {
+            "minimum_latitude": 0.0,
+            "maximum_latitude": 48.2236308211741,
+            "minimum_longitude": 0.0,
+            "maximum_longitude": 7.90221006091419,
+            "extracted_on": "2022-03-17T22:09:03+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.nvbw.de/fileadmin/user_upload/service/open_data/fahrplandaten_mit_liniennetz/sweg.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-baden-wurttemberg-sweg-markgraflerland-gtfs-1084.zip?alt=media"
+    }
+}

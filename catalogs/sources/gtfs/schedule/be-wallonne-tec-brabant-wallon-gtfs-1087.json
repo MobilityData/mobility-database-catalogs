@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1087,
+    "data_type": "gtfs",
+    "provider": "TEC Brabant Wallon, TEC Charleroi, TEC Hainaut, TEC Liège Verviers, TEC Namur Luxembourg",
+    "location": {
+        "country_code": "BE",
+        "subdivision_name": "Wallonne, Région",
+        "bounding_box": {
+            "minimum_latitude": 49.506805,
+            "maximum_latitude": 50.883023,
+            "minimum_longitude": 2.87512,
+            "maximum_longitude": 6.384263,
+            "extracted_on": "2022-03-17T23:02:36+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://gtfs.irail.be/tec/tec-gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/be-wallonne-tec-brabant-wallon-gtfs-1087.zip?alt=media"
+    }
+}

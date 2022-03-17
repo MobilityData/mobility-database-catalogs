@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1088,
+    "data_type": "gtfs",
+    "provider": "Société des Transports Intercommunaux de Bruxelles/Maatschappij voor het Intercommunaal Vervoer te Brussel (STIB/MIVB)",
+    "location": {
+        "country_code": "BE",
+        "subdivision_name": "Bruxelles-Capitale, Région de",
+        "municipality": "Bruxelles",
+        "bounding_box": {
+            "minimum_latitude": 50.765858,
+            "maximum_latitude": 50.926445,
+            "minimum_longitude": 4.26531,
+            "maximum_longitude": 4.513476,
+            "extracted_on": "2022-03-17T23:02:54+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://gtfs.irail.be/mivb/mivb-gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/be-bruxelles-capitale-societe-des-transports-intercommunaux-de-bruxellesmaatschappij-voor-het-intercommunaal-vervoer-te-brussel-stibmivb-gtfs-1088.zip?alt=media",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1091,
+    "data_type": "gtfs",
+    "provider": "DPN, AVL, CFL, CFLBus, RGTR, TICE, TRAM",
+    "name": "Aggregated Luxembourg - OpenOV",
+    "location": {
+        "country_code": "LU",
+        "bounding_box": {
+            "minimum_latitude": 48.947923,
+            "maximum_latitude": 50.624624,
+            "minimum_longitude": 5.566059,
+            "maximum_longitude": 6.990554,
+            "extracted_on": "2022-03-17T23:04:24+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://openov.lu/data/gtfs/gtfs-openov-lu.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lu-unknown-dpn-gtfs-1091.zip?alt=media",
+        "license": "http://openov.lu/data/gtfs/LICENSE.TXT"
+    }
+}

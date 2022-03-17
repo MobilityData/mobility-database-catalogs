@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 1089,
+    "data_type": "gtfs",
+    "provider": "Verkehrsverbund Stuttgart",
+    "location": {
+        "country_code": "DE",
+        "bounding_box": {
+            "minimum_latitude": 43.30381,
+            "maximum_latitude": 56.560966,
+            "minimum_longitude": 2.35912,
+            "maximum_longitude": 19.085072,
+            "extracted_on": "2022-03-17T23:03:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://download.gtfs.de/germany/rv_free/latest.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-unknown-verkehrsverbund-stuttgart-gtfs-1089.zip?alt=media"
+    }
+}

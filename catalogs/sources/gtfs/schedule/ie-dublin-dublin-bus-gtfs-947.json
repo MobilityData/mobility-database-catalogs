@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 947,
+    "data_type": "gtfs",
+    "provider": "Dublin Bus",
+    "location": {
+        "country_code": "IE",
+        "subdivision_name": "Dublin",
+        "municipality": "Dublin",
+        "bounding_box": {
+            "minimum_latitude": 53.0706777792662,
+            "maximum_latitude": 53.6061962793708,
+            "minimum_longitude": -6.61486549616597,
+            "maximum_longitude": -6.05331095872249,
+            "extracted_on": "2022-03-17T18:51:35+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/google_transit_dublinbus.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-dublin-dublin-bus-gtfs-947.zip?alt=media",
+        "license": "https://data.gov.ie/licence"
+    }
+}

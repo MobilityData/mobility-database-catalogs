@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 975,
+    "data_type": "gtfs",
+    "provider": "Swords Express",
+    "location": {
+        "country_code": "IE",
+        "subdivision_name": "Dublin",
+        "municipality": "Dublin",
+        "bounding_box": {
+            "minimum_latitude": 53.3390907478423,
+            "maximum_latitude": 53.471172402602,
+            "minimum_longitude": -6.25832951343416,
+            "maximum_longitude": -6.20442181305556,
+            "extracted_on": "2022-03-17T18:54:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/google_transit_swordsexpress.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-dublin-swords-express-gtfs-975.zip?alt=media"
+    }
+}

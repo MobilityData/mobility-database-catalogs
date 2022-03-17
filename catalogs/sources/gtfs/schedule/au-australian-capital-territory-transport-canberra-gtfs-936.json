@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 936,
+    "data_type": "gtfs",
+    "provider": "Transport Canberra",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "Australian Capital Territory",
+        "municipality": "Canberra",
+        "bounding_box": {
+            "minimum_latitude": -35.476552,
+            "maximum_latitude": -35.146514,
+            "minimum_longitude": 148.993368,
+            "maximum_longitude": 149.190329,
+            "extracted_on": "2022-03-17T18:49:44+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transport.act.gov.au/googletransit/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-australian-capital-territory-transport-canberra-gtfs-936.zip?alt=media"
+    }
+}

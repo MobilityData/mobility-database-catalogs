@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 944,
+    "data_type": "gtfs",
+    "provider": "Catherine Madigan",
+    "location": {
+        "country_code": "IE",
+        "subdivision_name": "Limerick",
+        "municipality": "Limerick",
+        "bounding_box": {
+            "minimum_latitude": 52.4215188000856,
+            "maximum_latitude": 52.569253000558,
+            "minimum_longitude": -9.15506531226756,
+            "maximum_longitude": -8.90705383466746,
+            "extracted_on": "2022-03-17T18:51:03+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/google_transit_cmadigan.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-limerick-catherine-madigan-gtfs-944.zip?alt=media",
+        "license": "https://data.gov.ie/licence"
+    }
+}

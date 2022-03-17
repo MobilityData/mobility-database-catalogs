@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 958,
+    "data_type": "gtfs",
+    "provider": "Kearns Transport",
+    "location": {
+        "country_code": "IE",
+        "subdivision_name": "Dublin",
+        "municipality": "Dublin",
+        "bounding_box": {
+            "minimum_latitude": 53.0916852457123,
+            "maximum_latitude": 53.4546320083705,
+            "minimum_longitude": -9.08556987440759,
+            "maximum_longitude": -6.21781200815433,
+            "extracted_on": "2022-03-17T18:52:53+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/google_transit_kearns.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-dublin-kearns-transport-gtfs-958.zip?alt=media"
+    }
+}

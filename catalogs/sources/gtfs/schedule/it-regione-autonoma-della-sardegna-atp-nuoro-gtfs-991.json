@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 991,
+    "data_type": "gtfs",
+    "provider": "ATP Nuoro",
+    "name": "Quadri orari ATP Nuoro",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Regione Autonoma della Sardegna",
+        "bounding_box": {
+            "minimum_latitude": 40.3073487,
+            "maximum_latitude": 40.370735,
+            "minimum_longitude": 9.2593768,
+            "maximum_longitude": 9.386304,
+            "extracted_on": "2022-03-17T18:57:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.atpnuoro.it/media/files/dati_atpnu.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-regione-autonoma-della-sardegna-atp-nuoro-gtfs-991.zip?alt=media",
+        "license": "https://creativecommons.org/licenses/by/4.0/deed.it"
+    }
+}

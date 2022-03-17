@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 959,
+    "data_type": "gtfs",
+    "provider": "Kenneally's Bus Service",
+    "location": {
+        "country_code": "IE",
+        "bounding_box": {
+            "minimum_latitude": 52.1622535776184,
+            "maximum_latitude": 53.4290389183803,
+            "minimum_longitude": -8.64941337529017,
+            "maximum_longitude": -6.2289291585258,
+            "extracted_on": "2022-03-17T18:53:06+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/google_transit_kenneallys.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-unknown-kenneallys-bus-service-gtfs-959.zip?alt=media"
+    }
+}

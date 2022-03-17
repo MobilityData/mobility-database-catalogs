@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 995,
+    "data_type": "gtfs",
+    "provider": "Transport For London",
+    "location": {
+        "country_code": "GB",
+        "subdivision_name": "Westminster",
+        "municipality": "London",
+        "bounding_box": {
+            "minimum_latitude": 51.342593,
+            "maximum_latitude": 51.705208,
+            "minimum_longitude": -0.611247,
+            "maximum_longitude": 0.329851,
+            "extracted_on": "2022-03-17T19:00:38+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://storage.googleapis.com/teleport-gtfs/tflgtfs_nobus.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-westminster-transport-for-london-gtfs-995.zip?alt=media",
+        "license": "https://tfl.gov.uk/corporate/terms-and-conditions/transport-data-service"
+    }
+}

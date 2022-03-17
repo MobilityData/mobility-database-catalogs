@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 980,
+    "data_type": "gtfs",
+    "provider": "MPK Wrocław",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Dolnoslaskie",
+        "municipality": "Wroclaw",
+        "bounding_box": {
+            "minimum_latitude": 50.97974058,
+            "maximum_latitude": 51.265518,
+            "minimum_longitude": 16.695853,
+            "maximum_longitude": 17.2855453,
+            "extracted_on": "2022-03-17T18:54:56+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.wroclaw.pl/open-data/87b09b32-f076-4475-8ec9-6020ed1f9ac0/OtwartyWroclaw_rozklad_jazdy_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-dolnoslaskie-mpk-wroclaw-gtfs-980.zip?alt=media"
+    }
+}

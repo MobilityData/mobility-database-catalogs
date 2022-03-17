@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 981,
+    "data_type": "gtfs",
+    "provider": "Zarząd Dróg i Transportu Miejskiego (ZDiTM)",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Zachodniopomorskie",
+        "municipality": "Szczecin",
+        "bounding_box": {
+            "minimum_latitude": 53.28248,
+            "maximum_latitude": 53.594587,
+            "minimum_longitude": 14.309758,
+            "maximum_longitude": 14.782657,
+            "extracted_on": "2022-03-17T18:55:02+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.zditm.szczecin.pl/rozklady/GTFS/latest/google_gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-zachodniopomorskie-zarzad-drog-i-transportu-miejskiego-zditm-gtfs-981.zip?alt=media"
+    }
+}

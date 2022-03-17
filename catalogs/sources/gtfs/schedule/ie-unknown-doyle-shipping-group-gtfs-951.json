@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 951,
+    "data_type": "gtfs",
+    "provider": "Doyle Shipping Group",
+    "location": {
+        "country_code": "IE",
+        "bounding_box": {
+            "minimum_latitude": 51.4769677464466,
+            "maximum_latitude": 55.2628260491634,
+            "minimum_longitude": -10.2122046529085,
+            "maximum_longitude": -5.55041816798297,
+            "extracted_on": "2022-03-17T18:51:51+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/google_transit_ferries.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-unknown-doyle-shipping-group-gtfs-951.zip?alt=media"
+    }
+}

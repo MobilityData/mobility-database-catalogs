@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 970,
+    "data_type": "gtfs",
+    "provider": "Dublin Bus Nitelink",
+    "location": {
+        "country_code": "IE",
+        "subdivision_name": "Dublin",
+        "municipality": "Dublin",
+        "bounding_box": {
+            "minimum_latitude": 53.1288008733297,
+            "maximum_latitude": 53.6061235042063,
+            "minimum_longitude": -6.50107776361442,
+            "maximum_longitude": -6.05479868457993,
+            "extracted_on": "2022-03-17T18:53:53+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/google_transit_nitelink.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-dublin-dublin-bus-nitelink-gtfs-970.zip?alt=media",
+        "license": "https://data.gov.ie/licence"
+    }
+}

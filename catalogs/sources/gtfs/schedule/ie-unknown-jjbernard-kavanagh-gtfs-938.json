@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 938,
+    "data_type": "gtfs",
+    "provider": "JJ/Bernard Kavanagh",
+    "location": {
+        "country_code": "IE",
+        "bounding_box": {
+            "minimum_latitude": 52.3542494811836,
+            "maximum_latitude": 53.3481432679383,
+            "minimum_longitude": -8.19894432308927,
+            "maximum_longitude": -6.25331643588362,
+            "extracted_on": "2022-03-17T18:49:56+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/google_transit_bkavanagh.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-unknown-jjbernard-kavanagh-gtfs-938.zip?alt=media"
+    }
+}

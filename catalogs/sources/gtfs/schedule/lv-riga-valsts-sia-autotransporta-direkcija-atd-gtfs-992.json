@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 992,
+    "data_type": "gtfs",
+    "provider": "Valsts SIA Autotransporta Direkcija (ATD)",
+    "location": {
+        "country_code": "LV",
+        "subdivision_name": "Rīga",
+        "bounding_box": {
+            "minimum_latitude": 55.6756659,
+            "maximum_latitude": 58.0485012,
+            "minimum_longitude": 20.9879606,
+            "maximum_longitude": 28.1816125,
+            "extracted_on": "2022-03-17T18:59:01+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.atd.lv/sites/default/files/GTFS/gtfs-latvia-lv.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lv-riga-valsts-sia-autotransporta-direkcija-atd-gtfs-992.zip?alt=media"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 1076,
+    "data_type": "gtfs",
+    "provider": "SMRT, SBS Transit (SBST), Land Transport Authority (LTA), Go Ahead Singapore (GAS), Tower Transit (TTS)",
+    "location": {
+        "country_code": "SG",
+        "bounding_box": {
+            "minimum_latitude": 1.251427,
+            "maximum_latitude": 1.49390379286364,
+            "minimum_longitude": 103.61725,
+            "maximum_longitude": 104.0155981,
+            "extracted_on": "2022-03-17T20:37:37+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://cdn.rushowl.app/rushtrail-app/gtfs-feed/gtfs-feed-lta.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/sg-unknown-smrt-gtfs-1076.zip?alt=media"
+    }
+}

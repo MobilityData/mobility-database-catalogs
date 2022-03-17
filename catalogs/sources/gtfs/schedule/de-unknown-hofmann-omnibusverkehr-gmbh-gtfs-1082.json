@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1082,
+    "data_type": "gtfs",
+    "provider": "Hofmann Omnibusverkehr GmbH",
+    "location": {
+        "country_code": "DE",
+        "bounding_box": {
+            "minimum_latitude": 0.0,
+            "maximum_latitude": 49.3883440782054,
+            "minimum_longitude": 0.0,
+            "maximum_longitude": 10.3267091141732,
+            "extracted_on": "2022-03-17T21:17:57+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.nvbw.de/fileadmin/user_upload/service/open_data/fahrplandaten_mit_liniennetz/kvsh.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-unknown-hofmann-omnibusverkehr-gmbh-gtfs-1082.zip?alt=media",
+        "license": "https://www.nvbw.de/open-data/fahrplandaten/fahrplandaten-mit-liniennetz"
+    }
+}

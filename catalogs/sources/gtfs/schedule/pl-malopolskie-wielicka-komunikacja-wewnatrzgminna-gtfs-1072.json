@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1072,
+    "data_type": "gtfs",
+    "provider": "Wielicka Komunikacja Wewnątrzgminna",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Malopolskie",
+        "municipality": "Wieliczka",
+        "bounding_box": {
+            "minimum_latitude": 49.934878,
+            "maximum_latitude": 50.0149,
+            "minimum_longitude": 19.99935,
+            "maximum_longitude": 20.1152,
+            "extracted_on": "2022-03-17T20:34:47+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://gtfs.pyrfekt.com/feeds/wieliczka_gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-malopolskie-wielicka-komunikacja-wewnatrzgminna-gtfs-1072.zip?alt=media",
+        "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    }
+}

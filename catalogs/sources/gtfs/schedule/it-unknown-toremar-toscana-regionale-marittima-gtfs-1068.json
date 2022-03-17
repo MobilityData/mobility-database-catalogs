@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 1068,
+    "data_type": "gtfs",
+    "provider": "Toremar Toscana Regionale Marittima",
+    "location": {
+        "country_code": "IT",
+        "bounding_box": {
+            "minimum_latitude": 42.2552882589984,
+            "maximum_latitude": 43.5533366636245,
+            "minimum_longitude": 9.83561862429208,
+            "maximum_longitude": 11.1222628089307,
+            "extracted_on": "2022-03-17T20:34:23+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://dati.toscana.it/dataset/8bb8f8fe-fe7d-41d0-90dc-49f2456180d1/resource/56539a5a-e0be-49eb-b3ac-052a42ad0de0/download/toremar.gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-unknown-toremar-toscana-regionale-marittima-gtfs-1068.zip?alt=media"
+    }
+}

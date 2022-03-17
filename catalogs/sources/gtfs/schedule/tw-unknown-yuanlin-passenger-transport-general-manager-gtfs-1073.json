@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 1073,
+    "data_type": "gtfs",
+    "provider": "Yuanlin Passenger Transport (General Manager), CH_中鹿客運(公總) (Zhonglu Passenger Transport (Public Service)), CH_彰化客運(公總) (Changhua Passenger Transport (Public Service))",
+    "location": {
+        "country_code": "TW",
+        "bounding_box": {
+            "minimum_latitude": 23.385829,
+            "maximum_latitude": 25.297518,
+            "minimum_longitude": 120.171053,
+            "maximum_longitude": 121.94879,
+            "extracted_on": "2022-03-17T20:34:52+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://gtfs.taichung.gov.tw/bnb/api/gtfs/ch/latest",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/tw-unknown-yuanlin-passenger-transport-general-manager-gtfs-1073.zip?alt=media"
+    }
+}

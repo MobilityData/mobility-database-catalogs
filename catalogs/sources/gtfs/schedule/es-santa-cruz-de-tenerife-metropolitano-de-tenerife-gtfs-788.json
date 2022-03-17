@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 788,
+    "data_type": "gtfs",
+    "provider": "Metropolitano de Tenerife",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Santa Cruz de Tenerife",
+        "bounding_box": {
+            "minimum_latitude": 28.44376,
+            "maximum_latitude": 28.48579349,
+            "minimum_longitude": -16.316764,
+            "maximum_longitude": -16.2482308,
+            "extracted_on": "2022-03-17T13:29:47+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://metrotenerife.com/transit/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-santa-cruz-de-tenerife-metropolitano-de-tenerife-gtfs-788.zip?alt=media"
+    }
+}

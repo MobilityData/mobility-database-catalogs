@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 781,
+    "data_type": "gtfs",
+    "provider": "Leipziger Verkehrsbetriebe (LVB)",
+    "location": {
+        "country_code": "DE",
+        "subdivision_name": "Sachsen",
+        "municipality": "Leipzig",
+        "bounding_box": {
+            "minimum_latitude": 50.822654,
+            "maximum_latitude": 51.669633,
+            "minimum_longitude": 11.411137,
+            "maximum_longitude": 13.226496,
+            "extracted_on": "2022-03-17T13:24:46+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://opendata.leipzig.de/dataset/8803f612-2ce1-4643-82d1-213434889200/resource/b38955c4-431c-4e8b-a4ef-9964a3a2c95d/download/gtfsmdvlvb.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-sachsen-leipziger-verkehrsbetriebe-lvb-gtfs-781.zip?alt=media"
+    }
+}

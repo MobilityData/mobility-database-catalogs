@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 737,
+    "data_type": "gtfs",
+    "provider": "Greater Sudbury Transit",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Ontario",
+        "municipality": "Sudbury",
+        "bounding_box": {
+            "minimum_latitude": 46.3981059752405,
+            "maximum_latitude": 46.7159690335393,
+            "minimum_longitude": -81.2044530082495,
+            "maximum_longitude": -80.8472879603506,
+            "extracted_on": "2022-03-17T13:15:32+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.greatersudbury.ca/image/opendata/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-greater-sudbury-transit-gtfs-737.zip?alt=media",
+        "license": "http://www.greatersudbury.ca/inside-city-hall/open-government/open-data/open-data-apps/"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 795,
+    "data_type": "gtfs",
+    "provider": "EMT Valencia",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "València",
+        "bounding_box": {
+            "minimum_latitude": 39.2752950790789,
+            "maximum_latitude": 39.5427829801224,
+            "minimum_longitude": -0.429217044835186,
+            "maximum_longitude": -0.277794650854308,
+            "extracted_on": "2022-03-17T13:30:48+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://opendata.vlci.valencia.es/dataset/ab058cf8-ad3e-4d9c-ac89-0c6367ecf351/resource/c81b69e6-c082-44dc-acc6-66fc417b4e66/download/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-valencia-emt-valencia-gtfs-795.zip?alt=media",
+        "license": "https://www.valencia.es/val/ajuntament/govern-obert"
+    }
+}

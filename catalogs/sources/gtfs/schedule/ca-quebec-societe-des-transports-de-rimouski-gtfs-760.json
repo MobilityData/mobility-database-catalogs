@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 760,
+    "data_type": "gtfs",
+    "provider": "Société des transports de Rimouski",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Québec",
+        "municipality": "Rimouski",
+        "bounding_box": {
+            "minimum_latitude": 48.4261848,
+            "maximum_latitude": 48.46963779,
+            "minimum_longitude": -68.59305527,
+            "maximum_longitude": -68.49610563,
+            "extracted_on": "2022-03-17T13:16:34+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/str-qc-ca/str-qc-ca.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-societe-des-transports-de-rimouski-gtfs-760.zip?alt=media"
+    }
+}

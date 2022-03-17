@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 796,
+    "data_type": "gtfs",
+    "provider": "Ceferino Apezetxea Eta Semeak",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "País Vasco",
+        "municipality": "San Sebastián",
+        "bounding_box": {
+            "minimum_latitude": 41.6424981847183,
+            "maximum_latitude": 43.3425474660011,
+            "minimum_longitude": -2.68474298385968,
+            "maximum_longitude": -0.88834736718245,
+            "extracted_on": "2022-03-17T13:40:34+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.navarra.es/appsext/DescargarFichero/default.aspx?codigoAcceso=OpenData&fichero=TransporteInterurbano/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-pais-vasco-ceferino-apezetxea-eta-semeak-gtfs-796.zip?alt=media",
+        "license": "http://creativecommons.org/licenses/by/3.0/es/"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 787,
+    "data_type": "gtfs",
+    "provider": "Transportes interurbanos de Tenerife (TITSA)",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Canarias",
+        "municipality": "Tenerife",
+        "bounding_box": {
+            "minimum_latitude": 28.0067,
+            "maximum_latitude": 28.5722,
+            "minimum_longitude": -16.9205,
+            "maximum_longitude": -16.1544,
+            "extracted_on": "2022-03-17T13:29:37+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.titsa.com/Google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-canarias-transportes-interurbanos-de-tenerife-titsa-gtfs-787.zip?alt=media"
+    }
+}

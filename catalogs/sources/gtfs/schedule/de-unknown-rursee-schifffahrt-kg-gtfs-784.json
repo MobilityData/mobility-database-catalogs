@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 784,
+    "data_type": "gtfs",
+    "provider": "Rursee-Schifffahrt KG",
+    "location": {
+        "country_code": "DE",
+        "bounding_box": {
+            "minimum_latitude": -89.999999,
+            "maximum_latitude": 69.57644,
+            "minimum_longitude": -170.198799,
+            "maximum_longitude": 179.999997,
+            "extracted_on": "2022-03-17T13:28:42+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://de.data.public-transport.earth/gtfs-germany.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-unknown-rursee-schifffahrt-kg-gtfs-784.zip?alt=media"
+    }
+}

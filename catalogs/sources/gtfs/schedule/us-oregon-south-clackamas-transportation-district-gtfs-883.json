@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 883,
+    "data_type": "gtfs",
+    "provider": "South Clackamas Transportation District",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": " Molalla",
+        "bounding_box": {
+            "minimum_latitude": 45.1390469449441,
+            "maximum_latitude": 45.32274907,
+            "minimum_longitude": -122.6915965,
+            "maximum_longitude": -122.5630179,
+            "extracted_on": "2022-03-17T15:29:20+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/sctd-or-us/sctd-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-south-clackamas-transportation-district-gtfs-883.zip?alt=media"
+    }
+}

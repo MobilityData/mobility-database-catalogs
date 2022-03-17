@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 826,
+    "data_type": "gtfs",
+    "provider": "Adirondack Trailways Pine Hill Trailways",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "bounding_box": {
+            "minimum_latitude": 40.75695,
+            "maximum_latitude": 43.104084,
+            "minimum_longitude": -75.223853,
+            "maximum_longitude": -73.724663,
+            "extracted_on": "2022-03-17T15:22:27+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Trailways-PHK.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-adirondack-trailways-pine-hill-trailways-gtfs-826.zip?alt=media"
+    }
+}

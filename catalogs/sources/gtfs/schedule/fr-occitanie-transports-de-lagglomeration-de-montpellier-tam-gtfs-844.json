@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 844,
+    "data_type": "gtfs",
+    "provider": "Transports de l'agglomération de Montpellier (TAM)",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Occitanie",
+        "bounding_box": {
+            "minimum_latitude": 43.52431273,
+            "maximum_latitude": 43.75182138,
+            "minimum_longitude": 3.70096418,
+            "maximum_longitude": 4.04086005,
+            "extracted_on": "2022-03-17T15:23:20+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.montpellier3m.fr/sites/default/files/ressources/TAM_MMM_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-occitanie-transports-de-lagglomeration-de-montpellier-tam-gtfs-844.zip?alt=media"
+    }
+}

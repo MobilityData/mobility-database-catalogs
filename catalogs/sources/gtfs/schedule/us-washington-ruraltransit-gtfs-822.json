@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 822,
+    "data_type": "gtfs",
+    "provider": "ruralTRANSIT",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "bounding_box": {
+            "minimum_latitude": 46.71704,
+            "maximum_latitude": 47.01786,
+            "minimum_longitude": -123.17158,
+            "maximum_longitude": -122.68924,
+            "extracted_on": "2022-03-17T15:22:22+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/thurston-wa-us/thurston-wa-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-ruraltransit-gtfs-822.zip?alt=media"
+    }
+}

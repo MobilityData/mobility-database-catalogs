@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 855,
+    "data_type": "gtfs",
+    "provider": "Trenord",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Lombardia",
+        "municipality": "Milan",
+        "bounding_box": {
+            "minimum_latitude": 44.692304,
+            "maximum_latitude": 46.319667,
+            "minimum_longitude": 8.294914,
+            "maximum_longitude": 10.982471,
+            "extracted_on": "2022-03-17T15:24:46+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.dati.lombardia.it/download/3z4k-mxz9/application%2Fzip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-lombardia-trenord-gtfs-855.zip?alt=media"
+    }
+}

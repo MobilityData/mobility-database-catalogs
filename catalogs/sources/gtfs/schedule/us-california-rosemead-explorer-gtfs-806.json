@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 806,
+    "data_type": "gtfs",
+    "provider": "Rosemead Explorer",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Rosemead",
+        "bounding_box": {
+            "minimum_latitude": 34.036944,
+            "maximum_latitude": 34.083874,
+            "minimum_longitude": -118.103673,
+            "maximum_longitude": -118.065028,
+            "extracted_on": "2022-03-17T15:21:58+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/rosemead-ca-us/rosemead-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-rosemead-explorer-gtfs-806.zip?alt=media"
+    }
+}

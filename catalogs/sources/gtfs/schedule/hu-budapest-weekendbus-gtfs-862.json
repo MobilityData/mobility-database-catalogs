@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 862,
+    "data_type": "gtfs",
+    "provider": "Weekendbus",
+    "location": {
+        "country_code": "HU",
+        "subdivision_name": "Budapest",
+        "bounding_box": {
+            "minimum_latitude": 47.474535,
+            "maximum_latitude": 47.5615383,
+            "minimum_longitude": 19.1358718,
+            "maximum_longitude": 19.351475,
+            "extracted_on": "2022-03-17T15:27:14+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://apps.weekendbus.hu/gtfs/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/hu-budapest-weekendbus-gtfs-862.zip?alt=media"
+    }
+}

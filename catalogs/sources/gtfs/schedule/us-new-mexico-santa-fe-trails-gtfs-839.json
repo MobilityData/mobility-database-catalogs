@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 839,
+    "data_type": "gtfs",
+    "provider": "Santa Fe Trails",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New Mexico",
+        "municipality": "Santa Fe",
+        "bounding_box": {
+            "minimum_latitude": 35.585175,
+            "maximum_latitude": 35.695048,
+            "minimum_longitude": -106.060987,
+            "maximum_longitude": -105.909732,
+            "extracted_on": "2022-03-17T15:22:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://mjcaction.com/MJC_GTFS_Public/santafetrails_google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-mexico-santa-fe-trails-gtfs-839.zip?alt=media"
+    }
+}

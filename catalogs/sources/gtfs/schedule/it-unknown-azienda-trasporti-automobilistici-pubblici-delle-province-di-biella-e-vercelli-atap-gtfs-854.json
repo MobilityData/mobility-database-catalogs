@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 854,
+    "data_type": "gtfs",
+    "provider": "Azienda Trasporti Automobilistici Pubblici delle Province di Biella e Vercelli (ATAP)",
+    "location": {
+        "country_code": "IT",
+        "bounding_box": {
+            "minimum_latitude": 45.071667,
+            "maximum_latitude": 45.854201329886,
+            "minimum_longitude": 7.6672446355116,
+            "maximum_longitude": 9.0938958624267,
+            "extracted_on": "2022-03-17T15:24:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.magellanoprogetti.it/atap/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-unknown-azienda-trasporti-automobilistici-pubblici-delle-province-di-biella-e-vercelli-atap-gtfs-854.zip?alt=media"
+    }
+}

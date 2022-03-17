@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 859,
+    "data_type": "gtfs",
+    "provider": "Bean Shuttle",
+    "location": {
+        "country_code": "AT",
+        "bounding_box": {
+            "minimum_latitude": 47.55705985377181,
+            "maximum_latitude": 48.810539,
+            "minimum_longitude": 13.044686168432236,
+            "maximum_longitude": 16.562506556510925,
+            "extracted_on": "2022-03-17T15:25:27+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://gtfs.beanshuttle.com/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/at-unknown-bean-shuttle-gtfs-859.zip?alt=media"
+    }
+}

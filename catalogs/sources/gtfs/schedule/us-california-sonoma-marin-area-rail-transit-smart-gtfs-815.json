@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 815,
+    "data_type": "gtfs",
+    "provider": "Sonoma-Marin Area Rail Transit (SMART)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Santa Rosa",
+        "bounding_box": {
+            "minimum_latitude": 37.94781,
+            "maximum_latitude": 38.5098222070014,
+            "minimum_longitude": -122.784085789652,
+            "maximum_longitude": -122.51248,
+            "extracted_on": "2022-03-17T15:22:11+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/smart-ca-us/smart-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-sonoma-marin-area-rail-transit-smart-gtfs-815.zip?alt=media"
+    }
+}

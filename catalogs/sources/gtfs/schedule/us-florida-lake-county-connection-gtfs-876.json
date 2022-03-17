@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 876,
+    "data_type": "gtfs",
+    "provider": "Lake County Connection",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Florida",
+        "municipality": "Fruitland Park",
+        "bounding_box": {
+            "minimum_latitude": 28.53219464,
+            "maximum_latitude": 28.961701,
+            "minimum_longitude": -81.94832,
+            "maximum_longitude": -81.5897915092621,
+            "extracted_on": "2022-03-17T15:29:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.ftis.org/PostFileDownload.aspx?id=160A0",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-lake-county-connection-gtfs-876.zip?alt=media"
+    }
+}

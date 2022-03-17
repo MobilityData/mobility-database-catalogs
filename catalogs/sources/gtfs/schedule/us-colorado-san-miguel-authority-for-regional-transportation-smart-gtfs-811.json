@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 811,
+    "data_type": "gtfs",
+    "provider": "San Miguel Authority for Regional Transportation (SMART)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "bounding_box": {
+            "minimum_latitude": 37.692905,
+            "maximum_latitude": 38.132049,
+            "minimum_longitude": -108.296074,
+            "maximum_longitude": -107.812829,
+            "extracted_on": "2022-03-17T15:22:04+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/sanmiguel-co-us/sanmiguel-co-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-san-miguel-authority-for-regional-transportation-smart-gtfs-811.zip?alt=media"
+    }
+}

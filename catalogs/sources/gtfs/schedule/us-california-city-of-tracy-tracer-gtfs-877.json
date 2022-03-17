@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 877,
+    "data_type": "gtfs",
+    "provider": "City of Tracy (TRACER)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Tracy",
+        "bounding_box": {
+            "minimum_latitude": 37.696589,
+            "maximum_latitude": 37.761837,
+            "minimum_longitude": -121.475665,
+            "maximum_longitude": -121.409294,
+            "extracted_on": "2022-03-17T15:29:11+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/tracy-ca-us/tracy-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-city-of-tracy-tracer-gtfs-877.zip?alt=media"
+    }
+}

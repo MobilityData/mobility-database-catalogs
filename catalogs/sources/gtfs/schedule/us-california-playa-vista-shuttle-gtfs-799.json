@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 799,
+    "data_type": "gtfs",
+    "provider": "Playa Vista Shuttle",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Los Angeles",
+        "bounding_box": {
+            "minimum_latitude": 33.9667191271915,
+            "maximum_latitude": 33.9852910271979,
+            "minimum_longitude": -118.465265246182,
+            "maximum_longitude": -118.396746861953,
+            "extracted_on": "2022-03-17T15:20:31+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/playavistashuttle-ca-us/playavistashuttle-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-playa-vista-shuttle-gtfs-799.zip?alt=media"
+    }
+}

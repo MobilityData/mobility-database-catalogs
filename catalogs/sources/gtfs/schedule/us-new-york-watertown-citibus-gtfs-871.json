@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 871,
+    "data_type": "gtfs",
+    "provider": "Watertown Citibus",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Watertown",
+        "bounding_box": {
+            "minimum_latitude": 43.947218,
+            "maximum_latitude": 43.994343,
+            "minimum_longitude": -75.95417,
+            "maximum_longitude": -75.879929,
+            "extracted_on": "2022-03-17T15:28:54+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Watertown_Citibus.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-watertown-citibus-gtfs-871.zip?alt=media"
+    }
+}

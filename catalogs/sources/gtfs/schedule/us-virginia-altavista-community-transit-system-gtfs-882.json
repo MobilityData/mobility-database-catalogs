@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 882,
+    "data_type": "gtfs",
+    "provider": "Altavista Community Transit System",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Virginia",
+        "municipality": "Lynchburg",
+        "bounding_box": {
+            "minimum_latitude": 37.1098467177009,
+            "maximum_latitude": 37.1423273297123,
+            "minimum_longitude": -79.3044038051373,
+            "maximum_longitude": -79.2507950076175,
+            "extracted_on": "2022-03-17T15:29:19+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/altavista-va-us/altavista-va-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-altavista-community-transit-system-gtfs-882.zip?alt=media"
+    }
+}

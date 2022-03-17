@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 864,
+    "data_type": "gtfs",
+    "provider": "Turku",
+    "location": {
+        "country_code": "FI",
+        "subdivision_name": "Varsinais-Suomi",
+        "municipality": "Turku",
+        "bounding_box": {
+            "minimum_latitude": 60.019907,
+            "maximum_latitude": 60.743421,
+            "minimum_longitude": 21.329408,
+            "maximum_longitude": 23.516382,
+            "extracted_on": "2022-03-17T15:27:24+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.foli.fi/gtfs/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fi-varsinais-suomi-turku-gtfs-864.zip?alt=media"
+    }
+}

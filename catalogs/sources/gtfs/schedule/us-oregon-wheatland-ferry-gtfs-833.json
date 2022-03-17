@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 833,
+    "data_type": "gtfs",
+    "provider": "Wheatland Ferry",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Salem",
+        "bounding_box": {
+            "minimum_latitude": 45.089973820919,
+            "maximum_latitude": 45.0905678833229,
+            "minimum_longitude": -123.046260413675,
+            "maximum_longitude": -123.044224655623,
+            "extracted_on": "2022-03-17T15:22:36+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/wheatlandferry-or-us/wheatlandferry-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-wheatland-ferry-gtfs-833.zip?alt=media"
+    }
+}

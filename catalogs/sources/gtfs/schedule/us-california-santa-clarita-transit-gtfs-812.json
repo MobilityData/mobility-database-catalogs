@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 812,
+    "data_type": "gtfs",
+    "provider": "Santa Clarita Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Santa Clarita",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2022-03-17T15:22:08+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gitlab.com/LACMTA/gtfs_lax/-/archive/master/gtfs_lax-master.zip?path=santa_clarita",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-santa-clarita-transit-gtfs-812.zip?alt=media"
+    }
+}

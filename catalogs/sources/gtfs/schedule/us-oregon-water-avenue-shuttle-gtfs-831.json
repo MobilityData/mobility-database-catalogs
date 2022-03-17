@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 831,
+    "data_type": "gtfs",
+    "provider": "Water Avenue Shuttle",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Portland",
+        "bounding_box": {
+            "minimum_latitude": 45.504399,
+            "maximum_latitude": 45.5278280333969,
+            "minimum_longitude": -122.666230784074,
+            "maximum_longitude": -122.658678,
+            "extracted_on": "2022-03-17T15:22:33+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/ceic-or-us/ceic-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-water-avenue-shuttle-gtfs-831.zip?alt=media"
+    }
+}

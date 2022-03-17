@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 841,
+    "data_type": "gtfs",
+    "provider": "Régie des Transports Métropolitains (RTM)",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Provence-Alpes-Côte-d’Azur",
+        "bounding_box": {
+            "minimum_latitude": 43.2126454224,
+            "maximum_latitude": 43.4103181808,
+            "minimum_longitude": 5.2875741342,
+            "maximum_longitude": 5.5261741194,
+            "extracted_on": "2022-03-17T15:23:09+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://tsvc2.pilote3.cityway.fr/api/Export/v1/GetExportedDataFile?ExportFormat=Gtfs&OperatorCode=RTM",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-provence-alpes-cote-dazur-regie-des-transports-metropolitains-rtm-gtfs-841.zip?alt=media"
+    }
+}

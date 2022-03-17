@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 846,
+    "data_type": "gtfs",
+    "provider": "Squaxin Island Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "municipality": "Olympia",
+        "bounding_box": {
+            "minimum_latitude": 47.006266,
+            "maximum_latitude": 47.2141,
+            "minimum_longitude": -123.396838,
+            "maximum_longitude": -123.031682968139,
+            "extracted_on": "2022-03-17T15:24:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://mjcaction.com/MJC_GTFS_Public/squaxintribe_google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-squaxin-island-transit-gtfs-846.zip?alt=media"
+    }
+}

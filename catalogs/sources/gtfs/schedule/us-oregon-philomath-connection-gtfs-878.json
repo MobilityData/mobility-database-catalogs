@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 878,
+    "data_type": "gtfs",
+    "provider": "Philomath Connection",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Corvallis",
+        "bounding_box": {
+            "minimum_latitude": 44.538819319,
+            "maximum_latitude": 44.568894,
+            "minimum_longitude": -123.377022609,
+            "maximum_longitude": -123.263341,
+            "extracted_on": "2022-03-17T15:29:12+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/philomathconnection-or-us/philomathconnection-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-philomath-connection-gtfs-878.zip?alt=media"
+    }
+}

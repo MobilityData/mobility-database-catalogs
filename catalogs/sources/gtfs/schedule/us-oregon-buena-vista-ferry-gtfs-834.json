@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 834,
+    "data_type": "gtfs",
+    "provider": "Buena Vista Ferry",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Albany",
+        "bounding_box": {
+            "minimum_latitude": 44.7696604540249,
+            "maximum_latitude": 44.7701539496516,
+            "minimum_longitude": -123.147180525512,
+            "maximum_longitude": -123.144738622659,
+            "extracted_on": "2022-03-17T15:22:37+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/buenavistaferry-or-us/buenavistaferry-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-buena-vista-ferry-gtfs-834.zip?alt=media"
+    }
+}

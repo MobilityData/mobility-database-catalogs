@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 868,
+    "data_type": "gtfs",
+    "provider": "Kuopio",
+    "location": {
+        "country_code": "FI",
+        "subdivision_name": "Pohjois-Savo",
+        "municipality": "Kuopio",
+        "bounding_box": {
+            "minimum_latitude": 62.623896,
+            "maximum_latitude": 63.38547752,
+            "minimum_longitude": 26.406358,
+            "maximum_longitude": 28.4804,
+            "extracted_on": "2022-03-17T15:28:44+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://karttapalvelu.kuopio.fi/google_transit/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fi-pohjois-savo-kuopio-gtfs-868.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 870,
+    "data_type": "gtfs",
+    "provider": "Village of Cooperstown Trolly System",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Otsego",
+        "bounding_box": {
+            "minimum_latitude": 42.68566,
+            "maximum_latitude": 42.717453,
+            "minimum_longitude": -74.937091,
+            "maximum_longitude": -74.922994,
+            "extracted_on": "2022-03-17T15:28:53+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Village_of_Cooperstown_Trolley_System.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-village-of-cooperstown-trolly-system-gtfs-870.zip?alt=media"
+    }
+}

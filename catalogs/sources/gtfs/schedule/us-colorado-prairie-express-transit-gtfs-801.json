@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 801,
+    "data_type": "gtfs",
+    "provider": "Prairie Express Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "bounding_box": {
+            "minimum_latitude": 40.6105818188916,
+            "maximum_latitude": 40.6432395380018,
+            "minimum_longitude": -103.235552,
+            "maximum_longitude": -103.160681,
+            "extracted_on": "2022-03-17T15:20:35+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/prairieexpress-co-us/prairieexpress-co-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-prairie-express-transit-gtfs-801.zip?alt=media"
+    }
+}

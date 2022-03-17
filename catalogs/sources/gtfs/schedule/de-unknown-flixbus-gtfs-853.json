@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 853,
+    "data_type": "gtfs",
+    "provider": "FlixBus",
+    "location": {
+        "country_code": "DE",
+        "bounding_box": {
+            "minimum_latitude": 33.88979,
+            "maximum_latitude": 59.911605,
+            "minimum_longitude": -122.299233,
+            "maximum_longitude": 43.900588,
+            "extracted_on": "2022-03-17T15:24:38+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.ndovloket.nl/flixbus/flixbus-eu.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-unknown-flixbus-gtfs-853.zip?alt=media",
+        "license": "http://data.ndovloket.nl/LICENTIE-CC0.TXT"
+    }
+}

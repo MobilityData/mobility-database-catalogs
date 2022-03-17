@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 800,
+    "data_type": "gtfs",
+    "provider": "Oregon Department of Transportation",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "bounding_box": {
+            "minimum_latitude": 41.75243,
+            "maximum_latitude": 46.19021,
+            "minimum_longitude": -124.288308,
+            "maximum_longitude": -116.951137,
+            "extracted_on": "2022-03-17T15:20:34+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.trilliumtransit.com/gtfs_data/point-or-us/point-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-oregon-department-of-transportation-gtfs-800.zip?alt=media",
+        "license": "https://oregon-gtfs.trilliumtransit.com"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 823,
+    "data_type": "gtfs",
+    "provider": "Adirondack Trailways ADP",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "bounding_box": {
+            "minimum_latitude": 40.75695,
+            "maximum_latitude": 43.104084,
+            "minimum_longitude": -76.169169,
+            "maximum_longitude": -73.75135,
+            "extracted_on": "2022-03-17T15:22:23+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Trailways-ADP.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-adirondack-trailways-adp-gtfs-823.zip?alt=media",
+        "license": "https://data.ny.gov/download/77gx-ii52/application/pdf"
+    }
+}

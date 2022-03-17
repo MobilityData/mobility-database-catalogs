@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 828,
+    "data_type": "gtfs",
+    "provider": "Pony Express",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Virginia",
+        "bounding_box": {
+            "minimum_latitude": 37.902379,
+            "maximum_latitude": 37.943053,
+            "minimum_longitude": -75.405157,
+            "maximum_longitude": -75.352106,
+            "extracted_on": "2022-03-17T15:22:29+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/ponyexpress-va-us/ponyexpress-va-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-pony-express-gtfs-828.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 867,
+    "data_type": "gtfs",
+    "provider": "Jyväskylä",
+    "location": {
+        "country_code": "FI",
+        "subdivision_name": "Keski-Suomi",
+        "municipality": "Jyväskylä",
+        "bounding_box": {
+            "minimum_latitude": 61.9556933685758,
+            "maximum_latitude": 62.62864111217454,
+            "minimum_longitude": 25.3666653747545,
+            "maximum_longitude": 26.288704903267423,
+            "extracted_on": "2022-03-17T15:28:07+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.jyvaskyla.fi/tiedostot/linkkidata.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fi-keski-suomi-jyvaskyla-gtfs-867.zip?alt=media"
+    }
+}

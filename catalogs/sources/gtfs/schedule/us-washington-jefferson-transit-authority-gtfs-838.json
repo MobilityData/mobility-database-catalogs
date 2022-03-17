@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 838,
+    "data_type": "gtfs",
+    "provider": "Jefferson Transit Authority",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "bounding_box": {
+            "minimum_latitude": 47.459067,
+            "maximum_latitude": 48.136621,
+            "minimum_longitude": -124.422517,
+            "maximum_longitude": -122.4963,
+            "extracted_on": "2022-03-17T15:22:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://mjcaction.com/MJC_GTFS_Public/jefferson_google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-jefferson-transit-authority-gtfs-838.zip?alt=media"
+    }
+}

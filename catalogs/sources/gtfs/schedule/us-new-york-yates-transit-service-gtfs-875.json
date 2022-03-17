@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 875,
+    "data_type": "gtfs",
+    "provider": "Yates Transit Service",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Yates",
+        "bounding_box": {
+            "minimum_latitude": 42.422427,
+            "maximum_latitude": 42.869131,
+            "minimum_longitude": -77.443207,
+            "maximum_longitude": -76.935196,
+            "extracted_on": "2022-03-17T15:29:07+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Yates_Transit_Service.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-yates-transit-service-gtfs-875.zip?alt=media"
+    }
+}

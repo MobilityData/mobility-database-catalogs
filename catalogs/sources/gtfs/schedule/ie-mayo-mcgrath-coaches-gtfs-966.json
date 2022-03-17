@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 966,
+    "data_type": "gtfs",
+    "provider": "McGrath Coaches",
+    "location": {
+        "country_code": "IE",
+        "subdivision_name": "Mayo",
+        "bounding_box": {
+            "minimum_latitude": 53.8541053154823,
+            "maximum_latitude": 54.3312669177582,
+            "minimum_longitude": -9.97175001404824,
+            "maximum_longitude": -9.15357021535132,
+            "extracted_on": "2022-03-17T18:53:44+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/google_transit_mcgrath.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-mayo-mcgrath-coaches-gtfs-966.zip?alt=media",
+        "license": "https://data.gov.ie/licence"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 941,
+    "data_type": "gtfs",
+    "provider": "Bus Éireann",
+    "location": {
+        "country_code": "IE",
+        "bounding_box": {
+            "minimum_latitude": 51.4826084796849,
+            "maximum_latitude": 55.0044762847017,
+            "minimum_longitude": -10.2719935744817,
+            "maximum_longitude": -6.03669632249174,
+            "extracted_on": "2022-03-17T18:50:42+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/google_transit_buseireann.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-unknown-bus-eireann-gtfs-941.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 971,
+    "data_type": "gtfs",
+    "provider": "PJ Martley",
+    "location": {
+        "country_code": "IE",
+        "subdivision_name": "Dublin",
+        "municipality": "Dublin",
+        "bounding_box": {
+            "minimum_latitude": 53.0329101330143,
+            "maximum_latitude": 53.347888338898,
+            "minimum_longitude": -7.32688452037354,
+            "maximum_longitude": -6.2135835670217,
+            "extracted_on": "2022-03-17T18:53:56+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/google_transit_pjmartley.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-dublin-pj-martley-gtfs-971.zip?alt=media"
+    }
+}

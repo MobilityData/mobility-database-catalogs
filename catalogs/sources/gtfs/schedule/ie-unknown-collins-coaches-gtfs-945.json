@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 945,
+    "data_type": "gtfs",
+    "provider": "Collins Coaches",
+    "location": {
+        "country_code": "IE",
+        "bounding_box": {
+            "minimum_latitude": 53.3426061451661,
+            "maximum_latitude": 53.9905991867939,
+            "minimum_longitude": -6.71903646812129,
+            "maximum_longitude": -6.22686447149742,
+            "extracted_on": "2022-03-17T18:51:07+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/google_transit_collins.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-unknown-collins-coaches-gtfs-945.zip?alt=media"
+    }
+}

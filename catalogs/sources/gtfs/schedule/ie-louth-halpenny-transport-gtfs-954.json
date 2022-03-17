@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 954,
+    "data_type": "gtfs",
+    "provider": "Halpenny Transport",
+    "location": {
+        "country_code": "IE",
+        "subdivision_name": "Louth",
+        "municipality": "Dundalk",
+        "bounding_box": {
+            "minimum_latitude": 53.9638021303039,
+            "maximum_latitude": 54.0069937600197,
+            "minimum_longitude": -6.42618734675643,
+            "maximum_longitude": -6.36557298397909,
+            "extracted_on": "2022-03-17T18:52:22+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/google_transit_halpenny.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-louth-halpenny-transport-gtfs-954.zip?alt=media"
+    }
+}

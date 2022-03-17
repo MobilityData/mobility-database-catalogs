@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 937,
+    "data_type": "gtfs",
+    "provider": "Aircoach",
+    "location": {
+        "country_code": "IE",
+        "subdivision_name": "Dublin",
+        "municipality": "Dublin",
+        "bounding_box": {
+            "minimum_latitude": 51.9007494706183,
+            "maximum_latitude": 54.5950542821334,
+            "minimum_longitude": -9.0457442109723,
+            "maximum_longitude": -5.93626793243387,
+            "extracted_on": "2022-03-17T18:49:51+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/google_transit_aircoach.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-dublin-aircoach-gtfs-937.zip?alt=media"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 993,
+    "data_type": "gtfs",
+    "provider": "Cercanías Madrid",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Madrid",
+        "bounding_box": {
+            "minimum_latitude": 40.3322393619552,
+            "maximum_latitude": 40.5172566213243,
+            "minimum_longitude": -3.83657,
+            "maximum_longitude": -3.54249327469938,
+            "extracted_on": "2022-03-17T18:59:09+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.arcgis.com/sharing/rest/content/items/868df0e58fca47e79b942902dffd7da0/data",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-madrid-cercanias-madrid-gtfs-993.zip?alt=media"
+    }
+}

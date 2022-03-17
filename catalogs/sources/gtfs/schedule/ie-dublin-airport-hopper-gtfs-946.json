@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 946,
+    "data_type": "gtfs",
+    "provider": "Airport Hopper",
+    "location": {
+        "country_code": "IE",
+        "subdivision_name": "Dublin",
+        "municipality": "Dublin",
+        "bounding_box": {
+            "minimum_latitude": 52.9712655911391,
+            "maximum_latitude": 53.3445012930664,
+            "minimum_longitude": -9.42599581425359,
+            "maximum_longitude": -6.26095892242016,
+            "extracted_on": "2022-03-17T18:51:09+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/google_transit_dualway.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-dublin-airport-hopper-gtfs-946.zip?alt=media"
+    }
+}

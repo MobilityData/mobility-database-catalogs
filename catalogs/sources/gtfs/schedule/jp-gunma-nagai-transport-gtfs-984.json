@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 984,
+    "data_type": "gtfs",
+    "provider": "永井運輸株式会社 (Nagai Transport)",
+    "location": {
+        "country_code": "JP",
+        "subdivision_name": "Gunma",
+        "municipality": "Maebashi",
+        "bounding_box": {
+            "minimum_latitude": 36.370488,
+            "maximum_latitude": 36.387287,
+            "minimum_longitude": 139.107665,
+            "maximum_longitude": 139.119483,
+            "extracted_on": "2022-03-17T18:55:37+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.nagai-unyu.net/rosen/GTFS/nagai/GTFS-JP_nagaibus-gunma-jp.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/jp-gunma-nagai-transport-gtfs-984.zip?alt=media",
+        "license": "https://www.nagai-unyu.net/open-data/"
+    }
+}

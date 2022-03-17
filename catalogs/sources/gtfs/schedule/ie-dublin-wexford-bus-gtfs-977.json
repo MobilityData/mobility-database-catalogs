@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 977,
+    "data_type": "gtfs",
+    "provider": "Wexford Bus",
+    "location": {
+        "country_code": "IE",
+        "subdivision_name": "Dublin",
+        "municipality": "Dublin",
+        "bounding_box": {
+            "minimum_latitude": 52.1728366888382,
+            "maximum_latitude": 53.4290389183803,
+            "minimum_longitude": -7.17302647886266,
+            "maximum_longitude": -6.04707041486504,
+            "extracted_on": "2022-03-17T18:54:25+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/google_transit_wexfordbus.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-dublin-wexford-bus-gtfs-977.zip?alt=media"
+    }
+}

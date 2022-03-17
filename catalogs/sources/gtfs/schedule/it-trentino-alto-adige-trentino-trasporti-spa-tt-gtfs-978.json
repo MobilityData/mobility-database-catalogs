@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 978,
+    "data_type": "gtfs",
+    "provider": "Trentino Trasporti SpA (TT)",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Trentino-Alto Adige",
+        "bounding_box": {
+            "minimum_latitude": 45.836852,
+            "maximum_latitude": 46.177651,
+            "minimum_longitude": 10.95153,
+            "maximum_longitude": 11.184697,
+            "extracted_on": "2022-03-17T18:54:31+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.trentinotrasporti.it/opendata/google_transit_urbano_tte.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-trentino-alto-adige-trentino-trasporti-spa-tt-gtfs-978.zip?alt=media"
+    }
+}

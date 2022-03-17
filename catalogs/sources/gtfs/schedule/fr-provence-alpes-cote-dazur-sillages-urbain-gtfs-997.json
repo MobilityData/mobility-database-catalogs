@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 997,
+    "data_type": "gtfs",
+    "provider": "Sillages Urbain",
+    "name": "Sillages Urbain - Communauté urbaine du Pays de Grasse",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Provence-Alpes-Côte-d'Azur",
+        "municipality": "Grasse",
+        "bounding_box": {
+            "minimum_latitude": 43.54788106,
+            "maximum_latitude": 43.8470147,
+            "minimum_longitude": 6.6423514,
+            "maximum_longitude": 6.979752,
+            "extracted_on": "2022-03-17T19:00:43+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://static.data.gouv.fr/resources/lignes-regulieres-de-transports-en-pays-de-grasse/20210203-152533/20210101-gtfs-sillagesurbain.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-provence-alpes-cote-dazur-sillages-urbain-gtfs-997.zip?alt=media"
+    }
+}

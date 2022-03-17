@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 950,
+    "data_type": "gtfs",
+    "provider": "Bus Feda Teoranta",
+    "location": {
+        "country_code": "IE",
+        "bounding_box": {
+            "minimum_latitude": 53.2736007915826,
+            "maximum_latitude": 55.2512801001395,
+            "minimum_longitude": -9.07045731403827,
+            "maximum_longitude": -7.26146771794948,
+            "extracted_on": "2022-03-17T18:51:48+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/google_transit_fedateoranta.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-unknown-bus-feda-teoranta-gtfs-950.zip?alt=media"
+    }
+}

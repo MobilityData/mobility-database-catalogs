@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 942,
+    "data_type": "gtfs",
+    "provider": "City Direct",
+    "location": {
+        "country_code": "IE",
+        "subdivision_name": "Galway",
+        "bounding_box": {
+            "minimum_latitude": 52.636104016225,
+            "maximum_latitude": 53.2787146901614,
+            "minimum_longitude": -9.14904035848576,
+            "maximum_longitude": -7.21457767574752,
+            "extracted_on": "2022-03-17T18:50:48+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/google_transit_citydirect.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-galway-city-direct-gtfs-942.zip?alt=media"
+    }
+}

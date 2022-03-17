@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 986,
+    "data_type": "gtfs",
+    "provider": "French Brothers Ltd",
+    "location": {
+        "country_code": "GB",
+        "subdivision_name": "Windsor and Maidenhead",
+        "bounding_box": {
+            "minimum_latitude": 51.382099,
+            "maximum_latitude": 51.528599,
+            "minimum_longitude": -0.7013,
+            "maximum_longitude": -0.3425,
+            "extracted_on": "2022-03-17T18:56:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.frenchbrothers.co.uk/link/transport/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-windsor-and-maidenhead-french-brothers-ltd-gtfs-986.zip?alt=media"
+    }
+}

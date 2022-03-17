@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 963,
+    "data_type": "gtfs",
+    "provider": "Matthews Coach Hire",
+    "location": {
+        "country_code": "IE",
+        "bounding_box": {
+            "minimum_latitude": 53.3052114068601,
+            "maximum_latitude": 54.0012223109462,
+            "minimum_longitude": -6.40043403605937,
+            "maximum_longitude": -6.21668053124508,
+            "extracted_on": "2022-03-17T18:53:33+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/google_transit_matthews.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-unknown-matthews-coach-hire-gtfs-963.zip?alt=media"
+    }
+}

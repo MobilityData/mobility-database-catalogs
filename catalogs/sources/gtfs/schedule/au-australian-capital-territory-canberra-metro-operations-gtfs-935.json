@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 935,
+    "data_type": "gtfs",
+    "provider": "Canberra Metro Operations",
+    "name": "Light Rail",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "Australian Capital Territory",
+        "municipality": "Canberra",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2022-03-17T18:49:26+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transport.act.gov.au/googletransit/google_transit_lr.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-australian-capital-territory-canberra-metro-operations-gtfs-935.zip?alt=media",
+        "license": "https://creativecommons.org/licenses/by/4.0/legalcode"
+    }
+}

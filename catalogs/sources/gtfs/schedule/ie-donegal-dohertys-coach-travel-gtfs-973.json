@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 973,
+    "data_type": "gtfs",
+    "provider": "Doherty's Coach Travel",
+    "location": {
+        "country_code": "IE",
+        "subdivision_name": "Donegal",
+        "bounding_box": {
+            "minimum_latitude": 54.9057785354346,
+            "maximum_latitude": 55.0259670933947,
+            "minimum_longitude": -8.44209184411169,
+            "maximum_longitude": -7.69465582858512,
+            "extracted_on": "2022-03-17T18:54:02+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/google_transit_sdoherty.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-donegal-dohertys-coach-travel-gtfs-973.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 974,
+    "data_type": "gtfs",
+    "provider": "Suirway",
+    "location": {
+        "country_code": "IE",
+        "subdivision_name": "Kilkenny",
+        "municipality": "Waterford",
+        "bounding_box": {
+            "minimum_latitude": 52.1453282602916,
+            "maximum_latitude": 52.2921665796918,
+            "minimum_longitude": -7.31870647083098,
+            "maximum_longitude": -6.97228574661138,
+            "extracted_on": "2022-03-17T18:54:05+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/google_transit_suirway.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-kilkenny-suirway-gtfs-974.zip?alt=media"
+    }
+}

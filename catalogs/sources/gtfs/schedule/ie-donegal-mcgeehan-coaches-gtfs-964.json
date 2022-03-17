@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 964,
+    "data_type": "gtfs",
+    "provider": "McGeehan Coaches",
+    "location": {
+        "country_code": "IE",
+        "subdivision_name": "Donegal",
+        "municipality": "Donegal",
+        "bounding_box": {
+            "minimum_latitude": 54.6324574841512,
+            "maximum_latitude": 54.9537214691017,
+            "minimum_longitude": -8.72452879071827,
+            "maximum_longitude": -7.72926877875234,
+            "extracted_on": "2022-03-17T18:53:35+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/google_transit_mcgeehan.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-donegal-mcgeehan-coaches-gtfs-964.zip?alt=media"
+    }
+}

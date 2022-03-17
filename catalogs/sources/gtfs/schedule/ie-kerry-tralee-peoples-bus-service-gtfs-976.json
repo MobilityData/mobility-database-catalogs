@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 976,
+    "data_type": "gtfs",
+    "provider": "Tralee People's Bus Service",
+    "location": {
+        "country_code": "IE",
+        "subdivision_name": "Kerry",
+        "municipality": "Tralee",
+        "bounding_box": {
+            "minimum_latitude": 52.2539089262081,
+            "maximum_latitude": 52.2851657438809,
+            "minimum_longitude": -9.7378097240467,
+            "maximum_longitude": -9.67499074443952,
+            "extracted_on": "2022-03-17T18:54:12+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/google_transit_tralee.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-kerry-tralee-peoples-bus-service-gtfs-976.zip?alt=media"
+    }
+}

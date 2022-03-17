@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 960,
+    "data_type": "gtfs",
+    "provider": "Local Link Mayo",
+    "location": {
+        "country_code": "IE",
+        "subdivision_name": "Mayo",
+        "bounding_box": {
+            "minimum_latitude": 51.6044879359929,
+            "maximum_latitude": 55.3798801892074,
+            "minimum_longitude": -10.4534592218867,
+            "maximum_longitude": -6.03669632249174,
+            "extracted_on": "2022-03-17T18:53:13+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/google_transit_locallink.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-mayo-local-link-mayo-gtfs-960.zip?alt=media"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 934,
+    "data_type": "gtfs",
+    "provider": "SulFertagus",
+    "location": {
+        "country_code": "PT",
+        "subdivision_name": "Setúbal",
+        "bounding_box": {
+            "minimum_latitude": 38.5191872983267,
+            "maximum_latitude": 38.6666922615115,
+            "minimum_longitude": -9.19681336866042,
+            "maximum_longitude": -9.0132153696308,
+            "extracted_on": "2022-03-17T18:49:23+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transporlis.pt/Portals/0/OpenData/gtfs/zip/21/gtfs_21.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-setubal-sulfertagus-gtfs-934.zip?alt=media"
+    }
+}

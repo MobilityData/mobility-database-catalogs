@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 989,
+    "data_type": "gtfs",
+    "provider": "AMAT Palermo S.P.A.",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Sicilia",
+        "municipality": "Palermo",
+        "bounding_box": {
+            "minimum_latitude": 38.0507730433,
+            "maximum_latitude": 38.21045333,
+            "minimum_longitude": 13.25067982,
+            "maximum_longitude": 13.44867,
+            "extracted_on": "2022-03-17T18:57:25+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.comune.palermo.it/gtfs/amat_feed_gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-sicilia-amat-palermo-spa-gtfs-989.zip?alt=media"
+    }
+}

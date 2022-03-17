@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 998,
+    "data_type": "gtfs",
+    "provider": "YL_員林客運(公總) (YL-Bus)",
+    "location": {
+        "country_code": "TW",
+        "subdivision_name": "Changhua",
+        "municipality": "Yuanlin City",
+        "bounding_box": {
+            "minimum_latitude": 23.385829,
+            "maximum_latitude": 25.284729,
+            "minimum_longitude": 120.15701,
+            "maximum_longitude": 121.926085,
+            "extracted_on": "2022-03-17T19:00:50+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://gtfs.taichung.gov.tw/bnb/api/gtfs/yl/latest",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/tw-changhua-yl-bus-gtfs-998.zip?alt=media"
+    }
+}

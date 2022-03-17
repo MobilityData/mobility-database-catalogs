@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 949,
+    "data_type": "gtfs",
+    "provider": "Farragher International Travel Services",
+    "location": {
+        "country_code": "IE",
+        "subdivision_name": "Galway",
+        "municipality": "Galway",
+        "bounding_box": {
+            "minimum_latitude": 53.2594074006315,
+            "maximum_latitude": 53.6542840811682,
+            "minimum_longitude": -9.07432411216613,
+            "maximum_longitude": -8.55390063525592,
+            "extracted_on": "2022-03-17T18:51:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/google_transit_farragher.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-galway-farragher-international-travel-services-gtfs-949.zip?alt=media"
+    }
+}

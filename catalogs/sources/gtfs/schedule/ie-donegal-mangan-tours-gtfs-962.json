@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 962,
+    "data_type": "gtfs",
+    "provider": "Mangan Tours",
+    "location": {
+        "country_code": "IE",
+        "subdivision_name": "Donegal",
+        "bounding_box": {
+            "minimum_latitude": 54.948494051375,
+            "maximum_latitude": 55.1834976704306,
+            "minimum_longitude": -8.19100353869718,
+            "maximum_longitude": -7.72926877875234,
+            "extracted_on": "2022-03-17T18:53:29+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/google_transit_mangan.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-donegal-mangan-tours-gtfs-962.zip?alt=media"
+    }
+}

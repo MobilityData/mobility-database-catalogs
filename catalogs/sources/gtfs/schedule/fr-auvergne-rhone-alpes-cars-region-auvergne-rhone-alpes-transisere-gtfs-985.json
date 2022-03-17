@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 985,
+    "data_type": "gtfs",
+    "provider": "Cars Région Auvergne-Rhône-Alpes (Transisère)",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Auvergne-Rhône-Alpes",
+        "bounding_box": {
+            "minimum_latitude": 44.5635712669,
+            "maximum_latitude": 45.8759465251,
+            "minimum_longitude": 4.7583478521,
+            "maximum_longitude": 6.2925805509,
+            "extracted_on": "2022-03-17T18:56:39+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.itinisere.fr/fr/donnees-open-data/169/OpenData/Download?fileName=CG38.GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-auvergne-rhone-alpes-cars-region-auvergne-rhone-alpes-transisere-gtfs-985.zip?alt=media"
+    }
+}

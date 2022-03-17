@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 956,
+    "data_type": "gtfs",
+    "provider": "J.J Kavanagh & Sons",
+    "location": {
+        "country_code": "IE",
+        "subdivision_name": "Kilkenny",
+        "municipality": "Kilkenny",
+        "bounding_box": {
+            "minimum_latitude": 52.6385046915703,
+            "maximum_latitude": 53.4290389183803,
+            "minimum_longitude": -7.34806544534402,
+            "maximum_longitude": -6.24104561004998,
+            "extracted_on": "2022-03-17T18:52:42+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/google_transit_jjkavanagh.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-kilkenny-jj-kavanagh-sons-gtfs-956.zip?alt=media"
+    }
+}

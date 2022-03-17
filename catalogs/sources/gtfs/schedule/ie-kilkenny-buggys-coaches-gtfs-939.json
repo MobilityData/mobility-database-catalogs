@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 939,
+    "data_type": "gtfs",
+    "provider": "Buggys Coaches",
+    "location": {
+        "country_code": "IE",
+        "subdivision_name": "Kilkenny",
+        "municipality": "Kilkenny",
+        "bounding_box": {
+            "minimum_latitude": 52.6385046915703,
+            "maximum_latitude": 52.8021109492409,
+            "minimum_longitude": -7.33430891583251,
+            "maximum_longitude": -7.21009711420439,
+            "extracted_on": "2022-03-17T18:49:58+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/google_transit_buggy.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-kilkenny-buggys-coaches-gtfs-939.zip?alt=media"
+    }
+}

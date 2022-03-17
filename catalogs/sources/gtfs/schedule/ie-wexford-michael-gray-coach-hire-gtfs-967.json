@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 967,
+    "data_type": "gtfs",
+    "provider": "Michael Gray Coach Hire",
+    "location": {
+        "country_code": "IE",
+        "subdivision_name": "Wexford",
+        "bounding_box": {
+            "minimum_latitude": 52.3255001293318,
+            "maximum_latitude": 52.5140111366602,
+            "minimum_longitude": -6.49455439314659,
+            "maximum_longitude": -6.28324030116455,
+            "extracted_on": "2022-03-17T18:53:46+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/google_transit_mgray.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-wexford-michael-gray-coach-hire-gtfs-967.zip?alt=media"
+    }
+}

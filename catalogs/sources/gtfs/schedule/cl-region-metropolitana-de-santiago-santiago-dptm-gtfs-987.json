@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 987,
+    "data_type": "gtfs",
+    "provider": "Santiago DPTM",
+    "location": {
+        "country_code": "CL",
+        "subdivision_name": "Región Metropolitana de Santiago",
+        "bounding_box": {
+            "minimum_latitude": -34.170505,
+            "maximum_latitude": -33.3193344989227,
+            "minimum_longitude": -70.8739929374727,
+            "maximum_longitude": -70.4936019970485,
+            "extracted_on": "2022-03-17T18:57:07+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.dtpm.cl/descargas/gtfs/GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cl-region-metropolitana-de-santiago-santiago-dptm-gtfs-987.zip?alt=media"
+    }
+}

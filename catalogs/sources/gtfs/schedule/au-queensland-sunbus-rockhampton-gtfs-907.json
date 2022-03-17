@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 907,
+    "data_type": "gtfs",
+    "provider": "Sunbus Rockhampton",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "Queensland",
+        "municipality": "Rockhampton",
+        "bounding_box": {
+            "minimum_latitude": -23.407899,
+            "maximum_latitude": -23.29363,
+            "minimum_longitude": 150.484343,
+            "maximum_longitude": 150.566926,
+            "extracted_on": "2022-03-17T18:13:44+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfsrt.api.translink.com.au/GTFS/ROK_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-sunbus-rockhampton-gtfs-907.zip?alt=media"
+    }
+}

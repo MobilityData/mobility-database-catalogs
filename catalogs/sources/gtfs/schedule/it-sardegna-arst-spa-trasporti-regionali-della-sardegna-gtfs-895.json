@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 895,
+    "data_type": "gtfs",
+    "provider": "ARST SpA - Trasporti Regionali Della Sardegna",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Sardegna",
+        "municipality": "Cagliari",
+        "bounding_box": {
+            "minimum_latitude": 38.895743,
+            "maximum_latitude": 41.24223,
+            "minimum_longitude": 8.149003,
+            "maximum_longitude": 9.788329,
+            "extracted_on": "2022-03-17T18:12:12+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.arstspa.info/arst-cagliari-it.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-sardegna-arst-spa-trasporti-regionali-della-sardegna-gtfs-895.zip?alt=media"
+    }
+}

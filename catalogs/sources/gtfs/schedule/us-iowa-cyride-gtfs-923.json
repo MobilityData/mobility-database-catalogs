@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 923,
+    "data_type": "gtfs",
+    "provider": "CyRide",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Iowa",
+        "municipality": "Ames",
+        "bounding_box": {
+            "minimum_latitude": 41.990134,
+            "maximum_latitude": 42.056454,
+            "minimum_longitude": -93.695767,
+            "maximum_longitude": -93.607469,
+            "extracted_on": "2022-03-17T18:19:30+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.cyride.net/gtf/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-iowa-cyride-gtfs-923.zip?alt=media"
+    }
+}

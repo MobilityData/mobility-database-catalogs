@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 899,
+    "data_type": "gtfs",
+    "provider": "Cortland County Public Transportation",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Ithaca",
+        "bounding_box": {
+            "minimum_latitude": 42.436517,
+            "maximum_latitude": 42.635431,
+            "minimum_longitude": -76.482758,
+            "maximum_longitude": -75.896614,
+            "extracted_on": "2022-03-17T18:12:25+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Cortland_Transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-cortland-county-public-transportation-gtfs-899.zip?alt=media",
+        "license": "https://data.ny.gov/download/77gx-ii52/application/pdf"
+    }
+}

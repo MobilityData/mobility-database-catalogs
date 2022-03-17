@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 906,
+    "data_type": "gtfs",
+    "provider": "VOLZ",
+    "location": {
+        "country_code": "DE",
+        "subdivision_name": "Baden-Württemberg",
+        "bounding_box": {
+            "minimum_latitude": -8.28744518406192,
+            "maximum_latitude": 48.8382249569319,
+            "minimum_longitude": 0.0,
+            "maximum_longitude": 41.1683072567095,
+            "extracted_on": "2022-03-17T18:13:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.nvbw.de/fileadmin/user_upload/service/open_data/fahrplandaten_mit_liniennetz/vgc.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-baden-wurttemberg-volz-gtfs-906.zip?alt=media"
+    }
+}

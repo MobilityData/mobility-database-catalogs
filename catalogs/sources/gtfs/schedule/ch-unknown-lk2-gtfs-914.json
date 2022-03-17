@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 914,
+    "data_type": "gtfs",
+    "provider": "LK2",
+    "location": {
+        "country_code": "CH",
+        "bounding_box": {
+            "minimum_latitude": 47.6262750305982,
+            "maximum_latitude": 47.9837269187185,
+            "minimum_longitude": 8.63220801034985,
+            "maximum_longitude": 9.24936857693156,
+            "extracted_on": "2022-03-17T18:16:03+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.nvbw.de/fileadmin/user_upload/service/open_data/fahrplandaten_mit_liniennetz/vhb.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ch-unknown-lk2-gtfs-914.zip?alt=media"
+    }
+}

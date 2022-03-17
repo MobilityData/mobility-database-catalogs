@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 913,
+    "data_type": "gtfs",
+    "provider": "Divers opérateurs",
+    "location": {
+        "country_code": "CI",
+        "subdivision_name": "Abidjan",
+        "bounding_box": {
+            "minimum_latitude": 5.2368916,
+            "maximum_latitude": 5.5133877,
+            "minimum_longitude": -4.2517667,
+            "maximum_longitude": -3.8355428,
+            "extracted_on": "2022-03-17T18:15:25+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://git.digitaltransport4africa.org/data/africa/abidjan/raw/master/Donn%C3%A9es/abidjan.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ci-abidjan-divers-operateurs-gtfs-913.zip?alt=media"
+    }
+}

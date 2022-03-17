@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 751,
+    "data_type": "gtfs",
+    "provider": "Réseau de transport de Longueuil",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Québec",
+        "municipality": "Longueuil",
+        "bounding_box": {
+            "minimum_latitude": 45.4249621194855,
+            "maximum_latitude": 45.6373480184109,
+            "minimum_longitude": -73.5668819023177,
+            "maximum_longitude": -73.3023082633461,
+            "extracted_on": "2022-03-17T13:16:03+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.rtl-longueuil.qc.ca/transit/latestfeed/RTL.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-reseau-de-transport-de-longueuil-gtfs-751.zip?alt=media",
+        "license": "http://www.rtl-longueuil.qc.ca/fr-CA/donnees-ouvertes/"
+    }
+}

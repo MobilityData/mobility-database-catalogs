@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 753,
+    "data_type": "gtfs",
+    "provider": "Exo Ville de Sainte-Julie",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Québec",
+        "municipality": "Sainte-Julie",
+        "bounding_box": {
+            "minimum_latitude": 45.497418,
+            "maximum_latitude": 45.63169,
+            "minimum_longitude": -73.56448,
+            "maximum_longitude": -73.288934,
+            "extracted_on": "2022-03-17T13:16:05+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://exo.quebec/xdata/omitsju/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-exo-ville-de-sainte-julie-gtfs-753.zip?alt=media"
+    }
+}

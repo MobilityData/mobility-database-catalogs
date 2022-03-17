@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 758,
+    "data_type": "gtfs",
+    "provider": "Metrobus Transit",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Newfoundland",
+        "municipality": "St. John's",
+        "bounding_box": {
+            "minimum_latitude": 47.436518,
+            "maximum_latitude": 47.619686,
+            "minimum_longitude": -52.872601,
+            "maximum_longitude": -52.67875,
+            "extracted_on": "2022-03-17T13:16:28+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.metrobustransit.ca/google/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-newfoundland-metrobus-transit-gtfs-758.zip?alt=media"
+    }
+}

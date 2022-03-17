@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 750,
+    "data_type": "gtfs",
+    "provider": "Exo Chambly-Richelieu-Carignan",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Québec",
+        "bounding_box": {
+            "minimum_latitude": 45.297053,
+            "maximum_latitude": 45.540842,
+            "minimum_longitude": -73.566033,
+            "maximum_longitude": -73.143402,
+            "extracted_on": "2022-03-17T13:15:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://exo.quebec/xdata/citcrc/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-exo-chambly-richelieu-carignan-gtfs-750.zip?alt=media"
+    }
+}

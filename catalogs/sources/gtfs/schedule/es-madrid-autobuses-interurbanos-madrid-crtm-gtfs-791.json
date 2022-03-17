@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 791,
+    "data_type": "gtfs",
+    "provider": "Autobuses Interurbanos Madrid (CRTM)",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Madrid",
+        "bounding_box": {
+            "minimum_latitude": 39.6040077209473,
+            "maximum_latitude": 41.1010131835938,
+            "minimum_longitude": -4.58037137985229,
+            "maximum_longitude": -2.82549953460693,
+            "extracted_on": "2022-03-17T13:30:26+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://crtm.maps.arcgis.com/sharing/rest/content/items/885399f83408473c8d815e40c5e702b7/data",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-madrid-autobuses-interurbanos-madrid-crtm-gtfs-791.zip?alt=media",
+        "license": "http://www.crtm.es/licencia-de-uso"
+    }
+}

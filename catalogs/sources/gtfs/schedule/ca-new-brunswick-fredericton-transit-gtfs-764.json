@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 764,
+    "data_type": "gtfs",
+    "provider": "Fredericton Transit",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "New Brunswick",
+        "municipality": "Fredericton",
+        "bounding_box": {
+            "minimum_latitude": 45.90273428,
+            "maximum_latitude": 46.01368444,
+            "minimum_longitude": -66.76942465,
+            "maximum_longitude": -66.57699011,
+            "extracted_on": "2022-03-17T13:16:39+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.arcgis.com/sharing/rest/content/items/36704575683245329a1b208bcbc72e72/data",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-new-brunswick-fredericton-transit-gtfs-764.zip?alt=media"
+    }
+}

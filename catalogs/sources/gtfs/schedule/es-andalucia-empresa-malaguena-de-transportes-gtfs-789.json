@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 789,
+    "data_type": "gtfs",
+    "provider": "Empresa Malagueña de Transportes",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Andalucía",
+        "municipality": "Málaga",
+        "bounding_box": {
+            "minimum_latitude": 36.65337,
+            "maximum_latitude": 36.780029,
+            "minimum_longitude": -4.576147,
+            "maximum_longitude": -4.335785,
+            "extracted_on": "2022-03-17T13:29:51+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://joseflorido.com/emt_fixed.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-andalucia-empresa-malaguena-de-transportes-gtfs-789.zip?alt=media"
+    }
+}

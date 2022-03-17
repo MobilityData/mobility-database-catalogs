@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 794,
+    "data_type": "gtfs",
+    "provider": "Metro de Madrid",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Madrid",
+        "bounding_box": {
+            "minimum_latitude": 40.2826,
+            "maximum_latitude": 40.5602,
+            "minimum_longitude": -3.87471,
+            "maximum_longitude": -3.4475,
+            "extracted_on": "2022-03-17T13:30:43+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://crtm.maps.arcgis.com/sharing/rest/content/items/5c7f2951962540d69ffe8f640d94c246/data",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-madrid-metro-de-madrid-gtfs-794.zip?alt=media",
+        "license": "http://www.crtm.es/licencia-de-uso"
+    }
+}

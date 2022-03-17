@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 755,
+    "data_type": "gtfs",
+    "provider": "Exo L'Assomption",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Québec",
+        "municipality": "L'Assomption",
+        "bounding_box": {
+            "minimum_latitude": 45.589483,
+            "maximum_latitude": 45.901438,
+            "minimum_longitude": -73.539828,
+            "maximum_longitude": -73.277404,
+            "extracted_on": "2022-03-17T13:16:09+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://exo.quebec/xdata/mrclasso/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-exo-lassomption-gtfs-755.zip?alt=media"
+    }
+}

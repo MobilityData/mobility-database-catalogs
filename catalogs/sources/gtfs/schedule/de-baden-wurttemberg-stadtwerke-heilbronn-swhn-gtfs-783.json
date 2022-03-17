@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 783,
+    "data_type": "gtfs",
+    "provider": "Stadtwerke Heilbronn (SWHN)",
+    "location": {
+        "country_code": "DE",
+        "subdivision_name": "Baden-Württemberg",
+        "municipality": "Heilbronn",
+        "bounding_box": {
+            "minimum_latitude": 48.4965248104922,
+            "maximum_latitude": 49.4934318893617,
+            "minimum_longitude": 7.33659482534244,
+            "maximum_longitude": 10.0675631209744,
+            "extracted_on": "2022-03-17T13:26:42+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.nvbw.de/fileadmin/user_upload/service/open_data/fahrplandaten_mit_liniennetz/hnv.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-baden-wurttemberg-stadtwerke-heilbronn-swhn-gtfs-783.zip?alt=media"
+    }
+}

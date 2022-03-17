@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 759,
+    "data_type": "gtfs",
+    "provider": "Milton Transit",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Ontario",
+        "municipality": "Milton",
+        "bounding_box": {
+            "minimum_latitude": 43.48015,
+            "maximum_latitude": 43.54222,
+            "minimum_longitude": -79.89257,
+            "maximum_longitude": -79.82503,
+            "extracted_on": "2022-03-17T13:16:31+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://metrolinx.tmix.se/gtfs/gtfs-milton.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-milton-transit-gtfs-759.zip?alt=media"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 1064,
+    "data_type": "gtfs",
+    "provider": "Renfe Feve",
+    "location": {
+        "country_code": "ES",
+        "bounding_box": {
+            "minimum_latitude": 37.60330436302621,
+            "maximum_latitude": 43.73562573974169,
+            "minimum_longitude": -8.23155,
+            "maximum_longitude": -0.7879010031274469,
+            "extracted_on": "2022-03-17T20:31:45+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.renfe.com/dataset/5f80afa2-798c-46a4-8f96-bca0835b3cf0/resource/e593b825-78c2-45e1-a8ca-9fbea2f3faff/download/horarios-feve.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-unknown-renfe-feve-gtfs-1064.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1069,
+    "data_type": "gtfs",
+    "provider": "Transilien SNCF",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Île-de-France",
+        "municipality": "Paris",
+        "bounding_box": {
+            "minimum_latitude": 48.00718,
+            "maximum_latitude": 49.285257,
+            "minimum_longitude": 1.370633,
+            "maximum_longitude": 3.409411,
+            "extracted_on": "2022-03-17T20:34:27+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://files.transilien.com/horaires/gtfs/export-TN-GTFS-LAST.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-ile-de-france-transilien-sncf-gtfs-1069.zip?alt=media"
+    }
+}

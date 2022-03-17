@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1009,
+    "data_type": "gtfs",
+    "provider": "ZDMiKP w Bydgoszczy",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Kujawsko-pomorskie",
+        "municipality": "Bydgoszcz",
+        "bounding_box": {
+            "minimum_latitude": 52.9702428137402,
+            "maximum_latitude": 53.2533038975773,
+            "minimum_longitude": 17.7953476459396,
+            "maximum_longitude": 18.25073,
+            "extracted_on": "2022-03-17T19:33:02+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://mkuran.pl/gtfs/bydgoszcz.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-kujawsko-pomorskie-zdmikp-w-bydgoszczy-gtfs-1009.zip?alt=media",
+        "license": "https://mkuran.pl/gtfs/"
+    }
+}

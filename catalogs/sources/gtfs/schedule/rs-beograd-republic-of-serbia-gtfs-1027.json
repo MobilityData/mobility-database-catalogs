@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1027,
+    "data_type": "gtfs",
+    "provider": "Republic of Serbia",
+    "location": {
+        "country_code": "RS",
+        "subdivision_name": "Beograd",
+        "bounding_box": {
+            "minimum_latitude": 44.440518,
+            "maximum_latitude": 45.0670716,
+            "minimum_longitude": 20.1001026,
+            "maximum_longitude": 20.7176329,
+            "extracted_on": "2022-03-17T19:40:27+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.gov.rs/s/resources/gtfs/20210708-160448/bgprevoz-belgrade-rs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/rs-beograd-republic-of-serbia-gtfs-1027.zip?alt=media"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 1016,
+    "data_type": "gtfs",
+    "provider": "UABS-Banlieue Sahel",
+    "location": {
+        "country_code": "TN",
+        "bounding_box": {
+            "minimum_latitude": 33.88422466,
+            "maximum_latitude": 37.266437,
+            "minimum_longitude": 8.13578075,
+            "maximum_longitude": 11.06427159,
+            "extracted_on": "2022-03-17T19:35:25+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gps.sncft.com.tn/gps/gtfs_ALL.ZIP",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/tn-unknown-uabs-banlieue-sahel-gtfs-1016.zip?alt=media"
+    }
+}

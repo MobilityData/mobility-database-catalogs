@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1028,
+    "data_type": "gtfs",
+    "provider": "Câmara Municipal de Águeda",
+    "location": {
+        "country_code": "PT",
+        "subdivision_name": "Aveiro",
+        "municipality": "Águeda",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2022-03-17T19:40:32+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://dados.gov.pt/en/datasets/r/1ef6b3b7-0726-4c5a-978c-bf6b780c7472",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-aveiro-camara-municipal-de-agueda-gtfs-1028.zip?alt=media"
+    }
+}

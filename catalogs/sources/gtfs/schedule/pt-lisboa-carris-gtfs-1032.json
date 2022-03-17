@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1032,
+    "data_type": "gtfs",
+    "provider": "Carris",
+    "location": {
+        "country_code": "PT",
+        "subdivision_name": "Lisboa",
+        "bounding_box": {
+            "minimum_latitude": 38.667593,
+            "maximum_latitude": 38.7987,
+            "minimum_longitude": -9.252527,
+            "maximum_longitude": -9.092684,
+            "extracted_on": "2022-03-17T19:47:15+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.transporlis.pt/Portals/0/OpenData/gtfs/zip/1/gtfs_1.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-lisboa-carris-gtfs-1032.zip?alt=media",
+        "license": "http://opendefinition.org/licenses/cc-zero/"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1004,
+    "data_type": "gtfs",
+    "provider": "Trambesòs",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Barcelona",
+        "bounding_box": {
+            "minimum_latitude": 41.387614,
+            "maximum_latitude": 41.439967,
+            "minimum_longitude": 2.186892,
+            "maximum_longitude": 2.233219,
+            "extracted_on": "2022-03-17T19:32:16+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://opendata.tram.cat/GTFS/zip/TBS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-barcelona-trambesos-gtfs-1004.zip?alt=media"
+    }
+}

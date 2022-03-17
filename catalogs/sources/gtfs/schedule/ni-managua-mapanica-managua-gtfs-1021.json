@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1021,
+    "data_type": "gtfs",
+    "provider": "MapaNica Managua",
+    "location": {
+        "country_code": "NI",
+        "subdivision_name": "Managua",
+        "bounding_box": {
+            "minimum_latitude": 12.0682684,
+            "maximum_latitude": 12.19287,
+            "minimum_longitude": -86.3718217,
+            "maximum_longitude": -86.1455999,
+            "extracted_on": "2022-03-17T19:38:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://datos.mapanica.net/ni-managua-gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ni-managua-mapanica-managua-gtfs-1021.zip?alt=media"
+    }
+}

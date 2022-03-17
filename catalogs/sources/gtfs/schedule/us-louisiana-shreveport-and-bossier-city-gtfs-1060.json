@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1060,
+    "data_type": "gtfs",
+    "provider": "Shreveport and Bossier City",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Louisiana",
+        "municipality": "Shreveport",
+        "bounding_box": {
+            "minimum_latitude": 32.381981,
+            "maximum_latitude": 32.561997,
+            "minimum_longitude": -93.888974,
+            "maximum_longitude": -93.628643,
+            "extracted_on": "2022-03-17T19:49:47+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://sportranbus.com/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-louisiana-shreveport-and-bossier-city-gtfs-1060.zip?alt=media"
+    }
+}

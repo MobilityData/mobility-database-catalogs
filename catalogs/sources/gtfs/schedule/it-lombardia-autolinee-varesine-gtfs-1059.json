@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1059,
+    "data_type": "gtfs",
+    "provider": "Autolinee Varesine",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Lombardia",
+        "municipality": "Varese",
+        "bounding_box": {
+            "minimum_latitude": 45.690083,
+            "maximum_latitude": 46.103621,
+            "minimum_longitude": 8.559501,
+            "maximum_longitude": 8.930813,
+            "extracted_on": "2022-03-17T19:49:42+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.ctpi.it/Google_Transit/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-lombardia-autolinee-varesine-gtfs-1059.zip?alt=media"
+    }
+}

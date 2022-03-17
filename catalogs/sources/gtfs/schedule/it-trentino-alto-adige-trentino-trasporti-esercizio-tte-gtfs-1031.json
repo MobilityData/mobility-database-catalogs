@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1031,
+    "data_type": "gtfs",
+    "provider": "Trentino Trasporti Esercizio (TTE)",
+    "name": "Extraurbano",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Trentino-Alto Adige",
+        "municipality": "Trento",
+        "bounding_box": {
+            "minimum_latitude": 45.696733,
+            "maximum_latitude": 46.480186,
+            "minimum_longitude": 10.403518,
+            "maximum_longitude": 12.032363,
+            "extracted_on": "2022-03-17T19:46:44+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.ttesercizio.it/opendata/google_transit_extraurbano_tte.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-trentino-alto-adige-trentino-trasporti-esercizio-tte-gtfs-1031.zip?alt=media"
+    }
+}

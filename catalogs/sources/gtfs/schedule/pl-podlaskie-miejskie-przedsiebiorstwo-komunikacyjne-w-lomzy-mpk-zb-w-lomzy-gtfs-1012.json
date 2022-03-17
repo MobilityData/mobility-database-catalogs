@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1012,
+    "data_type": "gtfs",
+    "provider": "Miejskie Przedsiębiorstwo Komunikacyjne w Lomzy (MPK ZB w Łomży)",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Podlaskie",
+        "municipality": "Łomża",
+        "bounding_box": {
+            "minimum_latitude": 53.14758110936,
+            "maximum_latitude": 53.21178887725,
+            "minimum_longitude": 22.02105695198,
+            "maximum_longitude": 22.10400902545,
+            "extracted_on": "2022-03-17T19:33:17+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://mkuran.pl/gtfs/lomza.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-podlaskie-miejskie-przedsiebiorstwo-komunikacyjne-w-lomzy-mpk-zb-w-lomzy-gtfs-1012.zip?alt=media"
+    }
+}

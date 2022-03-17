@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1011,
+    "data_type": "gtfs",
+    "provider": "Koleje Mazowieckie (KM)",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Mazowieckie",
+        "bounding_box": {
+            "minimum_latitude": 51.116035,
+            "maximum_latitude": 54.605926,
+            "minimum_longitude": 16.861922,
+            "maximum_longitude": 23.353566,
+            "extracted_on": "2022-03-17T19:33:15+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://mkuran.pl/gtfs/kolejemazowieckie.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-mazowieckie-koleje-mazowieckie-km-gtfs-1011.zip?alt=media",
+        "license": "https://bip.mazowieckie.com.pl/pl/ponowne-wykorzystywanie-informacji-sektora-publicznego"
+    }
+}

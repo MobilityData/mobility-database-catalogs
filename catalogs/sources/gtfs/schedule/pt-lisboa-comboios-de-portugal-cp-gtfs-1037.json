@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1037,
+    "data_type": "gtfs",
+    "provider": "Comboios de Portugal (CP)",
+    "location": {
+        "country_code": "PT",
+        "subdivision_name": "Lisboa",
+        "bounding_box": {
+            "minimum_latitude": 38.51804,
+            "maximum_latitude": 39.06842,
+            "minimum_longitude": -9.41792,
+            "maximum_longitude": -8.83772,
+            "extracted_on": "2022-03-17T19:47:30+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.transporlis.pt/Portals/0/OpenData/gtfs/zip/3/gtfs_3.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-lisboa-comboios-de-portugal-cp-gtfs-1037.zip?alt=media"
+    }
+}

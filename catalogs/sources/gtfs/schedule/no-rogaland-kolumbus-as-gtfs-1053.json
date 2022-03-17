@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1053,
+    "data_type": "gtfs",
+    "provider": "Kolumbus AS",
+    "location": {
+        "country_code": "NO",
+        "subdivision_name": "Rogaland",
+        "bounding_box": {
+            "minimum_latitude": 58.27871,
+            "maximum_latitude": 59.835495,
+            "minimum_longitude": 5.183046,
+            "maximum_longitude": 6.9244,
+            "extracted_on": "2022-03-17T19:48:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.rkt.no/gt/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/no-rogaland-kolumbus-as-gtfs-1053.zip?alt=media"
+    }
+}

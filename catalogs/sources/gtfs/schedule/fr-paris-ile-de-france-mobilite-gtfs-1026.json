@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 1026,
+    "data_type": "gtfs",
+    "provider": "Ile-de-France Mobilité",
+    "name": "Horaires prévues sur les lignes de transport en commun d'Ile-de-France (GTFS Datahub)",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Paris",
+        "municipality": "Paris",
+        "bounding_box": {
+            "minimum_latitude": 47.96107924372578,
+            "maximum_latitude": 49.42633975667528,
+            "minimum_longitude": 1.1498558322259895,
+            "maximum_longitude": 3.56066841732662,
+            "extracted_on": "2022-03-17T19:39:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.iledefrance-mobilites.fr/explore/dataset/offre-horaires-tc-gtfs-idfm/files/a925e164271e4bca93433756d6a340d1/download/",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-paris-ile-de-france-mobilite-gtfs-1026.zip?alt=media",
+        "license": "http://vvlibri.org/fr/licence/odbl-10/legalcode/unofficial"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1039,
+    "data_type": "gtfs",
+    "provider": "TRAM Alicante",
+    "location": {
+        "country_code": "IE",
+        "subdivision_name": "Alicante",
+        "bounding_box": {
+            "minimum_latitude": 38.345085144,
+            "maximum_latitude": 38.8395347595,
+            "minimum_longitude": -0.5169450045,
+            "maximum_longitude": 0.1127090007,
+            "extracted_on": "2022-03-17T19:47:37+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.tramalicante.es/google_transit_feed/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-alicante-tram-alicante-gtfs-1039.zip?alt=media"
+    }
+}

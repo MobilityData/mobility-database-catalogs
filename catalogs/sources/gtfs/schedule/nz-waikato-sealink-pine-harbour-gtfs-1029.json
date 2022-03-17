@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1029,
+    "data_type": "gtfs",
+    "provider": "SeaLink Pine Harbour, Waikato Regional Council, Pavlovich Transport Solutions, AT Metro",
+    "location": {
+        "country_code": "NZ",
+        "subdivision_name": "Waikato",
+        "bounding_box": {
+            "minimum_latitude": -37.79264,
+            "maximum_latitude": -36.2941,
+            "minimum_longitude": 174.43058,
+            "maximum_longitude": 175.46803,
+            "extracted_on": "2022-03-17T19:46:33+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://cdn01.at.govt.nz/data/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/nz-waikato-sealink-pine-harbour-gtfs-1029.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1042,
+    "data_type": "gtfs",
+    "provider": "Klaipėda Transport",
+    "location": {
+        "country_code": "LT",
+        "subdivision_name": "Klaipėdos Apskritis",
+        "municipality": "Klaipėda",
+        "bounding_box": {
+            "minimum_latitude": 55.5678,
+            "maximum_latitude": 55.91443,
+            "minimum_longitude": 21.07081,
+            "maximum_longitude": 21.59668,
+            "extracted_on": "2022-03-17T19:47:51+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.stops.lt/klaipeda/klaipeda/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lt-klaipedos-apskritis-klaipeda-transport-gtfs-1042.zip?alt=media"
+    }
+}

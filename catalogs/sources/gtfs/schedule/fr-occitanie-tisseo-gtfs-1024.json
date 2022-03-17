@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1024,
+    "data_type": "gtfs",
+    "provider": "Tisséo",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Occitanie",
+        "municipality": "Toulouse",
+        "bounding_box": {
+            "minimum_latitude": 43.391132,
+            "maximum_latitude": 43.746501,
+            "minimum_longitude": 1.161979,
+            "maximum_longitude": 1.690541,
+            "extracted_on": "2022-03-17T19:38:52+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.toulouse-metropole.fr/explore/dataset/tisseo-gtfs/files/bd1298f158bc39ed9065e0c17ebb773b/download/",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-occitanie-tisseo-gtfs-1024.zip?alt=media",
+        "license": "http://opendatacommons.org/licenses/odbl/summary/"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1036,
+    "data_type": "gtfs",
+    "provider": "Metro de Lisboa (Metro)",
+    "location": {
+        "country_code": "PT",
+        "subdivision_name": "Lisboa",
+        "bounding_box": {
+            "minimum_latitude": 38.70611,
+            "maximum_latitude": 38.79344,
+            "minimum_longitude": -9.22414,
+            "maximum_longitude": -9.09973,
+            "extracted_on": "2022-03-17T19:47:27+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.transporlis.pt/Portals/0/OpenData/gtfs/zip/2/gtfs_2.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-lisboa-metro-de-lisboa-metro-gtfs-1036.zip?alt=media",
+        "license": "http://opendefinition.org/licenses/cc-zero/"
+    }
+}

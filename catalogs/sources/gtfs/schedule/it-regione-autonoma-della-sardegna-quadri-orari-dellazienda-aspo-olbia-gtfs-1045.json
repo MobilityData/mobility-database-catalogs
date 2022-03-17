@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1045,
+    "data_type": "gtfs",
+    "provider": "Quadri orari dell'azienda ASPO Olbia",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Regione Autonoma della Sardegna",
+        "bounding_box": {
+            "minimum_latitude": 40.811810001738,
+            "maximum_latitude": 41.027620001791,
+            "minimum_longitude": 9.4045500000098,
+            "maximum_longitude": 9.6139000000152,
+            "extracted_on": "2022-03-17T19:48:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.sardegnamobilita.it/opendata/dati_aspo.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-regione-autonoma-della-sardegna-quadri-orari-dellazienda-aspo-olbia-gtfs-1045.zip?alt=media",
+        "license": "https://creativecommons.org/licenses/by/4.0/deed.it"
+    }
+}

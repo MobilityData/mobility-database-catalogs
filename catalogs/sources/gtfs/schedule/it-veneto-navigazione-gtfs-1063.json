@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1063,
+    "data_type": "gtfs",
+    "provider": "Navigazione",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Veneto",
+        "municipality": "Venice",
+        "bounding_box": {
+            "minimum_latitude": 45.22369,
+            "maximum_latitude": 45.49509,
+            "minimum_longitude": 12.258713,
+            "maximum_longitude": 12.447123,
+            "extracted_on": "2022-03-17T19:50:28+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://actv.avmspa.it/sites/default/files/attachments/opendata/navigazione/actv_nav.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-veneto-navigazione-gtfs-1063.zip?alt=media"
+    }
+}

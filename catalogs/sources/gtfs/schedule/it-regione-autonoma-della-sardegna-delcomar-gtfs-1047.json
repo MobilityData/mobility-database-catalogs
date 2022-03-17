@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1047,
+    "data_type": "gtfs",
+    "provider": "Delcomar",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Regione Autonoma della Sardegna",
+        "bounding_box": {
+            "minimum_latitude": 39.1114042,
+            "maximum_latitude": 41.2119799,
+            "minimum_longitude": 8.2940375,
+            "maximum_longitude": 9.4067082,
+            "extracted_on": "2022-03-17T19:48:27+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.sardegnamobilita.it/opendata/dati_mare.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-regione-autonoma-della-sardegna-delcomar-gtfs-1047.zip?alt=media",
+        "license": "https://creativecommons.org/licenses/by/4.0/deed.it"
+    }
+}

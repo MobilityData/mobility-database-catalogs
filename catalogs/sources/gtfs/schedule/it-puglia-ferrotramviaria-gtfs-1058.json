@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1058,
+    "data_type": "gtfs",
+    "provider": "Ferrotramviaria",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Puglia",
+        "municipality": "Bari",
+        "bounding_box": {
+            "minimum_latitude": 41.113238,
+            "maximum_latitude": 41.314831,
+            "minimum_longitude": 16.278479,
+            "maximum_longitude": 16.86919,
+            "extracted_on": "2022-03-17T19:49:27+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.ferrovienordbarese.it/download/?type=upload&id=786",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-puglia-ferrotramviaria-gtfs-1058.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1034,
+    "data_type": "gtfs",
+    "provider": "Fertagus",
+    "location": {
+        "country_code": "PT",
+        "subdivision_name": "Lisboa",
+        "bounding_box": {
+            "minimum_latitude": 38.53061,
+            "maximum_latitude": 38.74581,
+            "minimum_longitude": -9.17948,
+            "maximum_longitude": -8.8727,
+            "extracted_on": "2022-03-17T19:47:22+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.transporlis.pt/Portals/0/OpenData/gtfs/zip/13/gtfs_13.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-lisboa-fertagus-gtfs-1034.zip?alt=media",
+        "license": "http://www.opendefinition.org/licenses/cc-zero"
+    }
+}

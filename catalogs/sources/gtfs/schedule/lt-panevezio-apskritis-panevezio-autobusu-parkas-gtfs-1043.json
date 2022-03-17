@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1043,
+    "data_type": "gtfs",
+    "provider": "Panevezio Autobusu Parkas",
+    "location": {
+        "country_code": "LT",
+        "subdivision_name": "Panevėžio Apskritis",
+        "municipality": "Panevėžys",
+        "bounding_box": {
+            "minimum_latitude": 55.70396,
+            "maximum_latitude": 55.77949,
+            "minimum_longitude": 24.28858,
+            "maximum_longitude": 24.42731,
+            "extracted_on": "2022-03-17T19:47:54+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.stops.lt/panevezys/panevezys/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lt-panevezio-apskritis-panevezio-autobusu-parkas-gtfs-1043.zip?alt=media"
+    }
+}

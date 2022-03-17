@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1010,
+    "data_type": "gtfs",
+    "provider": "Gmina Zaklad Komunalny (GZK Bystry)",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Warminsko-mazurskie",
+        "municipality": "Bystry",
+        "bounding_box": {
+            "minimum_latitude": 54.00791859344,
+            "maximum_latitude": 54.085516,
+            "minimum_longitude": 21.59029023314,
+            "maximum_longitude": 21.91991317791,
+            "extracted_on": "2022-03-17T19:33:04+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://mkuran.pl/gtfs/gizycko.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-warminsko-mazurskie-gmina-zaklad-komunalny-gzk-bystry-gtfs-1010.zip?alt=media"
+    }
+}

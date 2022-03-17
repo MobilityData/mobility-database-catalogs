@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1050,
+    "data_type": "gtfs",
+    "provider": "Collegamenti marittimi Sardinia Ferries",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Regione Autonoma della Sardegna",
+        "bounding_box": {
+            "minimum_latitude": 38.01064,
+            "maximum_latitude": 44.4114,
+            "minimum_longitude": 2.1541,
+            "maximum_longitude": 14.26091,
+            "extracted_on": "2022-03-17T19:48:44+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.sardegnamobilita.it/opendata/dati_sardinia_ferries.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-regione-autonoma-della-sardegna-collegamenti-marittimi-sardinia-ferries-gtfs-1050.zip?alt=media"
+    }
+}

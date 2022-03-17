@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1040,
+    "data_type": "gtfs",
+    "provider": "Kautra",
+    "location": {
+        "country_code": "LT",
+        "subdivision_name": "Alytaus Apskritis",
+        "municipality": "Druskininkai",
+        "bounding_box": {
+            "minimum_latitude": 53.95498,
+            "maximum_latitude": 54.16148,
+            "minimum_longitude": 23.80221,
+            "maximum_longitude": 24.07799,
+            "extracted_on": "2022-03-17T19:47:39+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.stops.lt/druskininkai/druskininkai/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lt-alytaus-apskritis-kautra-gtfs-1040.zip?alt=media"
+    }
+}

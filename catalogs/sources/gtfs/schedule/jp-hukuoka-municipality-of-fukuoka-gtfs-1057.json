@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1057,
+    "data_type": "gtfs",
+    "provider": "Municipality of Fukuoka, (福岡市営渡船)",
+    "location": {
+        "country_code": "JP",
+        "subdivision_name": "Hukuoka",
+        "municipality": "Fukuoka",
+        "bounding_box": {
+            "minimum_latitude": 33.597427,
+            "maximum_latitude": 33.863375,
+            "minimum_longitude": 130.035251,
+            "maximum_longitude": 130.39915,
+            "extracted_on": "2022-03-17T19:49:23+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.city.fukuoka.lg.jp/data/open/cnt/3/59675/1/fukuokasiei_tosen_GTFSfeeds.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/jp-hukuoka-municipality-of-fukuoka-gtfs-1057.zip?alt=media",
+        "license": "https://creativecommons.org/licenses/by/2.1/jp/"
+    }
+}

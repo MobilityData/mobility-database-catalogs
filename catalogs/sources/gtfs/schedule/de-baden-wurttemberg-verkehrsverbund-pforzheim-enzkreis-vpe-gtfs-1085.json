@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1085,
+    "data_type": "gtfs",
+    "provider": "Verkehrsverbund Pforzheim-Enzkreis (VPE)",
+    "location": {
+        "country_code": "DE",
+        "subdivision_name": "Baden-Württemberg",
+        "bounding_box": {
+            "minimum_latitude": 0.0,
+            "maximum_latitude": 49.0498668856523,
+            "minimum_longitude": 0.0,
+            "maximum_longitude": 8.9302690216622,
+            "extracted_on": "2022-03-17T22:54:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.nvbw.de/fileadmin/user_upload/service/open_data/fahrplandaten_mit_liniennetz/vpe.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-baden-wurttemberg-verkehrsverbund-pforzheim-enzkreis-vpe-gtfs-1085.zip?alt=media",
+        "license": "https://www.nvbw.de/open-data/fahrplandaten/fahrplandaten-mit-liniennetz"
+    }
+}

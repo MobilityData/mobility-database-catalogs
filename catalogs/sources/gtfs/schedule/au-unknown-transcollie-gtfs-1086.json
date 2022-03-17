@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 1086,
+    "data_type": "gtfs",
+    "provider": "TransCollie, TransCarnarvon, TransEsperance, TransKarratha, TransNarrogin, Transperth, TransHedland, TransBroome, TransGeraldton, TransAlbany, TransBunbury, TransBusselton, TransGoldfields, 2K Tours, TransManjimup, Transwa",
+    "location": {
+        "country_code": "AU",
+        "bounding_box": {
+            "minimum_latitude": -35.0682822222222,
+            "maximum_latitude": -20.3008238888889,
+            "minimum_longitude": 113.649835555556,
+            "maximum_longitude": 121.893761666667,
+            "extracted_on": "2022-03-17T23:01:09+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.transperth.wa.gov.au/TimetablePDFs/GoogleTransit/Production/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-unknown-transcollie-gtfs-1086.zip?alt=media"
+    }
+}

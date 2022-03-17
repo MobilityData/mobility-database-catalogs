@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 919,
+    "data_type": "gtfs",
+    "provider": "City of Lompoc Transit (COLT)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Lompoc",
+        "bounding_box": {
+            "minimum_latitude": 34.421013,
+            "maximum_latitude": 34.715418,
+            "minimum_longitude": -120.475468,
+            "maximum_longitude": -119.703516,
+            "extracted_on": "2022-03-17T16:16:31+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.cityoflompoc.com/home/showdocument?id=29896",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-city-of-lompoc-transit-colt-gtfs-919.zip?alt=media"
+    }
+}

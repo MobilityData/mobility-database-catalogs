@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 894,
+    "data_type": "gtfs",
+    "provider": "Azienda Napoletana Mobilità",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Campania",
+        "municipality": "Napoli",
+        "bounding_box": {
+            "minimum_latitude": 40.7473379778158,
+            "maximum_latitude": 40.9565233742084,
+            "minimum_longitude": 14.1228713923268,
+            "maximum_longitude": 14.5450041847435,
+            "extracted_on": "2022-03-17T16:08:39+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.anm.it/google/google-transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-campania-azienda-napoletana-mobilita-gtfs-894.zip?alt=media"
+    }
+}

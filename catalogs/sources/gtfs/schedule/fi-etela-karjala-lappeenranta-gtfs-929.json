@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 929,
+    "data_type": "gtfs",
+    "provider": "Lappeenranta",
+    "location": {
+        "country_code": "FI",
+        "subdivision_name": "Etelä-Karjala",
+        "municipality": "Lappeenranta",
+        "bounding_box": {
+            "minimum_latitude": 60.7131718841537,
+            "maximum_latitude": 61.22411680072943,
+            "minimum_longitude": 27.9367494670498,
+            "maximum_longitude": 28.833944718539392,
+            "extracted_on": "2022-03-17T16:18:21+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://tvv.fra1.digitaloceanspaces.com/225.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fi-etela-karjala-lappeenranta-gtfs-929.zip?alt=media",
+        "license": "https://opendata.waltti.fi/docs"
+    }
+}

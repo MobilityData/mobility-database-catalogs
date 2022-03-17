@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 917,
+    "data_type": "gtfs",
+    "provider": "Green Bay Metro",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Wisconsin",
+        "municipality": "Green Bay",
+        "bounding_box": {
+            "minimum_latitude": 44.43842,
+            "maximum_latitude": 44.547602,
+            "minimum_longitude": -88.109692,
+            "maximum_longitude": -87.922189,
+            "extracted_on": "2022-03-17T16:15:15+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/transitland/gtfs-archives-not-hosted-elsewhere/raw/master/green-bay-wi-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-wisconsin-green-bay-metro-gtfs-917.zip?alt=media",
+        "license": "https://greenbaywi.gov/496/Transit-Data-Developer"
+    }
+}

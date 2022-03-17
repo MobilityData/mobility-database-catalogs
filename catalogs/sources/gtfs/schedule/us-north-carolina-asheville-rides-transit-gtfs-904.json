@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 904,
+    "data_type": "gtfs",
+    "provider": "Asheville Rides Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "North Carolina",
+        "municipality": "Asheville",
+        "bounding_box": {
+            "minimum_latitude": 35.4246944256883,
+            "maximum_latitude": 35.644076,
+            "minimum_longitude": -82.632616497733,
+            "maximum_longitude": -82.319173,
+            "extracted_on": "2022-03-17T16:09:31+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/asheville-nc-us/asheville-nc-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-north-carolina-asheville-rides-transit-gtfs-904.zip?alt=media"
+    }
+}

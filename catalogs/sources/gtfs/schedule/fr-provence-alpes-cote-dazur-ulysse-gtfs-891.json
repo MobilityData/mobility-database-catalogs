@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 891,
+    "data_type": "gtfs",
+    "provider": "Ulysse",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Provence-Alpes-Côte-d'Azur",
+        "bounding_box": {
+            "minimum_latitude": 43.4018961743,
+            "maximum_latitude": 43.4050889012,
+            "minimum_longitude": 5.0495503887,
+            "maximum_longitude": 5.0592032719,
+            "extracted_on": "2022-03-17T16:08:13+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://tsvc2.pilote3.cityway.fr/api/Export/v1/GetExportedDataFile?ExportFormat=Gtfs&OperatorCode=MILSAB",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-provence-alpes-cote-dazur-ulysse-gtfs-891.zip?alt=media",
+        "license": "http://opendata.regionpaca.fr/fileadmin/user_upload/tx_ausyopendata/licences/Licence-Ouverte-Open-Licence-ETALAB.pdf"
+    }
+}

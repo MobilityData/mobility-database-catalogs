@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 922,
+    "data_type": "gtfs",
+    "provider": "Western Reserve Transit Authority",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Ohio",
+        "municipality": "Youngstown",
+        "bounding_box": {
+            "minimum_latitude": 40.977121,
+            "maximum_latitude": 41.279698,
+            "minimum_longitude": -80.857996,
+            "maximum_longitude": -80.576094,
+            "extracted_on": "2022-03-17T16:17:05+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/transitland/gtfs-archives-not-hosted-elsewhere/raw/master/western-reserve-transit-authority.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-ohio-western-reserve-transit-authority-gtfs-922.zip?alt=media"
+    }
+}

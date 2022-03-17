@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 930,
+    "data_type": "gtfs",
+    "provider": "Prefeitura de Bage",
+    "location": {
+        "country_code": "BR",
+        "subdivision_name": "Rio Grande do Sul",
+        "municipality": "Bagé",
+        "bounding_box": {
+            "minimum_latitude": -31.3831,
+            "maximum_latitude": -31.265915,
+            "minimum_longitude": -54.1463327,
+            "maximum_longitude": -54.0173185,
+            "extracted_on": "2022-03-17T16:18:23+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/rodrigowindows/GTFS/raw/master/GTFS_Bage.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/br-rio-grande-do-sul-prefeitura-de-bage-gtfs-930.zip?alt=media"
+    }
+}

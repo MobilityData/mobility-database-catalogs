@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 892,
+    "data_type": "gtfs",
+    "provider": "Alilaguna",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Veneto",
+        "municipality": "Venice",
+        "bounding_box": {
+            "minimum_latitude": 45.417659,
+            "maximum_latitude": 45.500799,
+            "minimum_longitude": 12.320154,
+            "maximum_longitude": 12.368506,
+            "extracted_on": "2022-03-17T16:08:15+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.alilaguna.it/attuale/alilaguna.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-veneto-alilaguna-gtfs-892.zip?alt=media"
+    }
+}

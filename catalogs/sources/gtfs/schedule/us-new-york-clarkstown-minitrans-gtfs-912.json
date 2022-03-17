@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 912,
+    "data_type": "gtfs",
+    "provider": "Clarkstown MiniTrans",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Clarkstown",
+        "bounding_box": {
+            "minimum_latitude": 41.078817,
+            "maximum_latitude": 41.184912,
+            "minimum_longitude": -74.031866,
+            "maximum_longitude": -73.928075,
+            "extracted_on": "2022-03-17T16:11:23+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Clarkstown_Mini_Trans.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-clarkstown-minitrans-gtfs-912.zip?alt=media",
+        "license": "https://data.ny.gov/download/77gx-ii52/application/pdf"
+    }
+}

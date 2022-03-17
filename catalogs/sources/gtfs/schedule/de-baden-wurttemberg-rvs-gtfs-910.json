@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 910,
+    "data_type": "gtfs",
+    "provider": "RVS",
+    "location": {
+        "country_code": "DE",
+        "subdivision_name": "Baden-Württemberg",
+        "municipality": "Karlsruhe",
+        "bounding_box": {
+            "minimum_latitude": 0.0,
+            "maximum_latitude": 50.7904436115698,
+            "minimum_longitude": 0.0,
+            "maximum_longitude": 8.90065156674066,
+            "extracted_on": "2022-03-17T16:11:19+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.nvbw.de/fileadmin/user_upload/service/open_data/fahrplandaten_mit_liniennetz/rvs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-baden-wurttemberg-rvs-gtfs-910.zip?alt=media",
+        "license": "https://www.nvbw.de/open-data/fahrplandaten/fahrplandaten-mit-liniennetz"
+    }
+}

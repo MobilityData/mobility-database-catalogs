@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 898,
+    "data_type": "gtfs",
+    "provider": "Tahoe Transportation District",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Nevada",
+        "bounding_box": {
+            "minimum_latitude": 38.89462,
+            "maximum_latitude": 39.24968406,
+            "minimum_longitude": -120.0101182,
+            "maximum_longitude": -119.73997,
+            "extracted_on": "2022-03-17T16:08:56+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/tahoe-ca-us/tahoe-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-nevada-tahoe-transportation-district-gtfs-898.zip?alt=media"
+    }
+}

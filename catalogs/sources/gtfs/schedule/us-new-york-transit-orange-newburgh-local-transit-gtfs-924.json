@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 924,
+    "data_type": "gtfs",
+    "provider": "Transit Orange / Newburgh Local Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Poughkeepsie",
+        "bounding_box": {
+            "minimum_latitude": 41.430494,
+            "maximum_latitude": 41.528003,
+            "minimum_longitude": -74.074088,
+            "maximum_longitude": -74.00593,
+            "extracted_on": "2022-03-17T16:17:08+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Newburgh_Bus.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-transit-orange-newburgh-local-transit-gtfs-924.zip?alt=media"
+    }
+}

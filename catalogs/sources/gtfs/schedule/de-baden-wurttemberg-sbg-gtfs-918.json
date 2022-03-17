@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 918,
+    "data_type": "gtfs",
+    "provider": "SBG",
+    "location": {
+        "country_code": "DE",
+        "subdivision_name": "Baden-Württemberg",
+        "bounding_box": {
+            "minimum_latitude": 0.0,
+            "maximum_latitude": 48.3963590473668,
+            "minimum_longitude": -13.9746327361978,
+            "maximum_longitude": 9.04428319753852,
+            "extracted_on": "2022-03-17T16:16:29+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.nvbw.de/fileadmin/user_upload/service/open_data/fahrplandaten_mit_liniennetz/sbg.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-baden-wurttemberg-sbg-gtfs-918.zip?alt=media"
+    }
+}

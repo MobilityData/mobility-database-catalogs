@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 889,
+    "data_type": "gtfs",
+    "provider": "Aix en Bus",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Provence-Alpes-Côte-d’Azur",
+        "bounding_box": {
+            "minimum_latitude": 43.4715535955,
+            "maximum_latitude": 43.6120261474,
+            "minimum_longitude": 5.3320142515,
+            "maximum_longitude": 5.5428163446,
+            "extracted_on": "2022-03-17T16:08:09+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://tsvc2.pilote3.cityway.fr/api/Export/v1/GetExportedDataFile?ExportFormat=Gtfs&OperatorCode=AIXENBUS",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-provence-alpes-cote-dazur-aix-en-bus-gtfs-889.zip?alt=media"
+    }
+}

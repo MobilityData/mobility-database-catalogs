@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 931,
+    "data_type": "gtfs",
+    "provider": "Harney County",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Burns",
+        "bounding_box": {
+            "minimum_latitude": 43.226212,
+            "maximum_latitude": 44.421605,
+            "minimum_longitude": -121.30426,
+            "maximum_longitude": -116.20345,
+            "extracted_on": "2022-03-17T16:18:25+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/harneycounty-or-us/harneycounty-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-harney-county-gtfs-931.zip?alt=media"
+    }
+}

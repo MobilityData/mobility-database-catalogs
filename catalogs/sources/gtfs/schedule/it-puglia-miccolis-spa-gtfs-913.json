@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 913,
+    "data_type": "gtfs",
+    "provider": "Miccolis S.p.A.",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Puglia",
+        "bounding_box": {
+            "minimum_latitude": 40.6336018,
+            "maximum_latitude": 40.7254312,
+            "minimum_longitude": 16.4574659,
+            "maximum_longitude": 16.6271175,
+            "extracted_on": "2022-03-17T16:11:31+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://dati.comune.matera.it/dataset/d0c92871-38dd-440b-95d1-7155b522d57e/resource/cb97b36d-293e-4dfb-84e3-50ba7e3d9d50/download/gtfs_matera.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-puglia-miccolis-spa-gtfs-913.zip?alt=media"
+    }
+}

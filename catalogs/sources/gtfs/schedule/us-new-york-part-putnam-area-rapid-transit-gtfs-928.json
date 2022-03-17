@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 928,
+    "data_type": "gtfs",
+    "provider": "PART Putnam Area Rapid Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Poughkeepsie",
+        "bounding_box": {
+            "minimum_latitude": 41.329255,
+            "maximum_latitude": 41.516213,
+            "minimum_longitude": -73.810565,
+            "maximum_longitude": -73.536663,
+            "extracted_on": "2022-03-17T16:18:09+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/PART_Putnam_Area_Rapid_Transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-part-putnam-area-rapid-transit-gtfs-928.zip?alt=media"
+    }
+}

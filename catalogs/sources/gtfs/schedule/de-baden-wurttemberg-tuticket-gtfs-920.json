@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 920,
+    "data_type": "gtfs",
+    "provider": "TuTicket",
+    "location": {
+        "country_code": "DE",
+        "subdivision_name": "Baden-Württemberg",
+        "municipality": "Tuttlingen",
+        "bounding_box": {
+            "minimum_latitude": 0.0,
+            "maximum_latitude": 48.1768562054834,
+            "minimum_longitude": 0.0,
+            "maximum_longitude": 9.00780261384535,
+            "extracted_on": "2022-03-17T16:17:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.nvbw.de/fileadmin/user_upload/service/open_data/fahrplandaten_mit_liniennetz/tuticket.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-baden-wurttemberg-tuticket-gtfs-920.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 897,
+    "data_type": "gtfs",
+    "provider": "Azienda Trasporti di Messina (ATM)",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Sicilia",
+        "municipality": "Messina",
+        "bounding_box": {
+            "minimum_latitude": 38.0613,
+            "maximum_latitude": 38.2998,
+            "minimum_longitude": 15.4452,
+            "maximum_longitude": 15.6508,
+            "extracted_on": "2022-03-17T16:08:54+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.atm.messina.it/atm_feed_gtfs/atm_feed_gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-sicilia-azienda-trasporti-di-messina-atm-gtfs-897.zip?alt=media"
+    }
+}

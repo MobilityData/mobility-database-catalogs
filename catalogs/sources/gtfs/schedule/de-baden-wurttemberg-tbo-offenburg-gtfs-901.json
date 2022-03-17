@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 901,
+    "data_type": "gtfs",
+    "provider": "TBO Offenburg",
+    "location": {
+        "country_code": "DE",
+        "subdivision_name": "Baden-Württemberg",
+        "bounding_box": {
+            "minimum_latitude": 48.2180766249245,
+            "maximum_latitude": 48.6841606522977,
+            "minimum_longitude": 7.4869548376193,
+            "maximum_longitude": 8.14076666779818,
+            "extracted_on": "2022-03-17T16:09:23+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.nvbw.de/fileadmin/user_upload/service/open_data/fahrplandaten_mit_liniennetz/tgo.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-baden-wurttemberg-tbo-offenburg-gtfs-901.zip?alt=media",
+        "license": "https://www.nvbw.de/open-data/fahrplandaten/fahrplandaten-mit-liniennetz"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 916,
+    "data_type": "gtfs",
+    "provider": "City of Long Beach Transportation",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Long Beach",
+        "bounding_box": {
+            "minimum_latitude": 40.584023,
+            "maximum_latitude": 40.593176,
+            "minimum_longitude": -73.701188,
+            "maximum_longitude": -73.577753,
+            "extracted_on": "2022-03-17T16:15:11+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/City_of_Long_Beach.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-city-of-long-beach-transportation-gtfs-916.zip?alt=media"
+    }
+}

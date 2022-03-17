@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 735,
+    "data_type": "gtfs",
+    "provider": "VIA Rail Canada",
+    "location": {
+        "country_code": "CA",
+        "bounding_box": {
+            "minimum_latitude": 40.7502300443,
+            "maximum_latitude": 58.767685933,
+            "minimum_longitude": -130.352241212,
+            "maximum_longitude": -63.2759008362,
+            "extracted_on": "2022-03-17T13:15:26+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.viarail.ca/sites/all/files/gtfs/viarail.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-unknown-via-rail-canada-gtfs-735.zip?alt=media"
+    }
+}

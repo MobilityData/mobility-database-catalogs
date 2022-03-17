@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 747,
+    "data_type": "gtfs",
+    "provider": "Exo Roussillon",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Québec",
+        "bounding_box": {
+            "minimum_latitude": 45.362224,
+            "maximum_latitude": 45.548687,
+            "minimum_longitude": -73.645546,
+            "maximum_longitude": -73.465159,
+            "extracted_on": "2022-03-17T13:15:54+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://exo.quebec/xdata/citrous/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-exo-roussillon-gtfs-747.zip?alt=media"
+    }
+}

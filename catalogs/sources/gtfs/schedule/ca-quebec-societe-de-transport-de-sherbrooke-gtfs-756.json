@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 756,
+    "data_type": "gtfs",
+    "provider": "Société de Transport de Sherbrooke",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Québec",
+        "municipality": "Sherbrooke",
+        "bounding_box": {
+            "minimum_latitude": 45.314276,
+            "maximum_latitude": 45.481662,
+            "minimum_longitude": -72.082565,
+            "maximum_longitude": -71.815462,
+            "extracted_on": "2022-03-17T13:16:11+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.donneesquebec.ca/recherche/dataset/e82b9141-09d8-4f85-af37-d84937bc2503/resource/b7f43b2a-2557-4e3b-ba12-5a5c6d4de5b1/download/gtfssherbrooke.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-societe-de-transport-de-sherbrooke-gtfs-756.zip?alt=media"
+    }
+}

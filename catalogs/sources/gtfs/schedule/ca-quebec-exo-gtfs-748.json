@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 748,
+    "data_type": "gtfs",
+    "provider": "Exo",
+    "name": "Trains",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Québec",
+        "bounding_box": {
+            "minimum_latitude": 45.360651,
+            "maximum_latitude": 45.773179,
+            "minimum_longitude": -74.140935,
+            "maximum_longitude": -73.1785,
+            "extracted_on": "2022-03-17T13:15:55+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://exo.quebec/xdata/trains/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-exo-gtfs-748.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 798,
+    "data_type": "gtfs",
+    "provider": "Clemson Area Transit (CAT)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "South Carolina",
+        "municipality": "Clemson",
+        "bounding_box": {
+            "minimum_latitude": 34.555187,
+            "maximum_latitude": 34.7265552436914,
+            "minimum_longitude": -82.99781,
+            "maximum_longitude": -82.678375,
+            "extracted_on": "2022-03-17T13:40:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/clemson-sc-us/clemson-sc-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-south-carolina-clemson-area-transit-cat-gtfs-798.zip?alt=media"
+    }
+}

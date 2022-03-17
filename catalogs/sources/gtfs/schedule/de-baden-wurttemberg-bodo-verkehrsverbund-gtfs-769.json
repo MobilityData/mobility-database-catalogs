@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 769,
+    "data_type": "gtfs",
+    "provider": "bodo Verkehrsverbund",
+    "location": {
+        "country_code": "DE",
+        "subdivision_name": "Baden-Württemberg",
+        "municipality": "Ravensburg",
+        "bounding_box": {
+            "minimum_latitude": -89.5741127664391,
+            "maximum_latitude": 69.5764400666113,
+            "minimum_longitude": 0.0,
+            "maximum_longitude": 87.2540642445966,
+            "extracted_on": "2022-03-17T13:17:27+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.nvbw.de/fileadmin/user_upload/service/open_data/fahrplandaten_mit_liniennetz/bodo.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-baden-wurttemberg-bodo-verkehrsverbund-gtfs-769.zip?alt=media",
+        "license": "https://www.nvbw.de/open-data/fahrplandaten/fahrplandaten-mit-liniennetz"
+    }
+}

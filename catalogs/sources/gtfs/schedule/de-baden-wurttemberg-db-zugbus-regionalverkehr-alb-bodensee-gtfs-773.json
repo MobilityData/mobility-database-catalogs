@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 773,
+    "data_type": "gtfs",
+    "provider": "DB ZugBus Regionalverkehr Alb-Bodensee",
+    "location": {
+        "country_code": "DE",
+        "subdivision_name": "Baden-Württemberg",
+        "municipality": "Ulm",
+        "bounding_box": {
+            "minimum_latitude": 47.5451266420834,
+            "maximum_latitude": 48.6809579393641,
+            "minimum_longitude": 8.56868813660092,
+            "maximum_longitude": 10.2950524835564,
+            "extracted_on": "2022-03-17T13:23:01+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.nvbw.de/fileadmin/user_upload/service/open_data/fahrplandaten_mit_liniennetz/rab.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-baden-wurttemberg-db-zugbus-regionalverkehr-alb-bodensee-gtfs-773.zip?alt=media",
+        "license": "https://www.nvbw.de/open-data/fahrplandaten/fahrplandaten-mit-liniennetz"
+    }
+}

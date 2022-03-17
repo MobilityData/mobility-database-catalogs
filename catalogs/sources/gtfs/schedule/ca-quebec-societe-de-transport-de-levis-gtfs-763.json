@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 763,
+    "data_type": "gtfs",
+    "provider": "Société de transport de Lévis",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Québec",
+        "municipality": "Lévis",
+        "bounding_box": {
+            "minimum_latitude": 46.552296,
+            "maximum_latitude": 46.828171,
+            "minimum_longitude": -71.409636,
+            "maximum_longitude": -71.064983,
+            "extracted_on": "2022-03-17T13:16:38+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.stlevis.ca/sites/default/files/public/assets/gtfs/transit/gtfs_stlevis.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-societe-de-transport-de-levis-gtfs-763.zip?alt=media"
+    }
+}

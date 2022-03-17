@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 778,
+    "data_type": "gtfs",
+    "provider": "Verkehrsverbund Rhein-Sieg",
+    "location": {
+        "country_code": "DE",
+        "subdivision_name": "Bayern",
+        "bounding_box": {
+            "minimum_latitude": 49.961427,
+            "maximum_latitude": 51.274642,
+            "minimum_longitude": 6.230127,
+            "maximum_longitude": 8.394097,
+            "extracted_on": "2022-03-17T13:24:26+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://download.vrsinfo.de/gtfs/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-bayern-verkehrsverbund-rhein-sieg-gtfs-778.zip?alt=media",
+        "license": "https://www.vrs.de/fahren/fahrplanauskunft/opendata-/-openservice"
+    }
+}

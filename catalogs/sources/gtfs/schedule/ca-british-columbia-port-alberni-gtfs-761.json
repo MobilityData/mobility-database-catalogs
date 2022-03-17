@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 761,
+    "data_type": "gtfs",
+    "provider": "Port Alberni",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "British Columbia",
+        "municipality": "Port Alberni",
+        "bounding_box": {
+            "minimum_latitude": 49.21847,
+            "maximum_latitude": 49.27743,
+            "minimum_longitude": -124.85047,
+            "maximum_longitude": -124.78265,
+            "extracted_on": "2022-03-17T13:16:35+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://bct.tmix.se/Tmix.Cap.TdExport.WebApi/gtfs/?operatorIds=11",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-port-alberni-gtfs-761.zip?alt=media",
+        "license": "https://www.bctransit.com/open-data/terms-of-use"
+    }
+}

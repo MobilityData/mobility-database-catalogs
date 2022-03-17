@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 740,
+    "data_type": "gtfs",
+    "provider": "Société de transport de l'Outaouais",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Québec",
+        "municipality": "Gatineau",
+        "bounding_box": {
+            "minimum_latitude": 45.381261,
+            "maximum_latitude": 45.592886,
+            "minimum_longitude": -75.890201,
+            "maximum_longitude": -75.390856,
+            "extracted_on": "2022-03-17T13:15:42+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.contenu.sto.ca/GTFS/GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-societe-de-transport-de-loutaouais-gtfs-740.zip?alt=media"
+    }
+}

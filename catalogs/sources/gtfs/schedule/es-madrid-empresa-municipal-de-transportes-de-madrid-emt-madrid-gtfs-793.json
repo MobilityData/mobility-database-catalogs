@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 793,
+    "data_type": "gtfs",
+    "provider": "Empresa Municipal de Transportes de Madrid (EMT Madrid)",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Madrid",
+        "bounding_box": {
+            "minimum_latitude": 40.3322,
+            "maximum_latitude": 40.51721,
+            "minimum_longitude": -3.83657,
+            "maximum_longitude": -3.54249,
+            "extracted_on": "2022-03-17T13:30:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://servicios.emtmadrid.es:8443/gtfs/transitemt.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-madrid-empresa-municipal-de-transportes-de-madrid-emt-madrid-gtfs-793.zip?alt=media"
+    }
+}

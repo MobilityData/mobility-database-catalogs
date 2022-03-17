@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 792,
+    "data_type": "gtfs",
+    "provider": "Consorcio Regional de Transportes de Madrid",
+    "name": "Metro Ligero de Madrid",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Madrid",
+        "municipality": "Madrid",
+        "bounding_box": {
+            "minimum_latitude": 40.22195,
+            "maximum_latitude": 40.50824,
+            "minimum_longitude": -3.90378,
+            "maximum_longitude": -3.65126,
+            "extracted_on": "2022-03-17T13:30:28+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://crtm.maps.arcgis.com/sharing/rest/content/items/aaed26cc0ff64b0c947ac0bc3e033196/data",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-madrid-consorcio-regional-de-transportes-de-madrid-gtfs-792.zip?alt=media"
+    }
+}

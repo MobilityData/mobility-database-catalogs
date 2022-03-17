@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 785,
+    "data_type": "gtfs",
+    "provider": "Verkehrsverbund Rhein-Ruhr",
+    "location": {
+        "country_code": "DE",
+        "subdivision_name": "Germany",
+        "municipality": "Ruhr",
+        "bounding_box": {
+            "minimum_latitude": 50.3493192,
+            "maximum_latitude": 52.2906704,
+            "minimum_longitude": 5.8534852,
+            "maximum_longitude": 9.4481208,
+            "extracted_on": "2022-03-17T13:29:27+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.opendata-oepnv.de/dataset/496eea5d-d6ef-4dc2-aeb0-d15c4fbf3178/resource/9874f617-0b5d-46c4-93da-cc0bb8598fd1/download/20220129_gtfs_vrr.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-germany-verkehrsverbund-rhein-ruhr-gtfs-785.zip?alt=media",
+        "license": "https://opendata.ruhr/dataset/soll-fahrplandaten-vrr"
+    }
+}

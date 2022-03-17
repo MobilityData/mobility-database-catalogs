@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 771,
+    "data_type": "gtfs",
+    "provider": "naldo Verkehrsverbund",
+    "location": {
+        "country_code": "DE",
+        "subdivision_name": "Baden-Württemberg",
+        "municipality": "Hechingen",
+        "bounding_box": {
+            "minimum_latitude": 47.7691186771883,
+            "maximum_latitude": 48.6917099455617,
+            "minimum_longitude": 8.68140873846793,
+            "maximum_longitude": 9.72322090621772,
+            "extracted_on": "2022-03-17T13:19:13+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.nvbw.de/fileadmin/user_upload/service/open_data/fahrplandaten_ohne_liniennetz/naldo.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-baden-wurttemberg-naldo-verkehrsverbund-gtfs-771.zip?alt=media",
+        "license": "https://www.nvbw.de/open-data/fahrplandaten/fahrplandaten-mit-liniennetz"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1055,
+    "data_type": "gtfs",
+    "provider": "Transports de l'Agglomération Grenobloise (TAG)",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Auvergne-Rhône-Alpes",
+        "municipality": "Grenoble",
+        "bounding_box": {
+            "minimum_latitude": 44.97015,
+            "maximum_latitude": 45.28982,
+            "minimum_longitude": 5.59538,
+            "maximum_longitude": 5.84788,
+            "extracted_on": "2022-03-17T19:49:16+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.metromobilite.fr/data/Horaires/SEM-GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-auvergne-rhone-alpes-transports-de-lagglomeration-grenobloise-tag-gtfs-1055.zip?alt=media"
+    }
+}

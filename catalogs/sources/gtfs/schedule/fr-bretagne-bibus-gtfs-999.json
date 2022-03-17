@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 999,
+    "data_type": "gtfs",
+    "provider": "Bibus",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Bretagne",
+        "municipality": "Brest",
+        "bounding_box": {
+            "minimum_latitude": 48.34819,
+            "maximum_latitude": 48.45716,
+            "minimum_longitude": -4.622326,
+            "maximum_longitude": -4.347752,
+            "extracted_on": "2022-03-17T19:31:43+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://ratpdev-mosaic-prod-bucket-raw.s3-eu-west-1.amazonaws.com/11/exports/1/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-bretagne-bibus-gtfs-999.zip?alt=media",
+        "license": "https://transport.beta.gouv.fr/resources/43286"
+    }
+}

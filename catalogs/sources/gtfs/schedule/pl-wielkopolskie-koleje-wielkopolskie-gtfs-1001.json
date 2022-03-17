@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1001,
+    "data_type": "gtfs",
+    "provider": "Koleje Wielkopolskie",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Wielkopolskie",
+        "bounding_box": {
+            "minimum_latitude": 49.783571,
+            "maximum_latitude": 53.142995,
+            "minimum_longitude": 15.817753,
+            "maximum_longitude": 22.828095,
+            "extracted_on": "2022-03-17T19:31:56+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://przyjazdy.pl/latest/kw.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-wielkopolskie-koleje-wielkopolskie-gtfs-1001.zip?alt=media"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1025,
+    "data_type": "gtfs",
+    "provider": "Société d'Economie Mixte des Transports de l'Agglomération Nantaise (TAN)",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Bretagne",
+        "municipality": "Nantes",
+        "bounding_box": {
+            "minimum_latitude": 47.12305797,
+            "maximum_latitude": 47.33947182,
+            "minimum_longitude": -1.81633789,
+            "maximum_longitude": -1.34727709,
+            "extracted_on": "2022-03-17T19:39:09+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.nantesmetropole.fr/explore/dataset/244400404_tan-arrets-horaires-circuits/files/16a1a0af5946619af621baa4ad9ee662/download/",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-bretagne-societe-deconomie-mixte-des-transports-de-lagglomeration-nantaise-tan-gtfs-1025.zip?alt=media",
+        "license": "https://data.nantesmetropole.fr/explore/dataset/244400404_tan-arrets-horaires-circuits/information/"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1006,
+    "data_type": "gtfs",
+    "provider": "Impulsyon",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Pays-de-la-Loire",
+        "municipality": "La Roche-sur-Yon",
+        "bounding_box": {
+            "minimum_latitude": 46.582737,
+            "maximum_latitude": 46.74067,
+            "minimum_longitude": -1.572927,
+            "maximum_longitude": -1.230702,
+            "extracted_on": "2022-03-17T19:32:28+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://odp.larochesuryon.fr/248500589_arrets-horaires-et-circuits-impulsyon-gtfs-rsy/gtfs_impulsyon.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-pays-de-la-loire-impulsyon-gtfs-1006.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-circuits-impulsyon-a-la-roche-sur-yon"
+    }
+}

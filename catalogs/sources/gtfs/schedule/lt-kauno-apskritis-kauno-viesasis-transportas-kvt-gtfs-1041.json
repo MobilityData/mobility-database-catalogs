@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1041,
+    "data_type": "gtfs",
+    "provider": "Kauno viešasis transportas (KVT)",
+    "name": "Kaunas",
+    "location": {
+        "country_code": "LT",
+        "subdivision_name": "Kauno Apskritis",
+        "municipality": "Kaunas",
+        "bounding_box": {
+            "minimum_latitude": 54.78235,
+            "maximum_latitude": 54.9772,
+            "minimum_longitude": 23.76236,
+            "maximum_longitude": 24.10838,
+            "extracted_on": "2022-03-17T19:47:46+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.stops.lt/kaunas/kaunas/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lt-kauno-apskritis-kauno-viesasis-transportas-kvt-gtfs-1041.zip?alt=media"
+    }
+}

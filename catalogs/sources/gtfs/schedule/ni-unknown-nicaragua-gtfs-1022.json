@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 1022,
+    "data_type": "gtfs",
+    "provider": "Nicaragua",
+    "location": {
+        "country_code": "NI",
+        "bounding_box": {
+            "minimum_latitude": 11.4610446,
+            "maximum_latitude": 13.3611569502,
+            "minimum_longitude": -87.045182,
+            "maximum_longitude": -85.646949,
+            "extracted_on": "2022-03-17T19:38:42+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://datos.mapanica.net/ni-gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ni-unknown-nicaragua-gtfs-1022.zip?alt=media"
+    }
+}

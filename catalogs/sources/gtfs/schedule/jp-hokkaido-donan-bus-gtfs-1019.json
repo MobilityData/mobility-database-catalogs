@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1019,
+    "data_type": "gtfs",
+    "provider": "Donan Bus",
+    "location": {
+        "country_code": "JP",
+        "subdivision_name": "Hokkaidô",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2022-03-17T19:35:29+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/aruneko/DonanbusGTFS/archive/refs/tags/2020.0401.1.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/jp-hokkaido-donan-bus-gtfs-1019.zip?alt=media",
+        "license": "https://github.com/aruneko/DonanbusGTFS/tree/master"
+    }
+}

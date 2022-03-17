@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1020,
+    "data_type": "gtfs",
+    "provider": "Transports en Commun Lyonnais (TCL)",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Rhône",
+        "bounding_box": {
+            "minimum_latitude": 45.567832978051,
+            "maximum_latitude": 45.916551594924,
+            "minimum_longitude": 4.640647363352,
+            "maximum_longitude": 5.129537954826,
+            "extracted_on": "2022-03-17T19:38:29+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://download.data.grandlyon.com/files/rdata/tcl_sytral.tcltheorique/GTFS_TCL.ZIP",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-rhone-transports-en-commun-lyonnais-tcl-gtfs-1020.zip?alt=media",
+        "license": "http://opendatacommons.org/licenses/odbl/"
+    }
+}

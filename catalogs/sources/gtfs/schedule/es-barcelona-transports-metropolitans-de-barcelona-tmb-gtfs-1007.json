@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1007,
+    "data_type": "gtfs",
+    "provider": "Transports Metropolitans de Barcelona (TMB)",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Barcelona",
+        "bounding_box": {
+            "minimum_latitude": 41.287688,
+            "maximum_latitude": 41.499883,
+            "minimum_longitude": 2.046171,
+            "maximum_longitude": 2.245194,
+            "extracted_on": "2022-03-17T19:32:37+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://navitia.opendatasoft.com/explore/dataset/es/files/5dd5c0e92f2050c35ef4b809a92c7849/download/",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-barcelona-transports-metropolitans-de-barcelona-tmb-gtfs-1007.zip?alt=media"
+    }
+}

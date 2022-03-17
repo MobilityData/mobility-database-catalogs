@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1013,
+    "data_type": "gtfs",
+    "provider": "Zarząd Transportu Miejskiego Lublin (ZTM Lublin)",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Lubelskie",
+        "municipality": "Lublin",
+        "bounding_box": {
+            "minimum_latitude": 51.095910270835,
+            "maximum_latitude": 51.39875,
+            "minimum_longitude": 22.351028,
+            "maximum_longitude": 22.780059,
+            "extracted_on": "2022-03-17T19:33:26+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://mkuran.pl/gtfs/lublin.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-lubelskie-zarzad-transportu-miejskiego-lublin-ztm-lublin-gtfs-1013.zip?alt=media"
+    }
+}

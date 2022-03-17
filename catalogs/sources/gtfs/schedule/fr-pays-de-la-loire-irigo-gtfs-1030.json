@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1030,
+    "data_type": "gtfs",
+    "provider": "Irigo",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Pays-de-la-Loire",
+        "municipality": "Angers",
+        "bounding_box": {
+            "minimum_latitude": 47.341696,
+            "maximum_latitude": 47.616506,
+            "minimum_longitude": -0.751186,
+            "maximum_longitude": -0.296001,
+            "extracted_on": "2022-03-17T19:46:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://angersloiremetropole.opendatasoft.com/api/datasets/1.0/angers-loire-metropole-horaires-reseau-irigo-gtfs-rt/alternative_exports/irigo_gtfs_zip/",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-pays-de-la-loire-irigo-gtfs-1030.zip?alt=media",
+        "license": "https://angersloiremetropole.opendatasoft.com/explore/dataset/angers-loire-metropole-horaires-reseau-irigo-gtfs-rt/export/"
+    }
+}

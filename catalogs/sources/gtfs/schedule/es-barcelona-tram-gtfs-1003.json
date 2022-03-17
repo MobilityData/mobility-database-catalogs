@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1003,
+    "data_type": "gtfs",
+    "provider": "TRAM",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Barcelona",
+        "bounding_box": {
+            "minimum_latitude": 41.356672,
+            "maximum_latitude": 41.392206,
+            "minimum_longitude": 2.053372,
+            "maximum_longitude": 2.143175,
+            "extracted_on": "2022-03-17T19:32:13+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://opendata.tram.cat/GTFS/zip/TBX.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-barcelona-tram-gtfs-1003.zip?alt=media"
+    }
+}

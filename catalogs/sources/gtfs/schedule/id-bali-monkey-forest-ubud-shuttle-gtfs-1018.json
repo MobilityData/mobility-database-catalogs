@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1018,
+    "data_type": "gtfs",
+    "provider": "Monkey Forest Ubud Shuttle",
+    "location": {
+        "country_code": "ID",
+        "subdivision_name": "Bali",
+        "bounding_box": {
+            "minimum_latitude": -8.5193481,
+            "maximum_latitude": -8.5069503,
+            "minimum_longitude": 115.2601686,
+            "maximum_longitude": 115.2652865,
+            "extracted_on": "2022-03-17T19:35:28+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/joakimsk/pt-data-ubud/blob/master/feed/ubud_shuttle.zip?raw=true",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/id-bali-monkey-forest-ubud-shuttle-gtfs-1018.zip?alt=media"
+    }
+}

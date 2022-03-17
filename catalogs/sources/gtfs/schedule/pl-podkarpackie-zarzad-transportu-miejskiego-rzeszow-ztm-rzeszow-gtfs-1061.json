@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1061,
+    "data_type": "gtfs",
+    "provider": "Zarząd Transportu Miejskiego Rzeszów (ZTM Rzeszów)",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Podkarpackie",
+        "municipality": "Rzeszów",
+        "bounding_box": {
+            "minimum_latitude": 49.9186906634921,
+            "maximum_latitude": 50.1227208745006,
+            "minimum_longitude": 21.8079203367233,
+            "maximum_longitude": 22.175275683403,
+            "extracted_on": "2022-03-17T19:50:18+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://193.19.167.109:4080/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-podkarpackie-zarzad-transportu-miejskiego-rzeszow-ztm-rzeszow-gtfs-1061.zip?alt=media"
+    }
+}

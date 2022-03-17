@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1002,
+    "data_type": "gtfs",
+    "provider": "Komunikacja Miejska - Krosno",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Podkarpackie",
+        "municipality": "Krosno",
+        "bounding_box": {
+            "minimum_latitude": 49.62699,
+            "maximum_latitude": 49.73913,
+            "minimum_longitude": 21.6014,
+            "maximum_longitude": 21.8433,
+            "extracted_on": "2022-03-17T19:32:01+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://przyjazdy.pl/latest/krosno.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-podkarpackie-komunikacja-miejska-krosno-gtfs-1002.zip?alt=media"
+    }
+}

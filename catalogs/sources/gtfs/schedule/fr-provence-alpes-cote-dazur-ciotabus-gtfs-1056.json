@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1056,
+    "data_type": "gtfs",
+    "provider": "Ciotabus",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Provence-Alpes-Côte-d'Azur",
+        "municipality": "Marseille",
+        "bounding_box": {
+            "minimum_latitude": 43.1675724678,
+            "maximum_latitude": 43.2233879838,
+            "minimum_longitude": 5.5878450535,
+            "maximum_longitude": 5.6564253674,
+            "extracted_on": "2022-03-17T19:49:19+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://tsvc2.pilote3.cityway.fr/api/Export/v1/GetExportedDataFile?ExportFormat=Gtfs&OperatorCode=CIOTABUS",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-provence-alpes-cote-dazur-ciotabus-gtfs-1056.zip?alt=media"
+    }
+}

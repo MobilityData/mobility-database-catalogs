@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1062,
+    "data_type": "gtfs",
+    "provider": "Automobilistico",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Veneto",
+        "municipality": "Venice",
+        "bounding_box": {
+            "minimum_latitude": 45.044586,
+            "maximum_latitude": 45.661942,
+            "minimum_longitude": 11.882476,
+            "maximum_longitude": 12.384969,
+            "extracted_on": "2022-03-17T19:50:25+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://actv.avmspa.it/sites/default/files/attachments/opendata/automobilistico/actv_aut.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-veneto-automobilistico-gtfs-1062.zip?alt=media"
+    }
+}

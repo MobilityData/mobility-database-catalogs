@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1023,
+    "data_type": "gtfs",
+    "provider": "MapaNica Estelí",
+    "location": {
+        "country_code": "NI",
+        "subdivision_name": "Estelí",
+        "bounding_box": {
+            "minimum_latitude": 13.0659001,
+            "maximum_latitude": 13.1164624,
+            "minimum_longitude": -86.3752547,
+            "maximum_longitude": -86.3416399,
+            "extracted_on": "2022-03-17T19:38:43+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://datos.mapanica.net/ni-esteli-gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ni-esteli-mapanica-esteli-gtfs-1023.zip?alt=media"
+    }
+}

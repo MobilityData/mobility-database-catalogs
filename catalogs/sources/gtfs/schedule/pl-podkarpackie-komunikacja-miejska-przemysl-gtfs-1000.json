@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1000,
+    "data_type": "gtfs",
+    "provider": "Komunikacja Miejska Przemyśl",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Podkarpackie",
+        "municipality": "Przemyśl",
+        "bounding_box": {
+            "minimum_latitude": 49.70095,
+            "maximum_latitude": 49.84582,
+            "minimum_longitude": 22.66813,
+            "maximum_longitude": 22.85531,
+            "extracted_on": "2022-03-17T19:31:50+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://przyjazdy.pl/latest/przemysl.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-podkarpackie-komunikacja-miejska-przemysl-gtfs-1000.zip?alt=media"
+    }
+}

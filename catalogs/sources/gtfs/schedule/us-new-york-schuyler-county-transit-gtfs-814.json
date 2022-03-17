@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 814,
+    "data_type": "gtfs",
+    "provider": "Schuyler County Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Elmira",
+        "bounding_box": {
+            "minimum_latitude": 42.090101,
+            "maximum_latitude": 42.532266,
+            "minimum_longitude": -77.051169,
+            "maximum_longitude": -76.537371,
+            "extracted_on": "2022-03-17T15:22:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Schuyler_County_Public_Transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-schuyler-county-transit-gtfs-814.zip?alt=media",
+        "license": "https://data.ny.gov/download/77gx-ii52/application/pdf"
+    }
+}

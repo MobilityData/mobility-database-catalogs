@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 840,
+    "data_type": "gtfs",
+    "provider": "TRENITALIA S.p.A.",
+    "location": {
+        "country_code": "IT",
+        "bounding_box": {
+            "minimum_latitude": 41.8723701144714,
+            "maximum_latitude": 45.6904287134975,
+            "minimum_longitude": 8.47023620292013,
+            "maximum_longitude": 13.497591158192,
+            "extracted_on": "2022-03-17T15:23:03+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://dati.toscana.it/dataset/8bb8f8fe-fe7d-41d0-90dc-49f2456180d1/resource/4f85393b-357d-443d-8378-65de4198505f/download/trenitalia.gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-unknown-trenitalia-spa-gtfs-840.zip?alt=media"
+    }
+}

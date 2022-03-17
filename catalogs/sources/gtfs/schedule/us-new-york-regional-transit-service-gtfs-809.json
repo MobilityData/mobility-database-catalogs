@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 809,
+    "data_type": "gtfs",
+    "provider": "Regional Transit Service",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Rochester",
+        "bounding_box": {
+            "minimum_latitude": 42.518328,
+            "maximum_latitude": 43.01676,
+            "minimum_longitude": -78.487358,
+            "maximum_longitude": -77.998316,
+            "extracted_on": "2022-03-17T15:22:01+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/RTS-Wyoming.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-regional-transit-service-gtfs-809.zip?alt=media"
+    }
+}

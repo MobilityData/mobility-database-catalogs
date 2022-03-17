@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 879,
+    "data_type": "gtfs",
+    "provider": "Garden of the Gods",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Colorado Springs",
+        "bounding_box": {
+            "minimum_latitude": 38.8735541951327,
+            "maximum_latitude": 38.8788147871756,
+            "minimum_longitude": -104.878164075535,
+            "maximum_longitude": -104.870172349729,
+            "extracted_on": "2022-03-17T15:29:13+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/gardenofthegods-co-us/gardenofthegods-co-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-garden-of-the-gods-gtfs-879.zip?alt=media"
+    }
+}

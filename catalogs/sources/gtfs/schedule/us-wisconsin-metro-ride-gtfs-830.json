@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 830,
+    "data_type": "gtfs",
+    "provider": "Metro Ride",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Wisconsin",
+        "municipality": "Wausau",
+        "bounding_box": {
+            "minimum_latitude": 44.9306818900424,
+            "maximum_latitude": 45.0029636867689,
+            "minimum_longitude": -89.6812531115174,
+            "maximum_longitude": -89.5976620952163,
+            "extracted_on": "2022-03-17T15:22:32+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/wausau-wi-us/wausau-wi-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-wisconsin-metro-ride-gtfs-830.zip?alt=media"
+    }
+}

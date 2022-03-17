@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 805,
+    "data_type": "gtfs",
+    "provider": "RoadrunnerTransit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Ignacio",
+        "bounding_box": {
+            "minimum_latitude": 37.1011220008574,
+            "maximum_latitude": 37.272614173906,
+            "minimum_longitude": -107.883097315895,
+            "maximum_longitude": -107.586597082991,
+            "extracted_on": "2022-03-17T15:21:57+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/roadrunnertransit-co-us/roadrunnertransit-co-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-roadrunnertransit-gtfs-805.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 829,
+    "data_type": "gtfs",
+    "provider": "Sierra Madre Gateway Coach",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Pasadena",
+        "bounding_box": {
+            "minimum_latitude": 34.150285558358,
+            "maximum_latitude": 34.1695312727436,
+            "minimum_longitude": -118.074908013661,
+            "maximum_longitude": -118.040285635729,
+            "extracted_on": "2022-03-17T15:22:30+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/sierramadre-ca-us/sierramadre-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-sierra-madre-gateway-coach-gtfs-829.zip?alt=media"
+    }
+}

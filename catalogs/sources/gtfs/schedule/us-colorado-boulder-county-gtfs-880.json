@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 880,
+    "data_type": "gtfs",
+    "provider": "Boulder County",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Boulder",
+        "bounding_box": {
+            "minimum_latitude": 39.951585,
+            "maximum_latitude": 39.96231,
+            "minimum_longitude": -105.594805,
+            "maximum_longitude": -105.512979,
+            "extracted_on": "2022-03-17T15:29:14+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/bouldercounty-co-us/bouldercounty-co-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-boulder-county-gtfs-880.zip?alt=media"
+    }
+}

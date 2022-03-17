@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 813,
+    "data_type": "gtfs",
+    "provider": "Santa Ynez Valley Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Santa Barbara",
+        "bounding_box": {
+            "minimum_latitude": 34.59587126,
+            "maximum_latitude": 34.665449,
+            "minimum_longitude": -120.20450894,
+            "maximum_longitude": -120.077077,
+            "extracted_on": "2022-03-17T15:22:08+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://mjcaction.com/MJC_GTFS_Public/syvt_google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-santa-ynez-valley-transit-gtfs-813.zip?alt=media"
+    }
+}

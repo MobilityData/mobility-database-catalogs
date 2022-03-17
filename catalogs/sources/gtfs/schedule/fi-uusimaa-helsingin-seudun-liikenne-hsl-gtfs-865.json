@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 865,
+    "data_type": "gtfs",
+    "provider": "Helsingin seudun liikenne (HSL)",
+    "location": {
+        "country_code": "FI",
+        "subdivision_name": "Uusimaa",
+        "municipality": "Helsinki",
+        "bounding_box": {
+            "minimum_latitude": 59.987483,
+            "maximum_latitude": 60.976337,
+            "minimum_longitude": 24.018075,
+            "maximum_longitude": 26.705,
+            "extracted_on": "2022-03-17T15:27:50+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://dev.hsl.fi/gtfs/hsl.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fi-uusimaa-helsingin-seudun-liikenne-hsl-gtfs-865.zip?alt=media",
+        "license": "http://developer.reittiopas.fi/pages/en/home.php"
+    }
+}

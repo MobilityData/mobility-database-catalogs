@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 845,
+    "data_type": "gtfs",
+    "provider": "Lignes d'Azur, Zou! Alpes-Maritimes",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Provence-Alpes-Côte d'Azur",
+        "bounding_box": {
+            "minimum_latitude": 43.546381,
+            "maximum_latitude": 44.28372,
+            "minimum_longitude": 6.866431,
+            "maximum_longitude": 7.497834,
+            "extracted_on": "2022-03-17T15:23:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://opendata.nicecotedazur.org/data/dataset/export-quotidien-au-format-gtfs-du-reseau-de-transport-lignes-d-azur/resource/aacb4eea-d008-4b13-b17a-848b8ced7e03/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-provence-alpes-cote-dazur-lignes-dazur-gtfs-845.zip?alt=media"
+    }
+}

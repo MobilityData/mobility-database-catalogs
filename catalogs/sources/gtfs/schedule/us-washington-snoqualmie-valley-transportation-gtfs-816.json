@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 816,
+    "data_type": "gtfs",
+    "provider": "Snoqualmie Valley Transportation",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "municipality": "Snoqualmie",
+        "bounding_box": {
+            "minimum_latitude": 47.4269639289488,
+            "maximum_latitude": 47.868098,
+            "minimum_longitude": -122.0094309,
+            "maximum_longitude": -121.752252130978,
+            "extracted_on": "2022-03-17T15:22:13+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/snoqualmie-wa-us/snoqualmie-wa-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-snoqualmie-valley-transportation-gtfs-816.zip?alt=media"
+    }
+}

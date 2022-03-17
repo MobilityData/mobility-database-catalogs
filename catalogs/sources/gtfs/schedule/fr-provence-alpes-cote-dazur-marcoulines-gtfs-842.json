@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 842,
+    "data_type": "gtfs",
+    "provider": "Marcoulines",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Provence-Alpes-Côte-d’Azur",
+        "bounding_box": {
+            "minimum_latitude": 43.1737611824,
+            "maximum_latitude": 43.2854629136,
+            "minimum_longitude": 5.3842134427,
+            "maximum_longitude": 5.6238899421,
+            "extracted_on": "2022-03-17T15:23:11+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://tsvc2.pilote3.cityway.fr/api/Export/v1/GetExportedDataFile?ExportFormat=Gtfs&OperatorCode=MARCOULINE",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-provence-alpes-cote-dazur-marcoulines-gtfs-842.zip?alt=media"
+    }
+}

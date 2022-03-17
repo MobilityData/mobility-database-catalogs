@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 858,
+    "data_type": "gtfs",
+    "provider": "Ver­kehrs­ver­bund Groß­raum Nürn­berg (VGN)",
+    "location": {
+        "country_code": "DE",
+        "subdivision_name": "Bayern",
+        "bounding_box": {
+            "minimum_latitude": 48.7448254171593,
+            "maximum_latitude": 50.2210317244878,
+            "minimum_longitude": 10.0643112196454,
+            "maximum_longitude": 12.1713187019939,
+            "extracted_on": "2022-03-17T15:25:22+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.vgn.de/opendata/GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-bayern-verkehrsverbund-grossraum-nurnberg-vgn-gtfs-858.zip?alt=media"
+    }
+}

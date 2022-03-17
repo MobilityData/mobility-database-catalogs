@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 872,
+    "data_type": "gtfs",
+    "provider": "Kobe Subway",
+    "location": {
+        "country_code": "JP",
+        "subdivision_name": "Hyôgo",
+        "municipality": "Kōbe",
+        "bounding_box": {
+            "minimum_latitude": 34.6521,
+            "maximum_latitude": 34.761831,
+            "minimum_longitude": 135.017,
+            "maximum_longitude": 135.196,
+            "extracted_on": "2022-03-17T15:28:54+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://codeforkobe.github.io/kobe-transit/kobe_subway_gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/jp-hyogo-kobe-subway-gtfs-872.zip?alt=media"
+    }
+}

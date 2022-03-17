@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 819,
+    "data_type": "gtfs",
+    "provider": "STAR Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Virginia",
+        "municipality": "Hampton",
+        "bounding_box": {
+            "minimum_latitude": 37.1326077109895,
+            "maximum_latitude": 38.0008832180967,
+            "minimum_longitude": -76.0198036350918,
+            "maximum_longitude": -75.3605757430462,
+            "extracted_on": "2022-03-17T15:22:17+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/startransit-va-us/startransit-va-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-star-transit-gtfs-819.zip?alt=media"
+    }
+}

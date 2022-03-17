@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 850,
+    "data_type": "gtfs",
+    "provider": "Steuben Area Rides",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Elmira",
+        "bounding_box": {
+            "minimum_latitude": 42.079788,
+            "maximum_latitude": 42.567846,
+            "minimum_longitude": -77.590352,
+            "maximum_longitude": -77.107801,
+            "extracted_on": "2022-03-17T15:24:30+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Steuben_Area_Rides.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-steuben-area-rides-gtfs-850.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 851,
+    "data_type": "gtfs",
+    "provider": "Steuben County Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Elmira",
+        "bounding_box": {
+            "minimum_latitude": 42.090213,
+            "maximum_latitude": 42.407978,
+            "minimum_longitude": -77.350403,
+            "maximum_longitude": -76.805978,
+            "extracted_on": "2022-03-17T15:24:31+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Steuben_County_Transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-steuben-county-transit-gtfs-851.zip?alt=media"
+    }
+}

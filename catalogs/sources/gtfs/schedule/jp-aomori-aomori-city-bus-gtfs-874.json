@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 874,
+    "data_type": "gtfs",
+    "provider": "Aomori City Bus",
+    "location": {
+        "country_code": "JP",
+        "subdivision_name": "Aomori",
+        "bounding_box": {
+            "minimum_latitude": 40.738089,
+            "maximum_latitude": 40.948587,
+            "minimum_longitude": 140.648288,
+            "maximum_longitude": 140.863932,
+            "extracted_on": "2022-03-17T15:29:06+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.city.aomori.aomori.jp/kotsu-kanri/koutsu/oshirase/documents/gtfs-aomoricitybus.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/jp-aomori-aomori-city-bus-gtfs-874.zip?alt=media"
+    }
+}

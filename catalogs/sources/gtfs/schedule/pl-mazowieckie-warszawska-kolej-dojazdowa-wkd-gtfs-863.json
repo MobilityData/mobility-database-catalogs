@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 863,
+    "data_type": "gtfs",
+    "provider": "Warszawska Kolej Dojazdowa (WKD)",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Mazowieckie",
+        "municipality": "Warsaw",
+        "bounding_box": {
+            "minimum_latitude": 52.100645,
+            "maximum_latitude": 52.22768605033,
+            "minimum_longitude": 20.628435,
+            "maximum_longitude": 21.00040372159,
+            "extracted_on": "2022-03-17T15:27:17+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://mkuran.pl/feed/wkd/wkd-latest.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-mazowieckie-warszawska-kolej-dojazdowa-wkd-gtfs-863.zip?alt=media",
+        "license": "https://mkuran.pl/gtfs/"
+    }
+}

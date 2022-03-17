@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 848,
+    "data_type": "gtfs",
+    "provider": "Autolinee Scoppio",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Puglia",
+        "municipality": "Bari",
+        "bounding_box": {
+            "minimum_latitude": 40.794452,
+            "maximum_latitude": 40.8932369,
+            "minimum_longitude": 16.7992147,
+            "maximum_longitude": 16.926824,
+            "extracted_on": "2022-03-17T15:24:18+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://datahub.io/dataset/289cecea-0162-4ef7-bfab-7872299defa8/resource/f2537ad4-4943-433a-a5a8-fc7db433f30b/download/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-puglia-autolinee-scoppio-gtfs-848.zip?alt=media"
+    }
+}

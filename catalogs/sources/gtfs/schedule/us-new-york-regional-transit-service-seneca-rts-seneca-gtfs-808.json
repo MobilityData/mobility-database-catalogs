@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 808,
+    "data_type": "gtfs",
+    "provider": "Regional Transit Service Seneca (RTS Seneca)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "bounding_box": {
+            "minimum_latitude": 42.869139,
+            "maximum_latitude": 42.91489,
+            "minimum_longitude": -76.988798,
+            "maximum_longitude": -76.791317,
+            "extracted_on": "2022-03-17T15:22:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/RTS-Seneca.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-regional-transit-service-seneca-rts-seneca-gtfs-808.zip?alt=media"
+    }
+}

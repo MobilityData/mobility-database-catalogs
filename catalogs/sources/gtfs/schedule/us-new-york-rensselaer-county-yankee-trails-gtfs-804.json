@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 804,
+    "data_type": "gtfs",
+    "provider": "Rensselaer County (Yankee Trails",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Albany",
+        "bounding_box": {
+            "minimum_latitude": 42.646334,
+            "maximum_latitude": 42.899666,
+            "minimum_longitude": -73.76139,
+            "maximum_longitude": -73.193236,
+            "extracted_on": "2022-03-17T15:20:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Rensselaer_County_Yankee_Trails.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-rensselaer-county-yankee-trails-gtfs-804.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 818,
+    "data_type": "gtfs",
+    "provider": "Stark Area Regional Transit Authority (SARTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Ohio",
+        "municipality": "Canton",
+        "bounding_box": {
+            "minimum_latitude": 40.720235,
+            "maximum_latitude": 41.513986,
+            "minimum_longitude": -81.696054,
+            "maximum_longitude": -81.08672418,
+            "extracted_on": "2022-03-17T15:22:16+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/transitland/gtfs-archives-not-hosted-elsewhere/raw/master/stark-area-regional-transit-authority.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-ohio-stark-area-regional-transit-authority-sarta-gtfs-818.zip?alt=media"
+    }
+}

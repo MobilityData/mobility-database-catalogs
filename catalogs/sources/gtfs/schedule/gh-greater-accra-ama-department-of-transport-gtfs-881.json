@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 881,
+    "data_type": "gtfs",
+    "provider": "AMA Department of Transport",
+    "location": {
+        "country_code": "GH",
+        "subdivision_name": "Greater Accra",
+        "municipality": "Accra",
+        "bounding_box": {
+            "minimum_latitude": 5.5216398,
+            "maximum_latitude": 5.7619486,
+            "minimum_longitude": -0.4242906,
+            "maximum_longitude": 0.0031821,
+            "extracted_on": "2022-03-17T15:29:18+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/AFDLab4Dev/AccraMobility/raw/master/GTFS/GTFS_Accra.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gh-greater-accra-ama-department-of-transport-gtfs-881.zip?alt=media"
+    }
+}

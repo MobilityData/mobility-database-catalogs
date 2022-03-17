@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 860,
+    "data_type": "gtfs",
+    "provider": "Praha",
+    "location": {
+        "country_code": "CZ",
+        "subdivision_name": "Praha, Hlavní město",
+        "bounding_box": {
+            "minimum_latitude": 49.007848,
+            "maximum_latitude": 50.951224,
+            "minimum_longitude": 13.312689,
+            "maximum_longitude": 15.569623,
+            "extracted_on": "2022-03-17T15:27:03+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://opendata.iprpraha.cz/DPP/JR/jrdata.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cz-praha-praha-gtfs-860.zip?alt=media"
+    }
+}

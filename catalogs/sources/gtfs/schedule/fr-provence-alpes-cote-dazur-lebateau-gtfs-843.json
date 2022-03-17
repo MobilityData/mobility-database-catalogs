@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 843,
+    "data_type": "gtfs",
+    "provider": "lebateau",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Provence-Alpes-Côte-d’Azur",
+        "bounding_box": {
+            "minimum_latitude": 43.2801358236,
+            "maximum_latitude": 43.2946415641,
+            "minimum_longitude": 5.3070491308,
+            "maximum_longitude": 5.3740901055,
+            "extracted_on": "2022-03-17T15:23:13+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://tsvc2.pilote3.cityway.fr/api/Export/v1/GetExportedDataFile?ExportFormat=Gtfs&OperatorCode=FRIOUL",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-provence-alpes-cote-dazur-lebateau-gtfs-843.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 810,
+    "data_type": "gtfs",
+    "provider": "San Leandro Links",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "San Leandro",
+        "bounding_box": {
+            "minimum_latitude": 37.6934751076397,
+            "maximum_latitude": 37.722197,
+            "minimum_longitude": -122.186366,
+            "maximum_longitude": -122.15255824133,
+            "extracted_on": "2022-03-17T15:22:02+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/sanleandro-ca-us/sanleandro-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-san-leandro-links-gtfs-810.zip?alt=media"
+    }
+}

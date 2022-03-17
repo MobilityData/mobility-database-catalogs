@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 866,
+    "data_type": "gtfs",
+    "provider": "Tampereen joukkoliikenne (JOLI)",
+    "location": {
+        "country_code": "FI",
+        "bounding_box": {
+            "minimum_latitude": 61.12899,
+            "maximum_latitude": 61.8796,
+            "minimum_longitude": 23.21423,
+            "maximum_longitude": 25.18222,
+            "extracted_on": "2022-03-17T15:28:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.itsfactory.fi/journeys/files/gtfs/latest/gtfs_tampere.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fi-unknown-tampereen-joukkoliikenne-joli-gtfs-866.zip?alt=media"
+    }
+}

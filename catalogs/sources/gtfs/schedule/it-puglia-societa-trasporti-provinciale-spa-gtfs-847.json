@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 847,
+    "data_type": "gtfs",
+    "provider": "Società Trasporti Provinciale S.p.A.",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Puglia",
+        "municipality": "Bari",
+        "bounding_box": {
+            "minimum_latitude": 40.4827045,
+            "maximum_latitude": 41.174421,
+            "minimum_longitude": 16.4221682,
+            "maximum_longitude": 17.2234622,
+            "extracted_on": "2022-03-17T15:24:08+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://datahub.io/dataset/289cecea-0162-4ef7-bfab-7872299defa8/resource/8e7992ee-ac03-4b09-a0a9-4a54ba367336/download/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-puglia-societa-trasporti-provinciale-spa-gtfs-847.zip?alt=media"
+    }
+}

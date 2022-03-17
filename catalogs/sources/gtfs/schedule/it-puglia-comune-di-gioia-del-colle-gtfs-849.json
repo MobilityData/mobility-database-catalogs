@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 849,
+    "data_type": "gtfs",
+    "provider": "Comune di Gioia del Colle",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Puglia",
+        "municipality": "Bari",
+        "bounding_box": {
+            "minimum_latitude": 40.782853,
+            "maximum_latitude": 40.8335318,
+            "minimum_longitude": 16.907133,
+            "maximum_longitude": 16.9595962,
+            "extracted_on": "2022-03-17T15:24:29+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://datahub.io/dataset/289cecea-0162-4ef7-bfab-7872299defa8/resource/e2b2a650-eb84-4153-ae13-697da9c738fc/download/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-puglia-comune-di-gioia-del-colle-gtfs-849.zip?alt=media"
+    }
+}

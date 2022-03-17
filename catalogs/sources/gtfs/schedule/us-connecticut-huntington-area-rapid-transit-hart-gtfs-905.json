@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 905,
+    "data_type": "gtfs",
+    "provider": "Huntington Area Rapid Transit (HART)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Connecticut",
+        "municipality": "Stamford",
+        "bounding_box": {
+            "minimum_latitude": 40.810878,
+            "maximum_latitude": 40.901946,
+            "minimum_longitude": -73.461939,
+            "maximum_longitude": -73.291059,
+            "extracted_on": "2022-03-17T18:13:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/HART_Huntington_Area_Rapid_Transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-connecticut-huntington-area-rapid-transit-hart-gtfs-905.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 927,
+    "data_type": "gtfs",
+    "provider": "Sullivan County Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Poughkeepsie",
+        "bounding_box": {
+            "minimum_latitude": 41.4776,
+            "maximum_latitude": 41.8347,
+            "minimum_longitude": -75.0515,
+            "maximum_longitude": -74.573345,
+            "extracted_on": "2022-03-17T18:20:21+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Sullivan_County.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-sullivan-county-transit-gtfs-927.zip?alt=media"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 885,
+    "data_type": "gtfs",
+    "provider": "Fort Worth Transit Authority",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Texas",
+        "municipality": "Fort Worth",
+        "bounding_box": {
+            "minimum_latitude": 32.56359,
+            "maximum_latitude": 32.965685,
+            "minimum_longitude": -97.479404,
+            "maximum_longitude": -97.038021,
+            "extracted_on": "2022-03-17T18:09:56+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://sched.ridetm.org/gtfs/fwtatransitdata.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-texas-fort-worth-transit-authority-gtfs-885.zip?alt=media",
+        "license": "https://ridetrinitymetro.org/gtfs-data/"
+    }
+}

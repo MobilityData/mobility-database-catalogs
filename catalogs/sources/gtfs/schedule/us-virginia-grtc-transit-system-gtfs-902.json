@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 902,
+    "data_type": "gtfs",
+    "provider": "GRTC Transit System ",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Virginia",
+        "municipality": "Redmond",
+        "bounding_box": {
+            "minimum_latitude": 37.226432,
+            "maximum_latitude": 37.663725,
+            "minimum_longitude": -77.644797,
+            "maximum_longitude": -77.302671,
+            "extracted_on": "2022-03-17T18:12:48+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/transitland/gtfs-archives-not-hosted-elsewhere/raw/master/grtc.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-grtc-transit-system-gtfs-902.zip?alt=media",
+        "license": "http://ridegrtc.com/gtfs-files-developer-license-agreement-and-terms-of-use"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 932,
+    "data_type": "gtfs",
+    "provider": "Link Lane",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Eugene",
+        "bounding_box": {
+            "minimum_latitude": 43.9664002698976,
+            "maximum_latitude": 44.3116543,
+            "minimum_longitude": -124.11564,
+            "maximum_longitude": -123.092641521866,
+            "extracted_on": "2022-03-17T18:20:39+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://oregon-gtfs.com/gtfs_data/lcog-or-us/lcog-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-link-lane-gtfs-932.zip?alt=media"
+    }
+}

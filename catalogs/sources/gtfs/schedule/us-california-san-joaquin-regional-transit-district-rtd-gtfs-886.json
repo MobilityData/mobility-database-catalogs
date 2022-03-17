@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 886,
+    "data_type": "gtfs",
+    "provider": "San Joaquin Regional Transit District (RTD)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Stockton",
+        "bounding_box": {
+            "minimum_latitude": 37.68719,
+            "maximum_latitude": 38.579931,
+            "minimum_longitude": -121.890123,
+            "maximum_longitude": -120.994762,
+            "extracted_on": "2022-03-17T18:10:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://sjrtd.com/RTD-GTFS/RTD-GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-san-joaquin-regional-transit-district-rtd-gtfs-886.zip?alt=media",
+        "license": "http://sanjoaquinrtd.com/preview/terms-of-use/"
+    }
+}

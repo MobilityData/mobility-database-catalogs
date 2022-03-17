@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 898,
+    "data_type": "gtfs",
+    "provider": "University of Michigan",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Michigan",
+        "municipality": "Ann Arbor",
+        "bounding_box": {
+            "minimum_latitude": 42.264134,
+            "maximum_latitude": 47.76395,
+            "minimum_longitude": -96.62663,
+            "maximum_longitude": -83.673986,
+            "extracted_on": "2022-03-17T18:12:24+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://ltp.umich.edu/gtfs/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-michigan-university-of-michigan-gtfs-898.zip?alt=media"
+    }
+}

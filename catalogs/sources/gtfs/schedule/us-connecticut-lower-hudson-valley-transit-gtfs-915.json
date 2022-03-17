@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 915,
+    "data_type": "gtfs",
+    "provider": "Lower Hudson Valley Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Connecticut",
+        "municipality": "Stamford",
+        "bounding_box": {
+            "minimum_latitude": 41.031132,
+            "maximum_latitude": 41.116723,
+            "minimum_longitude": -74.152063,
+            "maximum_longitude": -73.763481,
+            "extracted_on": "2022-03-17T18:16:04+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Hudson_Link.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-connecticut-lower-hudson-valley-transit-gtfs-915.zip?alt=media",
+        "license": "https://data.ny.gov/download/77gx-ii52/application/pdf"
+    }
+}

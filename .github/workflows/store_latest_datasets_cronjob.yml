@@ -22,6 +22,7 @@ jobs:
         run: |
           import os
           import json
+          import hashlib
           import numpy as np
 
           # OS constants
@@ -41,6 +42,7 @@ jobs:
           INCLUDE = "include"
           DATA = "data"
           BASE = "base"
+          HASH = "hash"
 
           # Report constants
           GET_URLS_REPORT = "get_urls_report.txt"
@@ -82,7 +84,10 @@ jobs:
                   urls_data_string = urls_data_string + json.dumps(
                       file_information, separators=(",", ":")
                   )
-              job_data = {DATA: urls_data_string.replace("}{", "} {")}
+              job_data = {
+                  HASH: hashlib.sha1(urls_data_string.encode("utf-8")).hexdigest(),
+                  DATA: urls_data_string.replace("}{", "} {")
+              }
               urls_data.append(job_data)
           matrix_data = {INCLUDE: urls_data}
 
@@ -108,7 +113,7 @@ jobs:
           path: ./get_urls_report.txt
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
-  download-datasets:
+  store-datasets:
     needs: [ get-urls ]
     runs-on: ubuntu-latest
     strategy:
@@ -122,32 +127,24 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pytest wheel numpy
-          sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
-          sudo apt-get update
-          sudo apt-get install gdal-bin python3-gdal
-          sudo apt-get install libgdal-dev
-          pip install GDAL==$(gdal-config --version) --global-option=build_ext --global-option="-I/usr/include/gdal"
-          sudo apt-get install libspatialindex-dev
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install wheel requests
       - name: Validate and download the datasets
         shell: python
         run: |
           import os
           import json
-          import gtfs_kit
           import requests
+          from zipfile import ZipFile
 
           # OS constants
           ROOT = os.getcwd()
           DATASETS = "datasets"
+          FOLDER = """${{ matrix.hash }}"""
+          DOWNLOAD_REPORTS = "download_reports"
 
           # Jobs constants
           BASE = "base"
           DIRECT_DOWNLOAD = "direct_download"
-
-          # Report constants
-          DOWNLOAD_DATASETS_REPORT = "download_datasets_report.txt"
 
           jobs = """${{ matrix.data }}""".split()
           for job in jobs:
@@ -155,61 +152,38 @@ jobs:
               base = job_json[BASE]
               url = job_json[DIRECT_DOWNLOAD]
 
-              # Make sure that the dataset is a readable GTFS Schedule dataset
-              is_readable = True
+              # Download the dataset
+              zip_path = os.path.join(ROOT, DATASETS, FOLDER, f"{base}.zip")
+              os.makedirs(os.path.dirname(zip_path), exist_ok=True)
+              is_downloadable = True
               try:
-                  gtfs_kit.read_feed(url, dist_units="km")
+                  zip_file_req = requests.get(url, allow_redirects=True)
+                  zip_file_req.raise_for_status()
               except Exception as e:
-                  is_readable = False
+                  is_downloadable = False
                   file_log = (
-                      f"{base}: FAILURE! Exception {e} found while parsing the GTFS dataset with the GTFS kit library. "
-                      f"The dataset must be a valid GTFS zip file or URL.\n"
+                      f"{base}: FAILURE! Exception {e} occurred when downloading URL {url}.\n"
                   )
 
-              # Download the dataset
-              if is_readable:
-                  zip_path = os.path.join(ROOT, DATASETS, f"{base}.zip")
-                  os.makedirs(os.path.dirname(zip_path), exist_ok=True)
-                  is_downloadable = True
+              if is_downloadable:
+                  zip_file = zip_file_req.content
+                  with open(zip_path, "wb") as f:
+                      f.write(zip_file)
+                  # Make sure that the download file is a zip file
                   try:
-                      zip_file_req = requests.get(url, allow_redirects=True)
-                      zip_file_req.raise_for_status()
+                      ZipFile(zip_path, "r")
+                      file_log = (
+                          f"{base}: SUCCESS! A GTFS dataset zip file was downloaded.\n"
+                      )
                   except Exception as e:
-                      is_downloadable = False
+                      os.remove(zip_path)
                       file_log = (
-                          f"{base}: FAILURE! Exception {e} occurred when downloading URL {url}.\n"
+                          f"{base}: FAILURE! Exception {e} occurred when loading the zip file.\n"
                       )
-
-                  if is_downloadable:
-                      zip_file = zip_file_req.content
-                      with open(zip_path, "wb") as f:
-                          f.write(zip_file)
-                      file_log = (
-                          f"{base}: SUCCESS! A readable GTFS dataset was downloaded.\n"
-                      )
-              with open(DOWNLOAD_DATASETS_REPORT, "a") as fp:
+              report_path = os.path.join(ROOT, DOWNLOAD_REPORTS, f"{base}.txt")
+              os.makedirs(os.path.dirname(report_path), exist_ok=True)
+              with open(report_path, "w") as fp:
                   fp.write(file_log)
-      - name: Persist datasets artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: datasets
-          path: datasets
-      - name: Persist Download datasets report artifact
-        if: always()
-        uses: actions/upload-artifact@v2
-        with:
-          name: download_datasets_report
-          path: ./download_datasets_report.txt
-  store-datasets:
-    needs: [ download-datasets ]
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Download datasets artifact
-        uses: actions/download-artifact@master
-        with:
-          name: datasets
-          path: datasets
       - name: Set up and authorize Cloud
         uses: google-github-actions/auth@v0
         with:
@@ -218,9 +192,15 @@ jobs:
         id: upload-datasets
         uses: google-github-actions/upload-cloud-storage@main
         with:
-          path: datasets
+          path: datasets/${{ matrix.hash }}
           destination: mdb-latest
           parent: false
+      - name: Persist Download Reports artifact
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: download_reports
+          path: download_reports
   validate-latest:
     needs: [ get-urls, store-datasets ]
     runs-on: ubuntu-latest
@@ -235,28 +215,24 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pytest wheel numpy
-          sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
-          sudo apt-get update
-          sudo apt-get install gdal-bin python3-gdal
-          sudo apt-get install libgdal-dev
-          pip install GDAL==$(gdal-config --version) --global-option=build_ext --global-option="-I/usr/include/gdal"
-          sudo apt-get install libspatialindex-dev
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install wheel requests
       - name: Validate the latest datasets
         shell: python
         run: |
           import os
           import json
-          import gtfs_kit
           import requests
+          from zipfile import ZipFile
+
+          # OS constants
+          ROOT = os.getcwd()
+          DATASETS = "datasets"
+          FOLDER = """${{ matrix.hash }}"""
+          LATEST_REPORTS = "latest_reports"
 
           # Jobs constants
           BASE = "base"
           LATEST = "latest"
-
-          # Report constants
-          VALIDATE_LATEST_REPORT = "validate_latest_report.txt"
 
           jobs = """${{ matrix.data }}""".split()
           for job in jobs:
@@ -264,22 +240,41 @@ jobs:
               base = job_json[BASE]
               url = job_json[LATEST]
 
-              # Make sure that the uploaded latest dataset is a readable GTFS Schedule dataset
+              # Download the dataset
+              zip_path = os.path.join(ROOT, DATASETS, FOLDER, f"{base}.zip")
+              os.makedirs(os.path.dirname(zip_path), exist_ok=True)
+              is_downloadable = True
               try:
-                  gtfs_kit.read_feed(url, dist_units="km")
-                  file_log = (
-                      f"{base}: SUCCESS! The latest dataset is a readable GTFS dataset.\n"
-                  )
+                  zip_file_req = requests.get(url, allow_redirects=True)
+                  zip_file_req.raise_for_status()
               except Exception as e:
+                  is_downloadable = False
                   file_log = (
-                      f"{base}: FAILURE! Exception {e} found while parsing the GTFS dataset with the GTFS kit library. "
-                      f"The dataset must be a valid GTFS zip file or URL.\n"
+                      f"{base}: FAILURE! Exception {e} occurred when downloading URL {url}.\n"
                   )
-              with open(VALIDATE_LATEST_REPORT, "a") as fp:
+
+              if is_downloadable:
+                  zip_file = zip_file_req.content
+                  with open(zip_path, "wb") as f:
+                      f.write(zip_file)
+                  # Make sure that the download file is a zip file
+                  try:
+                      ZipFile(zip_path, "r")
+                      file_log = (
+                          f"{base}: SUCCESS! A GTFS dataset zip file was downloaded.\n"
+                      )
+                  except Exception as e:
+                      os.remove(zip_path)
+                      file_log = (
+                          f"{base}: FAILURE! Exception {e} occurred when loading the zip file.\n"
+                      )
+              report_path = os.path.join(ROOT, LATEST_REPORTS, f"{base}.txt")
+              os.makedirs(os.path.dirname(report_path), exist_ok=True)
+              with open(report_path, "w") as fp:
                   fp.write(file_log)
-      - name: Persist Validate latest datasets report artifact
+      - name: Persist Latest Reports artifact
         if: always()
         uses: actions/upload-artifact@v2
         with:
-          name: validate_latest_report
-          path: ./validate_latest_report.txt
+          name: latest_reports
+          path: latest_reports

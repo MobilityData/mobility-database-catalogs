@@ -142,13 +142,11 @@ jobs:
           ROOT = os.getcwd()
           DATASETS = "datasets"
           FOLDER = """${{ matrix.hash }}"""
+          DOWNLOAD_REPORTS = "download_reports"
 
           # Jobs constants
           BASE = "base"
           DIRECT_DOWNLOAD = "direct_download"
-
-          # Report constants
-          DOWNLOAD_DATASETS_REPORT = "download_datasets_report.txt"
 
           jobs = """${{ matrix.data }}""".split()
           for job in jobs:
@@ -184,7 +182,7 @@ jobs:
                       file_log = (
                           f"{base}: FAILURE! Exception {e} occurred when loading the zip file.\n"
                       )
-              with open(DOWNLOAD_DATASETS_REPORT, "a") as fp:
+              with open(os.path.join(ROOT, DATASETS, DOWNLOAD_REPORTS, f"{base}.txt"), "w") as fp:
                   fp.write(file_log)
       - name: Set up and authorize Cloud
         uses: google-github-actions/auth@v0
@@ -223,20 +221,18 @@ jobs:
         run: |
           import os
           import json
-          import gtfs_kit
           import requests
+          from zipfile import ZipFile
 
           # OS constants
           ROOT = os.getcwd()
           DATASETS = "datasets"
           FOLDER = """${{ matrix.hash }}"""
+          LATEST_REPORTS = "latest_reports"
 
           # Jobs constants
           BASE = "base"
           LATEST = "latest"
-
-          # Report constants
-          VALIDATE_LATEST_REPORT = "validate_latest_report.txt"
 
           jobs = """${{ matrix.data }}""".split()
           for job in jobs:
@@ -272,7 +268,7 @@ jobs:
                       file_log = (
                           f"{base}: FAILURE! Exception {e} occurred when loading the zip file.\n"
                       )
-              with open(VALIDATE_LATEST_REPORT, "a") as fp:
+              with open(os.path.join(ROOT, DATASETS, LATEST_REPORTS, f"{base}.txt"), "w") as fp:
                   fp.write(file_log)
       - name: Persist Validate latest datasets report artifact
         if: always()

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1098,
+    "data_type": "gtfs",
+    "provider": "Tilausliikenne Ali-Vehmas Ay, Miodex Oy, Lehdon Liikenne Oy, Pekolan Liikenne Oy, Vekka Group Oy, Länsilinjat Oy, Valkeakosken Liikenne Oy, Bus Travel Oy Reissu Ruoti, Mikkolan Liikenne Oy, Taksipalvelu Mutta Oy",
+    "location": {
+        "country_code": "FI",
+        "subdivision_name": "Kanta-Häme",
+        "municipality": "Hämeenlinna",
+        "bounding_box": {
+            "minimum_latitude": 60.734154,
+            "maximum_latitude": 61.2575124059638,
+            "minimum_longitude": 23.80891,
+            "maximum_longitude": 25.6605915079053,
+            "extracted_on": "2022-03-17T23:55:04+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://tvv.fra1.digitaloceanspaces.com/203.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fi-kanta-hame-tilausliikenne-ali-vehmas-ay-gtfs-1098.zip?alt=media"
+    }
+}

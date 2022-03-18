@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1103,
+    "data_type": "gtfs",
+    "provider": "Transport for Greater Manchester Arriva in the North West, Atlantic Travel, Bestway Travel, Belle Vue Coaches, Blackburn Private Hire, The Burnley Bus Company, Bullocks Coaches, Cumfy Bus, D&G Bus, Don Fraser Coaches Ltd, Finch Coaches, First Halifax, Calder Valley & Huddersfield, First in Greater Manchester, Little Gem, Go North West, Diamond Bus North West, Harris Travel, Hattons Transport, Hiltons Travel, High Peak, Huyton Travel, Holmeswood Coaches, Link Network, The Blackburn Bus Company, Maghull Coaches, Metrolink, Olympia Travel UK Ltd, Preston Bus, Nexus Move, Rosso, Tyrers, Stagecoach Merseyside and South Lancashire, Stagecoach in Greater Manchester, Selwyn's Travel, South Pennine C.T., Stotts, Travel Assist, Team Pennine, Viking Coaches, Vision Bus, Warrington's Own Buses",
+    "location": {
+        "country_code": "GB",
+        "municipality": "Greater Manchester",
+        "bounding_box": {
+            "minimum_latitude": 53.255187,
+            "maximum_latitude": 53.835131337,
+            "minimum_longitude": -3.01179,
+            "maximum_longitude": -1.78228,
+            "extracted_on": "2022-03-17T23:56:32+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://odata.tfgm.com/opendata/downloads/TfGMgtfsnew.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-unknown-transport-for-greater-manchester-arriva-in-the-north-west-gtfs-1103.zip?alt=media"
+    }
+}

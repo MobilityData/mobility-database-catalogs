@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1105,
+    "data_type": "gtfs",
+    "provider": "HM Transport Inc. and Robinsons Malls, Froehlich Tours,RRCG Transport, Lingkod Pinoy Bus Liner, Inc., MetroExpress, Tas Trans",
+    "location": {
+        "country_code": "PH",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2022-03-17T23:56:36+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/sakayph/p2p-gtfs/archive/master.zip#p2p-gtfs-master",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ph-unknown-hm-transport-inc-and-robinsons-malls-gtfs-1105.zip?alt=media",
+        "license": "https://github.com/sakayph/p2p-gtfs/blob/master/README.md"
+    }
+}

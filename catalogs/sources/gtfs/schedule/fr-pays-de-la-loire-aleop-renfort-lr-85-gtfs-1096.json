@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1096,
+    "data_type": "gtfs",
+    "provider": "Aleop Renfort LR 85, Aléop en Loire-Atlantique, Aléop en Maine-et-Loire, Aléop en Mayenne, Aléop en Sarthe, Aléop en Vendée, Aléop en Vendée et Loire-Atlantique, Aléop express Régionale, Aléop TER, projet Aléop en Loire-Atlantique, Yeu Continent",
+    "name": "Aggregate of urban and interurban networks in the Pays de la Loire region",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Pays de la Loire",
+        "bounding_box": {
+            "minimum_latitude": 8.417203,
+            "maximum_latitude": 49.17635383,
+            "minimum_longitude": -4.48030601,
+            "maximum_longitude": 2.32051403,
+            "extracted_on": "2022-03-17T23:54:43+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://donnees.paysdelaloire.fr/data/pdl.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-pays-de-la-loire-aleop-renfort-lr-85-gtfs-1096.zip?alt=media",
+        "license": "https://data.paysdelaloire.fr/explore/dataset/234400034_lignes-regulieres-de-transports-regionaux-arrets/information/"
+    }
+}

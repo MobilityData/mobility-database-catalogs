@@ -182,7 +182,9 @@ jobs:
                       file_log = (
                           f"{base}: FAILURE! Exception {e} occurred when loading the zip file.\n"
                       )
-              with open(os.path.join(ROOT, DATASETS, DOWNLOAD_REPORTS, f"{base}.txt"), "w") as fp:
+              report_path = os.path.join(ROOT, DOWNLOAD_REPORTS, f"{base}.txt")
+              os.makedirs(os.path.dirname(report_path), exist_ok=True)
+              with open(report_path, "w") as fp:
                   fp.write(file_log)
       - name: Set up and authorize Cloud
         uses: google-github-actions/auth@v0
@@ -195,12 +197,12 @@ jobs:
           path: datasets/${{ matrix.hash }}
           destination: mdb-latest
           parent: false
-      - name: Persist Download datasets report artifact
+      - name: Persist Download Reports artifact
         if: always()
         uses: actions/upload-artifact@v2
         with:
-          name: download_datasets_report
-          path: ./download_datasets_report.txt
+          name: download_reports
+          path: download_reports
   validate-latest:
     needs: [ get-urls, store-datasets ]
     runs-on: ubuntu-latest
@@ -268,11 +270,13 @@ jobs:
                       file_log = (
                           f"{base}: FAILURE! Exception {e} occurred when loading the zip file.\n"
                       )
-              with open(os.path.join(ROOT, DATASETS, LATEST_REPORTS, f"{base}.txt"), "w") as fp:
+              report_path = os.path.join(ROOT, LATEST_REPORTS, f"{base}.txt")
+              os.makedirs(os.path.dirname(report_path), exist_ok=True)
+              with open(report_path, "w") as fp:
                   fp.write(file_log)
-      - name: Persist Validate latest datasets report artifact
+      - name: Persist Latest Reports artifact
         if: always()
         uses: actions/upload-artifact@v2
         with:
-          name: validate_latest_report
-          path: ./validate_latest_report.txt
+          name: latest_reports
+          path: latest_reports

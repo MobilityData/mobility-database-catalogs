@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 1100,
+    "data_type": "gtfs",
+    "provider": "TUA TRANSDEV, Envibus, Keolis, STCAR",
+    "location": {
+        "country_code": "FR",
+        "bounding_box": {
+            "minimum_latitude": 43.54654,
+            "maximum_latitude": 43.761477,
+            "minimum_longitude": 6.967963,
+            "maximum_longitude": 7.147822,
+            "extracted_on": "2022-03-17T23:55:19+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://nextcloud.agglo-casa.fr/nextcloud/index.php/s/F10PMtqPtFAoeqG/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-unknown-tua-transdev-gtfs-1100.zip?alt=media"
+    }
+}

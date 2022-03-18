@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1108,
+    "data_type": "gtfs",
+    "provider": "Régime Général des Transports Routiers, Ville de Luxembourg - Service Autobus, Chemins de Fer Luxembourgeois, Syndicat des Tramways Intercommunaux dans le Canton d'Esch, Luxtram, Société Nationale des Chemins de Fer Luxembourgeois",
+    "location": {
+        "country_code": "LU",
+        "bounding_box": {
+            "minimum_latitude": 48.947923059605,
+            "maximum_latitude": 50.698256056892,
+            "minimum_longitude": 5.562347627316,
+            "maximum_longitude": 6.990553595105,
+            "extracted_on": "2022-03-17T23:56:48+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.public.lu/en/datasets/r/10d05f8a-40a9-4bf2-bd8d-d7f783145b36",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lu-unknown-regime-general-des-transports-routiers-gtfs-1108.zip?alt=media",
+        "license": "https://data.public.lu/en/datasets/horaires-et-arrets-des-transport-publics-gtfs/"
+    }
+}

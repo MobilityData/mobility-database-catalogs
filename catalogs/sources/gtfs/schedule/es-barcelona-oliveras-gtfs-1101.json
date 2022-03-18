@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1101,
+    "data_type": "gtfs",
+    "provider": "Oliveras, AUTHOSA, Soler i Sauret, Ute Línia 88, SGMT, Transports Ciutat Comtal (TCC), Rosanbus, Transports Urbans i Serveis Generals, Societat Anònima Laboral (TUSGSAL), Mohn, Barcelona City Tour",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Barcelona",
+        "bounding_box": {
+            "minimum_latitude": 41.26251865,
+            "maximum_latitude": 41.49123978,
+            "minimum_longitude": 1.93088592,
+            "maximum_longitude": 2.28936032,
+            "extracted_on": "2022-03-17T23:55:26+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://navitia.opendatasoft.com/explore/dataset/es/files/d0d9c92d0a4d85b3b7502575544f19b1/download/",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-barcelona-oliveras-gtfs-1101.zip?alt=media"
+    }
+}

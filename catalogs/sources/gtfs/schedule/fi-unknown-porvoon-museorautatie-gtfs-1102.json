@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1102,
+    "data_type": "gtfs",
+    "provider": "Porvoon Museorautatie, Pieksämäen Höyryveturiyhdistys ry",
+    "name": "Matkustajajunat",
+    "location": {
+        "country_code": "FI",
+        "bounding_box": {
+            "minimum_latitude": 55.776115,
+            "maximum_latitude": 67.348706,
+            "minimum_longitude": 21.621824,
+            "maximum_longitude": 37.655077,
+            "extracted_on": "2022-03-17T23:55:32+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://rata.digitraffic.fi/api/v1/trains/gtfs-passenger.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fi-unknown-porvoon-museorautatie-gtfs-1102.zip?alt=media"
+    }
+}

@@ -131,4 +131,5 @@ jobs:
         uses: google-github-actions/upload-cloud-storage@main
         with:
           path: sources.csv
-          destination: mdb-csv/sources.csv
+          destination: mdb-csv
+          parent: false

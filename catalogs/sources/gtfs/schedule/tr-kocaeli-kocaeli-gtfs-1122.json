@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1122,
+    "data_type": "gtfs",
+    "provider": "Kocaeli",
+    "location": {
+        "country_code": "TR",
+        "subdivision_name": "Kocaeli",
+        "municipality": "Izmit",
+        "bounding_box": {
+            "minimum_latitude": 40.429585,
+            "maximum_latitude": 41.191651,
+            "minimum_longitude": 29.2075127363205,
+            "maximum_longitude": 30.3461293723107,
+            "extracted_on": "2022-03-22T14:58:38+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://kocaeli.bel.tr/webfiles/userfiles/files/birimler/bilgi-islem-dairesi-baskanligi/kocaeli-gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/tr-kocaeli-kocaeli-gtfs-1122.zip?alt=media"
+    }
+}

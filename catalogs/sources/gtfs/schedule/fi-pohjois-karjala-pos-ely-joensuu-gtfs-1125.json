@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1125,
+    "data_type": "gtfs",
+    "provider": "POS-ELY Joensuu",
+    "location": {
+        "country_code": "FI",
+        "subdivision_name": "Pohjois-Karjala",
+        "municipality": "Joensuu",
+        "bounding_box": {
+            "minimum_latitude": 61.8669,
+            "maximum_latitude": 63.67867124415436,
+            "minimum_longitude": 27.190477,
+            "maximum_longitude": 30.936747,
+            "extracted_on": "2022-03-22T14:58:47+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://tvv.fra1.digitaloceanspaces.com/183.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fi-pohjois-karjala-pos-ely-joensuu-gtfs-1125.zip?alt=media",
+        "license": "https://opendata.waltti.fi/getting-started"
+    }
+}

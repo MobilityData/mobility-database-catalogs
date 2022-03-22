@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1112,
+    "data_type": "gtfs",
+    "provider": "Communauté urbaine du Grand Nancy ",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Grand-Est",
+        "municipality": "Nancy",
+        "bounding_box": {
+            "minimum_latitude": 48.610365,
+            "maximum_latitude": 48.731698,
+            "minimum_longitude": 6.108618,
+            "maximum_longitude": 6.273911,
+            "extracted_on": "2022-03-22T14:56:07+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.data.gouv.fr/fr/datasets/r/e7e78cd7-e186-4923-a272-9713fbc28b45",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-grand-est-communaute-urbaine-du-grand-nancy-gtfs-1112.zip?alt=media"
+    }
+}

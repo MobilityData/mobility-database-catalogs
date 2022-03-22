@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1109,
+    "data_type": "gtfs",
+    "provider": "Roosevelt Island Operating Corporation Tramway (RIOC Tramway)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "New York City",
+        "bounding_box": {
+            "minimum_latitude": 40.753414,
+            "maximum_latitude": 40.768884,
+            "minimum_longitude": -73.964219,
+            "maximum_longitude": -73.942912,
+            "extracted_on": "2022-03-22T14:55:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/7707/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-roosevelt-island-operating-corporation-tramway-rioc-tramway-gtfs-1109.zip?alt=media",
+        "license": "https://github.com/laidig/rioc-gtfs/blob/master/README.md"
+    }
+}

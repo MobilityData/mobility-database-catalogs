@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1126,
+    "data_type": "gtfs",
+    "provider": "Brightline Trains LLC",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Florida",
+        "bounding_box": {
+            "minimum_latitude": 25.7799682617,
+            "maximum_latitude": 26.712015152,
+            "minimum_longitude": -80.195640564,
+            "maximum_longitude": -80.0553588867,
+            "extracted_on": "2022-03-22T15:00:03+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://feed.gobrightline.com/bl_gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-brightline-trains-llc-gtfs-1126.zip?alt=media"
+    }
+}

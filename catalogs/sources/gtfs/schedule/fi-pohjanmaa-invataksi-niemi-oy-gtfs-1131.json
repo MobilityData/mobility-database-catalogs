@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1131,
+    "data_type": "gtfs",
+    "provider": "Invataksi Niemi Oy",
+    "location": {
+        "country_code": "FI",
+        "subdivision_name": "Pohjanmaa",
+        "municipality": "Vaasa",
+        "bounding_box": {
+            "minimum_latitude": 62.907248,
+            "maximum_latitude": 63.30417287,
+            "minimum_longitude": 21.51908047,
+            "maximum_longitude": 22.37872582,
+            "extracted_on": "2022-03-22T15:00:52+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://tvv.fra1.digitaloceanspaces.com/249.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fi-pohjanmaa-invataksi-niemi-oy-gtfs-1131.zip?alt=media"
+    }
+}

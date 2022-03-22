@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 1119,
+    "data_type": "gtfs",
+    "provider": "Horários do Funchal - Transportes Públicos, S.A",
+    "name": "Interurbano, Urbano",
+    "location": {
+        "country_code": "PT",
+        "subdivision_name": "Região Autónoma da Madeira",
+        "municipality": "Funchal",
+        "bounding_box": {
+            "minimum_latitude": 32.634288566692625,
+            "maximum_latitude": 32.83195586714723,
+            "minimum_longitude": -16.975529589342795,
+            "maximum_longitude": -16.7672157287598,
+            "extracted_on": "2022-03-22T14:57:02+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.horariosdofunchal.pt/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-regiao-autonoma-da-madeira-horarios-do-funchal-transportes-publicos-gtfs-1119.zip?alt=media",
+        "license": "http://www.horariosdofunchal.pt/index.php?option=com_content&task=view&id=2022"
+    }
+}

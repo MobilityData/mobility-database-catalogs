@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1118,
+    "data_type": "gtfs",
+    "provider": "Georgia Regional Transportation Authority (GRTA Xpress)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Georgia",
+        "municipality": "Atlanta",
+        "bounding_box": {
+            "minimum_latitude": 33.381316,
+            "maximum_latitude": 34.181736,
+            "minimum_longitude": -84.773527,
+            "maximum_longitude": -83.907051,
+            "extracted_on": "2022-03-22T14:56:52+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://gamobility.info/GTFS/Google_Transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-georgia-georgia-regional-transportation-authority-grta-xpress-gtfs-1118.zip?alt=media",
+        "license": "http://atlantaregional.com/File%20Library/Transportation/Transit/Developers-Agreement-for-Web.pdf"
+    }
+}

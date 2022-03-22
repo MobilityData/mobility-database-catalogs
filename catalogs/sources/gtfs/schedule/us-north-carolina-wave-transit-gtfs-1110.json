@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1110,
+    "data_type": "gtfs",
+    "provider": "Wave Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "North Carolina",
+        "municipality": "Wilmington",
+        "bounding_box": {
+            "minimum_latitude": 34.036147,
+            "maximum_latitude": 34.326726,
+            "minimum_longitude": -78.057393,
+            "maximum_longitude": -77.820191,
+            "extracted_on": "2022-03-22T14:56:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.wavetransit.com/gtransit/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-north-carolina-wave-transit-gtfs-1110.zip?alt=media"
+    }
+}

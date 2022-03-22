@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 1114,
+    "data_type": "gtfs",
+    "provider": "Finferries, Alandstrafiken, Rosita Oy, JS Ferryway Ltd Oy, Kuljetus-Savolainen Oy, Archipelago Lines Oy, Sundqvist Investments Oy Ab, Pörtö Line, Nordic Coast Line, Yksityinen, HSL, Vitharun, Espoon kaupunki, Suomen saaristokuljetus, Norsöline, JT-Line Oy, A&S Ravintolat, Merisataman lauttaliikenne, NJK Blekholmen, Ferra Oy, City Cruisers, Aava Lines Oy, Helsingin Risteilypalvelut/TMSJ Group Oy",
+    "location": {
+        "country_code": "FI",
+        "bounding_box": {
+            "minimum_latitude": 59.7865148075,
+            "maximum_latitude": 66.5802673946,
+            "minimum_longitude": 19.5364379883,
+            "maximum_longitude": 29.5712215851,
+            "extracted_on": "2022-03-22T14:56:18+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://lautta.net/db/gtfs/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fi-unknown-finferries-gtfs-1114.zip?alt=media"
+    }
+}

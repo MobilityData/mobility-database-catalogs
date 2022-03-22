@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1111,
+    "data_type": "gtfs",
+    "provider": "Codiac Transport",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "New Brunswick",
+        "municipality": "Moncton",
+        "bounding_box": {
+            "minimum_latitude": 46.0419242705062,
+            "maximum_latitude": 46.165235,
+            "minimum_longitude": -64.8910137946018,
+            "maximum_longitude": -64.6976506529838,
+            "extracted_on": "2022-03-22T14:56:02+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www7.moncton.ca/opendata/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-new-brunswick-codiac-transport-gtfs-1111.zip?alt=media",
+        "license": "https://catalogue-moncton.opendata.arcgis.com/datasets/transit-files-gtfs"
+    }
+}

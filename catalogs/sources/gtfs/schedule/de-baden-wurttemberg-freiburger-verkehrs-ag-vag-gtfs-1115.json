@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1115,
+    "data_type": "gtfs",
+    "provider": "Freiburger Verkehrs AG (VAG), R.A.S.T. Reisen (RAST), Tuniberg Express, ",
+    "location": {
+        "country_code": "DE",
+        "subdivision_name": "Baden-Württemberg",
+        "municipality": "Freiburg",
+        "bounding_box": {
+            "minimum_latitude": 47.9352229574323,
+            "maximum_latitude": 48.0571089944315,
+            "minimum_longitude": 7.59018024693184,
+            "maximum_longitude": 7.91547817766248,
+            "extracted_on": "2022-03-22T14:56:29+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.vag-freiburg.de/fileadmin/gtfs/VAGFR.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-baden-wurttemberg-freiburger-verkehrs-ag-vag-gtfs-1115.zip?alt=media",
+        "license": "https://www.vag-freiburg.de/service-infos/downloads/gtfs-daten"
+    }
+}

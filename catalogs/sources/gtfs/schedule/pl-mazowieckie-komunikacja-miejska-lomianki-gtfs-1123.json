@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1123,
+    "data_type": "gtfs",
+    "provider": "Komunikacja Miejska Łomianki",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Mazowieckie",
+        "municipality": "Łomianki",
+        "bounding_box": {
+            "minimum_latitude": 52.321374,
+            "maximum_latitude": 52.3676929,
+            "minimum_longitude": 20.81735906974,
+            "maximum_longitude": 20.910699,
+            "extracted_on": "2022-03-22T14:58:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://mkuran.pl/feed/kml/kml-latest.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-mazowieckie-komunikacja-miejska-lomianki-gtfs-1123.zip?alt=media",
+        "license": "https://mkuran.pl/gtfs/"
+    }
+}

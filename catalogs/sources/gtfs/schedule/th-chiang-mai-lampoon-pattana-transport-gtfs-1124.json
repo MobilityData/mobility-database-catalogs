@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1124,
+    "data_type": "gtfs",
+    "provider": "Lampoon Pattana Transport ",
+    "location": {
+        "country_code": "TH",
+        "subdivision_name": "Chiang Mai",
+        "bounding_box": {
+            "minimum_latitude": 17.89,
+            "maximum_latitude": 18.801641,
+            "minimum_longitude": 98.604592,
+            "maximum_longitude": 99.0452953,
+            "extracted_on": "2022-03-22T14:58:44+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/lampoon-pattana-transport/796/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/th-chiang-mai-lampoon-pattana-transport-gtfs-1124.zip?alt=media"
+    }
+}

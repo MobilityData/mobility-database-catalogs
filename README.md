@@ -214,7 +214,7 @@ In order to avoid invalid sources in the Mobility Database Catalogs, any modific
 
 Code licensed under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0).
 
-Individual transit data sources are subject to the terms & conditions of their own respective data provider. If you are a transit provider and there is a data source that should not be included in the repository, please contact emma@mobilitydata.org and we'll remove it as soon as possible.
+All of the Mobility Database catalog's metadata is made available under [Creative Commons CC0 (CC0)](https://creativecommons.org/publicdomain/zero/1.0/legalcode). Individual transit data sources are subject to the terms & conditions of their own respective data provider. If you are a transit provider and there is a data source that should not be included in the repository, please contact emma@mobilitydata.org and we'll remove it as soon as possible.
 
 ## Contributing
 

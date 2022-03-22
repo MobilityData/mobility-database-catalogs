@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 625,
     "data_type": "gtfs",
-    "provider": "Gulf Coast Center",
+    "provider": "Connect Transit",
     "location": {
         "country_code": "US",
         "subdivision_name": "Texas",
@@ -10,7 +10,7 @@
             "maximum_latitude": 29.5135344528876,
             "minimum_longitude": -95.4648053214995,
             "maximum_longitude": -94.89328642,
-            "extracted_on": "2022-03-16T20:11:17+00:00"
+            "extracted_on": "2022-03-22T17:15:42+00:00"
         }
     },
     "urls": {

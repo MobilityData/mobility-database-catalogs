@@ -2,6 +2,7 @@
     "mdb_source_id": 510,
     "data_type": "gtfs",
     "provider": "MTA New York City Transit (MTA)",
+    "name": "NYC Bus Company",
     "location": {
         "country_code": "US",
         "subdivision_name": "New York",
@@ -11,7 +12,7 @@
             "maximum_latitude": 40.933637,
             "minimum_longitude": -74.016284,
             "maximum_longitude": -73.701761,
-            "extracted_on": "2022-03-16T17:25:54+00:00"
+            "extracted_on": "2022-03-22T17:14:32+00:00"
         }
     },
     "urls": {

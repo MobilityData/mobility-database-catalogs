@@ -2,7 +2,7 @@
     "mdb_source_id": 516,
     "data_type": "gtfs",
     "provider": "MTA New York City Transit (MTA)",
-    "name": "Subway",
+    "name": "NYC Subway",
     "location": {
         "country_code": "US",
         "subdivision_name": "New York",
@@ -12,7 +12,7 @@
             "maximum_latitude": 40.903125,
             "minimum_longitude": -74.251961,
             "maximum_longitude": -73.755405,
-            "extracted_on": "2022-03-16T17:26:43+00:00"
+            "extracted_on": "2022-03-22T17:15:03+00:00"
         }
     },
     "urls": {

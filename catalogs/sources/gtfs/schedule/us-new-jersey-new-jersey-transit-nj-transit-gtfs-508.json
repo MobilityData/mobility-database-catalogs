@@ -2,6 +2,7 @@
     "mdb_source_id": 508,
     "data_type": "gtfs",
     "provider": "New Jersey Transit (NJ Transit)",
+    "name": "Bus",
     "location": {
         "country_code": "US",
         "subdivision_name": "New Jersey",
@@ -10,7 +11,7 @@
             "maximum_latitude": 41.254809,
             "minimum_longitude": -75.520963,
             "maximum_longitude": -73.939143,
-            "extracted_on": "2022-03-16T17:25:33+00:00"
+            "extracted_on": "2022-03-22T17:16:06+00:00"
         }
     },
     "urls": {

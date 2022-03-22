@@ -2,6 +2,7 @@
     "mdb_source_id": 509,
     "data_type": "gtfs",
     "provider": "New Jersey Transit (NJ Transit)",
+    "name": "Rail",
     "location": {
         "country_code": "US",
         "subdivision_name": "New Jersey",
@@ -10,7 +11,7 @@
             "maximum_latitude": 41.471784,
             "minimum_longitude": -75.182327,
             "maximum_longitude": -73.988331,
-            "extracted_on": "2022-03-16T17:25:40+00:00"
+            "extracted_on": "2022-03-22T17:16:11+00:00"
         }
     },
     "urls": {

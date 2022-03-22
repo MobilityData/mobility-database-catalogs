@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 645,
     "data_type": "gtfs",
-    "provider": "Cape Code Regional Transportation Authority (Cape Cod RTA)",
+    "provider": "Cape Cod Regional Transportation Authority (Cape Cod RTA)",
     "location": {
         "country_code": "US",
         "subdivision_name": "Massachusetts",
@@ -11,7 +11,7 @@
             "maximum_latitude": 42.0793734132862,
             "minimum_longitude": -70.669797,
             "maximum_longitude": -69.961949,
-            "extracted_on": "2022-03-16T20:12:09+00:00"
+            "extracted_on": "2022-03-22T17:15:52+00:00"
         }
     },
     "urls": {

@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 514,
     "data_type": "gtfs",
-    "provider": "MTA New York City Transit (MTA) ",
+    "provider": "MTA New York City Transit (MTA)",
     "name": "Staten Island Bus",
     "location": {
         "country_code": "US",
@@ -12,7 +12,7 @@
             "maximum_latitude": 40.766314,
             "minimum_longitude": -74.252016,
             "maximum_longitude": -73.968693,
-            "extracted_on": "2022-03-16T17:26:40+00:00"
+            "extracted_on": "2022-03-22T17:15:00+00:00"
         }
     },
     "urls": {

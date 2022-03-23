@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 1212,
+    "data_type": "gtfs",
+    "provider": "Société Régionale Wallonne du Transport",
+    "location": {
+        "country_code": "BE",
+        "bounding_box": {
+            "minimum_latitude": 49.506805,
+            "maximum_latitude": 50.883023,
+            "minimum_longitude": 2.87512,
+            "maximum_longitude": 6.384263,
+            "extracted_on": "2022-03-23T23:03:12+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://opendata.tec-wl.be/Current%20GTFS/TEC-GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/be-unknown-societe-regionale-wallonne-du-transport-gtfs-1212.zip?alt=media"
+    }
+}

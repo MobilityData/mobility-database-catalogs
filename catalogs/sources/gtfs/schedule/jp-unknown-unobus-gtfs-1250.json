@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1250,
+    "data_type": "gtfs",
+    "provider": "Unobus",
+    "location": {
+        "country_code": "JP",
+        "bounding_box": {
+            "minimum_latitude": 34.660463,
+            "maximum_latitude": 35.012687,
+            "minimum_longitude": 133.918614140014,
+            "maximum_longitude": 134.184238,
+            "extracted_on": "2022-03-23T23:19:43+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www3.unobus.co.jp/opendata/GTFS-JP.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/jp-unknown-unobus-gtfs-1250.zip?alt=media",
+        "license": "http://www3.unobus.co.jp/opendata/"
+    }
+}

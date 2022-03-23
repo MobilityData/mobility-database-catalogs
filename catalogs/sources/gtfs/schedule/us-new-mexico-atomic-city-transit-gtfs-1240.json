@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1240,
+    "data_type": "gtfs",
+    "provider": "Atomic City Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New Mexico",
+        "municipality": "Los Alamos ",
+        "bounding_box": {
+            "minimum_latitude": 35.772873,
+            "maximum_latitude": 35.905342,
+            "minimum_longitude": -106.33245,
+            "maximum_longitude": -106.18932,
+            "extracted_on": "2022-03-23T23:18:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/atomic-city-transit/1130/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-mexico-atomic-city-transit-gtfs-1240.zip?alt=media"
+    }
+}

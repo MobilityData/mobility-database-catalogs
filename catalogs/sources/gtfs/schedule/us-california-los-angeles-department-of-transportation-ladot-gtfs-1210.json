@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 1210,
+    "data_type": "gtfs",
+    "provider": "Los Angeles Department of Transportation (LADOT)",
+    "name": "Bus",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Los Angeles",
+        "bounding_box": {
+            "minimum_latitude": 33.721646,
+            "maximum_latitude": 34.323144444,
+            "minimum_longitude": -118.882869444444,
+            "maximum_longitude": -118.131797222222,
+            "extracted_on": "2022-03-23T23:02:50+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/ladot-transit-services/303/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-los-angeles-department-of-transportation-ladot-gtfs-1210.zip?alt=media",
+        "license": "https://www.ladottransit.com/dla.html"
+    }
+}

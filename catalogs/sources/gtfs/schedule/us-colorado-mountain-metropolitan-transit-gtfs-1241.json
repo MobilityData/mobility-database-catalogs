@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1241,
+    "data_type": "gtfs",
+    "provider": "Mountain Metropolitan Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Colorado Springs",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2022-03-23T23:18:47+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/mountain-metropolitan-transit/374/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-mountain-metropolitan-transit-gtfs-1241.zip?alt=media"
+    }
+}

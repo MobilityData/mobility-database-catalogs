@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1225,
+    "data_type": "gtfs",
+    "provider": "Karlsruher Verkehrsverbundes",
+    "location": {
+        "country_code": "DE",
+        "municipality": "Karlsruhe",
+        "bounding_box": {
+            "minimum_latitude": 48.4444287068652,
+            "maximum_latitude": 49.3522641266005,
+            "minimum_longitude": 7.92748865301283,
+            "maximum_longitude": 9.52687613454039,
+            "extracted_on": "2022-03-23T23:13:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/karlsruher-verkehrsverbundes/896/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-unknown-karlsruher-verkehrsverbundes-gtfs-1225.zip?alt=media",
+        "license": "https://www.kvv.de/fahrplan/fahrplaene/open-data.html"
+    }
+}

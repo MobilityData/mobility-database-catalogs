@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1248,
+    "data_type": "gtfs",
+    "provider": "Birmingham Jefferson County Transit Authority",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Alabama",
+        "municipality": "Birmingham",
+        "bounding_box": {
+            "minimum_latitude": 33.33396,
+            "maximum_latitude": 33.66285,
+            "minimum_longitude": -87.00786,
+            "maximum_longitude": -86.67696,
+            "extracted_on": "2022-03-23T23:19:32+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/birmingham-jefferson-county-transit-authority/683/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-alabama-birmingham-jefferson-county-transit-authority-gtfs-1248.zip?alt=media"
+    }
+}

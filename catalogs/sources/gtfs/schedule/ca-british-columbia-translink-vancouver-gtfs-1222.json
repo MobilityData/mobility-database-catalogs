@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1222,
+    "data_type": "gtfs",
+    "provider": "TransLink Vancouver",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "British Columbia",
+        "municipality": "Vancouver",
+        "bounding_box": {
+            "minimum_latitude": 49.004383,
+            "maximum_latitude": 49.474111,
+            "minimum_longitude": -123.423063,
+            "maximum_longitude": -122.30486,
+            "extracted_on": "2022-03-23T23:11:55+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/translink-vancouver/29/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-translink-vancouver-gtfs-1222.zip?alt=media",
+        "license": "https://developer.translink.ca/ServicesGtfs/GtfsData"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1234,
+    "data_type": "gtfs",
+    "provider": "Pioneer Valley Transit Authority (PVTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Massachusetts",
+        "bounding_box": {
+            "minimum_latitude": 42.018114,
+            "maximum_latitude": 42.477045,
+            "minimum_longitude": -72.796658,
+            "maximum_longitude": -72.400816,
+            "extracted_on": "2022-03-23T23:17:52+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/massdot/104/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-pioneer-valley-transit-authority-pvta-gtfs-1234.zip?alt=media",
+        "license": "https://www.mass.gov/doc/developers-license-agreement-11132009/download"
+    }
+}

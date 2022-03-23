@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1208,
+    "data_type": "gtfs",
+    "provider": "Green Bus Thailand",
+    "location": {
+        "country_code": "TH",
+        "subdivision_name": "Chiang Mai ",
+        "bounding_box": {
+            "minimum_latitude": 7.91751,
+            "maximum_latitude": 20.404787,
+            "minimum_longitude": 98.298438,
+            "maximum_longitude": 103.638578,
+            "extracted_on": "2022-03-23T23:02:32+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/greenbus-thailand/784/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/th-chiang-mai-green-bus-thailand-gtfs-1208.zip?alt=media"
+    }
+}

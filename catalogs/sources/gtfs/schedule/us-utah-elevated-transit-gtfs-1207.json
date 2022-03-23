@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1207,
+    "data_type": "gtfs",
+    "provider": "Elevated Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Utah",
+        "bounding_box": {
+            "minimum_latitude": 37.623984,
+            "maximum_latitude": 40.78426,
+            "minimum_longitude": -112.102336,
+            "maximum_longitude": -109.343134,
+            "extracted_on": "2022-03-23T23:02:23+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/elevated-transit/609/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-utah-elevated-transit-gtfs-1207.zip?alt=media"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1242,
+    "data_type": "gtfs",
+    "provider": "VIA Metropolitan Transit (VIA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Texas",
+        "municipality": "San Antonio",
+        "bounding_box": {
+            "minimum_latitude": 29.294069,
+            "maximum_latitude": 29.650497,
+            "minimum_longitude": -98.711,
+            "maximum_longitude": -98.306921,
+            "extracted_on": "2022-03-23T23:18:56+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/via-metropolitan-transit/62/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-texas-via-metropolitan-transit-via-gtfs-1242.zip?alt=media",
+        "license": "https://www.viainfo.net/developers-resources/"
+    }
+}

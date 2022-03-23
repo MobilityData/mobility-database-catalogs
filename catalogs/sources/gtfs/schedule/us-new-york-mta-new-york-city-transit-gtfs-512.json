@@ -2,6 +2,7 @@
     "mdb_source_id": 512,
     "data_type": "gtfs",
     "provider": "MTA New York City Transit",
+    "name": "Brooklyn Bus",
     "location": {
         "country_code": "US",
         "subdivision_name": "New York",
@@ -11,7 +12,7 @@
             "maximum_latitude": 40.762524,
             "minimum_longitude": -74.040876,
             "maximum_longitude": -73.779519,
-            "extracted_on": "2022-03-16T17:26:21+00:00"
+            "extracted_on": "2022-03-22T17:14:25+00:00"
         }
     },
     "urls": {

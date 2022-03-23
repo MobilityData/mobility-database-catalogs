@@ -11,11 +11,11 @@
             "maximum_latitude": 65.37246111597628,
             "minimum_longitude": 24.5629,
             "maximum_longitude": 26.42116229383981,
-            "extracted_on": "2022-03-17T15:28:52+00:00"
+            "extracted_on": "2022-03-22T17:15:37+00:00"
         }
     },
     "urls": {
-        "direct_download": "http://www.transitdata.fi/oulu/google_transit.zip",
+        "direct_download": "https://tvv.fra1.digitaloceanspaces.com/229.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fi-pohjois-pohjanmaa-oulun-joukkoliikenne-gtfs-869.zip?alt=media"
     }
 }

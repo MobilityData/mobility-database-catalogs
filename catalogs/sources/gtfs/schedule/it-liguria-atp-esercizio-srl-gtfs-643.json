@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 643,
+    "data_type": "gtfs",
+    "provider": "ATP Esercizio Srl",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Liguria",
+        "municipality": "Genoa",
+        "bounding_box": {
+            "minimum_latitude": 44.1707573,
+            "maximum_latitude": 44.6251068,
+            "minimum_longitude": 8.56546783,
+            "maximum_longitude": 9.61942291,
+            "extracted_on": "2022-03-23T14:43:20+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/atp-esercizio-srl/1203/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-liguria-atp-esercizio-srl-gtfs-643.zip?alt=media"
+    }
+}

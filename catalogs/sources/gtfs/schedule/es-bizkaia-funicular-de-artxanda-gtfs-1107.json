@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1107,
+    "data_type": "gtfs",
+    "provider": "Funicular de Artxanda",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Bizkaia",
+        "municipality": "Bilbao",
+        "bounding_box": {
+            "minimum_latitude": 43.268724884413,
+            "maximum_latitude": 43.27406768582,
+            "minimum_longitude": -2.9260016260155,
+            "maximum_longitude": -2.9201891660385,
+            "extracted_on": "2022-03-23T14:43:09+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/artxanda-funicular/657/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-bizkaia-funicular-de-artxanda-gtfs-1107.zip?alt=media"
+    }
+}

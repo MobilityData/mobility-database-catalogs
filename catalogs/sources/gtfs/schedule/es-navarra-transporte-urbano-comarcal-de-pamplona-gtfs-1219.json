@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1219,
+    "data_type": "gtfs",
+    "provider": "Transporte Urbano Comarcal de Pamplona",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Navarra, Comunidad Foral de",
+        "municipality": "Pamplona",
+        "bounding_box": {
+            "minimum_latitude": 42.7338864109485,
+            "maximum_latitude": 42.8584154007876,
+            "minimum_longitude": -1.70393984355798,
+            "maximum_longitude": -1.57345744089785,
+            "extracted_on": "2022-03-23T23:05:39+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/transporte-urbano-comarcal-de-pamplona/499/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-navarra-transporte-urbano-comarcal-de-pamplona-gtfs-1219.zip?alt=media"
+    }
+}

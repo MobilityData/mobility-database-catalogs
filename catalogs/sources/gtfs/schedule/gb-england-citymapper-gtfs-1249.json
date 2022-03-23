@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 1249,
+    "data_type": "gtfs",
+    "provider": "Citymapper",
+    "name": "Smartbus",
+    "location": {
+        "country_code": "GB",
+        "subdivision_name": "England",
+        "municipality": "London",
+        "bounding_box": {
+            "minimum_latitude": 51.515629,
+            "maximum_latitude": 51.550418,
+            "minimum_longitude": -0.104632,
+            "maximum_longitude": -0.072139,
+            "extracted_on": "2022-03-23T23:19:34+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/citymapper/894/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-england-citymapper-gtfs-1249.zip?alt=media",
+        "license": "https://opendatacommons.org/licenses/pddl/1.0/"
+    }
+}

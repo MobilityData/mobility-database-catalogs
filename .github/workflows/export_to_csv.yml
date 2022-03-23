@@ -3,6 +3,8 @@ name: Export catalogs to CSV
 on:
   push:
     branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
   export-to-csv:
@@ -99,8 +101,11 @@ jobs:
             path = CSV_PATH
             columns = CSV_COLUMNS
             catalog = pd.json_normalize(catalog)
-            if columns is not None:
-                catalog = catalog[columns]
+            tmp = pd.DataFrame()
+            for column in columns:
+                if column in catalog:
+                    tmp[column] = catalog[column]
+            catalog = tmp
             if STATIC_REFERENCE in catalog:
                 catalog[STATIC_REFERENCE] = catalog[STATIC_REFERENCE].astype('Int64')
             catalog.to_csv(path, sep=",", index=False)

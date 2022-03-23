@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1220,
+    "data_type": "gtfs",
+    "provider": "Colectivos Buenos Aires",
+    "location": {
+        "country_code": "AR",
+        "subdivision_name": "Buenos Aires",
+        "bounding_box": {
+            "minimum_latitude": -35.182685,
+            "maximum_latitude": -34.042402,
+            "minimum_longitude": -60.97663,
+            "maximum_longitude": -57.730345,
+            "extracted_on": "2022-03-23T22:12:11+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/colectivos-buenos-aires/1037/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ar-buenos-aires-colectivos-buenos-aires-gtfs-1220.zip?alt=media",
+        "license": "https://data.buenosaires.gob.ar/dataset/colectivos-gtfs"
+    }
+}

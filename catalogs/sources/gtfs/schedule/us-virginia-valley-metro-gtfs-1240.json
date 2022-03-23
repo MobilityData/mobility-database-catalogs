@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1240,
+    "data_type": "gtfs",
+    "provider": "Valley Metro",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Virginia",
+        "municipality": "Roanoke",
+        "bounding_box": {
+            "minimum_latitude": 36.9201167889456,
+            "maximum_latitude": 37.818521406721,
+            "minimum_longitude": -80.420858,
+            "maximum_longitude": -79.1570869088173,
+            "extracted_on": "2022-03-23T22:28:51+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/roanoke-va-us/roanoke-va-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-valley-metro-gtfs-1240.zip?alt=media"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1233,
+    "data_type": "gtfs",
+    "provider": "BayBus",
+    "location": {
+        "country_code": "New Zealand",
+        "subdivision_name": "Bay of Plenty",
+        "bounding_box": {
+            "minimum_latitude": -38.6393150613996,
+            "maximum_latitude": -37.3898234,
+            "minimum_longitude": 175.839138805048,
+            "maximum_longitude": 178.14268788955,
+            "extracted_on": "2022-03-23T22:27:39+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/bay-of-plenty-regional-council-bus-service/1222/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/new-zealand-bay-of-plenty-baybus-gtfs-1233.zip?alt=media"
+    }
+}

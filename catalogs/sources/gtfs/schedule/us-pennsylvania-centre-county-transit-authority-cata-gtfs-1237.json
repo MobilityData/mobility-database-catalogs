@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 1237,
+    "data_type": "gtfs",
+    "provider": "Centre County Transit Authority (CATA)",
+    "name": "CATABUS",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Pennsylvania",
+        "municipality": "State College",
+        "bounding_box": {
+            "minimum_latitude": 40.761013,
+            "maximum_latitude": 40.84053,
+            "minimum_longitude": -77.94164999999998,
+            "maximum_longitude": -77.75423999999998,
+            "extracted_on": "2022-03-23T22:28:15+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/catabus/536/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-pennsylvania-centre-county-transit-authority-cata-gtfs-1237.zip?alt=media",
+        "license": "https://catabus.com/developer-tools/"
+    }
+}

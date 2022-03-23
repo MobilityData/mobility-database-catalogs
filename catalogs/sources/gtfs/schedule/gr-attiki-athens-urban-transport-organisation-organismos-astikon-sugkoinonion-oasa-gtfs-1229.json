@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1229,
+    "data_type": "gtfs",
+    "provider": "Αthens Urban Transport Organisation (Οργανισμός Αστικών Συγκοινωνιών ΟΑΣΑ)",
+    "location": {
+        "country_code": "GR",
+        "subdivision_name": "Attiki",
+        "municipality": "Athens",
+        "bounding_box": {
+            "minimum_latitude": 37.7194145701699,
+            "maximum_latitude": 38.1550089904083,
+            "minimum_longitude": 23.417466558685,
+            "maximum_longitude": 24.0203030966813,
+            "extracted_on": "2022-03-23T22:25:45+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/athens-urban-transport-organisation/580/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gr-attiki-athens-urban-transport-organisation-organismos-astikon-sugkoinonion-oasa-gtfs-1229.zip?alt=media"
+    }
+}

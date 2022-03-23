@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1248,
+    "data_type": "gtfs",
+    "provider": "Cities Area Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "North Dakota",
+        "municipality": "Grand Forks",
+        "bounding_box": {
+            "minimum_latitude": 47.874921,
+            "maximum_latitude": 47.94908,
+            "minimum_longitude": -97.109559,
+            "maximum_longitude": -97.010581,
+            "extracted_on": "2022-03-23T22:30:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/cities-area-transit/834/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-north-dakota-cities-area-transit-gtfs-1248.zip?alt=media",
+        "license": "http://www.grandforksgov.com/government/city-departments/cities-area-transit/data"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 1215,
+    "data_type": "gtfs",
+    "provider": "TransLink Brisbane ",
+    "name": "Bundaberg",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "Queensland",
+        "municipality": "Bundaberg",
+        "bounding_box": {
+            "minimum_latitude": -24.92194,
+            "maximum_latitude": -24.695965,
+            "minimum_longitude": 152.239464,
+            "maximum_longitude": 152.492233,
+            "extracted_on": "2022-03-23T22:07:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/translink/6/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-translink-brisbane-gtfs-1215.zip?alt=media",
+        "license": "https://data.qld.gov.au/dataset/general-transit-feed-specification-gtfs-qconnect/resource/699184c3-8c0e-44db-8a83-7e23709aefbe"
+    }
+}

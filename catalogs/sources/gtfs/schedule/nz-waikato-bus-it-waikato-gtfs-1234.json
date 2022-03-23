@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1234,
+    "data_type": "gtfs",
+    "provider": "Bus It Waikato ",
+    "location": {
+        "country_code": "NZ",
+        "subdivision_name": "Waikato",
+        "bounding_box": {
+            "minimum_latitude": -38.9897987817514,
+            "maximum_latitude": -36.84853,
+            "minimum_longitude": 174.71168419116,
+            "maximum_longitude": 176.1052278,
+            "extracted_on": "2022-03-23T22:27:44+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/bus-it-waikato/1226/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/nz-waikato-bus-it-waikato-gtfs-1234.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1227,
+    "data_type": "gtfs",
+    "provider": "Linja-Karjala Oy, Savo-Karjalan Linja Oy",
+    "location": {
+        "country_code": "FI",
+        "subdivision_name": "Pohjois-Karjala",
+        "municipality": "Joensuu",
+        "bounding_box": {
+            "minimum_latitude": 62.092129,
+            "maximum_latitude": 63.325670884853885,
+            "minimum_longitude": 28.924184940398234,
+            "maximum_longitude": 30.936747,
+            "extracted_on": "2022-03-23T22:17:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://tvv.fra1.digitaloceanspaces.com/207.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fi-pohjois-karjala-linja-karjala-oy-gtfs-1227.zip?alt=media"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1239,
+    "data_type": "gtfs",
+    "provider": "Connect Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Illinois",
+        "municipality": "Bloomington-Normal",
+        "bounding_box": {
+            "minimum_latitude": 40.44846874,
+            "maximum_latitude": 40.53679758,
+            "minimum_longitude": -89.039767,
+            "maximum_longitude": -88.91076565,
+            "extracted_on": "2022-03-23T22:28:49+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/connect-transit/668/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-illinois-connect-transit-gtfs-1239.zip?alt=media",
+        "license": "https://www.connect-transit.com/routes/general_transit_feed_specification.asp"
+    }
+}

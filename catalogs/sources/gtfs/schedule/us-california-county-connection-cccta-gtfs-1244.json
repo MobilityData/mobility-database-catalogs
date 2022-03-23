@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1244,
+    "data_type": "gtfs",
+    "provider": "County Connection (CCCTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Concord",
+        "bounding_box": {
+            "minimum_latitude": 37.659113,
+            "maximum_latitude": 38.019406,
+            "minimum_longitude": -122.191794,
+            "maximum_longitude": -121.778125,
+            "extracted_on": "2022-03-23T22:29:20+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/county-connection/222/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-county-connection-cccta-gtfs-1244.zip?alt=media"
+    }
+}

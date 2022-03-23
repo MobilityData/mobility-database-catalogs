@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1232,
+    "data_type": "gtfs",
+    "provider": "Agenzia Mobilità Ambiente Territorio",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Lombardia",
+        "municipality": "Milan",
+        "bounding_box": {
+            "minimum_latitude": 45.3393649441656,
+            "maximum_latitude": 45.6311473404826,
+            "minimum_longitude": 8.99601914115518,
+            "maximum_longitude": 9.43662513013151,
+            "extracted_on": "2022-03-23T22:27:34+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/agenzia-mobilita-ambiente-territorio/341/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-lombardia-agenzia-mobilita-ambiente-territorio-gtfs-1232.zip?alt=media",
+        "license": "http://www.amat-mi.it/it/mobilita/dati-strumenti-tecnologie/dati-gtfs/"
+    }
+}

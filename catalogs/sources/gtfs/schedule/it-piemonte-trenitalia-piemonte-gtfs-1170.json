@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1170,
+    "data_type": "gtfs",
+    "provider": "Trenitalia Piemonte",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Piemonte",
+        "bounding_box": {
+            "minimum_latitude": 43.789494,
+            "maximum_latitude": 46.115411,
+            "minimum_longitude": 6.657883,
+            "maximum_longitude": 9.238299,
+            "extracted_on": "2022-03-23T18:41:57+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/trenitalia-dtr-piemonte/931/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-piemonte-trenitalia-piemonte-gtfs-1170.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1191,
+    "data_type": "gtfs",
+    "provider": "dBus",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Gipuzkoa ",
+        "municipality": "San Sebastián ",
+        "bounding_box": {
+            "minimum_latitude": 43.2777689602104,
+            "maximum_latitude": 43.32593880362474,
+            "minimum_longitude": -2.0455710983006994,
+            "maximum_longitude": -1.9187707349818064,
+            "extracted_on": "2022-03-23T18:51:47+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/compania-del-tranvia-de-san-sebastian/702/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-gipuzkoa-dbus-gtfs-1191.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1164,
+    "data_type": "gtfs",
+    "provider": "Maleny / Landsborough",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "Queensland",
+        "municipality": "Maleny",
+        "bounding_box": {
+            "minimum_latitude": -26.862165,
+            "maximum_latitude": -26.61763,
+            "minimum_longitude": 152.850518,
+            "maximum_longitude": 152.966059,
+            "extracted_on": "2022-03-23T18:39:02+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/translink/14/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-maleny-landsborough-gtfs-1164.zip?alt=media"
+    }
+}

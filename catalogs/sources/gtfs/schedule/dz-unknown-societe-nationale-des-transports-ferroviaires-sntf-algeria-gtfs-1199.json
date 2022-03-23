@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 1199,
+    "data_type": "gtfs",
+    "provider": "Société Nationale des Transports Ferroviaires (SNTF Algeria)",
+    "location": {
+        "country_code": "DZ",
+        "bounding_box": {
+            "minimum_latitude": 35.538055,
+            "maximum_latitude": 36.895996,
+            "minimum_longitude": -0.638956,
+            "maximum_longitude": 7.758861,
+            "extracted_on": "2022-03-23T18:52:58+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/societe-nationale-des-transports-ferroviaires/1084/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/dz-unknown-societe-nationale-des-transports-ferroviaires-sntf-algeria-gtfs-1199.zip?alt=media"
+    }
+}

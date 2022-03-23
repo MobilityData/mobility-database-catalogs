@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1150,
+    "data_type": "gtfs",
+    "provider": "Komunikacja Miejska Płock",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Mazowieckie",
+        "municipality": "Plock",
+        "bounding_box": {
+            "minimum_latitude": 52.40001,
+            "maximum_latitude": 52.7391306798103,
+            "minimum_longitude": 19.4006725,
+            "maximum_longitude": 20.1042322,
+            "extracted_on": "2022-03-23T18:33:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/przyjazdy-pl-plock/1211/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-mazowieckie-komunikacja-miejska-plock-gtfs-1150.zip?alt=media",
+        "license": "https://gtfs.pl/gtfs/plock"
+    }
+}

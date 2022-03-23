@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1143,
+    "data_type": "gtfs",
+    "provider": "I-RIDE Trolley (I-RIDE)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Florida",
+        "municipality": "Orlando",
+        "bounding_box": {
+            "minimum_latitude": 28.386124,
+            "maximum_latitude": 28.485502523023698,
+            "minimum_longitude": -81.489451,
+            "maximum_longitude": -81.450202,
+            "extracted_on": "2022-03-23T18:32:37+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/i-ride-trolley/909/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-i-ride-trolley-i-ride-gtfs-1143.zip?alt=media"
+    }
+}

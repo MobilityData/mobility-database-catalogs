@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1175,
+    "data_type": "gtfs",
+    "provider": "ZDZiT Olsztyn",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Warmińsko-mazurskie",
+        "municipality": "Olsztyn",
+        "bounding_box": {
+            "minimum_latitude": 53.58403497,
+            "maximum_latitude": 53.987067,
+            "minimum_longitude": 20.28459222,
+            "maximum_longitude": 20.746555,
+            "extracted_on": "2022-03-23T18:44:36+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/zdzit-olsztyn/993/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-warminsko-mazurskie-zdzit-olsztyn-gtfs-1175.zip?alt=media",
+        "license": "https://www.zdzit.olsztyn.eu/pl/transport-publiczny/dane-rozkladowe"
+    }
+}

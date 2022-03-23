@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1160,
+    "data_type": "gtfs",
+    "provider": "The JO",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Kansas",
+        "municipality": "Johnson County",
+        "bounding_box": {
+            "minimum_latitude": 38.9007720170609,
+            "maximum_latitude": 38.9559226310118,
+            "minimum_longitude": -95.2634120264484,
+            "maximum_longitude": -94.7252041850774,
+            "extracted_on": "2022-03-23T18:34:12+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/the-jo/632/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-kansas-the-jo-gtfs-1160.zip?alt=media"
+    }
+}

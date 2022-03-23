@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1187,
+    "data_type": "gtfs",
+    "provider": "Metra",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Illinois",
+        "municipality": "Chicago",
+        "bounding_box": {
+            "minimum_latitude": 41.4183333,
+            "maximum_latitude": 42.5858333,
+            "minimum_longitude": -88.6175,
+            "maximum_longitude": -87.5477778,
+            "extracted_on": "2022-03-23T18:50:28+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/metra/169/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-illinois-metra-gtfs-1187.zip?alt=media",
+        "license": "https://metrarail.com/developers"
+    }
+}

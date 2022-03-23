@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1149,
+    "data_type": "gtfs",
+    "provider": "Shimada Local Voluntary Operation Bus",
+    "location": {
+        "country_code": "JP",
+        "subdivision_name": "Shizuoka",
+        "municipality": "Shimada",
+        "bounding_box": {
+            "minimum_latitude": 34.68244,
+            "maximum_latitude": 35.0380483,
+            "minimum_longitude": 138.0763843,
+            "maximum_longitude": 138.237775,
+            "extracted_on": "2022-03-23T18:32:56+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/opentransit/588/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/jp-shizuoka-shimada-local-voluntary-operation-bus-gtfs-1149.zip?alt=media"
+    }
+}

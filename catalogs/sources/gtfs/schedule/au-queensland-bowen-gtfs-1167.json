@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1167,
+    "data_type": "gtfs",
+    "provider": "Bowen",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "Queensland",
+        "municipality": "Bowen",
+        "bounding_box": {
+            "minimum_latitude": -20.018563,
+            "maximum_latitude": -19.970855,
+            "minimum_longitude": 148.225334,
+            "maximum_longitude": 148.265266,
+            "extracted_on": "2022-03-23T18:39:16+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/translink/5/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-bowen-gtfs-1167.zip?alt=media"
+    }
+}

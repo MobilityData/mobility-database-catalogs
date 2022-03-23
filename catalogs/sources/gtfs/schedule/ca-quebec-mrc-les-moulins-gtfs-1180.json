@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1180,
+    "data_type": "gtfs",
+    "provider": "MRC les Moulins",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Québec",
+        "bounding_box": {
+            "minimum_latitude": 45.5542,
+            "maximum_latitude": 45.80231,
+            "minimum_longitude": -73.842682,
+            "maximum_longitude": -73.498242,
+            "extracted_on": "2022-03-23T18:45:24+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/agence-metropolitaine-de-transport/142/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-mrc-les-moulins-gtfs-1180.zip?alt=media"
+    }
+}

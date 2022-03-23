@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1159,
+    "data_type": "gtfs",
+    "provider": "STAR",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Île-de-France",
+        "municipality": "Paris",
+        "bounding_box": {
+            "minimum_latitude": 47.959332,
+            "maximum_latitude": 48.2997,
+            "minimum_longitude": -1.945373,
+            "maximum_longitude": -1.478264,
+            "extracted_on": "2022-03-23T18:34:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/star/208/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-ile-de-france-star-gtfs-1159.zip?alt=media",
+        "license": "https://data.explore.star.fr/explore/dataset/tco-busmetro-horaires-gtfs-versions-td/information/"
+    }
+}

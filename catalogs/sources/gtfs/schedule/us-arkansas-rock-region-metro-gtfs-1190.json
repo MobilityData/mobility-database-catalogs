@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1190,
+    "data_type": "gtfs",
+    "provider": "Rock Region Metro",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Arkansas",
+        "municipality": "Little Rock",
+        "bounding_box": {
+            "minimum_latitude": 34.504759,
+            "maximum_latitude": 34.903348,
+            "minimum_longitude": -92.497724,
+            "maximum_longitude": -92.115707,
+            "extracted_on": "2022-03-23T18:51:23+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/central-arkansas-transit-authority/334/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-arkansas-rock-region-metro-gtfs-1190.zip?alt=media"
+    }
+}

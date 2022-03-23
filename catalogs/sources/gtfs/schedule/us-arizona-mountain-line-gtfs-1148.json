@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1148,
+    "data_type": "gtfs",
+    "provider": "Mountain Line",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Arizona",
+        "municipality": "Flagstaff",
+        "bounding_box": {
+            "minimum_latitude": 35.142631,
+            "maximum_latitude": 35.330199,
+            "minimum_longitude": -111.710555,
+            "maximum_longitude": -111.573353,
+            "extracted_on": "2022-03-23T18:32:53+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/mountain-line/243/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-arizona-mountain-line-gtfs-1148.zip?alt=media"
+    }
+}

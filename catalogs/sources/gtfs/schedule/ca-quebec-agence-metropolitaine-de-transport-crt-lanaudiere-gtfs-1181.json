@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1181,
+    "data_type": "gtfs",
+    "provider": "Agence métropolitaine de transport CRT Lanaudière",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Québec",
+        "bounding_box": {
+            "minimum_latitude": 45.5896918011493,
+            "maximum_latitude": 46.6840634802217,
+            "minimum_longitude": -74.2264320002107,
+            "maximum_longitude": -73.170542359712,
+            "extracted_on": "2022-03-23T18:45:28+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/agence-metropolitaine-de-transport/134/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-agence-metropolitaine-de-transport-crt-lanaudiere-gtfs-1181.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1194,
+    "data_type": "gtfs",
+    "provider": "Bus Company S.r.l., Gunetto Autolinee S.r.l., Bus Company S.r.l., GelosoBus S.r.l., RT Piemonte S.r.l., Autolinee Nuova Benese S.r.l., Autolinee Allasia S.r.l., Nuova S.A.A.R. S.r.l., SAV Autolinee S.r.l., S.A.C. S.r.l., Autolinee Valle Pesio S.r.l., ACTP S.r.l., Nuova Beccaria S.r.l., Giors S.n.c., Consorzio Trasporti GRANDA BUS",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Piemonte",
+        "municipality": "Cuneo",
+        "bounding_box": {
+            "minimum_latitude": 43.8792200012265,
+            "maximum_latitude": 45.2725800012072,
+            "minimum_longitude": 6.93821999981286,
+            "maximum_longitude": 8.47731999998803,
+            "extracted_on": "2022-03-23T18:52:34+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/cuneo/622/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-piemonte-bus-company-srl-gtfs-1194.zip?alt=media"
+    }
+}

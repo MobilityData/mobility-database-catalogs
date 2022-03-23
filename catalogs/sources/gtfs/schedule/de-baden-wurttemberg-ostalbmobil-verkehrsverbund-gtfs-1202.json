@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1202,
+    "data_type": "gtfs",
+    "provider": "OstalbMobil – Verkehrsverbund",
+    "location": {
+        "country_code": "DE",
+        "subdivision_name": "Baden-Württemberg",
+        "municipality": "Ostalbkreis",
+        "bounding_box": {
+            "minimum_latitude": 0.0,
+            "maximum_latitude": 48.945571,
+            "minimum_longitude": 0.0,
+            "maximum_longitude": 10.436735,
+            "extracted_on": "2022-03-23T18:53:19+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/ostalbmobil-verkehrsverbund/1236/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-baden-wurttemberg-ostalbmobil-verkehrsverbund-gtfs-1202.zip?alt=media",
+        "license": "https://www.nvbw.de/aufgaben/digitale-mobilitaet/lizenz/"
+    }
+}

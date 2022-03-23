@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1174,
+    "data_type": "gtfs",
+    "provider": "wroute",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Ontario",
+        "municipality": "Waterloo",
+        "bounding_box": {
+            "minimum_latitude": 43.3135361,
+            "maximum_latitude": 43.54418,
+            "minimum_longitude": -80.44126,
+            "maximum_longitude": -79.8221389,
+            "extracted_on": "2022-03-23T18:44:31+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/wroute/1159/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-wroute-gtfs-1174.zip?alt=media"
+    }
+}

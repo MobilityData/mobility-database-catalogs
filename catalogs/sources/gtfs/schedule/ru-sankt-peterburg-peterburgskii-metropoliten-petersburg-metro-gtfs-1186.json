@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1186,
+    "data_type": "gtfs",
+    "provider": "Петербургский метрополитен - Petersburg Metro",
+    "location": {
+        "country_code": "RU",
+        "subdivision_name": "Sankt-Peterburg",
+        "bounding_box": {
+            "minimum_latitude": 59.550571,
+            "maximum_latitude": 60.363597,
+            "minimum_longitude": 28.971031,
+            "maximum_longitude": 31.278776,
+            "extracted_on": "2022-03-23T18:50:21+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/saint-petersburg/826/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ru-sankt-peterburg-peterburgskii-metropoliten-petersburg-metro-gtfs-1186.zip?alt=media"
+    }
+}

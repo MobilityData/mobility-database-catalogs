@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1162,
+    "data_type": "gtfs",
+    "provider": "El Transbordador de Vizcaya",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Bizkaia",
+        "municipality": "Bilbao",
+        "bounding_box": {
+            "minimum_latitude": 43.3228,
+            "maximum_latitude": 43.323612,
+            "minimum_longitude": -3.018,
+            "maximum_longitude": -3.016314,
+            "extracted_on": "2022-03-23T18:38:57+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/transbordador-vizcaya/660/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-bizkaia-el-transbordador-de-vizcaya-gtfs-1162.zip?alt=media"
+    }
+}

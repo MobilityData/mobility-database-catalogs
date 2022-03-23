@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1169,
+    "data_type": "gtfs",
+    "provider": "Transperth",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "Western Australia",
+        "municipality": "Perth",
+        "bounding_box": {
+            "minimum_latitude": -35.0682822222222,
+            "maximum_latitude": -20.3008238888889,
+            "minimum_longitude": 113.649835555556,
+            "maximum_longitude": 121.893761666667,
+            "extracted_on": "2022-03-23T18:41:49+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/transperth/2/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-western-australia-transperth-gtfs-1169.zip?alt=media"
+    }
+}

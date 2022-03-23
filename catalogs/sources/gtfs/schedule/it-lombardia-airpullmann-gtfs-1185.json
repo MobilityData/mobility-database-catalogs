@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1185,
+    "data_type": "gtfs",
+    "provider": "Airpullmann",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Lombardia",
+        "municipality": "Milan",
+        "bounding_box": {
+            "minimum_latitude": 45.4938828184547,
+            "maximum_latitude": 45.741949,
+            "minimum_longitude": 8.89007716567612,
+            "maximum_longitude": 9.21534086871719,
+            "extracted_on": "2022-03-23T18:47:58+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/air-pullman-s-p-a/1233/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-lombardia-airpullmann-gtfs-1185.zip?alt=media"
+    }
+}

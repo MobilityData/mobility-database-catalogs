@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1168,
+    "data_type": "gtfs",
+    "provider": "Gladstone",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "Queensland",
+        "municipality": "Gladstone",
+        "bounding_box": {
+            "minimum_latitude": -23.960521,
+            "maximum_latitude": -23.838753,
+            "minimum_longitude": 151.21067,
+            "maximum_longitude": 151.370321,
+            "extracted_on": "2022-03-23T18:39:19+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/translink/8/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-gladstone-gtfs-1168.zip?alt=media"
+    }
+}

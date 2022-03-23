@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1145,
+    "data_type": "gtfs",
+    "provider": "Madison County Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Missouri",
+        "municipality": "St. Louis",
+        "bounding_box": {
+            "minimum_latitude": 38.624521,
+            "maximum_latitude": 38.964669,
+            "minimum_longitude": -90.280942,
+            "maximum_longitude": -89.697,
+            "extracted_on": "2022-03-23T18:32:47+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/madison-county-transit/1146/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-missouri-madison-county-transit-gtfs-1145.zip?alt=media"
+    }
+}

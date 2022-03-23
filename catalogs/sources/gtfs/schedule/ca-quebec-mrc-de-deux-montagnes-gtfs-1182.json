@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1182,
+    "data_type": "gtfs",
+    "provider": "MRC de Deux-Montagnes",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Québec",
+        "municipality": "Montreal",
+        "bounding_box": {
+            "minimum_latitude": 45.4605386048701,
+            "maximum_latitude": 45.5615424554029,
+            "minimum_longitude": -74.2064314458575,
+            "maximum_longitude": -73.8928390350279,
+            "extracted_on": "2022-03-23T18:45:31+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/agence-metropolitaine-de-transport/141/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-mrc-de-deux-montagnes-gtfs-1182.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1152,
+    "data_type": "gtfs",
+    "provider": "Bürgerbus Leupoldsgrün (Landkreis Hof)",
+    "location": {
+        "country_code": "DE",
+        "subdivision_name": "Bayern",
+        "municipality": "Leupoldsgrün",
+        "bounding_box": {
+            "minimum_latitude": 50.267313,
+            "maximum_latitude": 50.330725,
+            "minimum_longitude": 11.74581,
+            "maximum_longitude": 11.850072,
+            "extracted_on": "2022-03-23T18:33:05+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/b-rgerbus-leupoldsgr-n-landkreis-hof/1126/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-bayern-burgerbus-leupoldsgrun-landkreis-hof-gtfs-1152.zip?alt=media"
+    }
+}

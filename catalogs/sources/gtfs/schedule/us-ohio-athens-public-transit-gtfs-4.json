@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 4,
+    "data_type": "gtfs",
+    "provider": "Athens Public Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Ohio",
+        "municipality": "Athens",
+        "bounding_box": {
+            "minimum_latitude": 39.295665,
+            "maximum_latitude": 39.3992,
+            "minimum_longitude": -82.141964,
+            "maximum_longitude": -82.027972,
+            "extracted_on": "2022-03-23T14:43:11+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/athens-public-transit/298/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-ohio-athens-public-transit-gtfs-4.zip?alt=media"
+    }
+}

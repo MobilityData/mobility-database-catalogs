@@ -49,17 +49,7 @@ Contains the JSON schemas used to validate the sources in the integration tests.
 
 ## GTFS Realtime Data Structure
 
-|     Field Name     |  Required from users  |                                                                              Definition                                                                             |
-|:------------------:|:---------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------:
-| MDB Source ID      | No - system generated | Unique numerical identifier.      |   |   |
-| Data Type          | Yes                   | The data format that the source uses: GTFS_RT.                                                                                                            |   |   |
-| Provider           | Yes                   | Commonly used name of the transit provider.                                                                                                                                        |   |   |
-| Name               | Optional              | An optional description of the data source, e.g to specify if the data source is an aggregate of multiple providers, or which network is represented by the source. |   |   |
-| Static Reference | Optional                   | The MDB ID of the GTFS Schedule source associated with the Realtime source. If this is not provided, the country code, subdivision, and municipality will display as "Unknown" in the CSV export. The bounding box will appear blank. If the MDB ID of the GTFS Schedule source is provided, the country code, subdivision, municipality and bounding box fields will match the information in the static reference.                                                                                                                  |   |   |
-| Vehicle Positions URL | Optional | The Vehicle Positions URL.                                                                                                                   |   |   |
-| Trip Updates URL | Optional | The Trip Updates URL.                                                                                                                   |   |   |
-| Service Alerts URL | Optional | The Service Alerts URL.                                                                                                                   |   |   |
-| License URL        | Optional              | The transit provider’s license information.                                                                                                                         |   |   |
+This is still under discussion. [Please comment to share your thoughts](https://github.com/MobilityData/mobility-database-catalogs/issues/36). [You can view what is currently drafted in the working document](https://docs.google.com/document/d/1Mlz3AXHItInitsOEAKKi8hZV9d3t3gpFbyIZGm67ESU/edit#heading=h.i8ficnh0oxru).
 
 ## Installation
 
@@ -214,7 +204,7 @@ In order to avoid invalid sources in the Mobility Database Catalogs, any modific
 
 Code licensed under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0).
 
-Individual transit data sources are subject to the terms & conditions of their own respective data provider. If you are a transit provider and there is a data source that should not be included in the repository, please contact emma@mobilitydata.org and we'll remove it as soon as possible.
+All of the Mobility Database catalog's metadata is made available under [Creative Commons CC0 (CC0)](https://creativecommons.org/publicdomain/zero/1.0/legalcode). Individual transit data sources are subject to the terms & conditions of their own respective data provider. If you are a transit provider and there is a data source that should not be included in the repository, please contact emma@mobilitydata.org and we'll remove it as soon as possible.
 
 ## Contributing
 

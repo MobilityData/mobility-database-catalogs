@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1206,
+    "data_type": "gtfs",
+    "provider": "T3 Transit",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Prince Edward Island",
+        "municipality": "Charlottetown",
+        "bounding_box": {
+            "minimum_latitude": 46.23483,
+            "maximum_latitude": 46.2938664,
+            "minimum_longitude": -63.1869936,
+            "maximum_longitude": -63.1010613,
+            "extracted_on": "2022-03-23T18:56:11+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/t3-transit/591/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-prince-edward-island-t3-transit-gtfs-1206.zip?alt=media"
+    }
+}

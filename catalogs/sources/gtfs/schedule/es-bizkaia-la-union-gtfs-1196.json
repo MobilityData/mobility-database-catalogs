@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1196,
+    "data_type": "gtfs",
+    "provider": "La Union",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Bizkaia",
+        "municipality": "Bilbao",
+        "bounding_box": {
+            "minimum_latitude": 0.0,
+            "maximum_latitude": 43.359077,
+            "minimum_longitude": -3.073337,
+            "maximum_longitude": 0.0,
+            "extracted_on": "2022-03-23T18:52:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/la-union/659/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-bizkaia-la-union-gtfs-1196.zip?alt=media"
+    }
+}

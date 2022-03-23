@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 1139,
+    "data_type": "gtfs",
+    "provider": "DB, SBB, EC, ÖBB, NS, DSB, MAV, CD, PKP, RE, DPN, RZD, SWX, CFL",
+    "location": {
+        "country_code": "DE",
+        "bounding_box": {
+            "minimum_latitude": 41.900492,
+            "maximum_latitude": 56.150076,
+            "minimum_longitude": 1.850178,
+            "maximum_longitude": 37.579809,
+            "extracted_on": "2022-03-23T18:31:19+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/deutsche-bahn/837/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-unknown-db-gtfs-1139.zip?alt=media"
+    }
+}

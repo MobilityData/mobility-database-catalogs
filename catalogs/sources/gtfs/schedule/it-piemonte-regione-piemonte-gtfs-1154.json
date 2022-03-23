@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1154,
+    "data_type": "gtfs",
+    "provider": "Regione Piemonte",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Piemonte",
+        "bounding_box": {
+            "minimum_latitude": 43.891129,
+            "maximum_latitude": 46.41969,
+            "minimum_longitude": 6.658442,
+            "maximum_longitude": 9.176198,
+            "extracted_on": "2022-03-23T18:33:16+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/regione-piemonte/1192/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-piemonte-regione-piemonte-gtfs-1154.zip?alt=media",
+        "license": "http://www.dati.piemonte.it/catalogodati/dato/100939-.html"
+    }
+}

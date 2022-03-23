@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1204,
+    "data_type": "gtfs",
+    "provider": "SIMUR Bogota ",
+    "location": {
+        "country_code": "CO",
+        "subdivision_name": "Distrito Capital de Bogotá",
+        "bounding_box": {
+            "minimum_latitude": 4.4683111547019,
+            "maximum_latitude": 4.8168176729958,
+            "minimum_longitude": -74.2149329,
+            "maximum_longitude": -74.00431399641,
+            "extracted_on": "2022-03-23T18:56:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/simur-bogota/973/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/co-distrito-capital-de-bogota-simur-bogota-gtfs-1204.zip?alt=media",
+        "license": "http://www.simur.gov.co/gtfs"
+    }
+}

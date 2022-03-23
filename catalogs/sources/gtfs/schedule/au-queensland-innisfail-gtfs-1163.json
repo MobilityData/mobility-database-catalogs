@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1163,
+    "data_type": "gtfs",
+    "provider": "Innisfail",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "Queensland",
+        "municipality": "Innisfail",
+        "bounding_box": {
+            "minimum_latitude": -17.543952,
+            "maximum_latitude": -17.490769,
+            "minimum_longitude": 145.988544,
+            "maximum_longitude": 146.076147,
+            "extracted_on": "2022-03-23T18:38:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/translink/10/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-innisfail-gtfs-1163.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1171,
+    "data_type": "gtfs",
+    "provider": "UTA",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Utah",
+        "municipality": "Salt Lake City",
+        "bounding_box": {
+            "minimum_latitude": 39.975518,
+            "maximum_latitude": 41.528157,
+            "minimum_longitude": -112.325431,
+            "maximum_longitude": -111.546827,
+            "extracted_on": "2022-03-23T18:42:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/utah-transportation-authority/59/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-utah-uta-gtfs-1171.zip?alt=media"
+    }
+}

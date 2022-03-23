@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1146,
+    "data_type": "gtfs",
+    "provider": "Mar Chiquita SRL",
+    "location": {
+        "country_code": "AR",
+        "subdivision_name": "Córdoba",
+        "bounding_box": {
+            "minimum_latitude": -31.439129,
+            "maximum_latitude": -31.300363,
+            "minimum_longitude": -64.4933,
+            "maximum_longitude": -62.091409,
+            "extracted_on": "2022-03-23T18:32:49+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/mar-chiquita-srl/805/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ar-cordoba-mar-chiquita-srl-gtfs-1146.zip?alt=media"
+    }
+}

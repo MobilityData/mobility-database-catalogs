@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1179,
+    "data_type": "gtfs",
+    "provider": "Agence métropolitaine de transport",
+    "name": "Express",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Québec",
+        "bounding_box": {
+            "minimum_latitude": 45.4582983759636,
+            "maximum_latitude": 45.4982652034138,
+            "minimum_longitude": -73.5661781803096,
+            "maximum_longitude": -73.4418601064298,
+            "extracted_on": "2022-03-23T18:45:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/agence-metropolitaine-de-transport/129/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-agence-metropolitaine-de-transport-gtfs-1179.zip?alt=media"
+    }
+}

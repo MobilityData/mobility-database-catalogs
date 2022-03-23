@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1198,
+    "data_type": "gtfs",
+    "provider": "Long Beach Transit (LBT)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Long Beach",
+        "bounding_box": {
+            "minimum_latitude": 33.742939,
+            "maximum_latitude": 34.069347,
+            "minimum_longitude": -118.447726,
+            "maximum_longitude": -118.063516,
+            "extracted_on": "2022-03-23T18:52:56+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/long-beach-transit/704/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-long-beach-transit-lbt-gtfs-1198.zip?alt=media"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 1144,
+    "data_type": "gtfs",
+    "provider": "InterCity Group",
+    "location": {
+        "country_code": "NZ",
+        "bounding_box": {
+            "minimum_latitude": -46.4118867,
+            "maximum_latitude": -34.990532,
+            "minimum_longitude": 167.714045,
+            "maximum_longitude": 178.020433,
+            "extracted_on": "2022-03-23T18:32:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/intercity-group/744/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/nz-unknown-intercity-group-gtfs-1144.zip?alt=media"
+    }
+}

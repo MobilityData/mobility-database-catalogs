@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1140,
+    "data_type": "gtfs",
+    "provider": "Citilink",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Indiana",
+        "municipality": "Fort Wayne",
+        "bounding_box": {
+            "minimum_latitude": 41.006285,
+            "maximum_latitude": 41.190369,
+            "minimum_longitude": -85.27113,
+            "maximum_longitude": -85.013817,
+            "extracted_on": "2022-03-23T18:31:25+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/fort-wayne-citilink/378/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-indiana-citilink-gtfs-1140.zip?alt=media"
+    }
+}

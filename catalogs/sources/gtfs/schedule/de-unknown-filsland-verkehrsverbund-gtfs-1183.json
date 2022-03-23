@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 1183,
+    "data_type": "gtfs",
+    "provider": "Filsland Verkehrsverbund",
+    "location": {
+        "country_code": "DE",
+        "bounding_box": {
+            "minimum_latitude": 48.398673,
+            "maximum_latitude": 48.806872,
+            "minimum_longitude": 9.41129,
+            "maximum_longitude": 10.02201,
+            "extracted_on": "2022-03-23T18:45:50+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/filsland-verkehrsverbund/1185/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-unknown-filsland-verkehrsverbund-gtfs-1183.zip?alt=media"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1172,
+    "data_type": "gtfs",
+    "provider": "Verkehrsverbund Mittelthüringen (VMT)",
+    "location": {
+        "country_code": "DE",
+        "subdivision_name": "Thüringen",
+        "bounding_box": {
+            "minimum_latitude": 50.035311,
+            "maximum_latitude": 52.594718,
+            "minimum_longitude": 9.446892,
+            "maximum_longitude": 12.48745,
+            "extracted_on": "2022-03-23T18:42:19+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/verkehrsverbund-mittelth-ringen/1080/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-thuringen-verkehrsverbund-mittelthuringen-vmt-gtfs-1172.zip?alt=media"
+    }
+}

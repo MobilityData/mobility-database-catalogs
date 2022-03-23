@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1155,
+    "data_type": "gtfs",
+    "provider": "Rodoviária de Lisboa",
+    "location": {
+        "country_code": "PT",
+        "subdivision_name": "Lisboa",
+        "bounding_box": {
+            "minimum_latitude": 38.7434172392276,
+            "maximum_latitude": 38.9770062842821,
+            "minimum_longitude": -9.29831878012572,
+            "maximum_longitude": -9.02670437706732,
+            "extracted_on": "2022-03-23T18:33:20+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/rodoviaria-de-lisboa/998/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-lisboa-rodoviaria-de-lisboa-gtfs-1155.zip?alt=media"
+    }
+}

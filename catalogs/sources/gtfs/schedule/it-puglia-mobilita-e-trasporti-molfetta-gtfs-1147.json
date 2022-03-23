@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1147,
+    "data_type": "gtfs",
+    "provider": "Mobilità e Trasporti Molfetta",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Puglia",
+        "municipality": "Molfetta",
+        "bounding_box": {
+            "minimum_latitude": 41.1724305772135,
+            "maximum_latitude": 41.2143614292278,
+            "minimum_longitude": 16.5415012977306,
+            "maximum_longitude": 16.613556,
+            "extracted_on": "2022-03-23T18:32:50+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/mobilita-e-trasporti-molfetta/411/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-puglia-mobilita-e-trasporti-molfetta-gtfs-1147.zip?alt=media"
+    }
+}

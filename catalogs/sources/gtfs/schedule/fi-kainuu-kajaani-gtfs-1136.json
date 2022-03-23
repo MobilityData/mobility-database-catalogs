@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1136,
+    "data_type": "gtfs",
+    "provider": "Kajaani",
+    "location": {
+        "country_code": "FI",
+        "subdivision_name": "Kainuu",
+        "municipality": "Kajaani",
+        "bounding_box": {
+            "minimum_latitude": 63.9509976744237,
+            "maximum_latitude": 64.3282317234578,
+            "minimum_longitude": 26.857811209272167,
+            "maximum_longitude": 28.0382467006859,
+            "extracted_on": "2022-03-23T18:30:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/city-of-kajaani/1103/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fi-kainuu-kajaani-gtfs-1136.zip?alt=media"
+    }
+}

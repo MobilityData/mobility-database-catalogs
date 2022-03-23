@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1138,
+    "data_type": "gtfs",
+    "provider": "Bus Regione Piemonte",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Piemonte",
+        "bounding_box": {
+            "minimum_latitude": 43.891129,
+            "maximum_latitude": 46.41969,
+            "minimum_longitude": 6.658442,
+            "maximum_longitude": 9.176198,
+            "extracted_on": "2022-03-23T18:31:14+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/cuneo/1191/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-piemonte-bus-regione-piemonte-gtfs-1138.zip?alt=media"
+    }
+}

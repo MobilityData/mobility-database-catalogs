@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1161,
+    "data_type": "gtfs",
+    "provider": "TRAINOSE",
+    "location": {
+        "country_code": "GR",
+        "subdivision_name": "Thessaloniki",
+        "bounding_box": {
+            "minimum_latitude": 37.64566,
+            "maximum_latitude": 42.71287,
+            "minimum_longitude": 21.41504,
+            "maximum_longitude": 26.62184,
+            "extracted_on": "2022-03-23T18:38:55+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/trainose/1193/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gr-thessaloniki-trainose-gtfs-1161.zip?alt=media"
+    }
+}

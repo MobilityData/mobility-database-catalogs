@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1166,
+    "data_type": "gtfs",
+    "provider": "Townsville",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "Queensland",
+        "municipality": "Townsville",
+        "bounding_box": {
+            "minimum_latitude": -19.393504,
+            "maximum_latitude": -19.189667,
+            "minimum_longitude": 146.646356,
+            "maximum_longitude": 146.850212,
+            "extracted_on": "2022-03-23T18:39:12+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/translink/18/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-townsville-gtfs-1166.zip?alt=media"
+    }
+}

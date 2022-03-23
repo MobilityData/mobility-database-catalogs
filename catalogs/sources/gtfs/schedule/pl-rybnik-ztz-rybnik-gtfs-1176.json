@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1176,
+    "data_type": "gtfs",
+    "provider": "ZTZ Rybnik",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Rybnik",
+        "municipality": "Śląskie",
+        "bounding_box": {
+            "minimum_latitude": 50.00251964423,
+            "maximum_latitude": 50.19273439418,
+            "minimum_longitude": 18.286475,
+            "maximum_longitude": 18.69397495643,
+            "extracted_on": "2022-03-23T18:44:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/ztz-rybnik/1114/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-rybnik-ztz-rybnik-gtfs-1176.zip?alt=media"
+    }
+}

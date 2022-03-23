@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1158,
+    "data_type": "gtfs",
+    "provider": "SRTMedenine",
+    "location": {
+        "country_code": "TN",
+        "subdivision_name": "Médenine",
+        "bounding_box": {
+            "minimum_latitude": 32.010672,
+            "maximum_latitude": 34.722848,
+            "minimum_longitude": 9.983225,
+            "maximum_longitude": 11.5514679,
+            "extracted_on": "2022-03-23T18:33:49+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/srtmedenine/1204/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/tn-medenine-srtmedenine-gtfs-1158.zip?alt=media"
+    }
+}

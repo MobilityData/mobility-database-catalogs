@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1189,
+    "data_type": "gtfs",
+    "provider": "Blacksburg Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Virginia",
+        "municipality": "Blacksburg",
+        "bounding_box": {
+            "minimum_latitude": 37.1264581159626,
+            "maximum_latitude": 37.2561040375295,
+            "minimum_longitude": -80.4504797131109,
+            "maximum_longitude": -80.3700000268221,
+            "extracted_on": "2022-03-23T18:51:05+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/blacksburg-transit/359/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-blacksburg-transit-gtfs-1189.zip?alt=media"
+    }
+}

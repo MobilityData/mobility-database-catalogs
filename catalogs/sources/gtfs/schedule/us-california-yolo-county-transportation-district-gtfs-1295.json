@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1295,
+    "data_type": "gtfs",
+    "provider": "Yolo County Transportation District",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Woodland",
+        "bounding_box": {
+            "minimum_latitude": 38.534455659059,
+            "maximum_latitude": 38.7361269435958,
+            "minimum_longitude": -122.142116853125,
+            "maximum_longitude": -121.452880290322,
+            "extracted_on": "2022-03-24T00:25:55+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/sacramento-regional-transit/161/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-yolo-county-transportation-district-gtfs-1295.zip?alt=media"
+    }
+}

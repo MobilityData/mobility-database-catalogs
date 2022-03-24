@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1280,
+    "data_type": "gtfs",
+    "provider": "Glendale Beeline",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Glendale",
+        "bounding_box": {
+            "minimum_latitude": 34.123164,
+            "maximum_latitude": 34.223555,
+            "minimum_longitude": -118.312149,
+            "maximum_longitude": -118.175199,
+            "extracted_on": "2022-03-24T00:18:28+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/glendale-beeline/917/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-glendale-beeline-gtfs-1280.zip?alt=media"
+    }
+}

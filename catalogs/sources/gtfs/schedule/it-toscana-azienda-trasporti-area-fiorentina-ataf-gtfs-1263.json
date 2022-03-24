@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1263,
+    "data_type": "gtfs",
+    "provider": "Azienda Trasporti Area Fiorentina (ATAF)",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Toscana",
+        "municipality": "Firenze",
+        "bounding_box": {
+            "minimum_latitude": 43.6708429005161,
+            "maximum_latitude": 43.9140659813961,
+            "minimum_longitude": 11.0112905791906,
+            "maximum_longitude": 11.3885660460831,
+            "extracted_on": "2022-03-24T00:17:13+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/azienda-trasporti-dellarea-fiorentina/739/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-toscana-azienda-trasporti-area-fiorentina-ataf-gtfs-1263.zip?alt=media"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1266,
+    "data_type": "gtfs",
+    "provider": "TRENITALIA, Gruppo Torinese Trasporti (GTT)",
+    "name": "SFM (Railway)",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Piemonte",
+        "municipality": "Turin",
+        "bounding_box": {
+            "minimum_latitude": 44.5503552277837,
+            "maximum_latitude": 45.4201003714791,
+            "minimum_longitude": 6.6586595428636,
+            "maximum_longitude": 8.207680132992,
+            "extracted_on": "2022-03-24T00:17:24+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/gruppo-torinese-trasporti/664/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-piemonte-trenitalia-gtfs-1266.zip?alt=media"
+    }
+}

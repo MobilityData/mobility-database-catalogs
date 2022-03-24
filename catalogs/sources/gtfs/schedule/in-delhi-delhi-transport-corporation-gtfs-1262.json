@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1262,
+    "data_type": "gtfs",
+    "provider": "Delhi Transport Corporation",
+    "location": {
+        "country_code": "IN",
+        "subdivision_name": "Delhi",
+        "bounding_box": {
+            "minimum_latitude": 0.0,
+            "maximum_latitude": 28.87865,
+            "minimum_longitude": 0.0,
+            "maximum_longitude": 77.49000549,
+            "extracted_on": "2022-03-24T00:16:51+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/delhi-transport-corporation/1047/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/in-delhi-delhi-transport-corporation-gtfs-1262.zip?alt=media",
+        "license": "https://otd.delhi.gov.in/static/assets/terms-and-conditions.pdf"
+    }
+}

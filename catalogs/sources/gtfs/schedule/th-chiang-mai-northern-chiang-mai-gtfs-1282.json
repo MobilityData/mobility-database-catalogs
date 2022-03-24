@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1282,
+    "data_type": "gtfs",
+    "provider": "Northern Chiang Mai",
+    "location": {
+        "country_code": "TH",
+        "subdivision_name": "Chiang Mai",
+        "bounding_box": {
+            "minimum_latitude": 18.791541,
+            "maximum_latitude": 20.061907,
+            "minimum_longitude": 98.847561,
+            "maximum_longitude": 99.362492,
+            "extracted_on": "2022-03-24T00:18:32+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/northern-chiang-mai/797/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/th-chiang-mai-northern-chiang-mai-gtfs-1282.zip?alt=media"
+    }
+}

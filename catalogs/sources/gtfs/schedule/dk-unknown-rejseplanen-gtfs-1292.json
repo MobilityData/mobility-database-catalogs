@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 1292,
+    "data_type": "gtfs",
+    "provider": "Rejseplanen",
+    "location": {
+        "country_code": "DK",
+        "bounding_box": {
+            "minimum_latitude": 53.552502176324,
+            "maximum_latitude": 57.739058058049,
+            "minimum_longitude": 8.116742858755,
+            "maximum_longitude": 16.359651748769,
+            "extracted_on": "2022-03-24T00:25:18+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.rejseplanen.info/labs/GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/dk-unknown-rejseplanen-gtfs-1292.zip?alt=media"
+    }
+}

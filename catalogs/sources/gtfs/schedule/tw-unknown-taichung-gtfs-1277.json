@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 1277,
+    "data_type": "gtfs",
+    "provider": "Taichung",
+    "location": {
+        "country_code": "TW",
+        "bounding_box": {
+            "minimum_latitude": 22.627563,
+            "maximum_latitude": 25.132208,
+            "minimum_longitude": 120.1524,
+            "maximum_longitude": 121.77578,
+            "extracted_on": "2022-03-24T00:18:18+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/taiwan/955/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/tw-unknown-taichung-gtfs-1277.zip?alt=media"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1278,
+    "data_type": "gtfs",
+    "provider": "Grande Prairie Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Alberta",
+        "municipality": "Grande Prairie",
+        "bounding_box": {
+            "minimum_latitude": 55.1364482604836,
+            "maximum_latitude": 55.1998543176981,
+            "minimum_longitude": -118.858995480986,
+            "maximum_longitude": -118.758170437994,
+            "extracted_on": "2022-03-24T00:18:20+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/grande-prairie-transit/1255/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-alberta-grande-prairie-transit-gtfs-1278.zip?alt=media"
+    }
+}

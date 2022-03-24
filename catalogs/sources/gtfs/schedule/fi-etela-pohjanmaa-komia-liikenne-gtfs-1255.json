@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 1255,
+    "data_type": "gtfs",
+    "provider": "Komia Liikenne",
+    "name": "Regular scheduled traffic",
+    "location": {
+        "country_code": "FI",
+        "subdivision_name": "Etelä-Pohjanmaa",
+        "municipality": "Seinäjoki",
+        "bounding_box": {
+            "minimum_latitude": 62.731469,
+            "maximum_latitude": 62.838396,
+            "minimum_longitude": 22.766964,
+            "maximum_longitude": 22.929869,
+            "extracted_on": "2022-03-24T00:16:02+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/komia-liikenne/1225/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fi-etela-pohjanmaa-komia-liikenne-gtfs-1255.zip?alt=media",
+        "license": "https://www.komialiikenne.fi"
+    }
+}

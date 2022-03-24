@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1276,
+    "data_type": "gtfs",
+    "provider": "Miaoli",
+    "location": {
+        "country_code": "TW",
+        "subdivision_name": "Miaoli",
+        "bounding_box": {
+            "minimum_latitude": 24.136164,
+            "maximum_latitude": 25.12029,
+            "minimum_longitude": 120.62628,
+            "maximum_longitude": 121.517615,
+            "extracted_on": "2022-03-24T00:17:58+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/taiwan/954/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/tw-miaoli-miaoli-gtfs-1276.zip?alt=media"
+    }
+}

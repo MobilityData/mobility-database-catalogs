@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 1269,
+    "data_type": "gtfs",
+    "provider": "Philippines",
+    "location": {
+        "country_code": "PH",
+        "bounding_box": {
+            "minimum_latitude": 14.2502,
+            "maximum_latitude": 14.884,
+            "minimum_longitude": 120.9,
+            "maximum_longitude": 121.229,
+            "extracted_on": "2022-03-24T00:17:36+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/philippines/71/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ph-unknown-philippines-gtfs-1269.zip?alt=media"
+    }
+}

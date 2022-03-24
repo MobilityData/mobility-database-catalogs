@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1285,
+    "data_type": "gtfs",
+    "provider": "MATBUS",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "North Dakota",
+        "municipality": "Fargo",
+        "bounding_box": {
+            "minimum_latitude": 46.802662,
+            "maximum_latitude": 46.91984,
+            "minimum_longitude": -96.914784,
+            "maximum_longitude": -96.68326,
+            "extracted_on": "2022-03-24T00:22:22+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/matbus/833/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-north-dakota-matbus-gtfs-1285.zip?alt=media",
+        "license": "http://www.matbus.com/GTFSFeed.htm"
+    }
+}

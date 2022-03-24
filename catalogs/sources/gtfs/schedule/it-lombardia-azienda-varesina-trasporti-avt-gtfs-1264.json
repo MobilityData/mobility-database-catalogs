@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1264,
+    "data_type": "gtfs",
+    "provider": "Azienda Varesina Trasporti (AVT)",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Lombardia",
+        "municipality": "Varese",
+        "bounding_box": {
+            "minimum_latitude": 45.858448,
+            "maximum_latitude": 45.860677,
+            "minimum_longitude": 8.787817,
+            "maximum_longitude": 8.790801,
+            "extracted_on": "2022-03-24T00:17:15+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/azienda-varesina-trasporti/525/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-lombardia-azienda-varesina-trasporti-avt-gtfs-1264.zip?alt=media"
+    }
+}

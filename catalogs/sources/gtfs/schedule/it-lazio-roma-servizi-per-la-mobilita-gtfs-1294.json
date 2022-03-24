@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1294,
+    "data_type": "gtfs",
+    "provider": "Roma Servizi per la Mobilità",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Lazio",
+        "municipality": "Rome",
+        "bounding_box": {
+            "minimum_latitude": 41.648593,
+            "maximum_latitude": 42.4415,
+            "minimum_longitude": 12.107767,
+            "maximum_longitude": 12.789177,
+            "extracted_on": "2022-03-24T00:25:50+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://romamobilita.it/sites/default/files/rome_static_gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-lazio-roma-servizi-per-la-mobilita-gtfs-1294.zip?alt=media",
+        "license": "https://romamobilita.it/it/tecnologie/open-data/dataset"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1257,
+    "data_type": "gtfs",
+    "provider": "Ile d'Yeu",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Pays-de-la-Loire",
+        "municipality": "Nantes",
+        "bounding_box": {
+            "minimum_latitude": 46.7242998885,
+            "maximum_latitude": 46.8922038887,
+            "minimum_longitude": -2.3477262276,
+            "maximum_longitude": -2.1390199277,
+            "extracted_on": "2022-03-24T00:16:13+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/region-des-pays-de-la-loire/1070/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-pays-de-la-loire-ile-dyeu-gtfs-1257.zip?alt=media",
+        "license": "http://opendatacommons.org/licenses/odbl/"
+    }
+}

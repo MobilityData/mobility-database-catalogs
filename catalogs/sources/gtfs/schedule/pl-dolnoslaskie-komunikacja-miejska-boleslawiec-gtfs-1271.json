@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1271,
+    "data_type": "gtfs",
+    "provider": "Komunikacja Miejska - Bolesławiec",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Dolnośląskie",
+        "municipality": "Bolesławiec",
+        "bounding_box": {
+            "minimum_latitude": 51.23244,
+            "maximum_latitude": 51.52693,
+            "minimum_longitude": 15.46822,
+            "maximum_longitude": 15.6345,
+            "extracted_on": "2022-03-24T00:17:43+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/przyjazdy-pl-boles-awiec/1209/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-dolnoslaskie-komunikacja-miejska-boleslawiec-gtfs-1271.zip?alt=media"
+    }
+}

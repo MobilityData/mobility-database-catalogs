@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1291,
+    "data_type": "gtfs",
+    "provider": "Régie Autonome des Transports Parisiens",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Île-de-France",
+        "municipality": "Paris",
+        "bounding_box": {
+            "minimum_latitude": 48.669856074950665,
+            "maximum_latitude": 49.058649071321184,
+            "minimum_longitude": 2.0122584189440045,
+            "maximum_longitude": 2.782492052599299,
+            "extracted_on": "2022-03-24T00:24:32+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/regie-autonome-des-transports-parisiens/413/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-ile-de-france-regie-autonome-des-transports-parisiens-gtfs-1291.zip?alt=media"
+    }
+}

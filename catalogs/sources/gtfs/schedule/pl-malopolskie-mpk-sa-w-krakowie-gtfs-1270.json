@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 1270,
+    "data_type": "gtfs",
+    "provider": "MPK SA w Krakowie",
+    "name": "Tram",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Małopolskie",
+        "municipality": "Kraków",
+        "bounding_box": {
+            "minimum_latitude": 50.012338,
+            "maximum_latitude": 50.101977,
+            "minimum_longitude": 19.88192,
+            "maximum_longitude": 20.116968,
+            "extracted_on": "2022-03-24T00:17:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/mpk-sa-w-krakowie/1105/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-malopolskie-mpk-sa-w-krakowie-gtfs-1270.zip?alt=media",
+        "license": "https://www.mpk.krakow.pl/"
+    }
+}

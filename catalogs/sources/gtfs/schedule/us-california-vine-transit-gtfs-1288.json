@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1288,
+    "data_type": "gtfs",
+    "provider": "VINE Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Napa",
+        "bounding_box": {
+            "minimum_latitude": 37.925323,
+            "maximum_latitude": 38.583539,
+            "minimum_longitude": -122.579754889011,
+            "maximum_longitude": -122.041518688202,
+            "extracted_on": "2022-03-24T00:22:36+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/napa-vine/1268/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-vine-transit-gtfs-1288.zip?alt=media",
+        "license": "https://vinetransit.com/open-data-portal/"
+    }
+}

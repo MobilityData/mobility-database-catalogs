@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1273,
+    "data_type": "gtfs",
+    "provider": "Kragujevac",
+    "location": {
+        "country_code": "RS",
+        "subdivision_name": "Šumadijski okrug",
+        "municipality": "Kragujevac",
+        "bounding_box": {
+            "minimum_latitude": 43.934379,
+            "maximum_latitude": 44.08938,
+            "minimum_longitude": 20.79543,
+            "maximum_longitude": 21.01479,
+            "extracted_on": "2022-03-24T00:17:50+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/gas-kragujevac/1230/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/rs-sumadijski-okrug-kragujevac-gtfs-1273.zip?alt=media",
+        "license": "https://www.kgbus.rs/"
+    }
+}

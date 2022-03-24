@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1261,
+    "data_type": "gtfs",
+    "provider": "LILA",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Pays-de-la-Loire",
+        "bounding_box": {
+            "minimum_latitude": 46.64782091,
+            "maximum_latitude": 48.10382256,
+            "minimum_longitude": -2.21905534,
+            "maximum_longitude": -0.74188328,
+            "extracted_on": "2022-03-24T00:16:37+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/region-des-pays-de-la-loire/969/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-pays-de-la-loire-lila-gtfs-1261.zip?alt=media",
+        "license": "https://data.nantesmetropole.fr/explore/dataset/234400034_032-012_gtfs_lila/information/"
+    }
+}

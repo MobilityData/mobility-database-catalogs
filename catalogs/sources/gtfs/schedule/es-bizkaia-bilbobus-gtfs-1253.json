@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1253,
+    "data_type": "gtfs",
+    "provider": "Bilbobus",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Bizkaia",
+        "municipality": "Bilbao",
+        "bounding_box": {
+            "minimum_latitude": 43.226376863641,
+            "maximum_latitude": 43.28958706061865,
+            "minimum_longitude": -2.9749143846026342,
+            "maximum_longitude": -2.883005884056148,
+            "extracted_on": "2022-03-24T00:15:45+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/bilbobus/654/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-bizkaia-bilbobus-gtfs-1253.zip?alt=media"
+    }
+}

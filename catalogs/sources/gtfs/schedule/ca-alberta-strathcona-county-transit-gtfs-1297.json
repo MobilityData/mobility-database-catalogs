@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1297,
+    "data_type": "gtfs",
+    "provider": "Strathcona County Transit",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Alberta",
+        "municipality": "Edmonton",
+        "bounding_box": {
+            "minimum_latitude": 53.5095,
+            "maximum_latitude": 53.568069,
+            "minimum_longitude": -113.525439,
+            "maximum_longitude": -113.250891,
+            "extracted_on": "2022-03-24T00:26:13+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/strathcona-county-transit/364/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-alberta-strathcona-county-transit-gtfs-1297.zip?alt=media",
+        "license": "https://data.strathcona.ca/Transportation/Strathcona-County-Transit-Bus-Schedule-GTFS-Data-F/2ek5-rxs5"
+    }
+}

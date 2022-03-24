@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1286,
+    "data_type": "gtfs",
+    "provider": "Offre de transport du réseau Libellus",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Occitanie",
+        "municipality": "Mazamet",
+        "bounding_box": {
+            "minimum_latitude": 0.0,
+            "maximum_latitude": 43.632646,
+            "minimum_longitude": 0.0,
+            "maximum_longitude": 2.405232,
+            "extracted_on": "2022-03-24T00:22:24+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/mazamet/1218/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-occitanie-offre-de-transport-du-reseau-libellus-gtfs-1286.zip?alt=media"
+    }
+}

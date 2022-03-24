@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1260,
+    "data_type": "gtfs",
+    "provider": "Tram Train",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Pays-de-la-Loire",
+        "municipality": "Nantes",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2022-03-24T00:16:31+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/region-des-pays-de-la-loire/1074/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-pays-de-la-loire-tram-train-gtfs-1260.zip?alt=media",
+        "license": "https://opendatacommons.org/licenses/odbl/"
+    }
+}

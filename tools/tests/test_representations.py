@@ -1,7 +1,7 @@
 from unittest import TestCase
 from unittest.mock import patch, MagicMock
 from copy import deepcopy
-from tools.representations import (
+from mobilitydb.tools.representations import (
     Catalog,
     SourcesCatalog,
     GtfsScheduleSourcesCatalog,

@@ -112,7 +112,7 @@ To use the Mobility Database Catalogs, go to the cloned project root, open the P
 ```
 $ cd mobility-catalogs
 $ python
->>> from tools.operations import *
+>>> from mobilitydb.tools.operations import *
 ```
 
 To get the sources:

@@ -1,5 +1,5 @@
 import os
-from tools.constants import (
+from mobilitydb.tools.constants import (
     GTFS,
     GTFS_RT,
     NAME,
@@ -17,7 +17,7 @@ from tools.constants import (
     ALL,
     MDB_SOURCE_ID,
 )
-from tools.representations import GtfsScheduleSourcesCatalog, GtfsRealtimeSourcesCatalog
+from mobilitydb.tools.representations import GtfsScheduleSourcesCatalog, GtfsRealtimeSourcesCatalog
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
 

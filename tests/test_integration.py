@@ -1,8 +1,8 @@
 import os
 from jsonschema import validate
-from tools.helpers import from_json
-from tools.operations import get_sources
-from tools.constants import (
+from mobilitydb.tools.helpers import from_json
+from mobilitydb.tools.operations import get_sources
+from mobilitydb.tools.constants import (
     GTFS,
     GTFS_SCHEDULE_SOURCE_SCHEMA_PATH_FROM_ROOT,
     MDB_SOURCE_ID,

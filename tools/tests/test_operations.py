@@ -1,6 +1,6 @@
 from unittest import TestCase, skip
 from unittest.mock import patch
-from tools.operations import (
+from mobilitydb.tools.operations import (
     ALL,
     add_gtfs_realtime_source,
     update_gtfs_realtime_source,

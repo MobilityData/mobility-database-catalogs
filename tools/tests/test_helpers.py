@@ -1,6 +1,6 @@
 from unittest import TestCase, skip
 from unittest.mock import patch, Mock
-from tools.helpers import (
+from mobilitydb.tools.helpers import (
     are_overlapping_edges,
     are_overlapping_boxes,
     is_readable,

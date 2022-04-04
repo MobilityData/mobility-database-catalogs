@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1316,
+    "data_type": "gtfs",
+    "provider": "La Burundesa S.A.",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Biscay",
+        "municipality": "Bilbao",
+        "bounding_box": {
+            "minimum_latitude": 0.0,
+            "maximum_latitude": 43.343606,
+            "minimum_longitude": -2.683427,
+            "maximum_longitude": 0.0,
+            "extracted_on": "2022-04-04T18:45:13+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/la-burundesa/658/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-biscay-la-burundesa-sa-gtfs-1316.zip?alt=media"
+    }
+}

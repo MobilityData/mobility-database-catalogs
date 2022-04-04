@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1320,
+    "data_type": "gtfs",
+    "provider": "Trafiklab",
+    "name": "All public transport in Sweden",
+    "location": {
+        "country_code": "SE",
+        "bounding_box": {
+            "minimum_latitude": 58.744573,
+            "maximum_latitude": 60.679478,
+            "minimum_longitude": 17.15189,
+            "maximum_longitude": 19.404908,
+            "extracted_on": "2022-04-04T18:46:44+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/storstockholms-lokaltrafik/1086/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/se-unknown-trafiklab-gtfs-1320.zip?alt=media",
+        "license": "https://www.trafiklab.se/node/17865/license"
+    }
+}

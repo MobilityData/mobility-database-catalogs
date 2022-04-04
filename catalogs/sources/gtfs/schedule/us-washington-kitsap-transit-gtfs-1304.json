@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1304,
+    "data_type": "gtfs",
+    "provider": "Kitsap Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "municipality": "Bremerton",
+        "bounding_box": {
+            "minimum_latitude": 47.3891906204372,
+            "maximum_latitude": 47.8123792166667,
+            "minimum_longitude": -122.7108108,
+            "maximum_longitude": -122.337807,
+            "extracted_on": "2022-04-04T18:44:17+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/kitsap-transit/296/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-kitsap-transit-gtfs-1304.zip?alt=media",
+        "license": "http://www.kitsaptransit.com/privacy-policy#developer"
+    }
+}

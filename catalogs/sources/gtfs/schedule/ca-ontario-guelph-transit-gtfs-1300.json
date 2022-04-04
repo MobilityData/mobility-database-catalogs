@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1300,
+    "data_type": "gtfs",
+    "provider": "Guelph Transit",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Ontario",
+        "municipality": "Guelph",
+        "bounding_box": {
+            "minimum_latitude": 43.49932,
+            "maximum_latitude": 43.580844,
+            "minimum_longitude": -80.322631,
+            "maximum_longitude": -80.175244,
+            "extracted_on": "2022-04-04T18:44:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/guelph-transit/53/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-guelph-transit-gtfs-1300.zip?alt=media"
+    }
+}

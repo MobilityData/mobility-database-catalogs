@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1315,
+    "data_type": "gtfs",
+    "provider": "Kwanwiang Transport, LTD.",
+    "location": {
+        "country_code": "TH",
+        "subdivision_name": "Chiang Mai ",
+        "bounding_box": {
+            "minimum_latitude": 18.720218,
+            "maximum_latitude": 18.795956,
+            "minimum_longitude": 98.946055,
+            "maximum_longitude": 99.004577,
+            "extracted_on": "2022-04-04T18:45:11+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/kwanwiang-transport/785/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/th-chiang-mai-kwanwiang-transport-gtfs-1315.zip?alt=media"
+    }
+}

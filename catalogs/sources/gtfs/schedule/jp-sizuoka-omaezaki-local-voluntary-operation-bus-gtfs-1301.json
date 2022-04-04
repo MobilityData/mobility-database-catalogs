@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1301,
+    "data_type": "gtfs",
+    "provider": "Omaezaki Local Voluntary Operation Bus",
+    "location": {
+        "country_code": "JP",
+        "subdivision_name": "Sizuoka",
+        "municipality": "Omaezaki",
+        "bounding_box": {
+            "minimum_latitude": 34.6001182,
+            "maximum_latitude": 34.65078466,
+            "minimum_longitude": 138.1188726,
+            "maximum_longitude": 138.2219913,
+            "extracted_on": "2022-04-04T18:44:11+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/opentransit/353/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/jp-sizuoka-omaezaki-local-voluntary-operation-bus-gtfs-1301.zip?alt=media",
+        "license": "http://opentrans.it/"
+    }
+}

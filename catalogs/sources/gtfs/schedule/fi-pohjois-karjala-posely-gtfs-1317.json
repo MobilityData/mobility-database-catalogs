@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1317,
+    "data_type": "gtfs",
+    "provider": "POSELY",
+    "location": {
+        "country_code": "FI",
+        "subdivision_name": "Pohjois-Karjala",
+        "bounding_box": {
+            "minimum_latitude": 61.8669,
+            "maximum_latitude": 63.560062,
+            "minimum_longitude": 27.190477,
+            "maximum_longitude": 30.936747,
+            "extracted_on": "2022-04-04T18:45:17+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/liikennevirasto/733/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fi-pohjois-karjala-posely-gtfs-1317.zip?alt=media"
+    }
+}

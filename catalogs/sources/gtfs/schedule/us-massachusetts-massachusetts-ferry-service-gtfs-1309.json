@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1309,
+    "data_type": "gtfs",
+    "provider": "Massachusetts Ferry Service",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Massachusetts",
+        "bounding_box": {
+            "minimum_latitude": 40.409099,
+            "maximum_latitude": 42.52193,
+            "minimum_longitude": -74.006617,
+            "maximum_longitude": -70.05891,
+            "extracted_on": "2022-04-04T18:44:27+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/massdot/109/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-massachusetts-ferry-service-gtfs-1309.zip?alt=media"
+    }
+}

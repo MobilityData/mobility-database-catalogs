@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1314,
+    "data_type": "gtfs",
+    "provider": "BlaBlaCar Bus",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Île-de-France",
+        "municipality": "Paris",
+        "bounding_box": {
+            "minimum_latitude": 41.394968,
+            "maximum_latitude": 53.552107,
+            "minimum_longitude": -4.48214,
+            "maximum_longitude": 13.730119,
+            "extracted_on": "2022-04-04T18:45:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/idbus/519/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-ile-de-france-blablacar-bus-gtfs-1314.zip?alt=media"
+    }
+}

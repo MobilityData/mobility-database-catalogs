@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1310,
+    "data_type": "gtfs",
+    "provider": "Chiang Mai University (CMU)",
+    "location": {
+        "country_code": "TH",
+        "subdivision_name": "Chiang Mai",
+        "municipality": "Chiang Mai",
+        "bounding_box": {
+            "minimum_latitude": 18.758568,
+            "maximum_latitude": 18.807697,
+            "minimum_longitude": 98.935385,
+            "maximum_longitude": 98.972451,
+            "extracted_on": "2022-04-04T18:44:29+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/chiang-mai-university/788/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/th-chiang-mai-chiang-mai-university-cmu-gtfs-1310.zip?alt=media"
+    }
+}

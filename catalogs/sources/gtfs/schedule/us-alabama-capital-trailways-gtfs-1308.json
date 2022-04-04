@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1308,
+    "data_type": "gtfs",
+    "provider": "Capital Trailways",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Alabama",
+        "bounding_box": {
+            "minimum_latitude": 30.6705,
+            "maximum_latitude": 33.208349,
+            "minimum_longitude": -88.1012,
+            "maximum_longitude": -87.0221,
+            "extracted_on": "2022-04-04T18:44:26+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/capital-trailways/819/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-alabama-capital-trailways-gtfs-1308.zip?alt=media"
+    }
+}

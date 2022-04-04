@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1319,
+    "data_type": "gtfs",
+    "provider": "Trenitalia, Contram Mobilita s.c.p.a., Trasfer Soc. Cons. a.r.l., Adriabus spa, Soc. Consortile A.T.M.A., Start Spa",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Marche",
+        "bounding_box": {
+            "minimum_latitude": 40.634364,
+            "maximum_latitude": 45.417772,
+            "minimum_longitude": 11.880772,
+            "maximum_longitude": 17.939272,
+            "extracted_on": "2022-04-04T18:45:52+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/region-marche/740/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-marche-trenitalia-gtfs-1319.zip?alt=media"
+    }
+}

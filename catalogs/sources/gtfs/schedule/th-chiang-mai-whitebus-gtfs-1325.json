@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1325,
+    "data_type": "gtfs",
+    "provider": "WhiteBus",
+    "location": {
+        "country_code": "TH",
+        "subdivision_name": "Chiang Mai",
+        "bounding_box": {
+            "minimum_latitude": 18.76967,
+            "maximum_latitude": 18.81262,
+            "minimum_longitude": 98.94592,
+            "maximum_longitude": 99.01788,
+            "extracted_on": "2022-04-04T18:49:53+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/whitebus/786/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/th-chiang-mai-whitebus-gtfs-1325.zip?alt=media"
+    }
+}

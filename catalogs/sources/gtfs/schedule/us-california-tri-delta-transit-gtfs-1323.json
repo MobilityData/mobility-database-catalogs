@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1323,
+    "data_type": "gtfs",
+    "provider": "Tri Delta Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Concord",
+        "bounding_box": {
+            "minimum_latitude": 37.918801,
+            "maximum_latitude": 38.039856,
+            "minimum_longitude": -122.139478,
+            "maximum_longitude": -121.6914,
+            "extracted_on": "2022-04-04T18:49:50+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transitfeeds.com/p/tri-delta-transit/1148/latest/download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-tri-delta-transit-gtfs-1323.zip?alt=media"
+    }
+}

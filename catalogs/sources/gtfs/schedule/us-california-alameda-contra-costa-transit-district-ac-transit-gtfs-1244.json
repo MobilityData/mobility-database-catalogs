@@ -15,7 +15,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/ac-transit/1269/latest/download",
+        "direct_download": "https://api.actransit.org/transit/gtfs/download?token={{ API_KEY }}",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-alameda-contra-costa-transit-district-ac-transit-gtfs-1244.zip?alt=media",
         "license": "https://www.actransit.org/data-terms-and-conditions/"
     }

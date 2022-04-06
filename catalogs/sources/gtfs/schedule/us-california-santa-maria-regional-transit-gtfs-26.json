@@ -15,7 +15,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://data.trilliumtransit.com/gtfs/smat-ca-us/smat-ca-us.zip",
+        "direct_download": "",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-santa-maria-area-transit-gtfs-26.zip?alt=media"
     }
 }

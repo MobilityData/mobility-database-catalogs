@@ -15,7 +15,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/santa-cruz-metro/343/latest/download",
+        "direct_download": "http://scmtd.com/google_transit/google_transit.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-santa-cruz-metro-scmtd-gtfs-1211.zip?alt=media"
     }
 }

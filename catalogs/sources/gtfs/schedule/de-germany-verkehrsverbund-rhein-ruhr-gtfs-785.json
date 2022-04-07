@@ -4,8 +4,8 @@
     "provider": "Verkehrsverbund Rhein-Ruhr",
     "location": {
         "country_code": "DE",
-        "subdivision_name": "Germany",
-        "municipality": "Ruhr",
+        "subdivision_name": "Nordrhein-Westfalen",
+        "municipality": "",
         "bounding_box": {
             "minimum_latitude": 50.3493192,
             "maximum_latitude": 52.2906704,

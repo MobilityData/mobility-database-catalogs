@@ -4,6 +4,7 @@
     "provider": "Karlsruher Verkehrsverbundes",
     "location": {
         "country_code": "DE",
+        "subdivision_name": "Baden-Württemberg",
         "municipality": "Karlsruhe",
         "bounding_box": {
             "minimum_latitude": 48.4444287068652,

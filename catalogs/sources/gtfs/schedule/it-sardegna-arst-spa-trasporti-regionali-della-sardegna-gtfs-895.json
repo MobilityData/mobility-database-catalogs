@@ -4,7 +4,7 @@
     "provider": "ARST SpA - Trasporti Regionali Della Sardegna",
     "location": {
         "country_code": "IT",
-        "subdivision_name": "Sardegna",
+        "subdivision_name": "Regione Autonoma della Sardegna",
         "municipality": "Cagliari",
         "bounding_box": {
             "minimum_latitude": 38.895743,

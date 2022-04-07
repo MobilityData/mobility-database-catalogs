@@ -4,7 +4,7 @@
     "provider": "JTRAN",
     "location": {
         "country_code": "US",
-        "subdivision_name": "Mississipi",
+        "subdivision_name": "Mississippi",
         "municipality": "Jackson",
         "bounding_box": {
             "minimum_latitude": 32.2419270099218,

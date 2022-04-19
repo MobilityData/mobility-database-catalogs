@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 1326,
+    "data_type": "gtfs",
+    "provider": "Zarząd Transportu Publicznego w Krakowie (ZTP Kraków)",
+    "name": "Autobus",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Małopolskie",
+        "municipality": "Kraków",
+        "bounding_box": {
+            "minimum_latitude": 49.902472,
+            "maximum_latitude": 50.2452,
+            "minimum_longitude": 19.583957,
+            "maximum_longitude": 20.3526,
+            "extracted_on": "2022-04-19T13:36:51+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.ztp.krakow.pl/GTFS_KRK_A.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-malopolskie-zarzad-transportu-publicznego-w-krakowie-ztp-krakow-gtfs-1326.zip?alt=media",
+        "license": "https://ztp.krakow.pl"
+    }
+}

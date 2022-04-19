@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 1270,
     "data_type": "gtfs",
-    "provider": "MPK SA w Krakowie",
+    "provider": "Zarząd Transportu Publicznego w Krakowie (ZTP Kraków)",
     "name": "Tram",
     "location": {
         "country_code": "PL",
@@ -12,12 +12,12 @@
             "maximum_latitude": 50.101977,
             "minimum_longitude": 19.88192,
             "maximum_longitude": 20.116968,
-            "extracted_on": "2022-03-24T00:17:41+00:00"
+            "extracted_on": "2022-04-19T13:28:31+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/mpk-sa-w-krakowie/1105/latest/download",
+        "direct_download": "https://gtfs.ztp.krakow.pl/GTFS_KRK_T.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-malopolskie-mpk-sa-w-krakowie-gtfs-1270.zip?alt=media",
-        "license": "https://www.mpk.krakow.pl/"
+        "license": "https://ztp.krakow.pl"
     }
 }

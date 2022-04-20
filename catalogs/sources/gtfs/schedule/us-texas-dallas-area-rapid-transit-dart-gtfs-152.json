@@ -17,6 +17,6 @@
     "urls": {
         "direct_download": "http://www.dart.org/transitdata/latest/google_transit.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-texas-dallas-area-rapid-transit-dart-gtfs-152.zip?alt=media",
-        "license": "https://ridedart.com/business-center/developer-resources"
+        "license": "https://www.dart.org/transitdata/legalnotices.asp"
     }
 }

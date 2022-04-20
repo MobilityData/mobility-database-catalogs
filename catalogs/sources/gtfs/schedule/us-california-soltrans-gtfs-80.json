@@ -15,7 +15,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://data.trilliumtransit.com/gtfs/soltrans-ca-us/soltrans-ca-us.zip",
+        "direct_download": "https://soltrans.connexionz.net/rtt/public/resource/gtfs.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-soltrans-gtfs-80.zip?alt=media"
     }
 }

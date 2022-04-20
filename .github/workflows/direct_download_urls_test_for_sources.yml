@@ -1,9 +1,8 @@
-name: Download latest datasets on ready for review
+name: Direct download URLs test for sources
 
 on:
   pull_request:
     branches: [ main ]
-    types: [ ready_for_review ]
 
 jobs:
   get-urls:
@@ -22,7 +21,7 @@ jobs:
       - name: Get added and modified files
         id: files
         uses: jitterbit/get-changed-files@v1
-      - name: Create URLs matrix with the direct download and latest URLs
+      - name: Create the direct download URLs matrix
         shell: python
         run: |
           import os
@@ -37,7 +36,6 @@ jobs:
           # File constants
           URLS = "urls"
           DIRECT_DOWNLOAD = "direct_download"
-          LATEST = "latest"
 
           # Github constants
           MAX_JOB_NUMBER = 256
@@ -56,12 +54,9 @@ jobs:
               with open(os.path.join(ROOT, file), "r") as fp:
                   file_json = json.load(fp)
                   direct_download_url = file_json.get(URLS, {}).get(DIRECT_DOWNLOAD)
-                  latest_url = file_json.get(URLS, {}).get(LATEST)
                   if direct_download_url is None:
                       raise ValueError(f"{base}: Missing direct download url.")
-                  if latest_url is None:
-                      raise ValueError(f"{base}: Missing latest url.")
-                  urls[base] = {DIRECT_DOWNLOAD: direct_download_url, LATEST: latest_url}
+                  urls[base] = {DIRECT_DOWNLOAD: direct_download_url}
 
           urls_data = []
           jobs = np.array_split(list(urls.keys()), min(MAX_JOB_NUMBER, len(list(urls.keys()))))
@@ -73,7 +68,6 @@ jobs:
                   file_information = {
                       BASE: file_base,
                       DIRECT_DOWNLOAD: urls[file_base][DIRECT_DOWNLOAD],
-                      LATEST: urls[file_base][LATEST]
                   }
                   urls_data_string = urls_data_string + json.dumps(
                       file_information, separators=(",", ":")

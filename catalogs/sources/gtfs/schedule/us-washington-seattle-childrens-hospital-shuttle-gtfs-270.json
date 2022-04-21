@@ -5,6 +5,7 @@
     "location": {
         "country_code": "US",
         "subdivision_name": "Washington",
+        "municipality": "Seattle",
         "bounding_box": {
             "minimum_latitude": 47.650082,
             "maximum_latitude": 47.678731,

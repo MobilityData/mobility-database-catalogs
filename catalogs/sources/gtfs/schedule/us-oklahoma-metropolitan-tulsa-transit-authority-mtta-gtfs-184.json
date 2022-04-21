@@ -7,15 +7,15 @@
         "subdivision_name": "Oklahoma",
         "municipality": "Tulsa",
         "bounding_box": {
-            "minimum_latitude": 35.973884,
-            "maximum_latitude": 36.247851,
-            "minimum_longitude": -96.120174,
+            "minimum_latitude": 35.988589,
+            "maximum_latitude": 36.24298,
+            "minimum_longitude": -96.12021,
             "maximum_longitude": -95.79037,
-            "extracted_on": "2022-03-15T17:40:53+00:00"
+            "extracted_on": "2022-04-21T13:22:57+00:00"
         }
     },
     "urls": {
-        "direct_download": "http://www.tulsatransit.org/gtfs/google_transit.zip",
+        "direct_download": "http://gtfs.tulsatransit.org/google_transit.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oklahoma-metropolitan-tulsa-transit-authority-mtta-gtfs-184.zip?alt=media"
     }
 }

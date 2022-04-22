@@ -4,8 +4,8 @@
     "provider": "Huntington Area Rapid Transit (HART)",
     "location": {
         "country_code": "US",
-        "subdivision_name": "Connecticut",
-        "municipality": "Stamford",
+        "subdivision_name": "New York",
+        "municipality": "Huntington",
         "bounding_box": {
             "minimum_latitude": 40.810878,
             "maximum_latitude": 40.901946,

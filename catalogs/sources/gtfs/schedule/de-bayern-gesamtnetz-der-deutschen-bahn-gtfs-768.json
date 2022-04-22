@@ -4,7 +4,7 @@
     "provider": "Gesamtnetz der deutschen Bahn",
     "location": {
         "country_code": "DE",
-        "subdivision_name": "Bayern",
+        "subdivision_name": "",
         "bounding_box": {
             "minimum_latitude": 44.50614,
             "maximum_latitude": 56.150074,

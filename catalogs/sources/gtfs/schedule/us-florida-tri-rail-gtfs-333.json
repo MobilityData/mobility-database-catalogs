@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 333,
     "data_type": "gtfs",
-    "provider": "Tri-Rail",
+    "provider": "South Florida Regional Transportation Authority (Tri-Rail)",
     "location": {
         "country_code": "US",
         "subdivision_name": "Florida",

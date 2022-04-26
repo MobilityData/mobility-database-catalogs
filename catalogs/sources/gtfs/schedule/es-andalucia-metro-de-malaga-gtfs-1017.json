@@ -18,6 +18,6 @@
     "urls": {
         "direct_download": "https://metromalaga.es/GTFS/gtfs_2022-01-10_2023-01-22_20220111114528.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-andalucia-metro-de-malaga-gtfs-1017.zip?alt=media",
-        "license": "https://metromalaga.es/GTFS/ACCESO A DATOS PÚBLICOS DE METRO MÁLAGA LICENCIA Y CONDICIONES DE USO.pdf"
+        "license": "https://metromalaga.es/GTFS/ACCESO%20A%20DATOS%20P%C3%9ABLICOS%20DE%20METRO%20M%C3%81LAGA%20LICENCIA%20Y%20CONDICIONES%20DE%20USO.pdf"
     }
 }

@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1284,
+    "data_type": "gtfs",
+    "provider": "Shuttle Oregon",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "bounding_box": {
+            "minimum_latitude": 44.05812,
+            "maximum_latitude": 45.5890770264258,
+            "minimum_longitude": -123.028335,
+            "maximum_longitude": -120.830689,
+            "extracted_on": "2022-04-26T00:04:32+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://oregon-gtfs.trilliumtransit.com/gtfs_data/shuttleoregon-or-us/shuttleoregon-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-shuttle-oregon-gtfs-1284.zip?alt=media"
+    }
+}

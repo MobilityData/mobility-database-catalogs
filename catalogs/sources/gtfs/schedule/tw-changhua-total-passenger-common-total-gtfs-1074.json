@@ -4,7 +4,7 @@
     "provider": "Total passenger (common total), NT_南投客運(公總) (Nantou Passenger Transport (Public Service)), NT_全航客運(公總) (All-air passenger (common total))",
     "location": {
         "country_code": "TW",
-        "subdivision_name": "Changhua",
+        "subdivision_name": "Nantou",
         "bounding_box": {
             "minimum_latitude": 23.67303,
             "maximum_latitude": 25.290079,

@@ -11,11 +11,11 @@
             "maximum_latitude": 34.068294,
             "minimum_longitude": -118.471525,
             "maximum_longitude": -118.36869,
-            "extracted_on": "2022-03-14T20:07:51+00:00"
+            "extracted_on": "2022-04-24T21:34:56+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://www.culvercity.org/files/assets/public/documents/information-technology/maps/culvergtfs_06_01_2021.zip",
+        "direct_download": "https://www.culvercity.org/files/assets/public/documents/information-technology/maps/gtfsexport-feb2022.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-culver-city-bus-gtfs-38.zip?alt=media"
     }
 }

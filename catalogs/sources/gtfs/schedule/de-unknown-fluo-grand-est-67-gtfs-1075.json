@@ -2,8 +2,10 @@
     "mdb_source_id": 1075,
     "data_type": "gtfs",
     "provider": "Fluo Grand Est 67, CTS, DB AG, SBB, THURBO, Breisgau-S-Bahn GmbH, NVBW, Schwarzer Reisen, BBS Mittelschwaben, Probst, Brandner UA, Stadtbus Kempten, Gairing, RBI Regionalbus Isny, RBA Kempten, RBA Lindau, NeuBus, Schwabenbus Dillingen, Schweizerische Bundesbahnen SBB, Schweiz. Schifffahrtsgesellschaft Untersee und Rhein AG, Schweizerische Bodensee-Schiffahrtsgesellschaft AG, Politische Gemeinde Steckborn, SBB GmbH (Grenzverkehr), Bodensee-Schiffsbetriebe GmbH, PostAuto AG, SNCF, Scharnagel Omnibus",
+    "name": "S-Bahn and U-Bahn trains in Baden-Württemberg",
     "location": {
         "country_code": "DE",
+        "subdivision_name": "Baden-Württemberg",
         "bounding_box": {
             "minimum_latitude": 0.0,
             "maximum_latitude": 50.0715138,

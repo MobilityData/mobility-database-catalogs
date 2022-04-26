@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 626,
     "data_type": "gtfs",
-    "provider": "SunRail",
+    "provider": "Florida Department of Transportation (SunRail)",
     "location": {
         "country_code": "US",
         "subdivision_name": "Florida",

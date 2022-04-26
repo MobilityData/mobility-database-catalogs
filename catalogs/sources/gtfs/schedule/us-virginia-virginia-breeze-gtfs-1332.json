@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1332,
+    "data_type": "gtfs",
+    "provider": "Virginia Breeze",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Virginia",
+        "bounding_box": {
+            "minimum_latitude": 36.5882325257619,
+            "maximum_latitude": 38.956367,
+            "minimum_longitude": -82.1523,
+            "maximum_longitude": -77.006096,
+            "extracted_on": "2022-04-25T23:18:37+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/virginiabreeze-va-us/virginiabreeze-va-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-virginia-breeze-gtfs-1332.zip?alt=media",
+        "license": "http://virginia-gtfs.com/"
+    }
+}

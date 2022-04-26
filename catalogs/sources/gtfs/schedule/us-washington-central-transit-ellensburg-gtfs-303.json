@@ -1,10 +1,11 @@
 {
     "mdb_source_id": 303,
     "data_type": "gtfs",
-    "provider": "Central Transit Ellensburg",
+    "provider": "City of Ellensburg Public Transit (Central Transit)",
     "location": {
         "country_code": "US",
         "subdivision_name": "Washington",
+        "municipality": "Ellensburg",
         "bounding_box": {
             "minimum_latitude": 46.98130558,
             "maximum_latitude": 47.233944,

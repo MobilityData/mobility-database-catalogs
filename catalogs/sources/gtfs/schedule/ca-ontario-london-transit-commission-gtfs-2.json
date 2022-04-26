@@ -2,7 +2,7 @@
     "mdb_source_id": 2,
     "data_type": "gtfs",
     "provider": "London Transit Commission",
-    "name": "London Transit Commission GTFS Source",
+    "name": "",
     "location": {
         "country_code": "CA",
         "subdivision_name": "Ontario",
@@ -17,7 +17,7 @@
     },
     "urls": {
         "direct_download": "http://www.londontransit.ca/gtfsfeed/google_transit.zip",
-        "license": "https://www.londontransit.ca/open-data/ltcs-open-data-terms-of-use/",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-london-transit-commission-gtfs-2.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-london-transit-commission-gtfs-2.zip?alt=media",
+        "license": "https://www.londontransit.ca/open-data/ltcs-open-data-terms-of-use/"
     }
 }

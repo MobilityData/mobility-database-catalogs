@@ -4,7 +4,7 @@
     "provider": "LINX Transit, Linn-Benton Loop, Albany Transit System",
     "location": {
         "country_code": "US",
-        "subdivision_name": "New York",
+        "subdivision_name": "Oregon",
         "municipality": "Albany",
         "bounding_box": {
             "minimum_latitude": 44.515628,

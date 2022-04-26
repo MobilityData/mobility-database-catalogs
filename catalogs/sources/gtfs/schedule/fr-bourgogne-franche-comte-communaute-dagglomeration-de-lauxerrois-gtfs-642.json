@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 642,
+    "data_type": "gtfs",
+    "provider": "Communauté d'Agglomération de l'Auxerrois",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Bourgogne-Franche-Comté",
+        "municipality": "Communauté de l'Auxerrois",
+        "bounding_box": {
+            "minimum_latitude": 47.6975469997436,
+            "maximum_latitude": 47.88501109,
+            "minimum_longitude": 3.41888516,
+            "maximum_longitude": 3.702427,
+            "extracted_on": "2022-04-26T02:17:53+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.data.gouv.fr/fr/datasets/r/ade0bfc2-0e7a-4087-96dd-a76aeb61d196",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-bourgogne-franche-comte-communaute-dagglomeration-de-lauxerrois-gtfs-642.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/reseau-de-transports-en-commun-de-la-communaute-dagglomeration-de-lauxerrois/"
+    }
+}

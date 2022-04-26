@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1254,
+    "data_type": "gtfs",
+    "provider": "Astoria Riverfront Trolley",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Astoria",
+        "bounding_box": {
+            "minimum_latitude": 46.1878649419867,
+            "maximum_latitude": 46.1951598159476,
+            "minimum_longitude": -123.854447105988,
+            "maximum_longitude": -123.798674072109,
+            "extracted_on": "2022-04-26T00:01:12+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://oregon-gtfs.trilliumtransit.com/gtfs_data/astoria-or-us/astoria-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-astoria-riverfront-trolley-gtfs-1254.zip?alt=media"
+    }
+}

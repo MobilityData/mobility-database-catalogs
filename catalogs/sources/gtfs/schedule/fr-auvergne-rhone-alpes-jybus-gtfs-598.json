@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 598,
+    "data_type": "gtfs",
+    "provider": "J'ybus",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Auvergne-Rhône-Alpes",
+        "municipality": "Rumilly",
+        "bounding_box": {
+            "minimum_latitude": 45.840406,
+            "maximum_latitude": 45.921741,
+            "minimum_longitude": 5.932356,
+            "maximum_longitude": 6.120262,
+            "extracted_on": "2022-04-26T02:19:20+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.data.gouv.fr/fr/datasets/r/f8b861f3-6fbd-4eed-a82e-9fed96c9dd09",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-auvergne-rhone-alpes-jybus-gtfs-598.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/offre-de-transports-jybus-a-rumilly"
+    }
+}

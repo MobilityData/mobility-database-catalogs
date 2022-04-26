@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 659,
+    "data_type": "gtfs",
+    "provider": "Région Bourgogne-Franche-Comté",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Bourgogne-Franche-Comté",
+        "bounding_box": {
+            "minimum_latitude": 46.9543048433,
+            "maximum_latitude": 47.9871388071,
+            "minimum_longitude": 3.9078995987,
+            "maximum_longitude": 5.5961507823,
+            "extracted_on": "2022-04-26T02:24:50+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://exs.mobigo.cityway.fr/gtfs.aspx?key=OPENDATA&operatorCode=UT21",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-bourgogne-franche-comte-region-bourgogne-franche-comte-gtfs-659.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/reseau-de-transport-interurbain-mobigo-en-bourgogne-franche-comte"
+    }
+}

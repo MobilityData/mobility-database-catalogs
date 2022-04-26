@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 898,
+    "data_type": "gtfs",
+    "provider": "Transdev — Pays de la Loire",
+    "name": "Le réseau de transport gratuit Brévibus",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Pays de la Loire",
+        "municipality": "Paimboeuf",
+        "bounding_box": {
+            "minimum_latitude": 47.205336,
+            "maximum_latitude": 47.268319,
+            "minimum_longitude": -2.17525942765998,
+            "maximum_longitude": -2.13703509357955,
+            "extracted_on": "2022-04-26T02:37:27+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.data.gouv.fr/fr/datasets/r/b8d1007f-567e-48c4-9c40-bee205f1e688",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-pays-de-la-loire-transdev-pays-de-la-loire-gtfs-898.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/reseau-urbain-brevibus"
+    }
+}

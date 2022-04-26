@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 1332,
+    "mdb_source_id": 1328,
     "data_type": "gtfs",
     "provider": "Virginia Breeze",
     "location": {
@@ -15,7 +15,7 @@
     },
     "urls": {
         "direct_download": "https://data.trilliumtransit.com/gtfs/virginiabreeze-va-us/virginiabreeze-va-us.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-virginia-breeze-gtfs-1332.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-virginia-breeze-gtfs-1328.zip?alt=media",
         "license": "http://virginia-gtfs.com/"
     }
 }

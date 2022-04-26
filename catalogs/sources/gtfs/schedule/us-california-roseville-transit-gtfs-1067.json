@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1067,
+    "data_type": "gtfs",
+    "provider": "Roseville Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Sacramento",
+        "bounding_box": {
+            "minimum_latitude": 38.572646,
+            "maximum_latitude": 38.80784,
+            "minimum_longitude": -121.502812,
+            "maximum_longitude": -121.226197,
+            "extracted_on": "2022-04-25T22:55:36+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://iportal.sacrt.com/gtfs/Roseville/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-roseville-transit-gtfs-1067.zip?alt=media",
+        "license": "http://www.sacrt.com/gtfs.stm"
+    }
+}

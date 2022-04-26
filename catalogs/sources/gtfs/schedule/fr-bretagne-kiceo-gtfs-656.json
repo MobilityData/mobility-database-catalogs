@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 656,
+    "data_type": "gtfs",
+    "provider": "Kicéo",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Bretagne",
+        "municipality": "Vannes",
+        "bounding_box": {
+            "minimum_latitude": 47.502247,
+            "maximum_latitude": 47.760487,
+            "minimum_longitude": -2.946423,
+            "maximum_longitude": -2.583998,
+            "extracted_on": "2022-04-26T02:00:34+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://ratpdev-mosaic-prod-bucket-raw.s3-eu-west-1.amazonaws.com/21/exports/1/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-bretagne-kiceo-gtfs-656.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/offre-de-transport-du-reseau-de-vannes-kiceo-donnees-theoriques-et-temps-reel/"
+    }
+}

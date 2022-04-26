@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 661,
+    "data_type": "gtfs",
+    "provider": "Tours Métropole Val de Loire",
+    "name": "Fil Bleu",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Centre-Val de Loire",
+        "municipality": "Tours",
+        "bounding_box": {
+            "minimum_latitude": 47.307511,
+            "maximum_latitude": 47.493242,
+            "minimum_longitude": 0.486706,
+            "maximum_longitude": 0.850378,
+            "extracted_on": "2022-04-26T00:40:30+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.tours-metropole.fr/api/v2/catalog/datasets/zip-horaires-theoriques-du-reseau-fil-bleu-tours-metropole-gtfs/files/aa7f5e79190470545a898703a9c140be",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-centre-val-de-loire-tours-metropole-val-de-loire-gtfs-661.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/horaires-theoriques-du-reseau-fil-bleu-tours-metropole-gtfs"
+    }
+}

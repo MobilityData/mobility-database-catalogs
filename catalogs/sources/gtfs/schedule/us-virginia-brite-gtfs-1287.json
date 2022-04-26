@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1287,
+    "data_type": "gtfs",
+    "provider": "Brite",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Virginia",
+        "bounding_box": {
+            "minimum_latitude": 38.03240523,
+            "maximum_latitude": 38.43645966,
+            "minimum_longitude": -79.10672235,
+            "maximum_longitude": -78.86542102,
+            "extracted_on": "2022-04-25T23:15:15+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://britebus.org/gtfs/brite.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-brite-gtfs-1287.zip?alt=media",
+        "license": "http://virginia-gtfs.com/"
+    }
+}

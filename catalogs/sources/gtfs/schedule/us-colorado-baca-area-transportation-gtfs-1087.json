@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1087,
+    "data_type": "gtfs",
+    "provider": "Baca Area Transportation",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "bounding_box": {
+            "minimum_latitude": 37.319377,
+            "maximum_latitude": 37.319377,
+            "minimum_longitude": -102.560425,
+            "maximum_longitude": -102.560425,
+            "extracted_on": "2022-04-26T01:09:11+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/bacacounty-co-us/bacacounty-co-us--flex-v2.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-baca-area-transportation-gtfs-1087.zip?alt=media"
+    }
+}

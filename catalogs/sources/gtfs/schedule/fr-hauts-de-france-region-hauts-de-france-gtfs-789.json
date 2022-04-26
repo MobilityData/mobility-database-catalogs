@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 789,
+    "data_type": "gtfs",
+    "provider": "Région Hauts-de-France",
+    "name": "Réseau scolaire de la Somme",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Hauts-de-France",
+        "bounding_box": {
+            "minimum_latitude": 0.0,
+            "maximum_latitude": 50.3568,
+            "minimum_longitude": 0.0,
+            "maximum_longitude": 3.21361,
+            "extracted_on": "2022-04-26T02:26:13+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://opendata.hautsdefrance.fr/sites/default/files/data/transport/RHDF_GTFS_SCO_80.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-hauts-de-france-region-hauts-de-france-gtfs-789.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-gtfs-du-reseau-routier-regional-de-transport-8/"
+    }
+}

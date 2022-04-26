@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 836,
+    "data_type": "gtfs",
+    "provider": "Hobus",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Normandie",
+        "municipality": "Ville de Honfleur",
+        "bounding_box": {
+            "minimum_latitude": 49.39458,
+            "maximum_latitude": 49.424678,
+            "minimum_longitude": 0.226197,
+            "maximum_longitude": 0.265482,
+            "extracted_on": "2022-04-26T00:24:27+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://zenbus.net/gtfs/static/download.zip?dataset=hobus",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-normandie-hobus-gtfs-836.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-du-reseau-hobus-de-honfleur-gtfs-gtfs-rt"
+    }
+}

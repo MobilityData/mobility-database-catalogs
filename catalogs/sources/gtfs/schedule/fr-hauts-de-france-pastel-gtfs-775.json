@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 775,
+    "data_type": "gtfs",
+    "provider": "PASTEL",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Hauts-de-France",
+        "municipality": "Saint-Quentin",
+        "bounding_box": {
+            "minimum_latitude": 49.8178626226751,
+            "maximum_latitude": 49.86818,
+            "minimum_longitude": 3.25119,
+            "maximum_longitude": 3.32898,
+            "extracted_on": "2022-04-26T02:32:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.data.gouv.fr/fr/datasets/r/f360cebb-ce17-495b-aac6-05b4f52ea444",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-hauts-de-france-pastel-gtfs-775.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/donnees-gtfs-2022-reseau-bus-pastel"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 658,
+    "data_type": "gtfs",
+    "provider": "Le Grand Chalon",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Bourgogne-Franche-Comté",
+        "municipality": "Chalon-sur-Saône",
+        "bounding_box": {
+            "minimum_latitude": 46.654786,
+            "maximum_latitude": 46.95573607,
+            "minimum_longitude": 4.63357552,
+            "maximum_longitude": 4.99360019,
+            "extracted_on": "2022-04-26T02:15:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.data.gouv.fr/fr/datasets/r/7d3fd400-c55e-4994-9d85-de1dd4291dcb",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-bourgogne-franche-comte-le-grand-chalon-gtfs-658.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/horaires-theoriques-du-reseau-zoom-le-grand-chalon-gtfs"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 641,
+    "data_type": "gtfs",
+    "provider": "Syndicat Mixte des Mobilités de l'Aire Grenobloise",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Auvergne-Rhône-Alpes",
+        "municipality": "Grenoble",
+        "bounding_box": {
+            "minimum_latitude": 45.192984,
+            "maximum_latitude": 45.198644,
+            "minimum_longitude": 5.724519,
+            "maximum_longitude": 5.726084,
+            "extracted_on": "2022-04-26T00:32:07+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.mobilites-m.fr/api/gtfs/BUL",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-auvergne-rhone-alpes-syndicat-mixte-des-mobilites-de-laire-grenobloise-gtfs-641.zip?alt=media",
+        "license": "https://data.mobilites-m.fr/api/gtfs/BUL"
+    }
+}

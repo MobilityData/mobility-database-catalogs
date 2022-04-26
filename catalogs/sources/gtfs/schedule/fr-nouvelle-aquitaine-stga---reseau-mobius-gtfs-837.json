@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 837,
+    "data_type": "gtfs",
+    "provider": "STGA - réseau Möbius",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Nouvelle-Aquitaine",
+        "municipality": "Angoulême",
+        "bounding_box": {
+            "minimum_latitude": 45.553727,
+            "maximum_latitude": 45.748606,
+            "minimum_longitude": 0.00943,
+            "maximum_longitude": 0.391091,
+            "extracted_on": "2022-04-26T02:07:45+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.data.gouv.fr/fr/datasets/r/2e25c067-65a6-40db-8201-62aa1c258d36",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-nouvelle-aquitaine-stga---reseau-mobius-gtfs-837.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-reseau-mobius"
+    }
+}

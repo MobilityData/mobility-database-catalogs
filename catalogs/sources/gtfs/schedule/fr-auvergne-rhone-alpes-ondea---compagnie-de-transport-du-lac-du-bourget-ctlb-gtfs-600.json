@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 600,
+    "data_type": "gtfs",
+    "provider": "Ondéa - COMPAGNIE DE TRANSPORT DU LAC DU BOURGET-CTLB",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Auvergne-Rhône-Alpes",
+        "municipality": "Aix les Bains",
+        "bounding_box": {
+            "minimum_latitude": 45.592876,
+            "maximum_latitude": 45.786327,
+            "minimum_longitude": 5.82058,
+            "maximum_longitude": 6.012444,
+            "extracted_on": "2022-04-26T02:03:43+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://ratpdev-mosaic-prod-bucket-raw.s3-eu-west-1.amazonaws.com/33/exports/1/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-auvergne-rhone-alpes-ondea---compagnie-de-transport-du-lac-du-bourget-ctlb-gtfs-600.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/ctlb-donnees-theoriques-et-rt-aix-les-bains-lac-du-bourget/"
+    }
+}

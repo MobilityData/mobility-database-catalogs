@@ -2,6 +2,7 @@
     "mdb_source_id": 1017,
     "data_type": "gtfs",
     "provider": "Metro de Málaga",
+    "name": "GTFS static",
     "location": {
         "country_code": "ES",
         "subdivision_name": "Andalucía",
@@ -11,11 +12,12 @@
             "maximum_latitude": 36.7195,
             "minimum_longitude": -4.49433055555556,
             "maximum_longitude": -4.43155,
-            "extracted_on": "2022-03-17T19:35:26+00:00"
+            "extracted_on": "2022-04-26T20:45:16+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://github.com/metromalaga/GTFS/blob/master/latest/GTFS.zip?raw=true",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-andalucia-metro-de-malaga-gtfs-1017.zip?alt=media"
+        "direct_download": "https://metromalaga.es/GTFS/gtfs_2022-01-10_2023-01-22_20220111114528.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-andalucia-metro-de-malaga-gtfs-1017.zip?alt=media",
+        "license": "https://metromalaga.es/GTFS/ACCESO%20A%20DATOS%20P%C3%9ABLICOS%20DE%20METRO%20M%C3%81LAGA%20LICENCIA%20Y%20CONDICIONES%20DE%20USO.pdf"
     }
 }

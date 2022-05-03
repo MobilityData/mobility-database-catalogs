@@ -16,7 +16,7 @@
     },
     "urls": {
         "direct_download": "https://www.data.gouv.fr/fr/datasets/r/2e25c067-65a6-40db-8201-62aa1c258d36",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-nouvelle-aquitaine-stga---reseau-mobius-gtfs-837.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-nouvelle-aquitaine-stga-reseau-mobius-gtfs-837.zip?alt=media",
         "license": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-reseau-mobius"
     }
 }

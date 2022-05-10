@@ -49,7 +49,27 @@ Contains the JSON schemas used to validate the sources in the integration tests.
 
 ## GTFS Realtime Data Structure
 
-This is still under discussion. [Please comment to share your thoughts](https://github.com/MobilityData/mobility-database-catalogs/issues/36). [You can view what is currently drafted in the working document](https://docs.google.com/document/d/1Mlz3AXHItInitsOEAKKi8hZV9d3t3gpFbyIZGm67ESU/edit#heading=h.i8ficnh0oxru).
+|Field Name|Presence|                                                                            Definition|                                                                     
+|---|-|---|
+| mdb_source_id |  System generated | Unique numerical identifier.      |
+| data_type     | Required                   | The data format that the source uses. For example, GTFS-Realtime.                                                                                                            |
+| provider     | Required                   | A commonly used name for the transit providers included in the source.  
+| name        |Optional              | An optional description of the data source, e.g to specify if the data source is an aggregate of multiple providers
+| static_reference |Optional              | A list of the static sources that the real time source is associated with, represented by their MDB source IDs. |  
+|note|Optional|A note to clarify complex use cases for consumers, for example when several static sources are represented in a realtime source.  |                                                                                                                
+| vehicle_positions |Conditionally generated | Array of vehicle position data associated with the static reference list. Possible subfields start with a dash below.
+| trip_updates |Conditionally generated | Array of trip updates data associated with the static reference list.   Possible subfields start with a dash below.
+| service_alerts |Conditionally generated | Array of service alerts data associated with the static reference list.  Possible subfields start with a dash below.
+| — direct_download_url |Optional     | URL that automatically opens.
+|— license_url  |Optional     | The license information for the direct download URL.                                                                                                                       
+|— authentication_type |Conditionally required | The **authentication_type** field defines the type of authentication required to access the URL. When a direct download URL is provided, the authentication type is required. Valid values for this field are: |
+|   |  | * **0** or **(empty)** - No authentication required. |
+|   |  | * **1** - Ad-hoc authentication required, visit URL in `authentication_info_url` for more information. |
+|   |  | * **2** - The authentication requires an API key, which should be passed as value of the parameter `api_key_parameter_name` in the URL. Please visit URL in `authentication_info_url` for more information. |
+| ||*   **3**: The authentication requires an HTTP header, which should be passed as the value of the header api_key_parameter_name in the HTTP request. |
+| ||*   **4**: A placeholder text value is provided within the URL, which is surrounded by handlebars e.g {API_KEY}. Consumers should replace this value. |
+|— authentication_info_url | Conditionally required | If authentication is required, the **authentication_info_url** field contains a URL to a human-readable page describing how the authentication should be performed and how credentials can be created. This field is required for `authentication_type` `1` or greater. |
+| — api_key_parameter_name |Conditionally required | The **api_key_parameter_name** field defines the name of the parameter to pass in the URL to provide the API key. This field is required for `authentication_type` `2` and `3`.   |    
 
 ## Installation
 

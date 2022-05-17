@@ -52,7 +52,7 @@ Contains the JSON schemas used to validate the sources in the integration tests.
 |Field Name|Type|Presence|Definition|                                                                     
 |-|-|-|-|
 | mdb_source_id |  Unique ID | System generated | Unique numerical identifier.      |
-| data_type     | Enum| Required| The data format that the source uses: `gtfs-rt-vehicle-positions`, `gtfs-rt-trip-updates`, or `gtfs-rt-service-alerts`.                                                                                                |
+| data_type     | Enum| Required| The data format that the source uses: `gtfs-rt-vp`, `gtfs-rt-tu`, or `gtfs-rt-sa`.                                                                                                |
 | provider     | Text | Required                   | A commonly used name for the transit provider included in the source.  
 | name        |  Text |Optional              | An optional description of the data source, e.g to specify if the data source is an aggregate of multiple providers
 | static_reference |  Array of Integers |Optional              | A list of the static sources that the real time source is associated with, represented by their MDB source IDs. |  

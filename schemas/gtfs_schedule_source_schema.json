@@ -9,7 +9,7 @@
     },
     "data_type": {
       "type": "string",
-      "description": "The data format that the source uses, e.g gtfs, gtfs-rt.",
+      "description": "The data format that the source uses, e.g gtfs, gtfs_rt.",
       "enum": ["gtfs"]
     },
     "provider": {

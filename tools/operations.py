@@ -35,7 +35,7 @@ def add_gtfs_realtime_source(
     provider,
     direct_download_url,
     authentication_type,
-    authentication_info_url,
+    authentication_info_url=None,
     api_key_parameter_name=None,
     license_url=None,
     name=None,

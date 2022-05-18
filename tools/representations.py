@@ -450,7 +450,7 @@ class GtfsRealtimeSource(Source):
         attributes = {
             MDB_SOURCE_ID: self.mdb_source_id,
             DATA_TYPE: self.data_type,
-            ENTITY_TYPE: self.data_type,
+            ENTITY_TYPE: self.entity_type,
             PROVIDER: self.provider,
             NAME: self.name,
             STATIC_REFERENCE: self.static_reference,

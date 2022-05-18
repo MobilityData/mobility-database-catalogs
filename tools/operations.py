@@ -10,9 +10,11 @@ from tools.constants import (
     DIRECT_DOWNLOAD,
     LICENSE,
     STATIC_REFERENCE,
-    REALTIME_VEHICLE_POSITIONS,
-    REALTIME_TRIP_UPDATES,
-    REALTIME_ALERTS,
+    AUTHENTICATION_TYPE,
+    AUTHENTICATION_INFO,
+    API_KEY_PARAMETER_NAME,
+    NOTE,
+    ENTITY_TYPE,
     CATALOGS,
     ALL,
     MDB_SOURCE_ID,
@@ -29,22 +31,30 @@ ALL_MAP = {CATALOGS: ["GtfsScheduleSourcesCatalog", "GtfsRealtimeSourcesCatalog"
 
 
 def add_gtfs_realtime_source(
+    entity_type,
     provider,
-    static_reference=None,
-    vehicle_positions_url=None,
-    trip_updates_url=None,
-    service_alerts_url=None,
+    direct_download_url,
+    authentication_type,
+    authentication_info_url,
+    api_key_parameter_name=None,
+    license_url=None,
     name=None,
+    static_reference=None,
+    note=None,
 ):
     """Add a new GTFS Realtime source to the Mobility Catalogs."""
     catalog = GtfsRealtimeSourcesCatalog()
     data = {
+        ENTITY_TYPE: entity_type,
         PROVIDER: provider,
-        STATIC_REFERENCE: static_reference,
-        REALTIME_VEHICLE_POSITIONS: vehicle_positions_url,
-        REALTIME_TRIP_UPDATES: trip_updates_url,
-        REALTIME_ALERTS: service_alerts_url,
         NAME: name,
+        STATIC_REFERENCE: static_reference,
+        NOTE: note,
+        DIRECT_DOWNLOAD: direct_download_url,
+        AUTHENTICATION_TYPE: authentication_type,
+        AUTHENTICATION_INFO: authentication_info_url,
+        API_KEY_PARAMETER_NAME: api_key_parameter_name,
+        LICENSE: license_url,
     }
     catalog.add(**data)
     return catalog
@@ -52,23 +62,31 @@ def add_gtfs_realtime_source(
 
 def update_gtfs_realtime_source(
     mdb_source_id,
+    entity_type=None,
     provider=None,
-    static_reference=None,
-    vehicle_positions_url=None,
-    trip_updates_url=None,
-    service_alerts_url=None,
+    direct_download_url=None,
+    authentication_type=None,
+    authentication_info_url=None,
+    api_key_parameter_name=None,
+    license_url=None,
     name=None,
+    static_reference=None,
+    note=None,
 ):
     """Update a new GTFS Realtime source to the Mobility Catalogs."""
     catalog = GtfsRealtimeSourcesCatalog()
     data = {
         MDB_SOURCE_ID: mdb_source_id,
+        ENTITY_TYPE: entity_type,
         PROVIDER: provider,
-        STATIC_REFERENCE: static_reference,
-        REALTIME_VEHICLE_POSITIONS: vehicle_positions_url,
-        REALTIME_TRIP_UPDATES: trip_updates_url,
-        REALTIME_ALERTS: service_alerts_url,
         NAME: name,
+        STATIC_REFERENCE: static_reference,
+        NOTE: note,
+        DIRECT_DOWNLOAD: direct_download_url,
+        AUTHENTICATION_TYPE: authentication_type,
+        AUTHENTICATION_INFO: authentication_info_url,
+        API_KEY_PARAMETER_NAME: api_key_parameter_name,
+        LICENSE: license_url,
     }
     catalog.update(**data)
     return catalog

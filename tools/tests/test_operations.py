@@ -18,19 +18,27 @@ from tools.operations import (
 class TestOperations(TestCase):
     @patch("tools.operations.GtfsRealtimeSourcesCatalog", autospec=True)
     def test_add_gtfs_realtime_source(self, mock_catalog):
+        test_entity_type = ["test_entity_type"]
         test_provider = "test_provider"
+        test_static_reference = ["test_static_reference"]
+        test_direct_download_url = "test_direct_download_url"
+        test_authentication_type = "test_authentication_type"
+        test_authentication_info_url = "test_authentication_info_url"
+        test_api_key_parameter_name = "test_api_key_parameter_name"
+        test_license_url = "test_license_url"
         test_name = "test_name"
-        test_static_reference = "test_static_reference"
-        test_vehicle_positions_url = "test_vehicle_positions_url"
-        test_trip_updates_url = "test_trip_updates_url"
-        test_service_alerts_url = "test_service_alerts_url"
+        test_note = "test_note"
         under_test = add_gtfs_realtime_source(
+            entity_type=test_entity_type,
             provider=test_provider,
+            direct_download_url=test_direct_download_url,
+            authentication_type=test_authentication_type,
+            authentication_info_url=test_authentication_info_url,
+            api_key_parameter_name=test_api_key_parameter_name,
+            license_url=test_license_url,
             name=test_name,
             static_reference=test_static_reference,
-            vehicle_positions_url=test_vehicle_positions_url,
-            trip_updates_url=test_trip_updates_url,
-            service_alerts_url=test_service_alerts_url,
+            note=test_note,
         )
         self.assertEqual(under_test, mock_catalog())
         self.assertEqual(mock_catalog.call_count, 2)
@@ -39,20 +47,28 @@ class TestOperations(TestCase):
     @patch("tools.operations.GtfsRealtimeSourcesCatalog", autospec=True)
     def test_update_gtfs_realtime_source(self, mock_catalog):
         test_mdb_source_id = "test_mdb_source_id"
+        test_entity_type = ["test_entity_type"]
         test_provider = "test_provider"
+        test_static_reference = ["test_static_reference"]
+        test_direct_download_url = "test_direct_download_url"
+        test_authentication_type = "test_authentication_type"
+        test_authentication_info_url = "test_authentication_info_url"
+        test_api_key_parameter_name = "test_api_key_parameter_name"
+        test_license_url = "test_license_url"
         test_name = "test_name"
-        test_static_reference = "test_static_reference"
-        test_vehicle_positions_url = "test_vehicle_positions_url"
-        test_trip_updates_url = "test_trip_updates_url"
-        test_service_alerts_url = "test_service_alerts_url"
+        test_note = "test_note"
         under_test = update_gtfs_realtime_source(
             mdb_source_id=test_mdb_source_id,
+            entity_type=test_entity_type,
             provider=test_provider,
+            direct_download_url=test_direct_download_url,
+            authentication_type=test_authentication_type,
+            authentication_info_url=test_authentication_info_url,
+            api_key_parameter_name=test_api_key_parameter_name,
+            license_url=test_license_url,
             name=test_name,
             static_reference=test_static_reference,
-            vehicle_positions_url=test_vehicle_positions_url,
-            trip_updates_url=test_trip_updates_url,
-            service_alerts_url=test_service_alerts_url,
+            note=test_note,
         )
         self.assertEqual(under_test, mock_catalog())
         self.assertEqual(mock_catalog.call_count, 2)

@@ -47,11 +47,6 @@
           "description": "URL that automatically opens the source.",
           "pattern": "^(http|https|ftp):\/\/[a-zA-Z0-9.,~#{}():&/%='?_/-]+$"
         },
-        "license": {
-          "type": "string",
-          "description": "The transit provider’s license information.",
-          "pattern": "^(http|https|ftp):\/\/[a-zA-Z0-9.,~#{}():&/%='?_/-]+$"
-        },
         "authentication_type": {
           "type": "number",
           "description": "The transit provider’s license information.",
@@ -71,6 +66,11 @@
         "api_key_parameter_name": {
           "type": "string",
           "description": "This field defines the name of the parameter to pass in the URL to provide the API key. This field is required for `authentication_type=1` and `authentication_type=2`."
+        },
+        "license": {
+          "type": "string",
+          "description": "The transit provider’s license information.",
+          "pattern": "^(http|https|ftp):\/\/[a-zA-Z0-9.,~#{}():&/%='?_/-]+$"
         }
       },
       "allOf": [

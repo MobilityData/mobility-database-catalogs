@@ -468,9 +468,13 @@ class GtfsRealtimeSource(Source):
 
     @classmethod
     def get_static_sources(cls, static_reference):
-        return [
-            cls.static_catalog.get_source(source_id) for source_id in static_reference
-        ]
+        static_sources = []
+        if static_reference is not None:
+            static_sources = [
+                cls.static_catalog.get_source(source_id)
+                for source_id in static_reference
+            ]
+        return static_sources
 
     def has_subdivision_name(self, subdivision_name):
         static_sources = self.get_static_sources(self.static_reference)

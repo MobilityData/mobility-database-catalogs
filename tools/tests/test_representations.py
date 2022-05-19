@@ -791,7 +791,7 @@ class TestGtfsRealtimeSource(TestCase):
         under_test = GtfsRealtimeSource.get_static_sources(self.test_static_reference)
         self.assertEqual(under_test, [test_static_source, test_another_static_source])
 
-        test_empty_static_reference = []
+        test_empty_static_reference = None
         under_test = GtfsRealtimeSource.get_static_sources(test_empty_static_reference)
         self.assertEqual(under_test, [])
 

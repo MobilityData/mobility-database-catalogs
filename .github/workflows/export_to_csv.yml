@@ -3,6 +3,8 @@ name: Export catalogs to CSV
 on:
   push:
     branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
   export-to-csv:

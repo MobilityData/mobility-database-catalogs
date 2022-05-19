@@ -9,8 +9,8 @@
     },
     "data_type": {
       "type": "string",
-      "description": "The data format that the source uses, e.g gtfs, gtfs_rt.",
-      "enum": ["gtfs_rt"]
+      "description": "The data format that the source uses, e.g gtfs, gtfs-rt.",
+      "enum": ["gtfs-rt"]
     },
     "entity_type": {
       "type": "array",

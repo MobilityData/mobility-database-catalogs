@@ -1,6 +1,6 @@
 # DATA TYPES
 GTFS = "gtfs"
-GTFS_RT = "gtfs_rt"
+GTFS_RT = "gtfs-rt"
 
 # GTFS CONSTANTS
 STOP_LAT = "stop_lat"

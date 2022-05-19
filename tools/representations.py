@@ -556,14 +556,23 @@ class GtfsRealtimeSource(Source):
             if optional_subdivision_name is not None
             else UNKNOWN
         )
+
+        filename_provider = kwargs.get(PROVIDER)
+        name = kwargs.get(NAME)
+        if name is not None:
+            filename_provider = name
+        filename_data_type = "-".join(
+            [data_type] + [e_type for e_type in kwargs.get(ENTITY_TYPE)]
+        )
         filename = create_filename(
             country_code=country_code,
             subdivision_name=subdivision_name,
-            provider=kwargs.get(PROVIDER),
-            data_type=data_type,
+            provider=filename_provider,
+            data_type=filename_data_type,
             mdb_source_id=kwargs.get(MDB_SOURCE_ID),
             extension=JSON,
         )
+
         schema = cls.schematize(data_type=data_type, **kwargs)
         instance = cls(filename=filename, **schema)
         return instance

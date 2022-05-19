@@ -144,7 +144,7 @@ def update_gtfs_schedule_source(
 
 def get_sources(data_type=ALL):
     """Get the sources of the Mobility Catalogs."""
-    source_type_map = globals()[f"{data_type.upper()}_MAP"]
+    source_type_map = globals()[f"{data_type.upper().replace('-', '_')}_MAP"]
     sources = {}
     for catalog_cls in source_type_map[CATALOGS]:
         sources.update(globals()[f"{catalog_cls}"]().get_sources())
@@ -159,7 +159,7 @@ def get_sources_by_bounding_box(
     data_type=ALL,
 ):
     """Get the sources included in the geographical bounding box."""
-    source_type_map = globals()[f"{data_type.upper()}_MAP"]
+    source_type_map = globals()[f"{data_type.upper().replace('-', '_')}_MAP"]
     sources = {}
     for catalog_cls in source_type_map[CATALOGS]:
         sources.update(
@@ -178,7 +178,7 @@ def get_sources_by_subdivision_name(
     data_type=ALL,
 ):
     """Get the sources located at the given subdivision name."""
-    source_type_map = globals()[f"{data_type.upper()}_MAP"]
+    source_type_map = globals()[f"{data_type.upper().replace('-', '_')}_MAP"]
     sources = {}
     for catalog_cls in source_type_map[CATALOGS]:
         sources.update(
@@ -194,7 +194,7 @@ def get_sources_by_country_code(
     data_type=ALL,
 ):
     """Get the sources located at the given country code."""
-    source_type_map = globals()[f"{data_type.upper()}_MAP"]
+    source_type_map = globals()[f"{data_type.upper().replace('-', '_')}_MAP"]
     sources = {}
     for catalog_cls in source_type_map[CATALOGS]:
         sources.update(
@@ -207,7 +207,7 @@ def get_sources_by_country_code(
 
 def get_latest_datasets(data_type=ALL):
     """Get latest datasets of the Mobility Catalogs."""
-    source_type_map = globals()[f"{data_type.upper()}_MAP"]
+    source_type_map = globals()[f"{data_type.upper().replace('-', '_')}_MAP"]
     sources = {}
     for catalog_cls in source_type_map[CATALOGS]:
         sources.update(globals()[f"{catalog_cls}"]().get_latest_datasets())

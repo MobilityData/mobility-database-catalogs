@@ -61,7 +61,7 @@ jobs:
 
             # tools.constants
             GTFS = "gtfs"
-            GTFS_RT = "gtfs_rt"
+            GTFS_RT = "gtfs-rt"
             MDB_SOURCE_ID = "mdb_source_id"
             DATA_TYPE = "data_type"
             LOCATION = "location"
@@ -71,6 +71,7 @@ jobs:
             STATIC_REFERENCE = "static_reference"
             ENTITY_TYPE = "entity_type"
             UNKNOWN = "unknown"
+            URLS_AUTHENTICATION_TYPE = "urls.authentication_type"
 
             # tools.constants.GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT
             GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT = "catalogs/sources/gtfs/schedule"
@@ -113,6 +114,8 @@ jobs:
                 if column in catalog:
                     tmp[column] = catalog[column]
             catalog = tmp
+            if URLS_AUTHENTICATION_TYPE in catalog:
+                catalog[URLS_AUTHENTICATION_TYPE] = catalog[URLS_AUTHENTICATION_TYPE].astype('Int64')
             catalog.to_csv(path, sep=",", index=False)
 
       - name: Upload the catalog of sources CSV artifact

@@ -113,8 +113,6 @@ jobs:
                 if column in catalog:
                     tmp[column] = catalog[column]
             catalog = tmp
-            if STATIC_REFERENCE in catalog:
-                catalog[STATIC_REFERENCE] = catalog[STATIC_REFERENCE].astype('Int64')
             catalog.to_csv(path, sep=",", index=False)
 
       - name: Upload the catalog of sources CSV artifact

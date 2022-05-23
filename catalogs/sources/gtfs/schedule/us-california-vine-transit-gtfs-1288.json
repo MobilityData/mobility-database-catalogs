@@ -11,11 +11,11 @@
             "maximum_latitude": 38.583539,
             "minimum_longitude": -122.579754889011,
             "maximum_longitude": -122.041518688202,
-            "extracted_on": "2022-03-24T00:22:36+00:00"
+            "extracted_on": "2022-05-23T16:46:03+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/napa-vine/1268/latest/download",
+        "direct_download": "https://data.trilliumtransit.com/gtfs/vinetransit-ca-us/vinetransit-ca-us.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-vine-transit-gtfs-1288.zip?alt=media",
         "license": "https://vinetransit.com/open-data-portal/"
     }

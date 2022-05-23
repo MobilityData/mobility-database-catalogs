@@ -7,15 +7,15 @@
         "subdivision_name": "Ontario",
         "municipality": "Guelph",
         "bounding_box": {
-            "minimum_latitude": 43.49932,
+            "minimum_latitude": 43.482707,
             "maximum_latitude": 43.580844,
             "minimum_longitude": -80.322631,
-            "maximum_longitude": -80.175244,
-            "extracted_on": "2022-04-04T18:44:10+00:00"
+            "maximum_longitude": -80.175535,
+            "extracted_on": "2022-05-23T17:10:44+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/guelph-transit/53/latest/download",
+        "direct_download": "http://guelph.ca/uploads/google/google_transit.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-guelph-transit-gtfs-1300.zip?alt=media"
     }
 }

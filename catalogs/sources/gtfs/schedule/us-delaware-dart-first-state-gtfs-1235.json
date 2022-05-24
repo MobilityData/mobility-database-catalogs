@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1235,
+    "data_type": "gtfs",
+    "provider": "Delaware Transit Corporation (DART First State)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Delaware",
+        "bounding_box": {
+            "minimum_latitude": 41.511765,
+            "maximum_latitude": 41.732874,
+            "minimum_longitude": -93.832726,
+            "maximum_longitude": -93.466485,
+            "extracted_on": "2022-05-24T19:07:13+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.ridedart.com/gtfs/data/gtfsdata",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-delaware-dart-first-state-gtfs-1235.zip?alt=media"
+    }
+}

@@ -7,11 +7,11 @@
         "subdivision_name": "Ontario",
         "municipality": "Guelph",
         "bounding_box": {
-            "minimum_latitude": 43.49932,
+            "minimum_latitude": 43.482707,
             "maximum_latitude": 43.580844,
             "minimum_longitude": -80.322631,
-            "maximum_longitude": -80.175244,
-            "extracted_on": "2022-04-04T18:44:10+00:00"
+            "maximum_longitude": -80.175535,
+            "extracted_on": "2022-05-25T19:20:10+00:00"
         }
     },
     "urls": {

@@ -36,18 +36,20 @@ jobs:
             CSV_COLUMNS = [
               'mdb_source_id',
               'data_type',
+              'entity_type',
               'location.country_code',
               'location.subdivision_name',
               'location.municipality',
               'provider',
               'name',
+              'note',
               'static_reference',
               'urls.direct_download',
+              'urls.authentication_type',
+              'urls.authentication_info',
+              'urls.api_key_parameter_name',
               'urls.latest',
               'urls.license',
-              'urls.realtime_vehicle_positions',
-              'urls.realtime_trip_updates',
-              'urls.realtime_alerts',
               'location.bounding_box.minimum_latitude',
               'location.bounding_box.maximum_latitude',
               'location.bounding_box.minimum_longitude',
@@ -57,7 +59,7 @@ jobs:
 
             # tools.constants
             GTFS = "gtfs"
-            GTFS_RT = "gtfs_rt"
+            GTFS_RT = "gtfs-rt"
             MDB_SOURCE_ID = "mdb_source_id"
             DATA_TYPE = "data_type"
             LOCATION = "location"
@@ -65,7 +67,9 @@ jobs:
             SUBDIVISION_NAME = "subdivision_name"
             MUNICIPALITY = "municipality"
             STATIC_REFERENCE = "static_reference"
+            ENTITY_TYPE = "entity_type"
             UNKNOWN = "unknown"
+            URLS_AUTHENTICATION_TYPE = "urls.authentication_type"
 
             # tools.constants.GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT
             GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT = "catalogs/sources/gtfs/schedule"
@@ -84,13 +88,17 @@ jobs:
                             entity_json = json.load(fp)
                             entity_id = entity_json[MDB_SOURCE_ID]
                             catalog[entity_id] = entity_json
-            # Complete the GTFS Realtime Sources with the location information from their static reference
+            # Complete the GTFS Realtime Sources: location information from their static reference
+            # and pipe delimited static reference and entity type
             for source_id, source in catalog.items():
                 if source.get(DATA_TYPE) == GTFS_RT:
-                    if source.get(STATIC_REFERENCE) is not None and catalog.get(source.get(STATIC_REFERENCE), {}).get(LOCATION) is not None:
-                        source[LOCATION] = catalog.get(source.get(STATIC_REFERENCE), {}).get(LOCATION)
+                    if len(source.get(STATIC_REFERENCE, [])) > 0:
+                        if catalog.get(source.get(STATIC_REFERENCE)[0], {}).get(LOCATION) is not None:
+                            source[LOCATION] = catalog.get(source.get(STATIC_REFERENCE)[0], {}).get(LOCATION)
+                        source[STATIC_REFERENCE] = "|".join([str(ref_id) for ref_id in source.get(STATIC_REFERENCE)])
                     else:
                         source[LOCATION] = {COUNTRY_CODE: UNKNOWN, SUBDIVISION_NAME: UNKNOWN, MUNICIPALITY: UNKNOWN}
+                    source[ENTITY_TYPE] = "|".join(source.get(ENTITY_TYPE))
                     catalog[source_id] = source
             # Sort the catalog and convert it to a list
             catalog = list(dict(sorted(catalog.items())).values())
@@ -104,8 +112,8 @@ jobs:
                 if column in catalog:
                     tmp[column] = catalog[column]
             catalog = tmp
-            if STATIC_REFERENCE in catalog:
-                catalog[STATIC_REFERENCE] = catalog[STATIC_REFERENCE].astype('Int64')
+            if URLS_AUTHENTICATION_TYPE in catalog:
+                catalog[URLS_AUTHENTICATION_TYPE] = catalog[URLS_AUTHENTICATION_TYPE].astype('Int64')
             catalog.to_csv(path, sep=",", index=False)
 
       - name: Upload the catalog of sources CSV artifact
@@ -129,7 +137,7 @@ jobs:
           credentials_json: ${{ secrets.ARCHIVE_DATASET_SA_KEY }}
       - name: Upload csv to Google Cloud Storage
         id: upload-csv
-        uses: google-github-actions/upload-cloud-storage@main
+        uses: google-github-actions/upload-cloud-storage@v0
         with:
           path: sources.csv
           destination: mdb-csv

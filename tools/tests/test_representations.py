@@ -31,9 +31,11 @@ from tools.representations import (
     LOCATION,
     BOUNDING_BOX,
     STATIC_REFERENCE,
-    REALTIME_VEHICLE_POSITIONS,
-    REALTIME_TRIP_UPDATES,
-    REALTIME_ALERTS,
+    AUTHENTICATION_TYPE,
+    AUTHENTICATION_INFO,
+    API_KEY_PARAMETER_NAME,
+    ENTITY_TYPE,
+    NOTE,
     json,
 )
 
@@ -535,34 +537,46 @@ class TestGtfsRealtimeSource(TestCase):
     def setUp(self):
         self.test_mdb_source_id = "some_numerical_id"
         self.test_data_type = "some_data_type"
+        self.test_entity_type = ["some_entity_type", "some_other_entity_type"]
         self.test_provider = "some_provider_with_accents_éàç"
         self.test_name = "some_name"
         self.test_filename = "some_filename"
-        self.test_static_reference = "some_static_reference"
-        self.test_vehicle_positions_url = "some_vehicle_positions_url"
-        self.test_trip_updates_url = "some_trip_updates_url"
-        self.test_service_alerts_url = "some_service_alerts_url"
+        self.test_static_reference = ["some_source_id", "another_source_id"]
+        self.test_note = "some_note"
+        self.test_direct_download_url = "some_direct_download_url"
+        self.test_authentication_type = "some_authentication_type"
+        self.test_authentication_info_url = "some_authentication_info_url"
+        self.test_api_key_parameter_name = "some_api_key_parameter_name"
+        self.test_license_url = "some_license_url"
         self.test_kwargs = {
             MDB_SOURCE_ID: self.test_mdb_source_id,
             DATA_TYPE: self.test_data_type,
+            ENTITY_TYPE: self.test_entity_type,
             PROVIDER: self.test_provider,
             NAME: self.test_name,
             FILENAME: self.test_filename,
             STATIC_REFERENCE: self.test_static_reference,
-            REALTIME_VEHICLE_POSITIONS: self.test_vehicle_positions_url,
-            REALTIME_TRIP_UPDATES: self.test_trip_updates_url,
-            REALTIME_ALERTS: self.test_service_alerts_url,
+            NOTE: self.test_note,
+            DIRECT_DOWNLOAD: self.test_direct_download_url,
+            AUTHENTICATION_TYPE: self.test_authentication_type,
+            AUTHENTICATION_INFO: self.test_authentication_info_url,
+            API_KEY_PARAMETER_NAME: self.test_api_key_parameter_name,
+            LICENSE: self.test_license_url,
         }
         self.test_schema = {
             MDB_SOURCE_ID: self.test_mdb_source_id,
             DATA_TYPE: self.test_data_type,
+            ENTITY_TYPE: self.test_entity_type,
             PROVIDER: self.test_provider,
             NAME: self.test_name,
             STATIC_REFERENCE: self.test_static_reference,
+            NOTE: self.test_note,
             URLS: {
-                REALTIME_VEHICLE_POSITIONS: self.test_vehicle_positions_url,
-                REALTIME_TRIP_UPDATES: self.test_trip_updates_url,
-                REALTIME_ALERTS: self.test_service_alerts_url,
+                DIRECT_DOWNLOAD: self.test_direct_download_url,
+                AUTHENTICATION_TYPE: self.test_authentication_type,
+                AUTHENTICATION_INFO: self.test_authentication_info_url,
+                API_KEY_PARAMETER_NAME: self.test_api_key_parameter_name,
+                LICENSE: self.test_license_url,
             },
         }
 
@@ -585,11 +599,19 @@ class TestGtfsRealtimeSource(TestCase):
         self.assertEqual(under_test, test_repr)
 
     @patch("tools.representations.GtfsRealtimeSource.static_catalog")
-    @patch("tools.representations.GtfsRealtimeSource.get_static_source")
-    def test_has_subdivision_name(self, mock_static_source, mock_static_catalog):
+    @patch("tools.representations.GtfsRealtimeSource.get_static_sources")
+    def test_has_subdivision_name(self, mock_static_sources, mock_static_catalog):
         test_subdivision_name = "some_subdivision_name"
-        test_another_subdivision_name = "some_another_subdivision_name"
-        type(mock_static_source.return_value).subdivision_name = test_subdivision_name
+        test_another_subdivision_name = "another_subdivision_name"
+        test_missing_subdivision_name = "missing_subdivision_name"
+        test_static_source = MagicMock()
+        test_static_source.subdivision_name = test_subdivision_name
+        test_another_static_source = MagicMock()
+        test_another_static_source.subdivision_name = test_another_subdivision_name
+        mock_static_sources.return_value = [
+            test_static_source,
+            test_another_static_source,
+        ]
         instance = GtfsRealtimeSource(filename=self.test_filename, **self.test_schema)
         under_test = instance.has_subdivision_name(
             subdivision_name=test_subdivision_name
@@ -598,31 +620,51 @@ class TestGtfsRealtimeSource(TestCase):
         under_test = instance.has_subdivision_name(
             subdivision_name=test_another_subdivision_name
         )
+        self.assertTrue(under_test)
+        under_test = instance.has_subdivision_name(
+            subdivision_name=test_missing_subdivision_name
+        )
         self.assertFalse(under_test)
 
     @patch("tools.representations.GtfsRealtimeSource.static_catalog")
-    @patch("tools.representations.GtfsRealtimeSource.get_static_source")
-    def test_has_country_code(self, mock_static_source, mock_static_catalog):
+    @patch("tools.representations.GtfsRealtimeSource.get_static_sources")
+    def test_has_country_code(self, mock_static_sources, mock_static_catalog):
         test_country_code = "some_country_code"
-        test_another_country_code = "some_another_country_code"
-        type(mock_static_source.return_value).country_code = test_country_code
+        test_another_country_code = "another_country_code"
+        test_missing_country_code = "missing_country_code"
+        test_static_source = MagicMock()
+        test_static_source.country_code = test_country_code
+        test_another_static_source = MagicMock()
+        test_another_static_source.country_code = test_another_country_code
+        mock_static_sources.return_value = [
+            test_static_source,
+            test_another_static_source,
+        ]
         instance = GtfsRealtimeSource(filename=self.test_filename, **self.test_schema)
         under_test = instance.has_country_code(country_code=test_country_code)
         self.assertTrue(under_test)
         under_test = instance.has_country_code(country_code=test_another_country_code)
+        self.assertTrue(under_test)
+        under_test = instance.has_country_code(country_code=test_missing_country_code)
         self.assertFalse(under_test)
 
     @patch("tools.representations.GtfsRealtimeSource.static_catalog")
-    @patch("tools.representations.GtfsRealtimeSource.get_static_source")
+    @patch("tools.representations.GtfsRealtimeSource.get_static_sources")
     @patch("tools.representations.are_overlapping_boxes")
     def test_is_overlapping_bounding_box(
-        self, mock_overlapping_func, mock_static_source, mock_static_catalog
+        self, mock_overlapping_func, mock_static_sources, mock_static_catalog
     ):
         test_minimum_latitude = 43.00000
         test_maximum_latitude = 43.20000
         test_minimum_longitude = -81.50000
         test_maximum_longitude = -81.30000
-        mock_overlapping_func.side_effect = [True, False]
+        mock_overlapping_func.side_effect = [True, False, False, False]
+        test_static_source = MagicMock()
+        test_another_static_source = MagicMock()
+        mock_static_sources.return_value = [
+            test_static_source,
+            test_another_static_source,
+        ]
         instance = GtfsRealtimeSource(filename=self.test_filename, **self.test_schema)
         under_test = instance.is_overlapping_bounding_box(
             minimum_latitude=test_minimum_latitude,
@@ -649,48 +691,71 @@ class TestGtfsRealtimeSource(TestCase):
     def test_update(self, mock_static_catalog):
         instance = GtfsRealtimeSource(filename=self.test_filename, **self.test_schema)
         under_test = instance.update(**{})
+        self.assertEqual(under_test.entity_type, self.test_entity_type)
         self.assertEqual(under_test.provider, self.test_provider)
         self.assertEqual(under_test.name, self.test_name)
         self.assertEqual(under_test.static_reference, self.test_static_reference)
+        self.assertEqual(under_test.note, self.test_note)
+        self.assertEqual(under_test.direct_download_url, self.test_direct_download_url)
+        self.assertEqual(under_test.authentication_type, self.test_authentication_type)
         self.assertEqual(
-            under_test.vehicle_positions_url, self.test_vehicle_positions_url
+            under_test.authentication_info_url, self.test_authentication_info_url
         )
-        self.assertEqual(under_test.trip_updates_url, self.test_trip_updates_url)
-        self.assertEqual(under_test.service_alerts_url, self.test_service_alerts_url)
+        self.assertEqual(
+            under_test.api_key_parameter_name, self.test_api_key_parameter_name
+        )
+        self.assertEqual(under_test.license_url, self.test_license_url)
+        test_entity_type = ["another_entity_type"]
         test_provider = "another_provider"
         test_name = "another_name"
-        test_static_reference = "another_static_reference"
-        test_vehicle_positions_url = "another_vehicle_positions_url"
-        test_trip_updates_url = "another_trip_updates_url"
-        test_service_alerts_url = "another_service_alerts_url"
+        test_static_reference = ["another_static_reference"]
+        test_note = "another_note"
+        test_direct_download_url = "another_direct_download_url"
+        test_authentication_type = "another_authentication_type"
+        test_authentication_info_url = "another_authentication_info_url"
+        test_api_key_parameter_name = "another_api_key_parameter_name"
+        test_license_url = "another_license_url"
         under_test = instance.update(
             **{
+                ENTITY_TYPE: test_entity_type,
                 PROVIDER: test_provider,
                 NAME: test_name,
                 STATIC_REFERENCE: test_static_reference,
-                REALTIME_VEHICLE_POSITIONS: test_vehicle_positions_url,
-                REALTIME_TRIP_UPDATES: test_trip_updates_url,
-                REALTIME_ALERTS: test_service_alerts_url,
+                NOTE: test_note,
+                DIRECT_DOWNLOAD: test_direct_download_url,
+                AUTHENTICATION_TYPE: test_authentication_type,
+                AUTHENTICATION_INFO: test_authentication_info_url,
+                API_KEY_PARAMETER_NAME: test_api_key_parameter_name,
+                LICENSE: test_license_url,
             }
         )
+        self.assertEqual(under_test.entity_type, test_entity_type)
         self.assertEqual(under_test.provider, test_provider)
         self.assertEqual(under_test.name, test_name)
         self.assertEqual(under_test.static_reference, test_static_reference)
-        self.assertEqual(under_test.vehicle_positions_url, test_vehicle_positions_url)
-        self.assertEqual(under_test.trip_updates_url, test_trip_updates_url)
-        self.assertEqual(under_test.service_alerts_url, test_service_alerts_url)
+        self.assertEqual(under_test.note, test_note)
+        self.assertEqual(under_test.direct_download_url, test_direct_download_url)
+        self.assertEqual(under_test.authentication_type, test_authentication_type)
+        self.assertEqual(
+            under_test.authentication_info_url, test_authentication_info_url
+        )
+        self.assertEqual(under_test.api_key_parameter_name, test_api_key_parameter_name)
+        self.assertEqual(under_test.license_url, test_license_url)
 
     @patch("tools.representations.GtfsRealtimeSource.static_catalog")
     @patch("tools.representations.GtfsRealtimeSource.schematize")
     @patch("tools.representations.create_filename")
-    @patch("tools.representations.GtfsRealtimeSource.get_static_source")
+    @patch("tools.representations.GtfsRealtimeSource.get_static_sources")
     def test_build(
-        self, mock_static_source, mock_filename, mock_schema, mock_static_catalog
+        self, mock_static_sources, mock_filename, mock_schema, mock_static_catalog
     ):
         test_country_code = "some_country_code"
         test_subdivision_name = "some_subdivision_name"
-        type(mock_static_source.return_value).country_code = test_country_code
-        type(mock_static_source.return_value).subdivision_name = test_subdivision_name
+        test_static_source = MagicMock()
+        test_static_source.country_code = test_country_code
+        test_static_source.subdivision_name = test_subdivision_name
+        mock_static_sources.return_value = [test_static_source]
+
         mock_filename.return_value = "some_filename"
         mock_schema.return_value = self.test_schema
         del self.test_kwargs[DATA_TYPE]
@@ -704,23 +769,31 @@ class TestGtfsRealtimeSource(TestCase):
 
         del self.test_kwargs[NAME]
         del self.test_kwargs[STATIC_REFERENCE]
-        del self.test_kwargs[REALTIME_VEHICLE_POSITIONS]
-        del self.test_kwargs[REALTIME_TRIP_UPDATES]
-        del self.test_kwargs[REALTIME_ALERTS]
+        del self.test_kwargs[AUTHENTICATION_INFO]
+        del self.test_kwargs[API_KEY_PARAMETER_NAME]
+        del self.test_kwargs[LICENSE]
         del self.test_schema[NAME]
         del self.test_schema[STATIC_REFERENCE]
-        del self.test_schema[URLS][REALTIME_VEHICLE_POSITIONS]
-        del self.test_schema[URLS][REALTIME_TRIP_UPDATES]
-        del self.test_schema[URLS][REALTIME_ALERTS]
+        del self.test_schema[URLS][AUTHENTICATION_INFO]
+        del self.test_schema[URLS][API_KEY_PARAMETER_NAME]
+        del self.test_schema[URLS][LICENSE]
         under_test = GtfsRealtimeSource.schematize(**self.test_kwargs)
         self.assertDictEqual(under_test, self.test_schema)
 
     @patch("tools.representations.GtfsRealtimeSource.static_catalog")
-    def test_get_static_source(self, mock_static_catalog):
+    def test_get_static_sources(self, mock_static_catalog):
         test_static_source = "some_static_source"
-        mock_static_catalog.get_source.return_value = test_static_source
-        under_test = GtfsRealtimeSource.get_static_source(self.test_static_reference)
-        self.assertEqual(under_test, test_static_source)
+        test_another_static_source = "another_static_source"
+        mock_static_catalog.get_source.side_effect = [
+            test_static_source,
+            test_another_static_source,
+        ]
+        under_test = GtfsRealtimeSource.get_static_sources(self.test_static_reference)
+        self.assertEqual(under_test, [test_static_source, test_another_static_source])
+
+        test_empty_static_reference = None
+        under_test = GtfsRealtimeSource.get_static_sources(test_empty_static_reference)
+        self.assertEqual(under_test, [])
 
     @patch("tools.representations.GtfsRealtimeSource.static_catalog")
     @patch("tools.representations.GtfsRealtimeSource.__str__")

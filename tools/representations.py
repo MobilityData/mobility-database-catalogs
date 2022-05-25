@@ -34,9 +34,11 @@ from tools.constants import (
     LICENSE,
     LATEST,
     STATIC_REFERENCE,
-    REALTIME_VEHICLE_POSITIONS,
-    REALTIME_TRIP_UPDATES,
-    REALTIME_ALERTS,
+    AUTHENTICATION_TYPE,
+    AUTHENTICATION_INFO,
+    API_KEY_PARAMETER_NAME,
+    ENTITY_TYPE,
+    NOTE,
     GTFS,
     GTFS_RT,
     JSON,
@@ -434,22 +436,30 @@ class GtfsRealtimeSource(Source):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
+        self.entity_type = kwargs.pop(ENTITY_TYPE)
         self.static_reference = kwargs.pop(STATIC_REFERENCE, None)
+        self.note = kwargs.pop(NOTE, None)
         urls = kwargs.pop(URLS, {})
-        self.vehicle_positions_url = urls.pop(REALTIME_VEHICLE_POSITIONS, None)
-        self.trip_updates_url = urls.pop(REALTIME_TRIP_UPDATES, None)
-        self.service_alerts_url = urls.pop(REALTIME_ALERTS, None)
+        self.direct_download_url = urls.pop(DIRECT_DOWNLOAD)
+        self.authentication_type = urls.pop(AUTHENTICATION_TYPE)
+        self.authentication_info_url = urls.pop(AUTHENTICATION_INFO, None)
+        self.api_key_parameter_name = urls.pop(API_KEY_PARAMETER_NAME, None)
+        self.license_url = urls.pop(LICENSE, None)
 
     def __str__(self):
         attributes = {
             MDB_SOURCE_ID: self.mdb_source_id,
             DATA_TYPE: self.data_type,
+            ENTITY_TYPE: self.entity_type,
             PROVIDER: self.provider,
             NAME: self.name,
             STATIC_REFERENCE: self.static_reference,
-            REALTIME_VEHICLE_POSITIONS: self.vehicle_positions_url,
-            REALTIME_TRIP_UPDATES: self.trip_updates_url,
-            REALTIME_ALERTS: self.service_alerts_url,
+            NOTE: self.note,
+            DIRECT_DOWNLOAD: self.direct_download_url,
+            AUTHENTICATION_TYPE: self.authentication_type,
+            AUTHENTICATION_INFO: self.authentication_info_url,
+            API_KEY_PARAMETER_NAME: self.api_key_parameter_name,
+            LICENSE: self.license_url,
         }
         return json.dumps(self.schematize(**attributes), ensure_ascii=False)
 
@@ -457,30 +467,34 @@ class GtfsRealtimeSource(Source):
         return f"GtfsRealtimeSource({self.__str__()})"
 
     @classmethod
-    def get_static_source(cls, static_reference):
-        return cls.static_catalog.get_source(static_reference)
+    def get_static_sources(cls, static_reference):
+        static_sources = []
+        if static_reference is not None:
+            static_sources = [
+                cls.static_catalog.get_source(source_id)
+                for source_id in static_reference
+            ]
+        return static_sources
 
     def has_subdivision_name(self, subdivision_name):
-        static_source = self.get_static_source(self.static_reference)
-        return (
+        static_sources = self.get_static_sources(self.static_reference)
+        return any(
             static_source.subdivision_name == subdivision_name
-            if static_source is not None
-            else False
+            for static_source in static_sources
         )
 
     def has_country_code(self, country_code):
-        static_source = self.get_static_source(self.static_reference)
-        return (
+        static_sources = self.get_static_sources(self.static_reference)
+        return any(
             static_source.country_code == country_code
-            if static_source is not None
-            else False
+            for static_source in static_sources
         )
 
     def is_overlapping_bounding_box(
         self, minimum_latitude, maximum_latitude, minimum_longitude, maximum_longitude
     ):
-        static_source = self.get_static_source(self.static_reference)
-        return (
+        static_sources = self.get_static_sources(self.static_reference)
+        return any(
             are_overlapping_boxes(
                 source_minimum_latitude=static_source.bbox_min_lat,
                 source_maximum_latitude=static_source.bbox_max_lat,
@@ -491,14 +505,16 @@ class GtfsRealtimeSource(Source):
                 filter_minimum_longitude=minimum_longitude,
                 filter_maximum_longitude=maximum_longitude,
             )
-            if static_source is not None
-            else False
+            for static_source in static_sources
         )
 
     def has_latest_dataset(self):
         return False
 
     def update(self, **kwargs):
+        entity_type = kwargs.get(ENTITY_TYPE)
+        if entity_type is not None:
+            self.entity_type = entity_type
         provider = kwargs.get(PROVIDER)
         if provider is not None:
             self.provider = provider
@@ -508,41 +524,59 @@ class GtfsRealtimeSource(Source):
         static_reference = kwargs.get(STATIC_REFERENCE)
         if static_reference is not None:
             self.static_reference = static_reference
-        vehicle_positions_url = kwargs.get(REALTIME_VEHICLE_POSITIONS)
-        if vehicle_positions_url is not None:
-            self.vehicle_positions_url = vehicle_positions_url
-        trip_updates_url = kwargs.get(REALTIME_TRIP_UPDATES)
-        if trip_updates_url is not None:
-            self.trip_updates_url = trip_updates_url
-        service_alerts_url = kwargs.get(REALTIME_ALERTS)
-        if service_alerts_url is not None:
-            self.service_alerts_url = service_alerts_url
+        note = kwargs.get(NOTE)
+        if note is not None:
+            self.note = note
+        direct_download_url = kwargs.get(DIRECT_DOWNLOAD)
+        if direct_download_url is not None:
+            self.direct_download_url = direct_download_url
+        authentication_type = kwargs.get(AUTHENTICATION_TYPE)
+        if authentication_type is not None:
+            self.authentication_type = authentication_type
+        authentication_info_url = kwargs.get(AUTHENTICATION_INFO)
+        if authentication_info_url is not None:
+            self.authentication_info_url = authentication_info_url
+        api_key_parameter_name = kwargs.get(API_KEY_PARAMETER_NAME)
+        if api_key_parameter_name is not None:
+            self.api_key_parameter_name = api_key_parameter_name
+        license_url = kwargs.get(LICENSE)
+        if license_url is not None:
+            self.license_url = license_url
         return self
 
     @classmethod
     def build(cls, **kwargs):
         data_type = GTFS_RT
         static_reference = kwargs.get(STATIC_REFERENCE)
-        static_source = (
-            cls.get_static_source(static_reference)
-            if static_reference is not None
-            else None
-        )
+        static_sources = cls.get_static_sources(static_reference)
         country_code = (
-            static_source.country_code if static_source is not None else UNKNOWN
+            static_sources[0].country_code if len(static_sources) > 0 else UNKNOWN
+        )
+        optional_subdivision_name = (
+            static_sources[0].subdivision_name if len(static_sources) > 0 else UNKNOWN
         )
         subdivision_name = (
-            static_source.subdivision_name if static_source is not None else UNKNOWN
+            optional_subdivision_name
+            if optional_subdivision_name is not None
+            else UNKNOWN
         )
-        subdivision_name = subdivision_name if subdivision_name is not None else UNKNOWN
+
+        filename_provider = kwargs.get(PROVIDER)
+        name = kwargs.get(NAME)
+        if name is not None:
+            filename_provider = name
+        filename_data_type = "-".join(
+            [data_type] + [e_type for e_type in kwargs.get(ENTITY_TYPE)]
+        )
         filename = create_filename(
             country_code=country_code,
             subdivision_name=subdivision_name,
-            provider=kwargs.get(PROVIDER),
-            data_type=data_type,
+            provider=filename_provider,
+            data_type=filename_data_type,
             mdb_source_id=kwargs.get(MDB_SOURCE_ID),
             extension=JSON,
         )
+
         schema = cls.schematize(data_type=data_type, **kwargs)
         instance = cls(filename=filename, **schema)
         return instance
@@ -552,25 +586,27 @@ class GtfsRealtimeSource(Source):
         schema = {
             MDB_SOURCE_ID: kwargs.pop(MDB_SOURCE_ID),
             DATA_TYPE: kwargs.pop(DATA_TYPE),
+            ENTITY_TYPE: kwargs.pop(ENTITY_TYPE),
             PROVIDER: kwargs.pop(PROVIDER),
             NAME: kwargs.pop(NAME, None),
             STATIC_REFERENCE: kwargs.pop(STATIC_REFERENCE, None),
+            NOTE: kwargs.pop(NOTE),
             URLS: {
-                REALTIME_VEHICLE_POSITIONS: kwargs.pop(
-                    REALTIME_VEHICLE_POSITIONS, None
-                ),
-                REALTIME_TRIP_UPDATES: kwargs.pop(REALTIME_TRIP_UPDATES, None),
-                REALTIME_ALERTS: kwargs.pop(REALTIME_ALERTS, None),
+                DIRECT_DOWNLOAD: kwargs.pop(DIRECT_DOWNLOAD),
+                AUTHENTICATION_TYPE: kwargs.pop(AUTHENTICATION_TYPE),
+                AUTHENTICATION_INFO: kwargs.pop(AUTHENTICATION_INFO, None),
+                API_KEY_PARAMETER_NAME: kwargs.pop(API_KEY_PARAMETER_NAME, None),
+                LICENSE: kwargs.pop(LICENSE, None),
             },
         }
         if schema[NAME] is None:
             del schema[NAME]
         if schema[STATIC_REFERENCE] is None:
             del schema[STATIC_REFERENCE]
-        if schema[URLS][REALTIME_VEHICLE_POSITIONS] is None:
-            del schema[URLS][REALTIME_VEHICLE_POSITIONS]
-        if schema[URLS][REALTIME_TRIP_UPDATES] is None:
-            del schema[URLS][REALTIME_TRIP_UPDATES]
-        if schema[URLS][REALTIME_ALERTS] is None:
-            del schema[URLS][REALTIME_ALERTS]
+        if schema[URLS][AUTHENTICATION_INFO] is None:
+            del schema[URLS][AUTHENTICATION_INFO]
+        if schema[URLS][API_KEY_PARAMETER_NAME] is None:
+            del schema[URLS][API_KEY_PARAMETER_NAME]
+        if schema[URLS][LICENSE] is None:
+            del schema[URLS][LICENSE]
         return schema

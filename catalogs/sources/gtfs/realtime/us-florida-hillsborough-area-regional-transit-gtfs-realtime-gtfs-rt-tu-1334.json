@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1334,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Hillsborough Area Regional Transit",
+    "name": "Hillsborough Area Regional Transit GTFS Realtime",
+    "static_reference": [
+        325
+    ],
+    "note": "Bus trip updates",
+    "urls": {
+        "direct_download": "https://www.hart.org/bus/bus-trip-updates.pb",
+        "authentication_type": 2,
+        "authentication_info": "https://www.hart.org/developer_info",
+        "api_key_parameter_name": "key",
+        "license": "https://ftis.org/FTDEDisclaimer.aspx"
+    }
+}

@@ -9,8 +9,16 @@
     },
     "data_type": {
       "type": "string",
-      "description": "The data format that the source uses, e.g gtfs, gtfs_rt.",
-      "enum": ["gtfs_rt"]
+      "description": "The data format that the source uses, e.g gtfs, gtfs-rt.",
+      "enum": ["gtfs-rt"]
+    },
+    "entity_type": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["vp", "tu", "sa"]
+      },
+      "description": "The feed entity types (abbreviated) available in the source: vp (vehicle positions), tu (trip updates) and sa (service alerts)."
     },
     "provider": {
       "type": "string",
@@ -21,36 +29,107 @@
       "description": "An optional description of the data source, e.g to specify if the data source is an aggregate of multiple providers, or which network is represented by the source."
     },
     "static_reference": {
-      "type": "number",
-      "description": "The unique identifier (mdb_source_id) of the GTFS Schedule static reference for this GTFS Realtime source. Although optional, if not provided, the location of this source will be set to unknown."
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "description": "A list of the static sources that the real time source is associated with, represented by their MDB source IDs. Although optional, if not provided, the location of this source will be set to unknown."
+    },
+    "note": {
+      "type": "string",
+      "description": "A note to clarify complex use cases for consumers, for example when several static sources are represented in a realtime source."
     },
     "urls": {
       "type": "object",
       "properties": {
-        "realtime_vehicle_positions": {
+        "direct_download": {
           "type": "string",
-          "description": "URL that serves the Vehicle Positions entities for this GTFS Realtime source.",
+          "description": "URL that automatically opens the source.",
           "pattern": "^(http|https|ftp):\/\/[a-zA-Z0-9.,~#{}():&/%='?_/-]+$"
         },
-        "realtime_trip_updates": {
+        "authentication_type": {
+          "type": "number",
+          "description": "The transit provider’s license information.",
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "authentication_info": {
           "type": "string",
-          "description": "URL that serves the Trip Updates entities for this GTFS Realtime source.",
+          "description": "If authentication is required, this field contains a URL to a human-readable page describing how the authentication should be performed and how credentials can be created. This field is required for `authentication_type=1` or greater.",
           "pattern": "^(http|https|ftp):\/\/[a-zA-Z0-9.,~#{}():&/%='?_/-]+$"
         },
-        "realtime_alerts": {
+        "api_key_parameter_name": {
           "type": "string",
-          "description": "URL that serves the Service Alerts entities for this GTFS Realtime source.",
+          "description": "This field defines the name of the parameter to pass in the URL to provide the API key. This field is required for `authentication_type=1` and `authentication_type=2`."
+        },
+        "license": {
+          "type": "string",
+          "description": "The transit provider’s license information.",
           "pattern": "^(http|https|ftp):\/\/[a-zA-Z0-9.,~#{}():&/%='?_/-]+$"
         }
       },
-      "anyOf": [{
-        "required" : ["realtime_vehicle_positions"]
-      }, {
-        "required" : ["realtime_trip_updates"]
-      }, {
-        "required" : ["realtime_alerts"]
-      }]
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "authentication_type": {
+                "enum": [
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "authentication_info"
+            ]
+          },
+          "else": {
+            "not": {
+              "required": [
+                "authentication_info"
+              ]
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "authentication_type": {
+                "enum": [
+                  1,
+                  2
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "api_key_parameter_name"
+            ]
+          },
+          "else": {
+            "not": {
+              "required": [
+                "api_key_parameter_name"
+              ]
+            }
+          }
+        }
+      ],
+      "required": [
+        "direct_download",
+        "authentication_type"
+      ]
     }
   },
-  "required": ["mdb_source_id", "data_type", "provider", "urls"]
+  "required": ["mdb_source_id", "data_type", "entity_type", "provider", "urls"]
 }

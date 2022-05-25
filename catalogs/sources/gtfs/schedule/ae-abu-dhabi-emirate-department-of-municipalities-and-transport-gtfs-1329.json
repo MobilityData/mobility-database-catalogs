@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1329,
+    "data_type": "gtfs",
+    "provider": "Department of Municipalities and Transport",
+    "name": "Integrated Transport Center of Abu Dhabi",
+    "location": {
+        "country_code": "AE",
+        "subdivision_name": "Abu Dhabi Emirate",
+        "bounding_box": {
+            "minimum_latitude": 22.9433339258299,
+            "maximum_latitude": 24.7482826522346,
+            "minimum_longitude": 51.6293473899297,
+            "maximum_longitude": 55.9240267180399,
+            "extracted_on": "2022-05-16T16:41:19+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://pubftp.dmt.gov.ae/main.html?download&weblink=18511ae7285412ca93169260c239d119&realfilename=itc-abudhabi-ae_itc-abudhabi-ae_1651205153_itc-abudhabi-ae.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ae-abu-dhabi-emirate-department-of-municipalities-and-transport-gtfs-1329.zip?alt=media"
+    }
+}

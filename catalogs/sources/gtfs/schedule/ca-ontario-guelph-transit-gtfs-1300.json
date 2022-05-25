@@ -11,11 +11,11 @@
             "maximum_latitude": 43.580844,
             "minimum_longitude": -80.322631,
             "maximum_longitude": -80.175535,
-            "extracted_on": "2022-05-23T17:10:44+00:00"
+            "extracted_on": "2022-05-25T19:20:10+00:00"
         }
     },
     "urls": {
-        "direct_download": "http://guelph.ca/uploads/google/google_transit.zip",
+        "direct_download": "https://transitfeeds.com/p/guelph-transit/53/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-guelph-transit-gtfs-1300.zip?alt=media"
     }
 }

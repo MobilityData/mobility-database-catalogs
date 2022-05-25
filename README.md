@@ -51,7 +51,21 @@ Contains the JSON schemas used to validate the sources in the integration tests.
 
 ## GTFS Realtime Data Structure
 
-This is still under discussion. [Please comment to share your thoughts](https://github.com/MobilityData/mobility-database-catalogs/issues/36). [You can view what is currently drafted in the working document](https://docs.google.com/document/d/1Mlz3AXHItInitsOEAKKi8hZV9d3t3gpFbyIZGm67ESU/edit#heading=h.i8ficnh0oxru).
+|Field Name|Type|Presence|Definition|                                                                     
+|-|-|-|-|
+| mdb_source_id |  Unique ID | System generated | Unique numerical identifier.      |
+| data_type     | Enum| Required| The data format that the source uses: `gtfs-rt`.                                                                                                |
+|entity_type|Array of Enums|Required|The type of realtime entity: `vp`, `tu`, or `sa` which represent vehicle positions, trip updates, and service alerts.
+| provider     | Text | Required                   | A commonly used name for the transit provider included in the source.  
+| name        |  Text |Optional              | An optional description of the data source, e.g to specify if the data source is an aggregate of multiple providers
+|note|Text| Optional|A note to clarify complex use cases for consumers, for example when several static sources are associated with a realtime source.  |  
+| static_reference |  Array of Integers |Optional              | A list of the static sources that the real time source is associated with, represented by their MDB source IDs. |  
+|URLs| Object | Required | Contains URLs associated with the source in the `direct_download_url` and `license_url` fields, and the authentication info for `direct_download_url` in the `authentication_type`, `authentication_info_url` and `api_key_parameter_name` fields.
+|- direct_download_url |URL|Optional     | URL that responds with an encoded [GTFS Realtime protocol buffer message](https://github.com/google/transit/tree/master/gtfs-realtime/spec/en#data-format).                                                                                                
+|- authentication_type |Enum|Conditionally required | The **authentication_type** field defines the type of authentication required to access the URL. When a direct download URL is provided, the authentication type is required. Valid values for this field are: <ul> <li>**0** or **(empty)** - No authentication required.</li><li>**1** - The authentication requires an API key, which should be passed as value of the parameter `api_key_parameter_name` in the URL. Please visit URL in `authentication_info_url` for more information. </li><li>**2** - The authentication requires an HTTP header, which should be passed as the value of the header `api_key_parameter_name` in the HTTP request. </li></li>**3**: A placeholder text value of `{API_KEY}` is provided within the URL. For example: [https://gtfs.translink.ca/v2/gtfsalerts?apikey={API_KEY}](https://gtfs.translink.ca/v2/gtfsalerts?apikey=[APIKey]). Consumers should replace `{API_KEY}` with the value of the API key.</li><li>**4**: Ad-hoc authentication required, visit URL in `authentication_info_url` for more information.</li></ul>|
+|- authentication_info_url | URL| Conditionally required | If authentication is required, the **authentication_info_url** field contains a URL to a human-readable page describing how the authentication should be performed and how credentials can be created. This field is required for `authentication_type=1` or greater. |
+|- api_key_parameter_name |Text|Conditionally required | The **api_key_parameter_name** field defines the name of the parameter to pass in the URL to provide the API key. This field is required for `authentication_type=1` and `authentication_type=2`.   |   
+|- license_url  |URL| Optional     | The license information for  `direct_download_url`.     
 
 ## Installation
 

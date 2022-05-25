@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1235,
+    "data_type": "gtfs",
+    "provider": "Delaware Transit Corporation (DART First State)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Delaware",
+        "bounding_box": {
+            "minimum_latitude": 38.449396,
+            "maximum_latitude": 39.832812,
+            "minimum_longitude": -75.769633,
+            "maximum_longitude": -75.05148,
+            "extracted_on": "2022-05-25T19:06:54+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://dartfirststate.com/RiderInfo/Routes/gtfs_data/dartfirststate_de_us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-delaware-dart-first-state-gtfs-1235.zip?alt=media"
+    }
+}

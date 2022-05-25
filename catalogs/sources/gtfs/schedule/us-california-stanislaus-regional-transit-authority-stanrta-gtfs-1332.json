@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1332,
+    "data_type": "gtfs",
+    "provider": "Stanislaus Regional Transit Authority (StanRTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Modesto",
+        "bounding_box": {
+            "minimum_latitude": 37.25713,
+            "maximum_latitude": 37.954866,
+            "minimum_longitude": -121.898961218,
+            "maximum_longitude": -120.74953,
+            "extracted_on": "2022-05-23T19:48:54+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.stanrta.org/DocumentCenter/View/609/preview-gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-stanislaus-regional-transit-authority-stanrta-gtfs-1332.zip?alt=media"
+    }
+}

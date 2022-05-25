@@ -55,7 +55,7 @@ Contains the JSON schemas used to validate the sources in the integration tests.
 |-|-|-|-|
 | mdb_source_id |  Unique ID | System generated | Unique numerical identifier.      |
 | data_type     | Enum| Required| The data format that the source uses: `gtfs-rt`.                                                                                                |
-|entity_type|Enum|Required|The type of realtime entity: `vp`, `tu`, or `sa` which represent vehicle positions, trip updates, and service alerts.
+|entity_type|Array of Enums|Required|The type of realtime entity: `vp`, `tu`, or `sa` which represent vehicle positions, trip updates, and service alerts.
 | provider     | Text | Required                   | A commonly used name for the transit provider included in the source.  
 | name        |  Text |Optional              | An optional description of the data source, e.g to specify if the data source is an aggregate of multiple providers
 |note|Text| Optional|A note to clarify complex use cases for consumers, for example when several static sources are associated with a realtime source.  |  

@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1776,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Roma Servizi per la Mobilità",
+    "static_reference": [
+        1294
+    ],
+    "urls": {
+        "direct_download": "https://romamobilita.it/sites/default/files/rome_rtgtfs_vehicle_positions_feed.pb",
+        "authentication_type": 0
+    }
+}

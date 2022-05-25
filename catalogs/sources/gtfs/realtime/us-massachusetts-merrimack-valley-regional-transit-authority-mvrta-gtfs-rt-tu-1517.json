@@ -1,0 +1,18 @@
+{
+    "mdb_source_id": 1517,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Merrimack Valley Regional Transit Authority (MVRTA)",
+    "static_reference": [
+        445
+    ],
+    "urls": {
+        "direct_download": "https://api.goswift.ly/real-time/massdot-mvrta/gtfs-rt-trip-updates",
+        "authentication_type": 2,
+        "authentication_info": "https://goswift.ly/realtime-api-key",
+        "api_key_parameter_name": "authorization",
+        "license": "https://www.goswift.ly/api-license"
+    }
+}

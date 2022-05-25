@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 1362,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Exo Ville de Sainte-Julie",
+    "static_reference": [
+        753
+    ],
+    "urls": {
+        "direct_download": "https://opendata.exo.quebec/ServiceGTFSR/VehiclePosition.pb?token={API_KEY}&agency=OMITSJU",
+        "authentication_type": 3,
+        "authentication_info": "https://exo.quebec/fr/a-propos/donnees-ouvertes/FormulaireDemandeAcces",
+        "license": "https://exo.quebec/fr/a-propos/donnees-ouvertes/FormulaireDemandeAcces"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 1428,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Capital Metro",
+    "static_reference": [
+        150
+    ],
+    "urls": {
+        "direct_download": "https://data.texas.gov/download/nusn-7fcn/application%2Foctet-stream",
+        "authentication_type": 0,
+        "license": "https://www.capmetro.org/metrolabs/"
+    }
+}

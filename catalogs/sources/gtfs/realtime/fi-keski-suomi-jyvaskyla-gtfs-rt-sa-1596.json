@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 1596,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Jyväskylän Liikenne Oy, Koivuranta Oy, Uuraisten Liikenne Ky, Savo-Karjalan Linja Oy, Linja-Karjala Oy, Oulun taksipalvelut Oy, Oubus Oy, Suorsan Liikenne Ky, Koskilinjat Oy, Oy Pohjolan liikenne Ab, Kuopion Liikenne Oy, Autolinjat Oy, ML-Charter Oy, Etelä-Suomen Linjaliikenne Oy, Linjaliikenne Martti Laurila Oy, Kari Väisänen Ky, Matkatoimisto Matka-Majuri Ky, Linja-autoliikenne P. Puolakka Ky, Elimäen Liikenne Oy, Anjalankosken Linja Oy, Savonlinja Oy, Liikenne M. Heikura Oy, Jääskeläisen Auto Oy, Kilpailutus käynnissä, TILAUSAJOT MENNÄÄN BUSSILLA OY, Revon Turistiliikenne Oy, Matkamestarit Oy, R-Kioski, A. Valppu Oy, Invataksi Niemi Oy, Oy Wiik & Ström Ab, Oravaisten Liikenne Oy, Vaasan Paikallisliikenne Oy, Koiviston Auto Oy, Lehtimäen Liikenne Oy, Järvisen Liikenne Oy, Niemisen Linjat Oy, Bus Travel Oy Reissu Ruoti, Taksi- ja linja-autoliikenne Timo Lahtinen, SL-Autoyhtymä Oy, Linja-autoliike E Ahonen Ky, Lehdon Liikenne Oy, HämeBus Oy, Tuuri Jaakko Juhani, Pekolan Liikenne Oy, Mikkolan Liikenne Oy, Vekka Liikenne Oy, Inter Kuljetus Oy, Valkeakosken Liikenne Oy, Matkahuolto Oy, ELY, Ventoniemi Oy, Yhdysliikenne Oy, MIKA K. NISKANEN OY, Kantamatkat, LINJA-AUTOLIIKE YRJÖ MAKKONEN & KUMPP, SOISALON LIIKENNE OY, Pohjolan Matka, HENKILÖKULJETUS RISSANEN OY, V.Alamäki Oy, Kai Heikkinen Oy, Savo Kainuun Tilausmatkat Ky, Kajaanin Tila-autot Oy, A Kyllönen Oy, Puolangan Bussipalvelu Ky, Kainuun Tilausliikenne P. Jääskeläinen Ky, Matka-Kyllönen Oy, Jyrkilä Oy, Liikenne Vuorela Oy, Pyhtään Kuljetuspalvelut Oy, Erkki Itkonen Oy, Ihastjärven Linja Oy, Tilausliikenne Himanen, Mikkelin Palvelutaksit Oy, Tuplataxi, Matka Mäkelä Oy, Tilausliikenne Hokkinen Ky, S. J. TOIVONEN OY, E. RANTANEN OY, Kuljetus Mikkonen KY, Linja-autoliike Veljekset Laitinen Oy, TILAUSLIIKENNE HÄNNINEN OY, JOUTSENON AUTO- JA KULJETUSPALVELU OY, TOIMI VENTO KY, NINA´S ERIKOISTAKSIPALVELUT OY, Tarkiainen Matti Olavi, Anssin Tilausliikenne Oy, Rautalammin Auto Oy, Oy Rytkönen & Co, SAIMAAN TURISTILIIKENNE OY, Studio Ticket Pusatec-DO-NOT-USE, Studio Ti",
+    "name": "Jyväskylä",
+    "static_reference": [
+        867
+    ],
+    "urls": {
+        "direct_download": "https://data.waltti.fi/jyvaskyla/api/gtfsrealtime/v1.0/feed/servicealert",
+        "authentication_type": 2,
+        "authentication_info": "https://opendata.waltti.fi/getting-started#api-tokens",
+        "api_key_parameter_name": "authorization",
+        "license": "https://opendata.waltti.fi/docs"
+    }
+}

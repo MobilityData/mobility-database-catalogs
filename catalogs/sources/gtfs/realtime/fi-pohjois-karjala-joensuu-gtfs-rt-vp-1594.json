@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 1594,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Linja-Karjala Oy, Savo-Karjalan Linja Oy",
+    "name": "Joensuu",
+    "static_reference": [
+        1227
+    ],
+    "urls": {
+        "direct_download": "https://data.waltti.fi/joensuu/api/gtfsrealtime/v1.0/feed/vehicleposition",
+        "authentication_type": 2,
+        "authentication_info": "https://opendata.waltti.fi/getting-started#api-tokens",
+        "api_key_parameter_name": "authorization",
+        "license": "https://opendata.waltti.fi/docs"
+    }
+}

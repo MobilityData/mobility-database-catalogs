@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1528,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Hillsborough Area Regional Transit",
+    "static_reference": [
+        325
+    ],
+    "urls": {
+        "direct_download": "http://api.tampa.onebusaway.org:8088/vehicle-positions",
+        "authentication_type": 0
+    }
+}

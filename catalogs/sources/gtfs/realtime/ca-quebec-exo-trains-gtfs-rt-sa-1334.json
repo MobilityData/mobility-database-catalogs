@@ -1,0 +1,18 @@
+{
+    "mdb_source_id": 1334,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Exo",
+    "name": "Exo Trains",
+    "static_reference": [
+        748
+    ],
+    "urls": {
+        "direct_download": "https://opendata.exo.quebec/ServiceGTFSR/Alert.pb?token={API_KEY}",
+        "authentication_type": 3,
+        "authentication_info": "https://exo.quebec/fr/a-propos/donnees-ouvertes/FormulaireDemandeAcces",
+        "license": "https://exo.quebec/fr/a-propos/donnees-ouvertes/FormulaireDemandeAcces"
+    }
+}

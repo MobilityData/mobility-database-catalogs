@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1698,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Transit Authority of River City (TARC)",
+    "static_reference": [
+        364
+    ],
+    "urls": {
+        "direct_download": "http://gtfsrealtime.ridetarc.org/realtime/Vehicle/VehiclePositions.pb",
+        "authentication_type": 0
+    }
+}

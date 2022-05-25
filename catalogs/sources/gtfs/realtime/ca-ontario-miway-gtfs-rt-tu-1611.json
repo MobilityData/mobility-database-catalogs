@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 1611,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "MiWay",
+    "static_reference": [
+        730
+    ],
+    "urls": {
+        "direct_download": "https://www.miapp.ca/GTFS_RT/TripUpdate/TripUpdates.pb",
+        "authentication_type": 0,
+        "license": "http://www.mississauga.ca/portal/miway/developerdownload"
+    }
+}

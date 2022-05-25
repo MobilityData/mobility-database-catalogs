@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 1426,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Capital Area Transportation Authority",
+    "static_reference": [
+        402
+    ],
+    "urls": {
+        "direct_download": "http://developers.cata.org/gtfsrt/tripupdate/tripupdates.pb",
+        "authentication_type": 0,
+        "license": "https://www.cata.org/Portals/0/CATAGTFSLicenseAgreement20150323.pdf"
+    }
+}

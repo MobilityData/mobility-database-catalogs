@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1745,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Washington Park Shuttle",
+    "static_reference": [
+        254
+    ],
+    "urls": {
+        "direct_download": "http://gtfs-realtime.trilliumtransit.com/gtfs-realtime/feed/washingtonparkshuttle-or-us/service_alerts.proto",
+        "authentication_type": 0
+    }
+}

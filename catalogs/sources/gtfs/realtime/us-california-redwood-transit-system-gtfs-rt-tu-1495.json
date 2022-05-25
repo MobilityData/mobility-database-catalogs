@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 1495,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Humboldt Transit",
+    "name": "Redwood Transit System",
+    "static_reference": [
+        19
+    ],
+    "urls": {
+        "direct_download": "https://api.goswift.ly/real-time/redwood/gtfs-rt-trip-updates",
+        "authentication_type": 2,
+        "authentication_info": "https://goswift.ly/realtime-api-key",
+        "api_key_parameter_name": "authorization",
+        "license": "https://www.goswift.ly/api-license"
+    }
+}

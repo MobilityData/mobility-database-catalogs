@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 1607,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Halifax Transit",
+    "static_reference": [
+        734
+    ],
+    "urls": {
+        "direct_download": "http://gtfs.halifax.ca/realtime/Vehicle/VehiclePositions.pb",
+        "authentication_type": 0,
+        "license": "http://www.halifax.ca/opendata/transit.php"
+    }
+}

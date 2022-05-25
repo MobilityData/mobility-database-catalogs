@@ -1,0 +1,18 @@
+{
+    "mdb_source_id": 1688,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "San Joaquin Regional Transit District (RTD)",
+    "static_reference": [
+        886
+    ],
+    "urls": {
+        "direct_download": "https://api.goswift.ly/real-time/san-joaquin/gtfs-rt-vehicle-positions",
+        "authentication_type": 2,
+        "authentication_info": "https://goswift.ly/realtime-api-key",
+        "api_key_parameter_name": "authorization",
+        "license": "https://www.goswift.ly/api-license"
+    }
+}

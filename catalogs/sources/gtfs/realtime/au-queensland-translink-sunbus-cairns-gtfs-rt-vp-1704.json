@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1704,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "TransLink Sunbus Cairns",
+    "static_reference": [
+        674
+    ],
+    "urls": {
+        "direct_download": "https://gtfsrt.api.translink.com.au/api/realtime/CNS/VehiclePositions",
+        "authentication_type": 0
+    }
+}

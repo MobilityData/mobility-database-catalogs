@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1614,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Stanislaus Regional Transit Authority (StanRTA)",
+    "static_reference": [
+        1332
+    ],
+    "urls": {
+        "direct_download": "https://max.availtec.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition",
+        "authentication_type": 0
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 1347,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Exo Vallée du Richelieu",
+    "static_reference": [
+        752
+    ],
+    "urls": {
+        "direct_download": "https://opendata.exo.quebec/ServiceGTFSR/VehiclePosition.pb?token={API_KEY}&agency=CITVR",
+        "authentication_type": 3,
+        "authentication_info": "https://exo.quebec/fr/a-propos/donnees-ouvertes/FormulaireDemandeAcces",
+        "license": "https://exo.quebec/fr/a-propos/donnees-ouvertes/FormulaireDemandeAcces"
+    }
+}

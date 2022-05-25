@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1527,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Hillsborough Area Regional Transit",
+    "static_reference": [
+        325
+    ],
+    "urls": {
+        "direct_download": "http://api.tampa.onebusaway.org:8088/trip-updates",
+        "authentication_type": 0
+    }
+}

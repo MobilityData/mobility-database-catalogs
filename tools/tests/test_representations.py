@@ -768,11 +768,13 @@ class TestGtfsRealtimeSource(TestCase):
         self.assertDictEqual(under_test, self.test_schema)
 
         del self.test_kwargs[NAME]
+        del self.test_kwargs[NOTE]
         del self.test_kwargs[STATIC_REFERENCE]
         del self.test_kwargs[AUTHENTICATION_INFO]
         del self.test_kwargs[API_KEY_PARAMETER_NAME]
         del self.test_kwargs[LICENSE]
         del self.test_schema[NAME]
+        del self.test_schema[NOTE]
         del self.test_schema[STATIC_REFERENCE]
         del self.test_schema[URLS][AUTHENTICATION_INFO]
         del self.test_schema[URLS][API_KEY_PARAMETER_NAME]

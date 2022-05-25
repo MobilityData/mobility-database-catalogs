@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 1369,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Exo Le Richelain",
+    "static_reference": [
+        746
+    ],
+    "urls": {
+        "direct_download": "https://opendata.exo.quebec/ServiceGTFSR/TripUpdate.pb?token={API_KEY}&agency=CITLR",
+        "authentication_type": 3,
+        "authentication_info": "https://exo.quebec/fr/a-propos/donnees-ouvertes/FormulaireDemandeAcces",
+        "license": "https://exo.quebec/fr/a-propos/donnees-ouvertes/FormulaireDemandeAcces"
+    }
+}

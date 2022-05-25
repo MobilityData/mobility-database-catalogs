@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 1721,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Valley Metro",
+    "static_reference": [
+        147
+    ],
+    "urls": {
+        "direct_download": "https://app.mecatran.com/utw/ws/gtfsfeed/alerts/valleymetro?apiKey=4f22263f69671d7f49726c3011333e527368211f",
+        "authentication_type": 0,
+        "license": "https://phoenixopendata.com/dataset/valley-metro-bus-schedule/resource/28ccc0a5-49c8-495c-b91f-193de5ce2cb7"
+    }
+}

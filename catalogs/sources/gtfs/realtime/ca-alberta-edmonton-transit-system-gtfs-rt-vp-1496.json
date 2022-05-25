@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 1496,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Edmonton Transit System",
+    "static_reference": [
+        714
+    ],
+    "urls": {
+        "direct_download": "http://gtfs.edmonton.ca/TMGTFSRealTimeWebService/Vehicle/VehiclePositions.pb",
+        "authentication_type": 0,
+        "license": "https://www.edmonton.ca/transportation/Web-version2.1-OpenDataAgreement.pdf"
+    }
+}

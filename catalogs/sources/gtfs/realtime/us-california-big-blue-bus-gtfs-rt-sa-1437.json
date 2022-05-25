@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 1437,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Big Blue Bus",
+    "static_reference": [
+        37
+    ],
+    "urls": {
+        "direct_download": "http://gtfs.bigbluebus.com/alerts.bin",
+        "authentication_type": 0,
+        "license": "http://gtfs.bigbluebus.com/"
+    }
+}

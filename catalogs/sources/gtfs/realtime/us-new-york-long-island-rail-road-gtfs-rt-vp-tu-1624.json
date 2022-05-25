@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1624,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp",
+        "tu"
+    ],
+    "provider": "MTA New York City Transit",
+    "name": "Long Island Rail Road",
+    "static_reference": [
+        507
+    ],
+    "note": "This source includes Vehicle Position and Trip Updates entities under the same feed.",
+    "urls": {
+        "direct_download": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/lirr%2Fgtfs-lirr",
+        "authentication_type": 2,
+        "authentication_info": "https://api.mta.info/#/signup",
+        "api_key_parameter_name": "x-api-key",
+        "license": "https://api.mta.info/#/DataFeedAgreement"
+    }
+}

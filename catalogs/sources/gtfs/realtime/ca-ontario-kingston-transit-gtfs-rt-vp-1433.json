@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1433,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Kingston Transit",
+    "static_reference": [
+        733
+    ],
+    "urls": {
+        "direct_download": "https://api.cityofkingston.ca/gtfs-realtime/vehicleupdates.pb",
+        "authentication_type": 0
+    }
+}

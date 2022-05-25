@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 1520,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Grand River Transit",
+    "static_reference": [
+        721
+    ],
+    "urls": {
+        "direct_download": "http://webapps.regionofwaterloo.ca/api/grt-routes/api/tripupdates",
+        "authentication_type": 0,
+        "license": "https://www.regionofwaterloo.ca/en/regional-government/open-data.aspx"
+    }
+}

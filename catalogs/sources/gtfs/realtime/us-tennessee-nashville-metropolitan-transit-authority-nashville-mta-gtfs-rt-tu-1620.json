@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 1620,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Nashville Metropolitan Transit Authority (Nashville MTA)",
+    "static_reference": [
+        360
+    ],
+    "urls": {
+        "direct_download": "http://transitdata.nashvillemta.org/TMGTFSRealTimeWebService/tripupdate/tripupdates.pb",
+        "authentication_type": 0,
+        "license": "https://www.nashvillemta.org/Nashville-MTA-Developer-Data-Request.asp"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 1364,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Exo Chambly-Richelieu-Carignan",
+    "static_reference": [
+        750
+    ],
+    "urls": {
+        "direct_download": "https://opendata.exo.quebec/ServiceGTFSR/Alert.pb?token={API_KEY}&agency=CITCRC",
+        "authentication_type": 3,
+        "authentication_info": "https://exo.quebec/fr/a-propos/donnees-ouvertes/FormulaireDemandeAcces",
+        "license": "https://exo.quebec/fr/a-propos/donnees-ouvertes/FormulaireDemandeAcces"
+    }
+}

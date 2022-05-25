@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 1536,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Community Transit",
+    "static_reference": [
+        287
+    ],
+    "urls": {
+        "direct_download": "http://s3.amazonaws.com/commtrans-realtime-prod/tripupdates.pb",
+        "authentication_type": 0,
+        "license": "https://www.communitytransit.org/opendata"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 1410,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "BC Transit (Squamish)",
+    "static_reference": [
+        701
+    ],
+    "urls": {
+        "direct_download": "http://squamish.mapstrat.com/current/gtfrealtime_TripUpdates.bin",
+        "authentication_type": 0,
+        "license": "https://www.bctransit.com/open-data/terms-of-use"
+    }
+}

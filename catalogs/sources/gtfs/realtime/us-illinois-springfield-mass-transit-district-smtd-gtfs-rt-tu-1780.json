@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 1780,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Springfield Mass Transit District (SMTD)",
+    "static_reference": [
+        385
+    ],
+    "urls": {
+        "direct_download": "http://ride.smtd.org/gtfsrt/trips",
+        "authentication_type": 0,
+        "license": "https://www.smtd.org/gtfs-information/"
+    }
+}

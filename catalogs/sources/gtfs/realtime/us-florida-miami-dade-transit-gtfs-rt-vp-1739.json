@@ -1,0 +1,18 @@
+{
+    "mdb_source_id": 1739,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Miami Dade Transit",
+    "static_reference": [
+        331
+    ],
+    "urls": {
+        "direct_download": "https://api.goswift.ly/real-time/miami/gtfs-rt-vehicle-positions/",
+        "authentication_type": 2,
+        "authentication_info": "https://goswift.ly/realtime-api-key",
+        "api_key_parameter_name": "authorization",
+        "license": "https://www.goswift.ly/api-license"
+    }
+}

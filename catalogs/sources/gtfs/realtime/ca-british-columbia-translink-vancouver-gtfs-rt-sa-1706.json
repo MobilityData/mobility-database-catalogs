@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 1706,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "TransLink Vancouver",
+    "static_reference": [
+        696
+    ],
+    "urls": {
+        "direct_download": "https://gtfs.translink.ca/v2/gtfsalerts?apikey={API_KEY}",
+        "authentication_type": 3,
+        "authentication_info": "https://www.translink.ca/about-us/doing-business-with-translink/app-developer-resources/register",
+        "license": "https://developer.translink.ca/Home/TermsOfUse"
+    }
+}

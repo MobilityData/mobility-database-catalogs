@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1663,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Riverside Transit Agency",
+    "static_reference": [
+        98
+    ],
+    "urls": {
+        "direct_download": "https://rtabus.com/gtfsrt/trips",
+        "authentication_type": 0
+    }
+}

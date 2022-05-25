@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1623,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Nassau Inter-County Express (NICE Bus)",
+    "static_reference": [
+        521
+    ],
+    "urls": {
+        "direct_download": "http://nicebus.com/downloads/gtfs/NYC_NICE.proto",
+        "authentication_type": 0
+    }
+}

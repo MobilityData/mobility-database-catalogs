@@ -1,0 +1,18 @@
+{
+    "mdb_source_id": 1730,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Via Mobility",
+    "static_reference": [
+        180
+    ],
+    "urls": {
+        "direct_download": "https://api.goswift.ly/real-time/via/gtfs-rt-trip-updates",
+        "authentication_type": 2,
+        "authentication_info": "https://goswift.ly/realtime-api-key",
+        "api_key_parameter_name": "authorization",
+        "license": "https://www.goswift.ly/api-license"
+    }
+}

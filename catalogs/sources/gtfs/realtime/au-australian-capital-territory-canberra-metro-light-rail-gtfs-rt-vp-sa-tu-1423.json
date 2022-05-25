@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1423,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp",
+        "sa",
+        "tu"
+    ],
+    "provider": "Canberra Metro Operations",
+    "name": "Canberra Metro Light Rail",
+    "static_reference": [
+        935
+    ],
+    "note": "This source includes Vehicle Position, Trip Updates and Service Alerts entities under the same feed.",
+    "urls": {
+        "direct_download": "http://files.transport.act.gov.au/feeds/lightrail.pb",
+        "authentication_type": 0,
+        "license": "https://creativecommons.org/licenses/by/4.0/legalcode"
+    }
+}

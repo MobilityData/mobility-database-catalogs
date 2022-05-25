@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 1544,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Pierce Transit",
+    "static_reference": [
+        265
+    ],
+    "urls": {
+        "direct_download": "http://api.pugetsound.onebusaway.org/api/gtfs_realtime/alerts-for-agency/3.pb?key={API_KEY}",
+        "authentication_type": 3,
+        "authentication_info": "https://www.soundtransit.org/help-contacts/business-information/open-transit-data-otd/otd-downloads",
+        "license": "https://www.soundtransit.org/help-contacts/business-information/open-transit-data-otd/transit-data-terms-use"
+    }
+}

@@ -45,7 +45,7 @@
         "direct_download": {
           "type": "string",
           "description": "URL that automatically opens the source.",
-          "pattern": "^(http|https|ftp):\/\/[a-zA-Z0-9.,~#{}():&/%='?_/-]+$"
+          "pattern": "^(http|https|ftp):\/\/[a-zA-Z0-9.,~#{}():&/%='?_+/-]+$"
         },
         "authentication_type": {
           "type": "number",
@@ -61,7 +61,7 @@
         "authentication_info": {
           "type": "string",
           "description": "If authentication is required, this field contains a URL to a human-readable page describing how the authentication should be performed and how credentials can be created. This field is required for `authentication_type=1` or greater.",
-          "pattern": "^(http|https|ftp):\/\/[a-zA-Z0-9.,~#{}():&/%='?_/-]+$"
+          "pattern": "^(http|https|ftp):\/\/[a-zA-Z0-9.,~#{}():&/%='?_+/-]+$"
         },
         "api_key_parameter_name": {
           "type": "string",
@@ -70,7 +70,7 @@
         "license": {
           "type": "string",
           "description": "The transit provider’s license information.",
-          "pattern": "^(http|https|ftp):\/\/[a-zA-Z0-9.,~#{}():&/%='?_/-]+$"
+          "pattern": "^(http|https|ftp):\/\/[a-zA-Z0-9.,~#{}():&/%='?_+/-]+$"
         }
       },
       "allOf": [

@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1601,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Metropolitan Atlanta Rapid Transit Authority (MARTA)",
+    "static_reference": [
+        368
+    ],
+    "urls": {
+        "direct_download": "https://gtfs-rt.itsmarta.com/TMGTFSRealTimeWebService/vehicle/vehiclepositions.pb",
+        "authentication_type": 0
+    }
+}

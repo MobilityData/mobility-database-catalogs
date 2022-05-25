@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 1628,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "MTA New York City Transit",
+    "name": "Bus",
+    "static_reference": [
+        510
+    ],
+    "urls": {
+        "direct_download": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/camsys%2Fbus-alerts",
+        "authentication_type": 2,
+        "authentication_info": "https://api.mta.info/#/signup",
+        "api_key_parameter_name": "x-api-key",
+        "license": "https://api.mta.info/#/DataFeedAgreement"
+    }
+}

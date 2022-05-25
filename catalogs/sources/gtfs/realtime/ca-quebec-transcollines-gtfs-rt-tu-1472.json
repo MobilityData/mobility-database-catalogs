@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 1472,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Transcollines",
+    "static_reference": [
+        739
+    ],
+    "urls": {
+        "direct_download": "http://67.212.79.244:8080/hermes_st_Transcollines/pb/tripUpdates.pb",
+        "authentication_type": 0,
+        "license": "https://github.com/transcollines/GTFS-RT/blob/master/LICENCE.MD"
+    }
+}

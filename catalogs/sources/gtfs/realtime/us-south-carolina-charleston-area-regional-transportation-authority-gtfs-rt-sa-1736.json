@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1736,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Charleston Area Regional Transportation Authority",
+    "static_reference": [
+        352
+    ],
+    "urls": {
+        "direct_download": "http://gtfs-realtime.trilliumtransit.com/gtfs-realtime/feed/carta-sc-us/service_alerts.proto",
+        "authentication_type": 0
+    }
+}

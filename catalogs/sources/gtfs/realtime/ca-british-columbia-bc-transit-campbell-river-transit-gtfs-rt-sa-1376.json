@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1376,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "BC Transit (Campbell River Transit)",
+    "static_reference": [
+        691
+    ],
+    "urls": {
+        "direct_download": "https://bct.tmix.se/gtfs-realtime/alerts.pb?operatorIds=12",
+        "authentication_type": 0
+    }
+}

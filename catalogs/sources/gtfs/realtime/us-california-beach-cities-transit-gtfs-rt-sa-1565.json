@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1565,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Beach Cities Transit",
+    "static_reference": [
+        803
+    ],
+    "urls": {
+        "direct_download": "https://redondobeachbct.com/gtfs-rt/alerts",
+        "authentication_type": 0
+    }
+}

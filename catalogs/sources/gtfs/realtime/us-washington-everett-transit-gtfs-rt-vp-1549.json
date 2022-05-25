@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 1549,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Everett Transit",
+    "static_reference": [
+        288
+    ],
+    "urls": {
+        "direct_download": "http://api.pugetsound.onebusaway.org/api/gtfs_realtime/vehicle-positions-for-agency/97.pb?key={API_KEY}",
+        "authentication_type": 3,
+        "authentication_info": "https://www.soundtransit.org/help-contacts/business-information/open-transit-data-otd/otd-downloads",
+        "license": "https://www.soundtransit.org/help-contacts/business-information/open-transit-data-otd/transit-data-terms-use"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1665,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Riverside Transit Agency",
+    "static_reference": [
+        98
+    ],
+    "urls": {
+        "direct_download": "https://rtabus.com/gtfsrt/vehicles",
+        "authentication_type": 0
+    }
+}

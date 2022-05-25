@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1566,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Beach Cities Transit",
+    "static_reference": [
+        803
+    ],
+    "urls": {
+        "direct_download": "https://redondobeachbct.com/gtfs-rt/vehiclepositions",
+        "authentication_type": 0
+    }
+}

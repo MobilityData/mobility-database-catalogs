@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1506,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Merced County Transit (The Bus)",
+    "static_reference": [
+        86
+    ],
+    "urls": {
+        "direct_download": "https://thebuslive.com/gtfs-rt/vehiclepositions",
+        "authentication_type": 0
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 1429,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Capital Metro",
+    "static_reference": [
+        150
+    ],
+    "urls": {
+        "direct_download": "https://data.texas.gov/download/rmk2-acnw/application%2Foctet-stream",
+        "authentication_type": 0,
+        "license": "https://www.capmetro.org/metrolabs/"
+    }
+}

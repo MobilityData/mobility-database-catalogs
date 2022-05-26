@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1385,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Bay Area Rapid Transit (BART)",
+    "static_reference": [
+        53
+    ],
+    "urls": {
+        "direct_download": "http://api.bart.gov/gtfsrt/alerts.aspx",
+        "authentication_type": 0
+    }
+}

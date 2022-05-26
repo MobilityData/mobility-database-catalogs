@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1749,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "York Region Transit",
+    "static_reference": [
+        728
+    ],
+    "urls": {
+        "direct_download": "http://rtu.york.ca/gtfsrealtime/TripUpdates",
+        "authentication_type": 0
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1778,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Roma Servizi per la Mobilità",
+    "static_reference": [
+        1294
+    ],
+    "urls": {
+        "direct_download": "https://romamobilita.it/sites/default/files/rome_rtgtfs_trip_updates_feed.pb",
+        "authentication_type": 0
+    }
+}

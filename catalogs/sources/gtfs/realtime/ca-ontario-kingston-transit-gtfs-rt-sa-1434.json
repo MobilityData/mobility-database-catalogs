@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1434,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Kingston Transit",
+    "static_reference": [
+        733
+    ],
+    "urls": {
+        "direct_download": "https://api.cityofkingston.ca/gtfs-realtime/alerts.pb",
+        "authentication_type": 0
+    }
+}

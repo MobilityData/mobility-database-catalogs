@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1474,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Shreveport Area Transit System (SporTran)",
+    "static_reference": [
+        1060
+    ],
+    "urls": {
+        "direct_download": "https://sportranbus.com/gtfs-rt/vehiclepositions",
+        "authentication_type": 0
+    }
+}

@@ -590,7 +590,7 @@ class GtfsRealtimeSource(Source):
             PROVIDER: kwargs.pop(PROVIDER),
             NAME: kwargs.pop(NAME, None),
             STATIC_REFERENCE: kwargs.pop(STATIC_REFERENCE, None),
-            NOTE: kwargs.pop(NOTE),
+            NOTE: kwargs.pop(NOTE, None),
             URLS: {
                 DIRECT_DOWNLOAD: kwargs.pop(DIRECT_DOWNLOAD),
                 AUTHENTICATION_TYPE: kwargs.pop(AUTHENTICATION_TYPE),
@@ -601,6 +601,8 @@ class GtfsRealtimeSource(Source):
         }
         if schema[NAME] is None:
             del schema[NAME]
+        if schema[NOTE] is None:
+            del schema[NOTE]
         if schema[STATIC_REFERENCE] is None:
             del schema[STATIC_REFERENCE]
         if schema[URLS][AUTHENTICATION_INFO] is None:

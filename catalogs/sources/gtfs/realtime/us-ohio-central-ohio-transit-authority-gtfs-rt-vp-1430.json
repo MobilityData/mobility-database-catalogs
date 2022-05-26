@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 1430,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Central Ohio Transit Authority",
+    "static_reference": [
+        404
+    ],
+    "urls": {
+        "direct_download": "http://realtime.cota.com/TMGTFSRealTimeWebService/Vehicle/VehiclePositions.pb",
+        "authentication_type": 0,
+        "license": "https://www.cota.com/data/"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 1540,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "King County Metro",
+    "static_reference": [
+        1330
+    ],
+    "urls": {
+        "direct_download": "http://api.pugetsound.onebusaway.org/api/gtfs_realtime/trip-updates-for-agency/1.pb?key={API_KEY}",
+        "authentication_type": 3,
+        "authentication_info": "https://www.soundtransit.org/help-contacts/business-information/open-transit-data-otd/otd-downloads",
+        "license": "https://www.soundtransit.org/help-contacts/business-information/open-transit-data-otd/transit-data-terms-use"
+    }
+}

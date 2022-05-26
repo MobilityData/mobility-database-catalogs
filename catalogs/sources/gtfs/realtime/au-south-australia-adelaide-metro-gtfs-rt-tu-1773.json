@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 1773,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Adelaide Metro",
+    "static_reference": [
+        660
+    ],
+    "urls": {
+        "direct_download": "https://gtfs.adelaidemetro.com.au/v1/realtime/trip_updates",
+        "authentication_type": 4,
+        "authentication_info": "https://gtfs.adelaidemetro.com.au/#/gtfsr"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1662,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Rhode Island Public Transit Authority",
+    "static_reference": [
+        624
+    ],
+    "urls": {
+        "direct_download": "http://realtime.ripta.com:81/api/vehiclepositions?format=gtfs.proto",
+        "authentication_type": 0
+    }
+}

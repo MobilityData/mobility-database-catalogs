@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1488,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Cincinnati Metro",
+    "static_reference": [
+        307
+    ],
+    "urls": {
+        "direct_download": "https://tmgtfsprd.sorttrpcloud.com/TMGTFSRealTimeWebService/tripupdate/tripupdates.pb",
+        "authentication_type": 0
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1445,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Saskatoon Transit",
+    "static_reference": [
+        716
+    ],
+    "urls": {
+        "direct_download": "http://apps2.saskatoon.ca/app/data/Vehicle/VehiclePositions.pb",
+        "authentication_type": 0
+    }
+}

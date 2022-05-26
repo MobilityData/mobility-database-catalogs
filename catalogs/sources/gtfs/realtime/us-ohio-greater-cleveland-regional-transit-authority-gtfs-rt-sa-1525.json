@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1525,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Greater Cleveland Regional Transit Authority",
+    "static_reference": [
+        406
+    ],
+    "urls": {
+        "direct_download": "http://gtfs.gcrta.org/TMGTFSRealTimeWebService/Alert/Alerts.pb",
+        "authentication_type": 0
+    }
+}

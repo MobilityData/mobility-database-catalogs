@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1649,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Tompkins Consolidated Area Transit (TCAT)",
+    "static_reference": [
+        535
+    ],
+    "urls": {
+        "direct_download": "https://realtimetcatbus.availtec.com/InfoPoint/GTFS-Realtime.ashx?&Type=VehiclePosition&serverid=0",
+        "authentication_type": 0
+    }
+}

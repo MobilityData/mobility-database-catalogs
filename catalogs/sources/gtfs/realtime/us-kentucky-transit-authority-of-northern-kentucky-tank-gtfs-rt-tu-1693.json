@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1693,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Transit Authority of Northern Kentucky (TANK)",
+    "static_reference": [
+        367
+    ],
+    "urls": {
+        "direct_download": "http://66.42.202.74:89/api/tripupdates",
+        "authentication_type": 0
+    }
+}

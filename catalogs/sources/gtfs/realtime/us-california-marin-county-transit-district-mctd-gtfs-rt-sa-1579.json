@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1579,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Marin County Transit District (MCTD)",
+    "static_reference": [
+        71
+    ],
+    "urls": {
+        "direct_download": "https://marintransit.net/gtfs-rt/alerts",
+        "authentication_type": 0
+    }
+}

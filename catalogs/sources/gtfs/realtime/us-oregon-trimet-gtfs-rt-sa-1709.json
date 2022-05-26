@@ -1,0 +1,18 @@
+{
+    "mdb_source_id": 1709,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "TriMet",
+    "static_reference": [
+        247
+    ],
+    "urls": {
+        "direct_download": "http://developer.trimet.org/ws/V1/FeedSpecAlerts/",
+        "authentication_type": 1,
+        "authentication_info": "https://developer.trimet.org/GTFS.shtml",
+        "api_key_parameter_name": "AppID",
+        "license": "http://developer.trimet.org/terms_of_use.shtml"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 1588,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Tampereen joukkoliikenne (JOLI)",
+    "name": "Tampere",
+    "static_reference": [
+        866
+    ],
+    "urls": {
+        "direct_download": "https://data.waltti.fi/tampere/api/gtfsrealtime/v1.0/feed/vehicleposition",
+        "authentication_type": 2,
+        "authentication_info": "https://opendata.waltti.fi/getting-started#api-tokens",
+        "api_key_parameter_name": "authorization",
+        "license": "https://opendata.waltti.fi/docs"
+    }
+}

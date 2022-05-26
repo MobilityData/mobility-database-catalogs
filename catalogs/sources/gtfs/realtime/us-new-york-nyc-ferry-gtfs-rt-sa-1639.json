@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 1639,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "NYC Ferry",
+    "static_reference": [
+        515
+    ],
+    "urls": {
+        "direct_download": "http://nycferry.connexionz.net/rtt/public/utility/gtfsrealtime.aspx/alert",
+        "authentication_type": 0,
+        "license": "https://www.ferry.nyc/developer-tools/"
+    }
+}

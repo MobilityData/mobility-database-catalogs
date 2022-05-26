@@ -1,0 +1,18 @@
+{
+    "mdb_source_id": 1572,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Qline Detroit",
+    "static_reference": [
+        802
+    ],
+    "urls": {
+        "direct_download": "https://api.goswift.ly/real-time/detroit-m1-rail/gtfs-rt-alerts/",
+        "authentication_type": 2,
+        "authentication_info": "https://goswift.ly/realtime-api-key",
+        "api_key_parameter_name": "authorization",
+        "license": "https://www.goswift.ly/api-license"
+    }
+}

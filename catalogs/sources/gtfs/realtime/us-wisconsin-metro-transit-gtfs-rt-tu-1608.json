@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 1608,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Metro Transit",
+    "static_reference": [
+        394
+    ],
+    "urls": {
+        "direct_download": "http://transitdata.cityofmadison.com/TripUpdate/TripUpdates.pb",
+        "authentication_type": 0,
+        "license": "http://www.cityofmadison.com/metro/Apps/developers.cfm"
+    }
+}

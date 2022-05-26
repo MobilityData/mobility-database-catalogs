@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 1521,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Grand River Transit",
+    "static_reference": [
+        721
+    ],
+    "urls": {
+        "direct_download": "http://webapps.regionofwaterloo.ca/api/grt-routes/api/vehiclepositions",
+        "authentication_type": 0,
+        "license": "https://www.regionofwaterloo.ca/en/regional-government/open-data.aspx"
+    }
+}

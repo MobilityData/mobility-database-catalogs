@@ -1,0 +1,13 @@
+{
+    "mdb_source_id": 1466,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Durham Region Transit",
+    "urls": {
+        "direct_download": "https://drtonline.durhamregiontransit.com/gtfsrealtime/VehiclePositions",
+        "authentication_type": 0,
+        "license": "https://opendata.durham.ca/search?q=service%20alert"
+    }
+}

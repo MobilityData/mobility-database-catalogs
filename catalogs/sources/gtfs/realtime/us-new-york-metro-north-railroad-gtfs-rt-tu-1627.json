@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 1627,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "MTA New York City Transit",
+    "name": "Metro North Railroad",
+    "static_reference": [
+        524
+    ],
+    "urls": {
+        "direct_download": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/mnr%2Fgtfs-mnr",
+        "authentication_type": 2,
+        "authentication_info": "https://api.mta.info/#/signup",
+        "api_key_parameter_name": "x-api-key",
+        "license": "https://api.mta.info/#/DataFeedAgreement"
+    }
+}

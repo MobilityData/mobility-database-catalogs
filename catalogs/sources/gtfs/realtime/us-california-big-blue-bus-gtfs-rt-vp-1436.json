@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 1436,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Big Blue Bus",
+    "static_reference": [
+        37
+    ],
+    "urls": {
+        "direct_download": "http://gtfs.bigbluebus.com/vehiclepositions.bin",
+        "authentication_type": 0,
+        "license": "http://gtfs.bigbluebus.com/"
+    }
+}

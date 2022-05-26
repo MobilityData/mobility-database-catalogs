@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1690,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Thunder Bay Transit",
+    "static_reference": [
+        736
+    ],
+    "urls": {
+        "direct_download": "http://api.nextlift.ca/gtfs-realtime/vehicleupdates.pb",
+        "authentication_type": 0
+    }
+}

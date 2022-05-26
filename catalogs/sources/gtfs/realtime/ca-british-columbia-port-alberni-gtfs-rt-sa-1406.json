@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 1406,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Port Alberni",
+    "static_reference": [
+        761
+    ],
+    "urls": {
+        "direct_download": "https://bct.tmix.se/gtfs-realtime/alerts.pb?operatorIds=11",
+        "authentication_type": 0,
+        "license": "https://www.bctransit.com/open-data/terms-of-use"
+    }
+}

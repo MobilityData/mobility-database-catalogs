@@ -1,0 +1,18 @@
+{
+    "mdb_source_id": 1501,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Lincoln County Transit",
+    "static_reference": [
+        23
+    ],
+    "urls": {
+        "direct_download": "http://gtfs-realtime.trilliumtransit.com/gtfs-realtime/feed/lincolncounty-or-us/service_alerts.proto",
+        "authentication_type": 2,
+        "authentication_info": "https://goswift.ly/realtime-api-key",
+        "api_key_parameter_name": "authorization",
+        "license": "https://www.goswift.ly/api-license"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "mdb_source_id": 1486,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Redding Area Bus Authority",
+    "static_reference": [
+        114
+    ],
+    "urls": {
+        "direct_download": "https://api.goswift.ly/real-time/redding/gtfs-rt-vehicle-positions",
+        "authentication_type": 2,
+        "authentication_info": "https://goswift.ly/realtime-api-key",
+        "api_key_parameter_name": "authorization",
+        "license": "https://www.goswift.ly/api-license"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 1676,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Regional Transportation District (RTD)",
+    "static_reference": [
+        178
+    ],
+    "urls": {
+        "direct_download": "https://www.rtd-denver.com/files/gtfs-rt/TripUpdate.pb",
+        "authentication_type": 0,
+        "license": "https://www.rtd-denver.com/business-center/open-spatial-data/gtfs-realtime-license-agreement"
+    }
+}

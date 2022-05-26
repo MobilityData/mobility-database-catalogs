@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 1422,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Calgary Transit",
+    "static_reference": [
+        712
+    ],
+    "urls": {
+        "direct_download": "http://transitdata.calgary.ca/ctransit/tripupdates.pb",
+        "authentication_type": 0,
+        "license": "https://data.calgary.ca/stories/s/u45n-7awa/"
+    }
+}

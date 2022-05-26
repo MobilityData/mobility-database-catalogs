@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1562,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "London Transit Commission",
+    "static_reference": [
+        2
+    ],
+    "urls": {
+        "direct_download": "http://gtfs.ltconline.ca/Alert/Alerts.pb",
+        "authentication_type": 0
+    }
+}

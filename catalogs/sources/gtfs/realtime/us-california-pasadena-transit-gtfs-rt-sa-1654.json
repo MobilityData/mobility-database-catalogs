@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1654,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Pasadena Transit",
+    "static_reference": [
+        41
+    ],
+    "urls": {
+        "direct_download": "http://rt.pasadenatransit.net/rtt/public/utility/gtfsrealtime.aspx/alert",
+        "authentication_type": 0
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "mdb_source_id": 1728,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Avalon Transit",
+    "static_reference": [
+        12
+    ],
+    "urls": {
+        "direct_download": "https://api.goswift.ly/real-time/avalon/gtfs-rt-vehicle-positions",
+        "authentication_type": 2,
+        "authentication_info": "https://goswift.ly/realtime-api-key",
+        "api_key_parameter_name": "authorization",
+        "license": "https://www.goswift.ly/api-license"
+    }
+}

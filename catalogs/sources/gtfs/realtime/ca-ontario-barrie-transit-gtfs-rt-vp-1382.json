@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1382,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Barrie Transit",
+    "static_reference": [
+        3
+    ],
+    "urls": {
+        "direct_download": "http://www.myridebarrie.ca/gtfs/GTFS_VehiclePositions.pb",
+        "authentication_type": 0
+    }
+}

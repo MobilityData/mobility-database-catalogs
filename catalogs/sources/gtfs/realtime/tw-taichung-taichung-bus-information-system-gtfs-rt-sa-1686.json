@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1686,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Taichung Bus Information System",
+    "static_reference": [
+        1083
+    ],
+    "urls": {
+        "direct_download": "http://tcgtfs.maxwin.com.tw:18300/realtime-srv/v1.0/routes/101/realtime_pb2",
+        "authentication_type": 0
+    }
+}

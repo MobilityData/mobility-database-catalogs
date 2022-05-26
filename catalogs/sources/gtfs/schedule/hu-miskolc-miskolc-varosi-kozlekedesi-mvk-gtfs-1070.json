@@ -10,11 +10,11 @@
             "maximum_latitude": 48.147408,
             "minimum_longitude": 20.532918,
             "maximum_longitude": 20.870524,
-            "extracted_on": "2022-03-17T20:34:31+00:00"
+            "extracted_on": "2022-05-26T15:38:59+00:00"
         }
     },
     "urls": {
-        "direct_download": "http://gtfs.cdata.hu/mvkzrt.zip",
+        "direct_download": "https://gtfsapi.mvkzrt.hu/gtfs/gtfs.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/hu-miskolc-miskolc-varosi-kozlekedesi-mvk-gtfs-1070.zip?alt=media"
     }
 }

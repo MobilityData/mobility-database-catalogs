@@ -4,7 +4,7 @@
 
 The Mobility Database Catalogs is a project that provides a list of open mobility data sources from across the world, and the code to filter and manipulate them. [You can learn more about the Mobility Database here](https://database.mobilitydata.org/).
 
-If you're only interested in browsing the sources, [download the CSV](https://storage.googleapis.com/storage/v1/b/mdb-csv/o/sources.csv?alt=media). You can cross reference IDs from the Mobility Database, TransitFeeds and Transitland with [this ID map spreadsheet](https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit?resourcekey#gid=1787149399).
+If you're only interested in browsing the sources, [download the CSV](bit.ly/catalogs-csv). You can cross reference IDs from the Mobility Database, TransitFeeds and Transitland with [this ID map spreadsheet](https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit?resourcekey#gid=1787149399).
 
 [You can view our release plan for V1 here](https://github.com/MobilityData/mobility-database-catalogs/issues/30).
 
@@ -35,19 +35,28 @@ Contains the JSON schemas used to validate the sources in the integration tests.
 
 ## GTFS Schedule Data Structure
 
-|     Field Name     |  Required from users  |                                                                              Definition                                                                             |
-|:------------------:|:---------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------:
-| MDB Source ID      | No - system generated | Unique numerical identifier.      |   |   |
-| Data Type          | Yes                   | The data format that the source uses: GTFS.                                                                                                            |   |   |
-| Country Code       | Yes                   | ISO 3166-1 alpha-2 code designating the country where the system is located. For a list of valid codes [see here](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).                                                    |   |   |
-| Subdivision name   | Optional              | ISO 3166-2 subdivision name designating the subdivision (e.g province, state, region) where the system is located. For a list of valid names [see here](https://unece.org/trade/uncefact/unlocode-country-subdivisions-iso-3166-2).              |   |   |
-| Municipality       | Optional              | Primary municipality in which the transit system is located.                                                                                                        |   |   |
-| Provider           | Yes                   | Commonly used name of the transit provider.                                                                |   |   |
-| Name               | Optional              | An optional description of the data source, e.g to specify if the data source is an aggregate of multiple providers, or which network is represented by the source. |   |   |
-| Direct download URL | Yes                  | URL that automatically opens the source.                                                                                                                            |   |   |
-| Latest dataset URL | No - system generated | A stable URL for the latest dataset of a source.                                                                                                                    |   |   |
-| License URL        | Optional              | The transit provider’s license information.                                                                                                                         |   |   |
-| Bounding box       | No - system generated | This is the bounding box of the data source when it was first added to the catalog. It includes the date and timestamp the bounding box was extracted on in UTC. If the bounding box information displays as "null", you can check any potential source errors with [the GTFS validator](https://github.com/MobilityData/gtfs-validator).     |   |   |
+|Field Name|Type|Presence|Definition|                                                                     
+|-|-|-|-|
+| mdb_source_id |  Unique ID | System generated | Unique numerical identifier.      |
+| data_type     | Enum| Required| The data format that the source uses: `gtfs`.|
+|location| Object | Required |Contains  <ul><li>Text that describes the source's location in the `country_code`, `subdivision_name`, and `municipality` fields.</li><li>Latitude, longitude, date and time that describes the source's bounding box in the `bounding_box` subobject. </li></ul>|
+| - country_code       | Text |Required                  | ISO 3166-1 alpha-2 code designating the country where the system is located. For a list of valid codes [see here](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).                                                    |
+| - subdivision_name  | Text |Optional              | ISO 3166-2 subdivision name designating the subdivision (e.g province, state, region) where the system is located. For a list of valid names [see here](https://unece.org/trade/uncefact/unlocode-country-subdivisions-iso-3166-2).|    
+| - municipality  | Text |Optional              | Primary municipality in which the transit system is located.|         
+| - bounding_box  | Object|System generated             | Bounding box of the data source when it was first added to the catalog. Contains `minimum_latitude`, `maximum_latitude`, `minimum_longitude`, `maximum_longitude` and `extracted_on` fields. If the bounding box information displays as "null", you can check any potential source errors with [the GTFS validator](https://github.com/MobilityData/gtfs-validator).   |  
+| --minimum_latitude    | Latitude | System generated                    | The minimum latitude for the source's bounding box.     
+| --maximum_latitude    | Latitude | System generated                    | The maximum latitude for the source's bounding box.   
+| --minimum_longitude    | Longitude | System generated                    | The minimum longitude for the source's bounding box.    
+| --maximum_longitude    | Longitude | System generated                    | The maximum longitude for the source's bounding box.  
+| --extracted_on   | Date and Time | System generated                    | The date and timestamp the bounding box was extracted on in UTC.                                                                         
+| provider     | Text | Required                   | A commonly used name for the transit provider included in the source.  
+| name        |  Text |Optional              | An optional description of the data source, e.g to specify if the data source is an aggregate of multiple providers, or which network is represented by the source. |
+|urls| Object | Required | Contains URLs associated with the source in the `direct_download_url`, `latest`, and `license` fields.
+|- direct_download |URL|Optional     | URL that automatically opens the source.
+| - latest | URL | System generated | A stable URL for the latest dataset of a source.
+|- license |URL| Optional     | The license information for the direct download URL.      
+
+
 
 ## GTFS Realtime Data Structure
 
@@ -60,12 +69,14 @@ Contains the JSON schemas used to validate the sources in the integration tests.
 | name        |  Text |Optional              | An optional description of the data source, e.g to specify if the data source is an aggregate of multiple providers
 |note|Text| Optional|A note to clarify complex use cases for consumers, for example when several static sources are associated with a realtime source.  |  
 | static_reference |  Array of Integers |Optional              | A list of the static sources that the real time source is associated with, represented by their MDB source IDs. |  
-|URLs| Object | Required | Contains URLs associated with the source in the `direct_download_url` and `license_url` fields, and the authentication info for `direct_download_url` in the `authentication_type`, `authentication_info_url` and `api_key_parameter_name` fields.
+|urls| Object | Required | Contains URLs associated with the source in the `direct_download_url` and `license_url` fields, and the authentication info for `direct_download_url` in the `authentication_type`, `authentication_info_url` and `api_key_parameter_name` fields.
 |- direct_download_url |URL|Optional     | URL that responds with an encoded [GTFS Realtime protocol buffer message](https://github.com/google/transit/tree/master/gtfs-realtime/spec/en#data-format).                                                                                                
 |- authentication_type |Enum|Conditionally required | The **authentication_type** field defines the type of authentication required to access the URL. When a direct download URL is provided, the authentication type is required. Valid values for this field are: <ul> <li>**0** or **(empty)** - No authentication required.</li><li>**1** - The authentication requires an API key, which should be passed as value of the parameter `api_key_parameter_name` in the URL. Please visit URL in `authentication_info_url` for more information. </li><li>**2** - The authentication requires an HTTP header, which should be passed as the value of the header `api_key_parameter_name` in the HTTP request. </li></li>**3**: A placeholder text value of `{API_KEY}` is provided within the URL. For example: [https://gtfs.translink.ca/v2/gtfsalerts?apikey={API_KEY}](https://gtfs.translink.ca/v2/gtfsalerts?apikey=[APIKey]). Consumers should replace `{API_KEY}` with the value of the API key.</li><li>**4**: Ad-hoc authentication required, visit URL in `authentication_info_url` for more information.</li></ul>|
 |- authentication_info_url | URL| Conditionally required | If authentication is required, the **authentication_info_url** field contains a URL to a human-readable page describing how the authentication should be performed and how credentials can be created. This field is required for `authentication_type=1` or greater. |
 |- api_key_parameter_name |Text|Conditionally required | The **api_key_parameter_name** field defines the name of the parameter to pass in the URL to provide the API key. This field is required for `authentication_type=1` and `authentication_type=2`.   |   
-|- license_url  |URL| Optional     | The license information for  `direct_download_url`.     
+|- license_url  |URL| Optional     | The license information for  `direct_download_url`.
+
+In [the CSV](bit.ly/catalogs-csv), realtime sources include the location metadata of their static reference when provided.
 
 ## Installation
 

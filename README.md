@@ -76,7 +76,7 @@ Contains the JSON schemas used to validate the sources in the integration tests.
 |- api_key_parameter_name |Text|Conditionally required | The **api_key_parameter_name** field defines the name of the parameter to pass in the URL to provide the API key. This field is required for `authentication_type=1` and `authentication_type=2`.   |   
 |- license_url  |URL| Optional     | The license information for  `direct_download_url`.
 
-In [the CSV](bit.ly/catalogs-csv), realtime sources include the location metadata of their static reference when provided.
+In [the CSV](https://bit.ly/catalogs-csv), realtime sources include the location metadata of their static reference when provided.
 
 ## Installation
 

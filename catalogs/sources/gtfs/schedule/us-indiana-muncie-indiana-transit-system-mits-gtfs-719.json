@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Muncie Indiana Transit System (MITS)",
     "location": {
-        "country_code": "CA",
+        "country_code": "US",
         "subdivision_name": "Indiana",
         "municipality": "Muncie",
         "bounding_box": {

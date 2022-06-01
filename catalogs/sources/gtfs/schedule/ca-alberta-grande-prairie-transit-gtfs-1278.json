@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Grande Prairie Transit",
     "location": {
-        "country_code": "US",
+        "country_code": "CA",
         "subdivision_name": "Alberta",
         "municipality": "Grande Prairie",
         "bounding_box": {

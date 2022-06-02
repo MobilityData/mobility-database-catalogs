@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Grande Prairie Transit",
     "location": {
-        "country_code": "US",
+        "country_code": "CA",
         "subdivision_name": "Alberta",
         "municipality": "Grande Prairie",
         "bounding_box": {
@@ -16,6 +16,6 @@
     },
     "urls": {
         "direct_download": "https://transitfeeds.com/p/grande-prairie-transit/1255/latest/download",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-alberta-grande-prairie-transit-gtfs-1278.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-alberta-grande-prairie-transit-gtfs-1278.zip?alt=media"
     }
 }

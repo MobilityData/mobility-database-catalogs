@@ -15,6 +15,6 @@
     },
     "urls": {
         "direct_download": "http://www.tramalicante.es/google_transit_feed/google_transit.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-alicante-tram-alicante-gtfs-1039.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-alicante-tram-alicante-gtfs-1039.zip?alt=media"
     }
 }

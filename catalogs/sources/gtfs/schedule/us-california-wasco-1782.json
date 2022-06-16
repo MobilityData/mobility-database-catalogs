@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 1782,
+    "data_type": "gtfs",
+    "provider": "City of Wasco",
+    "features": ["flex","flex-v2"],
+    "status": "development",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Wasco"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.calitp.org/WascoDialaRideFlex.zip"
+    }
+}

@@ -36,6 +36,8 @@ from tools.representations import (
     API_KEY_PARAMETER_NAME,
     ENTITY_TYPE,
     NOTE,
+    FEATURES,
+    STATUS,
     json,
 )
 
@@ -205,6 +207,30 @@ class TestSourcesCatalog(TestCase):
         under_test = instance.get_latest_datasets()
         self.assertEqual(under_test, {self.test_source_key: test_latest_url})
 
+    @patch("tools.representations.Catalog.aggregate")
+    def test_get_sources_by_feature(self, mock_aggregate):
+        mock_aggregate.return_value = self.test_catalog
+        self.test_source.has_feature.return_value = True
+        self.test_another_source.has_feature.return_value = False
+        instance = SourcesCatalog(**self.test_kwargs)
+        test_feature = "Flex"
+        under_test = instance.get_sources_by_feature(
+            featuree=test_feature
+        )
+        self.assertEqual(under_test, {self.test_source_key: self.test_json})
+
+    @patch("tools.representations.Catalog.aggregate")
+    def test_get_sources_by_status(self, mock_aggregate):
+        mock_aggregate.return_value = self.test_catalog
+        self.test_source.has_status.return_value = True
+        self.test_another_source.has_status.return_value = False
+        instance = SourcesCatalog(**self.test_kwargs)
+        test_status= "acttive"
+        under_test = instance.get_sources_by_feature(
+            status = test_status
+        )
+        self.assertEqual(under_test, {self.test_source_key: self.test_json})
+
     @patch("tools.representations.SourcesCatalog.save")
     @patch("tools.representations.isinstance")
     @patch("tools.representations.Catalog.identify")
@@ -269,6 +295,8 @@ class TestGtfsScheduleSource(TestCase):
         self.test_data_type = "some_data_type"
         self.test_provider = "some_provider_with_accents_éàç"
         self.test_name = "some_name"
+        self.test_features = ["some_feature"]
+        self.test_status = "some_status"
         self.test_filename = "some_filename"
         self.test_country_code = "some_country_code"
         self.test_subdivision_name = "some_subdivision_name"
@@ -298,12 +326,16 @@ class TestGtfsScheduleSource(TestCase):
             DIRECT_DOWNLOAD: self.test_direct_download_url,
             LATEST: self.test_latest_url,
             LICENSE: self.test_license_url,
+            FEATURES: self.test_features,
+            STATUS: self.test_status
         }
         self.test_schema = {
             MDB_SOURCE_ID: self.test_mdb_source_id,
             DATA_TYPE: self.test_data_type,
             PROVIDER: self.test_provider,
             NAME: self.test_name,
+            FEATURES: self.test_features,
+            STATUS: self.test_status,
             LOCATION: {
                 COUNTRY_CODE: self.test_country_code,
                 SUBDIVISION_NAME: self.test_subdivision_name,
@@ -390,6 +422,24 @@ class TestGtfsScheduleSource(TestCase):
         self.assertTrue(under_test)
         instance.latest_url = None
         under_test = instance.has_latest_dataset()
+        self.assertFalse(under_test)
+
+    def test_has_feature(self):
+        test_feature = self.test_feature
+        test_another_feature = ["some_other_status"]
+        instance = GtfsScheduleSource(filename=self.test_filename, **self.test_schema)
+        under_test = instance.has_feature(status=test_feature)
+        self.assertTrue(under_test)
+        under_test = instance.has_feature(country_code=test_another_feature)
+        self.assertFalse(under_test)
+
+    def test_has_status(self):
+        test_status = self.test_status
+        test_another_status = "some_other_status"
+        instance = GtfsScheduleSource(filename=self.test_filename, **self.test_schema)
+        under_test = instance.has_status(status=test_status)
+        self.assertTrue(under_test)
+        under_test = instance.has_status(country_code=test_another_status)
         self.assertFalse(under_test)
 
     @patch("tools.representations.get_iso_time")
@@ -548,6 +598,8 @@ class TestGtfsRealtimeSource(TestCase):
         self.test_authentication_info_url = "some_authentication_info_url"
         self.test_api_key_parameter_name = "some_api_key_parameter_name"
         self.test_license_url = "some_license_url"
+        self.test_features = ["some_feature"]
+        self.test_status = "some_status"
         self.test_kwargs = {
             MDB_SOURCE_ID: self.test_mdb_source_id,
             DATA_TYPE: self.test_data_type,
@@ -562,6 +614,8 @@ class TestGtfsRealtimeSource(TestCase):
             AUTHENTICATION_INFO: self.test_authentication_info_url,
             API_KEY_PARAMETER_NAME: self.test_api_key_parameter_name,
             LICENSE: self.test_license_url,
+            FEATURES: self.test_features,
+            STATUS: self.test_status,
         }
         self.test_schema = {
             MDB_SOURCE_ID: self.test_mdb_source_id,

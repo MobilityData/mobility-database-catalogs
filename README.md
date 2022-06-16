@@ -39,6 +39,8 @@ Contains the JSON schemas used to validate the sources in the integration tests.
 |-|-|-|-|
 | mdb_source_id |  Unique ID | System generated | Unique numerical identifier.      |
 | data_type     | Enum| Required| The data format that the source uses: `gtfs`.|
+| features      | Array[Enum] | Optional | An array of features which can be any of: <ul><li>`fares`</li><li>`flex`</li><li>`fares-v2`</li><li>`fares-v1`</li><li>`flex-v1`</li><li>`flex-v2`</li></ul>|  
+| status        | Enum | Optional | Describes status of feed. Should be one of: <ul><li>`active`: Feed should be used in public trip planners.</li><li>`deprecated`: Feed is explicitly deprecated and should not be used in public trip planners.</li><li>`inactive`:Feed hasn't been recently updated and should be used at risk of providing outdated information.</li><li>`development`:Feed is being used for development purposes and should not be used in public trip planners.</li></ul>Feed can be assumed to be `active` if status is not explicitly provided.|  
 |location| Object | Required |Contains  <ul><li>Text that describes the source's location in the `country_code`, `subdivision_name`, and `municipality` fields.</li><li>Latitude, longitude, date and time that describes the source's bounding box in the `bounding_box` subobject. </li></ul>|
 | - country_code       | Text |Required                  | ISO 3166-1 alpha-2 code designating the country where the system is located. For a list of valid codes [see here](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).                                                    |
 | - subdivision_name  | Text |Optional              | ISO 3166-2 subdivision name designating the subdivision (e.g province, state, region) where the system is located. For a list of valid names [see here](https://unece.org/trade/uncefact/unlocode-country-subdivisions-iso-3166-2).|    
@@ -68,6 +70,8 @@ Contains the JSON schemas used to validate the sources in the integration tests.
 | provider     | Text | Required                   | A commonly used name for the transit provider included in the source.  
 | name        |  Text |Optional              | An optional description of the data source, e.g to specify if the data source is an aggregate of multiple providers
 |note|Text| Optional|A note to clarify complex use cases for consumers, for example when several static sources are associated with a realtime source.  |  
+| features      | Array[Enum] | Optional | An array of features which can be any of: <ul><li>`fares`</li><li>`flex`</li><li>`fares-v2`</li><li>`fares-v1`</li><li>`flex-v1`</li><li>`flex-v2`</li></ul> |  
+| status        | Enum | Optional | Describes status of feed. Should be one of: <ul><li>`active`: Feed should be used in public trip planners.</li><li>`deprecated`: Feed is explicitly deprecated and should not be used in public trip planners.</li><li>`inactive`:Feed hasn't been recently updated and should be used at risk of providing outdated information.</li><li>`development`:Feed is being used for development purposes and should not be used in public trip planners.</li></ul>Feed can be assumed to be `active` if status is not explicitly provided.|  
 | static_reference |  Array of Integers |Optional              | A list of the static sources that the real time source is associated with, represented by their MDB source IDs. |  
 |urls| Object | Required | Contains URLs associated with the source in the `direct_download_url` and `license_url` fields, and the authentication info for `direct_download_url` in the `authentication_type`, `authentication_info_url` and `api_key_parameter_name` fields.
 |- direct_download_url |URL|Optional     | URL that responds with an encoded [GTFS Realtime protocol buffer message](https://github.com/google/transit/tree/master/gtfs-realtime/spec/en#data-format).                                                                                                
@@ -168,35 +172,69 @@ To get the sources by bounding box, where `$MINIMUM_LATITUDE` `$MAXIMUM_LATITUDE
     )
 ```
 
+To get the sources by feature `$FEATURE` is expressed as a string and must be one of:
+
+* `fares`  
+* `flex`  
+* `fares-v2`  
+* `fares-v1`  
+* `flex-v1`  
+* `flex-v2`  
+
+```python
+get_sources_by_feature(
+        feature=$FEATURE,
+    )
+```
+
+To get the sources by status `$STATIS` is expressed as a string and one of:
+
+* `active`  
+* `deprecated`  
+* `inactive`  
+* `development`  
+
+```python
+get_sources_by_status(
+        feature=$STATUS,
+    )
+```
 
 To add a new GTFS Schedule source:
-```
->>> add_gtfs_schedule_source(
+
+```python
+add_gtfs_schedule_source(
         provider=$YOUR_SOURCE_PROVIDER_NAME,
         country_code=$YOUR_SOURCE_COUNTRY_CODE,
         direct_download_url=$YOUR_SOURCE_DIRECT_DOWNLOAD_URL,
         subdivision_name=$OPTIONAL_SUBDIVISION_NAME,
         municipality=$OPTIONAL_MUNICIPALITY,
         license_url=$OPTIONAL_LICENSE_URL,
-        name=$OPTIONAL_SOURCE_NAME
+        name=$OPTIONAL_SOURCE_NAME,
+        features=[$OPTIONAL_FEATURE_ARRAY],
+        status = $OPTIONAL_STATUS
     )
 ```
 
 To add a new GTFS Realtime source:
-```
->>> add_gtfs_realtime_source(
+
+```python
+add_gtfs_realtime_source(
         provider=$YOUR_SOURCE_PROVIDER_NAME,
         static_reference=$OPTIONAL_STATIC_REFERENCE_NUMERICAL_ID,
         vehicle_positions_url=$OPTIONAL_VEHICLE_POSITIONS_URL,
         trip_updates_url=$OPTIONAL_TRIP_UPDATES_URL,
         service_alerts_url=$OPTIONAL_SERVICE_ALERTS_URL,
-        name=$OPTIONAL_SOURCE_NAME
+        name=$OPTIONAL_SOURCE_NAME,
+        features=[$OPTIONAL_FEATURE_ARRAY],
+        status = $OPTIONAL_STATUS
     )
 ```
 
 To update a GTFS Schedule source:
-```
->>> update_gtfs_schedule_source(
+
+```python
+update_gtfs_schedule_source(
         mdb_source_id=$YOUR_SOURCE_NUMERICAL_ID,
         provider=$OPTIONAL_SOURCE_PROVIDER_NAME,
         name=$OPTIONAL_SOURCE_NAME,
@@ -204,21 +242,25 @@ To update a GTFS Schedule source:
         subdivision_name=$OPTIONAL_SOURCE_SUBDIVISION_NAME,
         municipality=$OPTIONAL_SOURCE_MUNICIPALITY,
         direct_download_url=$OPTIONAL_SOURCE_DIRECT_DOWNLOAD_URL,
-        license_url=$OPTIONAL_LICENSE_URL
+        license_url=$OPTIONAL_LICENSE_URL,
+        features=[$OPTIONAL_FEATURE_ARRAY],
+        status = $OPTIONAL_STATUS
     )
 ```
 
 To update a GTFS Realtime source:
 
-```
->>> update_gtfs_realtime_source(
+```python
+update_gtfs_realtime_source(
         mdb_source_id=$YOUR_SOURCE_NUMERICAL_ID,
         provider=$OPTIONAL_SOURCE_PROVIDER_NAME,
         static_reference=$OPTIONAL_STATIC_REFERENCE_NUMERICAL_ID,
         vehicle_positions_url=$OPTIONAL_VEHICLE_POSITIONS_URL,
         trip_updates_url=$OPTIONAL_TRIP_UPDATES_URL,
         service_alerts_url=$OPTIONAL_SERVICE_ALERTS_URL,
-        name=$OPTIONAL_SOURCE_NAME
+        name=$OPTIONAL_SOURCE_NAME,
+        features=[$OPTIONAL_FEATURE_ARRAY],
+        status = $OPTIONAL_STATUS
     )
 ```
 

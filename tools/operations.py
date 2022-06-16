@@ -43,8 +43,8 @@ def add_gtfs_realtime_source(
     name=None,
     static_reference=None,
     note=None,
-    status = None,
-    features = None,
+    status=None,
+    features=None,
 ):
     """Add a new GTFS Realtime source to the Mobility Catalogs."""
     catalog = GtfsRealtimeSourcesCatalog()
@@ -78,8 +78,8 @@ def update_gtfs_realtime_source(
     name=None,
     static_reference=None,
     note=None,
-    status = None,
-    features = None,
+    status=None,
+    features=None,
 ):
     """Update a new GTFS Realtime source to the Mobility Catalogs."""
     catalog = GtfsRealtimeSourcesCatalog()
@@ -110,8 +110,8 @@ def add_gtfs_schedule_source(
     municipality=None,
     license_url=None,
     name=None,
-    status = None,
-    features = None,
+    status=None,
+    features=None,
 ):
     """Add a new GTFS Schedule source to the Mobility Catalogs."""
     catalog = GtfsScheduleSourcesCatalog()
@@ -139,8 +139,8 @@ def update_gtfs_schedule_source(
     municipality=None,
     direct_download_url=None,
     license_url=None,
-    status = None,
-    features = None,
+    status=None,
+    features=None,
 ):
     """Update a GTFS Schedule source in the Mobility Catalogs."""
     catalog = GtfsScheduleSourcesCatalog()
@@ -230,6 +230,7 @@ def get_latest_datasets(data_type=ALL):
     for catalog_cls in source_type_map[CATALOGS]:
         sources.update(globals()[f"{catalog_cls}"]().get_latest_datasets())
     return dict(sorted(sources.items()))
+
 
 def get_sources_by_feature(
     feature_name,

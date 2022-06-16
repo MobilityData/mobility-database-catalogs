@@ -219,36 +219,20 @@ class TestOperations(TestCase):
 
     @patch("tools.operations.GtfsRealtimeSourcesCatalog", autospec=True)
     @patch("tools.operations.GtfsScheduleSourcesCatalog", autospec=True)
-    def test_get_sources_by_feauure(
-        self, mock_schedule_catalog, mock_realtime_catalog
-    ):
+    def test_get_sources_by_feauure(self, mock_schedule_catalog, mock_realtime_catalog):
         test_feature = "fares"
-        under_test = get_sources_by_feature(
-            feature=test_feature, data_type=ALL
-        )
+        under_test = get_sources_by_feature(feature=test_feature, data_type=ALL)
         self.assertEqual(mock_schedule_catalog.call_count, 1)
-        self.assertEqual(
-            mock_schedule_catalog().get_sources_by_feature.call_count, 1
-        )
+        self.assertEqual(mock_schedule_catalog().get_sources_by_feature.call_count, 1)
         self.assertEqual(mock_realtime_catalog.call_count, 1)
-        self.assertEqual(
-            mock_realtime_catalog().get_sources_by_feature.call_count, 1
-        )
+        self.assertEqual(mock_realtime_catalog().get_sources_by_feature.call_count, 1)
 
     @patch("tools.operations.GtfsRealtimeSourcesCatalog", autospec=True)
     @patch("tools.operations.GtfsScheduleSourcesCatalog", autospec=True)
-    def test_get_sources_by_status(
-        self, mock_schedule_catalog, mock_realtime_catalog
-    ):
+    def test_get_sources_by_status(self, mock_schedule_catalog, mock_realtime_catalog):
         test_status = "active"
-        under_test = get_sources_by_status(
-            status=test_status, data_type=ALL
-        )
+        under_test = get_sources_by_status(status=test_status, data_type=ALL)
         self.assertEqual(mock_schedule_catalog.call_count, 1)
-        self.assertEqual(
-            mock_schedule_catalog().get_sources_by_status.call_count, 1
-        )
+        self.assertEqual(mock_schedule_catalog().get_sources_by_status.call_count, 1)
         self.assertEqual(mock_realtime_catalog.call_count, 1)
-        self.assertEqual(
-            mock_realtime_catalog().get_sources_by_status.call_count, 1
-        )
+        self.assertEqual(mock_realtime_catalog().get_sources_by_status.call_count, 1)

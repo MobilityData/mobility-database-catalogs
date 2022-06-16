@@ -226,7 +226,6 @@ class Source(ABC):
         self.filename = kwargs.pop(FILENAME)
         self.features = kwargs.pop(FEATURES)
         self.status = kwargs.pop(STATUS)
-        
 
     @abstractmethod
     def __str__(self):

@@ -214,9 +214,7 @@ class TestSourcesCatalog(TestCase):
         self.test_another_source.has_feature.return_value = False
         instance = SourcesCatalog(**self.test_kwargs)
         test_feature = "Flex"
-        under_test = instance.get_sources_by_feature(
-            featuree=test_feature
-        )
+        under_test = instance.get_sources_by_feature(featuree=test_feature)
         self.assertEqual(under_test, {self.test_source_key: self.test_json})
 
     @patch("tools.representations.Catalog.aggregate")
@@ -225,10 +223,8 @@ class TestSourcesCatalog(TestCase):
         self.test_source.has_status.return_value = True
         self.test_another_source.has_status.return_value = False
         instance = SourcesCatalog(**self.test_kwargs)
-        test_status= "acttive"
-        under_test = instance.get_sources_by_feature(
-            status = test_status
-        )
+        test_status = "acttive"
+        under_test = instance.get_sources_by_feature(status=test_status)
         self.assertEqual(under_test, {self.test_source_key: self.test_json})
 
     @patch("tools.representations.SourcesCatalog.save")
@@ -327,7 +323,7 @@ class TestGtfsScheduleSource(TestCase):
             LATEST: self.test_latest_url,
             LICENSE: self.test_license_url,
             FEATURES: self.test_features,
-            STATUS: self.test_status
+            STATUS: self.test_status,
         }
         self.test_schema = {
             MDB_SOURCE_ID: self.test_mdb_source_id,

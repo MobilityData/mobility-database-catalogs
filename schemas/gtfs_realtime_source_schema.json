@@ -35,6 +35,20 @@
       },
       "description": "A list of the static sources that the real time source is associated with, represented by their MDB source IDs. Although optional, if not provided, the location of this source will be set to unknown."
     },
+    "features": {
+      "type": "array",
+      "description": "A list of features that the source supports.",
+      "items": {
+        "type": "string",
+        "enum": ["fares","flex","fares-v2","fares-v1","flex-v1","flex-v2"]
+      }
+    },
+    "status": {
+      "type": "string",
+      "description": "The status of the source which can be used to determine if/how to include it in public trip-planning. If not provided, feed is assumed to be active. Should be one of: active: The feed is active and should be included in public trip-planning. inactive: The feed is inactive / hasn't been updated recently and should be included in public trip-planning at risk of providing outdated information. deprecated: The feed is explicitly deprecated and should not be included in public trip-planning. development: The feed is in development or being used to test a specific feature and should not be included in public trip-planning.",
+      "enum": ["active","deprecated","inactive","development"]
+    }
+  },
     "note": {
       "type": "string",
       "description": "A note to clarify complex use cases for consumers, for example when several static sources are represented in a realtime source."

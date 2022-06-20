@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1782,
+    "data_type": "gtfs",
+    "provider": "SNCF",
+    "name": "TGV timetable",
+    "location": {
+        "country_code": "FR",
+        "bounding_box": {
+            "minimum_latitude": 42.696096,
+            "maximum_latitude": 51.03041,
+            "minimum_longitude": -4.480306,
+            "maximum_longitude": 9.187694,
+            "extracted_on": "2022-06-20T16:02:04+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://eu.ftp.opendatasoft.com/sncf/gtfs/export_gtfs_voyages.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-unknown-sncf-gtfs-1782.zip?alt=media",
+        "license": "https://data.sncf.com/pages/cgu/A1#A1"
+    }
+}

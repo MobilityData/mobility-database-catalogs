@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1783,
+    "data_type": "gtfs",
+    "provider": "SNCF",
+    "name": "Intercity trains timetable",
+    "location": {
+        "country_code": "FR",
+        "bounding_box": {
+            "minimum_latitude": 42.424701,
+            "maximum_latitude": 48.844945,
+            "minimum_longitude": -1.781724,
+            "maximum_longitude": 7.261904,
+            "extracted_on": "2022-06-20T16:02:09+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://eu.ftp.opendatasoft.com/sncf/gtfs/export-intercites-gtfs-last.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-unknown-sncf-gtfs-1783.zip?alt=media",
+        "license": "https://data.sncf.com/pages/cgu/A1#A1"
+    }
+}

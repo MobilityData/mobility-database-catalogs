@@ -1,0 +1,13 @@
+{
+    "mdb_source_id": 1786,
+    "data_type": "gtfs-rt",
+    "entity_type": "sa",
+    "provider": "Towson Loop",
+    "static_reference": [
+        1784
+    ],
+    "urls": {
+        "direct_download": "https://passio3.com/towson/passioTransit/gtfs/realtime/serviceAlerts",
+        "authentication_type": 0
+    }
+}

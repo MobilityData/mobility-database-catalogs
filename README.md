@@ -4,12 +4,11 @@
 
 The Mobility Database Catalogs is a project that provides a list of open mobility data sources from across the world, and the code to filter and manipulate them. [You can learn more about the Mobility Database here](https://database.mobilitydata.org/).
 
-If you're only interested in browsing the sources, [download the CSV](https://bit.ly/catalogs-csv). You can cross reference IDs from the Mobility Database, TransitFeeds and Transitland with [this ID map spreadsheet](https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit?resourcekey#gid=1787149399).
-
 [You can view our release plan for V1 here](https://github.com/MobilityData/mobility-database-catalogs/issues/30).
 
 ## Table of Contents
 
+* [The Spreadsheet](#the-spreadsheet)
 * [The Core Parts](#the-core-parts)
 * [GTFS Schedule Data Structure](#gtfs-schedule-data-structure)
 * [GTFS Realtime Data Structure](#gtfs-realtime-data-structure)
@@ -18,6 +17,10 @@ If you're only interested in browsing the sources, [download the CSV](https://bi
 * [Integration Tests](#integration-tests)
 * [License](#license)
 * [Contributing](#contributing)
+
+## The Spreadsheet
+
+If you're only interested in browsing the sources or pulling all the latest URLs, [download the CSV](https://bit.ly/catalogs-csv). You can cross reference IDs from the Mobility Database, TransitFeeds and Transitland with [this ID map spreadsheet](https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit?resourcekey#gid=1787149399).
 
 ## The Core Parts
 
@@ -185,12 +188,16 @@ To add a new GTFS Schedule source:
 To add a new GTFS Realtime source:
 ```
 >>> add_gtfs_realtime_source(
+        entity_type=[$YOUR_SOURCE_ENTIY_TYPE],
         provider=$YOUR_SOURCE_PROVIDER_NAME,
-        static_reference=$OPTIONAL_STATIC_REFERENCE_NUMERICAL_ID,
-        vehicle_positions_url=$OPTIONAL_VEHICLE_POSITIONS_URL,
-        trip_updates_url=$OPTIONAL_TRIP_UPDATES_URL,
-        service_alerts_url=$OPTIONAL_SERVICE_ALERTS_URL,
-        name=$OPTIONAL_SOURCE_NAME
+        name=$OPTIONAL_SOURCE_NAME,
+        note=$OPTIONAL_SOURCE_NOTE,
+        static_reference=[$OPTIONAL_STATIC_REFERENCE_NUMERICAL_ID],
+        direct_download_url=$YOUR_SOURCE_DIRECT_DOWNLOAD_URL,
+        authentication_type=$CONDITIONALLY_REQUIRED_AUTHENTICATION_TYPE,
+        authentication_info_url=$CONDITIONALLY_REQUIRED_AUTHENTICATION_INFO_URL,
+        api_key_parameter_name=$CONDITIONALLY_REQUIRED_API_KEY_PARAMETER_NAME,
+        license_url=$OPTIONAL_LICENSE_URL,
     )
 ```
 
@@ -213,12 +220,16 @@ To update a GTFS Realtime source:
 ```
 >>> update_gtfs_realtime_source(
         mdb_source_id=$YOUR_SOURCE_NUMERICAL_ID,
-        provider=$OPTIONAL_SOURCE_PROVIDER_NAME,
-        static_reference=$OPTIONAL_STATIC_REFERENCE_NUMERICAL_ID,
-        vehicle_positions_url=$OPTIONAL_VEHICLE_POSITIONS_URL,
-        trip_updates_url=$OPTIONAL_TRIP_UPDATES_URL,
-        service_alerts_url=$OPTIONAL_SERVICE_ALERTS_URL,
-        name=$OPTIONAL_SOURCE_NAME
+        entity_type=[$YOUR_SOURCE_ENTIY_TYPE],
+        provider=$YOUR_SOURCE_PROVIDER_NAME,
+        name=$OPTIONAL_SOURCE_NAME,
+        note=$OPTIONAL_SOURCE_NOTE,
+        static_reference=[$OPTIONAL_STATIC_REFERENCE_NUMERICAL_ID],
+        direct_download_url=$YOUR_SOURCE_DIRECT_DOWNLOAD_URL,
+        authentication_type=$CONDITIONALLY_REQUIRED_AUTHENTICATION_TYPE,
+        authentication_info_url=$CONDITIONALLY_REQUIRED_AUTHENTICATION_INFO_URL,
+        api_key_parameter_name=$CONDITIONALLY_REQUIRED_API_KEY_PARAMETER_NAME,
+        license_url=$OPTIONAL_LICENSE_URL,
     )
 ```
 

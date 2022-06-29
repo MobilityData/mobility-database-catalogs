@@ -50,6 +50,7 @@ from tools.constants import (
     FILENAME,
     FEATURES,
     STATUS,
+    ACTIVE,
 )
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
@@ -141,11 +142,11 @@ class SourcesCatalog(Catalog):
             if source.has_latest_dataset()
         }
 
-    def get_sources_by_feature(self, feature_name):
+    def get_sources_by_feature(self, feature):
         return {
             source_id: source.as_json
             for source_id, source in self.catalog.items()
-            if source.has_feature(feature_name)
+            if source.has_feature(feature)
         }
 
     def get_sources_by_status(self, status):
@@ -224,8 +225,8 @@ class Source(ABC):
         self.provider = kwargs.pop(PROVIDER)
         self.name = kwargs.pop(NAME, None)
         self.filename = kwargs.pop(FILENAME)
-        self.features = kwargs.pop(FEATURES)
-        self.status = kwargs.pop(STATUS)
+        self.features = kwargs.pop(FEATURES, None)
+        self.status = kwargs.pop(STATUS, None)
 
     @abstractmethod
     def __str__(self):
@@ -244,7 +245,7 @@ class Source(ABC):
         pass
 
     @abstractmethod
-    def has_feature(self, features):
+    def has_feature(self, feature):
         pass
 
     @abstractmethod
@@ -327,6 +328,12 @@ class GtfsScheduleSource(Source):
 
     def has_country_code(self, country_code):
         return self.country_code == country_code
+
+    def has_feature(self, feature):
+        return feature in self.features
+
+    def has_status(self, status):
+        return self.status == status or (self.status is None and status == ACTIVE)
 
     def is_overlapping_bounding_box(
         self, minimum_latitude, maximum_latitude, minimum_longitude, maximum_longitude
@@ -531,6 +538,17 @@ class GtfsRealtimeSource(Source):
             static_source.country_code == country_code
             for static_source in static_sources
         )
+
+    def has_feature(self, feature):
+        static_sources = self.get_static_sources(self.static_reference)
+        in_static_source = any(
+            feature in static_source.features for static_source in static_sources
+        )
+        in_realtime_source = feature in self.features
+        return in_static_source or in_realtime_source
+
+    def has_status(self, status):
+        return self.status == status or (self.status is None and status == ACTIVE)
 
     def is_overlapping_bounding_box(
         self, minimum_latitude, maximum_latitude, minimum_longitude, maximum_longitude

@@ -44,7 +44,7 @@ class TestOperations(TestCase):
             static_reference=test_static_reference,
             note=test_note,
             status=test_status,
-            features=test_feature,
+            features=test_features,
         )
         self.assertEqual(under_test, mock_catalog())
         self.assertEqual(mock_catalog.call_count, 2)
@@ -64,7 +64,7 @@ class TestOperations(TestCase):
         test_name = "test_name"
         test_note = "test_note"
         test_status = "active"
-        test_feature = ["flex"]
+        test_features = ["flex"]
         under_test = update_gtfs_realtime_source(
             mdb_source_id=test_mdb_source_id,
             entity_type=test_entity_type,
@@ -78,7 +78,7 @@ class TestOperations(TestCase):
             static_reference=test_static_reference,
             note=test_note,
             status=test_status,
-            features=test_feature,
+            features=test_features,
         )
         self.assertEqual(under_test, mock_catalog())
         self.assertEqual(mock_catalog.call_count, 2)
@@ -94,7 +94,7 @@ class TestOperations(TestCase):
         test_direct_download_url = "test_direct_download_url"
         test_license_url = "test_license_url"
         test_status = "active"
-        test_feature = ["flex"]
+        test_features = ["flex"]
         under_test = add_gtfs_schedule_source(
             provider=test_provider,
             name=test_name,
@@ -104,7 +104,7 @@ class TestOperations(TestCase):
             direct_download_url=test_direct_download_url,
             license_url=test_license_url,
             status=test_status,
-            features=test_feature,
+            features=test_features,
         )
         self.assertEqual(under_test, mock_catalog())
         self.assertEqual(mock_catalog.call_count, 2)
@@ -121,7 +121,7 @@ class TestOperations(TestCase):
         test_direct_download_url = "test_direct_download_url"
         test_license_url = "test_license_url"
         test_status = "active"
-        test_feature = ["flex"]
+        test_features = ["flex"]
         under_test = update_gtfs_schedule_source(
             mdb_source_id=test_mdb_source_id,
             provider=test_provider,
@@ -132,7 +132,7 @@ class TestOperations(TestCase):
             direct_download_url=test_direct_download_url,
             license_url=test_license_url,
             status=test_status,
-            features=test_feature,
+            features=test_features,
         )
         self.assertEqual(under_test, mock_catalog())
         self.assertEqual(mock_catalog.call_count, 2)
@@ -219,7 +219,7 @@ class TestOperations(TestCase):
 
     @patch("tools.operations.GtfsRealtimeSourcesCatalog", autospec=True)
     @patch("tools.operations.GtfsScheduleSourcesCatalog", autospec=True)
-    def test_get_sources_by_feauure(self, mock_schedule_catalog, mock_realtime_catalog):
+    def test_get_sources_by_feature(self, mock_schedule_catalog, mock_realtime_catalog):
         test_feature = "fares"
         under_test = get_sources_by_feature(feature=test_feature, data_type=ALL)
         self.assertEqual(mock_schedule_catalog.call_count, 1)

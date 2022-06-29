@@ -213,8 +213,8 @@ class TestSourcesCatalog(TestCase):
         self.test_source.has_feature.return_value = True
         self.test_another_source.has_feature.return_value = False
         instance = SourcesCatalog(**self.test_kwargs)
-        test_feature = "Flex"
-        under_test = instance.get_sources_by_feature(featuree=test_feature)
+        test_feature = "flex"
+        under_test = instance.get_sources_by_feature(feature=test_feature)
         self.assertEqual(under_test, {self.test_source_key: self.test_json})
 
     @patch("tools.representations.Catalog.aggregate")
@@ -223,7 +223,7 @@ class TestSourcesCatalog(TestCase):
         self.test_source.has_status.return_value = True
         self.test_another_source.has_status.return_value = False
         instance = SourcesCatalog(**self.test_kwargs)
-        test_status = "acttive"
+        test_status = "active"
         under_test = instance.get_sources_by_feature(status=test_status)
         self.assertEqual(under_test, {self.test_source_key: self.test_json})
 
@@ -291,7 +291,8 @@ class TestGtfsScheduleSource(TestCase):
         self.test_data_type = "some_data_type"
         self.test_provider = "some_provider_with_accents_éàç"
         self.test_name = "some_name"
-        self.test_features = ["some_feature"]
+        self.test_feature = "some_feature"
+        self.test_features = [self.test_feature]
         self.test_status = "some_status"
         self.test_filename = "some_filename"
         self.test_country_code = "some_country_code"
@@ -422,11 +423,11 @@ class TestGtfsScheduleSource(TestCase):
 
     def test_has_feature(self):
         test_feature = self.test_feature
-        test_another_feature = ["some_other_status"]
+        test_another_feature = ["some_other_feature"]
         instance = GtfsScheduleSource(filename=self.test_filename, **self.test_schema)
-        under_test = instance.has_feature(status=test_feature)
+        under_test = instance.has_feature(feature=test_feature)
         self.assertTrue(under_test)
-        under_test = instance.has_feature(country_code=test_another_feature)
+        under_test = instance.has_feature(feature=test_another_feature)
         self.assertFalse(under_test)
 
     def test_has_status(self):
@@ -435,7 +436,7 @@ class TestGtfsScheduleSource(TestCase):
         instance = GtfsScheduleSource(filename=self.test_filename, **self.test_schema)
         under_test = instance.has_status(status=test_status)
         self.assertTrue(under_test)
-        under_test = instance.has_status(country_code=test_another_status)
+        under_test = instance.has_status(status=test_another_status)
         self.assertFalse(under_test)
 
     @patch("tools.representations.get_iso_time")
@@ -735,6 +736,26 @@ class TestGtfsRealtimeSource(TestCase):
     def test_has_latest_dataset(self, mock_static_catalog):
         instance = GtfsRealtimeSource(filename=self.test_filename, **self.test_schema)
         under_test = instance.has_latest_dataset()
+        self.assertFalse(under_test)
+
+    @patch("tools.representations.GtfsRealtimeSource.static_catalog")
+    def test_has_feature(self, mock_static_catalog):
+        test_feature = self.test_feature
+        test_another_feature = ["some_other_feature"]
+        instance = GtfsRealtimeSource(filename=self.test_filename, **self.test_schema)
+        under_test = instance.has_feature(feature=test_feature)
+        self.assertTrue(under_test)
+        under_test = instance.has_feature(feature=test_another_feature)
+        self.assertFalse(under_test)
+
+    @patch("tools.representations.GtfsRealtimeSource.static_catalog")
+    def test_has_status(self, mock_static_catalog):
+        test_status = self.test_status
+        test_another_status = "some_other_status"
+        instance = GtfsRealtimeSource(filename=self.test_filename, **self.test_schema)
+        under_test = instance.has_status(status=test_status)
+        self.assertTrue(under_test)
+        under_test = instance.has_status(status=test_another_status)
         self.assertFalse(under_test)
 
     @patch("tools.representations.GtfsRealtimeSource.static_catalog")

@@ -104,7 +104,7 @@
     },
     "status": {
       "type": "string",
-      "description": "The status of the source which can be used to determine if/how to include it in public trip-planning. If not provided, feed is assumed to be active. Should be one of: active: The feed is active and should be included in public trip-planning. inactive: The feed is inactive / hasn't been updated recently and should be included in public trip-planning at risk of providing outdated information. deprecated: The feed is explicitly deprecated and should not be included in public trip-planning. development: The feed is in development or being used to test a specific feature and should not be included in public trip-planning.",
+      "description": "The status of the source which can be used to determine if/how to include it in public trip-planning. If not provided, source is assumed to be active. Should be one of: active: The source is active and should be included in public trip-planning. inactive: The source is inactive / hasn't been updated recently and should be included in public trip-planning at risk of providing outdated information. deprecated: The source is explicitly deprecated and should not be included in public trip-planning. development: The source is in development or being used to test a specific feature and should not be included in public trip-planning.",
       "enum": ["active","deprecated","inactive","development"]
     },
     "urls": {

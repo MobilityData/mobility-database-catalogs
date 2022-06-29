@@ -232,17 +232,31 @@ def get_latest_datasets(data_type=ALL):
     return dict(sorted(sources.items()))
 
 
-def get_sources_by_feature(
-    feature_name,
+def get_sources_by_status(
+    status,
     data_type=ALL,
 ):
-    """Get the sources with a feature."""
+    """Get the sources with the given status."""
+    source_type_map = globals()[f"{data_type.upper().replace('-', '_')}_MAP"]
+    sources = {}
+    for catalog_cls in source_type_map[CATALOGS]:
+        sources.update(
+            globals()[f"{catalog_cls}"]().get_sources_by_status(status=status)
+        )
+    return dict(sorted(sources.items()))
+
+
+def get_sources_by_feature(
+    feature,
+    data_type=ALL,
+):
+    """Get the sources with the given feature."""
     source_type_map = globals()[f"{data_type.upper().replace('-', '_')}_MAP"]
     sources = {}
     for catalog_cls in source_type_map[CATALOGS]:
         sources.update(
             globals()[f"{catalog_cls}"]().get_sources_by_feature(
-                subdivision_name=feature_name
+                subdivision_name=feature
             )
         )
     return dict(sorted(sources.items()))

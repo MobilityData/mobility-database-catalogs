@@ -63,16 +63,16 @@ The easiest way to add a GTFS Realtime source is to use the operation `tools.ope
 
 ```
 >>> add_gtfs_realtime_source(
-        entity_type=[$YOUR_SOURCE_ENTIY_TYPE],
+        entity_type=[$YOUR_SOURCE_ARRAY_OF_ENTITY_TYPES],
         provider=$YOUR_SOURCE_PROVIDER_NAME,
-        name=$OPTIONAL_SOURCE_NAME,
-        note=$OPTIONAL_SOURCE_NOTE,
-        static_reference=[$OPTIONAL_STATIC_REFERENCE_NUMERICAL_ID],
         direct_download_url=$YOUR_SOURCE_DIRECT_DOWNLOAD_URL,
-        authentication_type=$CONDITIONALLY_REQUIRED_AUTHENTICATION_TYPE,
+        authentication_type=$YOUR_SOURCE_AUTHENTICATION_TYPE,
         authentication_info_url=$CONDITIONALLY_REQUIRED_AUTHENTICATION_INFO_URL,
         api_key_parameter_name=$CONDITIONALLY_REQUIRED_API_KEY_PARAMETER_NAME,
         license_url=$OPTIONAL_LICENSE_URL,
+        name=$OPTIONAL_SOURCE_NAME,
+        static_reference=[$OPTIONAL_ARRAY_OF_STATIC_REFERENCE_NUMERICAL_IDS],
+        note=$OPTIONAL_SOURCE_NOTE,
     )
 ```
 
@@ -106,16 +106,16 @@ The default value for every parameter is `None`. Note that once a parameter valu
 ```
 >>> update_gtfs_realtime_source(
         mdb_source_id=$YOUR_SOURCE_NUMERICAL_ID,
-        entity_type=[$YOUR_SOURCE_ENTIY_TYPE],
+        entity_type=[$YOUR_SOURCE_ARRAY_OF_ENTITY_TYPES],
         provider=$YOUR_SOURCE_PROVIDER_NAME,
-        name=$OPTIONAL_SOURCE_NAME,
-        note=$OPTIONAL_SOURCE_NOTE,
-        static_reference=[$OPTIONAL_STATIC_REFERENCE_NUMERICAL_ID],
         direct_download_url=$YOUR_SOURCE_DIRECT_DOWNLOAD_URL,
-        authentication_type=$CONDITIONALLY_REQUIRED_AUTHENTICATION_TYPE,
+        authentication_type=$YOUR_SOURCE_AUTHENTICATION_TYPE,
         authentication_info_url=$CONDITIONALLY_REQUIRED_AUTHENTICATION_INFO_URL,
         api_key_parameter_name=$CONDITIONALLY_REQUIRED_API_KEY_PARAMETER_NAME,
         license_url=$OPTIONAL_LICENSE_URL,
+        name=$OPTIONAL_SOURCE_NAME,
+        static_reference=[$OPTIONAL_ARRAY_OF_STATIC_REFERENCE_NUMERICAL_IDS],
+        note=$OPTIONAL_SOURCE_NOTE,
     )
 ```
 

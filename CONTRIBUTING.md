@@ -13,7 +13,7 @@ Have you encountered an error? A critical step in troubleshooting is being able 
 ## Contributing data
 To contribute data to the Mobility Database catalogs, it is suggested that you follow the steps below.
 
-Note that adding or updating sources manually is possible, although not recommended as it increases the risk of introducing incorrect or invalid information into your branch and pull request.
+Note that adding or updating sources manually is possible, although not recommended as it increases the risk of introducing incorrect or invalid information into your branch and pull request. [Using the operations makes sure your JSON files are valid](#contribute-data).
 
 Note that your contribution must pass all of our tests, as implemented in the CI workflows of this project repository, to be merged into the main branch. To pass our tests, make sure that your contribution conforms to the appropriate JSON schema and that the ID and direct download URL values contributed for a source are unique across the Mobility Database Catalogs.
 

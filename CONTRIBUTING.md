@@ -13,7 +13,7 @@ Have you encountered an error? A critical step in troubleshooting is being able 
 ## Contributing data
 To contribute data to the Mobility Database catalogs, it is suggested that you follow the steps below.
 
-Note that adding or updating sources manually is possible, although not recommended as it increases the risk of introducing incorrect or invalid information into your branch and pull request.
+Note that adding or updating sources manually is possible, although not recommended as it increases the risk of introducing incorrect or invalid information into your branch and pull request. [Using the operations makes sure your JSON files are valid](#contribute-data).
 
 Note that your contribution must pass all of our tests, as implemented in the CI workflows of this project repository, to be merged into the main branch. To pass our tests, make sure that your contribution conforms to the appropriate JSON schema and that the ID and direct download URL values contributed for a source are unique across the Mobility Database Catalogs.
 
@@ -31,10 +31,10 @@ To contribute data to the Mobility Database catalogs, please follow these steps:
 3. Set up the Python environment following the instructions in our README.md.
 4. Contribute data.
 5. Test your contribution.
-6. Add your contribution files to the git staging area with `git add $YOUR_FILES` where `$YOUR_FILES` is a list of files or the directory where your modifications are. 
+6. Add your contribution files to the git staging area with `git add $YOUR_FILES` where `$YOUR_FILES` is a list of files or the directory where your modifications are.
 7. Commit your contribution including a message explaining your contribution with `git commit -m "$YOUR_COMMIT_MESSAGE"`.
 8. Push your contribution to your branch on the origin repository with `git push origin $YOUR_NEW_BRANCH`
-9. Go to the repository pull requests [page](https://github.com/MobilityData/mobility-database-catalogs/pulls) and open a **draft** pull request with your branch. Your pull request **must** include the string "[SOURCES]" at the end of its title. Eg. "feat: Add Montreal GTFS Source [SOURCES]"
+9. Go to the repository pull requests [page](https://github.com/MobilityData/mobility-database-catalogs/pulls) and open a **draft** pull request with your branch. If you are adding a GTFS **Schedule** source, your pull request **must** include the string "[SOURCES]" at the end of its title. Eg. "feat: Add Montreal GTFS Source [SOURCES]".
 10. Modify your contribution as many times as needed following steps 4 to 8.
 11. When your contribution is ready, convert your pull request from draft to ready for review and request a review from a team member at Mobility Data. Not that if you need to modify your contribution after this step, you will be asked to convert your pull request back to draft.
 12. Once your pull request is converted to ready for review and that all the checks have passed, we will approve and merge it.
@@ -42,7 +42,7 @@ To contribute data to the Mobility Database catalogs, please follow these steps:
 ### Contribute data
 
 #### Add a GTFS Schedule source
-The easiest way to add a GTFS Schedule source is to use the operation `tools.operations.add_gtfs_schedule_source` through the Python interpreter or in your scripts. Provide the information about your source in the operation function to add your source.
+The easiest way to add a GTFS Schedule source is to use the operation `tools.operations.add_gtfs_schedule_source` through the Python interpreter or in your scripts. This operation makes sure the information provided is correct and will pass our tests. Provide the information about your source in the operation function to add your source.
 
 Please note sources that require API authorization cannot be added to the catalogs presently until [this issue is resolved](https://github.com/MobilityData/mobility-database-catalogs/issues/130).
 
@@ -59,23 +59,29 @@ Please note sources that require API authorization cannot be added to the catalo
 ```
 
 #### Add a GTFS Realtime source
-The easiest way to add a GTFS Realtime source is to use the operation `tools.operations.add_gtfs_realtime_source` through the Python interpreter or in your scripts. Provide the information about your source in the operation function to add your source. Note that even though `vehicle_positions_url`, `trip_updates_url` and `service_alerts_url`, you must provide at least one URL for your source to be valid.
+The easiest way to add a GTFS Realtime source is to use the operation `tools.operations.add_gtfs_realtime_source` through the Python interpreter or in your scripts. Provide the information about your source in the operation function to add your source.
 
 ```
 >>> add_gtfs_realtime_source(
+        entity_type=[$YOUR_SOURCE_ARRAY_OF_ENTITY_TYPES],
         provider=$YOUR_SOURCE_PROVIDER_NAME,
-        static_reference=$OPTIONAL_STATIC_REFERENCE_NUMERICAL_ID,
-        vehicle_positions_url=$OPTIONAL_VEHICLE_POSITIONS_URL,
-        trip_updates_url=$OPTIONAL_TRIP_UPDATES_URL,
-        service_alerts_url=$OPTIONAL_SERVICE_ALERTS_URL,
-        name=$OPTIONAL_SOURCE_NAME
+        direct_download_url=$YOUR_SOURCE_DIRECT_DOWNLOAD_URL,
+        authentication_type=$YOUR_SOURCE_AUTHENTICATION_TYPE,
+        authentication_info_url=$CONDITIONALLY_REQUIRED_AUTHENTICATION_INFO_URL,
+        api_key_parameter_name=$CONDITIONALLY_REQUIRED_API_KEY_PARAMETER_NAME,
+        license_url=$OPTIONAL_LICENSE_URL,
+        name=$OPTIONAL_SOURCE_NAME,
+        static_reference=[$OPTIONAL_ARRAY_OF_STATIC_REFERENCE_NUMERICAL_IDS],
+        note=$OPTIONAL_SOURCE_NOTE,
     )
 ```
 
 #### Update a GTFS Schedule source
 The easiest way to update a GTFS Schedule source is to use the operation `tools.operations.update_gtfs_schedule_source` through the Python interpreter or in your scripts.
 
-Note that only the parameters for which the provided value will differ from the default value `None` will be updated. Only the following parameters can be updated: `provider`, `name`, `country_code`, `subdivision_name`, `municipality`, `direct_download_url` and `license_url`.
+The default value for every parameter is `None`. Note that once a parameter value is added, it cannot be set to `None` again.
+
+`mdb_source_id` and `data_type` cannot be updated. All other parameters can.
 
 ```
 >>> update_gtfs_schedule_source(
@@ -93,17 +99,23 @@ Note that only the parameters for which the provided value will differ from the 
 #### Update a GTFS Realtime source
 The easiest way to update a GTFS Realtime source is to use the operation `tools.operations.update_gtfs_realtime_source` through the Python interpreter or in your scripts.
 
-Note that only the parameters for which the provided value will differ from the default value `None` will be updated. Only the following parameters can be updated: `provider`, `name`, `static_reference`, `vehicle_positions_url`, `trip_updates_url` and `service_alerts_url`.
+The default value for every parameter is `None`. Note that once a parameter value is added, it cannot be set to `None` again.
+
+`mdb_source_id` and `data_type` cannot be updated. All other parameters can.
 
 ```
 >>> update_gtfs_realtime_source(
         mdb_source_id=$YOUR_SOURCE_NUMERICAL_ID,
-        provider=$OPTIONAL_SOURCE_PROVIDER_NAME,
-        static_reference=$OPTIONAL_STATIC_REFERENCE_NUMERICAL_ID,
-        vehicle_positions_url=$OPTIONAL_VEHICLE_POSITIONS_URL,
-        trip_updates_url=$OPTIONAL_TRIP_UPDATES_URL,
-        service_alerts_url=$OPTIONAL_SERVICE_ALERTS_URL,
-        name=$OPTIONAL_SOURCE_NAME
+        entity_type=[$YOUR_SOURCE_ARRAY_OF_ENTITY_TYPES],
+        provider=$YOUR_SOURCE_PROVIDER_NAME,
+        direct_download_url=$YOUR_SOURCE_DIRECT_DOWNLOAD_URL,
+        authentication_type=$YOUR_SOURCE_AUTHENTICATION_TYPE,
+        authentication_info_url=$CONDITIONALLY_REQUIRED_AUTHENTICATION_INFO_URL,
+        api_key_parameter_name=$CONDITIONALLY_REQUIRED_API_KEY_PARAMETER_NAME,
+        license_url=$OPTIONAL_LICENSE_URL,
+        name=$OPTIONAL_SOURCE_NAME,
+        static_reference=[$OPTIONAL_ARRAY_OF_STATIC_REFERENCE_NUMERICAL_IDS],
+        note=$OPTIONAL_SOURCE_NOTE,
     )
 ```
 
@@ -121,7 +133,7 @@ To contribute operations to the mobility database catalogs, it is suggested that
 2. Contribute the representations needed for your operation under `tools.representations`.
 3. Contribute the helpers needed for your operation under `tools.helpers`.
 4. Contribute the constants needed for your operation under `tools.constants`.
-5. Contribute the unit tests for every function or operation you added.
+5. Contribute the unit tests for every function or operation you added after [running tests locally](#how-to-run-tests-locally).
 
 ## Coding style
 "Sticking to a single consistent and documented coding style for this project is important to ensure that code reviewers dedicate their attention to the functionality of the validation, as opposed to disagreements about the coding style (and avoid [bike-shedding](https://en.wikipedia.org/wiki/Law_of_triviality))."

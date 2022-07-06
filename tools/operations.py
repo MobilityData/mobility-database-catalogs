@@ -256,7 +256,7 @@ def get_sources_by_feature(
     for catalog_cls in source_type_map[CATALOGS]:
         sources.update(
             globals()[f"{catalog_cls}"]().get_sources_by_feature(
-                subdivision_name=feature
+                feature=feature
             )
         )
     return dict(sorted(sources.items()))

@@ -595,7 +595,8 @@ class TestGtfsRealtimeSource(TestCase):
         self.test_authentication_info_url = "some_authentication_info_url"
         self.test_api_key_parameter_name = "some_api_key_parameter_name"
         self.test_license_url = "some_license_url"
-        self.test_features = ["some_feature"]
+        self.test_feature = "some_feature"
+        self.test_features = [self.test_feature]
         self.test_status = "some_status"
         self.test_kwargs = {
             MDB_SOURCE_ID: self.test_mdb_source_id,
@@ -741,7 +742,7 @@ class TestGtfsRealtimeSource(TestCase):
     @patch("tools.representations.GtfsRealtimeSource.static_catalog")
     def test_has_feature(self, mock_static_catalog):
         test_feature = self.test_feature
-        test_another_feature = ["some_other_feature"]
+        test_another_feature = "some_other_feature"
         instance = GtfsRealtimeSource(filename=self.test_filename, **self.test_schema)
         under_test = instance.has_feature(feature=test_feature)
         self.assertTrue(under_test)

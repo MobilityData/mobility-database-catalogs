@@ -144,14 +144,14 @@ class SourcesCatalog(Catalog):
 
     def get_sources_by_feature(self, feature):
         return {
-            source_id: source.as_json
+            source_id: source.as_json()
             for source_id, source in self.catalog.items()
             if source.has_feature(feature)
         }
 
     def get_sources_by_status(self, status):
         return {
-            source_id: source.as_json
+            source_id: source.as_json()
             for source_id, source in self.catalog.items()
             if source.has_status(status)
         }

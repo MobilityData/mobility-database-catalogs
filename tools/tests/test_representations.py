@@ -224,7 +224,7 @@ class TestSourcesCatalog(TestCase):
         self.test_another_source.has_status.return_value = False
         instance = SourcesCatalog(**self.test_kwargs)
         test_status = "active"
-        under_test = instance.get_sources_by_feature(status=test_status)
+        under_test = instance.get_sources_by_status(status=test_status)
         self.assertEqual(under_test, {self.test_source_key: self.test_json})
 
     @patch("tools.representations.SourcesCatalog.save")

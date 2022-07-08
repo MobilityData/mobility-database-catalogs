@@ -225,7 +225,7 @@ class Source(ABC):
         self.provider = kwargs.pop(PROVIDER)
         self.name = kwargs.pop(NAME, None)
         self.filename = kwargs.pop(FILENAME)
-        self.features = kwargs.pop(FEATURES, None)
+        self.features = kwargs.pop(FEATURES, [])
         self.status = kwargs.pop(STATUS, None)
 
     @abstractmethod
@@ -542,7 +542,7 @@ class GtfsRealtimeSource(Source):
     def has_feature(self, feature):
         static_sources = self.get_static_sources(self.static_reference)
         in_static_source = any(
-            feature in static_source.features for static_source in static_sources
+            [feature in static_source.features for static_source in static_sources]
         )
         in_realtime_source = feature in self.features
         return in_static_source or in_realtime_source

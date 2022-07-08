@@ -31,7 +31,7 @@ class TestOperations(TestCase):
         test_name = "test_name"
         test_note = "test_note"
         test_status = "active"
-        test_feature = ["fares"]
+        test_features = ["fares"]
         under_test = add_gtfs_realtime_source(
             entity_type=test_entity_type,
             provider=test_provider,

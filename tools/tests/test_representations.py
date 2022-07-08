@@ -623,6 +623,8 @@ class TestGtfsRealtimeSource(TestCase):
             NAME: self.test_name,
             STATIC_REFERENCE: self.test_static_reference,
             NOTE: self.test_note,
+            STATUS: self.test_status,
+            FEATURES: self.test_features,
             URLS: {
                 DIRECT_DOWNLOAD: self.test_direct_download_url,
                 AUTHENTICATION_TYPE: self.test_authentication_type,

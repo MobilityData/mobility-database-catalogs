@@ -3,7 +3,6 @@
     "data_type": "gtfs",
     "provider": "City of Wasco",
     "features": [
-        "flex",
         "flex-v2"
     ],
     "status": "development",

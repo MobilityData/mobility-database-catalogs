@@ -99,7 +99,7 @@
       "description": "A list of features that the source supports.",
       "items": {
         "type": "string",
-        "enum": ["fares","flex","fares-v2","fares-v1","flex-v1","flex-v2","pathways"]
+        "enum": ["fares-v2","fares-v1","flex-v1","flex-v2","pathways"]
       }
     },
     "status": {

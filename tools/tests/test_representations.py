@@ -213,7 +213,7 @@ class TestSourcesCatalog(TestCase):
         self.test_source.has_feature.return_value = True
         self.test_another_source.has_feature.return_value = False
         instance = SourcesCatalog(**self.test_kwargs)
-        test_feature = "flex"
+        test_feature = "flex-v2"
         under_test = instance.get_sources_by_feature(feature=test_feature)
         self.assertEqual(under_test, {self.test_source_key: self.test_json})
 

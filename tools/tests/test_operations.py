@@ -64,7 +64,7 @@ class TestOperations(TestCase):
         test_name = "test_name"
         test_note = "test_note"
         test_status = "active"
-        test_features = ["flex"]
+        test_features = ["flex-v2"]
         under_test = update_gtfs_realtime_source(
             mdb_source_id=test_mdb_source_id,
             entity_type=test_entity_type,

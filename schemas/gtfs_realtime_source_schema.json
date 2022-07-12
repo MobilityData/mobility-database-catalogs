@@ -49,13 +49,12 @@
         },
         "authentication_type": {
           "type": "number",
-          "description": "The transit provider’s license information.",
+          "description": "The authentication type of the source.",
           "enum": [
             0,
             1,
             2,
-            3,
-            4
+            3
           ]
         },
         "authentication_info": {
@@ -81,8 +80,7 @@
                 "enum": [
                   1,
                   2,
-                  3,
-                  4
+                  3
                 ]
               }
             }

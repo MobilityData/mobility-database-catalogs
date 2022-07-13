@@ -186,8 +186,6 @@ To get the sources by bounding box, where `$MINIMUM_LATITUDE` `$MAXIMUM_LATITUDE
 
 To get the sources by feature, `$FEATURE` is expressed as a string and must be one of:
 
-* `fares`  
-* `flex`  
 * `fares-v2`  
 * `fares-v1`  
 * `flex-v1`  

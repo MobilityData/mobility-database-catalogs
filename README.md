@@ -4,12 +4,11 @@
 
 The Mobility Database Catalogs is a project that provides a list of open mobility data sources from across the world, and the code to filter and manipulate them. [You can learn more about the Mobility Database here](https://database.mobilitydata.org/).
 
-If you're only interested in browsing the sources, [download the CSV](https://bit.ly/catalogs-csv). You can cross reference IDs from the Mobility Database, TransitFeeds and Transitland with [this ID map spreadsheet](https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit?resourcekey#gid=1787149399).
-
 [You can view our release plan for V1 here](https://github.com/MobilityData/mobility-database-catalogs/issues/30).
 
 ## Table of Contents
 
+* [The Spreadsheet](#the-spreadsheet)
 * [The Core Parts](#the-core-parts)
 * [GTFS Schedule Data Structure](#gtfs-schedule-data-structure)
 * [GTFS Realtime Data Structure](#gtfs-realtime-data-structure)
@@ -18,6 +17,10 @@ If you're only interested in browsing the sources, [download the CSV](https://bi
 * [Integration Tests](#integration-tests)
 * [License](#license)
 * [Contributing](#contributing)
+
+## The Spreadsheet
+
+If you're only interested in browsing the sources or pulling all the latest URLs, [download the CSV](https://bit.ly/catalogs-csv). You can cross reference IDs from the Mobility Database, TransitFeeds and Transitland with [this ID map spreadsheet](https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit?resourcekey#gid=1787149399).
 
 ## The Core Parts
 
@@ -72,8 +75,8 @@ Contains the JSON schemas used to validate the sources in the integration tests.
 | status        | Enum | Optional |  Describes status of the source. Should be one of: <ul><li>`active`: Source should be used in public trip planners.</li><li>`deprecated`: Source is explicitly deprecated and should not be used in public trip planners.</li><li>`inactive`: Source hasn't been recently updated and should be used at risk of providing outdated information.</li><li>`development`: Source is being used for development purposes and should not be used in public trip planners.</li></ul>Source is assumed to be `active` if status is not explicitly provided.|  |  
 | static_reference |  Array of Integers |Optional              | A list of the static sources that the real time source is associated with, represented by their MDB source IDs. |  
 |urls| Object | Required | Contains URLs associated with the source in the `direct_download_url` and `license_url` fields, and the authentication info for `direct_download_url` in the `authentication_type`, `authentication_info_url` and `api_key_parameter_name` fields.
-|- direct_download_url |URL|Optional     | URL that responds with an encoded [GTFS Realtime protocol buffer message](https://github.com/google/transit/tree/master/gtfs-realtime/spec/en#data-format).  
-|- authentication_type |Enum|Conditionally required | The **authentication_type** field defines the type of authentication required to access the URL. When a direct download URL is provided, the authentication type is required. Valid values for this field are: <ul> <li>**0** or **(empty)** - No authentication required.</li><li>**1** - The authentication requires an API key, which should be passed as value of the parameter `api_key_parameter_name` in the URL. Please visit URL in `authentication_info_url` for more information. </li><li>**2** - The authentication requires an HTTP header, which should be passed as the value of the header `api_key_parameter_name` in the HTTP request. </li></li>**3**: A placeholder text value of `{API_KEY}` is provided within the URL. For example: [https://gtfs.translink.ca/v2/gtfsalerts?apikey={API_KEY}](https://gtfs.translink.ca/v2/gtfsalerts?apikey=[APIKey]). Consumers should replace `{API_KEY}` with the value of the API key.</li><li>**4**: Ad-hoc authentication required, visit URL in `authentication_info_url` for more information.</li></ul>|
+|- direct_download_url |URL|Required     | URL that responds with an encoded [GTFS Realtime protocol buffer message](https://github.com/google/transit/tree/master/gtfs-realtime/spec/en#data-format).                                                                                                
+|- authentication_type |Enum|Required | The **authentication_type** field defines the type of authentication required to access the URL. When a direct download URL is provided, the authentication type is required. Valid values for this field are: <ul> <li>**0** or **(empty)** - No authentication required.</li><li>**1** - The authentication requires an API key, which should be passed as value of the parameter `api_key_parameter_name` in the URL. Please visit URL in `authentication_info_url` for more information. </li><li>**2** - The authentication requires an HTTP header, which should be passed as the value of the header `api_key_parameter_name` in the HTTP request. </li></li>**3**: A placeholder text value of `{API_KEY}` is provided within the URL. For example: [https://gtfs.translink.ca/v2/gtfsalerts?apikey={API_KEY}](https://gtfs.translink.ca/v2/gtfsalerts?apikey=[APIKey]). Consumers should replace `{API_KEY}` with the value of the API key.</li><li>**4**: Ad-hoc authentication required, visit URL in `authentication_info_url` for more information.</li></ul>|
 |- authentication_info_url | URL| Conditionally required | If authentication is required, the **authentication_info_url** field contains a URL to a human-readable page describing how the authentication should be performed and how credentials can be created. This field is required for `authentication_type=1` or greater. |
 |- api_key_parameter_name |Text|Conditionally required | The **api_key_parameter_name** field defines the name of the parameter to pass in the URL to provide the API key. This field is required for `authentication_type=1` and `authentication_type=2`.   |  
 |- license_url  |URL| Optional     | The license information for  `direct_download_url`.
@@ -231,13 +234,17 @@ add_gtfs_schedule_source(
 To add a new GTFS Realtime source:
 
 ```python
-add_gtfs_realtime_source(
+>>> add_gtfs_realtime_source(
+        entity_type=[$YOUR_SOURCE_ARRAY_OF_ENTITY_TYPES],
         provider=$YOUR_SOURCE_PROVIDER_NAME,
-        static_reference=$OPTIONAL_STATIC_REFERENCE_NUMERICAL_ID,
-        vehicle_positions_url=$OPTIONAL_VEHICLE_POSITIONS_URL,
-        trip_updates_url=$OPTIONAL_TRIP_UPDATES_URL,
-        service_alerts_url=$OPTIONAL_SERVICE_ALERTS_URL,
+        direct_download_url=$YOUR_SOURCE_DIRECT_DOWNLOAD_URL,
+        authentication_type=$YOUR_SOURCE_AUTHENTICATION_TYPE,
+        authentication_info_url=$CONDITIONALLY_REQUIRED_AUTHENTICATION_INFO_URL,
+        api_key_parameter_name=$CONDITIONALLY_REQUIRED_API_KEY_PARAMETER_NAME,
+        license_url=$OPTIONAL_LICENSE_URL,
         name=$OPTIONAL_SOURCE_NAME,
+        static_reference=[$OPTIONAL_ARRAY_OF_STATIC_REFERENCE_NUMERICAL_IDS],
+        note=$OPTIONAL_SOURCE_NOTE,
         features=[$OPTIONAL_FEATURE_ARRAY],
         status=$OPTIONAL_STATUS
     )
@@ -265,12 +272,16 @@ To update a GTFS Realtime source:
 ```python
 update_gtfs_realtime_source(
         mdb_source_id=$YOUR_SOURCE_NUMERICAL_ID,
-        provider=$OPTIONAL_SOURCE_PROVIDER_NAME,
-        static_reference=$OPTIONAL_STATIC_REFERENCE_NUMERICAL_ID,
-        vehicle_positions_url=$OPTIONAL_VEHICLE_POSITIONS_URL,
-        trip_updates_url=$OPTIONAL_TRIP_UPDATES_URL,
-        service_alerts_url=$OPTIONAL_SERVICE_ALERTS_URL,
+        entity_type=[$YOUR_SOURCE_ARRAY_OF_ENTITY_TYPES],
+        provider=$YOUR_SOURCE_PROVIDER_NAME,
+        direct_download_url=$YOUR_SOURCE_DIRECT_DOWNLOAD_URL,
+        authentication_type=$YOUR_SOURCE_AUTHENTICATION_TYPE,
+        authentication_info_url=$CONDITIONALLY_REQUIRED_AUTHENTICATION_INFO_URL,
+        api_key_parameter_name=$CONDITIONALLY_REQUIRED_API_KEY_PARAMETER_NAME,
+        license_url=$OPTIONAL_LICENSE_URL,
         name=$OPTIONAL_SOURCE_NAME,
+        static_reference=[$OPTIONAL_ARRAY_OF_STATIC_REFERENCE_NUMERICAL_IDS],
+        note=$OPTIONAL_SOURCE_NOTE,
         features=[$OPTIONAL_FEATURE_ARRAY],
         status=$OPTIONAL_STATUS
     )

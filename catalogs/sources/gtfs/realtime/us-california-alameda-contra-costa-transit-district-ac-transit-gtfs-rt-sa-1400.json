@@ -9,9 +9,10 @@
         1244
     ],
     "urls": {
-        "direct_download": "http://api.actransit.org/transit/gtfsrt/alerts?token={API_KEY}",
-        "authentication_type": 3,
+        "direct_download": "http://api.actransit.org/transit/gtfsrt/alerts",
+        "authentication_type": 1,
         "authentication_info": "https://api.actransit.org/transit/Account/Register",
+        "api_key_parameter_name": "token",
         "license": "http://www.actransit.org/data-terms-and-conditions/"
     }
 }

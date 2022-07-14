@@ -9,9 +9,10 @@
         696
     ],
     "urls": {
-        "direct_download": "https://gtfs.translink.ca/v2/gtfsalerts?apikey={API_KEY}",
-        "authentication_type": 3,
+        "direct_download": "https://gtfs.translink.ca/v2/gtfsalerts",
+        "authentication_type": 1,
         "authentication_info": "https://www.translink.ca/about-us/doing-business-with-translink/app-developer-resources/register",
+        "api_key_parameter_name": "apikey",
         "license": "https://developer.translink.ca/Home/TermsOfUse"
     }
 }

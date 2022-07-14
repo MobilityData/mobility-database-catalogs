@@ -102,8 +102,9 @@ jobs:
                     else:
                         source[LOCATION] = {COUNTRY_CODE: UNKNOWN, SUBDIVISION_NAME: UNKNOWN, MUNICIPALITY: UNKNOWN}
                     source[ENTITY_TYPE] = "|".join(source.get(ENTITY_TYPE))
+                if len(source.get(FEATURES, [])) > 0:
                     source[FEATURES] = "|".join(source.get(FEATURES))
-                    catalog[source_id] = source
+                catalog[source_id] = source
             # Sort the catalog and convert it to a list
             catalog = list(dict(sorted(catalog.items())).values())
 

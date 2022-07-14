@@ -38,32 +38,32 @@ Contains the JSON schemas used to validate the sources in the integration tests.
 
 ## GTFS Schedule Data Structure
 
-|Field Name|Type|Presence|Definition|                                                                     
+|Field Name|Type|Presence|Definition|  
 |-|-|-|-|
 | mdb_source_id |  Unique ID | System generated | Unique numerical identifier.      |
 | data_type     | Enum| Required| The data format that the source uses: `gtfs`.|
+| features      | Array of Enums | Optional | An array of features which can be any of: <ul><li>`fares`</li><li>`flex`</li><li>`fares-v2`</li><li>`fares-v1`</li><li>`flex-v1`</li><li>`flex-v2`</li><li>`pathways`</li></ul>|  
+| status        | Enum | Optional | Describes status of the source. Should be one of: <ul><li>`active`: Source should be used in public trip planners.</li><li>`deprecated`: Source is explicitly deprecated and should not be used in public trip planners.</li><li>`inactive`: Source hasn't been recently updated and should be used at risk of providing outdated information.</li><li>`development`: Source is being used for development purposes and should not be used in public trip planners.</li></ul>Source is assumed to be `active` if status is not explicitly provided.|  
 |location| Object | Required |Contains  <ul><li>Text that describes the source's location in the `country_code`, `subdivision_name`, and `municipality` fields.</li><li>Latitude, longitude, date and time that describes the source's bounding box in the `bounding_box` subobject. </li></ul>|
 | - country_code       | Text |Required                  | ISO 3166-1 alpha-2 code designating the country where the system is located. For a list of valid codes [see here](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).                                                    |
-| - subdivision_name  | Text |Optional              | ISO 3166-2 subdivision name designating the subdivision (e.g province, state, region) where the system is located. For a list of valid names [see here](https://unece.org/trade/uncefact/unlocode-country-subdivisions-iso-3166-2).|    
-| - municipality  | Text |Optional              | Primary municipality in which the transit system is located.|         
+| - subdivision_name  | Text |Optional              | ISO 3166-2 subdivision name designating the subdivision (e.g province, state, region) where the system is located. For a list of valid names [see here](https://unece.org/trade/uncefact/unlocode-country-subdivisions-iso-3166-2).|  
+| - municipality  | Text |Optional              | Primary municipality in which the transit system is located.|  
 | - bounding_box  | Object|System generated             | Bounding box of the data source when it was first added to the catalog. Contains `minimum_latitude`, `maximum_latitude`, `minimum_longitude`, `maximum_longitude` and `extracted_on` fields. If the bounding box information displays as "null", you can check any potential source errors with [the GTFS validator](https://github.com/MobilityData/gtfs-validator).   |  
-| --minimum_latitude    | Latitude | System generated                    | The minimum latitude for the source's bounding box.     
-| --maximum_latitude    | Latitude | System generated                    | The maximum latitude for the source's bounding box.   
-| --minimum_longitude    | Longitude | System generated                    | The minimum longitude for the source's bounding box.    
+| --minimum_latitude    | Latitude | System generated                    | The minimum latitude for the source's bounding box.  
+| --maximum_latitude    | Latitude | System generated                    | The maximum latitude for the source's bounding box.  
+| --minimum_longitude    | Longitude | System generated                    | The minimum longitude for the source's bounding box.  
 | --maximum_longitude    | Longitude | System generated                    | The maximum longitude for the source's bounding box.  
-| --extracted_on   | Date and Time | System generated                    | The date and timestamp the bounding box was extracted on in UTC.                                                                         
+| --extracted_on   | Date and Time | System generated                    | The date and timestamp the bounding box was extracted on in UTC.  
 | provider     | Text | Required                   | A commonly used name for the transit provider included in the source.  
 | name        |  Text |Optional              | An optional description of the data source, e.g to specify if the data source is an aggregate of multiple providers, or which network is represented by the source. |
 |urls| Object | Required | Contains URLs associated with the source in the `direct_download_url`, `latest`, and `license` fields.
 |- direct_download |URL|Optional     | URL that automatically opens the source.
 | - latest | URL | System generated | A stable URL for the latest dataset of a source.
-|- license |URL| Optional     | The license information for the direct download URL.      
-
-
+|- license |URL| Optional     | The license information for the direct download URL.  
 
 ## GTFS Realtime Data Structure
 
-|Field Name|Type|Presence|Definition|                                                                     
+|Field Name|Type|Presence|Definition|  
 |-|-|-|-|
 | mdb_source_id |  Unique ID | System generated | Unique numerical identifier.      |
 | data_type     | Enum| Required| The data format that the source uses: `gtfs-rt`.                                                                                                |
@@ -71,12 +71,14 @@ Contains the JSON schemas used to validate the sources in the integration tests.
 | provider     | Text | Required                   | A commonly used name for the transit provider included in the source.  
 | name        |  Text |Optional              | An optional description of the data source, e.g to specify if the data source is an aggregate of multiple providers
 |note|Text| Optional|A note to clarify complex use cases for consumers, for example when several static sources are associated with a realtime source.  |  
+| features      | Array of Enums | Optional | An array of features which can be any of: <ul><li>`occupancy`</li></ul> |  
+| status        | Enum | Optional |  Describes status of the source. Should be one of: <ul><li>`active`: Source should be used in public trip planners.</li><li>`deprecated`: Source is explicitly deprecated and should not be used in public trip planners.</li><li>`inactive`: Source hasn't been recently updated and should be used at risk of providing outdated information.</li><li>`development`: Source is being used for development purposes and should not be used in public trip planners.</li></ul>Source is assumed to be `active` if status is not explicitly provided.|  |  
 | static_reference |  Array of Integers |Optional              | A list of the static sources that the real time source is associated with, represented by their MDB source IDs. |  
 |urls| Object | Required | Contains URLs associated with the source in the `direct_download_url` and `license_url` fields, and the authentication info for `direct_download_url` in the `authentication_type`, `authentication_info_url` and `api_key_parameter_name` fields.
 |- direct_download_url |URL|Required     | URL that responds with an encoded [GTFS Realtime protocol buffer message](https://github.com/google/transit/tree/master/gtfs-realtime/spec/en#data-format).                                                                                                
 |- authentication_type |Enum|Required | The **authentication_type** field defines the type of authentication required to access the URL. When a direct download URL is provided, the authentication type is required. Valid values for this field are: <ul> <li>**0** or **(empty)** - No authentication required.</li><li>**1** - The authentication requires an API key, which should be passed as value of the parameter `api_key_parameter_name` in the URL. Please visit URL in `authentication_info_url` for more information. </li><li>**2** - The authentication requires an HTTP header, which should be passed as the value of the header `api_key_parameter_name` in the HTTP request. </li></li>**3**: Ad-hoc authentication required, visit URL in `authentication_info_url` for more information.</li></ul>|
 |- authentication_info_url | URL| Conditionally required | If authentication is required, the **authentication_info_url** field contains a URL to a human-readable page describing how the authentication should be performed and how credentials can be created. This field is required for `authentication_type=1` or greater. |
-|- api_key_parameter_name |Text|Conditionally required | The **api_key_parameter_name** field defines the name of the parameter to pass in the URL to provide the API key. This field is required for `authentication_type=1` and `authentication_type=2`.   |   
+|- api_key_parameter_name |Text|Conditionally required | The **api_key_parameter_name** field defines the name of the parameter to pass in the URL to provide the API key. This field is required for `authentication_type=1` and `authentication_type=2`.   |  
 |- license_url  |URL| Optional     | The license information for  `direct_download_url`.
 
 In [the CSV](https://bit.ly/catalogs-csv), realtime sources include the location metadata of their static reference when provided.
@@ -88,37 +90,43 @@ In [the CSV](https://bit.ly/catalogs-csv), realtime sources include the location
 #### MacOs
 
 To use and run this project properly, you must install all its requirements. Make sure Python 3.9+ and Pip are installed:
-```
+
+```sh
 $ python3 --version
 $ pip --version
 ```
 
 If not, install them with:
-```
+
+```sh
 $ brew install python3.9
 $ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 $ sudo python get-pip.py
 ```
 
 Make sure both GDAL and RTree (Libspatialindex) libraries are installed on your computer, which are required for one of the project dependencies, the [GTFS Kit Library](https://pypi.org/project/gtfs-kit/):
-```
+
+```sh
 $ brew install GDAL
 $ brew install spatialindex
 ```
 
 It is recommended to set up a virtual environment before installing the requirements. To set up and activate a Python 3.9 virtual environment, enter the following commands:
-```
+
+```sh
 $ python3.9 -m venv env
 $ source env/bin/activate
 ```
 
 Once your virtual environment is activated, enter the following command to install the project requirements:
-```
+
+```sh
 (env) $ pip install -r requirements.txt
 ```
 
 To deactivate your virtual environment, enter the following command:
-```
+
+```sh
 (env) $ deactivate
 ```
 
@@ -127,7 +135,8 @@ If you are working with IntelliJ or PyCharm, it is possible to use this virtual 
 ### Repository
 
 To use it, clone the project on your local machine using HTTP with the following commands:
-```
+
+```sh
 $ git clone https://github.com/MobilityData/mobility-database-catalogs.git
 $ cd mobility-database-catalogs
 ```
@@ -135,34 +144,41 @@ $ cd mobility-database-catalogs
 ## Using the Mobility Database Catalogs
 
 ### Setup
+
 Follow the steps described in the [Installation](#installation) section.
 
 ### Run it
+
 To use the Mobility Database Catalogs, go to the cloned project root, open the Python interpreter and import the project operations:
-```
+
+```sh
 $ cd mobility-catalogs
 $ python
 >>> from tools.operations import *
 ```
 
 To get the sources:
-```
+
+```python
 >>> get_sources()
 ```
 
 To get the sources by subdivision name, where `$SUBDIVISION_NAME` is a ISO 3166-2 subdivision name:
-```
+
+```python
 >>> get_sources_by_subdivision_name(subdivision_name=$SUBDIVISION_NAME)
 ```
 
 To get the sources by country code, where `$COUNTRY_CODE` is a ISO 3166-1 alpha-2 code:
-```
+
+```python
 >>> get_sources_by_country_code(country_code=$COUNTRY_CODE)
 
 ```
 
 To get the sources by bounding box, where `$MINIMUM_LATITUDE` `$MAXIMUM_LATITUDE` `$MINIMUM_LONGITUDE` and `$MAXIMUM_LONGITUDE` are expressed as floats:
-```
+
+```python
 >>> get_sources_by_bounding_box(
         minimum_latitude=$MINIMUM_LATITUDE,
         maximum_latitude=$MAXIMUM_LATITUDE,
@@ -171,22 +187,53 @@ To get the sources by bounding box, where `$MINIMUM_LATITUDE` `$MAXIMUM_LATITUDE
     )
 ```
 
+To get the sources by feature, `$FEATURE` is expressed as a string and must be one of:
+
+* `fares-v2`  
+* `fares-v1`  
+* `flex-v1`  
+* `flex-v2`  
+* `pathways`  
+* `occupancy`  
+
+```python
+get_sources_by_feature(
+        feature=$FEATURE,
+    )
+```
+
+To get the sources by status, `$STATUS` is expressed as a string and one of:
+
+* `active`  
+* `deprecated`  
+* `inactive`  
+* `development`  
+
+```python
+get_sources_by_status(
+        feature=$STATUS,
+    )
+```
 
 To add a new GTFS Schedule source:
-```
->>> add_gtfs_schedule_source(
+
+```python
+add_gtfs_schedule_source(
         provider=$YOUR_SOURCE_PROVIDER_NAME,
         country_code=$YOUR_SOURCE_COUNTRY_CODE,
         direct_download_url=$YOUR_SOURCE_DIRECT_DOWNLOAD_URL,
         subdivision_name=$OPTIONAL_SUBDIVISION_NAME,
         municipality=$OPTIONAL_MUNICIPALITY,
         license_url=$OPTIONAL_LICENSE_URL,
-        name=$OPTIONAL_SOURCE_NAME
+        name=$OPTIONAL_SOURCE_NAME,
+        features=[$OPTIONAL_FEATURE_ARRAY],
+        status=$OPTIONAL_STATUS
     )
 ```
 
 To add a new GTFS Realtime source:
-```
+
+```python
 >>> add_gtfs_realtime_source(
         entity_type=[$YOUR_SOURCE_ARRAY_OF_ENTITY_TYPES],
         provider=$YOUR_SOURCE_PROVIDER_NAME,
@@ -198,12 +245,15 @@ To add a new GTFS Realtime source:
         name=$OPTIONAL_SOURCE_NAME,
         static_reference=[$OPTIONAL_ARRAY_OF_STATIC_REFERENCE_NUMERICAL_IDS],
         note=$OPTIONAL_SOURCE_NOTE,
+        features=[$OPTIONAL_FEATURE_ARRAY],
+        status=$OPTIONAL_STATUS
     )
 ```
 
 To update a GTFS Schedule source:
-```
->>> update_gtfs_schedule_source(
+
+```python
+update_gtfs_schedule_source(
         mdb_source_id=$YOUR_SOURCE_NUMERICAL_ID,
         provider=$OPTIONAL_SOURCE_PROVIDER_NAME,
         name=$OPTIONAL_SOURCE_NAME,
@@ -211,14 +261,16 @@ To update a GTFS Schedule source:
         subdivision_name=$OPTIONAL_SOURCE_SUBDIVISION_NAME,
         municipality=$OPTIONAL_SOURCE_MUNICIPALITY,
         direct_download_url=$OPTIONAL_SOURCE_DIRECT_DOWNLOAD_URL,
-        license_url=$OPTIONAL_LICENSE_URL
+        license_url=$OPTIONAL_LICENSE_URL,
+        features=[$OPTIONAL_FEATURE_ARRAY],
+        status=$OPTIONAL_STATUS
     )
 ```
 
 To update a GTFS Realtime source:
 
-```
->>> update_gtfs_realtime_source(
+```python
+update_gtfs_realtime_source(
         mdb_source_id=$YOUR_SOURCE_NUMERICAL_ID,
         entity_type=[$YOUR_SOURCE_ARRAY_OF_ENTITY_TYPES],
         provider=$YOUR_SOURCE_PROVIDER_NAME,
@@ -230,9 +282,10 @@ To update a GTFS Realtime source:
         name=$OPTIONAL_SOURCE_NAME,
         static_reference=[$OPTIONAL_ARRAY_OF_STATIC_REFERENCE_NUMERICAL_IDS],
         note=$OPTIONAL_SOURCE_NOTE,
+        features=[$OPTIONAL_FEATURE_ARRAY],
+        status=$OPTIONAL_STATUS
     )
 ```
-
 
 ## Integration Tests
 

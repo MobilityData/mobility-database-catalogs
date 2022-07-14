@@ -48,6 +48,9 @@ from tools.constants import (
     ID_KEY,
     UNKNOWN,
     FILENAME,
+    FEATURES,
+    STATUS,
+    ACTIVE,
 )
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
@@ -139,6 +142,20 @@ class SourcesCatalog(Catalog):
             if source.has_latest_dataset()
         }
 
+    def get_sources_by_feature(self, feature):
+        return {
+            source_id: source.as_json()
+            for source_id, source in self.catalog.items()
+            if source.has_feature(feature)
+        }
+
+    def get_sources_by_status(self, status):
+        return {
+            source_id: source.as_json()
+            for source_id, source in self.catalog.items()
+            if source.has_status(status)
+        }
+
     def add(self, **kwargs):
         mdb_source_id = self.identify(self.root)
         entity = self.entity_cls.build(mdb_source_id=mdb_source_id, **kwargs)
@@ -208,6 +225,8 @@ class Source(ABC):
         self.provider = kwargs.pop(PROVIDER)
         self.name = kwargs.pop(NAME, None)
         self.filename = kwargs.pop(FILENAME)
+        self.features = kwargs.pop(FEATURES, None)
+        self.status = kwargs.pop(STATUS, None)
 
     @abstractmethod
     def __str__(self):
@@ -223,6 +242,14 @@ class Source(ABC):
 
     @abstractmethod
     def has_country_code(self, country_code):
+        pass
+
+    @abstractmethod
+    def has_feature(self, feature):
+        pass
+
+    @abstractmethod
+    def has_status(self, status):
         pass
 
     @abstractmethod
@@ -288,6 +315,8 @@ class GtfsScheduleSource(Source):
             DIRECT_DOWNLOAD: self.direct_download_url,
             LATEST: self.latest_url,
             LICENSE: self.license_url,
+            FEATURES: self.features,
+            STATUS: self.status,
         }
         return json.dumps(self.schematize(**attributes), ensure_ascii=False)
 
@@ -299,6 +328,12 @@ class GtfsScheduleSource(Source):
 
     def has_country_code(self, country_code):
         return self.country_code == country_code
+
+    def has_feature(self, feature):
+        return feature in self.features if self.features is not None else False
+
+    def has_status(self, status):
+        return self.status == status or (self.status is None and status == ACTIVE)
 
     def is_overlapping_bounding_box(
         self, minimum_latitude, maximum_latitude, minimum_longitude, maximum_longitude
@@ -348,6 +383,12 @@ class GtfsScheduleSource(Source):
         license_url = kwargs.get(LICENSE)
         if license_url is not None:
             self.license_url = license_url
+        features = kwargs.get(FEATURES)
+        if features is not None:
+            self.features = features
+        status = kwargs.get(STATUS)
+        if status is not None:
+            self.status = status
         return self
 
     @classmethod
@@ -402,6 +443,8 @@ class GtfsScheduleSource(Source):
             DATA_TYPE: kwargs.pop(DATA_TYPE),
             PROVIDER: kwargs.pop(PROVIDER),
             NAME: kwargs.pop(NAME, None),
+            FEATURES: kwargs.pop(FEATURES, None),
+            STATUS: kwargs.pop(STATUS, None),
             LOCATION: {
                 COUNTRY_CODE: kwargs.pop(COUNTRY_CODE),
                 SUBDIVISION_NAME: kwargs.pop(SUBDIVISION_NAME, None),
@@ -428,6 +471,10 @@ class GtfsScheduleSource(Source):
             del schema[LOCATION][SUBDIVISION_NAME]
         if schema[LOCATION][MUNICIPALITY] is None:
             del schema[LOCATION][MUNICIPALITY]
+        if schema[FEATURES] is None:
+            del schema[FEATURES]
+        if schema[STATUS] is None:
+            del schema[STATUS]
         return schema
 
 
@@ -460,6 +507,8 @@ class GtfsRealtimeSource(Source):
             AUTHENTICATION_INFO: self.authentication_info_url,
             API_KEY_PARAMETER_NAME: self.api_key_parameter_name,
             LICENSE: self.license_url,
+            FEATURES: self.features,
+            STATUS: self.status,
         }
         return json.dumps(self.schematize(**attributes), ensure_ascii=False)
 
@@ -489,6 +538,24 @@ class GtfsRealtimeSource(Source):
             static_source.country_code == country_code
             for static_source in static_sources
         )
+
+    def has_feature(self, feature):
+        static_sources = self.get_static_sources(self.static_reference)
+        in_static_source = any(
+            [
+                feature in static_source.features
+                if static_source.features is not None
+                else False
+                for static_source in static_sources
+            ]
+        )
+        in_realtime_source = (
+            feature in self.features if self.features is not None else False
+        )
+        return in_static_source or in_realtime_source
+
+    def has_status(self, status):
+        return self.status == status or (self.status is None and status == ACTIVE)
 
     def is_overlapping_bounding_box(
         self, minimum_latitude, maximum_latitude, minimum_longitude, maximum_longitude
@@ -542,6 +609,12 @@ class GtfsRealtimeSource(Source):
         license_url = kwargs.get(LICENSE)
         if license_url is not None:
             self.license_url = license_url
+        features = kwargs.get(FEATURES)
+        if features is not None:
+            self.features = features
+        status = kwargs.get(STATUS)
+        if status is not None:
+            self.status = status
         return self
 
     @classmethod
@@ -591,6 +664,8 @@ class GtfsRealtimeSource(Source):
             NAME: kwargs.pop(NAME, None),
             STATIC_REFERENCE: kwargs.pop(STATIC_REFERENCE, None),
             NOTE: kwargs.pop(NOTE, None),
+            FEATURES: kwargs.pop(FEATURES, None),
+            STATUS: kwargs.pop(STATUS, None),
             URLS: {
                 DIRECT_DOWNLOAD: kwargs.pop(DIRECT_DOWNLOAD),
                 AUTHENTICATION_TYPE: kwargs.pop(AUTHENTICATION_TYPE),
@@ -611,4 +686,8 @@ class GtfsRealtimeSource(Source):
             del schema[URLS][API_KEY_PARAMETER_NAME]
         if schema[URLS][LICENSE] is None:
             del schema[URLS][LICENSE]
+        if schema[FEATURES] is None:
+            del schema[FEATURES]
+        if schema[STATUS] is None:
+            del schema[STATUS]
         return schema

@@ -7,6 +7,8 @@ from tools.constants import (
     COUNTRY_CODE,
     SUBDIVISION_NAME,
     MUNICIPALITY,
+    FEATURES,
+    STATUS,
     DIRECT_DOWNLOAD,
     LICENSE,
     STATIC_REFERENCE,
@@ -41,6 +43,8 @@ def add_gtfs_realtime_source(
     name=None,
     static_reference=None,
     note=None,
+    status=None,
+    features=None,
 ):
     """Add a new GTFS Realtime source to the Mobility Catalogs."""
     catalog = GtfsRealtimeSourcesCatalog()
@@ -55,6 +59,8 @@ def add_gtfs_realtime_source(
         AUTHENTICATION_INFO: authentication_info_url,
         API_KEY_PARAMETER_NAME: api_key_parameter_name,
         LICENSE: license_url,
+        STATUS: status,
+        FEATURES: features,
     }
     catalog.add(**data)
     return catalog
@@ -72,6 +78,8 @@ def update_gtfs_realtime_source(
     name=None,
     static_reference=None,
     note=None,
+    status=None,
+    features=None,
 ):
     """Update a new GTFS Realtime source to the Mobility Catalogs."""
     catalog = GtfsRealtimeSourcesCatalog()
@@ -87,6 +95,8 @@ def update_gtfs_realtime_source(
         AUTHENTICATION_INFO: authentication_info_url,
         API_KEY_PARAMETER_NAME: api_key_parameter_name,
         LICENSE: license_url,
+        STATUS: status,
+        FEATURES: features,
     }
     catalog.update(**data)
     return catalog
@@ -100,6 +110,8 @@ def add_gtfs_schedule_source(
     municipality=None,
     license_url=None,
     name=None,
+    status=None,
+    features=None,
 ):
     """Add a new GTFS Schedule source to the Mobility Catalogs."""
     catalog = GtfsScheduleSourcesCatalog()
@@ -111,6 +123,8 @@ def add_gtfs_schedule_source(
         DIRECT_DOWNLOAD: direct_download_url,
         LICENSE: license_url,
         NAME: name,
+        STATUS: status,
+        FEATURES: features,
     }
     catalog.add(**data)
     return catalog
@@ -125,6 +139,8 @@ def update_gtfs_schedule_source(
     municipality=None,
     direct_download_url=None,
     license_url=None,
+    status=None,
+    features=None,
 ):
     """Update a GTFS Schedule source in the Mobility Catalogs."""
     catalog = GtfsScheduleSourcesCatalog()
@@ -137,6 +153,8 @@ def update_gtfs_schedule_source(
         DIRECT_DOWNLOAD: direct_download_url,
         LICENSE: license_url,
         NAME: name,
+        STATUS: status,
+        FEATURES: features,
     }
     catalog.update(**data)
     return catalog
@@ -211,4 +229,32 @@ def get_latest_datasets(data_type=ALL):
     sources = {}
     for catalog_cls in source_type_map[CATALOGS]:
         sources.update(globals()[f"{catalog_cls}"]().get_latest_datasets())
+    return dict(sorted(sources.items()))
+
+
+def get_sources_by_status(
+    status,
+    data_type=ALL,
+):
+    """Get the sources with the given status."""
+    source_type_map = globals()[f"{data_type.upper().replace('-', '_')}_MAP"]
+    sources = {}
+    for catalog_cls in source_type_map[CATALOGS]:
+        sources.update(
+            globals()[f"{catalog_cls}"]().get_sources_by_status(status=status)
+        )
+    return dict(sorted(sources.items()))
+
+
+def get_sources_by_feature(
+    feature,
+    data_type=ALL,
+):
+    """Get the sources with the given feature."""
+    source_type_map = globals()[f"{data_type.upper().replace('-', '_')}_MAP"]
+    sources = {}
+    for catalog_cls in source_type_map[CATALOGS]:
+        sources.update(
+            globals()[f"{catalog_cls}"]().get_sources_by_feature(feature=feature)
+        )
     return dict(sorted(sources.items()))

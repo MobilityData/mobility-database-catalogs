@@ -9,9 +9,10 @@
         753
     ],
     "urls": {
-        "direct_download": "https://opendata.exo.quebec/ServiceGTFSR/VehiclePosition.pb?token={API_KEY}&agency=OMITSJU",
-        "authentication_type": 3,
+        "direct_download": "https://opendata.exo.quebec/ServiceGTFSR/VehiclePosition.pb?agency=OMITSJU",
+        "authentication_type": 1,
         "authentication_info": "https://exo.quebec/fr/a-propos/donnees-ouvertes/FormulaireDemandeAcces",
+        "api_key_parameter_name": "token",
         "license": "https://exo.quebec/fr/a-propos/donnees-ouvertes/FormulaireDemandeAcces"
     }
 }

@@ -72,6 +72,7 @@ jobs:
             ENTITY_TYPE = "entity_type"
             UNKNOWN = "unknown"
             URLS_AUTHENTICATION_TYPE = "urls.authentication_type"
+            FEATURES = "features"
 
             # tools.constants.GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT
             GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT = "catalogs/sources/gtfs/schedule"

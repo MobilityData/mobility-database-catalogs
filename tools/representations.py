@@ -225,7 +225,7 @@ class Source(ABC):
         self.provider = kwargs.pop(PROVIDER)
         self.name = kwargs.pop(NAME, None)
         self.filename = kwargs.pop(FILENAME)
-        self.features = kwargs.pop(FEATURES, [])
+        self.features = kwargs.pop(FEATURES, None)
         self.status = kwargs.pop(STATUS, None)
 
     @abstractmethod

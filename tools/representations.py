@@ -330,7 +330,7 @@ class GtfsScheduleSource(Source):
         return self.country_code == country_code
 
     def has_feature(self, feature):
-        return feature in self.features
+        return feature in self.features if self.features is not None else False
 
     def has_status(self, status):
         return self.status == status or (self.status is None and status == ACTIVE)
@@ -542,9 +542,9 @@ class GtfsRealtimeSource(Source):
     def has_feature(self, feature):
         static_sources = self.get_static_sources(self.static_reference)
         in_static_source = any(
-            [feature in static_source.features for static_source in static_sources]
+            [feature in static_source.features if static_source.features is not None else False for static_source in static_sources]
         )
-        in_realtime_source = feature in self.features
+        in_realtime_source = feature in self.features if self.features is not None else False
         return in_static_source or in_realtime_source
 
     def has_status(self, status):

@@ -146,7 +146,13 @@
         }
       },
       "oneOf": [
-        {"not": {"required": ["authentication_type"]}},
+        {
+          "not": {
+            "required": [
+              "authentication_type"
+            ]
+          }
+        },
         {
           "allOf": [
             {

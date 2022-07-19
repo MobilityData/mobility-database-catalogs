@@ -10,7 +10,7 @@
     ],
     "urls": {
         "direct_download": "https://gtfs.adelaidemetro.com.au/v1/realtime/trip_updates",
-        "authentication_type": 3,
+        "authentication_type": 0,
         "authentication_info": "https://gtfs.adelaidemetro.com.au/#/gtfsr"
     }
 }

@@ -227,6 +227,12 @@ class Source(ABC):
         self.filename = kwargs.pop(FILENAME)
         self.features = kwargs.pop(FEATURES, None)
         self.status = kwargs.pop(STATUS, None)
+        urls = kwargs.get(URLS, {})
+        self.direct_download_url = urls.pop(DIRECT_DOWNLOAD)
+        self.authentication_type = urls.pop(AUTHENTICATION_TYPE, None)
+        self.authentication_info_url = urls.pop(AUTHENTICATION_INFO, None)
+        self.api_key_parameter_name = urls.pop(API_KEY_PARAMETER_NAME, None)
+        self.license_url = urls.pop(LICENSE, None)
 
     @abstractmethod
     def __str__(self):
@@ -294,9 +300,7 @@ class GtfsScheduleSource(Source):
         self.bbox_max_lon = bounding_box.pop(MAXIMUM_LONGITUDE)
         self.bbox_extracted_on = bounding_box.pop(EXTRACTED_ON)
         urls = kwargs.pop(URLS, {})
-        self.direct_download_url = urls.pop(DIRECT_DOWNLOAD)
         self.latest_url = urls.pop(LATEST)
-        self.license_url = urls.pop(LICENSE, None)
 
     def __str__(self):
         attributes = {
@@ -313,6 +317,9 @@ class GtfsScheduleSource(Source):
             MAXIMUM_LONGITUDE: self.bbox_max_lon,
             EXTRACTED_ON: self.bbox_extracted_on,
             DIRECT_DOWNLOAD: self.direct_download_url,
+            AUTHENTICATION_TYPE: self.authentication_type,
+            AUTHENTICATION_INFO: self.authentication_info_url,
+            API_KEY_PARAMETER_NAME: self.api_key_parameter_name,
             LATEST: self.latest_url,
             LICENSE: self.license_url,
             FEATURES: self.features,
@@ -353,6 +360,7 @@ class GtfsScheduleSource(Source):
         return self.latest_url is not None
 
     def update(self, **kwargs):
+        # TODO ADD AUTH
         direct_download_url = kwargs.get(DIRECT_DOWNLOAD)
         if direct_download_url is not None and is_readable(
             url=direct_download_url, load_func=load_gtfs
@@ -393,6 +401,7 @@ class GtfsScheduleSource(Source):
 
     @classmethod
     def build(cls, **kwargs):
+        # TODO ADD AUTH
         instance = None
         direct_download_url = kwargs.get(DIRECT_DOWNLOAD)
         if is_readable(url=direct_download_url, load_func=load_gtfs):
@@ -459,12 +468,21 @@ class GtfsScheduleSource(Source):
             },
             URLS: {
                 DIRECT_DOWNLOAD: kwargs.pop(DIRECT_DOWNLOAD),
+                AUTHENTICATION_TYPE: kwargs.pop(AUTHENTICATION_TYPE, None),
+                AUTHENTICATION_INFO: kwargs.pop(AUTHENTICATION_INFO, None),
+                API_KEY_PARAMETER_NAME: kwargs.pop(API_KEY_PARAMETER_NAME, None),
                 LATEST: kwargs.pop(LATEST),
                 LICENSE: kwargs.pop(LICENSE, None),
             },
         }
         if schema[NAME] is None:
             del schema[NAME]
+        if schema[URLS][AUTHENTICATION_TYPE] is None:
+            del schema[URLS][AUTHENTICATION_TYPE]
+        if schema[URLS][AUTHENTICATION_INFO] is None:
+            del schema[URLS][AUTHENTICATION_INFO]
+        if schema[URLS][API_KEY_PARAMETER_NAME] is None:
+            del schema[URLS][API_KEY_PARAMETER_NAME]
         if schema[URLS][LICENSE] is None:
             del schema[URLS][LICENSE]
         if schema[LOCATION][SUBDIVISION_NAME] is None:
@@ -486,12 +504,6 @@ class GtfsRealtimeSource(Source):
         self.entity_type = kwargs.pop(ENTITY_TYPE)
         self.static_reference = kwargs.pop(STATIC_REFERENCE, None)
         self.note = kwargs.pop(NOTE, None)
-        urls = kwargs.pop(URLS, {})
-        self.direct_download_url = urls.pop(DIRECT_DOWNLOAD)
-        self.authentication_type = urls.pop(AUTHENTICATION_TYPE, None)
-        self.authentication_info_url = urls.pop(AUTHENTICATION_INFO, None)
-        self.api_key_parameter_name = urls.pop(API_KEY_PARAMETER_NAME, None)
-        self.license_url = urls.pop(LICENSE, None)
 
     def __str__(self):
         attributes = {

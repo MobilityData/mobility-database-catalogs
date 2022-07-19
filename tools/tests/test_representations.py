@@ -443,6 +443,7 @@ class TestGtfsScheduleSource(TestCase):
     @patch("tools.representations.extract_gtfs_bounding_box")
     @patch("tools.representations.is_readable")
     def test_update(self, mock_read_func, mock_bounding_box, mock_time):
+        # TODO add auth
         instance = GtfsScheduleSource(filename=self.test_filename, **self.test_schema)
         under_test = instance.update(**{})
         self.assertEqual(under_test.direct_download_url, self.test_direct_download_url)
@@ -554,6 +555,7 @@ class TestGtfsScheduleSource(TestCase):
         self.assertIsNotNone(under_test)
 
     def test_schematize(self):
+        # TODO add auth
         under_test = GtfsScheduleSource.schematize(**self.test_kwargs)
         self.assertDictEqual(under_test, self.test_schema)
 

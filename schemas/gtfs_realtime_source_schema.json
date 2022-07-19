@@ -137,8 +137,7 @@
         }
       ],
       "required": [
-        "direct_download",
-        "authentication_type"
+        "direct_download"
       ]
     }
   },

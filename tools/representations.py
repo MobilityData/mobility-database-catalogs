@@ -488,7 +488,7 @@ class GtfsRealtimeSource(Source):
         self.note = kwargs.pop(NOTE, None)
         urls = kwargs.pop(URLS, {})
         self.direct_download_url = urls.pop(DIRECT_DOWNLOAD)
-        self.authentication_type = urls.pop(AUTHENTICATION_TYPE)
+        self.authentication_type = urls.pop(AUTHENTICATION_TYPE, None)
         self.authentication_info_url = urls.pop(AUTHENTICATION_INFO, None)
         self.api_key_parameter_name = urls.pop(API_KEY_PARAMETER_NAME, None)
         self.license_url = urls.pop(LICENSE, None)
@@ -668,7 +668,7 @@ class GtfsRealtimeSource(Source):
             STATUS: kwargs.pop(STATUS, None),
             URLS: {
                 DIRECT_DOWNLOAD: kwargs.pop(DIRECT_DOWNLOAD),
-                AUTHENTICATION_TYPE: kwargs.pop(AUTHENTICATION_TYPE),
+                AUTHENTICATION_TYPE: kwargs.pop(AUTHENTICATION_TYPE, None),
                 AUTHENTICATION_INFO: kwargs.pop(AUTHENTICATION_INFO, None),
                 API_KEY_PARAMETER_NAME: kwargs.pop(API_KEY_PARAMETER_NAME, None),
                 LICENSE: kwargs.pop(LICENSE, None),
@@ -680,6 +680,8 @@ class GtfsRealtimeSource(Source):
             del schema[NOTE]
         if schema[STATIC_REFERENCE] is None:
             del schema[STATIC_REFERENCE]
+        if schema[URLS][AUTHENTICATION_TYPE] is None:
+            del schema[URLS][AUTHENTICATION_TYPE]
         if schema[URLS][AUTHENTICATION_INFO] is None:
             del schema[URLS][AUTHENTICATION_INFO]
         if schema[URLS][API_KEY_PARAMETER_NAME] is None:

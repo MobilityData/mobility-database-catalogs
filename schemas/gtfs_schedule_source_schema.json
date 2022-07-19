@@ -121,13 +121,12 @@
           "enum": [
             0,
             1,
-            2,
-            3
+            2
           ]
         },
         "authentication_info": {
           "type": "string",
-          "description": "If authentication is required, this field contains a URL to a human-readable page describing how the authentication should be performed and how credentials can be created. This field is required for `authentication_type=1` or greater.",
+          "description": "If authentication is required, this field contains a URL to a human-readable page describing how the authentication should be performed and how credentials can be created. This field is required for `authentication_type=1` and `authentication_type=2`.",
           "pattern": "^(http|https|ftp):\/\/[a-zA-Z0-9.,~#{}():&/%='?_+/-]+$"
         },
         "api_key_parameter_name": {
@@ -154,57 +153,30 @@
           }
         },
         {
-          "allOf": [
-            {
-              "if": {
-                "properties": {
-                  "authentication_type": {
-                    "enum": [
-                      1,
-                      2,
-                      3
-                    ]
-                  }
-                }
-              },
-              "then": {
-                "required": [
-                  "authentication_info"
+          "if": {
+            "properties": {
+              "authentication_type": {
+                "enum": [
+                  1,
+                  2
                 ]
-              },
-              "else": {
-                "not": {
-                  "required": [
-                    "authentication_info"
-                  ]
-                }
-              }
-            },
-            {
-              "if": {
-                "properties": {
-                  "authentication_type": {
-                    "enum": [
-                      1,
-                      2
-                    ]
-                  }
-                }
-              },
-              "then": {
-                "required": [
-                  "api_key_parameter_name"
-                ]
-              },
-              "else": {
-                "not": {
-                  "required": [
-                    "api_key_parameter_name"
-                  ]
-                }
               }
             }
-          ]
+          },
+          "then": {
+            "required": [
+              "authentication_info",
+              "api_key_parameter_name"
+            ]
+          },
+          "else": {
+            "not": {
+              "required": [
+                "authentication_info",
+                "api_key_parameter_name"
+              ]
+            }
+          }
         }
       ],
       "required": ["direct_download", "latest"]

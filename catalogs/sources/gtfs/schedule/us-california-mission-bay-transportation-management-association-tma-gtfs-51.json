@@ -2,6 +2,9 @@
     "mdb_source_id": 51,
     "data_type": "gtfs",
     "provider": "Mission Bay Transportation Management Association (TMA)",
+    "features": [
+        "fares-v1"
+    ],
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

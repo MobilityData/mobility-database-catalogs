@@ -404,6 +404,7 @@ class GtfsScheduleSource(Source):
         # TODO ADD AUTH
         instance = None
         direct_download_url = kwargs.get(DIRECT_DOWNLOAD)
+        # TODO download the source first then pass the path to the functions. Delete the file at the end.
         if is_readable(url=direct_download_url, load_func=load_gtfs):
             data_type = GTFS
             (

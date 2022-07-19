@@ -2,6 +2,10 @@
     "mdb_source_id": 68,
     "data_type": "gtfs",
     "provider": "Lake Transit Authority (LTA)",
+    "features": [
+        "fares-v1",
+        "fares-v2"
+    ],
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

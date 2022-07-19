@@ -58,6 +58,9 @@ Contains the JSON schemas used to validate the sources in the integration tests.
 | name        |  Text |Optional              | An optional description of the data source, e.g to specify if the data source is an aggregate of multiple providers, or which network is represented by the source. |
 |urls| Object | Required | Contains URLs associated with the source in the `direct_download_url`, `latest`, and `license` fields.
 |- direct_download |URL|Optional     | URL that automatically opens the source.
+|- authentication_type |Enum|Optional | The **authentication_type** field defines the type of authentication required to access the URL. Valid values for this field are: <ul> <li>**0** or **(empty)** - No authentication required.</li><li>**1** - The authentication requires an API key, which should be passed as value of the parameter `api_key_parameter_name` in the URL. Please visit URL in `authentication_info_url` for more information. </li><li>**2** - The authentication requires an HTTP header, which should be passed as the value of the header `api_key_parameter_name` in the HTTP request. </li></li>**3**: Ad-hoc authentication required, visit URL in `authentication_info_url` for more information.</li></ul> When not provided, the authentication type is assumed to be **0**.|
+|- authentication_info_url | URL| Conditionally required | If authentication is required, the **authentication_info_url** field contains a URL to a human-readable page describing how the authentication should be performed and how credentials can be created. This field is required for `authentication_type=1` or greater. |
+|- api_key_parameter_name |Text|Conditionally required | The **api_key_parameter_name** field defines the name of the parameter to pass in the URL to provide the API key. This field is required for `authentication_type=1` and `authentication_type=2`.   |
 | - latest | URL | System generated | A stable URL for the latest dataset of a source.
 |- license |URL| Optional     | The license information for the direct download URL.  
 
@@ -222,6 +225,9 @@ add_gtfs_schedule_source(
         provider=$YOUR_SOURCE_PROVIDER_NAME,
         country_code=$YOUR_SOURCE_COUNTRY_CODE,
         direct_download_url=$YOUR_SOURCE_DIRECT_DOWNLOAD_URL,
+        authentication_type=$OPTIONAL_AUTHENTICATION_TYPE,
+        authentication_info_url=$CONDITIONALLY_REQUIRED_AUTHENTICATION_INFO_URL,
+        api_key_parameter_name=$CONDITIONALLY_REQUIRED_API_KEY_PARAMETER_NAME,
         subdivision_name=$OPTIONAL_SUBDIVISION_NAME,
         municipality=$OPTIONAL_MUNICIPALITY,
         license_url=$OPTIONAL_LICENSE_URL,
@@ -261,6 +267,9 @@ update_gtfs_schedule_source(
         subdivision_name=$OPTIONAL_SOURCE_SUBDIVISION_NAME,
         municipality=$OPTIONAL_SOURCE_MUNICIPALITY,
         direct_download_url=$OPTIONAL_SOURCE_DIRECT_DOWNLOAD_URL,
+        authentication_type=$OPTIONAL_AUTHENTICATION_TYPE,
+        authentication_info_url=$CONDITIONALLY_REQUIRED_AUTHENTICATION_INFO_URL,
+        api_key_parameter_name=$CONDITIONALLY_REQUIRED_API_KEY_PARAMETER_NAME,
         license_url=$OPTIONAL_LICENSE_URL,
         features=[$OPTIONAL_FEATURE_ARRAY],
         status=$OPTIONAL_STATUS

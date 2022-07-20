@@ -36,6 +36,8 @@ jobs:
           # File constants
           URLS = "urls"
           DIRECT_DOWNLOAD = "direct_download"
+          AUTHENTICATION_TYPE = "authentication_type"
+          API_KEY_PARAMETER_NAME = "api_key_parameter_name"
 
           # Github constants
           MAX_JOB_NUMBER = 256
@@ -56,7 +58,13 @@ jobs:
                   direct_download_url = file_json.get(URLS, {}).get(DIRECT_DOWNLOAD)
                   if direct_download_url is None:
                       raise ValueError(f"{base}: Missing direct download url.")
-                  urls[base] = {DIRECT_DOWNLOAD: direct_download_url}
+                  authentication_type = file_json.get(URLS, {}).get(AUTHENTICATION_TYPE)
+                  api_key_parameter_name = file_json.get(URLS, {}).get(API_KEY_PARAMETER_NAME)
+                  urls[base] = {
+                      DIRECT_DOWNLOAD: direct_download_url,
+                      AUTHENTICATION_TYPE: authentication_type,
+                      API_KEY_PARAMETER_NAME: api_key_parameter_name
+                  }
 
           urls_data = []
           jobs = np.array_split(list(urls.keys()), min(MAX_JOB_NUMBER, len(list(urls.keys()))))
@@ -68,6 +76,8 @@ jobs:
                   file_information = {
                       BASE: file_base,
                       DIRECT_DOWNLOAD: urls[file_base][DIRECT_DOWNLOAD],
+                      AUTHENTICATION_TYPE: urls[file_base][AUTHENTICATION_TYPE],
+                      API_KEY_PARAMETER_NAME: urls[file_base][API_KEY_PARAMETER_NAME]
                   }
                   urls_data_string = urls_data_string + json.dumps(
                       file_information, separators=(",", ":")
@@ -129,18 +139,37 @@ jobs:
           # Jobs constants
           BASE = "base"
           DIRECT_DOWNLOAD = "direct_download"
+          AUTHENTICATION_TYPE = "authentication_type"
+          API_KEY_PARAMETER_NAME = "api_key_parameter_name"
+
+          # Secrets constants
+          API_SOURCE_SECRETS = "API_SOURCE_SECRETS"
+
+          # Load API source secrets
+          api_source_secrets = json.loads(os.environ[API_SOURCE_SECRETS])
 
           jobs = """${{ matrix.data }}""".split()
           for job in jobs:
               job_json = json.loads(job)
               base = job_json[BASE]
               url = job_json[DIRECT_DOWNLOAD]
+              authentication_type = job_json[AUTHENTICATION_TYPE]
+              api_key_parameter_name = job_json[API_KEY_PARAMETER_NAME]
+              api_key_parameter_value = api_source_secrets[base]
 
               # Download the dataset
               zip_path = os.path.join(ROOT, DATASETS, f"{base}.zip")
               os.makedirs(os.path.dirname(zip_path), exist_ok=True)
+
+              params = {}
+              headers = {}
+              if authentication_type == 1:
+                  params[api_key_parameter_name] = api_key_parameter_value
+              elif authentication_type == 2:
+                  headers[api_key_parameter_name] = api_key_parameter_value
+
               try:
-                  zip_file_req = requests.get(url, allow_redirects=True)
+                  zip_file_req = requests.get(url, params=params, headers=headers, allow_redirects=True)
                   zip_file_req.raise_for_status()
               except Exception as e:
                   raise Exception(

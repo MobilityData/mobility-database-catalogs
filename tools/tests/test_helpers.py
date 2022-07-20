@@ -4,7 +4,7 @@ from tools.helpers import (
     are_overlapping_edges,
     are_overlapping_boxes,
     is_readable,
-    MissingSchema,
+    RequestException,
     ParserError,
     create_latest_url,
     create_filename,
@@ -16,6 +16,7 @@ from tools.helpers import (
     to_json,
     from_json,
     normalize,
+    download_dataset,
 )
 import pandas as pd
 from freezegun import freeze_time
@@ -23,7 +24,7 @@ from freezegun import freeze_time
 
 class TestVerificationFunctions(TestCase):
     def setUp(self):
-        self.test_url = "some_url"
+        self.test_path = "some_path"
 
     def test_are_overlapping_crossing_edges(self):
         test_source_minimum = 45.000000
@@ -188,23 +189,18 @@ class TestVerificationFunctions(TestCase):
     def test_is_not_readable(self, mock_load_func):
         mock_load_func.side_effect = Mock(side_effect=TypeError())
         self.assertRaises(
-            Exception, is_readable, url=self.test_url, load_func=mock_load_func
-        )
-
-        mock_load_func.side_effect = Mock(side_effect=MissingSchema())
-        self.assertRaises(
-            Exception, is_readable, url=self.test_url, load_func=mock_load_func
+            Exception, is_readable, file_path=self.test_path, load_func=mock_load_func
         )
 
         mock_load_func.side_effect = Mock(side_effect=ParserError())
         self.assertRaises(
-            Exception, is_readable, url=self.test_url, load_func=mock_load_func
+            Exception, is_readable, file_path=self.test_path, load_func=mock_load_func
         )
 
     @patch("tools.helpers.load_gtfs")
     def test_is_readable(self, mock_load_func):
         mock_load_func.side_effect = "some_dataset"
-        under_test = is_readable(url=self.test_url, load_func=mock_load_func)
+        under_test = is_readable(file_path=self.test_path, load_func=mock_load_func)
         self.assertTrue(under_test)
 
 
@@ -287,7 +283,7 @@ class TestCreationFunctions(TestCase):
 
 class TestGtfsSpecificFunctions(TestCase):
     def setUp(self):
-        self.test_url = "some_url"
+        self.test_path = "some_path"
 
     @patch("tools.helpers.gtfs_kit.read_feed")
     def test_not_loading_gtfs(self, mock_gtfs_kit):
@@ -295,28 +291,21 @@ class TestGtfsSpecificFunctions(TestCase):
         self.assertRaises(
             TypeError,
             load_gtfs,
-            url=self.test_url,
-        )
-
-        mock_gtfs_kit.side_effect = Mock(side_effect=MissingSchema())
-        self.assertRaises(
-            MissingSchema,
-            load_gtfs,
-            url=self.test_url,
+            file_path=self.test_path,
         )
 
         mock_gtfs_kit.side_effect = Mock(side_effect=ParserError())
         self.assertRaises(
             ParserError,
             load_gtfs,
-            url=self.test_url,
+            file_path=self.test_path,
         )
 
     @patch("tools.helpers.gtfs_kit.read_feed")
     def test_loading_gtfs(self, mock_gtfs_kit):
         test_dataset = "some_gtfs_dataset"
         mock_gtfs_kit.return_value = test_dataset
-        under_test = load_gtfs(url=self.test_url)
+        under_test = load_gtfs(file_path=self.test_path)
         self.assertEqual(under_test, test_dataset)
 
     @patch("tools.helpers.load_gtfs")
@@ -324,7 +313,7 @@ class TestGtfsSpecificFunctions(TestCase):
         test_bounding_box = (None, None, None, None)
         test_stops = None
         type(mock_load_gtfs.return_value).stops = test_stops
-        under_test = extract_gtfs_bounding_box(url=self.test_url)
+        under_test = extract_gtfs_bounding_box(file_path=self.test_path)
         self.assertEqual(under_test, test_bounding_box)
 
     @patch("tools.helpers.load_gtfs")
@@ -332,7 +321,7 @@ class TestGtfsSpecificFunctions(TestCase):
         test_bounding_box = (None, None, None, None)
         test_stops = pd.DataFrame()
         type(mock_load_gtfs.return_value).stops = test_stops
-        under_test = extract_gtfs_bounding_box(url=self.test_url)
+        under_test = extract_gtfs_bounding_box(file_path=self.test_path)
         self.assertEqual(under_test, test_bounding_box)
 
     @patch("tools.helpers.load_gtfs")
@@ -340,7 +329,7 @@ class TestGtfsSpecificFunctions(TestCase):
         test_bounding_box = (None, None, None, None)
         test_stops = pd.DataFrame({"some_column": []})
         type(mock_load_gtfs.return_value).stops = test_stops
-        under_test = extract_gtfs_bounding_box(url=self.test_url)
+        under_test = extract_gtfs_bounding_box(file_path=self.test_path)
         self.assertEqual(under_test, test_bounding_box)
 
     @patch("tools.helpers.load_gtfs")
@@ -348,7 +337,7 @@ class TestGtfsSpecificFunctions(TestCase):
         test_bounding_box = (None, None, None, None)
         test_stops = pd.DataFrame({STOP_LAT: [], STOP_LON: []})
         type(mock_load_gtfs.return_value).stops = test_stops
-        under_test = extract_gtfs_bounding_box(url=self.test_url)
+        under_test = extract_gtfs_bounding_box(file_path=self.test_path)
         self.assertEqual(under_test, test_bounding_box)
 
     @patch("tools.helpers.load_gtfs")
@@ -356,7 +345,7 @@ class TestGtfsSpecificFunctions(TestCase):
         test_bounding_box = (None, None, None, None)
         test_stops = pd.DataFrame({STOP_LAT: [pd.NA], STOP_LON: [pd.NA]})
         type(mock_load_gtfs.return_value).stops = test_stops
-        under_test = extract_gtfs_bounding_box(url=self.test_url)
+        under_test = extract_gtfs_bounding_box(file_path=self.test_path)
         self.assertEqual(under_test, test_bounding_box)
 
     @patch("tools.helpers.load_gtfs")
@@ -370,12 +359,13 @@ class TestGtfsSpecificFunctions(TestCase):
             }
         )
         type(mock_load_gtfs.return_value).stops = test_stops
-        under_test = extract_gtfs_bounding_box(url=self.test_url)
+        under_test = extract_gtfs_bounding_box(file_path=self.test_path)
         self.assertEqual(under_test, test_bounding_box)
 
 
 class TestInOutFunctions(TestCase):
     def setUp(self):
+        self.test_url = "some_url"
         self.test_path = "some_path"
         self.test_obj = {"some_key": "some_value"}
 
@@ -399,3 +389,26 @@ class TestInOutFunctions(TestCase):
     @skip
     def test_to_csv(self):
         raise NotImplementedError
+
+    @patch("tools.helpers.open")
+    @patch("tools.helpers.uuid.uuid4")
+    @patch("tools.helpers.os")
+    @patch("tools.helpers.requests.get")
+    def test_download_dataset(self, mock_requests, mock_os, mock_uuid4, mock_open):
+        test_url = "http://some_url"
+        test_file_path = "some_file_path"
+        mock_os.path.join.return_value = test_file_path
+        under_test = download_dataset(url=test_url)
+        self.assertEqual(under_test, test_file_path)
+        mock_requests.assert_called_once()
+        mock_os.path.join.assert_called_once()
+        mock_os.getcwd.assert_called_once()
+        mock_uuid4.assert_called_once()
+        mock_open.assert_called_once()
+
+        mock_requests.side_effect = Mock(side_effect=RequestException)
+        self.assertRaises(
+            RequestException,
+            download_dataset,
+            url=self.test_url,
+        )

@@ -2,6 +2,10 @@
     "mdb_source_id": 99,
     "data_type": "gtfs",
     "provider": "Victor Valley Transit Authority (VVTA)",
+    "features": [
+        "fares-v1",
+        "fares-v2"
+    ],
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

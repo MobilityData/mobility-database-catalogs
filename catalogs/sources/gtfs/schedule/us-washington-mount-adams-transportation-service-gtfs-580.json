@@ -2,6 +2,9 @@
     "mdb_source_id": 580,
     "data_type": "gtfs",
     "provider": "Mount Adams Transportation Service",
+    "features": [
+        "fares-v1"
+    ],
     "location": {
         "country_code": "US",
         "subdivision_name": "Washington",

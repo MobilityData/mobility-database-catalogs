@@ -2,6 +2,7 @@
     "mdb_source_id": 1183,
     "data_type": "gtfs",
     "provider": "Filsland Verkehrsverbund",
+    "status": "inactive",
     "location": {
         "country_code": "DE",
         "bounding_box": {

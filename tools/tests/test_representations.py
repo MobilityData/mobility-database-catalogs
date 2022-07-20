@@ -601,15 +601,20 @@ class TestGtfsScheduleSource(TestCase):
         self.assertEqual(mock_os.remove.call_count, 2)
 
     def test_schematize(self):
-        # TODO add auth
         under_test = GtfsScheduleSource.schematize(**self.test_kwargs)
         self.assertDictEqual(under_test, self.test_schema)
 
         del self.test_kwargs[NAME]
+        del self.test_kwargs[AUTHENTICATION_TYPE]
+        del self.test_kwargs[AUTHENTICATION_INFO]
+        del self.test_kwargs[API_KEY_PARAMETER_NAME]
         del self.test_kwargs[LICENSE]
         del self.test_kwargs[SUBDIVISION_NAME]
         del self.test_kwargs[MUNICIPALITY]
         del self.test_schema[NAME]
+        del self.test_schema[URLS][AUTHENTICATION_TYPE]
+        del self.test_schema[URLS][AUTHENTICATION_INFO]
+        del self.test_schema[URLS][API_KEY_PARAMETER_NAME]
         del self.test_schema[URLS][LICENSE]
         del self.test_schema[LOCATION][SUBDIVISION_NAME]
         del self.test_schema[LOCATION][MUNICIPALITY]

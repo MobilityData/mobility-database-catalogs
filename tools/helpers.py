@@ -2,10 +2,12 @@ import json
 import os
 import datetime
 import gtfs_kit
-from requests.exceptions import MissingSchema
+import requests
+from requests.exceptions import RequestException
 import pandas as pd
 from pandas.errors import ParserError
 from unidecode import unidecode
+import uuid
 from tools.constants import (
     STOP_LAT,
     STOP_LON,
@@ -13,7 +15,6 @@ from tools.constants import (
     MDB_SOURCE_FILENAME,
     ZIP,
 )
-
 
 #########################
 # I/O FUNCTIONS
@@ -44,6 +45,25 @@ def to_csv(path, catalog, columns):
     if columns is not None:
         catalog = catalog[columns]
     catalog.to_csv(path, sep=",", index=False)
+
+
+def download_dataset(url):
+    file_name = str(uuid.uuid4())
+    file_path = os.path.join(os.getcwd(), file_name)
+
+    try:
+        zip_file_req = requests.get(url, allow_redirects=True)
+        zip_file_req.raise_for_status()
+    except RequestException as e:
+        raise RequestException(
+            f"FAILURE! Exception {e} occurred when downloading URL {url}.\n"
+        )
+
+    zip_file = zip_file_req.content
+    with open(file_path, "wb") as f:
+        f.write(zip_file)
+
+    return file_path
 
 
 #########################
@@ -103,18 +123,18 @@ def are_overlapping_edges(
     )
 
 
-def is_readable(url, load_func):
-    """Verifies if a given source URL is readable, ie. a valid dataset can be downloaded from it.
-    :param url: The URL where to download the source dataset.
+def is_readable(file_path, load_func):
+    """Verifies if a given source dataset is readable.
+    :param file_path: The file path to the source dataset.
     :param load_func: The load function to use.
     :return: True if readable, raise an exception if a problem occurs.
     """
     try:
-        load_func(url)
+        load_func(file_path)
     except Exception as e:
         raise Exception(
             f"Exception '{e}' occurred while reading the dataset. "
-            f"The dataset downloaded with the direct download URL must be a valid dataset.\n"
+            f"The dataset must be a valid dataset.\n"
             f"Please contact emma@mobilitydata.org for assistance.\n"
         )
     return True
@@ -196,21 +216,16 @@ def get_iso_time():
 #########################
 
 
-def load_gtfs(url):
-    """Loads a GTFS dataset from the passed URL.
-    :param url: The URL where to download the GTFS dataset.
+def load_gtfs(file_path):
+    """Loads a GTFS Schedule dataset at the given file path.
+    :param file_path: The file path to the GTFS Schedule dataset.
     :return: The GTFS dataset representation given by GTFS Kit.
     """
     try:
-        dataset = gtfs_kit.read_feed(url, dist_units="km")
+        dataset = gtfs_kit.read_feed(file_path, dist_units="km")
     except TypeError as te:
         raise TypeError(
             f"TypeError exception '{te}' occurred while reading the GTFS dataset with the GTFS kit library."
-            f"The dataset must be a valid GTFS zip file or URL.\n"
-        )
-    except MissingSchema as ms:
-        raise MissingSchema(
-            f"MissingSchema exception '{ms}' occurred while opening the GTFS dataset with the GTFS kit library."
             f"The dataset must be a valid GTFS zip file or URL.\n"
         )
     except ParserError as pe:
@@ -221,12 +236,12 @@ def load_gtfs(url):
     return dataset
 
 
-def extract_gtfs_bounding_box(url):
+def extract_gtfs_bounding_box(file_path):
     """Extracts a GTFS source bounding box using the `stops` file from the GTFS dataset.
-    :param url: The URL where to download the GTFS dataset.
+    :param file_path: The file path to the GTFS dataset.
     :return: The coordinates of the bounding box as floats.
     """
-    dataset = load_gtfs(url)
+    dataset = load_gtfs(file_path)
     stops = dataset.stops
 
     stops_required_columns = {STOP_LAT, STOP_LON}

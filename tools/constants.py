@@ -70,6 +70,7 @@ STATIC_REFERENCE = "static_reference"
 AUTHENTICATION_TYPE = "authentication_type"
 AUTHENTICATION_INFO = "authentication_info"
 API_KEY_PARAMETER_NAME = "api_key_parameter_name"
+API_KEY_PARAMETER_VALUE = "api_key_parameter_value"
 NOTE = "note"
 ENTITY_TYPE = "entity_type"
 

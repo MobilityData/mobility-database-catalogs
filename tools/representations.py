@@ -38,6 +38,7 @@ from tools.constants import (
     AUTHENTICATION_TYPE,
     AUTHENTICATION_INFO,
     API_KEY_PARAMETER_NAME,
+    API_KEY_PARAMETER_VALUE,
     ENTITY_TYPE,
     NOTE,
     GTFS,
@@ -407,10 +408,17 @@ class GtfsScheduleSource(Source):
 
     @classmethod
     def build(cls, **kwargs):
-        # TODO ADD AUTH
         instance = None
         direct_download_url = kwargs.get(DIRECT_DOWNLOAD)
-        dataset_path = download_dataset(direct_download_url)
+        authentication_type = kwargs.get(AUTHENTICATION_TYPE)
+        api_key_parameter_name = kwargs.get(API_KEY_PARAMETER_NAME)
+        api_key_parameter_value = kwargs.get(API_KEY_PARAMETER_VALUE)
+        dataset_path = download_dataset(
+            direct_download_url,
+            authentication_type,
+            api_key_parameter_name,
+            api_key_parameter_value,
+        )
         if is_readable(file_path=dataset_path, load_func=load_gtfs):
             data_type = GTFS
             (

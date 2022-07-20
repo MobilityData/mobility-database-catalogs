@@ -304,6 +304,9 @@ class TestGtfsScheduleSource(TestCase):
         self.test_max_lon = "some_max_lon"
         self.test_extracted_on = "some_extraction_time"
         self.test_direct_download_url = "some_direct_download_url"
+        self.test_authentication_type = "some_authentication_type"
+        self.test_authentication_info_url = "some_authentication_info_url"
+        self.test_api_key_parameter_name = "some_api_key_parameter_name"
         self.test_latest_url = "some_latest_url"
         self.test_license_url = "some_license_url"
         self.test_kwargs = {
@@ -321,6 +324,9 @@ class TestGtfsScheduleSource(TestCase):
             MAXIMUM_LONGITUDE: self.test_max_lon,
             EXTRACTED_ON: self.test_extracted_on,
             DIRECT_DOWNLOAD: self.test_direct_download_url,
+            AUTHENTICATION_TYPE: self.test_authentication_type,
+            AUTHENTICATION_INFO: self.test_authentication_info_url,
+            API_KEY_PARAMETER_NAME: self.test_api_key_parameter_name,
             LATEST: self.test_latest_url,
             LICENSE: self.test_license_url,
             FEATURES: self.test_features,
@@ -347,6 +353,9 @@ class TestGtfsScheduleSource(TestCase):
             },
             URLS: {
                 DIRECT_DOWNLOAD: self.test_direct_download_url,
+                AUTHENTICATION_TYPE: self.test_authentication_type,
+                AUTHENTICATION_INFO: self.test_authentication_info_url,
+                API_KEY_PARAMETER_NAME: self.test_api_key_parameter_name,
                 LATEST: self.test_latest_url,
                 LICENSE: self.test_license_url,
             },
@@ -452,10 +461,16 @@ class TestGtfsScheduleSource(TestCase):
         mock_time,
         mock_os,
     ):
-        # TODO add auth
         instance = GtfsScheduleSource(filename=self.test_filename, **self.test_schema)
         under_test = instance.update(**{})
         self.assertEqual(under_test.direct_download_url, self.test_direct_download_url)
+        self.assertEqual(under_test.authentication_type, self.test_authentication_type)
+        self.assertEqual(
+            under_test.authentication_info_url, self.test_authentication_info_url
+        )
+        self.assertEqual(
+            under_test.api_key_parameter_name, self.test_api_key_parameter_name
+        )
         self.assertEqual(under_test.bbox_min_lat, self.test_min_lat)
         self.assertEqual(under_test.bbox_max_lat, self.test_max_lat)
         self.assertEqual(under_test.bbox_min_lon, self.test_min_lon)
@@ -468,6 +483,9 @@ class TestGtfsScheduleSource(TestCase):
         self.assertEqual(under_test.municipality, self.test_municipality)
         self.assertEqual(under_test.license_url, self.test_license_url)
         test_direct_download_url = "another_direct_download_url"
+        test_authentication_type = "another_authentication_type"
+        test_authentication_info_url = "another_authentication_info_url"
+        test_api_key_parameter_name = "another_api_key_parameter_name"
         test_min_lat = "another_min_lat"
         test_max_lat = "another_max_lat"
         test_min_lon = "another_min_lon"
@@ -493,6 +511,9 @@ class TestGtfsScheduleSource(TestCase):
                 PROVIDER: test_provider,
                 NAME: test_name,
                 DIRECT_DOWNLOAD: test_direct_download_url,
+                AUTHENTICATION_TYPE: test_authentication_type,
+                AUTHENTICATION_INFO: test_authentication_info_url,
+                API_KEY_PARAMETER_NAME: test_api_key_parameter_name,
                 COUNTRY_CODE: test_country_code,
                 SUBDIVISION_NAME: test_subdivision_name,
                 MUNICIPALITY: test_municipality,
@@ -500,6 +521,11 @@ class TestGtfsScheduleSource(TestCase):
             }
         )
         self.assertEqual(under_test.direct_download_url, test_direct_download_url)
+        self.assertEqual(under_test.authentication_type, test_authentication_type)
+        self.assertEqual(
+            under_test.authentication_info_url, test_authentication_info_url
+        )
+        self.assertEqual(under_test.api_key_parameter_name, test_api_key_parameter_name)
         self.assertEqual(under_test.bbox_min_lat, test_min_lat)
         self.assertEqual(under_test.bbox_max_lat, test_max_lat)
         self.assertEqual(under_test.bbox_min_lon, test_min_lon)

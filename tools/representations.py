@@ -362,11 +362,27 @@ class GtfsScheduleSource(Source):
         return self.latest_url is not None
 
     def update(self, **kwargs):
-        # TODO ADD AUTH
+        # Update the authentication-related fields first
+        authentication_type = kwargs.get(AUTHENTICATION_TYPE)
+        if authentication_type is not None:
+            self.authentication_type = authentication_type
+        authentication_info_url = kwargs.get(AUTHENTICATION_INFO)
+        if authentication_info_url is not None:
+            self.authentication_info_url = authentication_info_url
+        api_key_parameter_name = kwargs.get(API_KEY_PARAMETER_NAME)
+        if api_key_parameter_name is not None:
+            self.api_key_parameter_name = api_key_parameter_name
+
         # Update the fields requiring the direct download URL
         direct_download_url = kwargs.get(DIRECT_DOWNLOAD)
+        api_key_parameter_value = kwargs.get(API_KEY_PARAMETER_VALUE)
         if direct_download_url is not None:
-            dataset_path = download_dataset(direct_download_url)
+            dataset_path = download_dataset(
+                url=direct_download_url,
+                authentication_type=authentication_type,
+                api_key_parameter_name=api_key_parameter_name,
+                api_key_parameter_value=api_key_parameter_value,
+            )
             if is_readable(file_path=dataset_path, load_func=load_gtfs):
                 self.direct_download_url = direct_download_url
                 (

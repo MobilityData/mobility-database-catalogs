@@ -218,7 +218,7 @@ get_sources_by_status(
     )
 ```
 
-To add a new GTFS Schedule source:
+To add a new GTFS Schedule source.  Note that the value passed to the `api_key_parameter_value` parameter will not be stored, though it is needed to add your source information if your source has `authentication_type = 1` or `authentication_type = 2`:
 
 ```python
 add_gtfs_schedule_source(
@@ -228,6 +228,7 @@ add_gtfs_schedule_source(
         authentication_type=$OPTIONAL_AUTHENTICATION_TYPE,
         authentication_info_url=$CONDITIONALLY_REQUIRED_AUTHENTICATION_INFO_URL,
         api_key_parameter_name=$CONDITIONALLY_REQUIRED_API_KEY_PARAMETER_NAME,
+        api_key_parameter_value=$NOT_STORED_API_KEY_PARAMETER_VALUE,
         subdivision_name=$OPTIONAL_SUBDIVISION_NAME,
         municipality=$OPTIONAL_MUNICIPALITY,
         license_url=$OPTIONAL_LICENSE_URL,
@@ -256,7 +257,7 @@ To add a new GTFS Realtime source:
     )
 ```
 
-To update a GTFS Schedule source:
+To update a GTFS Schedule source. Note that the value passed to the `api_key_parameter_value` parameter will not be stored, though it is needed to update your source information if your source has `authentication_type = 1` or `authentication_type = 2`:
 
 ```python
 update_gtfs_schedule_source(
@@ -270,6 +271,7 @@ update_gtfs_schedule_source(
         authentication_type=$OPTIONAL_AUTHENTICATION_TYPE,
         authentication_info_url=$CONDITIONALLY_REQUIRED_AUTHENTICATION_INFO_URL,
         api_key_parameter_name=$CONDITIONALLY_REQUIRED_API_KEY_PARAMETER_NAME,
+        api_key_parameter_value=$NOT_STORED_API_KEY_PARAMETER_VALUE,
         license_url=$OPTIONAL_LICENSE_URL,
         features=[$OPTIONAL_FEATURE_ARRAY],
         status=$OPTIONAL_STATUS

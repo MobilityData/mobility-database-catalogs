@@ -136,15 +136,6 @@ jobs:
               base = job_json[BASE]
               url = job_json[DIRECT_DOWNLOAD]
 
-              # Make sure that the dataset is a readable GTFS Schedule dataset
-              try:
-                  gtfs_kit.read_feed(url, dist_units="km")
-              except Exception as e:
-                  raise Exception(
-                      f"{base}: Exception {e} found while parsing the GTFS dataset with the GTFS kit library."
-                      f"The dataset for the source must be a valid GTFS zip file or URL.\n"
-                  )
-
               # Download the dataset
               zip_path = os.path.join(ROOT, DATASETS, f"{base}.zip")
               os.makedirs(os.path.dirname(zip_path), exist_ok=True)
@@ -153,11 +144,22 @@ jobs:
                   zip_file_req.raise_for_status()
               except Exception as e:
                   raise Exception(
-                      f"{base}: Exception {e} occurred when downloading URL {url}.\n"
+                      f"{base}: Exception {e} occurred when downloading the URL {url}.\n"
                   )
               zip_file = zip_file_req.content
               with open(zip_path, "wb") as f:
                   f.write(zip_file)
+
+              # Make sure that the dataset is a readable GTFS Schedule dataset
+              try:
+                  gtfs_kit.read_feed(zip_path, dist_units="km")
+              except Exception as e:
+                  # Delete the zip file if an exception occurs
+                  os.remove(zip_path)
+                  raise Exception(
+                      f"{base}: Exception {e} found while parsing the GTFS Schedule dataset with the GTFS Kit library."
+                      f"The dataset for the source must be a valid GTFS Schedule zip file or URL.\n"
+                  )
       - name: Persist datasets artifact
         uses: actions/upload-artifact@v2
         with:

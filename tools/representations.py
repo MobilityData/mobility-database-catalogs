@@ -10,6 +10,7 @@ from tools.helpers import (
     create_latest_url,
     to_json,
     create_filename,
+    download_dataset,
 )
 from tools.constants import (
     GTFS_SCHEDULE_CATALOG_PATH,
@@ -353,18 +354,23 @@ class GtfsScheduleSource(Source):
         return self.latest_url is not None
 
     def update(self, **kwargs):
+        # Update the fields requiring the direct download URL
         direct_download_url = kwargs.get(DIRECT_DOWNLOAD)
-        if direct_download_url is not None and is_readable(
-            url=direct_download_url, load_func=load_gtfs
-        ):
-            self.direct_download_url = direct_download_url
-            (
-                self.bbox_min_lat,
-                self.bbox_max_lat,
-                self.bbox_min_lon,
-                self.bbox_max_lon,
-            ) = extract_gtfs_bounding_box(url=direct_download_url)
-            self.bbox_extracted_on = get_iso_time()
+        if direct_download_url is not None:
+            dataset_path = download_dataset(direct_download_url)
+            if is_readable(file_path=dataset_path, load_func=load_gtfs):
+                self.direct_download_url = direct_download_url
+                (
+                    self.bbox_min_lat,
+                    self.bbox_max_lat,
+                    self.bbox_min_lon,
+                    self.bbox_max_lon,
+                ) = extract_gtfs_bounding_box(file_path=dataset_path)
+                self.bbox_extracted_on = get_iso_time()
+            # Delete the downloaded dataset because we don't need it anymore
+            os.remove(dataset_path)
+
+        # Update the other fields
         provider = kwargs.get(PROVIDER)
         if provider is not None:
             self.provider = provider
@@ -395,15 +401,20 @@ class GtfsScheduleSource(Source):
     def build(cls, **kwargs):
         instance = None
         direct_download_url = kwargs.get(DIRECT_DOWNLOAD)
-        if is_readable(url=direct_download_url, load_func=load_gtfs):
+        dataset_path = download_dataset(direct_download_url)
+        if is_readable(file_path=dataset_path, load_func=load_gtfs):
             data_type = GTFS
             (
                 minimum_latitude,
                 maximum_latitude,
                 minimum_longitude,
                 maximum_longitude,
-            ) = extract_gtfs_bounding_box(url=direct_download_url)
+            ) = extract_gtfs_bounding_box(file_path=dataset_path)
             extracted_on = get_iso_time()
+
+            # Delete the downloaded dataset because we don't need it anymore
+            os.remove(dataset_path)
+
             subdivision_name = kwargs.get(SUBDIVISION_NAME)
             subdivision_name = (
                 subdivision_name if subdivision_name is not None else UNKNOWN

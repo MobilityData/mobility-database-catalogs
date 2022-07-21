@@ -439,10 +439,19 @@ class TestGtfsScheduleSource(TestCase):
         under_test = instance.has_status(status=test_another_status)
         self.assertFalse(under_test)
 
+    @patch("tools.representations.os")
     @patch("tools.representations.get_iso_time")
     @patch("tools.representations.extract_gtfs_bounding_box")
     @patch("tools.representations.is_readable")
-    def test_update(self, mock_read_func, mock_bounding_box, mock_time):
+    @patch("tools.representations.download_dataset")
+    def test_update(
+        self,
+        mock_download_dataset,
+        mock_read_func,
+        mock_bounding_box,
+        mock_time,
+        mock_os,
+    ):
         instance = GtfsScheduleSource(filename=self.test_filename, **self.test_schema)
         under_test = instance.update(**{})
         self.assertEqual(under_test.direct_download_url, self.test_direct_download_url)
@@ -469,6 +478,7 @@ class TestGtfsScheduleSource(TestCase):
         test_subdivision_name = "another_subdivision_name"
         test_municipality = "another_municipality"
         test_license_url = "another_license_url"
+        mock_download_dataset.return_value = "some_dataset_path"
         mock_read_func.return_value = True
         mock_bounding_box.return_value = (
             test_min_lat,
@@ -500,22 +510,28 @@ class TestGtfsScheduleSource(TestCase):
         self.assertEqual(under_test.subdivision_name, test_subdivision_name)
         self.assertEqual(under_test.municipality, test_municipality)
         self.assertEqual(under_test.license_url, test_license_url)
+        mock_os.remove.assert_called_once()
 
+    @patch("tools.representations.os")
     @patch("tools.representations.GtfsScheduleSource.schematize")
     @patch("tools.representations.create_latest_url")
     @patch("tools.representations.create_filename")
     @patch("tools.representations.get_iso_time")
     @patch("tools.representations.extract_gtfs_bounding_box")
     @patch("tools.representations.is_readable")
+    @patch("tools.representations.download_dataset")
     def test_build(
         self,
+        mock_download_dataset,
         mock_read_func,
         mock_bounding_box,
         mock_time,
         mock_filename,
         mock_latest_url,
         mock_schema,
+        mock_os,
     ):
+        mock_download_dataset.return_value = "some_dataset_path"
         mock_read_func.return_value = False
         under_test = GtfsScheduleSource.build(**self.test_kwargs)
         self.assertIsNone(under_test)
@@ -540,6 +556,7 @@ class TestGtfsScheduleSource(TestCase):
         del self.test_kwargs[LATEST]
         under_test = GtfsScheduleSource.build(**self.test_kwargs)
         self.assertIsNotNone(under_test)
+        mock_os.remove.assert_called_once()
 
         del self.test_kwargs[NAME]
         del self.test_kwargs[LICENSE]
@@ -552,6 +569,9 @@ class TestGtfsScheduleSource(TestCase):
         mock_schema.return_value = deepcopy(self.test_schema)
         under_test = GtfsScheduleSource.build(**self.test_kwargs)
         self.assertIsNotNone(under_test)
+        # os.remove should have been called twice at this point
+        # because we called build and entered the is_readable condition twice.
+        self.assertEqual(mock_os.remove.call_count, 2)
 
     def test_schematize(self):
         under_test = GtfsScheduleSource.schematize(**self.test_kwargs)

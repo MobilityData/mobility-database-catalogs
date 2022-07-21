@@ -139,4 +139,3 @@ if __name__ == "__main__":
             features=dataset_features,
             status=dataset_status,
         )
-        print(mdb_source_id)

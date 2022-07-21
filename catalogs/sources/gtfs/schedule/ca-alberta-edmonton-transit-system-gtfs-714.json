@@ -2,6 +2,10 @@
     "mdb_source_id": 714,
     "data_type": "gtfs",
     "provider": "Edmonton Transit System",
+    "features": [
+        "fares-v1",
+        "pathways"
+    ],
     "location": {
         "country_code": "CA",
         "subdivision_name": "Alberta",

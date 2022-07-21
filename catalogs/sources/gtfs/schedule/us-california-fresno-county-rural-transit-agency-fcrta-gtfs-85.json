@@ -2,6 +2,10 @@
     "mdb_source_id": 85,
     "data_type": "gtfs",
     "provider": "Fresno County Rural Transit Agency (FCRTA)",
+    "features": [
+        "fares-v1"
+    ],
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

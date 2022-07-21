@@ -2,6 +2,9 @@
     "mdb_source_id": 990,
     "data_type": "gtfs",
     "provider": "Budapesti Közlekedési Központ (BKK)",
+    "features": [
+        "pathways"
+    ],
     "location": {
         "country_code": "HU",
         "subdivision_name": "Budapest",

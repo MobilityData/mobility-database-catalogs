@@ -2,6 +2,9 @@
     "mdb_source_id": 59,
     "data_type": "gtfs",
     "provider": "Stanford Marguerite Shuttle (SMS)",
+    "features": [
+        "fares-v1"
+    ],
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

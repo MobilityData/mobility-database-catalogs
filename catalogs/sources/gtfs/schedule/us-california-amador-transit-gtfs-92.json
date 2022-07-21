@@ -2,6 +2,10 @@
     "mdb_source_id": 92,
     "data_type": "gtfs",
     "provider": "Amador Transit",
+    "features": [
+        "fares-v1",
+        "fares-v2"
+    ],
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

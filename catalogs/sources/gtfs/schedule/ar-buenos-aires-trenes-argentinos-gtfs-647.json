@@ -2,6 +2,7 @@
     "mdb_source_id": 647,
     "data_type": "gtfs",
     "provider": "Trenes Argentinos",
+    "status": "inactive",
     "location": {
         "country_code": "AR",
         "subdivision_name": "Buenos Aires",

@@ -200,7 +200,7 @@ To get the sources by feature, `$FEATURE` is expressed as a string and must be o
 * `occupancy`  
 
 ```python
-get_sources_by_feature(
+>>> get_sources_by_feature(
         feature=$FEATURE,
     )
 ```
@@ -213,7 +213,7 @@ To get the sources by status, `$STATUS` is expressed as a string and one of:
 * `development`  
 
 ```python
-get_sources_by_status(
+>>> get_sources_by_status(
         feature=$STATUS,
     )
 ```
@@ -221,7 +221,7 @@ get_sources_by_status(
 To add a new GTFS Schedule source. Note that you must pass an `api_key_parameter_value` if your source has `authentication_type = 1` or `authentication_type = 2`. The `api_key_parameter_value` will not be stored and is used only for testing before the source is added to the database.
 
 ```python
-add_gtfs_schedule_source(
+>>> add_gtfs_schedule_source(
         provider=$YOUR_SOURCE_PROVIDER_NAME,
         country_code=$YOUR_SOURCE_COUNTRY_CODE,
         direct_download_url=$YOUR_SOURCE_DIRECT_DOWNLOAD_URL,
@@ -257,10 +257,10 @@ To add a new GTFS Realtime source:
     )
 ```
 
-To update a GTFS Schedule source. Note that the value passed to the `api_key_parameter_value` parameter will not be stored, though it is needed to update your source information if your source has `authentication_type = 1` or `authentication_type = 2`:
+To update a GTFS Schedule source. Note that you must pass an `api_key_parameter_value` if your source has `authentication_type = 1` or `authentication_type = 2` and that you want to update the direct download URL or authentication-related fields. The `api_key_parameter_value` will not be stored and is used only for testing before the source is updated in the database.
 
 ```python
-update_gtfs_schedule_source(
+>>> update_gtfs_schedule_source(
         mdb_source_id=$YOUR_SOURCE_NUMERICAL_ID,
         provider=$OPTIONAL_SOURCE_PROVIDER_NAME,
         name=$OPTIONAL_SOURCE_NAME,
@@ -281,7 +281,7 @@ update_gtfs_schedule_source(
 To update a GTFS Realtime source:
 
 ```python
-update_gtfs_realtime_source(
+>>> update_gtfs_realtime_source(
         mdb_source_id=$YOUR_SOURCE_NUMERICAL_ID,
         entity_type=[$YOUR_SOURCE_ARRAY_OF_ENTITY_TYPES],
         provider=$YOUR_SOURCE_PROVIDER_NAME,

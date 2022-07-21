@@ -2,6 +2,7 @@
     "mdb_source_id": 602,
     "data_type": "gtfs",
     "provider": "Memphis Area Transit Authoritiy",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Tennessee",

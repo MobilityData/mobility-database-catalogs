@@ -2,6 +2,7 @@
     "mdb_source_id": 684,
     "data_type": "gtfs",
     "provider": "De Lijn",
+    "status": "inactive",
     "location": {
         "country_code": "BE",
         "subdivision_name": "Vlaams Gewest",

@@ -2,6 +2,7 @@
     "mdb_source_id": 431,
     "data_type": "gtfs",
     "provider": "Massachusetts Area Express (MAX)",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Massachusetts",

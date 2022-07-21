@@ -2,6 +2,7 @@
     "mdb_source_id": 1164,
     "data_type": "gtfs",
     "provider": "Maleny / Landsborough",
+    "status": "inactive",
     "location": {
         "country_code": "AU",
         "subdivision_name": "Queensland",

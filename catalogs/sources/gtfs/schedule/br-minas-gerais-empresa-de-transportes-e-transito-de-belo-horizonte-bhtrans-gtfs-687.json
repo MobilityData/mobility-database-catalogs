@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Empresa de Transportes e Transito de Belo Horizonte (BHTRANS) ",
     "name": "Supplemental",
+    "status": "inactive",
     "location": {
         "country_code": "BR",
         "subdivision_name": "Minas Gerais",

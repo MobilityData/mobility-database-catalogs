@@ -2,6 +2,7 @@
     "mdb_source_id": 1011,
     "data_type": "gtfs",
     "provider": "Koleje Mazowieckie (KM)",
+    "status": "inactive",
     "location": {
         "country_code": "PL",
         "subdivision_name": "Mazowieckie",

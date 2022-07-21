@@ -3,7 +3,6 @@
     "data_type": "gtfs",
     "provider": "San Francisco Bay Area Water Emergency Transportation Authority (San Francisco Bay Ferries)",
     "features": [
-        "fares-v1",
         "pathways"
     ],
     "location": {

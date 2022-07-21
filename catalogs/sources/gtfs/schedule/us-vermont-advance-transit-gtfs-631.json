@@ -2,6 +2,9 @@
     "mdb_source_id": 631,
     "data_type": "gtfs",
     "provider": "Advance Transit",
+    "features": [
+        "flex-v1"
+    ],
     "location": {
         "country_code": "US",
         "subdivision_name": "Vermont",

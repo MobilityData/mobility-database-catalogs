@@ -2,6 +2,7 @@
     "mdb_source_id": 100,
     "data_type": "gtfs",
     "provider": "Anaheim Resort Transportation (ART)",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

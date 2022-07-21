@@ -2,6 +2,7 @@
     "mdb_source_id": 577,
     "data_type": "gtfs",
     "provider": "Montebello Bus Lines",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

@@ -2,6 +2,7 @@
     "mdb_source_id": 1203,
     "data_type": "gtfs",
     "provider": "Saint Mary's Transit System",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Maryland",

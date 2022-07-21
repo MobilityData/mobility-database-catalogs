@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Lincoln County Transit  (LCT)",
     "features": [
-        "fares-v1"
+        "flex-v1"
     ],
     "location": {
         "country_code": "US",

@@ -2,6 +2,7 @@
     "mdb_source_id": 1005,
     "data_type": "gtfs",
     "provider": "Dopravný podnik Bratislava, a.s.",
+    "status": "inactive",
     "location": {
         "country_code": "SK",
         "subdivision_name": "Bratislavský kraj",

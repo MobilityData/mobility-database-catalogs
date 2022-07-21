@@ -2,6 +2,7 @@
     "mdb_source_id": 1015,
     "data_type": "gtfs",
     "provider": "MZDiK Radom",
+    "status": "inactive",
     "location": {
         "country_code": "PL",
         "subdivision_name": "Mazowieckie",

@@ -2,6 +2,7 @@
     "mdb_source_id": 1238,
     "data_type": "gtfs",
     "provider": "Connect Transit",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Illinois",

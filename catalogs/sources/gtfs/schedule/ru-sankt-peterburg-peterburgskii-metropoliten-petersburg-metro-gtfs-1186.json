@@ -2,6 +2,7 @@
     "mdb_source_id": 1186,
     "data_type": "gtfs",
     "provider": "Петербургский метрополитен - Petersburg Metro",
+    "status": "inactive",
     "location": {
         "country_code": "RU",
         "subdivision_name": "Sankt-Peterburg",

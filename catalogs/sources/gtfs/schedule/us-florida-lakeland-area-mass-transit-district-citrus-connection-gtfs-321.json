@@ -2,6 +2,7 @@
     "mdb_source_id": 321,
     "data_type": "gtfs",
     "provider": "Lakeland Area Mass Transit District (Citrus Connection)",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Florida",

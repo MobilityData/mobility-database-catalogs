@@ -2,6 +2,7 @@
     "mdb_source_id": 1125,
     "data_type": "gtfs",
     "provider": "POS-ELY Joensuu",
+    "status": "inactive",
     "location": {
         "country_code": "FI",
         "subdivision_name": "Pohjois-Karjala",

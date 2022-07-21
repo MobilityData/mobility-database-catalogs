@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Harrisonburg Department of Public Transportation (HDPT)",
     "name": "HDPT",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Virginia",

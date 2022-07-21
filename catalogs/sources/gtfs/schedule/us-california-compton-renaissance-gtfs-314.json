@@ -2,6 +2,7 @@
     "mdb_source_id": 314,
     "data_type": "gtfs",
     "provider": "Compton Renaissance",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

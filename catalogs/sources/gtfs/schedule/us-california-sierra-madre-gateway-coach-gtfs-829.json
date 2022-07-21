@@ -2,6 +2,7 @@
     "mdb_source_id": 829,
     "data_type": "gtfs",
     "provider": "Sierra Madre Gateway Coach",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

@@ -2,6 +2,7 @@
     "mdb_source_id": 245,
     "data_type": "gtfs",
     "provider": "Washington State Department of Transportation (WSDOT, Apple Line)",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Washington",

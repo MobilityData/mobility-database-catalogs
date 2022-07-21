@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "National Park Service ",
     "name": "Cuyahoga Valley Scenic Railroad",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Ohio",

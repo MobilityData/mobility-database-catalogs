@@ -2,6 +2,7 @@
     "mdb_source_id": 1106,
     "data_type": "gtfs",
     "provider": "Manila Light Rail Transit Authority, LTFRB, Manila Metro Rail Transit Corporation, MARINA, Philippine National Railways, The Fort Bus",
+    "status": "inactive",
     "location": {
         "country_code": "PH",
         "subdivision_name": "Pambansang Punong Rehiyon",

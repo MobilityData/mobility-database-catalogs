@@ -2,6 +2,7 @@
     "mdb_source_id": 328,
     "data_type": "gtfs",
     "provider": "Manatee County Area Transit",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Florida",

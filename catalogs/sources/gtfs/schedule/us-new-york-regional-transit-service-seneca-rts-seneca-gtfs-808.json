@@ -2,6 +2,7 @@
     "mdb_source_id": 808,
     "data_type": "gtfs",
     "provider": "Regional Transit Service Seneca (RTS Seneca)",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "New York",

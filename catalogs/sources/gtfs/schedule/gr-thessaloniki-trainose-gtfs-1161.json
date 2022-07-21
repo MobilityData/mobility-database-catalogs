@@ -2,6 +2,7 @@
     "mdb_source_id": 1161,
     "data_type": "gtfs",
     "provider": "TRAINOSE",
+    "status": "inactive",
     "location": {
         "country_code": "GR",
         "subdivision_name": "Thessaloniki",

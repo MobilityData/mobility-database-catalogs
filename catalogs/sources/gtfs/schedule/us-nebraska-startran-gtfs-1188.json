@@ -2,6 +2,7 @@
     "mdb_source_id": 1188,
     "data_type": "gtfs",
     "provider": "StarTran",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Nebraska",

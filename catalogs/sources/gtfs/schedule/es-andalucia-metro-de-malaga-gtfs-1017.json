@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Metro de Málaga",
     "name": "GTFS static",
+    "status": "inactive",
     "location": {
         "country_code": "ES",
         "subdivision_name": "Andalucía",

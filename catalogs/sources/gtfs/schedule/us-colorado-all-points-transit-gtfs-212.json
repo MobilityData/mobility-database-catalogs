@@ -2,6 +2,9 @@
     "mdb_source_id": 212,
     "data_type": "gtfs",
     "provider": "All Points Transit",
+    "features": [
+        "flex-v1"
+    ],
     "location": {
         "country_code": "US",
         "subdivision_name": "Colorado",

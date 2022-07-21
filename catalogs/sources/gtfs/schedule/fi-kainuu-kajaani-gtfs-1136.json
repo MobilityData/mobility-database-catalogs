@@ -2,6 +2,7 @@
     "mdb_source_id": 1136,
     "data_type": "gtfs",
     "provider": "Kajaani",
+    "status": "inactive",
     "location": {
         "country_code": "FI",
         "subdivision_name": "Kainuu",

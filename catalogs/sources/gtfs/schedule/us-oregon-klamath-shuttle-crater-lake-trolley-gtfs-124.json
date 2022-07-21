@@ -2,6 +2,7 @@
     "mdb_source_id": 124,
     "data_type": "gtfs",
     "provider": "Klamath Shuttle - Crater Lake Trolley",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Oregon",

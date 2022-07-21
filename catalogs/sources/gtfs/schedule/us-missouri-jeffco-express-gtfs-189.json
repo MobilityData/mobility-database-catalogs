@@ -2,6 +2,7 @@
     "mdb_source_id": 189,
     "data_type": "gtfs",
     "provider": "JeffCo Express",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Missouri",

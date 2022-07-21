@@ -2,6 +2,7 @@
     "mdb_source_id": 6,
     "data_type": "gtfs",
     "provider": "Subterráneos de Buenos Aires (SUBTE)",
+    "status": "inactive",
     "location": {
         "country_code": "AR",
         "subdivision_name": "Buenos Aires",

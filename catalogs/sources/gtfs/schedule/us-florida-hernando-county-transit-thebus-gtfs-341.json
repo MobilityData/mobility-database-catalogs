@@ -2,6 +2,7 @@
     "mdb_source_id": 341,
     "data_type": "gtfs",
     "provider": "Hernando County Transit (TheBus)",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Florida",

@@ -2,6 +2,7 @@
     "mdb_source_id": 87,
     "data_type": "gtfs",
     "provider": "Stanislaus Regional Transit (StaRT)",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

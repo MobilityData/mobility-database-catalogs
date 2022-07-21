@@ -2,6 +2,7 @@
     "mdb_source_id": 727,
     "data_type": "gtfs",
     "provider": "Go Transit",
+    "status": "inactive",
     "location": {
         "country_code": "CA",
         "subdivision_name": "Ontario",

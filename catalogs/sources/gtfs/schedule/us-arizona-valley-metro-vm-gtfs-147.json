@@ -2,6 +2,7 @@
     "mdb_source_id": 147,
     "data_type": "gtfs",
     "provider": "Valley Metro (VM)",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Arizona",

@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Agence métropolitaine de transport",
     "name": "Express",
+    "status": "inactive",
     "location": {
         "country_code": "CA",
         "subdivision_name": "Québec",

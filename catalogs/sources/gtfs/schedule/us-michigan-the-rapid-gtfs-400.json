@@ -2,6 +2,7 @@
     "mdb_source_id": 400,
     "data_type": "gtfs",
     "provider": "The Rapid",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Michigan",

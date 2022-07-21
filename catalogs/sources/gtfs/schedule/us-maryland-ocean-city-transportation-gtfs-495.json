@@ -2,6 +2,7 @@
     "mdb_source_id": 495,
     "data_type": "gtfs",
     "provider": "Ocean City Transportation",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Maryland",

@@ -2,6 +2,7 @@
     "mdb_source_id": 1275,
     "data_type": "gtfs",
     "provider": "Western Chiang Mai",
+    "status": "inactive",
     "location": {
         "country_code": "TH",
         "subdivision_name": "Chiang Mai",

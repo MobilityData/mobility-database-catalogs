@@ -2,6 +2,7 @@
     "mdb_source_id": 1239,
     "data_type": "gtfs",
     "provider": "Valley Metro",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Virginia",

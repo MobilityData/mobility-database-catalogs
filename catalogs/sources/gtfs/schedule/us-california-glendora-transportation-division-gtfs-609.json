@@ -2,6 +2,7 @@
     "mdb_source_id": 609,
     "data_type": "gtfs",
     "provider": "Glendora Transportation Division",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

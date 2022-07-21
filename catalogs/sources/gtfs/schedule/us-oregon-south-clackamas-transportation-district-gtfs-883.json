@@ -2,6 +2,9 @@
     "mdb_source_id": 883,
     "data_type": "gtfs",
     "provider": "South Clackamas Transportation District",
+    "features": [
+        "flex-v1"
+    ],
     "location": {
         "country_code": "US",
         "subdivision_name": "Oregon",

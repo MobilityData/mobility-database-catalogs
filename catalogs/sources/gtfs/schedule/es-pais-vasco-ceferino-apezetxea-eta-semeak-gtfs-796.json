@@ -2,6 +2,7 @@
     "mdb_source_id": 796,
     "data_type": "gtfs",
     "provider": "Ceferino Apezetxea Eta Semeak",
+    "status": "inactive",
     "location": {
         "country_code": "ES",
         "subdivision_name": "Navarra, Comunidad Foral de",

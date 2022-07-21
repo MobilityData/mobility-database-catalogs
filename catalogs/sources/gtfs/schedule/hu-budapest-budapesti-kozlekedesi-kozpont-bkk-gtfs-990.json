@@ -5,6 +5,7 @@
     "features": [
         "pathways"
     ],
+    "status": "inactive",
     "location": {
         "country_code": "HU",
         "subdivision_name": "Budapest",

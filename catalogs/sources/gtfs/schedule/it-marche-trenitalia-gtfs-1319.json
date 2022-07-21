@@ -2,6 +2,7 @@
     "mdb_source_id": 1319,
     "data_type": "gtfs",
     "provider": "Trenitalia, Contram Mobilita s.c.p.a., Trasfer Soc. Cons. a.r.l., Adriabus spa, Soc. Consortile A.T.M.A., Start Spa",
+    "status": "inactive",
     "location": {
         "country_code": "IT",
         "subdivision_name": "Marche",

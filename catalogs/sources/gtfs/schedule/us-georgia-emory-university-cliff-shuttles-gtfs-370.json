@@ -2,6 +2,7 @@
     "mdb_source_id": 370,
     "data_type": "gtfs",
     "provider": "Emory University Cliff Shuttles",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Georgia",

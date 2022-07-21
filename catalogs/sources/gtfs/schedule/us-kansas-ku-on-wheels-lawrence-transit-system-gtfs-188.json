@@ -2,6 +2,7 @@
     "mdb_source_id": 188,
     "data_type": "gtfs",
     "provider": "KU on Wheels & Lawrence Transit System",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Kansas",

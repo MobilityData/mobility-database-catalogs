@@ -2,6 +2,7 @@
     "mdb_source_id": 439,
     "data_type": "gtfs",
     "provider": "MetroWest Regional Transit Authority (MWRTA)",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Massachusetts",

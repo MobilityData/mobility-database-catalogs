@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Atlantic Regional Commission",
     "name": "Atlantic Station Shuttle (FREE RIDE)",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Georgia",

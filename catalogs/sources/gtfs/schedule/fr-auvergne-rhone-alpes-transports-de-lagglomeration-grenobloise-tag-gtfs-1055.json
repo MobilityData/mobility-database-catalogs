@@ -5,6 +5,7 @@
     "features": [
         "fares-v1"
     ],
+    "status": "inactive",
     "location": {
         "country_code": "FR",
         "subdivision_name": "Auvergne-Rhône-Alpes",

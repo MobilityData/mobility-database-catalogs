@@ -2,6 +2,10 @@
     "mdb_source_id": 449,
     "data_type": "gtfs",
     "provider": "Stagecoach Transportation Services (STS)",
+    "features": [
+        "flex-v1"
+    ],
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Vermont",

@@ -2,6 +2,7 @@
     "mdb_source_id": 226,
     "data_type": "gtfs",
     "provider": "University of California Berkeley Shuttle (Bear Transit)",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

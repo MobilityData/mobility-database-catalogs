@@ -2,6 +2,7 @@
     "mdb_source_id": 1199,
     "data_type": "gtfs",
     "provider": "Société Nationale des Transports Ferroviaires (SNTF Algeria)",
+    "status": "inactive",
     "location": {
         "country_code": "DZ",
         "bounding_box": {

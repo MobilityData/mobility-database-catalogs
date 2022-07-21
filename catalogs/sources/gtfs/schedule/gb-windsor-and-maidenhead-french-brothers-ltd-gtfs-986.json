@@ -2,6 +2,7 @@
     "mdb_source_id": 986,
     "data_type": "gtfs",
     "provider": "French Brothers Ltd",
+    "status": "inactive",
     "location": {
         "country_code": "GB",
         "subdivision_name": "Windsor and Maidenhead",

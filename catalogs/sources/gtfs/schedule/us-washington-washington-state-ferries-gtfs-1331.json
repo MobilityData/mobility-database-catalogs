@@ -2,6 +2,9 @@
     "mdb_source_id": 1331,
     "data_type": "gtfs",
     "provider": "Washington State Ferries",
+    "features": [
+        "fares-v1"
+    ],
     "location": {
         "country_code": "US",
         "subdivision_name": "Washington",

@@ -2,6 +2,9 @@
     "mdb_source_id": 1134,
     "data_type": "gtfs",
     "provider": "Ministry of Transport and Road Safety ",
+    "features": [
+        "fares-v1"
+    ],
     "location": {
         "country_code": "IL",
         "bounding_box": {

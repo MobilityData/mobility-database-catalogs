@@ -2,6 +2,10 @@
     "mdb_source_id": 1105,
     "data_type": "gtfs",
     "provider": "HM Transport Inc. and Robinsons Malls, Froehlich Tours,RRCG Transport, Lingkod Pinoy Bus Liner, Inc., MetroExpress, Tas Trans",
+    "features": [
+        "fares-v1"
+    ],
+    "status": "inactive",
     "location": {
         "country_code": "PH",
         "bounding_box": {

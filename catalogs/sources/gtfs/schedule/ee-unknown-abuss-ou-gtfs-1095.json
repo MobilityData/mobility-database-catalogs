@@ -3,6 +3,9 @@
     "data_type": "gtfs",
     "provider": "ABuss OÜ, Aktsiaselts Hansa Bussiliinid, Aktsiaselts MK Autobuss, Alukvik OÜ, Arilix OÜ, AS Lux Express Estonia, Asunduse osaühing, ATG Bussiliinid OÜ, Atko Bussiliinid AS, ATKO Liinid OÜ, ATKO Transport OÜ, Ekspress-Auto L Osaühing, Ekspressbussiliinid osaühing, Elmar Purga FIE, ELRON, Estonian Lines OÜ, GoBus AS, HANSABUSS AS, Kalle Bussid OÜ, MEELIS HEEK, MK Reis-X OÜ, NAJA OÜ, Osaühing Bristol Takso, OSAÜHING FREMANTI, osaühing Tulisilm, OV Ida-Bus OÜ, OÜ Baltic Shuttle, PRESTO osaühing, Radix Transport OÜ, Rannu Rukkilill E.S.T. OÜ, Saaremaa vald, SEBE Aktsiaselts, Sirel Reisid OÜ, Taisto Express OÜ, Tallinna Linnatranspordi AS, TS Laevad OÜ, Tõnu Tours OÜ, Valgis osaühing",
     "name": "Ühistranspordiregistri avaandmed",
+    "features": [
+        "fares-v1"
+    ],
     "location": {
         "country_code": "EE",
         "bounding_box": {

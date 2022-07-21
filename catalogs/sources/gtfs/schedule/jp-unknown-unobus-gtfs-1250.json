@@ -2,6 +2,9 @@
     "mdb_source_id": 1250,
     "data_type": "gtfs",
     "provider": "Unobus",
+    "features": [
+        "fares-v1"
+    ],
     "location": {
         "country_code": "JP",
         "bounding_box": {

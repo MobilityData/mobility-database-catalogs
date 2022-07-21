@@ -2,6 +2,9 @@
     "mdb_source_id": 784,
     "data_type": "gtfs",
     "provider": "Rursee-Schifffahrt KG",
+    "features": [
+        "pathways"
+    ],
     "location": {
         "country_code": "DE",
         "bounding_box": {

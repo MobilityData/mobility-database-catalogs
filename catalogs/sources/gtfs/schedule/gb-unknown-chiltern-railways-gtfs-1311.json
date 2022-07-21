@@ -2,6 +2,7 @@
     "mdb_source_id": 1311,
     "data_type": "gtfs",
     "provider": "Chiltern Railways",
+    "status": "inactive",
     "location": {
         "country_code": "GB",
         "bounding_box": {

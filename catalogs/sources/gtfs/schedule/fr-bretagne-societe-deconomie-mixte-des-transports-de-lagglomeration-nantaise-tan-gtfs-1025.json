@@ -2,6 +2,9 @@
     "mdb_source_id": 1025,
     "data_type": "gtfs",
     "provider": "Société d'Economie Mixte des Transports de l'Agglomération Nantaise (TAN)",
+    "features": [
+        "fares-v1"
+    ],
     "location": {
         "country_code": "FR",
         "subdivision_name": "Bretagne",

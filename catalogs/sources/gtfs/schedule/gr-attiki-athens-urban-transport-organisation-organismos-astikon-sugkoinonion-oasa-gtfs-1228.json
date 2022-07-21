@@ -2,6 +2,7 @@
     "mdb_source_id": 1228,
     "data_type": "gtfs",
     "provider": "Αthens Urban Transport Organisation (Οργανισμός Αστικών Συγκοινωνιών ΟΑΣΑ)",
+    "status": "inactive",
     "location": {
         "country_code": "GR",
         "subdivision_name": "Attiki",

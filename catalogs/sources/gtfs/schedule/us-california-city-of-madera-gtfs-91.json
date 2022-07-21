@@ -2,6 +2,9 @@
     "mdb_source_id": 91,
     "data_type": "gtfs",
     "provider": "City of Madera",
+    "features": [
+        "fares-v1"
+    ],
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

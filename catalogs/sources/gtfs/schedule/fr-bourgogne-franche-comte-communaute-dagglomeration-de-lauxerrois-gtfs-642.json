@@ -2,6 +2,9 @@
     "mdb_source_id": 642,
     "data_type": "gtfs",
     "provider": "Communauté d'Agglomération de l'Auxerrois",
+    "features": [
+        "fares-v1"
+    ],
     "location": {
         "country_code": "FR",
         "subdivision_name": "Bourgogne-Franche-Comté",

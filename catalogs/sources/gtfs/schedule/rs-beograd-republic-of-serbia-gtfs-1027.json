@@ -2,6 +2,10 @@
     "mdb_source_id": 1027,
     "data_type": "gtfs",
     "provider": "Republic of Serbia",
+    "features": [
+        "fares-v1"
+    ],
+    "status": "inactive",
     "location": {
         "country_code": "RS",
         "subdivision_name": "Beograd",

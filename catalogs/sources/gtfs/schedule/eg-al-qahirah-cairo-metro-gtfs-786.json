@@ -2,6 +2,7 @@
     "mdb_source_id": 786,
     "data_type": "gtfs",
     "provider": "Cairo Metro",
+    "status": "inactive",
     "location": {
         "country_code": "EG",
         "subdivision_name": "Al Qahirah",

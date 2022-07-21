@@ -2,6 +2,7 @@
     "mdb_source_id": 186,
     "data_type": "gtfs",
     "provider": "Jonesboro Economical Transportation (JET)",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Arkansas",

@@ -3,6 +3,9 @@
     "data_type": "gtfs",
     "provider": "Ketchikan Gateway Borough",
     "name": "The Bus",
+    "features": [
+        "fares-v1"
+    ],
     "location": {
         "country_code": "US",
         "subdivision_name": "Alaska",

@@ -2,6 +2,9 @@
     "mdb_source_id": 109,
     "data_type": "gtfs",
     "provider": "Bullhead Area Transit System",
+    "features": [
+        "fares-v1"
+    ],
     "location": {
         "country_code": "US",
         "subdivision_name": "Arizona",

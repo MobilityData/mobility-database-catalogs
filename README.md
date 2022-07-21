@@ -58,6 +58,9 @@ Contains the JSON schemas used to validate the sources in the integration tests.
 | name        |  Text |Optional              | An optional description of the data source, e.g to specify if the data source is an aggregate of multiple providers, or which network is represented by the source. |
 |urls| Object | Required | Contains URLs associated with the source in the `direct_download_url`, `latest`, and `license` fields.
 |- direct_download |URL|Optional     | URL that automatically opens the source.
+|- authentication_type |Enum|Optional | The **authentication_type** field defines the type of authentication required to access the URL. Valid values for this field are: <ul> <li>**0** or **(empty)** - No authentication required.</li><li>**1** - The authentication requires an API key, which should be passed as value of the parameter `api_key_parameter_name` in the URL. Please visit URL in `authentication_info_url` for more information. </li><li>**2** - The authentication requires an HTTP header, which should be passed as the value of the header `api_key_parameter_name` in the HTTP request. </li></ul> When not provided, the authentication type is assumed to be **0**.|
+|- authentication_info_url | URL| Conditionally required | If authentication is required, the **authentication_info_url** field contains a URL to a human-readable page describing how the authentication should be performed and how credentials can be created. This field is required for `authentication_type=1` and `authentication_type=2`. |
+|- api_key_parameter_name |Text|Conditionally required | The **api_key_parameter_name** field defines the name of the parameter to pass in the URL to provide the API key. This field is required for `authentication_type=1` and `authentication_type=2`.   |
 | - latest | URL | System generated | A stable URL for the latest dataset of a source.
 |- license |URL| Optional     | The license information for the direct download URL.  
 
@@ -197,7 +200,7 @@ To get the sources by feature, `$FEATURE` is expressed as a string and must be o
 * `occupancy`  
 
 ```python
-get_sources_by_feature(
+>>> get_sources_by_feature(
         feature=$FEATURE,
     )
 ```
@@ -210,18 +213,22 @@ To get the sources by status, `$STATUS` is expressed as a string and one of:
 * `development`  
 
 ```python
-get_sources_by_status(
+>>> get_sources_by_status(
         feature=$STATUS,
     )
 ```
 
-To add a new GTFS Schedule source:
+To add a new GTFS Schedule source. Note that you must pass an `api_key_parameter_value` if your source has `authentication_type = 1` or `authentication_type = 2`. The `api_key_parameter_value` will not be stored and is used only for testing before the source is added to the database.
 
 ```python
-add_gtfs_schedule_source(
+>>> add_gtfs_schedule_source(
         provider=$YOUR_SOURCE_PROVIDER_NAME,
         country_code=$YOUR_SOURCE_COUNTRY_CODE,
         direct_download_url=$YOUR_SOURCE_DIRECT_DOWNLOAD_URL,
+        authentication_type=$OPTIONAL_AUTHENTICATION_TYPE,
+        authentication_info_url=$CONDITIONALLY_REQUIRED_AUTHENTICATION_INFO_URL,
+        api_key_parameter_name=$CONDITIONALLY_REQUIRED_API_KEY_PARAMETER_NAME,
+        api_key_parameter_value=$NOT_STORED_API_KEY_PARAMETER_VALUE,
         subdivision_name=$OPTIONAL_SUBDIVISION_NAME,
         municipality=$OPTIONAL_MUNICIPALITY,
         license_url=$OPTIONAL_LICENSE_URL,
@@ -250,10 +257,10 @@ To add a new GTFS Realtime source:
     )
 ```
 
-To update a GTFS Schedule source:
+To update a GTFS Schedule source. Note that you must pass an `api_key_parameter_value` if your source has `authentication_type = 1` or `authentication_type = 2` and that you want to update the direct download URL or authentication-related fields. The `api_key_parameter_value` will not be stored and is used only for testing before the source is updated in the database.
 
 ```python
-update_gtfs_schedule_source(
+>>> update_gtfs_schedule_source(
         mdb_source_id=$YOUR_SOURCE_NUMERICAL_ID,
         provider=$OPTIONAL_SOURCE_PROVIDER_NAME,
         name=$OPTIONAL_SOURCE_NAME,
@@ -261,6 +268,10 @@ update_gtfs_schedule_source(
         subdivision_name=$OPTIONAL_SOURCE_SUBDIVISION_NAME,
         municipality=$OPTIONAL_SOURCE_MUNICIPALITY,
         direct_download_url=$OPTIONAL_SOURCE_DIRECT_DOWNLOAD_URL,
+        authentication_type=$OPTIONAL_AUTHENTICATION_TYPE,
+        authentication_info_url=$CONDITIONALLY_REQUIRED_AUTHENTICATION_INFO_URL,
+        api_key_parameter_name=$CONDITIONALLY_REQUIRED_API_KEY_PARAMETER_NAME,
+        api_key_parameter_value=$NOT_STORED_API_KEY_PARAMETER_VALUE,
         license_url=$OPTIONAL_LICENSE_URL,
         features=[$OPTIONAL_FEATURE_ARRAY],
         status=$OPTIONAL_STATUS
@@ -270,7 +281,7 @@ update_gtfs_schedule_source(
 To update a GTFS Realtime source:
 
 ```python
-update_gtfs_realtime_source(
+>>> update_gtfs_realtime_source(
         mdb_source_id=$YOUR_SOURCE_NUMERICAL_ID,
         entity_type=[$YOUR_SOURCE_ARRAY_OF_ENTITY_TYPES],
         provider=$YOUR_SOURCE_PROVIDER_NAME,

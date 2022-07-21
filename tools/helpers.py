@@ -47,12 +47,23 @@ def to_csv(path, catalog, columns):
     catalog.to_csv(path, sep=",", index=False)
 
 
-def download_dataset(url):
+def download_dataset(
+    url, authentication_type, api_key_parameter_name, api_key_parameter_value
+):
     file_name = str(uuid.uuid4())
     file_path = os.path.join(os.getcwd(), file_name)
 
+    params = {}
+    headers = {}
+    if authentication_type == 1:
+        params[api_key_parameter_name] = api_key_parameter_value
+    elif authentication_type == 2:
+        headers[api_key_parameter_name] = api_key_parameter_value
+
     try:
-        zip_file_req = requests.get(url, allow_redirects=True)
+        zip_file_req = requests.get(
+            url, params=params, headers=headers, allow_redirects=True
+        )
         zip_file_req.raise_for_status()
     except RequestException as e:
         raise RequestException(

@@ -218,7 +218,7 @@ get_sources_by_status(
     )
 ```
 
-To add a new GTFS Schedule source.  Note that the value passed to the `api_key_parameter_value` parameter will not be stored, though it is needed to add your source information if your source has `authentication_type = 1` or `authentication_type = 2`:
+To add a new GTFS Schedule source. Note that you must pass an `api_key_parameter_value` if your source has `authentication_type = 1` or `authentication_type = 2`. The `api_key_parameter_value` will not be stored and is used only for testing before the source is added to the database.
 
 ```python
 add_gtfs_schedule_source(

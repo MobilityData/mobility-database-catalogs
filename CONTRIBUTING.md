@@ -44,17 +44,23 @@ To contribute data to the Mobility Database catalogs, please follow these steps:
 #### Add a GTFS Schedule source
 The easiest way to add a GTFS Schedule source is to use the operation `tools.operations.add_gtfs_schedule_source` through the Python interpreter or in your scripts. This operation makes sure the information provided is correct and will pass our tests. Provide the information about your source in the operation function to add your source.
 
-Please note sources that require API authorization cannot be added to the catalogs presently until [this issue is resolved](https://github.com/MobilityData/mobility-database-catalogs/issues/130).
+Note that you must pass an `api_key_parameter_value` if your source has `authentication_type = 1` or `authentication_type = 2`. The `api_key_parameter_value` will not be stored and is used only for testing before the source is added to the database..
 
-```
+```python
 >>> add_gtfs_schedule_source(
         provider=$YOUR_SOURCE_PROVIDER_NAME,
         country_code=$YOUR_SOURCE_COUNTRY_CODE,
         direct_download_url=$YOUR_SOURCE_DIRECT_DOWNLOAD_URL,
+        authentication_type=$OPTIONAL_AUTHENTICATION_TYPE,
+        authentication_info_url=$CONDITIONALLY_REQUIRED_AUTHENTICATION_INFO_URL,
+        api_key_parameter_name=$CONDITIONALLY_REQUIRED_API_KEY_PARAMETER_NAME,
+        api_key_parameter_value=$NOT_STORED_API_KEY_PARAMETER_VALUE,
         subdivision_name=$OPTIONAL_SUBDIVISION_NAME,
         municipality=$OPTIONAL_MUNICIPALITY,
         license_url=$OPTIONAL_LICENSE_URL,
-        name=$OPTIONAL_SOURCE_NAME
+        name=$OPTIONAL_SOURCE_NAME,
+        features=[$OPTIONAL_FEATURE_ARRAY],
+        status=$OPTIONAL_STATUS
     )
 ```
 
@@ -83,7 +89,9 @@ The default value for every parameter is `None`. Note that once a parameter valu
 
 `mdb_source_id` and `data_type` cannot be updated. All other parameters can.
 
-```
+Note that you must pass an `api_key_parameter_value` if your source has `authentication_type = 1` or `authentication_type = 2` and that you want to update the direct download URL or authentication-related fields. The `api_key_parameter_value` will not be stored and is used only for testing before the source is updated in the database.
+
+```python
 >>> update_gtfs_schedule_source(
         mdb_source_id=$YOUR_SOURCE_NUMERICAL_ID,
         provider=$OPTIONAL_SOURCE_PROVIDER_NAME,
@@ -92,7 +100,13 @@ The default value for every parameter is `None`. Note that once a parameter valu
         subdivision_name=$OPTIONAL_SOURCE_SUBDIVISION_NAME,
         municipality=$OPTIONAL_SOURCE_MUNICIPALITY,
         direct_download_url=$OPTIONAL_SOURCE_DIRECT_DOWNLOAD_URL,
-        license_url=$OPTIONAL_LICENSE_URL
+        authentication_type=$OPTIONAL_AUTHENTICATION_TYPE,
+        authentication_info_url=$CONDITIONALLY_REQUIRED_AUTHENTICATION_INFO_URL,
+        api_key_parameter_name=$CONDITIONALLY_REQUIRED_API_KEY_PARAMETER_NAME,
+        api_key_parameter_value=$NOT_STORED_API_KEY_PARAMETER_VALUE,
+        license_url=$OPTIONAL_LICENSE_URL,
+        features=[$OPTIONAL_FEATURE_ARRAY],
+        status=$OPTIONAL_STATUS
     )
 ```
 

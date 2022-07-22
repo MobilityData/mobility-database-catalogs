@@ -92,6 +92,10 @@ class TestOperations(TestCase):
         test_subdivision_name = "test_subdivision_name"
         test_municipality = "test_municipality"
         test_direct_download_url = "test_direct_download_url"
+        test_authentication_type = "test_authentication_type"
+        test_authentication_info_url = "test_authentication_info_url"
+        test_api_key_parameter_name = "test_api_key_parameter_name"
+        test_api_key_parameter_value = "test_api_key_parameter_value"
         test_license_url = "test_license_url"
         test_status = "active"
         test_features = ["flex"]
@@ -102,6 +106,10 @@ class TestOperations(TestCase):
             subdivision_name=test_subdivision_name,
             municipality=test_municipality,
             direct_download_url=test_direct_download_url,
+            authentication_type=test_authentication_type,
+            authentication_info_url=test_authentication_info_url,
+            api_key_parameter_name=test_api_key_parameter_name,
+            api_key_parameter_value=test_api_key_parameter_value,
             license_url=test_license_url,
             status=test_status,
             features=test_features,
@@ -119,6 +127,10 @@ class TestOperations(TestCase):
         test_subdivision_name = "test_subdivision_name"
         test_municipality = "test_municipality"
         test_direct_download_url = "test_direct_download_url"
+        test_authentication_type = "test_authentication_type"
+        test_authentication_info_url = "test_authentication_info_url"
+        test_api_key_parameter_name = "test_api_key_parameter_name"
+        test_api_key_parameter_value = "test_api_key_parameter_value"
         test_license_url = "test_license_url"
         test_status = "active"
         test_features = ["flex"]
@@ -130,6 +142,10 @@ class TestOperations(TestCase):
             subdivision_name=test_subdivision_name,
             municipality=test_municipality,
             direct_download_url=test_direct_download_url,
+            authentication_type=test_authentication_type,
+            authentication_info_url=test_authentication_info_url,
+            api_key_parameter_name=test_api_key_parameter_name,
+            api_key_parameter_value=test_api_key_parameter_value,
             license_url=test_license_url,
             status=test_status,
             features=test_features,

@@ -115,6 +115,24 @@
           "description": "URL that automatically opens the source.",
           "pattern": "^(http|https|ftp):\/\/[a-zA-Z0-9.,~#{}():&/%='?_+/-]+$"
         },
+        "authentication_type": {
+          "type": "number",
+          "description": "The authentication type of the source.",
+          "enum": [
+            0,
+            1,
+            2
+          ]
+        },
+        "authentication_info": {
+          "type": "string",
+          "description": "If authentication is required, this field contains a URL to a human-readable page describing how the authentication should be performed and how credentials can be created. This field is required for `authentication_type=1` and `authentication_type=2`.",
+          "pattern": "^(http|https|ftp):\/\/[a-zA-Z0-9.,~#{}():&/%='?_+/-]+$"
+        },
+        "api_key_parameter_name": {
+          "type": "string",
+          "description": "This field defines the name of the parameter to pass in the URL to provide the API key. This field is required for `authentication_type=1` and `authentication_type=2`."
+        },
         "latest": {
           "type": "string",
           "description": "A stable URL for the latest dataset of a source.",
@@ -126,6 +144,41 @@
           "pattern": "^(http|https|ftp):\/\/[a-zA-Z0-9.,~#{}():&/%='?_+/-]+$"
         }
       },
+      "oneOf": [
+        {
+          "not": {
+            "required": [
+              "authentication_type"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "authentication_type": {
+                "enum": [
+                  1,
+                  2
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "authentication_info",
+              "api_key_parameter_name"
+            ]
+          },
+          "else": {
+            "not": {
+              "required": [
+                "authentication_info",
+                "api_key_parameter_name"
+              ]
+            }
+          }
+        }
+      ],
       "required": ["direct_download", "latest"]
     }
   },

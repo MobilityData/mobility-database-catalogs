@@ -394,21 +394,129 @@ class TestInOutFunctions(TestCase):
     @patch("tools.helpers.uuid.uuid4")
     @patch("tools.helpers.os")
     @patch("tools.helpers.requests.get")
-    def test_download_dataset(self, mock_requests, mock_os, mock_uuid4, mock_open):
-        test_url = "http://some_url"
-        test_file_path = "some_file_path"
-        mock_os.path.join.return_value = test_file_path
-        under_test = download_dataset(url=test_url)
-        self.assertEqual(under_test, test_file_path)
+    def test_download_dataset_auth_type_empty(
+        self, mock_requests, mock_os, mock_uuid4, mock_open
+    ):
+        test_authentication_type = None
+        test_api_key_parameter_name = None
+        test_api_key_parameter_value = None
+        mock_os.path.join.return_value = self.test_path
+        under_test = download_dataset(
+            url=self.test_url,
+            authentication_type=test_authentication_type,
+            api_key_parameter_name=test_api_key_parameter_name,
+            api_key_parameter_value=test_api_key_parameter_value,
+        )
+        self.assertEqual(under_test, self.test_path)
+        self.assertEqual(mock_requests.call_args.kwargs["params"], {})
+        self.assertEqual(mock_requests.call_args.kwargs["headers"], {})
         mock_requests.assert_called_once()
         mock_os.path.join.assert_called_once()
         mock_os.getcwd.assert_called_once()
         mock_uuid4.assert_called_once()
         mock_open.assert_called_once()
 
+    @patch("tools.helpers.open")
+    @patch("tools.helpers.uuid.uuid4")
+    @patch("tools.helpers.os")
+    @patch("tools.helpers.requests.get")
+    def test_download_dataset_auth_type_0(
+        self, mock_requests, mock_os, mock_uuid4, mock_open
+    ):
+        test_authentication_type = 0
+        test_api_key_parameter_name = None
+        test_api_key_parameter_value = None
+        mock_os.path.join.return_value = self.test_path
+        under_test = download_dataset(
+            url=self.test_url,
+            authentication_type=test_authentication_type,
+            api_key_parameter_name=test_api_key_parameter_name,
+            api_key_parameter_value=test_api_key_parameter_value,
+        )
+        self.assertEqual(under_test, self.test_path)
+        self.assertEqual(mock_requests.call_args.kwargs["params"], {})
+        self.assertEqual(mock_requests.call_args.kwargs["headers"], {})
+        mock_requests.assert_called_once()
+        mock_os.path.join.assert_called_once()
+        mock_os.getcwd.assert_called_once()
+        mock_uuid4.assert_called_once()
+        mock_open.assert_called_once()
+
+    @patch("tools.helpers.open")
+    @patch("tools.helpers.uuid.uuid4")
+    @patch("tools.helpers.os")
+    @patch("tools.helpers.requests.get")
+    def test_download_dataset_auth_type_1(
+        self, mock_requests, mock_os, mock_uuid4, mock_open
+    ):
+        test_authentication_type = 1
+        test_api_key_parameter_name = "some_name"
+        test_api_key_parameter_value = "some_value"
+        mock_os.path.join.return_value = self.test_path
+        under_test = download_dataset(
+            url=self.test_url,
+            authentication_type=test_authentication_type,
+            api_key_parameter_name=test_api_key_parameter_name,
+            api_key_parameter_value=test_api_key_parameter_value,
+        )
+        self.assertEqual(under_test, self.test_path)
+        self.assertEqual(
+            mock_requests.call_args.kwargs["params"],
+            {test_api_key_parameter_name: test_api_key_parameter_value},
+        )
+        self.assertEqual(mock_requests.call_args.kwargs["headers"], {})
+        mock_requests.assert_called_once()
+        mock_os.path.join.assert_called_once()
+        mock_os.getcwd.assert_called_once()
+        mock_uuid4.assert_called_once()
+        mock_open.assert_called_once()
+
+    @patch("tools.helpers.open")
+    @patch("tools.helpers.uuid.uuid4")
+    @patch("tools.helpers.os")
+    @patch("tools.helpers.requests.get")
+    def test_download_dataset_auth_type_2(
+        self, mock_requests, mock_os, mock_uuid4, mock_open
+    ):
+        test_authentication_type = 2
+        test_api_key_parameter_name = "some_name"
+        test_api_key_parameter_value = "some_value"
+        mock_os.path.join.return_value = self.test_path
+        under_test = download_dataset(
+            url=self.test_url,
+            authentication_type=test_authentication_type,
+            api_key_parameter_name=test_api_key_parameter_name,
+            api_key_parameter_value=test_api_key_parameter_value,
+        )
+        self.assertEqual(under_test, self.test_path)
+        self.assertEqual(mock_requests.call_args.kwargs["params"], {})
+        self.assertEqual(
+            mock_requests.call_args.kwargs["headers"],
+            {test_api_key_parameter_name: test_api_key_parameter_value},
+        )
+        mock_requests.assert_called_once()
+        mock_os.path.join.assert_called_once()
+        mock_os.getcwd.assert_called_once()
+        mock_uuid4.assert_called_once()
+        mock_open.assert_called_once()
+
+    @patch("tools.helpers.open")
+    @patch("tools.helpers.uuid.uuid4")
+    @patch("tools.helpers.os")
+    @patch("tools.helpers.requests.get")
+    def test_download_dataset_exception(
+        self, mock_requests, mock_os, mock_uuid4, mock_open
+    ):
+        test_authentication_type = None
+        test_api_key_parameter_name = None
+        test_api_key_parameter_value = None
+
         mock_requests.side_effect = Mock(side_effect=RequestException)
         self.assertRaises(
             RequestException,
             download_dataset,
             url=self.test_url,
+            authentication_type=test_authentication_type,
+            api_key_parameter_name=test_api_key_parameter_name,
+            api_key_parameter_value=test_api_key_parameter_value,
         )

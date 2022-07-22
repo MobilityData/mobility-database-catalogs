@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Metra",
     "features": [
-        "fares-v1",
+        "fares-v1"
     ],
     "location": {
         "country_code": "US",

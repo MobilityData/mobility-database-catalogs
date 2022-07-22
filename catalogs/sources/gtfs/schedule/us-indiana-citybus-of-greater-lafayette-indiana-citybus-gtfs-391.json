@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "CityBus of Greater Lafayette Indiana (CityBus)",
     "features": [
-        "fares-v1",
+        "fares-v1"
     ],
     "status": "inactive",
     "location": {

@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "KU on Wheels & Lawrence Transit System",
     "features": [
-        "fares-v1",
+        "fares-v1"
     ],
     "status": "inactive",
     "location": {

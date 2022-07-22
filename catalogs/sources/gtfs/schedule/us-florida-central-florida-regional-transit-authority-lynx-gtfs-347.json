@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Central Florida Regional Transit Authority (LYNX)",
     "features": [
-        "fares-v1",
+        "fares-v1"
     ],
     "location": {
         "country_code": "US",

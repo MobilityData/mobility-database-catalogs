@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Blue Star Bus",
     "features": [
-        "fares-v1",
+        "fares-v1"
     ],
     "status": "inactive",
     "location": {

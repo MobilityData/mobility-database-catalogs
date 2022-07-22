@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Monroe County Transportation Authority (MCTA)",
     "features": [
-        "fares-v1",
+        "fares-v1"
     ],
     "location": {
         "country_code": "US",

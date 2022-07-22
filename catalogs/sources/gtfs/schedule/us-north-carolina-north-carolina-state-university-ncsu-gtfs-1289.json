@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "North Carolina State University (NCSU)",
     "features": [
-        "fares-v1",
+        "fares-v1"
     ],
     "status": "inactive",
     "location": {

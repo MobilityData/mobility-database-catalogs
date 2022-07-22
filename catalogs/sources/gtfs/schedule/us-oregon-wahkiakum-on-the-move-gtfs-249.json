@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Wahkiakum on the Move",
     "features": [
-        "fares-v1",
+        "fares-v1"
     ],
     "status": "inactive",
     "location": {

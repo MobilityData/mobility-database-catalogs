@@ -4,7 +4,7 @@
     "provider": "Lextran",
     "status": "inactive",
     "features": [
-        "fares-v1",
+        "fares-v1"
     ],
     "location": {
         "country_code": "US",

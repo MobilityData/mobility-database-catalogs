@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Boston Harbor Islands Ferries",
     "features": [
-        "fares-v1",
+        "fares-v1"
     ],
     "status": "inactive",
     "location": {

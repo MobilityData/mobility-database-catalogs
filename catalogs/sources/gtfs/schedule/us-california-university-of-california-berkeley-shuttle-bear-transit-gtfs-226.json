@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "University of California Berkeley Shuttle (Bear Transit)",
     "features": [
-        "fares-v1",
+        "fares-v1"
     ],
     "status": "inactive",
     "location": {

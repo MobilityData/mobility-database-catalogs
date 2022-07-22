@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Atlanta Streetcar",
     "features": [
-        "fares-v1",
+        "fares-v1"
     ],
     "status": "inactive",
     "location": {

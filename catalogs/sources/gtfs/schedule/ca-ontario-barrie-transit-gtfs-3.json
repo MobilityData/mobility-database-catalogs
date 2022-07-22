@@ -3,7 +3,6 @@
     "data_type": "gtfs",
     "provider": "Barrie Transit",
     "name": "",
-    "status": "inactive",
     "location": {
         "country_code": "CA",
         "subdivision_name": "Ontario",

@@ -2,7 +2,6 @@
     "mdb_source_id": 854,
     "data_type": "gtfs",
     "provider": "Azienda Trasporti Automobilistici Pubblici delle Province di Biella e Vercelli (ATAP)",
-    "status": "inactive",
     "location": {
         "country_code": "IT",
         "bounding_box": {

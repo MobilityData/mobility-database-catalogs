@@ -2,7 +2,6 @@
     "mdb_source_id": 1111,
     "data_type": "gtfs",
     "provider": "Codiac Transport",
-    "status": "inactive",
     "location": {
         "country_code": "CA",
         "subdivision_name": "New Brunswick",

@@ -2,7 +2,6 @@
     "mdb_source_id": 731,
     "data_type": "gtfs",
     "provider": "Union Pearson Express (UP Express)",
-    "status": "inactive",
     "location": {
         "country_code": "CA",
         "subdivision_name": "Ontario",

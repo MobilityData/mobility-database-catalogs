@@ -2,7 +2,6 @@
     "mdb_source_id": 790,
     "data_type": "gtfs",
     "provider": "Alta-Velocidad-Larga Distancia-Media Distancia",
-    "status": "inactive",
     "location": {
         "country_code": "ES",
         "bounding_box": {

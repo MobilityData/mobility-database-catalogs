@@ -2,7 +2,6 @@
     "mdb_source_id": 893,
     "data_type": "gtfs",
     "provider": "Azienda Napoletana Mobilità",
-    "status": "inactive",
     "location": {
         "country_code": "IT",
         "subdivision_name": "Campania",

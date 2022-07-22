@@ -2,6 +2,9 @@
     "mdb_source_id": 1261,
     "data_type": "gtfs",
     "provider": "LILA",
+    "features": [
+        "fares-v1"
+    ],
     "status": "inactive",
     "location": {
         "country_code": "FR",

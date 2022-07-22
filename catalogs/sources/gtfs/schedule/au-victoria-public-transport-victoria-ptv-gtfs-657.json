@@ -2,7 +2,6 @@
     "mdb_source_id": 657,
     "data_type": "gtfs",
     "provider": "Public Transport Victoria (PTV)",
-    "status": "inactive",
     "location": {
         "country_code": "AU",
         "subdivision_name": "Victoria",

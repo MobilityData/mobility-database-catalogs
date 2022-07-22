@@ -3,7 +3,6 @@
     "data_type": "gtfs",
     "provider": "TER Pays de la Loire",
     "name": "Cars SNCF transports à la demande",
-    "status": "inactive",
     "location": {
         "country_code": "FR",
         "subdivision_name": "Pays de la Loire",

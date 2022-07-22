@@ -2,6 +2,9 @@
     "mdb_source_id": 1194,
     "data_type": "gtfs",
     "provider": "Bus Company S.r.l., Gunetto Autolinee S.r.l., Bus Company S.r.l., GelosoBus S.r.l., RT Piemonte S.r.l., Autolinee Nuova Benese S.r.l., Autolinee Allasia S.r.l., Nuova S.A.A.R. S.r.l., SAV Autolinee S.r.l., S.A.C. S.r.l., Autolinee Valle Pesio S.r.l., ACTP S.r.l., Nuova Beccaria S.r.l., Giors S.n.c., Consorzio Trasporti GRANDA BUS",
+    "features": [
+        "fares-v1"
+    ],
     "status": "inactive",
     "location": {
         "country_code": "IT",

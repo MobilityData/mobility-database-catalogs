@@ -2,6 +2,9 @@
     "mdb_source_id": 1221,
     "data_type": "gtfs",
     "provider": "Société de transport de Montréal",
+    "features": [
+        "fares-v1"
+    ],
     "status": "inactive",
     "location": {
         "country_code": "CA",

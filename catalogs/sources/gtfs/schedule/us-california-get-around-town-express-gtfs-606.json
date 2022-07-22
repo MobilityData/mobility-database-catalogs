@@ -2,6 +2,10 @@
     "mdb_source_id": 606,
     "data_type": "gtfs",
     "provider": "Get Around Town Express",
+    "features": [
+        "fares-v1"
+    ],
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

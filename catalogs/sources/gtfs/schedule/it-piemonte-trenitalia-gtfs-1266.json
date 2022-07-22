@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "TRENITALIA, Gruppo Torinese Trasporti (GTT)",
     "name": "SFM (Railway)",
+    "status": "inactive",
     "location": {
         "country_code": "IT",
         "subdivision_name": "Piemonte",

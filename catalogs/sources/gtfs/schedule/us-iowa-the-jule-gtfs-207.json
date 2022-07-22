@@ -2,6 +2,7 @@
     "mdb_source_id": 207,
     "data_type": "gtfs",
     "provider": "The Jule",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Iowa",

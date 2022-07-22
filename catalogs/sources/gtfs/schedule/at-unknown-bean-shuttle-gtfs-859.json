@@ -5,6 +5,7 @@
     "features": [
         "fares-v1"
     ],
+    "status": "inactive",
     "location": {
         "country_code": "AT",
         "bounding_box": {

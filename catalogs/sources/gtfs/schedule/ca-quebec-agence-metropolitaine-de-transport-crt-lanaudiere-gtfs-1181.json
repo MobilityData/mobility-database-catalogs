@@ -2,6 +2,7 @@
     "mdb_source_id": 1181,
     "data_type": "gtfs",
     "provider": "Agence métropolitaine de transport CRT Lanaudière",
+    "status": "inactive",
     "location": {
         "country_code": "CA",
         "subdivision_name": "Québec",

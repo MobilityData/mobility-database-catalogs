@@ -2,6 +2,7 @@
     "mdb_source_id": 219,
     "data_type": "gtfs",
     "provider": "Baldwin Park Transit",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

@@ -2,6 +2,7 @@
     "mdb_source_id": 1201,
     "data_type": "gtfs",
     "provider": "Réseau de transport Transpole de la Métropole Européenne de Lille",
+    "status": "inactive",
     "location": {
         "country_code": "FR",
         "subdivision_name": "Hauts-de-France",

@@ -2,6 +2,7 @@
     "mdb_source_id": 1069,
     "data_type": "gtfs",
     "provider": "Transilien SNCF",
+    "status": "inactive",
     "location": {
         "country_code": "FR",
         "subdivision_name": "Île-de-France",

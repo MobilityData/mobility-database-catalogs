@@ -2,6 +2,7 @@
     "mdb_source_id": 1237,
     "data_type": "gtfs",
     "provider": "IndyGo",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Indiana",

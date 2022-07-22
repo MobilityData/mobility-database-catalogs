@@ -2,6 +2,7 @@
     "mdb_source_id": 1122,
     "data_type": "gtfs",
     "provider": "Kocaeli",
+    "status": "inactive",
     "location": {
         "country_code": "TR",
         "subdivision_name": "Kocaeli",

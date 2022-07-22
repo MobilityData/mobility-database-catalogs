@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "TransLink Brisbane ",
     "name": "Yeppoon",
+    "status": "inactive",
     "location": {
         "country_code": "AU",
         "subdivision_name": "Queensland",

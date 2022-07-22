@@ -3,6 +3,10 @@
     "data_type": "gtfs",
     "provider": "Maryland Transit Administration Metro Subway",
     "name": "Metro SubwayLink",
+    "features": [
+        "fares-v2",
+        "pathways"
+    ],
     "location": {
         "country_code": "US",
         "subdivision_name": "Maryland",

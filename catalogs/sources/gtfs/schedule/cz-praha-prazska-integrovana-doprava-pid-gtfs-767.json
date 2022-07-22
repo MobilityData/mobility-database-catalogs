@@ -2,6 +2,10 @@
     "mdb_source_id": 767,
     "data_type": "gtfs",
     "provider": "Prazska integrovana doprava (PID)",
+    "features": [
+        "fares-v1",
+        "pathways"
+    ],
     "location": {
         "country_code": "CZ",
         "subdivision_name": "Praha, hlavní mešto",

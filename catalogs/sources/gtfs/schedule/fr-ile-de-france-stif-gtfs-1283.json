@@ -2,6 +2,7 @@
     "mdb_source_id": 1283,
     "data_type": "gtfs",
     "provider": "STIF",
+    "status": "inactive",
     "location": {
         "country_code": "FR",
         "subdivision_name": "Île-de-France",

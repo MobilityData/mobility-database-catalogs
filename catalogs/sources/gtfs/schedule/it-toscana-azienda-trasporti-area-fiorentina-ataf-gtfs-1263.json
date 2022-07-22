@@ -2,6 +2,7 @@
     "mdb_source_id": 1263,
     "data_type": "gtfs",
     "provider": "Azienda Trasporti Area Fiorentina (ATAF)",
+    "status": "inactive",
     "location": {
         "country_code": "IT",
         "subdivision_name": "Toscana",

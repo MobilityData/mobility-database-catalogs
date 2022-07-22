@@ -2,6 +2,7 @@
     "mdb_source_id": 541,
     "data_type": "gtfs",
     "provider": "City of Mechanicville Public Transit",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "New York",

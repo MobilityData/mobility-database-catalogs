@@ -2,6 +2,7 @@
     "mdb_source_id": 1151,
     "data_type": "gtfs",
     "provider": "Komunikacja Miejska Bielawa Dzierżoniów",
+    "status": "inactive",
     "location": {
         "country_code": "PL",
         "subdivision_name": "Dolnoslaskie",

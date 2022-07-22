@@ -2,6 +2,10 @@
     "mdb_source_id": 630,
     "data_type": "gtfs",
     "provider": "Citrus County Transit",
+    "features": [
+        "fares-v1"
+    ],
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Florida",

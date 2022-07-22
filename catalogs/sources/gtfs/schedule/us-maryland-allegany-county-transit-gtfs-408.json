@@ -2,6 +2,7 @@
     "mdb_source_id": 408,
     "data_type": "gtfs",
     "provider": "Allegany County Transit",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Maryland",

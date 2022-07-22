@@ -2,6 +2,10 @@
     "mdb_source_id": 1174,
     "data_type": "gtfs",
     "provider": "wroute",
+    "features": [
+        "fares-v1"
+    ],
+    "status": "deprecated",
     "location": {
         "country_code": "CA",
         "subdivision_name": "Ontario",

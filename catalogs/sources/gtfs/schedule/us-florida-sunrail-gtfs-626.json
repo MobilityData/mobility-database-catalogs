@@ -2,6 +2,10 @@
     "mdb_source_id": 626,
     "data_type": "gtfs",
     "provider": "Florida Department of Transportation (SunRail)",
+    "features": [
+        "fares-v1"
+    ],
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Florida",

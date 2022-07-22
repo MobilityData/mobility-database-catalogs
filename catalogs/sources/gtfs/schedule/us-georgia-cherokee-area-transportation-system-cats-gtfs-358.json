@@ -2,6 +2,7 @@
     "mdb_source_id": 358,
     "data_type": "gtfs",
     "provider": "Cherokee Area Transportation System (CATS)",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Georgia",

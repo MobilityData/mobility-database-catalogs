@@ -2,6 +2,7 @@
     "mdb_source_id": 1099,
     "data_type": "gtfs",
     "provider": "Corredores Concesionados, Metrobús, Sistema de Transporte Colectivo Metro, NOCHEBÚS Corredores concesionados, Red de Transporte de Pasajeros (RTP), RTP Regresa seguro a casa, Servicio de Transportes Eléctricos, Ferrocarriles Suburbanos",
+    "status": "inactive",
     "location": {
         "country_code": "MX",
         "subdivision_name": "Distrito Federal",

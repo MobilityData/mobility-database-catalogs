@@ -2,6 +2,7 @@
     "mdb_source_id": 1048,
     "data_type": "gtfs",
     "provider": "Collegamenti marittimi Moby",
+    "status": "inactive",
     "location": {
         "country_code": "IT",
         "subdivision_name": "Regione Autonoma della Sardegna",

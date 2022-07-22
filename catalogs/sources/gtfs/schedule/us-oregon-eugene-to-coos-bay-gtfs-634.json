@@ -2,6 +2,10 @@
     "mdb_source_id": 634,
     "data_type": "gtfs",
     "provider": "Eugene to Coos Bay",
+    "features": [
+        "fares-v1"
+    ],
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Oregon",

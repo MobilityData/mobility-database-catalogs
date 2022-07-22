@@ -2,6 +2,9 @@
     "mdb_source_id": 1195,
     "data_type": "gtfs",
     "provider": "Easy Ride Transportation",
+    "features": [
+        "flex-v2"
+    ],
     "location": {
         "country_code": "US",
         "subdivision_name": "Colorado",

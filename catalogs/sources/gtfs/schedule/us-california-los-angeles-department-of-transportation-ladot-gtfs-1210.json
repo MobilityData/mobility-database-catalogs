@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Los Angeles Department of Transportation (LADOT)",
     "name": "Bus",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

@@ -2,6 +2,7 @@
     "mdb_source_id": 1000,
     "data_type": "gtfs",
     "provider": "Komunikacja Miejska Przemyśl",
+    "status": "inactive",
     "location": {
         "country_code": "PL",
         "subdivision_name": "Podkarpackie",

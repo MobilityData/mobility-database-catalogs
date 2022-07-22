@@ -2,6 +2,9 @@
     "mdb_source_id": 437,
     "data_type": "gtfs",
     "provider": "Massachusetts Bay Transportation Authority (MBTA)",
+    "features": [
+        "pathways"
+    ],
     "location": {
         "country_code": "US",
         "subdivision_name": "Massachusetts",

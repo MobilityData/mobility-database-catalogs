@@ -2,6 +2,7 @@
     "mdb_source_id": 781,
     "data_type": "gtfs",
     "provider": "Leipziger Verkehrsbetriebe (LVB)",
+    "status": "inactive",
     "location": {
         "country_code": "DE",
         "subdivision_name": "Sachsen",

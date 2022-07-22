@@ -2,6 +2,7 @@
     "mdb_source_id": 465,
     "data_type": "gtfs",
     "provider": "Niagara Frontier Transportation Authority (NFTA)",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "New York",

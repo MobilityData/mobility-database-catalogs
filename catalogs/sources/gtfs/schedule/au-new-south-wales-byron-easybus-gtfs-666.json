@@ -2,6 +2,7 @@
     "mdb_source_id": 666,
     "data_type": "gtfs",
     "provider": "Byron Easybus",
+    "status": "inactive",
     "location": {
         "country_code": "AU",
         "subdivision_name": "New South Wales",

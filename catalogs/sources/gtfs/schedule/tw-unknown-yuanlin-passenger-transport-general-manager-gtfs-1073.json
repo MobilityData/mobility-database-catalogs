@@ -2,6 +2,7 @@
     "mdb_source_id": 1073,
     "data_type": "gtfs",
     "provider": "Yuanlin Passenger Transport (General Manager), CH_中鹿客運(公總) (Zhonglu Passenger Transport (Public Service)), CH_彰化客運(公總) (Changhua Passenger Transport (Public Service))",
+    "status": "inactive",
     "location": {
         "country_code": "TW",
         "bounding_box": {

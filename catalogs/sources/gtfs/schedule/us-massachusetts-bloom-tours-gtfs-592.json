@@ -2,6 +2,7 @@
     "mdb_source_id": 592,
     "data_type": "gtfs",
     "provider": "Bloom Tours",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Massachusetts",

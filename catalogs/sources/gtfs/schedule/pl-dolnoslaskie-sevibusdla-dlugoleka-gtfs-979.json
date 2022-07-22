@@ -2,6 +2,7 @@
     "mdb_source_id": 979,
     "data_type": "gtfs",
     "provider": "Sevibus/DLA Długołęka",
+    "status": "inactive",
     "location": {
         "country_code": "PL",
         "subdivision_name": "Dolnośląskie",

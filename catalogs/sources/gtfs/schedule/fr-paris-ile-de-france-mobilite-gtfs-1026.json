@@ -3,6 +3,9 @@
     "data_type": "gtfs",
     "provider": "Ile-de-France Mobilité",
     "name": "Horaires prévues sur les lignes de transport en commun d'Ile-de-France (GTFS Datahub)",
+    "features": [
+        "pathways"
+    ],
     "location": {
         "country_code": "FR",
         "subdivision_name": "Île-de-France",

@@ -2,6 +2,10 @@
     "mdb_source_id": 1147,
     "data_type": "gtfs",
     "provider": "Mobilità e Trasporti Molfetta",
+    "features": [
+        "fares-v1"
+    ],
+    "status": "inactive",
     "location": {
         "country_code": "IT",
         "subdivision_name": "Puglia",

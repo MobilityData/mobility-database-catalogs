@@ -2,6 +2,7 @@
     "mdb_source_id": 1170,
     "data_type": "gtfs",
     "provider": "Trenitalia Piemonte",
+    "status": "inactive",
     "location": {
         "country_code": "IT",
         "subdivision_name": "Piemonte",

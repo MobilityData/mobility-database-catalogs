@@ -2,6 +2,10 @@
     "mdb_source_id": 249,
     "data_type": "gtfs",
     "provider": "Wahkiakum on the Move",
+    "features": [
+        "fares-v1"
+    ],
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Oregon",

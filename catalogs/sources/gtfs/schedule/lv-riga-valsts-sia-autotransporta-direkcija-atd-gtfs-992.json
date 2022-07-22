@@ -2,6 +2,9 @@
     "mdb_source_id": 992,
     "data_type": "gtfs",
     "provider": "Valsts SIA Autotransporta Direkcija (ATD)",
+    "features": [
+        "fares-v1"
+    ],
     "location": {
         "country_code": "LV",
         "subdivision_name": "Rīga",

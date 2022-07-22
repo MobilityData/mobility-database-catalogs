@@ -5,6 +5,19 @@ GTFS_RT = "gtfs-rt"
 # GTFS CONSTANTS
 STOP_LAT = "stop_lat"
 STOP_LON = "stop_lon"
+START_SERVICE_AREA_ID = "start_service_area_id"
+START_SERVICE_AREA_RADIUS = "start_service_area_radius"
+END_DATE = "end_date"
+GTFS_DATE_FORMAT = "%Y%m%d"
+PATHWAYS_TXT = "pathways.txt"
+FARES_ATTRIBUTES_TXT = "fares_attributes.txt"
+FARES_PRODUCTS_TXT = "fares_products.txt"
+LOCATION_GROUPS_TXT = "location_groups.txt"
+LOCATIONS_GEOJSON = "locations.geojson"
+BOOKINGS_RULES_TXT = "bookings_rules.txt"
+AREAS_TXT = "areas.txt"
+STOP_TIMES_TXT = "stop_times.txt"
+CALENDAR_TXT = "calendar.txt"
 
 # FILENAME TEMPLATE
 MDB_SOURCE_FILENAME = "{country_code}-{subdivision_name}-{provider}-{data_type}-{mdb_source_id}.{extension}"
@@ -73,6 +86,9 @@ API_KEY_PARAMETER_NAME = "api_key_parameter_name"
 API_KEY_PARAMETER_VALUE = "api_key_parameter_value"
 NOTE = "note"
 ENTITY_TYPE = "entity_type"
+
+# TIME CONSTANTS
+SIX_MONTHS_IN_WEEKS = 26
 
 # OTHER
 PATH_FROM_ROOT = "path_from_root"

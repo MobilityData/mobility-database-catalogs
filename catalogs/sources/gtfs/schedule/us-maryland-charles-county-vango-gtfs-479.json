@@ -2,6 +2,7 @@
     "mdb_source_id": 479,
     "data_type": "gtfs",
     "provider": "Charles County VanGo",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Maryland",

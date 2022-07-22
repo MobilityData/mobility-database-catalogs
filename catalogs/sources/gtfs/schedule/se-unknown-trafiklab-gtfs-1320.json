@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Trafiklab",
     "name": "All public transport in Sweden",
+    "status": "inactive",
     "location": {
         "country_code": "SE",
         "bounding_box": {

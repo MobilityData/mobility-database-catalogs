@@ -2,6 +2,7 @@
     "mdb_source_id": 1302,
     "data_type": "gtfs",
     "provider": "Susonohru",
+    "status": "inactive",
     "location": {
         "country_code": "JP",
         "subdivision_name": "Sizuoka",

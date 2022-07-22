@@ -2,6 +2,11 @@
     "mdb_source_id": 609,
     "data_type": "gtfs",
     "provider": "Glendora Transportation Division",
+    "features": [
+        "fares-v1",
+        "fares-v2"
+    ],
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

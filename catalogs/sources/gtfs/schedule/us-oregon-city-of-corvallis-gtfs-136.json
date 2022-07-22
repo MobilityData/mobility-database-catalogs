@@ -2,6 +2,9 @@
     "mdb_source_id": 136,
     "data_type": "gtfs",
     "provider": "City of Corvallis",
+    "features": [
+        "fares-v1",
+    ],
     "status": "inactive",
     "location": {
         "country_code": "US",

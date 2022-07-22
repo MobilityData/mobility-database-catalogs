@@ -2,7 +2,6 @@
     "mdb_source_id": 411,
     "data_type": "gtfs",
     "provider": "Akron Metro Regional Transit Authority (METRO)",
-    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Ohio",

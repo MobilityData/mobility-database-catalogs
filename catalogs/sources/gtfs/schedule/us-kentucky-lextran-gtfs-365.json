@@ -3,6 +3,9 @@
     "data_type": "gtfs",
     "provider": "Lextran",
     "status": "inactive",
+    "features": [
+        "fares-v1",
+    ],
     "location": {
         "country_code": "US",
         "subdivision_name": "Kentucky",

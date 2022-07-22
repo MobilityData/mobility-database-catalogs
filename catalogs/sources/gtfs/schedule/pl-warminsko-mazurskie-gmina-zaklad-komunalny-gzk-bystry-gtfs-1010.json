@@ -2,7 +2,6 @@
     "mdb_source_id": 1010,
     "data_type": "gtfs",
     "provider": "Gmina Zaklad Komunalny (GZK Bystry)",
-    "status": "inactive",
     "location": {
         "country_code": "PL",
         "subdivision_name": "Warminsko-mazurskie",

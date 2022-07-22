@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Sunset Empire Transportation District (SETD), Tillamook County Transportation District, Columbia County Rider",
     "features": [
+        "fares-v1",
         "flex-v1"
     ],
     "location": {

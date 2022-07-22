@@ -2,7 +2,7 @@
     "mdb_source_id": 635,
     "data_type": "gtfs",
     "provider": "HUT Airport Shuttle",
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Oregon",

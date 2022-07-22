@@ -2,6 +2,9 @@
     "mdb_source_id": 1140,
     "data_type": "gtfs",
     "provider": "Citilink",
+    "features": [
+        "fares-v1",
+    ],
     "status": "inactive",
     "location": {
         "country_code": "US",

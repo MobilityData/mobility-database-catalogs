@@ -2,7 +2,6 @@
     "mdb_source_id": 1012,
     "data_type": "gtfs",
     "provider": "Miejskie Przedsiębiorstwo Komunikacyjne w Lomzy (MPK ZB w Łomży)",
-    "status": "inactive",
     "location": {
         "country_code": "PL",
         "subdivision_name": "Podlaskie",

@@ -2,7 +2,6 @@
     "mdb_source_id": 1001,
     "data_type": "gtfs",
     "provider": "Koleje Wielkopolskie",
-    "status": "inactive",
     "location": {
         "country_code": "PL",
         "subdivision_name": "Wielkopolskie",

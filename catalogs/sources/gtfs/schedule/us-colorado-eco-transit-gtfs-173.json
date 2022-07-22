@@ -2,6 +2,9 @@
     "mdb_source_id": 173,
     "data_type": "gtfs",
     "provider": "ECO Transit",
+    "features": [
+        "fares-v1",
+    ],
     "status": "inactive",
     "location": {
         "country_code": "US",

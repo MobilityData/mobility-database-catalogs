@@ -2,7 +2,6 @@
     "mdb_source_id": 221,
     "data_type": "gtfs",
     "provider": "Berks Area Regional Transportation Authority (BARTA)",
-    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Pennsylvania",

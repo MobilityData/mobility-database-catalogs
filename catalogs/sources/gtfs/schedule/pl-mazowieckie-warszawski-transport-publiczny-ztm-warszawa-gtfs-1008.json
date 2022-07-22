@@ -2,7 +2,9 @@
     "mdb_source_id": 1008,
     "data_type": "gtfs",
     "provider": "Warszawski Transport Publiczny (ZTM Warszawa)",
-    "status": "inactive",
+    "features": [
+        "fares-v1"
+    ],
     "location": {
         "country_code": "PL",
         "subdivision_name": "Mazowieckie",

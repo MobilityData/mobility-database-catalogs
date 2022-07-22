@@ -4,6 +4,7 @@
     "provider": "Maryland Transit Administration Metro Subway",
     "name": "Metro SubwayLink",
     "features": [
+        "fares-v2",
         "pathways"
     ],
     "location": {

@@ -2,6 +2,9 @@
     "mdb_source_id": 386,
     "data_type": "gtfs",
     "provider": "Greater Peoria Mass Transit (CityLink)",
+    "features": [
+        "fares-v1",
+    ],
     "status": "inactive",
     "location": {
         "country_code": "US",

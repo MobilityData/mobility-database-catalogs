@@ -3,9 +3,10 @@
     "data_type": "gtfs",
     "provider": "San Diego International Airport, Metropolitan Transit System (MTS)",
     "features": [
+        "fares-v1",
+        "fares-v2",
         "pathways"
     ],
-    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

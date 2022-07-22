@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "South Clackamas Transportation District",
     "features": [
-        "flex-v1"
+        "fares-v1"
     ],
     "location": {
         "country_code": "US",

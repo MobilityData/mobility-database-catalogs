@@ -2,6 +2,10 @@
     "mdb_source_id": 817,
     "data_type": "gtfs",
     "provider": "South County Transit Link",
+    "features": [
+        "fares-v1",
+        "fares-v2"
+    ],
     "status": "inactive",
     "location": {
         "country_code": "US",

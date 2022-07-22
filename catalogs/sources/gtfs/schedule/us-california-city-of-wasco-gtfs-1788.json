@@ -5,7 +5,7 @@
     "features": [
         "flex-v2"
     ],
-    "status": "inactive",
+    "status": "development",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Pueblo Transit",
     "features": [
+        "fares-v1",
         "flex-v2"
     ],
     "location": {

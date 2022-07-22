@@ -2,6 +2,10 @@
     "mdb_source_id": 383,
     "data_type": "gtfs",
     "provider": "DowneyLINK",
+    "features": [
+        "fares-v1",
+        "fares-v2"
+    ],
     "status": "inactive",
     "location": {
         "country_code": "US",

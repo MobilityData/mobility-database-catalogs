@@ -2,7 +2,9 @@
     "mdb_source_id": 131,
     "data_type": "gtfs",
     "provider": "Lane Transit District (LTD)",
-    "status": "inactive",
+    "features": [
+        "fares-v1",
+    ],
     "location": {
         "country_code": "US",
         "subdivision_name": "Oregon",

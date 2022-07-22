@@ -2,7 +2,6 @@
     "mdb_source_id": 561,
     "data_type": "gtfs",
     "provider": "Los Angeles County Shuttles",
-    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

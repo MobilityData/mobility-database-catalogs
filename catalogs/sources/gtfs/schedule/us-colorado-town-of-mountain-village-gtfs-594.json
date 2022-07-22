@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Town of Mountain Village",
     "features": [
+        "fares-v1",
         "flex-v1"
     ],
     "location": {

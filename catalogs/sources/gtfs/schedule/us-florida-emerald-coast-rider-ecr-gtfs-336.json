@@ -2,6 +2,9 @@
     "mdb_source_id": 336,
     "data_type": "gtfs",
     "provider": "Emerald Coast Rider (ECR)",
+    "features": [
+        "fares-v1",
+    ],
     "status": "inactive",
     "location": {
         "country_code": "US",

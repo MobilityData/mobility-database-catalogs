@@ -11,15 +11,15 @@
         "subdivision_name": "California",
         "municipality": "Anaheim",
         "bounding_box": {
-            "minimum_latitude": 33.77473,
-            "maximum_latitude": 33.85486,
-            "minimum_longitude": -117.99815,
-            "maximum_longitude": -117.83989,
-            "extracted_on": "2022-03-14T20:12:32+00:00"
+            "minimum_latitude": 33.7855580640792,
+            "maximum_latitude": 33.85484667,
+            "minimum_longitude": -117.92822275,
+            "maximum_longitude": -117.8399317,
+            "extracted_on": "2022-07-26T16:26:31+00:00"
         }
     },
     "urls": {
-        "direct_download": "http://data.trilliumtransit.com/gtfs/anaheim-ca-us/anaheim-ca-us.zip",
+        "direct_download": "https://art.tripshot.com/v1/gtfs.zip?regionId=CA558DDC-D7F2-4B48-9CAC-DEEA1134F820",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-anaheim-resort-transportation-art-gtfs-100.zip?alt=media"
     }
 }

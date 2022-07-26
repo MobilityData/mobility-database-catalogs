@@ -10,11 +10,11 @@
             "maximum_latitude": 42.016993,
             "minimum_longitude": -71.829808,
             "maximum_longitude": -71.154292,
-            "extracted_on": "2022-05-23T23:46:21+00:00"
+            "extracted_on": "2022-07-26T19:09:49+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://www.ripta.com/wp-content/uploads/2022/04/google_transit.zip",
+        "direct_download": "https://ripta.com/RIPTA-GTFS.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-rhode-island-rhode-island-public-transit-authority-gtfs-624.zip?alt=media"
     }
 }

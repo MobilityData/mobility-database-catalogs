@@ -11,15 +11,15 @@
         "subdivision_name": "Alabama",
         "municipality": "Birmingham",
         "bounding_box": {
-            "minimum_latitude": 33.33396,
+            "minimum_latitude": 33.36195,
             "maximum_latitude": 33.66285,
-            "minimum_longitude": -87.00786,
-            "maximum_longitude": -86.67696,
-            "extracted_on": "2022-03-15T21:16:26+00:00"
+            "minimum_longitude": -87.011263,
+            "maximum_longitude": -86.67695999999998,
+            "extracted_on": "2022-07-26T16:12:01+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://maxtransit.org/wp-content/uploads/2017/05/BJCTA_GTFS_0317.zip",
+        "direct_download": "https://maxtransit.org/wp-content/uploads/2020/12/BJCTA-Working-GTFS-File.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-alabama-birmingham-jefferson-county-transit-authority-gtfs-339.zip?alt=media"
     }
 }

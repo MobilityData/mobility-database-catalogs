@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 1791,
+    "data_type": "gtfs",
+    "provider": "Transports Publics du Choletais",
+    "name": "Réseau Urbain Choletbus",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Pays-de-la-Loire",
+        "municipality": "Choletais",
+        "bounding_box": {
+            "minimum_latitude": 46.996524,
+            "maximum_latitude": 47.182533,
+            "minimum_longitude": -1.025292,
+            "maximum_longitude": -0.365429,
+            "extracted_on": "2022-07-26T17:08:34+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.data.gouv.fr/fr/datasets/r/71e8ee8e-0b55-40a1-a297-21ef89aba4dc",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-pays-de-la-loire-transports-publics-du-choletais-gtfs-1791.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/horaires-theoriques-reseau-choletbus"
+    }
+}

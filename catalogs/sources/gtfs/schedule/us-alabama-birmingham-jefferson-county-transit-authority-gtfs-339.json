@@ -5,7 +5,6 @@
     "features": [
         "fares-v1"
     ],
-    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Alabama",

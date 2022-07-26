@@ -1,0 +1,12 @@
+{
+    "mdb_source_id": 1794,
+    "data_type": "gtfs-rt",
+    "entity_type": "vp",
+    "provider": "Arlington Transit",
+    "static_reference": [
+        485
+    ],
+    "urls": {
+        "direct_download": "https://realtime.arlingtontransit.com/gtfsrt/vehicles"
+    }
+}

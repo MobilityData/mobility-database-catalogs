@@ -7,16 +7,16 @@
         "subdivision_name": "Occitanie",
         "municipality": "Toulouse",
         "bounding_box": {
-            "minimum_latitude": 43.391132,
-            "maximum_latitude": 43.746501,
-            "minimum_longitude": 1.161979,
-            "maximum_longitude": 1.690541,
-            "extracted_on": "2022-03-17T19:38:52+00:00"
+            "minimum_latitude": 43.3911323461155,
+            "maximum_latitude": 43.7465007923826,
+            "minimum_longitude": 1.16197925875579,
+            "maximum_longitude": 1.69054050295583,
+            "extracted_on": "2022-07-27T21:35:29+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://data.toulouse-metropole.fr/explore/dataset/tisseo-gtfs/files/bd1298f158bc39ed9065e0c17ebb773b/download/",
+        "direct_download": "https://data.toulouse-metropole.fr/api/v2/catalog/datasets/tisseo-gtfs/files/fc1dda89077cf37e4f7521760e0ef4e9",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-occitanie-tisseo-gtfs-1024.zip?alt=media",
-        "license": "http://opendatacommons.org/licenses/odbl/summary/"
+        "license": "https://opendatacommons.org/licenses/odbl/"
     }
 }

@@ -7,15 +7,15 @@
         "subdivision_name": "Virginia",
         "municipality": "Arlington",
         "bounding_box": {
-            "minimum_latitude": 38.8394,
-            "maximum_latitude": 38.925182,
-            "minimum_longitude": -77.162273,
+            "minimum_latitude": 38.839365,
+            "maximum_latitude": 38.925147,
+            "minimum_longitude": -77.162277,
             "maximum_longitude": -77.049105,
-            "extracted_on": "2022-03-16T17:24:23+00:00"
+            "extracted_on": "2022-07-26T17:57:45+00:00"
         }
     },
     "urls": {
-        "direct_download": "http://realtime.commuterpage.com/rtt/public/utility/gtfs.aspx",
+        "direct_download": "https://www.arlingtontransit.com/shared/content/gtfs/art/google_transit.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-arlington-transit-gtfs-485.zip?alt=media"
     }
 }

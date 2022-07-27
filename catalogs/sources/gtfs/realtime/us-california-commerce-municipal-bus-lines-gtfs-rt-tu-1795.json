@@ -1,0 +1,14 @@
+{
+    "mdb_source_id": 1795,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Commerce Municipal Bus Lines",
+    "static_reference": [
+        994
+    ],
+    "urls": {
+        "direct_download": "https://citycommbus.com/gtfs-rt/tripupdates"
+    }
+}

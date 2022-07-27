@@ -1,0 +1,12 @@
+{
+    "mdb_source_id": 1798,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Oslo region (Ruter)",
+    "urls": {
+        "direct_download": "https://api.entur.io/realtime/v1/gtfs-rt/trip-updates?datasource=RUT",
+        "license": "https://data.norge.no/nlod/en/"
+    }
+}

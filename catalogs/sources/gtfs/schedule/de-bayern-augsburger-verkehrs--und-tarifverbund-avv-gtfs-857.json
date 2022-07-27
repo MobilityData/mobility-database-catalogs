@@ -2,21 +2,20 @@
     "mdb_source_id": 857,
     "data_type": "gtfs",
     "provider": "Augsburger Verkehrs- und Tarifverbund (AVV)",
-    "status": "inactive",
     "location": {
         "country_code": "DE",
         "subdivision_name": "Bayern",
         "municipality": "Augsburg",
         "bounding_box": {
-            "minimum_latitude": 48.1056968806613,
-            "maximum_latitude": 48.6600285985759,
-            "minimum_longitude": 10.520112269356,
-            "maximum_longitude": 11.2876647586401,
-            "extracted_on": "2022-03-17T15:25:07+00:00"
+            "minimum_latitude": 48.1056968806715,
+            "maximum_latitude": 48.6600285985867,
+            "minimum_longitude": 10.3583517117749,
+            "maximum_longitude": 11.2876647586399,
+            "extracted_on": "2022-07-26T16:20:31+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://www.avv-augsburg.de/avvdata/GTFS_AVV.zip",
+        "direct_download": "https://www.avv-augsburg.de/fileadmin/user_upload/OpenData/GTFS_AVV.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-bayern-augsburger-verkehrs--und-tarifverbund-avv-gtfs-857.zip?alt=media"
     }
 }

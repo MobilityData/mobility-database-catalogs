@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Citymapper",
     "name": "Smartbus",
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "GB",
         "subdivision_name": "England",

@@ -1,0 +1,12 @@
+{
+    "mdb_source_id": 1803,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Vy Express",
+    "urls": {
+        "direct_download": "https://api.entur.io/realtime/v1/gtfs-rt/vehicle-positions?datasource=VYX",
+        "license": "https://data.norge.no/nlod/en/"
+    }
+}

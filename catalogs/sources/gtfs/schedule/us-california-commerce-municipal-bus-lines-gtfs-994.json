@@ -5,21 +5,20 @@
     "features": [
         "fares-v1"
     ],
-    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
         "municipality": "Commerce",
         "bounding_box": {
-            "minimum_latitude": 33.972415,
-            "maximum_latitude": 34.055464,
-            "minimum_longitude": -118.26427520905,
-            "maximum_longitude": -118.127331,
-            "extracted_on": "2022-04-26T01:44:56+00:00"
+            "minimum_latitude": 33.965568,
+            "maximum_latitude": 34.063075,
+            "minimum_longitude": -118.264252,
+            "maximum_longitude": -118.127642,
+            "extracted_on": "2022-07-27T14:23:08+00:00"
         }
     },
     "urls": {
-        "direct_download": "http://data.trilliumtransit.com/gtfs/cmbl-ca-us/cmbl-ca-us.zip",
+        "direct_download": "https://citycommbus.com/gtfs",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-commerce-municipal-bus-lines-gtfs-994.zip?alt=media"
     }
 }

@@ -1,20 +1,25 @@
 {
     "mdb_source_id": 1313,
     "data_type": "gtfs",
-    "provider": "Christchurch Metro",
+    "provider": "Metro Christchurch",
     "location": {
         "country_code": "NZ",
-        "subdivision_name": "Christchurch",
+        "subdivision_name": "Canterbury",
+        "municipality": "Christchurch",
         "bounding_box": {
-            "minimum_latitude": -43.811456,
+            "minimum_latitude": -43.81146,
             "maximum_latitude": -43.28702,
-            "minimum_longitude": 172.106654,
-            "maximum_longitude": 172.766792,
-            "extracted_on": "2022-04-04T18:45:02+00:00"
+            "minimum_longitude": 172.10665,
+            "maximum_longitude": 172.76679,
+            "extracted_on": "2022-07-27T14:43:44+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/christchurch-metro/41/latest/download",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/nz-christchurch-christchurch-metro-gtfs-1313.zip?alt=media"
+        "direct_download": "https://apis.metroinfo.co.nz/rti/gtfs/v1/gtfs.zip",
+        "authentication_type": 2,
+        "authentication_info": "https://apidevelopers.metroinfo.co.nz/",
+        "api_key_parameter_name": "Ocp-Apim-Subscription-Key",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/nz-christchurch-christchurch-metro-gtfs-1313.zip?alt=media",
+        "license": "https://www.metroinfo.co.nz/about/developer-resources#terms"
     }
 }

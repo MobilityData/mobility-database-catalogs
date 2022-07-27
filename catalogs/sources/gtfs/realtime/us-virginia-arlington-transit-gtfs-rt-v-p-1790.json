@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 1790,
     "data_type": "gtfs-rt",
-    "entity_type": "vp",
+    "entity_type": ["vp"],
     "provider": "Arlington Transit",
     "static_reference": [
         485

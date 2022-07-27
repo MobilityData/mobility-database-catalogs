@@ -141,6 +141,8 @@ jobs:
           pip install wheel requests
       - name: Validate and download the datasets
         shell: python
+        env:
+          API_SOURCE_SECRETS: ${{ secrets.API_SOURCE_SECRETS }}
         run: |
           import os
           import json
@@ -172,7 +174,7 @@ jobs:
               url = job_json[DIRECT_DOWNLOAD]
               authentication_type = job_json[AUTHENTICATION_TYPE]
               api_key_parameter_name = job_json[API_KEY_PARAMETER_NAME]
-              api_key_parameter_value = api_source_secrets[base]
+              api_key_parameter_value = api_source_secrets.get(base)
 
               # Download the dataset
               zip_path = os.path.join(ROOT, DATASETS, FOLDER, f"{base}.zip")

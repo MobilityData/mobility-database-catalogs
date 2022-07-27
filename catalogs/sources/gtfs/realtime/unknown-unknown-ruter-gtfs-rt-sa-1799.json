@@ -2,7 +2,7 @@
     "mdb_source_id": 1799,
     "data_type": "gtfs-rt",
     "entity_type": [
-        "sa",
+        "sa"
     ],
     "provider": "Oslo region (Ruter)",
     "urls": {

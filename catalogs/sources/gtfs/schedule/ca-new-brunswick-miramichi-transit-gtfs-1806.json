@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1806,
+    "data_type": "gtfs",
+    "provider": "Miramichi Transit",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "New Brunswick",
+        "municipality": "Miramichi",
+        "bounding_box": {
+            "minimum_latitude": 46.991774,
+            "maximum_latitude": 47.046645,
+            "minimum_longitude": -65.588079,
+            "maximum_longitude": -65.437941,
+            "extracted_on": "2022-07-28T13:32:34+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://miramichitransit.ca/GTFS/MT_GTFS_2019.01.29.b.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-new-brunswick-miramichi-transit-gtfs-1806.zip?alt=media"
+    }
+}

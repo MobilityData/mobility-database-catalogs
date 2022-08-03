@@ -2,6 +2,7 @@
     "mdb_source_id": 640,
     "data_type": "gtfs",
     "provider": "Charlotte Area Transit System (CATS)",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "North Carolina",

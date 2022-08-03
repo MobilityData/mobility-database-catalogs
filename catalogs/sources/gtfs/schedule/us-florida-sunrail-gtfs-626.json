@@ -5,7 +5,6 @@
     "features": [
         "fares-v1"
     ],
-    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Florida",
@@ -14,11 +13,12 @@
             "maximum_latitude": 28.855694,
             "minimum_longitude": -81.484367,
             "maximum_longitude": -81.298115,
-            "extracted_on": "2022-03-16T20:11:19+00:00"
+            "extracted_on": "2022-07-28T02:31:19+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/florida-department-of-transportation/684/latest/download",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-sunrail-gtfs-626.zip?alt=media"
+        "direct_download": "https://corporate.sunrail.com/gtfs/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-sunrail-gtfs-626.zip?alt=media",
+        "license": "https://corporate.sunrail.com/about-sunrail/gtfs-data-download/"
     }
 }

@@ -19,7 +19,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://data.trilliumtransit.com/gtfs/fresnocounty-ca-us/fresnocounty-ca-us.zip",
+        "direct_download": "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/7869/google_transit.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-fresno-county-rural-transit-agency-fcrta-gtfs-85.zip?alt=media"
     }
 }

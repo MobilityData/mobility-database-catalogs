@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1809,
+    "data_type": "gtfs",
+    "provider": "Addis Ababa Transport Authority",
+    "status": "inactive",
+    "name": "Minibus Paratransit",
+    "location": {
+        "country_code": "ET",
+        "subdivision_name": "Addis Ababa",
+        "bounding_box": {
+            "minimum_latitude": 8.83794498431708,
+            "maximum_latitude": 9.17845269313336,
+            "minimum_longitude": 38.4934532757352,
+            "maximum_longitude": 38.8881732344726,
+            "extracted_on": "2022-08-05T18:03:44+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gitlab.com/digitaltransport/data/africa/addis-ababa/-/raw/master/MinibusTaxi_GTFS.zip?inline=false",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/et-addis-ababa-addis-ababa-transport-authority-gtfs-1809.zip?alt=media"
+    }
+}

@@ -3,21 +3,20 @@
     "data_type": "gtfs",
     "provider": "Southeastern Pennsylvania Transportation Authority (SEPTA)",
     "name": "Rail",
-    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Pennsylvania",
         "municipality": "Philadelphia",
         "bounding_box": {
-            "minimum_latitude": null,
-            "maximum_latitude": null,
-            "minimum_longitude": null,
-            "maximum_longitude": null,
-            "extracted_on": "2022-03-16T17:25:03+00:00"
+            "minimum_latitude": 39.6705556,
+            "maximum_latitude": 40.3063889,
+            "minimum_longitude": -75.7636111,
+            "maximum_longitude": -74.755,
+            "extracted_on": "2022-08-08T21:20:52+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://github.com/septadev/GTFS/releases/download/v202106061/gtfs_public.zip#google_rail.zip",
+        "direct_download": "http://www3.septa.org/developer/google_rail.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-pennsylvania-southeastern-pennsylvania-transportation-authority-gtfs-503.zip?alt=media",
         "license": "http://www3.septa.org/developer/"
     }

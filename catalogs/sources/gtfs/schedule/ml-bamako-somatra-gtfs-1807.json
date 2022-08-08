@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 1812,
+    "mdb_source_id": 1807,
     "data_type": "gtfs",
     "provider": "SOMATRA",
     "status": "inactive",
@@ -17,6 +17,6 @@
     },
     "urls": {
         "direct_download": "https://gitlab.com/digitaltransport/data/africa/bamako/-/raw/main/gtfs_Public_Transport_Bamako_Sotrama_01_01_2020_06_42_48.zip?inline=false",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ml-bamako-somatra-gtfs-1812.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ml-bamako-somatra-gtfs-1807.zip?alt=media"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 1811,
+    "mdb_source_id": 1808,
     "data_type": "gtfs",
     "provider": "Anbessa City Bus Service Enterprise",
     "location": {
@@ -15,6 +15,6 @@
     },
     "urls": {
         "direct_download": "https://gitlab.com/digitaltransport/data/africa/addis-ababa/-/raw/master/AnbessaCityBusServiceEnterprise_GTFS.zip?inline=false",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/et-addis-ababa-addis-ababa-transport-authority-gtfs-1811.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/et-addis-ababa-addis-ababa-transport-authority-gtfs-1808.zip?alt=media"
     }
 }

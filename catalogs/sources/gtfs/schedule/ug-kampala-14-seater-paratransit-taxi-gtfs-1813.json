@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1813,
+    "data_type": "gtfs",
+    "provider": "14-Seater Paratransit Taxi, Buses operated by Pioneer or Awakula Enumme",
+    "status": "inactive",
+    "location": {
+        "country_code": "UG",
+        "subdivision_name": "Kampala",
+        "municipality": "Kampala",
+        "bounding_box": {
+            "minimum_latitude": 0.05554,
+            "maximum_latitude": 0.46517,
+            "minimum_longitude": 32.4417,
+            "maximum_longitude": 32.75039,
+            "extracted_on": "2022-08-08T20:11:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gitlab.com/digitaltransport/data/africa/kampala/-/raw/master/GTFS/GTFS.zip?inline=false",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ug-kampala-14-seater-paratransit-taxi-gtfs-1813.zip?alt=media"
+    }
+}

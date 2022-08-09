@@ -147,9 +147,6 @@ jobs:
           # Secrets constants
           API_SOURCE_SECRETS = "API_SOURCE_SECRETS"
 
-          # Load API source secrets
-          api_source_secrets = json.loads(os.environ[API_SOURCE_SECRETS])
-
           jobs = """${{ matrix.data }}""".split()
           for job in jobs:
               job_json = json.loads(job)
@@ -157,6 +154,11 @@ jobs:
               url = job_json[DIRECT_DOWNLOAD]
               authentication_type = job_json[AUTHENTICATION_TYPE]
               api_key_parameter_name = job_json[API_KEY_PARAMETER_NAME]
+              if authentication_type in [1, 2]:
+                  # Load API source secrets only if authentication is required
+                  # This will allow users to add or update
+                  # sources that do not require authentication via forks.
+                  api_source_secrets = json.loads(os.environ[API_SOURCE_SECRETS])
               api_key_parameter_value = api_source_secrets.get(base)
 
               # Download the dataset

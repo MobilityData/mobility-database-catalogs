@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1816,
+    "data_type": "gtfs",
+    "provider": "Vitalis Transport",
+    "status": "inactive",
+    "location": {
+        "country_code": "MA",
+        "subdivision_name": "Tetouan",
+        "municipality": "Tetouan",
+        "bounding_box": {
+            "minimum_latitude": 35.3189694,
+            "maximum_latitude": 35.8414108,
+            "minimum_longitude": -5.5547027,
+            "maximum_longitude": -5.0916181,
+            "extracted_on": "2022-08-08T20:17:46+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gitlab.com/digitaltransport/data/africa/tetouan/-/raw/main/gtfs.zip?inline=false",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ma-tetouan-vitalis-transport-gtfs-1816.zip?alt=media"
+    }
+}

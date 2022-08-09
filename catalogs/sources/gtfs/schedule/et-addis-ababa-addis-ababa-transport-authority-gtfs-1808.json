@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1808,
+    "data_type": "gtfs",
+    "provider": "Anbessa City Bus Service Enterprise",
+    "location": {
+        "country_code": "ET",
+        "subdivision_name": "Addis Ababa",
+        "bounding_box": {
+            "minimum_latitude": 8.8534357541445,
+            "maximum_latitude": 9.17919256989845,
+            "minimum_longitude": 38.61612,
+            "maximum_longitude": 38.9861821307198,
+            "extracted_on": "2022-08-05T17:37:36+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gitlab.com/digitaltransport/data/africa/addis-ababa/-/raw/master/AnbessaCityBusServiceEnterprise_GTFS.zip?inline=false",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/et-addis-ababa-addis-ababa-transport-authority-gtfs-1808.zip?alt=media"
+    }
+}

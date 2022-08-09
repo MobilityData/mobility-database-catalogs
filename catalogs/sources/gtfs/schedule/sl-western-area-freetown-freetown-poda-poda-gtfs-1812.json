@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 1812,
+    "data_type": "gtfs",
+    "provider": "Freetown Poda-Poda, Sierra Leone Road Transport Corporation, Tagrin Ferry, Freetown Taxi Cab",
+    "features": [
+        "fares-v1"
+    ],
+    "status": "inactive",
+    "location": {
+        "country_code": "SL",
+        "subdivision_name": "Western Area (Freetown)",
+        "municipality": "Freetown",
+        "bounding_box": {
+            "minimum_latitude": 8.32638,
+            "maximum_latitude": 8.51662,
+            "minimum_longitude": -13.28804,
+            "maximum_longitude": -13.05285,
+            "extracted_on": "2022-08-08T20:07:03+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gitlab.com/digitaltransport/data/africa/freetown/-/raw/master/GTFS.zip?inline=false",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/sl-western-area-freetown-freetown-poda-poda-gtfs-1812.zip?alt=media"
+    }
+}

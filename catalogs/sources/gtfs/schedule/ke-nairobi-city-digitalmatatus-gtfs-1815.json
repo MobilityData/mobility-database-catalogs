@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1815,
+    "data_type": "gtfs",
+    "provider": "DigitalMatatus",
+    "status": "inactive",
+    "location": {
+        "country_code": "KE",
+        "subdivision_name": "Nairobi City",
+        "municipality": "Nairobi",
+        "bounding_box": {
+            "minimum_latitude": -1.477218,
+            "maximum_latitude": -1.035427,
+            "minimum_longitude": 36.62957937,
+            "maximum_longitude": 37.076427,
+            "extracted_on": "2022-08-08T20:16:16+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gitlab.com/digitaltransport/data/africa/nairobi/-/raw/master/Data/GTFS.zip?inline=false",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ke-nairobi-city-digitalmatatus-gtfs-1815.zip?alt=media"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 1811,
+    "data_type": "gtfs",
+    "provider": "Douala Yellow Taxis",
+    "features": [
+        "fares-v1"
+    ],
+    "status": "inactive",
+    "location": {
+        "country_code": "CM",
+        "subdivision_name": "Littoral",
+        "municipality": "Douala",
+        "bounding_box": {
+            "minimum_latitude": 3.999646242,
+            "maximum_latitude": 4.10489559,
+            "minimum_longitude": 9.616923442,
+            "maximum_longitude": 9.805203,
+            "extracted_on": "2022-08-08T20:05:07+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gitlab.com/digitaltransport/data/africa/douala/-/raw/master/GTFS-WIMT/GTFS-WIMT-Yellow_Taxi.zip?inline=false",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cm-littoral-douala-yellow-taxis-gtfs-1811.zip?alt=media"
+    }
+}

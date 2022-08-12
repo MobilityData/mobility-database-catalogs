@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 1818,
+    "data_type": "gtfs",
+    "provider": "Flex-v2 Developer Test Feed 2",
+    "features": [
+        "flex-v2"
+    ],
+    "status": "development",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "test2",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2022-08-12T18:01:24+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.calitp.org/test/TestFlex2.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-flex-v2-developer-test-feed-2-gtfs-1818.zip?alt=media"
+    }
+}

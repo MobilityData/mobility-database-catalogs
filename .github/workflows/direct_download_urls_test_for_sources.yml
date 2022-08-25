@@ -147,9 +147,6 @@ jobs:
           # Secrets constants
           API_SOURCE_SECRETS = "API_SOURCE_SECRETS"
 
-          # Load API source secrets
-          api_source_secrets = json.loads(os.environ[API_SOURCE_SECRETS])
-
           jobs = """${{ matrix.data }}""".split()
           for job in jobs:
               job_json = json.loads(job)
@@ -157,18 +154,24 @@ jobs:
               url = job_json[DIRECT_DOWNLOAD]
               authentication_type = job_json[AUTHENTICATION_TYPE]
               api_key_parameter_name = job_json[API_KEY_PARAMETER_NAME]
-              api_key_parameter_value = api_source_secrets.get(base)
+
+              params = {}
+              headers = {}
+
+              if authentication_type in [1, 2]:
+                  # Load API source secrets only if authentication is required
+                  # This will allow users to add or update
+                  # sources that do not require authentication via forks.
+                  api_source_secrets = json.loads(os.environ[API_SOURCE_SECRETS])
+                  api_key_parameter_value = api_source_secrets.get(base)
+                  if authentication_type == 1:
+                      params[api_key_parameter_name] = api_key_parameter_value
+                  elif authentication_type == 2:
+                      headers[api_key_parameter_name] = api_key_parameter_value
 
               # Download the dataset
               zip_path = os.path.join(ROOT, DATASETS, f"{base}.zip")
               os.makedirs(os.path.dirname(zip_path), exist_ok=True)
-
-              params = {}
-              headers = {}
-              if authentication_type == 1:
-                  params[api_key_parameter_name] = api_key_parameter_value
-              elif authentication_type == 2:
-                  headers[api_key_parameter_name] = api_key_parameter_value
 
               try:
                   zip_file_req = requests.get(url, params=params, headers=headers, allow_redirects=True)

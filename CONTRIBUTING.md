@@ -37,13 +37,17 @@ To contribute data to the Mobility Database catalogs, please follow these steps:
 #### Add a GTFS Schedule source
 The easiest way to add a GTFS Schedule source is to use the operation `tools.operations.add_gtfs_schedule_source` through the Python interpreter or in your scripts. This operation makes sure the information provided is correct and will pass our tests. Provide the information about your source in the operation function to add your source.
 
-If your GTFS Schedule source requires API authentication, please use the [form](https://database.mobilitydata.org/update-a-data-source) instead of the PR process so we can generate our own API credentials for the source.
+**If your GTFS Schedule source requires API authentication, please use the [form](https://database.mobilitydata.org/update-a-data-source) **instead of the PR process so we can generate our own API credentials for the source. Sources with `authentication_type=1` or `authentication_type=2` can't be added from forks, but those with `authentication_type=0` can.
 
 ```python
 >>> add_gtfs_schedule_source(
         provider=$YOUR_SOURCE_PROVIDER_NAME,
         country_code=$YOUR_SOURCE_COUNTRY_CODE,
         direct_download_url=$YOUR_SOURCE_DIRECT_DOWNLOAD_URL,
+        authentication_type=$OPTIONAL_AUTHENTICATION_TYPE,
+        authentication_info_url=$CONDITIONALLY_REQUIRED_AUTHENTICATION_INFO_URL,
+        api_key_parameter_name=$CONDITIONALLY_REQUIRED_API_KEY_PARAMETER_NAME,
+        api_key_parameter_value=$NOT_STORED_API_KEY_PARAMETER_VALUE,
         subdivision_name=$OPTIONAL_SUBDIVISION_NAME,
         municipality=$OPTIONAL_MUNICIPALITY,
         license_url=$OPTIONAL_LICENSE_URL,
@@ -87,6 +91,10 @@ The default value for every parameter is `None`. Note that once a parameter valu
         subdivision_name=$OPTIONAL_SOURCE_SUBDIVISION_NAME,
         municipality=$OPTIONAL_SOURCE_MUNICIPALITY,
         direct_download_url=$OPTIONAL_SOURCE_DIRECT_DOWNLOAD_URL,
+        authentication_type=$OPTIONAL_AUTHENTICATION_TYPE,
+        authentication_info_url=$CONDITIONALLY_REQUIRED_AUTHENTICATION_INFO_URL,
+        api_key_parameter_name=$CONDITIONALLY_REQUIRED_API_KEY_PARAMETER_NAME,
+        api_key_parameter_value=$NOT_STORED_API_KEY_PARAMETER_VALUE,
         license_url=$OPTIONAL_LICENSE_URL,
         features=[$OPTIONAL_FEATURE_ARRAY],
         status=$OPTIONAL_STATUS
@@ -117,7 +125,10 @@ The default value for every parameter is `None`. Note that once a parameter valu
 ```
 
 ### Update a source file name
-You need to manually search for the JSON file you want in your fork, modify the file name, and modify the `latest.url` to match the new file name.
+You need to
+1. Manually search for the JSON file you want in your fork. For example, finding `ca-ontario-toronto-transit-commission-gtfs-732.json` in the `schedule` folder.
+2. Modify the file name. For example, updating the file name to `ca-ontario-ttc-gtfs-732.json`.
+3. Modify the `latest.url` to match the new file name. For example, changing `https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-toronto-transit-commission-gtfs-732.zip?alt=media` to `https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-toronto-ttc-gtfs-732.zip?alt=media`.
 
 ## Contributing operations
 To contribute operations to the mobility database catalogs, it is suggested that you follow the steps below.

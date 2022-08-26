@@ -4,7 +4,7 @@
 
 The Mobility Database Catalogs is a list of open mobility data sources from across the world. [You can learn more about the Mobility Database here](https://database.mobilitydata.org/).
 
-To search sources easily, you can download [the CSV spreadsheet](#the-spreadsheet). If you want to filter for specific types of sources, [you can learn how to here](#get-and-filter-sources).
+To search sources easily, you can download [the CSV spreadsheet](#browsing-and-consuming-the-spreadsheet). If you want to filter for specific types of sources, [you can learn how to here](#get-and-filter-sources).
 
 
 ## Table of Contents

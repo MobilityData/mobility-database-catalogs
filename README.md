@@ -15,6 +15,7 @@ To search sources easily, you can download [the CSV spreadsheet](#browsing-and-c
 * [GTFS Realtime Schema](#gtfs-realtime-schema)
 * [Installation](#installation)
 * [Get and Filter Sources](#get-and-filter-sources)
+* [Integration Tests](#integration-tests)
 * [License](#license)
 * [Contributing](#contributing)
 
@@ -219,6 +220,9 @@ To get the sources by status, `$STATUS` is expressed as a string and one of:
         feature=$STATUS,
     )
 ```
+## Integration Tests
+
+In order to avoid invalid sources in the Mobility Database Catalogs, any modification made in the repository, addition or update, must pass the integration tests before being merged into the project. The integration tests are listed in the [Test Integration](/tests/test_integration.py) module.
 
 ## License
 

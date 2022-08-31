@@ -37,7 +37,7 @@ To contribute data to the Mobility Database catalogs, please follow these steps:
 #### Add a GTFS Schedule source
 The easiest way to add a GTFS Schedule source is to use the operation `tools.operations.add_gtfs_schedule_source` through the Python interpreter or in your scripts. This operation makes sure the information provided is correct and will pass our tests. Provide the information about your source in the operation function to add your source.
 
-**If your GTFS Schedule source requires API authentication, please use the [form](https://database.mobilitydata.org/update-a-data-source) **instead of the PR process so we can generate our own API credentials for the source. Sources with `authentication_type=1` or `authentication_type=2` can't be added from forks, but those with `authentication_type=0` can.
+**If your GTFS Schedule source requires API authentication, please use the [form](https://database.mobilitydata.org/update-a-data-source)** instead of the PR process so we can generate our own API credentials for the source. Sources with `authentication_type=1` or `authentication_type=2` can't be added from forks, but those with `authentication_type=0` can.
 
 ```python
 >>> add_gtfs_schedule_source(
@@ -60,7 +60,7 @@ The easiest way to add a GTFS Schedule source is to use the operation `tools.ope
 #### Add a GTFS Realtime source
 The easiest way to add a GTFS Realtime source is to use the operation `tools.operations.add_gtfs_realtime_source` through the Python interpreter or in your scripts. Provide the information about your source in the operation function to add your source.
 
-```
+```python
 >>> add_gtfs_realtime_source(
         entity_type=[$YOUR_SOURCE_ARRAY_OF_ENTITY_TYPES],
         provider=$YOUR_SOURCE_PROVIDER_NAME,
@@ -81,6 +81,8 @@ The easiest way to update a GTFS Schedule source is to use the operation `tools.
 The default value for every parameter is `None`. Note that once a parameter value is added, it cannot be set to `None` again.
 
 `mdb_source_id` and `data_type` cannot be updated. All other parameters can.
+
+**If your GTFS Schedule source requires API authentication, please use the [form](https://database.mobilitydata.org/update-a-data-source)** instead of the PR process to update the source. Sources with `authentication_type=1` or `authentication_type=2` can't be updated from forks, but those with `authentication_type=0` can.
 
 ```python
 >>> update_gtfs_schedule_source(
@@ -108,7 +110,7 @@ The default value for every parameter is `None`. Note that once a parameter valu
 
 `mdb_source_id` and `data_type` cannot be updated. All other parameters can.
 
-```
+```python
 >>> update_gtfs_realtime_source(
         mdb_source_id=$YOUR_SOURCE_NUMERICAL_ID,
         entity_type=[$YOUR_SOURCE_ARRAY_OF_ENTITY_TYPES],
@@ -150,10 +152,6 @@ To contribute operations to the mobility database catalogs, it is suggested that
 "Sticking to a single consistent and documented coding style for this project is important to ensure that code reviewers dedicate their attention to the functionality of the validation, as opposed to disagreements about the coding style (and avoid [bike-shedding](https://en.wikipedia.org/wiki/Law_of_triviality))."
 
 This project uses [the Black code formatter](https://github.com/psf/black), which is compliant with [PEP8](https://www.python.org/dev/peps/pep-0008/), the style guide for Python code. A [pre-commit](https://pre-commit.com/) hook file is provided with the repo so it is easy to apply Black before each commit. A CI workflow is testing the code pushed in a pull request to make sure it is PEP8 compliant.
-
-## Integration Tests
-
-In order to avoid invalid sources in the Mobility Database Catalogs, any modification made in the repository, addition or update, must pass the integration tests before being merged into the project. The integration tests are listed in the [Test Integration](/tests/test_integration.py) module.
 
 ## How to run tests locally
 This project includes unit and integration tests in order to:

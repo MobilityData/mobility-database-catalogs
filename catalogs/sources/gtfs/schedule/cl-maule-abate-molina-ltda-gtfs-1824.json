@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1824,
+    "data_type": "gtfs",
+    "provider": "Abate Molina Ltda, Sotratal s.a, Taxutal s.a, Interbus, Talmocur, Buscarril",
+    "status": "inactive",
+    "location": {
+        "country_code": "CL",
+        "subdivision_name": "Maule",
+        "bounding_box": {
+            "minimum_latitude": -35.60121436,
+            "maximum_latitude": -35.29964125,
+            "minimum_longitude": -72.40423679,
+            "maximum_longitude": -71.48117065,
+            "extracted_on": "2022-09-01T16:43:47+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://datos.gob.cl/dataset/22fa7b82-50ec-4c85-aa89-709a8e0dd268/resource/f4526a2f-dd8e-4943-ab12-be997ce04fbb/download/talca1sep16.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cl-maule-abate-molina-ltda-gtfs-1824.zip?alt=media"
+    }
+}

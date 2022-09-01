@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1841,
+    "data_type": "gtfs",
+    "provider": "Vamus Transportes do Algarve",
+    "location": {
+        "country_code": "PT",
+        "subdivision_name": "Faro",
+        "bounding_box": {
+            "minimum_latitude": 37.007754,
+            "maximum_latitude": 37.644005,
+            "minimum_longitude": -8.99527,
+            "maximum_longitude": -7.414956,
+            "extracted_on": "2022-09-01T17:58:14+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://drive.google.com/uc?export=download&id=1CM8O4ndsfSJhka42SxFUZ9eB-wE10NqX",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-faro-vamus-transportes-do-algarve-gtfs-1841.zip?alt=media",
+        "license": "https://creativecommons.org/licenses/by-nd/4.0/"
+    }
+}

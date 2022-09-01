@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1822,
+    "data_type": "gtfs",
+    "provider": "METROFOR",
+    "location": {
+        "country_code": "BR",
+        "subdivision_name": "Ceará",
+        "municipality": "Fortaleza",
+        "bounding_box": {
+            "minimum_latitude": -3.8950133,
+            "maximum_latitude": -3.7192908,
+            "minimum_longitude": -38.6603147,
+            "maximum_longitude": -38.4770246,
+            "extracted_on": "2022-09-01T16:25:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.metrofor.ce.gov.br/wp-content/uploads/sites/32/2021/12/gtfs_metrofor.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/br-ceara-metrofor-gtfs-1822.zip?alt=media",
+        "license": "https://www.metrofor.ce.gov.br/gtfs/"
+    }
+}

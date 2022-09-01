@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1818,
+    "data_type": "gtfs",
+    "provider": "Réseau Mistral",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Provence-Alpes-Côte-d'Azur",
+        "municipality": "Toulon",
+        "bounding_box": {
+            "minimum_latitude": 43.0277694358,
+            "maximum_latitude": 43.1955618872,
+            "minimum_longitude": 5.7945950515,
+            "maximum_longitude": 6.1995937892,
+            "extracted_on": "2022-09-01T15:45:32+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.metropoletpm.fr/explore/dataset/donnees-gtfs-du-reseau-de-bus-mistral/files/8e7042ab297b42f9dcc58f3db5326376/download/",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-provence-alpes-cote-dazur-reseau-mistral-gtfs-1818.zip?alt=media",
+        "license": "https://www.etalab.gouv.fr/wp-content/uploads/2014/05/Open_Licence.pdf"
+    }
+}

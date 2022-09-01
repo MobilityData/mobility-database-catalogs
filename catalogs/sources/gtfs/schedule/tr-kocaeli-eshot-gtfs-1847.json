@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1847,
+    "data_type": "gtfs",
+    "provider": "Eshot",
+    "location": {
+        "country_code": "TR",
+        "subdivision_name": "Kocaeli",
+        "municipality": "Izmit",
+        "bounding_box": {
+            "minimum_latitude": 37.942080002386,
+            "maximum_latitude": 39.344003,
+            "minimum_longitude": 26.304785,
+            "maximum_longitude": 28.2195775020793,
+            "extracted_on": "2022-09-01T21:33:58+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.eshot.gov.tr/gtfs/bus-eshot-gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/tr-kocaeli-eshot-gtfs-1847.zip?alt=media",
+        "license": "https://acikveri.bizizmir.com/dataset/toplu-ulasim-gtfs-verileri/resource/822f89be-48bf-4b36-8ed8-1912511032c4"
+    }
+}

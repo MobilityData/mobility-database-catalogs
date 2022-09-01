@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1848,
+    "data_type": "gtfs",
+    "provider": "METRO İZMİR",
+    "location": {
+        "country_code": "TR",
+        "subdivision_name": "Kocaeli",
+        "municipality": "Izmit",
+        "bounding_box": {
+            "minimum_latitude": 38.3916,
+            "maximum_latitude": 38.4656,
+            "minimum_longitude": 27.0698,
+            "maximum_longitude": 27.2289,
+            "extracted_on": "2022-09-01T21:41:33+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.izmirmetro.com.tr/gtfs/rail-metro-gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/tr-kocaeli-metro-izmir-gtfs-1848.zip?alt=media",
+        "license": "https://acikveri.bizizmir.com/dataset/toplu-ulasim-gtfs-verileri/resource/c2995cbe-2e89-451b-86e7-2cc2a4f4a94a"
+    }
+}

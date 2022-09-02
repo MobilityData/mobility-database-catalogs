@@ -12,16 +12,22 @@ newIssueWelcomeComment: >
 # Comment to be posted to on PRs from first time contributors in your repository
 newPRWelcomeComment: >
   Thanks for opening this pull request! You're awesome.
+
   We use [semantic commit messages](https://github.com/electron/electron/blob/main/docs/development/pull-requests.md#commit-message-guidelines) to streamline the release process. Before your pull request can be merged, you should **update your pull request title** to start with a semantic prefix.
+
   Examples of titles with semantic prefixes:
-    - `fix: Fix wrong countries for some sources`
-    - `feat: Add Features and Status to MDB Schema [SOURCES]
-    - `docs: Improvements to README.md and CONTRIBUTING.md`
-  If your pull request includes adding or updating a source, make sure to **end your pull request title with "[SOURCES]"** so the GitHub workflow runs.
-  To get this PR to the finish line, please do the following:
-    - Read our [Contribution Guidelines](https://github.com/MobilityData/mobility-database-catalogs/blob/main/CONTRIBUTING.md)
-    - When contributing sources, [review the GTFS Schedule and GTFS Realtime Schemas](https://github.com/MobilityData/mobility-database-catalogs#the-core-parts)
-    - Include tests when adding/changing code behavior
+
+- `fix: Fix wrong countries for some sources`
+- `feat: Add Features and Status to MDB Schema [SOURCES]`
+- `docs: Improvements to README.md and CONTRIBUTING.md`
+
+ If your pull request includes adding or updating a source, make sure to **end your pull request title with "[SOURCES]"** so the GitHub workflow runs.
+
+ To get this PR to the finish line, please do the following:
+
+- Read our [Contribution Guidelines](https://github.com/MobilityData/mobility-database-catalogs/blob/main/CONTRIBUTING.md)
+- When contributing sources, [review the GTFS Schedule and GTFS Realtime Schemas](https://github.com/MobilityData/mobility-database-catalogs#the-architecture)
+- Include tests when adding/changing code behavior
 # Configuration for first-pr-merge - https://github.com/behaviorbot/first-pr-merge
 
 # Comment to be posted to on pull requests merged by a first time user

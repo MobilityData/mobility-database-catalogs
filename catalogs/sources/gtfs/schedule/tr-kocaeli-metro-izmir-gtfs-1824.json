@@ -16,7 +16,7 @@
     },
     "urls": {
         "direct_download": "https://www.izmirmetro.com.tr/gtfs/rail-metro-gtfs.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/tr-kocaeli-metro-izmir-gtfs-1848.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/tr-kocaeli-metro-izmir-gtfs-1824.zip?alt=media",
         "license": "https://acikveri.bizizmir.com/dataset/toplu-ulasim-gtfs-verileri/resource/c2995cbe-2e89-451b-86e7-2cc2a4f4a94a"
     }
 }

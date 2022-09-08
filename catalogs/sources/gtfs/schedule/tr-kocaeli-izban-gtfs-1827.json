@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 1827,
+    "data_type": "gtfs",
+    "provider": "IZBAN",
+    "name": "Rail",
+    "location": {
+        "country_code": "TR",
+        "subdivision_name": "Kocaeli",
+        "municipality": "Izmit",
+        "bounding_box": {
+            "minimum_latitude": 37.9508674904,
+            "maximum_latitude": 38.788888888889,
+            "minimum_longitude": 26.960277777778,
+            "maximum_longitude": 27.433056,
+            "extracted_on": "2022-09-01T21:43:46+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.izban.com.tr/gtfs/rail-izban-gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/tr-kocaeli-izban-gtfs-1827.zip?alt=media",
+        "license": "https://acikveri.bizizmir.com/dataset/toplu-ulasim-gtfs-verileri/resource/0809d6dc-ab87-4690-9aee-28abf64f484c"
+    }
+}

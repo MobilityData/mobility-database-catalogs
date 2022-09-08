@@ -1,5 +1,5 @@
-{
-    "mdb_source_id": 1848,
+
+    "mdb_source_id": 1828,
     "data_type": "gtfs",
     "provider": "IZBAN",
     "name": "Rail",
@@ -17,7 +17,7 @@
     },
     "urls": {
         "direct_download": "https://www.izban.com.tr/gtfs/rail-izban-gtfs.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/tr-kocaeli-izban-gtfs-1848.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/tr-kocaeli-izban-gtfs-1828.zip?alt=media",
         "license": "https://acikveri.bizizmir.com/dataset/toplu-ulasim-gtfs-verileri/resource/0809d6dc-ab87-4690-9aee-28abf64f484c"
     }
 }

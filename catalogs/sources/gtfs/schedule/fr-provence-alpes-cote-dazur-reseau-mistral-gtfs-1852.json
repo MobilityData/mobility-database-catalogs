@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 1818,
+    "mdb_source_id": 1852,
     "data_type": "gtfs",
     "provider": "Réseau Mistral",
     "location": {
@@ -16,7 +16,7 @@
     },
     "urls": {
         "direct_download": "https://data.metropoletpm.fr/explore/dataset/donnees-gtfs-du-reseau-de-bus-mistral/files/8e7042ab297b42f9dcc58f3db5326376/download/",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-provence-alpes-cote-dazur-reseau-mistral-gtfs-1818.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-provence-alpes-cote-dazur-reseau-mistral-gtfs-1852.zip?alt=media",
         "license": "https://www.etalab.gouv.fr/wp-content/uploads/2014/05/Open_Licence.pdf"
     }
 }

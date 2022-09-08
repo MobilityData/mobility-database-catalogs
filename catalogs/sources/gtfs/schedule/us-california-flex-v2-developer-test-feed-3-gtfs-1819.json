@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 1819,
+    "data_type": "gtfs",
+    "provider": "Anaheim Regional Transportation",
+    "features": [
+        "flex-v2"
+    ],
+    "status": "development",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Anaheim",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2022-08-12T18:01:51+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.calitp.org/test/TestFlex3.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-flex-v2-developer-test-feed-3-gtfs-1819.zip?alt=media"
+    }
+}

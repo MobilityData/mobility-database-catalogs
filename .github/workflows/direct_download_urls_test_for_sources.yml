@@ -149,6 +149,8 @@ jobs:
 
           # Requests constants
           USER_AGENT = "User-Agent"
+          # Selecting a default user agent instead of using a library like fake-useragent.
+          # We want to make sure we always use the same user agent for reproducibility purposes. 
           DEFAULT_USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
 
           jobs = """${{ matrix.data }}""".split()

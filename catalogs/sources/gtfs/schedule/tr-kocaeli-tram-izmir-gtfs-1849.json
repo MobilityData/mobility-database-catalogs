@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 1850,
+    "mdb_source_id": 1829,
     "data_type": "gtfs",
     "provider": "TRAM İZMİR",
     "location": {
@@ -16,7 +16,7 @@
     },
     "urls": {
         "direct_download": "https://www.tramizmir.com/gtfs/rail-tramizmir-gtfs.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/tr-kocaeli-tram-izmir-gtfs-1850.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/tr-kocaeli-tram-izmir-gtfs-1829.zip?alt=media",
         "license": "https://acikveri.bizizmir.com/dataset/toplu-ulasim-gtfs-verileri/resource/87cf8842-8d4b-4b09-b34f-5c8a4c9478e1"
     }
 }

@@ -147,6 +147,10 @@ jobs:
           # Secrets constants
           API_SOURCE_SECRETS = "API_SOURCE_SECRETS"
 
+          # Requests constants
+          USER_AGENT = "User-Agent"
+          DEFAULT_USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+
           jobs = """${{ matrix.data }}""".split()
           for job in jobs:
               job_json = json.loads(job)
@@ -156,7 +160,7 @@ jobs:
               api_key_parameter_name = job_json[API_KEY_PARAMETER_NAME]
 
               params = {}
-              headers = {}
+              headers = {USER_AGENT: DEFAULT_USER_AGENT}
 
               if authentication_type in [1, 2]:
                   # Load API source secrets only if authentication is required

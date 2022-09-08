@@ -7,15 +7,15 @@
         "country_code": "SK",
         "subdivision_name": "Bratislavský kraj",
         "bounding_box": {
-            "minimum_latitude": 48.0215072631836,
-            "maximum_latitude": 48.2414817810059,
+            "minimum_latitude": 48.0216522216797,
+            "maximum_latitude": 48.241527557373,
             "minimum_longitude": 16.9702911376953,
-            "maximum_longitude": 17.2326698303223,
-            "extracted_on": "2022-03-17T19:32:25+00:00"
+            "maximum_longitude": 17.2312965393066,
+            "extracted_on": "2022-09-01T17:13:10+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://opendata.bratislava.sk/en/dataset/download/cestovny-poriadok-20210801/3",
+        "direct_download": "https://opendata.bratislava.sk/dataset/download/cestovny-poriadok-20220725/1",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/sk-bratislavsky-kraj-dopravny-podnik-bratislava-gtfs-1005.zip?alt=media",
         "license": "https://opendata.bratislava.sk/en/dataset/show/cestovny-poriadok-20210801"
     }

@@ -9,11 +9,11 @@
             "maximum_latitude": 48.5981862388082,
             "minimum_longitude": 0.0,
             "maximum_longitude": 8.78219971336017,
-            "extracted_on": "2022-03-17T13:23:06+00:00"
+            "extracted_on": "2022-09-01T20:37:52+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://www.nvbw.de/fileadmin/user_upload/service/open_data/fahrplandaten_mit_liniennetz/vgf.zip",
+        "direct_download": "https://www.nvbw.de/fileadmin/user_upload/service/open_data/fahrplandaten_ohne_liniennetz/vgf.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-unknown-schweizer-reisen-gtfs-774.zip?alt=media",
         "license": "https://www.nvbw.de/open-data/fahrplandaten/fahrplandaten-mit-liniennetz"
     }

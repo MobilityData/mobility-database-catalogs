@@ -5,20 +5,21 @@
     "features": [
         "fares-v1"
     ],
-    "status": "inactive",
+    "status": "active",
     "location": {
         "country_code": "RS",
         "subdivision_name": "Beograd",
         "bounding_box": {
-            "minimum_latitude": 44.440518,
+            "minimum_latitude": 44.5605173,
             "maximum_latitude": 45.0670716,
             "minimum_longitude": 20.1001026,
             "maximum_longitude": 20.7176329,
-            "extracted_on": "2022-03-17T19:40:27+00:00"
+            "extracted_on": "2022-09-01T20:22:16+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://data.gov.rs/s/resources/gtfs/20210708-160448/bgprevoz-belgrade-rs.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/rs-beograd-republic-of-serbia-gtfs-1027.zip?alt=media"
+        "direct_download": "https://data.gov.rs/sr/datasets/r/729be9a1-7ed9-453d-9a3d-68fa30f07529",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/rs-beograd-republic-of-serbia-gtfs-1027.zip?alt=media",
+        "license": "https://data.gov.rs/sr/terms/"
     }
 }

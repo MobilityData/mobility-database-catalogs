@@ -7,15 +7,15 @@
         "country_code": "EG",
         "subdivision_name": "Al Qahirah",
         "bounding_box": {
-            "minimum_latitude": null,
-            "maximum_latitude": null,
-            "minimum_longitude": null,
-            "maximum_longitude": null,
-            "extracted_on": "2022-03-17T13:29:28+00:00"
+            "minimum_latitude": 29.84914634714805,
+            "maximum_latitude": 30.1635690948086,
+            "minimum_longitude": 31.200268062398266,
+            "maximum_longitude": 31.42137453928836,
+            "extracted_on": "2022-09-01T21:01:24+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://github.com/transportforcairo/Metro-GTFS/archive/master.zip#Metro-GTFS-master",
+        "direct_download": "https://data.transportforcairo.com/documents/42/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/eg-al-qahirah-cairo-metro-gtfs-786.zip?alt=media",
         "license": "https://github.com/transportforcairo/Metro-GTFS/blob/master/LICENSE.md"
     }

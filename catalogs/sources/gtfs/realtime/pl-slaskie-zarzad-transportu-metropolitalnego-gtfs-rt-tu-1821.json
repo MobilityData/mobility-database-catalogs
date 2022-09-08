@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1821,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Zarząd Transportu Metropolitalnego",
+    "static_reference": [
+        1819
+    ],
+    "urls": {
+        "direct_download": "http://gtfsrt.metropoliagzm.pl:1111/gtfsrt/gzm/tripUpdates",
+        "license": "https://otwartedane.metropoliagzm.pl/en/dataset/rozklady-jazdy-i-lokalizacja-przystankow-gtfs-rt/resource/07aedb72-2464-4052-a380-0d45426fd83b?inner_span=True"
+    }
+}

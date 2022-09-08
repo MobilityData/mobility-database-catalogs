@@ -1,31 +1,26 @@
 ## How to contribute to the catalogs
-All contributions to this project are welcome. To propose changes, we encourage contributors to:
+All contributions to this project are welcome. If you want to add or updates sources and don't want to use GitHub, [you can use the form here](https://database.mobilitydata.org/update-a-data-source) and the MobilityData team will add it.
+
+If you want to use GitHub:
+
+To propose changes, we encourage contributors to:
 1. [Fork](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo) this project on GitHub
 2. Create a new branch, and
-3. Propose their changes by opening a [new pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests).
-
-## Issue and PR templates
-We encourage contributors to format pull request titles following the Conventional Commit Specification.
+3. Propose their changes by opening a [new pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests). We encourage contributors to format pull request titles following the [Conventional Commit Specification](https://www.conventionalcommits.org/en/v1.0.0/#examples).
 
 ## Having problems?
 Have you encountered an error? A critical step in troubleshooting is being able to reproduce the problem. You can [create a bug ticket](https://github.com/MobilityData/mobility-database-catalogs/issues/new?assignees=maximearmstrong&labels=&template=bug_report.md&title=%5BBUG%5D) with reproduction steps and we will review it.
 
 ## Contributing data
-To contribute data to the Mobility Database catalogs, it is suggested that you follow the steps below.
 
 Note that adding or updating sources manually is possible, although not recommended as it increases the risk of introducing incorrect or invalid information into your branch and pull request. [Using the operations makes sure your JSON files are valid](#contribute-data).
 
-Note that your contribution must pass all of our tests, as implemented in the CI workflows of this project repository, to be merged into the main branch. To pass our tests, make sure that your contribution conforms to the appropriate JSON schema and that the ID and direct download URL values contributed for a source are unique across the Mobility Database Catalogs.
+Note that your contribution must pass all of our tests, as implemented in the CI workflows of this project repository, to be merged into the main branch. To pass our tests, make sure that your contribution conforms to the appropriate JSON schema and that the ID and direct download URL values contributed for a source are not already in the Mobility Database Catalogs.  
 
-### Prepare to contribute data
-Check our sources to see if any of them match the one you want to add or update.
-
-If yes, please update the source.
-Otherwise, please add the source.
-
-### Contribution flow
+### Data contribution flow
 
 To contribute data to the Mobility Database catalogs, please follow these steps:
+1. [Check our sources](https://github.com/MobilityData/mobility-database-catalogs#browsing-and-consuming-the-spreadsheet) to see if any of them match the one you want to add or update.
 1. Clone our repository on your local machine using the HTTPS protocol `git clone https://github.com/MobilityData/mobility-database-catalogs.git`.
 2. Create a new branch for your contribution `git checkout -b $YOUR_NEW_BRANCH`. Note that you can list the existing branches with `git branch -a` to make sure your branch name is not already used.
 3. Set up the Python environment following the instructions in our README.md.
@@ -39,12 +34,10 @@ To contribute data to the Mobility Database catalogs, please follow these steps:
 11. When your contribution is ready, convert your pull request from draft to ready for review and request a review from a team member at Mobility Data. Not that if you need to modify your contribution after this step, you will be asked to convert your pull request back to draft.
 12. Once your pull request is converted to ready for review and that all the checks have passed, we will approve and merge it.
 
-### Contribute data
-
 #### Add a GTFS Schedule source
 The easiest way to add a GTFS Schedule source is to use the operation `tools.operations.add_gtfs_schedule_source` through the Python interpreter or in your scripts. This operation makes sure the information provided is correct and will pass our tests. Provide the information about your source in the operation function to add your source.
 
-Note that you must pass an `api_key_parameter_value` if your source has `authentication_type = 1` or `authentication_type = 2`. The `api_key_parameter_value` will not be stored and is used only for testing before the source is added to the database..
+**If your GTFS Schedule source requires API authentication, please use the [form](https://database.mobilitydata.org/update-a-data-source)** instead of the PR process so we can generate our own API credentials for the source. Sources with `authentication_type=1` or `authentication_type=2` can't be added from forks, but those with `authentication_type=0` can.
 
 ```python
 >>> add_gtfs_schedule_source(
@@ -67,7 +60,7 @@ Note that you must pass an `api_key_parameter_value` if your source has `authent
 #### Add a GTFS Realtime source
 The easiest way to add a GTFS Realtime source is to use the operation `tools.operations.add_gtfs_realtime_source` through the Python interpreter or in your scripts. Provide the information about your source in the operation function to add your source.
 
-```
+```python
 >>> add_gtfs_realtime_source(
         entity_type=[$YOUR_SOURCE_ARRAY_OF_ENTITY_TYPES],
         provider=$YOUR_SOURCE_PROVIDER_NAME,
@@ -89,7 +82,7 @@ The default value for every parameter is `None`. Note that once a parameter valu
 
 `mdb_source_id` and `data_type` cannot be updated. All other parameters can.
 
-Note that you must pass an `api_key_parameter_value` if your source has `authentication_type = 1` or `authentication_type = 2` and that you want to update the direct download URL or authentication-related fields. The `api_key_parameter_value` will not be stored and is used only for testing before the source is updated in the database.
+**If your GTFS Schedule source requires API authentication, please use the [form](https://database.mobilitydata.org/update-a-data-source)** instead of the PR process to update the source. Sources with `authentication_type=1` or `authentication_type=2` can't be updated from forks, but those with `authentication_type=0` can.
 
 ```python
 >>> update_gtfs_schedule_source(
@@ -117,7 +110,7 @@ The default value for every parameter is `None`. Note that once a parameter valu
 
 `mdb_source_id` and `data_type` cannot be updated. All other parameters can.
 
-```
+```python
 >>> update_gtfs_realtime_source(
         mdb_source_id=$YOUR_SOURCE_NUMERICAL_ID,
         entity_type=[$YOUR_SOURCE_ARRAY_OF_ENTITY_TYPES],
@@ -132,6 +125,12 @@ The default value for every parameter is `None`. Note that once a parameter valu
         note=$OPTIONAL_SOURCE_NOTE,
     )
 ```
+
+### Update a source file name
+You need to
+1. Manually search for the JSON file you want in your fork. For example, finding `ca-ontario-toronto-transit-commission-gtfs-732.json` in the `schedule` folder.
+2. Modify the file name. For example, updating the file name to `ca-ontario-ttc-gtfs-732.json`.
+3. Modify the `latest.url` to match the new file name. For example, changing `https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-toronto-transit-commission-gtfs-732.zip?alt=media` to `https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-toronto-ttc-gtfs-732.zip?alt=media`.
 
 ## Contributing operations
 To contribute operations to the mobility database catalogs, it is suggested that you follow the steps below.

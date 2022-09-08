@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1826,
+    "data_type": "gtfs",
+    "provider": "Bettendorf Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Iowa",
+        "municipality": "Bettendorf",
+        "bounding_box": {
+            "minimum_latitude": 41.506804,
+            "maximum_latitude": 41.590145,
+            "minimum_longitude": -90.5227506354,
+            "maximum_longitude": -90.442645103154,
+            "extracted_on": "2022-09-01T15:24:12+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/bettendorf-ia-us/bettendorf-ia-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-iowa-bettendorf-transit-gtfs-1826.zip?alt=media",
+    }
+}

@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 1819,
     "data_type": "gtfs",
-    "provider": "Flex-v2 Developer Test Feed 3",
+    "provider": "Anaheim Regional Transportation",
     "features": [
         "flex-v2"
     ],
@@ -9,7 +9,7 @@
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
-        "municipality": "test3",
+        "municipality": "Anaheim",
         "bounding_box": {
             "minimum_latitude": null,
             "maximum_latitude": null,

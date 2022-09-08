@@ -2,27 +2,30 @@
 
 [![Integration tests](https://github.com/MobilityData/mobility-catalogs/actions/workflows/integration_tests.yml/badge.svg?branch=issue%2F343%2Fcatalogs-prototype)](https://github.com/MobilityData/mobility-catalogs/actions/workflows/integration_tests.yml) [![Unit tests](https://github.com/MobilityData/mobility-catalogs/actions/workflows/unit_tests.yml/badge.svg?branch=issue%2F343%2Fcatalogs-prototype)](https://github.com/MobilityData/mobility-catalogs/actions/workflows/unit_tests.yml) [![Export catalogs to CSV](https://github.com/MobilityData/mobility-catalogs/actions/workflows/export_to_csv.yml/badge.svg?branch=issue%2F343%2Fcatalogs-prototype)](https://github.com/MobilityData/mobility-catalogs/actions/workflows/export_to_csv.yml) [![Join the MobilityData chat](https://badgen.net/badge/slack/%20/green?icon=slack)](https://bit.ly/mobilitydata-slack)
 
-The Mobility Database Catalogs is a project that provides a list of open mobility data sources from across the world, and the code to filter and manipulate them. [You can learn more about the Mobility Database here](https://database.mobilitydata.org/).
+The Mobility Database Catalogs is a list of open mobility data sources from across the world. [You can learn more about the Mobility Database here](https://database.mobilitydata.org/).
 
-[You can view our release plan for V1 here](https://github.com/MobilityData/mobility-database-catalogs/issues/30).
+To search sources easily, you can download [the CSV spreadsheet](#browsing-and-consuming-the-spreadsheet). If you want to filter for specific types of sources, [you can learn how to here](#get-and-filter-sources).
+
 
 ## Table of Contents
 
-* [The Spreadsheet](#the-spreadsheet)
-* [The Core Parts](#the-core-parts)
-* [GTFS Schedule Data Structure](#gtfs-schedule-data-structure)
-* [GTFS Realtime Data Structure](#gtfs-realtime-data-structure)
+* [Browsing and Consuming The Spreadsheet](#browsing-and-consuming-the-spreadsheet)
+* [The Architecture](#the-architecture)
+* [GTFS Schedule Schema](#gtfs-schedule-schema)
+* [GTFS Realtime Schema](#gtfs-realtime-schema)
 * [Installation](#installation)
-* [Using the Mobility Database Catalogs](#using-the-mobility-database-catalogs)
+* [Get and Filter Sources](#get-and-filter-sources)
 * [Integration Tests](#integration-tests)
 * [License](#license)
 * [Contributing](#contributing)
 
-## The Spreadsheet
+## Browsing and Consuming The Spreadsheet
 
 If you're only interested in browsing the sources or pulling all the latest URLs, [download the CSV](https://bit.ly/catalogs-csv). You can cross reference IDs from the Mobility Database, TransitFeeds and Transitland with [this ID map spreadsheet](https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit?resourcekey#gid=1787149399).
 
-## The Core Parts
+If you are consuming the spreadsheet, we recommend downloading a new version every time you use it, since the `latest.url` is occasionally updated to match any changes made to the provider and subdivision name within the source file.
+
+## The Architecture
 
 ### Catalogs
 
@@ -36,7 +39,7 @@ Contains the tools to search, add and update the sources. The `tools.operations`
 
 Contains the JSON schemas used to validate the sources in the integration tests.
 
-## GTFS Schedule Data Structure
+## GTFS Schedule Schema
 
 |Field Name|Type|Presence|Definition|  
 |-|-|-|-|
@@ -64,7 +67,7 @@ Contains the JSON schemas used to validate the sources in the integration tests.
 | - latest | URL | System generated | A stable URL for the latest dataset of a source.
 |- license |URL| Optional     | The license information for the direct download URL.  
 
-## GTFS Realtime Data Structure
+## GTFS Realtime Schema
 
 |Field Name|Type|Presence|Definition|  
 |-|-|-|-|
@@ -144,7 +147,7 @@ $ git clone https://github.com/MobilityData/mobility-database-catalogs.git
 $ cd mobility-database-catalogs
 ```
 
-## Using the Mobility Database Catalogs
+## Get and Filter Sources
 
 ### Setup
 
@@ -217,90 +220,9 @@ To get the sources by status, `$STATUS` is expressed as a string and one of:
         feature=$STATUS,
     )
 ```
-
-To add a new GTFS Schedule source. Note that you must pass an `api_key_parameter_value` if your source has `authentication_type = 1` or `authentication_type = 2`. The `api_key_parameter_value` will not be stored and is used only for testing before the source is added to the database.
-
-```python
->>> add_gtfs_schedule_source(
-        provider=$YOUR_SOURCE_PROVIDER_NAME,
-        country_code=$YOUR_SOURCE_COUNTRY_CODE,
-        direct_download_url=$YOUR_SOURCE_DIRECT_DOWNLOAD_URL,
-        authentication_type=$OPTIONAL_AUTHENTICATION_TYPE,
-        authentication_info_url=$CONDITIONALLY_REQUIRED_AUTHENTICATION_INFO_URL,
-        api_key_parameter_name=$CONDITIONALLY_REQUIRED_API_KEY_PARAMETER_NAME,
-        api_key_parameter_value=$NOT_STORED_API_KEY_PARAMETER_VALUE,
-        subdivision_name=$OPTIONAL_SUBDIVISION_NAME,
-        municipality=$OPTIONAL_MUNICIPALITY,
-        license_url=$OPTIONAL_LICENSE_URL,
-        name=$OPTIONAL_SOURCE_NAME,
-        features=[$OPTIONAL_FEATURE_ARRAY],
-        status=$OPTIONAL_STATUS
-    )
-```
-
-To add a new GTFS Realtime source:
-
-```python
->>> add_gtfs_realtime_source(
-        entity_type=[$YOUR_SOURCE_ARRAY_OF_ENTITY_TYPES],
-        provider=$YOUR_SOURCE_PROVIDER_NAME,
-        direct_download_url=$YOUR_SOURCE_DIRECT_DOWNLOAD_URL,
-        authentication_type=$OPTIONAL_AUTHENTICATION_TYPE,
-        authentication_info_url=$CONDITIONALLY_REQUIRED_AUTHENTICATION_INFO_URL,
-        api_key_parameter_name=$CONDITIONALLY_REQUIRED_API_KEY_PARAMETER_NAME,
-        license_url=$OPTIONAL_LICENSE_URL,
-        name=$OPTIONAL_SOURCE_NAME,
-        static_reference=[$OPTIONAL_ARRAY_OF_STATIC_REFERENCE_NUMERICAL_IDS],
-        note=$OPTIONAL_SOURCE_NOTE,
-        features=[$OPTIONAL_FEATURE_ARRAY],
-        status=$OPTIONAL_STATUS
-    )
-```
-
-To update a GTFS Schedule source. Note that you must pass an `api_key_parameter_value` if your source has `authentication_type = 1` or `authentication_type = 2` and that you want to update the direct download URL or authentication-related fields. The `api_key_parameter_value` will not be stored and is used only for testing before the source is updated in the database.
-
-```python
->>> update_gtfs_schedule_source(
-        mdb_source_id=$YOUR_SOURCE_NUMERICAL_ID,
-        provider=$OPTIONAL_SOURCE_PROVIDER_NAME,
-        name=$OPTIONAL_SOURCE_NAME,
-        country_code=$OPTIONAL_SOURCE_COUNTRY_CODE,
-        subdivision_name=$OPTIONAL_SOURCE_SUBDIVISION_NAME,
-        municipality=$OPTIONAL_SOURCE_MUNICIPALITY,
-        direct_download_url=$OPTIONAL_SOURCE_DIRECT_DOWNLOAD_URL,
-        authentication_type=$OPTIONAL_AUTHENTICATION_TYPE,
-        authentication_info_url=$CONDITIONALLY_REQUIRED_AUTHENTICATION_INFO_URL,
-        api_key_parameter_name=$CONDITIONALLY_REQUIRED_API_KEY_PARAMETER_NAME,
-        api_key_parameter_value=$NOT_STORED_API_KEY_PARAMETER_VALUE,
-        license_url=$OPTIONAL_LICENSE_URL,
-        features=[$OPTIONAL_FEATURE_ARRAY],
-        status=$OPTIONAL_STATUS
-    )
-```
-
-To update a GTFS Realtime source:
-
-```python
->>> update_gtfs_realtime_source(
-        mdb_source_id=$YOUR_SOURCE_NUMERICAL_ID,
-        entity_type=[$YOUR_SOURCE_ARRAY_OF_ENTITY_TYPES],
-        provider=$YOUR_SOURCE_PROVIDER_NAME,
-        direct_download_url=$YOUR_SOURCE_DIRECT_DOWNLOAD_URL,
-        authentication_type=$YOUR_SOURCE_AUTHENTICATION_TYPE,
-        authentication_info_url=$CONDITIONALLY_REQUIRED_AUTHENTICATION_INFO_URL,
-        api_key_parameter_name=$CONDITIONALLY_REQUIRED_API_KEY_PARAMETER_NAME,
-        license_url=$OPTIONAL_LICENSE_URL,
-        name=$OPTIONAL_SOURCE_NAME,
-        static_reference=[$OPTIONAL_ARRAY_OF_STATIC_REFERENCE_NUMERICAL_IDS],
-        note=$OPTIONAL_SOURCE_NOTE,
-        features=[$OPTIONAL_FEATURE_ARRAY],
-        status=$OPTIONAL_STATUS
-    )
-```
-
 ## Integration Tests
 
-In order to avoid invalid sources in the Mobility Database Catalogs, any modification made in the repository, addition or update, must pass the integration tests before being merged into the project. The integration tests are listed in the [Test Integration](/tests/test_integration.py) module
+In order to avoid invalid sources in the Mobility Database Catalogs, any modification made in the repository, addition or update, must pass the integration tests before being merged into the project. The integration tests are listed in the [Test Integration](/tests/test_integration.py) module.
 
 ## License
 
@@ -310,4 +232,4 @@ All of the Mobility Database catalog's metadata is made available under [Creativ
 
 ## Contributing
 
-We welcome contributions to the project! Please check out our [Contribution guidelines](/CONTRIBUTING.md) for details.
+We welcome contributions to the project! You can add and update sources or contribute code. Please check out our [Contribution guidelines](/CONTRIBUTING.md) for details.

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1825,
+    "data_type": "gtfs",
+    "provider": "Vina Bus S.A., Trolebuses Chile S.A., Buses Del Gran Valparaiso S.A., Buses Del Gran Valparaiso S.A. (II), Top Tur S.A., Buses Del Gran Valparaiso S.A. (III), Codretran S.A., Sol y Mar S.A., Fenur S.A., Metro Valparaíso, Vina Bus S.A. (II), Ciferal, Colectivos Quilpué, Ascensores de Valparaiso",
+    "location": {
+        "country_code": "CL",
+        "subdivision_name": "Valparaíso",
+        "municipality": "Valparaíso",
+        "bounding_box": {
+            "minimum_latitude": -33.14942711,
+            "maximum_latitude": -32.78576824,
+            "minimum_longitude": -71.67351429,
+            "maximum_longitude": -71.18928999,
+            "extracted_on": "2022-09-01T16:47:54+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://datos.gob.cl/dataset/9e74dc7e-9a58-41a1-8ccf-422b979173a8/resource/ae8d306d-7a47-4c9f-bdf0-d608bc33df40/download/valparaiso1feb16.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cl-valparaiso-vina-bus-sa-gtfs-1825.zip?alt=media"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1833,
+    "data_type": "gtfs",
+    "provider": "Kautra",
+    "location": {
+        "country_code": "LT",
+        "subdivision_name": "Alytaus apskritis",
+        "bounding_box": {
+            "minimum_latitude": 54.34692,
+            "maximum_latitude": 54.44107,
+            "minimum_longitude": 23.97632,
+            "maximum_longitude": 24.11989,
+            "extracted_on": "2022-09-01T17:36:53+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.stops.lt/alytus/alytus/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lt-alytaus-apskritis-kautra-gtfs-1833.zip?alt=media"
+    }
+}

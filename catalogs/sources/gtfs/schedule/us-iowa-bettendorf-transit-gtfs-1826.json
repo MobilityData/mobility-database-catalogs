@@ -16,6 +16,6 @@
     },
     "urls": {
         "direct_download": "https://data.trilliumtransit.com/gtfs/bettendorf-ia-us/bettendorf-ia-us.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-iowa-bettendorf-transit-gtfs-1826.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-iowa-bettendorf-transit-gtfs-1826.zip?alt=media"
     }
 }

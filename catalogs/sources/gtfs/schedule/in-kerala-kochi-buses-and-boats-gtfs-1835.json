@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 1835,
+    "data_type": "gtfs",
+    "provider": "Kochi buses and boats",
+    "name": "city and Mofussil buses, Ordinary buses and boats",
+    "location": {
+        "country_code": "IN",
+        "subdivision_name": "Kerala",
+        "municipality": "Greater Kochi",
+        "bounding_box": {
+            "minimum_latitude": 9.771025,
+            "maximum_latitude": 10.2099979,
+            "minimum_longitude": 76.1720955,
+            "maximum_longitude": 76.4884043,
+            "extracted_on": "2022-09-27T07:26:57+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://jungle-bus.github.io/KochiTransport/KochiTransport.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/in-kerala-kochi-buses-and-boats-gtfs-1835.zip?alt=media",
+        "license": "https://jungle-bus.github.io/KochiTransport/"
+    }
+}

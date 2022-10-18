@@ -137,6 +137,7 @@ jobs:
           # OS constants
           ROOT = os.getcwd()
           DATASETS = "datasets"
+          export REQUESTS_CA_BUNDLE = "/etc/ssl/certs/ca-certificates.crt"
 
           # Jobs constants
           BASE = "base"

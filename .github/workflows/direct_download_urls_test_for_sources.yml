@@ -109,6 +109,9 @@ jobs:
       matrix: ${{ fromJson(needs.get-urls.outputs.matrix) }}
     steps:
       - uses: actions/checkout@v2
+      - name: Set env
+        run: |
+          echo "REQUESTS_CA_BUNDLE="/etc/ssl/certs/ca-certificates.crt"" >> $GITHUB_ENV
       - name: Set up Python 3.9
         uses: actions/setup-python@v2
         with:

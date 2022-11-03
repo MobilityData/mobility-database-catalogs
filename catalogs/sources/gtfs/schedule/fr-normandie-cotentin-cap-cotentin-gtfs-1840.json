@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 1840,
+    "data_type": "gtfs",
+    "provider": "Réseau urbain Cap Cotentin",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Normandie",
+        "municipality": ""
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": null
+        }
+    },
+    "name": "Communauté d'agglomération Le Cotentin",
+    "urls": {
+        "direct_download": "https://www.data.gouv.fr/fr/datasets/r/2e97c9b3-a59f-42dd-9b9e-a232fa771f21",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-normandie-cotentin-cap-cotentin-gtfs-1840.zip?alt=media",
+        "license": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf"
+    }
+}

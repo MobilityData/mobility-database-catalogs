@@ -13,7 +13,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://exs.breizgo.cityway.fr/ftp/GTFS/MOBIBREIZHBRET.gtfs.ziz",
+        "direct_download": "https://exs.breizgo.cityway.fr/ftp/GTFS/MOBIBREIZHBRET.gtfs.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-bretagne-breizhgo-gtfs-1837.zip?alt=media",
         "license": "https://transport.data.gouv.fr/datasets/base-de-donnees-multimodale-transports-publics-en-bretagne-mobibreizh-gtfs"
     }

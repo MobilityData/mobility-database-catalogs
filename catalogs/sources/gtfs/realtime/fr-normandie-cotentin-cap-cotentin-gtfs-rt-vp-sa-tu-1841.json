@@ -12,6 +12,6 @@
     ],
     "urls": {
         "direct_download": "https://pysae.com/api/v2/groups/transdev-cotentin/gtfs-rt",
-        "license": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf",
+        "license": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf"
     }
 }

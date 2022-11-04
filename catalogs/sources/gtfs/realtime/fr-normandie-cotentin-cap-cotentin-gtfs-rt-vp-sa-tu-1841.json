@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 1841,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp",
+        "sa",
+        "tu"
+    ],
+    "provider": "Réseau urbain Cap Cotentin",
+    "static_reference": [
+        1840
+    ],
+    "urls": {
+        "direct_download": "https://pysae.com/api/v2/groups/transdev-cotentin/gtfs-rt",
+        "license": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf"
+    }
+}

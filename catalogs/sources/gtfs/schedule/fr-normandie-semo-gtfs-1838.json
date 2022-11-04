@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 1838,
+    "data_type": "gtfs",
+    "provider": "SEMO",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Normandie",
+        "municipality":"Seine-Eure",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2022-11-22T17:46:49+00:00"
+        }
+    },
+    "name": "Seine-Eure agglo",
+    "urls": {
+        "direct_download": "https://www.data.gouv.fr/fr/datasets/r/f4f77c4d-c1ea-4938-80d9-2a77a150803f",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-normandie-semo-gtfs-1838.zip?alt=media",
+        "license": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1837,
+    "data_type": "gtfs",
+    "provider": "BreizhGo",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Bretagne",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2022-11-22T17:46:49+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://exs.breizgo.cityway.fr/ftp/GTFS/MOBIBREIZHBRET.gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-bretagne-breizhgo-gtfs-1837.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/base-de-donnees-multimodale-transports-publics-en-bretagne-mobibreizh-gtfs"
+    }
+}

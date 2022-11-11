@@ -9,10 +9,7 @@
         266
     ],
     "urls": {
-        "direct_download": "http://api.pugetsound.onebusaway.org/api/gtfs_realtime/vehicle-positions-for-agency/19.pb",
-        "authentication_type": 1,
-        "authentication_info": "https://www.soundtransit.org/help-contacts/business-information/open-transit-data-otd/otd-downloads",
-        "api_key_parameter_name": "key",
-        "license": "https://www.soundtransit.org/help-contacts/business-information/open-transit-data-otd/transit-data-terms-use"
+        "direct_download": "https://its.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition",
+        "authentication_type": 0
     }
 }

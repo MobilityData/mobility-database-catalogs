@@ -9,7 +9,7 @@
         50
     ],
     "urls": {
-        "direct_download": "ttp://api.511.org/transit/servicealerts?agency=SF",
+        "direct_download": "http://api.511.org/transit/servicealerts?agency=SF",
         "authentication_type": 1,
         "authentication_info": "https://511.org/open-data/token",
         "api_key_parameter_name": "api_key",

@@ -2,6 +2,9 @@
     "mdb_source_id": 267,
     "data_type": "gtfs",
     "provider": "Sound Transit, Metro Transit, City of Seattle - King County Metro",
+    "features": [
+        "fares-v1"
+    ],
     "location": {
         "country_code": "US",
         "subdivision_name": "Washington",

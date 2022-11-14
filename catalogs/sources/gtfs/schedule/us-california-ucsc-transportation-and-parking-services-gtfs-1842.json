@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1842,
+    "data_type": "gtfs",
+    "provider": "UCSC Transportation and Parking Services",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Santa Cruz",
+        "bounding_box": {
+            "minimum_latitude": 36.949341,
+            "maximum_latitude": 36.999973,
+            "minimum_longitude": -122.0672,
+            "maximum_longitude": -122.051926,
+            "extracted_on": "2022-11-11T14:43:27+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://pinpointavl.com/TAPS-GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-ucsc-transportation-and-parking-services-gtfs-1842.zip?alt=media",
+        "license": "https://github.com/PinpointAVL/TAPS-GTFS/blob/main/LICENSE"
+    }
+}

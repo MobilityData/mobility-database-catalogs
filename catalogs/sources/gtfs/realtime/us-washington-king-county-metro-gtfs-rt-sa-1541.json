@@ -9,10 +9,8 @@
         1330
     ],
     "urls": {
-        "direct_download": "http://api.pugetsound.onebusaway.org/api/gtfs_realtime/alerts-for-agency/1.pb",
-        "authentication_type": 1,
-        "authentication_info": "https://www.soundtransit.org/help-contacts/business-information/open-transit-data-otd/otd-downloads",
-        "api_key_parameter_name": "key",
-        "license": "https://www.soundtransit.org/help-contacts/business-information/open-transit-data-otd/transit-data-terms-use"
+        "direct_download": "https://s3.amazonaws.com/kcm-alerts-realtime-prod/alerts.pb",
+        "authentication_type": 0,
+        "license": "https://kingcounty.gov/depts/transportation/metro/travel-options/bus/app-center/developer-resources/terms-of-use.aspx"
     }
 }

@@ -1,0 +1,18 @@
+{
+    "mdb_source_id": 1844,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "San Francisco Municipal Transportation Agency (SFMTA)",
+    "static_reference": [
+        50
+    ],
+    "urls": {
+        "direct_download": "http://api.511.org/transit/servicealerts?agency=SF",
+        "authentication_type": 1,
+        "authentication_info": "https://511.org/open-data/token",
+        "api_key_parameter_name": "api_key",
+        "license": "https://511.org/sites/default/files/pdfs/511_Data_Agreement_Final.pdf"
+    }
+}

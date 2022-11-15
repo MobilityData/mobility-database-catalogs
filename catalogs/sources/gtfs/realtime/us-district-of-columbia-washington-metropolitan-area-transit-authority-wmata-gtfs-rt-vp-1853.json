@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 1853,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Washington Metropolitan Area Transit Authority (WMATA)",
+    "static_reference": [
+        1847
+    ],
+    "note": "rail",
+    "urls": {
+        "direct_download": "https://api.wmata.com/gtfs/rail-gtfsrt-vehiclepositions.pb",
+        "authentication_type": 1,
+        "authentication_info": "https://developer.wmata.com/signup/",
+        "api_key_parameter_name": "api_key",
+        "license": "https://developer.wmata.com/license"
+    }
+}

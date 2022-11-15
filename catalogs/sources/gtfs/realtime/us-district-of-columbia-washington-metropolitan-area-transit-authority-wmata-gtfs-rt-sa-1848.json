@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 1848,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Washington Metropolitan Area Transit Authority (WMATA)",
+    "static_reference": [
+        1846
+    ],
+    "note": "bus",
+    "urls": {
+        "direct_download": "https://api.wmata.com/gtfs/bus-gtfsrt-alerts.pb",
+        "authentication_type": 1,
+        "authentication_info": "https://developer.wmata.com/signup/",
+        "api_key_parameter_name": "api_key",
+        "license": "https://developer.wmata.com/license"
+    }
+}

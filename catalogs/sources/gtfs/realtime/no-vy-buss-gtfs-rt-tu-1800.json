@@ -5,6 +5,9 @@
         "tu"
     ],
     "provider": "Vy Buss (SE)",
+    "static_reference": [
+        1078
+    ],
     "urls": {
         "direct_download": "https://api.entur.io/realtime/v1/gtfs-rt/trip-updates?datasource=VYB",
         "license": "https://data.norge.no/nlod/en/"

@@ -1,10 +1,13 @@
 {
-    "mdb_source_id": 1801,
+    "mdb_source_id": 1802,
     "data_type": "gtfs-rt",
     "entity_type": [
         "vp"
     ],
     "provider": "Vy Buss (SE)",
+    "static_reference": [
+        1078
+    ],
     "urls": {
         "direct_download": "https://api.entur.io/realtime/v1/gtfs-rt/vehicle-positions?datasource=VYB",
         "license": "https://data.norge.no/nlod/en/"

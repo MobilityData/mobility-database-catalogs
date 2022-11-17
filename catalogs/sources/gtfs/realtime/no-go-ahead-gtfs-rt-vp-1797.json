@@ -5,6 +5,9 @@
         "vp"
     ],
     "provider": "Go-Ahead",
+    "static_reference": [
+        1078
+    ],
     "urls": {
         "direct_download": "https://api.entur.io/realtime/v1/gtfs-rt/vehicle-positions?datasource=GOA",
         "license": "https://data.norge.no/nlod/en/"

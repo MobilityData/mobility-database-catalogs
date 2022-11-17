@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 62,
     "data_type": "gtfs",
-    "provider": "San Francisco Bay Area Water Emergency Transportation Authority (San Francisco Bay Ferries)",
+    "provider": "San Francisco Bay Area Water Emergency Transportation Authority (WETA)",
     "features": [
         "fares-v1",
         "pathways"

@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 821,
     "data_type": "gtfs",
-    "provider": "Taft Maricopa Area Transit",
+    "provider": "Taft Area Transit",
     "features": [
         "fares-v1"
     ],

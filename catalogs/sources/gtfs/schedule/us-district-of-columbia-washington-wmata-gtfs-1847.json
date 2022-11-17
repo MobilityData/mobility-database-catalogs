@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 1847,
+    "data_type": "gtfs",
+    "provider": "Washington Metropolitan Area Transit Authority (WMATA)",
+    "name": "Rail",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "District of Columbia",
+        "municipality": "Washington",
+        "bounding_box": {
+            "minimum_latitude": 38.76620236,
+            "maximum_latitude": 39.12042311,
+            "minimum_longitude": -77.491941,
+            "maximum_longitude": -76.84419721,
+            "extracted_on": "2022-11-15T21:58:37+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://api.wmata.com/gtfs/rail-gtfs-static.zip",
+        "authentication_type": 1,
+        "authentication_info": "https://developer.wmata.com/signup/",
+        "api_key_parameter_name": "api_key",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-district-of-columbia-washington-wmata-gtfs-1847.zip?alt=media",
+        "license": "https://developer.wmata.com/license"
+    }
+}

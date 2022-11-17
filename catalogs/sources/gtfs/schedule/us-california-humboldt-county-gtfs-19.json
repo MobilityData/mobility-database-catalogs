@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 19,
     "data_type": "gtfs",
-    "provider": "Arcata & Mad River Transit System",
+    "provider": "Humbolt Transit Authority",
     "features": [
         "fares-v1",
         "fares-v2"
@@ -9,7 +9,7 @@
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
-        "municipality": "Arcata",
+        "municipality": "Humbolt County",
         "bounding_box": {
             "minimum_latitude": 40.0680453004959,
             "maximum_latitude": 41.061448107054,
@@ -20,6 +20,6 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/humboldtcounty-ca-us/humboldtcounty-ca-us.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-arcata-mad-river-transit-system-gtfs-19.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-humboldt-county-gtfs-19.zip?alt=media"
     }
 }

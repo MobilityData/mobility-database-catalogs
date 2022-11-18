@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 28,
+    "mdb_source_id": 561,
     "data_type": "gtfs",
     "provider": "LISERCO, LINCOSUR, LISANCO",
     "status": "inactive",
@@ -16,6 +16,6 @@
     },
     "urls": {
         "direct_download": "http://datos.gob.cl/dataset/c77c9a50-6dd1-449d-b5ab-947ec0139b31/resource/a4edcf07-0657-456d-bbbc-54b2aec1de8d/download/coquimbo10feb16.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cl-coquimbo-liserco-gtfs-28.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cl-coquimbo-liserco-gtfs-561.zip?alt=media"
     }
 }

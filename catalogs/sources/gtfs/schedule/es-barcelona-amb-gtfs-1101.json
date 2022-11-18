@@ -16,6 +16,6 @@
     },
     "urls": {
         "direct_download": "https://navitia.opendatasoft.com/explore/dataset/es/files/d0d9c92d0a4d85b3b7502575544f19b1/download/",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-barcelona-amb-gtfs-1101.json.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-barcelona-amb-gtfs-1101.zip?alt=media"
     }
 }

@@ -2,6 +2,10 @@
     "mdb_source_id": 1211,
     "data_type": "gtfs",
     "provider": "Santa Cruz Metro (SCMTD)",
+    "features": [
+        "fares-v1",
+        "fares-v2"
+    ],
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -15,7 +19,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/santa-cruz-metro/343/latest/download",
+        "direct_download": "http://scmtd.com/google_transit/google_transit.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-santa-cruz-metro-scmtd-gtfs-1211.zip?alt=media"
     }
 }

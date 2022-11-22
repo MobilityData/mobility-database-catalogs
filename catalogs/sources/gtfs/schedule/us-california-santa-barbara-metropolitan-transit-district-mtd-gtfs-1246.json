@@ -2,6 +2,10 @@
     "mdb_source_id": 1246,
     "data_type": "gtfs",
     "provider": "Santa Barbara Metropolitan Transit District (MTD)",
+    "features": [
+        "fares-v1",
+        "fares-v2"
+    ],
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -15,7 +19,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/santa-barbara-mtd/1156/latest/download",
+        "direct_download": "http://sbmtd.gov/google_transit/feed.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-santa-barbara-metropolitan-transit-district-mtd-gtfs-1246.zip?alt=media"
     }
 }

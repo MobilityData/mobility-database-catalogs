@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 561,
+    "data_type": "gtfs",
+    "provider": "LISERCO, LINCOSUR, LISANCO",
+    "status": "inactive",
+    "location": {
+        "country_code": "CL",
+        "subdivision_name": "Coquimbo",
+        "bounding_box": {
+            "minimum_latitude": -30.07032886,
+            "maximum_latitude": -29.86431639,
+            "minimum_longitude": -71.35124445,
+            "maximum_longitude": -71.18808031,
+            "extracted_on": "2022-09-22T21:42:51+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://datos.gob.cl/dataset/c77c9a50-6dd1-449d-b5ab-947ec0139b31/resource/a4edcf07-0657-456d-bbbc-54b2aec1de8d/download/coquimbo10feb16.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cl-coquimbo-liserco-gtfs-561.zip?alt=media"
+    }
+}

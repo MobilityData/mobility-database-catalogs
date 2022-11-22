@@ -8,7 +8,7 @@
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
-        "municipality": "San Francisco",
+        "municipality": "San Mateo",
         "bounding_box": {
             "minimum_latitude": 37.250304,
             "maximum_latitude": 37.795815,

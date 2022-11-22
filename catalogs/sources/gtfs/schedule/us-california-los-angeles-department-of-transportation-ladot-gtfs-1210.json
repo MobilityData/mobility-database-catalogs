@@ -1,9 +1,8 @@
 {
     "mdb_source_id": 1210,
     "data_type": "gtfs",
-    "provider": "Los Angeles Department of Transportation (LADOT)",
+    "provider": "Los Angeles Department of Transportation (LADOT, DASH, Commuter Express)",
     "name": "Bus",
-    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -17,7 +16,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/ladot-transit-services/303/latest/download",
+        "direct_download": "https://ladotbus.com/gtfs",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-los-angeles-department-of-transportation-ladot-gtfs-1210.zip?alt=media",
         "license": "https://www.ladottransit.com/dla.html"
     }

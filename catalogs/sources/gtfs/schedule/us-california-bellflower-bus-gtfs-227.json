@@ -3,9 +3,9 @@
     "data_type": "gtfs",
     "provider": "Bellflower Bus",
     "features": [
-        "fares-v1"
+        "fares-v2"
     ],
-    "status": "inactive",
+    "status": "active",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -15,11 +15,11 @@
             "maximum_latitude": 33.909496,
             "minimum_longitude": -118.142691,
             "maximum_longitude": -118.108606,
-            "extracted_on": "2022-03-15T17:43:05+00:00"
+            "extracted_on": "2022-12-19T18:31:06+00:00"
         }
     },
     "urls": {
-        "direct_download": "http://data.trilliumtransit.com/gtfs/bellflower-ca-us/bellflower-ca-us.zip",
+        "direct_download": "https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/bellflower-ca-us/bellflower-ca-us.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-bellflower-bus-gtfs-227.zip?alt=media"
     }
 }

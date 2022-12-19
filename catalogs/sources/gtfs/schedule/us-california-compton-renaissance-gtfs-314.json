@@ -3,10 +3,9 @@
     "data_type": "gtfs",
     "provider": "Compton Renaissance",
     "features": [
-        "fares-v1",
         "fares-v2"
     ],
-    "status": "inactive",
+    "status": "active",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -16,11 +15,11 @@
             "maximum_latitude": 33.9232688805322,
             "minimum_longitude": -118.255090151507,
             "maximum_longitude": -118.181491014396,
-            "extracted_on": "2022-03-15T21:14:34+00:00"
+            "extracted_on": "2022-12-19T18:35:27+00:00"
         }
     },
     "urls": {
-        "direct_download": "http://data.trilliumtransit.com/gtfs/compton-ca-us/compton-ca-us.zip",
+        "direct_download": "https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/compton-ca-us/compton-ca-us.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-compton-renaissance-gtfs-314.zip?alt=media"
     }
 }

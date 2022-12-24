@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Clovis Transit",
     "features": [
+        "fares-v2",
         "fares-v1"
     ],
     "location": {

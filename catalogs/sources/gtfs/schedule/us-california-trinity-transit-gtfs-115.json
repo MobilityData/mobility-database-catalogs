@@ -2,6 +2,10 @@
     "mdb_source_id": 115,
     "data_type": "gtfs",
     "provider": "Trinity Transit",
+    "features": [
+        "fares-v2",
+        "fares-v1"
+    ],
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

@@ -10,15 +10,15 @@
         "country_code": "US",
         "subdivision_name": "California",
         "bounding_box": {
-            "minimum_latitude": 33.473604,
-            "maximum_latitude": 33.507589,
-            "minimum_longitude": -117.685329157228,
-            "maximum_longitude": -117.662424646365,
-            "extracted_on": "2022-03-16T20:10:20+00:00"
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2023-01-02T20:40:51+00:00"
         }
     },
     "urls": {
-        "direct_download": "http://data.trilliumtransit.com/gtfs/sanjuancapistrano-ca-us/sanjuancapistrano-ca-us.zip",
+        "direct_download": "https://gtfs.calitp.org/production/SanJuanCapistranoGTFS.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-san-juan-capistrano-free-weekend-trolley-gtfs-596.zip?alt=media"
     }
 }

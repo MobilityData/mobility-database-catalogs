@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1858,
+    "data_type": "gtfs",
+    "provider": "Inglewood Shuttle",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Inglewood",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2023-01-02T20:37:50+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.calitp.org/production/InglewoodShuttleGTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-inglewood-shuttle-gtfs-1858.zip?alt=media"
+    }
+}

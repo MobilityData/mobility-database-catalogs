@@ -7,15 +7,15 @@
         "subdivision_name": "California",
         "municipality": "Chico",
         "bounding_box": {
-            "minimum_latitude": 39.51782777,
-            "maximum_latitude": 39.75793214,
-            "minimum_longitude": -122.2184688,
-            "maximum_longitude": -121.842293097047,
-            "extracted_on": "2022-03-17T15:22:38+00:00"
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2023-01-02T20:35:07+00:00"
         }
     },
     "urls": {
-        "direct_download": "http://data.trilliumtransit.com/gtfs/glenn-ca-us/glenn-ca-us.zip",
+        "direct_download": "https://gtfs.calitp.org/production/GlennGTFS.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-glenn-transit-service-gtfs-835.zip?alt=media"
     }
 }

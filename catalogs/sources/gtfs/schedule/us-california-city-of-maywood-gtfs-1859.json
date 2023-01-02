@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1859,
+    "data_type": "gtfs",
+    "provider": "City of Maywood",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Maywood",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2023-01-02T20:39:22+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.calitp.org/production/MaywoodGTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-city-of-maywood-gtfs-1859.zip?alt=media"
+    }
+}

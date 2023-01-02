@@ -12,15 +12,15 @@
         "subdivision_name": "California",
         "municipality": "Ridgecrest",
         "bounding_box": {
-            "minimum_latitude": 35.5659778499683,
-            "maximum_latitude": 35.6518073226256,
-            "minimum_longitude": -117.816944,
-            "maximum_longitude": -117.652284,
-            "extracted_on": "2022-03-15T21:14:30+00:00"
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2023-01-02T20:40:07+00:00"
         }
     },
     "urls": {
-        "direct_download": "http://data.trilliumtransit.com/gtfs/cityofridgecrest-ca-us/cityofridgecrest-ca-us.zip",
+        "direct_download": "https://gtfs.calitp.org/production/CityOfRidgecrestGTFS.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-ridgerunner-gtfs-311.zip?alt=media"
     }
 }

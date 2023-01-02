@@ -11,15 +11,15 @@
         "subdivision_name": "California",
         "municipality": "Berkeley",
         "bounding_box": {
-            "minimum_latitude": 37.8513586852571,
-            "maximum_latitude": 37.859964149085,
-            "minimum_longitude": -122.295178114587,
-            "maximum_longitude": -122.270110040259,
-            "extracted_on": "2022-03-16T20:11:09+00:00"
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2023-01-02T20:42:41+00:00"
         }
     },
     "urls": {
-        "direct_download": "http://data.trilliumtransit.com/gtfs/westberkeleyshuttle-ca-us/westberkeleyshuttle-ca-us.zip",
+        "direct_download": "https://gtfs.calitp.org/production/WestBerkeleyShuttleGTFS.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-west-berkeley-shuttle-gtfs-622.zip?alt=media"
     }
 }

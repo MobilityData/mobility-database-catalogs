@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Yosemite Area Regional Transportation System (YARTS)",
     "features": [
+        "fares-v2",
         "fares-v1"
     ],
     "location": {

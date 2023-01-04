@@ -15,11 +15,11 @@
             "maximum_latitude": null,
             "minimum_longitude": null,
             "maximum_longitude": null,
-            "extracted_on": "2022-07-06T18:11:21+00:00"
+            "extracted_on": "2022-12-24T00:01:11+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://gtfs.calitp.org/WascoDialaRideFlex.zip",
+        "direct_download": "https://gtfs.calitp.org/production/WascoDialaRideFlex.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-city-of-wasco-gtfs-1788.zip?alt=media"
     }
 }

@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Mission Bay Transportation Management Association (TMA)",
     "features": [
+        "fares-v2",
         "fares-v1"
     ],
     "location": {

@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Spirit Bus",
     "features": [
+        "fares-v2",
         "fares-v1"
     ],
     "location": {

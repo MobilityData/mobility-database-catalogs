@@ -3,10 +3,9 @@
     "data_type": "gtfs",
     "provider": "DowneyLINK",
     "features": [
-        "fares-v1",
         "fares-v2"
     ],
-    "status": "inactive",
+    "status": "active",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -15,11 +14,11 @@
             "maximum_latitude": 33.9667896649685,
             "minimum_longitude": -118.15607158901,
             "maximum_longitude": -118.102802806934,
-            "extracted_on": "2022-03-16T15:27:18+00:00"
+            "extracted_on": "2022-12-19T18:36:26+00:00"
         }
     },
     "urls": {
-        "direct_download": "http://data.trilliumtransit.com/gtfs/downey-ca-us/downey-ca-us.zip",
+        "direct_download": "https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/downey-ca-us/downey-ca-us.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-downeylink-gtfs-383.zip?alt=media"
     }
 }

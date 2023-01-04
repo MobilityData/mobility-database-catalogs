@@ -3,9 +3,9 @@
     "data_type": "gtfs",
     "provider": "Rosemead Explorer",
     "features": [
-        "fares-v1"
+        "fares-v2"
     ],
-    "status": "inactive",
+    "status": "active",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -15,11 +15,11 @@
             "maximum_latitude": 34.083874,
             "minimum_longitude": -118.103673,
             "maximum_longitude": -118.065028,
-            "extracted_on": "2022-03-17T15:21:58+00:00"
+            "extracted_on": "2022-12-19T18:40:18+00:00"
         }
     },
     "urls": {
-        "direct_download": "http://data.trilliumtransit.com/gtfs/rosemead-ca-us/rosemead-ca-us.zip",
+        "direct_download": "https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/rosemead-ca-us/rosemead-ca-us.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-rosemead-explorer-gtfs-806.zip?alt=media"
     }
 }

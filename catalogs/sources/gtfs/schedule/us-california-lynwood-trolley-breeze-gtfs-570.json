@@ -3,9 +3,9 @@
     "data_type": "gtfs",
     "provider": "Lynwood Trolley / Breeze",
     "features": [
-        "fares-v1"
+        "fares-v2"
     ],
-    "status": "inactive",
+    "status": "active",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -15,11 +15,11 @@
             "maximum_latitude": 33.9452214237674,
             "minimum_longitude": -118.239279931577,
             "maximum_longitude": -118.180320930699,
-            "extracted_on": "2022-03-16T20:09:45+00:00"
+            "extracted_on": "2022-12-19T18:39:40+00:00"
         }
     },
     "urls": {
-        "direct_download": "http://data.trilliumtransit.com/gtfs/lynwood-ca-us/lynwood-ca-us.zip",
+        "direct_download": "https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/lynwood-ca-us/lynwood-ca-us.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-lynwood-trolley-breeze-gtfs-570.zip?alt=media"
     }
 }

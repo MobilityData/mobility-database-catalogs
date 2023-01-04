@@ -3,10 +3,9 @@
     "data_type": "gtfs",
     "provider": "Glendora Transportation Division",
     "features": [
-        "fares-v1",
         "fares-v2"
     ],
-    "status": "inactive",
+    "status": "active",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -15,11 +14,11 @@
             "maximum_latitude": 34.1468809776457,
             "minimum_longitude": -117.89009,
             "maximum_longitude": -117.838194,
-            "extracted_on": "2022-03-16T20:10:45+00:00"
+            "extracted_on": "2022-12-19T18:38:06+00:00"
         }
     },
     "urls": {
-        "direct_download": "http://data.trilliumtransit.com/gtfs/glendora-ca-us/glendora-ca-us.zip",
+        "direct_download": "https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/glendora-ca-us/glendora-ca-us.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-glendora-transportation-division-gtfs-609.zip?alt=media"
     }
 }

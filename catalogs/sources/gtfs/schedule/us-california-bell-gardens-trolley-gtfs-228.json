@@ -3,9 +3,9 @@
     "data_type": "gtfs",
     "provider": "Bell Gardens Trolley",
     "features": [
-        "fares-v1"
+        "fares-v2"
     ],
-    "status": "inactive",
+    "status": "active",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -15,11 +15,11 @@
             "maximum_latitude": 33.975241,
             "minimum_longitude": -118.167153856536,
             "maximum_longitude": -118.13744,
-            "extracted_on": "2022-03-15T17:43:06+00:00"
+            "extracted_on": "2022-12-19T18:33:15+00:00"
         }
     },
     "urls": {
-        "direct_download": "http://data.trilliumtransit.com/gtfs/bellgardens-ca-us/bellgardens-ca-us.zip",
+        "direct_download": "https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/bellgardens-ca-us/bellgardens-ca-us.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-bell-gardens-trolley-gtfs-228.zip?alt=media"
     }
 }

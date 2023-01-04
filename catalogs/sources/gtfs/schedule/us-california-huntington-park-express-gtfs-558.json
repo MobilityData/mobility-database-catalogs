@@ -3,10 +3,9 @@
     "data_type": "gtfs",
     "provider": "Huntington Park Express",
     "features": [
-        "fares-v1",
         "fares-v2"
     ],
-    "status": "inactive",
+    "status": "active",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -16,11 +15,11 @@
             "maximum_latitude": 33.9891364484214,
             "minimum_longitude": -118.238692091684,
             "maximum_longitude": -118.192457392484,
-            "extracted_on": "2022-03-16T20:09:28+00:00"
+            "extracted_on": "2022-12-19T18:38:56+00:00"
         }
     },
     "urls": {
-        "direct_download": "http://data.trilliumtransit.com/gtfs/huntingtonpark-ca-us/huntingtonpark-ca-us.zip",
+        "direct_download": "https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/huntingtonpark-ca-us/huntingtonpark-ca-us.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-huntington-park-express-gtfs-558.zip?alt=media"
     }
 }

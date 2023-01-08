@@ -15,7 +15,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://opendata.burlington.ca/gtfs-rt/GTFS_Data.zip",
+        "direct_download": "https://opendata.burlington.ca/gtfs-rt/GTFS_Data.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-burlington-transit-gtfs-724.zip?alt=media",
         "license": "https://cob.burlington.opendata.arcgis.com/"
     }

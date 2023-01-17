@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1865,
+    "data_type": "gtfs",
+    "provider": "Asociación Gremial Buses Manzanal, Trans-O'higgins, Expreso Rancagua, Asociación de taxibuses Isabel Riquelme, Empresa de Transportes Cordillera Limitada., Asociacion Gremial de Taxibuses Cachapoal de Rancagua",
+    "status": "inactive",
+    "location": {
+        "country_code": "CL",
+        "subdivision_name": "Libertador General Bernardo O'Higgins",
+        "municipality": "Rancagua",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2023-01-17T20:52:29+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://datos.gob.cl/dataset/22cb7071-34f2-46dc-8c2d-dd9b86e9c32f/resource/65b65c20-a4ab-4cca-ba55-d2ef5bbb9605/download/rancagua1feb16.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cl-o'higgins-rancagua-gtfs-1865.zip?alt=media"
+    }
+}

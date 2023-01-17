@@ -8,15 +8,16 @@
         "subdivision_name": "Baden-Württemberg",
         "municipality": "Mannheim",
         "bounding_box": {
-            "minimum_latitude": 48.9785761,
+            "minimum_latitude": 0.0,
             "maximum_latitude": 50.0404441,
-            "minimum_longitude": 7.2480389,
+            "minimum_longitude": 0.0,
             "maximum_longitude": 10.1944321,
-            "extracted_on": "2022-03-23T18:44:18+00:00"
+            "extracted_on": "2023-01-17T20:23:58+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/verkehrsverbund-rhein-neckar/1076/latest/download",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-baden-wurttemberg-verkehrsverbund-rhein-neckar-gtfs-1173.zip?alt=media"
+        "direct_download": "https://geoportal.vrn.de/services/sharing/rest/content/items/4ec4b1d131eb46a6bb8e216ce9b90eff/data",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-baden-wurttemberg-verkehrsverbund-rhein-neckar-gtfs-1173.zip?alt=media",
+        "license": "https://www.vrn.de/opendata/datasets/soll-fahrplandaten-gtfs-aktuell"
     }
 }

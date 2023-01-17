@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1856,
+    "data_type": "gtfs",
+    "provider": "Ferrocarrils de la Generalitat de Catalunya",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Catalunya",
+        "bounding_box": {
+            "minimum_latitude": 41.34856143,
+            "maximum_latitude": 42.397328515116,
+            "minimum_longitude": 0.633672,
+            "maximum_longitude": 2.1721241533237,
+            "extracted_on": "2023-01-17T19:50:51+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.fgc.cat/google/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-catalunya-ferrocarrils-de-la-generalitat-de-catalunya-gtfs-1856.zip?alt=media",
+        "license": "https://dadesobertes.fgc.cat/explore/?q=gtfs_zip"
+    }
+}

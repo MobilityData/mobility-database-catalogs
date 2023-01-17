@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 1857,
     "data_type": "gtfs",
-    "provider": "Société des Transports Intercommunaux de Bruxelles",
+    "provider": "Société des Transports Intercommunaux de Bruxelles/Maatschappij voor het Intercommunaal Vervoer te Brussel (STIB/MIVB)",
     "name": "unofficial feed with data quality improvements",
     "location": {
         "country_code": "BE",
@@ -17,7 +17,7 @@
     },
     "urls": {
         "direct_download": "https://data.gtfs.be/stib/gtfs/be-stib-gtfs.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/be-unknown-societe-nationale-des-chemins-de-fer-belges-nmbs-sncb-gtfs-1857.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/be-unknown-stib-mivb-gtfs-1857.zip?alt=media",
         "license": "gtfs.be"
     }
 }

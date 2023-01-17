@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 1854,
+    "data_type": "gtfs",
+    "provider": "Mobilités M - Transports du Pays Voironnais",
+    "name": "Transports interurbains du Pays Voironnais",
+    "features": [
+        "fares-v1"
+    ],
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Auvergne-Rhône-Alpes",
+        "bounding_box": {
+            "minimum_latitude": 45.25037,
+            "maximum_latitude": 45.53038,
+            "minimum_longitude": 5.45364,
+            "maximum_longitude": 5.71018,
+            "extracted_on": "2023-01-17T19:49:05+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.mobilites-m.fr/api/gtfs/TPV",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-auvergne-rhone-alpes-mobilites-m---transports-du-pays-voironnais-gtfs-1854.zip?alt=media",
+        "license": "https://data.mobilites-m.fr/blog/licence-d-utilisation-des-donnees"
+    }
+}

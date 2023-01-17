@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 1855,
+    "data_type": "gtfs",
+    "provider": "Mobilités M - TouGo",
+    "name": "Transports interubains du Grésivaudan",
+    "features": [
+        "fares-v1"
+    ],
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Auvergne-Rhône-Alpes",
+        "municipality": "Grésivaudan",
+        "bounding_box": {
+            "minimum_latitude": 45.10331,
+            "maximum_latitude": 45.478,
+            "minimum_longitude": 5.78535,
+            "maximum_longitude": 6.12573,
+            "extracted_on": "2023-01-17T19:49:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.mobilites-m.fr/api/gtfs/GSV",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-auvergne-rhone-alpes-mobilites-m---tougo-gtfs-1855.zip?alt=media",
+        "license": "https://data.mobilites-m.fr/blog/licence-d-utilisation-des-donnees"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 1860,
+    "data_type": "gtfs",
+    "provider": "DeWaterbus",
+    "name": "unofficial feed with data quality improvements",
+    "location": {
+        "country_code": "BE",
+        "subdivision_name": "Antwerpen",
+        "municipality": "Antwerp",
+        "bounding_box": {
+            "minimum_latitude": 51.1431779315168,
+            "maximum_latitude": 51.302229653616,
+            "minimum_longitude": 4.286191463470459,
+            "maximum_longitude": 4.5152118,
+            "extracted_on": "2023-01-17T20:50:34+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.gtfs.be/dewaterbus/gtfs/be-dewaterbus-gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/be-antwerpen-dewaterbus-gtfs-1860.zip?alt=media",
+        "license": "https://gtfs.be/"
+    }
+}

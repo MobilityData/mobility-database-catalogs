@@ -1,7 +1,8 @@
 {
     "mdb_source_id": 641,
     "data_type": "gtfs",
-    "provider": "Syndicat Mixte des Mobilités de l'Aire Grenobloise",
+    "provider": "Mobilités M - OT Grenoble",
+    "name": "Téléphérique - Office de Tourisme",
     "location": {
         "country_code": "FR",
         "subdivision_name": "Auvergne-Rhône-Alpes",
@@ -17,6 +18,6 @@
     "urls": {
         "direct_download": "https://data.mobilites-m.fr/api/gtfs/BUL",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-auvergne-rhone-alpes-syndicat-mixte-des-mobilites-de-laire-grenobloise-gtfs-641.zip?alt=media",
-        "license": "https://data.mobilites-m.fr/api/gtfs/BUL"
+        "license": "https://data.mobilites-m.fr/blog/licence-d-utilisation-des-donnees"
     }
 }

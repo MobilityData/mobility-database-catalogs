@@ -15,7 +15,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/kochi-metro-rail-ltd/1118/latest/download",
+        "direct_download": "http://kmrl.e-smartlab.com/wp-content/uploads/2018/02/KMRL-Open-Data.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/in-kerala-kochi-metro-gtfs-1209.zip?alt=media",
         "license": "https://kochimetro.org/opendata/TermsOfUse.pdf"
     }

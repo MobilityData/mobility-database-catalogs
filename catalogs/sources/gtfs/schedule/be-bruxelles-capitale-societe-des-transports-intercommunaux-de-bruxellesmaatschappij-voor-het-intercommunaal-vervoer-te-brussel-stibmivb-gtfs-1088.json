@@ -11,12 +11,12 @@
             "maximum_latitude": 50.926445,
             "minimum_longitude": 4.26531,
             "maximum_longitude": 4.513476,
-            "extracted_on": "2022-03-17T23:02:54+00:00"
+            "extracted_on": "2023-01-17T20:25:11+00:00"
         }
     },
     "urls": {
-        "direct_download": "http://gtfs.irail.be/mivb/mivb-gtfs.zip",
+        "direct_download": "https://stibmivb.opendatasoft.com/api/datasets/1.0/gtfs-files-production/alternative_exports/gtfszip/",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/be-bruxelles-capitale-societe-des-transports-intercommunaux-de-bruxellesmaatschappij-voor-het-intercommunaal-vervoer-te-brussel-stibmivb-gtfs-1088.zip?alt=media",
-        "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+        "license": "https://stibmivb.opendatasoft.com/explore/dataset/gtfs-files-production/information/"
     }
 }

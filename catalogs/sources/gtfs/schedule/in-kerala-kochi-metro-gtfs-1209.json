@@ -18,7 +18,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://kmrl.e-smartlab.com/wp-content/uploads/2018/02/KMRL-Open-Data.zip",
+        "direct_download": "https://kmrl.e-smartlab.com/wp-content/uploads/2018/02/KMRL-Open-Data.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/in-kerala-kochi-metro-gtfs-1209.zip?alt=media",
         "license": "https://kochimetro.org/opendata/TermsOfUse.pdf"
     }

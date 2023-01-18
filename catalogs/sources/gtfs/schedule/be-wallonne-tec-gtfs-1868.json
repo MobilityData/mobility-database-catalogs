@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1868,
+    "data_type": "gtfs",
+    "provider": "TEC",
+    "name": "unofficial feed with data quality improvements",
+    "location": {
+        "country_code": "BE",
+        "subdivision_name": "wallonne, Région",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2023-01-17T20:52:29+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.gtfs.be/tec/gtfs/be-tec-gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/be-wallonne-tec-gtfs-1868.zip?alt=media",
+        "license_url": "https://gtfs.be/"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1858,
+    "data_type": "gtfs",
+    "provider": "Belleville Transit",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Ontario",
+        "municipality": "Belleville",
+        "bounding_box": {
+            "minimum_latitude": 44.14053314,
+            "maximum_latitude": 44.211434,
+            "minimum_longitude": -77.43741,
+            "maximum_longitude": -77.34044,
+            "extracted_on": "2023-01-17T20:06:35+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://metrolinx.tmix.se/gtfs/gtfs-belleville.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-belleville-transit-gtfs-1858.zip?alt=media"
+    }
+}

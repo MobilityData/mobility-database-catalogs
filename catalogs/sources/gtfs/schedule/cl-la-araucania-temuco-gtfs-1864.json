@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1864,
+    "data_type": "gtfs",
+    "provider": "Sociedad de Transportes Linea N°5 S.A., Sociedad de Transporte A. Alemania - P. Nuevo S.A - Línea Nº1, Transportes Línea Número Dos Limitada, Transp. P.De Valdivia-P.Las Casas Ltda. Nº3, Transportes Sta. Rosa Limitada., Taxibuses Numero Seis S.A., Empresa Tobalaba, Mall, Cajón S. A. Línea Nº7, Empresa de Transportes Línea Nº 8 P.L. Casas S.A., E. de Transportes de Pasajeros Línea Nueve S.A, Empresa de Transportes Altamira S.A, Fesub",
+    "location": {
+        "country_code": "CL",
+        "subdivision_name": "La Araucanía",
+        "municipality": "Temuco",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2023-01-17T20:52:29+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://datos.gob.cl/dataset/cef4c471-2837-412b-a78e-1d4c6a261bf9/resource/7887a7e7-9af6-4fc8-b19f-8ff4ea474d1c/download/temuco24nov16.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cl-la-araucania-temuco-gtfs-1864.zip?alt=media"
+    }
+}

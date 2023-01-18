@@ -17,6 +17,6 @@
     "urls": {
         "direct_download": "https://dadosabertos.poa.br/dataset/1fe9c2c1-9fbe-48ea-841b-61e30597ecd6/resource/b3bce61f-78ee-49eb-be57-6236d82bd5e0/download/outputfiles.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/br-rio-grande-do-sul-empresa-publica-de-transportes-e-circulacao-eptc-gtfs-7.zip?alt=media",
-        "license": "http://datapoa.com.br/dataset/gtfs"
+        "license": "https://dadosabertos.poa.br/dataset/gtfs"
     }
 }

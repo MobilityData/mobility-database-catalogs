@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1867,
+    "data_type": "gtfs",
+    "provider": "81 Connection, CityGo, KanConnect",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Kansas",
+        "municipality": "Salina",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2023-01-17T20:52:29+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://salinacitygo.com/wp-content/uploads/2022/11/export-2022-11-30T10-18-07.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-kansas-salina-gtfs-1867.zip?alt=media"
+    }
+}

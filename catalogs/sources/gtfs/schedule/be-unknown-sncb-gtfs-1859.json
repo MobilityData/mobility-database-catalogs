@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 1859,
+    "data_type": "gtfs",
+    "provider": "Société nationale des chemins de fer belges (NMBS-SNCB)",
+    "name": "unofficial feed with data quality improvements",
+    "location": {
+        "country_code": "BE",
+        "subdivision_name": "Bruxelles-Capitale, Région de",
+        "municipality": "Bruxelles",
+        "bounding_box": {
+            "minimum_latitude": 49.55128,
+            "maximum_latitude": 52.35,
+            "minimum_longitude": 2.601966,
+            "maximum_longitude": 6.133333,
+            "extracted_on": "2023-01-17T20:45:17+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.gtfs.be/sncb/gtfs/be-sncb-gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/be-unknown-sncb-gtfs-1859.zip?alt=media",
+        "license": "https://gtfs.be/"
+    }
+}

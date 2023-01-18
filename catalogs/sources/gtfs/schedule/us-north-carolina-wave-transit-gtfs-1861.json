@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 1861,
+    "data_type": "gtfs",
+    "provider": "Wave Transit",
+    "name": "fixed route",
+    "features": [
+        "fares-v1"
+    ],
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "North Carolina",
+        "municipality": "Wilmington",
+        "bounding_box": {
+            "minimum_latitude": 34.14164,
+            "maximum_latitude": 34.2618992714626,
+            "minimum_longitude": -77.950425336174,
+            "maximum_longitude": -77.820091,
+            "extracted_on": "2023-01-17T20:51:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://drive.google.com/u/0/uc?id=18zwweT64NI5O_goGVc_h-OGTTShfiacG&export=download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-north-carolina-wave-transit-gtfs-1861.zip?alt=media"
+    }
+}

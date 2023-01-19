@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1869,
+    "data_type": "gtfs",
+    "provider": "De Lijn",
+    "name": "unofficial feed with data quality improvements",
+    "location": {
+        "country_code": "BE",
+        "subdivision_name": "flamande, Région",
+        "bounding_box": {
+            "minimum_latitude": 50.6451,
+            "maximum_latitude": 51.5605,
+            "minimum_longitude": 2.58059,
+            "maximum_longitude": 5.88695,
+            "extracted_on": "2023-01-18T20:49:13+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.gtfs.be/delijn/gtfs/be-delijn-gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/be-flamande-de-lijn-gtfs-1869.zip?alt=media",
+        "license": "https://gtfs.be"
+    }
+}

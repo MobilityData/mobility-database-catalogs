@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 1871,
+    "mdb_source_id": 1869,
     "data_type": "gtfs",
     "provider": "De Lijn",
     "name": "unofficial feed with data quality improvements",
@@ -16,7 +16,7 @@
     },
     "urls": {
         "direct_download": "https://data.gtfs.be/delijn/gtfs/be-delijn-gtfs.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/be-flamande-de-lijn-gtfs-1871.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/be-flamande-de-lijn-gtfs-1869.zip?alt=media",
         "license": "https://gtfs.be"
     }
 }

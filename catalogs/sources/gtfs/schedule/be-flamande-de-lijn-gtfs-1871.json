@@ -17,6 +17,6 @@
     "urls": {
         "direct_download": "https://data.gtfs.be/delijn/gtfs/be-delijn-gtfs.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/be-flamande-de-lijn-gtfs-1871.zip?alt=media",
-        "license": "gtfs.be"
+        "license": "https://gtfs.be"
     }
 }

@@ -232,4 +232,4 @@ All of the Mobility Database catalog's metadata is made available under [Creativ
 
 ## Contributing
 
-We welcome contributions to the project! You can add and update sources or contribute code. Please check out our [Contribution guidelines](/CONTRIBUTING.md) for details.
+We welcome contributions to the project! You can add and update sources or contribute code. Please check out our [Contribution guidelines](/CONTRIBUTING.md) for details. Any PRs or [form contributions](https://database.mobilitydata.org/update-a-data-source) will be responded to within a week of submission.

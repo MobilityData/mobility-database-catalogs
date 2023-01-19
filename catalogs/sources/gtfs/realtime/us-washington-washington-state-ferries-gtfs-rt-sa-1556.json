@@ -9,7 +9,7 @@
         1331
     ],
     "urls": {
-        "direct_download": "http://api.pugetsound.onebusaway.org/api/gtfs_realtime/alerts-for-agency/95.pb",
+        "direct_download": "https://api.pugetsound.onebusaway.org/api/gtfs_realtime/alerts-for-agency/95.pb",
         "authentication_type": 1,
         "authentication_info": "https://www.soundtransit.org/help-contacts/business-information/open-transit-data-otd/otd-downloads",
         "api_key_parameter_name": "key",

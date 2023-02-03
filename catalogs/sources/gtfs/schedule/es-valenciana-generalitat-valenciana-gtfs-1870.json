@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1870,
+    "data_type": "gtfs",
+    "provider": "Generalitat Valenciana",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Valenciana, Comunidad",
+        "bounding_box": {
+            "minimum_latitude": 37.8631465159,
+            "maximum_latitude": 41.05044,
+            "minimum_longitude": -1.501236,
+            "maximum_longitude": 0.476725,
+            "extracted_on": "2023-02-03T16:09:03+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gvinterbus.gva.es/estatico/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-valenciana-generalitat-valenciana-gtfs-1870.zip?alt=media",
+        "license": "https://dadesobertes.gva.es/va/dataset/gtfs-itineraris-horaris-transport-public-interurba-autobus-comunitat-valenciana"
+    }
+}

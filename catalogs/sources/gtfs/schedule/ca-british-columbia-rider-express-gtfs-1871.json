@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 1871,
+    "data_type": "gtfs",
+    "provider": "Rider Express",
+    "features": [
+        "flex-v1"
+    ],
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "British Columbia",
+        "bounding_box": {
+            "minimum_latitude": 43.64577,
+            "maximum_latitude": 56.685434,
+            "minimum_longitude": -123.09786183458225,
+            "maximum_longitude": -75.63804,
+            "extracted_on": "2023-02-15T15:16:14+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://riderexpress.ticpoi.com/public/routes/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-rider-express-gtfs-1871.zip?alt=media"
+    }
+}

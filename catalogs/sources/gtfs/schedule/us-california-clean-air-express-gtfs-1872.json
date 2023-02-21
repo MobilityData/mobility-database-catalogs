@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 1872,
+    "data_type": "gtfs",
+    "provider": "Clean Air Express",
+    "features": [
+        "fares-v2"
+    ],
+    "status": "development",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Santa Barbara County",
+        "bounding_box": {
+            "minimum_latitude": 34.4193842989326,
+            "maximum_latitude": 34.9019699004915,
+            "minimum_longitude": -120.459583997726,
+            "maximum_longitude": -119.685447220772,
+            "extracted_on": "2023-02-21T20:26:21+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.calitp.org/production/CleanAirExpressFaresv2.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-clean-air-express-gtfs-1872.zip?alt=media"
+    }
+}

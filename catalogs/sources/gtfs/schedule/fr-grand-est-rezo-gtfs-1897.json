@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1897,
+    "data_type": "gtfs",
+    "provider": "REZO",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Grand Est",
+        "municipality": "Verdun",
+        "bounding_box": {
+            "minimum_latitude": 49.126468,
+            "maximum_latitude": 49.18414,
+            "minimum_longitude": 5.3097,
+            "maximum_longitude": 5.423342,
+            "extracted_on": "2023-02-23T21:35:38+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://zenbus.net/gtfs/static/download.zip?dataset=verdun-rezo",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-grand-est-rezo-gtfs-1897.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-du-reseau-grand-verdun-agglomeration-rezo-gtfs-gtfs-rt"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1883,
+    "data_type": "gtfs",
+    "provider": "TAC",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Auvergne-Rhône-Alpes",
+        "municipality": "Annemasse",
+        "bounding_box": {
+            "minimum_latitude": 46.141907,
+            "maximum_latitude": 46.251427,
+            "minimum_longitude": 6.181938,
+            "maximum_longitude": 6.352191,
+            "extracted_on": "2023-02-23T21:18:02+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://ratpdev-mosaic-prod-bucket-raw.s3-eu-west-1.amazonaws.com/129/exports/1/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-auvergne-rhone-alpes-tac-gtfs-1883.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/offre-de-transports-reseau-tac-annemasse-agglo-decembre-2022"
+    }
+}

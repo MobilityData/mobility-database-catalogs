@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1884,
+    "data_type": "gtfs",
+    "provider": "May'bus",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Pays de la Loire",
+        "municipality": "Mayenne",
+        "bounding_box": {
+            "minimum_latitude": 48.286586,
+            "maximum_latitude": 48.318,
+            "minimum_longitude": -0.642207,
+            "maximum_longitude": -0.594489,
+            "extracted_on": "2023-02-23T21:19:19+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://zenbus.net/gtfs/static/download.zip?dataset=maybus",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-pays-de-la-loire-maybus-gtfs-1884.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-du-reseau-maybus-mayenne-gtfs-gtfs-rt"
+    }
+}

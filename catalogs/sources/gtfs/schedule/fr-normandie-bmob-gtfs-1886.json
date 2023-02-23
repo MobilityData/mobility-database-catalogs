@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1886,
+    "data_type": "gtfs",
+    "provider": "Bmob",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Normandie",
+        "municipality": "Bernay",
+        "bounding_box": {
+            "minimum_latitude": 49.068782,
+            "maximum_latitude": 49.107585,
+            "minimum_longitude": 0.577116,
+            "maximum_longitude": 0.615636,
+            "extracted_on": "2023-02-23T21:22:14+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://zenbus.net/gtfs/static/download.zip?dataset=bernay",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-normandie-bmob-gtfs-1886.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-du-reseau-bernay-lbus-gtfs-gtfs-rt"
+    }
+}

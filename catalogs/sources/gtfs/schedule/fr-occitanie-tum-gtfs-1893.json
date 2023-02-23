@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1893,
+    "data_type": "gtfs",
+    "provider": "TUM",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Occitanie",
+        "municipality": "Mende",
+        "bounding_box": {
+            "minimum_latitude": 44.51535,
+            "maximum_latitude": 44.537616,
+            "minimum_longitude": 3.448616,
+            "maximum_longitude": 3.514941,
+            "extracted_on": "2023-02-23T21:28:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://zenbus.net/gtfs/static/download.zip?dataset=tum",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-occitanie-tum-gtfs-1893.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-du-reseau-transports-urbains-mendois-mende-gtfs-gtfs-rt"
+    }
+}

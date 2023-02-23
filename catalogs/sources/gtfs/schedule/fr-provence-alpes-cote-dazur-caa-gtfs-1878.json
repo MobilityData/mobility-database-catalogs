@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1878,
+    "data_type": "gtfs",
+    "provider": "CAA",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Provence-Alpes-Côte d'Azur",
+        "municipality": "Avignon",
+        "bounding_box": {
+            "minimum_latitude": 43.886041368,
+            "maximum_latitude": 44.0512073841,
+            "minimum_longitude": 4.6668952983,
+            "maximum_longitude": 5.0299486015,
+            "extracted_on": "2023-02-23T21:13:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://exs.tcra2.cityway.fr/gtfs.aspx?key=UID&operatorCode=TCRA",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-provence-alpes-cote-dazur-caa-gtfs-1878.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/gtfs-et-gtfs-rt-reseau-orizo-grand-avignon"
+    }
+}

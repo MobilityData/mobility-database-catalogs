@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1885,
+    "data_type": "gtfs",
+    "provider": "DiviaMobilités",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Bourgogne-Franche-Comté",
+        "municipality": "Dijon",
+        "bounding_box": {
+            "minimum_latitude": 47.230596,
+            "maximum_latitude": 47.368652,
+            "minimum_longitude": 4.916266,
+            "maximum_longitude": 5.182938,
+            "extracted_on": "2023-02-23T21:20:16+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.explore.divia.fr/api/datasets/1.0/gtfs-divia-mobilites/attachments/gtfs_diviamobilites_current_zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-bourgogne-franche-comte-diviamobilites-gtfs-1885.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/gtfs-diviamobilites"
+    }
+}

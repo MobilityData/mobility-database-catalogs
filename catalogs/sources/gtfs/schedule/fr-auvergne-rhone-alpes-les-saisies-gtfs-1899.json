@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 1899,
+    "data_type": "gtfs",
+    "provider": "Les Saisies",
+    "name": "Seasonal shuttle",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Auvergne-Rhône-Alpes",
+        "municipality": "Albertville",
+        "bounding_box": {
+            "minimum_latitude": 45.736679,
+            "maximum_latitude": 45.773048,
+            "minimum_longitude": 6.5,
+            "maximum_longitude": 6.639997,
+            "extracted_on": "2023-02-23T21:46:13+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://zenbus.net/gtfs/static/download.zip?dataset=lessaisies",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-auvergne-rhone-alpes-les-saisies-gtfs-1899.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-de-la-station-de-ski-les-saisies-gtfs-gtfs-rt"
+    }
+}

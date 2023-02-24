@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 1874,
+    "data_type": "gtfs",
+    "provider": "Carris Metropolitana",
+    "name": "Carris Metropolitana Área 3",
+    "location": {
+        "country_code": "PT",
+        "subdivision_name": "Setúbal",
+        "municipality": "Almada",
+        "bounding_box": {
+            "minimum_latitude": 38.4201,
+            "maximum_latitude": 38.7527,
+            "minimum_longitude": -9.25453,
+            "maximum_longitude": -8.88592,
+            "extracted_on": "2023-02-23T21:03:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://dados.gov.pt/pt/datasets/r/7e70d560-4e7c-4fd2-9791-d71add94d4df",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-setubal-carris-metropolitana-gtfs-1874.zip?alt=media",
+        "license": "https://dados.gov.pt/pt/datasets/gtfs-carris-metropolitana/"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1888,
+    "data_type": "gtfs",
+    "provider": "Buss",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Nouvelle-Aquitaine",
+        "municipality": "Saintes",
+        "bounding_box": {
+            "minimum_latitude": 45.643234,
+            "maximum_latitude": 45.822612,
+            "minimum_longitude": -0.764816,
+            "maximum_longitude": -0.396497,
+            "extracted_on": "2023-02-23T21:23:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://zenbus.net/gtfs/static/download.zip?dataset=buss-cdasaintes",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-nouvelle-aquitaine-buss-gtfs-1888.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-du-reseau-buss-saintes-gtfs-gtfs-rt"
+    }
+}

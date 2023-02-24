@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1887,
+    "data_type": "gtfs",
+    "provider": "Néva",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Normandie",
+        "municipality": "Granville",
+        "bounding_box": {
+            "minimum_latitude": 48.797412,
+            "maximum_latitude": 48.853665,
+            "minimum_longitude": -1.609951,
+            "maximum_longitude": -1.395541,
+            "extracted_on": "2023-02-23T21:22:48+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://zenbus.net/gtfs/static/download.zip?dataset=granville",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-normandie-neva-gtfs-1887.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-du-reseau-neva-granville-gtfs-gtfs-rt"
+    }
+}

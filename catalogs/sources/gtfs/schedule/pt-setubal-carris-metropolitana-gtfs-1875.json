@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 1875,
+    "data_type": "gtfs",
+    "provider": "Carris Metropolitana",
+    "name": "Carris Metropolitana Área 4",
+    "location": {
+        "country_code": "PT",
+        "subdivision_name": "Setúbal",
+        "municipality": "Setúbal",
+        "bounding_box": {
+            "minimum_latitude": 38.4458,
+            "maximum_latitude": 38.7737,
+            "minimum_longitude": -9.17385,
+            "maximum_longitude": -8.45502,
+            "extracted_on": "2023-02-23T21:04:22+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://dados.gov.pt/pt/datasets/r/e3d0e421-f462-4081-afbf-84e9456109ca",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-setubal-carris-metropolitana-gtfs-1875.zip?alt=media",
+        "license": "https://dados.gov.pt/pt/datasets/gtfs-carris-metropolitana/"
+    }
+}

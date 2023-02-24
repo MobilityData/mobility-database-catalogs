@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 1881,
+    "data_type": "gtfs",
+    "provider": "Carris Metropolitana",
+    "name": "Carris Metropolitana Área 1",
+    "location": {
+        "country_code": "PT",
+        "subdivision_name": "Lisboa",
+        "municipality": "Sintra",
+        "bounding_box": {
+            "minimum_latitude": 38.6769,
+            "maximum_latitude": 38.9686278580498,
+            "minimum_longitude": -9.4971209205687,
+            "maximum_longitude": -9.15111764047106,
+            "extracted_on": "2023-02-23T20:57:48+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://dados.gov.pt/pt/datasets/r/9c5df2fa-9132-410a-b7b1-ae95cbdf1566",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-lisboa-carris-metropolitana-gtfs-1881.zip?alt=media",
+        "license": "https://dados.gov.pt/pt/datasets/gtfs-carris-metropolitana/"
+    }
+}

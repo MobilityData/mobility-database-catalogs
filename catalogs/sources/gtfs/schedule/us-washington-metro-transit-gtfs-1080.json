@@ -3,7 +3,6 @@
     "data_type": "gtfs",
     "provider": "Metro Transit, Intercity Transit, City of Seattle, Community Transit, Pierce Transit, Sound Transit, Washington State Ferries, SeattleCenterMonorail, Everett Transit, Seattle Children's Hospital",
     "name": "Puget Sound Consolidated GTFS",
-    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Washington",
@@ -16,7 +15,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://developer.onebusaway.org/tmp/sound/gtfs/modified/gtfs_puget_sound_consolidated.zip",
+        "direct_download": "https://gtfs.sound.obaweb.org/prod/gtfs_puget_sound_consolidated.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-metro-transit-gtfs-1080.zip?alt=media"
     }
 }

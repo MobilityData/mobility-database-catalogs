@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1033,
+    "data_type": "gtfs",
+    "provider": "Transportes Sul do Tejo (TST)",
+    "status": "inactive",
+    "location": {
+        "country_code": "PT",
+        "subdivision_name": "Lisboa",
+        "bounding_box": {
+            "minimum_latitude": 38.4199060308533,
+            "maximum_latitude": 38.7731208636698,
+            "minimum_longitude": -9.2545,
+            "maximum_longitude": -8.60715270472294,
+            "extracted_on": "2022-03-17T19:47:19+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.transporlis.pt/Portals/0/OpenData/gtfs/zip/11/gtfs_11.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-lisboa-transportes-sul-do-tejo-tst-gtfs-1033.zip?alt=media"
+    }
+}

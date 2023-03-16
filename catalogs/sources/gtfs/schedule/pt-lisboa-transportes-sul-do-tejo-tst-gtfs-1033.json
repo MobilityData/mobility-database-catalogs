@@ -2,6 +2,7 @@
     "mdb_source_id": 1033,
     "data_type": "gtfs",
     "provider": "Transportes Sul do Tejo (TST)",
+    "status": "deprecated",
     "location": {
         "country_code": "PT",
         "subdivision_name": "Lisboa",

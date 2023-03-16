@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Carris Metropolitana",
     "name": "Carris Metropolitana Área 3",
+    "status": "deprecated",
     "location": {
         "country_code": "PT",
         "subdivision_name": "Setúbal",

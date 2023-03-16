@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Carris Metropolitana",
     "name": "Carris Metropolitana Área 2",
+    "status": "deprecated",
     "location": {
         "country_code": "PT",
         "subdivision_name": "Lisboa",

@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1892,
+    "data_type": "gtfs",
+    "provider": "Tout'enbus",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Auvergne-Rhône-Alpes",
+        "municipality": "Ucel",
+        "bounding_box": {
+            "minimum_latitude": 44.55428,
+            "maximum_latitude": 44.680355,
+            "minimum_longitude": 4.312625,
+            "maximum_longitude": 4.461427,
+            "extracted_on": "2023-02-23T21:27:28+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://zenbus.net/gtfs/static/download.zip?dataset=toutenbus",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-auvergne-rhone-alpes-toutenbus-gtfs-1892.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-du-reseau-toutenbus-aubenas-gtfs-gtfs-rt"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 1877,
+    "data_type": "gtfs",
+    "provider": "SURF",
+    "features": [
+        "fares-v1"
+    ],
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Bretagne",
+        "municipality": "Fougères",
+        "bounding_box": {
+            "minimum_latitude": 48.3196677019508,
+            "maximum_latitude": 48.3707055185909,
+            "minimum_longitude": -1.23432159292902,
+            "maximum_longitude": -1.14861206036864,
+            "extracted_on": "2023-02-23T21:11:39+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.data.gouv.fr/fr/datasets/r/665d6c43-598d-4d9d-aa98-206072f4dfa0",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-bretagne-surf-gtfs-1877.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/reseau-urbain-surf"
+    }
+}

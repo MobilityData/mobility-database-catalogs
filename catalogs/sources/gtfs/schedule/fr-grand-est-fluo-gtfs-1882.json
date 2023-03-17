@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 1882,
+    "data_type": "gtfs",
+    "provider": "Fluo",
+    "name": "Shuttle to Meuse TGV station",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Grand Est",
+        "municipality": "Bar-le-Duc, Verdun, Commercy",
+        "bounding_box": {
+            "minimum_latitude": 48.74979,
+            "maximum_latitude": 49.166427,
+            "minimum_longitude": 5.166323,
+            "maximum_longitude": 5.601473,
+            "extracted_on": "2023-02-23T21:52:46+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://zenbus.net/gtfs/static/download.zip?dataset=grand-est-tgv",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-grand-est-fluo-gtfs-1882.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-du-reseau-fluo-grand-est-navettes-tgv-gtfs-gtfs-rt"
+    }
+}

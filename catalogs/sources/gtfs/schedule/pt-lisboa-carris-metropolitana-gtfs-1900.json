@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 1900,
+    "data_type": "gtfs",
+    "provider": "Carris Metropolitana",
+    "features": [
+        "fares-v1"
+    ],
+    "location": {
+        "country_code": "PT",
+        "subdivision_name": "Lisboa",
+        "bounding_box": {
+            "minimum_latitude": 38.4201,
+            "maximum_latitude": 39.079271,
+            "minimum_longitude": -9.497121,
+            "maximum_longitude": -8.45502,
+            "extracted_on": "2023-03-10T18:55:43+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/carrismetropolitana/gtfs/raw/live/CarrisMetropolitana.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-lisboa-carris-metropolitana-gtfs-1900.zip?alt=media",
+        "license": "https://github.com/carrismetropolitana/gtfs"
+    }
+}

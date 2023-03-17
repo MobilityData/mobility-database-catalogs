@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1894,
+    "data_type": "gtfs",
+    "provider": "RespiRé",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Nouvelle-Aquitaine",
+        "municipality": "Île de Ré",
+        "bounding_box": {
+            "minimum_latitude": 46.144729,
+            "maximum_latitude": 46.253349,
+            "minimum_longitude": -1.559198,
+            "maximum_longitude": -1.219331,
+            "extracted_on": "2023-02-23T21:32:09+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://zenbus.net/gtfs/static/download.zip?dataset=iledere75923021",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-nouvelle-aquitaine-respire-gtfs-1894.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-du-reseau-respire-ile-de-re-gtfs-gtfs-rt"
+    }
+}

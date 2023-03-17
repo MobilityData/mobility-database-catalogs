@@ -1,0 +1,18 @@
+{
+    "mdb_source_id": 1904,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Pražská integrovaná doprava",
+    "static_reference": [
+        767
+    ],
+    "urls": {
+        "direct_download": "https://api.golemio.cz/v2/vehiclepositions/gtfsrt/vehicle_positions.pb",
+        "authentication_type": 1,
+        "authentication_info": "https://api.golemio.cz/api-keys",
+        "api_key_parameter_name": "X-Access-Token",
+        "license": "https://pid.cz/o-systemu/opendata/"
+    }
+}

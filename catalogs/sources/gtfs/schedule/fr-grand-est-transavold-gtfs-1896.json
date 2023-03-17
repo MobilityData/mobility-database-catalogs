@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1896,
+    "data_type": "gtfs",
+    "provider": "Transavold",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Grand Est",
+        "municipality": "Saint-Avold",
+        "bounding_box": {
+            "minimum_latitude": 48.924587,
+            "maximum_latitude": 49.1689,
+            "minimum_longitude": 6.58078,
+            "maximum_longitude": 6.784604,
+            "extracted_on": "2023-02-23T21:35:01+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://zenbus.net/gtfs/static/download.zip?dataset=transavold-stavold",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-grand-est-transavold-gtfs-1896.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-du-reseau-transavold-saint-avold-gtfs-gtfs-rt"
+    }
+}

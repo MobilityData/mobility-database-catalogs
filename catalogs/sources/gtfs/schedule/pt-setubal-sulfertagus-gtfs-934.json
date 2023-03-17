@@ -2,6 +2,7 @@
     "mdb_source_id": 934,
     "data_type": "gtfs",
     "provider": "SulFertagus",
+    "status": "deprecated",
     "location": {
         "country_code": "PT",
         "subdivision_name": "Setúbal",

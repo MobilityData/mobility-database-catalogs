@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1880,
+    "data_type": "gtfs",
+    "provider": "Proxim iTi",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Auvergne-Rhône-Alpes",
+        "municipality": "Bonneville",
+        "bounding_box": {
+            "minimum_latitude": 45.923101,
+            "maximum_latitude": 46.199312,
+            "minimum_longitude": 6.2057645,
+            "maximum_longitude": 6.515904,
+            "extracted_on": "2023-02-23T21:14:56+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.data.gouv.fr/fr/datasets/r/32634e69-d0e6-4afc-b8b1-39214d0cd837",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-auvergne-rhone-alpes-proxim-iti-gtfs-1880.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/offre-de-transport-du-reseau-proxim-iti-gtfs"
+    }
+}

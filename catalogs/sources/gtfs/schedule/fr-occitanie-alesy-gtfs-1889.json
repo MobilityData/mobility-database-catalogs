@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1889,
+    "data_type": "gtfs",
+    "provider": "Ales'Y",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Occitanie",
+        "municipality": "Alès",
+        "bounding_box": {
+            "minimum_latitude": 44.062931,
+            "maximum_latitude": 44.181968,
+            "minimum_longitude": 4.069048,
+            "maximum_longitude": 4.165038,
+            "extracted_on": "2023-02-23T21:24:26+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://zenbus.net/gtfs/static/download.zip?dataset=alesy",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-occitanie-alesy-gtfs-1889.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-du-reseau-ntecc-ales-gtfs-gtfs-rt"
+    }
+}

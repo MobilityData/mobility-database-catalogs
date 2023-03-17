@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1898,
+    "data_type": "gtfs",
+    "provider": "Agglobus",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Centre-Val de Loire",
+        "municipality": "Bourges",
+        "bounding_box": {
+            "minimum_latitude": 46.966755,
+            "maximum_latitude": 47.17631,
+            "minimum_longitude": 2.241587,
+            "maximum_longitude": 2.495971,
+            "extracted_on": "2023-02-23T21:37:20+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.centrevaldeloire.fr/api/v2/catalog/datasets/agglobus-offre-theorique-mobilite-reseau-urbain-de-bourges/files/03b395ff43085db427c8f51d83e88643",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-centre-val-de-loire-agglobus-gtfs-1898.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/agglobus-offre-theorique-mobilite-reseau-urbain-de-bourges"
+    }
+}

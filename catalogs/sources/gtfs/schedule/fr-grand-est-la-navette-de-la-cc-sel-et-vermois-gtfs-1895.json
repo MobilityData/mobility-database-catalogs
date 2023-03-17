@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1895,
+    "data_type": "gtfs",
+    "provider": "La Navette de la CC Sel et Vermois",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Grand Est",
+        "municipality": "Sel et Vermois",
+        "bounding_box": {
+            "minimum_latitude": 48.59349,
+            "maximum_latitude": 48.637279,
+            "minimum_longitude": 6.271576,
+            "maximum_longitude": 6.369394,
+            "extracted_on": "2023-02-23T21:34:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://zenbus.net/gtfs/static/download.zip?dataset=sel-et-vermois",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-grand-est-la-navette-de-la-cc-sel-et-vermois-gtfs-1895.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-de-la-navette-de-sel-et-vermois-gtfs-gtfs-rt"
+    }
+}

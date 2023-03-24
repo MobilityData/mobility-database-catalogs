@@ -11,16 +11,16 @@
         "subdivision_name": "Indiana",
         "municipality": "Lafayette",
         "bounding_box": {
-            "minimum_latitude": 40.365249515011,
-            "maximum_latitude": 40.480772346952,
-            "minimum_longitude": -86.962072751944,
-            "maximum_longitude": -86.804833883377,
-            "extracted_on": "2022-03-16T15:29:52+00:00"
+            "minimum_latitude": 40.365249,
+            "maximum_latitude": 40.4808450031784,
+            "minimum_longitude": -86.9622237659826,
+            "maximum_longitude": -86.8046614113248,
+            "extracted_on": "2023-03-24T18:04:26+00:00"
         }
     },
     "urls": {
-        "direct_download": "http://data.trilliumtransit.com/gtfs/citybus-lafayette-in-us/citybus-lafayette-in-us.zip",
+        "direct_download": "https://bus.gocitybus.com/GTFSRT/citybus-lafayette-in-us.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-indiana-citybus-of-greater-lafayette-indiana-citybus-gtfs-391.zip?alt=media",
-        "license": "https://gocitybus.com/gtfs-gis-data-download"
+        "license": "https://gocitybus.com/terms-for-use"
     }
 }

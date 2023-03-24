@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 887,
     "data_type": "gtfs",
-    "provider": "DAKK Zrt., SZKT, MÁV-START",
+    "provider": "Szegedi Közlekedési Társaság",
     "location": {
         "country_code": "HU",
         "subdivision_name": "Szeged",
@@ -10,11 +10,11 @@
             "maximum_latitude": 46.4169061,
             "minimum_longitude": 20.0238029,
             "maximum_longitude": 20.3392939,
-            "extracted_on": "2022-03-17T18:10:04+00:00"
+            "extracted_on": "2023-03-24T18:37:04+00:00"
         }
     },
     "urls": {
-        "direct_download": "http://szegedimenetrend.hu/google_transit.zip",
+        "direct_download": "https://gtfs.menetbrand.com/download/szeged",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/hu-szeged-dakk-zrt-gtfs-887.zip?alt=media",
         "license": "http://szegedimenetrend.hu/"
     }

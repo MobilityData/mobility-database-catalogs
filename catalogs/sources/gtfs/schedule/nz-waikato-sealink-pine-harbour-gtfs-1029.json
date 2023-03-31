@@ -14,7 +14,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://cdn01.at.govt.nz/data/gtfs.zip",
+        "direct_download": "https://gtfs.at.govt.nz/gtfs.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/nz-waikato-sealink-pine-harbour-gtfs-1029.zip?alt=media"
     }
 }

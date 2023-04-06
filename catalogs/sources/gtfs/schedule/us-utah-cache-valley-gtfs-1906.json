@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1906,
+    "data_type": "gtfs",
+    "provider": "Cache Valley Transit District",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Utah",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2023-04-03T18:43:55+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://cvtd.us:91/developer/googlefeed/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-utah-cache-valley-gtfs-1906.zip?alt=media"
+    }
+}

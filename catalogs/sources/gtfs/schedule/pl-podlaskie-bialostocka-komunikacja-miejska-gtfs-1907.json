@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1907,
+    "data_type": "gtfs",
+    "provider": "Białostocka Komunikacja Miejska",
+    "status": "active",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Podlaskie",
+        "municipality": "Białystok",
+        "bounding_box": {
+            "minimum_latitude": 52.918111,
+            "maximum_latitude": 53.239542,
+            "minimum_longitude": 22.9743,
+            "maximum_longitude": 23.311579,
+            "extracted_on": "2023-04-19T15:33:50+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://komunikacja.bialystok.pl/cms/File/download/gtfs/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-podlaskie-bialostocka-komunikacja-miejska-gtfs-1907.zip?alt=media"
+    }
+}

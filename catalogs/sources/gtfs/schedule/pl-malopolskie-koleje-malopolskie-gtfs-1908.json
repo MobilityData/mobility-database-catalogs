@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1908,
+    "data_type": "gtfs",
+    "provider": "Koleje Małopolskie",
+    "name": "railway",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Małopolskie",
+        "bounding_box": {
+            "minimum_latitude": 0.0,
+            "maximum_latitude": 50.5651847,
+            "minimum_longitude": 0.0,
+            "maximum_longitude": 21.4709081,
+            "extracted_on": "2023-05-05T17:44:01+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://kolejemalopolskie.com.pl/rozklady_jazdy/kml-ska-gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-malopolskie-koleje-malopolskie-gtfs-1908.zip?alt=media"
+    }
+}

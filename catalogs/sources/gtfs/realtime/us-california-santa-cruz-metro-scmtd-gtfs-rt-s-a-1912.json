@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 1912,
     "data_type": "gtfs-rt",
-    "entity_type": "sa",
+    "entity_type": ["sa"],
     "provider": "Santa Cruz Metro (SCMTD)",
     "static_reference": [
         1211

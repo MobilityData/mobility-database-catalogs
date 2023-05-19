@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1909,
+    "data_type": "gtfs",
+    "provider": "Transjakarta",
+    "features": ["fares-v1"],
+    "location": {
+        "country_code": "ID",
+        "subdivision_name": "Jakarta Raya",
+        "bounding_box": {
+            "minimum_latitude": -6.394973,
+            "maximum_latitude": -6.089429,
+            "minimum_longitude": 106.61473,
+            "maximum_longitude": 107.02397,
+            "extracted_on": "2023-05-18T21:05:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.transjakarta.co.id/files/file_gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/id-jakarta-raya-transjakarta-gtfs-1909.zip?alt=media"
+    }
+}

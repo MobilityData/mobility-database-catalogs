@@ -1,0 +1,13 @@
+{
+    "mdb_source_id": 1911,
+    "data_type": "gtfs-rt",
+    "entity_type": ["tu"],
+    "provider": "Santa Cruz Metro (SCMTD)",
+    "static_reference": [
+        1211
+    ],
+    "urls": {
+        "direct_download": "https://rt.scmetro.org/gtfsrt/trips",
+        "license": "https://scmtd.com/en/riders-guide/google-transit/gtfs-dev-data"
+    }
+}

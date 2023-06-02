@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1913,
+    "data_type": "gtfs",
+    "provider": "Transporte Públicos de Andalucía",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Andalucía",
+        "bounding_box": {
+            "minimum_latitude": 36.911186,
+            "maximum_latitude": 37.60935228702601,
+            "minimum_longitude": -6.09206117390557,
+            "maximum_longitude": -5.803361599188607,
+            "extracted_on": "2023-06-02T17:01:31+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://drive.google.com/uc?id=1A6U2XyXo1VDd-sdUq8FU_P5wqFPNY45f&export=download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-andalucia-transporte-publicos-de-andalucia-gtfs-1913.zip?alt=media"
+    }
+}

@@ -16,6 +16,6 @@
     },
     "urls": {
         "direct_download": "https://gitlab.com/digitaltransport/data/latin-america/santiago-de-los-caballeros/-/raw/master/RD_Santiago_GTFS.zip?inline=false",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/do-santiago-ayuntamiento-del-municipio-de-santiago-gtfs-1914.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-santiago-gtfs-1914.zip?alt=media"
     }
 }

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1914,
+    "data_type": "gtfs",
+    "provider": "Ayuntamiento del Municipio de Santiago, Oficina Metropolitana de Servicios de Autobuses, Instituto Nacional de Tránsito y Transporte Terrestre",
+    "location": {
+        "country_code": "DO",
+        "subdivision_name": "Santiago",
+        "municipality": "Santiago de los Caballeros",
+        "bounding_box": {
+            "minimum_latitude": 18.4789985,
+            "maximum_latitude": 19.8194701,
+            "minimum_longitude": -71.7069054,
+            "maximum_longitude": -69.967804,
+            "extracted_on": "2023-06-02T17:07:38+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gitlab.com/digitaltransport/data/latin-america/santiago-de-los-caballeros/-/raw/master/RD_Santiago_GTFS.zip?inline=false",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-santiago-gtfs-1914.zip?alt=media"
+    }
+}

@@ -102,5 +102,5 @@ if __name__ == '__main__':
     # write results
     with pd.ExcelWriter('output.xlsx', engine='xlsxwriter') as writer:
         write_results(writer, BEST_PRACTICES_RULES, final_results_best_practices, 'Best Practices')
-        write_results(writer, BAD_PRACTICES_RULES, final_results_bad_practices, 'Practices Under Discussion')
+        write_results(writer, BAD_PRACTICES_RULES, final_results_bad_practices, 'Practice Review')
     print('Completed. Check output.xlsx file.')

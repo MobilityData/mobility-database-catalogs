@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 1926,
+    "mdb_source_id": 1920,
     "data_type": "gtfs",
     "provider": "LPT",
     "location": {
@@ -9,11 +9,11 @@
             "maximum_latitude": 35.064499919423,
             "minimum_longitude": 33.1507794480956,
             "maximum_longitude": 33.7438921819222,
-            "extracted_on": "2023-06-21T20:57:51+00:00"
+            "extracted_on": "2023-06-21T21:20:37+00:00"
         }
     },
     "urls": {
         "direct_download": "https://www.motionbuscard.org.cy/opendata/downloadfile?file=GTFS%5C10_google_transit.zip&rel=True",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cy-unknown-lpt-gtfs-1926.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cy-unknown-lpt-gtfs-1920.zip?alt=media"
     }
 }

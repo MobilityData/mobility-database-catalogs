@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 1922,
+    "mdb_source_id": 1916,
     "data_type": "gtfs",
     "provider": "OSYPA",
     "location": {
@@ -9,11 +9,11 @@
             "maximum_latitude": 35.1711671751453,
             "minimum_longitude": 32.319761758522,
             "maximum_longitude": 32.7562720258354,
-            "extracted_on": "2023-06-21T20:57:47+00:00"
+            "extracted_on": "2023-06-21T21:20:33+00:00"
         }
     },
     "urls": {
         "direct_download": "https://www.motionbuscard.org.cy/opendata/downloadfile?file=GTFS%5C2_google_transit.zip&rel=True",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cy-unknown-osypa-gtfs-1922.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cy-unknown-osypa-gtfs-1916.zip?alt=media"
     }
 }

@@ -14,11 +14,11 @@
             "maximum_latitude": 34.069347,
             "minimum_longitude": -118.447726,
             "maximum_longitude": -118.063516,
-            "extracted_on": "2022-03-23T18:52:56+00:00"
+            "extracted_on": "2023-06-21T17:53:53+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/long-beach-transit/704/latest/download",
+        "direct_download": "https://drive.google.com/uc?export=download&id=1869EVa1z6m_iD6QmvRXyTHtYiaSUBROl",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-long-beach-transit-lbt-gtfs-1198.zip?alt=media"
     }
 }

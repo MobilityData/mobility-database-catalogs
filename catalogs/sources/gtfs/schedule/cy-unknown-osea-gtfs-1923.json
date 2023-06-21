@@ -1,7 +1,7 @@
 {
-    "mdb_source_id": 1917,
+    "mdb_source_id": 1923,
     "data_type": "gtfs",
-    "provider": "motionbuscard",
+    "provider": "OSEA",
     "location": {
         "country_code": "CY",
         "bounding_box": {
@@ -9,11 +9,11 @@
             "maximum_latitude": 35.0954765908797,
             "minimum_longitude": 33.6002917535577,
             "maximum_longitude": 34.070097962071,
-            "extracted_on": "2023-06-13T16:18:35+00:00"
+            "extracted_on": "2023-06-21T20:57:48+00:00"
         }
     },
     "urls": {
         "direct_download": "https://www.motionbuscard.org.cy/opendata/downloadfile?file=GTFS%5C4_google_transit.zip&rel=True",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cy-unknown-motionbuscard-gtfs-1917.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cy-unknown-osea-gtfs-1923.zip?alt=media"
     }
 }

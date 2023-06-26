@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 1919,
+    "data_type": "gtfs",
+    "provider": "LPT",
+    "location": {
+        "country_code": "CY",
+        "bounding_box": {
+            "minimum_latitude": 34.720365932127,
+            "maximum_latitude": 35.064499919423,
+            "minimum_longitude": 33.1507794480956,
+            "maximum_longitude": 33.7438921819222,
+            "extracted_on": "2023-06-21T21:52:47+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.motionbuscard.org.cy/opendata/downloadfile?file=GTFS%5C10_google_transit.zip&rel=True",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cy-unknown-lpt-gtfs-1919.zip?alt=media"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 1918,
+    "data_type": "gtfs",
+    "provider": "NPT",
+    "location": {
+        "country_code": "CY",
+        "bounding_box": {
+            "minimum_latitude": 34.905853904049,
+            "maximum_latitude": 35.191483466977,
+            "minimum_longitude": 32.7236612126193,
+            "maximum_longitude": 33.5456908514403,
+            "extracted_on": "2023-06-21T21:52:46+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.motionbuscard.org.cy/opendata/downloadfile?file=GTFS%5C9_google_transit.zip&rel=True",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cy-unknown-npt-gtfs-1918.zip?alt=media"
+    }
+}

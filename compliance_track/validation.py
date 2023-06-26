@@ -3,7 +3,27 @@ from zipfile import ZipFile
 
 import pandas as pd
 
+from tools.constants import AUTHENTICATION_TYPE, API_KEY_PARAMETER_NAME, API_KEY_PARAMETER_VALUE
+from tools.helpers import download_dataset
 from update_gtfs_schedule_sources import has_extension_file
+
+
+def download_latest_dataset(data):
+    urls = data['urls']
+    latest_url = urls['latest']
+
+    # retrieving auth data
+    authentication_type, api_key_parameter_name, api_key_parameter_value = None, None, None
+    if AUTHENTICATION_TYPE in urls:
+        authentication_type = urls[AUTHENTICATION_TYPE]
+    if API_KEY_PARAMETER_NAME in urls:
+        api_key_parameter_name = urls[API_KEY_PARAMETER_NAME]
+    if API_KEY_PARAMETER_VALUE in urls:
+        api_key_parameter_value = urls[API_KEY_PARAMETER_VALUE]
+
+    # retrieve data
+    return download_dataset(latest_url, authentication_type, api_key_parameter_name,
+                            api_key_parameter_value)
 
 
 def extension_file_has_columns(file_path, extension_file_name, columns):
@@ -55,18 +75,50 @@ def current_validator(report_path, validator_name, filename, field_name):
     return not ((report_results.fieldName == field_name).any() and (report_results.filename == filename).any())
 
 
+def get_sub_directories(file_path):
+    return [name for name in ZipFile(file_path).namelist() if name.endswith('/')]
+
+
 def validate_sub_directory_exists(file_path):
-    return any([name.endswith('/') for name in ZipFile(file_path).namelist()])
+    return len(get_sub_directories(file_path)) > 0
+
+
+def get_exceeded_shape_dist(file_path):
+    try:
+        # retrieve dataframes
+        _, trips_df = extension_file_has_columns(file_path, 'trips.txt', 'shape_id')
+        has_stop_times, stop_times_df = extension_file_has_columns(file_path, 'stop_times.txt', 'shape_dist_traveled')
+        has_shapes, shapes_df = extension_file_has_columns(file_path, 'shapes.txt', 'shape_dist_traveled')
+        if not (has_shapes and has_stop_times):
+            return None
+
+        # merge data on shape_id and trip_id
+        stop_times_trips_merge = pd.merge(
+            trips_df[['trip_id', 'shape_id']],
+            stop_times_df[['trip_id', 'shape_dist_traveled']],
+            on='trip_id',
+            how='inner'
+        )[['trip_id', 'shape_id', 'shape_dist_traveled']] \
+            .groupby(['trip_id', 'shape_id'])['shape_dist_traveled'].max().reset_index() \
+            .rename(columns={'shape_dist_traveled': 'max_stop_times'})
+        merged_df = pd.merge(
+            stop_times_trips_merge,
+            shapes_df[['shape_id', 'shape_dist_traveled']].groupby(['shape_id']).max().reset_index(),
+            on='shape_id',
+            how='inner'
+        )[['trip_id', 'shape_id', 'max_stop_times', 'shape_dist_traveled']] \
+            .rename(columns={'shape_dist_traveled': 'max_shapes'})
+
+        # add column with relative difference
+        results = merged_df[merged_df.max_stop_times > merged_df.max_shapes]
+        results['relative_diff'] = (results.max_stop_times - results.max_shapes) / results.max_shapes
+        return results
+    except Exception:
+        return None
 
 
 def validate_shape_dist_traveled(file_path):
-    # read stop_times.txt and extract shape_dist_traveled
-    has_stop_times, stop_times_df = extension_file_has_columns(file_path, 'stop_times.txt', 'shape_dist_traveled')
-    has_shapes, shapes_df = extension_file_has_columns(file_path, 'shapes.txt', 'shape_dist_traveled')
-    if not (has_shapes and has_stop_times):
-        return False
     try:
-        return stop_times_df.shape_dist_traveled.max() > shapes_df.shape_dist_traveled.max()
-    except TypeError:
-        # in the case where all values in the column are empty
+        return len(get_exceeded_shape_dist(file_path)) > 0
+    except Exception:
         return False

@@ -5,9 +5,11 @@ import pandas as pd
 from requests import RequestException
 
 from compliance_track.constants import BEST_PRACTICES_RULES, GC_COPY_PATH, BAD_PRACTICES_RULES, VALIDATOR
-from tools.constants import GTFS, AUTHENTICATION_TYPE, API_KEY_PARAMETER_NAME, API_KEY_PARAMETER_VALUE
-from tools.helpers import download_dataset
+from compliance_track.validation import download_latest_dataset
+from tools.constants import GTFS
 from tools.operations import get_sources
+
+pd.options.mode.chained_assignment = None
 
 
 def validate_practices(practices, results):
@@ -68,22 +70,10 @@ if __name__ == '__main__':
             continue
 
         report_folder_path = report_folder_path[0]
-        urls = data['urls']
-        latest_url = urls['latest']
-
-        # retrieving auth data
-        authentication_type, api_key_parameter_name, api_key_parameter_value = None, None, None
-        if AUTHENTICATION_TYPE in urls:
-            authentication_type = urls[AUTHENTICATION_TYPE]
-        if API_KEY_PARAMETER_NAME in urls:
-            api_key_parameter_name = urls[API_KEY_PARAMETER_NAME]
-        if API_KEY_PARAMETER_VALUE in urls:
-            api_key_parameter_value = urls[API_KEY_PARAMETER_VALUE]
 
         # retrieve data
         try:
-            dataset_path = download_dataset(latest_url, authentication_type, api_key_parameter_name,
-                                            api_key_parameter_value)
+            dataset_path = download_latest_dataset(data)
         except RequestException as e:
             continue
 

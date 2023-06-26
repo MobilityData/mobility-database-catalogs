@@ -32,3 +32,7 @@ Simply run:
 ```sh
 $ python3 -m compliance_track.main 
 ```
+To produce the report containing details about practices under discussion run:
+```sh
+$ python3 -m compliance_track.details
+```

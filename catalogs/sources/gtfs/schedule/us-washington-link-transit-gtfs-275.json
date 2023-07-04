@@ -11,15 +11,15 @@
         "subdivision_name": "Washington",
         "municipality": "Wenatchee ",
         "bounding_box": {
-            "minimum_latitude": 47.2921153198261,
-            "maximum_latitude": 47.8850234593722,
-            "minimum_longitude": -120.674893575413,
-            "maximum_longitude": -119.980455199371,
-            "extracted_on": "2022-03-15T17:45:29+00:00"
+            "minimum_latitude": 47.362503,
+            "maximum_latitude": 47.885025,
+            "minimum_longitude": -120.668159,
+            "maximum_longitude": -120.014694,
+            "extracted_on": "2023-07-04T19:56:20+00:00"
         }
     },
     "urls": {
-        "direct_download": "http://data.trilliumtransit.com/gtfs/linktransit-wa-us/linktransit-wa-us.zip",
+        "direct_download": "https://link.rideralerts.com/InfoPoint/gtfs-zip.ashx",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-link-transit-gtfs-275.zip?alt=media"
     }
 }

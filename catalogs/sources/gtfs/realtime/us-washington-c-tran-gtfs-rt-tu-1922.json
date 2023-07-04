@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 1922,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "C-TRAN",
+    "static_reference": [
+        258
+    ],
+    "urls": {
+        "direct_download": "http://gtfs-rt.c-tran.org/gtfsrealtime/TripUpdates",
+        "license": "https://c-tran.com/about-c-tran/business/c-tran-gtfs-data"
+    }
+}

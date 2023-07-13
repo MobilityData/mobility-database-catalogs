@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1924,
+    "data_type": "gtfs",
+    "provider": "Hong Kong Government Transport Department",
+    "name": "Aggregate bi-weekly headway information of Hong Kong public transport services",
+    "location": {
+        "country_code": "HK",
+        "bounding_box": {
+            "minimum_latitude": 22.16334,
+            "maximum_latitude": 22.55463,
+            "minimum_longitude": 113.86066,
+            "maximum_longitude": 114.43347,
+            "extracted_on": "2023-07-13T22:17:27+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://static.data.gov.hk/td/pt-headway-en/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/hk-unknown-hong-kong-government-transport-department-gtfs-1924.zip?alt=media",
+        "license": "https://data.gov.hk/en/terms-and-conditions"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "mdb_source_id": 1920,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp",
+        "tu"
+    ],
+    "provider": "motionbuscard",
+    "urls": {
+        "direct_download": "http://213.207.141.26:8028/Api/api/gtfs-realtime"
+    }
+}

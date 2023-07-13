@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1923,
+    "data_type": "gtfs",
+    "provider": "Greenville Transit Authority (Greenlink)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "South Carolina",
+        "municipality": "Greenville",
+        "bounding_box": {
+            "minimum_latitude": 34.84122,
+            "maximum_latitude": 34.85382,
+            "minimum_longitude": -82.410156,
+            "maximum_longitude": -82.400476,
+            "extracted_on": "2023-07-04T19:54:35+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://greenlink.cadavl.com:5053/GTA/GTFS/GTFS_GTA.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-south-carolina-greenville-transit-authority-greenlink-gtfs-1923.zip?alt=media"
+    }
+}

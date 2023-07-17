@@ -14,7 +14,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://www.transporlis.pt/Portals/0/OpenData/gtfs/zip/1/gtfs_1.zip",
+        "direct_download": "https://gateway.carris.pt/gateway/gtfs/api/v2.8/GTFS",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-lisboa-carris-gtfs-1032.zip?alt=media",
         "license": "http://opendefinition.org/licenses/cc-zero/"
     }

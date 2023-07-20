@@ -8,15 +8,15 @@
         "subdivision_name": "Hauts-de-France",
         "municipality": "Lille",
         "bounding_box": {
-            "minimum_latitude": 50.528149,
+            "minimum_latitude": 50.512395,
             "maximum_latitude": 50.788235,
-            "minimum_longitude": 2.801618,
+            "minimum_longitude": 2.800832,
             "maximum_longitude": 3.273467,
-            "extracted_on": "2022-03-23T18:53:10+00:00"
+            "extracted_on": "2023-07-20T20:10:47+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/metropole-europeenne-de-lille/1202/latest/download",
+        "direct_download": "https://opendata.lillemetropole.fr/api/datasets/1.0/transport_arret_transpole-point/alternative_exports/gtfszip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-hauts-de-france-reseau-de-transport-transpole-de-la-metropole-europeenne-de-lille-gtfs-1201.zip?alt=media",
         "license": "https://opendata.lillemetropole.fr/explore/dataset/transport_arret_transpole-point/?disjunctive.filename&disjunctive.commune"
     }

@@ -1,12 +1,13 @@
 {
-    "mdb_source_id": 1574,
+    "mdb_source_id": 1576,
     "data_type": "gtfs-rt",
     "entity_type": [
         "vp"
     ],
-    "provider": "LA Metro",
+    "provider": "Sonoma Marin Area Rail Transit (SMART)",
+    "static_reference": [815],
     "urls": {
-        "direct_download": "https://api.goswift.ly/real-time/lametro/gtfs-rt-vehicle-positions",
+        "direct_download": "https://api.goswift.ly/real-time/smart/gtfs-rt-vehicle-positions",
         "authentication_type": 2,
         "authentication_info": "https://goswift.ly/realtime-api-key",
         "api_key_parameter_name": "authorization",

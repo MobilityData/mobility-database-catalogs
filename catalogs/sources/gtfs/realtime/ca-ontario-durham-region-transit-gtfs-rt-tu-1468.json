@@ -1,12 +1,13 @@
 {
-    "mdb_source_id": 1467,
+    "mdb_source_id": 1468,
     "data_type": "gtfs-rt",
     "entity_type": [
-        "sa"
+        "tu"
     ],
     "provider": "Durham Region Transit",
+    "static_reference": [726],
     "urls": {
-        "direct_download": "https://maps.durham.ca/OpenDataGTFS/alerts.pb",
+        "direct_download": "https://drtonline.durhamregiontransit.com/gtfsrealtime/TripUpdates",
         "authentication_type": 0,
         "license": "https://opendata.durham.ca/search?q=service%20alert"
     }

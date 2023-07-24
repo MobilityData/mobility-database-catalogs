@@ -1,12 +1,15 @@
 {
-    "mdb_source_id": 1546,
+    "mdb_source_id": 1548,
     "data_type": "gtfs-rt",
     "entity_type": [
-        "vp"
+        "tu"
     ],
     "provider": "City of Seattle - Streetcar",
+    "static_reference": [
+        1080
+    ],
     "urls": {
-        "direct_download": "https://api.pugetsound.onebusaway.org/api/gtfs_realtime/vehicle-positions-for-agency/23.pb",
+        "direct_download": "https://api.pugetsound.onebusaway.org/api/gtfs_realtime/trip-updates-for-agency/23.pb",
         "authentication_type": 1,
         "authentication_info": "https://www.soundtransit.org/help-contacts/business-information/open-transit-data-otd/otd-downloads",
         "api_key_parameter_name": "key",

@@ -1,18 +1,17 @@
 {
-    "mdb_source_id": 1635,
+    "mdb_source_id": 1637,
     "data_type": "gtfs-rt",
     "entity_type": [
         "vp",
         "tu"
     ],
-    "provider": "MTA New York City Transit",
-    "name": "NYC Subway 1, 2, 3, 4, 5, 6, 7 trains",
+    "provider": "Staten Island Railway",
+    "note": "This source includes Vehicle Position and Trip Updates entities under the same feed.",
     "static_reference": [
         516
     ],
-    "note": "This source includes Vehicle Position and Trip Updates entities under the same feed.",
     "urls": {
-        "direct_download": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs",
+        "direct_download": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-si",
         "authentication_type": 2,
         "authentication_info": "https://api.mta.info/#/signup",
         "api_key_parameter_name": "x-api-key",

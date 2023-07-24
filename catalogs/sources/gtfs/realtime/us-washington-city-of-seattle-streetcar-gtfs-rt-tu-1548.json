@@ -5,6 +5,9 @@
         "tu"
     ],
     "provider": "City of Seattle - Streetcar",
+    "static_reference": [
+        1080
+    ],
     "urls": {
         "direct_download": "https://api.pugetsound.onebusaway.org/api/gtfs_realtime/trip-updates-for-agency/23.pb",
         "authentication_type": 1,

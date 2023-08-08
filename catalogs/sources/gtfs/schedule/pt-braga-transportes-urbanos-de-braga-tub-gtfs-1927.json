@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1927,
+    "data_type": "gtfs",
+    "provider": "Transportes Urbanos de Braga (TUB)",
+    "location": {
+        "country_code": "PT",
+        "subdivision_name": "Braga",
+        "municipality": "Braga",
+        "bounding_box": {
+            "minimum_latitude": 41.335438,
+            "maximum_latitude": 41.615108,
+            "minimum_longitude": -8.515709,
+            "maximum_longitude": -8.255646,
+            "extracted_on": "2023-08-08T00:09:51+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.tub.pt/developer/gtfs/feed/tub.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-braga-transportes-urbanos-de-braga-tub-gtfs-1927.zip?alt=media"
+    }
+}

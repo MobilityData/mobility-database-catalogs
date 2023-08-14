@@ -1,7 +1,8 @@
 {
     "mdb_source_id": 1272,
     "data_type": "gtfs",
-    "provider": "Mobi Cascais",
+    "provider": "Cascais Próxima, E.M., S.A.",
+    "name": "MobiCascais",
     "location": {
         "country_code": "PT",
         "subdivision_name": "Lisboa",
@@ -11,11 +12,11 @@
             "maximum_latitude": 38.763594,
             "minimum_longitude": -9.484887,
             "maximum_longitude": -9.313059,
-            "extracted_on": "2022-03-24T00:17:47+00:00"
+            "extracted_on": "2023-08-11T22:15:54+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/mobi-cascais/1075/latest/download",
+        "direct_download": "https://drive.google.com/uc?export=download&id=13ucYiAJRtu-gXsLa02qKJrGOgDjbnUWX",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-lisboa-mobi-cascais-gtfs-1272.zip?alt=media",
         "license": "https://dadosabertos.cascais.pt/dataset/gtfs-mobicascais"
     }

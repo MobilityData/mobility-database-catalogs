@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1951,
+    "data_type": "gtfs",
+    "provider": "Southern Vectis",
+    "location": {
+        "country_code": "GB",
+        "subdivision_name": "Isle of Wight",
+        "bounding_box": {
+            "minimum_latitude": 50.579072139,
+            "maximum_latitude": 50.766309234,
+            "minimum_longitude": -1.579848164,
+            "maximum_longitude": -1.079004409,
+            "extracted_on": "2023-08-23T21:01:37+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.discoverpassenger.com/operator/southernvectis/dataset/current/download/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-isle-of-wight-southern-vectis-gtfs-1951.zip?alt=media",
+        "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+}

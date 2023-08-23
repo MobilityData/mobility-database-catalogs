@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1931,
+    "data_type": "gtfs",
+    "provider": "Cardiff Bus",
+    "location": {
+        "country_code": "GB",
+        "subdivision_name": "Cardiff",
+        "bounding_box": {
+            "minimum_latitude": 51.39201479,
+            "maximum_latitude": 51.589385568,
+            "minimum_longitude": -3.330534498,
+            "maximum_longitude": -2.991610785,
+            "extracted_on": "2023-08-23T19:16:50+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.discoverpassenger.com/operator/ccts/dataset/current/download/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-cardiff-cardiff-bus-gtfs-1931.zip?alt=media",
+        "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+}

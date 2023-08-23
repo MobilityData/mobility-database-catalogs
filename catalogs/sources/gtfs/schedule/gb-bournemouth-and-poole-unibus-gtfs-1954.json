@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1954,
+    "data_type": "gtfs",
+    "provider": "Unibus",
+    "location": {
+        "country_code": "GB",
+        "subdivision_name": "Bournemouth and Poole",
+        "bounding_box": {
+            "minimum_latitude": 50.716683101,
+            "maximum_latitude": 50.809821036,
+            "minimum_longitude": -1.98802867,
+            "maximum_longitude": -1.798448162,
+            "extracted_on": "2023-08-23T21:06:11+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.discoverpassenger.com/operator/unibus/dataset/current/download/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-bournemouth-and-poole-unibus-gtfs-1954.zip?alt=media",
+        "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+}

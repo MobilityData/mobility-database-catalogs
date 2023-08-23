@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1938,
+    "data_type": "gtfs",
+    "provider": "Hedingham and Chambers",
+    "location": {
+        "country_code": "GB",
+        "subdivision_name": "Essex",
+        "bounding_box": {
+            "minimum_latitude": 51.56881,
+            "maximum_latitude": 52.26001,
+            "minimum_longitude": 0.256526,
+            "maximum_longitude": 1.288027,
+            "extracted_on": "2023-08-23T19:39:56+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.discoverpassenger.com/operator/hedinghamandchambers/dataset/current/download/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-essex-hedingham-and-chambers-gtfs-1938.zip?alt=media",
+        "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+}

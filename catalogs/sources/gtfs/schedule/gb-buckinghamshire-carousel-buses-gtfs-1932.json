@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1932,
+    "data_type": "gtfs",
+    "provider": "Carousel Buses",
+    "location": {
+        "country_code": "GB",
+        "subdivision_name": "Buckinghamshire",
+        "bounding_box": {
+            "minimum_latitude": 51.156879,
+            "maximum_latitude": 51.817002,
+            "minimum_longitude": -1.262512,
+            "maximum_longitude": -0.159553,
+            "extracted_on": "2023-08-23T19:26:53+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.discoverpassenger.com/operator/carouselbuses/dataset/current/download/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-buckinghamshire-carousel-buses-gtfs-1932.zip?alt=media",
+        "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+}

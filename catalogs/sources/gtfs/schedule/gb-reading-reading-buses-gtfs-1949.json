@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1949,
+    "data_type": "gtfs",
+    "provider": "Reading Buses",
+    "location": {
+        "country_code": "GB",
+        "subdivision_name": "Reading",
+        "bounding_box": {
+            "minimum_latitude": 51.360127934,
+            "maximum_latitude": 51.530446879,
+            "minimum_longitude": -1.322642323,
+            "maximum_longitude": -0.144421982,
+            "extracted_on": "2023-08-23T20:58:33+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.discoverpassenger.com/operator/readingbuses/dataset/current/download/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-reading-reading-buses-gtfs-1949.zip?alt=media",
+        "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+}

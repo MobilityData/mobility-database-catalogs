@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1937,
+    "data_type": "gtfs",
+    "provider": "Green Line 702",
+    "location": {
+        "country_code": "GB",
+        "subdivision_name": "West Berkshire",
+        "bounding_box": {
+            "minimum_latitude": 51.411234356,
+            "maximum_latitude": 51.520619621,
+            "minimum_longitude": -0.971204601,
+            "maximum_longitude": -0.144421982,
+            "extracted_on": "2023-08-23T19:37:23+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.discoverpassenger.com/operator/greenline/dataset/current/download/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-west-berkshire-green-line-702-gtfs-1937.zip?alt=media",
+        "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+}

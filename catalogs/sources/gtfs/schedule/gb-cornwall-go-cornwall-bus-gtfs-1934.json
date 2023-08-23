@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1934,
+    "data_type": "gtfs",
+    "provider": "Go Cornwall Bus",
+    "location": {
+        "country_code": "GB",
+        "subdivision_name": "Cornwall",
+        "bounding_box": {
+            "minimum_latitude": 49.968982,
+            "maximum_latitude": 50.99877,
+            "minimum_longitude": -5.684322,
+            "maximum_longitude": -3.523523,
+            "extracted_on": "2023-08-23T19:30:14+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.discoverpassenger.com/operator/gocornwallbus/dataset/current/download/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-cornwall-go-cornwall-bus-gtfs-1934.zip?alt=media",
+        "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+}

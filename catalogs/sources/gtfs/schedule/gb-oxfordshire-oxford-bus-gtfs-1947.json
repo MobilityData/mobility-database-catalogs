@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1947,
+    "data_type": "gtfs",
+    "provider": "Oxford Bus",
+    "location": {
+        "country_code": "GB",
+        "subdivision_name": "Oxfordshire",
+        "bounding_box": {
+            "minimum_latitude": 51.156881,
+            "maximum_latitude": 52.0623,
+            "minimum_longitude": -2.07814,
+            "maximum_longitude": -0.14438811563235,
+            "extracted_on": "2023-08-23T20:56:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.discoverpassenger.com/operator/oxfordbus/dataset/current/download/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-oxfordshire-oxford-bus-gtfs-1947.zip?alt=media",
+        "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+}

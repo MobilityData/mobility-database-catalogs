@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1957,
+    "data_type": "gtfs",
+    "provider": "West Coast Motors",
+    "location": {
+        "country_code": "GB",
+        "subdivision_name": "Argyll and Bute",
+        "bounding_box": {
+            "minimum_latitude": 55.309906,
+            "maximum_latitude": 56.821245,
+            "minimum_longitude": -6.368673,
+            "maximum_longitude": -3.19154,
+            "extracted_on": "2023-08-23T21:09:36+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.discoverpassenger.com/operator/westcoastmotors/dataset/current/download/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-argyll-and-bute-west-coast-motors-gtfs-1957.zip?alt=media",
+        "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+}

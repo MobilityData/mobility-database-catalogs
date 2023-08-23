@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1946,
+    "data_type": "gtfs",
+    "provider": "Nottingham City Transport",
+    "location": {
+        "country_code": "GB",
+        "subdivision_name": "Nottingham",
+        "bounding_box": {
+            "minimum_latitude": 0.0,
+            "maximum_latitude": 53.08484,
+            "minimum_longitude": -1.2521769,
+            "maximum_longitude": 0.0,
+            "extracted_on": "2023-08-23T20:55:15+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.discoverpassenger.com/operator/nctx/dataset/current/download/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-nottingham-nottingham-city-transport-gtfs-1946.zip?alt=media",
+        "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+}

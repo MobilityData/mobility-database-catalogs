@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1956,
+    "data_type": "gtfs",
+    "provider": "Warrington's Own Buses",
+    "location": {
+        "country_code": "GB",
+        "subdivision_name": "Warrington",
+        "bounding_box": {
+            "minimum_latitude": 53.192599,
+            "maximum_latitude": 53.54909,
+            "minimum_longitude": -2.932752,
+            "maximum_longitude": -2.272503,
+            "extracted_on": "2023-08-23T21:08:11+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.discoverpassenger.com/operator/warrington/dataset/current/download/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-warrington-warringtons-own-buses-gtfs-1956.zip?alt=media",
+        "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+}

@@ -1,10 +1,9 @@
 name: Store latest datasets cronjob
 
 on:
-  push:
-    branches: [ '**' ]
-#  schedule:
-#    - cron: "0 0 * * *"
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
 
 env:
   URL_STORAGE_PREFIX: "https://storage.googleapis.com/storage/v1/b/mdb-latest/o"
@@ -106,7 +105,6 @@ jobs:
                   DATA: urls_data_string.replace("}{", "} {")
               }
               urls_data.append(job_data)
-              break
           matrix_data = {INCLUDE: urls_data}
 
           with open(os.path.join(ROOT, MATRIX_FILE), "w") as fp:

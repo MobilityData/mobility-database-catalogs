@@ -13,9 +13,9 @@ jobs:
   get-urls:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Set up Python 3.9
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v3
         with:
           python-version: 3.9
       - name: Install dependencies
@@ -136,9 +136,9 @@ jobs:
 #    strategy:
 #      matrix: ${{ fromJson(needs.get-urls.outputs.matrix) }}
 #    steps:
-#      - uses: actions/checkout@v2
+#      - uses: actions/checkout@v3
 #      - name: Set up Python 3.9
-#        uses: actions/setup-python@v2
+#        uses: actions/setup-python@v3
 #        with:
 #          python-version: 3.9
 #      - name: Install dependencies
@@ -235,7 +235,7 @@ jobs:
 #          parent: false
 #      - name: Persist Download Reports artifact
 #        if: always()
-#        uses: actions/upload-artifact@v2
+#        uses: actions/upload-artifact@v3
 #        with:
 #          name: download_reports
 #          path: download_reports
@@ -245,9 +245,9 @@ jobs:
 #    strategy:
 #      matrix: ${{ fromJson(needs.get-urls.outputs.matrix) }}
 #    steps:
-#      - uses: actions/checkout@v2
+#      - uses: actions/checkout@v3
 #      - name: Set up Python 3.9
-#        uses: actions/setup-python@v2
+#        uses: actions/setup-python@v3
 #        with:
 #          python-version: 3.9
 #      - name: Install dependencies
@@ -312,7 +312,7 @@ jobs:
 #                  fp.write(file_log)
 #      - name: Persist Latest Reports artifact
 #        if: always()
-#        uses: actions/upload-artifact@v2
+#        uses: actions/upload-artifact@v3
 #        with:
 #          name: latest_reports
 #          path: latest_reports

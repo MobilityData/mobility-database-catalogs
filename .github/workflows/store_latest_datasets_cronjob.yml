@@ -30,6 +30,7 @@ jobs:
           # OS constants
           ROOT = os.getcwd()
           GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT = "catalogs/sources/gtfs/schedule"
+          URL_STORAGE_PREFIX = "https://storage.googleapis.com/storage/v1/b/mdb-latest/o"
           MATRIX_FILE = "urls_matrix.json"
 
           # File constants
@@ -70,7 +71,7 @@ jobs:
                   else:
                       urls[base] = {
                           DIRECT_DOWNLOAD: direct_download_url,
-                          LATEST: latest_url,
+                          LATEST: latest_url.replace("URL_STORAGE_PREFIX", ""),
                           AUTHENTICATION_TYPE: authentication_type,
                           API_KEY_PARAMETER_NAME: api_key_parameter_name
                       }

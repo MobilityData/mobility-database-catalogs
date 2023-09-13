@@ -6,6 +6,9 @@ on:
 #  schedule:
 #    - cron: "0 0 * * *"
 
+env:
+  URL_STORAGE_PREFIX: "https://storage.googleapis.com/storage/v1/b/mdb-latest/o"
+
 jobs:
   get-urls:
     runs-on: ubuntu-latest
@@ -30,7 +33,7 @@ jobs:
           # OS constants
           ROOT = os.getcwd()
           GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT = "catalogs/sources/gtfs/schedule"
-          URL_STORAGE_PREFIX = "https://storage.googleapis.com/storage/v1/b/mdb-latest/o"
+          URL_STORAGE_PREFIX = """${{ env.URL_STORAGE_PREFIX }}"""
           MATRIX_FILE = "urls_matrix.json"
 
           # File constants

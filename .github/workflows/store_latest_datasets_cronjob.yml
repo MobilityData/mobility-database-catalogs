@@ -71,7 +71,7 @@ jobs:
                   else:
                       urls[base] = {
                           DIRECT_DOWNLOAD: direct_download_url,
-                          LATEST: latest_url.replace("URL_STORAGE_PREFIX", ""),
+                          LATEST: latest_url.replace(URL_STORAGE_PREFIX, ""),
                           AUTHENTICATION_TYPE: authentication_type,
                           API_KEY_PARAMETER_NAME: api_key_parameter_name
                       }

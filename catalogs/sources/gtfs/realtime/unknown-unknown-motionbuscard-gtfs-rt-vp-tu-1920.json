@@ -7,6 +7,6 @@
     ],
     "provider": "motionbuscard",
     "urls": {
-        "direct_download": "http://213.207.141.26:8028/Api/api/gtfs-realtime"
+        "direct_download": "http://20.19.98.194:8328/Api/api/gtfs-realtime"
     }
 }

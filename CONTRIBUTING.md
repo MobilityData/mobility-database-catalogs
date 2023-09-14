@@ -1,5 +1,5 @@
 ## How to contribute to the catalogs
-All contributions to this project are welcome. If you want to add or updates sources and don't want to use GitHub, [you can use the form here](https://database.mobilitydata.org/update-a-data-source) and the MobilityData team will add it.
+All contributions to this project are welcome. If you want to add or updates sources and don't want to use GitHub, [you can use the form here](https://database.mobilitydata.org/add-a-feed) and the MobilityData team will add it.
 
 If you want to use GitHub:
 

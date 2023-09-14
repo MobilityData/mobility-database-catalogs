@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1955,
+    "data_type": "gtfs",
+    "provider": "Unilink",
+    "location": {
+        "country_code": "GB",
+        "subdivision_name": "Hampshire",
+        "bounding_box": {
+            "minimum_latitude": 50.893352664,
+            "maximum_latitude": 50.970301925,
+            "minimum_longitude": -1.433485365,
+            "maximum_longitude": -1.350436825,
+            "extracted_on": "2023-08-23T21:07:01+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.discoverpassenger.com/operator/unilink/dataset/current/download/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-hampshire-unilink-gtfs-1955.zip?alt=media",
+        "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+}

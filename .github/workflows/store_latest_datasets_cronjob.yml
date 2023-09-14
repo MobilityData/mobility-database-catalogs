@@ -1,16 +1,20 @@
 name: Store latest datasets cronjob
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"
+
+env:
+  URL_STORAGE_PREFIX: "https://storage.googleapis.com/storage/v1/b/mdb-latest/o"
 
 jobs:
   get-urls:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Set up Python 3.9
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v3
         with:
           python-version: 3.9
       - name: Install dependencies
@@ -28,6 +32,7 @@ jobs:
           # OS constants
           ROOT = os.getcwd()
           GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT = "catalogs/sources/gtfs/schedule"
+          URL_STORAGE_PREFIX = """${{ env.URL_STORAGE_PREFIX }}"""
           MATRIX_FILE = "urls_matrix.json"
 
           # File constants
@@ -68,7 +73,7 @@ jobs:
                   else:
                       urls[base] = {
                           DIRECT_DOWNLOAD: direct_download_url,
-                          LATEST: latest_url,
+                          LATEST: latest_url.replace(URL_STORAGE_PREFIX, ""),
                           AUTHENTICATION_TYPE: authentication_type,
                           API_KEY_PARAMETER_NAME: api_key_parameter_name
                       }
@@ -109,16 +114,16 @@ jobs:
         run: |
           DATASETS=$(jq . ./urls_matrix.json -c)
           echo $DATASETS
-          echo "::set-output name=matrix::$DATASETS"
+          echo "matrix=$DATASETS" >> $GITHUB_OUTPUT
       - name: Persist URLs matrix artifact
         if: always()
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: urls_matrix
           path: ./urls_matrix.json
       - name: Persist Get URLS report artifact
         if: always()
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: get_urls_report
           path: ./get_urls_report.txt
@@ -130,9 +135,9 @@ jobs:
     strategy:
       matrix: ${{ fromJson(needs.get-urls.outputs.matrix) }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Set up Python 3.9
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v3
         with:
           python-version: 3.9
       - name: Install dependencies
@@ -222,14 +227,14 @@ jobs:
           credentials_json: ${{ secrets.ARCHIVE_DATASET_SA_KEY }}
       - name: Upload datasets to Google Cloud Storage
         id: upload-datasets
-        uses: google-github-actions/upload-cloud-storage@main
+        uses: google-github-actions/upload-cloud-storage@v1.0.3
         with:
           path: datasets/${{ matrix.hash }}
           destination: mdb-latest
           parent: false
       - name: Persist Download Reports artifact
         if: always()
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: download_reports
           path: download_reports
@@ -239,9 +244,9 @@ jobs:
     strategy:
       matrix: ${{ fromJson(needs.get-urls.outputs.matrix) }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Set up Python 3.9
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v3
         with:
           python-version: 3.9
       - name: Install dependencies
@@ -261,6 +266,7 @@ jobs:
           DATASETS = "datasets"
           FOLDER = """${{ matrix.hash }}"""
           LATEST_REPORTS = "latest_reports"
+          URL_STORAGE_PREFIX = """${{ env.URL_STORAGE_PREFIX }}"""
 
           # Jobs constants
           BASE = "base"
@@ -270,7 +276,7 @@ jobs:
           for job in jobs:
               job_json = json.loads(job)
               base = job_json[BASE]
-              url = job_json[LATEST]
+              url = URL_STORAGE_PREFIX + job_json[LATEST]
 
               # Download the dataset
               zip_path = os.path.join(ROOT, DATASETS, FOLDER, f"{base}.zip")
@@ -306,7 +312,7 @@ jobs:
                   fp.write(file_log)
       - name: Persist Latest Reports artifact
         if: always()
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: latest_reports
           path: latest_reports

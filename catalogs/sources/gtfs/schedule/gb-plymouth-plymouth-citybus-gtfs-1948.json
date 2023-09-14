@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1948,
+    "data_type": "gtfs",
+    "provider": "Plymouth Citybus",
+    "location": {
+        "country_code": "GB",
+        "subdivision_name": "Plymouth",
+        "bounding_box": {
+            "minimum_latitude": 50.320914,
+            "maximum_latitude": 50.830762,
+            "minimum_longitude": -4.953322,
+            "maximum_longitude": -3.523523,
+            "extracted_on": "2023-08-23T20:57:23+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.discoverpassenger.com/operator/plymouthbus/dataset/current/download/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-plymouth-plymouth-citybus-gtfs-1948.zip?alt=media",
+        "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+}

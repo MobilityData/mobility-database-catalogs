@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1952,
+    "data_type": "gtfs",
+    "provider": "Swindon's Bus Company",
+    "location": {
+        "country_code": "GB",
+        "subdivision_name": "Swindon",
+        "bounding_box": {
+            "minimum_latitude": 51.06968216,
+            "maximum_latitude": 51.660953926,
+            "minimum_longitude": -2.390082642,
+            "maximum_longitude": -1.320901965,
+            "extracted_on": "2023-08-23T21:02:31+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.discoverpassenger.com/operator/swindonbus/dataset/current/download/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-swindon-swindons-bus-company-gtfs-1952.zip?alt=media",
+        "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+}

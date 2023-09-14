@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1935,
+    "data_type": "gtfs",
+    "provider": "Go North East",
+    "location": {
+        "country_code": "GB",
+        "bounding_box": {
+            "minimum_latitude": 54.56060141,
+            "maximum_latitude": 55.176566322,
+            "minimum_longitude": -2.601078944,
+            "maximum_longitude": -1.239369304,
+            "extracted_on": "2023-08-23T19:32:58+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.discoverpassenger.com/operator/gonortheast/dataset/current/download/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-unknown-go-north-east-gtfs-1935.zip?alt=media",
+        "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+}

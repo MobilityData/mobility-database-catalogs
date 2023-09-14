@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1944,
+    "data_type": "gtfs",
+    "provider": "Newbury & District",
+    "location": {
+        "country_code": "GB",
+        "subdivision_name": "West Berkshire",
+        "bounding_box": {
+            "minimum_latitude": 51.264447366,
+            "maximum_latitude": 51.540181021,
+            "minimum_longitude": -1.543161231,
+            "maximum_longitude": -0.45329237,
+            "extracted_on": "2023-08-23T20:53:09+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.discoverpassenger.com/operator/kennections/dataset/current/download/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-west-berkshire-newbury-district-gtfs-1944.zip?alt=media",
+        "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+}

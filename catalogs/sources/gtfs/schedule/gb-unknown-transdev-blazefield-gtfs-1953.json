@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1953,
+    "data_type": "gtfs",
+    "provider": "Transdev Blazefield",
+    "location": {
+        "country_code": "GB",
+        "bounding_box": {
+            "minimum_latitude": 53.478103118,
+            "maximum_latitude": 54.485112724,
+            "minimum_longitude": -2.696345463,
+            "maximum_longitude": -0.405804228,
+            "extracted_on": "2023-08-23T21:05:02+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.discoverpassenger.com/operator/transdevblazefield/dataset/current/download/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-unknown-transdev-blazefield-gtfs-1953.zip?alt=media",
+        "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+}

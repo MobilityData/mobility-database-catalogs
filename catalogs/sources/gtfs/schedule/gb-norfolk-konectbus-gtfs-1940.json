@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1940,
+    "data_type": "gtfs",
+    "provider": "konectbus",
+    "location": {
+        "country_code": "GB",
+        "subdivision_name": "Norfolk",
+        "bounding_box": {
+            "minimum_latitude": 52.373694,
+            "maximum_latitude": 52.777353544,
+            "minimum_longitude": 0.664315101,
+            "maximum_longitude": 1.536628791,
+            "extracted_on": "2023-08-23T19:47:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.discoverpassenger.com/operator/konectbus/dataset/current/download/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-norfolk-konectbus-gtfs-1940.zip?alt=media",
+        "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+}

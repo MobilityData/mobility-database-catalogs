@@ -93,7 +93,7 @@ jobs:
         run: |
           DATASETS=$(jq . ./urls_matrix.json -c)
           echo $DATASETS
-          echo "::set-output name=matrix::$DATASETS"
+          echo "matrix=$DATASETS" >> $GITHUB_OUTPUT
       - name: Persist URLs matrix artifact
         if: always()
         uses: actions/upload-artifact@v2

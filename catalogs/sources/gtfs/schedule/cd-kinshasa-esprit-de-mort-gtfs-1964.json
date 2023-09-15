@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 1964,
+    "data_type": "gtfs",
+    "provider": "Esprit de Mort, Esprit de Vie, Transco, Taxi Jaune",
+    "name": "wet conditions data collection",
+    "features": [
+        "fares-v1"
+    ],
+    "status": "inactive",
+    "location": {
+        "country_code": "CD",
+        "subdivision_name": "Kinshasa",
+        "bounding_box": {
+            "minimum_latitude": -4.448068,
+            "maximum_latitude": -4.051439,
+            "minimum_longitude": 15.213459,
+            "maximum_longitude": 15.577558,
+            "extracted_on": "2023-09-15T15:58:47+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gitlab.com/digitaltransport/data/africa/kinshasa/-/raw/main/GTFS%20Datasets/Kinshasa_WetGTFS.zip?ref_type=heads&inline=false",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cd-kinshasa-esprit-de-mort-gtfs-1964.zip?alt=media"
+    }
+}

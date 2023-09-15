@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1959,
+    "data_type": "gtfs",
+    "provider": "Sheger City Bus",
+    "status": "inactive",
+    "location": {
+        "country_code": "ET",
+        "subdivision_name": "Addis Ababa",
+        "bounding_box": {
+            "minimum_latitude": 8.92101175224791,
+            "maximum_latitude": 9.0716605208435,
+            "minimum_longitude": 38.6101618911401,
+            "maximum_longitude": 38.8910639968012,
+            "extracted_on": "2023-09-15T15:36:12+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gitlab.com/digitaltransport/data/africa/addis-ababa/-/raw/master/ShegerCityBus_GTFS.zip?inline=false",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/et-addis-ababa-sheger-city-bus-gtfs-1959.zip?alt=media"
+    }
+}

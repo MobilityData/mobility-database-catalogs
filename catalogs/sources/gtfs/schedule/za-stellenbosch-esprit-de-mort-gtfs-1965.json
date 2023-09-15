@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1965,
+    "data_type": "gtfs",
+    "provider": "Esprit de Mort, Esprit de Vie, Transco, Taxi Jaune",
+    "status": "inactive",
+    "location": {
+        "country_code": "ZA",
+        "subdivision_name": "Stellenbosch",
+        "bounding_box": {
+            "minimum_latitude": -34.084703,
+            "maximum_latitude": -33.899096,
+            "minimum_longitude": 18.821035,
+            "maximum_longitude": 18.895994,
+            "extracted_on": "2023-09-15T16:01:54+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gitlab.com/digitaltransport/data/africa/Stellenbosch/-/raw/main/GTFS%20Datasets/Stellenbosch_GTFS_V3.zip?ref_type=heads&inline=false",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/za-stellenbosch-esprit-de-mort-gtfs-1965.zip?alt=media"
+    }
+}

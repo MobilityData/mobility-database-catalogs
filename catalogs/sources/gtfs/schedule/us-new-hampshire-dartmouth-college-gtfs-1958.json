@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1958,
+    "data_type": "gtfs",
+    "provider": "Dartmouth College",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New Hampshire",
+        "municipality": "Hanover",
+        "bounding_box": {
+            "minimum_latitude": 43.669899186438,
+            "maximum_latitude": 43.70807,
+            "minimum_longitude": -72.29457,
+            "maximum_longitude": -72.2626129475841,
+            "extracted_on": "2023-09-15T14:55:29+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/dartmouth-vt-us/dartmouth-vt-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-hampshire-dartmouth-college-gtfs-1958.zip?alt=media"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 1962,
+    "data_type": "gtfs",
+    "provider": "Kigali Bus Services, Rwanda Federation of Transport Cooperatives (RFTC), Royal Express",
+    "name": "wet conditions data collection",
+    "features": [
+        "fares-v1"
+    ],
+    "status": "inactive",
+    "location": {
+        "country_code": "RW",
+        "subdivision_name": "Kigali",
+        "bounding_box": {
+            "minimum_latitude": -2.028808,
+            "maximum_latitude": -1.866579,
+            "minimum_longitude": 29.969123,
+            "maximum_longitude": 30.223911,
+            "extracted_on": "2023-09-15T15:55:15+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gitlab.com/digitaltransport/data/africa/kigali/-/raw/main/GTFS%20Datasets/Kigali_WetGTFS.zip?ref_type=heads&inline=false",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/rw-kigali-kigali-bus-services-gtfs-1962.zip?alt=media"
+    }
+}

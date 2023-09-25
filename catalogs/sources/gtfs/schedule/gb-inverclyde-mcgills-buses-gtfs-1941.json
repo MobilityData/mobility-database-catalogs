@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1941,
+    "data_type": "gtfs",
+    "provider": "McGill's Buses",
+    "location": {
+        "country_code": "GB",
+        "subdivision_name": "Inverclyde",
+        "bounding_box": {
+            "minimum_latitude": 0.0,
+            "maximum_latitude": 55.962265317,
+            "minimum_longitude": -4.89045863,
+            "maximum_longitude": 0.0,
+            "extracted_on": "2023-08-23T19:49:18+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.discoverpassenger.com/operator/mcgills/dataset/current/download/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-inverclyde-mcgills-buses-gtfs-1941.zip?alt=media",
+        "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+}

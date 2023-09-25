@@ -5,6 +5,7 @@
         "sa"
     ],
     "provider": "Thousand Oaks Transit",
+    "static_reference": [33],
     "urls": {
         "direct_download": "http://gtfs-realtime.trilliumtransit.com/gtfs-realtime/feed/thousandoaks-ca-us/service_alerts.proto",
         "authentication_type": 0

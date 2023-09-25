@@ -1,12 +1,13 @@
 {
-    "mdb_source_id": 1575,
+    "mdb_source_id": 1577,
     "data_type": "gtfs-rt",
     "entity_type": [
         "tu"
     ],
-    "provider": "LA Metro",
+    "provider": "Sonoma Marin Area Rail Transit (SMART)",
+    "static_reference": [815],
     "urls": {
-        "direct_download": "https://api.goswift.ly/real-time/lametro/gtfs-rt-trip-updates",
+        "direct_download": "https://api.goswift.ly/real-time/smart/gtfs-rt-trip-updates",
         "authentication_type": 2,
         "authentication_info": "https://goswift.ly/realtime-api-key",
         "api_key_parameter_name": "authorization",

@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1930,
+    "data_type": "gtfs",
+    "provider": "Blackpool Transport",
+    "location": {
+        "country_code": "GB",
+        "bounding_box": {
+            "minimum_latitude": 53.736535053,
+            "maximum_latitude": 53.928587297,
+            "minimum_longitude": -3.05831720873,
+            "maximum_longitude": -2.696164654,
+            "extracted_on": "2023-08-23T19:15:15+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.discoverpassenger.com/operator/bts/dataset/current/download/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-unknown-blackpool-transport-gtfs-1930.zip?alt=media",
+        "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+}

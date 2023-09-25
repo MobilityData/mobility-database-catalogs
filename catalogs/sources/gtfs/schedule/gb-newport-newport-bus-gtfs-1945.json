@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1945,
+    "data_type": "gtfs",
+    "provider": "Newport Bus",
+    "location": {
+        "country_code": "GB",
+        "subdivision_name": "Newport",
+        "bounding_box": {
+            "minimum_latitude": 51.456513186,
+            "maximum_latitude": 51.818418214,
+            "minimum_longitude": -3.198251,
+            "maximum_longitude": -2.527103347,
+            "extracted_on": "2023-08-23T20:54:22+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.discoverpassenger.com/operator/newportbus/dataset/current/download/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-newport-newport-bus-gtfs-1945.zip?alt=media",
+        "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1928,
+    "data_type": "gtfs",
+    "provider": "Brighton & Hove Bus",
+    "location": {
+        "country_code": "GB",
+        "subdivision_name": "Brighton and Hove",
+        "bounding_box": {
+            "minimum_latitude": 50.737354,
+            "maximum_latitude": 51.134146,
+            "minimum_longitude": -0.329919,
+            "maximum_longitude": 0.312269,
+            "extracted_on": "2023-08-23T19:07:24+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.discoverpassenger.com/operator/brightonhove/dataset/current/download/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-brighton-and-hove-brighton-hove-bus-gtfs-1928.zip?alt=media",
+        "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+}

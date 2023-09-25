@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1943,
+    "data_type": "gtfs",
+    "provider": "Morebus",
+    "location": {
+        "country_code": "GB",
+        "subdivision_name": "Bournemouth, Christchurch and Poole",
+        "bounding_box": {
+            "minimum_latitude": 50.607745083,
+            "maximum_latitude": 51.084148129,
+            "minimum_longitude": -2.950042607,
+            "maximum_longitude": -1.319685281,
+            "extracted_on": "2023-08-23T20:50:44+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.discoverpassenger.com/operator/morebus/dataset/current/download/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-bournemouth-morebus-gtfs-1943.zip?alt=media",
+        "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+}

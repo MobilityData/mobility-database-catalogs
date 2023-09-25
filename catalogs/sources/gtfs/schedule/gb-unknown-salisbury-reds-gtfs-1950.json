@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1950,
+    "data_type": "gtfs",
+    "provider": "Salisbury Reds",
+    "location": {
+        "country_code": "GB",
+        "bounding_box": {
+            "minimum_latitude": 50.71871103,
+            "maximum_latitude": 51.566044975,
+            "minimum_longitude": -2.407246636,
+            "maximum_longitude": -1.40573687,
+            "extracted_on": "2023-08-23T20:59:23+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.discoverpassenger.com/operator/salisburyreds/dataset/current/download/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-unknown-salisbury-reds-gtfs-1950.zip?alt=media",
+        "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+}

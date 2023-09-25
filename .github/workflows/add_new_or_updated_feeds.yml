@@ -1,0 +1,125 @@
+name: Add new or updated feeds from Google Sheets/Form
+
+on:
+    schedule:
+      - cron: '0 4 * * *' # At 00:00 ETC every day
+
+env:
+    DATE_FORMAT: "[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}|[0-9]{4}-[0-9]{2}-[0-9]{2}" # this is the format we need to compare dates between the CSV and the local system.
+    DATE_FORMAT_DESIRED: "MM/dd/yyyy"
+    
+    USERNAME: "github-actions[bot]" # GitHub username that will create the PR
+    USERNAME_EMAIL: "41898282+github-actions[bot]@users.noreply.github.com"
+    
+    ORGANIZATION: MobilityData # organization name
+    REPO_NAME: mobity-database-catalogs # repository name
+    BASE: "main"
+    
+    REVIEWERS_JSON: "[\"emmambd\"]" # List of GitHub usernames of the reviewers, in a JSON array : ["username1", "username2"]
+
+    GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT: "catalogs/sources/gtfs/schedule/"
+    GTFS_REALTIME_CATALOG_PATH_FROM_ROOT: "catalogs/sources/gtfs/realtime/"
+
+jobs:
+  add-new-updated-feeds:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup global variables
+        id: global_vars
+        run: |
+            echo "TODAYS_DATE=$(date +%m/%d/%Y)" >> $GITHUB_ENV # Ex.: 07/27/2023
+            echo "TODAYS_DAY=$(date '+%d')" >> $GITHUB_ENV # Ex.: 27
+            echo "TODAYS_MONTH=$(date '+%m')" >> $GITHUB_ENV # Ex.: 07
+            echo "TODAYS_YEAR=$(date '+%Y')" >> $GITHUB_ENV # Ex.: 2023
+
+      - name: Create branch name
+        id: create_branch_name
+        run: |
+            echo "BRANCH=${{ env.TODAYS_YEAR }}-${{ env.TODAYS_MONTH }}-${{ env.TODAYS_DAY }}" >> $GITHUB_OUTPUT # Branch name
+
+      - name: Load secrets from 1Password
+        id: onepw_secrets
+        uses: 1password/load-secrets-action@v1.3.1
+        with:
+            export-env: true # Export loaded secrets as environment variables
+        env:
+            OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
+            CREDENTIALS: "op://rbiv7rvkkrsdlpcrz3bmv7nmcu/ifkeehu5gzi7wy5ub5qvwkaire/credential"
+
+    #   - name: Get swift version # just for verification, can leave commented out
+    #     run: swift --version
+    # Swift is installed by default on github runners, tested with v 5.8.1
+
+      - name: Checkout repo
+        id: checkout_repo
+        uses: actions/checkout@v4
+        with:
+            ref: ${{ env.BASE }}
+            fetch-depth: 0
+            token: ${{ env.CREDENTIALS }}
+
+      - name: Create new branch
+        shell: bash
+        run: |
+            git checkout -b ${{ steps.create_branch_name.outputs.BRANCH }}
+            git reset --hard ${{ env.BASE }}
+
+      - name: Download CSV and process each lines
+        id: process-csv
+        run: |
+            cd ${{ github.workspace }}/scripts
+            OUTPUT=$(swift process_csv_in_github_action.swift "${{ secrets.CSV_URL }}" "${{ env.DATE_FORMAT }}" "${{ env.DATE_FORMAT_DESIRED }}")
+            echo "PYTHON_SCRIPT_ARGS=${OUTPUT}" >> $GITHUB_OUTPUT
+
+      - name: Setup Python
+        if: steps.process-csv.outputs.PYTHON_SCRIPT_ARGS != ''
+        uses: actions/setup-python@v4.7.0
+        with:
+          python-version: '3.11' # install the python version needed
+
+      - name: Create + activate a Python virtual env & run script
+        if: steps.process-csv.outputs.PYTHON_SCRIPT_ARGS != ''
+        env:
+          PYTHONPATH: ${{ github.workspace }}/tools
+          PYTHONIOENCODING: "utf8" #ascii
+        shell: bash
+        run: |
+            python -m venv env
+            source env/bin/activate
+            pip install virtualenv --quiet
+            pip install gtfs_kit --quiet
+            pip install unidecode --quiet
+
+            # We use § as the separator because for an unknown reason a newline doesn't work.
+            sections=$(echo '${{ steps.process-csv.outputs.PYTHON_SCRIPT_ARGS }}' | awk -F'§' '{for (i=1; i<=NF; i++) print $i}')
+            for section in "${sections[@]}"; do
+                eval "python -c 'from tools.operations import *; ${section}'"
+            done
+
+      - name: Commit & push
+        if: steps.process-csv.outputs.PYTHON_SCRIPT_ARGS != ''
+        uses: EndBug/add-and-commit@v9.1.3
+        with:
+            github_token: ${{ env.CREDENTIALS }}
+            new_branch: ${{ steps.create_branch_name.outputs.BRANCH }}
+            author_name: ${{ env.USERNAME }}
+            author_email: ${{ env.USERNAME_EMAIL }}
+            committer_name: ${{ env.USERNAME }}
+            committer_email: ${{ env.USERNAME_EMAIL }}
+            message: "Automated commit — New/Updated feed"
+
+    #   - name: Create Pull Request
+    #     if: steps.process-csv.outputs.PYTHON_SCRIPT_ARGS != ''
+    #     uses: peter-evans/create-pull-request@v5.0.2
+    #     with:
+    #         token: ${{ env.CREDENTIALS }}
+    #         title: "Automated commit — New/Updated feed"
+    #         commit-message: "Automated commit — New/Updated feed"
+    #         body: "New feed(s) were found, and added as a PR for you to review."
+    #         author: "${{ env.USERNAME }} <${{ env.USERNAME_EMAIL }}>"
+    #         reviewers: ${{ env.REVIEWERS_JSON }}
+    #         branch: ${{ steps.create_branch_name.outputs.BRANCH }}
+    #         base: ${{ env.BASE }}
+    #         add-paths: |
+    #             ${{ env.GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT }}
+    #             ${{ env.GTFS_REALTIME_CATALOG_PATH_FROM_ROOT }}

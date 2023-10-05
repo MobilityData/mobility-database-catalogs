@@ -11,11 +11,11 @@
             "maximum_latitude": 44.982204,
             "minimum_longitude": -93.554253,
             "maximum_longitude": -93.080275,
-            "extracted_on": "2022-03-15T17:42:15+00:00"
+            "extracted_on": "2023-10-05T01:46:59+00:00"
         }
     },
     "urls": {
-        "direct_download": "http://wiki.mvta.com/files/Home/google_transit.zip",
+        "direct_download": "http://srv.mvta.com/InfoPoint/GTFS-Zip.ashx",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-minnesota-minnesota-valley-transit-authority-mvta-gtfs-206.zip?alt=media"
     }
 }

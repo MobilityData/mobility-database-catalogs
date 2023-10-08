@@ -31,6 +31,7 @@ jobs:
             echo "TODAYS_DAY=$(date '+%d')" >> $GITHUB_ENV # Ex.: 27
             echo "TODAYS_MONTH=$(date '+%m')" >> $GITHUB_ENV # Ex.: 07
             echo "TODAYS_YEAR=$(date '+%Y')" >> $GITHUB_ENV # Ex.: 2023
+            echo "YESTERDAYS_DATE=$(date -d "yesterday" +"%m/%d/%Y")" >> $GITHUB_ENV # Ex.: 07/26/2023
 
       - name: Create branch name
         id: create_branch_name
@@ -68,7 +69,7 @@ jobs:
         id: process-csv
         run: |
             cd ${{ github.workspace }}/scripts
-            OUTPUT=$(swift process_csv_in_github_action.swift "${{ secrets.CSV_URL }}" "${{ env.DATE_FORMAT }}" "${{ env.DATE_FORMAT_DESIRED }}")
+            OUTPUT=$(swift process_csv_in_github_action.swift "${{ secrets.CSV_URL }}" "${{ env.YESTERDAYS_DATE }}" "${{ env.DATE_FORMAT }}" "${{ env.DATE_FORMAT_DESIRED }}")
             echo "PYTHON_SCRIPT_ARGS=${OUTPUT}" >> $GITHUB_OUTPUT
 
       - name: Setup Python

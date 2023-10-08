@@ -52,23 +52,24 @@ enum dataType: String {
 
 let arguments : [String] = CommandLine.arguments
 
-if CommandLine.argc == 4 {
+if CommandLine.argc == 5 {
 
     let csvLineSeparator     : String = "\n"
     let csvColumnSeparator   : String = ","
 
     let csvURLStringArg      : String = arguments[1] // the first argument [0] is the name of the script, we can ignore in this context.
-    let dateFormatGREPArg    : String = arguments[2]
-    let dateFormatDesiredArg : String = arguments[3]
+    let dateToFind           : String = arguments[2]
+    let dateFormatGREPArg    : String = arguments[3]
+    let dateFormatDesiredArg : String = arguments[4]
 
     guard let csvURLasURL : URL = URL(string: csvURLStringArg) else {
         print("\n   ERROR: The specified URL does not appear to exist :\n   \(csvURLStringArg)\n")
         exit(1)
     }
     
-    let dateFormatter : DateFormatter = DateFormatter(); let today : Date = Date()
+    let dateFormatter : DateFormatter = DateFormatter() //; let today : Date = Date()
     dateFormatter.dateFormat = dateFormatDesiredArg
-    let todayDate : String = dateFormatter.string(from: today) // Ex.: 07/27/2023
+    // let todayDate : String = dateFormatter.string(from: today) // Ex.: 07/27/2023
 
     let csvData : String = try String(contentsOf: csvURLasURL, encoding:.utf8)
 
@@ -107,7 +108,7 @@ if CommandLine.argc == 4 {
 
             let dateFromCurrentLine : String = extractDate(from: timestamp, usingGREP: dateFormatAsRegex, desiredDateFormat: dateFormatDesiredArg)
             
-            if dateFromCurrentLine == todayDate { // ...the row has been added today, process it.
+            if dateFromCurrentLine == dateToFind { // ...the row has been added on the date we're looking for, process it.
                 
                 if request.contains(requestType.isAddNewFeed.rawValue) { // add new feed
                     

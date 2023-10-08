@@ -127,22 +127,22 @@ if CommandLine.argc == 5 {
                     
                     if datatype1.contains(dataType.schedule.rawValue) { // update_gtfs_schedule_source
                         
-                        PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_schedule_source(mdb_source_id=, provider=\(provider), name=\(name), country_code=\(country), subdivision_name=\(subdivision_name), municipality=\(municipality), direct_download_url=\(downloadURL), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), license_url=\(license_url), status=\(gtfsschedulestatus), features=\(gtfsschedulefeatures))"
+                        PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_schedule_source(mdb_source_id=\"\", provider=\(provider), name=\(name), country_code=\(country), subdivision_name=\(subdivision_name), municipality=\(municipality), direct_download_url=\(downloadURL), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), license_url=\(license_url), status=\(gtfsschedulestatus), features=\(gtfsschedulefeatures))"
                         
                     } else if datatype1.contains(dataType.realtime.rawValue) { // update_gtfs_realtime_source
                         
-                        PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_realtime_source(mdb_source_id=, entity_type=\(datatype1), provider=\(provider), direct_download_url=\(downloadURL), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), license_url=\(license_url), name=\(name), static_reference=\"TO_BE_PROVIDED\", note=\(note), status=\(gtfsrealtimestatus), features=\(realtimefeatures))"
+                        PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_realtime_source(mdb_source_id=\"\", entity_type=\(datatype1), provider=\(provider), direct_download_url=\(downloadURL), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), license_url=\(license_url), name=\(name), static_reference=\"TO_BE_PROVIDED\", note=\(note), status=\(gtfsrealtimestatus), features=\(realtimefeatures))"
                     }
                     
                 }  else if request.contains(requestType.isToRemoveFeed.rawValue) { // remove feed
                     
                     if datatype1.contains(dataType.schedule.rawValue) { // update_gtfs_schedule_source
                         
-                        PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_schedule_source(mdb_source_id=, provider=\(provider), name=\"**** Requested for removal ****\", country_code=\(country), subdivision_name=\(subdivision_name), municipality=\(municipality), direct_download_url=\(downloadURL), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), license_url=\(license_url), status=\(gtfsschedulestatus), features=\(gtfsschedulefeatures))"
+                        PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_schedule_source(mdb_source_id=\"\", provider=\(provider), name=\"**** Requested for removal ****\", country_code=\(country), subdivision_name=\(subdivision_name), municipality=\(municipality), direct_download_url=\(downloadURL), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), license_url=\(license_url), status=\(gtfsschedulestatus), features=\(gtfsschedulefeatures))"
                         
                     } else if datatype1.contains(dataType.realtime.rawValue) { // update_gtfs_realtime_source
                         
-                        PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_realtime_source(mdb_source_id=, entity_type=\(datatype1), provider=\(provider), direct_download_url=\(downloadURL), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), license_url=\(license_url), name=\"**** Requested for removal ****\", static_reference=\"TO_BE_PROVIDED\", note=\(note), status=\(gtfsrealtimestatus), features=\(realtimefeatures))"
+                        PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_realtime_source(mdb_source_id=\"\", entity_type=\(datatype1), provider=\(provider), direct_download_url=\(downloadURL), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), license_url=\(license_url), name=\"**** Requested for removal ****\", static_reference=\"TO_BE_PROVIDED\", note=\(note), status=\(gtfsrealtimestatus), features=\(realtimefeatures))"
                         
                     }
                     

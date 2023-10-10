@@ -8,10 +8,8 @@ jobs:
   greeting:
     runs-on: ubuntu-latest
     steps:
-      - uses: Manoj-Paramsetti/greets-action@main
+      - uses: actions/first-interaction@v1.2.0
         if: ${{ github.event.pull_request.merged == true }}
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # here issue_message is not given since the condition checks for the merge is true. it will
-          # does not pass the checks in issue
-          PR_message: "Congrats on getting your first pull request merged!<br><br>![](https://media.giphy.com/media/l4KhQo2MESJkc6QbS/giphy.gif)"
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          pr-message: "Congrats on getting your first pull request merged!<br><br>![](https://media.giphy.com/media/l4KhQo2MESJkc6QbS/giphy.gif)"

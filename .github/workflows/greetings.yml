@@ -11,7 +11,7 @@ jobs:
       issues: write
       pull-requests: write
     steps:
-    - uses: actions/first-interaction@v1.1.1
+    - uses: actions/first-interaction@v1.2.0
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         issue-message: "Thanks for opening your first issue in this project! If you haven't already, you can [join our slack](https://docs.google.com/forms/d/e/1FAIpQLSczZbZB9ql_Xl-1uBtmvYmA0fwfm1UX92SyWAdkuMEDfxac5w/viewform) and join the #mobility-database channel to meet our awesome community. Come say hi :wave:!<br><br> Welcome to the community and thank you for contributing! :tada:<br><br> ![](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)"

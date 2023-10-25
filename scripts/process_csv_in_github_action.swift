@@ -37,6 +37,7 @@ enum column : Int, CaseIterable {
 
 enum defaults: String {
     case date = "01/01/1970"
+    case toBeProvided = "TO_BE_PROVIDED"
 }
 
 enum requestType: String {
@@ -93,6 +94,7 @@ if CommandLine.argc == 5 {
     }
     
     var PYTHON_SCRIPT_OUTPUT : String = ""
+    var lastKnownProvider : String = defaults.toBeProvided.rawValue
     let dateFormatAsRegex : Regex<AnyRegexOutput> = try Regex(dateFormatGREPArg)
 
     for line : [String] in csvArray {
@@ -121,7 +123,8 @@ if CommandLine.argc == 5 {
             let gtfsrealtimestatus      : String = line[column.gtfsrealtimestatus.rawValue]
             let realtimefeatures        : String = line[column.realtimefeatures.rawValue]
 
-            
+            if provider.count > 0 { lastKnownProvider = provider } // logic: if the cell is empty, suggest last known provider.
+            let finalProvider : String = provider.isEmpty ? "\(defaults.toBeProvided.rawValue) (\(lastKnownProvider) ?)" : provider
 
             let dateFromCurrentLine : String = extractDate(from: timestamp, usingGREP: dateFormatAsRegex, desiredDateFormat: dateFormatDesiredArg)
             
@@ -130,14 +133,13 @@ if CommandLine.argc == 5 {
                 if request.contains(requestType.isAddNewFeed.rawValue) { // add new feed
                     
                     if datatype.contains(dataType.schedule.rawValue) { // add_gtfs_schedule_source
-                        
-                        PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_schedule_source(provider=\(provider), country_code=\(country), direct_download_url=\(updatednewsourceurl.isEmpty ? downloadURL : updatednewsourceurl), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), subdivision_name=\(subdivision_name), municipality=\(municipality), license_url=\(license_url), name=\(name), status=\(gtfsschedulestatus), features=\(gtfsschedulefeatures))"
+                        PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_schedule_source(provider=\(finalProvider), country_code=\(country), direct_download_url=\(updatednewsourceurl.isEmpty ? downloadURL : updatednewsourceurl), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), subdivision_name=\(subdivision_name), municipality=\(municipality), license_url=\(license_url), name=\(name), status=\(gtfsschedulestatus), features=\(gtfsschedulefeatures))"
                         
                     } else if datatype.contains(dataType.realtime.rawValue) { // add_gtfs_realtime_source
                         // Emma: entity_type matches the realtime Data type options of Vehicle Positions, Trip Updates, or Service Alerts. If one of those three are selected, add it. If not, omit it.
                         
                         let realtimecode : String = realtimeCode(for:datatype)
-                        PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_realtime_source(entity_type=\(realtimecode), provider=\(provider), direct_download_url=\(downloadURL.isEmpty ? updatednewsourceurl : downloadURL), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), license_url=\(license_url), name=\(name), static_reference=\"TO_BE_PROVIDED\", note=\(note), status=\(gtfsrealtimestatus), features=\(realtimefeatures))"
+                        PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_realtime_source(entity_type=\(realtimecode), provider=\(finalProvider), direct_download_url=\(downloadURL.isEmpty ? updatednewsourceurl : downloadURL), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), license_url=\(license_url), name=\(name), static_reference=\"TO_BE_PROVIDED\", note=\(note), status=\(gtfsrealtimestatus), features=\(realtimefeatures))"
                         
                     }
                     
@@ -145,24 +147,24 @@ if CommandLine.argc == 5 {
                     
                     if datatype.contains(dataType.schedule.rawValue) { // update_gtfs_schedule_source
                         
-                        PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_schedule_source(mdb_source_id=\"\", provider=\(provider), name=\(name), country_code=\(country), subdivision_name=\(subdivision_name), municipality=\(municipality), direct_download_url=\(updatednewsourceurl.isEmpty ? downloadURL : updatednewsourceurl), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), license_url=\(license_url), status=\(gtfsschedulestatus), features=\(gtfsschedulefeatures))"
+                        PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_schedule_source(mdb_source_id=\"\", provider=\(finalProvider), name=\(name), country_code=\(country), subdivision_name=\(subdivision_name), municipality=\(municipality), direct_download_url=\(updatednewsourceurl.isEmpty ? downloadURL : updatednewsourceurl), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), license_url=\(license_url), status=\(gtfsschedulestatus), features=\(gtfsschedulefeatures))"
                         
                     } else if datatype.contains(dataType.realtime.rawValue) { // update_gtfs_realtime_source
                     
                         let realtimecode : String = realtimeCode(for:datatype)
-                        PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_realtime_source(mdb_source_id=\"\", entity_type=\(realtimecode), provider=\(provider), direct_download_url=\(downloadURL.isEmpty ? updatednewsourceurl : downloadURL), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), license_url=\(license_url), name=\(name), static_reference=\"TO_BE_PROVIDED\", note=\(note), status=\(gtfsrealtimestatus), features=\(realtimefeatures))"
+                        PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_realtime_source(mdb_source_id=\"\", entity_type=\(realtimecode), provider=\(finalProvider), direct_download_url=\(downloadURL.isEmpty ? updatednewsourceurl : downloadURL), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), license_url=\(license_url), name=\(name), static_reference=\"TO_BE_PROVIDED\", note=\(note), status=\(gtfsrealtimestatus), features=\(realtimefeatures))"
                     }
                     
                 }  else if request.contains(requestType.isToRemoveFeed.rawValue) { // remove feed
                     
                     if datatype.contains(dataType.schedule.rawValue) { // update_gtfs_schedule_source
                         
-                        PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_schedule_source(mdb_source_id=\"\", provider=\(provider), name=\"**** Requested for removal ****\", country_code=\(country), subdivision_name=\(subdivision_name), municipality=\(municipality), direct_download_url=\(updatednewsourceurl.isEmpty ? downloadURL : updatednewsourceurl), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), license_url=\(license_url), status=\(gtfsschedulestatus), features=\(gtfsschedulefeatures))"
+                        PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_schedule_source(mdb_source_id=\"\", provider=\(finalProvider), name=\"**** Requested for removal ****\", country_code=\(country), subdivision_name=\(subdivision_name), municipality=\(municipality), direct_download_url=\(updatednewsourceurl.isEmpty ? downloadURL : updatednewsourceurl), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), license_url=\(license_url), status=\(gtfsschedulestatus), features=\(gtfsschedulefeatures))"
                         
                     } else if datatype.contains(dataType.realtime.rawValue) { // update_gtfs_realtime_source
 
                         let realtimecode : String = realtimeCode(for:datatype)
-                        PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_realtime_source(mdb_source_id=\"\", entity_type=\"[\(realtimecode)]\", provider=\(provider), direct_download_url=\(downloadURL.isEmpty ? updatednewsourceurl : downloadURL), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), license_url=\(license_url), name=\"**** Requested for removal ****\", static_reference=\"TO_BE_PROVIDED\", note=\(note), status=\(gtfsrealtimestatus), features=\(realtimefeatures))"
+                        PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_realtime_source(mdb_source_id=\"\", entity_type=\"[\(realtimecode)]\", provider=\(finalProvider), direct_download_url=\(downloadURL.isEmpty ? updatednewsourceurl : downloadURL), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), license_url=\(license_url), name=\"**** Requested for removal ****\", static_reference=\"TO_BE_PROVIDED\", note=\(note), status=\(gtfsrealtimestatus), features=\(realtimefeatures))"
                         
                     }
                     
@@ -170,12 +172,12 @@ if CommandLine.argc == 5 {
 
                     if datatype.contains(dataType.schedule.rawValue) { // update_gtfs_schedule_source
                         
-                        PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_schedule_source(provider=\(provider), country_code=\(country), direct_download_url=\(updatednewsourceurl.isEmpty ? downloadURL : updatednewsourceurl), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), subdivision_name=\(subdivision_name), municipality=\(municipality), license_url=\(license_url), name=\(name), status=\(gtfsschedulestatus), features=\(gtfsschedulefeatures))"
+                        PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_schedule_source(provider=\(finalProvider), country_code=\(country), direct_download_url=\(updatednewsourceurl.isEmpty ? downloadURL : updatednewsourceurl), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), subdivision_name=\(subdivision_name), municipality=\(municipality), license_url=\(license_url), name=\(name), status=\(gtfsschedulestatus), features=\(gtfsschedulefeatures))"
                         
                     } else if datatype.contains(dataType.realtime.rawValue) { // update_gtfs_realtime_source
 
                         let realtimecode : String = realtimeCode(for:datatype)
-                        PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_realtime_source(entity_type=\(realtimecode), provider=\(provider), direct_download_url=\(downloadURL.isEmpty ? updatednewsourceurl : downloadURL), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), license_url=\(license_url), name=\(name), static_reference=\"TO_BE_PROVIDED\", note=\(note), status=\(gtfsrealtimestatus), features=\(realtimefeatures))"
+                        PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_realtime_source(entity_type=\(realtimecode), provider=\(finalProvider), direct_download_url=\(downloadURL.isEmpty ? updatednewsourceurl : downloadURL), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), license_url=\(license_url), name=\(name), static_reference=\"TO_BE_PROVIDED\", note=\(note), status=\(gtfsrealtimestatus), features=\(realtimefeatures))"
                         
                     }
                 }

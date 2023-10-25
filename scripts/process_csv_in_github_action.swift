@@ -50,6 +50,20 @@ enum dataType: String {
     case realtime = "Realtime"
 }
 
+enum realtimeDataType: String {
+    case vehiclePositions = "Vehicle Positions"
+    case tripUpdates = "Trip Updates"
+    case serviceAlerts = "Service Alerts"
+    case unknown = "general / unknown"
+}
+
+enum realtimeDataTypeCode: String {
+    case vehiclePositions = "vp"
+    case tripUpdates = "tu"
+    case serviceAlerts = "sa"
+    case unknown = "gu"
+}
+
 let arguments : [String] = CommandLine.arguments
 
 if CommandLine.argc == 5 {
@@ -122,7 +136,8 @@ if CommandLine.argc == 5 {
                     } else if datatype.contains(dataType.realtime.rawValue) { // add_gtfs_realtime_source
                         // Emma: entity_type matches the realtime Data type options of Vehicle Positions, Trip Updates, or Service Alerts. If one of those three are selected, add it. If not, omit it.
                         
-                        PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_realtime_source(entity_type=\(datatype), provider=\(provider), direct_download_url=\(downloadURL.isEmpty ? updatednewsourceurl : downloadURL), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), license_url=\(license_url), name=\(name), static_reference=\"TO_BE_PROVIDED\", note=\(note), status=\(gtfsrealtimestatus), features=\(realtimefeatures))"
+                        let realtimecode : String = realtimeCode(for:datatype)
+                        PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_realtime_source(entity_type=\(realtimecode), provider=\(provider), direct_download_url=\(downloadURL.isEmpty ? updatednewsourceurl : downloadURL), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), license_url=\(license_url), name=\(name), static_reference=\"TO_BE_PROVIDED\", note=\(note), status=\(gtfsrealtimestatus), features=\(realtimefeatures))"
                         
                     }
                     
@@ -133,8 +148,9 @@ if CommandLine.argc == 5 {
                         PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_schedule_source(mdb_source_id=\"\", provider=\(provider), name=\(name), country_code=\(country), subdivision_name=\(subdivision_name), municipality=\(municipality), direct_download_url=\(updatednewsourceurl.isEmpty ? downloadURL : updatednewsourceurl), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), license_url=\(license_url), status=\(gtfsschedulestatus), features=\(gtfsschedulefeatures))"
                         
                     } else if datatype.contains(dataType.realtime.rawValue) { // update_gtfs_realtime_source
-                        
-                        PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_realtime_source(mdb_source_id=\"\", entity_type=\(datatype), provider=\(provider), direct_download_url=\(downloadURL.isEmpty ? updatednewsourceurl : downloadURL), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), license_url=\(license_url), name=\(name), static_reference=\"TO_BE_PROVIDED\", note=\(note), status=\(gtfsrealtimestatus), features=\(realtimefeatures))"
+                    
+                        let realtimecode : String = realtimeCode(for:datatype)
+                        PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_realtime_source(mdb_source_id=\"\", entity_type=\(realtimecode), provider=\(provider), direct_download_url=\(downloadURL.isEmpty ? updatednewsourceurl : downloadURL), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), license_url=\(license_url), name=\(name), static_reference=\"TO_BE_PROVIDED\", note=\(note), status=\(gtfsrealtimestatus), features=\(realtimefeatures))"
                     }
                     
                 }  else if request.contains(requestType.isToRemoveFeed.rawValue) { // remove feed
@@ -144,8 +160,9 @@ if CommandLine.argc == 5 {
                         PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_schedule_source(mdb_source_id=\"\", provider=\(provider), name=\"**** Requested for removal ****\", country_code=\(country), subdivision_name=\(subdivision_name), municipality=\(municipality), direct_download_url=\(updatednewsourceurl.isEmpty ? downloadURL : updatednewsourceurl), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), license_url=\(license_url), status=\(gtfsschedulestatus), features=\(gtfsschedulefeatures))"
                         
                     } else if datatype.contains(dataType.realtime.rawValue) { // update_gtfs_realtime_source
-                        
-                        PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_realtime_source(mdb_source_id=\"\", entity_type=\(datatype), provider=\(provider), direct_download_url=\(downloadURL.isEmpty ? updatednewsourceurl : downloadURL), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), license_url=\(license_url), name=\"**** Requested for removal ****\", static_reference=\"TO_BE_PROVIDED\", note=\(note), status=\(gtfsrealtimestatus), features=\(realtimefeatures))"
+
+                        let realtimecode : String = realtimeCode(for:datatype)
+                        PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_realtime_source(mdb_source_id=\"\", entity_type=\"[\(realtimecode)]\", provider=\(provider), direct_download_url=\(downloadURL.isEmpty ? updatednewsourceurl : downloadURL), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), license_url=\(license_url), name=\"**** Requested for removal ****\", static_reference=\"TO_BE_PROVIDED\", note=\(note), status=\(gtfsrealtimestatus), features=\(realtimefeatures))"
                         
                     }
                     
@@ -191,4 +208,11 @@ func extractDate(from theDateToConvert: String, usingGREP dateFormatAsGREP: Rege
     
     // return default date
     return defaults.date.rawValue
+}
+
+func realtimeCode(for theDataType: String) -> String {
+    if theDataType.contains(realtimeDataType.vehiclePositions.rawValue) { return realtimeDataTypeCode.vehiclePositions.rawValue }
+    if theDataType.contains(realtimeDataType.tripUpdates.rawValue) { return realtimeDataTypeCode.tripUpdates.rawValue }
+    if theDataType.contains(realtimeDataType.serviceAlerts.rawValue) { return realtimeDataTypeCode.serviceAlerts.rawValue }
+    return realtimeDataTypeCode.unknown.rawValue
 }

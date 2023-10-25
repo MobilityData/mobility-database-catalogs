@@ -167,9 +167,17 @@ if CommandLine.argc == 5 {
                     }
                     
                 } else { // ... assume this is a new feed by default :: add_gtfs_schedule_source
-                    
-                    PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_schedule_source(provider=\(provider), country_code=\(country), direct_download_url=\(updatednewsourceurl.isEmpty ? downloadURL : updatednewsourceurl), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), subdivision_name=\(subdivision_name), municipality=\(municipality), license_url=\(license_url), name=\(name), status=\(gtfsschedulestatus), features=\(gtfsschedulefeatures))"
-                    
+
+                    if datatype.contains(dataType.schedule.rawValue) { // update_gtfs_schedule_source
+                        
+                        PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_schedule_source(provider=\(provider), country_code=\(country), direct_download_url=\(updatednewsourceurl.isEmpty ? downloadURL : updatednewsourceurl), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), subdivision_name=\(subdivision_name), municipality=\(municipality), license_url=\(license_url), name=\(name), status=\(gtfsschedulestatus), features=\(gtfsschedulefeatures))"
+                        
+                    } else if datatype.contains(dataType.realtime.rawValue) { // update_gtfs_realtime_source
+
+                        let realtimecode : String = realtimeCode(for:datatype)
+                        PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_realtime_source(entity_type=\(realtimecode), provider=\(provider), direct_download_url=\(downloadURL.isEmpty ? updatednewsourceurl : downloadURL), authentication_type=\(authentication_type), authentication_info_url=\(authentication_info_url), api_key_parameter_name=\(api_key_parameter_name), license_url=\(license_url), name=\(name), static_reference=\"TO_BE_PROVIDED\", note=\(note), status=\(gtfsrealtimestatus), features=\(realtimefeatures))"
+                        
+                    }
                 }
                 
             }

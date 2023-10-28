@@ -111,7 +111,7 @@ if CommandLine.argc == 5 {
             let subdivision_name        : String = line[column.subdivision_name.rawValue]
             let municipality            : String = line[column.municipality.rawValue]
             let name                    : String = line[column.name.rawValue]
-            let license_url             : String = line[column.license_url.rawValue]
+            var license_url             : String = line[column.license_url.rawValue]
             let downloadURL             : String = line[column.downloadurl.rawValue]
             let updatednewsourceurl     : String = line[column.updatednewsourceurl.rawValue]
             let authentication_type     : String = line[column.authentication_type.rawValue]
@@ -123,8 +123,13 @@ if CommandLine.argc == 5 {
             let gtfsrealtimestatus      : String = line[column.gtfsrealtimestatus.rawValue]
             let realtimefeatures        : String = line[column.realtimefeatures.rawValue]
 
-            if provider.count > 0 { lastKnownProvider = provider } // logic: if the cell is empty, suggest last known provider.
+            // Check if provider is empty, suggest last known if true.
+            if provider.count > 0 { lastKnownProvider = provider }
             let finalProvider : String = provider.isEmpty ? "\(defaults.toBeProvided.rawValue) (\(lastKnownProvider) ?)" : provider
+
+            // Check if license URL is valid
+            let urlPresent : Bool = isURLPresent(in: license_url)
+            if ( urlPresent == false && license_url.count > 0 ) { license_url = "INVALID_OR_NO_URL_PROVIDED : [ \(license_url) ]" }
 
             let dateFromCurrentLine : String = extractDate(from: timestamp, usingGREP: dateFormatAsRegex, desiredDateFormat: dateFormatDesiredArg)
             
@@ -225,4 +230,16 @@ func realtimeCode(for theDataType: String) -> String {
     if theDataType.contains(realtimeDataType.tripUpdates.rawValue) { return realtimeDataTypeCode.tripUpdates.rawValue }
     if theDataType.contains(realtimeDataType.serviceAlerts.rawValue) { return realtimeDataTypeCode.serviceAlerts.rawValue }
     return realtimeDataTypeCode.unknown.rawValue
+}
+
+func isURLPresent(in string: String) -> Bool {
+    do {
+        let pattern : String = "(http|https)://[a-zA-Z0-9./?=_%:-]*"
+        let regex = try NSRegularExpression(pattern: pattern, options: [])
+        let range = NSRange(location: 0, length: string.utf16.count)
+        if let _ = regex.firstMatch(in: string, options: [], range: range) { return true }
+    } catch {
+        print("Error creating or using regular expression: \(error)")
+    }
+    return false
 }

@@ -1,0 +1,32 @@
+{
+    "mdb_source_id": 2001,
+    "data_type": "gtfs",
+    "provider": "Eastern Sierra Transit test 2",
+    "features": [
+        "fares-v1",
+        "fares-v2"
+    ],
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Bishop",
+        "bounding_box": {
+            "minimum_latitude": 34.696209,
+            "maximum_latitude": 39.53475879,
+            "minimum_longitude": -119.818352,
+            "maximum_longitude": -115.908348,
+            "extracted_on": "2022-03-14T20:06:51+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://data.trilliumtransit.com/gtfs/easternsierra-ca-us/easternsierra-ca-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-eastern-sierra-transit-gtfs-25.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": 22,
+            "comment": "SOme comment"
+        }
+    ],
+    "redirects": ["25"]
+}

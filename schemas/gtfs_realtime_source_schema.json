@@ -10,19 +10,13 @@
     "data_type": {
       "type": "string",
       "description": "The data format that the source uses, e.g gtfs, gtfs-rt.",
-      "enum": [
-        "gtfs-rt"
-      ]
+      "enum": ["gtfs-rt"]
     },
     "entity_type": {
       "type": "array",
       "items": {
         "type": "string",
-        "enum": [
-          "vp",
-          "tu",
-          "sa"
-        ]
+        "enum": ["vp", "tu", "sa"]
       },
       "description": "The feed entity types (abbreviated) available in the source: vp (vehicle positions), tu (trip updates) and sa (service alerts)."
     },
@@ -46,20 +40,13 @@
       "description": "A list of features that the source supports.",
       "items": {
         "type": "string",
-        "enum": [
-          "occupancy"
-        ]
+        "enum": ["occupancy"]
       }
     },
     "status": {
       "type": "string",
       "description": "The status of the source which can be used to determine if/how to include it in public trip-planning. If not provided, source is assumed to be active. Should be one of: active: The source is active and should be included in public trip-planning. inactive: The source is inactive / hasn't been updated recently and should be included in public trip-planning at risk of providing outdated information. deprecated: The source is explicitly deprecated and should not be included in public trip-planning. development: The source is in development or being used to test a specific feature and should not be included in public trip-planning.",
-      "enum": [
-        "active",
-        "deprecated",
-        "inactive",
-        "development"
-      ]
+      "enum": ["active","deprecated","inactive","development"]
     },
     "note": {
       "type": "string",

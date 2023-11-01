@@ -3,6 +3,7 @@ name: Export catalogs to CSV
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   export-to-csv:
@@ -57,6 +58,8 @@ jobs:
               'location.bounding_box.extracted_on',
               'status',
               'features',
+              'redirect.id',
+              'redirect.comment'
             ]
 
             # tools.constants
@@ -73,6 +76,9 @@ jobs:
             UNKNOWN = "unknown"
             URLS_AUTHENTICATION_TYPE = "urls.authentication_type"
             FEATURES = "features"
+            REDIRECTS = "redirect"
+            REDIRECT_ID = "redirect.id"
+            REDIRECT_COMMENT = "redirect.comment"
 
             # tools.constants.GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT
             GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT = "catalogs/sources/gtfs/schedule"
@@ -104,6 +110,23 @@ jobs:
                     source[ENTITY_TYPE] = "|".join(source.get(ENTITY_TYPE))
                 if len(source.get(FEATURES, [])) > 0:
                     source[FEATURES] = "|".join(source.get(FEATURES))
+            
+                # For redirects, allow strings or integers
+                redirects = source.pop(REDIRECTS, [])
+                # Extract ids and comments
+                ids = []
+                comments = []
+
+                for item in redirects:
+                    ids.append(str(item["id"]))               # Convert to string since we allow integer ids
+                    comments.append(item.get("comment", ""))  # Default to an empty string if "comment" is missing
+
+                # Join the ids and comments with '|' as separator
+                ids_str = "|".join(ids)
+                comments_str = "|".join(comments) if comments else ""
+                source[REDIRECT_ID] = ids_str
+                source[REDIRECT_COMMENT] = comments_str
+
                 catalog[source_id] = source
             # Sort the catalog and convert it to a list
             catalog = list(dict(sorted(catalog.items())).values())
@@ -129,6 +152,9 @@ jobs:
   store-csv:
     needs: [ export-to-csv ]
     runs-on: ubuntu-latest
+    # Don't upload to Google Cloud if it was triggered by hand.
+    # In that case the resulting sources.csv can be found in the build artifacts.
+    if: ${{ github.event_name != 'workflow_dispatch' }}
     steps:
       - uses: actions/checkout@v2
       - name: Download the catalog of sources CSV artifact

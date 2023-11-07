@@ -1,10 +1,10 @@
 {
     "mdb_source_id": 1029,
     "data_type": "gtfs",
-    "provider": "SeaLink Pine Harbour, Waikato Regional Council, Pavlovich Transport Solutions, AT Metro, Ritchies Transport, Belaire Ferries, Fullers360, New Zealand Bus, Go Bus, Bayes Coachlines, Tranzit Group Ltd, Howick and Eastern, Mahu City Express, AT Metro Bus, Waiheke Bus Company",
+    "provider": "Auckland Transport",
     "location": {
         "country_code": "NZ",
-        "subdivision_name": "Waikato",
+        "subdivision_name": "",
         "bounding_box": {
             "minimum_latitude": -37.79264,
             "maximum_latitude": -36.2941,

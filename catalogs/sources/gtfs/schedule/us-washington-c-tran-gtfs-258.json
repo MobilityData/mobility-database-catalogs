@@ -2,6 +2,7 @@
     "mdb_source_id": 258,
     "data_type": "gtfs",
     "provider": "C-TRAN",
+    "name": "Clark County Public Transportation Benefit Area",
     "location": {
         "country_code": "US",
         "subdivision_name": "Washington",
@@ -16,6 +17,7 @@
     },
     "urls": {
         "direct_download": "http://www.c-tran.com/images/Google/GoogleTransitUpload.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-c-tran-gtfs-258.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-c-tran-gtfs-258.zip?alt=media",
+        "license": "https://c-tran.com/about-c-tran/business/c-tran-gtfs-data"
     }
 }

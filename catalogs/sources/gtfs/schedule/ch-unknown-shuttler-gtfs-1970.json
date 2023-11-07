@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 1970,
+    "data_type": "gtfs",
+    "provider": "Shuttler",
+    "location": {
+        "country_code": "CH",
+        "bounding_box": {
+            "minimum_latitude": 46.6805335269974,
+            "maximum_latitude": 47.4517202108104,
+            "minimum_longitude": 7.8521631508527,
+            "maximum_longitude": 8.57200469108631,
+            "extracted_on": "2023-11-07T21:05:37+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://shuttler.ch/transit-data/gtfs/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ch-unknown-shuttler-gtfs-1970.zip?alt=media",
+        "license": "https://www.shuttler.ch/gtc"
+    }
+}

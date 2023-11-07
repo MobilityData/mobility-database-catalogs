@@ -10,7 +10,7 @@
     ],
     "urls": {
         "direct_download": "https://www.zditm.szczecin.pl/storage/gtfs/gtfs-rt-vehicles.pb",
-        "authentication_type": "0",
+        "authentication_type": 0,
         "license": "https://www.zditm.szczecin.pl/pl/zditm/dla-programistow/gtfs"
     }
 }

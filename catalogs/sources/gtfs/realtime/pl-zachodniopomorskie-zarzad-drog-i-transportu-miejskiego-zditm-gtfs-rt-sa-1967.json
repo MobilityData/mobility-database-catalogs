@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 1967,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Zarząd Dróg i Transportu Miejskiego (ZDiTM)",
+    "static_reference": [
+        981
+    ],
+    "urls": {
+        "direct_download": "https://www.zditm.szczecin.pl/storage/gtfs/gtfs-rt-alerts.pb",
+        "authentication_type": 0,
+        "license": "https://www.zditm.szczecin.pl/pl/zditm/dla-programistow/gtfs"
+    }
+}

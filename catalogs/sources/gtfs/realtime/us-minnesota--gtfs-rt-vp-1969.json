@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 1969,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Minnesota Valley Transit Authority",
+    "name": "",
+    "static_reference": [
+        206
+    ],
+    "urls": {
+        "direct_download": "https://srv.mvta.com/infoPoint/GTFS-realtime.ashx?Type=VehiclePosition",
+        "authentication_type": 0
+    }
+}

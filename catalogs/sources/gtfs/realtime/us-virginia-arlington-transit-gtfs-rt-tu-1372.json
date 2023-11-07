@@ -9,7 +9,7 @@
         485
     ],
     "urls": {
-        "direct_download": "http://realtime.commuterpage.com/rtt/public/utility/gtfsrealtime.aspx/tripupdate",
+        "direct_download": "https://realtime.arlingtontransit.com/gtfsrt/trips",
         "authentication_type": 0,
         "license": "https://www.arlingtontransit.com/riding-art/rider-tools/tools-for-developers/"
     }

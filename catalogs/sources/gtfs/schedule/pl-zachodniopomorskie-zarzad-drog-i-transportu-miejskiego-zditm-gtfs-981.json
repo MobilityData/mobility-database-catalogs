@@ -11,11 +11,12 @@
             "maximum_latitude": 53.594587,
             "minimum_longitude": 14.309758,
             "maximum_longitude": 14.782657,
-            "extracted_on": "2022-03-17T18:55:02+00:00"
+            "extracted_on": "2023-11-07T21:04:30+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://www.zditm.szczecin.pl/rozklady/GTFS/latest/google_gtfs.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-zachodniopomorskie-zarzad-drog-i-transportu-miejskiego-zditm-gtfs-981.zip?alt=media"
+        "direct_download": "https://www.zditm.szczecin.pl/storage/gtfs/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-zachodniopomorskie-zarzad-drog-i-transportu-miejskiego-zditm-gtfs-981.zip?alt=media",
+        "license": "https://www.zditm.szczecin.pl/pl/zditm/dla-programistow/gtfs"
     }
 }

@@ -1,7 +1,9 @@
 {
     "mdb_source_id": 1966,
     "data_type": "gtfs-rt",
-    "entity_type": "tu",
+    "entity_type": [
+        "tu"
+    ],
     "provider": "Zarząd Dróg i Transportu Miejskiego (ZDiTM)",
     "static_reference": [
         981

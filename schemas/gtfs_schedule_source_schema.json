@@ -180,6 +180,23 @@
         }
       ],
       "required": ["direct_download", "latest"]
+    },
+    "redirect": {
+      "type": "array",
+      "description": "A list of feed IDs that should be used as a replacement for this feed.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "The target feed id of that redirect."
+          },
+          "comment": {
+            "type": "string",
+            "description": "A comment explaining the redirect."
+          }
+        }
+      }
     }
   },
   "required": ["mdb_source_id", "data_type", "provider", "location", "urls"]

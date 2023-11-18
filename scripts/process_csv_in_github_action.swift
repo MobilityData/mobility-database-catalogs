@@ -203,6 +203,9 @@ if CommandLine.argc == 5 {
 
     } // END FOR LOOP
 
+    // Replace single quotes (like in McGill's) with an apostrophe so there is no interference with the bash script in the next step.
+    PYTHON_SCRIPT_OUTPUT = PYTHON_SCRIPT_OUTPUT.replacingOccurrences(of: "'", with: "ʼ")
+
     // return final output so the action can grab it and pass it on to the Python script.
     print(PYTHON_SCRIPT_OUTPUT.dropFirst())
 

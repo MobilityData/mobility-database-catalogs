@@ -11,6 +11,6 @@
     "urls": {
         "direct_download": "http://transitdata.nashvillemta.org/TMGTFSRealTimeWebService/tripupdate/tripupdates.pb",
         "authentication_type": 0,
-        "license": "https://www.nashvillemta.org/Nashville-MTA-Developer-Data-Request.asp"
+        "license": "https://www.wegotransit.com/contact-us/data-request-submission/"
     }
 }

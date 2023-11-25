@@ -15,7 +15,8 @@
         }
     },
     "urls": {
-        "direct_download": "http://www.nashvillemta.org/GoogleExport/google_transit.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-tennessee-nashville-metropolitan-transit-authority-nashville-mta-gtfs-360.zip?alt=media"
+        "direct_download": "https://www.wegotransit.com/googleexport/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-tennessee-nashville-metropolitan-transit-authority-nashville-mta-gtfs-360.zip?alt=media",
+        "license": "https://www.wegotransit.com/contact-us/data-request-submission/"
     }
 }

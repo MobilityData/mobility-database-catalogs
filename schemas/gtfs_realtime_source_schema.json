@@ -28,6 +28,10 @@
       "type": "string",
       "description": "An optional description of the data source, e.g to specify if the data source is an aggregate of multiple providers, or which network is represented by the source."
     },
+    "feed_contact_email": {
+      "type": "string",
+      "description": "An email to use to contact the provider of the feed."
+    },
     "static_reference": {
       "type": "array",
       "items": {

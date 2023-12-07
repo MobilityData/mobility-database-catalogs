@@ -1,4 +1,4 @@
-# Read the feed json files and generate the sources.csv file.
+# Read the feeds json files and generate the sources.csv file.
 # Normally called from the export_to_csv github action, but can also be called directly with python.
 import pandas as pd
 import os
@@ -15,6 +15,7 @@ CSV_COLUMNS = [
     'provider',
     'name',
     'note',
+    'feed_contact_email',
     'static_reference',
     'urls.direct_download',
     'urls.authentication_type',
@@ -50,6 +51,7 @@ FEATURES = "features"
 REDIRECTS = "redirect"
 REDIRECT_ID = "redirect.id"
 REDIRECT_COMMENT = "redirect.comment"
+FEED_CONTACT_EMAIL = "feed_contact_email"
 
 # tools.constants.GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT
 GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT = "catalogs/sources/gtfs/schedule"
@@ -61,9 +63,16 @@ GTFS_REALTIME_CATALOG_PATH_FROM_ROOT = "catalogs/sources/gtfs/realtime"
 gtfs_schedule_catalog_path = os.path.join(".", GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT)
 gtfs_realtime_catalog_path = os.path.join(".", GTFS_REALTIME_CATALOG_PATH_FROM_ROOT)
 catalog = {}
+count = 0
 for catalog_path in [gtfs_schedule_catalog_path, gtfs_realtime_catalog_path]:
     for path, sub_dirs, files in os.walk(catalog_path):
         for file in files:
+            # if count > 10:
+            #     # if "aa.json" not in file and "bb.json" not in file:
+            #     if "aa.json" not in file:
+            #         continue
+            # count += 1
+            # print("file = ", file)
             with open(os.path.join(path, file)) as fp:
                 entity_json = json.load(fp)
                 entity_id = entity_json[MDB_SOURCE_ID]
@@ -110,6 +119,8 @@ tmp = pd.DataFrame()
 for column in columns:
     if column in catalog:
         tmp[column] = catalog[column]
+    # else:  # None of the input json file has the column. We still want it in the .csv file.
+    #     tmp[column] = None
 catalog = tmp
 if URLS_AUTHENTICATION_TYPE in catalog:
     catalog[URLS_AUTHENTICATION_TYPE] = catalog[URLS_AUTHENTICATION_TYPE].astype('Int64')

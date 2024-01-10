@@ -6,6 +6,10 @@
         "fares-v2",
         "fares-v1"
     ],
+    "status": "deprecated",
+    "redirect": [
+        1972
+    ],
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

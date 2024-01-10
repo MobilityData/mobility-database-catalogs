@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1971,
+    "data_type": "gtfs",
+    "provider": "Link Transit",
+    "feed_contact_email": "support@gmvsync.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "North Carolina",
+        "municipality": "Burlington",
+        "bounding_box": {
+            "minimum_latitude": 36.056412,
+            "maximum_latitude": 36.115028,
+            "minimum_longitude": -79.548927,
+            "maximum_longitude": -79.357436,
+            "extracted_on": "2024-01-10T21:37:36+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://mylinktransit.org/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-north-carolina-link-transit-gtfs-1971.zip?alt=media"
+    }
+}

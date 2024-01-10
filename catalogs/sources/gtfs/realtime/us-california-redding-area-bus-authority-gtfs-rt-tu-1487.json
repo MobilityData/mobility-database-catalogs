@@ -6,7 +6,7 @@
     ],
     "provider": "Redding Area Bus Authority",
     "static_reference": [
-        114
+        1972
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/redding/gtfs-rt-trip-updates",

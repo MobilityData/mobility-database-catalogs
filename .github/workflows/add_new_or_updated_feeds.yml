@@ -3,6 +3,9 @@ name: Add new or updated feeds from Google Sheets/Form
 on:
     schedule:
       - cron: '55 3 * * *' # At 00:00 ETC every day
+    push: # TODO delete before merge
+      branches:
+        - 'feat/16/api'
 
 env:
     DATE_FORMAT: "[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}|[0-9]{4}-[0-9]{2}-[0-9]{2}" # this is the format we need to compare dates between the CSV and the local system.
@@ -12,9 +15,11 @@ env:
     USERNAME_EMAIL: "41898282+github-actions[bot]@users.noreply.github.com"
     
     ORGANIZATION: MobilityData # organization name
-    REPO_NAME: mobity-database-catalogs # repository name
+    REPO_NAME: mobility-database-catalogs # repository name
     BASE: "main"
-    
+    API_REPO_NAME: mobility-feed-api
+    API_TRIGGER_EVENT: catalog-sources-updated
+
     REVIEWERS_JSON: "[\"emmambd\"]" # List of GitHub usernames of the reviewers, in a JSON array : ["username1", "username2"]
 
     GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT: "catalogs/sources/gtfs/schedule/"
@@ -108,6 +113,14 @@ jobs:
             committer_name: ${{ env.USERNAME }}
             committer_email: ${{ env.USERNAME_EMAIL }}
             message: "Automated commit — New/Updated feed"
+
+      - name: Trigger Update in API
+#        if: steps.process-csv.outputs.PYTHON_SCRIPT_ARGS != ''
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ env.CREDENTIALS }}
+          repository: ${{ env.ORGANIZATION }}/${{ env.API_REPO_NAME }}
+          event-type: ${{ env.API_TRIGGER_EVENT }}
 
     #   - name: Create Pull Request
     #     if: steps.process-csv.outputs.PYTHON_SCRIPT_ARGS != ''

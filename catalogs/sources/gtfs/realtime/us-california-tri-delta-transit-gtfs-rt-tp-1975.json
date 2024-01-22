@@ -2,7 +2,7 @@
     "mdb_source_id": 1975,
     "data_type": "gtfs-rt",
     "entity_type": [
-        "tp"
+        "tu"
     ],
     "provider": "Tri Delta Transit",
     "static_reference": [

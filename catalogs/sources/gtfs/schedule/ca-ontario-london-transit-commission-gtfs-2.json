@@ -2,7 +2,7 @@
     "mdb_source_id": 2,
     "data_type": "gtfs",
     "provider": "London Transit Commission",
-    "name": "",
+    "feed_contact_email": "croy@londontransit.ca",
     "location": {
         "country_code": "CA",
         "subdivision_name": "Ontario",

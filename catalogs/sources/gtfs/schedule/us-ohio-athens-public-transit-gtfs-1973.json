@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1973,
+    "data_type": "gtfs",
+    "provider": "Athens Public Transit",
+    "feed_contact_email": "info@athenspublictransit.org",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Ohio",
+        "municipality": "Athens",
+        "bounding_box": {
+            "minimum_latitude": 39.223943,
+            "maximum_latitude": 39.469958,
+            "minimum_longitude": -82.250627,
+            "maximum_longitude": -82.028,
+            "extracted_on": "2024-01-18T22:25:23+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://hosted-gtfs-feeds.s3.amazonaws.com/HAPCAP/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-ohio-athens-public-transit-gtfs-1973.zip?alt=media"
+    }
+}

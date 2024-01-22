@@ -1,0 +1,18 @@
+{
+    "mdb_source_id": 1977,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Tri Delta Transit",
+    "static_reference": [
+        1974
+    ],
+    "urls": {
+        "direct_download": "https://api.511.org/transit/servicealerts?agency=3D",
+        "authentication_type": 1,
+        "authentication_info": "https://511.org/open-data/token",
+        "api_key_parameter_name": "api_key",
+        "license": "https://511.org/sites/default/files/pdfs/511_Data_Agreement_Final.pdf"
+    }
+}

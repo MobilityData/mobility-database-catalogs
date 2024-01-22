@@ -1,0 +1,27 @@
+{
+    "mdb_source_id": 1974,
+    "data_type": "gtfs",
+    "provider": "Tri Delta Transit",
+    "feed_contact_email": "511sfbaydeveloperresources@googlegroups.com",
+    "status": "active",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Concord",
+        "bounding_box": {
+            "minimum_latitude": 37.895701,
+            "maximum_latitude": 38.039856,
+            "minimum_longitude": -122.139478,
+            "maximum_longitude": -121.6914,
+            "extracted_on": "2024-01-22T18:17:58+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://api.511.org/transit/datafeeds?operator_id=3D",
+        "authentication_type": 1,
+        "authentication_info": "https://511.org/open-data/token",
+        "api_key_parameter_name": "api_key",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-tri-delta-transit-gtfs-1974.zip?alt=media",
+        "license": "https://511.org/sites/default/files/pdfs/511_Data_Agreement_Final.pdf"
+    }
+}

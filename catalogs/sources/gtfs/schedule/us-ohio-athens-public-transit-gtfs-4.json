@@ -2,7 +2,12 @@
     "mdb_source_id": 4,
     "data_type": "gtfs",
     "provider": "Athens Public Transit",
-    "status": "inactive",
+    "status": "deprecated",
+    "redirect": [
+        {
+            "id": 1973
+        }
+    ],
     "location": {
         "country_code": "US",
         "subdivision_name": "Ohio",

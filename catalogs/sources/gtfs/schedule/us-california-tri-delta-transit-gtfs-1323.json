@@ -2,7 +2,12 @@
     "mdb_source_id": 1323,
     "data_type": "gtfs",
     "provider": "Tri Delta Transit",
-    "status": "inactive",
+    "status": "deprecated",
+    "redirect": [
+        {
+            "id": 1974
+        }
+    ],
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

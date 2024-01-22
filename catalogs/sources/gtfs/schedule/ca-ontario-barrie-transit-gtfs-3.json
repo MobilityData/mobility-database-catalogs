@@ -2,7 +2,6 @@
     "mdb_source_id": 3,
     "data_type": "gtfs",
     "provider": "Barrie Transit",
-    "name": "",
     "location": {
         "country_code": "CA",
         "subdivision_name": "Ontario",
@@ -17,6 +16,7 @@
     },
     "urls": {
         "direct_download": "http://www.myridebarrie.ca/gtfs/Google_transit.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-barrie-transit-gtfs-3.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-barrie-transit-gtfs-3.zip?alt=media",
+        "license": "https://www.barrie.ca/services-payments/transportation-parking/barrie-transit/barrie-gtfs"
     }
 }

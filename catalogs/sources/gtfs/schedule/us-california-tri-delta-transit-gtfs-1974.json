@@ -2,6 +2,7 @@
     "mdb_source_id": 1974,
     "data_type": "gtfs",
     "provider": "Tri Delta Transit",
+    "feed_contact_email": "511sfbaydeveloperresources@googlegroups.com",
     "status": "active",
     "location": {
         "country_code": "US",

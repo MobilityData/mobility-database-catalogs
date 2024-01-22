@@ -3,6 +3,11 @@
     "data_type": "gtfs",
     "provider": "Tri Delta Transit",
     "status": "deprecated",
+    "redirect": [
+        {
+            "id": 1974
+        }
+    ],
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

@@ -1,0 +1,28 @@
+{
+    "mdb_source_id": 1978,
+    "data_type": "gtfs",
+    "provider": "GoRaleigh",
+    "name": "",
+    "features": "",
+    "status": "",
+    "location": {
+        "country_code": "USA",
+        "subdivision_name": "North Carolina",
+        "municipality": "Raleigh",
+        "bounding_box": {
+            "minimum_latitude": 35.573104,
+            "maximum_latitude": 35.990455,
+            "minimum_longitude": -78.80199,
+            "maximum_longitude": -78.323486,
+            "extracted_on": "2024-01-23T03:57:58+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://goraleigh.org/sites/default/files/gtfsexport.zip",
+        "authentication_type": 0,
+        "authentication_info": "",
+        "api_key_parameter_name": "",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/usa-north-carolina-goraleigh-gtfs-1978.zip?alt=media",
+        "license": "INVALID_OR_NO_URL_PROVIDED"
+    }
+}

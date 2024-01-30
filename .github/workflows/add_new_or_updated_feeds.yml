@@ -48,6 +48,7 @@ jobs:
         env:
             OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
             CREDENTIALS: "op://rbiv7rvkkrsdlpcrz3bmv7nmcu/ifkeehu5gzi7wy5ub5qvwkaire/credential"
+            CSV_URL: "op://rbiv7rvkkrsdlpcrz3bmv7nmcu/qkn5esttmtojawglm4l6t2bqaa/al2gjfhiuddabkp7o26hszuvia"
 
     #   - name: Get swift version # just for verification, can leave commented out
     #     run: swift --version
@@ -66,12 +67,13 @@ jobs:
         run: |
             git checkout -b ${{ steps.create_branch_name.outputs.BRANCH }}
             git reset --hard ${{ env.BASE }}
+            git clean -df
 
       - name: Download CSV and process each lines
         id: process-csv
         run: |
             cd ${{ github.workspace }}/scripts
-            OUTPUT=$(swift process_csv_in_github_action.swift "${{ secrets.CSV_URL }}" "${{ env.YESTERDAYS_DATE }}" "${{ env.DATE_FORMAT }}" "${{ env.DATE_FORMAT_DESIRED }}")
+            OUTPUT=$(swift process_csv_in_github_action.swift "${{ env.CSV_URL }}" "${{ env.YESTERDAYS_DATE }}" "${{ env.DATE_FORMAT }}" "${{ env.DATE_FORMAT_DESIRED }}")
             echo "PYTHON_SCRIPT_ARGS=${OUTPUT}" >> $GITHUB_OUTPUT
 
       - name: Setup Python

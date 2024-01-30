@@ -3,7 +3,7 @@ import Foundation
     import FoundationNetworking
 #endif
 
-enum column : Int, CaseIterable {
+enum oldColumn : Int, CaseIterable {
     case timestamp               = 0 // A
     case provider                = 1 // B
     case regioncity              = 2 // C
@@ -33,6 +33,46 @@ enum column : Int, CaseIterable {
     case realtimefeatures        = 26 // AC
     case isocountrycode          = 27 // AB
     case feedupdatestatus        = 28 // AC
+}
+
+enum column : Int, CaseIterable {
+    case submissionType          = 0 // A
+    case timestamp               = 1 // B
+    case provider                = 2 // C
+    case regioncity              = 3 // D
+    case oldMobilityDatabaseID   = 4 // E
+    case updatednewsourceurl     = 5 // F
+    case datatype                = 6 // G
+    case request                 = 7 // H
+    case downloadurl             = 8 // I
+    case country                 = 9 // J
+    case subdivision_name        = 10 // K
+    case municipality            = 11 // L
+    case name                    = 12 // M
+    case yournameorg             = 13 // N
+    case license_url             = 14 // O
+    case tripupdatesurl          = 15 // P
+    case servicealertsurl        = 16 // Q
+    case genunknownrturl         = 17 // R
+    case authentication_type     = 18 // S
+    case authentication_info_url = 19 // T
+    case api_key_parameter_name  = 20 // U
+    case note                    = 21 // V
+    case emptyColumn1            = 22 // W
+    case gtfsschedulefeatures    = 23 // X
+    case emptyColumn2            = 24 // Y
+    case gtfsschedulestatus      = 25 // Z
+    case gtfsrealtimestatus      = 26 // Z
+    // case gtfsredirect            = 36 // AA - Do not use for now
+    case dataproduceremail       = 27 // AB
+    case officialProducer        = 28 // AC
+    case dataproduceremail2      = 29 // AD
+    case datatype2               = 30 // AE
+    case youremail               = 31 // AF
+    case realtimefeatures        = 32 // AG
+    case emptyColumn3            = 33 // AH
+    case isocountrycode          = 34 // AI
+    case feedupdatestatus        = 35 // AJ
 }
 
 enum defaults: String {
@@ -67,6 +107,9 @@ enum realtimeDataTypeCode: String {
 
 let arguments : [String] = CommandLine.arguments
 
+// Set to false for production use
+let isInDebugMode : Bool = false
+
 if CommandLine.argc == 5 {
 
     let csvLineSeparator     : String = "\n"
@@ -84,14 +127,15 @@ if CommandLine.argc == 5 {
     
     let dateFormatter : DateFormatter = DateFormatter() //; let today : Date = Date()
     dateFormatter.dateFormat = dateFormatDesiredArg
-    // let todayDate : String = dateFormatter.string(from: today) // Ex.: 07/27/2023
 
     let csvData : String = try String(contentsOf: csvURLasURL, encoding:.utf8)
 
-    let csvLines : [String] = csvData.components(separatedBy: csvLineSeparator) ; var csvArray : [[String]] = [[]]
+    var csvLines : [String] = csvData.components(separatedBy: csvLineSeparator) ; csvLines.removeFirst(1) ; var csvArray : [[String]] = []
     for currentLine : String in csvLines {
-        csvArray.append(currentLine.components(separatedBy: csvColumnSeparator))
+        if currentLine.count > 5 { csvArray.append(currentLine.components(separatedBy: csvColumnSeparator)) }
     }
+
+    if isInDebugMode { print("csvArray : \(csvArray)") }
     
     var PYTHON_SCRIPT_OUTPUT : String = ""
     var lastKnownProvider : String = defaults.toBeProvided.rawValue
@@ -100,8 +144,11 @@ if CommandLine.argc == 5 {
     for line : [String] in csvArray {
         
         var PYTHON_SCRIPT_ARGS_TEMP : String = ""
+        if isInDebugMode { print("line count / all cases count : \(line.count) / \(column.allCases.count)") }
 
         if line.count >= column.allCases.count {
+
+            if isInDebugMode { print("process lines") }
 
             let timestamp               : String = line[column.timestamp.rawValue].trimmingCharacters(in: .whitespacesAndNewlines)
             let provider                : String = line[column.provider.rawValue]
@@ -122,7 +169,8 @@ if CommandLine.argc == 5 {
             let gtfsschedulestatus      : String = line[column.gtfsschedulestatus.rawValue]
             let gtfsrealtimestatus      : String = line[column.gtfsrealtimestatus.rawValue]
             let realtimefeatures        : String = line[column.realtimefeatures.rawValue]
-
+            if isInDebugMode { print("datatype : \(datatype)") }
+            
             // Check if provider is empty, suggest last known if true.
             if provider.count > 0 { lastKnownProvider = provider }
             let finalProvider : String = provider.isEmpty ? "\(defaults.toBeProvided.rawValue) (\(lastKnownProvider) ?)" : provider
@@ -132,8 +180,11 @@ if CommandLine.argc == 5 {
             if ( urlPresent == false && license_url.count > 0 ) { license_url = "INVALID_OR_NO_URL_PROVIDED" }
 
             let dateFromCurrentLine : String = extractDate(from: timestamp, usingGREP: dateFormatAsRegex, desiredDateFormat: dateFormatDesiredArg)
+
+            if isInDebugMode { print("timestamp // dateFromCurrentLine // dateToFind : \(timestamp) // \(dateFromCurrentLine) // \(dateToFind)") }
             
             if dateFromCurrentLine == dateToFind { // ...the row has been added on the date we're looking for, process it.
+                if isInDebugMode { print("Found a valid date...") }
                 
                 if request.contains(requestType.isAddNewFeed.rawValue) { // add new feed
                     
@@ -206,11 +257,16 @@ if CommandLine.argc == 5 {
     // Replace single quotes (like in McGill's) with an apostrophe so there is no interference with the bash script in the next step.
     PYTHON_SCRIPT_OUTPUT = PYTHON_SCRIPT_OUTPUT.replacingOccurrences(of: "'", with: "ʼ")
 
+    // Replace double quotes (like "") with a single quote so there is no interference with the bash script in the next step.
+    PYTHON_SCRIPT_OUTPUT = PYTHON_SCRIPT_OUTPUT.replacingOccurrences(of: "\"\",", with: "\",")
+    PYTHON_SCRIPT_OUTPUT = PYTHON_SCRIPT_OUTPUT.replacingOccurrences(of: "=\"\"", with: "=\"")
+    PYTHON_SCRIPT_OUTPUT = PYTHON_SCRIPT_OUTPUT.replacingOccurrences(of: "\"\")", with: "\")")
+
     // return final output so the action can grab it and pass it on to the Python script.
     print(PYTHON_SCRIPT_OUTPUT.dropFirst())
 
 } else {
-    print("Incorrect number of arguments provided to the script. Expected 3: a string with the URL, a date format and the date format desired.")
+    print("Incorrect number of arguments provided to the script. Expected 4: a string with the URL, a date format and the date format desired.")
     exit(1)
 }
 

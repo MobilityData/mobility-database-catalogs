@@ -258,6 +258,7 @@ if CommandLine.argc == 5 {
     PYTHON_SCRIPT_OUTPUT = PYTHON_SCRIPT_OUTPUT.replacingOccurrences(of: "'", with: "ʼ")
 
     // Replace double quotes (like "") with a single quote so there is no interference with the bash script in the next step.
+
     // PYTHON_SCRIPT_OUTPUT = PYTHON_SCRIPT_OUTPUT.replacingOccurrences(of: "\"\",", with: "\",")
     // PYTHON_SCRIPT_OUTPUT = PYTHON_SCRIPT_OUTPUT.replacingOccurrences(of: "=\"\"", with: "=\"")
     // PYTHON_SCRIPT_OUTPUT = PYTHON_SCRIPT_OUTPUT.replacingOccurrences(of: "\"\")", with: "\")")

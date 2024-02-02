@@ -1,0 +1,28 @@
+{
+    "mdb_source_id": 1983,
+    "data_type": "gtfs",
+    "provider": "Capital Area Transit (GoRaleigh)",
+    "name": "",
+    "features": "",
+    "status": "",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "North Carolina",
+        "municipality": "Raleigh",
+        "bounding_box": {
+            "minimum_latitude": 35.573104,
+            "maximum_latitude": 35.990455,
+            "minimum_longitude": -78.80199,
+            "maximum_longitude": -78.323486,
+            "extracted_on": "2024-02-02T03:58:19+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://goraleigh.org/sites/default/files/gtfsexport.zip",
+        "authentication_type": 0,
+        "authentication_info": "",
+        "api_key_parameter_name": "",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-north-carolina-capital-area-transit-goraleigh-gtfs-1983.zip?alt=media",
+        "license": "https://goraleigh.org/developer-terms-and-conditions"
+    }
+}

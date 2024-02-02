@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 1980,
+    "data_type": "gtfs-rt",
+    "entity_type": "vp",
+    "provider": "Mountain Line Transit",
+    "name": "",
+    "note": "",
+    "features": "",
+    "status": "",
+    "urls": {
+        "direct_download": "mountainline.syncromatics.com/gtfs-rt/vehiclepositions",
+        "authentication_type": 0,
+        "authentication_info": "",
+        "api_key_parameter_name": "",
+        "license": "INVALID_OR_NO_URL_PROVIDED"
+    }
+}

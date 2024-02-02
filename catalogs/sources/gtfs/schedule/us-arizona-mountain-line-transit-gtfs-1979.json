@@ -2,9 +2,6 @@
     "mdb_source_id": 1979,
     "data_type": "gtfs",
     "provider": "Mountain Line Transit",
-    "name": "",
-    "features": "",
-    "status": "",
     "location": {
         "country_code": "US",
         "subdivision_name": "Arizona",
@@ -19,10 +16,6 @@
     },
     "urls": {
         "direct_download": "http://mountainline.syncromatics.com/gtfs",
-        "authentication_type": 0,
-        "authentication_info": "",
-        "api_key_parameter_name": "",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-arizona-mountain-line-transit-gtfs-1979.zip?alt=media",
-        "license": "INVALID_OR_NO_URL_PROVIDED"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-arizona-mountain-line-transit-gtfs-1979.zip?alt=media"
     }
 }

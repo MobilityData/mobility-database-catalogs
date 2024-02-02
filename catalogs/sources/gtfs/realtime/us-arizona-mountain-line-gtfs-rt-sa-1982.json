@@ -9,7 +9,7 @@
         1979
     ],
     "urls": {
-        "direct_download": "mountainline.syncromatics.com/gtfs-rt/alerts",
+        "direct_download": "https://mountainline.syncromatics.com/gtfs-rt/alerts",
         "authentication_type": 0
     }
 }

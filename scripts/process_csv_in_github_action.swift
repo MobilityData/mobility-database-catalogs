@@ -105,6 +105,9 @@ enum realtimeDataTypeCode: String {
     case unknown = "gu"
 }
 
+// Will be used to filter empty parameters from this script's output
+let everyPythonScriptFunctionsParameterNames : [String] = ["provider=", "entity_type=", "mdb_source_id=", "country_code=", "direct_download_url=", "authentication_type=", "authentication_info_url=", "api_key_parameter_name=", "subdivision_name=", "municipality=", "country_code=", "license_url=", "name=", "status=", "features=", "note="]
+
 let arguments : [String] = CommandLine.arguments
 
 // Set to false for production use
@@ -258,6 +261,9 @@ if CommandLine.argc == 5 {
     PYTHON_SCRIPT_OUTPUT = PYTHON_SCRIPT_OUTPUT.replacingOccurrences(of: "'", with: "ʼ")
     // Note: do not try to fix the ouput of multiple (ex.: """") as it will break the python script.
 
+    // Remove empty paramters from script output
+    PYTHON_SCRIPT_OUTPUT = removeEmptyPythonParameters(in: PYTHON_SCRIPT_OUTPUT)
+
     // return final output so the action can grab it and pass it on to the Python script.
     print(PYTHON_SCRIPT_OUTPUT.dropFirst())
 
@@ -307,4 +313,17 @@ func isURLPresent(in string: String) -> Bool {
     let range = string.range(of: pattern, options: .regularExpression)
     if range != nil { return true }
     return false
+}
+
+func removeEmptyPythonParameters(in outputString: String) -> String {
+    var returnString : String = outputString
+    let prefixToAdd : String = ", "
+    let suffixToAdd : String = "\"\"\"\""
+    for currentParameter : String in everyPythonScriptFunctionsParameterNames {
+        let stringToFindFirstPass : String = "\(prefixToAdd)+\(currentParameter)+\(suffixToAdd)"
+        let stringToFindSecondPass : String = "\(currentParameter)+\(suffixToAdd)"
+        returnString = returnString.replacingOccurrences(of: stringToFindFirstPass, with: "")
+        returnString = returnString.replacingOccurrences(of: stringToFindSecondPass, with: "")
+    }
+    return returnString
 }

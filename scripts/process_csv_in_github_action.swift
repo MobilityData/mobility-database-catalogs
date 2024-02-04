@@ -317,11 +317,11 @@ func isURLPresent(in string: String) -> Bool {
 
 func removeEmptyPythonParameters(in outputString: String) -> String {
     var returnString : String = outputString
-    let prefixToAdd : String = ", "
-    let suffixToAdd : String = "\"\"\"\""
+    let comma : String = ", "
+    let doubleQuotes : String = "\"\"\"\""
     for currentParameter : String in everyPythonScriptFunctionsParameterNames {
-        let stringToFindFirstPass : String = "\(prefixToAdd)+\(currentParameter)+\(suffixToAdd)"
-        let stringToFindSecondPass : String = "\(currentParameter)+\(suffixToAdd)"
+        let stringToFindFirstPass : String = "\(comma)+\(currentParameter)+\(doubleQuotes)"
+        let stringToFindSecondPass : String = "\(currentParameter)+\(doubleQuotes)+\(comma)"
         returnString = returnString.replacingOccurrences(of: stringToFindFirstPass, with: "")
         returnString = returnString.replacingOccurrences(of: stringToFindSecondPass, with: "")
     }

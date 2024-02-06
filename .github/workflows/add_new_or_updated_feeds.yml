@@ -38,7 +38,7 @@ jobs:
       - name: Create branch name
         id: create_branch_name
         run: |
-            echo "BRANCH=${{ env.TODAYS_YEAR }}-${{ env.TODAYS_MONTH }}-${{ env.TODAYS_DAY }}" >> $GITHUB_OUTPUT # Branch name
+            echo "BRANCH=${{ env.TODAYS_YEAR }}-${{ env.TODAYS_MONTH }}-${{ env.TODAYS_DAY }} [SOURCES]" >> $GITHUB_OUTPUT # Branch name
 
       - name: Load secrets from 1Password
         id: onepw_secrets

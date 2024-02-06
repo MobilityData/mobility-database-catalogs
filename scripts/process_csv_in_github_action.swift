@@ -105,6 +105,9 @@ enum realtimeDataTypeCode: String {
     case unknown = "gu"
 }
 
+// Will be used to filter empty parameters from this script's output
+let everyPythonScriptFunctionsParameterNames : [String] = ["provider=", "entity_type=", "mdb_source_id=", "country_code=", "direct_download_url=", "authentication_type=", "authentication_info_url=", "api_key_parameter_name=", "subdivision_name=", "municipality=", "country_code=", "license_url=", "name=", "status=", "features=", "note="]
+
 let arguments : [String] = CommandLine.arguments
 
 // Set to false for production use
@@ -166,8 +169,8 @@ if CommandLine.argc == 5 {
             let api_key_parameter_name  : String = line[column.api_key_parameter_name.rawValue]
             let note                    : String = line[column.note.rawValue]
             let gtfsschedulefeatures    : String = line[column.gtfsschedulefeatures.rawValue]
-            let gtfsschedulestatus      : String = line[column.gtfsschedulestatus.rawValue]
-            let gtfsrealtimestatus      : String = line[column.gtfsrealtimestatus.rawValue]
+            let gtfsschedulestatus      : String = line[column.gtfsschedulestatus.rawValue].lowercased()
+            let gtfsrealtimestatus      : String = line[column.gtfsrealtimestatus.rawValue].lowercased()
             let realtimefeatures        : String = line[column.realtimefeatures.rawValue]
             if isInDebugMode { print("datatype : \(datatype)") }
             
@@ -197,7 +200,7 @@ if CommandLine.argc == 5 {
                         
                         let authType : Int = authenticationType(for: authentication_type)
                         let realtimecode : String = realtimeCode(for:datatype)
-                        PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_realtime_source(entity_type=\"\(realtimecode)\", provider=\"\(finalProvider)\", direct_download_url=\"\(downloadURL.isEmpty ? updatednewsourceurl : downloadURL)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", license_url=\"\(license_url)\", name=\"\(name)\", note=\"\(note)\", status=\"\(gtfsrealtimestatus)\", features=\"\(realtimefeatures)\")"
+                        PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_realtime_source(entity_type=[\"\(realtimecode)\"], provider=\"\(finalProvider)\", direct_download_url=\"\(downloadURL.isEmpty ? updatednewsourceurl : downloadURL)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", license_url=\"\(license_url)\", name=\"\(name)\", note=\"\(note)\", status=\"\(gtfsrealtimestatus)\", features=\"\(realtimefeatures)\")"
                         
                     }
                     
@@ -212,7 +215,7 @@ if CommandLine.argc == 5 {
                     
                         let authType : Int = authenticationType(for: authentication_type)
                         let realtimecode : String = realtimeCode(for:datatype)
-                        PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_realtime_source(mdb_source_id=\"\", entity_type=\"\(realtimecode)\", provider=\"\(finalProvider)\", direct_download_url=\"\(downloadURL.isEmpty ? updatednewsourceurl : downloadURL)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", license_url=\"\(license_url)\", name=\"\(name)\", note=\"\(note)\", status=\"\(gtfsrealtimestatus)\", features=\"\(realtimefeatures)\")"
+                        PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_realtime_source(mdb_source_id=\"\", entity_type=[\"\(realtimecode)\"], provider=\"\(finalProvider)\", direct_download_url=\"\(downloadURL.isEmpty ? updatednewsourceurl : downloadURL)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", license_url=\"\(license_url)\", name=\"\(name)\", note=\"\(note)\", status=\"\(gtfsrealtimestatus)\", features=\"\(realtimefeatures)\")"
                     }
                     
                 }  else if request.contains(requestType.isToRemoveFeed.rawValue) { // remove feed
@@ -241,7 +244,7 @@ if CommandLine.argc == 5 {
 
                         let authType : Int = authenticationType(for: authentication_type)
                         let realtimecode : String = realtimeCode(for:datatype)
-                        PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_realtime_source(entity_type=\"\(realtimecode)\", provider=\"\(finalProvider)\", direct_download_url=\"\(downloadURL.isEmpty ? updatednewsourceurl : downloadURL)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", license_url=\"\(license_url)\", name=\"\(name)\", note=\"\(note)\", status=\"\(gtfsrealtimestatus)\", features=\"\(realtimefeatures)\")"
+                        PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_realtime_source(entity_type=[\"\(realtimecode)\"], provider=\"\(finalProvider)\", direct_download_url=\"\(downloadURL.isEmpty ? updatednewsourceurl : downloadURL)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", license_url=\"\(license_url)\", name=\"\(name)\", note=\"\(note)\", status=\"\(gtfsrealtimestatus)\", features=\"\(realtimefeatures)\")"
                         
                     }
                 }
@@ -256,12 +259,10 @@ if CommandLine.argc == 5 {
 
     // Replace single quotes (like in McGill's) with an apostrophe so there is no interference with the bash script in the next step.
     PYTHON_SCRIPT_OUTPUT = PYTHON_SCRIPT_OUTPUT.replacingOccurrences(of: "'", with: "ʼ")
+    // Note: do not try to fix the ouput of multiple (ex.: """") as it will break the python script.
 
-    // Replace double quotes (like "") with a single quote so there is no interference with the bash script in the next step.
-
-    // PYTHON_SCRIPT_OUTPUT = PYTHON_SCRIPT_OUTPUT.replacingOccurrences(of: "\"\",", with: "\",")
-    // PYTHON_SCRIPT_OUTPUT = PYTHON_SCRIPT_OUTPUT.replacingOccurrences(of: "=\"\"", with: "=\"")
-    // PYTHON_SCRIPT_OUTPUT = PYTHON_SCRIPT_OUTPUT.replacingOccurrences(of: "\"\")", with: "\")")
+    // Remove empty paramters from script output
+    PYTHON_SCRIPT_OUTPUT = removeEmptyPythonParameters(in: PYTHON_SCRIPT_OUTPUT)
 
     // return final output so the action can grab it and pass it on to the Python script.
     print(PYTHON_SCRIPT_OUTPUT.dropFirst())
@@ -312,4 +313,17 @@ func isURLPresent(in string: String) -> Bool {
     let range = string.range(of: pattern, options: .regularExpression)
     if range != nil { return true }
     return false
+}
+
+func removeEmptyPythonParameters(in outputString: String) -> String {
+    var returnString : String = outputString
+    let comma : String = ", "
+    let doubleQuotes : String = "\"\"\"\""
+    for currentParameter : String in everyPythonScriptFunctionsParameterNames {
+        let stringToFindFirstPass : String = "\(comma)+\(currentParameter)+\(doubleQuotes)"
+        let stringToFindSecondPass : String = "\(currentParameter)+\(doubleQuotes)+\(comma)"
+        returnString = returnString.replacingOccurrences(of: stringToFindFirstPass, with: "")
+        returnString = returnString.replacingOccurrences(of: stringToFindSecondPass, with: "")
+    }
+    return returnString
 }

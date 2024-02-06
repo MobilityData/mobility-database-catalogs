@@ -1,13 +1,7 @@
 {
-    "mdb_source_id": 471,
+    "mdb_source_id": 1983,
     "data_type": "gtfs",
     "provider": "Capital Area Transit (GoRaleigh)",
-    "status": "deprecated",
-    "redirect": [
-        {
-            "id": 1983
-        }
-    ],
     "location": {
         "country_code": "US",
         "subdivision_name": "North Carolina",
@@ -17,12 +11,12 @@
             "maximum_latitude": 35.990455,
             "minimum_longitude": -78.80199,
             "maximum_longitude": -78.323486,
-            "extracted_on": "2022-03-16T17:23:45+00:00"
+            "extracted_on": "2024-02-02T03:58:19+00:00"
         }
     },
     "urls": {
-        "direct_download": "http://data.trilliumtransit.com/gtfs/capital-area-transit-nc-us/capital-area-transit-nc-us.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-north-carolina-capital-area-transit-goraleigh-gtfs-471.zip?alt=media",
+        "direct_download": "https://goraleigh.org/sites/default/files/gtfsexport.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-north-carolina-capital-area-transit-goraleigh-gtfs-1983.zip?alt=media",
         "license": "https://goraleigh.org/developer-terms-and-conditions"
     }
 }

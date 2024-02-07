@@ -1,0 +1,28 @@
+{
+    "mdb_source_id": 1984,
+    "data_type": "gtfs",
+    "provider": "Consiliul Judetean Vrancea",
+    "name": "",
+    "features": "",
+    "status": "",
+    "location": {
+        "country_code": "RO",
+        "subdivision_name": "Vrancea",
+        "municipality": "",
+        "bounding_box": {
+            "minimum_latitude": 45.42141,
+            "maximum_latitude": 46.195444,
+            "minimum_longitude": 26.495361,
+            "maximum_longitude": 27.500278,
+            "extracted_on": "2024-02-07T04:23:52+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://cjvrancea.ro/gtfs.zip",
+        "authentication_type": 0,
+        "authentication_info": "",
+        "api_key_parameter_name": "",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-vrancea-consiliul-judetean-vrancea-gtfs-1984.zip?alt=media",
+        "license": "INVALID_OR_NO_URL_PROVIDED"
+    }
+}

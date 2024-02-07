@@ -1,6 +1,7 @@
 name: Add new or updated feeds from Google Sheets/Form
 
 on:
+    workflow_dispatch:
     schedule:
       - cron: '55 3 * * *' # At 00:00 ETC every day
 

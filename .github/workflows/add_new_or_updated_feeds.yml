@@ -50,6 +50,7 @@ jobs:
             OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
             CREDENTIALS: "op://rbiv7rvkkrsdlpcrz3bmv7nmcu/ifkeehu5gzi7wy5ub5qvwkaire/credential"
             CSV_URL: "op://rbiv7rvkkrsdlpcrz3bmv7nmcu/qkn5esttmtojawglm4l6t2bqaa/al2gjfhiuddabkp7o26hszuvia"
+            SLACK_WEBHOOK_URL: "op://rbiv7rvkkrsdlpcrz3bmv7nmcu/Slack webhook URLs/internal-public-transit-support channel"
 
     #   - name: Get swift version # just for verification, can leave commented out
     #     run: swift --version
@@ -127,5 +128,5 @@ jobs:
         uses: up9cloud/action-notify@v0.4
         env:
           GITHUB_JOB_STATUS: ${{ job.status }}
-          SLACK_WEBHOOK_URL: https://hooks.slack.com/services/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
+          SLACK_WEBHOOK_URL: ${{ env.SLACK_WEBHOOK_URL }}
           SLACK_CHANNEL: internal-public-transit-support

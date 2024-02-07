@@ -121,19 +121,11 @@ jobs:
           token: ${{ env.CREDENTIALS }}
           repository: ${{ env.ORGANIZATION }}/${{ env.API_REPO_NAME }}
           event-type: ${{ env.API_TRIGGER_EVENT }}
-
-    #   - name: Create Pull Request
-    #     if: steps.process-csv.outputs.PYTHON_SCRIPT_ARGS != ''
-    #     uses: peter-evans/create-pull-request@v5.0.2
-    #     with:
-    #         token: ${{ env.CREDENTIALS }}
-    #         title: "Automated commit — New/Updated feed"
-    #         commit-message: "Automated commit — New/Updated feed"
-    #         body: "New feed(s) were found, and added as a PR for you to review."
-    #         author: "${{ env.USERNAME }} <${{ env.USERNAME_EMAIL }}>"
-    #         reviewers: ${{ env.REVIEWERS_JSON }}
-    #         branch: ${{ steps.create_branch_name.outputs.BRANCH }}
-    #         base: ${{ env.BASE }}
-    #         add-paths: |
-    #             ${{ env.GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT }}
-    #             ${{ env.GTFS_REALTIME_CATALOG_PATH_FROM_ROOT }}
+  
+      - name: Post notification in Slack channel of update
+        if: steps.process-csv.outputs.PYTHON_SCRIPT_ARGS != ''
+        uses: up9cloud/action-notify@v0.4
+        env:
+          GITHUB_JOB_STATUS: ${{ job.status }}
+          SLACK_WEBHOOK_URL: https://hooks.slack.com/services/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
+          SLACK_CHANNEL: internal-public-transit-support

@@ -15,7 +15,6 @@
     },
     "urls": {
         "direct_download": "https://cjvrancea.ro/gtfs.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-vrancea-consiliul-judetean-vrancea-gtfs-1984.zip?alt=media",
-        "license": "INVALID_OR_NO_URL_PROVIDED"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-vrancea-consiliul-judetean-vrancea-gtfs-1984.zip?alt=media"
     }
 }

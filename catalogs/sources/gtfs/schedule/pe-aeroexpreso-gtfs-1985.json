@@ -14,6 +14,6 @@
     },
     "urls": {
         "direct_download": "https://aeroexpreso.com.pe/gtfs",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pe-aeroexpreso-gtfs-1985.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pe-aeroexpreso-gtfs-1985.zip?alt=media"
     }
 }

@@ -3,6 +3,10 @@ name: Integration tests
 on:
   push:
     branches: [ main ]
+    paths-ignore:
+      - 'scripts/**'
+      - '.github/workflows/add_new_or_updated_feeds.yml'
+      - '.github/workflows/**'
   pull_request:
     branches: [ main ]
 

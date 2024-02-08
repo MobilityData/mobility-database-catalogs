@@ -3,6 +3,10 @@ name: Direct download URLs test for sources
 on:
   pull_request:
     branches: [ main ]
+    paths-ignore:
+      - 'scripts/**'
+      - '.github/workflows/add_new_or_updated_feeds.yml'
+      - '.github/workflows/**'
 
 jobs:
   get-urls:

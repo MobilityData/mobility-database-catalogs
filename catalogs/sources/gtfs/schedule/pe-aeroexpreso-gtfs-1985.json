@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 1985,
+    "data_type": "gtfs",
+    "provider": "Aeroexpreso",
+    "location": {
+        "country_code": "PE",
+        "bounding_box": {
+            "minimum_latitude": -9.534557,
+            "maximum_latitude": -9.34748,
+            "minimum_longitude": -77.59924,
+            "maximum_longitude": -77.522786,
+            "extracted_on": "2024-02-07T04:23:53+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://aeroexpreso.com.pe/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pe-aeroexpreso-gtfs-1985.zip?alt=media"
+    }
+}

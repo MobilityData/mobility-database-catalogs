@@ -50,6 +50,7 @@ jobs:
             OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
             CREDENTIALS: "op://rbiv7rvkkrsdlpcrz3bmv7nmcu/ifkeehu5gzi7wy5ub5qvwkaire/credential"
             CSV_URL: "op://rbiv7rvkkrsdlpcrz3bmv7nmcu/qkn5esttmtojawglm4l6t2bqaa/al2gjfhiuddabkp7o26hszuvia"
+            SLACK_WEBHOOK_URL: "op://rbiv7rvkkrsdlpcrz3bmv7nmcu/Slack webhook URLs/internal-public-transit-support channel"
 
     #   - name: Get swift version # just for verification, can leave commented out
     #     run: swift --version
@@ -121,19 +122,11 @@ jobs:
           token: ${{ env.CREDENTIALS }}
           repository: ${{ env.ORGANIZATION }}/${{ env.API_REPO_NAME }}
           event-type: ${{ env.API_TRIGGER_EVENT }}
-
-    #   - name: Create Pull Request
-    #     if: steps.process-csv.outputs.PYTHON_SCRIPT_ARGS != ''
-    #     uses: peter-evans/create-pull-request@v5.0.2
-    #     with:
-    #         token: ${{ env.CREDENTIALS }}
-    #         title: "Automated commit — New/Updated feed"
-    #         commit-message: "Automated commit — New/Updated feed"
-    #         body: "New feed(s) were found, and added as a PR for you to review."
-    #         author: "${{ env.USERNAME }} <${{ env.USERNAME_EMAIL }}>"
-    #         reviewers: ${{ env.REVIEWERS_JSON }}
-    #         branch: ${{ steps.create_branch_name.outputs.BRANCH }}
-    #         base: ${{ env.BASE }}
-    #         add-paths: |
-    #             ${{ env.GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT }}
-    #             ${{ env.GTFS_REALTIME_CATALOG_PATH_FROM_ROOT }}
+  
+      - name: Post notification in Slack channel of update
+        if: steps.process-csv.outputs.PYTHON_SCRIPT_ARGS != ''
+        uses: up9cloud/action-notify@v0.4
+        env:
+          GITHUB_JOB_STATUS: ${{ job.status }}
+          SLACK_WEBHOOK_URL: ${{ env.SLACK_WEBHOOK_URL }}
+          SLACK_CHANNEL: internal-public-transit-support

@@ -167,10 +167,12 @@ class SourcesCatalog(Catalog):
         redirects = kwargs.pop(REDIRECTS, [])
         if len(redirects) > 0:
             kwargs[REDIRECTS] = [
-                {REDIRECT_ID: elem.get(REDIRECT_ID), REDIRECT_COMMENT: elem.get(REDIRECT_COMMENT)}
+                {
+                    REDIRECT_ID: elem.get(REDIRECT_ID), REDIRECT_COMMENT: elem.get(REDIRECT_COMMENT)
+                }
                 for elem in redirects
             ]
-            kwargs[REDIRECTS] = list(filter(lambda x: x.get(REDIRECT_ID) is not None, kwargs[REDIRECTS]))
+            kwargs[REDIRECTS] = list(filter(lambda x: x.get(REDIRECT_ID) != 'None', kwargs[REDIRECTS]))
 
         entity = self.entity_cls.build(mdb_source_id=mdb_source_id, **kwargs)
         if isinstance(entity, self.entity_cls):
@@ -316,7 +318,7 @@ class GtfsScheduleSource(Source):
         urls = kwargs.pop(URLS, {})
         self.latest_url = urls.pop(LATEST)
         self.feed_contact_email = kwargs.pop(FEED_CONTACT_EMAIL, None)
-        self.redirects = kwargs.pop(REDIRECTS, {})
+        self.redirects = kwargs.pop(REDIRECTS, [])
 
     def __str__(self):
         attributes = {
@@ -559,6 +561,10 @@ class GtfsScheduleSource(Source):
             del schema[FEATURES]
         if schema[STATUS] is None:
             del schema[STATUS]
+        if schema[FEED_CONTACT_EMAIL] is None:
+            del schema[FEED_CONTACT_EMAIL]
+        if schema[REDIRECTS] is None:
+            del schema[REDIRECTS]
         return schema
 
 

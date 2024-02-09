@@ -53,6 +53,10 @@ from tools.constants import (
     FEATURES,
     STATUS,
     ACTIVE,
+    FEED_CONTACT_EMAIL,
+    REDIRECT_ID,
+    REDIRECT_COMMENT,
+    REDIRECTS,
 )
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
@@ -160,6 +164,14 @@ class SourcesCatalog(Catalog):
 
     def add(self, **kwargs):
         mdb_source_id = self.identify(self.root)
+        redirects = kwargs.pop(REDIRECTS, [])
+        if len(redirects) > 0:
+            kwargs[REDIRECTS] = [
+                {REDIRECT_ID: elem.get(REDIRECT_ID), REDIRECT_COMMENT: elem.get(REDIRECT_COMMENT)}
+                for elem in redirects
+            ]
+            kwargs[REDIRECTS] = list(filter(lambda x: x.get(REDIRECT_ID) is not None, kwargs[REDIRECTS]))
+
         entity = self.entity_cls.build(mdb_source_id=mdb_source_id, **kwargs)
         if isinstance(entity, self.entity_cls):
             self.catalog[mdb_source_id] = entity
@@ -303,6 +315,8 @@ class GtfsScheduleSource(Source):
         self.bbox_extracted_on = bounding_box.pop(EXTRACTED_ON)
         urls = kwargs.pop(URLS, {})
         self.latest_url = urls.pop(LATEST)
+        self.feed_contact_email = kwargs.pop(FEED_CONTACT_EMAIL, None)
+        self.redirects = kwargs.pop(REDIRECTS, {})
 
     def __str__(self):
         attributes = {
@@ -326,6 +340,8 @@ class GtfsScheduleSource(Source):
             LICENSE: self.license_url,
             FEATURES: self.features,
             STATUS: self.status,
+            FEED_CONTACT_EMAIL: self.feed_contact_email,
+            REDIRECTS: self.redirects,
         }
         return json.dumps(self.schematize(**attributes), ensure_ascii=False)
 
@@ -420,6 +436,19 @@ class GtfsScheduleSource(Source):
         status = kwargs.get(STATUS)
         if status is not None:
             self.status = status
+        feed_contact_email = kwargs.get(FEED_CONTACT_EMAIL)
+        if feed_contact_email is not None:
+            self.feed_contact_email = feed_contact_email
+
+        # Update the redirects
+        redirects = kwargs.get(REDIRECTS)
+        if redirects is not None:
+            self.redirects = [
+                {
+                    REDIRECT_ID: elem.get(REDIRECT_ID), REDIRECT_COMMENT: elem.get(REDIRECT_COMMENT)
+                 } for elem in redirects
+            ]
+            self.redirects = list(filter(lambda x: x.get(REDIRECT_ID) is not None, self.redirects))
         return self
 
     @classmethod
@@ -487,6 +516,7 @@ class GtfsScheduleSource(Source):
             DATA_TYPE: kwargs.pop(DATA_TYPE),
             PROVIDER: kwargs.pop(PROVIDER),
             NAME: kwargs.pop(NAME, None),
+            FEED_CONTACT_EMAIL: kwargs.pop(FEED_CONTACT_EMAIL, None),
             FEATURES: kwargs.pop(FEATURES, None),
             STATUS: kwargs.pop(STATUS, None),
             LOCATION: {
@@ -509,6 +539,7 @@ class GtfsScheduleSource(Source):
                 LATEST: kwargs.pop(LATEST),
                 LICENSE: kwargs.pop(LICENSE, None),
             },
+            REDIRECTS: kwargs.pop(REDIRECTS, None),
         }
         if schema[NAME] is None:
             del schema[NAME]

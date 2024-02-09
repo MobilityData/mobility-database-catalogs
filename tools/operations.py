@@ -1,7 +1,5 @@
 import os
 from tools.constants import (
-    GTFS,
-    GTFS_RT,
     NAME,
     PROVIDER,
     COUNTRY_CODE,
@@ -21,6 +19,8 @@ from tools.constants import (
     CATALOGS,
     ALL,
     MDB_SOURCE_ID,
+    FEED_CONTACT_EMAIL,
+    REDIRECTS,
 )
 from tools.representations import GtfsScheduleSourcesCatalog, GtfsRealtimeSourcesCatalog
 
@@ -117,6 +117,8 @@ def add_gtfs_schedule_source(
     name=None,
     status=None,
     features=None,
+    feed_contact_email=None,
+    redirects=None,
 ):
     """Add a new GTFS Schedule source to the Mobility Catalogs."""
     catalog = GtfsScheduleSourcesCatalog()
@@ -134,6 +136,8 @@ def add_gtfs_schedule_source(
         NAME: name,
         STATUS: status,
         FEATURES: features,
+        FEED_CONTACT_EMAIL: feed_contact_email,
+        REDIRECTS: redirects,
     }
     catalog.add(**data)
     return catalog
@@ -154,6 +158,8 @@ def update_gtfs_schedule_source(
     license_url=None,
     status=None,
     features=None,
+    feed_contact_email=None,
+    redirects=None,
 ):
     """Update a GTFS Schedule source in the Mobility Catalogs."""
     catalog = GtfsScheduleSourcesCatalog()
@@ -172,6 +178,8 @@ def update_gtfs_schedule_source(
         NAME: name,
         STATUS: status,
         FEATURES: features,
+        FEED_CONTACT_EMAIL: feed_contact_email,
+        REDIRECTS: redirects,
     }
     catalog.update(**data)
     return catalog

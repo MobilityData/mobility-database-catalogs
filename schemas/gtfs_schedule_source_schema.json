@@ -192,7 +192,7 @@
         "type": "object",
         "properties": {
           "id": {
-            "type": "string",
+            "type": "number",
             "description": "The target feed id of that redirect."
           },
           "comment": {

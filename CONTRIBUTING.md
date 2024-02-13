@@ -53,7 +53,12 @@ The easiest way to add a GTFS Schedule source is to use the operation `tools.ope
         license_url=$OPTIONAL_LICENSE_URL,
         name=$OPTIONAL_SOURCE_NAME,
         features=[$OPTIONAL_FEATURE_ARRAY],
-        status=$OPTIONAL_STATUS
+        status=$OPTIONAL_STATUS,
+        feed_contact_email=$OPTIONAL_FEED_CONTACT_EMAIL,
+        redirects=[{
+            "id": $OPTIONAL_REDIRECT_ID,
+            "comment": $OPTIONAL_REDIRECT_COMMENT
+        }],
     )
 ```
 
@@ -99,7 +104,12 @@ The default value for every parameter is `None`. Note that once a parameter valu
         api_key_parameter_value=$NOT_STORED_API_KEY_PARAMETER_VALUE,
         license_url=$OPTIONAL_LICENSE_URL,
         features=[$OPTIONAL_FEATURE_ARRAY],
-        status=$OPTIONAL_STATUS
+        status=$OPTIONAL_STATUS,
+        feed_contact_email=$OPTIONAL_FEED_CONTACT_EMAIL,
+        redirects=[{
+            "id": $OPTIONAL_REDIRECT_ID,
+            "comment": $OPTIONAL_REDIRECT_COMMENT
+        }],
     )
 ```
 

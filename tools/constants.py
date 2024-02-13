@@ -86,6 +86,10 @@ API_KEY_PARAMETER_NAME = "api_key_parameter_name"
 API_KEY_PARAMETER_VALUE = "api_key_parameter_value"
 NOTE = "note"
 ENTITY_TYPE = "entity_type"
+FEED_CONTACT_EMAIL = "feed_contact_email"
+REDIRECTS = "redirect"
+REDIRECT_ID = "id"
+REDIRECT_COMMENT = "comment"
 
 # TIME CONSTANTS
 SIX_MONTHS_IN_WEEKS = 26

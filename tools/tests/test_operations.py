@@ -99,6 +99,12 @@ class TestOperations(TestCase):
         test_license_url = "test_license_url"
         test_status = "active"
         test_features = ["flex"]
+        feed_contact_email = "test contact email"
+        redirects = [
+            {"id": "test_id", "comment": "test_url"},
+            {"id": "test_id", "comment": "test_url"},
+            {"wrong_key": "test_value"}
+        ]
         under_test = add_gtfs_schedule_source(
             provider=test_provider,
             name=test_name,
@@ -113,6 +119,8 @@ class TestOperations(TestCase):
             license_url=test_license_url,
             status=test_status,
             features=test_features,
+            feed_contact_email=feed_contact_email,
+            redirects=redirects,
         )
         self.assertEqual(under_test, mock_catalog())
         self.assertEqual(mock_catalog.call_count, 2)
@@ -122,7 +130,7 @@ class TestOperations(TestCase):
     def test_update_gtfs_schedule_source(self, mock_catalog):
         test_mdb_source_id = "test_mdb_source_id"
         test_provider = "test_provider"
-        test_name = "test_name"
+        test_name = "test_name changed"
         test_country_code = "test_country_code"
         test_subdivision_name = "test_subdivision_name"
         test_municipality = "test_municipality"
@@ -134,6 +142,12 @@ class TestOperations(TestCase):
         test_license_url = "test_license_url"
         test_status = "active"
         test_features = ["flex"]
+        feed_contact_email = "test contact email changed"
+        redirects = [
+            {"id": "test_id", "comment": "test_url"},
+            {"id": "test_id changed", "comment": "test_url changed"},
+            {"wrong_key": "test_value"}
+        ]
         under_test = update_gtfs_schedule_source(
             mdb_source_id=test_mdb_source_id,
             provider=test_provider,
@@ -149,6 +163,8 @@ class TestOperations(TestCase):
             license_url=test_license_url,
             status=test_status,
             features=test_features,
+            feed_contact_email=feed_contact_email,
+            redirects=redirects,
         )
         self.assertEqual(under_test, mock_catalog())
         self.assertEqual(mock_catalog.call_count, 2)

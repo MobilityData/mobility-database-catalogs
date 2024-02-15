@@ -172,8 +172,9 @@ if CommandLine.argc == 5 {
             let gtfsschedulestatus      : String = line[column.gtfsschedulestatus.rawValue].lowercased()
             let gtfsrealtimestatus      : String = line[column.gtfsrealtimestatus.rawValue].lowercased()
             let realtimefeatures        : String = line[column.realtimefeatures.rawValue]
-            let redirects               : Int    = Int(line[column.gtfsredirect.rawValue])!
+            let redirects               : String = line[column.gtfsredirect.rawValue]
             let feed_contact_email      : String = line[column.dataproduceremail2.rawValue]
+
             if isInDebugMode { print("datatype : \(datatype)") }
             
             // Check if provider is empty, suggest last known if true.
@@ -181,7 +182,8 @@ if CommandLine.argc == 5 {
             let finalProvider : String = provider.isEmpty ? "\(defaults.toBeProvided.rawValue) (\(lastKnownProvider) ?)" : provider
 
             // Create redirects array
-            let redirects_array : String = "{\'id\': \(redirects), \'comment\': \'\'}"
+            var redirects_array : String = "\"\"" // default value, the entire argument will be removed from the output.
+            if redirects.count < 1 { redirects_array = "{\'id\': \(redirects), \'comment\': \'\'}" }
 
             // Check if license URL is valid
             let urlPresent : Bool = isURLPresent(in: license_url)
@@ -270,6 +272,7 @@ if CommandLine.argc == 5 {
     PYTHON_SCRIPT_OUTPUT = removeEmptyPythonParameters(in: PYTHON_SCRIPT_OUTPUT)
 
     // return final output so the action can grab it and pass it on to the Python script.
+    if isInDebugMode { print("FINAL OUTPUT:") }
     print(PYTHON_SCRIPT_OUTPUT.dropFirst())
 
 } else {
@@ -322,11 +325,11 @@ func isURLPresent(in string: String) -> Bool {
 
 func removeEmptyPythonParameters(in outputString: String) -> String {
     var returnString : String = outputString
-    let comma : String = ", "
+    let comma : String = ","
     let doubleQuotes : String = "\"\"\"\""
     for currentParameter : String in everyPythonScriptFunctionsParameterNames {
-        let stringToFindFirstPass : String = "\(comma)+\(currentParameter)+\(doubleQuotes)"
-        let stringToFindSecondPass : String = "\(currentParameter)+\(doubleQuotes)+\(comma)"
+        let stringToFindFirstPass  : String = "\(comma) \(currentParameter)\(doubleQuotes)"
+        let stringToFindSecondPass : String = "\(currentParameter)\(doubleQuotes)\(comma) "
         returnString = returnString.replacingOccurrences(of: stringToFindFirstPass, with: "")
         returnString = returnString.replacingOccurrences(of: stringToFindSecondPass, with: "")
     }

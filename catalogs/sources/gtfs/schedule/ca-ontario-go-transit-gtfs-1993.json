@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 1993,
+    "data_type": "gtfs",
+    "provider": "Go Transit",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Ontario",
+        "municipality": "Toronto",
+        "bounding_box": {
+            "minimum_latitude": 43.097075,
+            "maximum_latitude": 44.387438,
+            "minimum_longitude": -80.540546,
+            "maximum_longitude": -78.2870331,
+            "extracted_on": "2024-02-16T16:13:43+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://assets.metrolinx.com/raw/upload/Documents/Metrolinx/Open%20Data/GO-GTFS.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-go-transit-gtfs-1993.zip?alt=media",
+        "license": "https://www.gotransit.com/en/partner-with-us/software-developers"
+    },
+    "redirect": []
+}

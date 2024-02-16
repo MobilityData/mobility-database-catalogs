@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2000,
+    "data_type": "gtfs",
+    "provider": "Red Rose Transit Authority (RRTA)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Pennsylvania",
+        "municipality": "Lancaster",
+        "bounding_box": {
+            "minimum_latitude": 39.9714978343,
+            "maximum_latitude": 40.18634,
+            "minimum_longitude": -76.642207,
+            "maximum_longitude": -75.9562961829,
+            "extracted_on": "2024-02-16T16:13:49+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://busfinder.redrosetransit.com/Infopoint/gtfs-zip.ashx",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-pennsylvania-red-rose-transit-authority-rrta-gtfs-2000.zip?alt=media",
+        "license": "INVALID_OR_NO_URL_PROVIDED"
+    },
+    "redirect": []
+}

@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 1997,
+    "data_type": "gtfs",
+    "provider": "Lethbridge Transit",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Alberta",
+        "municipality": "Lethbridge",
+        "bounding_box": {
+            "minimum_latitude": 49.6515019030274,
+            "maximum_latitude": 49.7383759759889,
+            "minimum_longitude": -112.913215781046,
+            "maximum_longitude": -112.781255112961,
+            "extracted_on": "2024-02-16T16:13:46+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gis.lethbridge.ca/OpenData/DataSets/GTFS_Transit_Data.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-alberta-lethbridge-transit-gtfs-1997.zip?alt=media",
+        "license": "https://opendata.lethbridge.ca/pages/open-data-license"
+    },
+    "redirect": []
+}

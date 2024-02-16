@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2004,
+    "data_type": "gtfs",
+    "provider": "CA du Pays de Grasse",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Provence-Alpes-Côte-dʼAzur",
+        "municipality": "Grasse",
+        "bounding_box": {
+            "minimum_latitude": 43.56944025,
+            "maximum_latitude": 43.8824131,
+            "minimum_longitude": 6.641745,
+            "maximum_longitude": 6.99847186,
+            "extracted_on": "2024-02-16T16:13:56+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/79822/79822.20230921.151241.357814.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-provence-alpes-cote-d'azur-ca-du-pays-de-grasse-gtfs-2004.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/lignes-regulieres-de-transports-sillages-en-pays-de-grasse-urbain-et-scolaire"
+    },
+    "redirect": []
+}

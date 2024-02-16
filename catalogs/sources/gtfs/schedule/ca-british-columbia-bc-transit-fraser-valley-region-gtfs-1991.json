@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 1991,
+    "data_type": "gtfs",
+    "provider": "BC Transit (Fraser Valley Region)",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "British Columbia",
+        "municipality": "Abbotsford",
+        "bounding_box": {
+            "minimum_latitude": 49.00422,
+            "maximum_latitude": 49.38268,
+            "minimum_longitude": -122.89531,
+            "maximum_longitude": -121.42033,
+            "extracted_on": "2024-02-16T16:13:34+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://bct.tmix.se/Tmix.Cap.TdExport.WebApi/gtfs/?operatorIds=13",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-transit-fraser-valley-region-gtfs-1991.zip?alt=media",
+        "license": "https://www.bctransit.com/open-data/terms-of-use"
+    },
+    "redirect": []
+}

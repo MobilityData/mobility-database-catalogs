@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 1999,
+    "data_type": "gtfs",
+    "provider": "Beach Cities Transit",
+    "feed_contact_email": "support@gmvsync.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Redondo Beach",
+        "bounding_box": {
+            "minimum_latitude": 33.816115,
+            "maximum_latitude": 33.95071,
+            "minimum_longitude": -118.417662,
+            "maximum_longitude": -118.352699,
+            "extracted_on": "2024-02-16T16:13:48+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://redondobeachbct.com/gtfs",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-beach-cities-transit-gtfs-1999.zip?alt=media",
+        "license": "INVALID_OR_NO_URL_PROVIDED"
+    },
+    "redirect": []
+}

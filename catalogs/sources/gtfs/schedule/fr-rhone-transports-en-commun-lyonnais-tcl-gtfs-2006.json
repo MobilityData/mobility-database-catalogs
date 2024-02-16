@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2006,
+    "data_type": "gtfs",
+    "provider": "Transports en Commun Lyonnais (TCL)",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Rhône",
+        "bounding_box": {
+            "minimum_latitude": 45.567832978051,
+            "maximum_latitude": 45.916551594924,
+            "minimum_longitude": 4.640647363352,
+            "maximum_longitude": 5.129537954826,
+            "extracted_on": "2024-02-16T16:14:03+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/c6a3d03f-f8e4-44f3-9e7d-fcaf1ab30b92/c6a3d03f-f8e4-44f3-9e7d-fcaf1ab30b92.20220415.060247.709832.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-rhone-transports-en-commun-lyonnais-tcl-gtfs-2006.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/horaires-theoriques-du-reseau-transports-en-commun-lyonnais"
+    },
+    "redirect": []
+}

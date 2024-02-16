@@ -98,9 +98,13 @@ jobs:
             pip install gtfs_kit --quiet
             pip install unidecode --quiet
 
+            echo "BEGIN"
+
             sections=$(echo '${{ steps.process-csv.outputs.PYTHON_SCRIPT_ARGS }}' | sed 's/""/"/g' | awk -F'§' '{for (i=1; i<=NF; i++) print $i}')
             for section in "${sections[@]}"; do
+                echo "processing line: ${section}"
                 eval "python -c 'from tools.operations import *; ${section}'"
+                echo " "
             done
 
       - name: Commit & push

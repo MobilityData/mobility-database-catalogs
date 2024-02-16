@@ -165,7 +165,7 @@ class SourcesCatalog(Catalog):
     def add(self, **kwargs):
         mdb_source_id = self.identify(self.root)
         redirects = kwargs.pop(REDIRECTS, [])
-        if len(redirects) > 0:
+        if redirects is not None and len(redirects) > 0:
             kwargs[REDIRECTS] = [
                 {
                     REDIRECT_ID: elem.get(REDIRECT_ID), REDIRECT_COMMENT: elem.get(REDIRECT_COMMENT)

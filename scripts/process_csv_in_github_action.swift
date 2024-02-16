@@ -106,7 +106,7 @@ enum realtimeDataTypeCode: String {
 }
 
 // Will be used to filter empty parameters from this script's output
-let everyPythonScriptFunctionsParameterNames : [String] = ["provider=", "entity_type=", "mdb_source_id=", "country_code=", "direct_download_url=", "authentication_type=", "authentication_info_url=", "api_key_parameter_name=", "subdivision_name=", "municipality=", "country_code=", "license_url=", "name=", "status=", "features=", "note=", "feed_contact_email=", "redirects="]
+let everyPythonScriptFunctionsParameterNames : [String] = ["provider=", "entity_type=", "country_code=", "direct_download_url=", "authentication_type=", "authentication_info_url=", "api_key_parameter_name=", "subdivision_name=", "municipality=", "country_code=", "license_url=", "name=", "status=", "features=", "note=", "feed_contact_email=", "redirects="]
 
 let arguments : [String] = CommandLine.arguments
 

@@ -91,7 +91,7 @@ class TestOperations(TestCase):
         test_country_code = "test_country_code"
         test_subdivision_name = "test_subdivision_name"
         test_municipality = "test_municipality"
-        test_direct_download_url = "test_direct_download_url"
+        test_direct_download_url = "http://data.trilliumtransit.com/gtfs/avalon-ca-us/avalon-ca-us.zip"
         test_authentication_type = "test_authentication_type"
         test_authentication_info_url = "test_authentication_info_url"
         test_api_key_parameter_name = "test_api_key_parameter_name"
@@ -101,8 +101,8 @@ class TestOperations(TestCase):
         test_features = ["flex"]
         feed_contact_email = "test contact email"
         redirects = [
-            {"id": "test_id", "comment": "test_url"},
-            {"id": "test_id", "comment": "test_url"},
+            {"id": 123, "comment": "test_url"},
+            {"id": 456, "comment": "test_url"},
             {"wrong_key": "test_value"}
         ]
         under_test = add_gtfs_schedule_source(
@@ -144,8 +144,8 @@ class TestOperations(TestCase):
         test_features = ["flex"]
         feed_contact_email = "test contact email changed"
         redirects = [
-            {"id": "test_id", "comment": "test_url"},
-            {"id": "test_id changed", "comment": "test_url changed"},
+            {"id": 123, "comment": "test_url"},
+            {"id": 123, "comment": "test_url changed"},
             {"wrong_key": "test_value"}
         ]
         under_test = update_gtfs_schedule_source(

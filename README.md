@@ -52,6 +52,9 @@ Contains the JSON schemas used to validate the feeds in the integration tests.
 | data_type     | Enum| Required| The data format that the feed uses: `gtfs`.|
 | features      | Array of Enums | Optional | An array of features which can be any of: <ul><li>`fares-v2`</li><li>`fares-v1`</li><li>`flex-v1`</li><li>`flex-v2`</li><li>`pathways`</li></ul>|  
 | status        | Enum | Optional | Describes status of the feed. Should be one of: <ul><li>`active`: Feed should be used in public trip planners.</li><li>`deprecated`: Feed is explicitly deprecated and should not be used in public trip planners.</li><li>`inactive`: Feed hasn't been recently updated and should be used at risk of providing outdated information.</li><li>`development`: Feed is being used for development purposes and should not be used in public trip planners.</li></ul>Feed is assumed to be `active` if status is not explicitly provided.|  
+|redirect| Object | Optional | Contains  <ul><li>mdb_source_id of new feed that replaces the current feed.</li><li>comment to explain redirect if needed (e.g new aggregate feed) </li></ul>|
+| - id      | Foreign ID of mdb_source_id | Optional | New feed that replaces the current feed that is out of date or no longer maintained by the provider. |
+| - comment | Text | Optional | comment to explain redirect if needed (e.g new aggregate feed) |
 |location| Object | Required |Contains  <ul><li>Text that describes the feed's location in the `country_code`, `subdivision_name`, and `municipality` fields.</li><li>Latitude, longitude, date and time that describes the feed's bounding box in the `bounding_box` subobject. </li></ul>|
 | - country_code       | Text |Required                  | ISO 3166-1 alpha-2 code designating the country where the feed service is located. For a list of valid codes [see here](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).                                                    |
 | - subdivision_name  | Text |Optional              | ISO 3166-2 subdivision name designating the subdivision (e.g province, state, region) where the feed service is located. For a list of valid names [see here](https://unece.org/trade/uncefact/unlocode-country-subdivisions-iso-3166-2).|  
@@ -62,15 +65,16 @@ Contains the JSON schemas used to validate the feeds in the integration tests.
 | --minimum_longitude    | Longitude | System generated                    | The minimum longitude for the feed's bounding box.  
 | --maximum_longitude    | Longitude | System generated                    | The maximum longitude for the feed's bounding box.  
 | --extracted_on   | Date and Time | System generated                    | The date and timestamp the bounding box was extracted on in UTC.  
-| provider     | Text | Required                   | A commonly used name for the transit provider included in the feed.  
+| provider     | Text | Required                   | A commonly used name for the transit provider included in the feed.  |
+| feed_contact_email | Text | Optional | The contact information for the data producer of the feed, discovered via feed_info.feed_contact_email in the feed, the provider's website, or the Mobility Database contributor form. | 
 | name        |  Text |Optional              | An optional description of the feed, e.g to specify if the feed is an aggregate of multiple providers, or which network is represented by the feed. |
-|urls| Object | Required | Contains URLs associated with the feed in the `direct_download_url`, `latest`, and `license` fields.
-|- direct_download |URL|Optional     | URL that automatically opens the feed.
+|urls| Object | Required | Contains URLs associated with the feed in the `direct_download_url`, `latest`, and `license` fields. |
+|- direct_download |URL|Optional     | URL that automatically opens the feed. |
 |- authentication_type |Enum|Optional | The **authentication_type** field defines the type of authentication required to access the URL. Valid values for this field are: <ul> <li>**0** or **(empty)** - No authentication required.</li><li>**1** - The authentication requires an API key, which should be passed as value of the parameter `api_key_parameter_name` in the URL. Please visit URL in `authentication_info_url` for more information. </li><li>**2** - The authentication requires an HTTP header, which should be passed as the value of the header `api_key_parameter_name` in the HTTP request. </li></ul> When not provided, the authentication type is assumed to be **0**.|
 |- authentication_info_url | URL| Conditionally required | If authentication is required, the **authentication_info_url** field contains a URL to a human-readable page describing how the authentication should be performed and how credentials can be created. This field is required for `authentication_type=1` and `authentication_type=2`. |
 |- api_key_parameter_name |Text|Conditionally required | The **api_key_parameter_name** field defines the name of the parameter to pass in the URL to provide the API key. This field is required for `authentication_type=1` and `authentication_type=2`.   |
-| - latest | URL | System generated | A stable URL for the latest dataset of a feed.
-|- license |URL| Optional     | The license information for the direct download URL.  
+| - latest | URL | System generated | A stable URL for the latest dataset of a feed. |
+|- license |URL| Optional     | The license information for the direct download URL.  |
 
 ## GTFS Realtime Schema
 
@@ -84,6 +88,9 @@ Contains the JSON schemas used to validate the feeds in the integration tests.
 |note|Text| Optional|A note to clarify complex use cases for consumers, for example when several static feeds are associated with a realtime feed.  |  
 | features      | Array of Enums | Optional | An array of features which can be any of: <ul><li>`occupancy`</li></ul> |  
 | status        | Enum | Optional |  Describes status of the feed. Should be one of: <ul><li>`active`: Feed should be used in public trip planners.</li><li>`deprecated`: Feed is explicitly deprecated and should not be used in public trip planners.</li><li>`inactive`: Feed hasn't been recently updated and should be used at risk of providing outdated information.</li><li>`development`: Feed is being used for development purposes and should not be used in public trip planners.</li></ul>Feed is assumed to be `active` if status is not explicitly provided.|  |  
+|redirect| Object | Optional | Contains  <ul><li>mdb_source_id of new feed that replaces the current feed.</li><li>comment to explain redirect if needed (e.g new aggregate feed) </li></ul>|
+| - id      | Foreign ID of mdb_source_id | Optional | New feed that replaces the current feed that is out of date or no longer maintained by the provider. |
+| - comment | String | Optional | comment to explain redirect if needed (e.g new aggregate feed) |
 | static_reference |  Array of Integers |Optional              | A list of the static feeds that the real time feed is associated with, represented by their MDB source IDs. |  
 |urls| Object | Required | Contains URLs associated with the feed in the `direct_download_url` and `license_url` fields, and the authentication info for `direct_download_url` in the `authentication_type`, `authentication_info_url` and `api_key_parameter_name` fields.
 |- direct_download_url |URL|Required     | URL that responds with an encoded [GTFS Realtime protocol buffer message](https://github.com/google/transit/tree/master/gtfs-realtime/spec/en#data-format).                                                                                                

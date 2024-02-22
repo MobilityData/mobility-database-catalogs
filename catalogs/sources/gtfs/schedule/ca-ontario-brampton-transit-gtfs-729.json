@@ -3,6 +3,11 @@
     "data_type": "gtfs",
     "provider": "Brampton Transit",
     "status": "deprecated",
+    "redirect": [
+        {
+            "id": 1994
+        }
+    ],
     "location": {
         "country_code": "CA",
         "subdivision_name": "Ontario",
@@ -17,9 +22,6 @@
     },
     "urls": {
         "direct_download": "http://www.brampton.ca/EN/City-Hall/OpenGov/Open-Data-Catalogue/Documents/Google_Transit.zip",
-        "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-brampton-transit-gtfs-729.zip?alt=media",
-        "license": "INVALID_OR_NO_URL_PROVIDED"
-    },
-    "redirect": []
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-brampton-transit-gtfs-729.zip?alt=media"
+    }
 }

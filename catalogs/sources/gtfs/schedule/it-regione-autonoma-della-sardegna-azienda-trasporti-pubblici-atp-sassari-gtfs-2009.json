@@ -16,9 +16,7 @@
     },
     "urls": {
         "direct_download": "https://atpsassari.it/media/files/atpss-gtfs.zip",
-        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-regione-autonoma-della-sardegna-azienda-trasporti-pubblici-atp-sassari-gtfs-2009.zip?alt=media",
         "license": "https://www.sardegnamobilita.it/open-data"
-    },
-    "redirect": []
+    }
 }

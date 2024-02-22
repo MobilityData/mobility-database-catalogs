@@ -4,7 +4,9 @@
     "provider": "Lethbridge Transit",
     "status": "deprecated",
     "redirect": [
-        "id": 1997
+        {
+            "id": 1997
+        }
     ],
     "location": {
         "country_code": "CA",

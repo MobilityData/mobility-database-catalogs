@@ -22,6 +22,7 @@
     },
     "urls": {
         "direct_download": "https://www.data.gouv.fr/fr/datasets/r/5ec3d89e-cd57-4416-a5ba-c84c4784f958",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-hauts-de-france-communaute-dagglomeration-du-pays-de-saint-omer-gtfs-663.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-hauts-de-france-communaute-dagglomeration-du-pays-de-saint-omer-gtfs-663.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/transports-en-commun-audomarois-1"
     }
 }

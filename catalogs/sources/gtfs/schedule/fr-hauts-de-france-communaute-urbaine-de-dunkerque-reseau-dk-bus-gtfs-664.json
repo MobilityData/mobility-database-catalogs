@@ -22,6 +22,7 @@
     },
     "urls": {
         "direct_download": "https://www.data.gouv.fr/fr/datasets/r/c82ea9cd-f9b0-4ce3-ad04-139f4f2f1e84",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-hauts-de-france-communaute-urbaine-de-dunkerque-reseau-dk-bus-gtfs-664.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-hauts-de-france-communaute-urbaine-de-dunkerque-reseau-dk-bus-gtfs-664.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/offre-de-transports-reseau-dk-bus-de-la-communaute-urbaine-de-dunkerque-gtfs"
     }
 }

@@ -19,6 +19,5 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-hauts-de-france-communaute-urbaine-de-dunkerque-reseau-dk-bus-gtfs-1990.zip?alt=media",
         "license": "https://transport.data.gouv.fr/datasets/offre-de-transports-reseau-dk-bus-de-la-communaute-urbaine-de-dunkerque-gtfs"
-    },
-    "redirect": []
+    }
 }

@@ -2,7 +2,12 @@
     "mdb_source_id": 807,
     "data_type": "gtfs",
     "provider": "Red Rose Transit Authority (RRTA)",
-    "status": "inactive",
+    "status": "deprecated",
+    "redirect": [
+        {
+            "id": 2000
+        }
+    ],
     "location": {
         "country_code": "US",
         "subdivision_name": "Pennsylvania",
@@ -17,9 +22,6 @@
     },
     "urls": {
         "direct_download": "https://github.com/transitland/gtfs-archives-not-hosted-elsewhere/raw/master/rrta.zip",
-        "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-pennsylvania-red-rose-transit-authority-rrta-gtfs-807.zip?alt=media",
-        "license": "INVALID_OR_NO_URL_PROVIDED"
-    },
-    "redirect": []
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-pennsylvania-red-rose-transit-authority-rrta-gtfs-807.zip?alt=media"
+    }
 }

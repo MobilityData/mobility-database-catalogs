@@ -2,6 +2,11 @@
     "mdb_source_id": 73,
     "data_type": "gtfs",
     "provider": "Santa Rosa CityBus",
+    "redirect": [
+        {
+            "id": 1986
+        }
+    ],
     "features": [
         "fares-v1"
     ],
@@ -20,9 +25,6 @@
     },
     "urls": {
         "direct_download": "https://srcity.org/DocumentCenter/View/21635/google_transit",
-        "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-santa-rosa-citybus-gtfs-73.zip?alt=media",
-        "license": "INVALID_OR_NO_URL_PROVIDED"
-    },
-    "redirect": []
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-santa-rosa-citybus-gtfs-73.zip?alt=media"
+    }
 }

@@ -25,6 +25,7 @@
     },
     "urls": {
         "direct_download": "https://www.gotransit.com/static_files/gotransit/assets/Files/GO_GTFS.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-go-transit-gtfs-727.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-go-transit-gtfs-727.zip?alt=media",
+        "license": "https://www.gotransit.com/en/information-resources/software-developers"
     }
 }

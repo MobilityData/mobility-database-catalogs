@@ -2,6 +2,11 @@
     "mdb_source_id": 837,
     "data_type": "gtfs",
     "provider": "STGA - réseau Möbius",
+    "redirect": [
+        {
+            "id": 2002
+        }
+    ],
     "location": {
         "country_code": "FR",
         "subdivision_name": "Nouvelle-Aquitaine",
@@ -16,9 +21,6 @@
     },
     "urls": {
         "direct_download": "https://www.data.gouv.fr/fr/datasets/r/2e25c067-65a6-40db-8201-62aa1c258d36",
-        "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-nouvelle-aquitaine-stga-reseau-mobius-gtfs-837.zip?alt=media",
-        "license": "INVALID_OR_NO_URL_PROVIDED"
-    },
-    "redirect": []
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-nouvelle-aquitaine-stga-reseau-mobius-gtfs-837.zip?alt=media"
+    }
 }

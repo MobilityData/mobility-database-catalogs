@@ -16,9 +16,7 @@
     },
     "urls": {
         "direct_download": "https://www.arcgis.com/sharing/rest/content/items/a355aabd5a8c490186bdce559c9c75fb/data",
-        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-brampton-transit-gtfs-1994.zip?alt=media",
         "license": "https://brampton.maps.arcgis.com/home/item.html?id=a355aabd5a8c490186bdce559c9c75fb"
-    },
-    "redirect": []
+    }
 }

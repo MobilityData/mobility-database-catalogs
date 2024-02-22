@@ -3,6 +3,11 @@
     "data_type": "gtfs",
     "provider": "Communauté dʼAgglomération du Pays de Saint-Omer",
     "status": "deprecated",
+     "redirect": [
+        {
+            "id": 1989
+        }
+    ],
     "location": {
         "country_code": "FR",
         "subdivision_name": "Hauts-de-France",
@@ -17,9 +22,6 @@
     },
     "urls": {
         "direct_download": "https://www.data.gouv.fr/fr/datasets/r/5ec3d89e-cd57-4416-a5ba-c84c4784f958",
-        "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-hauts-de-france-communaute-dagglomeration-du-pays-de-saint-omer-gtfs-663.zip?alt=media",
-        "license": "INVALID_OR_NO_URL_PROVIDED"
-    },
-    "redirect": []
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-hauts-de-france-communaute-dagglomeration-du-pays-de-saint-omer-gtfs-663.zip?alt=media"
+    }
 }

@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Fraser Valley Express",
     "status": "deprecated",
-     "redirect": [
+    "redirect": [
         {
             "id": 1991
         }

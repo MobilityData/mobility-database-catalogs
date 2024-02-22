@@ -16,9 +16,6 @@
     },
     "urls": {
         "direct_download": "https://busfinder.redrosetransit.com/Infopoint/gtfs-zip.ashx",
-        "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-pennsylvania-red-rose-transit-authority-rrta-gtfs-2000.zip?alt=media",
-        "license": "INVALID_OR_NO_URL_PROVIDED"
-    },
-    "redirect": []
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-pennsylvania-red-rose-transit-authority-rrta-gtfs-2000.zip?alt=media"
+    }
 }

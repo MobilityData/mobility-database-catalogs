@@ -4,6 +4,11 @@
     "provider": "Tours Métropole Val de Loire",
     "name": "Fil Bleu",
     "status": "deprecated",
+    "redirect": [
+        {
+            "id": 1987
+        }
+    ],
     "location": {
         "country_code": "FR",
         "subdivision_name": "Centre-Val de Loire",
@@ -18,9 +23,6 @@
     },
     "urls": {
         "direct_download": "https://data.tours-metropole.fr/api/v2/catalog/datasets/zip-horaires-theoriques-du-reseau-fil-bleu-tours-metropole-gtfs/files/aa7f5e79190470545a898703a9c140be",
-        "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-centre-val-de-loire-tours-metropole-val-de-loire-gtfs-661.zip?alt=media",
-        "license": "INVALID_OR_NO_URL_PROVIDED"
-    },
-    "redirect": []
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-centre-val-de-loire-tours-metropole-val-de-loire-gtfs-661.zip?alt=media"
+    }
 }

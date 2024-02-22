@@ -2,6 +2,12 @@
     "mdb_source_id": 729,
     "data_type": "gtfs",
     "provider": "Brampton Transit",
+    "status": "deprecated",
+    "redirect": [
+        {
+            "id": 1994
+        }
+    ],
     "location": {
         "country_code": "CA",
         "subdivision_name": "Ontario",

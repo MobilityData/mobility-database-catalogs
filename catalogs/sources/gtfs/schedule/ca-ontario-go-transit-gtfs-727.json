@@ -2,9 +2,15 @@
     "mdb_source_id": 727,
     "data_type": "gtfs",
     "provider": "Go Transit",
+    "redirect": [
+        {
+            "id": 1993
+        }
+    ],
     "features": [
         "fares-v1"
     ],
+    "status": "deprecated",
     "location": {
         "country_code": "CA",
         "subdivision_name": "Ontario",

@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 2003,
+    "data_type": "gtfs",
+    "provider": "Palmbus",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Provence-Alpes-Côte dʼAzur",
+        "municipality": "Cannes",
+        "bounding_box": {
+            "minimum_latitude": 43.481433698816645,
+            "maximum_latitude": 43.62436574354762,
+            "minimum_longitude": 6.9201140105724335,
+            "maximum_longitude": 7.058013752102852,
+            "extracted_on": "2024-02-22T03:59:11+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/79420/79420.20240125.160818.158371.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-provence-alpes-cote-d'azur-palmbus-gtfs-2003.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-gtfs-gtfs-rt-du-reseau-palmbus-cannes-pays-de-lerins"
+    }
+}

@@ -2,6 +2,12 @@
     "mdb_source_id": 818,
     "data_type": "gtfs",
     "provider": "Stark Area Regional Transit Authority (SARTA)",
+    "status": "deprecated",
+    "redirect": [
+        {
+            "id": 2001
+        }
+    ],
     "location": {
         "country_code": "US",
         "subdivision_name": "Ohio",

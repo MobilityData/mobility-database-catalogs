@@ -2,10 +2,15 @@
     "mdb_source_id": 73,
     "data_type": "gtfs",
     "provider": "Santa Rosa CityBus",
+    "redirect": [
+        {
+            "id": 1986
+        }
+    ],
     "features": [
         "fares-v1"
     ],
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

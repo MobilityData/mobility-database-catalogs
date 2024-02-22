@@ -2,9 +2,15 @@
     "mdb_source_id": 756,
     "data_type": "gtfs",
     "provider": "Société de Transport de Sherbrooke",
+    "redirect": [
+        {
+            "id": 1996
+        }
+    ],
     "features": [
         "fares-v1"
     ],
+    "status": "deprecated",
     "location": {
         "country_code": "CA",
         "subdivision_name": "Québec",

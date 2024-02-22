@@ -3,6 +3,12 @@
     "data_type": "gtfs",
     "provider": "Tours Métropole Val de Loire",
     "name": "Fil Bleu",
+    "status": "deprecated",
+    "redirect": [
+        {
+            "id": 1987
+        }
+    ],
     "location": {
         "country_code": "FR",
         "subdivision_name": "Centre-Val de Loire",

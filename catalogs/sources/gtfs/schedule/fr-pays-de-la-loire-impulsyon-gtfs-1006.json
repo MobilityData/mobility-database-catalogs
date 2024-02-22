@@ -2,6 +2,12 @@
     "mdb_source_id": 1006,
     "data_type": "gtfs",
     "provider": "Impulsyon",
+    "status": "deprecated",
+    "redirect": [
+        {
+            "id": 2005
+        }
+    ],
     "location": {
         "country_code": "FR",
         "subdivision_name": "Pays-de-la-Loire",

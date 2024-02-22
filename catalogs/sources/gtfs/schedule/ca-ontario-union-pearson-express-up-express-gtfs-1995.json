@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1995,
+    "data_type": "gtfs",
+    "provider": "Union Pearson Express (UP Express)",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Ontario",
+        "municipality": "Toronto",
+        "bounding_box": {
+            "minimum_latitude": 43.644238,
+            "maximum_latitude": 43.70058,
+            "minimum_longitude": -79.612968,
+            "maximum_longitude": -79.383555,
+            "extracted_on": "2024-02-22T03:58:57+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://assets.metrolinx.com/raw/upload/Documents/Metrolinx/Open%20Data/UP-GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-union-pearson-express-up-express-gtfs-1995.zip?alt=media",
+        "license": "https://www.gotransit.com/en/partner-with-us/software-developers"
+    }
+}

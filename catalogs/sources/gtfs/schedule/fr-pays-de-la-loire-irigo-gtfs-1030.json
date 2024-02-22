@@ -2,6 +2,12 @@
     "mdb_source_id": 1030,
     "data_type": "gtfs",
     "provider": "Irigo",
+    "status": "deprecated",
+    "redirect": [
+        {
+            "id": 2007
+        }
+    ],
     "location": {
         "country_code": "FR",
         "subdivision_name": "Pays-de-la-Loire",

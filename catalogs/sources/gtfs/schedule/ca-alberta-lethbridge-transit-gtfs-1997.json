@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 765,
+    "mdb_source_id": 1997,
     "data_type": "gtfs",
     "provider": "Lethbridge Transit",
     "location": {
@@ -11,14 +11,14 @@
             "maximum_latitude": 49.7383759759889,
             "minimum_longitude": -112.913215781046,
             "maximum_longitude": -112.781255112961,
-            "extracted_on": "2022-03-17T13:16:43+00:00"
+            "extracted_on": "2024-02-22T03:59:00+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://www.lethbridge.ca/OpenDataSets/GTFS_Transit_Data.zip",
+        "direct_download": "https://gis.lethbridge.ca/OpenData/DataSets/GTFS_Transit_Data.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-alberta-lethbridge-transit-gtfs-765.zip?alt=media",
-        "license": "INVALID_OR_NO_URL_PROVIDED"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-alberta-lethbridge-transit-gtfs-1997.zip?alt=media",
+        "license": "https://opendata.lethbridge.ca/pages/open-data-license"
     },
     "redirect": []
 }

@@ -2,6 +2,7 @@
     "mdb_source_id": 698,
     "data_type": "gtfs",
     "provider": "Fraser Valley Express",
+    "status": "deprecated",
     "location": {
         "country_code": "CA",
         "subdivision_name": "British Columbia",
@@ -16,7 +17,9 @@
     },
     "urls": {
         "direct_download": "https://www.bctransit.com/data/gtfs/fraser-valley-express.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-fraser-valley-express-gtfs-698.zip?alt=media",
-        "license": "https://www.bctransit.com/open-data/terms-of-use"
-    }
+        "license": "INVALID_OR_NO_URL_PROVIDED"
+    },
+    "redirect": []
 }

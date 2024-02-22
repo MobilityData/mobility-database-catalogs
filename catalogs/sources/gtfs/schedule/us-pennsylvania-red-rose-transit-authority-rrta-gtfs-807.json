@@ -17,6 +17,9 @@
     },
     "urls": {
         "direct_download": "https://github.com/transitland/gtfs-archives-not-hosted-elsewhere/raw/master/rrta.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-pennsylvania-red-rose-transit-authority-rrta-gtfs-807.zip?alt=media"
-    }
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-pennsylvania-red-rose-transit-authority-rrta-gtfs-807.zip?alt=media",
+        "license": "INVALID_OR_NO_URL_PROVIDED"
+    },
+    "redirect": []
 }

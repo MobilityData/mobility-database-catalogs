@@ -5,6 +5,7 @@
     "features": [
         "fares-v1"
     ],
+    "status": "deprecated",
     "location": {
         "country_code": "CA",
         "subdivision_name": "Ontario",
@@ -19,7 +20,9 @@
     },
     "urls": {
         "direct_download": "https://www.gotransit.com/static_files/gotransit/assets/Files/GO_GTFS.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-go-transit-gtfs-727.zip?alt=media",
-        "license": "https://www.gotransit.com/en/information-resources/software-developers"
-    }
+        "license": "INVALID_OR_NO_URL_PROVIDED"
+    },
+    "redirect": []
 }

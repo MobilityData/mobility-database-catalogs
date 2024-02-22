@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2002,
+    "data_type": "gtfs",
+    "provider": "STGA - réseau Möbius",
+    "feed_contact_email": "support@mecatran.com",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Nouvelle-Aquitaine",
+        "municipality": "Angoulême",
+        "bounding_box": {
+            "minimum_latitude": 45.520364,
+            "maximum_latitude": 45.748606,
+            "minimum_longitude": -0.003954,
+            "maximum_longitude": 0.391091,
+            "extracted_on": "2024-02-22T03:59:08+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/79752/79752.20231005.100848.400086.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-nouvelle-aquitaine-stga---reseau-mobius-gtfs-2002.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-reseau-mobius"
+    },
+    "redirect": []
+}

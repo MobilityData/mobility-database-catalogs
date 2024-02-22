@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 1994,
+    "data_type": "gtfs",
+    "provider": "Brampton Transit",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Ontario",
+        "municipality": "Brampton",
+        "bounding_box": {
+            "minimum_latitude": 43.54785,
+            "maximum_latitude": 43.819109,
+            "minimum_longitude": -79.861498,
+            "maximum_longitude": -79.496923,
+            "extracted_on": "2024-02-22T03:58:57+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.arcgis.com/sharing/rest/content/items/a355aabd5a8c490186bdce559c9c75fb/data",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-brampton-transit-gtfs-1994.zip?alt=media",
+        "license": "https://brampton.maps.arcgis.com/home/item.html?id=a355aabd5a8c490186bdce559c9c75fb"
+    },
+    "redirect": []
+}

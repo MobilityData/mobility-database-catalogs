@@ -1,8 +1,8 @@
 {
     "mdb_source_id": 1046,
     "data_type": "gtfs",
-    "provider": "Azienda Trasporti Pubblici - Sassari (ATP) - Quadri orari dell'azienda ATP Sassari",
-    "status": "inactive",
+    "provider": "Azienda Trasporti Pubblici (ATP Sassari) - Quadri orari dellʼazienda ATP Sassari",
+    "status": "deprecated",
     "location": {
         "country_code": "IT",
         "subdivision_name": "Regione Autonoma della Sardegna",
@@ -16,7 +16,9 @@
     },
     "urls": {
         "direct_download": "http://www.sardegnamobilita.it/opendata/dati_atpss.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-regione-autonoma-della-sardegna-azienda-trasporti-pubblici-sassari-atp-quadri-orari-dellazienda-atp-sassari-gtfs-1046.zip?alt=media",
-        "license": "https://creativecommons.org/licenses/by/4.0/deed.it"
-    }
+        "license": "INVALID_OR_NO_URL_PROVIDED"
+    },
+    "redirect": []
 }

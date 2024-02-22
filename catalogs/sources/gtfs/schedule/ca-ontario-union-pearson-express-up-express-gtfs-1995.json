@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 731,
+    "mdb_source_id": 1995,
     "data_type": "gtfs",
     "provider": "Union Pearson Express (UP Express)",
     "location": {
@@ -11,14 +11,14 @@
             "maximum_latitude": 43.70058,
             "minimum_longitude": -79.612968,
             "maximum_longitude": -79.383555,
-            "extracted_on": "2022-03-16T22:07:44+00:00"
+            "extracted_on": "2024-02-22T03:58:57+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://www.gotransit.com/static_files/gotransit/assets/Files/UP-GTFS.zip",
+        "direct_download": "https://assets.metrolinx.com/raw/upload/Documents/Metrolinx/Open%20Data/UP-GTFS.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-union-pearson-express-up-express-gtfs-731.zip?alt=media",
-        "license": "INVALID_OR_NO_URL_PROVIDED"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-union-pearson-express-up-express-gtfs-1995.zip?alt=media",
+        "license": "https://www.gotransit.com/en/partner-with-us/software-developers"
     },
     "redirect": []
 }

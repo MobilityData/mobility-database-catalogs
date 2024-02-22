@@ -16,9 +16,7 @@
     },
     "urls": {
         "direct_download": "https://gis.lethbridge.ca/OpenData/DataSets/GTFS_Transit_Data.zip",
-        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-alberta-lethbridge-transit-gtfs-1997.zip?alt=media",
         "license": "https://opendata.lethbridge.ca/pages/open-data-license"
-    },
-    "redirect": []
+    }
 }

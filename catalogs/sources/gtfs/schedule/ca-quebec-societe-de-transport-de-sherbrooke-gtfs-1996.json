@@ -16,9 +16,7 @@
     },
     "urls": {
         "direct_download": "https://gtfs.sts.qc.ca:8443/gtfs/client/GTFS_clients.zip",
-        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-societe-de-transport-de-sherbrooke-gtfs-1996.zip?alt=media",
         "license": "https://www.donneesquebec.ca/recherche/fr/dataset/transport-sts"
-    },
-    "redirect": []
+    }
 }

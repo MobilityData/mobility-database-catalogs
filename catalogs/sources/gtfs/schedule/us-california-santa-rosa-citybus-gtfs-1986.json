@@ -16,9 +16,6 @@
     },
     "urls": {
         "direct_download": "https://www.srcity.org/DocumentCenter/View/38683/Santa_Rosa_GTFS",
-        "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-santa-rosa-citybus-gtfs-1986.zip?alt=media",
-        "license": "INVALID_OR_NO_URL_PROVIDED"
-    },
-    "redirect": []
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-santa-rosa-citybus-gtfs-1986.zip?alt=media"
+    }
 }

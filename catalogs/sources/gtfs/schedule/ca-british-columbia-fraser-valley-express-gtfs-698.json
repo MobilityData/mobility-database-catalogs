@@ -22,6 +22,7 @@
     },
     "urls": {
         "direct_download": "https://www.bctransit.com/data/gtfs/fraser-valley-express.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-fraser-valley-express-gtfs-698.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-fraser-valley-express-gtfs-698.zip?alt=media",
+        "license": "https://www.bctransit.com/open-data/terms-of-use"
     }
 }

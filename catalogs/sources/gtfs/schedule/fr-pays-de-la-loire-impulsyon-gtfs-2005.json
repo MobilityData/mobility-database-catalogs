@@ -16,9 +16,7 @@
     },
     "urls": {
         "direct_download": "https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/79520/79520.20240125.180808.025916.zip",
-        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-pays-de-la-loire-impulsyon-gtfs-2005.zip?alt=media",
         "license": "https://transport.data.gouv.fr/datasets/reseau-de-transport-impulsyon-a-la-roche-sur-yon"
-    },
-    "redirect": []
+    }
 }

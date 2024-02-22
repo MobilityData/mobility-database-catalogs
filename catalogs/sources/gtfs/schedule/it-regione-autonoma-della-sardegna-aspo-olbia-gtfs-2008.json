@@ -16,9 +16,7 @@
     },
     "urls": {
         "direct_download": "https://www.aspo.it/wp-content/uploads/open_data.zip",
-        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-regione-autonoma-della-sardegna-aspo-olbia-gtfs-2008.zip?alt=media",
         "license": "https://www.sardegnamobilita.it/open-data"
-    },
-    "redirect": []
+    }
 }

@@ -21,6 +21,7 @@
     },
     "urls": {
         "direct_download": "https://www.data.gouv.fr/fr/datasets/r/f360cebb-ce17-495b-aac6-05b4f52ea444",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-hauts-de-france-pastel-gtfs-775.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-hauts-de-france-pastel-gtfs-775.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/donnees-gtfs-2022-reseau-bus-pastel"
     }
 }

@@ -23,6 +23,5 @@
         "direct_download": "http://www.sardegnamobilita.it/opendata/dati_atpss.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-regione-autonoma-della-sardegna-azienda-trasporti-pubblici-sassari-atp-quadri-orari-dellazienda-atp-sassari-gtfs-1046.zip?alt=media",
         "license": "https://creativecommons.org/licenses/by/4.0/deed.it"
-    },
-    "redirect": []
+    }
 }

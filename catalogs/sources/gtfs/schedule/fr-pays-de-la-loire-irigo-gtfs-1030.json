@@ -3,6 +3,11 @@
     "data_type": "gtfs",
     "provider": "Irigo",
     "status": "deprecated",
+    "redirect": [
+        {
+            "id": 2007
+        }
+    ],
     "location": {
         "country_code": "FR",
         "subdivision_name": "Pays-de-la-Loire",
@@ -17,9 +22,7 @@
     },
     "urls": {
         "direct_download": "https://angersloiremetropole.opendatasoft.com/api/datasets/1.0/angers-loire-metropole-horaires-reseau-irigo-gtfs-rt/alternative_exports/irigo_gtfs_zip/",
-        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-pays-de-la-loire-irigo-gtfs-1030.zip?alt=media",
-        "license": "INVALID_OR_NO_URL_PROVIDED"
-    },
-    "redirect": []
+        "license": "https://angersloiremetropole.opendatasoft.com/explore/dataset/angers-loire-metropole-horaires-reseau-irigo-gtfs-rt/export/"
+    }
 }

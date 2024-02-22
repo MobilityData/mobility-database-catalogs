@@ -16,9 +16,7 @@
     },
     "urls": {
         "direct_download": "https://assets.metrolinx.com/raw/upload/Documents/Metrolinx/Open%20Data/UP-GTFS.zip",
-        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-union-pearson-express-up-express-gtfs-1995.zip?alt=media",
         "license": "https://www.gotransit.com/en/partner-with-us/software-developers"
-    },
-    "redirect": []
+    }
 }

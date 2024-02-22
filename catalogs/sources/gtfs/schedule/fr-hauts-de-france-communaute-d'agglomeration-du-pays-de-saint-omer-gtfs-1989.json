@@ -16,9 +16,7 @@
     },
     "urls": {
         "direct_download": "https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/81457/81457.20231230.060844.417532.zip",
-        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-hauts-de-france-communaute-d'agglomeration-du-pays-de-saint-omer-gtfs-1989.zip?alt=media",
         "license": "https://transport.data.gouv.fr/datasets/transports-en-commun-audomarois-1"
-    },
-    "redirect": []
+    }
 }

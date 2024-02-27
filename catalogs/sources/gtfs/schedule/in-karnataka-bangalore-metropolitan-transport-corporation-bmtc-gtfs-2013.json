@@ -8,8 +8,8 @@
         "subdivision_name": "Karnataka",
         "municipality": "Bengaluru",
         "bounding_box": {
-            "minimum_latitude": 77.1418627258,
-            "maximum_latitude": 77.958413,
+            "minimum_latitude": null,
+            "maximum_latitude": null,
             "minimum_longitude": null,
             "maximum_longitude": null,
             "extracted_on": "2024-02-27T16:14:05+00:00"

@@ -21,5 +21,9 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/br-ceara-metrofor-gtfs-1822.zip?alt=media",
         "license": "https://www.metrofor.ce.gov.br/gtfs/"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": 2010
+        }
+    ]
 }

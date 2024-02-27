@@ -19,6 +19,5 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/mx-unknown-pumabus-gtfs-1830.zip?alt=media",
         "license": "https://datos.cdmx.gob.mx/dataset/gtfs"
-    },
-    "redirect": []
+    }
 }

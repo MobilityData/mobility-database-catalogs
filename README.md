@@ -52,7 +52,7 @@ Contains the JSON schemas used to validate the feeds in the integration tests.
 | data_type     | Enum| Required| The data format that the feed uses: `gtfs`.|
 | features      | Array of Enums | Optional | An array of features which can be any of: <ul><li>`fares-v2`</li><li>`fares-v1`</li><li>`flex-v1`</li><li>`flex-v2`</li><li>`pathways`</li></ul>|  
 | status        | Enum | Optional | Describes status of the feed. Should be one of: <ul><li>`active`: Feed should be used in public trip planners.</li><li>`deprecated`: Feed is explicitly deprecated and should not be used in public trip planners.</li><li>`inactive`: Feed hasn't been recently updated and should be used at risk of providing outdated information.</li><li>`development`: Feed is being used for development purposes and should not be used in public trip planners.</li></ul>Feed is assumed to be `active` if status is not explicitly provided.|  
-|redirect| Object | Optional | Contains  <ul><li>mdb_source_id of new feed that replaces the current feed.</li><li>comment to explain redirect if needed (e.g new aggregate feed) </li></ul>|
+|redirect| Object | Optional | When a feed is deprecated by a provider and replaced with a new URL, redirect information is provided to point to the new feed.|
 | - id      | Foreign ID of mdb_source_id | Optional | New feed that replaces the current feed that is out of date or no longer maintained by the provider. |
 | - comment | Text | Optional | comment to explain redirect if needed (e.g new aggregate feed) |
 |location| Object | Required |Contains  <ul><li>Text that describes the feed's location in the `country_code`, `subdivision_name`, and `municipality` fields.</li><li>Latitude, longitude, date and time that describes the feed's bounding box in the `bounding_box` subobject. </li></ul>|
@@ -88,7 +88,7 @@ Contains the JSON schemas used to validate the feeds in the integration tests.
 |note|Text| Optional|A note to clarify complex use cases for consumers, for example when several static feeds are associated with a realtime feed.  |  
 | features      | Array of Enums | Optional | An array of features which can be any of: <ul><li>`occupancy`</li></ul> |  
 | status        | Enum | Optional |  Describes status of the feed. Should be one of: <ul><li>`active`: Feed should be used in public trip planners.</li><li>`deprecated`: Feed is explicitly deprecated and should not be used in public trip planners.</li><li>`inactive`: Feed hasn't been recently updated and should be used at risk of providing outdated information.</li><li>`development`: Feed is being used for development purposes and should not be used in public trip planners.</li></ul>Feed is assumed to be `active` if status is not explicitly provided.|  |  
-|redirect| Object | Optional | Contains  <ul><li>mdb_source_id of new feed that replaces the current feed.</li><li>comment to explain redirect if needed (e.g new aggregate feed) </li></ul>|
+|redirect| Object | Optional | When a feed is deprecated by a provider and replaced with a new URL, redirect information is provided to point to the new feed.|
 | - id      | Foreign ID of mdb_source_id | Optional | New feed that replaces the current feed that is out of date or no longer maintained by the provider. |
 | - comment | String | Optional | comment to explain redirect if needed (e.g new aggregate feed) |
 | static_reference |  Array of Integers |Optional              | A list of the static feeds that the real time feed is associated with, represented by their MDB source IDs. |  

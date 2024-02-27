@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 2014,
+    "data_type": "gtfs",
+    "provider": "UK aggregate feed",
+    "name": "aggregate feed",
+    "location": {
+        "country_code": "GB",
+        "bounding_box": {
+            "minimum_latitude": 49.968967,
+            "maximum_latitude": 60.809067,
+            "minimum_longitude": -7.543389,
+            "maximum_longitude": 1.756111,
+            "extracted_on": "2024-02-27T16:17:24+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.bus-data.dft.gov.uk/timetable/download/gtfs-file/all/",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-unknown-uk-aggregate-feed-gtfs-2014.zip?alt=media",
+        "license": "https://data.bus-data.dft.gov.uk/guidance/requirements/"
+    }
+}

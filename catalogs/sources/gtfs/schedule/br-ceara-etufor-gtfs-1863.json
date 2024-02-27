@@ -5,6 +5,7 @@
     "features": [
         "fares-v1"
     ],
+    "status": "deprecated",
     "location": {
         "country_code": "BR",
         "subdivision_name": "Ceará",
@@ -19,6 +20,12 @@
     },
     "urls": {
         "direct_download": "https://dados.fortaleza.ce.gov.br/dataset/51afc610-d48b-4fa8-8dea-9c65747148c7/resource/fc9109ec-48a9-4af3-a7c8-4909cc1e4ac0/download/exportacao.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/br-ceara-etufor-gtfs-1863.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": 2011
+        }
+    ]
 }

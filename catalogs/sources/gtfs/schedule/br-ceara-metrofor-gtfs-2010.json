@@ -1,8 +1,7 @@
 {
-    "mdb_source_id": 1822,
+    "mdb_source_id": 2010,
     "data_type": "gtfs",
     "provider": "METROFOR",
-    "status": "deprecated",
     "location": {
         "country_code": "BR",
         "subdivision_name": "Ceará",
@@ -12,18 +11,13 @@
             "maximum_latitude": -3.7192908,
             "minimum_longitude": -38.6603147,
             "maximum_longitude": -38.4770246,
-            "extracted_on": "2022-09-01T16:25:40+00:00"
+            "extracted_on": "2024-02-27T16:13:30+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://www.metrofor.ce.gov.br/wp-content/uploads/sites/32/2021/12/gtfs_metrofor.zip",
+        "direct_download": "https://www.metrofor.ce.gov.br/wp-content/uploads/sites/32/2023/12/gtfs_metrofor.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/br-ceara-metrofor-gtfs-1822.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/br-ceara-metrofor-gtfs-2010.zip?alt=media",
         "license": "https://www.metrofor.ce.gov.br/gtfs/"
-    },
-    "redirect": [
-        {
-            "id": 2010
-        }
-    ]
+    }
 }

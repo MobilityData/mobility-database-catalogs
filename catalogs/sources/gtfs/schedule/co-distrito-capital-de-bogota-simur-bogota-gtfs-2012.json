@@ -18,6 +18,5 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/co-distrito-capital-de-bogota-simur-bogota-gtfs-2012.zip?alt=media",
         "license": "http://www.simur.gov.co/gtfs"
-    },
-    "redirect": []
+    }
 }

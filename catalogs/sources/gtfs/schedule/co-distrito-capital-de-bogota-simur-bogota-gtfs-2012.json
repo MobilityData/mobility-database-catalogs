@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2012,
+    "data_type": "gtfs",
+    "provider": "SIMUR Bogota",
+    "location": {
+        "country_code": "CO",
+        "subdivision_name": "Distrito Capital de Bogotá",
+        "bounding_box": {
+            "minimum_latitude": 4.398140426179031,
+            "maximum_latitude": 4.818429737670479,
+            "minimum_longitude": -74.21512003523206,
+            "maximum_longitude": -74.0058612942782,
+            "extracted_on": "2024-02-27T16:14:04+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://storage.googleapis.com/gtfs-estaticos/GTFS-2024-02-21.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/co-distrito-capital-de-bogota-simur-bogota-gtfs-2012.zip?alt=media",
+        "license": "http://www.simur.gov.co/gtfs"
+    },
+    "redirect": []
+}

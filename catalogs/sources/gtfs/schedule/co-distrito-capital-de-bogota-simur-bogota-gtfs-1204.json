@@ -16,7 +16,9 @@
     },
     "urls": {
         "direct_download": "https://transitfeeds.com/p/simur-bogota/973/latest/download",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/co-distrito-capital-de-bogota-simur-bogota-gtfs-1204.zip?alt=media",
-        "license": "http://www.simur.gov.co/gtfs"
-    }
+        "license": "INVALID_OR_NO_URL_PROVIDED"
+    },
+    "redirect": []
 }

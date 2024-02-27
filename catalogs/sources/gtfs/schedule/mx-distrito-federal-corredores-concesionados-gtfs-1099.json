@@ -2,10 +2,10 @@
     "mdb_source_id": 1099,
     "data_type": "gtfs",
     "provider": "Corredores Concesionados, Metrobús, Sistema de Transporte Colectivo Metro, NOCHEBÚS Corredores concesionados, Red de Transporte de Pasajeros (RTP), RTP Regresa seguro a casa, Servicio de Transportes Eléctricos, Ferrocarriles Suburbanos",
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "MX",
-        "subdivision_name": "Distrito Federal",
+        "subdivision_name": "Mexico City",
         "bounding_box": {
             "minimum_latitude": 19.13318768,
             "maximum_latitude": 19.66994819,
@@ -16,7 +16,13 @@
     },
     "urls": {
         "direct_download": "https://s3.amazonaws.com/setravi/GTFS_SEMOVI_CDMX.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/mx-distrito-federal-corredores-concesionados-gtfs-1099.zip?alt=media",
         "license": "http://www7.df.gob.mx/wb/stv/condiciones_de_uso"
-    }
+    },
+    "redirect": [
+        {
+            "id": 1830
+        }
+    ]
 }

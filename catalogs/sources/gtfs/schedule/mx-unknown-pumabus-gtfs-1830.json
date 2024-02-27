@@ -2,8 +2,10 @@
     "mdb_source_id": 1830,
     "data_type": "gtfs",
     "provider": "Pumabús, Corredores Concesionados, Sistema de Transporte Colectivo Metro, Metrobús, Servicio de Tren Ligero, Ferrocarriles Suburbanos, Trolebús, Red de Transporte de Pasajeros, Cablebus",
+    "name": "Secretaría de Movilidad (SEMOVI)",
     "location": {
         "country_code": "MX",
+        "subdivision_name": "Mexico City",
         "bounding_box": {
             "minimum_latitude": 19.13313,
             "maximum_latitude": 19.6671,
@@ -14,6 +16,8 @@
     },
     "urls": {
         "direct_download": "https://datos.cdmx.gob.mx/dataset/75538d96-3ade-4bc5-ae7d-d85595e4522d/resource/32ed1b6b-41cd-49b3-b7f0-b57acb0eb819/download/gtfs-2.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/mx-unknown-pumabus-gtfs-1830.zip?alt=media"
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/mx-unknown-pumabus-gtfs-1830.zip?alt=media",
+        "license": "https://datos.cdmx.gob.mx/dataset/gtfs"
     }
 }

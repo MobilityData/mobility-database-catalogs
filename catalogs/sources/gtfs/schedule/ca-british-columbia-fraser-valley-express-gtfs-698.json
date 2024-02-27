@@ -2,6 +2,12 @@
     "mdb_source_id": 698,
     "data_type": "gtfs",
     "provider": "Fraser Valley Express",
+    "status": "deprecated",
+    "redirect": [
+        {
+            "id": 1991
+        }
+    ],
     "location": {
         "country_code": "CA",
         "subdivision_name": "British Columbia",

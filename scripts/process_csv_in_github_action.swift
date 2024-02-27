@@ -174,7 +174,8 @@ if CommandLine.argc == 5 {
             let realtimefeatures        : String = line[column.realtimefeatures.rawValue]
             let redirects               : String = line[column.gtfsredirect.rawValue]
             let feed_contact_email      : String = line[column.dataproduceremail2.rawValue]
-            let old_mbd_ID              : Int    = Int(line[column.oldMobilityDatabaseID.rawValue]) ?? 0
+            let old_mbd_ID_String       : String = line[column.oldMobilityDatabaseID.rawValue].trimmingCharacters(in: CharacterSet(charactersIn: "\"")) // We need to remove the trailing quotation marks from the value, they interfere with the conversion to Int.
+            let old_mbd_ID              : Int    = Int(old_mbd_ID_String) ?? 0
 
             if isInDebugMode { print("datatype : \(datatype)") }
             if isInDebugMode { print("request : \(request)") }

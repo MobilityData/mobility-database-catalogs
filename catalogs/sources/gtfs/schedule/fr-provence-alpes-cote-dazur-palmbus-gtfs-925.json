@@ -2,6 +2,12 @@
     "mdb_source_id": 925,
     "data_type": "gtfs",
     "provider": "Palmbus",
+    "status": "deprecated",
+    "redirect": [
+        {
+            "id": 2003
+        }
+    ],
     "location": {
         "country_code": "FR",
         "subdivision_name": "Provence-Alpes-Côte d'Azur",
@@ -17,6 +23,6 @@
     "urls": {
         "direct_download": "https://www.data.gouv.fr/fr/datasets/r/d24f3602-db71-4736-b37a-bc8cb961a713",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-provence-alpes-cote-dazur-palmbus-gtfs-925.zip?alt=media",
-        "license": "https://transport.data.gouv.fr/datasets/horaires-theoriques-du-reseau-palmbus-cannes-pays-de-lerins-gtfs/"
+         "license": "https://transport.data.gouv.fr/datasets/horaires-theoriques-du-reseau-palmbus-cannes-pays-de-lerins-gtfs/"
     }
 }

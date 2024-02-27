@@ -2,6 +2,12 @@
     "mdb_source_id": 775,
     "data_type": "gtfs",
     "provider": "PASTEL",
+    "status": "deprecated",
+    "redirect": [
+        {
+            "id": 1998
+        }
+    ],
     "location": {
         "country_code": "FR",
         "subdivision_name": "Hauts-de-France",

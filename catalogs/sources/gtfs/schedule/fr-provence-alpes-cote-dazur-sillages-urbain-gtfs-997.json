@@ -3,6 +3,12 @@
     "data_type": "gtfs",
     "provider": "Sillages Urbain",
     "name": "Sillages Urbain - Communauté urbaine du Pays de Grasse",
+    "status": "deprecated",
+    "redirect": [
+        {
+            "id": 2004
+        }
+    ],
     "location": {
         "country_code": "FR",
         "subdivision_name": "Provence-Alpes-Côte-d'Azur",

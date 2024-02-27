@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1990,
+    "data_type": "gtfs",
+    "provider": "Communauté Urbaine de Dunkerque (Réseau Dk Bus)",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Hauts-de-France",
+        "municipality": "Dunkirk",
+        "bounding_box": {
+            "minimum_latitude": 50.940872,
+            "maximum_latitude": 51.082111,
+            "minimum_longitude": 2.099884,
+            "maximum_longitude": 2.601023,
+            "extracted_on": "2024-02-22T03:58:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/81377/81377.20231227.061215.032973.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-hauts-de-france-communaute-urbaine-de-dunkerque-reseau-dk-bus-gtfs-1990.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/offre-de-transports-reseau-dk-bus-de-la-communaute-urbaine-de-dunkerque-gtfs"
+    }
+}

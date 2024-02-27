@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 1989,
+    "data_type": "gtfs",
+    "provider": "Communauté dʼAgglomération du Pays de Saint-Omer",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Hauts-de-France",
+        "municipality": "Longuenesse",
+        "bounding_box": {
+            "minimum_latitude": 50.6079,
+            "maximum_latitude": 50.769533,
+            "minimum_longitude": 2.206584,
+            "maximum_longitude": 2.488208,
+            "extracted_on": "2024-02-22T03:58:38+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/81457/81457.20231230.060844.417532.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-hauts-de-france-communaute-d'agglomeration-du-pays-de-saint-omer-gtfs-1989.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/transports-en-commun-audomarois-1"
+    }
+}

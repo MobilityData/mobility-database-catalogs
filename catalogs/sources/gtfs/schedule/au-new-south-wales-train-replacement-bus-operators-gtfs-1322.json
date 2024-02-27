@@ -2,7 +2,6 @@
     "mdb_source_id": 1322,
     "data_type": "gtfs",
     "provider": "train replacement bus operators, Sydney Trains, NSW Trains, Busways Western Sydney, Interline Bus Services, Transit Systems, Hillsbus, Punchbowl Bus Company, State Transit, Transdev NSW, Dions Bus Service, Forest Coach Lines, Cronulla Ferries, Brooklyn Ferry Service, Central Coast Ferries, Manly Fast Ferry, Church Point Ferry Service, Captain Cook Cruises, Palm Beach Ferry Service, Busabout, Rover Coaches, Hunter Valley Buses, Port Stephens Coaches, Northern Rivers Buslines, Tamworth Buslines, Surfside Buslines, Premier Motor Service, Quinns Coaches, Dunoon Bus Service, Waller's Bus Company, Murwillumbah Bus Company, Parsons Bus Service, Gosel's Bus Service, Bhangla Singh's Bus Service, Blanch's Bus Company, Ballina Buslines, Watson's Bus Service, Casino Bus Service, Forest Coach Lines, Lawrence Bus Service, Forest Coach Lines, Michael Jillett, Reynolds & Fogarty, Forest Coach Lines, Inverell Bus Service, Symes Coaches, Edwards Coaches, Hannafords Bus Service, Hopes Bus Service, Millerds Bus Service, Cavanaghs Bus Company, Busways Port Macquarie, Tinonee Bus Company, Eggins Comfort Coaches, Busways Great Lakes, Forster Buslines, Osborn Bus Service, Ogden's Coaches, Wingham Buslines, Brunswick Valley Coaches, Clarence River Ferries, Busways Central Coast, Red Bus Service, Blue Mountains Transit, Premier Charters, Premier Illawarra, Hunter Valley Buses, Busways Coffs Harbour, Busways Grafton, Newcastle Transport, Port Stephens Coaches, NSW TrainLink Train, Intercity Train, NSW TrainLink Coach, Sydney Light Rail, Berrima Buslines, Bathurst Buslines, Lithgow Buslines, Kennedys Bus Service, Kiama Coachlines, Nowra Coaches, Shoal Bus, Stuarts Coaches, Dubbo Buslines, Orange Buslines, Newman's Bus Service, Western Road Liners, Forbes Buslines, Buslink Broken Hill, Cowra Bus Service, Griffith Buslines, PBC Goulburn, PBC Crookwell, Picton Buslines, Premier Motor Service, Buslink Sunraysia, Busabout Wagga, Junee Buses, Allen's Coaches, Qcity Transit, Transborder Express, Murrays Coaches, Purtills, Newtons Bus Service, Ulladulla Buslines, Priors Bus Service, Symons Bus & Coach Service, Cooma Coaches, Martins Albury, Dysons, Cann's Buslines, Sapphire Coast Buslines, Bega Valley Coaches, Sapphire Coast Buslines, Sydney Ferries, Station Link, Forest Coach Lines, Hillsbus, Punchbowl Bus Company, Transdev NSW",
-    "status": "deprecated",
     "location": {
         "country_code": "AU",
         "subdivision_name": "New South Wales",
@@ -16,9 +15,6 @@
     },
     "urls": {
         "direct_download": "https://transitfeeds.com/p/transport-for-nsw/237/latest/download",
-        "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-new-south-wales-train-replacement-bus-operators-gtfs-1322.zip?alt=media",
-        "license": "INVALID_OR_NO_URL_PROVIDED"
-    },
-    "redirect": []
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-new-south-wales-train-replacement-bus-operators-gtfs-1322.zip?alt=media"
+    }
 }

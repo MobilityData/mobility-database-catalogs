@@ -18,6 +18,5 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-unknown-uk-aggregate-feed-gtfs-2014.zip?alt=media",
         "license": "https://data.bus-data.dft.gov.uk/guidance/requirements/"
-    },
-    "redirect": []
+    }
 }

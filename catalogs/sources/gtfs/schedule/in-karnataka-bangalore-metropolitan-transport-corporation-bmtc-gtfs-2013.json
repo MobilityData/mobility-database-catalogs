@@ -10,8 +10,8 @@
         "bounding_box": {
             "minimum_latitude": 77.1418627258,
             "maximum_latitude": 77.958413,
-            "minimum_longitude": "6th Cross Road Junction",
-            "maximum_longitude": "vidya vardaka sanga school",
+            "minimum_longitude": null,
+            "maximum_longitude": null,
             "extracted_on": "2024-02-27T16:14:05+00:00"
         }
     },

@@ -129,8 +129,36 @@ jobs:
   
       - name: Post notification in Slack channel of update
         if: steps.process-csv.outputs.PYTHON_SCRIPT_ARGS != ''
-        uses: up9cloud/action-notify@v0.4
+        uses: slackapi/slack-github-action@v1.25.0
+        with:
+          payload: |
+            {
+                "channel": "G01BLNPU0M8",
+            	"blocks": [
+            		{
+            			"type": "header",
+            			"text": {
+            				"type": "plain_text",
+            				"text": "Added/updated feed(s) on the mobility-database-catalogs repo",
+            				"emoji": true
+            			}
+            		},
+            		{
+            			"type": "section",
+            			"text": {
+            				"type": "mrkdwn",
+            				"text": "Feed(s) were added or updated on the mobility-database-catalogs repo.\n\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
+            			}
+            		},
+            		{
+            			"type": "section",
+            			"text": {
+            				"type": "mrkdwn",
+            				"text": "*See the new branch here:* https://github.com/MobilityData/mobility-database-catalogs/tree/${{ steps.create_branch_name.outputs.BRANCH }}"
+            			}
+            		}
+            	]
+            }
         env:
-          GITHUB_JOB_STATUS: ${{ job.status }}
           SLACK_WEBHOOK_URL: ${{ env.SLACK_WEBHOOK_URL }}
-          SLACK_CHANNEL: internal-public-transit-support
+          SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK

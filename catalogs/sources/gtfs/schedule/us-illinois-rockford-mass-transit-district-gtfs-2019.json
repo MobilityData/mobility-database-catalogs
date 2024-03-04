@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2019,
+    "data_type": "gtfs",
+    "provider": "Rockford Mass Transit District",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Illinois",
+        "municipality": "Rockford",
+        "bounding_box": {
+            "minimum_latitude": 42.194499,
+            "maximum_latitude": 42.374801,
+            "minimum_longitude": -89.175862,
+            "maximum_longitude": -88.84164,
+            "extracted_on": "2024-03-04T04:02:36+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://dfef8f.p3cdn2.secureserver.net/wp-content/uploads/2023/08/RMTD_GTFS_AUGUST_2023.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-illinois-rockford-mass-transit-district-gtfs-2019.zip?alt=media",
+        "license": "https://rmtd.org/gtfs/"
+    },
+    "redirect": []
+}

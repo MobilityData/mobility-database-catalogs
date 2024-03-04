@@ -133,32 +133,31 @@ jobs:
         with:
           payload: |
             {
-              "channel": "G01BLNPU0M8",
-              "text": "Added/updated feed(s) on the mobility-database-catalogs repo",
-              "blocks": [
-                {
-                  "type": "header",
-                  "text": {
-                    "type": "plain_text",
-                    "text": "Added/updated feed(s) on the mobility-database-catalogs repo",
-                    "emoji": true
-                  }
-                },
-                {
-                  "type": "section",
-                  "text": {
-                    "type": "mrkdwn",
-                    "text": "Added/updated feeds on mobility-database-catalogs\n\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
-                  }
-                }
-                {
-                  "type": "section",
-                  "text": {
-                    "type": "plain_text",
-                    "text": "See the new branch here: https://github.com/MobilityData/mobility-database-catalogs/tree/${{ steps.create_branch_name.outputs.BRANCH }}"
-                  }
-                }
-              ]
+                "channel": "G01BLNPU0M8",
+            	"blocks": [
+            		{
+            			"type": "header",
+            			"text": {
+            				"type": "plain_text",
+            				"text": "Added/updated feed(s) on the mobility-database-catalogs repo",
+            				"emoji": true
+            			}
+            		},
+            		{
+            			"type": "section",
+            			"text": {
+            				"type": "mrkdwn",
+            				"text": "Feed(s) were added or updated on the mobility-database-catalogs repo.\n\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
+            			}
+            		},
+            		{
+            			"type": "section",
+            			"text": {
+            				"type": "mrkdwn",
+            				"text": "*See the new branch here:* https://github.com/MobilityData/mobility-database-catalogs/tree/${{ steps.create_branch_name.outputs.BRANCH }}"
+            			}
+            		}
+            	]
             }
         env:
           SLACK_WEBHOOK_URL: ${{ env.SLACK_WEBHOOK_URL }}

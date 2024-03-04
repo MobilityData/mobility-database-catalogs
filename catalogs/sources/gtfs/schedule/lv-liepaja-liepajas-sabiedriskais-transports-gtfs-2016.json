@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2016,
+    "data_type": "gtfs",
+    "provider": "Liepājas sabiedriskais transports",
+    "feed_contact_email": "justinas.vysniauskas@vilniustransport.lt",
+    "location": {
+        "country_code": "LV",
+        "subdivision_name": "Liepāja",
+        "municipality": "Liepāja",
+        "bounding_box": {
+            "minimum_latitude": 56.47296,
+            "maximum_latitude": 56.61699,
+            "minimum_longitude": 20.99976,
+            "maximum_longitude": 21.10156,
+            "extracted_on": "2024-03-04T04:02:34+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.marsruti.lv/liepaja/liepaja/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lv-liepaja-liepajas-sabiedriskais-transports-gtfs-2016.zip?alt=media",
+        "license": "https://judu.lt/wp-content/uploads/2022/03/Duomenu-naudojimo-salygos-lt.pdf"
+    },
+    "redirect": []
+}

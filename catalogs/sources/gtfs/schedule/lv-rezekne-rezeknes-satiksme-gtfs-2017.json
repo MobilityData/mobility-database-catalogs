@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2017,
+    "data_type": "gtfs",
+    "provider": "Rēzeknes satiksme",
+    "feed_contact_email": "justinas.vysniauskas@vilniustransport.lt",
+    "location": {
+        "country_code": "LV",
+        "subdivision_name": "Rēzekne",
+        "municipality": "Rēzekne",
+        "bounding_box": {
+            "minimum_latitude": 56.412,
+            "maximum_latitude": 56.58217,
+            "minimum_longitude": 27.23265,
+            "maximum_longitude": 27.48731,
+            "extracted_on": "2024-03-04T04:02:34+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.marsruti.lv/rezekne/rezekne/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lv-rezekne-rezeknes-satiksme-gtfs-2017.zip?alt=media",
+        "license": "https://judu.lt/wp-content/uploads/2022/03/Duomenu-naudojimo-salygos-lt.pdf"
+    },
+    "redirect": []
+}

@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 2023,
+    "data_type": "gtfs",
+    "provider": "STP Brindisi",
+    "name": "Linee Urbane di Francavilla",
+    "feed_contact_email": "info@stpbrindisi.it",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Brindisi ",
+        "municipality": "Francavilla",
+        "bounding_box": {
+            "minimum_latitude": 40.523851,
+            "maximum_latitude": 40.583933,
+            "minimum_longitude": 17.551851,
+            "maximum_longitude": 17.603268,
+            "extracted_on": "2024-03-04T04:02:42+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.stpbrindisi.it/attachments/article/963/Urbano_Francavilla.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-brindisi-stp-brindisi-gtfs-2023.zip?alt=media",
+        "license": "https://www.stpbrindisi.it/index.php/linee-e-orari/open-data-esercizio"
+    },
+    "redirect": []
+}

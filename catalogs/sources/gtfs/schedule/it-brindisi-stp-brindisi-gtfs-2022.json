@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2022,
+    "data_type": "gtfs",
+    "provider": "STP Brindisi",
+    "name": "Linee Urbane di Brindisi",
+    "feed_contact_email": "info@stpbrindisi.it",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Brindisi ",
+        "bounding_box": {
+            "minimum_latitude": 40.544981,
+            "maximum_latitude": 40.679453,
+            "minimum_longitude": 17.866803,
+            "maximum_longitude": 18.009521,
+            "extracted_on": "2024-03-04T04:02:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.stpbrindisi.it/attachments/article/963/Urbano_Brindisi.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-brindisi-stp-brindisi-gtfs-2022.zip?alt=media",
+        "license": "https://www.stpbrindisi.it/index.php/linee-e-orari/open-data-esercizio"
+    },
+    "redirect": []
+}

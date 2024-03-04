@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2021,
+    "data_type": "gtfs",
+    "provider": "STP Brindisi",
+    "name": "Linee Extraurbane",
+    "feed_contact_email": "info@stpbrindisi.it",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Brindisi ",
+        "bounding_box": {
+            "minimum_latitude": 40.335296,
+            "maximum_latitude": 40.851967,
+            "minimum_longitude": 17.196897,
+            "maximum_longitude": 18.191676,
+            "extracted_on": "2024-03-04T04:02:39+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.stpbrindisi.it/attachments/article/963/Extraurbano.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-brindisi-stp-brindisi-gtfs-2021.zip?alt=media",
+        "license": "https://www.stpbrindisi.it/index.php/linee-e-orari/open-data-esercizio"
+    },
+    "redirect": []
+}

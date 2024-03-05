@@ -78,6 +78,11 @@ jobs:
             cd ${{ github.workspace }}/scripts
             OUTPUT=$(swift process_csv_in_github_action.swift "${{ env.CSV_URL }}" "${{ env.YESTERDAYS_DATE }}" "${{ env.DATE_FORMAT }}" "${{ env.DATE_FORMAT_DESIRED }}")
             echo "PYTHON_SCRIPT_ARGS=${OUTPUT}" >> $GITHUB_OUTPUT
+            
+            # Count the number of feeds in the output
+            COUNT=$(echo "$input_string" | grep -o '§' | wc -l)
+            COUNT=$((COUNT + 1))
+            echo "NUMBER_OF_FEEDS=${COUNT}" >> $GITHUB_OUTPUT
 
       - name: Setup Python
         if: steps.process-csv.outputs.PYTHON_SCRIPT_ARGS != ''
@@ -134,31 +139,59 @@ jobs:
         with:
           payload: |
             {
-                "channel": "G01BLNPU0M8",
-            	"blocks": [
-            		{
-            			"type": "header",
-            			"text": {
-            				"type": "plain_text",
-            				"text": "Added/updated feed(s) on the mobility-database-catalogs repo",
-            				"emoji": true
-            			}
-            		},
-            		{
-            			"type": "section",
-            			"text": {
-            				"type": "mrkdwn",
-            				"text": "Feed(s) were added or updated on the mobility-database-catalogs repo.\n\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
-            			}
-            		},
-            		{
-            			"type": "section",
-            			"text": {
-            				"type": "mrkdwn",
-            				"text": "*See the new branch here:* https://github.com/MobilityData/mobility-database-catalogs/tree/${{ steps.create_branch_name.outputs.BRANCH }}"
-            			}
-            		}
-            	]
+              "channel": "G01BLNPU0M8",
+              "blocks": [
+                {
+                  "type": "header",
+                  "text": {
+                    "type": "plain_text",
+                    "text": "✅ Added/updated feed(s)",
+                    "emoji": true
+                  }
+                },
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "${{ steps.process-csv.outputs.NUMBER_OF_FEEDS }} feed(s) were added or updated in a new branch on the <$GITHUB_SERVER_URL/$GITHUB_REPOSITORY|mobility-database-catalogs> repo.\n\nClick the button on the right to open it in your browser."
+                  },
+                  "accessory": {
+                    "type": "button",
+                    "text": {
+                      "type": "plain_text",
+                      "text": "OPEN BRANCH",
+                      "emoji": true
+                    },
+                    "url": "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/tree/${{ steps.create_branch_name.outputs.BRANCH }}",
+                    "action_id": "button-action"
+                  }
+                },
+                {
+                  "type": "divider"
+                },
+                {
+                  "type": "section",
+                  "fields": [
+                    {
+                      "type": "mrkdwn",
+                      "text": "New branch name:"
+                    },
+                    {
+                      "type": "mrkdwn",
+                      "text": "`${{ steps.create_branch_name.outputs.BRANCH }}`"
+                    }
+                  ]
+                },
+                {
+                  "type": "context",
+                  "elements": [
+                    {
+                      "type": "mrkdwn",
+                      "text": "➜ See the *<$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID|action run>*."
+                    }
+                  ]
+                }
+              ]
             }
         env:
           SLACK_WEBHOOK_URL: ${{ env.SLACK_WEBHOOK_URL }}

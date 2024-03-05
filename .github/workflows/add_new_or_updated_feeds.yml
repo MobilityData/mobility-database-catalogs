@@ -67,6 +67,7 @@ jobs:
       - name: Create new branch
         shell: bash
         run: |
+            git pull
             git checkout -b ${{ steps.create_branch_name.outputs.BRANCH }}
             git reset --hard ${{ env.BASE }}
             git clean -df

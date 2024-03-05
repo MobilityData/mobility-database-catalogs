@@ -198,7 +198,7 @@ jobs:
           SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
 
       - name: Post notification in Slack in case of failure
-        if: ${{ failure() }}
+        if: failure()
         uses: slackapi/slack-github-action@v1.25.0
         with:
           payload: |

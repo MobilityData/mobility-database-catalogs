@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 1857,
+    "data_type": "gtfs",
+    "provider": "Hornblower Alcatraz Cruises",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "San Francisco",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2023-01-02T20:37:05+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.calitp.org/production/BayAreaFerriesHornblowerAlcatrazCruisesGTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-hornblower-alcatraz-cruises-gtfs-1857.zip?alt=media"
+    }
+}

@@ -11,15 +11,15 @@
         "subdivision_name": "California",
         "municipality": "Taft",
         "bounding_box": {
-            "minimum_latitude": 35.0559093260118,
-            "maximum_latitude": 35.150436610803,
-            "minimum_longitude": -119.465367621155,
-            "maximum_longitude": -119.398652723801,
-            "extracted_on": "2022-03-17T15:22:21+00:00"
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2023-01-02T20:41:37+00:00"
         }
     },
     "urls": {
-        "direct_download": "http://data.trilliumtransit.com/gtfs/taft-ca-us/taft-ca-us.zip",
+        "direct_download": "https://gtfs.calitp.org/production/TaftGTFS.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-taft-maricopa-area-transit-gtfs-821.zip?alt=media"
     }
 }

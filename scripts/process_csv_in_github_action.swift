@@ -227,13 +227,13 @@ if CommandLine.argc == 5 {
                     if datatype.contains(dataType.schedule.rawValue) { // update_gtfs_schedule_source
                         
                         let authType : Int = authenticationType(for: authentication_type)
-                        PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_schedule_source(mdb_source_id=\(old_mbd_ID), provider=\"\(finalProvider)\", name=\"\(name)\", country_code=\"\(country)\", subdivision_name=\"\(subdivision_name)\", municipality=\"\(municipality)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", license_url=\"\(license_url)\", status=\"\(gtfsschedulestatus)\", features=\"\(gtfsschedulefeatures)\", feed_contact_email=\"\(feed_contact_email)\", redirects=\"\(redirects_array)\")"
+                        PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_schedule_source(mdb_source_id=\(old_mbd_ID), provider=\"\(finalProvider)\", name=\"\(name)\", country_code=\"\(country)\", subdivision_name=\"\(subdivision_name)\", municipality=\"\(municipality)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", status=\"\(gtfsschedulestatus)\", features=\"\(gtfsschedulefeatures)\", feed_contact_email=\"\(feed_contact_email)\", redirects=\"\(redirects_array)\")"
                         
                     } else if datatype.contains(dataType.realtime.rawValue) { // update_gtfs_realtime_source
                     
                         let authType : Int = authenticationType(for: authentication_type)
                         let realtimecode : String = realtimeCode(for:datatype)
-                        PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_realtime_source(mdb_source_id=\(old_mbd_ID), entity_type=[\"\(realtimecode)\"], provider=\"\(finalProvider)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", license_url=\"\(license_url)\", name=\"\(name)\", note=\"\(note)\", status=\"\(gtfsrealtimestatus)\", features=\"\(realtimefeatures)\", feed_contact_email=\"\(feed_contact_email)\", redirects=\"\(redirects_array)\")"
+                        PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_realtime_source(mdb_source_id=\(old_mbd_ID), entity_type=[\"\(realtimecode)\"], provider=\"\(finalProvider)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", name=\"\(name)\", note=\"\(note)\", status=\"\(gtfsrealtimestatus)\", features=\"\(realtimefeatures)\", feed_contact_email=\"\(feed_contact_email)\", redirects=\"\(redirects_array)\")"
                     }
                     
                 }  else if request.contains(requestType.isToRemoveFeed.rawValue) { // remove feed
@@ -241,13 +241,13 @@ if CommandLine.argc == 5 {
                     if datatype.contains(dataType.schedule.rawValue) { // update_gtfs_schedule_source
                         
                         let authType : Int = authenticationType(for: authentication_type)
-                        PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_schedule_source(mdb_source_id=\(old_mbd_ID), provider=\"\(finalProvider)\", name=\"\"**** Requested for removal ****\"\", country_code=\"\(country)\", subdivision_name=\"\(subdivision_name)\", municipality=\"\(municipality)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", license_url=\"\(license_url)\", status=\"\(gtfsschedulestatus)\", features=\"\(gtfsschedulefeatures)\", feed_contact_email=\"\(feed_contact_email)\", redirects=\"\(redirects_array)\")"
+                        PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_schedule_source(mdb_source_id=\(old_mbd_ID), provider=\"\(finalProvider)\", name=\"\"**** Requested for removal ****\"\", country_code=\"\(country)\", subdivision_name=\"\(subdivision_name)\", municipality=\"\(municipality)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", status=\"\(gtfsschedulestatus)\", features=\"\(gtfsschedulefeatures)\", feed_contact_email=\"\(feed_contact_email)\", redirects=\"\(redirects_array)\")"
                         
                     } else if datatype.contains(dataType.realtime.rawValue) { // update_gtfs_realtime_source
 
                         let authType : Int = authenticationType(for: authentication_type)
                         let realtimecode : String = realtimeCode(for:datatype)
-                        PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_realtime_source(mdb_source_id=\(old_mbd_ID), entity_type=\"[\(realtimecode)]\", provider=\"\(finalProvider)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", license_url=\"\(license_url)\", name=\"\"**** Requested for removal ****\"\", note=\"\(note)\", status=\"\(gtfsrealtimestatus)\", features=\"\(realtimefeatures)\", feed_contact_email=\"\(feed_contact_email)\", redirects=\"\(redirects_array)\")"
+                        PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_realtime_source(mdb_source_id=\(old_mbd_ID), entity_type=\"[\(realtimecode)]\", provider=\"\(finalProvider)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", name=\"\"**** Requested for removal ****\"\", note=\"\(note)\", status=\"\(gtfsrealtimestatus)\", features=\"\(realtimefeatures)\", feed_contact_email=\"\(feed_contact_email)\", redirects=\"\(redirects_array)\")"
                         
                     }
                     

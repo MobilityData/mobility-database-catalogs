@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Blue Grass Community Action Partnership",
     "name": "Bluegrass Ultra-Transit Service",
+    "feed_contact_email": "support+test+bgcap-ky-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Kentucky",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/bgcap-ky-us/bgcap-ky-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-kentucky-blue-grass-community-action-partnership-gtfs-362.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

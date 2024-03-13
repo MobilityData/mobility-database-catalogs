@@ -2,6 +2,7 @@
     "mdb_source_id": 107,
     "data_type": "gtfs",
     "provider": "Mountain Transit",
+    "feed_contact_email": "support+test+bigbear-ca-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/bigbear-ca-us/bigbear-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-mountain-transit-gtfs-107.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

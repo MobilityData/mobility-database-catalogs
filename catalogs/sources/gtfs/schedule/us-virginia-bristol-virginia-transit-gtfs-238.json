@@ -2,6 +2,7 @@
     "mdb_source_id": 238,
     "data_type": "gtfs",
     "provider": "Bristol Virginia Transit",
+    "feed_contact_email": "support+test+bristol-va-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Virginia",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/bristol-va-us/bristol-va-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-bristol-virginia-transit-gtfs-238.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

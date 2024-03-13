@@ -2,6 +2,7 @@
     "mdb_source_id": 66,
     "data_type": "gtfs",
     "provider": "Sonoma County Airport Express",
+    "feed_contact_email": "support+test+airportexpressinc-ca-us@trilliumtransit.com",
     "features": [
         "fares-v1"
     ],
@@ -19,6 +20,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/airportexpressinc-ca-us/airportexpressinc-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-sonoma-county-airport-express-gtfs-66.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

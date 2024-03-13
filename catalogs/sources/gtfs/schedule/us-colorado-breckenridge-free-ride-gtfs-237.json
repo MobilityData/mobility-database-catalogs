@@ -2,6 +2,7 @@
     "mdb_source_id": 237,
     "data_type": "gtfs",
     "provider": "Breckenridge Free Ride",
+    "feed_contact_email": "support+test+breckenridgefreeride-co-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Colorado",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/breckenridgefreeride-co-us/breckenridgefreeride-co-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-breckenridge-free-ride-gtfs-237.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

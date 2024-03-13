@@ -2,6 +2,7 @@
     "mdb_source_id": 1232,
     "data_type": "gtfs",
     "provider": "Pueblo Transit",
+    "feed_contact_email": "support+pueblo-co-us@trilliumtransit.com",
     "features": [
         "fares-v1",
         "flex-v2"
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "https://data.trilliumtransit.com/gtfs/pueblo-co-us/pueblo-co-us--flex-v2.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-pueblo-transit-gtfs-1232.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

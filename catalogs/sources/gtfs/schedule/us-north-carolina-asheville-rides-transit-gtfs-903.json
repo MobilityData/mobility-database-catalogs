@@ -2,6 +2,7 @@
     "mdb_source_id": 903,
     "data_type": "gtfs",
     "provider": "Asheville Rides Transit",
+    "feed_contact_email": "support+test+asheville-nc-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "North Carolina",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/asheville-nc-us/asheville-nc-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-north-carolina-asheville-rides-transit-gtfs-903.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

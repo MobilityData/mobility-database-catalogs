@@ -2,6 +2,7 @@
     "mdb_source_id": 92,
     "data_type": "gtfs",
     "provider": "Amador Transit",
+    "feed_contact_email": "support+test+amador-ca-us@trilliumtransit.com",
     "features": [
         "fares-v1",
         "fares-v2"
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/amador-ca-us/amador-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-amador-transit-gtfs-92.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

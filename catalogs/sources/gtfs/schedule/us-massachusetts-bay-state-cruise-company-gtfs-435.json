@@ -2,6 +2,7 @@
     "mdb_source_id": 435,
     "data_type": "gtfs",
     "provider": "Bay State Cruise Company",
+    "feed_contact_email": "support+test+baystatecruisecompany-ma-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Massachusetts",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "https://data.trilliumtransit.com/gtfs/baystatecruisecompany-ma-us/baystatecruisecompany-ma-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-bay-state-cruise-company-gtfs-435.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

@@ -2,6 +2,7 @@
     "mdb_source_id": 256,
     "data_type": "gtfs",
     "provider": "Blue Star Bus",
+    "feed_contact_email": "support+test+bluestar-or-us@trilliumtransit.com",
     "features": [
         "fares-v1"
     ],
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "http://oregon-gtfs.com/gtfs_data/bluestar-or-us/bluestar-or-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-blue-star-bus-gtfs-256.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

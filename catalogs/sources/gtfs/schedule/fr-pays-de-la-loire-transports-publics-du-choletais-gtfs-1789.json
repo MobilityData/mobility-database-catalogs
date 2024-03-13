@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Transports Publics du Choletais",
     "name": "Réseau Urbain Choletbus",
+    "feed_contact_email": "support@mecatran.com",
     "location": {
         "country_code": "FR",
         "subdivision_name": "Pays-de-la-Loire",
@@ -17,7 +18,9 @@
     },
     "urls": {
         "direct_download": "https://www.data.gouv.fr/fr/datasets/r/71e8ee8e-0b55-40a1-a297-21ef89aba4dc",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-pays-de-la-loire-transports-publics-du-choletais-gtfs-1789.zip?alt=media",
         "license": "https://transport.data.gouv.fr/datasets/horaires-theoriques-reseau-choletbus"
-    }
+    },
+    "redirect": []
 }

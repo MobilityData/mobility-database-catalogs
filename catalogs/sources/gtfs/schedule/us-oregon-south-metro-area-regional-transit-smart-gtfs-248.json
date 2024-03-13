@@ -2,6 +2,7 @@
     "mdb_source_id": 248,
     "data_type": "gtfs",
     "provider": "South Metro Area Regional Transit (SMART)",
+    "feed_contact_email": "support@gmvsync.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Oregon",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/wilsonville-or-us/wilsonville-or-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-south-metro-area-regional-transit-smart-gtfs-248.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

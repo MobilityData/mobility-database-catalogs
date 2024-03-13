@@ -2,6 +2,7 @@
     "mdb_source_id": 1071,
     "data_type": "gtfs",
     "provider": "BayBus",
+    "feed_contact_email": "support+test+boprc-nz@trilliumtransit.com",
     "location": {
         "country_code": "NZ",
         "subdivision_name": "Bay of Plenty",
@@ -15,6 +16,8 @@
     },
     "urls": {
         "direct_download": "http://gtfs.dynamis.live/boprc/prod/boprc-nz.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/nz-bay-of-plenty-baybus-gtfs-1071.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

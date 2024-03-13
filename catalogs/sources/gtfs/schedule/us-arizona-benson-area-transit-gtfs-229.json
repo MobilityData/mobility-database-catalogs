@@ -2,6 +2,7 @@
     "mdb_source_id": 229,
     "data_type": "gtfs",
     "provider": "Benson Area Transit",
+    "feed_contact_email": "support+test+benson-az-us@trilliumtransit.com",
     "features": [
         "fares-v1"
     ],
@@ -19,6 +20,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/benson-az-us/benson-az-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-arizona-benson-area-transit-gtfs-229.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

@@ -2,6 +2,7 @@
     "mdb_source_id": 199,
     "data_type": "gtfs",
     "provider": "Burlington Urban Service",
+    "feed_contact_email": "support+test+burlington-ia-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Iowa",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/burlington-ia-us/burlington-ia-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-iowa-burlington-urban-service-gtfs-199.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

@@ -2,6 +2,7 @@
     "mdb_source_id": 224,
     "data_type": "gtfs",
     "provider": "Bay Transit",
+    "feed_contact_email": "support+test+baytransit-va-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Virginia",
@@ -15,6 +16,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/baytransit-va-us/baytransit-va-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-bay-transit-gtfs-224.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

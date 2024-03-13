@@ -2,6 +2,7 @@
     "mdb_source_id": 236,
     "data_type": "gtfs",
     "provider": "Blossom Express",
+    "feed_contact_email": "support+test+blossomexpress-ca-us@trilliumtransit.com",
     "features": [
         "fares-v2",
         "fares-v1"
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/blossomexpress-ca-us/blossomexpress-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-blossom-express-gtfs-236.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

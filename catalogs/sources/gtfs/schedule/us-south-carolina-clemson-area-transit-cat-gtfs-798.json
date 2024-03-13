@@ -2,6 +2,7 @@
     "mdb_source_id": 798,
     "data_type": "gtfs",
     "provider": "Clemson Area Transit (CAT)",
+    "feed_contact_email": "support+clemson-sc-us@trilliumtransit.com",
     "features": [
         "fares-v1"
     ],
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/clemson-sc-us/clemson-sc-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-south-carolina-clemson-area-transit-cat-gtfs-798.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

@@ -2,6 +2,7 @@
     "mdb_source_id": 1239,
     "data_type": "gtfs",
     "provider": "Valley Metro",
+    "feed_contact_email": "support+roanoke-va-us@trilliumtransit.com",
     "features": [
         "fares-v1"
     ],
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/roanoke-va-us/roanoke-va-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-valley-metro-gtfs-1239.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

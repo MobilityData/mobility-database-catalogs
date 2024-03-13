@@ -2,6 +2,7 @@
     "mdb_source_id": 12,
     "data_type": "gtfs",
     "provider": "Avalon Transit",
+    "feed_contact_email": "support+test+avalon-ca-us@trilliumtransit.com",
     "features": [
         "fares-v2",
         "fares-v1"
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/avalon-ca-us/avalon-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-avalon-transit-gtfs-12.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

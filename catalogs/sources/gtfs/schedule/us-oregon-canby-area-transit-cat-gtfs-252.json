@@ -2,6 +2,7 @@
     "mdb_source_id": 252,
     "data_type": "gtfs",
     "provider": "Canby Area Transit (CAT)",
+    "feed_contact_email": "support+test+canbytransit-or-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Oregon",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://oregon-gtfs.com/gtfs_data/canbytransit-or-us/canbytransit-or-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-canby-area-transit-cat-gtfs-252.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

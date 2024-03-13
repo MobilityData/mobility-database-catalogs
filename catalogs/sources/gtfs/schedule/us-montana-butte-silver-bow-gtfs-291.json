@@ -2,6 +2,7 @@
     "mdb_source_id": 291,
     "data_type": "gtfs",
     "provider": "Butte-Silver Bow",
+    "feed_contact_email": "support+test+butte-mt-us@trilliumtransit.com",
     "features": [
         "fares-v1"
     ],
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/butte-mt-us/butte-mt-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-montana-butte-silver-bow-gtfs-291.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

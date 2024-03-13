@@ -2,6 +2,7 @@
     "mdb_source_id": 182,
     "data_type": "gtfs",
     "provider": "Campus Area Rapid Transit (CART)",
+    "feed_contact_email": "support@gmvsync.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Oklahoma",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://www.cartgps.com/gtfs",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oklahoma-campus-area-rapid-transit-cart-gtfs-182.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

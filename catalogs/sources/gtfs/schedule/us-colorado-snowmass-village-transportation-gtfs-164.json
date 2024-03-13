@@ -2,6 +2,7 @@
     "mdb_source_id": 164,
     "data_type": "gtfs",
     "provider": "Snowmass Village Transportation",
+    "feed_contact_email": "support+test+snowmassvillagetransportation-co-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Colorado",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/snowmassvillagetransportation-co-us/snowmassvillagetransportation-co-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-snowmass-village-transportation-gtfs-164.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

@@ -2,6 +2,7 @@
     "mdb_source_id": 430,
     "data_type": "gtfs",
     "provider": "Marble Valley Regional Transit District (MVRTD)",
+    "feed_contact_email": "support+test+thebus-vt-us@trilliumtransit.com",
     "features": [
         "fares-v1",
         "flex-v1"
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/thebus-vt-us/thebus-vt-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-vermont-marble-valley-regional-transit-district-mvrtd-gtfs-430.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

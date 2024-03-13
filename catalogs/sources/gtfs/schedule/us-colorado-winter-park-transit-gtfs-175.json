@@ -2,6 +2,7 @@
     "mdb_source_id": 175,
     "data_type": "gtfs",
     "provider": "Winter Park Transit",
+    "feed_contact_email": "support+test+winterpark-co-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Colorado",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/winterpark-co-us/winterpark-co-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-winter-park-transit-gtfs-175.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

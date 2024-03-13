@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "ATP Nuoro",
     "name": "Quadri orari ATP Nuoro",
+    "feed_contact_email": "trasporti@regione.sardegna.it",
     "location": {
         "country_code": "IT",
         "subdivision_name": "Regione Autonoma della Sardegna",
@@ -16,7 +17,9 @@
     },
     "urls": {
         "direct_download": "https://www.atpnuoro.it/media/files/dati_atpnu.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-regione-autonoma-della-sardegna-atp-nuoro-gtfs-991.zip?alt=media",
         "license": "https://creativecommons.org/licenses/by/4.0/deed.it"
-    }
+    },
+    "redirect": []
 }

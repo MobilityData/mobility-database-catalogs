@@ -2,6 +2,7 @@
     "mdb_source_id": 387,
     "data_type": "gtfs",
     "provider": "Terre Haute Transit Utility",
+    "feed_contact_email": "support+test+terrehautetransit-in-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Indiana",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/terrehautetransit-in-us/terrehautetransit-in-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-indiana-terre-haute-transit-utility-gtfs-387.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

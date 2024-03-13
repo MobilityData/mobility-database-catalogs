@@ -2,6 +2,7 @@
     "mdb_source_id": 628,
     "data_type": "gtfs",
     "provider": "Union City Transit",
+    "feed_contact_email": "support+test+unioncity-ca-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -15,6 +16,8 @@
     },
     "urls": {
         "direct_download": "https://data.trilliumtransit.com/gtfs/unioncity-ca-us/unioncity-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-union-city-transit-gtfs-628.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

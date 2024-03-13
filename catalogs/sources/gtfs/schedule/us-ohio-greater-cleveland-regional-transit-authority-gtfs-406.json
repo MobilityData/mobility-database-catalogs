@@ -2,6 +2,7 @@
     "mdb_source_id": 406,
     "data_type": "gtfs",
     "provider": "Greater Cleveland Regional Transit Authority",
+    "feed_contact_email": "webmaster@gcrta.org",
     "location": {
         "country_code": "US",
         "subdivision_name": "Ohio",
@@ -16,7 +17,9 @@
     },
     "urls": {
         "direct_download": "http://www.riderta.com/sites/default/files/gtfs/latest/google_transit.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-ohio-greater-cleveland-regional-transit-authority-gtfs-406.zip?alt=media",
         "license": "http://www.riderta.com/developers"
-    }
+    },
+    "redirect": []
 }

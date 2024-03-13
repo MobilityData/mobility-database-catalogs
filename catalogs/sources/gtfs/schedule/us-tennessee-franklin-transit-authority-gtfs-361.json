@@ -2,6 +2,7 @@
     "mdb_source_id": 361,
     "data_type": "gtfs",
     "provider": "Franklin Transit Authority",
+    "feed_contact_email": "support+test+tma-tn-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Tennessee",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/tma-tn-us/tma-tn-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-tennessee-franklin-transit-authority-gtfs-361.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

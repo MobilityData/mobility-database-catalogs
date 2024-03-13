@@ -2,6 +2,7 @@
     "mdb_source_id": 52,
     "data_type": "gtfs",
     "provider": "Tideline Water Taxi",
+    "feed_contact_email": "support+test+tidelinewatertaxi-ca-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://trilliumtransit.com/transit_feeds/tidelinewatertaxi-ca-us/tidelinewatertaxi-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-tideline-water-taxi-gtfs-52.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

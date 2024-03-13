@@ -2,6 +2,7 @@
     "mdb_source_id": 277,
     "data_type": "gtfs",
     "provider": "Union Gap",
+    "feed_contact_email": "support+test+uniongap-wa-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Washington",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/uniongap-wa-us/uniongap-wa-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-union-gap-gtfs-277.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

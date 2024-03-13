@@ -2,6 +2,7 @@
     "mdb_source_id": 159,
     "data_type": "gtfs",
     "provider": "Verde Lynx",
+    "feed_contact_email": "support+verdelynx-az-us@trilliumtransit.com",
     "features": [
         "fares-v1"
     ],
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/verdelynx-az-us/verdelynx-az-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-arizona-verde-lynx-gtfs-159.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

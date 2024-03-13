@@ -2,6 +2,7 @@
     "mdb_source_id": 105,
     "data_type": "gtfs",
     "provider": "Duarte Transit",
+    "feed_contact_email": "support+duartetransit-ca-us@trilliumtransit.com",
     "features": [
         "fares-v1"
     ],
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/duartetransit-ca-us/duartetransit-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-duarte-transit-gtfs-105.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

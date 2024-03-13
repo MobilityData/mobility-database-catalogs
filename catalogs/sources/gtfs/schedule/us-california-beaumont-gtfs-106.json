@@ -2,6 +2,7 @@
     "mdb_source_id": 106,
     "data_type": "gtfs",
     "provider": "Beaumont Transit",
+    "feed_contact_email": "support+test+beaumont-ca-us@trilliumtransit.com",
     "features": [
         "fares-v2",
         "fares-v1"
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/beaumont-ca-us/beaumont-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-beaumont-gtfs-106.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

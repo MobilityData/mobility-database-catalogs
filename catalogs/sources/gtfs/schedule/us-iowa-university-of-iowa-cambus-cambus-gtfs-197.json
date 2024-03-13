@@ -2,6 +2,7 @@
     "mdb_source_id": 197,
     "data_type": "gtfs",
     "provider": "University of Iowa - CAMBUS (CAMBUS)",
+    "feed_contact_email": "support+test+cambus-ia-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Iowa",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/cambus-ia-us/cambus-ia-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-iowa-university-of-iowa-cambus-cambus-gtfs-197.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

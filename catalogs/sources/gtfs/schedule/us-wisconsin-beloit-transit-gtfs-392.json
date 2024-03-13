@@ -2,6 +2,7 @@
     "mdb_source_id": 392,
     "data_type": "gtfs",
     "provider": "Beloit Transit",
+    "feed_contact_email": "support+test+beloittransit-wi-us@trilliumtransit.com",
     "features": [
         "fares-v1"
     ],
@@ -19,6 +20,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/beloittransit-wi-us/beloittransit-wi-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-wisconsin-beloit-transit-gtfs-392.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

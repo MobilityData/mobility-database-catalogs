@@ -2,6 +2,7 @@
     "mdb_source_id": 212,
     "data_type": "gtfs",
     "provider": "All Points Transit",
+    "feed_contact_email": "support+test+allpointstransit-co-us@trilliumtransit.com",
     "features": [
         "fares-v1",
         "flex-v1"
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/allpointstransit-co-us/allpointstransit-co-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-all-points-transit-gtfs-212.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

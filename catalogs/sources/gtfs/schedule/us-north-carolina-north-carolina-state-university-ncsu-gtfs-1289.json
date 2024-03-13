@@ -2,6 +2,7 @@
     "mdb_source_id": 1289,
     "data_type": "gtfs",
     "provider": "North Carolina State University (NCSU)",
+    "feed_contact_email": "support+ncsu-wolfline-nc-us@trilliumtransit.com",
     "features": [
         "fares-v1"
     ],
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/ncsu-wolfline-nc-us/ncsu-wolfline-nc-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-north-carolina-north-carolina-state-university-ncsu-gtfs-1289.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

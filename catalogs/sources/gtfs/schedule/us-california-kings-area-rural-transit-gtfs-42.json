@@ -2,6 +2,7 @@
     "mdb_source_id": 42,
     "data_type": "gtfs",
     "provider": "Kings Area Rural Transit",
+    "feed_contact_email": "support+kcapta-ca-us@trilliumtransit.com",
     "features": [
         "fares-v1"
     ],
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/kcapta-ca-us/kcapta-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-kings-area-rural-transit-gtfs-42.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

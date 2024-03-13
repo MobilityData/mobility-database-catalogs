@@ -2,6 +2,7 @@
     "mdb_source_id": 440,
     "data_type": "gtfs",
     "provider": "128 Business Council",
+    "feed_contact_email": "support+123bc-ma-us@trilliumtransit.com",
     "status": "inactive",
     "location": {
         "country_code": "US",
@@ -17,6 +18,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/route128corridor-ma-us/route128corridor-ma-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-128-business-council-gtfs-440.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

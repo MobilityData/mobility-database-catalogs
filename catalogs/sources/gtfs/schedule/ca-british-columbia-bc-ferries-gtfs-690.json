@@ -2,6 +2,7 @@
     "mdb_source_id": 690,
     "data_type": "gtfs",
     "provider": "BC Ferries",
+    "feed_contact_email": "support+test+bcferries-bc-ca@trilliumtransit.com",
     "location": {
         "country_code": "CA",
         "subdivision_name": "British Columbia",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/bcferries-bc-ca/bcferries-bc-ca.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-ferries-gtfs-690.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

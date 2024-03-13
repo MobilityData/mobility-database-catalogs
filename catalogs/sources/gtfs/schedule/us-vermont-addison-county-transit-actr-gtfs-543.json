@@ -2,6 +2,7 @@
     "mdb_source_id": 543,
     "data_type": "gtfs",
     "provider": "Addison County Transit (ACTR)",
+    "feed_contact_email": "support+test+addisoncounty-vt-us@trilliumtransit.com",
     "features": [
         "fares-v1",
         "flex-v1"
@@ -21,6 +22,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/addisoncounty-vt-us/addisoncounty-vt-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-vermont-addison-county-transit-actr-gtfs-543.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

@@ -2,6 +2,7 @@
     "mdb_source_id": 645,
     "data_type": "gtfs",
     "provider": "Cape Cod Regional Transportation Authority (Cape Cod RTA)",
+    "feed_contact_email": "support+test+capecod-ma-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Massachusetts",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/capecod-ma-us/capecod-ma-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-cape-code-regional-transportation-authority-cape-cod-rta-gtfs-645.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

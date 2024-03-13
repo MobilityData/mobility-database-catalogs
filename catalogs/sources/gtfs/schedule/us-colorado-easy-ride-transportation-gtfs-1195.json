@@ -2,6 +2,7 @@
     "mdb_source_id": 1195,
     "data_type": "gtfs",
     "provider": "Easy Ride Transportation",
+    "feed_contact_email": "support+broomfield-co-us@trilliumtransit.com",
     "features": [
         "flex-v2"
     ],
@@ -19,6 +20,8 @@
     },
     "urls": {
         "direct_download": "https://data.trilliumtransit.com/gtfs/broomfield-co-us/broomfield-co-us--flex-v2.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-easy-ride-transportation-gtfs-1195.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

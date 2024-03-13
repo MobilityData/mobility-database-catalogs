@@ -1,8 +1,9 @@
 {
     "mdb_source_id": 687,
     "data_type": "gtfs",
-    "provider": "Empresa de Transportes e Transito de Belo Horizonte (BHTRANS) ",
+    "provider": "Empresa de Transportes e Transito de Belo Horizonte (BHTRANS)",
     "name": "Supplemental",
+    "feed_contact_email": "suporte@mobilibus.com.br",
     "features": [
         "fares-v1"
     ],
@@ -20,7 +21,9 @@
     },
     "urls": {
         "direct_download": "https://ckan.pbh.gov.br/dataset/af0c47bb-5a82-4ae1-874f-e45dea1397ff/resource/b2a9341e-4471-45cc-a8c0-11be805590bc/download/gtfsfiles.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/br-minas-gerais-empresa-de-transportes-e-transito-de-belo-horizonte-bhtrans-gtfs-687.zip?alt=media",
         "license": "https://dados.pbh.gov.br/dataset/feed-gtfs-estatico-do-sistema-suplementar"
-    }
+    },
+    "redirect": []
 }

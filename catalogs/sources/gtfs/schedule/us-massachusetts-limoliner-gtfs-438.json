@@ -2,6 +2,7 @@
     "mdb_source_id": 438,
     "data_type": "gtfs",
     "provider": "LimoLiner",
+    "feed_contact_email": "support+limoliner-ma-us@trilliumtransit.com",
     "features": [
         "fares-v1"
     ],
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/limoliner-ma-us/limoliner-ma-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-limoliner-gtfs-438.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

@@ -2,6 +2,7 @@
     "mdb_source_id": 634,
     "data_type": "gtfs",
     "provider": "Eugene to Coos Bay",
+    "feed_contact_email": "support+eugenetocoosbay-or-us@trilliumtransit.com",
     "features": [
         "fares-v1"
     ],
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "http://oregon-gtfs.com/gtfs_data/eugenetocoosbay-or-us/eugenetocoosbay-or-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-eugene-to-coos-bay-gtfs-634.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

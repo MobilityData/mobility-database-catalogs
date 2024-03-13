@@ -2,6 +2,7 @@
     "mdb_source_id": 28,
     "data_type": "gtfs",
     "provider": "Los Angeles County Department of Public Works (the LINK and shuttles)",
+    "feed_contact_email": "support+test+dpwlacounty-ca-us@trilliumtransit.com",
     "features": [
         "fares-v1",
         "fares-v2"
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/dpwlacounty-ca-us/dpwlacounty-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-los-angeles-county-shuttles-gtfs-28.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

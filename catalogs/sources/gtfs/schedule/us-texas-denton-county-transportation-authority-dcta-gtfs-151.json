@@ -2,6 +2,7 @@
     "mdb_source_id": 151,
     "data_type": "gtfs",
     "provider": "Denton County Transportation Authority (DCTA)",
+    "feed_contact_email": "support+test+dentoncounty-tx-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Texas",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://trilliumtransit.com/transit_feeds/dentoncounty-tx-us/dentoncounty-tx-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-texas-denton-county-transportation-authority-dcta-gtfs-151.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

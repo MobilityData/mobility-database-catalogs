@@ -2,6 +2,7 @@
     "mdb_source_id": 310,
     "data_type": "gtfs",
     "provider": "Capital Transit",
+    "feed_contact_email": "support+test+cityofhelena-mt-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Montana",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "https://data.trilliumtransit.com/gtfs/cityofhelena-mt-us/cityofhelena-mt-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-montana-capital-transit-gtfs-310.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

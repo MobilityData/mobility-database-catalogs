@@ -2,6 +2,7 @@
     "mdb_source_id": 334,
     "data_type": "gtfs",
     "provider": "Mountain Lynx Transit",
+    "feed_contact_email": "support+test+districtthree-va-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Virginia",
@@ -15,6 +16,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/districtthree-va-us/districtthree-va-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-mountain-lynx-transit-gtfs-334.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

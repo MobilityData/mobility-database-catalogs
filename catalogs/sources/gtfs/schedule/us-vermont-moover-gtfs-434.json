@@ -2,6 +2,7 @@
     "mdb_source_id": 434,
     "data_type": "gtfs",
     "provider": "MOOver",
+    "feed_contact_email": "support+test+dvtamoover-vt-us@trilliumtransit.com",
     "features": [
         "fares-v1",
         "flex-v1"
@@ -21,6 +22,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/dvtamoover-vt-us/dvtamoover-vt-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-vermont-moover-gtfs-434.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

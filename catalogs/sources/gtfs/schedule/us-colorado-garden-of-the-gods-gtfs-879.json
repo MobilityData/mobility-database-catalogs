@@ -2,6 +2,7 @@
     "mdb_source_id": 879,
     "data_type": "gtfs",
     "provider": "Garden of the Gods",
+    "feed_contact_email": "support+test+gardenofthegods-co-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Colorado",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/gardenofthegods-co-us/gardenofthegods-co-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-garden-of-the-gods-gtfs-879.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

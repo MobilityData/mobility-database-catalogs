@@ -2,6 +2,7 @@
     "mdb_source_id": 61,
     "data_type": "gtfs",
     "provider": "Commute.org San Mateo County Shuttles",
+    "feed_contact_email": "support+test+commute-ca-us@trilliumtransit.com",
     "features": [
         "fares-v1"
     ],
@@ -19,6 +20,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/commute-ca-us/commute-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-commuteorg-san-mateo-county-shuttles-gtfs-61.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

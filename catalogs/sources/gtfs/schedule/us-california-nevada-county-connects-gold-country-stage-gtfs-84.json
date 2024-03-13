@@ -2,6 +2,7 @@
     "mdb_source_id": 84,
     "data_type": "gtfs",
     "provider": "Nevada County Connects (Gold Country Stage)",
+    "feed_contact_email": "support+test+goldcountrystage-ca-us@trilliumtransit.com",
     "features": [
         "fares-v1",
         "fares-v2"
@@ -20,7 +21,9 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/goldcountrystage-ca-us/goldcountrystage-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-nevada-county-connects-gold-country-stage-gtfs-84.zip?alt=media",
         "license": "http://creativecommons.org/licenses/by/4.0/"
-    }
+    },
+    "redirect": []
 }

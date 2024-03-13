@@ -2,6 +2,7 @@
     "mdb_source_id": 639,
     "data_type": "gtfs",
     "provider": "Cascade POINT",
+    "feed_contact_email": "support+test+cascadespoint-or-us@trilliumtransit.com",
     "features": [
         "fares-v1"
     ],
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "http://oregon-gtfs.com/gtfs_data/cascadespoint-or-us/cascadespoint-or-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-cascade-point-gtfs-639.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

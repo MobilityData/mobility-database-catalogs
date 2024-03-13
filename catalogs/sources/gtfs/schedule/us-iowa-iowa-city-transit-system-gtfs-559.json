@@ -2,6 +2,7 @@
     "mdb_source_id": 559,
     "data_type": "gtfs",
     "provider": "Iowa City Transit System",
+    "feed_contact_email": "support+test+iowacitytransit-ia-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Iowa",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/iowacitytransit-ia-us/iowacitytransit-ia-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-iowa-iowa-city-transit-system-gtfs-559.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

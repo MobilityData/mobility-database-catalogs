@@ -2,6 +2,7 @@
     "mdb_source_id": 425,
     "data_type": "gtfs",
     "provider": "Freedom Cruise Line",
+    "feed_contact_email": "support+test+freedomcruiseline-ma-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Massachusetts",
@@ -15,6 +16,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/freedomcruiseline-ma-us/freedomcruiseline-ma-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-freedom-cruise-line-gtfs-425.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

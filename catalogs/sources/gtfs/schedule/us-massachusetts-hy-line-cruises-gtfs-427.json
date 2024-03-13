@@ -2,6 +2,7 @@
     "mdb_source_id": 427,
     "data_type": "gtfs",
     "provider": "Hy-Line Cruises",
+    "feed_contact_email": "support+test+hylinecruises-ma-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Massachusetts",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/hylinecruises-ma-us/hylinecruises-ma-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-hy-line-cruises-gtfs-427.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

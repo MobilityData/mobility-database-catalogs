@@ -2,6 +2,7 @@
     "mdb_source_id": 316,
     "data_type": "gtfs",
     "provider": "CorridorRides",
+    "feed_contact_email": "support+test+corridorrides-ia-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Iowa",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/corridorrides-ia-us/corridorrides-ia-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-iowa-corridorrides-gtfs-316.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

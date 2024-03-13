@@ -2,6 +2,7 @@
     "mdb_source_id": 530,
     "data_type": "gtfs",
     "provider": "Greater Bridgeport Transit",
+    "feed_contact_email": "support+test+gbt-ct-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Connecticut",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/gbt-ct-us/gbt-ct-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-connecticut-greater-bridgeport-transit-gtfs-530.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

@@ -2,6 +2,7 @@
     "mdb_source_id": 381,
     "data_type": "gtfs",
     "provider": "Greater Lynchburg Transit Co.",
+    "feed_contact_email": "support+test+gltc-lynchburg-va-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Virginia",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/gltc-lynchburg-va-us/gltc-lynchburg-va-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-greater-lynchburg-transit-co-gtfs-381.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

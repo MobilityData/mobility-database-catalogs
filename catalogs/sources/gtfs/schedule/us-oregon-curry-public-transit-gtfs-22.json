@@ -2,6 +2,7 @@
     "mdb_source_id": 22,
     "data_type": "gtfs",
     "provider": "Curry Public Transit",
+    "feed_contact_email": "support+test+currypublictransit-brookings-or-us@trilliumtransit.com",
     "features": [
         "fares-v1"
     ],
@@ -19,6 +20,8 @@
     },
     "urls": {
         "direct_download": "https://oregon-gtfs.trilliumtransit.com/gtfs_data/currypublictransit-or-us/currypublictransit-brookings-or-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-curry-public-transit-gtfs-22.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

@@ -2,6 +2,7 @@
     "mdb_source_id": 121,
     "data_type": "gtfs",
     "provider": "Josephine County Transit (JCT)",
+    "feed_contact_email": "support+test+josephinecounty-or-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Oregon",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://oregon-gtfs.com/gtfs_data/josephinecounty-or-us/josephinecounty-or-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-josephine-county-transit-jct-gtfs-121.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

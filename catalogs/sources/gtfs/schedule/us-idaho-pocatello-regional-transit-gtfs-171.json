@@ -2,6 +2,7 @@
     "mdb_source_id": 171,
     "data_type": "gtfs",
     "provider": "Pocatello Regional Transit",
+    "feed_contact_email": "prttransit@gmail.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Idaho",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "https://pocatellotransit.com/gtfs/pocatello-regional-transit-gtfs.zip?v=current",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-idaho-pocatello-regional-transit-gtfs-171.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

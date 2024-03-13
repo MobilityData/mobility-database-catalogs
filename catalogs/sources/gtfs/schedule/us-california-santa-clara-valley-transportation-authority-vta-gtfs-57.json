@@ -2,6 +2,7 @@
     "mdb_source_id": 57,
     "data_type": "gtfs",
     "provider": "Santa Clara Valley Transportation Authority (VTA)",
+    "feed_contact_email": "customer.service@vta.org",
     "features": [
         "fares-v1"
     ],
@@ -19,6 +20,8 @@
     },
     "urls": {
         "direct_download": "https://gtfs.vta.org/gtfs_vta.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-santa-clara-valley-transportation-authority-vta-gtfs-57.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

@@ -2,6 +2,7 @@
     "mdb_source_id": 56,
     "data_type": "gtfs",
     "provider": "Monterey-Salinas Transit (MST)",
+    "feed_contact_email": "it@mst.org",
     "features": [
         "fares-v1"
     ],
@@ -19,7 +20,9 @@
     },
     "urls": {
         "direct_download": "https://www.mst.org/google/google_transit.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-montereysalinas-transit-mst-gtfs-56.zip?alt=media",
         "license": "https://mst.org/about-mst/developer-resources/"
-    }
+    },
+    "redirect": []
 }

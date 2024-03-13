@@ -2,6 +2,7 @@
     "mdb_source_id": 498,
     "data_type": "gtfs",
     "provider": "Frederick County TransIT",
+    "feed_contact_email": "?",
     "location": {
         "country_code": "US",
         "subdivision_name": "Maryland",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "https://maps.frederickcountymd.gov/google/google_transit.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maryland-frederick-county-transit-gtfs-498.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

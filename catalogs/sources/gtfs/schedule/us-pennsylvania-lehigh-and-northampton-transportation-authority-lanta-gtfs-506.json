@@ -2,6 +2,7 @@
     "mdb_source_id": 506,
     "data_type": "gtfs",
     "provider": "Lehigh and Northampton Transportation Authority (LANTA)",
+    "feed_contact_email": "customerservice@lantabus.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Pennsylvania",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "https://github.com/LANTA-Transportation-Authority/GTFS-data/raw/master/lanta_gtfs_feed.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-pennsylvania-lehigh-and-northampton-transportation-authority-lanta-gtfs-506.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

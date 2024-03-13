@@ -2,6 +2,7 @@
     "mdb_source_id": 460,
     "data_type": "gtfs",
     "provider": "Express Arrow",
+    "feed_contact_email": "marcy@mjcaction.com",
     "location": {
         "country_code": "US",
         "bounding_box": {
@@ -14,6 +15,8 @@
     },
     "urls": {
         "direct_download": "http://mjcaction.com/MJC_GTFS_Public/expressarrow_google_transit.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-unknown-express-arrow-gtfs-460.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

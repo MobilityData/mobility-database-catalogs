@@ -2,6 +2,7 @@
     "mdb_source_id": 163,
     "data_type": "gtfs",
     "provider": "Gunnison Valley Transportation Authority (RTA)",
+    "feed_contact_email": "marcy@mjcaction.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Colorado",
@@ -15,6 +16,8 @@
     },
     "urls": {
         "direct_download": "http://mjcaction.com/MJC_GTFS_Public/gunnisonrta_google_transit.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-gunnison-valley-transportation-authority-rta-gtfs-163.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

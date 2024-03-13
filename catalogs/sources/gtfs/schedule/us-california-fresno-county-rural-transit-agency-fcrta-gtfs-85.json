@@ -2,6 +2,7 @@
     "mdb_source_id": 85,
     "data_type": "gtfs",
     "provider": "Fresno County Rural Transit Agency (FCRTA)",
+    "feed_contact_email": "mstites@fresnocog.org",
     "features": [
         "fares-v1"
     ],
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/7869/google_transit.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-fresno-county-rural-transit-agency-fcrta-gtfs-85.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

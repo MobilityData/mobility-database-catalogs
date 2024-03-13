@@ -2,6 +2,7 @@
     "mdb_source_id": 82,
     "data_type": "gtfs",
     "provider": "Unitrans",
+    "feed_contact_email": "jjflynn@ucdavis.edu",
     "features": [
         "fares-v2"
     ],
@@ -19,7 +20,9 @@
     },
     "urls": {
         "direct_download": "https://unitrans.ucdavis.edu/media/gtfs/Unitrans_GTFS.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-unitrans-gtfs-82.zip?alt=media",
         "license": "https://unitrans.ucdavis.edu/about/gtfs/"
-    }
+    },
+    "redirect": []
 }

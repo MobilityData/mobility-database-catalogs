@@ -2,6 +2,7 @@
     "mdb_source_id": 9,
     "data_type": "gtfs",
     "provider": "Empresa de Transportes e Transito de Belo Horizonte (BHTRANS)",
+    "feed_contact_email": "suporte@mobilibus.com",
     "features": [
         "fares-v1"
     ],
@@ -19,7 +20,9 @@
     },
     "urls": {
         "direct_download": "https://ckan.pbh.gov.br/dataset/77764a7e-63fc-4111-ace3-fb7d3037953a/resource/f0fa78dc-74c3-49fa-8971-c310a76a07fa/download/gtfsfiles.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/br-minas-gerais-empresa-de-transportes-e-transito-de-belo-horizonte-bhtrans-gtfs-9.zip?alt=media",
         "license": "https://dados.pbh.gov.br/dataset/gtfs-estatico-do-sistema-convencional"
-    }
+    },
+    "redirect": []
 }

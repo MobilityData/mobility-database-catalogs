@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Maryland Transit Administration",
     "name": "Local Bus",
+    "feed_contact_email": "mta-oi@mdot.state.md.us",
     "location": {
         "country_code": "US",
         "subdivision_name": "Maryland",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "https://mdotmta-gtfs.s3.amazonaws.com/mdotmta_gtfs_localbus.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maryland-maryland-transit-administration-gtfs-466.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

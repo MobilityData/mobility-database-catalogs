@@ -2,6 +2,7 @@
     "mdb_source_id": 719,
     "data_type": "gtfs",
     "provider": "Muncie Indiana Transit System (MITS)",
+    "feed_contact_email": "http://www.saucontech.com",
     "status": "inactive",
     "location": {
         "country_code": "US",
@@ -17,6 +18,8 @@
     },
     "urls": {
         "direct_download": "http://www.mitsbus.org/wp-content/uploads/2016/11/GTFS.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-indiana-muncie-indiana-transit-system-mits-gtfs-719.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

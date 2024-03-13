@@ -2,6 +2,7 @@
     "mdb_source_id": 45,
     "data_type": "gtfs",
     "provider": "Morro Bay Transit",
+    "feed_contact_email": "marcy@mjcaction.com",
     "features": [
         "fares-v1"
     ],
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "http://mjcaction.com/MJC_GTFS_Public/morrobay_google_transit.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-morro-bay-transit-gtfs-45.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

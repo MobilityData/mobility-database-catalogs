@@ -2,6 +2,7 @@
     "mdb_source_id": 1135,
     "data_type": "gtfs",
     "provider": "Bizkaibus",
+    "feed_contact_email": "lantik.gtfs@gmail.com",
     "features": [
         "fares-v1"
     ],
@@ -19,6 +20,8 @@
     },
     "urls": {
         "direct_download": "https://transitfeeds.com/p/bizkaibus/653/latest/download",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-bizkaia-bizkaibus-gtfs-1135.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

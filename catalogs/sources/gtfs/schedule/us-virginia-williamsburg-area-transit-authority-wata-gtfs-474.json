@@ -2,6 +2,7 @@
     "mdb_source_id": 474,
     "data_type": "gtfs",
     "provider": "Williamsburg Area Transit Authority (WATA)",
+    "feed_contact_email": "bgoodill@gowata.org",
     "location": {
         "country_code": "US",
         "subdivision_name": "Virginia",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://www.gowata.org/DocumentCenter/View/500",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-williamsburg-area-transit-authority-wata-gtfs-474.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

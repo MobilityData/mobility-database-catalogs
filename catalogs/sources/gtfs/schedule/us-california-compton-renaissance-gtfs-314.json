@@ -2,6 +2,7 @@
     "mdb_source_id": 314,
     "data_type": "gtfs",
     "provider": "Compton Renaissance",
+    "feed_contact_email": "csinteractive@metro.net",
     "features": [
         "fares-v2"
     ],
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/compton-ca-us/compton-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-compton-renaissance-gtfs-314.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

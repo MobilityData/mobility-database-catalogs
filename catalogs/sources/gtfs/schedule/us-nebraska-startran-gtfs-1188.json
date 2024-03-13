@@ -2,6 +2,7 @@
     "mdb_source_id": 1188,
     "data_type": "gtfs",
     "provider": "StarTran",
+    "feed_contact_email": "mzuhlke@lincoln.ne.gov",
     "features": [
         "fares-v1"
     ],
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "https://transitfeeds.com/p/startran/781/latest/download",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-nebraska-startran-gtfs-1188.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

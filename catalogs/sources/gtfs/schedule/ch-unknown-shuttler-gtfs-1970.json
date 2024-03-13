@@ -2,6 +2,7 @@
     "mdb_source_id": 1970,
     "data_type": "gtfs",
     "provider": "Shuttler",
+    "feed_contact_email": "gtfs@ticpoi.com",
     "location": {
         "country_code": "CH",
         "bounding_box": {
@@ -14,7 +15,9 @@
     },
     "urls": {
         "direct_download": "https://shuttler.ch/transit-data/gtfs/gtfs.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ch-unknown-shuttler-gtfs-1970.zip?alt=media",
         "license": "https://www.shuttler.ch/gtc"
-    }
+    },
+    "redirect": []
 }

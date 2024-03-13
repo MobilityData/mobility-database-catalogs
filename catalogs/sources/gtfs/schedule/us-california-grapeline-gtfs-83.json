@@ -2,6 +2,7 @@
     "mdb_source_id": 83,
     "data_type": "gtfs",
     "provider": "GrapeLine",
+    "feed_contact_email": "fhuang@lodi.gov",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "https://www.lodi.gov/DocumentCenter/View/2453/lodi_gtfs-ZIP",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-grapeline-gtfs-83.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

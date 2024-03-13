@@ -2,6 +2,7 @@
     "mdb_source_id": 558,
     "data_type": "gtfs",
     "provider": "Huntington Park Express",
+    "feed_contact_email": "csinteractive@metro.net",
     "features": [
         "fares-v2"
     ],
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/huntingtonpark-ca-us/huntingtonpark-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-huntington-park-express-gtfs-558.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

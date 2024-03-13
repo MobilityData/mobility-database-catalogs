@@ -2,6 +2,7 @@
     "mdb_source_id": 44,
     "data_type": "gtfs",
     "provider": "City of San Luis Obispo Transit",
+    "feed_contact_email": "marcy@mjcaction.com",
     "features": [
         "fares-v1"
     ],
@@ -19,6 +20,8 @@
     },
     "urls": {
         "direct_download": "https://app.mecatran.com/urb/ws/feed/c2l0ZT1zbG90cmFuc2l0O2NsaWVudD1zZWxmO2V4cGlyZT07dHlwZT1ndGZzO2tleT0zZTMwMzM1OTRiMTE2NzA0N2IxNjQwNjA0ZjQwMGMzMzdiM2E1MTQ0",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-city-of-san-luis-obispo-transit-gtfs-44.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

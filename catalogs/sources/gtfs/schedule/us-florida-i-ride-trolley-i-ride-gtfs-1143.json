@@ -2,6 +2,7 @@
     "mdb_source_id": 1143,
     "data_type": "gtfs",
     "provider": "I-RIDE Trolley (I-RIDE)",
+    "feed_contact_email": "info@omnimodal.io",
     "features": [
         "fares-v1"
     ],
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "https://transitfeeds.com/p/i-ride-trolley/909/latest/download",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-i-ride-trolley-i-ride-gtfs-1143.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

@@ -2,6 +2,7 @@
     "mdb_source_id": 739,
     "data_type": "gtfs",
     "provider": "Régie intermunicipale de transport des Collines",
+    "feed_contact_email": "gtfs@transcollines.ca",
     "location": {
         "country_code": "CA",
         "subdivision_name": "Québec",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "https://github.com/transcollines/gtfs/raw/master/transcollines-qc-ca.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-regie-intermunicipale-de-transport-des-collines-gtfs-739.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

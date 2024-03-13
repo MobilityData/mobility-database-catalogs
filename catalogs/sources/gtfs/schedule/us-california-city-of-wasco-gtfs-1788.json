@@ -2,6 +2,7 @@
     "mdb_source_id": 1788,
     "data_type": "gtfs",
     "provider": "City of Wasco",
+    "feed_contact_email": "gtfsrt@dot.ca.gov",
     "features": [
         "flex-v2"
     ],
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "https://gtfs.calitp.org/production/WascoDialaRideFlex.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-city-of-wasco-gtfs-1788.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

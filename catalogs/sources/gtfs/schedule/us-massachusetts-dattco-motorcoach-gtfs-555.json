@@ -2,6 +2,7 @@
     "mdb_source_id": 555,
     "data_type": "gtfs",
     "provider": "DATTCO Motorcoach",
+    "feed_contact_email": "support+test+dattco-ma-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Massachusetts",
@@ -15,6 +16,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/dattco-ma-us/dattco-ma-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-dattco-motorcoach-gtfs-555.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

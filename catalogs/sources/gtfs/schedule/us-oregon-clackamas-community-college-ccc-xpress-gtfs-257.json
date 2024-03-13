@@ -2,6 +2,7 @@
     "mdb_source_id": 257,
     "data_type": "gtfs",
     "provider": "Clackamas Community College (CCC) Xpress",
+    "feed_contact_email": "support+test+cccxpress-or-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Oregon",
@@ -15,6 +16,8 @@
     },
     "urls": {
         "direct_download": "http://oregon-gtfs.com/gtfs_data/cccxpress-or-us/cccxpress-or-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-clackamas-community-college-ccc-xpress-gtfs-257.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

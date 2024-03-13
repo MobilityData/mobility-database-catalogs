@@ -2,6 +2,7 @@
     "mdb_source_id": 931,
     "data_type": "gtfs",
     "provider": "Harney County",
+    "feed_contact_email": "support+test+harneycounty-or-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Oregon",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://oregon-gtfs.com/gtfs_data/harneycounty-or-us/harneycounty-or-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-harney-county-gtfs-931.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

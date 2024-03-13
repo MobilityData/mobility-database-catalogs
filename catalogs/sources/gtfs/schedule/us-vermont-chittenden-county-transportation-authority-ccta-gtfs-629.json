@@ -2,6 +2,7 @@
     "mdb_source_id": 629,
     "data_type": "gtfs",
     "provider": "Chittenden County Transportation Authority  (CCTA)",
+    "feed_contact_email": "support+test+ccta-vt-us@trilliumtransit.com",
     "features": [
         "fares-v1",
         "flex-v1"
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/ccta-vt-us/ccta-vt-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-vermont-chittenden-county-transportation-authority-ccta-gtfs-629.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

@@ -2,6 +2,7 @@
     "mdb_source_id": 1958,
     "data_type": "gtfs",
     "provider": "Dartmouth College",
+    "feed_contact_email": "support+test+dartmouth-vt-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "New Hampshire",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "https://data.trilliumtransit.com/gtfs/dartmouth-vt-us/dartmouth-vt-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-hampshire-dartmouth-college-gtfs-1958.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

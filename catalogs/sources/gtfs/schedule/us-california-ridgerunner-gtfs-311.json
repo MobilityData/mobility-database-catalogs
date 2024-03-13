@@ -2,6 +2,7 @@
     "mdb_source_id": 311,
     "data_type": "gtfs",
     "provider": "Ridgerunner",
+    "feed_contact_email": "support+test+cityofridgecrest-ca-us@trilliumtransit.com",
     "features": [
         "fares-v1",
         "fares-v2"
@@ -21,6 +22,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/cityofridgecrest-ca-us/cityofridgecrest-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-ridgerunner-gtfs-311.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

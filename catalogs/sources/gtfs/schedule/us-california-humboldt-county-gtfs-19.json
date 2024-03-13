@@ -2,6 +2,7 @@
     "mdb_source_id": 19,
     "data_type": "gtfs",
     "provider": "Humbolt Transit Authority",
+    "feed_contact_email": "support+test+humboldtcounty-ca-us@trilliumtransit.com",
     "features": [
         "fares-v1",
         "fares-v2"
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/humboldtcounty-ca-us/humboldtcounty-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-humboldt-county-gtfs-19.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

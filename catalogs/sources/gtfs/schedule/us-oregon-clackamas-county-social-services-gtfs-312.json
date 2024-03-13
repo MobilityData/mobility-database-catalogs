@@ -2,6 +2,7 @@
     "mdb_source_id": 312,
     "data_type": "gtfs",
     "provider": "Clackamas County Social Services",
+    "feed_contact_email": "support+test+clackamascounty-or-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Oregon",
@@ -15,6 +16,8 @@
     },
     "urls": {
         "direct_download": "http://oregon-gtfs.trilliumtransit.com/gtfs_data/clackamascounty-or-us/clackamascounty-or-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-clackamas-county-social-services-gtfs-312.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

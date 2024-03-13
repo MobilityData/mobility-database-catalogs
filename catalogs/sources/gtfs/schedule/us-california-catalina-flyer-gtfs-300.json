@@ -2,6 +2,7 @@
     "mdb_source_id": 300,
     "data_type": "gtfs",
     "provider": "Catalina Flyer",
+    "feed_contact_email": "support+test+catalinaflyer-ca-us@trilliumtransit.com",
     "features": [
         "fares-v1"
     ],
@@ -19,6 +20,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/catalinaflyer-ca-us/catalinaflyer-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-catalina-flyer-gtfs-300.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

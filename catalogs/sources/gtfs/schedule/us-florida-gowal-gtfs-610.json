@@ -2,6 +2,7 @@
     "mdb_source_id": 610,
     "data_type": "gtfs",
     "provider": "GoWal",
+    "feed_contact_email": "support+test+gowal-fl-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Florida",
@@ -15,6 +16,8 @@
     },
     "urls": {
         "direct_download": "https://data.trilliumtransit.com/gtfs/gowal-fl-us/gowal-fl-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-gowal-gtfs-610.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

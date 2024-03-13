@@ -2,6 +2,7 @@
     "mdb_source_id": 63,
     "data_type": "gtfs",
     "provider": "Emery Go-Round",
+    "feed_contact_email": "support+test+emerygoround-ca-us@trilliumtransit.com",
     "features": [
         "fares-v1"
     ],
@@ -19,6 +20,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/emerygoround-ca-us/emerygoround-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-emery-goround-gtfs-63.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

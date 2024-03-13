@@ -2,6 +2,7 @@
     "mdb_source_id": 461,
     "data_type": "gtfs",
     "provider": "Farmville Area Bus",
+    "feed_contact_email": "support+test+farmville-va-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Virginia",
@@ -15,6 +16,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/farmville-va-us/farmville-va-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-farmville-area-bus-gtfs-461.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

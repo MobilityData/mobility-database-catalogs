@@ -2,6 +2,7 @@
     "mdb_source_id": 320,
     "data_type": "gtfs",
     "provider": "Delano Area Rapid Transit",
+    "feed_contact_email": "support+test+delano-ca-us@trilliumtransit.com",
     "features": [
         "fares-v2",
         "fares-v1"
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "https://data.trilliumtransit.com/gtfs/delano-ca-us/delano-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-delano-area-rapid-transit-gtfs-320.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

@@ -2,6 +2,7 @@
     "mdb_source_id": 65,
     "data_type": "gtfs",
     "provider": "eTrans",
+    "feed_contact_email": "support+test+escalon-ca-us@trilliumtransit.com",
     "features": [
         "fares-v1"
     ],
@@ -19,6 +20,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/escalon-ca-us/escalon-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-etrans-gtfs-65.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

@@ -2,6 +2,7 @@
     "mdb_source_id": 306,
     "data_type": "gtfs",
     "provider": "Chicago Water Taxi",
+    "feed_contact_email": "support+test+chicagowatertaxi-il-us@trilliumtransit.com",
     "features": [
         "fares-v1"
     ],
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "https://data.trilliumtransit.com/gtfs/chicagowatertaxi-il-us/chicagowatertaxi-il-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-illinois-chicago-water-taxi-gtfs-306.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

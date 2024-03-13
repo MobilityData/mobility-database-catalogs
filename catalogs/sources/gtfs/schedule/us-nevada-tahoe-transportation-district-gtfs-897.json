@@ -2,6 +2,7 @@
     "mdb_source_id": 897,
     "data_type": "gtfs",
     "provider": "Tahoe Transportation District",
+    "feed_contact_email": "support+test+tahoe-ca-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Nevada",
@@ -15,6 +16,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/tahoe-ca-us/tahoe-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-nevada-tahoe-transportation-district-gtfs-897.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

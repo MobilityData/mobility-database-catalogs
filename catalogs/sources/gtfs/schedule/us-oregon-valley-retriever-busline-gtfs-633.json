@@ -2,6 +2,7 @@
     "mdb_source_id": 633,
     "data_type": "gtfs",
     "provider": "Valley Retriever Busline",
+    "feed_contact_email": "support+valleyretriever-or-us@trilliumtransit.com",
     "status": "inactive",
     "location": {
         "country_code": "US",
@@ -17,6 +18,8 @@
     },
     "urls": {
         "direct_download": "http://oregon-gtfs.com/gtfs_data/valleyretriever-or-us/valleyretriever-or-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-valley-retriever-busline-gtfs-633.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

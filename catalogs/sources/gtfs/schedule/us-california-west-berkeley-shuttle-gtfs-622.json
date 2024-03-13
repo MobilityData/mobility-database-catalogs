@@ -2,6 +2,7 @@
     "mdb_source_id": 622,
     "data_type": "gtfs",
     "provider": "West Berkeley Shuttle",
+    "feed_contact_email": "support+test+westberkeleyshuttle-ca-us@trilliumtransit.com",
     "features": [
         "fares-v1"
     ],
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/westberkeleyshuttle-ca-us/westberkeleyshuttle-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-west-berkeley-shuttle-gtfs-622.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

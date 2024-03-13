@@ -2,6 +2,7 @@
     "mdb_source_id": 623,
     "data_type": "gtfs",
     "provider": "Go West Shuttle",
+    "feed_contact_email": "support+test+westcovina-ca-us@trilliumtransit.com",
     "features": [
         "fares-v1"
     ],
@@ -19,6 +20,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/westcovina-ca-us/westcovina-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-go-west-shuttle-gtfs-623.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

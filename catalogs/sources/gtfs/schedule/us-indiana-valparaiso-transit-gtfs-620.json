@@ -2,6 +2,7 @@
     "mdb_source_id": 620,
     "data_type": "gtfs",
     "provider": "Valparaiso Transit",
+    "feed_contact_email": "support+test+valpotransit-chi-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Indiana",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/valpotransit-chi-us/valpotransit-chi-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-indiana-valparaiso-transit-gtfs-620.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

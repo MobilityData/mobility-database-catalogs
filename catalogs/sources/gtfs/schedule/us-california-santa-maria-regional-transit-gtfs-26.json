@@ -2,6 +2,7 @@
     "mdb_source_id": 26,
     "data_type": "gtfs",
     "provider": "Santa Maria Area Transit",
+    "feed_contact_email": "support+test+smat-ca-us@trilliumtransit.com",
     "features": [
         "fares-v1",
         "fares-v2"
@@ -21,6 +22,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/smat-ca-us/smat-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-santa-maria-area-transit-gtfs-26.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

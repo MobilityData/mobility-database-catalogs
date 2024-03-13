@@ -2,6 +2,7 @@
     "mdb_source_id": 343,
     "data_type": "gtfs",
     "provider": "SunTran",
+    "feed_contact_email": "support+test+suntran-fl-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Florida",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/suntran-fl-us/suntran-fl-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-suntran-gtfs-343.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

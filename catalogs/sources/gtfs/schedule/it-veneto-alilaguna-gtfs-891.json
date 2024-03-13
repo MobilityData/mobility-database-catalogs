@@ -2,6 +2,7 @@
     "mdb_source_id": 891,
     "data_type": "gtfs",
     "provider": "Alilaguna",
+    "feed_contact_email": "transit@alilaguna.it",
     "location": {
         "country_code": "IT",
         "subdivision_name": "Veneto",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://www.alilaguna.it/attuale/alilaguna.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-veneto-alilaguna-gtfs-891.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

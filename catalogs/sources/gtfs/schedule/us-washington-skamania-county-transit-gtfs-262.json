@@ -2,6 +2,7 @@
     "mdb_source_id": 262,
     "data_type": "gtfs",
     "provider": "Skamania County Transit",
+    "feed_contact_email": "support+test+skamaniacounty-wa-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Washington",
@@ -15,6 +16,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/skamaniacounty-wa-us/skamaniacounty-wa-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-skamania-county-transit-gtfs-262.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

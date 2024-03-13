@@ -2,6 +2,7 @@
     "mdb_source_id": 255,
     "data_type": "gtfs",
     "provider": "Swan Island Evening Shuttle",
+    "feed_contact_email": "support+test+swanisland-or-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Oregon",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://oregon-gtfs.com/gtfs_data/swanisland-or-us/swanisland-or-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-swan-island-evening-shuttle-gtfs-255.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

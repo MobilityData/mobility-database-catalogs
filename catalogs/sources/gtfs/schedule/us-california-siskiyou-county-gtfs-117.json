@@ -2,6 +2,7 @@
     "mdb_source_id": 117,
     "data_type": "gtfs",
     "provider": "Siskiyou County",
+    "feed_contact_email": "support+test+siskiyou-ca-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/siskiyou-ca-us/siskiyou-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-siskiyou-county-gtfs-117.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

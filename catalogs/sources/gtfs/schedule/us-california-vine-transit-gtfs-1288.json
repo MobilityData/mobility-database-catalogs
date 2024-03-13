@@ -2,6 +2,7 @@
     "mdb_source_id": 1288,
     "data_type": "gtfs",
     "provider": "VINE Transit",
+    "feed_contact_email": "support+test+vinetransit-ca-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -16,7 +17,9 @@
     },
     "urls": {
         "direct_download": "https://data.trilliumtransit.com/gtfs/vinetransit-ca-us/vinetransit-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-vine-transit-gtfs-1288.zip?alt=media",
         "license": "https://vinetransit.com/open-data-portal/"
-    }
+    },
+    "redirect": []
 }

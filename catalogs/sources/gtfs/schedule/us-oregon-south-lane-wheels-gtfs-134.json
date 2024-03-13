@@ -2,10 +2,11 @@
     "mdb_source_id": 134,
     "data_type": "gtfs",
     "provider": "South Lane Wheels",
-    "status": "inactive",
+    "feed_contact_email": "support+test+southlanewheels-or-us@trilliumtransit.com",
     "features": [
         "fares-v1"
     ],
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Oregon",
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "http://oregon-gtfs.com/gtfs_data/southlanewheels-or-us/southlanewheels-or-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-south-lane-wheels-gtfs-134.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

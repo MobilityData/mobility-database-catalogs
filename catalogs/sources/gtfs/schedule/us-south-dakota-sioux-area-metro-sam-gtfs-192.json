@@ -2,6 +2,7 @@
     "mdb_source_id": 192,
     "data_type": "gtfs",
     "provider": "Sioux Area Metro (SAM)",
+    "feed_contact_email": "support+test+siouxareametro-sd-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "South Dakota",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/siouxareametro-sd-us/siouxareametro-sd-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-south-dakota-sioux-area-metro-sam-gtfs-192.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

@@ -18,7 +18,7 @@
     },
     "urls": {
         "direct_download": "https://api.wmata.com/gtfs/bus-gtfs-static.zip",
-        "authentication_type": 0,
+        "authentication_type": 1,
         "authentication_info": "https://developer.wmata.com/signup/",
         "api_key_parameter_name": "api_key",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-district-of-columbia-washington-wmata-gtfs-1846.zip?alt=media",

@@ -2,6 +2,7 @@
     "mdb_source_id": 606,
     "data_type": "gtfs",
     "provider": "Get Around Town Express",
+    "feed_contact_email": "csinteractive@metro.net",
     "features": [
         "fares-v2"
     ],
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/getaroundtownexpress-ca-us/getaroundtownexpress-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-get-around-town-express-gtfs-606.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

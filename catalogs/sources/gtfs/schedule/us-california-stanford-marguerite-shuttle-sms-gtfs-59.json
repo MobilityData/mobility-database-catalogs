@@ -2,6 +2,7 @@
     "mdb_source_id": 59,
     "data_type": "gtfs",
     "provider": "Stanford Marguerite Shuttle (SMS)",
+    "feed_contact_email": "marcy@mjcaction.com",
     "features": [
         "fares-v1"
     ],
@@ -19,6 +20,8 @@
     },
     "urls": {
         "direct_download": "https://transportation-forms.stanford.edu/google/google_transit.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-stanford-marguerite-shuttle-sms-gtfs-59.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

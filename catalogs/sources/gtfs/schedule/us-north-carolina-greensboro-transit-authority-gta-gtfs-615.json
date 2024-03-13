@@ -2,6 +2,7 @@
     "mdb_source_id": 615,
     "data_type": "gtfs",
     "provider": "Greensboro Transit Authority (GTA)",
+    "feed_contact_email": "info@mecatran.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "North Carolina",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "https://app.mecatran.com/urb/ws/feed/c2l0ZT1ncmVlbnNib3JvO2NsaWVudD1zZWxmO2V4cGlyZT07dHlwZT1ndGZzO2tleT00ZDQ3MDYyMjNiNjI3ZjFmMTU1YzFiNGIxNTY0Mzg0ZDFjNzYyOTQy",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-north-carolina-greensboro-transit-authority-gta-gtfs-615.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

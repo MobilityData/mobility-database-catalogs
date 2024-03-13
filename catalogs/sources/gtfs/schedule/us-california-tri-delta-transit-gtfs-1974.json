@@ -23,5 +23,6 @@
         "api_key_parameter_name": "api_key",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-tri-delta-transit-gtfs-1974.zip?alt=media",
         "license": "https://511.org/sites/default/files/pdfs/511_Data_Agreement_Final.pdf"
-    }
+    },
+    "redirect": []
 }

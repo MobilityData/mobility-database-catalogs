@@ -2,6 +2,7 @@
     "mdb_source_id": 1877,
     "data_type": "gtfs",
     "provider": "SURF",
+    "feed_contact_email": "contact-data.bzh@transdev.com",
     "features": [
         "fares-v1"
     ],
@@ -19,7 +20,9 @@
     },
     "urls": {
         "direct_download": "https://www.data.gouv.fr/fr/datasets/r/665d6c43-598d-4d9d-aa98-206072f4dfa0",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-bretagne-surf-gtfs-1877.zip?alt=media",
         "license": "https://transport.data.gouv.fr/datasets/reseau-urbain-surf"
-    }
+    },
+    "redirect": []
 }

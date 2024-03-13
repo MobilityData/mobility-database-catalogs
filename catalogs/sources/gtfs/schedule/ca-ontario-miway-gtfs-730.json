@@ -2,6 +2,7 @@
     "mdb_source_id": 730,
     "data_type": "gtfs",
     "provider": "MiWay",
+    "feed_contact_email": "miway.info@mississauga.ca",
     "location": {
         "country_code": "CA",
         "subdivision_name": "Ontario",
@@ -16,7 +17,9 @@
     },
     "urls": {
         "direct_download": "https://www.miapp.ca/GTFS/google_transit.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-miway-gtfs-730.zip?alt=media",
         "license": "https://www.mississauga.ca/miway-transit/developer-download/"
-    }
+    },
+    "redirect": []
 }

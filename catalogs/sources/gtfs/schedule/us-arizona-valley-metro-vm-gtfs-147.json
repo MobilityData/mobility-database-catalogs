@@ -2,6 +2,7 @@
     "mdb_source_id": 147,
     "data_type": "gtfs",
     "provider": "Valley Metro (VM)",
+    "feed_contact_email": "pubtrans@phoenix.gov",
     "location": {
         "country_code": "US",
         "subdivision_name": "Arizona",
@@ -16,7 +17,9 @@
     },
     "urls": {
         "direct_download": "https://phoenixopendata.com/dataset/3eae9a4a-98b9-40c8-8df7-8c00c1756235/resource/28ccc0a5-49c8-495c-b91f-193de5ce2cb7/download/googletransit.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-arizona-valley-metro-vm-gtfs-147.zip?alt=media",
         "license": "http://www.opendefinition.org/licenses/odc-by"
-    }
+    },
+    "redirect": []
 }

@@ -2,6 +2,7 @@
     "mdb_source_id": 373,
     "data_type": "gtfs",
     "provider": "Piedmont Authority for Regional Transportation (PART)",
+    "feed_contact_email": "kylel@partnc.org",
     "location": {
         "country_code": "US",
         "subdivision_name": "North Carolina",
@@ -16,7 +17,9 @@
     },
     "urls": {
         "direct_download": "http://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/5137/gtfs.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-north-carolina-piedmont-authority-for-regional-transportation-part-gtfs-373.zip?alt=media",
         "license": "https://creativecommons.org/licenses/by/4.0/"
-    }
+    },
+    "redirect": []
 }

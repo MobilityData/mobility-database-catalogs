@@ -2,6 +2,7 @@
     "mdb_source_id": 1172,
     "data_type": "gtfs",
     "provider": "Verkehrsverbund Mittelthüringen (VMT)",
+    "feed_contact_email": "Fahrplandaten@vmt-thueringen.de",
     "location": {
         "country_code": "DE",
         "subdivision_name": "Thüringen",
@@ -15,6 +16,8 @@
     },
     "urls": {
         "direct_download": "https://transitfeeds.com/p/verkehrsverbund-mittelth-ringen/1080/latest/download",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-thuringen-verkehrsverbund-mittelthuringen-vmt-gtfs-1172.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

@@ -2,6 +2,7 @@
     "mdb_source_id": 714,
     "data_type": "gtfs",
     "provider": "Edmonton Transit System",
+    "feed_contact_email": "ets-gtfs@edmonton.ca",
     "features": [
         "fares-v1",
         "pathways"
@@ -20,7 +21,9 @@
     },
     "urls": {
         "direct_download": "https://gtfs.edmonton.ca/TMGTFSRealTimeWebService/GTFS/GTFS.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-alberta-edmonton-transit-system-gtfs-714.zip?alt=media",
         "license": "https://data.strathcona.ca/Transportation/Transit-Bus-Schedule-GTFS-Data-Feed-Zip-File/2ek5-rxs5/data?no_mobile=true"
-    }
+    },
+    "redirect": []
 }

@@ -2,6 +2,7 @@
     "mdb_source_id": 266,
     "data_type": "gtfs",
     "provider": "Intercity Transit",
+    "feed_contact_email": "customerservice@intercitytransit.com",
     "features": [
         "fares-v1"
     ],
@@ -19,6 +20,8 @@
     },
     "urls": {
         "direct_download": "https://its.rideralerts.com/InfoPoint/gtfs-zip.ashx",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-intercity-transit-gtfs-266.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

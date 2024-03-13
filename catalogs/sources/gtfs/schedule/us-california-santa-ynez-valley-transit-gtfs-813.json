@@ -2,6 +2,7 @@
     "mdb_source_id": 813,
     "data_type": "gtfs",
     "provider": "Santa Ynez Valley Transit",
+    "feed_contact_email": "marcy@mjcaction.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://mjcaction.com/MJC_GTFS_Public/syvt_google_transit.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-santa-ynez-valley-transit-gtfs-813.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

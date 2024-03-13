@@ -2,6 +2,7 @@
     "mdb_source_id": 609,
     "data_type": "gtfs",
     "provider": "Glendora Transportation Division",
+    "feed_contact_email": "csinteractive@metro.net",
     "features": [
         "fares-v2"
     ],
@@ -19,6 +20,8 @@
     },
     "urls": {
         "direct_download": "https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/glendora-ca-us/glendora-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-glendora-transportation-division-gtfs-609.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

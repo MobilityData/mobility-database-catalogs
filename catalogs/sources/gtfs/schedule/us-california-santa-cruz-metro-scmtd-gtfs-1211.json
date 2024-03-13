@@ -2,6 +2,7 @@
     "mdb_source_id": 1211,
     "data_type": "gtfs",
     "provider": "Santa Cruz Metro (SCMTD)",
+    "feed_contact_email": "gtfs@scmtd.com",
     "features": [
         "fares-v1",
         "fares-v2"
@@ -20,6 +21,8 @@
     },
     "urls": {
         "direct_download": "http://scmtd.com/google_transit/google_transit.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-santa-cruz-metro-scmtd-gtfs-1211.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

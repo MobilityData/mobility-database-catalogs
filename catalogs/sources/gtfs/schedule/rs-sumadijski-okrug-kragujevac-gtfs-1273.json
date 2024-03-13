@@ -2,6 +2,7 @@
     "mdb_source_id": 1273,
     "data_type": "gtfs",
     "provider": "Kragujevac",
+    "feed_contact_email": "gaskgbus@gmail.com",
     "features": [
         "fares-v1"
     ],
@@ -20,7 +21,9 @@
     },
     "urls": {
         "direct_download": "https://transitfeeds.com/p/gas-kragujevac/1230/latest/download",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/rs-sumadijski-okrug-kragujevac-gtfs-1273.zip?alt=media",
         "license": "https://www.kgbus.rs/"
-    }
+    },
+    "redirect": []
 }

@@ -2,6 +2,7 @@
     "mdb_source_id": 165,
     "data_type": "gtfs",
     "provider": "Rio Metro Regional Transit District",
+    "feed_contact_email": "marcy@mjcaction.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "New Mexico",
@@ -15,7 +16,9 @@
     },
     "urls": {
         "direct_download": "https://www.riometro.org/DocumentCenter/View/2195/nmrailrunner_google_transit",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-mexico-rio-metro-regional-transit-district-gtfs-165.zip?alt=media",
         "license": "https://www.riometro.org/261/GTFS-Data"
-    }
+    },
+    "redirect": []
 }

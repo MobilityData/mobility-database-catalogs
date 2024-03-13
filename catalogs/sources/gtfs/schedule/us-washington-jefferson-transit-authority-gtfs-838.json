@@ -2,6 +2,7 @@
     "mdb_source_id": 838,
     "data_type": "gtfs",
     "provider": "Jefferson Transit Authority",
+    "feed_contact_email": "marcy@mjcaction.com",
     "features": [
         "fares-v1"
     ],
@@ -18,6 +19,8 @@
     },
     "urls": {
         "direct_download": "http://mjcaction.com/MJC_GTFS_Public/jefferson_google_transit.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-jefferson-transit-authority-gtfs-838.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

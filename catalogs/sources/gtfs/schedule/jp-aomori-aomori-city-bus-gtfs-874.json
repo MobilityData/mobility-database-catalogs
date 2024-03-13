@@ -2,6 +2,7 @@
     "mdb_source_id": 874,
     "data_type": "gtfs",
     "provider": "Aomori City Bus",
+    "feed_contact_email": "sonosujiya@gmail.com",
     "features": [
         "fares-v1"
     ],
@@ -18,6 +19,8 @@
     },
     "urls": {
         "direct_download": "https://www.city.aomori.aomori.jp/kotsu-kanri/koutsu/oshirase/documents/gtfs-aomoricitybus.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/jp-aomori-aomori-city-bus-gtfs-874.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

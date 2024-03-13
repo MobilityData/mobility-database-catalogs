@@ -2,6 +2,7 @@
     "mdb_source_id": 981,
     "data_type": "gtfs",
     "provider": "Zarząd Dróg i Transportu Miejskiego (ZDiTM)",
+    "feed_contact_email": "rozklady@zditm.szczecin.pl",
     "location": {
         "country_code": "PL",
         "subdivision_name": "Zachodniopomorskie",
@@ -16,7 +17,9 @@
     },
     "urls": {
         "direct_download": "https://www.zditm.szczecin.pl/storage/gtfs/gtfs.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-zachodniopomorskie-zarzad-drog-i-transportu-miejskiego-zditm-gtfs-981.zip?alt=media",
         "license": "https://www.zditm.szczecin.pl/pl/zditm/dla-programistow/gtfs"
-    }
+    },
+    "redirect": []
 }

@@ -2,6 +2,7 @@
     "mdb_source_id": 287,
     "data_type": "gtfs",
     "provider": "Community Transit (CT)",
+    "feed_contact_email": "OpenData@commtrans.org",
     "location": {
         "country_code": "US",
         "subdivision_name": "Washington",
@@ -15,6 +16,8 @@
     },
     "urls": {
         "direct_download": "https://www.communitytransit.org/docs/default-source/open-data/gtfs/current.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-community-transit-ct-gtfs-287.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

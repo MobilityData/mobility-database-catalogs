@@ -204,8 +204,8 @@ if CommandLine.argc == 5 {
             var realtimeFinalURLtoUse : String = downloadURL
             if downloadURL.count < 4 { realtimeFinalURLtoUse = updatednewsourceurl }
             
-            if dateFromCurrentLine == dateToFind { // ...the row has been added on the date we're looking for, process it.
-                if isInDebugMode { print("Found a valid date...") }
+            // if dateFromCurrentLine == dateToFind { // ...the row has been added on the date we're looking for, process it.
+                // if isInDebugMode { print("Found a valid date...") }
                 
                 if request.contains(requestType.isAddNewFeed.rawValue) { // add new feed
                     
@@ -261,7 +261,7 @@ if CommandLine.argc == 5 {
                     } else if datatype.contains(dataType.realtime.rawValue) { // add_gtfs_schedule_source
 
                         let authType : Int = authenticationType(for: authentication_type)
-                        let realtimecode : String = realtimeCode(for:datatype)
+                        let realtimecode : String = realtimeCode(for: datatype)
                         PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_realtime_source(entity_type=[\"\(realtimecode)\"], provider=\"\(finalProvider)\", direct_download_url=\"\(realtimeFinalURLtoUse)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", license_url=\"\(license_url)\", name=\"\(name)\", note=\"\(note)\", status=\"\(gtfsrealtimestatus)\", features=\"\(realtimefeatures)\", feed_contact_email=\"\(feed_contact_email)\", redirects=\"\(redirects_array)\")"
                         
                     }
@@ -269,7 +269,7 @@ if CommandLine.argc == 5 {
                 
             }
             
-        } // END of the row has been added today, process it.
+        // } // END of the row has been added today, process it.
 
         if isInDebugMode { print("current line = \(PYTHON_SCRIPT_ARGS_TEMP)")}
         
@@ -279,7 +279,7 @@ if CommandLine.argc == 5 {
 
     // Replace single quotes (like in McGill's) with an apostrophe so there is no interference with the bash script in the next step.
     PYTHON_SCRIPT_OUTPUT = PYTHON_SCRIPT_OUTPUT.replacingOccurrences(of: "'", with: "ʼ")
-    // Note: do not try to fix the ouput of multiple (ex.: """") as it will break the python script.
+    // Note: do not try to fix the ouput of multiple quotes (ex.: """") as it will break the python script.
 
     // Remove empty paramters from script output
     PYTHON_SCRIPT_OUTPUT = removeEmptyPythonParameters(in: PYTHON_SCRIPT_OUTPUT)

@@ -139,7 +139,6 @@ jobs:
         with:
           payload: |
             {
-              "channel": "G01BLNPU0M8",
               "blocks": [
                 {
                   "type": "header",
@@ -203,7 +202,6 @@ jobs:
         with:
           payload: |
             {
-              "channel": "G01BLNPU0M8",
               "attachments": [
                 {
                   "color": "#f20000",

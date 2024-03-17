@@ -139,6 +139,7 @@ jobs:
         with:
           payload: |
             {
+              "channel": "G01BLNPU0M8",
               "blocks": [
                 {
                   "type": "header",
@@ -152,43 +153,15 @@ jobs:
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": "${{ steps.process-csv.outputs.NUMBER_OF_FEEDS }} feed(s) were added or updated in a new branch on the <$GITHUB_SERVER_URL/$GITHUB_REPOSITORY|mobility-database-catalogs> repo.\n\nClick the button on the right to open it in your browser."
-                  },
-                  "accessory": {
-                    "type": "button",
-                    "text": {
-                      "type": "plain_text",
-                      "text": "OPEN BRANCH",
-                      "emoji": true
-                    },
-                    "url": "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/tree/${{ steps.create_branch_name.outputs.BRANCH }}",
-                    "action_id": "button-action"
+                    "text": "${{ steps.process-csv.outputs.NUMBER_OF_FEEDS }} feed(s) were added or updated in a new branch on the <$GITHUB_SERVER_URL/$GITHUB_REPOSITORY|mobility-database-catalogs> repo."
                   }
                 },
                 {
-                  "type": "divider"
-                },
-                {
                   "type": "section",
-                  "fields": [
-                    {
-                      "type": "mrkdwn",
-                      "text": "New branch name:"
-                    },
-                    {
-                      "type": "mrkdwn",
-                      "text": "`${{ steps.create_branch_name.outputs.BRANCH }}`"
-                    }
-                  ]
-                },
-                {
-                  "type": "context",
-                  "elements": [
-                    {
-                      "type": "mrkdwn",
-                      "text": "➜ See the *<$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID|action run>*."
-                    }
-                  ]
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "New branch name: `${{ steps.create_branch_name.outputs.BRANCH }}`\n\n*Open the new branch:* ${{ GITHUB_SERVER_URL }}/${{ GITHUB_REPOSITORY }}/tree/${{ steps.create_branch_name.outputs.BRANCH }}"
+                  }
                 }
               ]
             }
@@ -202,36 +175,29 @@ jobs:
         with:
           payload: |
             {
-              "attachments": [
+              "channel": "G01BLNPU0M8",
+              "blocks": [
                 {
-                  "color": "#f20000",
-                  "blocks": [
-                    {
-                      "type": "header",
-                      "text": {
-                        "type": "plain_text",
-                        "text": "❌ FAILED — Add/update feed(s)",
-                        "emoji": true
-                      }
-                    },
-                    {
-                      "type": "section",
-                      "text": {
-                        "type": "mrkdwn",
-                        "text": "The GitHub action has failed on the <https://github.com/MobilityData/mobility-database-catalogs|mobility-database-catalogs> repo.\n\nClick the button on the right to open the action run in your browser for more details."
-                      },
-                      "accessory": {
-                        "type": "button",
-                        "text": {
-                          "type": "plain_text",
-                          "text": "OPEN ACTION RUN",
-                          "emoji": true
-                        },
-                        "url": "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID",
-                        "action_id": "button-action"
-                      }
-                    }
-                  ]
+                  "type": "header",
+                  "text": {
+                    "type": "plain_text",
+                    "text": "❌ FAILED — Add/update feed(s)",
+                    "emoji": true
+                  }
+                },
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "The GitHub action has failed on the <https://github.com/MobilityData/mobility-database-catalogs|mobility-database-catalogs> repo."
+                  }
+                },
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "*Open the action run:* ${{ GITHUB_SERVER_URL }}/${{ GITHUB_REPOSITORY }}/actions/runs/${{ GITHUB_RUN_ID }}"
+                  }
                 }
               ]
             }

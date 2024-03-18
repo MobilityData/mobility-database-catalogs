@@ -153,7 +153,7 @@ jobs:
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": "${{ steps.process-csv.outputs.NUMBER_OF_FEEDS }} feed(s) were added or updated in a new branch on the <$GITHUB_SERVER_URL/$GITHUB_REPOSITORY|mobility-database-catalogs> repo."
+                    "text": "${{ steps.process-csv.outputs.NUMBER_OF_FEEDS }} feed(s) were added or updated in a new branch on the ${{ GITHUB_SERVER_URL }}/${{ GITHUB_REPOSITORY }} repo."
                   }
                 },
                 {

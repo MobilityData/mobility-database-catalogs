@@ -189,7 +189,7 @@ jobs:
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": "The GitHub action has failed on the <https://github.com/MobilityData/mobility-database-catalogs|mobility-database-catalogs> repo."
+                    "text": "The GitHub action has failed on the ${{ GITHUB_SERVER_URL }}/${{ GITHUB_REPOSITORY }} repo."
                   }
                 },
                 {

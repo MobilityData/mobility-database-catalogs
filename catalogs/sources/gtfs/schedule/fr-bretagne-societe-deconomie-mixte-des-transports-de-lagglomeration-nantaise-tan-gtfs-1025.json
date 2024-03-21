@@ -1,13 +1,13 @@
 {
     "mdb_source_id": 1025,
     "data_type": "gtfs",
-    "provider": "Société d'Economie Mixte des Transports de l'Agglomération Nantaise (TAN)",
+    "provider": "Naolib",
     "features": [
         "fares-v1"
     ],
     "location": {
         "country_code": "FR",
-        "subdivision_name": "Bretagne",
+        "subdivision_name": "Pays-de-la-Loire",
         "municipality": "Nantes",
         "bounding_box": {
             "minimum_latitude": 47.12305797,

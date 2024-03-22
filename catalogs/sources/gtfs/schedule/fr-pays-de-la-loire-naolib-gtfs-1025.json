@@ -19,7 +19,7 @@
     },
     "urls": {
         "direct_download": "https://data.nantesmetropole.fr/explore/dataset/244400404_tan-arrets-horaires-circuits/files/16a1a0af5946619af621baa4ad9ee662/download/",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-bretagne-societe-deconomie-mixte-des-transports-de-lagglomeration-nantaise-tan-gtfs-1025.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-pays-de-la-loire-naolib-gtfs-1025.zip?alt=media",
         "license": "https://data.nantesmetropole.fr/explore/dataset/244400404_tan-arrets-horaires-circuits/information/"
     }
 }

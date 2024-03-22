@@ -196,7 +196,7 @@ jobs:
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": "*Open the action run:* https://github.com/MobilityData/mobility-database-catalogs/actions/runs/${{ GITHUB_RUN_ID }}"
+                    "text": "*Open the action run:* https://github.com/MobilityData/mobility-database-catalogs/actions/runs/$GITHUB_RUN_ID"
                   }
                 }
               ]

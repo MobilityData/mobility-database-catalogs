@@ -1,15 +1,15 @@
 {
-    "mdb_source_id": 1769,
+    "mdb_source_id": 1771,
     "data_type": "gtfs-rt",
     "entity_type": [
-        "sa"
+        "vp"
     ],
-    "provider": "Delaware Transit Corporation (DART First State)",
+    "provider": "Des Moines Area Regional Transit Authority (DART)",
     "static_reference": [
-        1235
+        193
     ],
     "urls": {
-        "direct_download": "https://www.ridedart.com/gtfs/real-time/alerts",
+        "direct_download": "https://www.ridedart.com/gtfs/real-time/vehicle-positions",
         "authentication_type": 0,
         "license": "https://www.ridedart.com/open-data-policy-and-terms-use"
     }

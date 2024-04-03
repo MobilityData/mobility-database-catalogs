@@ -4,9 +4,9 @@
     "entity_type": [
         "sa"
     ],
-    "provider": "Delaware Transit Corporation (DART First State)",
+    "provider": "Des Moines Area Regional Transit Authority (DART)",
     "static_reference": [
-        1235
+        193
     ],
     "urls": {
         "direct_download": "https://www.ridedart.com/gtfs/real-time/alerts",

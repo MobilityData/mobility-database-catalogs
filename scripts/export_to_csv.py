@@ -100,6 +100,11 @@ for source_id, source in catalog.items():
     source[REDIRECT_ID] = ids_str
     source[REDIRECT_COMMENT] = comments_str
 
+    # Some fields in the JSON files have extraneous spaces at the beginning or end. It's just looking for trouble.
+    for key in source.keys():
+        if isinstance(source[key], str):
+            source[key] = source[key].strip()
+
     catalog[source_id] = source
 # Sort the catalog and convert it to a list
 catalog = list(dict(sorted(catalog.items())).values())

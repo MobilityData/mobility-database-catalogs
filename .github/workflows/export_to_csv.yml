@@ -56,7 +56,7 @@ jobs:
           name: sources.csv
           path: sources.csv
       - name: Set up and authorize Cloud
-        uses: google-github-actions/auth@v0
+        uses: google-github-actions/auth@v2
         with:
           credentials_json: ${{ secrets.ARCHIVE_DATASET_SA_KEY }}
       - name: Upload csv to Google Cloud Storage

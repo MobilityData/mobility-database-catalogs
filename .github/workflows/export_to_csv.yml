@@ -7,6 +7,11 @@ on:
       - 'catalogs/**'
 
   workflow_dispatch:
+    inputs:
+      upload_to_gcs:
+        description: 'true to upload the resulting csv to google so it becomes the official catalog csv'
+        required: false
+        default: 'true'
 
 jobs:
   export-to-csv:
@@ -40,9 +45,9 @@ jobs:
   store-csv:
     needs: [ export-to-csv ]
     runs-on: ubuntu-latest
-    # Don't upload to Google Cloud if it was triggered by hand.
-    # In that case the resulting sources.csv can be found in the build artifacts.
-    if: ${{ github.event_name != 'workflow_dispatch' }}
+    # The user can opt out of uploading the csv if triggered by hand.
+    # If triggered by a push, always upload.
+    if: ${{ github.event.upload_to_gcs == 'true' }}
     steps:
       - uses: actions/checkout@v2
       - name: Download the catalog of sources CSV artifact

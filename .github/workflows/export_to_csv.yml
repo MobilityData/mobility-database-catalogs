@@ -47,7 +47,7 @@ jobs:
     runs-on: ubuntu-latest
     # The user can opt out of uploading the csv if triggered by hand.
     # If triggered by a push, always upload.
-    if: ${{ github.event.upload_to_gcs == 'true' }}
+    if: ${{ github.event.inputs.upload_to_gcs == 'true' }}
     steps:
       - uses: actions/checkout@v2
       - name: Download the catalog of sources CSV artifact

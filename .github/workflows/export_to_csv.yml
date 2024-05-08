@@ -7,6 +7,11 @@ on:
       - 'catalogs/**'
 
   workflow_dispatch:
+    inputs:
+      upload_to_gcs:
+        description: 'true to upload the resulting csv to google so it becomes the official catalog csv'
+        required: false
+        default: 'true'
 
 jobs:
   export-to-csv:
@@ -40,9 +45,9 @@ jobs:
   store-csv:
     needs: [ export-to-csv ]
     runs-on: ubuntu-latest
-    # Don't upload to Google Cloud if it was triggered by hand.
-    # In that case the resulting sources.csv can be found in the build artifacts.
-    if: ${{ github.event_name != 'workflow_dispatch' }}
+    # The user can opt out of uploading the csv if triggered by hand.
+    # If triggered by a push, always upload.
+    if: ${{ github.event.inputs.upload_to_gcs == 'true' }}
     steps:
       - uses: actions/checkout@v2
       - name: Download the catalog of sources CSV artifact
@@ -51,12 +56,12 @@ jobs:
           name: sources.csv
           path: sources.csv
       - name: Set up and authorize Cloud
-        uses: google-github-actions/auth@v0
+        uses: google-github-actions/auth@v2
         with:
           credentials_json: ${{ secrets.ARCHIVE_DATASET_SA_KEY }}
       - name: Upload csv to Google Cloud Storage
         id: upload-csv
-        uses: google-github-actions/upload-cloud-storage@v0
+        uses: google-github-actions/upload-cloud-storage@v2
         with:
           path: sources.csv
           destination: mdb-csv
@@ -68,6 +73,7 @@ jobs:
         with:
           export-env: true # Export loaded secrets as environment variables
         env:
+          OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
           CREDENTIALS: "op://rbiv7rvkkrsdlpcrz3bmv7nmcu/ifkeehu5gzi7wy5ub5qvwkaire/credential"
 
       - name: Send a notification to mobility-feed-api

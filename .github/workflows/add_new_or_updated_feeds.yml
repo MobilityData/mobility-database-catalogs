@@ -28,6 +28,7 @@ jobs:
             echo "TODAYS_MONTH=$(date '+%m')" >> $GITHUB_ENV # Ex.: 07
             echo "TODAYS_YEAR=$(date '+%Y')" >> $GITHUB_ENV # Ex.: 2023
             echo "YESTERDAYS_DATE=$(date -d "yesterday" +"%m/%d/%Y")" >> $GITHUB_ENV # Ex.: 07/26/2023
+            echo "RUN_ID=$GITHUB_RUN_ID" >> $GITHUB_ENV 
 
       - name: Create branch name
         id: create_branch_name
@@ -36,7 +37,7 @@ jobs:
 
       - name: Load secrets from 1Password
         id: onepw_secrets
-        uses: 1password/load-secrets-action@v1.3.1
+        uses: 1password/load-secrets-action@v2.0.0
         with:
             export-env: true # Export loaded secrets as environment variables
         env:
@@ -121,11 +122,11 @@ jobs:
 
       - name: Post notification in Slack channel of update
         if: steps.process-csv.outputs.PYTHON_SCRIPT_ARGS != ''
-        uses: slackapi/slack-github-action@v1.25.0
+        uses: slackapi/slack-github-action@v1.26.0
         with:
           payload: |
             {
-              "channel": "G01BLNPU0M8",
+              "channel": "C072DF86VQB",
               "blocks": [
                 {
                   "type": "header",
@@ -157,11 +158,11 @@ jobs:
 
       - name: Post notification in Slack in case of failure
         if: failure()
-        uses: slackapi/slack-github-action@v1.25.0
+        uses: slackapi/slack-github-action@v1.26.0
         with:
           payload: |
             {
-              "channel": "G01BLNPU0M8",
+              "channel": "C072DF86VQB",
               "blocks": [
                 {
                   "type": "header",
@@ -182,7 +183,7 @@ jobs:
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": "*Open the action run:* https://github.com/MobilityData/mobility-database-catalogs/actions/runs/$GITHUB_RUN_ID"
+                    "text": "*Open the action run:* https://github.com/MobilityData/mobility-database-catalogs/actions/runs/${{ env.RUN_ID }}"
                   }
                 }
               ]

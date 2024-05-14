@@ -45,11 +45,7 @@ jobs:
             CREDENTIALS: "op://rbiv7rvkkrsdlpcrz3bmv7nmcu/ifkeehu5gzi7wy5ub5qvwkaire/credential"
             # The URL to obtain the csv file with the data of the google form. Taken from the "GiHub Actions — URLs" entry in 1password
             CSV_URL: "op://rbiv7rvkkrsdlpcrz3bmv7nmcu/qkn5esttmtojawglm4l6t2bqaa/al2gjfhiuddabkp7o26hszuvia"
-            SLACK_WEBHOOK_URL: "op://rbiv7rvkkrsdlpcrz3bmv7nmcu/Slack webhook URLs/internal-public-transit-support channel"
-
-    #   - name: Get swift version # just for verification, can leave commented out
-    #     run: swift --version
-    # Swift is installed by default on github runners, tested with v 5.8.1
+            SLACK_WEBHOOK_URL: "op://rbiv7rvkkrsdlpcrz3bmv7nmcu/Slack webhook URLs/rdpfgrmnbxqaelgi5oky3lryz4/internal-add-feeds"
 
       - name: Checkout repo
         id: checkout_repo

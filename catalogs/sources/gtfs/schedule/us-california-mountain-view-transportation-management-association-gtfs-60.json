@@ -21,7 +21,7 @@
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/mountainview-ca-us/mountainview-ca-us.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-mountain-view-transportation-management-association-gtfs-60.zip?alt=media"
-    }
+    },
     "redirect": [
         {
             "id": 2025

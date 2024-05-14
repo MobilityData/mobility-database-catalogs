@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2025,
+    "data_type": "gtfs",
+    "provider": "Mountain View Transportation Management Association (MVgo)",
+    "feed_contact_email": "https://mvgo.org/developers/",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Mountain View",
+        "bounding_box": {
+            "minimum_latitude": 37.387655512462,
+            "maximum_latitude": 37.4314288965063,
+            "minimum_longitude": -122.111623478335,
+            "maximum_longitude": -122.047760594783,
+            "extracted_on": "2024-05-14T17:15:22+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://mvgo.org/data/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-mountain-view-transportation-management-association-mvgo-gtfs-2025.zip?alt=media",
+        "license": "https://mvgo.org/developers/"
+    },
+    "redirect": []
+}

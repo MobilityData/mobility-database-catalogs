@@ -77,7 +77,7 @@ jobs:
 
       - name: Setup Python
         if: steps.process-csv.outputs.PYTHON_SCRIPT_ARGS != ''
-        uses: actions/setup-python@v4.7.0
+        uses: actions/setup-python@v5.1.9
         with:
           python-version: '3.11' # install the python version needed
 

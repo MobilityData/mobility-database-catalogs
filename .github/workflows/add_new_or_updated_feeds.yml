@@ -28,6 +28,7 @@ jobs:
             echo "TODAYS_MONTH=$(date '+%m')" >> $GITHUB_ENV # Ex.: 07
             echo "TODAYS_YEAR=$(date '+%Y')" >> $GITHUB_ENV # Ex.: 2023
             echo "YESTERDAYS_DATE=$(date -d "yesterday" +"%m/%d/%Y")" >> $GITHUB_ENV # Ex.: 07/26/2023
+            echo "RUN_ID=$GITHUB_RUN_ID" >> $GITHUB_ENV 
 
       - name: Create branch name
         id: create_branch_name
@@ -36,7 +37,7 @@ jobs:
 
       - name: Load secrets from 1Password
         id: onepw_secrets
-        uses: 1password/load-secrets-action@v1.3.1
+        uses: 1password/load-secrets-action@v2.0.0
         with:
             export-env: true # Export loaded secrets as environment variables
         env:
@@ -44,11 +45,7 @@ jobs:
             CREDENTIALS: "op://rbiv7rvkkrsdlpcrz3bmv7nmcu/ifkeehu5gzi7wy5ub5qvwkaire/credential"
             # The URL to obtain the csv file with the data of the google form. Taken from the "GiHub Actions — URLs" entry in 1password
             CSV_URL: "op://rbiv7rvkkrsdlpcrz3bmv7nmcu/qkn5esttmtojawglm4l6t2bqaa/al2gjfhiuddabkp7o26hszuvia"
-            SLACK_WEBHOOK_URL: "op://rbiv7rvkkrsdlpcrz3bmv7nmcu/Slack webhook URLs/internal-public-transit-support channel"
-
-    #   - name: Get swift version # just for verification, can leave commented out
-    #     run: swift --version
-    # Swift is installed by default on github runners, tested with v 5.8.1
+            SLACK_WEBHOOK_URL: "op://rbiv7rvkkrsdlpcrz3bmv7nmcu/Slack webhook URLs/rdpfgrmnbxqaelgi5oky3lryz4/internal-add-feeds"
 
       - name: Checkout repo
         id: checkout_repo
@@ -80,7 +77,7 @@ jobs:
 
       - name: Setup Python
         if: steps.process-csv.outputs.PYTHON_SCRIPT_ARGS != ''
-        uses: actions/setup-python@v4.7.0
+        uses: actions/setup-python@v5.1.0
         with:
           python-version: '3.11' # install the python version needed
 
@@ -121,11 +118,11 @@ jobs:
 
       - name: Post notification in Slack channel of update
         if: steps.process-csv.outputs.PYTHON_SCRIPT_ARGS != ''
-        uses: slackapi/slack-github-action@v1.25.0
+        uses: slackapi/slack-github-action@v1.26.0
         with:
           payload: |
             {
-              "channel": "G01BLNPU0M8",
+              "channel": "C072DF86VQB",
               "blocks": [
                 {
                   "type": "header",
@@ -157,11 +154,11 @@ jobs:
 
       - name: Post notification in Slack in case of failure
         if: failure()
-        uses: slackapi/slack-github-action@v1.25.0
+        uses: slackapi/slack-github-action@v1.26.0
         with:
           payload: |
             {
-              "channel": "G01BLNPU0M8",
+              "channel": "C072DF86VQB",
               "blocks": [
                 {
                   "type": "header",
@@ -182,7 +179,7 @@ jobs:
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": "*Open the action run:* https://github.com/MobilityData/mobility-database-catalogs/actions/runs/$GITHUB_RUN_ID"
+                    "text": "*Open the action run:* https://github.com/MobilityData/mobility-database-catalogs/actions/runs/${{ env.RUN_ID }}"
                   }
                 }
               ]

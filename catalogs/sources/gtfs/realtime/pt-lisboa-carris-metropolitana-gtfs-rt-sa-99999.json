@@ -6,7 +6,7 @@
     ],
     "provider": "Carris Metropolitana",
     "static_reference": [
-        1900
+        99999
     ],
     "urls": {
         "direct_download": "https://api.carrismetropolitana.pt/alerts.pb",

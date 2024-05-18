@@ -21,9 +21,5 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-lisboa-carris-metropolitana-gtfs-1900.zip?alt=media",
         "license": "https://github.com/carrismetropolitana/gtfs"
     },
-    "redirect": [
-            {
-                "id": 99999
-            }
-    ]
+    "redirect": []
 }

@@ -9,7 +9,7 @@
         99999
     ],
     "urls": {
-        "direct_download": "https://api.carrismetropolitana.pt/alerts.pb",
+        "direct_download": "https://api.carrismetropolitana.pt/vehicles.pb",
         "authentication_type": 0
     }
 }

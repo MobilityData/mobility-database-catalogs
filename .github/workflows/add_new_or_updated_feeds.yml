@@ -145,6 +145,13 @@ jobs:
                     "type": "mrkdwn",
                     "text": "New branch name: `${{ steps.create_branch_name.outputs.BRANCH }}`\n\n*Open the new branch:* https://github.com/MobilityData/mobility-database-catalogs/tree/${{ steps.create_branch_name.outputs.BRANCH }}"
                   }
+                },
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "See the source document here: https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit#gid=2061813733"
+                  }
                 }
               ]
             }
@@ -180,6 +187,13 @@ jobs:
                   "text": {
                     "type": "mrkdwn",
                     "text": "*Open the action run:* https://github.com/MobilityData/mobility-database-catalogs/actions/runs/${{ env.RUN_ID }}"
+                  }
+                },
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "See the source document here: https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit#gid=2061813733"
                   }
                 }
               ]

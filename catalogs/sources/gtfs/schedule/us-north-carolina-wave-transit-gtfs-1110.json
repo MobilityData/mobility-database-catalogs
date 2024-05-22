@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Wave Transit",
     "status": "active",
+    "name": "fixed route",
     "location": {
         "country_code": "US",
         "subdivision_name": "North Carolina",

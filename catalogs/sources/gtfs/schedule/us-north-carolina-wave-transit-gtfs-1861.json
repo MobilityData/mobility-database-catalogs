@@ -6,6 +6,7 @@
     "features": [
         "fares-v1"
     ],
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "North Carolina",
@@ -20,6 +21,14 @@
     },
     "urls": {
         "direct_download": "https://drive.google.com/u/0/uc?id=18zwweT64NI5O_goGVc_h-OGTTShfiacG&export=download",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-north-carolina-wave-transit-gtfs-1861.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": 1110
+        }
+    ]
+    
+    
 }

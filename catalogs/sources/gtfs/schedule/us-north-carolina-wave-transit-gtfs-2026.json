@@ -20,7 +20,6 @@
         "direct_download": "https://www.wavetransit.com/gtransit/google_transit_uncw.zip",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-north-carolina-wave-transit-gtfs-2026.zip?alt=media",
-        "license": "INVALID_OR_NO_URL_PROVIDED"
     },
     "redirect": []
 }

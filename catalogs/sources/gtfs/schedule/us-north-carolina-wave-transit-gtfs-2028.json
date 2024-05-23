@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 2028,
+    "data_type": "gtfs",
+    "provider": "Wave Transit",
+    "name": "UNCW Seahawk Shuttle",
+    "feed_contact_email": "planning@wavetransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "North Carolina",
+        "municipality": "Wilmington",
+        "bounding_box": {
+            "minimum_latitude": 34.1427973,
+            "maximum_latitude": 34.25147305,
+            "minimum_longitude": -77.89130328,
+            "maximum_longitude": -77.8608014,
+            "extracted_on": "2024-05-23T03:57:55+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.wavetransit.com/gtransit/google_transit_uncw.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-north-carolina-wave-transit-gtfs-2028.zip?alt=media",
+        "license": "INVALID_OR_NO_URL_PROVIDED"
+    },
+    "redirect": []
+}

@@ -190,7 +190,7 @@ if CommandLine.argc == 5 {
 
             // Check if license URL is valid
             let urlPresent : Bool = isURLPresent(in: license_url)
-            if ( urlPresent == false && license_url.count > 0 ) { license_url = "" }
+            if ( urlPresent == false && license_url.count > 0 ) { license_url = "\"\"" }
 
             let dateFromCurrentLine : String = extractDate(from: timestamp, usingGREP: dateFormatAsRegex, desiredDateFormat: dateFormatDesiredArg)
 

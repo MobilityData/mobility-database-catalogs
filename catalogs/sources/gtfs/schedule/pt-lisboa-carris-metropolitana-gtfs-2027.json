@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 1900,
+    "mdb_source_id": 2027,
     "data_type": "gtfs",
     "provider": "Carris Metropolitana",
     "features": [
@@ -18,7 +18,7 @@
     },
     "urls": {
         "direct_download": "https://api.carrismetropolitana.pt/gtfs",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-lisboa-carris-metropolitana-gtfs-1900.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-lisboa-carris-metropolitana-gtfs-2027.zip?alt=media",
         "license": "https://github.com/carrismetropolitana/gtfs"
     },
     "redirect": []

@@ -2,8 +2,8 @@ name: Add new or updated feeds from Google Sheets/Form
 
 on:
     workflow_dispatch:
-    schedule:
-      - cron: '55 3 * * *' # Run every night
+#    schedule:
+#      - cron: '55 3 * * *' # Run every night
 
 env:
     DATE_FORMAT: "[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}|[0-9]{4}-[0-9]{2}-[0-9]{2}" # this is the format we need to compare dates between the CSV and the local system.

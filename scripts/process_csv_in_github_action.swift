@@ -62,8 +62,8 @@ enum column : Int, CaseIterable {
     case gtfsschedulefeatures    = 23 // X
     case emptyColumn2            = 24 // Y
     case gtfsschedulestatus      = 25 // Z
-    case gtfsrealtimestatus      = 26 // Z
-    case gtfsredirect            = 36 // AA - NEW
+    case gtfsrealtimestatus      = 26 // AA
+    case gtfsredirect            = 36 // AK - NEW
     case dataproduceremail       = 27 // AB
     case officialProducer        = 28 // AC
     case dataproduceremail2      = 29 // AD - NEW
@@ -190,7 +190,7 @@ if CommandLine.argc == 5 {
 
             // Check if license URL is valid
             let urlPresent : Bool = isURLPresent(in: license_url)
-            if ( urlPresent == false && license_url.count > 0 ) { license_url = "INVALID_OR_NO_URL_PROVIDED" }
+            if ( urlPresent == false && license_url.count > 0 ) { license_url = "\"\"" }
 
             let dateFromCurrentLine : String = extractDate(from: timestamp, usingGREP: dateFormatAsRegex, desiredDateFormat: dateFormatDesiredArg)
 

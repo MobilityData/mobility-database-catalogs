@@ -2,8 +2,8 @@ name: Add new or updated feeds from Google Sheets/Form
 
 on:
     workflow_dispatch:
-    schedule:
-      - cron: '55 3 * * *' # Run every night
+#    schedule:
+#      - cron: '55 3 * * *' # Run every night
 
 env:
     DATE_FORMAT: "[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}|[0-9]{4}-[0-9]{2}-[0-9]{2}" # this is the format we need to compare dates between the CSV and the local system.
@@ -77,7 +77,7 @@ jobs:
 
       - name: Setup Python
         if: steps.process-csv.outputs.PYTHON_SCRIPT_ARGS != ''
-        uses: actions/setup-python@v5.1.9
+        uses: actions/setup-python@v5.1.0
         with:
           python-version: '3.11' # install the python version needed
 
@@ -145,6 +145,13 @@ jobs:
                     "type": "mrkdwn",
                     "text": "New branch name: `${{ steps.create_branch_name.outputs.BRANCH }}`\n\n*Open the new branch:* https://github.com/MobilityData/mobility-database-catalogs/tree/${{ steps.create_branch_name.outputs.BRANCH }}"
                   }
+                },
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "See the source document here: https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit#gid=2061813733"
+                  }
                 }
               ]
             }
@@ -180,6 +187,13 @@ jobs:
                   "text": {
                     "type": "mrkdwn",
                     "text": "*Open the action run:* https://github.com/MobilityData/mobility-database-catalogs/actions/runs/${{ env.RUN_ID }}"
+                  }
+                },
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "See the source document here: https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit#gid=2061813733"
                   }
                 }
               ]

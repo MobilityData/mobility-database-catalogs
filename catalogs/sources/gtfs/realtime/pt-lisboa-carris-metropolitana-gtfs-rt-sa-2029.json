@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 2029,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Carris Metropolitana",
+    "static_reference": [
+        2027
+    ],
+    "urls": {
+        "direct_download": "https://api.carrismetropolitana.pt/alerts.pb",
+        "authentication_type": 0
+    }
+}

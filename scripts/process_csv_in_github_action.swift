@@ -47,6 +47,8 @@ struct defaults {
     let date                 : String = "01/01/1970"
     let toBeProvided         : String = "TO_BE_PROVIDED"
     let emptyValue           : String = "\"\""
+    let csvLineSeparator     : String = "\n"
+    let csvColumnSeparator   : String = ","
 }
 
 struct issueType {
@@ -86,9 +88,6 @@ let isInDebugMode : Bool = false
 
 if CommandLine.argc == 5 {
     
-    let csvLineSeparator     : String = "\n"
-    let csvColumnSeparator   : String = ","
-    
     let csvURLStringArg      : String = arguments[1] // the first argument [0] is the name of the script, we can ignore in this context.
     let dateToFind           : String = arguments[2]
     let dateFormatGREPArg    : String = arguments[3]
@@ -104,9 +103,9 @@ if CommandLine.argc == 5 {
     
     let csvData : String = try String(contentsOf: csvURLasURL, encoding:.utf8)
     
-    var csvLines : [String] = csvData.components(separatedBy: csvLineSeparator) ; csvLines.removeFirst(1) ; var csvArray : [[String]] = []
+    var csvLines : [String] = csvData.components(separatedBy: defaults.csvLineSeparator) ; csvLines.removeFirst(1) ; var csvArray : [[String]] = []
     for currentLine : String in csvLines {
-        if currentLine.count > 5 { csvArray.append(currentLine.components(separatedBy: csvColumnSeparator)) }
+        if currentLine.count > 5 { csvArray.append(currentLine.components(separatedBy: defaults.csvColumnSeparator)) }
     }
     
     if isInDebugMode { print("\n\n\t\tcsvArray (\(csvArray.count) item(s)) : \(csvArray)") }

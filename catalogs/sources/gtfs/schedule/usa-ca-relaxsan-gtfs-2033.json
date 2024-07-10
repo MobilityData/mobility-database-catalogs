@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2033,
+    "data_type": "gtfs",
+    "provider": "reLAXsan",
+    "feed_contact_email": "contact@gorelaxsan.com",
+    "location": {
+        "country_code": "USA",
+        "subdivision_name": "CA",
+        "municipality": "San Diego",
+        "bounding_box": {
+            "minimum_latitude": 32.75410560838731,
+            "maximum_latitude": 33.94489242140907,
+            "minimum_longitude": -118.40735755824412,
+            "maximum_longitude": -117.19866795031764,
+            "extracted_on": "2024-07-10T13:23:58+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://relaxsan.s3.amazonaws.com/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/usa-ca-relaxsan-gtfs-2033.zip?alt=media"
+    },
+    "redirect": []
+}

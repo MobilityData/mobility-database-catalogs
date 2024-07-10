@@ -3,38 +3,6 @@ import Foundation
     import FoundationNetworking
 #endif
 
-enum oldColumn : Int, CaseIterable {
-    case timestamp               = 0 // A
-    case provider                = 1 // B
-    case regioncity              = 2 // C
-    case currenturl              = 3 // D
-    case updatednewsourceurl     = 4 // E
-    case datatype                = 5 // F
-    case issue                   = 6 // G
-    case downloadurl             = 7 // H
-    case country                 = 8 // I
-    case subdivision_name        = 9 // J
-    case municipality            = 10 // K
-    case name                    = 11 // L
-    case yournameorg             = 12 // M
-    case license_url             = 13 // N
-    case tripupdatesurl          = 14 // O
-    case servicealertsurl        = 15 // P
-    case genunknownrturl         = 16 // Q
-    case authentication_type     = 17 // R
-    case authentication_info_url = 18 // S
-    case api_key_parameter_name  = 19 // T
-    case note                    = 20 // U
-    case gtfsschedulefeatures    = 21 // W
-    case gtfsschedulestatus      = 22 // Y
-    case gtfsrealtimestatus      = 23 // Z
-    case youremail               = 24 // AA
-    case dataproduceremail       = 25 // AB
-    case realtimefeatures        = 26 // AC
-    case isocountrycode          = 27 // AB
-    case feedupdatestatus        = 28 // AC
-}
-
 enum column : Int, CaseIterable {
     case submissionType          = 0 // A
     case timestamp               = 1 // B

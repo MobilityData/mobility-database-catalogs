@@ -46,6 +46,7 @@ enum column : Int, CaseIterable {
 struct defaults {
     let date                 : String = "01/01/1970"
     let toBeProvided         : String = "TO_BE_PROVIDED"
+    let emptyValue           : String = "\"\""
 }
 
 struct issueType {
@@ -155,13 +156,13 @@ if CommandLine.argc == 5 {
             let finalProvider : String = provider.isEmpty ? "\(defaults.toBeProvided) (\(lastKnownProvider) ?)" : provider
 
             // Create redirects array
-            var redirects_array : String = "\"\"" // default value, the entire argument will be removed from the output.
+            var redirects_array : String = defaults.emptyValue // default value, the entire argument will be removed from the output.
             if redirects.count > 4 { redirects_array = "{\'id\': \(redirects), \'comment\': \'\'}" }
             if isInDebugMode { print("\t\tredirects_array : \(redirects_array)") }
 
             // Check if license URL is valid
             let urlPresent : Bool = isURLPresent(in: license_url)
-            if ( urlPresent == false && license_url.count > 0 ) { license_url = "\"\"" }
+            if ( urlPresent == false && license_url.count > 0 ) { license_url = defaults.emptyValue }
 
             let dateFromCurrentLine : String = extractDate(from: timestamp, usingGREP: dateFormatAsRegex, desiredDateFormat: dateFormatDesiredArg)
 
@@ -169,9 +170,9 @@ if CommandLine.argc == 5 {
 
             if isInDebugMode { print("\t\tupdatednewsourceurl || downloadURL : \(updatednewsourceurl) (\(updatednewsourceurl.count)) \(downloadURL) (\(downloadURL.count))") }
 
-            var scheduleFinalURLtoUse : String = downloadURL ; if downloadURL.count < 4 { scheduleFinalURLtoUse = "\"\"" }
+            var scheduleFinalURLtoUse : String = downloadURL ; if downloadURL.count < 4 { scheduleFinalURLtoUse = defaults.emptyValue }
 
-            var realtimeFinalURLtoUse : String = downloadURL ; if downloadURL.count < 4 { realtimeFinalURLtoUse = "\"\"" }
+            var realtimeFinalURLtoUse : String = downloadURL ; if downloadURL.count < 4 { realtimeFinalURLtoUse = defaults.emptyValue }
 
             if isInDebugMode { print("\t\tscheduleFinalURLtoUse || realtimeFinalURLtoUse : \(scheduleFinalURLtoUse) (\(scheduleFinalURLtoUse.count)) \(realtimeFinalURLtoUse) (\(realtimeFinalURLtoUse.count))") }
             

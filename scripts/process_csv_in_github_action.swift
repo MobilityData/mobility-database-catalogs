@@ -279,6 +279,21 @@ if CommandLine.argc == 5 {
 
 // MARK: - FUNCTIONS
 
+/// Extracts a date from a string and formats it according to a desired format.
+///
+/// - Parameters:
+///   - theDateToConvert: The string containing the date to be extracted.
+///   - dateFormatAsGREP: A regular expression object defining the format of the date in the input string. This uses Apple's `Regex` type for pattern matching.
+///   - desiredDateFormat: The desired format for the extracted date. This follows the standard `DateFormatter` format string syntax (e.g., "yyyy-MM-dd").
+/// - Returns:
+///   A String containing the extracted and formatted date string. If no match is found or the formatting fails, it returns the default date string (implementation detail referenced by `defaults.date`).
+///
+/// This function attempts to extract a date from the provided string using the specified regular expression.
+///   - If a match is found, it extracts the matched substring and attempts to convert it to a `Date` object using the desired format string.
+///   - If the conversion is successful, the function formats the `Date` object using the desired format and returns the resulting string.
+///   - If no match is found or the conversion fails, the function returns the default date string.
+///
+/// - Note: The `defaults.date` property is not explicitly defined here. It's assumed to be a way to access a default date string used in case of errors. Consider clarifying its source and purpose in the actual implementation.
 func extractDate(from theDateToConvert: String, usingGREP dateFormatAsGREP: Regex<AnyRegexOutput>, desiredDateFormat desiredFormat: String) -> String {
     if let match : Regex<Regex<AnyRegexOutput>.RegexOutput>.Match = theDateToConvert.firstMatch(of: dateFormatAsGREP) { 
         // find first match
@@ -306,6 +321,18 @@ func authenticationType(for authString: String) -> Int {
     return 0
 }
 
+/// Generates a list of real-time data codes based on the provided data type string.
+///
+/// - Parameter theDataType: A string representing the desired real-time data type.
+/// - Returns:
+///   An array of strings containing the corresponding real-time data codes. If no match is found, it returns a default array containing the trip updates code.
+///
+/// This function checks the provided data type string against predefined strings representing real-time data entities.
+///   - If a match is found (e.g., "vehiclePositions"), the corresponding real-time data code (e.g., "realtimeEntityTypes.vehiclePositions") is added to the return array.
+///   - The function supports checking for multiple data types using string containment checks.
+///   - If no match is found for any of the predefined data types, the function adds the default "tripUpdates" code to the return array.
+///
+/// This function assumes that `realtimeEntityTypesString` and `realtimeEntityTypes` are constants containing predefined strings for real-time data entities and their corresponding codes.
 func realtimeCode(for theDataType: String) -> [String] {
     var returnArray : [String] = []
     if theDataType.contains(realtimeEntityTypesString.vehiclePositions) { returnArray.append(realtimeEntityTypes.vehiclePositions)  }
@@ -315,6 +342,18 @@ func realtimeCode(for theDataType: String) -> [String] {
     return returnArray
 }
 
+/// Checks if a string contains a URL
+///
+/// - Parameter string: The string to search for a URL.
+/// - Returns:
+///   `true` if a URL is found in the string, otherwise `false`.
+///
+/// This function uses a regular expression to search for a valid URL pattern within the provided string. The supported URL format includes:
+///   * http or https protocol
+///   * Optional www subdomain
+///   * Alphanumeric characters, hyphens, underscores, at signs, percent signs, periods, plus signs, tildes, and equal signs (up to 256 characters)
+///   * Domain name with alphanumeric characters, parentheses, and periods (up to 6 characters)
+///   * Optional path and query string components
 func isURLPresent(in string: String) -> Bool {
     let pattern : String = #"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)"#
     let range: Range<String.Index>? = string.range(of: pattern, options: .regularExpression)
@@ -322,6 +361,21 @@ func isURLPresent(in string: String) -> Bool {
     return false
 }
 
+/// Removes empty parameter definitions from a Python script output string.
+///
+/// - Parameter outputString: The string containing the Python script output.
+/// - Returns:
+///   A new string with empty parameter definitions removed. The original string remains unmodified.
+///
+/// This function iterates through a predefined list of known Python script function parameter names (see `everyPythonScriptFunctionsParameterNames`).
+///   - For each parameter name, it constructs two search strings:
+///     - One targeting empty parameters with a comma before and triple quotes after the parameter name. (", parameterName"""")
+///     - Another targeting empty parameters with the parameter name followed by triple quotes and a comma. (parameterName"""",)
+///   - The function replaces all occurrences of these search strings with an empty string, effectively removing the empty parameter definitions.
+///   - It iterates through all parameter names to handle potential occurrences of multiple empty parameters.
+///
+/// This function assumes `everyPythonScriptFunctionsParameterNames` is a constant containing a list of valid Python script function parameter names.
+///   - Modifications to the original string are done on a copy to avoid unintended side effects.
 func removeEmptyPythonParameters(in outputString: String) -> String {
     var returnString : String = outputString
     let comma : String = ","

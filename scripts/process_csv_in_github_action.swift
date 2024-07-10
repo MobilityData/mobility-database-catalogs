@@ -43,35 +43,35 @@ enum column : Int, CaseIterable {
     case feedupdatestatus        = 35 // AJ
 }
 
-enum defaults: String {
-    case date = "01/01/1970"
-    case toBeProvided = "TO_BE_PROVIDED"
+struct defaults {
+    let date                 : String = "01/01/1970"
+    let toBeProvided         : String = "TO_BE_PROVIDED"
 }
 
-enum issueType: String {
-    case isAddNewFeed = "New feed"
-    case isAddNewSource = "New source"
-    case isUpdateExistingFeed = "Source update"
-    case isToRemoveFeed = "removed"
+struct issueType {
+    let isAddNewFeed         : String = "New feed"
+    let isAddNewSource       : String = "New source"
+    let isUpdateExistingFeed : String = "Source update"
+    let isToRemoveFeed       : String = "removed"
 }
 
-enum dataType: String {
-    case schedule = "Schedule"
-    case realtime = "Realtime"
+struct dataType {
+    let schedule             : String = "Schedule"
+    let realtime             : String = "Realtime"
 }
 
-enum realtimeEntityTypesString: String {
-    case vehiclePositions = "Vehicle Positions"
-    case tripUpdates = "Trip Updates"
-    case serviceAlerts = "Service Alerts"
-    case unknown = "general / unknown"
+struct realtimeEntityTypesString {
+    let vehiclePositions     : String = "Vehicle Positions"
+    let tripUpdates          : String = "Trip Updates"
+    let serviceAlerts        : String = "Service Alerts"
+    let unknown              : String = "general / unknown"
 }
 
-enum realtimeEntityTypes: String {
-    case vehiclePositions = "vp"
-    case tripUpdates = "tu"
-    case serviceAlerts = "sa"
-    case unknown = "gu"
+struct realtimeEntityTypes {
+    let vehiclePositions     : String = "vp"
+    let tripUpdates          : String = "tu"
+    let serviceAlerts        : String = "sa"
+    let unknown              : String = "gu"
 }
 
 // Will be used to filter empty parameters from this script's output
@@ -111,7 +111,7 @@ if CommandLine.argc == 5 {
     if isInDebugMode { print("\n\n\t\tcsvArray (\(csvArray.count) item(s)) : \(csvArray)") }
     
     var PYTHON_SCRIPT_OUTPUT : String = ""
-    var lastKnownProvider : String = defaults.toBeProvided.rawValue
+    var lastKnownProvider : String = defaults.toBeProvided
     let dateFormatAsRegex : Regex<AnyRegexOutput> = try Regex(dateFormatGREPArg)
 
     for csvArrayColumn : [String] in csvArray {
@@ -152,7 +152,7 @@ if CommandLine.argc == 5 {
             
             // Check if provider is empty, suggest last known if true.
             if provider.count > 0 { lastKnownProvider = provider }
-            let finalProvider : String = provider.isEmpty ? "\(defaults.toBeProvided.rawValue) (\(lastKnownProvider) ?)" : provider
+            let finalProvider : String = provider.isEmpty ? "\(defaults.toBeProvided) (\(lastKnownProvider) ?)" : provider
 
             // Create redirects array
             var redirects_array : String = "\"\"" // default value, the entire argument will be removed from the output.
@@ -178,15 +178,15 @@ if CommandLine.argc == 5 {
             // if dateFromCurrentLine == dateToFind { // ...the row has been added on the date we're looking for, process it.
                 // if isInDebugMode { print("Found a valid date...") }
                 
-                if issue.contains(issueType.isAddNewFeed.rawValue) || issue.contains(issueType.isAddNewSource.rawValue) { // add new feed
+                if issue.contains(issueType.isAddNewFeed) || issue.contains(issueType.isAddNewSource) { // add new feed
                     
-                    if datatype.contains(dataType.schedule.rawValue) { // add_gtfs_schedule_source
+                    if datatype.contains(dataType.schedule) { // add_gtfs_schedule_source
 
                         let authType : Int = authenticationType(for: authentication_type)
 
                         PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_schedule_source(provider=\"\(finalProvider)\", country_code=\"\(country)\", direct_download_url=\"\(scheduleFinalURLtoUse)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", subdivision_name=\"\(subdivision_name)\", municipality=\"\(municipality)\", license_url=\"\(license_url)\", name=\"\(name)\", status=\"\(gtfsschedulestatus)\", features=\"\(gtfsschedulefeatures)\", feed_contact_email=\"\(feed_contact_email)\", redirects=\"\(redirects_array)\")"
                         
-                    } else if datatype.contains(dataType.realtime.rawValue) { // add_gtfs_realtime_source
+                    } else if datatype.contains(dataType.realtime) { // add_gtfs_realtime_source
                         // Emma: entity_type matches the realtime Data type options of Vehicle Positions, Trip Updates, or Service Alerts. If one of those three are selected, add it. If not, omit it.
                         
                         let authType : Int = authenticationType(for: authentication_type)
@@ -198,15 +198,15 @@ if CommandLine.argc == 5 {
                         
                     }
                     
-                } else if issue.contains(issueType.isUpdateExistingFeed.rawValue) { // update existing feed
+                } else if issue.contains(issueType.isUpdateExistingFeed) { // update existing feed
                     
-                    if datatype.contains(dataType.schedule.rawValue) { // update_gtfs_schedule_source
+                    if datatype.contains(dataType.schedule) { // update_gtfs_schedule_source
                         
                         let authType : Int = authenticationType(for: authentication_type)
 
                         PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_schedule_source(mdb_source_id=\(old_mbd_ID), provider=\"\(finalProvider)\", name=\"\(name)\", country_code=\"\(country)\", subdivision_name=\"\(subdivision_name)\", municipality=\"\(municipality)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", status=\"\(gtfsschedulestatus)\", features=\"\(gtfsschedulefeatures)\", feed_contact_email=\"\(feed_contact_email)\", redirects=\"\(redirects_array)\")"
                         
-                    } else if datatype.contains(dataType.realtime.rawValue) { // update_gtfs_realtime_source
+                    } else if datatype.contains(dataType.realtime) { // update_gtfs_realtime_source
                     
                         let authType : Int = authenticationType(for: authentication_type)
                         let realtimecode : Array = realtimeCode(for:datatype)
@@ -215,15 +215,15 @@ if CommandLine.argc == 5 {
                         PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_realtime_source(mdb_source_id=\(old_mbd_ID), entity_type=[\"\(realtimecodeString)\"], provider=\"\(finalProvider)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", name=\"\(name)\", note=\"\(note)\", status=\"\(gtfsrealtimestatus)\", features=\"\(realtimefeatures)\", feed_contact_email=\"\(feed_contact_email)\", redirects=\"\(redirects_array)\")"
                     }
                     
-                }  else if issue.contains(issueType.isToRemoveFeed.rawValue) { // remove feed
+                }  else if issue.contains(issueType.isToRemoveFeed) { // remove feed
                     
-                    if datatype.contains(dataType.schedule.rawValue) { // update_gtfs_schedule_source
+                    if datatype.contains(dataType.schedule) { // update_gtfs_schedule_source
                         
                         let authType : Int = authenticationType(for: authentication_type)
 
                         PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_schedule_source(mdb_source_id=\(old_mbd_ID), provider=\"\(finalProvider)\", name=\"\"**** issueed for removal ****\"\", country_code=\"\(country)\", subdivision_name=\"\(subdivision_name)\", municipality=\"\(municipality)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", status=\"\(gtfsschedulestatus)\", features=\"\(gtfsschedulefeatures)\", feed_contact_email=\"\(feed_contact_email)\", redirects=\"\(redirects_array)\")"
                         
-                    } else if datatype.contains(dataType.realtime.rawValue) { // update_gtfs_realtime_source
+                    } else if datatype.contains(dataType.realtime) { // update_gtfs_realtime_source
 
                         let authType : Int = authenticationType(for: authentication_type)
                         let realtimecode : Array = realtimeCode(for:datatype)
@@ -235,12 +235,12 @@ if CommandLine.argc == 5 {
                     
                 } else { // ... assume this is a new feed by default :: add_gtfs_schedule_source
 
-                    if datatype.contains(dataType.schedule.rawValue) { // add_gtfs_schedule_source
+                    if datatype.contains(dataType.schedule) { // add_gtfs_schedule_source
                         
                         let authType : Int = authenticationType(for: authentication_type)
                         PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_schedule_source(provider=\"\(finalProvider)\", country_code=\"\(country)\", direct_download_url=\"\(scheduleFinalURLtoUse)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", subdivision_name=\"\(subdivision_name)\", municipality=\"\(municipality)\", license_url=\"\(license_url)\", name=\"\(name)\", status=\"\(gtfsschedulestatus)\", features=\"\(gtfsschedulefeatures)\", feed_contact_email=\"\(feed_contact_email)\", redirects=\"\(redirects_array)\")"
                         
-                    } else if datatype.contains(dataType.realtime.rawValue) { // add_gtfs_schedule_source
+                    } else if datatype.contains(dataType.realtime) { // add_gtfs_schedule_source
 
                         let authType : Int = authenticationType(for: authentication_type)
                         let realtimecode : Array = realtimeCode(for: datatype)
@@ -289,13 +289,13 @@ func extractDate(from theDateToConvert: String, usingGREP dateFormatAsGREP: Rege
         let date : Date? = dateFormatter.date(from: matchOutput)
         
         // default date if formatter fails, otherwise return correctly formatted date
-        var returnDate : String = defaults.date.rawValue
+        var returnDate : String = defaults.date
         if date != nil { returnDate = dateFormatter.string(from: date!) }
         return returnDate
     }
     
     // return default date
-    return defaults.date.rawValue
+    return defaults.date
 }
 
 func authenticationType(for authString: String) -> Int {
@@ -307,10 +307,10 @@ func authenticationType(for authString: String) -> Int {
 
 func realtimeCode(for theDataType: String) -> [String] {
     var returnArray : [String] = []
-    if theDataType.contains(realtimeEntityTypesString.vehiclePositions.rawValue) { returnArray.append(realtimeEntityTypes.vehiclePositions.rawValue)  }
-    if theDataType.contains(realtimeEntityTypesString.tripUpdates.rawValue) { returnArray.append(realtimeEntityTypes.tripUpdates.rawValue) }
-    if theDataType.contains(realtimeEntityTypesString.serviceAlerts.rawValue) { returnArray.append(realtimeEntityTypes.serviceAlerts.rawValue) }
-    if returnArray.count < 1 { returnArray.append(realtimeEntityTypes.tripUpdates.rawValue) }
+    if theDataType.contains(realtimeEntityTypesString.vehiclePositions) { returnArray.append(realtimeEntityTypes.vehiclePositions)  }
+    if theDataType.contains(realtimeEntityTypesString.tripUpdates) { returnArray.append(realtimeEntityTypes.tripUpdates) }
+    if theDataType.contains(realtimeEntityTypesString.serviceAlerts) { returnArray.append(realtimeEntityTypes.serviceAlerts) }
+    if returnArray.count < 1 { returnArray.append(realtimeEntityTypes.tripUpdates) }
     return returnArray
 }
 

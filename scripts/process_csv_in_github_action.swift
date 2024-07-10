@@ -81,7 +81,8 @@ enum defaults: String {
 }
 
 enum issueType: String {
-    case isAddNewFeed = "New source"
+    case isAddNewFeed = "New feed"
+    case isAddNewSource = "New source"
     case isUpdateExistingFeed = "Source update"
     case isToRemoveFeed = "removed"
 }
@@ -109,6 +110,7 @@ enum realtimeEntityTypes: String {
 let everyPythonScriptFunctionsParameterNames : [String] = ["provider=", "entity_type=", "country_code=", "authentication_type=", "authentication_info_url=", "api_key_parameter_name=", "subdivision_name=", "municipality=", "country_code=", "license_url=", "name=", "status=", "features=", "note=", "feed_contact_email=", "redirects="]
 
 let arguments : [String] = CommandLine.arguments
+// let arguments : [String] = ["scriptname", "https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/gviz/tq?tqx=out:csv;outFileName:data&sheet=%5BCLEANED%5D%20For%20import", "07/09/2024", "[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}|[0-9]{4}-[0-9]{2}-[0-9]{2}", "MM/dd/yyyy"]
 
 // Set to false for production use
 let isInDebugMode : Bool = false
@@ -138,47 +140,47 @@ if CommandLine.argc == 5 {
         if currentLine.count > 5 { csvArray.append(currentLine.components(separatedBy: csvColumnSeparator)) }
     }
 
-    if isInDebugMode { print("csvArray : \(csvArray)") }
+    if isInDebugMode { print("\n\n\t\tcsvArray (\(csvArray.count) item(s)) : \(csvArray)") }
     
     var PYTHON_SCRIPT_OUTPUT : String = ""
     var lastKnownProvider : String = defaults.toBeProvided.rawValue
     let dateFormatAsRegex : Regex<AnyRegexOutput> = try Regex(dateFormatGREPArg)
 
-    for line : [String] in csvArray {
+    for csvArrayColumn : [String] in csvArray {
         
         var PYTHON_SCRIPT_ARGS_TEMP : String = ""
-        if isInDebugMode { print("line count / all cases count : \(line.count) / \(column.allCases.count)") }
+        if isInDebugMode { print("column count / all cases count : \(csvArrayColumn.count) / \(column.allCases.count)") }
 
-        if line.count >= column.allCases.count {
+        if csvArrayColumn.count >= column.allCases.count {
 
-            if isInDebugMode { print("\nprocessing line...") }
+            if isInDebugMode { print("\nprocessing CSV Array column...") }
 
-            let timestamp               : String = line[column.timestamp.rawValue].trimmingCharacters(in: .whitespacesAndNewlines)
-            let provider                : String = line[column.provider.rawValue]
-            let datatype                : String = line[column.datatype.rawValue]
-            let issue                   : String = line[column.issue.rawValue]
-            let country                 : String = line[column.country.rawValue]
-            let subdivision_name        : String = line[column.subdivision_name.rawValue]
-            let municipality            : String = line[column.municipality.rawValue]
-            let name                    : String = line[column.name.rawValue]
-            var license_url             : String = line[column.license_url.rawValue]
-            let downloadURL             : String = line[column.downloadurl.rawValue]
-            let updatednewsourceurl     : String = line[column.updatednewsourceurl.rawValue]
-            let authentication_type     : String = line[column.authentication_type.rawValue]
-            let authentication_info_url : String = line[column.authentication_info_url.rawValue]
-            let api_key_parameter_name  : String = line[column.api_key_parameter_name.rawValue]
-            let note                    : String = line[column.note.rawValue]
-            let gtfsschedulefeatures    : String = line[column.gtfsschedulefeatures.rawValue]
-            let gtfsschedulestatus      : String = line[column.gtfsschedulestatus.rawValue].lowercased()
-            let gtfsrealtimestatus      : String = line[column.gtfsrealtimestatus.rawValue].lowercased()
-            let realtimefeatures        : String = line[column.realtimefeatures.rawValue]
-            let redirects               : String = line[column.gtfsredirect.rawValue]
-            let feed_contact_email      : String = line[column.dataproduceremail2.rawValue]
-            let old_mbd_ID_String       : String = line[column.oldMobilityDatabaseID.rawValue].trimmingCharacters(in: CharacterSet(charactersIn: "\"")) // We need to remove the trailing quotation marks from the value, they interfere with the conversion to Int.
+            let timestamp               : String = csvArrayColumn[column.timestamp.rawValue].trimmingCharacters(in: .whitespacesAndNewlines)
+            let provider                : String = csvArrayColumn[column.provider.rawValue]
+            let datatype                : String = csvArrayColumn[column.datatype.rawValue]
+            let issue                   : String = csvArrayColumn[column.issue.rawValue]
+            let country                 : String = csvArrayColumn[column.country.rawValue]
+            let subdivision_name        : String = csvArrayColumn[column.subdivision_name.rawValue]
+            let municipality            : String = csvArrayColumn[column.municipality.rawValue]
+            let name                    : String = csvArrayColumn[column.name.rawValue]
+            var license_url             : String = csvArrayColumn[column.license_url.rawValue]
+            let downloadURL             : String = csvArrayColumn[column.downloadurl.rawValue]
+            let updatednewsourceurl     : String = csvArrayColumn[column.updatednewsourceurl.rawValue]
+            let authentication_type     : String = csvArrayColumn[column.authentication_type.rawValue]
+            let authentication_info_url : String = csvArrayColumn[column.authentication_info_url.rawValue]
+            let api_key_parameter_name  : String = csvArrayColumn[column.api_key_parameter_name.rawValue]
+            let note                    : String = csvArrayColumn[column.note.rawValue]
+            let gtfsschedulefeatures    : String = csvArrayColumn[column.gtfsschedulefeatures.rawValue]
+            let gtfsschedulestatus      : String = csvArrayColumn[column.gtfsschedulestatus.rawValue].lowercased()
+            let gtfsrealtimestatus      : String = csvArrayColumn[column.gtfsrealtimestatus.rawValue].lowercased()
+            let realtimefeatures        : String = csvArrayColumn[column.realtimefeatures.rawValue]
+            let redirects               : String = csvArrayColumn[column.gtfsredirect.rawValue]
+            let feed_contact_email      : String = csvArrayColumn[column.dataproduceremail2.rawValue]
+            let old_mbd_ID_String       : String = csvArrayColumn[column.oldMobilityDatabaseID.rawValue].trimmingCharacters(in: CharacterSet(charactersIn: "\"")) // We need to remove the trailing quotation marks from the value, they interfere with the conversion to Int.
             let old_mbd_ID              : Int    = Int(old_mbd_ID_String) ?? 0
 
-            if isInDebugMode { print("datatype : \(datatype)") }
-            if isInDebugMode { print("issue : \(issue)") }
+            if isInDebugMode { print("\t\tdatatype : \(datatype)") }
+            if isInDebugMode { print("\t\tissue    : \(issue)") }
             
             // Check if provider is empty, suggest last known if true.
             if provider.count > 0 { lastKnownProvider = provider }
@@ -186,7 +188,8 @@ if CommandLine.argc == 5 {
 
             // Create redirects array
             var redirects_array : String = "\"\"" // default value, the entire argument will be removed from the output.
-            if redirects.count < 1 { redirects_array = "{\'id\': \(redirects), \'comment\': \'\'}" }
+            if redirects.count > 4 { redirects_array = "{\'id\': \(redirects), \'comment\': \'\'}" }
+            if isInDebugMode { print("\t\tredirects_array : \(redirects_array)") }
 
             // Check if license URL is valid
             let urlPresent : Bool = isURLPresent(in: license_url)
@@ -194,21 +197,25 @@ if CommandLine.argc == 5 {
 
             let dateFromCurrentLine : String = extractDate(from: timestamp, usingGREP: dateFormatAsRegex, desiredDateFormat: dateFormatDesiredArg)
 
-            if isInDebugMode { print("timestamp // dateFromCurrentLine // dateToFind : \(timestamp) // \(dateFromCurrentLine) // \(dateToFind)") }
+            if isInDebugMode { print("\t\ttimestamp // dateFromCurrentLine // dateToFind : \(timestamp) // \(dateFromCurrentLine) // \(dateToFind)") }
 
-            if isInDebugMode { print("updatednewsourceurl || downloadURL : \(updatednewsourceurl) (\(updatednewsourceurl.count)) \(downloadURL) (\(downloadURL.count))") }
+            if isInDebugMode { print("\t\tupdatednewsourceurl || downloadURL : \(updatednewsourceurl) (\(updatednewsourceurl.count)) \(downloadURL) (\(downloadURL.count))") }
 
-            var scheduleFinalURLtoUse : String = downloadURL ; if updatednewsourceurl.count < 4 { scheduleFinalURLtoUse = "\"\"" }
+            var scheduleFinalURLtoUse : String = downloadURL ; if downloadURL.count < 4 { scheduleFinalURLtoUse = "\"\"" }
 
             var realtimeFinalURLtoUse : String = downloadURL ; if downloadURL.count < 4 { realtimeFinalURLtoUse = "\"\"" }
+
+            if isInDebugMode { print("\t\tscheduleFinalURLtoUse || realtimeFinalURLtoUse : \(scheduleFinalURLtoUse) (\(scheduleFinalURLtoUse.count)) \(realtimeFinalURLtoUse) (\(realtimeFinalURLtoUse.count))") }
             
             // if dateFromCurrentLine == dateToFind { // ...the row has been added on the date we're looking for, process it.
                 // if isInDebugMode { print("Found a valid date...") }
                 
-                if issue.contains(issueType.isAddNewFeed.rawValue) { // add new feed
+                if issue.contains(issueType.isAddNewFeed.rawValue) || issue.contains(issueType.isAddNewSource.rawValue) { // add new feed
                     
                     if datatype.contains(dataType.schedule.rawValue) { // add_gtfs_schedule_source
+
                         let authType : Int = authenticationType(for: authentication_type)
+
                         PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_schedule_source(provider=\"\(finalProvider)\", country_code=\"\(country)\", direct_download_url=\"\(scheduleFinalURLtoUse)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", subdivision_name=\"\(subdivision_name)\", municipality=\"\(municipality)\", license_url=\"\(license_url)\", name=\"\(name)\", status=\"\(gtfsschedulestatus)\", features=\"\(gtfsschedulefeatures)\", feed_contact_email=\"\(feed_contact_email)\", redirects=\"\(redirects_array)\")"
                         
                     } else if datatype.contains(dataType.realtime.rawValue) { // add_gtfs_realtime_source
@@ -218,6 +225,7 @@ if CommandLine.argc == 5 {
                         let realtimecode : Array = realtimeCode(for:datatype)
                         let realtimecodeString: String = realtimecode.joined(separator:"\", \"")
                         // FIXME: Detect multiple entity types, forward as an array
+
                         PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_realtime_source(entity_type=[\"\(realtimecodeString)\"], provider=\"\(finalProvider)\", direct_download_url=\"\(realtimeFinalURLtoUse)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", license_url=\"\(license_url)\", name=\"\(name)\", note=\"\(note)\", status=\"\(gtfsrealtimestatus)\", features=\"\(realtimefeatures)\", feed_contact_email=\"\(feed_contact_email)\", redirects=\"\(redirects_array)\")"
                         
                     }
@@ -227,6 +235,7 @@ if CommandLine.argc == 5 {
                     if datatype.contains(dataType.schedule.rawValue) { // update_gtfs_schedule_source
                         
                         let authType : Int = authenticationType(for: authentication_type)
+
                         PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_schedule_source(mdb_source_id=\(old_mbd_ID), provider=\"\(finalProvider)\", name=\"\(name)\", country_code=\"\(country)\", subdivision_name=\"\(subdivision_name)\", municipality=\"\(municipality)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", status=\"\(gtfsschedulestatus)\", features=\"\(gtfsschedulefeatures)\", feed_contact_email=\"\(feed_contact_email)\", redirects=\"\(redirects_array)\")"
                         
                     } else if datatype.contains(dataType.realtime.rawValue) { // update_gtfs_realtime_source
@@ -234,6 +243,7 @@ if CommandLine.argc == 5 {
                         let authType : Int = authenticationType(for: authentication_type)
                         let realtimecode : Array = realtimeCode(for:datatype)
                         let realtimecodeString: String = realtimecode.joined(separator:"\", \"")
+
                         PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_realtime_source(mdb_source_id=\(old_mbd_ID), entity_type=[\"\(realtimecodeString)\"], provider=\"\(finalProvider)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", name=\"\(name)\", note=\"\(note)\", status=\"\(gtfsrealtimestatus)\", features=\"\(realtimefeatures)\", feed_contact_email=\"\(feed_contact_email)\", redirects=\"\(redirects_array)\")"
                     }
                     
@@ -242,6 +252,7 @@ if CommandLine.argc == 5 {
                     if datatype.contains(dataType.schedule.rawValue) { // update_gtfs_schedule_source
                         
                         let authType : Int = authenticationType(for: authentication_type)
+
                         PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_schedule_source(mdb_source_id=\(old_mbd_ID), provider=\"\(finalProvider)\", name=\"\"**** issueed for removal ****\"\", country_code=\"\(country)\", subdivision_name=\"\(subdivision_name)\", municipality=\"\(municipality)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", status=\"\(gtfsschedulestatus)\", features=\"\(gtfsschedulefeatures)\", feed_contact_email=\"\(feed_contact_email)\", redirects=\"\(redirects_array)\")"
                         
                     } else if datatype.contains(dataType.realtime.rawValue) { // update_gtfs_realtime_source
@@ -249,6 +260,7 @@ if CommandLine.argc == 5 {
                         let authType : Int = authenticationType(for: authentication_type)
                         let realtimecode : Array = realtimeCode(for:datatype)
                         let realtimecodeString: String = realtimecode.joined(separator:"\", \"")
+
                         PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_realtime_source(mdb_source_id=\(old_mbd_ID), entity_type=\"[\(realtimecodeString)]\", provider=\"\(finalProvider)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", name=\"\"**** issueed for removal ****\"\", note=\"\(note)\", status=\"\(gtfsrealtimestatus)\", features=\"\(realtimefeatures)\", feed_contact_email=\"\(feed_contact_email)\", redirects=\"\(redirects_array)\")"
                         
                     }
@@ -265,6 +277,7 @@ if CommandLine.argc == 5 {
                         let authType : Int = authenticationType(for: authentication_type)
                         let realtimecode : Array = realtimeCode(for: datatype)
                         let realtimecodeString: String = realtimecode.joined(separator:"\", \"")
+
                         PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_realtime_source(entity_type=[\"\(realtimecodeString)\"], provider=\"\(finalProvider)\", direct_download_url=\"\(realtimeFinalURLtoUse)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", license_url=\"\(license_url)\", name=\"\(name)\", note=\"\(note)\", status=\"\(gtfsrealtimestatus)\", features=\"\(realtimefeatures)\", feed_contact_email=\"\(feed_contact_email)\", redirects=\"\(redirects_array)\")"
                         
                     }
@@ -273,7 +286,7 @@ if CommandLine.argc == 5 {
             
         // } // END of the row has been added today, process it.
 
-        if isInDebugMode { print("current line = \(PYTHON_SCRIPT_ARGS_TEMP)")}
+        if isInDebugMode { print("\t\tPython script arg TEMP : \(PYTHON_SCRIPT_ARGS_TEMP)")}
         
         if PYTHON_SCRIPT_ARGS_TEMP.count > 0 { PYTHON_SCRIPT_OUTPUT = ( PYTHON_SCRIPT_OUTPUT + "§" + PYTHON_SCRIPT_ARGS_TEMP ) }
 

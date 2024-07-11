@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2031,
+    "data_type": "gtfs",
+    "provider": "Aquabus Ferries",
+    "feed_contact_email": "fdenisco4@gmail.com",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "British Columbia",
+        "municipality": "Vancouver",
+        "bounding_box": {
+            "minimum_latitude": 49.26942123632413,
+            "maximum_latitude": 49.27423812114853,
+            "minimum_longitude": -123.1343500068977,
+            "maximum_longitude": -123.1056802138899,
+            "extracted_on": "2024-07-10T13:23:58+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://aquabusferries.github.io/gtfs-feed/aquabus-bc-ca.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-aquabus-ferries-gtfs-2031.zip?alt=media"
+    },
+    "redirect": []
+}

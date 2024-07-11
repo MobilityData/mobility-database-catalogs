@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 2033,
+    "mdb_source_id": 2030,
     "data_type": "gtfs",
     "provider": "reLAXsan",
     "feed_contact_email": "contact@gorelaxsan.com",
@@ -18,7 +18,7 @@
     "urls": {
         "direct_download": "https://relaxsan.s3.amazonaws.com/gtfs.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/usa-ca-relaxsan-gtfs-2033.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/usa-ca-relaxsan-gtfs-2030.zip?alt=media"
     },
     "redirect": []
 }

@@ -44,37 +44,37 @@ enum column : Int, CaseIterable {
 }
 
 struct defaults {
-    let date                 : String = "01/01/1970"
-    let toBeProvided         : String = "TO_BE_PROVIDED"
-    let emptyValue           : String = "\"\""
-    let csvLineSeparator     : String = "\n"
-    let csvColumnSeparator   : String = ","
+    static let date                 : String = "01/01/1970"
+    static let toBeProvided         : String = "TO_BE_PROVIDED"
+    static let emptyValue           : String = "\"\""
+    static let csvLineSeparator     : String = "\n"
+    static let csvColumnSeparator   : String = ","
 }
 
 struct issueType {
-    let isAddNewFeed         : String = "New feed"
-    let isAddNewSource       : String = "New source"
-    let isUpdateExistingFeed : String = "Source update"
-    let isToRemoveFeed       : String = "removed"
+    static let isAddNewFeed         : String = "New feed"
+    static let isAddNewSource       : String = "New source"
+    static let isUpdateExistingFeed : String = "Source update"
+    static let isToRemoveFeed       : String = "removed"
 }
 
 struct dataType {
-    let schedule             : String = "Schedule"
-    let realtime             : String = "Realtime"
+    static let schedule             : String = "Schedule"
+    static let realtime             : String = "Realtime"
 }
 
 struct realtimeEntityTypesString {
-    let vehiclePositions     : String = "Vehicle Positions"
-    let tripUpdates          : String = "Trip Updates"
-    let serviceAlerts        : String = "Service Alerts"
-    let unknown              : String = "general / unknown"
+    static let vehiclePositions     : String = "Vehicle Positions"
+    static let tripUpdates          : String = "Trip Updates"
+    static let serviceAlerts        : String = "Service Alerts"
+    static let unknown              : String = "general / unknown"
 }
 
 struct realtimeEntityTypes {
-    let vehiclePositions     : String = "vp"
-    let tripUpdates          : String = "tu"
-    let serviceAlerts        : String = "sa"
-    let unknown              : String = "gu"
+    static let vehiclePositions     : String = "vp"
+    static let tripUpdates          : String = "tu"
+    static let serviceAlerts        : String = "sa"
+    static let unknown              : String = "gu"
 }
 
 // Will be used to filter empty parameters from this script's output
@@ -86,7 +86,7 @@ let arguments : [String] = CommandLine.arguments
 // Set to false for production use
 let isInDebugMode : Bool = false
 
-if CommandLine.argc == 5 {
+if arguments.count == 5 {
     
     let csvURLStringArg      : String = arguments[1] // the first argument [0] is the name of the script, we can ignore in this context.
     let dateToFind           : String = arguments[2]

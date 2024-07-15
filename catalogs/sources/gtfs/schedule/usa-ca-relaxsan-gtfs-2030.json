@@ -4,7 +4,7 @@
     "provider": "reLAXsan",
     "feed_contact_email": "contact@gorelaxsan.com",
     "location": {
-        "country_code": "USA",
+        "country_code": "US",
         "subdivision_name": "CA",
         "municipality": "San Diego",
         "bounding_box": {

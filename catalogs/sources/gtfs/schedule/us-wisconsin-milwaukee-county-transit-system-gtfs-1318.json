@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 1318,
     "data_type": "gtfs",
-    "provider": "Milwaukee County Transit System",
+    "provider": "Milwaukee County Transit System (MCTS)",
     "features": [
         "fares-v1"
     ],

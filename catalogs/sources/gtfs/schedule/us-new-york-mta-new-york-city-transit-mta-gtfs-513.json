@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 513,
     "data_type": "gtfs",
-    "provider": "MTA New York City Transit (MTA)",
+    "provider": "Metropolitan Transit Authority (MTA)",
     "name": "Manhattan Bus",
     "location": {
         "country_code": "US",

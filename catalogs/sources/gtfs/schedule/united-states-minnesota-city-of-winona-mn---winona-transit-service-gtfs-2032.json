@@ -4,7 +4,7 @@
     "provider": "City of Winona MN - Winona Transit Service",
     "feed_contact_email": "transit@ci.winona.mn.us",
     "location": {
-        "country_code": "United States",
+        "country_code": "US",
         "subdivision_name": "Minnesota ",
         "municipality": "Winona",
         "bounding_box": {

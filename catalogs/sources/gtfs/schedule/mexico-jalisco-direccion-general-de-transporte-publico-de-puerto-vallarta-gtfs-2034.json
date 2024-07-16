@@ -5,7 +5,7 @@
     "feed_contact_email": "datosabiertos@jalisco.gob.mx",
     "status": "active",
     "location": {
-        "country_code": "Mexico",
+        "country_code": "MX",
         "subdivision_name": "Jalisco",
         "municipality": "Puerto Vallarta",
         "bounding_box": {

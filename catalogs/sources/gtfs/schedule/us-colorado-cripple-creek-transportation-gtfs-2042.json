@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2042,
+    "data_type": "gtfs",
+    "provider": "Cripple Creek Transportation",
+    "name": "Cripple Creek Transportation Flex V2",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Denver",
+        "bounding_box": {
+            "minimum_latitude": 38.710403,
+            "maximum_latitude": 38.996448,
+            "minimum_longitude": -105.28805777677904,
+            "maximum_longitude": -104.82279798241508,
+            "extracted_on": "2024-07-17T21:31:09+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/cripplecreek-co-us/cripplecreek-co-us--flex-v2.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-cripple-creek-transportation-gtfs-2042.zip?alt=media"
+    },
+    "redirect": []
+}

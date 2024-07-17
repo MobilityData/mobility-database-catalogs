@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2037,
+    "data_type": "gtfs",
+    "provider": "Brown County Heartland Express",
+    "name": "Brown County Heartland Express Flex v2",
+    "status": "active",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Chicago",
+        "bounding_box": {
+            "minimum_latitude": 44.2874149536113,
+            "maximum_latitude": 44.3393958836996,
+            "minimum_longitude": -94.5065654828155,
+            "maximum_longitude": -94.4329113488943,
+            "extracted_on": "2024-07-17T21:31:06+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/browncounty-mn-us/browncounty-mn-us--flex-v2.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-chicago-brown-county-heartland-express-gtfs-2037.zip?alt=media"
+    },
+    "redirect": []
+}

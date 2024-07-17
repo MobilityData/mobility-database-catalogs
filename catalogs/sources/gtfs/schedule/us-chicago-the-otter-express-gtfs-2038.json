@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2038,
+    "data_type": "gtfs",
+    "provider": "The Otter Express",
+    "name": "Otter Ecpress Medical Transportation Flex v2",
+    "feed_contact_email": "Kaylas@Productivemn.org",
+    "status": "active",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Chicago",
+        "bounding_box": {
+            "minimum_latitude": 46.26504432555926,
+            "maximum_latitude": 46.593913339587104,
+            "minimum_longitude": -96.5883107286256,
+            "maximum_longitude": -95.57152642784416,
+            "extracted_on": "2024-07-17T21:31:07+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/otterexpress-mn-us/otterexpress-mn-us--flex-v2.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-chicago-the-otter-express-gtfs-2038.zip?alt=media"
+    },
+    "redirect": []
+}

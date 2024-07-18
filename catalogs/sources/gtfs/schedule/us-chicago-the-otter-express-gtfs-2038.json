@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "The Otter Express",
     "name": "Flex v2 included",
-    "feed_contact_email": "support@trilliumtransit.com",
+    "feed_contact_email": "support+otterexpress-mn-us@trilliumtransit.com",
     "status": "active",
     "location": {
         "country_code": "US",

@@ -2,7 +2,8 @@
     "mdb_source_id": 2040,
     "data_type": "gtfs",
     "provider": "Avon Transit",
-    "name": "Avon Transit Flex v2",
+    "name": "AFlex v2 included",
+    "feed_contact_email": "support+avon-co-us@trilliumtransit.com",
     "status": "active",
     "location": {
         "country_code": "US",

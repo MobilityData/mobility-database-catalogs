@@ -2,7 +2,8 @@
     "mdb_source_id": 2042,
     "data_type": "gtfs",
     "provider": "Cripple Creek Transportation",
-    "name": "Cripple Creek Transportation Flex V2",
+    "name": "Flex v2 included",
+    "feed_contact_email": "support+cripplecreek-co-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Colorado",

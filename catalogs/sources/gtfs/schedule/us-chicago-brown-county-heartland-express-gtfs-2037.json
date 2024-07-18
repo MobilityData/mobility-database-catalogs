@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Brown County Heartland Express",
     "name": "Flex v2 included",
+    "feed_contact_email": "support+browncounty-mn-us@trilliumtransit", 
     "status": "active",
     "location": {
         "country_code": "US",

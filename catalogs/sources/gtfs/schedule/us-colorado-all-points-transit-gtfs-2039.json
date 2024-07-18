@@ -2,8 +2,8 @@
     "mdb_source_id": 2039,
     "data_type": "gtfs",
     "provider": "All Points Transit",
-    "name": "Flex v2 included"",
-    "feed_contact_email": "info@allpointstransit.org",
+    "name": "Flex v2 included",
+    "feed_contact_email": "support+allpointstransit-co-us@trilliumtransit.com",
     "status": "active",
     "location": {
         "country_code": "US",

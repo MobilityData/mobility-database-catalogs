@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 995,
     "data_type": "gtfs",
-    "provider": "Transport For London",
+    "provider": "Transport For London (TfL)",
     "status": "inactive",
     "location": {
         "country_code": "GB",

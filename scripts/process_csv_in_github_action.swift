@@ -155,8 +155,7 @@ if arguments.count == 5 {
             let finalProvider : String = provider.isEmpty ? "\(defaults.toBeProvided) (\(lastKnownProvider) ?)" : provider
             
             // Create redirects array
-            var redirects_array : String = defaults.emptyValue // default value, the entire argument will be removed from the output.
-            if redirects.count > 4 { redirects_array = "{\'id\': \(redirects), \'comment\': \'\'}" }
+            let redirects_array : String = redirectArray(for: redirects)
             if isInDebugMode { print("\t\tredirects_array : \(redirects_array)") }
             
             // Check if license URL is valid

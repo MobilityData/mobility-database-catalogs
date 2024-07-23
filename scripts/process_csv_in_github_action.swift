@@ -142,7 +142,7 @@ if arguments.count == 5 {
             let gtfsschedulestatus      : String = csvArrayColumn[column.gtfsschedulestatus.rawValue].lowercased()
             let gtfsrealtimestatus      : String = csvArrayColumn[column.emptyColumn4.rawValue].lowercased()
             let realtimefeatures        : String = csvArrayColumn[column.realtimefeatures.rawValue]
-            let redirects               : String = csvArrayColumn[column.gtfsredirect.rawValue]
+            let redirects               : String = csvArrayColumn[column.gtfsredirect.rawValue].trimmingCharacters(in: .whitespacesAndNewlines)
             let feed_contact_email      : String = csvArrayColumn[column.dataproduceremail2.rawValue]
             let old_mbd_ID_String       : String = csvArrayColumn[column.oldMobilityDatabaseID.rawValue].trimmingCharacters(in: CharacterSet(charactersIn: "\"")) // We need to remove the trailing quotation marks from the value, they interfere with the conversion to Int.
             let old_mbd_ID              : Int    = Int(old_mbd_ID_String) ?? 0

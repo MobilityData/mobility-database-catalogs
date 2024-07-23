@@ -142,7 +142,7 @@ if arguments.count == 5 {
             let gtfsschedulestatus      : String = csvArrayColumn[column.gtfsschedulestatus.rawValue].lowercased()
             let gtfsrealtimestatus      : String = csvArrayColumn[column.emptyColumn4.rawValue].lowercased()
             let realtimefeatures        : String = csvArrayColumn[column.realtimefeatures.rawValue]
-            let redirects               : String = csvArrayColumn[column.gtfsredirect.rawValue].trimmingCharacters(in: .whitespacesAndNewlines)
+            let redirects               : String = csvArrayColumn[column.gtfsredirect.rawValue].trimmingCharacters(in: .whitespacesAndNewlines).trimmingCharacters(in: CharacterSet(charactersIn: "\""))
             let feed_contact_email      : String = csvArrayColumn[column.dataproduceremail2.rawValue]
             let old_mbd_ID_String       : String = csvArrayColumn[column.oldMobilityDatabaseID.rawValue].trimmingCharacters(in: CharacterSet(charactersIn: "\"")) // We need to remove the trailing quotation marks from the value, they interfere with the conversion to Int.
             let old_mbd_ID              : Int    = Int(old_mbd_ID_String) ?? 0
@@ -315,7 +315,7 @@ func extractDate(from theDateToConvert: String, usingGREP dateFormatAsGREP: Rege
 ///
 /// - Note: The default empty value is provided by `defaults.emptyValue`.
 func redirectArray(for rawData: String) -> String {
-    if !rawData.isEmpty {
+    if rawData.count > 0 {
         let prefix : String = "{\'id\': "
         let suffix : String = ", \'comment\': \'\'}"
         let keyValuePairsJoiner : String = ", "

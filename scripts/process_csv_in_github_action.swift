@@ -305,6 +305,16 @@ func extractDate(from theDateToConvert: String, usingGREP dateFormatAsGREP: Rege
     return defaults.date
 }
 
+/// Generates a Python-like array inside a string from a comma-separated input string.
+///
+/// This function takes a raw input string, splits it by commas, and formats each
+/// element into a specific JSON-like structure with `id` and `comment` keys.
+/// If the input string is empty, it returns a default empty value.
+///
+/// - Parameter rawData: A comma-separated string of values to be formatted.
+/// - Returns: A Python-like array inside a string representating the input values, or a default empty value if the input is empty.
+///
+/// - Note: The default empty value is provided by `defaults.emptyValue`.
 func redirectArray(for rawData: String) -> String {
     if !rawData.isEmpty {
         let prefix : String = "{\'id\': "

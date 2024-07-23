@@ -30,8 +30,7 @@ enum column : Int, CaseIterable {
     case gtfsschedulefeatures    = 23 // X
     case emptyColumn2            = 24 // Y
     case gtfsschedulestatus      = 25 // Z
-    case gtfsrealtimestatus      = 26 // AA
-    case gtfsredirect            = 36 // AK - NEW
+    case gtfsredirect            = 26 // AA
     case dataproduceremail       = 27 // AB
     case officialProducer        = 28 // AC
     case dataproduceremail2      = 29 // AD - NEW
@@ -41,6 +40,7 @@ enum column : Int, CaseIterable {
     case emptyColumn3            = 33 // AH — NOT IN USE
     case isocountrycode          = 34 // AI
     case feedupdatestatus        = 35 // AJ
+    case emptyColumn4            = 36 // AK - NOT IN USE
 }
 
 struct defaults {
@@ -140,7 +140,7 @@ if arguments.count == 5 {
             let note                    : String = csvArrayColumn[column.note.rawValue]
             let gtfsschedulefeatures    : String = csvArrayColumn[column.gtfsschedulefeatures.rawValue]
             let gtfsschedulestatus      : String = csvArrayColumn[column.gtfsschedulestatus.rawValue].lowercased()
-            let gtfsrealtimestatus      : String = csvArrayColumn[column.gtfsrealtimestatus.rawValue].lowercased()
+            let gtfsrealtimestatus      : String = csvArrayColumn[column.emptyColumn4.rawValue].lowercased()
             let realtimefeatures        : String = csvArrayColumn[column.realtimefeatures.rawValue]
             let redirects               : String = csvArrayColumn[column.gtfsredirect.rawValue]
             let feed_contact_email      : String = csvArrayColumn[column.dataproduceremail2.rawValue]

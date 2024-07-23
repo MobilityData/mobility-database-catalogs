@@ -55,6 +55,7 @@ struct issueType {
     static let isAddNewFeed         : String = "New feed"
     static let isAddNewSource       : String = "New source"
     static let isUpdateExistingFeed : String = "Source update"
+    static let isFeedUpdate         : String = "Feed update"
     static let isToRemoveFeed       : String = "removed"
 }
 
@@ -191,7 +192,7 @@ if arguments.count == 5 {
                     
                 }
                 
-            } else if issue.contains(issueType.isUpdateExistingFeed) { // update existing feed
+            } else if issue.contains(issueType.isUpdateExistingFeed) || issue.contains(issueType.isFeedUpdate) { // update existing feed
                 
                 if datatype.contains(dataType.schedule) { // update_gtfs_schedule_source
                     

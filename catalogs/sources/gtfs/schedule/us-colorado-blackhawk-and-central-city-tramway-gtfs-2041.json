@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 2041,
+    "data_type": "gtfs",
+    "provider": "Blackhawk and Central City Tramway",
+    "name": "Flex v2 included",
+    "feed_contact_email": "support+blackhawktramway-co-us@trilliumtransit.com",
+    "status": "active",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Denver",
+        "bounding_box": {
+            "minimum_latitude": 39.798227,
+            "maximum_latitude": 39.80218121726293,
+            "minimum_longitude": -105.51270199161952,
+            "maximum_longitude": -105.482782,
+            "extracted_on": "2024-07-17T21:31:08+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/blackhawktramway-co-us/blackhawktramway-co-us--flex-v2.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-blackhawk-and-central-city-tramway-gtfs-2041.zip?alt=media"
+    },
+    "redirect": []
+}

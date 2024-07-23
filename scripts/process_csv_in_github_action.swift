@@ -305,6 +305,26 @@ func extractDate(from theDateToConvert: String, usingGREP dateFormatAsGREP: Rege
     return defaults.date
 }
 
+func redirectArray(for rawData: String) -> String {
+    if !rawData.isEmpty {
+        let prefix : String = "{\'id\': "
+        let suffix : String = ", \'comment\': \'\'}"
+        let keyValuePairsJoiner : String = ", "
+
+        let rawDataAsArray : [String] = rawData.components(separatedBy: ",")
+        var valueKeyPairs : [String] = []
+
+        for currentString : String in rawDataAsArray {
+            valueKeyPairs.append(prefix + currentString + suffix)
+        }
+
+        let returnString : String = "[\(valueKeyPairs.joined(separator: keyValuePairsJoiner))]" // [{"id": 2036}, {"id": 2037}, {"id": 2038}]
+        return returnString
+    }
+
+    return defaults.emptyValue
+}
+
 func authenticationType(for authString: String) -> Int {
     if authString.contains("0") { return 0 }
     if authString.contains("1") { return 1 }

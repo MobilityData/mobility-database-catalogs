@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 2053,
     "data_type": "gtfs",
-    "provider": "PostAuto AG",
+    "provider": "Swiss Federal Railways (SBB)",
     "name": "Flex v2 included",
     "status": "active",
     "location": {

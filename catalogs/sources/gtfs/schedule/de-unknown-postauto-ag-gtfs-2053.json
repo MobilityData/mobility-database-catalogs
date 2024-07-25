@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2053,
+    "data_type": "gtfs",
+    "provider": "PostAuto AG",
+    "name": "Flex v2 included",
+    "status": "active",
+    "location": {
+        "country_code": "DE",
+        "bounding_box": {
+            "minimum_latitude": 46.85972,
+            "maximum_latitude": 47.4889041041225,
+            "minimum_longitude": 6.73123812159571,
+            "maximum_longitude": 9.54309970857384,
+            "extracted_on": "2024-07-25T17:07:32+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://opentransportdata.swiss/de/dataset/gtfsflex/permalink",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-unknown-postauto-ag-gtfs-2053.zip?alt=media"
+    },
+    "redirect": []
+}

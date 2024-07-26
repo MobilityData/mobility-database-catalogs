@@ -2,6 +2,7 @@
     "mdb_source_id": 2035,
     "data_type": "gtfs",
     "provider": "Metro St. Louis",
+    "name": "Loop Trolley",
     "feed_contact_email": "transitInformation@metrostouis.org",
     "status": "active",
     "location": {

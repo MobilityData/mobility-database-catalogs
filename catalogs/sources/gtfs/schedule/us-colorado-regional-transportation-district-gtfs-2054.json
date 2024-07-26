@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2054,
+    "data_type": "gtfs",
+    "provider": "Regional Transportation District",
+    "name": "Flex v2 included",
+    "status": "active",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Denver",
+        "bounding_box": {
+            "minimum_latitude": 39.456877,
+            "maximum_latitude": 40.206556,
+            "minimum_longitude": -105.525483,
+            "maximum_longitude": -104.669533,
+            "extracted_on": "2024-07-25T17:07:36+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.rtd-denver.com/files/gtfs/google_transit_flex.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-regional-transportation-district-gtfs-2054.zip?alt=media"
+    },
+    "redirect": []
+}

@@ -30,8 +30,7 @@ enum column : Int, CaseIterable {
     case gtfsschedulefeatures    = 23 // X
     case emptyColumn2            = 24 // Y
     case gtfsschedulestatus      = 25 // Z
-    case gtfsrealtimestatus      = 26 // AA
-    case gtfsredirect            = 36 // AK - NEW
+    case gtfsredirect            = 26 // AA
     case dataproduceremail       = 27 // AB
     case officialProducer        = 28 // AC
     case dataproduceremail2      = 29 // AD - NEW
@@ -41,6 +40,7 @@ enum column : Int, CaseIterable {
     case emptyColumn3            = 33 // AH — NOT IN USE
     case isocountrycode          = 34 // AI
     case feedupdatestatus        = 35 // AJ
+    case emptyColumn4            = 36 // AK - NOT IN USE
 }
 
 struct defaults {
@@ -141,9 +141,9 @@ if arguments.count == 5 {
             let note                    : String = csvArrayColumn[column.note.rawValue]
             let gtfsschedulefeatures    : String = csvArrayColumn[column.gtfsschedulefeatures.rawValue]
             let gtfsschedulestatus      : String = csvArrayColumn[column.gtfsschedulestatus.rawValue].lowercased()
-            let gtfsrealtimestatus      : String = csvArrayColumn[column.gtfsrealtimestatus.rawValue].lowercased()
+            let gtfsrealtimestatus      : String = csvArrayColumn[column.emptyColumn4.rawValue].lowercased()
             let realtimefeatures        : String = csvArrayColumn[column.realtimefeatures.rawValue]
-            let redirects               : String = csvArrayColumn[column.gtfsredirect.rawValue]
+            let redirects               : String = csvArrayColumn[column.gtfsredirect.rawValue].trimmingCharacters(in: .whitespacesAndNewlines).trimmingCharacters(in: CharacterSet(charactersIn: "\""))
             let feed_contact_email      : String = csvArrayColumn[column.dataproduceremail2.rawValue]
             let old_mbd_ID_String       : String = csvArrayColumn[column.oldMobilityDatabaseID.rawValue].trimmingCharacters(in: CharacterSet(charactersIn: "\"")) // We need to remove the trailing quotation marks from the value, they interfere with the conversion to Int.
             let old_mbd_ID              : Int    = Int(old_mbd_ID_String) ?? 0
@@ -156,8 +156,7 @@ if arguments.count == 5 {
             let finalProvider : String = provider.isEmpty ? "\(defaults.toBeProvided) (\(lastKnownProvider) ?)" : provider
             
             // Create redirects array
-            var redirects_array : String = defaults.emptyValue // default value, the entire argument will be removed from the output.
-            if redirects.count > 4 { redirects_array = "{\'id\': \(redirects), \'comment\': \'\'}" }
+            let redirects_array : String = redirectArray(for: redirects)
             if isInDebugMode { print("\t\tredirects_array : \(redirects_array)") }
             
             // Check if license URL is valid
@@ -304,6 +303,36 @@ func extractDate(from theDateToConvert: String, usingGREP dateFormatAsGREP: Rege
     
     // return default date
     return defaults.date
+}
+
+/// Generates a Python-like array inside a string from a comma-separated input string.
+///
+/// This function takes a raw input string, splits it by commas, and formats each
+/// element into a specific JSON-like structure with `id` and `comment` keys.
+/// If the input string is empty, it returns a default empty value.
+///
+/// - Parameter rawData: A comma-separated string of values to be formatted.
+/// - Returns: A Python-like array inside a string representating the input values, or a default empty value if the input is empty.
+///
+/// - Note: The default empty value is provided by `defaults.emptyValue`.
+func redirectArray(for rawData: String) -> String {
+    if rawData.count > 0 {
+        let prefix : String = "{\'id\': "
+        let suffix : String = ", \'comment\': \'\'}"
+        let keyValuePairsJoiner : String = ", "
+
+        let rawDataAsArray : [String] = rawData.components(separatedBy: ",")
+        var valueKeyPairs : [String] = []
+
+        for currentString : String in rawDataAsArray {
+            valueKeyPairs.append(prefix + currentString + suffix)
+        }
+
+        let returnString : String = "[\(valueKeyPairs.joined(separator: keyValuePairsJoiner))]" // [{"id": 2036}, {"id": 2037}, {"id": 2038}]
+        return returnString
+    }
+
+    return defaults.emptyValue
 }
 
 func authenticationType(for authString: String) -> Int {

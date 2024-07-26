@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 2049,
+    "data_type": "gtfs",
+    "provider": "Prowers Area Transit",
+    "name": "Flex v2 included",
+    "feed_contact_email": "support+prowerscounty-co-us@trilliumtransit.com",
+    "status": "active",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Denver",
+        "bounding_box": {
+            "minimum_latitude": 37.956045,
+            "maximum_latitude": 37.956045,
+            "minimum_longitude": -102.393384,
+            "maximum_longitude": -102.393384,
+            "extracted_on": "2024-07-25T17:07:30+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/prowerscounty-co-us/prowerscounty-co-us--flex-v2.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-prowers-area-transit-gtfs-2049.zip?alt=media"
+    },
+    "redirect": []
+}

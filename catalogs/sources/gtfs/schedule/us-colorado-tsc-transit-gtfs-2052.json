@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 2052,
+    "data_type": "gtfs",
+    "provider": "TSC Transit",
+    "name": "Flex v2 included",
+    "feed_contact_email": "support+tsctransit-co-us@trilliumtransit.com",
+    "status": "active",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Denver",
+        "bounding_box": {
+            "minimum_latitude": 38.93664978789411,
+            "maximum_latitude": 39.0139569028692,
+            "minimum_longitude": -105.07536082847425,
+            "maximum_longitude": -105.01709266827798,
+            "extracted_on": "2024-07-25T17:07:31+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/tsctransit-co-us/tsctransit-co-us--flex-v2.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-tsc-transit-gtfs-2052.zip?alt=media"
+    },
+    "redirect": []
+}

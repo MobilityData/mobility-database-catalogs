@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 2051,
+    "data_type": "gtfs",
+    "provider": "Steamboat Springs Transit",
+    "name": "Flex v2 included",
+    "feed_contact_email": "support+steamboatsprings-co-us@trilliumtransit.com",
+    "status": "active",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Denver",
+        "bounding_box": {
+            "minimum_latitude": 40.4424808097658,
+            "maximum_latitude": 40.5338701245765,
+            "minimum_longitude": -107.595681481064,
+            "maximum_longitude": -106.799471676349,
+            "extracted_on": "2024-07-25T17:07:31+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/steamboatsprings-co-us/steamboatsprings-co-us--flex-v2.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-steamboat-springs-transit-gtfs-2051.zip?alt=media"
+    },
+    "redirect": []
+}

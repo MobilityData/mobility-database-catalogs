@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 2046,
+    "data_type": "gtfs",
+    "provider": "El Paso Fountain Valley Senior Citizens Program Inc",
+    "name": "Flex v2 included",
+    "feed_contact_email": "support+elpaso-co-us@trilliumtransit.com",
+    "status": "active",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Denver",
+        "bounding_box": {
+            "minimum_latitude": 38.82466,
+            "maximum_latitude": 38.82466,
+            "minimum_longitude": -104.525611,
+            "maximum_longitude": -104.525611,
+            "extracted_on": "2024-07-25T17:07:30+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/elpaso-co-us/elpaso-co-us--flex-v2.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-el-paso-fountain-valley-senior-citizens-program-inc-gtfs-2046.zip?alt=media"
+    },
+    "redirect": []
+}

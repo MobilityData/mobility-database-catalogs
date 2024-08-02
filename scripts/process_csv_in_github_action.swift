@@ -317,19 +317,15 @@ func extractDate(from theDateToConvert: String, usingGREP dateFormatAsGREP: Rege
 /// - Note: The default empty value is provided by `defaults.emptyValue`.
 func redirectArray(for rawData: String) -> String {
     if rawData.count > 0 {
-        let prefix : String = "[{\"id\": "
-        let suffix : String = ", \"comment\": \" \"}]"
+        let prefix : String = "[{\"\"id\"\": "
+        let suffix : String = ", \"\"comment\"\": \"\" \"\"}]"
         let keyValuePairsJoiner : String = ", "
-
-        // Escape the double quotes in the JSON string
-        let escapedPrefix = prefix.replacingOccurrences(of: "\"", with: "\\\"")
-        let escapedSuffix = suffix.replacingOccurrences(of: "\"", with: "\\\"")
 
         let rawDataAsArray : [String] = rawData.components(separatedBy: ",")
         var valueKeyPairs : [String] = []
 
         for currentString : String in rawDataAsArray {
-            valueKeyPairs.append(escapedPrefix + currentString + escapedSuffix)
+            valueKeyPairs.append(prefix + currentString + suffix)
         }
 
         let returnString : String = "\(valueKeyPairs.joined(separator: keyValuePairsJoiner))" // Ex.:    [{"id": 2036, "comment": ""}, {"id": 2037, "comment": ""}]    AKA a Python array of dicts

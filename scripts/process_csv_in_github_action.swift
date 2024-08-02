@@ -47,7 +47,7 @@ struct defaults {
     static let date                 : String = "01/01/1970"
     static let toBeProvided         : String = "TO_BE_PROVIDED"
     static let emptyValue           : String = "\"\""
-    static let emptyValuePlusSpace  : String = "\" \""
+    static let emptyValueRaw        : String = ""
     static let csvLineSeparator     : String = "\n"
     static let csvColumnSeparator   : String = ","
 }
@@ -82,18 +82,18 @@ struct realtimeEntityTypes {
 // Will be used to filter empty parameters from this script's output
 let everyPythonScriptFunctionsParameterNames : [String] = ["provider=", "entity_type=", "country_code=", "authentication_type=", "authentication_info_url=", "api_key_parameter_name=", "subdivision_name=", "municipality=", "country_code=", "license_url=", "name=", "status=", "features=", "note=", "feed_contact_email=", "redirects="]
 
-let arguments : [String] = CommandLine.arguments
-// let arguments : [String] = ["scriptname", "https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/gviz/tq?tqx=out:csv;outFileName:data&sheet=%5BCLEANED%5D%20For%20import", "07/09/2024", "[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}|[0-9]{4}-[0-9]{2}-[0-9]{2}", "MM/dd/yyyy"]
+let argNames : [String] = CommandLine.argName s
+// let argNames : [String] = ["scriptname", "https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/gviz/tq?tqx=out:csv;outFileName:data&sheet=%5BCLEANED%5D%20For%20import", "07/09/2024", "[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}|[0-9]{4}-[0-9]{2}-[0-9]{2}", "MM/dd/yyyy"]
 
 // Set to false for production use
 let isInDebugMode : Bool = false
 
-if arguments.count == 5 {
+if argNames.count == 5 {
     
-    let csvURLStringArg      : String = arguments[1] // the first argument [0] is the name of the script, we can ignore in this context.
-    let dateToFind           : String = arguments[2]
-    let dateFormatGREPArg    : String = arguments[3]
-    let dateFormatDesiredArg : String = arguments[4]
+    let csvURLStringArg      : String = argNames[1] // the first argName  [0] is the name of the script, we can ignore in this context.
+    let dateToFind           : String = argNames[2]
+    let dateFormatGREPArg    : String = argNames[3]
+    let dateFormatDesiredArg : String = argNames[4]
     
     guard let csvURLasURL : URL = URL(string: csvURLStringArg) else {
         print("\n   ERROR: The specified URL does not appear to exist :\n   \(csvURLStringArg)\n")
@@ -180,7 +180,7 @@ if arguments.count == 5 {
                     
                     let authType : Int = authenticationType(for: authentication_type)
                     
-                    PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_schedule_source(provider=\"\(finalProvider)\", country_code=\"\(country)\", direct_download_url=\"\(scheduleFinalURLtoUse)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", subdivision_name=\"\(subdivision_name)\", municipality=\"\(municipality)\", license_url=\"\(license_url)\", name=\"\(name)\", status=\"\(gtfsschedulestatus)\", features=\"\(gtfsschedulefeatures)\", feed_contact_email=\"\(feed_contact_email)\", redirects=\(redirects_array))"
+                    PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_schedule_source(provider=\"\(finalProvider)\", country_code=\"\(country)\", direct_download_url=\"\(scheduleFinalURLtoUse)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", subdivision_name=\"\(subdivision_name)\", municipality=\"\(municipality)\", license_url=\"\(license_url)\", name=\"\(name)\", status=\"\(gtfsschedulestatus)\", features=\"\(gtfsschedulefeatures)\", feed_contact_email=\"\(feed_contact_email)\"\(redirects_array))"
                     
                 } else if datatype.contains(dataType.realtime) { // add_gtfs_realtime_source
                     // Emma: entity_type matches the realtime Data type options of Vehicle Positions, Trip Updates, or Service Alerts. If one of those three are selected, add it. If not, omit it.
@@ -189,7 +189,7 @@ if arguments.count == 5 {
                     let realtimecode : Array = realtimeCode(for:datatype)
                     let realtimecodeString: String = realtimecode.joined(separator:"\", \"")
                     
-                    PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_realtime_source(entity_type=[\"\(realtimecodeString)\"], provider=\"\(finalProvider)\", direct_download_url=\"\(realtimeFinalURLtoUse)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", license_url=\"\(license_url)\", name=\"\(name)\", note=\"\(note)\", status=\"\(gtfsrealtimestatus)\", features=\"\(realtimefeatures)\", feed_contact_email=\"\(feed_contact_email)\", redirects=\(redirects_array))"
+                    PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_realtime_source(entity_type=[\"\(realtimecodeString)\"], provider=\"\(finalProvider)\", direct_download_url=\"\(realtimeFinalURLtoUse)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", license_url=\"\(license_url)\", name=\"\(name)\", note=\"\(note)\", status=\"\(gtfsrealtimestatus)\", features=\"\(realtimefeatures)\", feed_contact_email=\"\(feed_contact_email)\"\(redirects_array))"
                     
                 }
                 
@@ -199,7 +199,7 @@ if arguments.count == 5 {
                     
                     let authType : Int = authenticationType(for: authentication_type)
                     
-                    PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_schedule_source(mdb_source_id=\(old_mbd_ID), provider=\"\(finalProvider)\", name=\"\(name)\", country_code=\"\(country)\", subdivision_name=\"\(subdivision_name)\", municipality=\"\(municipality)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", status=\"\(gtfsschedulestatus)\", features=\"\(gtfsschedulefeatures)\", feed_contact_email=\"\(feed_contact_email)\", redirects=\(redirects_array))"
+                    PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_schedule_source(mdb_source_id=\(old_mbd_ID), provider=\"\(finalProvider)\", name=\"\(name)\", country_code=\"\(country)\", subdivision_name=\"\(subdivision_name)\", municipality=\"\(municipality)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", status=\"\(gtfsschedulestatus)\", features=\"\(gtfsschedulefeatures)\", feed_contact_email=\"\(feed_contact_email)\"\(redirects_array))"
                     
                 } else if datatype.contains(dataType.realtime) { // update_gtfs_realtime_source
                     
@@ -207,7 +207,7 @@ if arguments.count == 5 {
                     let realtimecode : Array = realtimeCode(for:datatype)
                     let realtimecodeString: String = realtimecode.joined(separator:"\", \"")
                     
-                    PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_realtime_source(mdb_source_id=\(old_mbd_ID), entity_type=[\"\(realtimecodeString)\"], provider=\"\(finalProvider)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", name=\"\(name)\", note=\"\(note)\", status=\"\(gtfsrealtimestatus)\", features=\"\(realtimefeatures)\", feed_contact_email=\"\(feed_contact_email)\", redirects=\(redirects_array))"
+                    PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_realtime_source(mdb_source_id=\(old_mbd_ID), entity_type=[\"\(realtimecodeString)\"], provider=\"\(finalProvider)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", name=\"\(name)\", note=\"\(note)\", status=\"\(gtfsrealtimestatus)\", features=\"\(realtimefeatures)\", feed_contact_email=\"\(feed_contact_email)\"\(redirects_array))"
                 }
                 
             }  else if issue.contains(issueType.isToRemoveFeed) { // remove feed
@@ -216,7 +216,7 @@ if arguments.count == 5 {
                     
                     let authType : Int = authenticationType(for: authentication_type)
                     
-                    PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_schedule_source(mdb_source_id=\(old_mbd_ID), provider=\"\(finalProvider)\", name=\"\"**** issueed for removal ****\"\", country_code=\"\(country)\", subdivision_name=\"\(subdivision_name)\", municipality=\"\(municipality)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", status=\"\(gtfsschedulestatus)\", features=\"\(gtfsschedulefeatures)\", feed_contact_email=\"\(feed_contact_email)\", redirects=\(redirects_array))"
+                    PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_schedule_source(mdb_source_id=\(old_mbd_ID), provider=\"\(finalProvider)\", name=\"\"**** issueed for removal ****\"\", country_code=\"\(country)\", subdivision_name=\"\(subdivision_name)\", municipality=\"\(municipality)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", status=\"\(gtfsschedulestatus)\", features=\"\(gtfsschedulefeatures)\", feed_contact_email=\"\(feed_contact_email)\"\(redirects_array))"
                     
                 } else if datatype.contains(dataType.realtime) { // update_gtfs_realtime_source
                     
@@ -224,7 +224,7 @@ if arguments.count == 5 {
                     let realtimecode : Array = realtimeCode(for:datatype)
                     let realtimecodeString: String = realtimecode.joined(separator:"\", \"")
                     
-                    PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_realtime_source(mdb_source_id=\(old_mbd_ID), entity_type=\"[\(realtimecodeString)]\", provider=\"\(finalProvider)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", name=\"\"**** issueed for removal ****\"\", note=\"\(note)\", status=\"\(gtfsrealtimestatus)\", features=\"\(realtimefeatures)\", feed_contact_email=\"\(feed_contact_email)\", redirects=\(redirects_array))"
+                    PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_realtime_source(mdb_source_id=\(old_mbd_ID), entity_type=\"[\(realtimecodeString)]\", provider=\"\(finalProvider)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", name=\"\"**** issueed for removal ****\"\", note=\"\(note)\", status=\"\(gtfsrealtimestatus)\", features=\"\(realtimefeatures)\", feed_contact_email=\"\(feed_contact_email)\"\(redirects_array))"
                     
                 }
                 
@@ -233,7 +233,7 @@ if arguments.count == 5 {
                 if datatype.contains(dataType.schedule) { // add_gtfs_schedule_source
                     
                     let authType : Int = authenticationType(for: authentication_type)
-                    PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_schedule_source(provider=\"\(finalProvider)\", country_code=\"\(country)\", direct_download_url=\"\(scheduleFinalURLtoUse)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", subdivision_name=\"\(subdivision_name)\", municipality=\"\(municipality)\", license_url=\"\(license_url)\", name=\"\(name)\", status=\"\(gtfsschedulestatus)\", features=\"\(gtfsschedulefeatures)\", feed_contact_email=\"\(feed_contact_email)\", redirects=\(redirects_array))"
+                    PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_schedule_source(provider=\"\(finalProvider)\", country_code=\"\(country)\", direct_download_url=\"\(scheduleFinalURLtoUse)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", subdivision_name=\"\(subdivision_name)\", municipality=\"\(municipality)\", license_url=\"\(license_url)\", name=\"\(name)\", status=\"\(gtfsschedulestatus)\", features=\"\(gtfsschedulefeatures)\", feed_contact_email=\"\(feed_contact_email)\"\(redirects_array))"
                     
                 } else if datatype.contains(dataType.realtime) { // add_gtfs_schedule_source
                     
@@ -241,7 +241,7 @@ if arguments.count == 5 {
                     let realtimecode : Array = realtimeCode(for: datatype)
                     let realtimecodeString: String = realtimecode.joined(separator:"\", \"")
                     
-                    PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_realtime_source(entity_type=[\"\(realtimecodeString)\"], provider=\"\(finalProvider)\", direct_download_url=\"\(realtimeFinalURLtoUse)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", license_url=\"\(license_url)\", name=\"\(name)\", note=\"\(note)\", status=\"\(gtfsrealtimestatus)\", features=\"\(realtimefeatures)\", feed_contact_email=\"\(feed_contact_email)\", redirects=\(redirects_array))"
+                    PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_realtime_source(entity_type=[\"\(realtimecodeString)\"], provider=\"\(finalProvider)\", direct_download_url=\"\(realtimeFinalURLtoUse)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", license_url=\"\(license_url)\", name=\"\(name)\", note=\"\(note)\", status=\"\(gtfsrealtimestatus)\", features=\"\(realtimefeatures)\", feed_contact_email=\"\(feed_contact_email)\"\(redirects_array))"
                     
                 }
             }
@@ -265,7 +265,7 @@ if arguments.count == 5 {
     print(PYTHON_SCRIPT_OUTPUT.dropFirst())
     
 } else {
-    print("Incorrect number of arguments provided to the script. Expected 4: a string with the URL, a date format and the date format desired.")
+    print("Incorrect number of argName s provided to the script. Expected 4: a string with the URL, a date format and the date format desired.")
     exit(1)
 }
 
@@ -318,8 +318,10 @@ func extractDate(from theDateToConvert: String, usingGREP dateFormatAsGREP: Rege
 /// - Note: The default empty value is provided by `defaults.emptyValue`.
 func redirectArray(for rawData: String) -> String {
     if rawData.count > 0 {
-        let prefix : String = "[{\"\"id\"\": "
-        let suffix : String = ", \"\"comment\"\": \"\" \"\"}]"
+        let argName   : String = ", redirects=["
+        let closingSuffix : String = "]"
+        let prefix    : String = "{\"\"id\"\": "
+        let suffix    : String = ", \"\"comment\"\": \"\" \"\"}"
         let keyValuePairsJoiner : String = ", "
 
         let rawDataAsArray : [String] = rawData.components(separatedBy: ",")
@@ -329,11 +331,11 @@ func redirectArray(for rawData: String) -> String {
             valueKeyPairs.append(prefix + currentString + suffix)
         }
 
-        let returnString : String = "\(valueKeyPairs.joined(separator: keyValuePairsJoiner))" // Ex.:    [{"id": 2036, "comment": ""}, {"id": 2037, "comment": ""}]    AKA a Python array of dicts
+        let returnString : String = "\(argName)\(valueKeyPairs.joined(separator: keyValuePairsJoiner))\(closingSuffix)" // Ex.: , redirects=[{"id": 2036, "comment": ""}, {"id": 2037, "comment": ""}]    AKA a Python array of dicts
         return returnString
     }
 
-    return defaults.emptyValuePlusSpace
+    return defaults.emptyValueRaw
 }
 
 func authenticationType(for authString: String) -> Int {

@@ -321,11 +321,15 @@ func redirectArray(for rawData: String) -> String {
         let suffix : String = ", \"comment\": \" \"}"
         let keyValuePairsJoiner : String = ", "
 
+        // Escape the double quotes in the JSON string
+        let escapedPrefix = prefix.replacingOccurrences(of: "\"", with: "\\\"")
+        let escapedSuffix = suffix.replacingOccurrences(of: "\"", with: "\\\"")
+
         let rawDataAsArray : [String] = rawData.components(separatedBy: ",")
         var valueKeyPairs : [String] = []
 
         for currentString : String in rawDataAsArray {
-            valueKeyPairs.append(prefix + currentString + suffix)
+            valueKeyPairs.append(escapedPrefix + currentString + escapedSuffix)
         }
 
         let returnString : String = "\(valueKeyPairs.joined(separator: keyValuePairsJoiner))" // Ex.:    {"id": 2036}, {"id": 2037}, {"id": 2038}    AKA a Python dict

@@ -328,7 +328,7 @@ func redirectArray(for rawData: String) -> String {
             valueKeyPairs.append(prefix + currentString + suffix)
         }
 
-        let returnString : String = "[\(valueKeyPairs.joined(separator: keyValuePairsJoiner))]" // [{"id": 2036}, {"id": 2037}, {"id": 2038}]
+        let returnString : String = "\(valueKeyPairs.joined(separator: keyValuePairsJoiner))" // Ex.:    {"id": 2036}, {"id": 2037}, {"id": 2038}    AKA a Python dict
         return returnString
     }
 

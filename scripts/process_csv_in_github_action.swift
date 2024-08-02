@@ -317,8 +317,8 @@ func extractDate(from theDateToConvert: String, usingGREP dateFormatAsGREP: Rege
 /// - Note: The default empty value is provided by `defaults.emptyValue`.
 func redirectArray(for rawData: String) -> String {
     if rawData.count > 0 {
-        let prefix : String = "{\'id\': "
-        let suffix : String = ", \'comment\': \'\'}"
+        let prefix : String = "{\"id\": "
+        let suffix : String = ", \"comment\": \"\"}"
         let keyValuePairsJoiner : String = ", "
 
         let rawDataAsArray : [String] = rawData.components(separatedBy: ",")

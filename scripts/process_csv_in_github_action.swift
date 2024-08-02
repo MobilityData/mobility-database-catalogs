@@ -47,6 +47,7 @@ struct defaults {
     static let date                 : String = "01/01/1970"
     static let toBeProvided         : String = "TO_BE_PROVIDED"
     static let emptyValue           : String = "\"\""
+    static let emptyValuePlusSpace  : String = "\" \""
     static let csvLineSeparator     : String = "\n"
     static let csvColumnSeparator   : String = ","
 }
@@ -332,7 +333,7 @@ func redirectArray(for rawData: String) -> String {
         return returnString
     }
 
-    return defaults.emptyValue
+    return defaults.emptyValuePlusSpace
 }
 
 func authenticationType(for authString: String) -> Int {

@@ -332,7 +332,7 @@ func redirectArray(for rawData: String) -> String {
         return returnString
     }
 
-    return ""
+    return defaults.emptyValue
 }
 
 func authenticationType(for authString: String) -> Int {

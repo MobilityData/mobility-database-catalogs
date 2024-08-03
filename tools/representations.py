@@ -63,11 +63,32 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
 
 
 class Catalog(ABC):
+
+    """
+    An abstract base class representing a catalog of entities.
+
+    This class provides a framework for managing a catalog of entities stored in a file system.
+    It includes methods for initializing the catalog, identifying the number of entities,
+    and aggregating entities from files.
+
+    Attributes:
+        root (str): The root directory of the catalog.
+        path (str): The relative path to the catalog directory from the root.
+        catalog (dict): A dictionary containing the aggregated entities.
+    """
+
     root = None
     path = None
     catalog = None
 
     def __init__(self, **kwargs):
+        """
+        Initialize the Catalog instance.
+
+        Args:
+            **kwargs: Keyword arguments containing initialization parameters.
+                Must include 'ROOT', 'PATH', 'ID_KEY', and 'ENTITY_CLS'.
+        """
         if self.root is None:
             self.root = kwargs.pop(ROOT)
         if self.path is None:
@@ -81,10 +102,36 @@ class Catalog(ABC):
 
     @staticmethod
     def identify(catalog_root):
+        """
+        Identify the number of entities in the catalog.
+
+        This method counts the total number of files in the catalog directory
+        and its subdirectories, then adds 1 to the count.
+
+        Args:
+            catalog_root (str): The root directory of the catalog.
+
+        Returns:
+            int: The total number of files plus one.
+        """
         return sum(len(files) for path, sub_dirs, files in os.walk(catalog_root)) + 1
 
     @staticmethod
     def aggregate(catalog_path, id_key, entity_cls):
+        """
+        Aggregate entities from files in the catalog directory.
+
+        This method walks through the catalog directory, reads JSON files,
+        and creates entity instances based on the file contents.
+
+        Args:
+            catalog_path (str): The path to the catalog directory.
+            id_key (str): The key in the JSON data that represents the entity's ID.
+            entity_cls (type): The class to use for creating entity instances.
+
+        Returns:
+            dict: A dictionary of entity instances, keyed by their IDs.
+        """
         catalog = {}
         for path, sub_dirs, files in os.walk(catalog_path):
             for file in files:
@@ -96,15 +143,71 @@ class Catalog(ABC):
 
     @abstractmethod
     def add(self, **kwargs):
+        """
+        Add a new entity to the catalog.
+
+        This method must be implemented by subclasses.
+
+        Args:
+            **kwargs: Keyword arguments containing the entity data.
+
+        Raises:
+            NotImplementedError: If not implemented by a subclass.
+        """
         pass
 
     @abstractmethod
     def update(self, **kwargs):
+        """
+        Update an existing entity in the catalog.
+
+        This method must be implemented by subclasses.
+
+        Args:
+            **kwargs: Keyword arguments containing the updated entity data.
+
+        Raises:
+            NotImplementedError: If not implemented by a subclass.
+        """
         pass
 
 
 class SourcesCatalog(Catalog):
+
+    """
+    A class representing a catalog of data sources.
+
+    This class extends the Catalog base class and provides specific functionality
+    for managing collections of data sources. It is designed to work with various
+    types of Source objects, as specified by the entity_cls parameter.
+
+    Attributes:
+        entity_cls (type): The class of the entities (sources) stored in this catalog.
+            This is typically a subclass of the Source class.
+
+    Note:
+        This class inherits attributes and methods from the Catalog base class,
+        including methods for aggregating, identifying, and managing catalog entries.
+    """
+
     def __init__(self, **kwargs):
+        """
+        Initialize a SourcesCatalog instance.
+
+        This method extends the parent class initializer, setting up the catalog
+        with a specific entity class for the sources it will contain.
+
+        Args:
+            **kwargs: Keyword arguments containing the catalog's attributes.
+                Must include ENTITY_CLS, specifying the class of sources to be stored.
+                Other arguments are passed to the parent Catalog class.
+
+        Raises:
+            KeyError: If the required ENTITY_CLS key is not provided in kwargs.
+
+        Note:
+            The MDB_SOURCE_ID is used as the id_key for the catalog entries.
+        """
         self.entity_cls = kwargs.pop(ENTITY_CLS)
         super().__init__(id_key=MDB_SOURCE_ID, entity_cls=self.entity_cls, **kwargs)
 
@@ -201,9 +304,30 @@ class SourcesCatalog(Catalog):
 
 
 class GtfsScheduleSourcesCatalog(SourcesCatalog):
+
+    """
+    A singleton class representing a catalog of GTFS (General Transit Feed Specification) schedule sources.
+
+    This class extends the SourcesCatalog class and is specifically designed to manage
+    GTFS schedule sources. It implements the Singleton pattern to ensure only one instance
+    of the catalog exists throughout the application.
+
+    Attributes:
+        _instance (GtfsScheduleSourcesCatalog): The single instance of this class.
+    """
+
     _instance = None
 
     def __init__(self, **kwargs):
+        """
+        Initialize the GtfsScheduleSourcesCatalog instance.
+
+        This method calls the parent class constructor with specific parameters
+        for GTFS schedule sources.
+
+        Args:
+            **kwargs: Additional keyword arguments to be passed to the parent constructor.
+        """
         super().__init__(
             entity_cls=GtfsScheduleSource,
             root=os.path.join(PROJECT_ROOT, SOURCE_CATALOG_PATH_FROM_ROOT),
@@ -218,9 +342,30 @@ class GtfsScheduleSourcesCatalog(SourcesCatalog):
 
 
 class GtfsRealtimeSourcesCatalog(SourcesCatalog):
+    
+    """
+    A singleton class representing a catalog of GTFS (General Transit Feed Specification) realtime sources.
+
+    This class extends the SourcesCatalog class and is specifically designed to manage
+    GTFS realtime sources. It implements the Singleton pattern to ensure only one instance
+    of the catalog exists throughout the application.
+
+    Attributes:
+        _instance (GtfsRealtimeSourcesCatalog): The single instance of this class.
+    """
+
     _instance = None
 
     def __init__(self, **kwargs):
+        """
+        Initialize the GtfsRealtimeSourcesCatalog instance.
+
+        This method calls the parent class constructor with specific parameters
+        for GTFS realtime sources.
+
+        Args:
+            **kwargs: Additional keyword arguments to be passed to the parent constructor.
+        """
         super().__init__(
             entity_cls=GtfsRealtimeSource,
             root=os.path.join(PROJECT_ROOT, SOURCE_CATALOG_PATH_FROM_ROOT),
@@ -235,6 +380,34 @@ class GtfsRealtimeSourcesCatalog(SourcesCatalog):
 
 
 class Source(ABC):
+    
+    """
+    An abstract base class representing a data source.
+
+    This class provides a framework for managing various types of data sources,
+    including their metadata, authentication information, and associated URLs.
+    It defines a set of abstract methods that must be implemented by subclasses
+    to provide specific functionality for different types of sources.
+
+    Attributes:
+        mdb_source_id (str): Unique identifier for the source in the database.
+        data_type (str): The type of data this source provides.
+        provider (str): The provider of the data source.
+        name (str, optional): The name of the data source.
+        filename (str): The filename associated with the data source.
+        features (list, optional): A list of features associated with the data source.
+        status (str, optional): The current status of the data source.
+        direct_download_url (str): URL for direct download of the data.
+        authentication_type (str, optional): The type of authentication required, if any.
+        authentication_info_url (str, optional): URL for authentication information.
+        api_key_parameter_name (str, optional): The name of the API key parameter, if applicable.
+        license_url (str, optional): URL for the license information of the data.
+
+    Note:
+        This class is designed to be subclassed. Subclasses must implement
+        all abstract methods defined here.
+    """
+    
     def __init__(self, **kwargs):
         self.mdb_source_id = kwargs.pop(MDB_SOURCE_ID)
         self.data_type = kwargs.pop(DATA_TYPE)
@@ -303,7 +476,48 @@ class Source(ABC):
 
 
 class GtfsScheduleSource(Source):
+
+    """
+    A class representing a GTFS (General Transit Feed Specification) schedule source.
+
+    This class extends the Source base class and provides specific attributes and methods
+    for managing GTFS schedule data sources. It includes additional information such as
+    geographic location, bounding box coordinates, and GTFS-specific URLs.
+
+    Attributes:
+        country_code (str): The country code where the GTFS data is applicable.
+        subdivision_name (str, optional): The name of the subdivision (e.g., state, province).
+        municipality (str, optional): The name of the municipality.
+        bbox_min_lat (float): Minimum latitude of the bounding box.
+        bbox_max_lat (float): Maximum latitude of the bounding box.
+        bbox_min_lon (float): Minimum longitude of the bounding box.
+        bbox_max_lon (float): Maximum longitude of the bounding box.
+        bbox_extracted_on (str): Date when the bounding box was extracted.
+        latest_url (str): URL for the latest version of the GTFS data.
+        feed_contact_email (str, optional): Contact email for the GTFS feed.
+        redirects (list): List of redirect URLs, if any.
+
+    Note:
+        This class inherits attributes from the Source base class, including
+        mdb_source_id, data_type, provider, name, etc.
+    """
+
     def __init__(self, **kwargs):
+        """
+        Initialize a GtfsScheduleSource instance.
+
+        This method extends the parent class initializer and sets additional
+        attributes specific to GTFS schedule sources.
+
+        Args:
+            **kwargs: Keyword arguments containing the source's attributes.
+                Expected keys include LOCATION, URLS, FEED_CONTACT_EMAIL, and REDIRECTS,
+                in addition to those required by the parent Source class.
+
+        Note:
+            The LOCATION dictionary is expected to contain COUNTRY_CODE, SUBDIVISION_NAME,
+            MUNICIPALITY, and BOUNDING_BOX information.
+        """
         super().__init__(**kwargs)
         location = kwargs.pop(LOCATION, {})
         self.country_code = location.pop(COUNTRY_CODE)
@@ -569,9 +783,44 @@ class GtfsScheduleSource(Source):
 
 
 class GtfsRealtimeSource(Source):
+
+    """
+    A class representing a GTFS (General Transit Feed Specification) realtime source.
+
+    This class extends the Source base class and provides specific attributes and methods
+    for managing GTFS realtime data sources. It includes additional information such as
+    the entity type of the realtime data and references to related static GTFS data.
+
+    Attributes:
+        static_catalog (GtfsScheduleSourcesCatalog): A catalog of GTFS schedule sources,
+            shared across all instances of this class.
+        entity_type (str): The type of entity this realtime source represents 
+            (e.g., 'vehicle positions', 'trip updates', 'service alerts').
+        static_reference (str, optional): A reference to the related static GTFS data source.
+        note (str, optional): Additional notes or comments about this realtime source.
+
+    Note:
+        This class inherits attributes from the Source base class, including
+        mdb_source_id, data_type, provider, name, etc.
+    """
+
     static_catalog = GtfsScheduleSourcesCatalog()
 
     def __init__(self, **kwargs):
+        """
+        Initialize a GtfsRealtimeSource instance.
+
+        This method extends the parent class initializer and sets additional
+        attributes specific to GTFS realtime sources.
+
+        Args:
+            **kwargs: Keyword arguments containing the source's attributes.
+                Expected keys include ENTITY_TYPE, STATIC_REFERENCE, and NOTE,
+                in addition to those required by the parent Source class.
+
+        Raises:
+            KeyError: If the required ENTITY_TYPE key is not provided in kwargs.
+        """
         super().__init__(**kwargs)
         self.entity_type = kwargs.pop(ENTITY_TYPE)
         self.static_reference = kwargs.pop(STATIC_REFERENCE, None)

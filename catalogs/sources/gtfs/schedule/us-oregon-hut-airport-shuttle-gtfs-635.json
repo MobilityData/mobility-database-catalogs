@@ -17,6 +17,13 @@
     },
     "urls": {
         "direct_download": "http://oregon-gtfs.com/gtfs_data/hut-or-us/hut-or-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-hut-airport-shuttle-gtfs-635.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": 132,
+            "comment": " "
+        }
+    ]
 }

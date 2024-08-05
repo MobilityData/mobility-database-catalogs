@@ -1,7 +1,8 @@
 {
     "mdb_source_id": 696,
     "data_type": "gtfs",
-    "provider": "TransLink West Coast Express",
+    "provider": "TransLink Vancouver",
+    "status": "deprecated",
     "location": {
         "country_code": "CA",
         "subdivision_name": "British Columbia",
@@ -16,7 +17,14 @@
     },
     "urls": {
         "direct_download": "http://gtfs.translink.ca/static/latest",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-translink-west-coast-express-gtfs-696.zip?alt=media",
         "license": "https://developer.translink.ca/ServicesGtfs/GtfsData"
-    }
+    },
+    "redirect": [
+        {
+            "id": 1222,
+            "comment": " "
+        }
+    ]
 }

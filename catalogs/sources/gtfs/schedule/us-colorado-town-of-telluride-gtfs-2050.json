@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 2050,
+    "data_type": "gtfs",
+    "provider": "Town of Telluride",
+    "name": "Flex v2 included",
+    "feed_contact_email": "support+sanmiguelcounty-co-us@trilliumtransit.com",
+    "status": "active",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "San miguel county",
+        "bounding_box": {
+            "minimum_latitude": 37.692905,
+            "maximum_latitude": 38.27155472301746,
+            "minimum_longitude": -108.56765337629108,
+            "maximum_longitude": -107.80002,
+            "extracted_on": "2024-07-25T17:07:31+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/sanmiguelcounty-co-us/sanmiguelcounty-co-us--flex-v2.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-town-of-telluride-gtfs-2050.zip?alt=media"
+    },
+    "redirect": []
+}

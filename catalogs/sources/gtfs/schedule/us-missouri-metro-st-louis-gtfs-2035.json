@@ -1,0 +1,27 @@
+{
+    "mdb_source_id": 2035,
+    "data_type": "gtfs",
+    "provider": "Metro St. Louis",
+    "name": "Loop Trolley",
+    "feed_contact_email": "transitInformation@metrostouis.org",
+    "status": "active",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Missouri",
+        "municipality": "St. Louis",
+        "bounding_box": {
+            "minimum_latitude": 38.644612,
+            "maximum_latitude": 38.656478,
+            "minimum_longitude": -90.309414,
+            "maximum_longitude": -90.284448,
+            "extracted_on": "2024-07-11T22:32:52+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://files.looptrolley.com/google_transit.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-missouri-metro-st-louis-gtfs-2035.zip?alt=media",
+        "license": "https://www.looptrolley.com/resources"
+    },
+    "redirect": []
+}

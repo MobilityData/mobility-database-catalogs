@@ -3,7 +3,7 @@ name: Store latest datasets cronjob
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 0 * * 1,4" # every week on monday and thursday at 00:00
 
 env:
   URL_STORAGE_PREFIX: "https://storage.googleapis.com/storage/v1/b/mdb-latest/o"

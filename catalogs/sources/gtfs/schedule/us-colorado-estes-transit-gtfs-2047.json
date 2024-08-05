@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 2047,
+    "data_type": "gtfs",
+    "provider": "Estes Transit",
+    "name": "Flex v2 included",
+    "feed_contact_email": "support+estestransit-co-us@trilliumtransit.com",
+    "status": "active",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Denver",
+        "bounding_box": {
+            "minimum_latitude": 40.34026649887783,
+            "maximum_latitude": 40.40197,
+            "minimum_longitude": -105.586547,
+            "maximum_longitude": -105.48151550836091,
+            "extracted_on": "2024-07-25T17:07:30+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/estestransit-co-us/estestransit-co-us--flex-v2.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-estes-transit-gtfs-2047.zip?alt=media"
+    },
+    "redirect": []
+}

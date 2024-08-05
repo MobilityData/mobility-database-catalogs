@@ -16,6 +16,8 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/truenorthtransit-ma-us/truenorthtransit-ma-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-massachusetts-area-express-max-gtfs-431.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

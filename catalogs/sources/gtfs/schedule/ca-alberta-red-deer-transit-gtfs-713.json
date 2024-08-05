@@ -3,11 +3,6 @@
     "data_type": "gtfs",
     "provider": "Red Deer Transit",
     "status": "deprecated",
-    "redirect": [
-        {
-            "id": 1992
-        }
-    ],
     "location": {
         "country_code": "CA",
         "subdivision_name": "Alberta",
@@ -22,6 +17,13 @@
     },
     "urls": {
         "direct_download": "https://webmap.reddeer.ca/transit/google_transit.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-alberta-red-deer-transit-gtfs-713.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": 1992,
+            "comment": " "
+        }
+    ]
 }

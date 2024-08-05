@@ -2,6 +2,7 @@
     "mdb_source_id": 481,
     "data_type": "gtfs",
     "provider": "Potomac and Rappahannock Transportation Commission (PRTC)",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Virginia",
@@ -16,6 +17,13 @@
     },
     "urls": {
         "direct_download": "http://www.prtctransit.org/feeds/google_transit.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-potomac-and-rappahannock-transportation-commission-prtc-gtfs-481.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": 1156,
+            "comment": " "
+        }
+    ]
 }

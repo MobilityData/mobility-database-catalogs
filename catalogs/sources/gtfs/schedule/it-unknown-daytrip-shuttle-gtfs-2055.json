@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 2057,
+    "mdb_source_id": 2055,
     "data_type": "gtfs",
     "provider": "Daytrip Shuttle",
     "feed_contact_email": "daytrip@daytrip.com",
@@ -16,7 +16,7 @@
     "urls": {
         "direct_download": "https://gtfs.daytrip.com/gtfs_it.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-unknown-daytrip-shuttle-gtfs-2057.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-unknown-daytrip-shuttle-gtfs-2055.zip?alt=media"
     },
     "redirect": []
 }

@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 2031,
+    "mdb_source_id": 2057,
     "data_type": "gtfs",
     "provider": "CP - Comboios de Portugal",
     "location": {
@@ -14,7 +14,7 @@
     },
     "urls": {
         "direct_download": "https://publico.cp.pt/gtfs/gtfs.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-unknown-cp---comboios-de-portugal-gtfs-2031.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-unknown-cp---comboios-de-portugal-gtfs-2057.zip?alt=media"
     },
     "redirect": []
 }

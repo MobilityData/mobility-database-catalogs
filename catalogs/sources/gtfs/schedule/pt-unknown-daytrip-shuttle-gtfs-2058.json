@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 2058,
+    "data_type": "gtfs",
+    "provider": "Daytrip Shuttle",
+    "feed_contact_email": "daytrip@daytrip.com",
+    "location": {
+        "country_code": "PT",
+        "bounding_box": {
+            "minimum_latitude": 38.70975615528937,
+            "maximum_latitude": 41.143135,
+            "minimum_longitude": -9.144930616736463,
+            "maximum_longitude": -8.429155316677392,
+            "extracted_on": "2024-08-06T16:26:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.daytrip.com/gtfs_pt.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-unknown-daytrip-shuttle-gtfs-2058.zip?alt=media"
+    },
+    "redirect": []
+}

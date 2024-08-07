@@ -132,6 +132,9 @@ jobs:
           
           # Add changes
           git add .
+
+          # Count new files
+          NEW_FILE_COUNT=$(git status --porcelain | grep -c "^A")
           
           # Commit changes
           git commit -m "Automated commit — New/Updated feed(s)"
@@ -156,92 +159,93 @@ jobs:
           
           # Set the PR URL as an output
           echo "pr-url=$PR_URL" >> $GITHUB_OUTPUT
+          echo "new-file-count=$NEW_FILE_COUNT" >> $GITHUB_OUTPUT
         env:
           GITHUB_TOKEN: ${{ env.CREDENTIALS }}
         shell: bash
 
-      # - name: Post notification in Slack channel of update
-      #   if: success() && steps.commit-push.outcome == 'success'
-      #   uses: slackapi/slack-github-action@v1.26.0
-      #   with:
-      #     payload: |
-      #       {
-      #         "channel": "C072DF86VQB",
-      #         "blocks": [
-      #           {
-      #             "type": "header",
-      #             "text": {
-      #               "type": "plain_text",
-      #               "text": "✅ Added/updated feed(s)",
-      #               "emoji": true
-      #             }
-      #           },
-      #           {
-      #             "type": "section",
-      #             "text": {
-      #               "type": "mrkdwn",
-      #               "text": "${{ steps.process-csv.outputs.NUMBER_OF_FEEDS }} feed(s) were added or updated in a new branch on the https://github.com/MobilityData/mobility-database-catalogs repo."
-      #             }
-      #           },
-      #           {
-      #             "type": "section",
-      #             "text": {
-      #               "type": "mrkdwn",
-      #               "text": "New branch name: `${{ steps.create_branch_name.outputs.BRANCH }}`*Open the corresponding PR:* ${{ steps.commit-push-create-pr.outputs.pr-url }}\n\n*Open the new branch:* https://github.com/MobilityData/mobility-database-catalogs/tree/${{ steps.create_branch_name.outputs.BRANCH }}\n\n"
-      #             }
-      #           },
-      #           {
-      #             "type": "section",
-      #             "text": {
-      #               "type": "mrkdwn",
-      #               "text": "See the source document here: https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit#gid=2061813733"
-      #             }
-      #           }
-      #         ]
-      #       }
-      #   env:
-      #     SLACK_WEBHOOK_URL: ${{ env.SLACK_WEBHOOK_URL }}
-      #     SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
+      - name: Post notification in Slack channel of update
+        if: success() && steps.commit-push.outcome == 'success'
+        uses: slackapi/slack-github-action@v1.26.0
+        with:
+          payload: |
+            {
+              "channel": "C072DF86VQB",
+              "blocks": [
+                {
+                  "type": "header",
+                  "text": {
+                    "type": "plain_text",
+                    "text": "✅ Added/updated ${{ steps.commit-push-create-pr.outputs.new-file-count }} feed(s)",
+                    "emoji": true
+                  }
+                },
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "${{ steps.commit-push-create-pr.outputs.new-file-count }} feed(s) were added or updated in a new branch on the https://github.com/MobilityData/mobility-database-catalogs repo."
+                  }
+                },
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "New branch name: `${{ steps.create_branch_name.outputs.BRANCH }}`*Open the corresponding PR:* ${{ steps.commit-push-create-pr.outputs.pr-url }}\n\n*Open the new branch:* https://github.com/MobilityData/mobility-database-catalogs/tree/${{ steps.create_branch_name.outputs.BRANCH }}\n\n"
+                  }
+                },
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "See the source document here: https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit#gid=2061813733"
+                  }
+                }
+              ]
+            }
+        env:
+          SLACK_WEBHOOK_URL: ${{ env.SLACK_WEBHOOK_URL }}
+          SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
 
-      # - name: Post notification in Slack in case of failure
-      #   if: failure()
-      #   uses: slackapi/slack-github-action@v1.26.0
-      #   with:
-      #     payload: |
-      #       {
-      #         "channel": "C072DF86VQB",
-      #         "blocks": [
-      #           {
-      #             "type": "header",
-      #             "text": {
-      #               "type": "plain_text",
-      #               "text": "❌ FAILED — Add/update feed(s)",
-      #               "emoji": true
-      #             }
-      #           },
-      #           {
-      #             "type": "section",
-      #             "text": {
-      #               "type": "mrkdwn",
-      #               "text": "The GitHub action has failed on the https://github.com/MobilityData/mobility-database-catalogs repo."
-      #             }
-      #           },
-      #           {
-      #             "type": "section",
-      #             "text": {
-      #               "type": "mrkdwn",
-      #               "text": "*Open the action run:* https://github.com/MobilityData/mobility-database-catalogs/actions/runs/${{ env.RUN_ID }}"
-      #             }
-      #           },
-      #           {
-      #             "type": "section",
-      #             "text": {
-      #               "type": "mrkdwn",
-      #               "text": "See the source document here: https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit#gid=2061813733"
-      #             }
-      #           }
-      #         ]
-      #       }
-      #   env:
-      #     SLACK_WEBHOOK_URL: ${{ env.SLACK_WEBHOOK_URL }}
-      #     SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
+      - name: Post notification in Slack in case of failure
+        if: failure()
+        uses: slackapi/slack-github-action@v1.26.0
+        with:
+          payload: |
+            {
+              "channel": "C072DF86VQB",
+              "blocks": [
+                {
+                  "type": "header",
+                  "text": {
+                    "type": "plain_text",
+                    "text": "❌ FAILED — Add/update ${{ steps.commit-push-create-pr.outputs.new-file-count }} feed(s)",
+                    "emoji": true
+                  }
+                },
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "The GitHub action has failed on the https://github.com/MobilityData/mobility-database-catalogs repo."
+                  }
+                },
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "*Open the action run:* https://github.com/MobilityData/mobility-database-catalogs/actions/runs/${{ env.RUN_ID }}"
+                  }
+                },
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "See the source document here: https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit#gid=2061813733"
+                  }
+                }
+              ]
+            }
+        env:
+          SLACK_WEBHOOK_URL: ${{ env.SLACK_WEBHOOK_URL }}
+          SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK

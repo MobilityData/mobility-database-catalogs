@@ -119,12 +119,19 @@ jobs:
         if: steps.process-csv.outputs.PYTHON_SCRIPT_ARGS != ''
         run: |
           BRANCH_NAME=${{ steps.create_branch_name.outputs.BRANCH }}
-      
-          # Fetch the latest changes
-          git fetch origin main
 
-          # Ensure we're on the correct branch
-          git checkout -B "$BRANCH_NAME"
+          # Fetch the latest changes
+          git fetch origin
+
+          # Check if the branch already exists on the remote
+          if git ls-remote --exit-code --heads origin "$BRANCH_NAME"; then
+            echo "Branch $BRANCH_NAME already exists on remote. Updating local branch."
+            git branch -D "$BRANCH_NAME" || true
+            git checkout -b "$BRANCH_NAME" "origin/$BRANCH_NAME"
+          else
+            echo "Creating new branch $BRANCH_NAME"
+            git checkout -b "$BRANCH_NAME"
+          fi
 
           # Attempt to merge main into our branch
           if ! git merge origin/main --no-commit --no-ff; then
@@ -142,14 +149,23 @@ jobs:
           # Commit changes
           git commit -m "Automated commit — New/Updated feed(s)"
           
-          # Push changes to the branch, setting upstream
-          git push -u origin "$BRANCH_NAME"
+          # Force push changes to the branch
+          git push -f origin "$BRANCH_NAME"
           
-          # Create pull request and capture the URL
-          PR_URL=$(gh pr create --title "Automated Pull Request — New/Updated feed(s)" \
-                                --body "This pull request contains new or updated feed(s)" \
-                                --base main \
-                                --head "$BRANCH_NAME")
+          # Check if a PR already exists
+          EXISTING_PR=$(gh pr list --head "$BRANCH_NAME" --json number -q '.[0].number')
+          
+          if [ -n "$EXISTING_PR" ]; then
+            echo "Pull request already exists. Updating PR #$EXISTING_PR"
+            PR_URL=$(gh pr view $EXISTING_PR --json url -q '.url')
+          else
+            echo "Creating new pull request"
+            # Create pull request and capture the URL
+            PR_URL=$(gh pr create --title "Automated Pull Request — New/Updated feed(s)" \
+                                  --body "This pull request contains new or updated feed(s)" \
+                                  --base main \
+                                  --head "$BRANCH_NAME")
+          fi
           
           # Set the PR URL as an output
           echo "pr-url=$PR_URL" >> $GITHUB_OUTPUT

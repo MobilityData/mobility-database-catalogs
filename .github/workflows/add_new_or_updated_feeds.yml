@@ -119,6 +119,9 @@ jobs:
         if: steps.process-csv.outputs.PYTHON_SCRIPT_ARGS != ''
         run: |
           BRANCH_NAME=${{ steps.create_branch_name.outputs.BRANCH }}
+
+          # Pull the latest changes before committing
+          git pull
     
           # Configure git
           git config --global user.name "${{ env.USERNAME }}"

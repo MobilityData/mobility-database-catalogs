@@ -114,29 +114,36 @@ jobs:
             git status
             echo -e "\n"
 
-      - name: Commit & push
-        id: commit-push
+      - name: Commit, push, and create PR
+        id: commit-push-create-pr
         if: steps.process-csv.outputs.PYTHON_SCRIPT_ARGS != ''
-        uses: EndBug/add-and-commit@v9.1.3
-        with:
-            github_token: ${{ env.CREDENTIALS }}
-            new_branch: ${{ steps.create_branch_name.outputs.BRANCH }}
-            author_name: ${{ env.USERNAME }}
-            author_email: ${{ env.USERNAME_EMAIL }}
-            committer_name: ${{ env.USERNAME }}
-            committer_email: ${{ env.USERNAME_EMAIL }}
-            message: "Automated commit — New/Updated feed(s)"
-
-      # - name: Create Pull Request
-      #   id: create-pr
-      #   if: success() && steps.commit-push.outcome == 'success'
-      #   uses: peter-evans/create-pull-request@v6.1.0
-      #   with:
-      #     token: ${{ secrets.GITHUB_TOKEN }}
-      #     branch: ${{ steps.create_branch_name.outputs.BRANCH }}
-      #     title: "Automated Pull Request — New/Updated feed(s)"
-      #     body: "This pull request contains new or updated feed(s)"
-      #     base: main
+        run: |
+          BRANCH_NAME=${{ steps.create_branch_name.outputs.BRANCH }}
+          
+          # Configure git
+          git config --global user.name "${{ env.USERNAME }}"
+          git config --global user.email "${{ env.USERNAME_EMAIL }}"
+          
+          # Checkout new branch
+          git checkout -b "$BRANCH_NAME"
+          
+          # Add changes
+          git add .
+          
+          # Commit changes
+          git commit -m "Automated commit — New/Updated feed(s)"
+          
+          # Push changes to new branch
+          git push origin "$BRANCH_NAME"
+          
+          # Create pull request
+          gh pr create --title "Automated Pull Request — New/Updated feed(s)" \
+                        --body "This pull request contains new or updated feed(s)" \
+                        --base main \
+                        --head "$BRANCH_NAME"
+        env:
+          GITHUB_TOKEN: ${{ env.CREDENTIALS }}
+        shell: bash
 
       # - name: Post notification in Slack channel of update
       #   if: success() && steps.commit-push.outcome == 'success'

@@ -120,24 +120,11 @@ jobs:
         run: |
           BRANCH_NAME=${{ steps.create_branch_name.outputs.BRANCH }}
 
-          # Fetch the latest changes
-          git fetch origin
+          # Fetch the latest changes from main
+          git fetch origin main
 
-          # Check if the branch already exists on the remote
-          if git ls-remote --exit-code --heads origin "$BRANCH_NAME"; then
-            echo "Branch $BRANCH_NAME already exists on remote. Updating local branch."
-            git branch -D "$BRANCH_NAME" || true
-            git checkout -b "$BRANCH_NAME" "origin/$BRANCH_NAME"
-          else
-            echo "Creating new branch $BRANCH_NAME"
-            git checkout -b "$BRANCH_NAME"
-          fi
-
-          # Attempt to merge main into our branch
-          if ! git merge origin/main --no-commit --no-ff; then
-            echo "Merge conflicts detected. Aborting merge and continuing with our changes."
-            git merge --abort
-          fi
+          # Create or reset the branch to the current main
+          git checkout -B "$BRANCH_NAME" origin/main
 
           # Configure git
           git config --global user.name "${{ env.USERNAME }}"

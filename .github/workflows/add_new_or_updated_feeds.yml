@@ -127,16 +127,16 @@ jobs:
             committer_email: ${{ env.USERNAME_EMAIL }}
             message: "Automated commit — New/Updated feed(s)"
 
-      - name: Create Pull Request
-        id: create-pr
-        if: success() && steps.commit-push.outcome == 'success'
-        uses: peter-evans/create-pull-request@v6.1.0
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ steps.create_branch_name.outputs.BRANCH }}
-          title: "Automated Pull Request — New/Updated feed(s)"
-          body: "This pull request contains new or updated feed(s)"
-          base: main
+      # - name: Create Pull Request
+      #   id: create-pr
+      #   if: success() && steps.commit-push.outcome == 'success'
+      #   uses: peter-evans/create-pull-request@v6.1.0
+      #   with:
+      #     token: ${{ secrets.GITHUB_TOKEN }}
+      #     branch: ${{ steps.create_branch_name.outputs.BRANCH }}
+      #     title: "Automated Pull Request — New/Updated feed(s)"
+      #     body: "This pull request contains new or updated feed(s)"
+      #     base: main
 
       # - name: Post notification in Slack channel of update
       #   if: success() && steps.commit-push.outcome == 'success'

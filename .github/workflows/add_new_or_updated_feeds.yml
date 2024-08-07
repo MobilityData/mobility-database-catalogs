@@ -121,7 +121,7 @@ jobs:
           BRANCH_NAME=${{ steps.create_branch_name.outputs.BRANCH }}
 
           # Pull the latest changes before committing
-          git pull
+          git pull origin main
     
           # Configure git
           git config --global user.name "${{ env.USERNAME }}"

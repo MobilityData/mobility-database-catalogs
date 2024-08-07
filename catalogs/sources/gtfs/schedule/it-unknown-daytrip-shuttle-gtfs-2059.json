@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 2059,
+    "data_type": "gtfs",
+    "provider": "Daytrip Shuttle",
+    "feed_contact_email": "daytrip@daytrip.com",
+    "location": {
+        "country_code": "IT",
+        "bounding_box": {
+            "minimum_latitude": 40.6307269,
+            "maximum_latitude": 40.87768194395014,
+            "minimum_longitude": 14.272063079863504,
+            "maximum_longitude": 14.4846958,
+            "extracted_on": "2024-08-07T13:44:33+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.daytrip.com/gtfs_it.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-unknown-daytrip-shuttle-gtfs-2059.zip?alt=media"
+    },
+    "redirect": []
+}

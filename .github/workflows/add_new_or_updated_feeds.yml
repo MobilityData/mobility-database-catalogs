@@ -122,16 +122,16 @@ jobs:
       
           # Fetch the latest changes
           git fetch origin main
-      
+
           # Ensure we're on the correct branch
           git checkout -B "$BRANCH_NAME"
-      
+
           # Attempt to merge main into our branch
           if ! git merge origin/main --no-commit --no-ff; then
             echo "Merge conflicts detected. Aborting merge and continuing with our changes."
             git merge --abort
           fi
-      
+
           # Configure git
           git config --global user.name "${{ env.USERNAME }}"
           git config --global user.email "${{ env.USERNAME_EMAIL }}"
@@ -149,8 +149,7 @@ jobs:
           PR_URL=$(gh pr create --title "Automated Pull Request — New/Updated feed(s)" \
                                 --body "This pull request contains new or updated feed(s)" \
                                 --base main \
-                                --head "$BRANCH_NAME" \
-                                --json url -q ".url")
+                                --head "$BRANCH_NAME")
           
           # Set the PR URL as an output
           echo "pr-url=$PR_URL" >> $GITHUB_OUTPUT

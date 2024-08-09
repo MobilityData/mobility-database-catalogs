@@ -2,6 +2,7 @@
     "mdb_source_id": 154,
     "data_type": "gtfs",
     "provider": "METRO Houston",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Texas",
@@ -16,7 +17,14 @@
     },
     "urls": {
         "direct_download": "http://www.ridemetro.org/Downloads/google_transit.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-texas-metro-houston-gtfs-154.zip?alt=media",
         "license": "https://www.ridemetro.org/Pages/DigitalAssets.aspx"
-    }
+    },
+    "redirect": [
+        {
+            "id": 2060,
+            "comment": " "
+        }
+    ]
 }

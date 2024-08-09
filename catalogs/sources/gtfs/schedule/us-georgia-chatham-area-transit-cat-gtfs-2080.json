@@ -1,8 +1,7 @@
 {
-    "mdb_source_id": 351,
+    "mdb_source_id": 2080,
     "data_type": "gtfs",
     "provider": "Chatham Area Transit (CAT)",
-    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Georgia",
@@ -12,18 +11,13 @@
             "maximum_latitude": null,
             "minimum_longitude": null,
             "maximum_longitude": null,
-            "extracted_on": "2022-03-15T21:17:00+00:00"
+            "extracted_on": "2024-08-09T19:04:00+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://www.catchacat.org/wp-content/uploads/2019/07/cat_gtfs_06-07-2021.zip",
+        "direct_download": "https://catchacat.org/wp-content/uploads/GTFS.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-georgia-chatham-area-transit-cat-gtfs-351.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-georgia-chatham-area-transit-cat-gtfs-2080.zip?alt=media"
     },
-    "redirect": [
-        {
-            "id": 2080,
-            "comment": " "
-        }
-    ]
+    "redirect": []
 }

@@ -2,10 +2,10 @@
     "mdb_source_id": 365,
     "data_type": "gtfs",
     "provider": "Lextran",
-    "status": "inactive",
     "features": [
         "fares-v1"
     ],
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Kentucky",
@@ -20,6 +20,13 @@
     },
     "urls": {
         "direct_download": "https://lextran.com/wp-content/uploads/2021/05/GTFS.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-kentucky-lextran-gtfs-365.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": 2067,
+            "comment": " "
+        }
+    ]
 }

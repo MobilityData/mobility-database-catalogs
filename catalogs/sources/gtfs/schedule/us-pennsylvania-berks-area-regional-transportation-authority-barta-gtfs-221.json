@@ -2,6 +2,7 @@
     "mdb_source_id": 221,
     "data_type": "gtfs",
     "provider": "Berks Area Regional Transportation Authority (BARTA)",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Pennsylvania",
@@ -16,6 +17,13 @@
     },
     "urls": {
         "direct_download": "https://github.com/transitland/gtfs-archives-not-hosted-elsewhere/raw/master/barta.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-pennsylvania-berks-area-regional-transportation-authority-barta-gtfs-221.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": 2064,
+            "comment": " "
+        }
+    ]
 }

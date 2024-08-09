@@ -15,7 +15,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://www.contenu.sto.ca/GTFS/GTFS.zip",
+        "direct_download": "https://contenu.sto.ca/GTFS/GTFS.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-societe-de-transport-de-loutaouais-gtfs-740.zip?alt=media"
     }
 }

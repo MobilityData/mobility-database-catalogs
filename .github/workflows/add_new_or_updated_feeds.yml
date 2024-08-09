@@ -97,6 +97,7 @@ jobs:
             pip install gtfs_kit --quiet
             pip install unidecode --quiet
 
+            set -x # this should force GitHub to output every echo commands
             echo "BEGIN"
 
             sections=$(echo '${{ steps.process-csv.outputs.PYTHON_SCRIPT_ARGS }}' | sed 's/""/"/g' | sed "s/’/'/g" | awk -F'§' '{for (i=1; i<=NF; i++) print $i}')

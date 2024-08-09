@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2083,
+    "data_type": "gtfs",
+    "provider": "Morro Bay Transit",
+    "feed_contact_email": "hello@calitp.org",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Morro Bay",
+        "bounding_box": {
+            "minimum_latitude": 35.346999,
+            "maximum_latitude": 35.403477,
+            "minimum_longitude": -120.868689,
+            "maximum_longitude": -120.840761,
+            "extracted_on": "2024-08-09T19:26:24+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.morrobayca.gov/DocumentCenter/View/19231/Morro-Bay-GTFS-Data-Updated-20240510",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-morro-bay-transit-gtfs-2083.zip?alt=media"
+    },
+    "redirect": []
+}

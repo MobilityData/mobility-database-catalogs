@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2103,
+    "data_type": "gtfs",
+    "provider": "Broome County Transit (B.C. Transit)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Binghamton",
+        "bounding_box": {
+            "minimum_latitude": 42.035993,
+            "maximum_latitude": 42.168976,
+            "minimum_longitude": -76.091274,
+            "maximum_longitude": -75.80634,
+            "extracted_on": "2024-08-09T19:26:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.gobroomecounty.com/sites/default/files/dept/transit/BCT_GTFS.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-broome-county-transit-bc-transit-gtfs-2103.zip?alt=media",
+        "license": "https://www.gobroomecounty.com/transit/gtfs"
+    },
+    "redirect": []
+}

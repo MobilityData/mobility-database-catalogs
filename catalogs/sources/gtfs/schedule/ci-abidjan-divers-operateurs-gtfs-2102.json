@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 2102,
+    "data_type": "gtfs",
+    "provider": "Divers opérateurs",
+    "location": {
+        "country_code": "CI",
+        "subdivision_name": "Abidjan",
+        "bounding_box": {
+            "minimum_latitude": 5.199754,
+            "maximum_latitude": 5.512566,
+            "minimum_longitude": -4.23149,
+            "maximum_longitude": -3.722602,
+            "extracted_on": "2024-08-09T19:26:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gitlab.com/digitaltransport/data/africa/abidjan_2/-/raw/main/Abidjan_2023/Donn%C3%A9es/Abidjan_Paratransit_GTFS_20230726.zip?ref_type=heads&inline=false",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ci-abidjan-divers-operateurs-gtfs-2102.zip?alt=media"
+    },
+    "redirect": []
+}

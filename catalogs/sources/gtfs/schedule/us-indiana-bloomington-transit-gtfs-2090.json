@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2090,
+    "data_type": "gtfs",
+    "provider": "Bloomington Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Indiana",
+        "municipality": "Bloomington",
+        "bounding_box": {
+            "minimum_latitude": 39.121337890625,
+            "maximum_latitude": 39.20846939086914,
+            "minimum_longitude": -86.59188079833984,
+            "maximum_longitude": -86.47177124023438,
+            "extracted_on": "2024-08-09T19:26:32+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/etatransit.gtfs/bloomingtontransit.etaspot.net/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-indiana-bloomington-transit-gtfs-2090.zip?alt=media"
+    },
+    "redirect": []
+}

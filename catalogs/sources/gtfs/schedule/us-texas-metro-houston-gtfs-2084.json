@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2084,
+    "data_type": "gtfs",
+    "provider": "METRO Houston",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Texas",
+        "municipality": "Houston",
+        "bounding_box": {
+            "minimum_latitude": 29.531093,
+            "maximum_latitude": 30.309404,
+            "minimum_longitude": -95.776249,
+            "maximum_longitude": -94.97971,
+            "extracted_on": "2024-08-09T19:26:29+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://metro.resourcespace.com/pages/download.php?ref=4835&ext=zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-texas-metro-houston-gtfs-2084.zip?alt=media",
+        "license": "https://www.ridemetro.org/about/news-media/digital-assets"
+    },
+    "redirect": []
+}

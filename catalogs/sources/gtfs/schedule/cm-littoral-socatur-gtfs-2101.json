@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2101,
+    "data_type": "gtfs",
+    "provider": "Socatur",
+    "location": {
+        "country_code": "CM",
+        "subdivision_name": "Littoral",
+        "municipality": "Communauté urbaine de Douala",
+        "bounding_box": {
+            "minimum_latitude": 3.9931,
+            "maximum_latitude": 4.1016334,
+            "minimum_longitude": 9.6304111,
+            "maximum_longitude": 9.80538,
+            "extracted_on": "2024-08-09T19:26:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gitlab.com/digitaltransport/data/africa/douala/-/raw/master/GTFS-SYSTRA/GTFS-SYSTRA.zip?ref_type=heads&inline=false",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cm-littoral-socatur-gtfs-2101.zip?alt=media"
+    },
+    "redirect": []
+}

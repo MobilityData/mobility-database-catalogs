@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2099,
+    "data_type": "gtfs",
+    "provider": "RoadRUNNER Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New Mexico",
+        "municipality": "Las Cruces",
+        "bounding_box": {
+            "minimum_latitude": 32.27146,
+            "maximum_latitude": 32.39043,
+            "minimum_longitude": -106.8156,
+            "maximum_longitude": -106.7011,
+            "extracted_on": "2024-08-09T19:26:39+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://passio3.com/roadrunner/passioTransit/gtfs/google_transit.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-mexico-roadrunner-transit-gtfs-2099.zip?alt=media"
+    },
+    "redirect": []
+}

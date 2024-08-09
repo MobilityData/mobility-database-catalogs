@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2100,
+    "data_type": "gtfs",
+    "provider": "Greeley-Evans Transit (GET)",
+    "feed_contact_email": "support+test+greeleyevans-co-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Greeley",
+        "bounding_box": {
+            "minimum_latitude": 40.375996,
+            "maximum_latitude": 40.581502,
+            "minimum_longitude": -105.085223,
+            "maximum_longitude": -104.67768,
+            "extracted_on": "2024-08-09T19:26:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/greeleyevans-co-us/greeleyevans-co-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-greeley-evans-transit-get-gtfs-2100.zip?alt=media"
+    },
+    "redirect": []
+}

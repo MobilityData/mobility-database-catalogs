@@ -97,23 +97,19 @@ jobs:
             pip install gtfs_kit --quiet
             pip install unidecode --quiet
 
-            set -x # this should force GitHub to output every echo commands
             echo "BEGIN"
 
             sections=$(echo '${{ steps.process-csv.outputs.PYTHON_SCRIPT_ARGS }}' | sed 's/""/"/g' | sed "s/’/'/g" | awk -F'§' '{for (i=1; i<=NF; i++) print $i}')
+            set -x # this should force GitHub to output every echo commands
             for section in "${sections[@]}"; do
                 echo "processing line: ${section}"
-                echo -e "\n"
                 output=$(eval "python -c 'from tools.operations import *; ${section}'")
-                echo -e "\n"
                 echo "$output"
-                echo -e "\n"
             done
+            set +x
 
             echo "DONE"
-            echo -e "\n"
             git status
-            echo -e "\n"
 
       - name: Commit, push, and create PR
         id: commit-push-create-pr

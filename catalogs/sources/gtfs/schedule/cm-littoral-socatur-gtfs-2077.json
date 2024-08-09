@@ -1,8 +1,7 @@
 {
-    "mdb_source_id": 766,
+    "mdb_source_id": 2077,
     "data_type": "gtfs",
     "provider": "Socatur",
-    "status": "deprecated",
     "location": {
         "country_code": "CM",
         "subdivision_name": "Littoral",
@@ -12,18 +11,13 @@
             "maximum_latitude": 4.1016334,
             "minimum_longitude": 9.6304111,
             "maximum_longitude": 9.80538,
-            "extracted_on": "2022-03-17T13:16:46+00:00"
+            "extracted_on": "2024-08-09T19:03:59+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://git.digitaltransport4africa.org/places/douala/raw/master/GTFS-SYSTRA/GTFS-SYSTRA.zip",
+        "direct_download": "https://gitlab.com/digitaltransport/data/africa/douala/-/raw/master/GTFS-SYSTRA/GTFS-SYSTRA.zip?ref_type=heads&inline=false",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cm-littoral-socatur-gtfs-766.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cm-littoral-socatur-gtfs-2077.zip?alt=media"
     },
-    "redirect": [
-        {
-            "id": 2077,
-            "comment": " "
-        }
-    ]
+    "redirect": []
 }

@@ -1,8 +1,7 @@
 {
-    "mdb_source_id": 353,
+    "mdb_source_id": 2081,
     "data_type": "gtfs",
     "provider": "Huntsville Shuttle",
-    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Alabama",
@@ -12,18 +11,13 @@
             "maximum_latitude": 34.793232,
             "minimum_longitude": -86.678083,
             "maximum_longitude": -86.540532,
-            "extracted_on": "2022-03-15T21:17:07+00:00"
+            "extracted_on": "2024-08-09T19:04:01+00:00"
         }
     },
     "urls": {
-        "direct_download": "http://maps.hsvcity.com/GoogleTransit/google_transit.zip",
+        "direct_download": "https://maps.huntsvilleal.gov/googletransit/google_transit.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-alabama-huntsville-shuttle-gtfs-353.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-alabama-huntsville-shuttle-gtfs-2081.zip?alt=media"
     },
-    "redirect": [
-        {
-            "id": 2081,
-            "comment": " "
-        }
-    ]
+    "redirect": []
 }

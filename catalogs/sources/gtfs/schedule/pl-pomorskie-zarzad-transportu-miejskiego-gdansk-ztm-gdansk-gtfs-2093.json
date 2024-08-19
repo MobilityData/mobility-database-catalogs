@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2093,
+    "data_type": "gtfs",
+    "provider": "Zarząd Transportu Miejskiego Gdańsk (ZTM Gdańsk)",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Pomorskie",
+        "municipality": "Gdańsk",
+        "bounding_box": {
+            "minimum_latitude": 54.237928572047,
+            "maximum_latitude": 54.474834202056,
+            "minimum_longitude": 18.355140132614,
+            "maximum_longitude": 18.934177112697,
+            "extracted_on": "2024-08-28T21:15:08+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://ckan.multimediagdansk.pl/dataset/c24aa637-3619-4dc2-a171-a23eec8f2172/resource/30e783e4-2bec-4a7d-bb22-ee3e3b26ca96/download/gtfsgoogle.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-pomorskie-zarzad-transportu-miejskiego-gdansk-ztm-gdansk-gtfs-2093.zip?alt=media",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "redirect": []
+}

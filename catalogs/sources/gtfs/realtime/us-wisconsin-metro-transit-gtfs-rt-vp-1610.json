@@ -9,7 +9,7 @@
         394
     ],
     "urls": {
-        "direct_download": "http://transitdata.cityofmadison.com/Vehicle/VehiclePositions.pb",
+        "direct_download": "https://metromap.cityofmadison.com/gtfsrt/vehicles",
         "authentication_type": 0,
         "license": "http://www.cityofmadison.com/metro/Apps/developers.cfm"
     }

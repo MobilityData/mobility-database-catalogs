@@ -9,7 +9,7 @@
         394
     ],
     "urls": {
-        "direct_download": "http://transitdata.cityofmadison.com/TripUpdate/TripUpdates.pb",
+        "direct_download": "https://metromap.cityofmadison.com/gtfsrt/trips",
         "authentication_type": 0,
         "license": "http://www.cityofmadison.com/metro/Apps/developers.cfm"
     }

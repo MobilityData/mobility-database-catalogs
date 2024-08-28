@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2083,
+    "data_type": "gtfs",
+    "provider": "The Jule",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Iowa",
+        "municipality": "Dubuque",
+        "bounding_box": {
+            "minimum_latitude": 42.476226,
+            "maximum_latitude": 42.571379,
+            "minimum_longitude": -90.775579,
+            "maximum_longitude": -90.644738,
+            "extracted_on": "2024-08-09T20:22:22+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://myride.cityofdubuque.org/gtfs/google_transit.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-iowa-the-jule-gtfs-2083.zip?alt=media"
+    },
+    "redirect": []
+}

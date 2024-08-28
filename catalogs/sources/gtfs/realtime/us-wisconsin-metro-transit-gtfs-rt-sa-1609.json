@@ -5,6 +5,7 @@
         "sa"
     ],
     "provider": "Metro Transit",
+    "status": "deprecated",
     "static_reference": [
         394
     ],

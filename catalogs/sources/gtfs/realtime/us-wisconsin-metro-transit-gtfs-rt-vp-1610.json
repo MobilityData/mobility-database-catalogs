@@ -8,6 +8,10 @@
     "static_reference": [
         394
     ],
+    "redirect": {
+        "id": 2086,
+        "comment": "New AVL feed redirect"
+    },
     "urls": {
         "direct_download": "http://transitdata.cityofmadison.com/Vehicle/VehiclePositions.pb",
         "authentication_type": 0,

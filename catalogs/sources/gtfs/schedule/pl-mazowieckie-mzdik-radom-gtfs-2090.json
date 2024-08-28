@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 2090,
+    "data_type": "gtfs",
+    "provider": "MZDiK Radom",
+    "features": [
+        "fares-v1"
+    ],
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Mazowieckie",
+        "municipality": "Radom",
+        "bounding_box": {
+            "minimum_latitude": 51.31018,
+            "maximum_latitude": 51.468,
+            "minimum_longitude": 21.03423,
+            "maximum_longitude": 21.32751,
+            "extracted_on": "2024-08-28T21:25:29+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://mkuran.pl/gtfs/radom.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-mazowieckie-mzdik-radom-gtfs-2090.zip?alt=media",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "redirect": []
+}

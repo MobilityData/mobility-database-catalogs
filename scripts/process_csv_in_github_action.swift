@@ -174,19 +174,22 @@ if argNames.count == 5 {
             
             if isInDebugMode { print("\t\tscheduleFinalURLtoUse || realtimeFinalURLtoUse : \(scheduleFinalURLtoUse) (\(scheduleFinalURLtoUse.count)) \(realtimeFinalURLtoUse) (\(realtimeFinalURLtoUse.count))") }
             
+            if isInDebugMode { print("\t\tEvaluating issue: \(issue)") }
+
             if issue.contains(issueType.isAddNewFeed) || issue.contains(issueType.isAddNewSource) { // add new feed
+
+                if isInDebugMode { print("\t\t\tNEW FEED: issue contains datatype: \(datatype)") }
                 
                 if datatype.contains(dataType.schedule) { // add_gtfs_schedule_source
-                    
                     let authType : Int = authenticationType(for: authentication_type)
                     
                     PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_schedule_source(provider=\"\(finalProvider)\", country_code=\"\(country)\", direct_download_url=\"\(scheduleFinalURLtoUse)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", subdivision_name=\"\(subdivision_name)\", municipality=\"\(municipality)\", license_url=\"\(license_url)\", name=\"\(name)\", status=\"\(gtfsschedulestatus)\", features=\"\(gtfsschedulefeatures)\", feed_contact_email=\"\(feed_contact_email)\"\(redirects_array))"
                     
-                } else if datatype.contains(dataType.realtime) { // add_gtfs_realtime_source
+                } else if datatype.contains(dataType.realtime) || (datatype.contains(realtimeEntityTypesString.vehiclePositions)) || (datatype.contains(realtimeEntityTypesString.tripUpdates)) || (datatype.contains(realtimeEntityTypesString.serviceAlerts)) || (datatype.contains(realtimeEntityTypesString.unknown)) { // add_gtfs_realtime_source
                     // Emma: entity_type matches the realtime Data type options of Vehicle Positions, Trip Updates, or Service Alerts. If one of those three are selected, add it. If not, omit it.
                     
                     let authType : Int = authenticationType(for: authentication_type)
-                    let realtimecode : Array = realtimeCode(for:datatype)
+                    let realtimecode : Array = realtimeCode(for: datatype)
                     let realtimecodeString: String = realtimecode.joined(separator:"\", \"")
                     
                     PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_realtime_source(entity_type=[\"\(realtimecodeString)\"], provider=\"\(finalProvider)\", direct_download_url=\"\(realtimeFinalURLtoUse)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", license_url=\"\(license_url)\", name=\"\(name)\", note=\"\(note)\", status=\"\(gtfsrealtimestatus)\", features=\"\(realtimefeatures)\", feed_contact_email=\"\(feed_contact_email)\"\(redirects_array))"
@@ -194,6 +197,7 @@ if argNames.count == 5 {
                 }
                 
             } else if issue.contains(issueType.isUpdateExistingFeed) || issue.contains(issueType.isFeedUpdate) { // update existing feed
+                if isInDebugMode { print("\t\t\tIS UPDATE: issue contains datatype: \(datatype)") }
                 
                 if datatype.contains(dataType.schedule) { // update_gtfs_schedule_source
                     
@@ -201,16 +205,17 @@ if argNames.count == 5 {
                     
                     PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_schedule_source(mdb_source_id=\(old_mbd_ID), provider=\"\(finalProvider)\", name=\"\(name)\", country_code=\"\(country)\", subdivision_name=\"\(subdivision_name)\", municipality=\"\(municipality)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", status=\"\(gtfsschedulestatus)\", features=\"\(gtfsschedulefeatures)\", feed_contact_email=\"\(feed_contact_email)\"\(redirects_array))"
                     
-                } else if datatype.contains(dataType.realtime) { // update_gtfs_realtime_source
+                } else if datatype.contains(dataType.realtime) || (datatype.contains(realtimeEntityTypesString.vehiclePositions)) || (datatype.contains(realtimeEntityTypesString.tripUpdates)) || (datatype.contains(realtimeEntityTypesString.serviceAlerts)) || (datatype.contains(realtimeEntityTypesString.unknown)) { // update_gtfs_realtime_source
                     
                     let authType : Int = authenticationType(for: authentication_type)
-                    let realtimecode : Array = realtimeCode(for:datatype)
+                    let realtimecode : Array = realtimeCode(for: datatype)
                     let realtimecodeString: String = realtimecode.joined(separator:"\", \"")
                     
                     PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_realtime_source(mdb_source_id=\(old_mbd_ID), entity_type=[\"\(realtimecodeString)\"], provider=\"\(finalProvider)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", name=\"\(name)\", note=\"\(note)\", status=\"\(gtfsrealtimestatus)\", features=\"\(realtimefeatures)\", feed_contact_email=\"\(feed_contact_email)\"\(redirects_array))"
                 }
                 
             }  else if issue.contains(issueType.isToRemoveFeed) { // remove feed
+                if isInDebugMode { print("\t\t\tREMOVE FEED: issue contains datatype: \(datatype)") }
                 
                 if datatype.contains(dataType.schedule) { // update_gtfs_schedule_source
                     
@@ -218,10 +223,10 @@ if argNames.count == 5 {
                     
                     PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_schedule_source(mdb_source_id=\(old_mbd_ID), provider=\"\(finalProvider)\", name=\"\"**** issueed for removal ****\"\", country_code=\"\(country)\", subdivision_name=\"\(subdivision_name)\", municipality=\"\(municipality)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", status=\"\(gtfsschedulestatus)\", features=\"\(gtfsschedulefeatures)\", feed_contact_email=\"\(feed_contact_email)\"\(redirects_array))"
                     
-                } else if datatype.contains(dataType.realtime) { // update_gtfs_realtime_source
+                } else if datatype.contains(dataType.realtime) || (datatype.contains(realtimeEntityTypesString.vehiclePositions)) || (datatype.contains(realtimeEntityTypesString.tripUpdates)) || (datatype.contains(realtimeEntityTypesString.serviceAlerts)) || (datatype.contains(realtimeEntityTypesString.unknown)) { // update_gtfs_realtime_source
                     
                     let authType : Int = authenticationType(for: authentication_type)
-                    let realtimecode : Array = realtimeCode(for:datatype)
+                    let realtimecode : Array = realtimeCode(for: datatype)
                     let realtimecodeString: String = realtimecode.joined(separator:"\", \"")
                     
                     PYTHON_SCRIPT_ARGS_TEMP = "update_gtfs_realtime_source(mdb_source_id=\(old_mbd_ID), entity_type=\"[\(realtimecodeString)]\", provider=\"\(finalProvider)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", name=\"\"**** issueed for removal ****\"\", note=\"\(note)\", status=\"\(gtfsrealtimestatus)\", features=\"\(realtimefeatures)\", feed_contact_email=\"\(feed_contact_email)\"\(redirects_array))"
@@ -229,13 +234,14 @@ if argNames.count == 5 {
                 }
                 
             } else { // ... assume this is a new feed by default :: add_gtfs_schedule_source
+                if isInDebugMode { print("\t\t\tDEFAULT: issue contains datatype: \(datatype)") }
                 
                 if datatype.contains(dataType.schedule) { // add_gtfs_schedule_source
                     
                     let authType : Int = authenticationType(for: authentication_type)
                     PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_schedule_source(provider=\"\(finalProvider)\", country_code=\"\(country)\", direct_download_url=\"\(scheduleFinalURLtoUse)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", subdivision_name=\"\(subdivision_name)\", municipality=\"\(municipality)\", license_url=\"\(license_url)\", name=\"\(name)\", status=\"\(gtfsschedulestatus)\", features=\"\(gtfsschedulefeatures)\", feed_contact_email=\"\(feed_contact_email)\"\(redirects_array))"
                     
-                } else if datatype.contains(dataType.realtime) { // add_gtfs_schedule_source
+                } else if datatype.contains(dataType.realtime) || (datatype.contains(realtimeEntityTypesString.vehiclePositions)) || (datatype.contains(realtimeEntityTypesString.tripUpdates)) || (datatype.contains(realtimeEntityTypesString.serviceAlerts)) || (datatype.contains(realtimeEntityTypesString.unknown)) { // add_gtfs_schedule_source
                     
                     let authType : Int = authenticationType(for: authentication_type)
                     let realtimecode : Array = realtimeCode(for: datatype)

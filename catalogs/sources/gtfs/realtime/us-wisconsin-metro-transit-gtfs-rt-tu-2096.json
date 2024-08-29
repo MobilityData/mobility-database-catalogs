@@ -1,22 +1,15 @@
 {
-    "mdb_source_id": 1609,
+    "mdb_source_id": 2096,
     "data_type": "gtfs-rt",
     "entity_type": [
-        "sa"
+        "tu"
     ],
     "provider": "Metro Transit",
-    "status": "deprecated",
     "static_reference": [
         394
     ],
-    "redirect": [
-        {
-            "id": 2095,
-            "comment": "New AVL feed redirect"
-        }
-    ],
     "urls": {
-        "direct_download": "http://transitdata.cityofmadison.com/Alert/Alerts.pb",
+        "direct_download": "https://metromap.cityofmadison.com/gtfsrt/trips",
         "authentication_type": 0,
         "license": "http://www.cityofmadison.com/metro/Apps/developers.cfm"
     }

@@ -5,6 +5,7 @@
     "features": [
         "fares-v1"
     ],
+    "status": "deprecated",
     "location": {
         "country_code": "PL",
         "subdivision_name": "Mazowieckie",
@@ -20,5 +21,11 @@
     "urls": {
         "direct_download": "https://mkuran.pl/feed/radom/radom-latest.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-mazowieckie-mzdik-radom-gtfs-1015.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": 2090,
+            "comment": "Only the source URL changed, see feed 2090."
+        }
+    ]
 }

@@ -5,8 +5,7 @@
     "name": "Rail",
     "location": {
         "country_code": "TR",
-        "subdivision_name": "Kocaeli",
-        "municipality": "Izmit",
+        "subdivision_name": "Izmir",
         "bounding_box": {
             "minimum_latitude": 37.9508674904,
             "maximum_latitude": 38.788888888889,

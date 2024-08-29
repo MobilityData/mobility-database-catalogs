@@ -2,6 +2,7 @@
     "mdb_source_id": 1123,
     "data_type": "gtfs",
     "provider": "Komunikacja Miejska Łomianki",
+    "status": "inactive",
     "location": {
         "country_code": "PL",
         "subdivision_name": "Mazowieckie",
@@ -18,5 +19,6 @@
         "direct_download": "https://mkuran.pl/feed/kml/kml-latest.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-mazowieckie-komunikacja-miejska-lomianki-gtfs-1123.zip?alt=media",
         "license": "https://mkuran.pl/gtfs/"
-    }
+    },
+    "redirect": []
 }

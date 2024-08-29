@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2094,
+    "data_type": "gtfs",
+    "provider": "Zarząd Dróg i Zieleni Gdynia (ZKM Gdynia)",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Pomorskie",
+        "municipality": "Gdynia",
+        "bounding_box": {
+            "minimum_latitude": 54.3415636,
+            "maximum_latitude": 54.6323285,
+            "minimum_longitude": 18.21451,
+            "maximum_longitude": 18.5815284,
+            "extracted_on": "2024-08-29T17:32:42+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://api.zdiz.gdynia.pl/pt/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-pomorskie-zarzad-drog-i-zieleni-gdynia-zkm-gdynia-gtfs-2094.zip?alt=media",
+        "license": "http://www.opendefinition.org/licenses/cc-by"
+    },
+    "redirect": []
+}

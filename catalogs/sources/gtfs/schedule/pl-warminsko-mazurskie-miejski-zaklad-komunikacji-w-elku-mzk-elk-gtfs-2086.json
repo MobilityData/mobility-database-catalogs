@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2086,
+    "data_type": "gtfs",
+    "provider": "Miejski Zakład Komunikacji w Ełku (MZK Ełk)",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Warmińsko-mazurskie",
+        "municipality": "Ełk",
+        "bounding_box": {
+            "minimum_latitude": 53.74023088718,
+            "maximum_latitude": 53.9399037153,
+            "minimum_longitude": 22.16239379266,
+            "maximum_longitude": 22.48585944603,
+            "extracted_on": "2024-08-19T17:51:04+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://mkuran.pl/gtfs/elk.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-warminsko-mazurskie-miejski-zaklad-komunikacji-w-elku-mzk-elk-gtfs-2086.zip?alt=media",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "redirect": []
+}

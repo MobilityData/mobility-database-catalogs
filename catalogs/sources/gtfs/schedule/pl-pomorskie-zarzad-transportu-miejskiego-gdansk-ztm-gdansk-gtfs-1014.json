@@ -2,6 +2,7 @@
     "mdb_source_id": 1014,
     "data_type": "gtfs",
     "provider": "Zarząd Transportu Miejskiego Gdańsk (ZTM Gdańsk), Zarząd Transportu Miejskiego Gdynia (ZKM Gdynia)",
+    "status": "deprecated",
     "location": {
         "country_code": "PL",
         "subdivision_name": "Pomorskie",
@@ -18,5 +19,15 @@
         "direct_download": "https://mkuran.pl/gtfs/tristar.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-pomorskie-zarzad-transportu-miejskiego-gdansk-ztm-gdansk-gtfs-1014.zip?alt=media",
         "license": "http://www.opendefinition.org/licenses/cc-by"
-    }
+    },
+    "redirect": [
+        {
+            "id": 2093,
+            "comment": "See 2093 for a replacement feed for Gdańsk."
+        },
+        {
+            "id": 2094,
+            "comment": "See 2094 for a replacement feed for Gdynia."
+        }
+    ]
 }

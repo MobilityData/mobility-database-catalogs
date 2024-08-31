@@ -16,7 +16,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/saint-john-transit/1224/latest/download",
+        "direct_download": "https://www.arcgis.com/sharing/rest/content/items/d6f4783521364429a2e51a64c60ae234/data",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-new-brunswick-saint-john-transit-gtfs-1223.zip?alt=media",
         "license": "https://catalogue-saintjohn.opendata.arcgis.com/datasets/d6f4783521364429a2e51a64c60ae234/about"

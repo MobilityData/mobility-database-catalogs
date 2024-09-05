@@ -192,7 +192,7 @@ if argNames.count == 5 {
                     let realtimecode : Array = realtimeCode(for: datatype)
                     let realtimecodeString: String = realtimecode.joined(separator:"\", \"")
                     
-                    PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_realtime_source(entity_type=[\"\(realtimecodeString)\"], provider=\"\(finalProvider)\", direct_download_url=\"\(realtimeFinalURLtoUse)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", license_url=\"\(license_url)\", name=\"\(name)\", note=\"\(note)\", status=\"\(gtfsrealtimestatus)\", features=\"\(realtimefeatures)\", feed_contact_email=\"\(feed_contact_email)\"\(redirects_array))"
+                    PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_realtime_source(entity_type=[\"\(realtimecodeString)\"], provider=\"\(finalProvider)\", direct_download_url=\"\(realtimeFinalURLtoUse)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", license_url=\"\(license_url)\", name=\"\(name)\", note=\"\(note)\", status=\"\(gtfsrealtimestatus)\", features=\"\(realtimefeatures)\"\(redirects_array))"
                     
                 }
                 
@@ -247,7 +247,7 @@ if argNames.count == 5 {
                     let realtimecode : Array = realtimeCode(for: datatype)
                     let realtimecodeString: String = realtimecode.joined(separator:"\", \"")
                     
-                    PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_realtime_source(entity_type=[\"\(realtimecodeString)\"], provider=\"\(finalProvider)\", direct_download_url=\"\(realtimeFinalURLtoUse)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", license_url=\"\(license_url)\", name=\"\(name)\", note=\"\(note)\", status=\"\(gtfsrealtimestatus)\", features=\"\(realtimefeatures)\", feed_contact_email=\"\(feed_contact_email)\"\(redirects_array))"
+                    PYTHON_SCRIPT_ARGS_TEMP = "add_gtfs_realtime_source(entity_type=[\"\(realtimecodeString)\"], provider=\"\(finalProvider)\", direct_download_url=\"\(realtimeFinalURLtoUse)\", authentication_type=\(authType), authentication_info_url=\"\(authentication_info_url)\", api_key_parameter_name=\"\(api_key_parameter_name)\", license_url=\"\(license_url)\", name=\"\(name)\", note=\"\(note)\", status=\"\(gtfsrealtimestatus)\", features=\"\(realtimefeatures)\"\(redirects_array))"
                     
                 }
             }

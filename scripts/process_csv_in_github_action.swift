@@ -253,7 +253,7 @@ if argNames.count == 5 {
                     \(redirects_array))
                     """
                     
-                } else if datatype.contains(dataType.realtime) || (datatype.contains(realtimeEntityTypesString.vehiclePositions)) || (datatype.contains(realtimeEntityTypesString.tripUpdates)) || (datatype.contains(realtimeEntityTypesString.serviceAlerts)) || (datatype.contains(realtimeEntityTypesString.unknown)) { // update_gtfs_realtime_source
+                } else if datatype.contains(dataType.realtime) || datatype.contains(realtimeEntityTypesString.vehiclePositions) || datatype.contains(realtimeEntityTypesString.tripUpdates) || datatype.contains(realtimeEntityTypesString.serviceAlerts) || datatype.contains(realtimeEntityTypesString.unknown) || datatype.contains(realtimeEntityTypes.empty) { // update_gtfs_realtime_source
                     
                     let authType : Int = authenticationType(for: authentication_type)
                     let realtimecode : Array = realtimeCode(for: datatype)
@@ -300,7 +300,7 @@ if argNames.count == 5 {
                     \(redirects_array))
                     """
                     
-                } else if datatype.contains(dataType.realtime) || (datatype.contains(realtimeEntityTypesString.vehiclePositions)) || (datatype.contains(realtimeEntityTypesString.tripUpdates)) || (datatype.contains(realtimeEntityTypesString.serviceAlerts)) || (datatype.contains(realtimeEntityTypesString.unknown)) { // update_gtfs_realtime_source
+                } else if datatype.contains(dataType.realtime) || datatype.contains(realtimeEntityTypesString.vehiclePositions) || datatype.contains(realtimeEntityTypesString.tripUpdates) || datatype.contains(realtimeEntityTypesString.serviceAlerts) || datatype.contains(realtimeEntityTypesString.unknown) || datatype.contains(realtimeEntityTypes.empty) { // update_gtfs_realtime_source
                     
                     let authType : Int = authenticationType(for: authentication_type)
                     let realtimecode : Array = realtimeCode(for: datatype)

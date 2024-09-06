@@ -129,7 +129,7 @@ if argNames.count == 5 {
             
             let timestamp               : String = csvArrayColumn[column.timestamp.rawValue].trimmingCharacters(in: .whitespacesAndNewlines)
             let provider                : String = csvArrayColumn[column.provider.rawValue]
-            let datatype                : String = csvArrayColumn[column.datatype.rawValue]
+            let datatype                : String = csvArrayColumn[column.datatype.rawValue].count < 3 ? realtimeEntityTypes.empty : csvArrayColumn[column.datatype.rawValue]
             let issue                   : String = csvArrayColumn[column.issue.rawValue]
             let country                 : String = csvArrayColumn[column.country.rawValue]
             let subdivision_name        : String = csvArrayColumn[column.subdivision_name.rawValue]

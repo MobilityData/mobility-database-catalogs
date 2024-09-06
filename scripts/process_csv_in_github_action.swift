@@ -175,7 +175,6 @@ if argNames.count == 5 {
             var realtimeFinalURLtoUse : String = downloadURL ; if downloadURL.count < 4 { realtimeFinalURLtoUse = defaults.emptyValue }
             
             if isInDebugMode { print("\t\tscheduleFinalURLtoUse || realtimeFinalURLtoUse : \(scheduleFinalURLtoUse) (\(scheduleFinalURLtoUse.count)) \(realtimeFinalURLtoUse) (\(realtimeFinalURLtoUse.count))") }
-            
             if isInDebugMode { print("\t\tEvaluating issue: \(issue)") }
 
             if issue.contains(issueType.isAddNewFeed) || issue.contains(issueType.isAddNewSource) { // add new feed
@@ -231,6 +230,7 @@ if argNames.count == 5 {
                 }
                 
             } else if issue.contains(issueType.isUpdateExistingFeed) || issue.contains(issueType.isFeedUpdate) { // update existing feed
+
                 if isInDebugMode { print("\t\t\tIS UPDATE: issue contains datatype: \(datatype)") }
                 
                 if datatype.contains(dataType.schedule) { // update_gtfs_schedule_source
@@ -277,6 +277,7 @@ if argNames.count == 5 {
                 }
                 
             }  else if issue.contains(issueType.isToRemoveFeed) { // remove feed
+
                 if isInDebugMode { print("\t\t\tREMOVE FEED: issue contains datatype: \(datatype)") }
                 
                 if datatype.contains(dataType.schedule) { // update_gtfs_schedule_source

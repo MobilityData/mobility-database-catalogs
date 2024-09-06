@@ -70,6 +70,7 @@ struct realtimeEntityTypesString {
     static let tripUpdates          : String = "Trip Updates"
     static let serviceAlerts        : String = "Service Alerts"
     static let unknown              : String = "general / unknown"
+    static let empty                : String = "nil"
 }
 
 struct realtimeEntityTypes {
@@ -77,6 +78,7 @@ struct realtimeEntityTypes {
     static let tripUpdates          : String = "tu"
     static let serviceAlerts        : String = "sa"
     static let unknown              : String = "gu"
+    static let empty                : String = "nil"
 }
 
 // Will be used to filter empty parameters from this script's output

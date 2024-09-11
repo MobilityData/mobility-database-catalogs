@@ -37,7 +37,7 @@ jobs:
         run: |
           pytest --ignore=./tests/test_integration.py --html=mobility-catalogs-unit-tests-report.html --self-contained-html
       - name: Upload the HTML artifact
-        uses: actions/upload-artifact@v@v4.4.0
+        uses: actions/upload-artifact@v4.4.0
         with:
           name: mobility-catalogs-unit-tests-report-v${{ github.run_id }}.${{ github.run_number }}
           path: mobility-catalogs-unit-tests-report.html

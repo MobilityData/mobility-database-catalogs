@@ -1,0 +1,27 @@
+{
+    "mdb_source_id": 190,
+    "data_type": "gtfs",
+    "provider": "Metro St. Louis",
+    "status": "deprecated",
+    "redirect": [
+        {
+            "id": 2096
+        }
+    ],
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Missouri",
+        "municipality": "St. Louis",
+        "bounding_box": {
+            "minimum_latitude": 38.469747,
+            "maximum_latitude": 38.825646,
+            "minimum_longitude": -90.662094,
+            "maximum_longitude": -89.874657,
+            "extracted_on": "2022-03-15T17:41:23+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://metrostlouis.org/Transit/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-missouri-metro-st-louis-gtfs-190.zip?alt=media"
+    }
+}

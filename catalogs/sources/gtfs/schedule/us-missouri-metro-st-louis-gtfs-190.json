@@ -2,6 +2,12 @@
     "mdb_source_id": 190,
     "data_type": "gtfs",
     "provider": "Metro St. Louis",
+    "status": "deprecated",
+    "redirect": [
+        {
+            "id": 2096
+        }
+    ],
     "location": {
         "country_code": "US",
         "subdivision_name": "Missouri",

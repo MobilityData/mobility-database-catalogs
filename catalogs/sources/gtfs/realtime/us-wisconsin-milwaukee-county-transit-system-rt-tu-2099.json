@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 2099,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Milwaukee County Transit System (MCTS)",
+    "static_reference": [
+        1318
+    ],
+    "urls": {
+        "direct_download": "https://realtime.ridemcts.com/gtfsrt/trips",
+        "authentication_type": 0,
+        "license": "https://www.ridemcts.com/policies/developer-terms"
+    }
+}

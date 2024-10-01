@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2099,
+    "data_type": "gtfs",
+    "provider": "Consorcio de Transportes de Mallorca",
+    "name": "TIB Mallorca",
+    "status": "active",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "PM",
+        "bounding_box": {
+            "minimum_latitude": 39.31685,
+            "maximum_latitude": 39.92921,
+            "minimum_longitude": 2.35004,
+            "maximum_longitude": 3.459087,
+            "extracted_on": "2024-10-01T15:20:14+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.tib.org/documents/20124/478141/ctm-mallorca-es.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-pm-consorcio-de-transportes-de-mallorca-gtfs-2099.zip?alt=media",
+        "license": "https://www.tib.org/en/sobre-ctm/portal-de-transparencia/dades-obertes"
+    },
+    "redirect": []
+}

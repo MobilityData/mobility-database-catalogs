@@ -117,13 +117,13 @@ jobs:
           echo "matrix=$DATASETS" >> $GITHUB_OUTPUT
       - name: Persist URLs matrix artifact
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: urls_matrix
           path: ./urls_matrix.json
       - name: Persist Get URLS report artifact
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: get_urls_report
           path: ./get_urls_report.txt
@@ -234,7 +234,7 @@ jobs:
           parent: false
       - name: Persist Download Reports artifact
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: download_reports
           path: download_reports
@@ -312,7 +312,7 @@ jobs:
                   fp.write(file_log)
       - name: Persist Latest Reports artifact
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: latest_reports
           path: latest_reports

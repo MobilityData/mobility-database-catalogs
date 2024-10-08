@@ -17,9 +17,9 @@ jobs:
   export-to-csv:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
           python-version: 3.9
       - name: Install dependencies
@@ -49,7 +49,7 @@ jobs:
     # If triggered by a push, always upload.
     if: ${{ github.event.inputs.upload_to_gcs == 'true' || github.event_name == 'push' }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Download the catalog of sources CSV artifact
         uses: actions/download-artifact@v4
         with:

@@ -100,7 +100,7 @@ jobs:
           echo "matrix=$DATASETS" >> $GITHUB_OUTPUT
       - name: Persist URLs matrix artifact
         if: always()
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: urls_matrix
           path: ./urls_matrix.json
@@ -205,7 +205,7 @@ jobs:
                       f"The dataset for the source must be a valid GTFS Schedule zip file or URL.\n"
                   )
       - name: Persist datasets artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: datasets
           path: datasets

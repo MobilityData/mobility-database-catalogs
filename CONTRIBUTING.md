@@ -37,7 +37,7 @@ To contribute data to the Mobility Database catalogs, please follow these steps:
 #### Add a GTFS Schedule source
 The easiest way to add a GTFS Schedule source is to use the operation `tools.operations.add_gtfs_schedule_source` through the Python interpreter or in your scripts. This operation makes sure the information provided is correct and will pass our tests. Provide the information about your source in the operation function to add your source.
 
-**If your GTFS Schedule source requires API authentication, please use the [form](https://database.mobilitydata.org/update-a-data-source)** instead of the PR process so we can generate our own API credentials for the source. Sources with `authentication_type=1` or `authentication_type=2` can't be added from forks, but those with `authentication_type=0` can.
+**If your GTFS Schedule source requires API authentication, please use the [form](https://mobilitydatabase.org/contribute)** instead of the PR process so we can generate our own API credentials for the source. Sources with `authentication_type=1` or `authentication_type=2` can't be added from forks, but those with `authentication_type=0` can.
 
 ```python
 >>> add_gtfs_schedule_source(

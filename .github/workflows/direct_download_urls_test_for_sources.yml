@@ -107,6 +107,7 @@ jobs:
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
   download-datasets:
+    name: Validate and download - ${{ fromJson(matrix.data).base }}
     needs: [ get-urls ]
     runs-on: ubuntu-latest
     strategy:
@@ -207,5 +208,5 @@ jobs:
       - name: Persist datasets artifact
         uses: actions/upload-artifact@v4
         with:
-          name: datasets
+          name: datasets-${{ fromJson(matrix.data).base }}
           path: datasets

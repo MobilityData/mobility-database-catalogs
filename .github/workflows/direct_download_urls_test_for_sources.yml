@@ -107,6 +107,7 @@ jobs:
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
   download-datasets:
+    name: Validate and download - ${{ fromJson(matrix.data).base }}
     needs: [ get-urls ]
     runs-on: ubuntu-latest
     strategy:

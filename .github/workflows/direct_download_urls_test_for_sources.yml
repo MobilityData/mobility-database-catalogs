@@ -207,5 +207,5 @@ jobs:
       - name: Persist datasets artifact
         uses: actions/upload-artifact@v4
         with:
-          name: datasets-${{ matrix.base }}
+          name: datasets-${{ fromJson(matrix.data).base }}
           path: datasets

@@ -9,6 +9,10 @@ from pandas.errors import ParserError
 from unidecode import unidecode
 import uuid
 from tools.constants import (
+    START_DATE,
+    END_DATE,
+    DATE,
+    GTFS_DATE_FORMAT,
     STOP_LAT,
     STOP_LON,
     MDB_ARCHIVES_LATEST_URL_TEMPLATE,
@@ -292,6 +296,21 @@ def create_filename(
         extension=extension,
     )
 
+def is_gtfs_yyyymmdd_format(string):
+    """
+    Determines if the given string is in standard GTFS YYYYMMDD date format.
+
+    Args:
+        string (str): Date string to test against.
+
+    Returns:
+        bool: True if can be parsed as a standard GTFS YYYYMMDD date string.
+    """
+    try:
+        datetime.datetime.strptime(string, GTFS_DATE_FORMAT)
+        return True
+    except ValueError:
+        return False
 
 def normalize(string):
     """
@@ -334,6 +353,15 @@ def get_iso_time():
         .replace(microsecond=0)
         .isoformat()
     )
+
+def get_filesize(path):
+    """
+    Gets the filesize of the given file path.
+
+    Returns:
+        int: Filesize in bytes of the given file path.
+    """
+    return os.stat(path).st_size
 
 
 #########################
@@ -405,3 +433,41 @@ def extract_gtfs_bounding_box(file_path):
     maximum_longitude = stops[STOP_LON].dropna().max() if stops_are_present else None
 
     return minimum_latitude, maximum_latitude, minimum_longitude, maximum_longitude
+
+def extract_gtfs_calendar_range(file_path):
+    """
+    Extracts the min and max dates of a GTFS source using the `calendar` & `calendar_dates` files from the GTFS dataset.
+
+    This function loads a GTFS dataset and determines the earliest (min) and latest (max) date referenced
+    based on the calendar and calendar_dates in the dataset.
+
+    Args:
+        file_path (str): The file path to the GTFS dataset.
+
+    Returns:
+        tuple: A tuple with the minimum and maximum calendar dates formatted in standard YYYY-MM-DD format.
+
+    Notes:
+        If both calendar and calendar_dates files are missing or columns are invalid, returned value will be a tuple with 2 None values.
+    """
+    dataset = load_gtfs(file_path)
+    dates = []
+
+    if dataset.calendar is not None:
+        dates.append(dataset.calendar[START_DATE])
+        dates.append(dataset.calendar[END_DATE])
+    if dataset.calendar_dates is not None:
+        dates.append(dataset.calendar_dates[DATE])
+    if len(dates) == 0:
+        return None, None
+
+    all_dates = pd.concat(dates).dropna()
+    filtered_dates = all_dates[all_dates.apply(is_gtfs_yyyymmdd_format)]
+    if len(filtered_dates) == 0:
+        return None, None
+
+    min_date_yyyymmdd = filtered_dates.min()
+    max_date_yyyymmdd = filtered_dates.max()
+    min_date = datetime.datetime.strptime(min_date_yyyymmdd, GTFS_DATE_FORMAT).strftime('%Y-%m-%d')
+    max_date = datetime.datetime.strptime(max_date_yyyymmdd, GTFS_DATE_FORMAT).strftime('%Y-%m-%d')
+    return min_date, max_date

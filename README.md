@@ -59,12 +59,15 @@ Contains the JSON schemas used to validate the feeds in the integration tests.
 | - country_code       | Text |Required                  | ISO 3166-1 alpha-2 code designating the country where the feed service is located. For a list of valid codes [see here](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).                                                    |
 | - subdivision_name  | Text |Optional              | ISO 3166-2 subdivision name designating the subdivision (e.g province, state, region) where the feed service is located. For a list of valid names [see here](https://unece.org/trade/uncefact/unlocode-country-subdivisions-iso-3166-2).|  
 | - municipality  | Text |Optional              | Primary municipality in which the feed service is located.|  
-| - bounding_box  | Object|System generated             | Bounding box of the feed  when it was first added to the catalog. Contains `minimum_latitude`, `maximum_latitude`, `minimum_longitude`, `maximum_longitude` and `extracted_on` fields. If the bounding box information displays as "null", you can check any potential feed errors with [the GTFS validator](https://github.com/MobilityData/gtfs-validator).   |  
+| - bounding_box  | Object|System generated             | The bounding box of the feed  and metadata about the GTFS archive when it was first added or updated in the catalog. Contains `minimum_latitude`, `maximum_latitude`, `minimum_longitude`, `maximum_longitude`, `extracted_on`, `extracted_filesize`, `extracted_date_start`, and `extracted_date_end` fields. If the bounding box information displays as "null", you can check any potential feed errors with [the GTFS validator](https://github.com/MobilityData/gtfs-validator).
 | --minimum_latitude    | Latitude | System generated                    | The minimum latitude for the feed's bounding box.  
 | --maximum_latitude    | Latitude | System generated                    | The maximum latitude for the feed's bounding box.  
 | --minimum_longitude    | Longitude | System generated                    | The minimum longitude for the feed's bounding box.  
 | --maximum_longitude    | Longitude | System generated                    | The maximum longitude for the feed's bounding box.  
-| --extracted_on   | Date and Time | System generated                    | The date and timestamp the bounding box was extracted on in UTC.  
+| --extracted_on   | Date and Time | System generated                    | The date and timestamp when the bounding box was extracted on in UTC.
+| --extracted_filesize | Integer | System generated                    | The filesize in bytes of the GTFS archive when the bounding box was extracted.
+| --extracted_calendar_start | Date | System generated                    | The date earliest covered by calendar/calendar_dates when the bounding box was extracted.
+| --extracted_calendar_end | Date | System generated                    | The date latest covered by calendar/calendar_dates when the bounding box was extracted.
 | provider     | Text | Required                   | A commonly used name for the transit provider included in the feed.  |
 | feed_contact_email | Text | Optional | The contact information for the data producer of the feed, discovered via feed_info.feed_contact_email in the feed, the provider's website, or the Mobility Database contributor form. | 
 | name        |  Text |Optional              | An optional description of the feed, e.g to specify if the feed is an aggregate of multiple providers, or which network is represented by the feed. |

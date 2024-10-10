@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 373,
     "data_type": "gtfs",
-    "provider": "Piedmont Authority for Regional Transportation (PART)",
+    "provider": "Piedmont Authority for Regional Transportation",
     "feed_contact_email": "kylel@partnc.org",
     "location": {
         "country_code": "US",

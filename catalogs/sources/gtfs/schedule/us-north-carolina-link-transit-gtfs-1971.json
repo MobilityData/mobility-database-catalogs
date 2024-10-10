@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 1971,
     "data_type": "gtfs",
-    "provider": "Link Transit",
+    "provider": "Link",
     "feed_contact_email": "support@gmvsync.com",
     "location": {
         "country_code": "US",

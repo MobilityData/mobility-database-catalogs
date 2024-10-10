@@ -11,8 +11,12 @@ from tools.helpers import (
     get_iso_time,
     load_gtfs,
     extract_gtfs_bounding_box,
+    extract_gtfs_calendar_range,
     STOP_LAT,
     STOP_LON,
+    START_DATE,
+    END_DATE,
+    DATE,
     to_json,
     from_json,
     normalize,
@@ -362,6 +366,83 @@ class TestGtfsSpecificFunctions(TestCase):
         under_test = extract_gtfs_bounding_box(file_path=self.test_path)
         self.assertEqual(under_test, test_bounding_box)
 
+    @patch("tools.helpers.load_gtfs")
+    def test_extract_gtfs_calendar_range_no_calendar_or_calendar_dates(self, mock_load_gtfs):
+        test_return_min_max = (None, None)
+        test_calendar = None
+        type(mock_load_gtfs.return_value).calendar = test_calendar
+        test_calendar_dates = None
+        type(mock_load_gtfs.return_value).calendar_dates = test_calendar_dates
+        under_test = extract_gtfs_calendar_range(file_path=self.test_path)
+        self.assertEqual(under_test, test_return_min_max)
+
+    @patch("tools.helpers.load_gtfs")
+    def test_extract_gtfs_calendar_range_invalid_calendar(self, mock_load_gtfs):
+        test_return_min_max = (None, None)
+        test_calendar = pd.DataFrame(
+            {
+                # Note: only YYYYMMDD valid per GTFS spec; YYYY-MM-DD & nil values dropped
+                START_DATE: ["2024-02-30", pd.NA],
+                END_DATE: ["2034-02-01", pd.NA]
+            }
+        )
+        type(mock_load_gtfs.return_value).calendar = test_calendar
+        test_calendar_dates = None
+        type(mock_load_gtfs.return_value).calendar_dates = test_calendar_dates
+        under_test = extract_gtfs_calendar_range(file_path=self.test_path)
+        self.assertEqual(under_test, test_return_min_max)
+
+    @patch("tools.helpers.load_gtfs")
+    def test_extract_gtfs_calendar_range_only_calendar(self, mock_load_gtfs):
+        test_return_min_max = ('2010-01-02', '2032-04-09')
+        test_calendar = pd.DataFrame(
+            {
+                # Note: only YYYYMMDD valid per GTFS spec; YYYY-MM-DD & nil values dropped
+                START_DATE: ["20100102", "20230702", "20230402", "2024-02-30", pd.NA],
+                END_DATE: ["20140104", "20230709", "20320409", "2034-02-01", pd.NA]
+            }
+        )
+        type(mock_load_gtfs.return_value).calendar = test_calendar
+        test_calendar_dates = None
+        type(mock_load_gtfs.return_value).calendar_dates = test_calendar_dates
+        under_test = extract_gtfs_calendar_range(file_path=self.test_path)
+        self.assertEqual(under_test, test_return_min_max)
+
+    @patch("tools.helpers.load_gtfs")
+    def test_extract_gtfs_calendar_range_only_calendar_dates(self, mock_load_gtfs):
+        test_return_min_max = ('2021-07-02', '2029-04-02')
+        test_calendar = None
+        type(mock_load_gtfs.return_value).calendar = test_calendar
+        test_calendar_dates = pd.DataFrame(
+            {
+                # Note: only YYYYMMDD valid per GTFS spec; YYYY-MM-DD & nil values dropped
+                DATE: ["20240102", "20210702", "20290402", "2027-02-30", pd.NA],
+            }
+        )
+        type(mock_load_gtfs.return_value).calendar_dates = test_calendar_dates
+        under_test = extract_gtfs_calendar_range(file_path=self.test_path)
+        self.assertEqual(under_test, test_return_min_max)
+
+    @patch("tools.helpers.load_gtfs")
+    def test_extract_gtfs_calendar_range_both_calendar_and_calendar_dates(self, mock_load_gtfs):
+        test_return_min_max = ('1999-01-02', '2031-07-02')
+        test_calendar = pd.DataFrame(
+            {
+                # Note: only YYYYMMDD valid per GTFS spec; YYYY-MM-DD & nil values dropped
+                START_DATE: ["19990102", "20230702", "20230402", "2024-02-30", pd.NA],
+                END_DATE: ["20240104", "20230709", "20230409", "2034-02-01", pd.NA]
+            }
+        )
+        type(mock_load_gtfs.return_value).calendar = test_calendar
+        test_calendar_dates = pd.DataFrame(
+            {
+                # Note: only YYYYMMDD valid per GTFS spec; YYYY-MM-DD & nil values dropped
+                DATE: ["20240102", "20310702", "20290402", "2027-02-30", pd.NA],
+            }
+        )
+        type(mock_load_gtfs.return_value).calendar_dates = test_calendar_dates
+        under_test = extract_gtfs_calendar_range(file_path=self.test_path)
+        self.assertEqual(under_test, test_return_min_max)
 
 class TestInOutFunctions(TestCase):
     def setUp(self):

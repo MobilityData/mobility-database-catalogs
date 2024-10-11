@@ -5,11 +5,17 @@
         "sa"
     ],
     "provider": "Mountain View Transportation Management Association (MVgo)",
+    "status": "deprecated",
     "static_reference": [
         60
     ],
     "urls": {
         "direct_download": "https://ridemvgo.org/gtfs-rt/alerts",
         "authentication_type": 0
-    }
+    },
+    "redirect": [
+        {
+            "id": 2100
+        }
+    ]
 }

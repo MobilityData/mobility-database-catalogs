@@ -5,11 +5,17 @@
         "tu"
     ],
     "provider": "Mountain View Transportation Management Association (MVgo)",
+    "status": "deprecated",
     "static_reference": [
         60
     ],
     "urls": {
         "direct_download": "https://ridemvgo.org/gtfs-rt/tripupdates",
         "authentication_type": 0
-    }
+    }, 
+    "redirect": [
+        {
+            "id": 2098
+        }
+    ]
 }

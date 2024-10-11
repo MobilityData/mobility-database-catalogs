@@ -19,7 +19,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/t3-transit/591/latest/download",
+        "direct_download": "https://data.trilliumtransit.com/gtfs/coachatlantic-pe-ca/coachatlantic-pe-ca.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-prince-edward-island-t3-transit-gtfs-1206.zip?alt=media"
     }
 }

@@ -1,0 +1,12 @@
+{
+    "mdb_source_id": 2114,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Ben Franklin Transit",
+    "urls": {
+        "direct_download": "https://myride.bft.org/Realtime/GTFS_TripUpdates.pb",
+        "authentication_type": 0
+    }
+}

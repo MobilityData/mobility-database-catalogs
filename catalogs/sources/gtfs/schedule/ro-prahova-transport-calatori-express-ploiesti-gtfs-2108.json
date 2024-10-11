@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2108,
+    "data_type": "gtfs",
+    "provider": "Transport Călători Express Ploiești",
+    "status": "active",
+    "location": {
+        "country_code": "RO",
+        "subdivision_name": "Prahova",
+        "municipality": "Ploiești",
+        "bounding_box": {
+            "minimum_latitude": 44.903184,
+            "maximum_latitude": 44.974453,
+            "minimum_longitude": 25.93572,
+            "maximum_longitude": 26.090436,
+            "extracted_on": "2024-10-10T13:01:40+00:00"
+        }
+    },
+    "note": "The direct download URL requires the presence of a user agent.",
+    "urls": {
+        "direct_download": "https://gtfs.opendev.ro/GTFS-305.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-prahova-transport-calatori-express-ploiesti-gtfs-2108.zip?alt=media"
+    },
+    "redirect": []
+}

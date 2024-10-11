@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2100,
+    "data_type": "gtfs",
+    "provider": "CT BUS Constanța",
+    "status": "active",
+    "location": {
+        "country_code": "RO",
+        "subdivision_name": "Constanța",
+        "municipality": "Constanța",
+        "bounding_box": {
+            "minimum_latitude": 44.131607,
+            "maximum_latitude": 44.264294,
+            "minimum_longitude": 28.576609,
+            "maximum_longitude": 28.664268,
+            "extracted_on": "2024-10-09T19:19:11+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://external.gtfs.ro/constanta/CONSTANTA.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-constanta-ct-bus-constanta-gtfs-2100.zip?alt=media"
+    },
+    "redirect": []
+}

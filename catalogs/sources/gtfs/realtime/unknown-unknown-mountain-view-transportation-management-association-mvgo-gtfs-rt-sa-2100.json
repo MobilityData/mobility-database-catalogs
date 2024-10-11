@@ -5,6 +5,9 @@
         "sa"
     ],
     "provider": "Mountain View Transportation Management Association (MVgo)",
+    "static_reference": [
+        2025
+    ],
     "urls": {
         "direct_download": "https://mtma.tripshot.com/v1/gtfs/realtime/feed/mvgo?types=Alert",
         "authentication_type": 0,

@@ -5,6 +5,9 @@
         "vp"
     ],
     "provider": "Ben Franklin Transit",
+    "static_reference": [
+        60
+    ],
     "urls": {
         "direct_download": "https://myride.bft.org/Realtime/GTFS_VehiclePositions.pb",
         "authentication_type": 0

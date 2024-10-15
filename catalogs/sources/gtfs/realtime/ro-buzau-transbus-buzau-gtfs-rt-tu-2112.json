@@ -1,0 +1,14 @@
+{
+    "mdb_source_id": 2112,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Transbus Buzău",
+    "static_reference": [
+        2106
+    ],
+    "urls": {
+        "direct_download": "https://gtfsagent.transportpublic.ro/transbus/tripUpdates"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2115,
+    "data_type": "gtfs",
+    "provider": "RAT Craiova",
+    "status": "active",
+    "location": {
+        "country_code": "RO",
+        "subdivision_name": "Dolj",
+        "municipality": "Craiova",
+        "bounding_box": {
+            "minimum_latitude": 44.2682991027832,
+            "maximum_latitude": 44.39168930053711,
+            "minimum_longitude": 23.718854904174805,
+            "maximum_longitude": 23.886926651000977,
+            "extracted_on": "2024-10-12T10:45:18+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://external.gtfs.ro/craiova/CRAIOVA.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-dolj-rat-craiova-gtfs-2115.zip?alt=media"
+    },
+    "redirect": []
+}

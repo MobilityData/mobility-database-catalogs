@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2101,
+    "data_type": "gtfs",
+    "provider": "Oradea Transport Local",
+    "status": "active",
+    "location": {
+        "country_code": "RO",
+        "subdivision_name": "Bihor",
+        "municipality": "Oradea",
+        "bounding_box": {
+            "minimum_latitude": 46.890472,
+            "maximum_latitude": 47.169865,
+            "minimum_longitude": 21.717316,
+            "maximum_longitude": 22.11185,
+            "extracted_on": "2024-10-09T19:19:16+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://external.gtfs.ro/oradea/ORADEA.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-bihor-oradea-transport-local-gtfs-2101.zip?alt=media"
+    },
+    "redirect": []
+}

@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2099,
+    "data_type": "gtfs",
+    "provider": "Tursib Sibiu",
+    "status": "active",
+    "location": {
+        "country_code": "RO",
+        "subdivision_name": "Sibiu",
+        "municipality": "Sibiu",
+        "bounding_box": {
+            "minimum_latitude": 45.651501,
+            "maximum_latitude": 45.838994164913,
+            "minimum_longitude": 23.92505094409,
+            "maximum_longitude": 24.208131954074,
+            "extracted_on": "2024-10-09T19:19:01+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://tursib.ro/trasee/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-sibiu-tursib-sibiu-gtfs-2099.zip?alt=media"
+    },
+    "redirect": []
+}

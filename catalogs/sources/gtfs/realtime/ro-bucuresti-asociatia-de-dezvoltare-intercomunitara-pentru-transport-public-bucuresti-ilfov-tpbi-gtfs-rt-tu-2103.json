@@ -1,0 +1,14 @@
+{
+    "mdb_source_id": 2103,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Asociația de Dezvoltare Intercomunitară pentru Transport Public București – Ilfov (TPBI)",
+    "static_reference": [
+        2098
+    ],
+    "urls": {
+        "direct_download": "https://gtfs.tpbi.ro/api/gtfs-rt/tripUpdates"
+    }
+}

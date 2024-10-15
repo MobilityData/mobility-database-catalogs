@@ -137,3 +137,6 @@ dmypy.json
 .DS_Store
 
 cebc62a4-ed30-4d1b-9816-53b3376baabc/
+
+# Generated sources.csv
+sources.csv

@@ -148,7 +148,7 @@ jobs:
           else
             echo "Creating new pull request"
             # Create pull request and capture the URL
-            PR_URL=$(gh pr create --title "Automated Pull Request — New/Updated feed(s)" \
+            PR_URL=$(gh pr create --title "Automated Pull Request — New/Updated feed(s) [SOURCES]" \
                                   --body "This pull request contains new or updated feed(s)" \
                                   --base main \
                                   --head "$BRANCH_NAME")

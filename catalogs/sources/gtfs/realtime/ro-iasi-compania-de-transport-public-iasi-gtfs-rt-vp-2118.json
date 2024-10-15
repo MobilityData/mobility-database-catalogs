@@ -1,0 +1,14 @@
+{
+    "mdb_source_id": 2118,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Compania de Transport Public Iași",
+    "static_reference": [
+        2116
+    ],
+    "urls": {
+        "direct_download": "https://iasi-rt-feed.gtfs.ro/vehiclePositions"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2116,
+    "data_type": "gtfs",
+    "provider": "Compania de Transport Public Iași",
+    "status": "active",
+    "location": {
+        "country_code": "RO",
+        "subdivision_name": "Iași",
+        "municipality": "Iași",
+        "bounding_box": {
+            "minimum_latitude": 47.06498,
+            "maximum_latitude": 47.28792,
+            "minimum_longitude": 27.44608,
+            "maximum_longitude": 27.82416,
+            "extracted_on": "2024-10-12T10:45:23+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://external.gtfs.ro/iasi/IASI.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-iasi-compania-de-transport-public-iasi-gtfs-2116.zip?alt=media"
+    },
+    "redirect": []
+}

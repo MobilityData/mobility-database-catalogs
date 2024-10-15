@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2098,
+    "data_type": "gtfs",
+    "provider": "Asociația de Dezvoltare Intercomunitară pentru Transport Public București – Ilfov (TPBI)",
+    "status": "active",
+    "location": {
+        "country_code": "RO",
+        "subdivision_name": "București",
+        "municipality": "București",
+        "bounding_box": {
+            "minimum_latitude": 44.256653,
+            "maximum_latitude": 44.75059,
+            "minimum_longitude": 25.870012,
+            "maximum_longitude": 26.386173,
+            "extracted_on": "2024-10-09T19:13:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.tpbi.ro/regional/BUCHAREST-REGION.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-bucuresti-asociatia-de-dezvoltare-intercomunitara-pentru-transport-public-bucuresti-ilfov-tpbi-gtfs-2098.zip?alt=media"
+    },
+    "redirect": []
+}

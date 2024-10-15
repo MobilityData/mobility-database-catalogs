@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2119,
+    "data_type": "gtfs",
+    "provider": "Trolleybus Transport Pleven",
+    "status": "active",
+    "location": {
+        "country_code": "BG",
+        "subdivision_name": "Pleven",
+        "municipality": "Pleven",
+        "bounding_box": {
+            "minimum_latitude": 43.39247,
+            "maximum_latitude": 43.439544,
+            "minimum_longitude": 24.56491,
+            "maximum_longitude": 24.709633,
+            "extracted_on": "2024-10-12T10:46:23+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://external.gtfs.ro/pleven/PLEVEN.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/bg-pleven-trolleybus-transport-pleven-gtfs-2119.zip?alt=media"
+    },
+    "redirect": []
+}

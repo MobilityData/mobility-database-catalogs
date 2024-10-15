@@ -1,12 +1,12 @@
 {
-    "mdb_source_id": 2113,
+    "mdb_source_id": 2125,
     "data_type": "gtfs-rt",
     "entity_type": [
         "vp"
     ],
     "provider": "Ben Franklin Transit",
     "static_reference": [
-       2112
+       2122
     ],
     "urls": {
         "direct_download": "https://myride.bft.org/Realtime/GTFS_VehiclePositions.pb",

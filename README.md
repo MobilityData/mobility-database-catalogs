@@ -2,7 +2,9 @@
 
 [![Integration tests](https://github.com/MobilityData/mobility-catalogs/actions/workflows/integration_tests.yml/badge.svg?branch=issue%2F343%2Fcatalogs-prototype)](https://github.com/MobilityData/mobility-catalogs/actions/workflows/integration_tests.yml) [![Unit tests](https://github.com/MobilityData/mobility-catalogs/actions/workflows/unit_tests.yml/badge.svg?branch=issue%2F343%2Fcatalogs-prototype)](https://github.com/MobilityData/mobility-catalogs/actions/workflows/unit_tests.yml) [![Export catalogs to CSV](https://github.com/MobilityData/mobility-catalogs/actions/workflows/export_to_csv.yml/badge.svg?branch=issue%2F343%2Fcatalogs-prototype)](https://github.com/MobilityData/mobility-catalogs/actions/workflows/export_to_csv.yml) [![Join the MobilityData chat](https://badgen.net/badge/slack/%20/green?icon=slack)](https://share.mobilitydata.org/slack)
 
-The Mobility Database Catalogs is a list of open mobility data feeds from across the world. [You can learn more about the Mobility Database and its API here](https://mobilitydatabase.org/).
+The Mobility Database Catalogs is a list of open mobility data feeds from across the world. [You can learn more about the Mobility Database and its API here](https://mobilitydatabase.org/). 
+
+[You can see our API code and infrastructure here](https://github.com/MobilityData/mobility-feed-api).
 
 To search feeds easily, you can download [the CSV spreadsheet](https://bit.ly/catalogs-csv). If you want to filter for specific types of feeds, [you can learn how to here](#get-and-filter-feeds).
 

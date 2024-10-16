@@ -17,6 +17,12 @@
             "extracted_on": "2022-04-04T18:45:27+00:00"
         }
     },
+    "status": "deprecated",
+    "redirect": [
+        {
+            "id": 2109
+        }
+    ],
     "urls": {
         "direct_download": "https://transitfeeds.com/p/milwaukee-county-transit-system/182/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-wisconsin-milwaukee-county-transit-system-gtfs-1318.zip?alt=media"

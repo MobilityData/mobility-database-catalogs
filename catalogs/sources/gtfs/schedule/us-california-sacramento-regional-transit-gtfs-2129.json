@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2129,
+    "data_type": "gtfs",
+    "provider": "Sacramento Regional Transit",
+    "status": "active",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Sacramento",
+        "bounding_box": {
+            "minimum_latitude": 38.393313,
+            "maximum_latitude": 38.722684,
+            "minimum_longitude": -121.764449,
+            "maximum_longitude": -121.092322,
+            "extracted_on": "2024-10-22T16:24:49+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.sacrt.com/wp-content/uploads/google_transit.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-sacramento-regional-transit-gtfs-2129.zip?alt=media",
+        "license": "https://www.sacrt.com/gtfs/"
+    },
+    "redirect": []
+}

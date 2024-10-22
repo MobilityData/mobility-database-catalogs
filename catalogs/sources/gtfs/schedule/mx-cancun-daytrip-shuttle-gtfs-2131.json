@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2131,
+    "data_type": "gtfs",
+    "provider": "Daytrip Shuttle",
+    "feed_contact_email": "joy@daytrip.com",
+    "status": "active",
+    "location": {
+        "country_code": "MX",
+        "subdivision_name": "Cancun",
+        "bounding_box": {
+            "minimum_latitude": 20.15545007105369,
+            "maximum_latitude": 21.16647832124564,
+            "minimum_longitude": -87.45660810131473,
+            "maximum_longitude": -86.74932545956293,
+            "extracted_on": "2024-10-22T16:24:50+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.daytrip.com/gtfs_mx.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/mx-cancun-daytrip-shuttle-gtfs-2131.zip?alt=media"
+    },
+    "redirect": []
+}

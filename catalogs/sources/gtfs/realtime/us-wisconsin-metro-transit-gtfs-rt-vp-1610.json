@@ -5,8 +5,15 @@
         "vp"
     ],
     "provider": "Metro Transit",
+    "status": "deprecated",
     "static_reference": [
         394
+    ],
+    "redirect": [
+        {
+            "id": 2097,
+            "comment": "New AVL feed redirect"
+        }
     ],
     "urls": {
         "direct_download": "http://transitdata.cityofmadison.com/Vehicle/VehiclePositions.pb",

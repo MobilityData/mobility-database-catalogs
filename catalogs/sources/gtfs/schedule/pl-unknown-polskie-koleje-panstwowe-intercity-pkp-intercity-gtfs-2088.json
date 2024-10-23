@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 2088,
+    "data_type": "gtfs",
+    "provider": "Polskie Koleje Państwowe Intercity (PKP Intercity)",
+    "location": {
+        "country_code": "PL",
+        "bounding_box": {
+            "minimum_latitude": 49.24722949438,
+            "maximum_latitude": 54.79372147682,
+            "minimum_longitude": 14.26659541863,
+            "maximum_longitude": 23.90884100854,
+            "extracted_on": "2024-08-19T17:54:32+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://mkuran.pl/gtfs/pkpic.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-unknown-polskie-koleje-panstwowe-intercity-pkp-intercity-gtfs-2088.zip?alt=media",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "redirect": []
+}

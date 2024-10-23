@@ -2,6 +2,7 @@
     "mdb_source_id": 863,
     "data_type": "gtfs",
     "provider": "Warszawska Kolej Dojazdowa (WKD)",
+    "status": "deprecated",
     "location": {
         "country_code": "PL",
         "subdivision_name": "Mazowieckie",
@@ -18,5 +19,11 @@
         "direct_download": "https://mkuran.pl/feed/wkd/wkd-latest.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-mazowieckie-warszawska-kolej-dojazdowa-wkd-gtfs-863.zip?alt=media",
         "license": "https://mkuran.pl/gtfs/"
-    }
+    },
+    "redirect": [
+        {
+            "id": 2091,
+            "comment": "Only the source URL changed, see feed 2091."
+        }
+    ]
 }

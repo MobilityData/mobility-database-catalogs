@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2121,
+    "data_type": "gtfs",
+    "provider": "Compania de Transport Public Cluj-Napoca",
+    "status": "active",
+    "location": {
+        "country_code": "RO",
+        "subdivision_name": "Cluj",
+        "municipality": "Cluj-Napoca",
+        "bounding_box": {
+            "minimum_latitude": 46.57892,
+            "maximum_latitude": 46.898272,
+            "minimum_longitude": 23.28878,
+            "maximum_longitude": 23.840866,
+            "extracted_on": "2024-10-12T10:53:23+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://external.gtfs.ro/cluj/CLUJ.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-cluj-compania-de-transport-public-cluj-napoca-gtfs-2121.zip?alt=media"
+    },
+    "redirect": []
+}

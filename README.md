@@ -2,7 +2,9 @@
 
 [![Integration tests](https://github.com/MobilityData/mobility-catalogs/actions/workflows/integration_tests.yml/badge.svg?branch=issue%2F343%2Fcatalogs-prototype)](https://github.com/MobilityData/mobility-catalogs/actions/workflows/integration_tests.yml) [![Unit tests](https://github.com/MobilityData/mobility-catalogs/actions/workflows/unit_tests.yml/badge.svg?branch=issue%2F343%2Fcatalogs-prototype)](https://github.com/MobilityData/mobility-catalogs/actions/workflows/unit_tests.yml) [![Export catalogs to CSV](https://github.com/MobilityData/mobility-catalogs/actions/workflows/export_to_csv.yml/badge.svg?branch=issue%2F343%2Fcatalogs-prototype)](https://github.com/MobilityData/mobility-catalogs/actions/workflows/export_to_csv.yml) [![Join the MobilityData chat](https://badgen.net/badge/slack/%20/green?icon=slack)](https://share.mobilitydata.org/slack)
 
-The Mobility Database Catalogs is a list of open mobility data feeds from across the world. [You can learn more about the Mobility Database and its API here](https://mobilitydatabase.org/).
+The Mobility Database Catalogs is a list of open mobility data feeds from across the world. [You can learn more about the Mobility Database and its API here](https://mobilitydatabase.org/). 
+
+[You can see our API code and infrastructure here](https://github.com/MobilityData/mobility-feed-api).
 
 To search feeds easily, you can download [the CSV spreadsheet](https://bit.ly/catalogs-csv). If you want to filter for specific types of feeds, [you can learn how to here](#get-and-filter-feeds).
 
@@ -28,7 +30,7 @@ If you are consuming the spreadsheet, we recommend downloading a new version eve
 
 ## How Often is the Database Updated?
 
-Updating the CSV is a community effort. Contributors either create a PR here directly or they submit an update through [the form](https://database.mobilitydata.org/add-a-feed), which MobilityData then adds as a PR within approximately a week of submission. You can look at [the PR history](https://github.com/MobilityData/mobility-database-catalogs/pulls?q=is%3Apr+is%3Aclosed) to see how frequently there are updates, and we usually do updates 1-3 times a month.
+Updating the CSV is a community effort. Contributors either create a PR here directly or they submit an update through [the form](https://mobilitydatabase.org/contribute), which MobilityData then adds as a PR within approximately a week of submission. You can look at [the PR history](https://github.com/MobilityData/mobility-database-catalogs/pulls?q=is%3Apr+is%3Aclosed) to see how frequently there are updates, and we usually do updates 1-3 times a month.
 
 ## The Architecture
 
@@ -229,7 +231,7 @@ To get the feeds by status, `$STATUS` is expressed as a string and one of:
 
 ```python
 >>> get_sources_by_status(
-        feature=$STATUS,
+        status=$STATUS,
     )
 ```
 ## Integration Tests
@@ -244,4 +246,4 @@ All of the Mobility Database catalog's metadata is made available under [Creativ
 
 ## Contributing
 
-We welcome contributions to the project! You can add and update feeds or contribute code. Please check out our [Contribution guidelines](/CONTRIBUTING.md) for details. Any PRs or [form contributions](https://database.mobilitydata.org/add-a-feed) will be responded to within a week of submission.
+We welcome contributions to the project! You can add and update feeds or contribute code. Please check out our [Contribution guidelines](/CONTRIBUTING.md) for details. Any PRs or [form contributions](https://mobilitydatabase.org/contribute) will be responded to within a week of submission.

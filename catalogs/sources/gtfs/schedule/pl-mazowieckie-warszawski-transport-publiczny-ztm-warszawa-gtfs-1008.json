@@ -5,6 +5,7 @@
     "features": [
         "fares-v1"
     ],
+    "status": "deprecated",
     "location": {
         "country_code": "PL",
         "subdivision_name": "Mazowieckie",
@@ -21,5 +22,11 @@
         "direct_download": "https://mkuran.pl/feed/ztm/ztm-latest.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-mazowieckie-warszawski-transport-publiczny-ztm-warszawa-gtfs-1008.zip?alt=media",
         "license": "https://www.ztm.waw.pl/pliki-do-pobrania/dane-rozkladowe/"
-    }
+    },
+    "redirect": [
+        {
+            "id": 2092,
+            "comment": "Only the source URL changed, see feed 2092."
+        }
+    ]
 }

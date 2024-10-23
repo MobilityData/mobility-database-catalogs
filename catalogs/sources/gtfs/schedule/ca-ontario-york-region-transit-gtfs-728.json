@@ -16,6 +16,7 @@
     },
     "urls": {
         "direct_download": "https://www.yrt.ca/google/google_transit.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-york-region-transit-gtfs-728.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-york-region-transit-gtfs-728.zip?alt=media",
+        "license": "https://www.yrt.ca/en/about-us/open-data-licence-agreement.aspx"
     }
 }

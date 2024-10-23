@@ -17,6 +17,6 @@
     "urls": {
         "direct_download": "https://data.gtfs.be/tec/gtfs/be-tec-gtfs.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/be-wallonne-tec-gtfs-1868.zip?alt=media",
-        "license_url": "https://gtfs.be/"
+        "license": "https://gtfs.be/"
     }
 }

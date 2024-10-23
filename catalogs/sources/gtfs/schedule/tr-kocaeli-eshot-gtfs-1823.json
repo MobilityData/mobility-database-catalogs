@@ -4,8 +4,7 @@
     "provider": "Eshot",
     "location": {
         "country_code": "TR",
-        "subdivision_name": "Kocaeli",
-        "municipality": "Izmit",
+        "subdivision_name": "Izmir",
         "bounding_box": {
             "minimum_latitude": 37.942080002386,
             "maximum_latitude": 39.344003,

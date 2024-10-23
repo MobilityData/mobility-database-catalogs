@@ -4,8 +4,7 @@
     "provider": "METRO İZMİR",
     "location": {
         "country_code": "TR",
-        "subdivision_name": "Kocaeli",
-        "municipality": "Izmit",
+        "subdivision_name": "Izmir",
         "bounding_box": {
             "minimum_latitude": 38.3916,
             "maximum_latitude": 38.4656,

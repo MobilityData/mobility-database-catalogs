@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 2092,
+    "data_type": "gtfs",
+    "provider": "Warszawski Transport Publiczny (ZTM Warszawa)",
+    "features": [
+        "fares-v1"
+    ],
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Mazowieckie",
+        "municipality": "Warsaw",
+        "bounding_box": {
+            "minimum_latitude": 51.921869,
+            "maximum_latitude": 52.493488,
+            "minimum_longitude": 20.462591,
+            "maximum_longitude": 21.463783,
+            "extracted_on": "2024-08-28T21:27:57+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://mkuran.pl/gtfs/warsaw.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-mazowieckie-warszawski-transport-publiczny-ztm-warszawa-gtfs-2092.zip?alt=media",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "redirect": []
+}

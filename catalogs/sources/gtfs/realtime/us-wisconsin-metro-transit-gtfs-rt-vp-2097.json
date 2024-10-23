@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 2097,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Metro Transit",
+    "static_reference": [
+        394
+    ],
+    "urls": {
+        "direct_download": "https://metromap.cityofmadison.com/gtfsrt/vehicles",
+        "authentication_type": 0,
+        "license": "http://www.cityofmadison.com/metro/Apps/developers.cfm"
+    }
+}

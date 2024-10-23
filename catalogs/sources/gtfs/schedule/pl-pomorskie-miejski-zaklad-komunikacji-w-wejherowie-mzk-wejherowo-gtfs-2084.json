@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2084,
+    "data_type": "gtfs",
+    "provider": "Miejski Zakład Komunikacji w Wejherowie (MZK Wejherowo)",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Pomorskie",
+        "municipality": "Wejherowo",
+        "bounding_box": {
+            "minimum_latitude": 54.567562,
+            "maximum_latitude": 54.640766,
+            "minimum_longitude": 18.097898,
+            "maximum_longitude": 18.387169,
+            "extracted_on": "2024-08-19T17:47:36+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://mkuran.pl/gtfs/wejherowo.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-pomorskie-miejski-zaklad-komunikacji-w-wejherowie-mzk-wejherowo-gtfs-2084.zip?alt=media",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "redirect": []
+}

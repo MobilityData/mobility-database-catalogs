@@ -2,6 +2,7 @@
     "mdb_source_id": 1079,
     "data_type": "gtfs",
     "provider": "CONSORCI DE TRANSPORTS DE MALLORCA, Sagalés-Caldentey, Grupo Ruiz, Moventis, CTM R4, SFM R4, AJUNTAMENT DE CALVIA R4, EMT, AJUNTAMENT DE BUNYOLA R4",
+    "status": "deprecated",
     "location": {
         "country_code": "ES",
         "bounding_box": {
@@ -15,5 +16,11 @@
     "urls": {
         "direct_download": "https://www.tib.org/documents/30683/96569/ctm-mallorca-es.zip/3d94d08e-b214-62d2-7b8c-ef3bebb9a8c0",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-unknown-consorci-de-transports-de-mallorca-gtfs-1079.zip?alt=media"
-    }
+    },
+     "redirect": [
+        {
+            "id": 2141,
+            "comment": " "
+        }
+    ]
 }

@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 2127,
+    "mdb_source_id": 2133,
     "data_type": "gtfs",
     "provider": "Métropole Aix-Marseille",
     "name": " Lecar / Pays dʼAix Mobilité",
@@ -19,7 +19,7 @@
     "urls": {
         "direct_download": "https://app.mecatran.com/utw/ws/gtfsfeed/static/mamp-pam?apiKey=596e694f3330142c525b7d6b123a5b055f744058",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-fr-pac-metropole-aix-marseille-gtfs-2127.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-fr-pac-metropole-aix-marseille-gtfs-2133.zip?alt=media",
         "license": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/"
     },
     "redirect": []

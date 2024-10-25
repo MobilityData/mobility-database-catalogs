@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 2099,
+    "mdb_source_id": 2141,
     "data_type": "gtfs",
     "provider": "Consorcio de Transportes de Mallorca",
     "name": "TIB Mallorca",
@@ -18,7 +18,7 @@
     "urls": {
         "direct_download": "https://www.tib.org/documents/20124/478141/ctm-mallorca-es.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-pm-consorcio-de-transportes-de-mallorca-gtfs-2099.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-pm-consorcio-de-transportes-de-mallorca-gtfs-2141.zip?alt=media",
         "license": "https://www.tib.org/en/sobre-ctm/portal-de-transparencia/dades-obertes"
     },
     "redirect": []

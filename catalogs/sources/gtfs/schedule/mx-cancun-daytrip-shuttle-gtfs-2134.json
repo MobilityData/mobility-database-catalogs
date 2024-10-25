@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 2131,
+    "mdb_source_id": 2134,
     "data_type": "gtfs",
     "provider": "Daytrip Shuttle",
     "feed_contact_email": "joy@daytrip.com",
@@ -18,7 +18,7 @@
     "urls": {
         "direct_download": "https://gtfs.daytrip.com/gtfs_mx.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/mx-cancun-daytrip-shuttle-gtfs-2131.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/mx-cancun-daytrip-shuttle-gtfs-2134.zip?alt=media"
     },
     "redirect": []
 }

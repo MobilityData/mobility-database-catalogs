@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 2132,
+    "mdb_source_id": 2138,
     "data_type": "gtfs",
     "provider": "OBB Personenverkehr AG Kundenservice",
     "status": "active",
@@ -16,7 +16,7 @@
     "urls": {
         "direct_download": "https://static.oebb.at/open-data/soll-fahrplan-gtfs/GTFS_OP_2024_obb.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/at-unknown-obb-gtfs-2132.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/at-unknown-obb-gtfs-2138.zip?alt=media",
         "license": "https://data.oebb.at/de/datensaetze~soll-fahrplan-gtfs~"
     },
     "redirect": []

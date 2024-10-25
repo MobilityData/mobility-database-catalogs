@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 2109,
+    "mdb_source_id": 2127,
     "data_type": "gtfs",
     "provider": "Milwaukee County Transit System (MCTS)",
     "features": [
@@ -19,6 +19,6 @@
     },
     "urls": {
         "direct_download": "https://kamino.mcts.org/gtfs/google_transit.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-wisconsin-milwaukee-county-transit-system-gtfs-2109.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-wisconsin-milwaukee-county-transit-system-gtfs-2127.zip?alt=media"
     }
 }

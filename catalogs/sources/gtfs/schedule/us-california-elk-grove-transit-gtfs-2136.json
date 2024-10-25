@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2136,
+    "data_type": "gtfs",
+    "provider": "Elk Grove Transit",
+    "status": "active",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Sacramento",
+        "bounding_box": {
+            "minimum_latitude": 38.378867,
+            "maximum_latitude": 38.5814,
+            "minimum_longitude": -121.504575,
+            "maximum_longitude": -121.321886,
+            "extracted_on": "2024-10-22T16:24:49+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://elkgrovetransit.com/gtfs",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-elk-grove-transit-gtfs-2136.zip?alt=media",
+        "license": "https://www.sacrt.com/gtfs/"
+    },
+    "redirect": []
+}

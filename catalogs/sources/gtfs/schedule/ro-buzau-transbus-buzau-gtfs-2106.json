@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2106,
+    "data_type": "gtfs",
+    "provider": "Transbus Buzău",
+    "status": "active",
+    "location": {
+        "country_code": "RO",
+        "subdivision_name": "Buzău",
+        "municipality": "Buzău",
+        "bounding_box": {
+            "minimum_latitude": 44.96452242863011,
+            "maximum_latitude": 45.33750261357772,
+            "minimum_longitude": 26.476416800000003,
+            "maximum_longitude": 27.1481777,
+            "extracted_on": "2024-10-10T13:01:13+00:00"
+        }
+    },
+    "note": "The direct download URL requires the presence of a user agent.",
+    "urls": {
+        "direct_download": "https://gtfs.opendev.ro/GTFS-301.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-buzau-transbus-buzau-gtfs-2106.zip?alt=media"
+    },
+    "redirect": []
+}

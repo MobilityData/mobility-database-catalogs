@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Saint John Transit",
     "feed_contact_email": "csjtransit@gmail.com",
+    "status": "deprecated",
     "location": {
         "country_code": "CA",
         "subdivision_name": "New Brunswick",
@@ -21,5 +22,10 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-new-brunswick-saint-john-transit-gtfs-1223.zip?alt=media",
         "license": "https://catalogue-saintjohn.opendata.arcgis.com/datasets/d6f4783521364429a2e51a64c60ae234/about"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": 2131,
+            "comment": " "
+        }
+    ]
 }

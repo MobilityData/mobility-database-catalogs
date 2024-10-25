@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 2143,
+    "mdb_source_id": 2140,
     "data_type": "gtfs-rt",
     "entity_type": [
         "vp"
@@ -7,7 +7,7 @@
     
     "provider": "Toronto Transit Commission",
     "static_reference": [
-        2140
+        2143
     ],
     "urls": {
         "direct_download": "https://bustime.ttc.ca/gtfsrt/vehicles",

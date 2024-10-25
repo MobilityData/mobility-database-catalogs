@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2132,
+    "data_type": "gtfs",
+    "provider": "T3 Transit",
+    "feed_contact_email": "support+test+coachatlantic-pe-ca@trilliumtransit.com",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Prince Edward Island",
+        "municipality": "Charlottetown",
+        "bounding_box": {
+            "minimum_latitude": 46.200336,
+            "maximum_latitude": 46.294496,
+            "minimum_longitude": -63.21932,
+            "maximum_longitude": -63.07801666149472,
+            "extracted_on": "2024-10-25T20:32:56+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/coachatlantic-pe-ca/coachatlantic-pe-ca.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-prince-edward-island-t3-transit-gtfs-2132.zip?alt=media",
+        "license": "https://catalogue-saintjohn.opendata.arcgis.com/datasets/d6f4783521364429a2e51a64c60ae234/about"
+    },
+    "redirect": []
+}

@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 2129,
     "data_type": "gtfs",
-    "provider": "Sacramento Regional Transit",
+    "provider": "Sacramento Regional Transit (SacRT)",
     "status": "active",
     "location": {
         "country_code": "US",

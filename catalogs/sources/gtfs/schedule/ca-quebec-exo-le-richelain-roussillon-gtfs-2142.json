@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 2100,
+    "mdb_source_id": 2142,
     "data_type": "gtfs",
     "provider": "Exo Le Richelain / Roussillon",
     "status": "active",
@@ -17,7 +17,7 @@
     "urls": {
         "direct_download": "https://exo.quebec/xdata/lrrs/google_transit.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-exo-le-richelain-roussillon-gtfs-2100.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-exo-le-richelain-roussillon-gtfs-2142.zip?alt=media",
         "license": "https://exo.quebec/fr/a-propos/donnees-ouvertes"
     },
     "redirect": []

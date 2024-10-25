@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 2140,
+    "mdb_source_id": 2143,
     "data_type": "gtfs",
     "provider": "Toronto Transit Commission",
     "name": "Static feed for beta realtime feed"
@@ -18,6 +18,6 @@
     },
     "urls": {
         "direct_download": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/bd4809dd-e289-4de8-bbde-c5c00dafbf4f/resource/28514055-d011-4ed7-8bb0-97961dfe2b66/download/SurfaceGTFS.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-toronto-transit-commission-gtfs-2140.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-toronto-transit-commission-gtfs-2143.zip?alt=media"
     }
 }

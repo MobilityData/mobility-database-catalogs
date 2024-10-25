@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 2128,
+    "mdb_source_id": 2135,
     "data_type": "gtfs",
     "provider": "El Dorado Transit Agency",
     "name": "El Dorado County Transit Authority",
@@ -18,7 +18,7 @@
     "urls": {
         "direct_download": "https://data.trilliumtransit.com/gtfs/eldoradotransit-ca-us/eldoradotransit-ca-us.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-el-dorado-transit-agency-gtfs-2128.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-el-dorado-transit-agency-gtfs-2135.zip?alt=media",
         "license": "https://eldoradotransit.com/trip-planner-information/gtfs-data/"
     },
     "redirect": []

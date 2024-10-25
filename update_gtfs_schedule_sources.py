@@ -2,9 +2,10 @@ import os
 from datetime import datetime, timedelta
 import pandas as pd
 from zipfile import ZipFile
-from tools.operations import get_latest_datasets, update_gtfs_schedule_source, GTFS
+from tools.operations import get_latest_datasets, update_gtfs_schedule_source
 from tools.helpers import download_dataset
 from tools.constants import (
+    GTFS,
     PATHWAYS_TXT,
     FARES_ATTRIBUTES_TXT,
     FARES_PRODUCTS_TXT,
@@ -88,7 +89,7 @@ if __name__ == "__main__":
     latest_datasets = get_latest_datasets(GTFS)
 
     for mdb_source_id, latest_url in latest_datasets.items():
-        dataset_path = download_dataset(latest_url)
+        dataset_path = download_dataset(latest_url, None, None, None)
         dataset_zip = ZipFile(dataset_path)
 
         dataset_features = []

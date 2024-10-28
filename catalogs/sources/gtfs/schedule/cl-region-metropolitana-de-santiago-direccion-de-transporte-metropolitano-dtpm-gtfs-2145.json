@@ -1,31 +1,23 @@
 {
-    "mdb_source_id": 987,
+    "mdb_source_id": 2145,
     "data_type": "gtfs",
     "provider": "Dirección de Transporte Metropolitano (DTPM)",
-    "name": "Aggregation of networks from 'Red Metropolitana de Movilidad'",
-    "status": "deprecated",
     "location": {
         "country_code": "CL",
         "subdivision_name": "Región Metropolitana de Santiago",
-        "municipality": "Santiago",
         "bounding_box": {
             "minimum_latitude": -34.170505,
             "maximum_latitude": -33.3193343927293,
             "minimum_longitude": -70.8739928645606,
             "maximum_longitude": -70.4936483461678,
-            "extracted_on": "2022-05-03T19:37:29+00:00"
+            "extracted_on": "2024-10-28T14:55:30+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://www.dtpm.cl/descargas/gtfs/GTFS-V70-PO20220228.zip",
+        "direct_download": "https://www.dtpm.cl/descargas/gtfs/GTFS-V126-PO20241019.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cl-region-metropolitana-de-santiago-santiago-dptm-gtfs-987.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cl-region-metropolitana-de-santiago-direccion-de-transporte-metropolitano-dtpm-gtfs-2145.zip?alt=media",
         "license": "https://www.dtpm.cl/index.php/gtfs-vigente"
     },
-    "redirect": [
-        {
-            "id": 2145,
-            "comment": " "
-        }
-    ]
+    "redirect": []
 }

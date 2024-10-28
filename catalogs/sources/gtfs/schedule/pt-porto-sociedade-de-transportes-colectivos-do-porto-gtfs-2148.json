@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2148,
+    "data_type": "gtfs",
+    "provider": "Sociedade de Transportes Colectivos do Porto",
+    "location": {
+        "country_code": "PT",
+        "subdivision_name": "Porto",
+        "municipality": "Porto",
+        "bounding_box": {
+            "minimum_latitude": 41.0805855077891,
+            "maximum_latitude": 41.2558611382046,
+            "minimum_longitude": -8.71397373431803,
+            "maximum_longitude": -8.45701475515611,
+            "extracted_on": "2024-10-28T14:55:36+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://opendata.porto.digital/dataset/5275c986-592c-43f5-8f87-aabbd4e4f3a4/resource/415bf8d5-4c18-40b3-9516-9d9187185ef9/download/gtfs_stcp.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-porto-sociedade-de-transportes-colectivos-do-porto-gtfs-2148.zip?alt=media",
+        "license": "https://opendata.porto.digital/dataset/horarios-paragens-e-rotas-em-formato-gtfs-stcp/resource/415bf8d5-4c18-40b3-9516-9d9187185ef9"
+    },
+    "redirect": []
+}

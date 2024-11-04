@@ -2,7 +2,7 @@
     "mdb_source_id": 1201,
     "data_type": "gtfs",
     "provider": "Réseau de transport Transpole de la Métropole Européenne de Lille",
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "FR",
         "subdivision_name": "Hauts-de-France",
@@ -17,7 +17,14 @@
     },
     "urls": {
         "direct_download": "https://opendata.lillemetropole.fr/api/datasets/1.0/transport_arret_transpole-point/alternative_exports/gtfszip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-hauts-de-france-reseau-de-transport-transpole-de-la-metropole-europeenne-de-lille-gtfs-1201.zip?alt=media",
         "license": "https://opendata.lillemetropole.fr/explore/dataset/transport_arret_transpole-point/?disjunctive.filename&disjunctive.commune"
-    }
+    },
+    "redirect": [
+        {
+            "id": 2151,
+            "comment": " "
+        }
+    ]
 }

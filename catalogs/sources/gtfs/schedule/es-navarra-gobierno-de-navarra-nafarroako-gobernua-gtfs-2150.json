@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 2150,
+    "data_type": "gtfs",
+    "provider": "GOBIERNO DE NAVARRA/ NAFARROAKO GOBERNUA",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Navarra",
+        "bounding_box": {
+            "minimum_latitude": 41.6435336728325,
+            "maximum_latitude": 42.9251608959376,
+            "minimum_longitude": -2.68474298385968,
+            "maximum_longitude": -0.88916813465899,
+            "extracted_on": "2024-11-04T18:48:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://administracionelectronica.navarra.es/AccesoFicheros/DownloadFile.aspx?codigoAcceso=OpenData&fichero=TransporteInterurbano/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-navarra-gobierno-de-navarra-nafarroako-gobernua-gtfs-2150.zip?alt=media"
+    },
+    "redirect": []
+}

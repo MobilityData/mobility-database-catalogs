@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2154,
+    "data_type": "gtfs",
+    "provider": "Ottawa-Carleton Regional Transit Commission (OC Transpo)",
+    "feed_contact_email": "octranspo-dev@ottawa.ca",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Ontario",
+        "municipality": "Ottawa",
+        "bounding_box": {
+            "minimum_latitude": 45.130128,
+            "maximum_latitude": 45.519707,
+            "minimum_longitude": -76.041833,
+            "maximum_longitude": -75.343418,
+            "extracted_on": "2024-11-07T20:58:27+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://oct-gtfs-emasagcnfmcgeham.z01.azurefd.net/public-access/GTFSExport.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-ottawa-carleton-regional-transit-commission-oc-transpo-gtfs-2154.zip?alt=media",
+        "license": "https://www.octranspo.com/en/plan-your-trip/travel-tools/developers/"
+    },
+    "redirect": []
+}

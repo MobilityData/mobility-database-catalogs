@@ -2,6 +2,7 @@
     "mdb_source_id": 1235,
     "data_type": "gtfs",
     "provider": "Delaware Transit Corporation (DART First State)",
+    "feed_contact_email": "praveen.jarugulla@delaware.gov",
     "location": {
         "country_code": "US",
         "subdivision_name": "Delaware",
@@ -15,6 +16,8 @@
     },
     "urls": {
         "direct_download": "http://dartfirststate.com/RiderInfo/Routes/gtfs_data/dartfirststate_de_us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-delaware-dart-first-state-gtfs-1235.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

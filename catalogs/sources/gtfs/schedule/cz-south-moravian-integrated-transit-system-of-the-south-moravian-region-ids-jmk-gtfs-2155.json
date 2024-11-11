@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2155,
+    "data_type": "gtfs",
+    "provider": "Integrated Transit System of the South Moravian Region (IDS JMK)",
+    "location": {
+        "country_code": "CZ",
+        "subdivision_name": "South Moravian",
+        "bounding_box": {
+            "minimum_latitude": 48.720393,
+            "maximum_latitude": 49.65112,
+            "minimum_longitude": 15.546522,
+            "maximum_longitude": 17.629908,
+            "extracted_on": "2024-11-11T20:45:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.arcgis.com/sharing/rest/content/items/379d2e9a7907460c8ca7fda1f3e84328/data",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cz-south-moravian-integrated-transit-system-of-the-south-moravian-region-ids-jmk-gtfs-2155.zip?alt=media",
+        "license": "https://data.brno.cz/datasets/379d2e9a7907460c8ca7fda1f3e84328/about"
+    },
+    "redirect": []
+}

@@ -184,7 +184,6 @@ if argNames.count == 5 {
                     license_url=\"\(license_url)\", 
                     name=\"\(name)\", 
                     status=\"\(status)\", 
-                    features=\"\(gtfsschedulefeatures)\", 
                     feed_contact_email=\"\(dataproduceremail)\"
                     \(redirects_array))
                     """
@@ -208,7 +207,6 @@ if argNames.count == 5 {
                     name=\"\(name)\", 
                     note=\"\(note)\", 
                     status=\"\(status)\", 
-                    features=\"\(realtimefeatures)\", 
                     feed_contact_email=\"\(dataproduceremail)\"
                     \(redirects_array))
                     """
@@ -234,7 +232,6 @@ if argNames.count == 5 {
                     authentication_info_url=\"\(authentication_info_url)\", 
                     api_key_parameter_name=\"\(api_key_parameter_name)\", 
                     status=\"\(status)\", 
-                    features=\"\(gtfsschedulefeatures)\", 
                     feed_contact_email=\"\(dataproduceremail)\"
                     \(redirects_array))
                     """
@@ -256,7 +253,6 @@ if argNames.count == 5 {
                     name=\"\(name)\", 
                     note=\"\(note)\", 
                     status=\"\(status)\", 
-                    features=\"\(realtimefeatures)\", 
                     feed_contact_email=\"\(dataproduceremail)\"
                     \(redirects_array))
                     """
@@ -282,7 +278,6 @@ if argNames.count == 5 {
                     authentication_info_url=\"\(authentication_info_url)\", 
                     api_key_parameter_name=\"\(api_key_parameter_name)\", 
                     status=\"\(status)\", 
-                    features=\"\(gtfsschedulefeatures)\", 
                     feed_contact_email=\"\(dataproduceremail)\"
                     \(redirects_array))
                     """
@@ -304,7 +299,6 @@ if argNames.count == 5 {
                     name=\"\"**** issued for removal ****\"\", 
                     note=\"\(note)\", 
                     status=\"\(status)\", 
-                    features=\"\(realtimefeatures)\", 
                     feed_contact_email=\"\(dataproduceremail)\"
                     \(redirects_array))
                     """
@@ -331,7 +325,6 @@ if argNames.count == 5 {
                     license_url=\"\(license_url)\", 
                     name=\"\(name)\", 
                     status=\"\(status)\", 
-                    features=\"\(gtfsschedulefeatures)\", 
                     feed_contact_email=\"\(dataproduceremail)\"
                     \(redirects_array))
                     """
@@ -354,7 +347,6 @@ if argNames.count == 5 {
                     name=\"\(name)\", 
                     note=\"\(note)\", 
                     status=\"\(status)\", 
-                    features=\"\(realtimefeatures)\", 
                     feed_contact_email=\"\(dataproduceremail)\"
                     \(redirects_array))
                     """

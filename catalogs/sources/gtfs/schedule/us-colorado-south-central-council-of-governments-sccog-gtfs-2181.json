@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2181,
+    "data_type": "gtfs",
+    "provider": "South Central Council of Governments (SCCOG)",
+    "name": "Flex",
+    "feed_contact_email": "support+sccog-co-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado ",
+        "bounding_box": {
+            "minimum_latitude": 37.169262,
+            "maximum_latitude": 37.169262,
+            "minimum_longitude": -104.506275,
+            "maximum_longitude": -104.506275,
+            "extracted_on": "2024-11-12T16:54:56+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/sccog-co-us/sccog-co-us--flex-v2.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-south-central-council-of-governments-sccog-gtfs-2181.zip?alt=media"
+    },
+    "redirect": []
+}

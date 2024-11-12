@@ -4,43 +4,25 @@ import Foundation
 #endif
 
 enum column : Int, CaseIterable {
-    case submissionType          = 0 // A
-    case timestamp               = 1 // B
-    case provider                = 2 // C
-    case regioncity              = 3 // D — NOT IN USE
-    case oldMobilityDatabaseID   = 4 // E
-    case updatednewsourceurl     = 5 // F
-    case datatype                = 6 // G
-    case issue                   = 7 // H
-    case downloadurl             = 8 // I
-    case country                 = 9 // J
-    case subdivision_name        = 10 // K
-    case municipality            = 11 // L
-    case name                    = 12 // M
-    case yournameorg             = 13 // N
-    case license_url             = 14 // O
-    case tripupdatesurl          = 15 // P
-    case servicealertsurl        = 16 // Q
-    case genunknownrturl         = 17 // R
-    case authentication_type     = 18 // S
-    case authentication_info_url = 19 // T
-    case api_key_parameter_name  = 20 // U
-    case note                    = 21 // V
-    case emptyColumn1            = 22 // W
-    case gtfsschedulefeatures    = 23 // X
-    case emptyColumn2            = 24 // Y
-    case gtfsschedulestatus      = 25 // Z
-    case gtfsredirect            = 26 // AA
-    case dataproduceremail       = 27 // AB
-    case officialProducer        = 28 // AC
-    case dataproduceremail2      = 29 // AD - NEW
-    case datatype2               = 30 // AE
-    case youremail               = 31 // AF
-    case realtimefeatures        = 32 // AG
-    case emptyColumn3            = 33 // AH — NOT IN USE
-    case isocountrycode          = 34 // AI
-    case feedupdatestatus        = 35 // AJ
-    case emptyColumn4            = 36 // AK - NOT IN USE
+    case fourZerothreeClientError = 0 // A
+    case timestamp                = 1 // B
+    case provider                 = 2 // C
+    case oldMobilityDatabaseID    = 3 // D
+    case datatype                 = 4 // E
+    case issueType                = 5 // F
+    case downloadurl              = 6 // G
+    case country                  = 7 // H
+    case subdivision_name         = 8 // I
+    case municipality             = 9 // J
+    case name                     = 10 // K
+    case license_url              = 11 // L
+    case authentication_type      = 12 // M
+    case authentication_info_url  = 13 // N
+    case api_key_parameter_name   = 14 // O
+    case note                     = 15 // P
+    case status                   = 16 // Q
+    case redirects                = 17 // R
+    case dataproduceremail        = 18 // S
 }
 
 struct defaults {
@@ -85,7 +67,7 @@ struct realtimeEntityTypes {
 let everyPythonScriptFunctionsParameterNames : [String] = ["provider=", "entity_type=", "country_code=", "authentication_type=", "authentication_info_url=", "api_key_parameter_name=", "subdivision_name=", "municipality=", "country_code=", "license_url=", "name=", "status=", "features=", "note=", "feed_contact_email=", "redirects="]
 
 let argNames : [String] = CommandLine.arguments
-// let argNames : [String] = ["scriptname", "https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/gviz/tq?tqx=out:csv;outFileName:data&sheet=%5BCLEANED%5D%20For%20import", "07/09/2024", "[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}|[0-9]{4}-[0-9]{2}-[0-9]{2}", "MM/dd/yyyy"]
+// let argNames : [String] = ["scriptname", "https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/gviz/tq?tqx=out:csv;outFileName:data&sheet=%5BCLEANED%5D%20For%20import", "11/11/2024", "[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}|[0-9]{4}-[0-9]{2}-[0-9]{2}", "MM/dd/yyyy"]
 
 // Set to false for production use
 let isInDebugMode : Bool = false
@@ -129,28 +111,32 @@ if argNames.count == 5 {
             
             let timestamp               : String = csvArrayColumn[column.timestamp.rawValue].trimmingCharacters(in: .whitespacesAndNewlines)
             let provider                : String = csvArrayColumn[column.provider.rawValue]
+            let old_mbd_ID_String       : String = csvArrayColumn[column.oldMobilityDatabaseID.rawValue].trimmingCharacters(in: CharacterSet(charactersIn: "\"")) // We need to remove the trailing quotation 
             let datatype                : String = csvArrayColumn[column.datatype.rawValue].count < 3 ? realtimeEntityTypes.empty : csvArrayColumn[column.datatype.rawValue]
-            let issue                   : String = csvArrayColumn[column.issue.rawValue]
+            let issue                   : String = csvArrayColumn[column.issueType.rawValue]
+            let downloadURL             : String = csvArrayColumn[column.downloadurl.rawValue]
             let country                 : String = csvArrayColumn[column.country.rawValue]
             let subdivision_name        : String = csvArrayColumn[column.subdivision_name.rawValue]
             let municipality            : String = csvArrayColumn[column.municipality.rawValue]
             let name                    : String = csvArrayColumn[column.name.rawValue]
             var license_url             : String = csvArrayColumn[column.license_url.rawValue]
-            let downloadURL             : String = csvArrayColumn[column.downloadurl.rawValue]
-            let updatednewsourceurl     : String = csvArrayColumn[column.updatednewsourceurl.rawValue]
             let authentication_type     : String = csvArrayColumn[column.authentication_type.rawValue]
             let authentication_info_url : String = csvArrayColumn[column.authentication_info_url.rawValue]
             let api_key_parameter_name  : String = csvArrayColumn[column.api_key_parameter_name.rawValue]
             let note                    : String = csvArrayColumn[column.note.rawValue]
-            let gtfsschedulefeatures    : String = csvArrayColumn[column.gtfsschedulefeatures.rawValue]
-            let gtfsschedulestatus      : String = csvArrayColumn[column.gtfsschedulestatus.rawValue].lowercased()
-            let gtfsrealtimestatus      : String = csvArrayColumn[column.emptyColumn4.rawValue].lowercased()
-            let realtimefeatures        : String = csvArrayColumn[column.realtimefeatures.rawValue]
-            let redirects               : String = csvArrayColumn[column.gtfsredirect.rawValue].trimmingCharacters(in: .whitespacesAndNewlines).trimmingCharacters(in: CharacterSet(charactersIn: "\""))
-            let feed_contact_email      : String = csvArrayColumn[column.dataproduceremail2.rawValue]
-            let old_mbd_ID_String       : String = csvArrayColumn[column.oldMobilityDatabaseID.rawValue].trimmingCharacters(in: CharacterSet(charactersIn: "\"")) // We need to remove the trailing quotation marks from the value, they interfere with the conversion to Int.
+            let status                  : String = csvArrayColumn[column.status.rawValue]
+            let redirects               : String = csvArrayColumn[column.redirects.rawValue].trimmingCharacters(in: .whitespacesAndNewlines).trimmingCharacters(in: CharacterSet(charactersIn: "\""))
+            let dataproduceremail       : String = csvArrayColumn[column.dataproduceremail.rawValue]
             let old_mbd_ID              : Int    = Int(old_mbd_ID_String) ?? 0
-            
+            let gtfsschedulefeatures    : String = ""
+            let realtimefeatures        : String = ""
+
+            // let gtfsschedulefeatures    : String = csvArrayColumn[column.gtfsschedulefeatures.rawValue]
+            // let gtfsschedulestatus      : String = csvArrayColumn[column.gtfsschedulestatus.rawValue].lowercased()
+            // let gtfsrealtimestatus      : String = csvArrayColumn[column.emptyColumn4.rawValue].lowercased()
+            // let realtimefeatures        : String = csvArrayColumn[column.realtimefeatures.rawValue]
+            // let feed_contact_email      : String = csvArrayColumn[column.dataproduceremail2.rawValue]marks from the value, they interfere with the conversion to Int.
+
             if isInDebugMode { print("\t\tdatatype : \(datatype)") }
             if isInDebugMode { print("\t\tissue    : \(issue)") }
             
@@ -169,7 +155,7 @@ if argNames.count == 5 {
             let dateFromCurrentLine : String = extractDate(from: timestamp, usingGREP: dateFormatAsRegex, desiredDateFormat: dateFormatDesiredArg)
             
             if isInDebugMode { print("\t\ttimestamp // dateFromCurrentLine // dateToFind : \(timestamp) // \(dateFromCurrentLine) // \(dateToFind)") }
-            if isInDebugMode { print("\t\tupdatednewsourceurl || downloadURL : \(updatednewsourceurl) (\(updatednewsourceurl.count)) \(downloadURL) (\(downloadURL.count))") }
+            // if isInDebugMode { print("\t\tupdatednewsourceurl || downloadURL : \(updatednewsourceurl) (\(updatednewsourceurl.count)) \(downloadURL) (\(downloadURL.count))") }
             
             var scheduleFinalURLtoUse : String = downloadURL ; if downloadURL.count < 4 { scheduleFinalURLtoUse = defaults.emptyValue }
             var realtimeFinalURLtoUse : String = downloadURL ; if downloadURL.count < 4 { realtimeFinalURLtoUse = defaults.emptyValue }
@@ -197,9 +183,9 @@ if argNames.count == 5 {
                     municipality=\"\(municipality)\", 
                     license_url=\"\(license_url)\", 
                     name=\"\(name)\", 
-                    status=\"\(gtfsschedulestatus)\", 
+                    status=\"\(status)\", 
                     features=\"\(gtfsschedulefeatures)\", 
-                    feed_contact_email=\"\(feed_contact_email)\"
+                    feed_contact_email=\"\(dataproduceremail)\"
                     \(redirects_array))
                     """
                     
@@ -221,9 +207,9 @@ if argNames.count == 5 {
                     license_url=\"\(license_url)\", 
                     name=\"\(name)\", 
                     note=\"\(note)\", 
-                    status=\"\(gtfsrealtimestatus)\", 
+                    status=\"\(status)\", 
                     features=\"\(realtimefeatures)\", 
-                    feed_contact_email=\"\(feed_contact_email)\"
+                    feed_contact_email=\"\(dataproduceremail)\"
                     \(redirects_array))
                     """
                     
@@ -247,9 +233,9 @@ if argNames.count == 5 {
                     authentication_type=\(authType), 
                     authentication_info_url=\"\(authentication_info_url)\", 
                     api_key_parameter_name=\"\(api_key_parameter_name)\", 
-                    status=\"\(gtfsschedulestatus)\", 
+                    status=\"\(status)\", 
                     features=\"\(gtfsschedulefeatures)\", 
-                    feed_contact_email=\"\(feed_contact_email)\"
+                    feed_contact_email=\"\(dataproduceremail)\"
                     \(redirects_array))
                     """
                     
@@ -269,9 +255,9 @@ if argNames.count == 5 {
                     api_key_parameter_name=\"\(api_key_parameter_name)\", 
                     name=\"\(name)\", 
                     note=\"\(note)\", 
-                    status=\"\(gtfsrealtimestatus)\", 
+                    status=\"\(status)\", 
                     features=\"\(realtimefeatures)\", 
-                    feed_contact_email=\"\(feed_contact_email)\"
+                    feed_contact_email=\"\(dataproduceremail)\"
                     \(redirects_array))
                     """
                 }
@@ -295,9 +281,9 @@ if argNames.count == 5 {
                     authentication_type=\(authType), 
                     authentication_info_url=\"\(authentication_info_url)\", 
                     api_key_parameter_name=\"\(api_key_parameter_name)\", 
-                    status=\"\(gtfsschedulestatus)\", 
+                    status=\"\(status)\", 
                     features=\"\(gtfsschedulefeatures)\", 
-                    feed_contact_email=\"\(feed_contact_email)\"
+                    feed_contact_email=\"\(dataproduceremail)\"
                     \(redirects_array))
                     """
                     
@@ -317,9 +303,9 @@ if argNames.count == 5 {
                     api_key_parameter_name=\"\(api_key_parameter_name)\", 
                     name=\"\"**** issued for removal ****\"\", 
                     note=\"\(note)\", 
-                    status=\"\(gtfsrealtimestatus)\", 
+                    status=\"\(status)\", 
                     features=\"\(realtimefeatures)\", 
-                    feed_contact_email=\"\(feed_contact_email)\"
+                    feed_contact_email=\"\(dataproduceremail)\"
                     \(redirects_array))
                     """
                     
@@ -344,9 +330,9 @@ if argNames.count == 5 {
                     municipality=\"\(municipality)\", 
                     license_url=\"\(license_url)\", 
                     name=\"\(name)\", 
-                    status=\"\(gtfsschedulestatus)\", 
+                    status=\"\(status)\", 
                     features=\"\(gtfsschedulefeatures)\", 
-                    feed_contact_email=\"\(feed_contact_email)\"
+                    feed_contact_email=\"\(dataproduceremail)\"
                     \(redirects_array))
                     """
                     
@@ -367,9 +353,9 @@ if argNames.count == 5 {
                     license_url=\"\(license_url)\", 
                     name=\"\(name)\", 
                     note=\"\(note)\", 
-                    status=\"\(gtfsrealtimestatus)\", 
+                    status=\"\(status)\", 
                     features=\"\(realtimefeatures)\", 
-                    feed_contact_email=\"\(feed_contact_email)\"
+                    feed_contact_email=\"\(dataproduceremail)\"
                     \(redirects_array))
                     """
                     

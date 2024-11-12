@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2184,
+    "data_type": "gtfs",
+    "provider": "Southwest Rides",
+    "name": "Flex",
+    "feed_contact_email": "support+southwestrides-co-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado ",
+        "municipality": "Durango",
+        "bounding_box": {
+            "minimum_latitude": 37.268845,
+            "maximum_latitude": 37.268845,
+            "minimum_longitude": -107.834752,
+            "maximum_longitude": -107.834752,
+            "extracted_on": "2024-11-12T16:54:58+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/southwestrides-co-us/southwestrides-co-us--flex-v2.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-southwest-rides-gtfs-2184.zip?alt=media"
+    },
+    "redirect": []
+}

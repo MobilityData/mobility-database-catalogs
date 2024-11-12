@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2156,
+    "data_type": "gtfs",
+    "provider": "Adams County",
+    "name": "Flex",
+    "feed_contact_email": "support+adamscounty-co-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado ",
+        "municipality": "Adams County",
+        "bounding_box": {
+            "minimum_latitude": 39.869592,
+            "maximum_latitude": 39.869592,
+            "minimum_longitude": -104.33786,
+            "maximum_longitude": -104.33786,
+            "extracted_on": "2024-11-12T16:54:45+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/adamscounty-co-us/adamscounty-co-us--flex-v2.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-adams-county-gtfs-2156.zip?alt=media"
+    },
+    "redirect": []
+}

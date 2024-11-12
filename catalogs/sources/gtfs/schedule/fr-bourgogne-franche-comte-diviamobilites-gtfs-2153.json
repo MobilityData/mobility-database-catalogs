@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2153,
+    "data_type": "gtfs",
+    "provider": "DiviaMobilités",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Bourgogne-Franche-Comté",
+        "municipality": "Dijon",
+        "bounding_box": {
+            "minimum_latitude": 47.23035,
+            "maximum_latitude": 47.368622,
+            "minimum_longitude": 4.916357,
+            "maximum_longitude": 5.182966,
+            "extracted_on": "2024-11-07T20:58:14+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/80742/80742.20241107.160916.535554.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-bourgogne-franche-comte-diviamobilites-gtfs-2153.zip?alt=media",
+        "license": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/"
+    },
+    "redirect": []
+}

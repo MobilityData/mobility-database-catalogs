@@ -3,26 +3,26 @@ import Foundation
     import FoundationNetworking
 #endif
 
-enum column : Int, CaseIterable {
-    case fourZerothreeClientError = 0 // A
-    case timestamp                = 1 // B
-    case provider                 = 2 // C
-    case oldMobilityDatabaseID    = 3 // D
-    case datatype                 = 4 // E
-    case issueType                = 5 // F
-    case downloadurl              = 6 // G
-    case country                  = 7 // H
-    case subdivision_name         = 8 // I
-    case municipality             = 9 // J
-    case name                     = 10 // K
-    case license_url              = 11 // L
-    case authentication_type      = 12 // M
-    case authentication_info_url  = 13 // N
-    case api_key_parameter_name   = 14 // O
-    case note                     = 15 // P
-    case status                   = 16 // Q
-    case redirects                = 17 // R
-    case dataproduceremail        = 18 // S
+struct column {
+    static let  fourZerothreeClientError : Int = 0 // A
+    static let  timestamp                : Int = 1 // B
+    static let  provider                 : Int = 2 // C
+    static let  oldMobilityDatabaseID    : Int = 3 // D
+    static let  datatype                 : Int = 4 // E
+    static let  issueType                : Int = 5 // F
+    static let  downloadurl              : Int = 6 // G
+    static let  country                  : Int = 7 // H
+    static let  subdivision_name         : Int = 8 // I
+    static let  municipality             : Int = 9 // J
+    static let  name                     : Int = 10 // K
+    static let  license_url              : Int = 11 // L
+    static let  authentication_type      : Int = 12 // M
+    static let  authentication_info_url  : Int = 13 // N
+    static let  api_key_parameter_name   : Int = 14 // O
+    static let  note                     : Int = 15 // P
+    static let  status                   : Int = 16 // Q
+    static let  redirects                : Int = 17 // R
+    static let  dataproduceremail        : Int = 18 // S
 }
 
 struct defaults {
@@ -109,33 +109,25 @@ if argNames.count == 5 {
             
             if isInDebugMode { print("\nprocessing CSV Array column...") }
             
-            let timestamp               : String = csvArrayColumn[column.timestamp.rawValue].trimmingCharacters(in: .whitespacesAndNewlines)
-            let provider                : String = csvArrayColumn[column.provider.rawValue]
-            let old_mbd_ID_String       : String = csvArrayColumn[column.oldMobilityDatabaseID.rawValue].trimmingCharacters(in: CharacterSet(charactersIn: "\"")) // We need to remove the trailing quotation 
-            let datatype                : String = csvArrayColumn[column.datatype.rawValue].count < 3 ? realtimeEntityTypes.empty : csvArrayColumn[column.datatype.rawValue]
-            let issue                   : String = csvArrayColumn[column.issueType.rawValue]
-            let downloadURL             : String = csvArrayColumn[column.downloadurl.rawValue]
-            let country                 : String = csvArrayColumn[column.country.rawValue]
-            let subdivision_name        : String = csvArrayColumn[column.subdivision_name.rawValue]
-            let municipality            : String = csvArrayColumn[column.municipality.rawValue]
-            let name                    : String = csvArrayColumn[column.name.rawValue]
-            var license_url             : String = csvArrayColumn[column.license_url.rawValue]
-            let authentication_type     : String = csvArrayColumn[column.authentication_type.rawValue]
-            let authentication_info_url : String = csvArrayColumn[column.authentication_info_url.rawValue]
-            let api_key_parameter_name  : String = csvArrayColumn[column.api_key_parameter_name.rawValue]
-            let note                    : String = csvArrayColumn[column.note.rawValue]
-            let status                  : String = csvArrayColumn[column.status.rawValue]
-            let redirects               : String = csvArrayColumn[column.redirects.rawValue].trimmingCharacters(in: .whitespacesAndNewlines).trimmingCharacters(in: CharacterSet(charactersIn: "\""))
-            let dataproduceremail       : String = csvArrayColumn[column.dataproduceremail.rawValue]
+            let timestamp               : String = csvArrayColumn[column.timestamp].trimmingCharacters(in: .whitespacesAndNewlines)
+            let provider                : String = csvArrayColumn[column.provider]
+            let old_mbd_ID_String       : String = csvArrayColumn[column.oldMobilityDatabaseID].trimmingCharacters(in: CharacterSet(charactersIn: "\"")) // We need to remove the trailing quotation 
+            let datatype                : String = csvArrayColumn[column.datatype].count < 3 ? realtimeEntityTypes.empty : csvArrayColumn[column.datatype]
+            let issue                   : String = csvArrayColumn[column.issueType]
+            let downloadURL             : String = csvArrayColumn[column.downloadurl]
+            let country                 : String = csvArrayColumn[column.country]
+            let subdivision_name        : String = csvArrayColumn[column.subdivision_name]
+            let municipality            : String = csvArrayColumn[column.municipality]
+            let name                    : String = csvArrayColumn[column.name]
+            var license_url             : String = csvArrayColumn[column.license_url]
+            let authentication_type     : String = csvArrayColumn[column.authentication_type]
+            let authentication_info_url : String = csvArrayColumn[column.authentication_info_url]
+            let api_key_parameter_name  : String = csvArrayColumn[column.api_key_parameter_name]
+            let note                    : String = csvArrayColumn[column.note]
+            let status                  : String = csvArrayColumn[column.status]
+            let redirects               : String = csvArrayColumn[column.redirects].trimmingCharacters(in: .whitespacesAndNewlines).trimmingCharacters(in: CharacterSet(charactersIn: "\""))
+            let dataproduceremail       : String = csvArrayColumn[column.dataproduceremail]
             let old_mbd_ID              : Int    = Int(old_mbd_ID_String) ?? 0
-            let gtfsschedulefeatures    : String = ""
-            let realtimefeatures        : String = ""
-
-            // let gtfsschedulefeatures    : String = csvArrayColumn[column.gtfsschedulefeatures.rawValue]
-            // let gtfsschedulestatus      : String = csvArrayColumn[column.gtfsschedulestatus.rawValue].lowercased()
-            // let gtfsrealtimestatus      : String = csvArrayColumn[column.emptyColumn4.rawValue].lowercased()
-            // let realtimefeatures        : String = csvArrayColumn[column.realtimefeatures.rawValue]
-            // let feed_contact_email      : String = csvArrayColumn[column.dataproduceremail2.rawValue]marks from the value, they interfere with the conversion to Int.
 
             if isInDebugMode { print("\t\tdatatype : \(datatype)") }
             if isInDebugMode { print("\t\tissue    : \(issue)") }

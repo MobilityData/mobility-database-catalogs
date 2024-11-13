@@ -274,7 +274,6 @@ if argNames.count == 5 {
             let dateFromCurrentLine : String = extractDate(from: timestamp, usingGREP: dateFormatAsRegex, desiredDateFormat: dateFormatDesiredArg)
             
             if isInDebugMode { print("\t\ttimestamp // dateFromCurrentLine // dateToFind : \(timestamp) // \(dateFromCurrentLine) // \(dateToFind)") }
-            // if isInDebugMode { print("\t\tupdatednewsourceurl || downloadURL : \(updatednewsourceurl) (\(updatednewsourceurl.count)) \(downloadURL) (\(downloadURL.count))") }
             
             var scheduleFinalURLtoUse : String = downloadURL ; if downloadURL.count < 4 { scheduleFinalURLtoUse = defaults.emptyValue }
             var realtimeFinalURLtoUse : String = downloadURL ; if downloadURL.count < 4 { realtimeFinalURLtoUse = defaults.emptyValue }

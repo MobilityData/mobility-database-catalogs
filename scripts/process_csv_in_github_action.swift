@@ -93,6 +93,7 @@ if argNames.count == 5 {
     for currentLine : String in csvLines {
         if currentLine.count > 5 { csvArray.append(currentLine.components(separatedBy: defaults.csvColumnSeparator)) }
     }
+    csvArray.removeFirst() // We don't need the header row
     
     if isInDebugMode { print("\n\n\t\tcsvArray (\(csvArray.count) item(s)) : \(csvArray)") }
     

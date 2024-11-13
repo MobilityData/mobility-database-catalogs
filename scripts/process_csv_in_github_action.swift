@@ -281,11 +281,11 @@ if argNames.count == 5 {
             if isInDebugMode { print("\t\tscheduleFinalURLtoUse || realtimeFinalURLtoUse : \(scheduleFinalURLtoUse) (\(scheduleFinalURLtoUse.count)) \(realtimeFinalURLtoUse) (\(realtimeFinalURLtoUse.count))") }
             if isInDebugMode { print("\t\tEvaluating issue: \(issue)") }
 
-            if issue.contains(issueType.isAddNewFeed) || issue.contains(issueType.isAddNewSource) { // add new feed
+            if issue.contains(issueTypeString.isAddNewFeed) || issue.contains(issueTypeString.isAddNewSource) { // add new feed
 
                 if isInDebugMode { print("\t\t\tNEW FEED: issue contains datatype: \(datatype)") }
                 
-                if datatype.contains(dataType.schedule) { // add_gtfs_schedule_source
+                if datatype.contains(dataTypeString.schedule) { // add_gtfs_schedule_source
                 
                     let authType : Int = authenticationType(for: authentication_type)
                     
@@ -306,7 +306,7 @@ if argNames.count == 5 {
                     \(redirects_array))
                     """
                     
-                } else if datatype.contains(dataType.realtime) || (datatype.contains(realtimeEntityTypesString.vehiclePositions)) || (datatype.contains(realtimeEntityTypesString.tripUpdates)) || (datatype.contains(realtimeEntityTypesString.serviceAlerts)) || (datatype.contains(realtimeEntityTypesString.unknown)) { // add_gtfs_realtime_source
+                } else if datatype.contains(dataTypeString.realtime) || (datatype.contains(realtimeEntityTypesString.vehiclePositions)) || (datatype.contains(realtimeEntityTypesString.tripUpdates)) || (datatype.contains(realtimeEntityTypesString.serviceAlerts)) || (datatype.contains(realtimeEntityTypesString.unknown)) { // add_gtfs_realtime_source
                     // Emma: entity_type matches the realtime Data type options of Vehicle Positions, Trip Updates, or Service Alerts. If one of those three are selected, add it. If not, omit it.
                     
                     let authType : Int = authenticationType(for: authentication_type)
@@ -640,4 +640,8 @@ func removeEmptyPythonParameters(in outputString: String) -> String {
         returnString = returnString.replacingOccurrences(of: stringToFindSecondPass, with: "")
     }
     return returnString
+}
+
+extension CharacterSet {
+    static let escapedDoubleQuote : CharacterSet = CharacterSet(charactersIn: "\"")
 }

@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2179,
+    "data_type": "gtfs",
+    "provider": "Roaring Fork Transportation Authority (RFTA)",
+    "name": "Flex",
+    "feed_contact_email": "support+rfta-co-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado ",
+        "municipality": "Roaring Fork Valley",
+        "bounding_box": {
+            "minimum_latitude": 39.0997929,
+            "maximum_latitude": 39.5715695,
+            "minimum_longitude": -107.7839413,
+            "maximum_longitude": -106.8009104,
+            "extracted_on": "2024-11-12T16:54:55+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/rfta-co-us/rfta-co-us--flex-v2.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-roaring-fork-transportation-authority-rfta-gtfs-2179.zip?alt=media"
+    },
+    "redirect": []
+}

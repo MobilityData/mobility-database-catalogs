@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2188,
+    "data_type": "gtfs",
+    "provider": "Upper Arkansas Area Council of Governments ",
+    "name": "Flex",
+    "feed_contact_email": "support+uaacog-co-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado ",
+        "bounding_box": {
+            "minimum_latitude": 38.13336974294547,
+            "maximum_latitude": 38.83694649838654,
+            "minimum_longitude": -105.46346486926696,
+            "maximum_longitude": -104.61238466821588,
+            "extracted_on": "2024-11-12T16:54:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/uaacog-co-us/uaacog-co-us--flex-v2.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-upper-arkansas-area-council-of-governments-gtfs-2188.zip?alt=media"
+    },
+    "redirect": []
+}

@@ -24,7 +24,7 @@ To search feeds easily, you can download [the CSV spreadsheet](https://bit.ly/ca
 
 ## Browsing and Consuming The Spreadsheet
 
-If you're only interested in browsing the feeds or pulling all the latest URLs, [download the CSV](https://bit.ly/catalogs-csv). You can cross reference IDs from the Mobility Database, TransitFeeds and Transitland with [this ID map spreadsheet](https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit?resourcekey#gid=1787149399).
+If you're only interested in browsing the feeds or pulling all the latest URLs, [download the CSV](https://share.mobilitydata.org/catalogs-csv). You can cross reference IDs from the Mobility Database, TransitFeeds and Transitland with [this ID map spreadsheet](https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit?resourcekey#gid=1787149399).
 
 If you are consuming the spreadsheet, we recommend downloading a new version every time you use it, since the `latest.url` is occasionally updated to match any changes made to the provider and subdivision name within the feed file.
 
@@ -101,7 +101,7 @@ Contains the JSON schemas used to validate the feeds in the integration tests.
 |- api_key_parameter_name |Text|Conditionally required | The **api_key_parameter_name** field defines the name of the parameter to pass in the URL to provide the API key. This field is required for `authentication_type=1` and `authentication_type=2`.   |  
 |- license_url  |URL| Optional     | The license information for  `direct_download_url`.
 
-In [the CSV](https://bit.ly/catalogs-csv), realtime feeds include the location metadata of their static reference when provided.
+In [the CSV](https://share.mobilitydata.org/catalogs-csv), realtime feeds include the location metadata of their static reference when provided.
 
 ## Installation
 

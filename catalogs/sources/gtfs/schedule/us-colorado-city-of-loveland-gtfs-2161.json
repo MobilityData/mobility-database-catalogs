@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2161,
+    "data_type": "gtfs",
+    "provider": "City of Loveland",
+    "name": "Flex",
+    "feed_contact_email": "support+cityofloveland-co-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado ",
+        "municipality": "Loveland",
+        "bounding_box": {
+            "minimum_latitude": 40.413649,
+            "maximum_latitude": 40.413649,
+            "minimum_longitude": -105.084737,
+            "maximum_longitude": -105.084737,
+            "extracted_on": "2024-11-12T16:54:47+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/cityofloveland-co-us/cityofloveland-co-us--flex-v2.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-city-of-loveland-gtfs-2161.zip?alt=media"
+    },
+    "redirect": []
+}

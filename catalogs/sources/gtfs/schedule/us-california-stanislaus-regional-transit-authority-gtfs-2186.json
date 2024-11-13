@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2186,
+    "data_type": "gtfs",
+    "provider": "Stanislaus Regional Transit Authority",
+    "name": "Flex",
+    "feed_contact_email": "support+stanrta-ca-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Modesto",
+        "bounding_box": {
+            "minimum_latitude": 37.31770760268395,
+            "maximum_latitude": 37.85581950091036,
+            "minimum_longitude": -122.45830411010836,
+            "maximum_longitude": -120.84453415341206,
+            "extracted_on": "2024-11-12T16:54:58+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/stanrta-ca-us/stanrta-ca-us--flex-v2.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-stanislaus-regional-transit-authority-gtfs-2186.zip?alt=media"
+    },
+    "redirect": []
+}

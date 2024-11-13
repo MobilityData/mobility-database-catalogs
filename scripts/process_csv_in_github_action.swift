@@ -97,6 +97,98 @@ struct realtimeEntityTypes {
     static let empty                     : String = "nil"
 }
 
+/// Determines the `IssueType` based on the provided string value.
+/// - Parameter issueTypeValue: A `String` representing the issue type, which may contain certain keywords.
+/// - Returns: An `IssueType` enum value based on the provided string. If no match is found, returns `.unknown`.
+func issueType(for issueTypeValue: String) -> IssueType {
+    let issueTypeMappings: [(IssueType, [String])] = [
+        (.isAddNewFeed, [issueTypeString.isAddNewFeed, issueTypeString.isAddNewSource]),
+        (.isFeedUpdate, [issueTypeString.isUpdateExistingFeed, issueTypeString.isFeedUpdate]),
+        (.isToRemoveFeed, [issueTypeString.isToRemoveFeed])
+    ]
+    
+    return issueTypeMappings.first { (_: IssueType, keywords : [String] ) in
+        keywords.contains { issueTypeValue.contains($0) }
+    }?.0 ?? .unknown
+}
+
+/// Determines the `DataType` based on the provided string value.
+/// - Parameter dataTypeValue: A `String` representing the data type, which may contain certain keywords.
+/// - Returns: A `DataType` enum value based on the provided string. If no match is found, returns `.unknown`.
+func dataType(for dataTypeValue: String) -> DataType {
+    let dataTypeMappings: [(DataType, [String])] = [
+        (.schedule, [dataTypeString.schedule]),
+        (.realtime, [dataTypeString.realtime, realtimeEntityTypesString.vehiclePositions, realtimeEntityTypesString.tripUpdates, realtimeEntityTypesString.serviceAlerts, realtimeEntityTypesString.unknown, realtimeEntityTypes.empty])
+    ]
+    
+    return dataTypeMappings.first { (_: DataType, keywords : [String] ) in
+        keywords.contains { dataTypeValue.contains($0) }
+    }?.0 ?? .unknown
+}
+
+/// Parses an array of CSV lines into an array of `feed` instances.
+/// - Parameters:
+///   - csvLines: An array of strings, each representing a row from the CSV file.
+///   - columnSeparator: A string used to separate columns within each row.
+///   - dateFormatRegex: A regex pattern to match the date format in the CSV data.
+///   - dateFormatDesired: A string representing the desired date format for output.
+/// - Returns: An array of `feed` instances constructed from the CSV data.
+func parseCSV(csvLines: [String], columnSeparator: String, dateFormatRegex: String, dateFormatDesired: String) -> [feed] {
+    var feeds: [feed] = []
+    var lastKnownProvider : String = defaults.toBeProvided
+    let dateFormatAsRegex: Regex<AnyRegexOutput>? = try? Regex(dateFormatRegex)
+    
+    for line: String in csvLines {
+        let csvArrayColumn : [String] = line.components(separatedBy: columnSeparator)
+        guard csvArrayColumn.count >= column.allStructs else { continue } // Ensure there are enough columns
+
+        // Get issue and data types
+        let issueTypeValue : IssueType = issueType(for: csvArrayColumn[column.issueType].trimmingCharacters(in: .whitespacesAndNewlines))
+        let dataTypeValue  : DataType  = dataType(for: csvArrayColumn[column.datatype].count < 3 ? realtimeEntityTypes.empty : csvArrayColumn[column.datatype])
+
+        // Format timestamp properly
+        let timestampFormatted : String = extractDate(from: csvArrayColumn[column.timestamp].trimmingCharacters(in: .whitespacesAndNewlines), usingGREP: dateFormatAsRegex!, desiredDateFormat: dateFormatDesired)
+
+        // Check if provider is empty, suggest last known if true.
+        var provider: String = csvArrayColumn[column.provider].trimmingCharacters(in: .whitespacesAndNewlines)
+        if provider.count > 0 { lastKnownProvider = provider } ; provider = provider.isEmpty ? "\(defaults.toBeProvided) (\(lastKnownProvider) ?)" : provider
+
+        // Check if download URL is valid
+        var downloadURLvalue : String = csvArrayColumn[column.downloadurl].trimmingCharacters(in: .whitespacesAndNewlines)
+        if downloadURLvalue.count < 4 { downloadURLvalue = defaults.emptyValue }
+
+        // Check if license URL is valid
+        var licenseURLvalue : String = csvArrayColumn[column.license_url].trimmingCharacters(in: .whitespacesAndNewlines)
+        if !(isURLPresent(in: licenseURLvalue) && licenseURLvalue.count > 0) { licenseURLvalue = defaults.emptyValue }
+
+        let newFeed : feed = feed (
+            fourZerothreeClientError    : csvArrayColumn[column.fourZerothreeClientError],
+            timestamp                   : timestampFormatted,
+            provider                    : provider,
+            oldMobilityDatabaseID       : Int(csvArrayColumn[column.oldMobilityDatabaseID].trimmingCharacters(in: .escapedDoubleQuote)) ?? 0,
+            dataType                    : dataTypeValue,
+            issueType                   : issueTypeValue,
+            downloadURL                 : downloadURLvalue,
+            country                     : csvArrayColumn[column.country].trimmingCharacters(in: .whitespacesAndNewlines),
+            subdivisionName             : csvArrayColumn[column.subdivision_name].trimmingCharacters(in: .whitespacesAndNewlines),
+            municipality                : csvArrayColumn[column.municipality].trimmingCharacters(in: .whitespacesAndNewlines),
+            name                        : csvArrayColumn[column.name].trimmingCharacters(in: .whitespacesAndNewlines),
+            licenseURL                  : licenseURLvalue,
+            authenticationType          : csvArrayColumn[column.authentication_type].trimmingCharacters(in: .whitespacesAndNewlines),
+            authenticationInfoURL       : csvArrayColumn[column.authentication_info_url].trimmingCharacters(in: .whitespacesAndNewlines),
+            apiKeyParameterName         : csvArrayColumn[column.api_key_parameter_name].trimmingCharacters(in: .whitespacesAndNewlines),
+            note                        : csvArrayColumn[column.note].trimmingCharacters(in: .whitespacesAndNewlines),
+            status                      : csvArrayColumn[column.status].trimmingCharacters(in: .whitespacesAndNewlines),
+            redirects                   : redirectArray(for: csvArrayColumn[column.redirects].trimmingCharacters(in: .whitespacesAndNewlines).trimmingCharacters(in: .escapedDoubleQuote)),
+            dataProducerEmail           : csvArrayColumn[column.dataproduceremail].trimmingCharacters(in: .whitespacesAndNewlines)
+        )
+        
+        feeds.append(newFeed)
+    }
+    
+    return feeds
+}
+
 // Will be used to filter empty parameters from this script's output
 let everyPythonScriptFunctionsParameterNames : [String] = ["provider=", "entity_type=", "country_code=", "authentication_type=", "authentication_info_url=", "api_key_parameter_name=", "subdivision_name=", "municipality=", "country_code=", "license_url=", "name=", "status=", "features=", "note=", "feed_contact_email=", "redirects="]
 

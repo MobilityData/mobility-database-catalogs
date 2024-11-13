@@ -26,41 +26,41 @@ struct column {
 }
 
 struct defaults {
-    static let date                 : String = "01/01/1970"
-    static let toBeProvided         : String = "TO_BE_PROVIDED"
-    static let emptyValue           : String = "\"\""
-    static let emptyValueRaw        : String = ""
-    static let csvLineSeparator     : String = "\n"
-    static let csvColumnSeparator   : String = ","
+    static let date                      : String = "01/01/1970"
+    static let toBeProvided              : String = "TO_BE_PROVIDED"
+    static let emptyValue                : String = "\"\""
+    static let emptyValueRaw             : String = ""
+    static let csvLineSeparator          : String = "\n"
+    static let csvColumnSeparator        : String = ","
 }
 
 struct issueType {
-    static let isAddNewFeed         : String = "New feed"
-    static let isAddNewSource       : String = "New source"
-    static let isUpdateExistingFeed : String = "Source update"
-    static let isFeedUpdate         : String = "Feed update"
-    static let isToRemoveFeed       : String = "removed"
+    static let isAddNewFeed              : String = "New feed"
+    static let isAddNewSource            : String = "New source"
+    static let isUpdateExistingFeed      : String = "Source update"
+    static let isFeedUpdate              : String = "Feed update"
+    static let isToRemoveFeed            : String = "removed"
 }
 
 struct dataType {
-    static let schedule             : String = "Schedule"
-    static let realtime             : String = "Realtime"
+    static let schedule                  : String = "Schedule"
+    static let realtime                  : String = "Realtime"
 }
 
 struct realtimeEntityTypesString {
-    static let vehiclePositions     : String = "Vehicle Positions"
-    static let tripUpdates          : String = "Trip Updates"
-    static let serviceAlerts        : String = "Service Alerts"
-    static let unknown              : String = "general / unknown"
-    static let empty                : String = "nil"
+    static let vehiclePositions          : String = "Vehicle Positions"
+    static let tripUpdates               : String = "Trip Updates"
+    static let serviceAlerts             : String = "Service Alerts"
+    static let unknown                   : String = "general / unknown"
+    static let empty                     : String = "nil"
 }
 
 struct realtimeEntityTypes {
-    static let vehiclePositions     : String = "vp"
-    static let tripUpdates          : String = "tu"
-    static let serviceAlerts        : String = "sa"
-    static let unknown              : String = "gu"
-    static let empty                : String = "nil"
+    static let vehiclePositions          : String = "vp"
+    static let tripUpdates               : String = "tu"
+    static let serviceAlerts             : String = "sa"
+    static let unknown                   : String = "gu"
+    static let empty                     : String = "nil"
 }
 
 // Will be used to filter empty parameters from this script's output

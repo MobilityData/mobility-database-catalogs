@@ -4,7 +4,7 @@ import Foundation
 #endif
 
 struct column {
-    static let  fourZerothreeClientError : Int = 0 // A
+    static let  fourZeroThreeClientError : Int = 0 // A
     static let  timestamp                : Int = 1 // B
     static let  provider                 : Int = 2 // C
     static let  oldMobilityDatabaseID    : Int = 3 // D
@@ -29,7 +29,7 @@ struct column {
 }
 
 struct feed {
-    var fourZerothreeClientError : String // we ignore this column
+    var fourZeroThreeClientError : String // we ignore this column
     var timestamp                : String
     var provider                 : String
     var oldMobilityDatabaseID    : Int
@@ -127,11 +127,12 @@ struct realtimeEntityTypes {
 // Will be used to filter empty parameters from this script's output
 let everyPythonScriptFunctionsParameterNames : [String] = ["provider=", "entity_type=", "country_code=", "authentication_type=", "authentication_info_url=", "api_key_parameter_name=", "subdivision_name=", "municipality=", "country_code=", "license_url=", "name=", "status=", "features=", "note=", "feed_contact_email=", "redirects="]
 
-// let argNames : [String] = CommandLine.arguments
-let argNames : [String] = ["scriptname", "https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/gviz/tq?tqx=out:csv;outFileName:data&sheet=%5BCLEANED%5D%20For%20import", "11/11/2024", "[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}|[0-9]{4}-[0-9]{2}-[0-9]{2}", "MM/dd/yyyy"]
+let argNames : [String] = CommandLine.arguments
+// let argNames : [String] = ["scriptname", "https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/gviz/tq?tqx=out:csv;outFileName:data&sheet=%5BCLEANED%5D%20For%20import", "11/11/2024", "[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}|[0-9]{4}-[0-9]{2}-[0-9]{2}", "MM/dd/yyyy"]
+// Google Sheet: https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit?gid=2061813733#gid=2061813733
 
 // Set to false for production use
-let isInDebugMode : Bool = true
+let isInDebugMode : Bool = false
 
 if argNames.count == 5 {
     
@@ -419,17 +420,17 @@ func parseCSV(csvLines: [String], columnSeparator: String, dateFormatRegex: Stri
 
         // Check if download URL is valid
         var downloadURLvalue : String = csvArrayColumn[column.downloadurl].trimmingCharacters(in: .whitespacesAndNewlines)
-        if !(isURLPresent(in: downloadURLvalue) && downloadURLvalue.count < 4) { downloadURLvalue = defaults.emptyValue }
+        if (!isURLPresent(in: downloadURLvalue) && !downloadURLvalue.isEmpty) { downloadURLvalue = defaults.emptyValue }
 
         // Check if license URL is valid
         var licenseURLvalue : String = csvArrayColumn[column.license_url].trimmingCharacters(in: .whitespacesAndNewlines)
-        if !(isURLPresent(in: licenseURLvalue) && licenseURLvalue.count > 0) { licenseURLvalue = defaults.emptyValue }
+        if (!isURLPresent(in: licenseURLvalue) && !licenseURLvalue.isEmpty) { licenseURLvalue = defaults.emptyValue }
 
         // Get authentification Int
         let authTypeValue : Int = authenticationType(for: csvArrayColumn[column.authentication_type].trimmingCharacters(in: .whitespacesAndNewlines))
 
         let newFeed : feed = feed (
-            fourZerothreeClientError    : csvArrayColumn[column.fourZerothreeClientError],
+            fourZeroThreeClientError    : csvArrayColumn[column.fourZeroThreeClientError],
             timestamp                   : timestampFormatted,
             provider                    : provider,
             oldMobilityDatabaseID       : Int(csvArrayColumn[column.oldMobilityDatabaseID].trimmingCharacters(in: .escapedDoubleQuote)) ?? 0,

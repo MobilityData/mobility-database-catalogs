@@ -6,7 +6,7 @@ The Mobility Database Catalogs is a list of open mobility data feeds from across
 
 [You can see our API code and infrastructure here](https://github.com/MobilityData/mobility-feed-api).
 
-To search feeds easily, you can download [the CSV spreadsheet](https://bit.ly/catalogs-csv). If you want to filter for specific types of feeds, [you can learn how to here](#get-and-filter-feeds).
+To search feeds easily, you can download [the CSV spreadsheet](https://share.mobilitydata.org/catalogs-csv). If you want to filter for specific types of feeds, [you can learn how to here](#get-and-filter-feeds).
 
 
 ## Table of Contents

@@ -230,9 +230,9 @@ if argNames.count == 5 {
     for csvArrayColumn : [String] in csvArray {
         
         var PYTHON_SCRIPT_ARGS_TEMP : String = ""
-        if isInDebugMode { print("column count / all cases count : \(csvArrayColumn.count) / \(column.allCases.count)") }
+        if isInDebugMode { print("column count / all cases count : \(csvArrayColumn.count) / \(column.allStructs)") }
         
-        if csvArrayColumn.count >= column.allCases.count {
+        if csvArrayColumn.count >= column.allStructs {
             
             if isInDebugMode { print("\nprocessing CSV Array column...") }
             

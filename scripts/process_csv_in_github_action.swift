@@ -23,6 +23,31 @@ struct column {
     static let  status                   : Int = 16 // Q
     static let  redirects                : Int = 17 // R
     static let  dataproduceremail        : Int = 18 // S
+
+    // List properties manually as a static array
+    static var allStructs                : Int { return 19 }
+}
+
+struct feed {
+    var fourZerothreeClientError : String // we ignore this column
+    var timestamp                : String
+    var provider                 : String
+    var oldMobilityDatabaseID    : Int
+    var dataType                 : DataType
+    var issueType                : IssueType
+    var downloadURL              : String
+    var country                  : String
+    var subdivisionName          : String
+    var municipality             : String
+    var name                     : String
+    var licenseURL               : String
+    var authenticationType       : String
+    var authenticationInfoURL    : String
+    var apiKeyParameterName      : String
+    var note                     : String
+    var status                   : String
+    var redirects                : String
+    var dataProducerEmail        : String
 }
 
 struct defaults {
@@ -34,17 +59,26 @@ struct defaults {
     static let csvColumnSeparator        : String = ","
 }
 
-struct issueType {
+struct issueTypeString {
     static let isAddNewFeed              : String = "New feed"
     static let isAddNewSource            : String = "New source"
     static let isUpdateExistingFeed      : String = "Source update"
     static let isFeedUpdate              : String = "Feed update"
     static let isToRemoveFeed            : String = "removed"
+    static let unknown                   : String = "unknown"
 }
 
-struct dataType {
+struct dataTypeString {
     static let schedule                  : String = "Schedule"
     static let realtime                  : String = "Realtime"
+}
+
+enum IssueType {
+    case isAddNewFeed, isFeedUpdate, isToRemoveFeed, unknown
+}
+
+enum DataType {
+    case schedule, realtime, unknown
 }
 
 struct realtimeEntityTypesString {

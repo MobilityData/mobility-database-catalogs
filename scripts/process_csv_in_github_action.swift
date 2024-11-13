@@ -124,6 +124,240 @@ struct realtimeEntityTypes {
     static let empty                     : String = "nil"
 }
 
+// Will be used to filter empty parameters from this script's output
+let everyPythonScriptFunctionsParameterNames : [String] = ["provider=", "entity_type=", "country_code=", "authentication_type=", "authentication_info_url=", "api_key_parameter_name=", "subdivision_name=", "municipality=", "country_code=", "license_url=", "name=", "status=", "features=", "note=", "feed_contact_email=", "redirects="]
+
+// let argNames : [String] = CommandLine.arguments
+let argNames : [String] = ["scriptname", "https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/gviz/tq?tqx=out:csv;outFileName:data&sheet=%5BCLEANED%5D%20For%20import", "11/11/2024", "[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}|[0-9]{4}-[0-9]{2}-[0-9]{2}", "MM/dd/yyyy"]
+
+// Set to false for production use
+let isInDebugMode : Bool = true
+
+if argNames.count == 5 {
+    
+    let csvURLStringArg      : String = argNames[1] // the first argName  [0] is the name of the script, we can ignore in this context.
+    let _                    : String = argNames[2] // Deprecated, we no longer look for a specific date.
+    let dateFormatGREPArg    : String = argNames[3]
+    let dateFormatDesiredArg : String = argNames[4]
+    
+    guard let csvURLasURL : URL = URL(string: csvURLStringArg) else {
+        print("\n   ERROR: The specified URL does not appear to exist :\n   \(csvURLStringArg)\n")
+        exit(1)
+    }
+
+    let csvData : String = try String(contentsOf: csvURLasURL, encoding:.utf8)
+    var csvLines : [String] = csvData.components(separatedBy: defaults.csvLineSeparator) ; csvLines.removeFirst(1)
+    let csvArray : [feed] = parseCSV(csvLines: csvLines, columnSeparator: defaults.csvColumnSeparator, dateFormatRegex: dateFormatGREPArg, dateFormatDesired: dateFormatDesiredArg)
+
+    if isInDebugMode { print("\n\n\t\tcsvArray contains (\(csvArray.count) item(s)) :\n\n") }
+    if isInDebugMode { let allDescriptions : String = csvArray.map { $0.description }.joined(separator: "\n\n\t\t---\n\n") ; print("\(allDescriptions)\n") }
+    
+    var PYTHON_SCRIPT_OUTPUT : String = ""
+
+    for currentFeed : feed in csvArray {
+
+        var PYTHON_SCRIPT_ARGS_TEMP : String = ""
+        if isInDebugMode { print("\n\n\t\tcolumn count / all cases count : \(currentFeed.count()) / \(column.allStructs)\n\t\tissue    : \(currentFeed.issueType)\n\t\tdatatype : \(currentFeed.dataType)") }
+        if isInDebugMode { print("\t\tredirects : \(currentFeed.redirects)") }
+        if isInDebugMode { print("\t\tdownload URL || licence URL : \(currentFeed.downloadURL) || \(currentFeed.licenseURL)") }
+
+        if currentFeed.issueType == IssueType.isAddNewFeed {
+
+            if isInDebugMode { print("\t\tCurrent feed is new.") }
+
+            if currentFeed.dataType == DataType.schedule { // add_gtfs_schedule_source
+
+                PYTHON_SCRIPT_ARGS_TEMP  = """
+                add_gtfs_schedule_source(
+                provider=\"\(currentFeed.provider)\", 
+                country_code=\"\(currentFeed.country)\", 
+                direct_download_url=\"\(currentFeed.downloadURL)\", 
+                authentication_type=\(currentFeed.authenticationType), 
+                authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
+                api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
+                subdivision_name=\"\(currentFeed.subdivisionName)\", 
+                municipality=\"\(currentFeed.municipality)\", 
+                license_url=\"\(currentFeed.licenseURL)\", 
+                name=\"\(currentFeed.name)\", 
+                status=\"\(currentFeed.status)\", 
+                feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
+                \(currentFeed.redirects))
+                """
+
+            } else if currentFeed.dataType == DataType.realtime {  // add_gtfs_realtime_source
+                
+                PYTHON_SCRIPT_ARGS_TEMP = """
+                add_gtfs_realtime_source(
+                entity_type=[\"\(currentFeed.realtimeCode().joined(separator:"\", \""))\"], 
+                provider=\"\(currentFeed.provider)\", 
+                direct_download_url=\"\(currentFeed.downloadURL)\", 
+                authentication_type=\(currentFeed.authenticationType), 
+                authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
+                api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
+                license_url=\"\(currentFeed.licenseURL)\", 
+                name=\"\(currentFeed.name)\", 
+                note=\"\(currentFeed.note)\", 
+                status=\"\(currentFeed.status)\", 
+                feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
+                \(currentFeed.redirects))
+                """
+
+            }
+
+        } else if currentFeed.issueType == IssueType.isFeedUpdate {
+
+            if isInDebugMode { print("\t\tCurrent feed is update.") }
+
+            if currentFeed.dataType == DataType.schedule { // update_gtfs_schedule_source
+
+                PYTHON_SCRIPT_ARGS_TEMP = """
+                update_gtfs_schedule_source(mdb_source_id=\(currentFeed.oldMobilityDatabaseID), 
+                provider=\"\(currentFeed.provider)\", 
+                name=\"\(currentFeed.name)\", 
+                country_code=\"\(currentFeed.country)\", 
+                subdivision_name=\"\(currentFeed.subdivisionName)\", 
+                municipality=\"\(currentFeed.municipality)\", 
+                authentication_type=\(currentFeed.authenticationType), 
+                authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
+                api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
+                status=\"\(currentFeed.status)\", 
+                feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
+                \(currentFeed.redirects))
+                """
+
+            } else if currentFeed.dataType == DataType.realtime {  // update_gtfs_realtime_source
+                
+                PYTHON_SCRIPT_ARGS_TEMP = """
+                update_gtfs_realtime_source(
+                mdb_source_id=\(currentFeed.oldMobilityDatabaseID), 
+                entity_type=[\"\(currentFeed.realtimeCode().joined(separator:"\", \""))\"], 
+                provider=\"\(currentFeed.provider)\", 
+                authentication_type=\(currentFeed.authenticationType), 
+                authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
+                api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
+                name=\"\(currentFeed.name)\", 
+                note=\"\(currentFeed.note)\", 
+                status=\"\(currentFeed.status)\", 
+                feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
+                \(currentFeed.redirects))
+                """
+
+            }
+
+        } else if currentFeed.issueType == IssueType.isToRemoveFeed {
+
+            if isInDebugMode { print("\t\tCurrent feed is to be removed.") }
+
+            if currentFeed.dataType == DataType.schedule { // update_gtfs_schedule_source
+
+                PYTHON_SCRIPT_ARGS_TEMP = """
+                update_gtfs_schedule_source(
+                mdb_source_id=\(currentFeed.oldMobilityDatabaseID), 
+                provider=\"\(currentFeed.provider)\", 
+                name=\"\"**** issued for removal ****\"\", 
+                country_code=\"\(currentFeed.country)\", 
+                subdivision_name=\"\(currentFeed.subdivisionName)\", 
+                municipality=\"\(currentFeed.municipality)\", 
+                authentication_type=\(currentFeed.authenticationType), 
+                authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
+                api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
+                status=\"\(currentFeed.status)\", 
+                feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
+                \(currentFeed.redirects))
+                """
+
+
+            } else if currentFeed.dataType == DataType.realtime {  // update_gtfs_realtime_source
+
+                PYTHON_SCRIPT_ARGS_TEMP = """
+                update_gtfs_realtime_source(
+                mdb_source_id=\(currentFeed.oldMobilityDatabaseID), 
+                entity_type=\"[\(currentFeed.realtimeCode().joined(separator:"\", \""))]\", 
+                provider=\"\(currentFeed.provider)\", 
+                authentication_type=\(currentFeed.authenticationType), 
+                authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
+                api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
+                name=\"\"**** issued for removal ****\"\", 
+                note=\"\(currentFeed.note)\", 
+                status=\"\(currentFeed.status)\", 
+                feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
+                \(currentFeed.redirects))
+                """
+
+            }
+
+        } else if currentFeed.issueType == IssueType.unknown { // assume default is .isAddNewFeed
+
+            if isInDebugMode { print("\t\tCurrent feed is assumed to be new.") }
+
+            if currentFeed.dataType == DataType.schedule { // add_gtfs_schedule_source
+
+                PYTHON_SCRIPT_ARGS_TEMP  = """
+                add_gtfs_schedule_source(
+                provider=\"\(currentFeed.provider)\", 
+                country_code=\"\(currentFeed.country)\", 
+                direct_download_url=\"\(currentFeed.downloadURL)\", 
+                authentication_type=\(currentFeed.authenticationType), 
+                authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
+                api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
+                subdivision_name=\"\(currentFeed.subdivisionName)\", 
+                municipality=\"\(currentFeed.municipality)\", 
+                license_url=\"\(currentFeed.licenseURL)\", 
+                name=\"\(currentFeed.name)\", 
+                status=\"\(currentFeed.status)\", 
+                feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
+                \(currentFeed.redirects))
+                """
+
+            } else if currentFeed.dataType == DataType.realtime {  // add_gtfs_realtime_source
+
+                PYTHON_SCRIPT_ARGS_TEMP = """
+                add_gtfs_realtime_source(
+                entity_type=\"[\(currentFeed.realtimeCode().joined(separator:"\", \""))]\", 
+                provider=\"\(currentFeed.provider)\", 
+                direct_download_url=\"\(currentFeed.downloadURL)\", 
+                authentication_type=\(currentFeed.authenticationType), 
+                authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
+                api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
+                license_url=\"\(currentFeed.licenseURL)\", 
+                name=\"\(currentFeed.name)\", 
+                note=\"\(currentFeed.note)\", 
+                status=\"\(currentFeed.status)\", 
+                feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
+                \(currentFeed.redirects))
+                """
+
+            }
+
+        }
+
+        // Let's remove the added newline characters
+        PYTHON_SCRIPT_ARGS_TEMP = PYTHON_SCRIPT_ARGS_TEMP.replacingOccurrences(of: "\n", with: "")
+        
+        if isInDebugMode { print("\n\t\tPython script arg TEMP : \(PYTHON_SCRIPT_ARGS_TEMP)")}
+        
+        if PYTHON_SCRIPT_ARGS_TEMP.count > 0 { PYTHON_SCRIPT_OUTPUT = ( PYTHON_SCRIPT_OUTPUT + "§" + PYTHON_SCRIPT_ARGS_TEMP ) }
+        
+    } // END FOR LOOP
+
+    // Replace single quotes (like in McGill's) with an apostrophe so there is no interference with the bash script in the next step.
+    PYTHON_SCRIPT_OUTPUT = PYTHON_SCRIPT_OUTPUT.replacingOccurrences(of: "'", with: "ʼ")
+    // Note: do not try to fix the ouput of multiple quotes (ex.: """") as it will break the python script.
+    
+    // Remove empty parameters from script output
+    PYTHON_SCRIPT_OUTPUT = removeEmptyPythonParameters(in: PYTHON_SCRIPT_OUTPUT)
+    
+    // return final output so the action can grab it and pass it on to the Python script.
+    if isInDebugMode { print("\n\nFINAL OUTPUT:\n\n") }
+    print(PYTHON_SCRIPT_OUTPUT.dropFirst())
+    
+} else {
+    print("Incorrect number of arguments provided to the script. Expected 4: a string with the URL, the date to find, a date format and the date format desired.")
+    exit(1)
+}
+
+// MARK: - FUNCTIONS
+
 /// Determines the `IssueType` based on the provided string value.
 /// - Parameter issueTypeValue: A `String` representing the issue type, which may contain certain keywords.
 /// - Returns: An `IssueType` enum value based on the provided string. If no match is found, returns `.unknown`.
@@ -222,239 +456,6 @@ func parseCSV(csvLines: [String], columnSeparator: String, dateFormatRegex: Stri
     
     return feeds
 }
-
-// Will be used to filter empty parameters from this script's output
-let everyPythonScriptFunctionsParameterNames : [String] = ["provider=", "entity_type=", "country_code=", "authentication_type=", "authentication_info_url=", "api_key_parameter_name=", "subdivision_name=", "municipality=", "country_code=", "license_url=", "name=", "status=", "features=", "note=", "feed_contact_email=", "redirects="]
-
-let argNames : [String] = CommandLine.arguments
-// let argNames : [String] = ["scriptname", "https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/gviz/tq?tqx=out:csv;outFileName:data&sheet=%5BCLEANED%5D%20For%20import", "11/11/2024", "[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}|[0-9]{4}-[0-9]{2}-[0-9]{2}", "MM/dd/yyyy"]
-
-// Set to false for production use
-let isInDebugMode : Bool = false
-
-if argNames.count == 5 {
-    
-    let csvURLStringArg      : String = argNames[1] // the first argName  [0] is the name of the script, we can ignore in this context.
-    let _                    : String = argNames[2] // Deprecated, we no longer look for a specific date.
-    let dateFormatGREPArg    : String = argNames[3]
-    let dateFormatDesiredArg : String = argNames[4]
-    
-    guard let csvURLasURL : URL = URL(string: csvURLStringArg) else {
-        print("\n   ERROR: The specified URL does not appear to exist :\n   \(csvURLStringArg)\n")
-        exit(1)
-    }
-
-    let csvData : String = try String(contentsOf: csvURLasURL, encoding:.utf8)
-    var csvLines : [String] = csvData.components(separatedBy: defaults.csvLineSeparator) ; csvLines.removeFirst(1)
-    let csvArray : [feed] = parseCSV(csvLines: csvLines, columnSeparator: defaults.csvColumnSeparator, dateFormatRegex: dateFormatGREPArg, dateFormatDesired: dateFormatDesiredArg)
-
-    if isInDebugMode { print("\n\n\t\tcsvArray contains (\(csvArray.count) item(s)) :\n\n \(csvArray)\n") }
-    
-    var PYTHON_SCRIPT_OUTPUT : String = ""
-
-    for currentFeed : feed in csvArray {
-
-        var PYTHON_SCRIPT_ARGS_TEMP : String = ""
-        if isInDebugMode { print("\t\tcolumn count / all cases count : \(currentFeed.count()) / \(column.allStructs)\n\t\tissue    : \(currentFeed.issueType)\n\t\tdatatype : \(currentFeed.dataType)") }
-        if isInDebugMode { print("\t\redirects : \(currentFeed.redirects)") }
-        if isInDebugMode { print("\t\tdownload URL || licence URL : \(currentFeed.downloadURL) || \(currentFeed.licenseURL)") }
-
-        if currentFeed.issueType == IssueType.isAddNewFeed {
-
-            if isInDebugMode { print("\t\t\tCurrent feed is new.") }
-
-            if currentFeed.dataType == DataType.schedule { // add_gtfs_schedule_source
-
-                PYTHON_SCRIPT_ARGS_TEMP  = """
-                add_gtfs_schedule_source(
-                provider=\"\(currentFeed.provider)\", 
-                country_code=\"\(currentFeed.country)\", 
-                direct_download_url=\"\(currentFeed.downloadURL)\", 
-                authentication_type=\(currentFeed.authenticationType), 
-                authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
-                api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
-                subdivision_name=\"\(currentFeed.subdivisionName)\", 
-                municipality=\"\(currentFeed.municipality)\", 
-                license_url=\"\(currentFeed.licenseURL)\", 
-                name=\"\(currentFeed.name)\", 
-                status=\"\(currentFeed.status)\", 
-                feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
-                \(currentFeed.redirects))
-                """
-
-            } else if currentFeed.dataType == DataType.realtime {  // add_gtfs_realtime_source
-                
-                PYTHON_SCRIPT_ARGS_TEMP = """
-                add_gtfs_realtime_source(
-                entity_type=[\"\(currentFeed.realtimeCode().joined(separator:"\", \""))\"], 
-                provider=\"\(currentFeed.provider)\", 
-                direct_download_url=\"\(currentFeed.downloadURL)\", 
-                authentication_type=\(currentFeed.authenticationType), 
-                authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
-                api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
-                license_url=\"\(currentFeed.licenseURL)\", 
-                name=\"\(currentFeed.name)\", 
-                note=\"\(currentFeed.note)\", 
-                status=\"\(currentFeed.status)\", 
-                feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
-                \(currentFeed.redirects))
-                """
-
-            }
-
-        } else if currentFeed.issueType == IssueType.isFeedUpdate {
-
-            if isInDebugMode { print("\t\t\tCurrent feed is update.") }
-
-            if currentFeed.dataType == DataType.schedule { // update_gtfs_schedule_source
-
-                PYTHON_SCRIPT_ARGS_TEMP = """
-                update_gtfs_schedule_source(mdb_source_id=\(currentFeed.oldMobilityDatabaseID), 
-                provider=\"\(currentFeed.provider)\", 
-                name=\"\(currentFeed.name)\", 
-                country_code=\"\(currentFeed.country)\", 
-                subdivision_name=\"\(currentFeed.subdivisionName)\", 
-                municipality=\"\(currentFeed.municipality)\", 
-                authentication_type=\(currentFeed.authenticationType), 
-                authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
-                api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
-                status=\"\(currentFeed.status)\", 
-                feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
-                \(currentFeed.redirects))
-                """
-
-            } else if currentFeed.dataType == DataType.realtime {  // update_gtfs_realtime_source
-                
-                PYTHON_SCRIPT_ARGS_TEMP = """
-                update_gtfs_realtime_source(
-                mdb_source_id=\(currentFeed.oldMobilityDatabaseID), 
-                entity_type=[\"\(currentFeed.realtimeCode().joined(separator:"\", \""))\"], 
-                provider=\"\(currentFeed.provider)\", 
-                authentication_type=\(currentFeed.authenticationType), 
-                authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
-                api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
-                name=\"\(currentFeed.name)\", 
-                note=\"\(currentFeed.note)\", 
-                status=\"\(currentFeed.status)\", 
-                feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
-                \(currentFeed.redirects))
-                """
-
-            }
-
-        } else if currentFeed.issueType == IssueType.isToRemoveFeed {
-
-            if isInDebugMode { print("\t\t\tCurrent feed is to be removed.") }
-
-            if currentFeed.dataType == DataType.schedule { // update_gtfs_schedule_source
-
-                PYTHON_SCRIPT_ARGS_TEMP = """
-                update_gtfs_schedule_source(
-                mdb_source_id=\(currentFeed.oldMobilityDatabaseID), 
-                provider=\"\(currentFeed.provider)\", 
-                name=\"\"**** issued for removal ****\"\", 
-                country_code=\"\(currentFeed.country)\", 
-                subdivision_name=\"\(currentFeed.subdivisionName)\", 
-                municipality=\"\(currentFeed.municipality)\", 
-                authentication_type=\(currentFeed.authenticationType), 
-                authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
-                api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
-                status=\"\(currentFeed.status)\", 
-                feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
-                \(currentFeed.redirects))
-                """
-
-
-            } else if currentFeed.dataType == DataType.realtime {  // update_gtfs_realtime_source
-
-                PYTHON_SCRIPT_ARGS_TEMP = """
-                update_gtfs_realtime_source(
-                mdb_source_id=\(currentFeed.oldMobilityDatabaseID), 
-                entity_type=\"[\(currentFeed.realtimeCode().joined(separator:"\", \""))]\", 
-                provider=\"\(currentFeed.provider)\", 
-                authentication_type=\(currentFeed.authenticationType), 
-                authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
-                api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
-                name=\"\"**** issued for removal ****\"\", 
-                note=\"\(currentFeed.note)\", 
-                status=\"\(currentFeed.status)\", 
-                feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
-                \(currentFeed.redirects))
-                """
-
-            }
-
-        } else if currentFeed.issueType == IssueType.unknown { // assume default is .isAddNewFeed
-
-            if isInDebugMode { print("\t\t\tCurrent feed is assumed to be new.") }
-
-            if currentFeed.dataType == DataType.schedule { // add_gtfs_schedule_source
-
-                PYTHON_SCRIPT_ARGS_TEMP  = """
-                add_gtfs_schedule_source(
-                provider=\"\(currentFeed.provider)\", 
-                country_code=\"\(currentFeed.country)\", 
-                direct_download_url=\"\(currentFeed.downloadURL)\", 
-                authentication_type=\(currentFeed.authenticationType), 
-                authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
-                api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
-                subdivision_name=\"\(currentFeed.subdivisionName)\", 
-                municipality=\"\(currentFeed.municipality)\", 
-                license_url=\"\(currentFeed.licenseURL)\", 
-                name=\"\(currentFeed.name)\", 
-                status=\"\(currentFeed.status)\", 
-                feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
-                \(currentFeed.redirects))
-                """
-
-            } else if currentFeed.dataType == DataType.realtime {  // add_gtfs_realtime_source
-
-                PYTHON_SCRIPT_ARGS_TEMP = """
-                add_gtfs_realtime_source(
-                entity_type=\"[\(currentFeed.realtimeCode().joined(separator:"\", \""))]\", 
-                provider=\"\(currentFeed.provider)\", 
-                direct_download_url=\"\(currentFeed.downloadURL)\", 
-                authentication_type=\(currentFeed.authenticationType), 
-                authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
-                api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
-                license_url=\"\(currentFeed.licenseURL)\", 
-                name=\"\(currentFeed.name)\", 
-                note=\"\(currentFeed.note)\", 
-                status=\"\(currentFeed.status)\", 
-                feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
-                \(currentFeed.redirects))
-                """
-
-            }
-
-        }
-
-        // Let's remove the added newline characters
-        PYTHON_SCRIPT_ARGS_TEMP = PYTHON_SCRIPT_ARGS_TEMP.replacingOccurrences(of: "\n", with: "")
-        
-        if isInDebugMode { print("\t\tPython script arg TEMP : \(PYTHON_SCRIPT_ARGS_TEMP)")}
-        
-        if PYTHON_SCRIPT_ARGS_TEMP.count > 0 { PYTHON_SCRIPT_OUTPUT = ( PYTHON_SCRIPT_OUTPUT + "§" + PYTHON_SCRIPT_ARGS_TEMP ) }
-        
-    } // END FOR LOOP
-
-    // Replace single quotes (like in McGill's) with an apostrophe so there is no interference with the bash script in the next step.
-    PYTHON_SCRIPT_OUTPUT = PYTHON_SCRIPT_OUTPUT.replacingOccurrences(of: "'", with: "ʼ")
-    // Note: do not try to fix the ouput of multiple quotes (ex.: """") as it will break the python script.
-    
-    // Remove empty paramters from script output
-    PYTHON_SCRIPT_OUTPUT = removeEmptyPythonParameters(in: PYTHON_SCRIPT_OUTPUT)
-    
-    // return final output so the action can grab it and pass it on to the Python script.
-    if isInDebugMode { print("FINAL OUTPUT:") }
-    print(PYTHON_SCRIPT_OUTPUT.dropFirst())
-    
-} else {
-    print("Incorrect number of arguments provided to the script. Expected 4: a string with the URL, the date to find, a date format and the date format desired.")
-    exit(1)
-}
-
-// MARK: - FUNCTIONS
 
 /// Extracts a date from a string and formats it according to a desired format.
 ///
@@ -583,4 +584,23 @@ func removeEmptyPythonParameters(in outputString: String) -> String {
 
 extension CharacterSet {
     static let escapedDoubleQuote : CharacterSet = CharacterSet(charactersIn: "\"")
+}
+
+extension feed {
+    var description: String {
+        """
+        \t\tFeed Details:
+        \t\t- Timestamp : \(timestamp)
+        \t\t- Provider : \(provider)
+        \t\t- Data Type : \(dataType)
+        \t\t- Issue Type : \(issueType)
+        \t\t- Download URL : \(downloadURL)
+        \t\t- Country : \(country)
+        \t\t- Subdivision : \(subdivisionName)
+        \t\t- Municipality : \(municipality)
+        \t\t- Name : \(name)
+        \t\t- License URL : \(licenseURL)
+        \t\t- Status : \(status)
+        """
+    }
 }

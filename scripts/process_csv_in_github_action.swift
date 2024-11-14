@@ -88,6 +88,7 @@ struct defaults {
     static let emptyValueRaw             : String = ""
     static let csvLineSeparator          : String = "\n"
     static let csvColumnSeparator        : String = ","
+    static let doubleQuotes              : String = "\"\"\"\""
 }
 
 enum IssueType : String {
@@ -133,28 +134,8 @@ enum RealtimeEntityType : String {
     }
 }
 
-// Will be used to filter empty parameters from this script's output
-let everyPythonScriptFunctionsParameterNames : [String] = [
-    "provider=",
-    "entity_type=",
-    "country_code=",
-    "authentication_type=",
-    "authentication_info_url=",
-    "api_key_parameter_name=",
-    "subdivision_name=",
-    "municipality=",
-    "country_code=",
-    "license_url=",
-    "name=",
-    "status=",
-    "features=",
-    "note=",
-    "feed_contact_email=",
-    "redirects="
-]
-
-let argNames : [String] = CommandLine.arguments // this is for using inside the GitHub workflow only.
-// let argNames : [String] = [ // this is for local testing purposes only.
+let openingPrefixs : [String] = CommandLine.arguments // this is for using inside the GitHub workflow only.
+// let openingPrefixs : [String] = [ // this is for local testing purposes only.
 //     "scriptname", 
 //     "https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/gviz/tq?tqx=out:csv;outFileName:data&sheet=%5BCLEANED%5D%20For%20import", 
 //     "11/11/2024", 
@@ -166,12 +147,12 @@ let argNames : [String] = CommandLine.arguments // this is for using inside the 
 // Set to false for production use
 let isInDebugMode : Bool = false
 
-if argNames.count == 5 {
+if openingPrefixs.count == 5 {
     
-    let csvURLStringArg      : String = argNames[1] // the first argName  [0] is the name of the script, we can ignore in this context.
-    let _                    : String = argNames[2] // Deprecated, we no longer look for a specific date.
-    let dateFormatGREPArg    : String = argNames[3]
-    let dateFormatDesiredArg : String = argNames[4]
+    let csvURLStringArg      : String = openingPrefixs[1] // the first openingPrefix  [0] is the name of the script, we can ignore in this context.
+    let _                    : String = openingPrefixs[2] // Deprecated, we no longer look for a specific date.
+    let dateFormatGREPArg    : String = openingPrefixs[3]
+    let dateFormatDesiredArg : String = openingPrefixs[4]
     
     guard let csvURLasURL : URL = URL(string: csvURLStringArg) else {
         print("\n   ERROR: The specified URL does not appear to exist :\n   \(csvURLStringArg)\n")
@@ -507,23 +488,16 @@ func parseCSV(csvLines: [String], columnSeparator: String, dateFormatRegex: Stri
 ///   - If no match is found or the conversion fails, the function returns the default date string.
 ///
 /// - Note: The `defaults.date` property is not explicitly defined here. It's assumed to be a way to access a default date string used in case of errors. Consider clarifying its source and purpose in the actual implementation.
-func extractDate(from theDateToConvert: String, usingGREP dateFormatAsGREP: Regex<AnyRegexOutput>, desiredDateFormat desiredFormat: String) -> String {
-    if let match : Regex<Regex<AnyRegexOutput>.RegexOutput>.Match = theDateToConvert.firstMatch(of: dateFormatAsGREP) { 
-        // find first match
-        let matchOutput : String = String(match.output[0].substring!)
+func extractDate(from dateToConvert: String, usingGREP dateFormatAsGREP: Regex<AnyRegexOutput>, desiredDateFormat: String) -> String {
+    // Attempt to find the first match in the input string
+    guard let match       : Regex<Regex<AnyRegexOutput>.RegexOutput>.Match = dateToConvert.firstMatch(of: dateFormatAsGREP),
+          let matchOutput : Substring = match.output[0].substring else { return defaults.date } // Return default if no match
 
-        // date formatter and find date
-        let dateFormatter : DateFormatter = DateFormatter()
-        dateFormatter.dateFormat = desiredFormat
-        let date : Date? = dateFormatter.date(from: matchOutput)
-        
-        // default date if formatter fails, otherwise return correctly formatted date
-        var returnDate : String = defaults.date
-        if date != nil { returnDate = dateFormatter.string(from: date!) }
-        return returnDate
-    }
-    
-    // return default date
+    // Configure the date formatter
+    let dateFormatter : DateFormatter = DateFormatter() ; dateFormatter.dateFormat = desiredDateFormat
+
+    // Attempt to parse and format the date, or return default if parsing fails
+    if let date : Date = dateFormatter.date(from: String(matchOutput)) { return dateFormatter.string(from: date) }
     return defaults.date
 }
 
@@ -538,25 +512,21 @@ func extractDate(from theDateToConvert: String, usingGREP dateFormatAsGREP: Rege
 ///
 /// - Note: The default empty value is provided by `defaults.emptyValue`.
 func redirectArray(for rawData: String) -> String {
-    if rawData.count > 0 {
-        let argName   : String = ", redirects=["
-        let closingSuffix : String = "]"
-        let prefix    : String = "{\"\"id\"\": "
-        let suffix    : String = ", \"\"comment\"\": \"\" \"\"}"
-        let keyValuePairsJoiner : String = ", "
+    guard !rawData.isEmpty else { return defaults.emptyValueRaw }
 
-        let rawDataAsArray : [String] = rawData.components(separatedBy: ",")
-        var valueKeyPairs : [String] = []
+    let openingPrefix       : String = ", redirects=["
+    let closingSuffix       : String = "]"
+    let prefix              : String = "{\"\"id\"\": "
+    let suffix              : String = ", \"\"comment\"\": \"\"}"
+    let keyValuePairsJoiner : String = ", "
 
-        for currentString : String in rawDataAsArray {
-            valueKeyPairs.append(prefix + currentString + suffix)
-        }
+    // Transform each `currentString` in `rawDataAsArray` with `map` and join them in one step
+    let redirectEntries : String = rawData
+        .components(separatedBy: ",")
+        .map { prefix + $0 + suffix }
+        .joined(separator: keyValuePairsJoiner)
 
-        let returnString : String = "\(argName)\(valueKeyPairs.joined(separator: keyValuePairsJoiner))\(closingSuffix)" // Ex.: , redirects=[{"id": 2036, "comment": ""}, {"id": 2037, "comment": ""}]    AKA a Python array of dicts
-        return returnString
-    }
-
-    return defaults.emptyValueRaw
+    return "\(openingPrefix)\(redirectEntries)\(closingSuffix)"
 }
 
 /// Determines the authentication type based on a given authentication string, handling whitespace and invalid values.
@@ -605,16 +575,22 @@ func isURLPresent(in string: String) -> Bool {
 /// This function assumes `everyPythonScriptFunctionsParameterNames` is a constant containing a list of valid Python script function parameter names.
 ///   - Modifications to the original string are done on a copy to avoid unintended side effects.
 func removeEmptyPythonParameters(in outputString: String) -> String {
-    var returnString : String = outputString
-    let comma : String = ","
-    let doubleQuotes : String = "\"\"\"\""
-    for currentParameter : String in everyPythonScriptFunctionsParameterNames {
-        let stringToFindFirstPass  : String = "\(comma) \(currentParameter)\(doubleQuotes)"
-        let stringToFindSecondPass : String = "\(currentParameter)\(doubleQuotes)\(comma) "
-        returnString = returnString.replacingOccurrences(of: stringToFindFirstPass, with: "")
-        returnString = returnString.replacingOccurrences(of: stringToFindSecondPass, with: "")
+    let everyPythonScriptFunctionsParameterNames: [String] = [
+        "provider=", "entity_type=", "country_code=", "authentication_type=",
+        "authentication_info_url=", "api_key_parameter_name=", "subdivision_name=",
+        "municipality=", "license_url=", "name=", "status=", "features=", 
+        "note=", "feed_contact_email=", "redirects="
+    ]
+    
+
+    return everyPythonScriptFunctionsParameterNames.reduce(outputString) { result, parameter in
+        let firstPass  : String = ", \(parameter)\(defaults.doubleQuotes)"
+        let secondPass : String = "\(parameter)\(defaults.doubleQuotes), "
+        
+        return result
+            .replacingOccurrences(of: firstPass, with: "")
+            .replacingOccurrences(of: secondPass, with: "")
     }
-    return returnString
 }
 
 extension CharacterSet {
@@ -624,7 +600,7 @@ extension CharacterSet {
 extension feed {
     var description: String {
         """
-        \t\tFeed Details:
+        \t\tFEED DETAILS:
         \t\t- Timestamp : \(timestamp)
         \t\t- Provider : \(provider)
         \t\t- Data Type : \(dataType)

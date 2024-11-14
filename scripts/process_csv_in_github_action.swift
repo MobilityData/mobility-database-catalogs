@@ -153,18 +153,18 @@ let everyPythonScriptFunctionsParameterNames : [String] = [
     "redirects="
 ]
 
-// let argNames : [String] = CommandLine.arguments // this is for using inside the GitHub workflow only.
-let argNames : [String] = [ // this is for local testing purposes only.
-    "scriptname", 
-    "https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/gviz/tq?tqx=out:csv;outFileName:data&sheet=%5BCLEANED%5D%20For%20import", 
-    "11/11/2024", 
-    "[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}|[0-9]{4}-[0-9]{2}-[0-9]{2}", 
-    "MM/dd/yyyy"
-]
+let argNames : [String] = CommandLine.arguments // this is for using inside the GitHub workflow only.
+// let argNames : [String] = [ // this is for local testing purposes only.
+//     "scriptname", 
+//     "https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/gviz/tq?tqx=out:csv;outFileName:data&sheet=%5BCLEANED%5D%20For%20import", 
+//     "11/11/2024", 
+//     "[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}|[0-9]{4}-[0-9]{2}-[0-9]{2}", 
+//     "MM/dd/yyyy"
+// ]
 // Google Sheet: https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit?gid=2061813733#gid=2061813733
 
 // Set to false for production use
-let isInDebugMode : Bool = true
+let isInDebugMode : Bool = false
 
 if argNames.count == 5 {
     

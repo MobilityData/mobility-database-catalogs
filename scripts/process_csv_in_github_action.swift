@@ -3,6 +3,65 @@ import Foundation
     import FoundationNetworking
 #endif
 
+// MARK: - DEFAULTS
+
+struct defaults {
+    static let date                      : String = "01/01/1970"
+    static let toBeProvided              : String = "TO_BE_PROVIDED"
+    static let emptyValue                : String = "\"\""
+    static let emptyValueRaw             : String = ""
+    static let csvLineSeparator          : String = "\n"
+    static let csvColumnSeparator        : String = ","
+    static let doubleQuotes              : String = "\"\"\"\""
+}
+
+// MARK: - ENUMS
+
+enum IssueType : String {
+    case isAddNewFeed         = "New feed"
+    case isFeedUpdate         = "Feed update"
+    case isToRemoveFeed       = "removed"
+    case isUnknown            = "unknown"
+    case isAddNewSource       = "New source" // this is only used to match variations in wording that appeared over time
+    case isUpdateExistingFeed = "Source update" // this is only used to match variations in wording that appeared over time
+
+    /// Provides a String for each issue type case.
+    var asString : String { self.rawValue }
+}
+
+enum DataType : String {
+    case schedule = "Schedule"
+    case realtime = "Realtime"
+    case unknown  = "Unknown"
+
+    /// Provides a String for each realtime entity type case.
+    var asString : String { self.rawValue }
+}
+
+enum RealtimeEntityType : String {
+    case vehiclePositions = "vp"
+    case tripUpdates      = "tu"
+    case serviceAlerts    = "sa"
+    case unknown          = "gu"
+    case empty            = "nil"
+
+    /// Provides a String for each realtime entity type case.
+    var asShortString : String { self.rawValue }
+
+    /// Provides a String for each realtime entity type case.
+    var asString: String {
+        switch self {
+            case .vehiclePositions : return "Vehicle Positions"
+            case .tripUpdates      : return "Trip Updates"
+            case .serviceAlerts    : return "Service Alerts"
+            case .unknown          : return "General / Unknown"
+            case .empty            : return "Nil"
+        }
+    }
+}
+
+// MARK: - STRUCTS
+
 struct column {
     static let  fourZeroThreeClientError : Int = 0 // A
     static let  timestamp                : Int = 1 // B
@@ -81,61 +140,10 @@ struct feed {
     }
 }
 
-struct defaults {
-    static let date                      : String = "01/01/1970"
-    static let toBeProvided              : String = "TO_BE_PROVIDED"
-    static let emptyValue                : String = "\"\""
-    static let emptyValueRaw             : String = ""
-    static let csvLineSeparator          : String = "\n"
-    static let csvColumnSeparator        : String = ","
-    static let doubleQuotes              : String = "\"\"\"\""
-}
+// MARK: - MAIN
 
-enum IssueType : String {
-    case isAddNewFeed         = "New feed"
-    case isFeedUpdate         = "Feed update"
-    case isToRemoveFeed       = "removed"
-    case isUnknown            = "unknown"
-    case isAddNewSource       = "New source" // this is only used to match variations in wording that appeared over time
-    case isUpdateExistingFeed = "Source update" // this is only used to match variations in wording that appeared over time
-
-    /// Provides a String for each issue type case.
-    var asString : String { self.rawValue }
-}
-
-enum DataType : String {
-    case schedule = "Schedule"
-    case realtime = "Realtime"
-    case unknown  = "Unknown"
-
-    /// Provides a String for each realtime entity type case.
-    var asString : String { self.rawValue }
-}
-
-enum RealtimeEntityType : String {
-    case vehiclePositions = "vp"
-    case tripUpdates      = "tu"
-    case serviceAlerts    = "sa"
-    case unknown          = "gu"
-    case empty            = "nil"
-
-    /// Provides a String for each realtime entity type case.
-    var asShortString : String { self.rawValue }
-
-    /// Provides a String for each realtime entity type case.
-    var asString: String {
-        switch self {
-            case .vehiclePositions : return "Vehicle Positions"
-            case .tripUpdates      : return "Trip Updates"
-            case .serviceAlerts    : return "Service Alerts"
-            case .unknown          : return "General / Unknown"
-            case .empty            : return "Nil"
-        }
-    }
-}
-
-let openingPrefixs : [String] = CommandLine.arguments // this is for using inside the GitHub workflow only.
-// let openingPrefixs : [String] = [ // this is for local testing purposes only.
+let args : [String] = CommandLine.arguments // this is for using inside the GitHub workflow only.
+// let args : [String] = [ // this is for local testing purposes only.
 //     "scriptname", 
 //     "https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/gviz/tq?tqx=out:csv;outFileName:data&sheet=%5BCLEANED%5D%20For%20import", 
 //     "11/11/2024", 
@@ -147,12 +155,12 @@ let openingPrefixs : [String] = CommandLine.arguments // this is for using insid
 // Set to false for production use
 let isInDebugMode : Bool = false
 
-if openingPrefixs.count == 5 {
+if args.count == 5 {
     
-    let csvURLStringArg      : String = openingPrefixs[1] // the first openingPrefix  [0] is the name of the script, we can ignore in this context.
-    let _                    : String = openingPrefixs[2] // Deprecated, we no longer look for a specific date.
-    let dateFormatGREPArg    : String = openingPrefixs[3]
-    let dateFormatDesiredArg : String = openingPrefixs[4]
+    let csvURLStringArg      : String = args[1] // the first openingPrefix  [0] is the name of the script, we can ignore in this context.
+    let _                    : String = args[2] // Deprecated, we no longer look for a specific date.
+    let dateFormatGREPArg    : String = args[3]
+    let dateFormatDesiredArg : String = args[4]
     
     guard let csvURLasURL : URL = URL(string: csvURLStringArg) else {
         print("\n   ERROR: The specified URL does not appear to exist :\n   \(csvURLStringArg)\n")

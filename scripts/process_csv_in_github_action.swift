@@ -94,36 +94,21 @@ enum IssueType : String {
     case isAddNewFeed         = "New feed"
     case isFeedUpdate         = "Feed update"
     case isToRemoveFeed       = "removed"
-    case unknown              = "unknown"
-    case isAddNewSource       = "New source" // this are used only to match variations in wording that appeared over time
-    case isUpdateExistingFeed = "Source update" // this are used only to match variations in wording that appeared over time
+    case isUnknown            = "unknown"
+    case isAddNewSource       = "New source" // this is only used to match variations in wording that appeared over time
+    case isUpdateExistingFeed = "Source update" // this is only used to match variations in wording that appeared over time
 
     /// Provides a String for each issue type case.
-    var asString: String {
-        switch self {
-            case .isAddNewFeed         : return "New feed"
-            case .isFeedUpdate         : return "Feed update"
-            case .isToRemoveFeed       : return "removed"
-            case .unknown              : return "unknown"
-            case .isAddNewSource       : return "New source"
-            case .isUpdateExistingFeed : return "Source update"
-        }
-    }
+    var asString : String { self.rawValue }
 }
 
 enum DataType : String {
     case schedule = "Schedule"
     case realtime = "Realtime"
-    case unknown = "Unknown"
+    case unknown  = "Unknown"
 
     /// Provides a String for each realtime entity type case.
-    var asString: String {
-        switch self {
-            case .schedule : return "Schedule"
-            case .realtime : return "Realtime"
-            case .unknown  : return "Unknown"
-        }
-    }
+    var asString : String { self.rawValue }
 }
 
 enum RealtimeEntityType : String {
@@ -134,15 +119,7 @@ enum RealtimeEntityType : String {
     case empty            = "nil"
 
     /// Provides a String for each realtime entity type case.
-    var asShortString: String {
-        switch self {
-            case .vehiclePositions : return "vu"
-            case .tripUpdates      : return "tu"
-            case .serviceAlerts    : return "sa"
-            case .unknown          : return "gu"
-            case .empty            : return "nil"
-        }
-    }
+    var asShortString : String { self.rawValue }
 
     /// Provides a String for each realtime entity type case.
     var asString: String {
@@ -157,10 +134,33 @@ enum RealtimeEntityType : String {
 }
 
 // Will be used to filter empty parameters from this script's output
-let everyPythonScriptFunctionsParameterNames : [String] = ["provider=", "entity_type=", "country_code=", "authentication_type=", "authentication_info_url=", "api_key_parameter_name=", "subdivision_name=", "municipality=", "country_code=", "license_url=", "name=", "status=", "features=", "note=", "feed_contact_email=", "redirects="]
+let everyPythonScriptFunctionsParameterNames : [String] = [
+    "provider=",
+    "entity_type=",
+    "country_code=",
+    "authentication_type=",
+    "authentication_info_url=",
+    "api_key_parameter_name=",
+    "subdivision_name=",
+    "municipality=",
+    "country_code=",
+    "license_url=",
+    "name=",
+    "status=",
+    "features=",
+    "note=",
+    "feed_contact_email=",
+    "redirects="
+]
 
-// let argNames : [String] = CommandLine.arguments
-let argNames : [String] = ["scriptname", "https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/gviz/tq?tqx=out:csv;outFileName:data&sheet=%5BCLEANED%5D%20For%20import", "11/11/2024", "[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}|[0-9]{4}-[0-9]{2}-[0-9]{2}", "MM/dd/yyyy"]
+// let argNames : [String] = CommandLine.arguments // this is for using inside the GitHub workflow only.
+let argNames : [String] = [ // this is for local testing purposes only.
+    "scriptname", 
+    "https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/gviz/tq?tqx=out:csv;outFileName:data&sheet=%5BCLEANED%5D%20For%20import", 
+    "11/11/2024", 
+    "[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}|[0-9]{4}-[0-9]{2}-[0-9]{2}", 
+    "MM/dd/yyyy"
+]
 // Google Sheet: https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit?gid=2061813733#gid=2061813733
 
 // Set to false for production use
@@ -178,9 +178,9 @@ if argNames.count == 5 {
         exit(1)
     }
 
-    let csvData : String = try String(contentsOf: csvURLasURL, encoding:.utf8)
+    let csvData  :  String  = try String(contentsOf: csvURLasURL, encoding:.utf8)
     var csvLines : [String] = csvData.components(separatedBy: defaults.csvLineSeparator) ; csvLines.removeFirst(1)
-    let csvArray : [feed] = parseCSV(csvLines: csvLines, columnSeparator: defaults.csvColumnSeparator, dateFormatRegex: dateFormatGREPArg, dateFormatDesired: dateFormatDesiredArg)
+    let csvArray : [feed]   = parseCSV(csvLines: csvLines, columnSeparator: defaults.csvColumnSeparator, dateFormatRegex: dateFormatGREPArg, dateFormatDesired: dateFormatDesiredArg)
 
     if isInDebugMode { print("\n\n\t\tcsvArray contains (\(csvArray.count) item(s)) :\n\n") }
     if isInDebugMode { let allDescriptions : String = csvArray.map { $0.description }.joined(separator: "\n\n\t\t---\n\n") ; print("\(allDescriptions)\n") }
@@ -190,7 +190,7 @@ if argNames.count == 5 {
     for currentFeed : feed in csvArray {
 
         var PYTHON_SCRIPT_ARGS_TEMP : String = ""
-        if isInDebugMode { print("\n\n\t\tcolumn count / all cases count : \(currentFeed.count()) / \(column.count)\n\t\tissue    : \(currentFeed.issueType.asString)\n\t\tdatatype : \(currentFeed.dataType.asString)") }
+        if isInDebugMode { print("\n\n\t\tcolumn count / all cases count : \(currentFeed) / \(column.count)\n\t\tissue    : \(currentFeed.issueType.asString)\n\t\tdatatype : \(currentFeed.dataType.asString)") }
         if isInDebugMode { print("\t\tredirects : \(currentFeed.redirects)") }
         if isInDebugMode { print("\t\tdownload URL || licence URL : \(currentFeed.downloadURL) || \(currentFeed.licenseURL)") }
 
@@ -319,7 +319,7 @@ if argNames.count == 5 {
 
             }
 
-        } else if currentFeed.issueType == IssueType.unknown { // assume default is .isAddNewFeed
+        } else if currentFeed.issueType == IssueType.isUnknown { // assume default is .isAddNewFeed
 
             if isInDebugMode { print("\t\tCurrent feed is assumed to be new.") }
 
@@ -403,7 +403,7 @@ func issueType(for issueTypeValue: String) -> IssueType {
     
     return issueTypeMappings.first { (_: IssueType, keywords : [String] ) in
         keywords.contains { issueTypeValue.contains($0) }
-    }?.0 ?? .unknown
+    }?.0 ?? .isUnknown
 }
 
 /// Determines the `DataType` based on the provided string value.

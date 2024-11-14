@@ -6,7 +6,7 @@
     "features": [
         "fares-v1"
     ],
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Utah",

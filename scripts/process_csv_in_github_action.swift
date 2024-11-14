@@ -25,7 +25,7 @@ struct column {
     static let  dataproduceremail        : Int = 18 // S
 
     // List properties manually as a static array
-    static var allStructs                : Int { return 19 }
+    static var count                     : Int { return 19 }
 }
 
 struct feed {
@@ -57,14 +57,18 @@ struct feed {
     ///
     /// - Returns: An array of strings containing the corresponding real-time data codes.
     func realtimeCode() -> [String] {
-        let returnArray: [String] = [
-            realtimeEntityTypes.vehiclePositions,
-            realtimeEntityTypes.tripUpdates,
-            realtimeEntityTypes.serviceAlerts
-        ].filter { dataTypeString.contains($0) }
-        
-        // Return the array, or a default array containing "tripUpdates" if empty
-        return returnArray.isEmpty ? [realtimeEntityTypes.tripUpdates] : returnArray
+        let realTimeCodes: [DataType : [String]] = [
+            DataType.schedule: [],
+            DataType.realtime: [
+                RealtimeEntityType.vehiclePositions.asShortString,
+                RealtimeEntityType.tripUpdates.asShortString,
+                RealtimeEntityType.serviceAlerts.asShortString
+            ],
+            DataType.unknown: []
+        ]
+
+        // Return the relevant codes for `dataType`, or a default containing "tripUpdates" if empty
+        return realTimeCodes[dataType]?.isEmpty == false ? realTimeCodes[dataType]! : [RealtimeEntityType.tripUpdates.asShortString]
     }
 
     /// Determines the authentication type based on a given authentication string, handling whitespace and invalid values.
@@ -86,53 +90,81 @@ struct defaults {
     static let csvColumnSeparator        : String = ","
 }
 
-struct issueTypeString {
-    static let isAddNewFeed              : String = "New feed"
-    static let isAddNewSource            : String = "New source"
-    static let isUpdateExistingFeed      : String = "Source update"
-    static let isFeedUpdate              : String = "Feed update"
-    static let isToRemoveFeed            : String = "removed"
-    static let unknown                   : String = "unknown"
+enum IssueType : String {
+    case isAddNewFeed         = "New feed"
+    case isFeedUpdate         = "Feed update"
+    case isToRemoveFeed       = "removed"
+    case unknown              = "unknown"
+    case isAddNewSource       = "New source" // this are used only to match variations in wording that appeared over time
+    case isUpdateExistingFeed = "Source update" // this are used only to match variations in wording that appeared over time
+
+    /// Provides a String for each issue type case.
+    var asString: String {
+        switch self {
+            case .isAddNewFeed         : return "New feed"
+            case .isFeedUpdate         : return "Feed update"
+            case .isToRemoveFeed       : return "removed"
+            case .unknown              : return "unknown"
+            case .isAddNewSource       : return "New source"
+            case .isUpdateExistingFeed : return "Source update"
+        }
+    }
 }
 
-struct dataTypeString {
-    static let schedule                  : String = "Schedule"
-    static let realtime                  : String = "Realtime"
+enum DataType : String {
+    case schedule = "Schedule"
+    case realtime = "Realtime"
+    case unknown = "Unknown"
+
+    /// Provides a String for each realtime entity type case.
+    var asString: String {
+        switch self {
+            case .schedule : return "Schedule"
+            case .realtime : return "Realtime"
+            case .unknown  : return "Unknown"
+        }
+    }
 }
 
-enum IssueType {
-    case isAddNewFeed, isFeedUpdate, isToRemoveFeed, unknown
-}
+enum RealtimeEntityType : String {
+    case vehiclePositions = "vp"
+    case tripUpdates      = "tu"
+    case serviceAlerts    = "sa"
+    case unknown          = "gu"
+    case empty            = "nil"
 
-enum DataType {
-    case schedule, realtime, unknown
-}
+    /// Provides a String for each realtime entity type case.
+    var asShortString: String {
+        switch self {
+            case .vehiclePositions : return "vu"
+            case .tripUpdates      : return "tu"
+            case .serviceAlerts    : return "sa"
+            case .unknown          : return "gu"
+            case .empty            : return "nil"
+        }
+    }
 
-struct realtimeEntityTypesString {
-    static let vehiclePositions          : String = "Vehicle Positions"
-    static let tripUpdates               : String = "Trip Updates"
-    static let serviceAlerts             : String = "Service Alerts"
-    static let unknown                   : String = "general / unknown"
-    static let empty                     : String = "nil"
-}
-
-struct realtimeEntityTypes {
-    static let vehiclePositions          : String = "vp"
-    static let tripUpdates               : String = "tu"
-    static let serviceAlerts             : String = "sa"
-    static let unknown                   : String = "gu"
-    static let empty                     : String = "nil"
+    /// Provides a String for each realtime entity type case.
+    var asString: String {
+        switch self {
+            case .vehiclePositions : return "Vehicle Positions"
+            case .tripUpdates      : return "Trip Updates"
+            case .serviceAlerts    : return "Service Alerts"
+            case .unknown          : return "General / Unknown"
+            case .empty            : return "Nil"
+        }
+    }
 }
 
 // Will be used to filter empty parameters from this script's output
 let everyPythonScriptFunctionsParameterNames : [String] = ["provider=", "entity_type=", "country_code=", "authentication_type=", "authentication_info_url=", "api_key_parameter_name=", "subdivision_name=", "municipality=", "country_code=", "license_url=", "name=", "status=", "features=", "note=", "feed_contact_email=", "redirects="]
 
-let argNames : [String] = CommandLine.arguments
-// let argNames : [String] = ["scriptname", "https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/gviz/tq?tqx=out:csv;outFileName:data&sheet=%5BCLEANED%5D%20For%20import", "11/11/2024", "[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}|[0-9]{4}-[0-9]{2}-[0-9]{2}", "MM/dd/yyyy"]
+// let argNames : [String] = CommandLine.arguments
+let argNames : [String] = ["scriptname", "https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/gviz/tq?tqx=out:csv;outFileName:data&sheet=%5BCLEANED%5D%20For%20import", "11/11/2024", "[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}|[0-9]{4}-[0-9]{2}-[0-9]{2}", "MM/dd/yyyy"]
 // Google Sheet: https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit?gid=2061813733#gid=2061813733
 
 // Set to false for production use
-let isInDebugMode : Bool = false
+let isInDebugMode : Bool = true
 
 if argNames.count == 5 {
     
@@ -158,7 +190,7 @@ if argNames.count == 5 {
     for currentFeed : feed in csvArray {
 
         var PYTHON_SCRIPT_ARGS_TEMP : String = ""
-        if isInDebugMode { print("\n\n\t\tcolumn count / all cases count : \(currentFeed.count()) / \(column.allStructs)\n\t\tissue    : \(currentFeed.issueType)\n\t\tdatatype : \(currentFeed.dataType)") }
+        if isInDebugMode { print("\n\n\t\tcolumn count / all cases count : \(currentFeed.count()) / \(column.count)\n\t\tissue    : \(currentFeed.issueType.asString)\n\t\tdatatype : \(currentFeed.dataType.asString)") }
         if isInDebugMode { print("\t\tredirects : \(currentFeed.redirects)") }
         if isInDebugMode { print("\t\tdownload URL || licence URL : \(currentFeed.downloadURL) || \(currentFeed.licenseURL)") }
 
@@ -364,9 +396,9 @@ if argNames.count == 5 {
 /// - Returns: An `IssueType` enum value based on the provided string. If no match is found, returns `.unknown`.
 func issueType(for issueTypeValue: String) -> IssueType {
     let issueTypeMappings: [(IssueType, [String])] = [
-        (.isAddNewFeed, [issueTypeString.isAddNewFeed, issueTypeString.isAddNewSource]),
-        (.isFeedUpdate, [issueTypeString.isUpdateExistingFeed, issueTypeString.isFeedUpdate]),
-        (.isToRemoveFeed, [issueTypeString.isToRemoveFeed])
+        (.isAddNewFeed, [IssueType.isAddNewFeed.asString, IssueType.isAddNewSource.asString]),
+        (.isFeedUpdate, [IssueType.isUpdateExistingFeed.asString, IssueType.isFeedUpdate.asString]),
+        (.isToRemoveFeed, [IssueType.isToRemoveFeed.asString])
     ]
     
     return issueTypeMappings.first { (_: IssueType, keywords : [String] ) in
@@ -379,8 +411,8 @@ func issueType(for issueTypeValue: String) -> IssueType {
 /// - Returns: A `DataType` enum value based on the provided string. If no match is found, returns `.unknown`.
 func dataType(for dataTypeValue: String) -> DataType {
     let dataTypeMappings: [(DataType, [String])] = [
-        (.schedule, [dataTypeString.schedule]),
-        (.realtime, [dataTypeString.realtime, realtimeEntityTypesString.vehiclePositions, realtimeEntityTypesString.tripUpdates, realtimeEntityTypesString.serviceAlerts, realtimeEntityTypesString.unknown, realtimeEntityTypes.empty])
+        (.schedule, [DataType.schedule.asString]),
+        (.realtime, [DataType.realtime.asString, RealtimeEntityType.vehiclePositions.asString, RealtimeEntityType.tripUpdates.asString, RealtimeEntityType.serviceAlerts.asString, RealtimeEntityType.unknown.asString, RealtimeEntityType.empty.asString])
     ]
     
     return dataTypeMappings.first { (_: DataType, keywords : [String] ) in
@@ -404,12 +436,14 @@ func parseCSV(csvLines: [String], columnSeparator: String, dateFormatRegex: Stri
     let dateFormatAsRegex: Regex<AnyRegexOutput>? = try? Regex(dateFormatRegex)
     
     for line: String in csvLines {
+
+        // Separate the columns and verify there's enough columns to proceed
         let csvArrayColumn : [String] = line.components(separatedBy: columnSeparator)
-        guard csvArrayColumn.count >= column.allStructs else { continue } // Ensure there are enough columns
+        guard csvArrayColumn.count >= column.count else { continue } // Ensure there are enough columns
 
         // Get issue and data types
         let issueTypeValue : IssueType = issueType(for: csvArrayColumn[column.issueType].trimmingCharacters(in: .whitespacesAndNewlines))
-        let dataTypeValue  : DataType  = dataType(for: csvArrayColumn[column.datatype].count < 3 ? realtimeEntityTypes.empty : csvArrayColumn[column.datatype])
+        let dataTypeValue  : DataType  = dataType(for: csvArrayColumn[column.datatype].count < 3 ? RealtimeEntityType.empty.asString : csvArrayColumn[column.datatype])
 
         // Format timestamp properly
         let timestampFormatted : String = extractDate(from: csvArrayColumn[column.timestamp].trimmingCharacters(in: .whitespacesAndNewlines), usingGREP: dateFormatAsRegex!, desiredDateFormat: dateFormatDesired)
@@ -435,7 +469,7 @@ func parseCSV(csvLines: [String], columnSeparator: String, dateFormatRegex: Stri
             provider                    : provider,
             oldMobilityDatabaseID       : Int(csvArrayColumn[column.oldMobilityDatabaseID].trimmingCharacters(in: .escapedDoubleQuote)) ?? 0,
             dataType                    : dataTypeValue,
-            dataTypeString              : csvArrayColumn[column.datatype].count < 3 ? realtimeEntityTypes.empty : csvArrayColumn[column.datatype],
+            dataTypeString              : csvArrayColumn[column.datatype].count < 3 ? RealtimeEntityType.empty.asString : csvArrayColumn[column.datatype],
             issueType                   : issueTypeValue,
             downloadURL                 : downloadURLvalue,
             country                     : csvArrayColumn[column.country].trimmingCharacters(in: .whitespacesAndNewlines),

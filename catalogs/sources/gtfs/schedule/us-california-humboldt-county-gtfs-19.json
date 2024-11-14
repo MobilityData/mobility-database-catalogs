@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 19,
     "data_type": "gtfs",
-    "provider": "Humbolt Transit Authority",
+    "provider": "Humboldt Transit Authority",
     "feed_contact_email": "support+test+humboldtcounty-ca-us@trilliumtransit.com",
     "features": [
         "fares-v1",
@@ -10,7 +10,7 @@
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
-        "municipality": "Humbolt County",
+        "municipality": "Humboldt County",
         "bounding_box": {
             "minimum_latitude": 40.0680453004959,
             "maximum_latitude": 41.061448107054,

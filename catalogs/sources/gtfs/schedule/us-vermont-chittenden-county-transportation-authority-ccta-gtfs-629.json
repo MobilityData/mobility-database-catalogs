@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 629,
     "data_type": "gtfs",
-    "provider": "Chittenden County Transportation Authority  (CCTA)",
+    "provider": "Chittenden County Transportation Authority (CCTA)",
     "feed_contact_email": "support+test+ccta-vt-us@trilliumtransit.com",
     "features": [
         "fares-v1",

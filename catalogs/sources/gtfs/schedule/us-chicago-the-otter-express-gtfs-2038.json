@@ -7,7 +7,7 @@
     "status": "active",
     "location": {
         "country_code": "US",
-        "subdivision_name": "Chicago",
+        "subdivision_name": "Minnesota",
         "bounding_box": {
             "minimum_latitude": 46.26504432555926,
             "maximum_latitude": 46.593913339587104,

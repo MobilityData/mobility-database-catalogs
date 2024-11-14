@@ -372,35 +372,6 @@ if openingPrefixs.count == 5 {
 
 // MARK: - FUNCTIONS
 
-/// Determines the `IssueType` based on the provided string value.
-/// - Parameter issueTypeValue: A `String` representing the issue type, which may contain certain keywords.
-/// - Returns: An `IssueType` enum value based on the provided string. If no match is found, returns `.unknown`.
-func issueType(for issueTypeValue: String) -> IssueType {
-    let issueTypeMappings: [(IssueType, [String])] = [
-        (.isAddNewFeed, [IssueType.isAddNewFeed.asString, IssueType.isAddNewSource.asString]),
-        (.isFeedUpdate, [IssueType.isUpdateExistingFeed.asString, IssueType.isFeedUpdate.asString]),
-        (.isToRemoveFeed, [IssueType.isToRemoveFeed.asString])
-    ]
-    
-    return issueTypeMappings.first { (_: IssueType, keywords : [String] ) in
-        keywords.contains { issueTypeValue.contains($0) }
-    }?.0 ?? .isUnknown
-}
-
-/// Determines the `DataType` based on the provided string value.
-/// - Parameter dataTypeValue: A `String` representing the data type, which may contain certain keywords.
-/// - Returns: A `DataType` enum value based on the provided string. If no match is found, returns `.unknown`.
-func dataType(for dataTypeValue: String) -> DataType {
-    let dataTypeMappings: [(DataType, [String])] = [
-        (.schedule, [DataType.schedule.asString]),
-        (.realtime, [DataType.realtime.asString, RealtimeEntityType.vehiclePositions.asString, RealtimeEntityType.tripUpdates.asString, RealtimeEntityType.serviceAlerts.asString, RealtimeEntityType.unknown.asString, RealtimeEntityType.empty.asString])
-    ]
-    
-    return dataTypeMappings.first { (_: DataType, keywords : [String] ) in
-        keywords.contains { dataTypeValue.contains($0) }
-    }?.0 ?? .unknown
-}
-
 /// Parses an array of CSV lines into an array of `feed` instances.
 /// - Parameters:
 ///   - csvLines: An array of strings, each representing a row from the CSV file.
@@ -471,6 +442,35 @@ func parseCSV(csvLines: [String], columnSeparator: String, dateFormatRegex: Stri
     }
     
     return feeds
+}
+
+/// Determines the `IssueType` based on the provided string value.
+/// - Parameter issueTypeValue: A `String` representing the issue type, which may contain certain keywords.
+/// - Returns: An `IssueType` enum value based on the provided string. If no match is found, returns `.unknown`.
+func issueType(for issueTypeValue: String) -> IssueType {
+    let issueTypeMappings: [(IssueType, [String])] = [
+        (.isAddNewFeed, [IssueType.isAddNewFeed.asString, IssueType.isAddNewSource.asString]),
+        (.isFeedUpdate, [IssueType.isUpdateExistingFeed.asString, IssueType.isFeedUpdate.asString]),
+        (.isToRemoveFeed, [IssueType.isToRemoveFeed.asString])
+    ]
+    
+    return issueTypeMappings.first { (_: IssueType, keywords : [String] ) in
+        keywords.contains { issueTypeValue.contains($0) }
+    }?.0 ?? .isUnknown
+}
+
+/// Determines the `DataType` based on the provided string value.
+/// - Parameter dataTypeValue: A `String` representing the data type, which may contain certain keywords.
+/// - Returns: A `DataType` enum value based on the provided string. If no match is found, returns `.unknown`.
+func dataType(for dataTypeValue: String) -> DataType {
+    let dataTypeMappings: [(DataType, [String])] = [
+        (.schedule, [DataType.schedule.asString]),
+        (.realtime, [DataType.realtime.asString, RealtimeEntityType.vehiclePositions.asString, RealtimeEntityType.tripUpdates.asString, RealtimeEntityType.serviceAlerts.asString, RealtimeEntityType.unknown.asString, RealtimeEntityType.empty.asString])
+    ]
+    
+    return dataTypeMappings.first { (_: DataType, keywords : [String] ) in
+        keywords.contains { dataTypeValue.contains($0) }
+    }?.0 ?? .unknown
 }
 
 /// Extracts a date from a string and formats it according to a desired format.
@@ -576,10 +576,8 @@ func isURLPresent(in string: String) -> Bool {
 ///   - Modifications to the original string are done on a copy to avoid unintended side effects.
 func removeEmptyPythonParameters(in outputString: String) -> String {
     let everyPythonScriptFunctionsParameterNames: [String] = [
-        "provider=", "entity_type=", "country_code=", "authentication_type=",
-        "authentication_info_url=", "api_key_parameter_name=", "subdivision_name=",
-        "municipality=", "license_url=", "name=", "status=", "features=", 
-        "note=", "feed_contact_email=", "redirects="
+        "provider=", "entity_type=", "country_code=", "authentication_type=", "authentication_info_url=", "api_key_parameter_name=", "subdivision_name=",
+        "municipality=", "license_url=", "name=", "status=", "features=", "note=", "feed_contact_email=", "redirects="
     ]
     
 
@@ -592,6 +590,8 @@ func removeEmptyPythonParameters(in outputString: String) -> String {
             .replacingOccurrences(of: secondPass, with: "")
     }
 }
+
+// MARK: - EXTENSIONS
 
 extension CharacterSet {
     static let escapedDoubleQuote : CharacterSet = CharacterSet(charactersIn: "\"")

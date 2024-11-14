@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 70,
     "data_type": "gtfs",
-    "provider": "Sonoma County Transit  (SCT)",
+    "provider": "Sonoma County Transit (SCT)",
     "feed_contact_email": "support+test+sonomacounty-ca-us@trilliumtransit.com",
     "features": [
         "fares-v1"

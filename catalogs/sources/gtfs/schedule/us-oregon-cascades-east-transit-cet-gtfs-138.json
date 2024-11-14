@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 138,
     "data_type": "gtfs",
-    "provider": "Cascades East Transit  (CET)",
+    "provider": "Cascades East (CET)",
     "feed_contact_email": "support+test+cascadeseast-or-us@trilliumtransit.com",
     "location": {
         "country_code": "US",

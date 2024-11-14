@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 143,
     "data_type": "gtfs",
-    "provider": "Mountain Rides Transportation Authority  (MRTA)",
+    "provider": "Mountain Rides Transportation Authority (MRTA)",
     "features": [
         "fares-v1"
     ],

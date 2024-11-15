@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "GoWal",
     "feed_contact_email": "support+test+gowal-fl-us@trilliumtransit.com",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Florida",

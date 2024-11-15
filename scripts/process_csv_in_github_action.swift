@@ -45,10 +45,10 @@ enum RealtimeEntityType : String {
     case unknown          = "gu"
     case empty            = "nil"
 
-    /// Provides a String for each realtime entity type case.
+    /// Provides a 2-letter String for each realtime entity type case.
     var asShortString : String { self.rawValue }
 
-    /// Provides a String for each realtime entity type case.
+    /// Provides a detailed String for each realtime entity type case.
     var asString: String {
         switch self {
             case .vehiclePositions : return "Vehicle Positions"
@@ -62,6 +62,19 @@ enum RealtimeEntityType : String {
 
 // MARK: - STRUCTS
 
+/// A structure that defines column indices for mobility data processing.
+///
+/// This struct provides a set of static constants representing column positions in a data structure,
+/// likely used for handling mobility or transportation-related information. Each constant maps to a specific
+/// zero-based index position in the underlying data.
+///
+/// Column Structure:
+/// - 0-5: Basic error and metadata fields
+/// - 6-10: Geographic and location information
+/// - 11-14: Authentication and licensing details
+/// - 15-18: Additional metadata and status information
+///
+/// - Note: The structure maintains a fixed count of 19 columns (0-18)
 struct column {
     static let  fourZeroThreeClientError : Int = 0 // A
     static let  timestamp                : Int = 1 // B
@@ -87,6 +100,18 @@ struct column {
     static var count                     : Int { return 19 }
 }
 
+/// A structure representing a mobility data feed entry.
+///
+/// This struct encapsulates all properties of a single feed, including
+/// metadata, geographic information, authentication details, and status information.
+/// It serves as a comprehensive data model for storing and managing mobility feed data.
+///
+/// The properties are organized into several logical groups:
+/// - Basic metadata (timestamp, provider)
+/// - Data classification (dataType, issueType)
+/// - Geographic information (country, subdivisionName, municipality)
+/// - Authentication and licensing (licenseURL, authenticationType, authenticationInfoURL)
+/// - Status and contact information (status, dataProducerEmail)
 struct feed {
     var fourZeroThreeClientError : String // we ignore this column
     var timestamp                : String
@@ -583,12 +608,12 @@ func isURLPresent(in string: String) -> Bool {
 /// This function assumes `everyPythonScriptFunctionsParameterNames` is a constant containing a list of valid Python script function parameter names.
 ///   - Modifications to the original string are done on a copy to avoid unintended side effects.
 func removeEmptyPythonParameters(in outputString: String) -> String {
+    
     let everyPythonScriptFunctionsParameterNames: [String] = [
         "provider=", "entity_type=", "country_code=", "authentication_type=", "authentication_info_url=", "api_key_parameter_name=", "subdivision_name=",
         "municipality=", "license_url=", "name=", "status=", "features=", "note=", "feed_contact_email=", "redirects="
     ]
     
-
     return everyPythonScriptFunctionsParameterNames.reduce(outputString) { result, parameter in
         let firstPass  : String = ", \(parameter)\(defaults.doubleQuotes)"
         let secondPass : String = "\(parameter)\(defaults.doubleQuotes), "

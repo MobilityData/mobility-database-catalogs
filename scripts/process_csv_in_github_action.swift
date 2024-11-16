@@ -6,13 +6,24 @@ import Foundation
 // MARK: - DEFAULTS
 
 struct defaults {
-    static let date                      : String = "01/01/1970"
-    static let toBeProvided              : String = "TO_BE_PROVIDED"
-    static let emptyValue                : String = "\"\""
-    static let emptyValueRaw             : String = ""
-    static let csvLineSeparator          : String = "\n"
-    static let csvColumnSeparator        : String = ","
-    static let doubleQuotes              : String = "\"\"\"\""
+    static let date               : String = "01/01/1970"
+    static let toBeProvided       : String = "TO_BE_PROVIDED"
+    static let emptyValue         : String = "\"\""
+    static let emptyValueRaw      : String = ""
+    static let csvLineSeparator   : String = "\n"
+    static let csvColumnSeparator : String = ","
+    static let newline            : String = "\n"
+    static let comma              : String = ","
+    static let singleQuote        : String = "'"
+    static let apostrophe         : String = "ʼ"
+    static let doubleQuotes       : String = "\"\"\"\""
+    static let finalOutputDivider : String = "§"
+
+    static let httpAddressPattern : String = #"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)"#
+    static let everyPythonScriptFunctionsParameterNames: [String] = [
+        "provider=", "entity_type=", "country_code=", "authentication_type=", "authentication_info_url=", "api_key_parameter_name=", "subdivision_name=",
+        "municipality=", "license_url=", "name=", "status=", "features=", "note=", "feed_contact_email=", "redirects="
+    ]
 }
 
 // MARK: - ENUMS
@@ -167,18 +178,18 @@ struct feed {
 
 // MARK: - MAIN
 
-let args : [String] = CommandLine.arguments // this is for using inside the GitHub workflow only.
-// let args : [String] = [ // this is for local testing purposes only.
-//     "scriptname", 
-//     "https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/gviz/tq?tqx=out:csv;outFileName:data&sheet=%5BCLEANED%5D%20For%20import", 
-//     "11/11/2024", 
-//     "[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}|[0-9]{4}-[0-9]{2}-[0-9]{2}", 
-//     "MM/dd/yyyy"
-// ]
+// let args : [String] = CommandLine.arguments // this is for using inside the GitHub workflow only.
+let args : [String] = [ // this is for local testing purposes only.
+    "scriptname", 
+    "https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/gviz/tq?tqx=out:csv;outFileName:data&sheet=%5BCLEANED%5D%20For%20import&range=A2:S", 
+    "11/11/2024", 
+    "[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}|[0-9]{4}-[0-9]{2}-[0-9]{2}", 
+    "MM/dd/yyyy"
+]
 // Google Sheet: https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit?gid=2061813733#gid=2061813733
 
 // Set to false for production use
-let isInDebugMode : Bool = false
+let isInDebugMode : Bool = true
 
 if args.count == 5 {
     
@@ -193,20 +204,18 @@ if args.count == 5 {
     }
 
     let csvData  :  String  = try String(contentsOf: csvURLasURL, encoding:.utf8)
-    var csvLines : [String] = csvData.components(separatedBy: defaults.csvLineSeparator) ; csvLines.removeFirst(1)
+    let csvLines : [String] = csvData.components(separatedBy: defaults.csvLineSeparator)
     let csvArray : [feed]   = parseCSV(csvLines: csvLines, columnSeparator: defaults.csvColumnSeparator, dateFormatRegex: dateFormatGREPArg, dateFormatDesired: dateFormatDesiredArg)
 
-    if isInDebugMode { print("\n\n\t\tcsvArray contains (\(csvArray.count) item(s)) :\n\n") }
+    if isInDebugMode { print("\n\t\tTotal number of feeds parsed from the CSV: \(csvArray.count)\n\n\t\t---\n") }
     if isInDebugMode { let allDescriptions : String = csvArray.map { $0.description }.joined(separator: "\n\n\t\t---\n\n") ; print("\(allDescriptions)\n") }
+    if isInDebugMode { print("\t\t---\n\n\t\tCreating Python commands...\n") }
     
     var PYTHON_SCRIPT_OUTPUT : String = ""
 
     for currentFeed : feed in csvArray {
 
         var PYTHON_SCRIPT_ARGS_TEMP : String = ""
-        if isInDebugMode { print("\n\n\t\tcolumn count / all cases count : \(currentFeed) / \(column.count)\n\t\tissue    : \(currentFeed.issueType.asString)\n\t\tdatatype : \(currentFeed.dataType.asString)") }
-        if isInDebugMode { print("\t\tredirects : \(currentFeed.redirects)") }
-        if isInDebugMode { print("\t\tdownload URL || licence URL : \(currentFeed.downloadURL) || \(currentFeed.licenseURL)") }
 
         if currentFeed.issueType == IssueType.isAddNewFeed {
 
@@ -233,9 +242,11 @@ if args.count == 5 {
 
             } else if currentFeed.dataType == DataType.realtime {  // add_gtfs_realtime_source
                 
+                let entityTypeString : String = "\"[\"\(currentFeed.realtimeCode().joined(separator: "\", \""))\"]\""
+
                 PYTHON_SCRIPT_ARGS_TEMP = """
                 add_gtfs_realtime_source(
-                entity_type=[\"\(currentFeed.realtimeCode().joined(separator:"\", \""))\"], 
+                entity_type=[\"\(entityTypeString)\"], 
                 provider=\"\(currentFeed.provider)\", 
                 direct_download_url=\"\(currentFeed.downloadURL)\", 
                 authentication_type=\(currentFeed.authenticationType), 
@@ -274,10 +285,12 @@ if args.count == 5 {
 
             } else if currentFeed.dataType == DataType.realtime {  // update_gtfs_realtime_source
                 
+                let entityTypeString : String = "\"[\"\(currentFeed.realtimeCode().joined(separator: "\", \""))\"]\""
+                
                 PYTHON_SCRIPT_ARGS_TEMP = """
                 update_gtfs_realtime_source(
                 mdb_source_id=\(currentFeed.oldMobilityDatabaseID), 
-                entity_type=[\"\(currentFeed.realtimeCode().joined(separator:"\", \""))\"], 
+                entity_type=[\"\(entityTypeString)\"], 
                 provider=\"\(currentFeed.provider)\", 
                 authentication_type=\(currentFeed.authenticationType), 
                 authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
@@ -315,11 +328,13 @@ if args.count == 5 {
 
 
             } else if currentFeed.dataType == DataType.realtime {  // update_gtfs_realtime_source
+                
+                let entityTypeString : String = "\"[\"\(currentFeed.realtimeCode().joined(separator: "\", \""))\"]\""
 
                 PYTHON_SCRIPT_ARGS_TEMP = """
                 update_gtfs_realtime_source(
                 mdb_source_id=\(currentFeed.oldMobilityDatabaseID), 
-                entity_type=\"[\(currentFeed.realtimeCode().joined(separator:"\", \""))]\", 
+                entity_type=\"[\(entityTypeString)]\", 
                 provider=\"\(currentFeed.provider)\", 
                 authentication_type=\(currentFeed.authenticationType), 
                 authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
@@ -357,10 +372,12 @@ if args.count == 5 {
                 """
 
             } else if currentFeed.dataType == DataType.realtime {  // add_gtfs_realtime_source
+                
+                let entityTypeString : String = "\"[\"\(currentFeed.realtimeCode().joined(separator: "\", \""))\"]\""
 
                 PYTHON_SCRIPT_ARGS_TEMP = """
                 add_gtfs_realtime_source(
-                entity_type=\"[\(currentFeed.realtimeCode().joined(separator:"\", \""))]\", 
+                entity_type=\"[\(entityTypeString)]\", 
                 provider=\"\(currentFeed.provider)\", 
                 direct_download_url=\"\(currentFeed.downloadURL)\", 
                 authentication_type=\(currentFeed.authenticationType), 
@@ -379,28 +396,27 @@ if args.count == 5 {
         }
 
         // Let's remove the added newline characters
-        PYTHON_SCRIPT_ARGS_TEMP = PYTHON_SCRIPT_ARGS_TEMP.replacingOccurrences(of: "\n", with: "")
+        PYTHON_SCRIPT_ARGS_TEMP = PYTHON_SCRIPT_ARGS_TEMP.replacingOccurrences(of: defaults.newline, with: "")
         
-        if isInDebugMode { print("\n\t\tPython script arg TEMP : \(PYTHON_SCRIPT_ARGS_TEMP)")}
+        if isInDebugMode { print("\t\tResulting Python command :\n\t\t\(PYTHON_SCRIPT_ARGS_TEMP)\n")}
         
-        if PYTHON_SCRIPT_ARGS_TEMP.count > 0 { PYTHON_SCRIPT_OUTPUT = ( PYTHON_SCRIPT_OUTPUT + "§" + PYTHON_SCRIPT_ARGS_TEMP ) }
+        if !PYTHON_SCRIPT_ARGS_TEMP.isEmpty { PYTHON_SCRIPT_OUTPUT += (PYTHON_SCRIPT_OUTPUT.isEmpty ? "" : defaults.finalOutputDivider) + PYTHON_SCRIPT_ARGS_TEMP }
         
     } // END FOR LOOP
 
     // Replace single quotes (like in McGill's) with an apostrophe so there is no interference with the bash script in the next step.
-    PYTHON_SCRIPT_OUTPUT = PYTHON_SCRIPT_OUTPUT.replacingOccurrences(of: "'", with: "ʼ")
+    PYTHON_SCRIPT_OUTPUT = PYTHON_SCRIPT_OUTPUT.replacingOccurrences(of: defaults.singleQuote, with: defaults.apostrophe)
     // Note: do not try to fix the ouput of multiple quotes (ex.: """") as it will break the python script.
     
     // Remove empty parameters from script output
     PYTHON_SCRIPT_OUTPUT = removeEmptyPythonParameters(in: PYTHON_SCRIPT_OUTPUT)
     
-    // return final output so the action can grab it and pass it on to the Python script.
-    if isInDebugMode { print("\n\nFINAL OUTPUT:\n\n") }
-    print(PYTHON_SCRIPT_OUTPUT.dropFirst())
+    // Print the final output in a readable format for debugging or in plain format for the Python script to process.
+    if isInDebugMode { print("\n\nFINAL OUTPUT:\n\n" + prettyPrintPythonCommands(input: PYTHON_SCRIPT_OUTPUT))} else { print(PYTHON_SCRIPT_OUTPUT) }
     
 } else {
     print("Incorrect number of arguments provided to the script. Expected 4: a string with the URL, the date to find, a date format and the date format desired.")
-    exit(1)
+    exit(1) // terminate script
 }
 
 // MARK: - FUNCTIONS
@@ -414,24 +430,31 @@ if args.count == 5 {
 /// - Returns: An array of `feed` instances constructed from the CSV data.
 func parseCSV(csvLines: [String], columnSeparator: String, dateFormatRegex: String, dateFormatDesired: String) -> [feed] {
 
-    if isInDebugMode { print("\nprocessing CSV Array column...") }
+    if isInDebugMode { print("\n\t\tProcessing CSV Array column...\n") }
 
     var feeds: [feed] = []
     var lastKnownProvider : String = defaults.toBeProvided
     let dateFormatAsRegex: Regex<AnyRegexOutput>? = try? Regex(dateFormatRegex)
+    var counter : Int = 1
     
     for line: String in csvLines {
 
         // Separate the columns and verify there's enough columns to proceed
         let csvArrayColumn : [String] = line.components(separatedBy: columnSeparator)
-        guard csvArrayColumn.count >= column.count else { continue } // Ensure there are enough columns
+        if isInDebugMode { print("\t\t\t- Column count for item \(counter) : \(csvArrayColumn.count)") }
+        guard csvArrayColumn.count >= column.count else {
+            print("Error: Insufficient number of columns. Expected at least \(column.count), but got \(csvArrayColumn.count).")
+            exit(1) // terminate the script
+        }
 
         // Get issue and data types
         let issueTypeValue : IssueType = issueType(for: csvArrayColumn[column.issueType].trimmingCharacters(in: .whitespacesAndNewlines))
         let dataTypeValue  : DataType  = dataType(for: csvArrayColumn[column.datatype].count < 3 ? RealtimeEntityType.empty.asString : csvArrayColumn[column.datatype])
 
         // Format timestamp properly
-        let timestampFormatted : String = extractDate(from: csvArrayColumn[column.timestamp].trimmingCharacters(in: .whitespacesAndNewlines), usingGREP: dateFormatAsRegex!, desiredDateFormat: dateFormatDesired)
+        let timestampFormatted : String = extractDate(from: csvArrayColumn[column.timestamp].trimmingCharacters(in: .whitespacesAndNewlines), 
+                                                      usingGREP: dateFormatAsRegex!, 
+                                                      desiredDateFormat: dateFormatDesired)
 
         // Check if provider is empty, suggest last known if true.
         var provider: String = csvArrayColumn[column.provider].trimmingCharacters(in: .whitespacesAndNewlines)
@@ -472,6 +495,7 @@ func parseCSV(csvLines: [String], columnSeparator: String, dateFormatRegex: Stri
         )
         
         feeds.append(newFeed)
+        counter += 1
     }
     
     return feeds
@@ -555,7 +579,7 @@ func redirectArray(for rawData: String) -> String {
 
     // Transform each `currentString` in `rawDataAsArray` with `map` and join them in one step
     let redirectEntries : String = rawData
-        .components(separatedBy: ",")
+        .components(separatedBy: defaults.comma)
         .map { prefix + $0 + suffix }
         .joined(separator: keyValuePairsJoiner)
 
@@ -586,8 +610,7 @@ func authenticationType(for authString: String) -> Int {
 ///   - Domain name with alphanumeric characters, parentheses, and periods (up to 6 characters)
 ///   - Optional path and query string components
 func isURLPresent(in string: String) -> Bool {
-    let pattern : String = #"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)"#
-    let range: Range<String.Index>? = string.range(of: pattern, options: .regularExpression)
+    let range: Range<String.Index>? = string.range(of: defaults.httpAddressPattern, options: .regularExpression)
     if range != nil { return true }
     return false
 }
@@ -595,8 +618,7 @@ func isURLPresent(in string: String) -> Bool {
 /// Removes empty parameter definitions from a Python script output string.
 ///
 /// - Parameter outputString: The string containing the Python script output.
-/// - Returns:
-///   A new string with empty parameter definitions removed. The original string remains unmodified.
+/// - Returns: A new string with empty parameter definitions removed. The original string remains unmodified.
 ///
 /// This function iterates through a predefined list of known Python script function parameter names (see `everyPythonScriptFunctionsParameterNames`).
 ///   - For each parameter name, it constructs two search strings:
@@ -608,13 +630,7 @@ func isURLPresent(in string: String) -> Bool {
 /// This function assumes `everyPythonScriptFunctionsParameterNames` is a constant containing a list of valid Python script function parameter names.
 ///   - Modifications to the original string are done on a copy to avoid unintended side effects.
 func removeEmptyPythonParameters(in outputString: String) -> String {
-    
-    let everyPythonScriptFunctionsParameterNames: [String] = [
-        "provider=", "entity_type=", "country_code=", "authentication_type=", "authentication_info_url=", "api_key_parameter_name=", "subdivision_name=",
-        "municipality=", "license_url=", "name=", "status=", "features=", "note=", "feed_contact_email=", "redirects="
-    ]
-    
-    return everyPythonScriptFunctionsParameterNames.reduce(outputString) { result, parameter in
+    return defaults.everyPythonScriptFunctionsParameterNames.reduce(outputString) { result, parameter in
         let firstPass  : String = ", \(parameter)\(defaults.doubleQuotes)"
         let secondPass : String = "\(parameter)\(defaults.doubleQuotes), "
         
@@ -622,6 +638,44 @@ func removeEmptyPythonParameters(in outputString: String) -> String {
             .replacingOccurrences(of: firstPass, with: "")
             .replacingOccurrences(of: secondPass, with: "")
     }
+}
+
+/// Formats a block of Python commands into a more readable format for debugging.
+/// 
+/// This function takes a string of Python commands separated by the `defaults.finalOutputDivider` character, formats each command by breaking its arguments onto new lines with tabs, and returns the resulting formatted string. Commands that don't match the expected pattern (e.g., missing parentheses) are returned unmodified.
+///
+/// - Parameter input: A string containing Python commands separated by the `defaults.finalOutputDivider` character.
+/// - Returns: A formatted string where each command is separated by two newlines, with arguments neatly displayed on individual lines.
+func prettyPrintPythonCommands(input: String) -> String {
+    
+    // Split the input into individual Python commands using the `defaults.finalOutputDivider` separator
+    let commands: [String] = input.components(separatedBy: defaults.finalOutputDivider)
+    
+    // Process each command
+    let formattedCommands: [String] = commands.map { command -> String in
+        // Find the arguments part of the command (inside parentheses)
+        guard let argsStartIndex: String.Index = command.firstIndex(of: "("),
+              let argsEndIndex: String.Index = command.lastIndex(of: ")") else { return command }
+        
+        // Extract the function name and arguments
+        let functionName: String.SubSequence = command[..<argsStartIndex]
+        let arguments: Substring = command[command.index(after: argsStartIndex)..<argsEndIndex]
+        
+        // Format arguments by splitting them with ',' and adding newlines + tabs
+        let formattedArguments: String = arguments
+            .components(separatedBy: defaults.comma)
+            .map { "\t\($0.trimmingCharacters(in: .whitespacesAndNewlines))" }
+            .joined(separator: defaults.comma + defaults.newline)
+        
+        // Rebuild the command with the formatted arguments
+        let formattedCommand = "\(functionName)(\n\(formattedArguments)\n)"
+        
+        // Fix the specific issue with comment formatting
+        return formattedCommand.replacingOccurrences(of: ",\n\t\"\"comment\": \"\"}]", with: ", \"\"comment\": \"\"}]")
+    }
+    
+    // Join all the formatted commands with two newlines
+    return formattedCommands.joined(separator: defaults.newline + defaults.newline)
 }
 
 // MARK: - EXTENSIONS
@@ -634,17 +688,24 @@ extension feed {
     var description: String {
         """
         \t\tFEED DETAILS:
-        \t\t- Timestamp : \(timestamp)
-        \t\t- Provider : \(provider)
-        \t\t- Data Type : \(dataType)
-        \t\t- Issue Type : \(issueType)
-        \t\t- Download URL : \(downloadURL)
-        \t\t- Country : \(country)
-        \t\t- Subdivision : \(subdivisionName)
-        \t\t- Municipality : \(municipality)
-        \t\t- Name : \(name)
-        \t\t- License URL : \(licenseURL)
-        \t\t- Status : \(status)
+        \t\t  - Timestamp :                 \(timestamp)
+        \t\t  - Provider :                  \(provider)
+        \t\t  - Old Mobility Database ID :  \(oldMobilityDatabaseID)
+        \t\t  - Data Type :                 \(dataType)
+        \t\t  - Issue Type :                \(issueType)
+        \t\t  - Download URL :              \(downloadURL)
+        \t\t  - Country :                   \(country)
+        \t\t  - Subdivision :               \(subdivisionName)
+        \t\t  - Municipality :              \(municipality)
+        \t\t  - Name :                      \(name)
+        \t\t  - License URL :               \(licenseURL)
+        \t\t  - Authentification type :     \(authenticationType)
+        \t\t  - Authentification Info URL : \(authenticationInfoURL)
+        \t\t  - Header or API key :         \(apiKeyParameterName)
+        \t\t  - Notes :                     \(note)
+        \t\t  - Status :                    \(status)
+        \t\t  = Redirects :                 \(redirects)
+        \t\t  = Data Producer Email :       \(dataProducerEmail)
         """
     }
 }

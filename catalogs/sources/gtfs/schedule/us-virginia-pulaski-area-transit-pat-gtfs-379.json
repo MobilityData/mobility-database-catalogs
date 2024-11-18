@@ -2,6 +2,7 @@
     "mdb_source_id": 379,
     "data_type": "gtfs",
     "provider": "Pulaski Area Transit (PAT)",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Virginia",
@@ -16,6 +17,13 @@
     },
     "urls": {
         "direct_download": "https://ridesolutions.org/gtfs/pulaski-va-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-pulaski-area-transit-pat-gtfs-379.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": 2198,
+            "comment": " "
+        }
+    ]
 }

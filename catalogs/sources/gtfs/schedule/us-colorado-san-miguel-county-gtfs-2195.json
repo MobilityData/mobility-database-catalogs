@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2195,
+    "data_type": "gtfs",
+    "provider": "San Miguel County",
+    "feed_contact_email": "support+test+sanmiguelcounty-co-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US ",
+        "subdivision_name": "Colorado ",
+        "municipality": "San Miguel County",
+        "bounding_box": {
+            "minimum_latitude": 37.692905,
+            "maximum_latitude": 38.27155472301746,
+            "minimum_longitude": -108.56765337629108,
+            "maximum_longitude": -107.80002,
+            "extracted_on": "2024-11-18T18:34:39+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/sanmiguelcounty-co-us/sanmiguelcounty-co-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-san-miguel-county-gtfs-2195.zip?alt=media"
+    },
+    "redirect": []
+}

@@ -6,7 +6,7 @@
     "features": [
         "fares-v1"
     ],
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Washington",
@@ -23,5 +23,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-makah-public-transit-gtfs-574.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": 2196,
+            "comment": " "
+        }
+    ]
 }

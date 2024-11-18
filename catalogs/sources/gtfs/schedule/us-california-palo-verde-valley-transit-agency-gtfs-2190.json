@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2190,
+    "data_type": "gtfs",
+    "provider": "Palo Verde Valley Transit Agency",
+    "feed_contact_email": "support+test+paloverde-valley-ca-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Palo Verde Valley",
+        "bounding_box": {
+            "minimum_latitude": 33.521321,
+            "maximum_latitude": 33.83888769,
+            "minimum_longitude": -116.5437887,
+            "maximum_longitude": -114.517118,
+            "extracted_on": "2024-11-18T18:34:36+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/paloverde-valley-ca-us/paloverde-valley-ca-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-palo-verde-valley-transit-agency-gtfs-2190.zip?alt=media"
+    },
+    "redirect": []
+}

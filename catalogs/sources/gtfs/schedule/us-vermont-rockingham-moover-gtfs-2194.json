@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2194,
+    "data_type": "gtfs",
+    "provider": "Rockingham MOOver",
+    "feed_contact_email": "support+test+sevt-vt-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Vermont",
+        "bounding_box": {
+            "minimum_latitude": 42.7664048,
+            "maximum_latitude": 43.704185,
+            "minimum_longitude": -73.19800976057434,
+            "maximum_longitude": -72.227364677934,
+            "extracted_on": "2024-11-18T18:34:38+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/sevt-vt-us/sevt-vt-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-vermont-rockingham-moover-gtfs-2194.zip?alt=media"
+    },
+    "redirect": []
+}

@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2192,
+    "data_type": "gtfs",
+    "provider": "Bloom Bus ",
+    "feed_contact_email": "support+test+bloombus-ma-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Massachusetts",
+        "bounding_box": {
+            "minimum_latitude": 41.90106,
+            "maximum_latitude": 42.350799,
+            "minimum_longitude": -71.10096,
+            "maximum_longitude": -71.0487245387211,
+            "extracted_on": "2024-11-18T18:34:37+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/bloombus-ma-us/bloombus-ma-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-bloom-bus-gtfs-2192.zip?alt=media"
+    },
+    "redirect": []
+}

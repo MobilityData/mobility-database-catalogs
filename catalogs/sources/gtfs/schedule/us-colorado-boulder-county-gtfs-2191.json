@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2191,
+    "data_type": "gtfs",
+    "provider": "Boulder County ",
+    "feed_contact_email": "support+test+viamobilityservices-co-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Boulder",
+        "bounding_box": {
+            "minimum_latitude": 39.72608370047456,
+            "maximum_latitude": 40.378722,
+            "minimum_longitude": -105.594805,
+            "maximum_longitude": -104.60716572224403,
+            "extracted_on": "2024-11-18T18:34:37+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/viamobilityservices-co-us/viamobilityservices-co-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-boulder-county-gtfs-2191.zip?alt=media"
+    },
+    "redirect": []
+}

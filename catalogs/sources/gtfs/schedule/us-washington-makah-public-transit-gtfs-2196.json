@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2196,
+    "data_type": "gtfs",
+    "provider": "Makah Public Transit",
+    "feed_contact_email": "support+test+makah-wa-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US ",
+        "subdivision_name": "Washington",
+        "municipality": "Makah",
+        "bounding_box": {
+            "minimum_latitude": 48.34591761637561,
+            "maximum_latitude": 48.370968573799466,
+            "minimum_longitude": -124.67263423801302,
+            "maximum_longitude": -124.58248303382533,
+            "extracted_on": "2024-11-18T18:34:39+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/makah-wa-us/makah-wa-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-makah-public-transit-gtfs-2196.zip?alt=media"
+    },
+    "redirect": []
+}

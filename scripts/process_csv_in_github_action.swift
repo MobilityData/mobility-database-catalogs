@@ -180,12 +180,9 @@ struct feed {
 
 
 func isRunningInGHActions() -> Bool {
-    let gh: String? = ProcessInfo.processInfo.environment["GITHUB_ACTIONS"]
-    print(gh!)
     let isGitHubActions : Bool = ProcessInfo.processInfo.environment["GITHUB_ACTIONS"]?.lowercased() == "true"
     
     if isGitHubActions {
-        // print("Running inside GitHub Actions.")
         return true
     } else {
         #if os(macOS)
@@ -202,13 +199,15 @@ func isRunningInGHActions() -> Bool {
 }
 
 var args : [String] = [""]
-// Set to false for production use
 var isInDebugMode : Bool = false
 if isRunningInGHActions() {
-    args = CommandLine.arguments // this is for using inside the GitHub workflow only.
+    // this is for using inside the GitHub workflow only.
+    print("Running inside GitHub Actions.")
+    args = CommandLine.arguments
 } else {
-    args = [ // this is for local testing purposes only.
-        "scriptname", 
+    // this is for local testing purposes only.
+    // print("Running locally.")
+    args = ["scriptname", 
         "https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/gviz/tq?tqx=out:csv;outFileName:data&sheet=%5BCLEANED%5D%20For%20import&range=A2:S", 
         "11/11/2024", 
         "[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}|[0-9]{4}-[0-9]{2}-[0-9]{2}", 

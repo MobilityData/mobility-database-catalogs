@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Boulder County",
     "feed_contact_email": "support+test+bouldercounty-co-us@trilliumtransit.com",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Colorado",
@@ -20,5 +21,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-boulder-county-gtfs-880.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": 2191,
+            "comment": " "
+        }
+    ]
 }

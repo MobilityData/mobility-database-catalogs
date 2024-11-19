@@ -178,6 +178,27 @@ struct feed {
 
 // MARK: - MAIN
 
+
+func detectEnvironment() {
+    let isGitHubActions : Bool = ProcessInfo.processInfo.environment["GITHUB_ACTIONS"]?.lowercased() == "true"
+    
+    if isGitHubActions {
+        print("Running inside GitHub Actions.")
+    } else {
+        #if os(macOS)
+            print("Running locally on macOS.")
+        #elseif os(Linux)
+            print("Running locally on Linux.")
+        #elseif os(Windows)
+            print("Running locally on Windows.")
+        #else
+            print("Running locally on an unknown operating system.")
+        #endif
+    }
+}
+
+detectEnvironment()
+
 let args : [String] = CommandLine.arguments // this is for using inside the GitHub workflow only.
 // let args : [String] = [ // this is for local testing purposes only.
 //     "scriptname", 

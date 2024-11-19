@@ -17,8 +17,11 @@ env:
     REVIEWERS_JSON: "[\"emmambd\"]" # List of GitHub usernames of the reviewers, in a JSON array : ["username1", "username2"]
 
 jobs:
-  add-new-updated-feeds:
-    runs-on: ubuntu-latest
+  process-csv-on-macos:
+    runs-on: macos-14 # macOS 15 runs Swift 6 which makes concurrency mandatory and this script isn't modified for that
+    outputs:
+      python_script_args: ${{ steps.process-csv.outputs.PYTHON_SCRIPT_ARGS }}
+      number_of_feeds: ${{ steps.process-csv.outputs.NUMBER_OF_FEEDS }}
     steps:
       - name: Setup global variables
         id: global_vars
@@ -71,18 +74,45 @@ jobs:
             echo "PYTHON_SCRIPT_ARGS=${OUTPUT}" >> $GITHUB_OUTPUT
             
             # Count the number of feeds in the output
-            COUNT=$(echo "$input_string" | grep -o '§' | wc -l)
+            COUNT=$(echo "$OUTPUT" | grep -o '§' | wc -l)
             COUNT=$((COUNT + 1))
             echo "NUMBER_OF_FEEDS=${COUNT}" >> $GITHUB_OUTPUT
 
+  process-feeds-on-ubuntu:
+    needs: process-csv-on-macos
+    if: needs.process-csv-on-macos.outputs.PYTHON_SCRIPT_ARGS != ''
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup global variables
+        id: global_vars
+        run: |
+            echo "TODAYS_DATE=$(date +%m/%d/%Y)" >> $GITHUB_ENV
+            echo "TODAYS_DAY=$(date '+%d')" >> $GITHUB_ENV
+            echo "TODAYS_MONTH=$(date '+%m')" >> $GITHUB_ENV
+            echo "TODAYS_YEAR=$(date '+%Y')" >> $GITHUB_ENV
+            echo "RUN_ID=$GITHUB_RUN_ID" >> $GITHUB_ENV 
+
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+            ref: ${{ env.BASE }}
+            fetch-depth: 0
+            token: ${{ env.CREDENTIALS }}
+
+      - name: Create new branch
+        shell: bash
+        run: |
+            git pull
+            git checkout -b ${{ env.TODAYS_YEAR }}-${{ env.TODAYS_MONTH }}-${{ env.TODAYS_DAY }}-SOURCES
+            git reset --hard ${{ env.BASE }}
+            git clean -df
+
       - name: Setup Python
-        if: steps.process-csv.outputs.PYTHON_SCRIPT_ARGS != ''
         uses: actions/setup-python@v5
         with:
           python-version: '3.11' # install the python version needed
 
       - name: Create + activate a Python virtual env & run script
-        if: steps.process-csv.outputs.PYTHON_SCRIPT_ARGS != ''
         env:
           PYTHONPATH: ${{ github.workspace }}/tools
           PYTHONIOENCODING: "utf8" #ascii
@@ -96,40 +126,32 @@ jobs:
             pip install virtualenv --quiet
             pip install gtfs_kit --quiet
             pip install unidecode --quiet
-
             echo "BEGIN"
-
-            sections=$(echo '${{ steps.process-csv.outputs.PYTHON_SCRIPT_ARGS }}' | sed 's/""/"/g' | sed "s/’/'/g" | awk -F'§' '{for (i=1; i<=NF; i++) print $i}')
-            set -x # this should force GitHub to output every echo commands
+            sections=$(echo '${{ needs.process-csv-on-macos.outputs.PYTHON_SCRIPT_ARGS }}' | sed 's/""/"/g' | sed "s/'/'/g" | awk -F'§' '{for (i=1; i<=NF; i++) print $i}')
+            set -x
             for section in "${sections[@]}"; do
                 echo "processing line: ${section}"
                 output=$(eval "python -c 'from tools.operations import *; ${section}'")
                 echo "$output"
             done
             set +x
-
             echo "DONE"
             git status
 
       - name: Commit, push, and create PR
         id: commit-push-create-pr
-        if: steps.process-csv.outputs.PYTHON_SCRIPT_ARGS != ''
         run: |
-          BRANCH_NAME=${{ steps.create_branch_name.outputs.BRANCH }}
-
+          BRANCH_NAME=$(date +'%Y-%m-%d')-SOURCES
           # Fetch the latest changes from main
           git fetch origin main
-
           # Create or reset the branch to the current main
           git checkout -B "$BRANCH_NAME" origin/main
-
           # Configure git
           git config --global user.name "${{ env.USERNAME }}"
           git config --global user.email "${{ env.USERNAME_EMAIL }}"
           
           # Add changes
           git add .
-
           # Count new files
           NEW_FILE_COUNT=$(git status --porcelain | grep -c "^A")
           
@@ -162,7 +184,7 @@ jobs:
         shell: bash
 
       - name: Post notification in Slack channel of update
-        if: success() && steps.commit-push.outcome == 'success'
+        if: success() && steps.commit-push-create-pr.outcome == 'success'
         uses: slackapi/slack-github-action@v1.26.0
         with:
           payload: |

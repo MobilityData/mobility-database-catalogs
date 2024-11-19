@@ -178,35 +178,16 @@ struct feed {
 
 // MARK: - MAIN
 
-
-func isRunningInGHActions() -> Bool {
-    let isGitHubActions : Bool = ProcessInfo.processInfo.environment["GITHUB_ACTIONS"]?.lowercased() == "true"
-    
-    if isGitHubActions {
-        return true
-    } else {
-        #if os(macOS)
-            print("Running locally on macOS.")
-        #elseif os(Linux)
-            print("Running locally on Linux.")
-        #elseif os(Windows)
-            print("Running locally on Windows.")
-        #else
-            print("Running locally on an unknown operating system.")
-        #endif
-        return false
-    }
-}
-
 var args : [String] = [""]
 var isInDebugMode : Bool = false
-if isRunningInGHActions() {
+
+if CommandLine.arguments.count == 5 {
     // this is for using inside the GitHub workflow only.
     print("Running inside GitHub Actions.")
     args = CommandLine.arguments
 } else {
     // this is for local testing purposes only.
-    // print("Running locally.")
+    print("Running locally.")
     args = ["scriptname", 
         "https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/gviz/tq?tqx=out:csv;outFileName:data&sheet=%5BCLEANED%5D%20For%20import&range=A2:S", 
         "11/11/2024", 

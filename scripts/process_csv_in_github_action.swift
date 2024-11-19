@@ -179,7 +179,7 @@ struct feed {
 // MARK: - MAIN
 
 var args : [String] = [""]
-var isInDebugMode : Bool = false
+var isInDebugMode : Bool = true
 
 if CommandLine.arguments.count == 5 {
     // this is for using inside the GitHub workflow only.

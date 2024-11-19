@@ -180,6 +180,8 @@ struct feed {
 
 
 func isRunningInGHActions() -> Bool {
+    let gh: String? = ProcessInfo.processInfo.environment["GITHUB_ACTIONS"]
+    print(gh!)
     let isGitHubActions : Bool = ProcessInfo.processInfo.environment["GITHUB_ACTIONS"]?.lowercased() == "true"
     
     if isGitHubActions {

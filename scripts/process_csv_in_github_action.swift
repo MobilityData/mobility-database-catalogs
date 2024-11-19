@@ -179,11 +179,12 @@ struct feed {
 // MARK: - MAIN
 
 
-func detectEnvironment() {
+func isRunningInGHActions() -> Bool {
     let isGitHubActions : Bool = ProcessInfo.processInfo.environment["GITHUB_ACTIONS"]?.lowercased() == "true"
     
     if isGitHubActions {
-        print("Running inside GitHub Actions.")
+        // print("Running inside GitHub Actions.")
+        return true
     } else {
         #if os(macOS)
             print("Running locally on macOS.")
@@ -194,23 +195,27 @@ func detectEnvironment() {
         #else
             print("Running locally on an unknown operating system.")
         #endif
+        return false
     }
 }
 
-detectEnvironment()
-
-let args : [String] = CommandLine.arguments // this is for using inside the GitHub workflow only.
-// let args : [String] = [ // this is for local testing purposes only.
-//     "scriptname", 
-//     "https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/gviz/tq?tqx=out:csv;outFileName:data&sheet=%5BCLEANED%5D%20For%20import&range=A2:S", 
-//     "11/11/2024", 
-//     "[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}|[0-9]{4}-[0-9]{2}-[0-9]{2}", 
-//     "MM/dd/yyyy"
-// ]
+var args : [String] = [""]
+// Set to false for production use
+var isInDebugMode : Bool = false
+if isRunningInGHActions() {
+    args = CommandLine.arguments // this is for using inside the GitHub workflow only.
+} else {
+    args = [ // this is for local testing purposes only.
+        "scriptname", 
+        "https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/gviz/tq?tqx=out:csv;outFileName:data&sheet=%5BCLEANED%5D%20For%20import&range=A2:S", 
+        "11/11/2024", 
+        "[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}|[0-9]{4}-[0-9]{2}-[0-9]{2}", 
+        "MM/dd/yyyy"
+    ]
+    isInDebugMode = true
+}
 // Google Sheet: https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit?gid=2061813733#gid=2061813733
 
-// Set to false for production use
-let isInDebugMode : Bool = false
 
 if args.count == 5 {
     

@@ -178,18 +178,26 @@ struct feed {
 
 // MARK: - MAIN
 
-let args : [String] = CommandLine.arguments // this is for using inside the GitHub workflow only.
-// let args : [String] = [ // this is for local testing purposes only.
-//     "scriptname", 
-//     "https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/gviz/tq?tqx=out:csv;outFileName:data&sheet=%5BCLEANED%5D%20For%20import&range=A2:S", 
-//     "11/11/2024", 
-//     "[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}|[0-9]{4}-[0-9]{2}-[0-9]{2}", 
-//     "MM/dd/yyyy"
-// ]
+var args : [String] = [""]
+var isInDebugMode : Bool = true
+
+if CommandLine.arguments.count == 5 {
+    // this is for using inside the GitHub workflow only.
+    print("Running inside GitHub Actions.")
+    args = CommandLine.arguments
+} else {
+    // this is for local testing purposes only.
+    print("Running locally.")
+    args = ["scriptname", 
+        "https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/gviz/tq?tqx=out:csv;outFileName:data&sheet=%5BCLEANED%5D%20For%20import&range=A2:S", 
+        "11/11/2024", 
+        "[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}|[0-9]{4}-[0-9]{2}-[0-9]{2}", 
+        "MM/dd/yyyy"
+    ]
+    isInDebugMode = true
+}
 // Google Sheet: https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit?gid=2061813733#gid=2061813733
 
-// Set to false for production use
-let isInDebugMode : Bool = false
 
 if args.count == 5 {
     
@@ -490,7 +498,7 @@ func parseCSV(csvLines: [String], columnSeparator: String, dateFormatRegex: Stri
             apiKeyParameterName         : csvArrayColumn[column.api_key_parameter_name].trimmingCharacters(in: .whitespacesAndNewlines),
             note                        : csvArrayColumn[column.note].trimmingCharacters(in: .whitespacesAndNewlines),
             status                      : csvArrayColumn[column.status].trimmingCharacters(in: .whitespacesAndNewlines),
-            redirects                   : redirectArray(for: csvArrayColumn[column.redirects].trimmingCharacters(in: .whitespacesAndNewlines).trimmingCharacters(in: .escapedDoubleQuote)),
+            redirects                   : redirectArray(for: csvArrayColumn[column.redirects]),
             dataProducerEmail           : csvArrayColumn[column.dataproduceremail].trimmingCharacters(in: .whitespacesAndNewlines)
         )
         
@@ -573,11 +581,10 @@ func redirectArray(for rawData: String) -> String {
 
     let openingPrefix       : String = ", redirects=["
     let closingSuffix       : String = "]"
-    let prefix              : String = "{\"\"id\"\": "
-    let suffix              : String = ", \"\"comment\"\": \"\"}"
+    let prefix             : String = "{\"\"id\"\": "
+    let suffix             : String = ", \"\"comment\"\": \"\" \"\"}"
     let keyValuePairsJoiner : String = ", "
 
-    // Transform each `currentString` in `rawDataAsArray` with `map` and join them in one step
     let redirectEntries : String = rawData
         .components(separatedBy: defaults.comma)
         .map { prefix + $0 + suffix }
@@ -668,10 +675,10 @@ func prettyPrintPythonCommands(input: String) -> String {
             .joined(separator: defaults.comma + defaults.newline)
         
         // Rebuild the command with the formatted arguments
-        let formattedCommand = "\(functionName)(\n\(formattedArguments)\n)"
+        let formattedCommand : String = "\(functionName)(\n\(formattedArguments)\n)"
         
         // Fix the specific issue with comment formatting
-        return formattedCommand.replacingOccurrences(of: ",\n\t\"\"comment\": \"\"}]", with: ", \"\"comment\": \"\"}]")
+        return formattedCommand //.replacingOccurrences(of: ",\n\t\"\"comment\": \"\"}]", with: ", \"\"comment\": \"\"}]")
     }
     
     // Join all the formatted commands with two newlines

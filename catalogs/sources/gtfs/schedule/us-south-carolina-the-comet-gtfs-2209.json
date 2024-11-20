@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2209,
+    "data_type": "gtfs",
+    "provider": "The Comet",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "South Carolina",
+        "municipality": "Columbia",
+        "bounding_box": {
+            "minimum_latitude": 33.837168,
+            "maximum_latitude": 34.158724,
+            "minimum_longitude": -81.172287,
+            "maximum_longitude": -80.339359,
+            "extracted_on": "2024-11-20T10:34:37+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://comet.mapstrat.com/current/google_transit.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-south-carolina-the-comet-gtfs-2209.zip?alt=media"
+    },
+    "redirect": []
+}

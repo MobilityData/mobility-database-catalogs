@@ -96,19 +96,19 @@ jobs:
             pip install virtualenv --quiet
             pip install gtfs_kit --quiet
             pip install unidecode --quiet
-
-            echo "BEGIN"
+            echo "DONE VIRTUAL ENV && SETUP PIP"
+            echo -e "\n\n"
+            echo "BEGIN SEND COMMAND TO PYTHON"
 
             sections=$(echo '${{ steps.process-csv.outputs.PYTHON_SCRIPT_ARGS }}' | sed 's/""/"/g' | sed "s/’/'/g" | awk -F'§' '{for (i=1; i<=NF; i++) print $i}')
-            set -x # this should force GitHub to output every echo commands
             for section in "${sections[@]}"; do
                 echo "processing line: ${section}"
                 output=$(eval "python -c 'from tools.operations import *; ${section}'")
                 echo "$output"
             done
-            set +x
 
-            echo "DONE"
+            echo "DONE SEND COMMAND TO PYTHON"
+            echo -e "\n\n"
             git status
 
       - name: Commit, push, and create PR

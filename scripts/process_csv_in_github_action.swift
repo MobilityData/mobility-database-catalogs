@@ -581,11 +581,10 @@ func redirectArray(for rawData: String) -> String {
 
     let openingPrefix       : String = ", redirects=["
     let closingSuffix       : String = "]"
-    let prefix              : String = "{\"\"id\"\": "
-    let suffix              : String = ", \"\"comment\"\": \"\"}"
+    let prefix             : String = "{\"\"id\"\": "
+    let suffix             : String = ", \"\"comment\"\": \"\"\"\"}"
     let keyValuePairsJoiner : String = ", "
 
-    // Transform each `currentString` in `rawDataAsArray` with `map` and join them in one step
     let redirectEntries : String = rawData
         .components(separatedBy: defaults.comma)
         .map { prefix + $0 + suffix }

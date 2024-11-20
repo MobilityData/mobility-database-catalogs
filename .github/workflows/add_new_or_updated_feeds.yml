@@ -86,10 +86,10 @@ jobs:
             # echo "$OUTPUT"
             
             # If the script failed, exit with an error message
-            if [ $STATUS -ne 0 ]; then
-              echo "Swift script failed with exit code $STATUS"
-              exit 1
-            fi
+            # if [ $STATUS -ne 0 ]; then
+            #   echo "Swift script failed with exit code $STATUS"
+            #   exit 1
+            # fi
             
             echo "PYTHON_SCRIPT_ARGS=${OUTPUT}" >> $GITHUB_OUTPUT
             

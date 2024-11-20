@@ -582,7 +582,7 @@ func redirectArray(for rawData: String) -> String {
     let openingPrefix       : String = ", redirects=["
     let closingSuffix       : String = "]"
     let prefix             : String = "{\"\"id\"\": "
-    let suffix             : String = ", \"\"comment\"\": \"\"\"\"}"
+    let suffix             : String = ", \"\"comment\"\": \"\" \"\"}"
     let keyValuePairsJoiner : String = ", "
 
     let redirectEntries : String = rawData

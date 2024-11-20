@@ -66,24 +66,24 @@ jobs:
       - name: Download CSV and process each lines
         id: process-csv
         run: |
-            set -x  # Enable debug output
+            # set -x  # Enable debug output
             cd ${{ github.workspace }}/scripts
             
             # Print out the arguments being passed to help diagnose issues
-            echo "CSV_URL: ${{ env.CSV_URL }}"
-            echo "YESTERDAYS_DATE: ${{ env.YESTERDAYS_DATE }}"
-            echo "DATE_FORMAT: ${{ env.DATE_FORMAT }}"
-            echo "DATE_FORMAT_DESIRED: ${{ env.DATE_FORMAT_DESIRED }}"
+            # echo "CSV_URL: ${{ env.CSV_URL }}"
+            # echo "YESTERDAYS_DATE: ${{ env.YESTERDAYS_DATE }}"
+            # echo "DATE_FORMAT: ${{ env.DATE_FORMAT }}"
+            # echo "DATE_FORMAT_DESIRED: ${{ env.DATE_FORMAT_DESIRED }}"
             
             # Capture both stdout and stderr
             OUTPUT=$(swift process_csv_in_github_action.swift "${{ env.CSV_URL }}" "${{ env.YESTERDAYS_DATE }}" "${{ env.DATE_FORMAT }}" "${{ env.DATE_FORMAT_DESIRED }}" 2>&1)
             
             # Capture the exit status
-            STATUS=$?
+            # STATUS=$?
             
             # Print the full output regardless of success or failure
-            echo "Full Swift Script Output:"
-            echo "$OUTPUT"
+            # echo "Full Swift Script Output:"
+            # echo "$OUTPUT"
             
             # If the script failed, exit with an error message
             if [ $STATUS -ne 0 ]; then

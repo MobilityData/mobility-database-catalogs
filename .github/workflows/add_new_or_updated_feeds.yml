@@ -100,7 +100,7 @@ jobs:
             echo -e "\n\n"
             echo "BEGIN SEND COMMAND TO PYTHON"
 
-            sections=$(echo '${{ steps.process-csv.outputs.PYTHON_SCRIPT_ARGS }}' | sed 's/""/"/g' | sed "s/’/'/g" | awk -F'§' '{for (i=1; i<=NF; i++) print $i}')
+            sections=$(echo '${{ steps.process-csv.outputs.PYTHON_SCRIPT_ARGS }}' | sed 's/""/"/g' | sed "s/’/'/g" | sed 's/"comment": "}/"comment": ""}/g' | awk -F'§' '{for (i=1; i<=NF; i++) print $i}')
             for section in "${sections[@]}"; do
                 # echo "processing line: ${section}"
                 output=$(eval "python -c 'from tools.operations import *; ${section}'")

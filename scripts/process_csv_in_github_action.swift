@@ -498,7 +498,7 @@ func parseCSV(csvLines: [String], columnSeparator: String, dateFormatRegex: Stri
             apiKeyParameterName         : csvArrayColumn[column.api_key_parameter_name].trimmingCharacters(in: .whitespacesAndNewlines),
             note                        : csvArrayColumn[column.note].trimmingCharacters(in: .whitespacesAndNewlines),
             status                      : csvArrayColumn[column.status].trimmingCharacters(in: .whitespacesAndNewlines),
-            redirects                   : redirectArray(for: csvArrayColumn[column.redirects].trimmingCharacters(in: .whitespacesAndNewlines).trimmingCharacters(in: .escapedDoubleQuote)),
+            redirects                   : redirectArray(for: csvArrayColumn[column.redirects]),
             dataProducerEmail           : csvArrayColumn[column.dataproduceremail].trimmingCharacters(in: .whitespacesAndNewlines)
         )
         

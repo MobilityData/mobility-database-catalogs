@@ -675,10 +675,10 @@ func prettyPrintPythonCommands(input: String) -> String {
             .joined(separator: defaults.comma + defaults.newline)
         
         // Rebuild the command with the formatted arguments
-        let formattedCommand = "\(functionName)(\n\(formattedArguments)\n)"
+        let formattedCommand : String = "\(functionName)(\n\(formattedArguments)\n)"
         
         // Fix the specific issue with comment formatting
-        return formattedCommand.replacingOccurrences(of: ",\n\t\"\"comment\": \"\"}]", with: ", \"\"comment\": \"\"}]")
+        return formattedCommand //.replacingOccurrences(of: ",\n\t\"\"comment\": \"\"}]", with: ", \"\"comment\": \"\"}]")
     }
     
     // Join all the formatted commands with two newlines

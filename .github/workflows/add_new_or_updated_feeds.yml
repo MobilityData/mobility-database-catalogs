@@ -88,8 +88,8 @@ jobs:
           PYTHONIOENCODING: "utf8" #ascii
         shell: bash
         run: |
+            echo -e "\n\n"
             echo "BEGIN VIRTUAL ENV && SETUP PIP"
-            echo -e "\n"
             python -m venv env
             source env/bin/activate
             pip install --upgrade pip
@@ -102,9 +102,9 @@ jobs:
 
             sections=$(echo '${{ steps.process-csv.outputs.PYTHON_SCRIPT_ARGS }}' | sed 's/""/"/g' | sed "s/’/'/g" | awk -F'§' '{for (i=1; i<=NF; i++) print $i}')
             for section in "${sections[@]}"; do
-                echo "processing line: ${section}"
+                # echo "processing line: ${section}"
                 output=$(eval "python -c 'from tools.operations import *; ${section}'")
-                echo "$output"
+                # echo "$output"
             done
 
             echo "DONE SEND COMMAND TO PYTHON"

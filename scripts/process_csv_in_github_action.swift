@@ -485,16 +485,12 @@ func main() {
 ///   - Other potential errors from file reading or parsing processes
 func downloadAndParseCSV(fromURL: String, dateFormatRegex: String, dateFormatDesired: String) throws -> [feed]  {
 
-    guard let csvURLasURL : URL = URL(string: fromURL) else {
-        throw ScriptError.networkError
-    }
+    guard let csvURLasURL : URL = URL(string: fromURL) else { throw ScriptError.networkError }
 
     do {
 
         let csvData : String = try String(contentsOf: csvURLasURL, encoding: .utf8)
-        guard !csvData.isEmpty else {
-            throw ScriptError.noData
-        }
+        guard !csvData.isEmpty else { throw ScriptError.noData }
         
         let csvLines : [String] = csvData.components(separatedBy: defaults.csvLineSeparator)
         let csvArray : [feed]   = try parseCSV(csvLines: csvLines, columnSeparator: defaults.csvColumnSeparator, dateFormatRegex: dateFormatRegex, dateFormatDesired: dateFormatDesired)
@@ -502,9 +498,7 @@ func downloadAndParseCSV(fromURL: String, dateFormatRegex: String, dateFormatDes
         return csvArray
 
     } catch {
-
         throw error
-
     }
 }
 
@@ -536,13 +530,13 @@ func parseCSV(csvLines: [String], columnSeparator: String, dateFormatRegex: Stri
             }
 
             // Get issue and data types
-            let issueTypeValue : IssueType = issueType(for: csvArrayColumn[column.issueType].trimmingCharacters(in: .whitespacesAndNewlines))
-            let dataTypeValue  : DataType  = dataType(for: csvArrayColumn[column.datatype].count < 3 ? RealtimeEntityType.empty.asString : csvArrayColumn[column.datatype])
+            let issueTypeValue : IssueType = issueType(for : csvArrayColumn[column.issueType].trimmingCharacters(in: .whitespacesAndNewlines))
+            let dataTypeValue  : DataType  = dataType(for : csvArrayColumn[column.datatype].count < 3 ? RealtimeEntityType.empty.asString : csvArrayColumn[column.datatype])
 
             // Format timestamp properly
-            let timestampFormatted : String = extractDate(from: csvArrayColumn[column.timestamp].trimmingCharacters(in: .whitespacesAndNewlines), 
-                                                        usingGREP: dateFormatAsRegex!, 
-                                                        desiredDateFormat: dateFormatDesired)
+            let timestampFormatted : String = extractDate(from : csvArrayColumn[column.timestamp].trimmingCharacters(in: .whitespacesAndNewlines), 
+                                                          usingGREP : dateFormatAsRegex!, 
+                                                          desiredDateFormat : dateFormatDesired)
 
             // Check if provider is empty, suggest last known if true.
             var provider: String = csvArrayColumn[column.provider].trimmingCharacters(in: .whitespacesAndNewlines)
@@ -596,13 +590,13 @@ func parseCSV(csvLines: [String], columnSeparator: String, dateFormatRegex: Stri
 /// - Returns: An `IssueType` enum value based on the provided string. If no match is found, returns `.unknown`.
 func issueType(for issueTypeValue: String) -> IssueType {
     let issueTypeMappings: [(IssueType, [String])] = [
-        (.isAddNewFeed, [IssueType.isAddNewFeed.asString, IssueType.isAddNewSource.asString]),
-        (.isFeedUpdate, [IssueType.isUpdateExistingFeed.asString, IssueType.isFeedUpdate.asString]),
-        (.isToRemoveFeed, [IssueType.isToRemoveFeed.asString])
+        (.isAddNewFeed, [IssueType.isAddNewFeed.asString.lowercased(), IssueType.isAddNewSource.asString.lowercased()]),
+        (.isFeedUpdate, [IssueType.isUpdateExistingFeed.asString.lowercased(), IssueType.isFeedUpdate.asString.lowercased()]),
+        (.isToRemoveFeed, [IssueType.isToRemoveFeed.asString.lowercased()])
     ]
     
     return issueTypeMappings.first { (_: IssueType, keywords : [String] ) in
-        keywords.contains { issueTypeValue.contains($0) }
+        keywords.contains { issueTypeValue.lowercased().contains($0) }
     }?.0 ?? .isUnknown
 }
 
@@ -611,12 +605,12 @@ func issueType(for issueTypeValue: String) -> IssueType {
 /// - Returns: A `DataType` enum value based on the provided string. If no match is found, returns `.unknown`.
 func dataType(for dataTypeValue: String) -> DataType {
     let dataTypeMappings: [(DataType, [String])] = [
-        (.schedule, [DataType.schedule.asString]),
-        (.realtime, [DataType.realtime.asString, RealtimeEntityType.vehiclePositions.asString, RealtimeEntityType.tripUpdates.asString, RealtimeEntityType.serviceAlerts.asString, RealtimeEntityType.unknown.asString, RealtimeEntityType.empty.asString])
+        (.schedule, [DataType.schedule.asString.lowercased()]),
+        (.realtime, [DataType.realtime.asString.lowercased(), RealtimeEntityType.vehiclePositions.asString.lowercased(), RealtimeEntityType.tripUpdates.asString.lowercased(), RealtimeEntityType.serviceAlerts.asString.lowercased(), RealtimeEntityType.unknown.asString.lowercased(), RealtimeEntityType.empty.asString.lowercased()])
     ]
     
     return dataTypeMappings.first { (_: DataType, keywords : [String] ) in
-        keywords.contains { dataTypeValue.contains($0) }
+        keywords.contains { dataTypeValue.lowercased().contains($0) }
     }?.0 ?? .unknown
 }
 
@@ -662,9 +656,9 @@ func redirectArray(for rawData: String) -> String {
     guard !rawData.isEmpty else { return defaults.emptyValueRaw }
 
     let openingPrefix       : String = ", redirects=["
+    let prefix              : String = "{\"\"id\"\": "
+    let suffix              : String = ", \"\"comment\"\": \"\" \"\"}"
     let closingSuffix       : String = "]"
-    let prefix             : String = "{\"\"id\"\": "
-    let suffix             : String = ", \"\"comment\"\": \"\" \"\"}"
     let keyValuePairsJoiner : String = ", "
 
     let redirectEntries : String = rawData
@@ -742,6 +736,7 @@ func prettyPrintPythonCommands(input: String) -> String {
     
     // Process each command
     let formattedCommands: [String] = commands.map { command -> String in
+
         // Find the arguments part of the command (inside parentheses)
         guard let argsStartIndex: String.Index = command.firstIndex(of: "("),
               let argsEndIndex: String.Index = command.lastIndex(of: ")") else { return command }

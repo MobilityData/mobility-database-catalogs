@@ -3,6 +3,32 @@ import Foundation
     import FoundationNetworking
 #endif
 
+// MARK: - ERRORS
+
+enum ScriptError: Error {
+
+    case noData
+    case networkError
+    case parseError
+    case incorrectArgumentsCount
+    case insufficientNumberOfColumns
+
+    var description: String {
+        switch self {
+        case .noData:
+            return "No data seems to be present in the source document."
+        case .networkError:
+            return "A network error occurred or the specified URL does not appear to exist."
+        case .parseError:
+            return "Failed to parse the CSV data."
+        case .incorrectArgumentsCount:
+            return "Incorrect number of arguments provided to the script. Expected 4: a string with the URL, the date to find, a date format and the date format desired."
+        case .insufficientNumberOfColumns:
+            return "Insufficient number of columns in the CSV."
+        }
+    }
+}
+
 // MARK: - DEFAULTS
 
 struct defaults {
@@ -75,15 +101,7 @@ enum RealtimeEntityType : String {
 
 /// A structure that defines column indices for mobility data processing.
 ///
-/// This struct provides a set of static constants representing column positions in a data structure,
-/// likely used for handling mobility or transportation-related information. Each constant maps to a specific
-/// zero-based index position in the underlying data.
-///
-/// Column Structure:
-/// - 0-5: Basic error and metadata fields
-/// - 6-10: Geographic and location information
-/// - 11-14: Authentication and licensing details
-/// - 15-18: Additional metadata and status information
+/// This struct provides a set of static constants representing column positions in a data structure, likely used for handling mobility or transportation-related information. Each constant maps to a specific zero-based index position in the underlying data.
 ///
 /// - Note: The structure maintains a fixed count of 19 columns (0-18)
 struct column {
@@ -107,22 +125,12 @@ struct column {
     static let  redirects                : Int = 17 // R
     static let  dataproduceremail        : Int = 18 // S
 
-    // List properties manually as a static array
     static var count                     : Int { return 19 }
 }
 
-/// A structure representing a mobility data feed entry.
+/// A structure representing a MobilityData feed entry.
 ///
-/// This struct encapsulates all properties of a single feed, including
-/// metadata, geographic information, authentication details, and status information.
-/// It serves as a comprehensive data model for storing and managing mobility feed data.
-///
-/// The properties are organized into several logical groups:
-/// - Basic metadata (timestamp, provider)
-/// - Data classification (dataType, issueType)
-/// - Geographic information (country, subdivisionName, municipality)
-/// - Authentication and licensing (licenseURL, authenticationType, authenticationInfoURL)
-/// - Status and contact information (status, dataProducerEmail)
+/// This struct encapsulates all properties of a single feed, including metadata, geographic information, authentication details, and status information. It serves as a comprehensive data model for storing and managing mobility feed data.
 struct feed {
     var fourZeroThreeClientError : String // we ignore this column
     var timestamp                : String
@@ -145,7 +153,6 @@ struct feed {
     var redirects                : String
     var dataProducerEmail        : String
 
-    // Add count() function
     func count() -> Int { return Mirror(reflecting: self).children.count }
 
     /// Generates a list of real-time data codes based on the `dataTypeString` property.
@@ -179,14 +186,14 @@ struct feed {
 // MARK: - MAIN
 
 var args : [String] = [""]
-var isInDebugMode : Bool = true
+var isInDebugMode : Bool = false
 
 if CommandLine.arguments.count == 5 {
     // this is for using inside the GitHub workflow only.
     print("Running inside GitHub Actions.")
     args = CommandLine.arguments
 } else {
-    // this is for local testing purposes only.
+    // this is for local testing only.
     print("Running locally.")
     args = ["scriptname", 
         "https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/gviz/tq?tqx=out:csv;outFileName:data&sheet=%5BCLEANED%5D%20For%20import&range=A2:S", 
@@ -195,239 +202,305 @@ if CommandLine.arguments.count == 5 {
         "MM/dd/yyyy"
     ]
     isInDebugMode = true
+    // Google Sheet: https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit?gid=2061813733#gid=2061813733 
 }
-// Google Sheet: https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit?gid=2061813733#gid=2061813733
+
+// RUN MAIN SCRIPT
+main()
+
+/// The `main` function serves as the entry point for the script. It performs the following tasks:
+/// - Validates the number of input arguments.
+/// - Downloads and parses a CSV file based on provided arguments.
+/// - Generates Python commands for manipulating feed data.
+/// - Handles and logs errors gracefully.
+///
+/// The function terminates with appropriate exit codes:
+/// - `0` for success.
+/// - Specific error codes (`1`, `2`, `255`) for various failure scenarios.
+///
+/// - Throws: `ScriptError` for specific error conditions like incorrect arguments or data parsing issues.
+func main() {
+    do {
+        if args.count == 5 {
+            
+            let csvURLStringArg      : String = args[1] // the first openingPrefix  [0] is the name of the script, we can ignore in this context.
+            let _                    : String = args[2] // Deprecated, we no longer look for a specific date.
+            let dateFormatGREPArg    : String = args[3]
+            let dateFormatDesiredArg : String = args[4]
+
+            let csvArray : [feed] = try downloadAndParseCSV(fromURL: csvURLStringArg, dateFormatRegex: dateFormatGREPArg, dateFormatDesired: dateFormatDesiredArg)
+
+            if isInDebugMode { print("\n\t\tTotal number of feeds parsed from the CSV: \(csvArray.count)\n\n\t\t---\n") }
+            if isInDebugMode { let allDescriptions : String = csvArray.map { $0.description }.joined(separator: "\n\n\t\t---\n\n") ; print("\(allDescriptions)\n") }
+            if isInDebugMode { print("\t\t---\n\n\t\tCreating Python commands...\n") }
+            
+            var PYTHON_SCRIPT_OUTPUT : String = ""
+
+            for currentFeed : feed in csvArray {
+
+                var PYTHON_SCRIPT_ARGS_TEMP : String = ""
+
+                if currentFeed.issueType == IssueType.isAddNewFeed {
+
+                    if isInDebugMode { print("\t\tCurrent feed is new.") }
+
+                    if currentFeed.dataType == DataType.schedule { // add_gtfs_schedule_source
+
+                        PYTHON_SCRIPT_ARGS_TEMP  = """
+                        add_gtfs_schedule_source(
+                        provider=\"\(currentFeed.provider)\", 
+                        country_code=\"\(currentFeed.country)\", 
+                        direct_download_url=\"\(currentFeed.downloadURL)\", 
+                        authentication_type=\(currentFeed.authenticationType), 
+                        authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
+                        api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
+                        subdivision_name=\"\(currentFeed.subdivisionName)\", 
+                        municipality=\"\(currentFeed.municipality)\", 
+                        license_url=\"\(currentFeed.licenseURL)\", 
+                        name=\"\(currentFeed.name)\", 
+                        status=\"\(currentFeed.status)\", 
+                        feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
+                        \(currentFeed.redirects))
+                        """
+
+                    } else if currentFeed.dataType == DataType.realtime {  // add_gtfs_realtime_source
+                        
+                        let entityTypeString : String = "\"[\"\(currentFeed.realtimeCode().joined(separator: "\", \""))\"]\""
+
+                        PYTHON_SCRIPT_ARGS_TEMP = """
+                        add_gtfs_realtime_source(
+                        entity_type=[\"\(entityTypeString)\"], 
+                        provider=\"\(currentFeed.provider)\", 
+                        direct_download_url=\"\(currentFeed.downloadURL)\", 
+                        authentication_type=\(currentFeed.authenticationType), 
+                        authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
+                        api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
+                        license_url=\"\(currentFeed.licenseURL)\", 
+                        name=\"\(currentFeed.name)\", 
+                        note=\"\(currentFeed.note)\", 
+                        status=\"\(currentFeed.status)\", 
+                        feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
+                        \(currentFeed.redirects))
+                        """
+
+                    }
+
+                } else if currentFeed.issueType == IssueType.isFeedUpdate {
+
+                    if isInDebugMode { print("\t\tCurrent feed is update.") }
+
+                    if currentFeed.dataType == DataType.schedule { // update_gtfs_schedule_source
+
+                        PYTHON_SCRIPT_ARGS_TEMP = """
+                        update_gtfs_schedule_source(mdb_source_id=\(currentFeed.oldMobilityDatabaseID), 
+                        provider=\"\(currentFeed.provider)\", 
+                        name=\"\(currentFeed.name)\", 
+                        country_code=\"\(currentFeed.country)\", 
+                        subdivision_name=\"\(currentFeed.subdivisionName)\", 
+                        municipality=\"\(currentFeed.municipality)\", 
+                        authentication_type=\(currentFeed.authenticationType), 
+                        authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
+                        api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
+                        status=\"\(currentFeed.status)\", 
+                        feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
+                        \(currentFeed.redirects))
+                        """
+
+                    } else if currentFeed.dataType == DataType.realtime {  // update_gtfs_realtime_source
+                        
+                        let entityTypeString : String = "\"[\"\(currentFeed.realtimeCode().joined(separator: "\", \""))\"]\""
+                        
+                        PYTHON_SCRIPT_ARGS_TEMP = """
+                        update_gtfs_realtime_source(
+                        mdb_source_id=\(currentFeed.oldMobilityDatabaseID), 
+                        entity_type=[\"\(entityTypeString)\"], 
+                        provider=\"\(currentFeed.provider)\", 
+                        authentication_type=\(currentFeed.authenticationType), 
+                        authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
+                        api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
+                        name=\"\(currentFeed.name)\", 
+                        note=\"\(currentFeed.note)\", 
+                        status=\"\(currentFeed.status)\", 
+                        feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
+                        \(currentFeed.redirects))
+                        """
+
+                    }
+
+                } else if currentFeed.issueType == IssueType.isToRemoveFeed {
+
+                    if isInDebugMode { print("\t\tCurrent feed is to be removed.") }
+
+                    if currentFeed.dataType == DataType.schedule { // update_gtfs_schedule_source
+
+                        PYTHON_SCRIPT_ARGS_TEMP = """
+                        update_gtfs_schedule_source(
+                        mdb_source_id=\(currentFeed.oldMobilityDatabaseID), 
+                        provider=\"\(currentFeed.provider)\", 
+                        name=\"\"**** issued for removal ****\"\", 
+                        country_code=\"\(currentFeed.country)\", 
+                        subdivision_name=\"\(currentFeed.subdivisionName)\", 
+                        municipality=\"\(currentFeed.municipality)\", 
+                        authentication_type=\(currentFeed.authenticationType), 
+                        authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
+                        api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
+                        status=\"\(currentFeed.status)\", 
+                        feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
+                        \(currentFeed.redirects))
+                        """
 
 
-if args.count == 5 {
-    
-    let csvURLStringArg      : String = args[1] // the first openingPrefix  [0] is the name of the script, we can ignore in this context.
-    let _                    : String = args[2] // Deprecated, we no longer look for a specific date.
-    let dateFormatGREPArg    : String = args[3]
-    let dateFormatDesiredArg : String = args[4]
-    
-    guard let csvURLasURL : URL = URL(string: csvURLStringArg) else {
-        print("\n   ERROR: The specified URL does not appear to exist :\n   \(csvURLStringArg)\n")
-        exit(1)
-    }
+                    } else if currentFeed.dataType == DataType.realtime {  // update_gtfs_realtime_source
+                        
+                        let entityTypeString : String = "\"[\"\(currentFeed.realtimeCode().joined(separator: "\", \""))\"]\""
 
-    let csvData  :  String  = try String(contentsOf: csvURLasURL, encoding:.utf8)
-    let csvLines : [String] = csvData.components(separatedBy: defaults.csvLineSeparator)
-    let csvArray : [feed]   = parseCSV(csvLines: csvLines, columnSeparator: defaults.csvColumnSeparator, dateFormatRegex: dateFormatGREPArg, dateFormatDesired: dateFormatDesiredArg)
+                        PYTHON_SCRIPT_ARGS_TEMP = """
+                        update_gtfs_realtime_source(
+                        mdb_source_id=\(currentFeed.oldMobilityDatabaseID), 
+                        entity_type=\"[\(entityTypeString)]\", 
+                        provider=\"\(currentFeed.provider)\", 
+                        authentication_type=\(currentFeed.authenticationType), 
+                        authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
+                        api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
+                        name=\"\"**** issued for removal ****\"\", 
+                        note=\"\(currentFeed.note)\", 
+                        status=\"\(currentFeed.status)\", 
+                        feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
+                        \(currentFeed.redirects))
+                        """
 
-    if isInDebugMode { print("\n\t\tTotal number of feeds parsed from the CSV: \(csvArray.count)\n\n\t\t---\n") }
-    if isInDebugMode { let allDescriptions : String = csvArray.map { $0.description }.joined(separator: "\n\n\t\t---\n\n") ; print("\(allDescriptions)\n") }
-    if isInDebugMode { print("\t\t---\n\n\t\tCreating Python commands...\n") }
-    
-    var PYTHON_SCRIPT_OUTPUT : String = ""
+                    }
 
-    for currentFeed : feed in csvArray {
+                } else if currentFeed.issueType == IssueType.isUnknown { // assume default is .isAddNewFeed
 
-        var PYTHON_SCRIPT_ARGS_TEMP : String = ""
+                    if isInDebugMode { print("\t\tCurrent feed is assumed to be new.") }
 
-        if currentFeed.issueType == IssueType.isAddNewFeed {
+                    if currentFeed.dataType == DataType.schedule { // add_gtfs_schedule_source
 
-            if isInDebugMode { print("\t\tCurrent feed is new.") }
+                        PYTHON_SCRIPT_ARGS_TEMP  = """
+                        add_gtfs_schedule_source(
+                        provider=\"\(currentFeed.provider)\", 
+                        country_code=\"\(currentFeed.country)\", 
+                        direct_download_url=\"\(currentFeed.downloadURL)\", 
+                        authentication_type=\(currentFeed.authenticationType), 
+                        authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
+                        api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
+                        subdivision_name=\"\(currentFeed.subdivisionName)\", 
+                        municipality=\"\(currentFeed.municipality)\", 
+                        license_url=\"\(currentFeed.licenseURL)\", 
+                        name=\"\(currentFeed.name)\", 
+                        status=\"\(currentFeed.status)\", 
+                        feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
+                        \(currentFeed.redirects))
+                        """
 
-            if currentFeed.dataType == DataType.schedule { // add_gtfs_schedule_source
+                    } else if currentFeed.dataType == DataType.realtime {  // add_gtfs_realtime_source
+                        
+                        let entityTypeString : String = "\"[\"\(currentFeed.realtimeCode().joined(separator: "\", \""))\"]\""
 
-                PYTHON_SCRIPT_ARGS_TEMP  = """
-                add_gtfs_schedule_source(
-                provider=\"\(currentFeed.provider)\", 
-                country_code=\"\(currentFeed.country)\", 
-                direct_download_url=\"\(currentFeed.downloadURL)\", 
-                authentication_type=\(currentFeed.authenticationType), 
-                authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
-                api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
-                subdivision_name=\"\(currentFeed.subdivisionName)\", 
-                municipality=\"\(currentFeed.municipality)\", 
-                license_url=\"\(currentFeed.licenseURL)\", 
-                name=\"\(currentFeed.name)\", 
-                status=\"\(currentFeed.status)\", 
-                feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
-                \(currentFeed.redirects))
-                """
+                        PYTHON_SCRIPT_ARGS_TEMP = """
+                        add_gtfs_realtime_source(
+                        entity_type=\"[\(entityTypeString)]\", 
+                        provider=\"\(currentFeed.provider)\", 
+                        direct_download_url=\"\(currentFeed.downloadURL)\", 
+                        authentication_type=\(currentFeed.authenticationType), 
+                        authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
+                        api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
+                        license_url=\"\(currentFeed.licenseURL)\", 
+                        name=\"\(currentFeed.name)\", 
+                        note=\"\(currentFeed.note)\", 
+                        status=\"\(currentFeed.status)\", 
+                        feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
+                        \(currentFeed.redirects))
+                        """
 
-            } else if currentFeed.dataType == DataType.realtime {  // add_gtfs_realtime_source
+                    }
+
+                }
+
+                // Let's remove the added newline characters
+                PYTHON_SCRIPT_ARGS_TEMP = PYTHON_SCRIPT_ARGS_TEMP.replacingOccurrences(of: defaults.newline, with: "")
                 
-                let entityTypeString : String = "\"[\"\(currentFeed.realtimeCode().joined(separator: "\", \""))\"]\""
-
-                PYTHON_SCRIPT_ARGS_TEMP = """
-                add_gtfs_realtime_source(
-                entity_type=[\"\(entityTypeString)\"], 
-                provider=\"\(currentFeed.provider)\", 
-                direct_download_url=\"\(currentFeed.downloadURL)\", 
-                authentication_type=\(currentFeed.authenticationType), 
-                authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
-                api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
-                license_url=\"\(currentFeed.licenseURL)\", 
-                name=\"\(currentFeed.name)\", 
-                note=\"\(currentFeed.note)\", 
-                status=\"\(currentFeed.status)\", 
-                feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
-                \(currentFeed.redirects))
-                """
-
-            }
-
-        } else if currentFeed.issueType == IssueType.isFeedUpdate {
-
-            if isInDebugMode { print("\t\tCurrent feed is update.") }
-
-            if currentFeed.dataType == DataType.schedule { // update_gtfs_schedule_source
-
-                PYTHON_SCRIPT_ARGS_TEMP = """
-                update_gtfs_schedule_source(mdb_source_id=\(currentFeed.oldMobilityDatabaseID), 
-                provider=\"\(currentFeed.provider)\", 
-                name=\"\(currentFeed.name)\", 
-                country_code=\"\(currentFeed.country)\", 
-                subdivision_name=\"\(currentFeed.subdivisionName)\", 
-                municipality=\"\(currentFeed.municipality)\", 
-                authentication_type=\(currentFeed.authenticationType), 
-                authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
-                api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
-                status=\"\(currentFeed.status)\", 
-                feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
-                \(currentFeed.redirects))
-                """
-
-            } else if currentFeed.dataType == DataType.realtime {  // update_gtfs_realtime_source
+                if isInDebugMode { print("\t\tResulting Python command :\n\t\t\(PYTHON_SCRIPT_ARGS_TEMP)\n")}
                 
-                let entityTypeString : String = "\"[\"\(currentFeed.realtimeCode().joined(separator: "\", \""))\"]\""
+                if !PYTHON_SCRIPT_ARGS_TEMP.isEmpty { PYTHON_SCRIPT_OUTPUT += (PYTHON_SCRIPT_OUTPUT.isEmpty ? "" : defaults.finalOutputDivider) + PYTHON_SCRIPT_ARGS_TEMP }
                 
-                PYTHON_SCRIPT_ARGS_TEMP = """
-                update_gtfs_realtime_source(
-                mdb_source_id=\(currentFeed.oldMobilityDatabaseID), 
-                entity_type=[\"\(entityTypeString)\"], 
-                provider=\"\(currentFeed.provider)\", 
-                authentication_type=\(currentFeed.authenticationType), 
-                authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
-                api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
-                name=\"\(currentFeed.name)\", 
-                note=\"\(currentFeed.note)\", 
-                status=\"\(currentFeed.status)\", 
-                feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
-                \(currentFeed.redirects))
-                """
+            } // END FOR LOOP
 
-            }
+            // Replace single quotes (like in McGill's) with an apostrophe so there is no interference with the bash script in the next step.
+            PYTHON_SCRIPT_OUTPUT = PYTHON_SCRIPT_OUTPUT.replacingOccurrences(of: defaults.singleQuote, with: defaults.apostrophe)
+            // Note: do not try to fix the ouput of multiple quotes (ex.: """") as it will break the python script.
+            
+            // Remove empty parameters from script output
+            PYTHON_SCRIPT_OUTPUT = removeEmptyPythonParameters(in: PYTHON_SCRIPT_OUTPUT)
+            
+            // Print the final output in a readable format for debugging or in plain format for the Python script to process.
+            if isInDebugMode { print("\n\nFINAL OUTPUT:\n\n" + prettyPrintPythonCommands(input: PYTHON_SCRIPT_OUTPUT))} else { print(PYTHON_SCRIPT_OUTPUT) }
 
-        } else if currentFeed.issueType == IssueType.isToRemoveFeed {
+            exit(0)
 
-            if isInDebugMode { print("\t\tCurrent feed is to be removed.") }
-
-            if currentFeed.dataType == DataType.schedule { // update_gtfs_schedule_source
-
-                PYTHON_SCRIPT_ARGS_TEMP = """
-                update_gtfs_schedule_source(
-                mdb_source_id=\(currentFeed.oldMobilityDatabaseID), 
-                provider=\"\(currentFeed.provider)\", 
-                name=\"\"**** issued for removal ****\"\", 
-                country_code=\"\(currentFeed.country)\", 
-                subdivision_name=\"\(currentFeed.subdivisionName)\", 
-                municipality=\"\(currentFeed.municipality)\", 
-                authentication_type=\(currentFeed.authenticationType), 
-                authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
-                api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
-                status=\"\(currentFeed.status)\", 
-                feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
-                \(currentFeed.redirects))
-                """
-
-
-            } else if currentFeed.dataType == DataType.realtime {  // update_gtfs_realtime_source
-                
-                let entityTypeString : String = "\"[\"\(currentFeed.realtimeCode().joined(separator: "\", \""))\"]\""
-
-                PYTHON_SCRIPT_ARGS_TEMP = """
-                update_gtfs_realtime_source(
-                mdb_source_id=\(currentFeed.oldMobilityDatabaseID), 
-                entity_type=\"[\(entityTypeString)]\", 
-                provider=\"\(currentFeed.provider)\", 
-                authentication_type=\(currentFeed.authenticationType), 
-                authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
-                api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
-                name=\"\"**** issued for removal ****\"\", 
-                note=\"\(currentFeed.note)\", 
-                status=\"\(currentFeed.status)\", 
-                feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
-                \(currentFeed.redirects))
-                """
-
-            }
-
-        } else if currentFeed.issueType == IssueType.isUnknown { // assume default is .isAddNewFeed
-
-            if isInDebugMode { print("\t\tCurrent feed is assumed to be new.") }
-
-            if currentFeed.dataType == DataType.schedule { // add_gtfs_schedule_source
-
-                PYTHON_SCRIPT_ARGS_TEMP  = """
-                add_gtfs_schedule_source(
-                provider=\"\(currentFeed.provider)\", 
-                country_code=\"\(currentFeed.country)\", 
-                direct_download_url=\"\(currentFeed.downloadURL)\", 
-                authentication_type=\(currentFeed.authenticationType), 
-                authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
-                api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
-                subdivision_name=\"\(currentFeed.subdivisionName)\", 
-                municipality=\"\(currentFeed.municipality)\", 
-                license_url=\"\(currentFeed.licenseURL)\", 
-                name=\"\(currentFeed.name)\", 
-                status=\"\(currentFeed.status)\", 
-                feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
-                \(currentFeed.redirects))
-                """
-
-            } else if currentFeed.dataType == DataType.realtime {  // add_gtfs_realtime_source
-                
-                let entityTypeString : String = "\"[\"\(currentFeed.realtimeCode().joined(separator: "\", \""))\"]\""
-
-                PYTHON_SCRIPT_ARGS_TEMP = """
-                add_gtfs_realtime_source(
-                entity_type=\"[\(entityTypeString)]\", 
-                provider=\"\(currentFeed.provider)\", 
-                direct_download_url=\"\(currentFeed.downloadURL)\", 
-                authentication_type=\(currentFeed.authenticationType), 
-                authentication_info_url=\"\(currentFeed.authenticationInfoURL)\", 
-                api_key_parameter_name=\"\(currentFeed.apiKeyParameterName)\", 
-                license_url=\"\(currentFeed.licenseURL)\", 
-                name=\"\(currentFeed.name)\", 
-                note=\"\(currentFeed.note)\", 
-                status=\"\(currentFeed.status)\", 
-                feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
-                \(currentFeed.redirects))
-                """
-
-            }
-
+        } else {
+            throw ScriptError.incorrectArgumentsCount
         }
-
-        // Let's remove the added newline characters
-        PYTHON_SCRIPT_ARGS_TEMP = PYTHON_SCRIPT_ARGS_TEMP.replacingOccurrences(of: defaults.newline, with: "")
-        
-        if isInDebugMode { print("\t\tResulting Python command :\n\t\t\(PYTHON_SCRIPT_ARGS_TEMP)\n")}
-        
-        if !PYTHON_SCRIPT_ARGS_TEMP.isEmpty { PYTHON_SCRIPT_OUTPUT += (PYTHON_SCRIPT_OUTPUT.isEmpty ? "" : defaults.finalOutputDivider) + PYTHON_SCRIPT_ARGS_TEMP }
-        
-    } // END FOR LOOP
-
-    // Replace single quotes (like in McGill's) with an apostrophe so there is no interference with the bash script in the next step.
-    PYTHON_SCRIPT_OUTPUT = PYTHON_SCRIPT_OUTPUT.replacingOccurrences(of: defaults.singleQuote, with: defaults.apostrophe)
-    // Note: do not try to fix the ouput of multiple quotes (ex.: """") as it will break the python script.
-    
-    // Remove empty parameters from script output
-    PYTHON_SCRIPT_OUTPUT = removeEmptyPythonParameters(in: PYTHON_SCRIPT_OUTPUT)
-    
-    // Print the final output in a readable format for debugging or in plain format for the Python script to process.
-    if isInDebugMode { print("\n\nFINAL OUTPUT:\n\n" + prettyPrintPythonCommands(input: PYTHON_SCRIPT_OUTPUT))} else { print(PYTHON_SCRIPT_OUTPUT) }
-    
-} else {
-    print("Incorrect number of arguments provided to the script. Expected 4: a string with the URL, the date to find, a date format and the date format desired.")
-    exit(1) // terminate script
+    } catch ScriptError.noData {
+        print("ERROR: \(ScriptError.noData.description)")
+        exit(1)
+    } catch ScriptError.networkError {
+        print("ERROR:\(ScriptError.networkError.description) ")
+        exit(2)
+    } catch ScriptError.parseError {
+        exit(2)
+    } catch ScriptError.incorrectArgumentsCount {
+        print("ERROR: \(ScriptError.incorrectArgumentsCount.description)")
+        exit(1)
+    } catch ScriptError.insufficientNumberOfColumns {
+        print("ERROR: \(ScriptError.insufficientNumberOfColumns.description)")
+        exit(1)
+    } catch {
+        print("ERROR: Unexpected error: \(error.localizedDescription)")
+        exit(255)  // General error catch-all
+    }
 }
 
 // MARK: - FUNCTIONS
+
+/// Downloads and parses a CSV file from a given URL, converting dates according to specified formats.
+///
+/// This function performs several key operations:
+/// - Validates the provided URL
+/// - Downloads the CSV content
+/// - Checks that the downloaded content is not empty
+/// - Parses the CSV into an array of `feed` objects
+///
+/// - Parameters:
+///   - fromURL: The complete URL string pointing to the CSV file to be downloaded
+///   - dateFormatRegex: A regular expression pattern to match the current date format in the CSV
+///   - dateFormatDesired: The target date format to convert dates to
+///
+/// - Returns: An array of `feed` objects parsed from the CSV
+///
+/// - Throws: 
+///   - `ScriptError.networkError` if the URL is invalid
+///   - `ScriptError.noData` if the downloaded CSV is empty
+///   - Other potential errors from file reading or parsing processes
+func downloadAndParseCSV(fromURL: String, dateFormatRegex: String, dateFormatDesired: String) throws -> [feed]  {
+
+    guard let csvURLasURL : URL = URL(string: fromURL) else { throw ScriptError.networkError }
+
+    do {
+
+        let csvData : String = try String(contentsOf: csvURLasURL, encoding: .utf8)
+        guard !csvData.isEmpty else { throw ScriptError.noData }
+        
+        let csvLines : [String] = csvData.components(separatedBy: defaults.csvLineSeparator)
+        let csvArray : [feed]   = try parseCSV(csvLines: csvLines, columnSeparator: defaults.csvColumnSeparator, dateFormatRegex: dateFormatRegex, dateFormatDesired: dateFormatDesired)
+        
+        return csvArray
+
+    } catch {
+        throw error
+    }
+}
 
 /// Parses an array of CSV lines into an array of `feed` instances.
 /// - Parameters:
@@ -436,77 +509,80 @@ if args.count == 5 {
 ///   - dateFormatRegex: A regex pattern to match the date format in the CSV data.
 ///   - dateFormatDesired: A string representing the desired date format for output.
 /// - Returns: An array of `feed` instances constructed from the CSV data.
-func parseCSV(csvLines: [String], columnSeparator: String, dateFormatRegex: String, dateFormatDesired: String) -> [feed] {
+func parseCSV(csvLines: [String], columnSeparator: String, dateFormatRegex: String, dateFormatDesired: String) throws -> [feed] {
 
-    if isInDebugMode { print("\n\t\tProcessing CSV Array column...\n") }
+    do {
+        if isInDebugMode { print("\n\t\tProcessing CSV Array column...\n") }
 
-    var feeds: [feed] = []
-    var lastKnownProvider : String = defaults.toBeProvided
-    let dateFormatAsRegex: Regex<AnyRegexOutput>? = try? Regex(dateFormatRegex)
-    var counter : Int = 1
-    
-    for line: String in csvLines {
-
-        // Separate the columns and verify there's enough columns to proceed
-        let csvArrayColumn : [String] = line.components(separatedBy: columnSeparator)
-        if isInDebugMode { print("\t\t\t- Column count for item \(counter) : \(csvArrayColumn.count)") }
-        guard csvArrayColumn.count >= column.count else {
-            print("Error: Insufficient number of columns. Expected at least \(column.count), but got \(csvArrayColumn.count).")
-            exit(1) // terminate the script
-        }
-
-        // Get issue and data types
-        let issueTypeValue : IssueType = issueType(for: csvArrayColumn[column.issueType].trimmingCharacters(in: .whitespacesAndNewlines))
-        let dataTypeValue  : DataType  = dataType(for: csvArrayColumn[column.datatype].count < 3 ? RealtimeEntityType.empty.asString : csvArrayColumn[column.datatype])
-
-        // Format timestamp properly
-        let timestampFormatted : String = extractDate(from: csvArrayColumn[column.timestamp].trimmingCharacters(in: .whitespacesAndNewlines), 
-                                                      usingGREP: dateFormatAsRegex!, 
-                                                      desiredDateFormat: dateFormatDesired)
-
-        // Check if provider is empty, suggest last known if true.
-        var provider: String = csvArrayColumn[column.provider].trimmingCharacters(in: .whitespacesAndNewlines)
-        if provider.count > 0 { lastKnownProvider = provider } ; provider = provider.isEmpty ? "\(defaults.toBeProvided) (\(lastKnownProvider) ?)" : provider
-
-        // Check if download URL is valid
-        var downloadURLvalue : String = csvArrayColumn[column.downloadurl].trimmingCharacters(in: .whitespacesAndNewlines)
-        if (!isURLPresent(in: downloadURLvalue) && !downloadURLvalue.isEmpty) { downloadURLvalue = defaults.emptyValue }
-
-        // Check if license URL is valid
-        var licenseURLvalue : String = csvArrayColumn[column.license_url].trimmingCharacters(in: .whitespacesAndNewlines)
-        if (!isURLPresent(in: licenseURLvalue) && !licenseURLvalue.isEmpty) { licenseURLvalue = defaults.emptyValue }
-
-        // Get authentification Int
-        let authTypeValue : Int = authenticationType(for: csvArrayColumn[column.authentication_type].trimmingCharacters(in: .whitespacesAndNewlines))
-
-        let newFeed : feed = feed (
-            fourZeroThreeClientError    : csvArrayColumn[column.fourZeroThreeClientError],
-            timestamp                   : timestampFormatted,
-            provider                    : provider,
-            oldMobilityDatabaseID       : Int(csvArrayColumn[column.oldMobilityDatabaseID].trimmingCharacters(in: .escapedDoubleQuote)) ?? 0,
-            dataType                    : dataTypeValue,
-            dataTypeString              : csvArrayColumn[column.datatype].count < 3 ? RealtimeEntityType.empty.asString : csvArrayColumn[column.datatype],
-            issueType                   : issueTypeValue,
-            downloadURL                 : downloadURLvalue,
-            country                     : csvArrayColumn[column.country].trimmingCharacters(in: .whitespacesAndNewlines),
-            subdivisionName             : csvArrayColumn[column.subdivision_name].trimmingCharacters(in: .whitespacesAndNewlines),
-            municipality                : csvArrayColumn[column.municipality].trimmingCharacters(in: .whitespacesAndNewlines),
-            name                        : csvArrayColumn[column.name].trimmingCharacters(in: .whitespacesAndNewlines),
-            licenseURL                  : licenseURLvalue,
-            authenticationType          : authTypeValue,
-            authenticationInfoURL       : csvArrayColumn[column.authentication_info_url].trimmingCharacters(in: .whitespacesAndNewlines),
-            apiKeyParameterName         : csvArrayColumn[column.api_key_parameter_name].trimmingCharacters(in: .whitespacesAndNewlines),
-            note                        : csvArrayColumn[column.note].trimmingCharacters(in: .whitespacesAndNewlines),
-            status                      : csvArrayColumn[column.status].trimmingCharacters(in: .whitespacesAndNewlines),
-            redirects                   : redirectArray(for: csvArrayColumn[column.redirects]),
-            dataProducerEmail           : csvArrayColumn[column.dataproduceremail].trimmingCharacters(in: .whitespacesAndNewlines)
-        )
+        var feeds: [feed] = []
+        var lastKnownProvider : String = defaults.toBeProvided
+        let dateFormatAsRegex: Regex<AnyRegexOutput>? = try? Regex(dateFormatRegex)
+        var counter : Int = 1
         
-        feeds.append(newFeed)
-        counter += 1
+        for line: String in csvLines {
+
+            // Separate the columns and verify there's enough columns to proceed
+            let csvArrayColumn : [String] = line.components(separatedBy: columnSeparator)
+            if isInDebugMode { print("\t\t\t- Column count for item \(counter) : \(csvArrayColumn.count)") }
+            guard csvArrayColumn.count >= column.count else {
+                print("Expected at least \(column.count) columns, but got \(csvArrayColumn.count) instead.")
+                throw ScriptError.insufficientNumberOfColumns
+            }
+
+            // Get issue and data types
+            let issueTypeValue : IssueType = issueType(for : csvArrayColumn[column.issueType].trimmingCharacters(in: .whitespacesAndNewlines))
+            let dataTypeValue  : DataType  = dataType(for : csvArrayColumn[column.datatype].count < 3 ? RealtimeEntityType.empty.asString : csvArrayColumn[column.datatype])
+
+            // Format timestamp properly
+            let timestampFormatted : String = extractDate(from : csvArrayColumn[column.timestamp].trimmingCharacters(in: .whitespacesAndNewlines), 
+                                                          usingGREP : dateFormatAsRegex!, 
+                                                          desiredDateFormat : dateFormatDesired)
+
+            // Check if provider is empty, suggest last known if true.
+            var provider: String = csvArrayColumn[column.provider].trimmingCharacters(in: .whitespacesAndNewlines)
+            if provider.count > 0 { lastKnownProvider = provider } ; provider = provider.isEmpty ? "\(defaults.toBeProvided) (\(lastKnownProvider) ?)" : provider
+
+            // Check if download URL is valid
+            var downloadURLvalue : String = csvArrayColumn[column.downloadurl].trimmingCharacters(in: .whitespacesAndNewlines)
+            if (!isURLPresent(in: downloadURLvalue) && !downloadURLvalue.isEmpty) { downloadURLvalue = defaults.emptyValue }
+
+            // Check if license URL is valid
+            var licenseURLvalue : String = csvArrayColumn[column.license_url].trimmingCharacters(in: .whitespacesAndNewlines)
+            if (!isURLPresent(in: licenseURLvalue) && !licenseURLvalue.isEmpty) { licenseURLvalue = defaults.emptyValue }
+
+            // Get authentification Int
+            let authTypeValue : Int = authenticationType(for: csvArrayColumn[column.authentication_type].trimmingCharacters(in: .whitespacesAndNewlines))
+
+            let newFeed : feed = feed (
+                fourZeroThreeClientError    : csvArrayColumn[column.fourZeroThreeClientError],
+                timestamp                   : timestampFormatted,
+                provider                    : provider,
+                oldMobilityDatabaseID       : Int(csvArrayColumn[column.oldMobilityDatabaseID].trimmingCharacters(in: .escapedDoubleQuote)) ?? 0,
+                dataType                    : dataTypeValue,
+                dataTypeString              : csvArrayColumn[column.datatype].count < 3 ? RealtimeEntityType.empty.asString : csvArrayColumn[column.datatype],
+                issueType                   : issueTypeValue,
+                downloadURL                 : downloadURLvalue,
+                country                     : csvArrayColumn[column.country].trimmingCharacters(in: .whitespacesAndNewlines),
+                subdivisionName             : csvArrayColumn[column.subdivision_name].trimmingCharacters(in: .whitespacesAndNewlines),
+                municipality                : csvArrayColumn[column.municipality].trimmingCharacters(in: .whitespacesAndNewlines),
+                name                        : csvArrayColumn[column.name].trimmingCharacters(in: .whitespacesAndNewlines),
+                licenseURL                  : licenseURLvalue,
+                authenticationType          : authTypeValue,
+                authenticationInfoURL       : csvArrayColumn[column.authentication_info_url].trimmingCharacters(in: .whitespacesAndNewlines),
+                apiKeyParameterName         : csvArrayColumn[column.api_key_parameter_name].trimmingCharacters(in: .whitespacesAndNewlines),
+                note                        : csvArrayColumn[column.note].trimmingCharacters(in: .whitespacesAndNewlines),
+                status                      : csvArrayColumn[column.status].trimmingCharacters(in: .whitespacesAndNewlines),
+                redirects                   : redirectArray(for: csvArrayColumn[column.redirects]),
+                dataProducerEmail           : csvArrayColumn[column.dataproduceremail].trimmingCharacters(in: .whitespacesAndNewlines)
+            )
+            
+            feeds.append(newFeed)
+            counter += 1
+        }
+        
+        return feeds
+
     }
-    
-    return feeds
 }
 
 /// Determines the `IssueType` based on the provided string value.
@@ -514,13 +590,13 @@ func parseCSV(csvLines: [String], columnSeparator: String, dateFormatRegex: Stri
 /// - Returns: An `IssueType` enum value based on the provided string. If no match is found, returns `.unknown`.
 func issueType(for issueTypeValue: String) -> IssueType {
     let issueTypeMappings: [(IssueType, [String])] = [
-        (.isAddNewFeed, [IssueType.isAddNewFeed.asString, IssueType.isAddNewSource.asString]),
-        (.isFeedUpdate, [IssueType.isUpdateExistingFeed.asString, IssueType.isFeedUpdate.asString]),
-        (.isToRemoveFeed, [IssueType.isToRemoveFeed.asString])
+        (.isAddNewFeed, [IssueType.isAddNewFeed.asString.lowercased(), IssueType.isAddNewSource.asString.lowercased()]),
+        (.isFeedUpdate, [IssueType.isUpdateExistingFeed.asString.lowercased(), IssueType.isFeedUpdate.asString.lowercased()]),
+        (.isToRemoveFeed, [IssueType.isToRemoveFeed.asString.lowercased()])
     ]
     
     return issueTypeMappings.first { (_: IssueType, keywords : [String] ) in
-        keywords.contains { issueTypeValue.contains($0) }
+        keywords.contains { issueTypeValue.lowercased().contains($0) }
     }?.0 ?? .isUnknown
 }
 
@@ -529,12 +605,12 @@ func issueType(for issueTypeValue: String) -> IssueType {
 /// - Returns: A `DataType` enum value based on the provided string. If no match is found, returns `.unknown`.
 func dataType(for dataTypeValue: String) -> DataType {
     let dataTypeMappings: [(DataType, [String])] = [
-        (.schedule, [DataType.schedule.asString]),
-        (.realtime, [DataType.realtime.asString, RealtimeEntityType.vehiclePositions.asString, RealtimeEntityType.tripUpdates.asString, RealtimeEntityType.serviceAlerts.asString, RealtimeEntityType.unknown.asString, RealtimeEntityType.empty.asString])
+        (.schedule, [DataType.schedule.asString.lowercased()]),
+        (.realtime, [DataType.realtime.asString.lowercased(), RealtimeEntityType.vehiclePositions.asString.lowercased(), RealtimeEntityType.tripUpdates.asString.lowercased(), RealtimeEntityType.serviceAlerts.asString.lowercased(), RealtimeEntityType.unknown.asString.lowercased(), RealtimeEntityType.empty.asString.lowercased()])
     ]
     
     return dataTypeMappings.first { (_: DataType, keywords : [String] ) in
-        keywords.contains { dataTypeValue.contains($0) }
+        keywords.contains { dataTypeValue.lowercased().contains($0) }
     }?.0 ?? .unknown
 }
 
@@ -580,9 +656,9 @@ func redirectArray(for rawData: String) -> String {
     guard !rawData.isEmpty else { return defaults.emptyValueRaw }
 
     let openingPrefix       : String = ", redirects=["
+    let prefix              : String = "{\"\"id\"\": "
+    let suffix              : String = ", \"\"comment\"\": \"\" \"\"}"
     let closingSuffix       : String = "]"
-    let prefix             : String = "{\"\"id\"\": "
-    let suffix             : String = ", \"\"comment\"\": \"\" \"\"}"
     let keyValuePairsJoiner : String = ", "
 
     let redirectEntries : String = rawData
@@ -660,6 +736,7 @@ func prettyPrintPythonCommands(input: String) -> String {
     
     // Process each command
     let formattedCommands: [String] = commands.map { command -> String in
+
         // Find the arguments part of the command (inside parentheses)
         guard let argsStartIndex: String.Index = command.firstIndex(of: "("),
               let argsEndIndex: String.Index = command.lastIndex(of: ")") else { return command }
@@ -692,6 +769,10 @@ extension CharacterSet {
 }
 
 extension feed {
+
+    /// Provides a textual description of the `feed` instance.
+    /// 
+    /// The `description` property generates a detailed, human-readable summary of the feed's attributes, including provider, data type, issue type, download URL, location details, and additional metadata. This description is formatted for easy readability and is useful for debugging or logging feed details.
     var description: String {
         """
         \t\tFEED DETAILS:
@@ -715,4 +796,5 @@ extension feed {
         \t\t  = Data Producer Email :       \(dataProducerEmail)
         """
     }
+
 }

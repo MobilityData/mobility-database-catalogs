@@ -6,11 +6,27 @@ import Foundation
 // MARK: - ERRORS
 
 enum ScriptError: Error {
+    
     case noData
     case networkError
     case parseError
     case incorrectArgumentsCount
     case insufficientNumberOfColumns
+
+    var description: String {
+        switch self {
+        case .noData:
+            return "No data seems to be present in the source document."
+        case .networkError:
+            return "A network error occurred or the specified URL does not appear to exist."
+        case .parseError:
+            return "Failed to parse the CSV data."
+        case .incorrectArgumentsCount:
+            return "Incorrect number of arguments provided to the script. Expected 4: a string with the URL, the date to find, a date format and the date format desired."
+        case .insufficientNumberOfColumns:
+            return "Insufficient number of columns in the CSV."
+        }
+    }
 }
 
 // MARK: - DEFAULTS
@@ -435,20 +451,21 @@ func main() {
             throw ScriptError.incorrectArgumentsCount
         }
     } catch ScriptError.noData {
-        print("ERROR: Downloaded CSV contains no data.")
+        print("ERROR: \(ScriptError.noData.description)")
         exit(1)
     } catch ScriptError.networkError {
-        print("ERROR: The specified URL does not appear to exist.")
+        print("ERROR:\(ScriptError.networkError.description) ")
         exit(2)  // Specific error code for network issues
     } catch ScriptError.parseError {
         exit(2)  // Specific error code for network issues
     } catch ScriptError.incorrectArgumentsCount {
-        print("ERROR: Incorrect number of arguments provided to the script. Expected 4: a string with the URL, the date to find, a date format and the date format desired.")
+        print("ERROR: \(ScriptError.incorrectArgumentsCount.description)")
         exit(1)
     } catch ScriptError.insufficientNumberOfColumns {
+        print("ERROR: \(ScriptError.insufficientNumberOfColumns.description)")
         exit(1)
     } catch {
-        print("ERROR: Unexpected error: \(error)")
+        print("ERROR: Unexpected error: \(error.localizedDescription)")
         exit(255)  // General error catch-all
     }
 }
@@ -522,7 +539,7 @@ func parseCSV(csvLines: [String], columnSeparator: String, dateFormatRegex: Stri
             let csvArrayColumn : [String] = line.components(separatedBy: columnSeparator)
             if isInDebugMode { print("\t\t\t- Column count for item \(counter) : \(csvArrayColumn.count)") }
             guard csvArrayColumn.count >= column.count else {
-                print("Error: Insufficient number of columns. Expected at least \(column.count), but got \(csvArrayColumn.count).")
+                print("Expected at least \(column.count) columns, but got \(csvArrayColumn.count) instead.")
                 throw ScriptError.insufficientNumberOfColumns
             }
 

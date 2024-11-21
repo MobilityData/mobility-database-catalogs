@@ -101,15 +101,7 @@ enum RealtimeEntityType : String {
 
 /// A structure that defines column indices for mobility data processing.
 ///
-/// This struct provides a set of static constants representing column positions in a data structure,
-/// likely used for handling mobility or transportation-related information. Each constant maps to a specific
-/// zero-based index position in the underlying data.
-///
-/// Column Structure:
-/// - 0-5: Basic error and metadata fields
-/// - 6-10: Geographic and location information
-/// - 11-14: Authentication and licensing details
-/// - 15-18: Additional metadata and status information
+/// This struct provides a set of static constants representing column positions in a data structure, likely used for handling mobility or transportation-related information. Each constant maps to a specific zero-based index position in the underlying data.
 ///
 /// - Note: The structure maintains a fixed count of 19 columns (0-18)
 struct column {
@@ -133,22 +125,12 @@ struct column {
     static let  redirects                : Int = 17 // R
     static let  dataproduceremail        : Int = 18 // S
 
-    // List properties manually as a static array
     static var count                     : Int { return 19 }
 }
 
-/// A structure representing a mobility data feed entry.
+/// A structure representing a MobilityData feed entry.
 ///
-/// This struct encapsulates all properties of a single feed, including
-/// metadata, geographic information, authentication details, and status information.
-/// It serves as a comprehensive data model for storing and managing mobility feed data.
-///
-/// The properties are organized into several logical groups:
-/// - Basic metadata (timestamp, provider)
-/// - Data classification (dataType, issueType)
-/// - Geographic information (country, subdivisionName, municipality)
-/// - Authentication and licensing (licenseURL, authenticationType, authenticationInfoURL)
-/// - Status and contact information (status, dataProducerEmail)
+/// This struct encapsulates all properties of a single feed, including metadata, geographic information, authentication details, and status information. It serves as a comprehensive data model for storing and managing mobility feed data.
 struct feed {
     var fourZeroThreeClientError : String // we ignore this column
     var timestamp                : String
@@ -171,7 +153,6 @@ struct feed {
     var redirects                : String
     var dataProducerEmail        : String
 
-    // Add count() function
     func count() -> Int { return Mirror(reflecting: self).children.count }
 
     /// Generates a list of real-time data codes based on the `dataTypeString` property.
@@ -212,7 +193,7 @@ if CommandLine.arguments.count == 5 {
     print("Running inside GitHub Actions.")
     args = CommandLine.arguments
 } else {
-    // this is for local testing purposes only.
+    // this is for local testing only.
     print("Running locally.")
     args = ["scriptname", 
         "https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/gviz/tq?tqx=out:csv;outFileName:data&sheet=%5BCLEANED%5D%20For%20import&range=A2:S", 
@@ -227,6 +208,17 @@ if CommandLine.arguments.count == 5 {
 // RUN MAIN SCRIPT
 main()
 
+/// The `main` function serves as the entry point for the script. It performs the following tasks:
+/// - Validates the number of input arguments.
+/// - Downloads and parses a CSV file based on provided arguments.
+/// - Generates Python commands for manipulating feed data.
+/// - Handles and logs errors gracefully.
+///
+/// The function terminates with appropriate exit codes:
+/// - `0` for success.
+/// - Specific error codes (`1`, `2`, `255`) for various failure scenarios.
+///
+/// - Throws: `ScriptError` for specific error conditions like incorrect arguments or data parsing issues.
 func main() {
     do {
         if args.count == 5 {
@@ -455,9 +447,9 @@ func main() {
         exit(1)
     } catch ScriptError.networkError {
         print("ERROR:\(ScriptError.networkError.description) ")
-        exit(2)  // Specific error code for network issues
+        exit(2)
     } catch ScriptError.parseError {
-        exit(2)  // Specific error code for network issues
+        exit(2)
     } catch ScriptError.incorrectArgumentsCount {
         print("ERROR: \(ScriptError.incorrectArgumentsCount.description)")
         exit(1)
@@ -782,6 +774,10 @@ extension CharacterSet {
 }
 
 extension feed {
+
+    /// Provides a textual description of the `feed` instance.
+    /// 
+    /// The `description` property generates a detailed, human-readable summary of the feed's attributes, including provider, data type, issue type, download URL, location details, and additional metadata. This description is formatted for easy readability and is useful for debugging or logging feed details.
     var description: String {
         """
         \t\tFEED DETAILS:
@@ -805,4 +801,5 @@ extension feed {
         \t\t  = Data Producer Email :       \(dataProducerEmail)
         """
     }
+
 }

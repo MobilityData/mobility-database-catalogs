@@ -6,7 +6,7 @@ import Foundation
 // MARK: - ERRORS
 
 enum ScriptError: Error {
-    
+
     case noData
     case networkError
     case parseError
@@ -205,7 +205,7 @@ struct feed {
 // MARK: - MAIN
 
 var args : [String] = [""]
-var isInDebugMode : Bool = true
+var isInDebugMode : Bool = false
 
 if CommandLine.arguments.count == 5 {
     // this is for using inside the GitHub workflow only.

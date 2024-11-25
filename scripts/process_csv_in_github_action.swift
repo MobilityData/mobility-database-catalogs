@@ -190,7 +190,6 @@ var isInDebugMode : Bool = false
 
 if CommandLine.arguments.count == 5 {
     // this is for using inside the GitHub workflow only.
-    print("Running inside GitHub Actions.")
     args = CommandLine.arguments
 } else {
     // this is for local testing only.

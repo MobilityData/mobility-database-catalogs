@@ -263,8 +263,9 @@ func main() {
                         """
 
                     } else if currentFeed.dataType == DataType.realtime {  // add_gtfs_realtime_source
+                        print("RTCode : \(currentFeed.realtimeCode())")
                         
-                        let entityTypeString : String = "\"[\"\(currentFeed.realtimeCode().joined(separator: "\", \""))\"]\""
+                        let entityTypeString : String = "\"\(currentFeed.realtimeCode().joined(separator: "\"\", \"\""))\""
 
                         PYTHON_SCRIPT_ARGS_TEMP = """
                         add_gtfs_realtime_source(
@@ -306,8 +307,9 @@ func main() {
                         """
 
                     } else if currentFeed.dataType == DataType.realtime {  // update_gtfs_realtime_source
+                        print("RTCode : \(currentFeed.realtimeCode())")
                         
-                        let entityTypeString : String = "\"[\"\(currentFeed.realtimeCode().joined(separator: "\", \""))\"]\""
+                        let entityTypeString : String = "\"\(currentFeed.realtimeCode().joined(separator: "\"\", \"\""))\""
                         
                         PYTHON_SCRIPT_ARGS_TEMP = """
                         update_gtfs_realtime_source(
@@ -350,8 +352,8 @@ func main() {
 
 
                     } else if currentFeed.dataType == DataType.realtime {  // update_gtfs_realtime_source
-                        
-                        let entityTypeString : String = "\"[\"\(currentFeed.realtimeCode().joined(separator: "\", \""))\"]\""
+                        print("RTCode : \(currentFeed.realtimeCode())")
+                        let entityTypeString : String = "\"\(currentFeed.realtimeCode().joined(separator: "\"\", \"\""))\""
 
                         PYTHON_SCRIPT_ARGS_TEMP = """
                         update_gtfs_realtime_source(
@@ -394,8 +396,9 @@ func main() {
                         """
 
                     } else if currentFeed.dataType == DataType.realtime {  // add_gtfs_realtime_source
+                        print("RTCode : \(currentFeed.realtimeCode())")
                         
-                        let entityTypeString : String = "\"[\"\(currentFeed.realtimeCode().joined(separator: "\", \""))\"]\""
+                        let entityTypeString : String = "\"\(currentFeed.realtimeCode().joined(separator: "\"\", \"\""))\""
 
                         PYTHON_SCRIPT_ARGS_TEMP = """
                         add_gtfs_realtime_source(
@@ -655,8 +658,8 @@ func redirectArray(for rawData: String) -> String {
     guard !rawData.isEmpty else { return defaults.emptyValueRaw }
 
     let openingPrefix       : String = ", redirects=["
-    let prefix              : String = "{\"\"id\"\": "
-    let suffix              : String = ", \"\"comment\"\": \"\" \"\"}"
+    let prefix              : String = "{\"\"id\"\": \""
+    let suffix              : String = "\", \"\"comment\"\": \"\" \"\"}"
     let closingSuffix       : String = "]"
     let keyValuePairsJoiner : String = ", "
 

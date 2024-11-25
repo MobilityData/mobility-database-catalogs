@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2210,
+    "data_type": "gtfs",
+    "provider": "El Segundo Transportation",
+    "feed_contact_email": "csinteractive@metro.net",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "El Segundo",
+        "bounding_box": {
+            "minimum_latitude": 33.9046426047857,
+            "maximum_latitude": 33.9309324789624,
+            "minimum_longitude": -118.421993344071,
+            "maximum_longitude": -118.380819763092,
+            "extracted_on": "2024-11-20T10:34:37+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/LACMTA/los-angeles-regional-gtfs/raw/main/elsegundo-ca-us/elsegundo-ca-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-el-segundo-transportation-gtfs-2210.zip?alt=media"
+    },
+    "redirect": []
+}

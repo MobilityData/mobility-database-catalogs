@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2204,
+    "data_type": "gtfs",
+    "provider": "Kings Area Rural Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Kings County",
+        "bounding_box": {
+            "minimum_latitude": 36.002941,
+            "maximum_latitude": 36.772629,
+            "minimum_longitude": -120.14516,
+            "maximum_longitude": -119.288234,
+            "extracted_on": "2024-11-20T10:34:35+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://kart.connexionz.net/rtt/public/utility/gtfs.aspx",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-kings-area-rural-transit-gtfs-2204.zip?alt=media"
+    },
+    "redirect": []
+}

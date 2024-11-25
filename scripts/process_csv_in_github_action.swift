@@ -263,7 +263,6 @@ func main() {
                         """
 
                     } else if currentFeed.dataType == DataType.realtime {  // add_gtfs_realtime_source
-                        print("RTCode : \(currentFeed.realtimeCode())")
                         
                         let entityTypeString : String = "\"\(currentFeed.realtimeCode().joined(separator: "\"\", \"\""))\""
 
@@ -307,7 +306,6 @@ func main() {
                         """
 
                     } else if currentFeed.dataType == DataType.realtime {  // update_gtfs_realtime_source
-                        print("RTCode : \(currentFeed.realtimeCode())")
                         
                         let entityTypeString : String = "\"\(currentFeed.realtimeCode().joined(separator: "\"\", \"\""))\""
                         
@@ -352,7 +350,7 @@ func main() {
 
 
                     } else if currentFeed.dataType == DataType.realtime {  // update_gtfs_realtime_source
-                        print("RTCode : \(currentFeed.realtimeCode())")
+                        
                         let entityTypeString : String = "\"\(currentFeed.realtimeCode().joined(separator: "\"\", \"\""))\""
 
                         PYTHON_SCRIPT_ARGS_TEMP = """
@@ -396,7 +394,6 @@ func main() {
                         """
 
                     } else if currentFeed.dataType == DataType.realtime {  // add_gtfs_realtime_source
-                        print("RTCode : \(currentFeed.realtimeCode())")
                         
                         let entityTypeString : String = "\"\(currentFeed.realtimeCode().joined(separator: "\"\", \"\""))\""
 

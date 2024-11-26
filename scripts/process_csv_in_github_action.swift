@@ -75,7 +75,9 @@ enum DataType : String {
     var asString : String { self.rawValue }
 }
 
-enum RealtimeEntityType : String {
+enum RealtimeEntityType : String, CaseIterable {
+    case schedule         = "Schedule"
+    case realtime         = "Realtime"
     case vehiclePositions = "vp"
     case tripUpdates      = "tu"
     case serviceAlerts    = "sa"
@@ -88,12 +90,38 @@ enum RealtimeEntityType : String {
     /// Provides a detailed String for each realtime entity type case.
     var asString: String {
         switch self {
+            case .schedule         : return "Schedule"
+            case .realtime         : return "Realtime"
             case .vehiclePositions : return "Vehicle Positions"
             case .tripUpdates      : return "Trip Updates"
             case .serviceAlerts    : return "Service Alerts"
-            case .unknown          : return "General / Unknown"
+            case .unknown          : return "Unknown"
             case .empty            : return "Nil"
         }
+    }
+
+    static var allAsStrings: [String] {
+        return [
+            RealtimeEntityType.schedule.asString,
+            RealtimeEntityType.realtime.asString,
+            RealtimeEntityType.vehiclePositions.asString,
+            RealtimeEntityType.tripUpdates.asString,
+            RealtimeEntityType.serviceAlerts.asString
+        ]
+    }
+
+    static var allAsEnum: [RealtimeEntityType] {
+        return [
+            RealtimeEntityType.realtime,
+            RealtimeEntityType.vehiclePositions,
+            RealtimeEntityType.tripUpdates,
+            RealtimeEntityType.serviceAlerts
+        ]
+    }
+
+    /// Returns an String of `asShortString` values for the provided value of `RealtimeEntityType`
+    func realtimeCode() -> String {
+        return "\"\(self.asShortString)\""
     }
 }
 
@@ -136,7 +164,7 @@ struct feed {
     var timestamp                : String
     var provider                 : String
     var oldMobilityDatabaseID    : Int
-    var dataType                 : DataType
+    var dataType                 : RealtimeEntityType
     var dataTypeString           : String
     var issueType                : IssueType
     var downloadURL              : String
@@ -154,24 +182,6 @@ struct feed {
     var dataProducerEmail        : String
 
     func count() -> Int { return Mirror(reflecting: self).children.count }
-
-    /// Generates a list of real-time data codes based on the `dataTypeString` property.
-    ///
-    /// - Returns: An array of strings containing the corresponding real-time data codes.
-    func realtimeCode() -> [String] {
-        let realTimeCodes: [DataType : [String]] = [
-            DataType.schedule: [],
-            DataType.realtime: [
-                RealtimeEntityType.vehiclePositions.asShortString,
-                RealtimeEntityType.tripUpdates.asShortString,
-                RealtimeEntityType.serviceAlerts.asShortString
-            ],
-            DataType.unknown: []
-        ]
-
-        // Return the relevant codes for `dataType`, or a default containing "tripUpdates" if empty
-        return realTimeCodes[dataType]?.isEmpty == false ? realTimeCodes[dataType]! : [RealtimeEntityType.tripUpdates.asShortString]
-    }
 
     /// Determines the authentication type based on a given authentication string, handling whitespace and invalid values.
     ///
@@ -243,7 +253,7 @@ func main() {
 
                     if isInDebugMode { print("\t\tCurrent feed is new.") }
 
-                    if currentFeed.dataType == DataType.schedule { // add_gtfs_schedule_source
+                    if currentFeed.dataType == RealtimeEntityType.schedule { // add_gtfs_schedule_source
 
                         PYTHON_SCRIPT_ARGS_TEMP  = """
                         add_gtfs_schedule_source(
@@ -262,9 +272,9 @@ func main() {
                         \(currentFeed.redirects))
                         """
 
-                    } else if currentFeed.dataType == DataType.realtime {  // add_gtfs_realtime_source
+                    } else if RealtimeEntityType.allAsEnum.contains(currentFeed.dataType) {  // add_gtfs_realtime_source
                         
-                        let entityTypeString : String = "\"\(currentFeed.realtimeCode().joined(separator: "\"\", \"\""))\""
+                        let entityTypeString : String = currentFeed.dataType.realtimeCode()
 
                         PYTHON_SCRIPT_ARGS_TEMP = """
                         add_gtfs_realtime_source(
@@ -287,7 +297,7 @@ func main() {
 
                     if isInDebugMode { print("\t\tCurrent feed is update.") }
 
-                    if currentFeed.dataType == DataType.schedule { // update_gtfs_schedule_source
+                    if currentFeed.dataType == RealtimeEntityType.schedule { // update_gtfs_schedule_source
 
                         PYTHON_SCRIPT_ARGS_TEMP = """
                         update_gtfs_schedule_source(mdb_source_id=\(currentFeed.oldMobilityDatabaseID), 
@@ -304,9 +314,9 @@ func main() {
                         \(currentFeed.redirects))
                         """
 
-                    } else if currentFeed.dataType == DataType.realtime {  // update_gtfs_realtime_source
+                    } else if RealtimeEntityType.allAsEnum.contains(currentFeed.dataType) {  // update_gtfs_realtime_source
                         
-                        let entityTypeString : String = "\"\(currentFeed.realtimeCode().joined(separator: "\"\", \"\""))\""
+                        let entityTypeString : String = currentFeed.dataType.realtimeCode()
                         
                         PYTHON_SCRIPT_ARGS_TEMP = """
                         update_gtfs_realtime_source(
@@ -328,7 +338,7 @@ func main() {
 
                     if isInDebugMode { print("\t\tCurrent feed is to be removed.") }
 
-                    if currentFeed.dataType == DataType.schedule { // update_gtfs_schedule_source
+                    if currentFeed.dataType == RealtimeEntityType.schedule { // update_gtfs_schedule_source
 
                         PYTHON_SCRIPT_ARGS_TEMP = """
                         update_gtfs_schedule_source(
@@ -347,9 +357,9 @@ func main() {
                         """
 
 
-                    } else if currentFeed.dataType == DataType.realtime {  // update_gtfs_realtime_source
+                    } else if RealtimeEntityType.allAsEnum.contains(currentFeed.dataType) {  // update_gtfs_realtime_source
                         
-                        let entityTypeString : String = "\"\(currentFeed.realtimeCode().joined(separator: "\"\", \"\""))\""
+                        let entityTypeString : String = currentFeed.dataType.realtimeCode()
 
                         PYTHON_SCRIPT_ARGS_TEMP = """
                         update_gtfs_realtime_source(
@@ -371,7 +381,7 @@ func main() {
 
                     if isInDebugMode { print("\t\tCurrent feed is assumed to be new.") }
 
-                    if currentFeed.dataType == DataType.schedule { // add_gtfs_schedule_source
+                    if currentFeed.dataType == RealtimeEntityType.schedule { // add_gtfs_schedule_source
 
                         PYTHON_SCRIPT_ARGS_TEMP  = """
                         add_gtfs_schedule_source(
@@ -390,9 +400,9 @@ func main() {
                         \(currentFeed.redirects))
                         """
 
-                    } else if currentFeed.dataType == DataType.realtime {  // add_gtfs_realtime_source
+                    } else if RealtimeEntityType.allAsEnum.contains(currentFeed.dataType) {  // add_gtfs_realtime_source
                         
-                        let entityTypeString : String = "\"\(currentFeed.realtimeCode().joined(separator: "\"\", \"\""))\""
+                        let entityTypeString : String = currentFeed.dataType.realtimeCode()
 
                         PYTHON_SCRIPT_ARGS_TEMP = """
                         add_gtfs_realtime_source(
@@ -526,7 +536,7 @@ func parseCSV(csvLines: [String], columnSeparator: String, dateFormatRegex: Stri
 
             // Get issue and data types
             let issueTypeValue : IssueType = issueType(for : csvArrayColumn[column.issueType].trimmingCharacters(in: .whitespacesAndNewlines))
-            let dataTypeValue  : DataType  = dataType(for : csvArrayColumn[column.datatype].count < 3 ? RealtimeEntityType.empty.asString : csvArrayColumn[column.datatype])
+            let dataTypeValue  : RealtimeEntityType  = dataType(for : csvArrayColumn[column.datatype].count < 3 ? RealtimeEntityType.empty.asString : csvArrayColumn[column.datatype])
 
             // Format timestamp properly
             let timestampFormatted : String = extractDate(from : csvArrayColumn[column.timestamp].trimmingCharacters(in: .whitespacesAndNewlines), 
@@ -598,16 +608,25 @@ func issueType(for issueTypeValue: String) -> IssueType {
 /// Determines the `DataType` based on the provided string value.
 /// - Parameter dataTypeValue: A `String` representing the data type, which may contain certain keywords.
 /// - Returns: A `DataType` enum value based on the provided string. If no match is found, returns `.unknown`.
-func dataType(for dataTypeValue: String) -> DataType {
-    let dataTypeMappings: [(DataType, [String])] = [
-        (.schedule, [DataType.schedule.asString.lowercased()]),
-        (.realtime, [DataType.realtime.asString.lowercased(), RealtimeEntityType.vehiclePositions.asString.lowercased(), RealtimeEntityType.tripUpdates.asString.lowercased(), RealtimeEntityType.serviceAlerts.asString.lowercased(), RealtimeEntityType.unknown.asString.lowercased(), RealtimeEntityType.empty.asString.lowercased()])
-    ]
+func dataType(for value: String) -> RealtimeEntityType {
+
+    var result : RealtimeEntityType = .unknown // Default to `.unknown` if no match is found
+
+    func normalize(_ string: String) -> String {
+        return string.replacingOccurrences(of: "\\s+", with: "", options: .regularExpression).lowercased()
+    }
+
+    if let index: Array<String>.Index = RealtimeEntityType.allAsStrings.firstIndex(where: { normalize(value).contains(normalize($0)) }) {
+        // Use the index to return the corresponding enum case from allCases
+        print("\t\t\t\t- Found index: \(index)")
+        result = RealtimeEntityType.allCases[index]
+    }
+
+    if isInDebugMode { print("\t\t\t\t- Input value: \(value), Result: \(result.asString)") }
     
-    return dataTypeMappings.first { (_: DataType, keywords : [String] ) in
-        keywords.contains { dataTypeValue.lowercased().contains($0) }
-    }?.0 ?? .unknown
+    return result
 }
+
 
 /// Extracts a date from a string and formats it according to a desired format.
 ///

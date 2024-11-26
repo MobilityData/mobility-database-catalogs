@@ -5,7 +5,7 @@
     "status": "inactive",
     "location": {
         "country_code": "TH",
-        "subdivision_name": "Chiang Mai ",
+        "subdivision_name": "Chiang Mai",
         "bounding_box": {
             "minimum_latitude": 7.91751,
             "maximum_latitude": 20.404787,

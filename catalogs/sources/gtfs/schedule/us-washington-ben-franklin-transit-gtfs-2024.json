@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 2024,
     "data_type": "gtfs",
-    "provider": "Ben Franklin Transit ",
+    "provider": "Ben Franklin Transit",
     "status": "deprecated",
     "location": {
         "country_code": "US",

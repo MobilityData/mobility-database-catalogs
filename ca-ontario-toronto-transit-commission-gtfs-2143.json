@@ -2,7 +2,7 @@
     "mdb_source_id": 2143,
     "data_type": "gtfs",
     "provider": "Toronto Transit Commission",
-    "name": "Static feed for beta realtime feed"
+    "name": "Static feed for beta realtime feed",
     "status": "development",
     "location": {
         "country_code": "CA",

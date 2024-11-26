@@ -1,12 +1,12 @@
 {
     "mdb_source_id": 2188,
     "data_type": "gtfs",
-    "provider": "Upper Arkansas Area Council of Governments ",
+    "provider": "Upper Arkansas Area Council of Governments",
     "name": "Flex",
     "feed_contact_email": "support+uaacog-co-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
-        "subdivision_name": "Colorado ",
+        "subdivision_name": "Colorado",
         "bounding_box": {
             "minimum_latitude": 38.13336974294547,
             "maximum_latitude": 38.83694649838654,

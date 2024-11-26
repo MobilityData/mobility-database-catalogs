@@ -4,8 +4,8 @@
     "provider": "dBus",
     "location": {
         "country_code": "ES",
-        "subdivision_name": "Gipuzkoa ",
-        "municipality": "San Sebastián ",
+        "subdivision_name": "Gipuzkoa",
+        "municipality": "San Sebastián",
         "bounding_box": {
             "minimum_latitude": 43.2777689602104,
             "maximum_latitude": 43.32593880362474,

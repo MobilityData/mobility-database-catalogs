@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 1204,
     "data_type": "gtfs",
-    "provider": "SIMUR Bogota ",
+    "provider": "SIMUR Bogota",
     "status": "deprecated",
     "location": {
         "country_code": "CO",

@@ -279,7 +279,6 @@ func main() {
                         note=\"\(currentFeed.note)\", 
                         status=\"\(currentFeed.status)\", 
                         feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
-                        \(currentFeed.redirects))
                         """
 
                     }
@@ -321,7 +320,6 @@ func main() {
                         note=\"\(currentFeed.note)\", 
                         status=\"\(currentFeed.status)\", 
                         feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
-                        \(currentFeed.redirects))
                         """
 
                     }
@@ -365,7 +363,6 @@ func main() {
                         note=\"\(currentFeed.note)\", 
                         status=\"\(currentFeed.status)\", 
                         feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
-                        \(currentFeed.redirects))
                         """
 
                     }
@@ -410,7 +407,6 @@ func main() {
                         note=\"\(currentFeed.note)\", 
                         status=\"\(currentFeed.status)\", 
                         feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
-                        \(currentFeed.redirects))
                         """
 
                     }

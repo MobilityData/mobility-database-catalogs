@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 2252,
+    "mdb_source_id": 2241,
     "data_type": "gtfs",
     "provider": "Gwinnett County Transit",
     "location": {
@@ -17,7 +17,7 @@
     "urls": {
         "direct_download": "https://realtimegwinnett.availtec.com/InfoPoint/gtfs-zip.ashx",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-georgia-gwinnett-county-transit-gtfs-2252.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-georgia-gwinnett-county-transit-gtfs-2241.zip?alt=media"
     },
     "redirect": []
 }

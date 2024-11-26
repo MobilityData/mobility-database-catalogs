@@ -618,7 +618,6 @@ func dataType(for value: String) -> RealtimeEntityType {
 
     if let index: Array<String>.Index = RealtimeEntityType.allAsStrings.firstIndex(where: { normalize(value).contains(normalize($0)) }) {
         // Use the index to return the corresponding enum case from allCases
-        print("\t\t\t\t- Found index: \(index)")
         result = RealtimeEntityType.allCases[index]
     }
 

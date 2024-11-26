@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 2217,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Montebello Bus Lines",
+    "static_reference": [
+        2201
+    ],
+    "urls": {
+        "direct_download": "https://mbl.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=Alert",
+        "authentication_type": 0
+    }
+}

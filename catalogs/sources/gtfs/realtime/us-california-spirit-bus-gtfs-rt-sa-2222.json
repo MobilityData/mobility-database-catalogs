@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 2222,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Spirit Bus",
+    "static_reference": [
+        2202
+    ],
+    "urls": {
+        "direct_download": "https://passio3.com/montereyp/passioTransit/gtfs/realtime/serviceAlerts",
+        "authentication_type": 0
+        
+    }
+}

@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "DC Streetcar",
     "feed_contact_email": "support+test+dcstreetcar-dc-us@trilliumtransit.com",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "District of Columbia",
@@ -20,5 +21,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-district-of-columbia-dc-streetcar-gtfs-487.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": 2223,
+            "comment": " "
+        }
+    ]
 }

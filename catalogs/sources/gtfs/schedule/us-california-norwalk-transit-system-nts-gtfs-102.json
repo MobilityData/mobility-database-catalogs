@@ -6,10 +6,11 @@
         "fares-v1",
         "fares-v2"
     ],
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
-        "municipality": "Los Angeles",
+        "municipality": "Norwalk",
         "bounding_box": {
             "minimum_latitude": 33.8654944889,
             "maximum_latitude": 34.0724551769048,
@@ -20,6 +21,13 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/nts-ca-us/nts-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-norwalk-transit-system-nts-gtfs-102.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2241",
+            "comment": " "
+        }
+    ]
 }

@@ -1,0 +1,28 @@
+{
+    "mdb_source_id": 2241,
+    "data_type": "gtfs",
+    "provider": "Williamsburg Area Transit Authority",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Virginia",
+        "municipality": "Williamsburg",
+        "bounding_box": {
+            "minimum_latitude": 37.19292,
+            "maximum_latitude": 37.4106761,
+            "minimum_longitude": -76.82154,
+            "maximum_longitude": -76.51867,
+            "extracted_on": "2024-11-26T22:01:42+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.wata.cadavl.com/WATA/GTFS/GTFS_WATA.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-williamsburg-area-transit-authority-gtfs-2241.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

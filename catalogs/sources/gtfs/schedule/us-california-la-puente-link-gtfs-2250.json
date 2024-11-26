@@ -1,11 +1,8 @@
 {
-    "mdb_source_id": 563,
+    "mdb_source_id": 2250,
     "data_type": "gtfs",
     "provider": "La Puente LINK",
-    "features": [
-        "fares-v1"
-    ],
-    "status": "deprecated",
+    "feed_contact_email": "csinteractive@metro.net",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -15,17 +12,17 @@
             "maximum_latitude": 34.0554403598575,
             "minimum_longitude": -117.980788784323,
             "maximum_longitude": -117.924657370715,
-            "extracted_on": "2022-03-16T20:09:35+00:00"
+            "extracted_on": "2024-11-26T22:01:46+00:00"
         }
     },
     "urls": {
-        "direct_download": "http://data.trilliumtransit.com/gtfs/lapuente-ca-us/lapuente-ca-us.zip",
+        "direct_download": "https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/lapuente-ca-us/lapuente-ca-us.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-la-puente-link-gtfs-563.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-la-puente-link-gtfs-2250.zip?alt=media"
     },
     "redirect": [
         {
-            "id": "2249",
+            "id": "",
             "comment": " "
         }
     ]

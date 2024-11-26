@@ -1,0 +1,29 @@
+{
+    "mdb_source_id": 2244,
+    "data_type": "gtfs",
+    "provider": "Concord Kannapolis Area Transit (Rider Transit)",
+    "feed_contact_email": "support@passiotech.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "North Carolina",
+        "municipality": "Concord",
+        "bounding_box": {
+            "minimum_latitude": 35.31144226,
+            "maximum_latitude": 35.5339389,
+            "minimum_longitude": -80.74585338,
+            "maximum_longitude": -80.57713256,
+            "extracted_on": "2024-11-26T22:01:43+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://passio3.com/concordKat/passioTransit/gtfs/google_transit.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-north-carolina-concord-kannapolis-area-transit-rider-transit-gtfs-2244.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "mdb_source_id": 2239,
+    "data_type": "gtfs",
+    "provider": "Janesville Transit System",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Wisconsin",
+        "municipality": "Janesville",
+        "bounding_box": {
+            "minimum_latitude": 42.497091,
+            "maximum_latitude": 42.729331,
+            "minimum_longitude": -89.06142,
+            "maximum_longitude": -88.973118,
+            "extracted_on": "2024-11-26T22:01:42+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.remix.com/Janesville_Transit.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-wisconsin-janesville-transit-system-gtfs-2239.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

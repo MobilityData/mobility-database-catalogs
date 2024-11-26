@@ -6,11 +6,11 @@
     "features": [
         "fares-v1"
     ],
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Georgia",
-        "municipality": "Atlanta",
+        "municipality": "Gwinnett County",
         "bounding_box": {
             "minimum_latitude": 33.74891,
             "maximum_latitude": 34.085081,
@@ -24,5 +24,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-georgia-gwinnett-county-transit-gtfs-369.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "2250",
+            "comment": " "
+        }
+    ]
 }

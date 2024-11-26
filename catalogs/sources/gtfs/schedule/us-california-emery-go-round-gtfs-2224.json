@@ -1,0 +1,29 @@
+{
+    "mdb_source_id": 2224,
+    "data_type": "gtfs",
+    "provider": "Emery Go-Round",
+    "feed_contact_email": "admin@emerygoround.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Emeryville",
+        "bounding_box": {
+            "minimum_latitude": 37.829424,
+            "maximum_latitude": 37.852317,
+            "minimum_longitude": -122.313403,
+            "maximum_longitude": -122.266983,
+            "extracted_on": "2024-11-26T19:53:24+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://emerygoround.com/data/emerygoround-ca-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-emery-go-round-gtfs-2224.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "mdb_source_id": 2232,
+    "data_type": "gtfs",
+    "provider": "Pueblo Transit",
+    "feed_contact_email": "support+test+pueblo-co-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Pueblo",
+        "bounding_box": {
+            "minimum_latitude": 38.21555474,
+            "maximum_latitude": 38.33220087,
+            "minimum_longitude": -104.67448618260951,
+            "maximum_longitude": -104.5614035,
+            "extracted_on": "2024-11-26T20:56:46+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/pueblo-co-us/pueblo-co-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-pueblo-transit-gtfs-2232.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "mdb_source_id": 2231,
+    "data_type": "gtfs",
+    "provider": "Karlsruher Verkehrsverbund",
+    "feed_contact_email": "fahrplan@kvv.karlsruhe.de",
+    "location": {
+        "country_code": "DE",
+        "subdivision_name": "Baden-Wurttemberg",
+        "municipality": "Karlsruhe",
+        "bounding_box": {
+            "minimum_latitude": 48.44442871,
+            "maximum_latitude": 49.35226413,
+            "minimum_longitude": 7.92986021,
+            "maximum_longitude": 9.52728936,
+            "extracted_on": "2024-11-26T20:56:46+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://projekte.kvv-efa.de/GTFS/google_transit.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-baden-wurttemberg-karlsruher-verkehrsverbund-gtfs-2231.zip?alt=media",
+        "license": "https://www.kvv.de/fahrplan/fahrplaene/open-data.html"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

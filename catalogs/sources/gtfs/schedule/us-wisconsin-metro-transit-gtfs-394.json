@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 394,
     "data_type": "gtfs",
-    "provider": "Metro Transit",
+    "provider": "Metro Transit - City of Madison",
     "feed_contact_email": "mymetrobus@cityofmadison.com",
     "features": [
         "fares-v1"
@@ -23,5 +23,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-wisconsin-metro-transit-gtfs-394.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
 }

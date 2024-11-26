@@ -1,0 +1,29 @@
+{
+    "mdb_source_id": 2211,
+    "data_type": "gtfs",
+    "provider": "Areawide Community Transportation System",
+    "feed_contact_email": "shane.christian@earpdc.org",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Alabama",
+        "municipality": "Anniston",
+        "bounding_box": {
+            "minimum_latitude": 33.598945,
+            "maximum_latitude": 33.750954,
+            "minimum_longitude": -85.860749,
+            "maximum_longitude": -85.783781,
+            "extracted_on": "2024-11-26T17:59:48+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.earpdc.org/wp-content/uploads/static/ACTS_GTFS_Current.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-alabama-areawide-community-transportation-system-gtfs-2211.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

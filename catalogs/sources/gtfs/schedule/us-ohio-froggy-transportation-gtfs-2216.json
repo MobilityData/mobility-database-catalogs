@@ -1,0 +1,29 @@
+{
+    "mdb_source_id": 2216,
+    "data_type": "gtfs",
+    "provider": "Froggy Transportation",
+    "feed_contact_email": "froggytransportation@gmail.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Ohio",
+        "municipality": "Toledo",
+        "bounding_box": {
+            "minimum_latitude": 41.69412,
+            "maximum_latitude": 42.22477,
+            "minimum_longitude": -83.63726,
+            "maximum_longitude": -83.34745,
+            "extracted_on": "2024-11-26T17:59:50+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/11830/T.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-ohio-froggy-transportation-gtfs-2216.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

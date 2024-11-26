@@ -1,0 +1,28 @@
+{
+    "mdb_source_id": 2212,
+    "data_type": "gtfs",
+    "provider": "Empresa Malagueña de Transportes (EMT)",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Andalucía",
+        "municipality": "Málaga",
+        "bounding_box": {
+            "minimum_latitude": 36.64636358663,
+            "maximum_latitude": 36.7800300544653,
+            "minimum_longitude": -4.5761065131992,
+            "maximum_longitude": -4.33577227570503,
+            "extracted_on": "2024-11-26T17:59:50+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.emtmalaga.es/GTFS/google_transit.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-andalucia-empresa-malaguena-de-transportes-emt-gtfs-2212.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

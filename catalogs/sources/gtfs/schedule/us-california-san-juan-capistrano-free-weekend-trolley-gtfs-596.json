@@ -5,7 +5,7 @@
     "features": [
         "fares-v1"
     ],
-    "status": "active",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

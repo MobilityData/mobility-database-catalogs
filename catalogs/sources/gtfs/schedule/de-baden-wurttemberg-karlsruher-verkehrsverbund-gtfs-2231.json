@@ -21,10 +21,5 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-baden-wurttemberg-karlsruher-verkehrsverbund-gtfs-2231.zip?alt=media",
         "license": "https://www.kvv.de/fahrplan/fahrplaene/open-data.html"
     },
-    "redirect": [
-        {
-            "id": "",
-            "comment": " "
-        }
-    ]
+    "redirect": []
 }

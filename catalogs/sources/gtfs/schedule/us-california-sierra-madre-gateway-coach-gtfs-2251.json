@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2251,
+    "data_type": "gtfs",
+    "provider": "Sierra Madre Gateway Coach",
+    "feed_contact_email": "csinteractive@metro.net",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Sierra Madre",
+        "bounding_box": {
+            "minimum_latitude": 34.150285558358,
+            "maximum_latitude": 34.1695312727436,
+            "minimum_longitude": -118.074908013661,
+            "maximum_longitude": -118.040285635729,
+            "extracted_on": "2024-11-26T22:01:46+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/sierramadre-ca-us/sierramadre-ca-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-sierra-madre-gateway-coach-gtfs-2251.zip?alt=media"
+    },
+    "redirect": []
+}

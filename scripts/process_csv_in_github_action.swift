@@ -288,7 +288,7 @@ func main() {
                         name=\"\(currentFeed.name)\", 
                         note=\"\(currentFeed.note)\", 
                         status=\"\(currentFeed.status)\", 
-                        feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
+                        feed_contact_email=\"\(currentFeed.dataProducerEmail)\")
                         """
 
                     }
@@ -329,7 +329,7 @@ func main() {
                         name=\"\(currentFeed.name)\", 
                         note=\"\(currentFeed.note)\", 
                         status=\"\(currentFeed.status)\", 
-                        feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
+                        feed_contact_email=\"\(currentFeed.dataProducerEmail)\")
                         """
 
                     }
@@ -372,7 +372,7 @@ func main() {
                         name=\"\"**** issued for removal ****\"\", 
                         note=\"\(currentFeed.note)\", 
                         status=\"\(currentFeed.status)\", 
-                        feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
+                        feed_contact_email=\"\(currentFeed.dataProducerEmail)\")
                         """
 
                     }
@@ -416,7 +416,7 @@ func main() {
                         name=\"\(currentFeed.name)\", 
                         note=\"\(currentFeed.note)\", 
                         status=\"\(currentFeed.status)\", 
-                        feed_contact_email=\"\(currentFeed.dataProducerEmail)\"
+                        feed_contact_email=\"\(currentFeed.dataProducerEmail)\")
                         """
 
                     }

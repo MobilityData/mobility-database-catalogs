@@ -5,6 +5,9 @@
         "vp"
     ],
     "provider": "Empresa Malagueña de Transportes",
+    "static_reference": [
+        2112
+    ],
     "urls": {
         "direct_download": "https://gtfs.emtmalaga.es/GTFSRTapi/api/vehicleposition",
         "authentication_type": 0

@@ -2,11 +2,11 @@
     "mdb_source_id": 2020,
     "data_type": "gtfs",
     "provider": "STP Brindisi",
-    "name": "Linee Urbane di Ostuni ",
+    "name": "Linee Urbane di Ostuni",
     "feed_contact_email": "info@stpbrindisi.it",
     "location": {
         "country_code": "IT",
-        "subdivision_name": "Brindisi ",
+        "subdivision_name": "Brindisi",
         "municipality": "Ostuni",
         "bounding_box": {
             "minimum_latitude": 40.643878,

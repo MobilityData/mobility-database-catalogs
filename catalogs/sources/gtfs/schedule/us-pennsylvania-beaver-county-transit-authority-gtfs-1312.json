@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 1312,
     "data_type": "gtfs",
-    "provider": "Beaver County Transit Authority ",
+    "provider": "Beaver County Transit Authority",
     "status": "inactive",
     "location": {
         "country_code": "US",

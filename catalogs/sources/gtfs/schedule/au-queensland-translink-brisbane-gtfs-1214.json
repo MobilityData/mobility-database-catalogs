@@ -1,13 +1,13 @@
 {
     "mdb_source_id": 1214,
     "data_type": "gtfs",
-    "provider": "TransLink Brisbane ",
-    "name": "Airlie Beach ",
+    "provider": "TransLink Brisbane",
+    "name": "Airlie Beach",
     "status": "inactive",
     "location": {
         "country_code": "AU",
         "subdivision_name": "Queensland",
-        "municipality": "Airlie Beach ",
+        "municipality": "Airlie Beach",
         "bounding_box": {
             "minimum_latitude": -20.406011,
             "maximum_latitude": -20.264272,

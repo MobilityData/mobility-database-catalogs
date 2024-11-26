@@ -6,7 +6,7 @@
     "feed_contact_email": "info@stpbrindisi.it",
     "location": {
         "country_code": "IT",
-        "subdivision_name": "Brindisi ",
+        "subdivision_name": "Brindisi",
         "bounding_box": {
             "minimum_latitude": 40.335296,
             "maximum_latitude": 40.851967,

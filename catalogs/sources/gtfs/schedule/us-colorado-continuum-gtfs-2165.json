@@ -6,7 +6,7 @@
     "feed_contact_email": "support+continuum-co-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
-        "subdivision_name": "Colorado ",
+        "subdivision_name": "Colorado",
         "municipality": "Aurora",
         "bounding_box": {
             "minimum_latitude": 39.69889,

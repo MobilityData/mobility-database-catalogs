@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 1218,
     "data_type": "gtfs",
-    "provider": "TransLink Brisbane ",
+    "provider": "TransLink Brisbane",
     "name": "Yeppoon",
     "status": "inactive",
     "location": {

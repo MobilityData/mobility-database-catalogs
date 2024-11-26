@@ -5,7 +5,7 @@
     "location": {
         "country_code": "US",
         "subdivision_name": "New Mexico",
-        "municipality": "Los Alamos ",
+        "municipality": "Los Alamos",
         "bounding_box": {
             "minimum_latitude": 35.772873,
             "maximum_latitude": 35.905342,

@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 405,
     "data_type": "gtfs",
-    "provider": "National Park Service ",
+    "provider": "National Park Service",
     "name": "Cuyahoga Valley Scenic Railroad",
     "status": "inactive",
     "location": {

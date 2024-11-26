@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 1115,
     "data_type": "gtfs",
-    "provider": "Freiburger Verkehrs AG (VAG), R.A.S.T. Reisen (RAST), Tuniberg Express, ",
+    "provider": "Freiburger Verkehrs AG (VAG), R.A.S.T. Reisen (RAST), Tuniberg Express",
     "location": {
         "country_code": "DE",
         "subdivision_name": "Baden-Württemberg",

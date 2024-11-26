@@ -2,7 +2,7 @@
     "mdb_source_id": 2097,
     "data_type": "gtfs-rt",
     "entity_type": [
-        "Realtime"
+        "vp"
     ],
     "provider": "Metro Transit - City of Madison",
     "static_reference": [

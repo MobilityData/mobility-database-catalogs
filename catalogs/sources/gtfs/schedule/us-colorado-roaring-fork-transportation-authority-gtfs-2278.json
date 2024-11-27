@@ -1,0 +1,28 @@
+{
+    "mdb_source_id": 2278,
+    "data_type": "gtfs",
+    "provider": "Roaring Fork Transportation Authority",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Roaring Folk Valley",
+        "bounding_box": {
+            "minimum_latitude": 39.1807373,
+            "maximum_latitude": 39.5715695,
+            "minimum_longitude": -107.7839413,
+            "maximum_longitude": -106.8009104,
+            "extracted_on": "2024-11-27T21:19:17+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.rfta.com/RFTAGTFSExport.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-roaring-fork-transportation-authority-gtfs-2278.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

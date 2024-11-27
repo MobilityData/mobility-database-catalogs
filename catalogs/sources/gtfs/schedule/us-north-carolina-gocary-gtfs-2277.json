@@ -1,0 +1,28 @@
+{
+    "mdb_source_id": 2277,
+    "data_type": "gtfs",
+    "provider": "GoCary",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "North Carolina",
+        "municipality": "Cary",
+        "bounding_box": {
+            "minimum_latitude": 35.714045,
+            "maximum_latitude": 35.831696,
+            "minimum_longitude": -78.896151,
+            "maximum_longitude": -78.720693,
+            "extracted_on": "2024-11-27T21:19:16+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.gocary.org/_GTFS",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-north-carolina-gocary-gtfs-2277.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

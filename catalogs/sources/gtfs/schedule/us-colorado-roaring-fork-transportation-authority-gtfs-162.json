@@ -6,6 +6,7 @@
         "fares-v1",
         "flex-v1"
     ],
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Colorado",
@@ -20,6 +21,13 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/rfta-co-us/rfta-co-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-roaring-fork-transportation-authority-gtfs-162.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2277",
+            "comment": " "
+        }
+    ]
 }

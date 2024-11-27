@@ -1,13 +1,8 @@
 {
-    "mdb_source_id": 217,
+    "mdb_source_id": 2275,
     "data_type": "gtfs",
     "provider": "Auburn Transit",
     "feed_contact_email": "support+test+auburntransit-ca-us@trilliumtransit.com",
-    "features": [
-        "fares-v2",
-        "fares-v1"
-    ],
-    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -17,17 +12,17 @@
             "maximum_latitude": 38.931944,
             "minimum_longitude": -121.082945,
             "maximum_longitude": -121.035781594468,
-            "extracted_on": "2022-03-15T17:42:48+00:00"
+            "extracted_on": "2024-11-27T21:19:15+00:00"
         }
     },
     "urls": {
-        "direct_download": "http://data.trilliumtransit.com/gtfs/auburntransit-ca-us/auburntransit-ca-us.zip",
+        "direct_download": "https://www.auburn.ca.gov/DocumentCenter/View/3431",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-auburn-transit-gtfs-217.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-auburn-transit-gtfs-2275.zip?alt=media"
     },
     "redirect": [
         {
-            "id": "2275",
+            "id": "",
             "comment": " "
         }
     ]

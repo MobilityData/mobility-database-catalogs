@@ -1,0 +1,28 @@
+{
+    "mdb_source_id": 2273,
+    "data_type": "gtfs",
+    "provider": "Stanislaus Regional Transit (StaRT)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Modesto",
+        "bounding_box": {
+            "minimum_latitude": 37.311133,
+            "maximum_latitude": 37.954866,
+            "minimum_longitude": -121.897669,
+            "maximum_longitude": -120.749415,
+            "extracted_on": "2024-11-27T21:19:12+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://stanrta.rideralerts.com/InfoPoint/gtfs-zip.ashx",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-stanislaus-regional-transit-start-gtfs-2273.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

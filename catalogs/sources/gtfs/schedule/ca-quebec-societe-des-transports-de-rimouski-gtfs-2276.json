@@ -1,0 +1,28 @@
+{
+    "mdb_source_id": 2276,
+    "data_type": "gtfs",
+    "provider": "Société des transports de Rimouski",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Québec",
+        "municipality": "Rimouski",
+        "bounding_box": {
+            "minimum_latitude": 48.42680488,
+            "maximum_latitude": 48.46744631,
+            "minimum_longitude": -68.59076669,
+            "maximum_longitude": -68.49580062,
+            "extracted_on": "2024-11-27T21:19:15+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.donneesquebec.ca/recherche/dataset/d2d92b84-4361-42f0-81eb-3c395bc54597/resource/bd4021ba-d3ae-4d3b-b8fd-016405166761/download/gtfsrimouskibus.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-societe-des-transports-de-rimouski-gtfs-2276.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

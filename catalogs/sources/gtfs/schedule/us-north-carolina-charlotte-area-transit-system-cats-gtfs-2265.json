@@ -1,8 +1,7 @@
 {
-    "mdb_source_id": 640,
+    "mdb_source_id": 2265,
     "data_type": "gtfs",
     "provider": "Charlotte Area Transit System (CATS)",
-    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "North Carolina",
@@ -11,18 +10,18 @@
             "minimum_latitude": 34.927049,
             "maximum_latitude": 35.509161,
             "minimum_longitude": -81.179888,
-            "maximum_longitude": -80.558109,
-            "extracted_on": "2022-03-16T20:11:47+00:00"
+            "maximum_longitude": -80.639319,
+            "extracted_on": "2024-11-27T19:28:07+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/charlotte-area-transit-system/1252/latest/download",
+        "direct_download": "https://gtfsrealtime.ridetransit.org/GTFSStatic/GTFS.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-north-carolina-charlotte-area-transit-system-cats-gtfs-640.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-north-carolina-charlotte-area-transit-system-cats-gtfs-2265.zip?alt=media"
     },
     "redirect": [
         {
-            "id": "2265",
+            "id": "",
             "comment": " "
         }
     ]

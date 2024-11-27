@@ -1,11 +1,7 @@
 {
-    "mdb_source_id": 328,
+    "mdb_source_id": 2258,
     "data_type": "gtfs",
     "provider": "Manatee County Area Transit",
-    "features": [
-        "fares-v1"
-    ],
-    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Florida",
@@ -15,18 +11,13 @@
             "maximum_latitude": 27.811755,
             "minimum_longitude": -82.780151,
             "maximum_longitude": -82.451716,
-            "extracted_on": "2022-03-15T21:15:39+00:00"
+            "extracted_on": "2024-11-27T18:57:26+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://ftis.org/PostFileDownload.aspx?id=342A0",
+        "direct_download": "https://realtimemcat.availtec.com/InfoPoint/GTFS-Zip.ashx",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-manatee-county-area-transit-gtfs-328.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-manatee-county-area-transit-gtfs-2258.zip?alt=media"
     },
-    "redirect": [
-        {
-            "id": 2258,
-            "comment": " "
-        }
-    ]
+    "redirect": []
 }

@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2257,
+    "data_type": "gtfs",
+    "provider": "Citrus County Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Florida",
+        "municipality": "Citrus County",
+        "bounding_box": {
+            "minimum_latitude": 28.708109,
+            "maximum_latitude": 28.952692,
+            "minimum_longitude": -82.62668,
+            "maximum_longitude": -82.279483,
+            "extracted_on": "2024-11-27T18:57:25+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.citrusbocc.com/document_center/Department/Community%20Services/Support%20Services/Transit/GTFS%20Text%20Files/GTFS%2011-18-24.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-citrus-county-transit-gtfs-2257.zip?alt=media"
+    },
+    "redirect": []
+}

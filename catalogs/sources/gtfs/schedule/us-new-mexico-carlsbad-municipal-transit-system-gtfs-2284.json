@@ -20,10 +20,5 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-mexico-carlsbad-municipal-transit-system-gtfs-2284.zip?alt=media"
     },
-    "redirect": [
-        {
-            "id": "",
-            "comment": " "
-        }
-    ]
+    "redirect": []
 }

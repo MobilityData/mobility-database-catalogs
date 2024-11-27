@@ -1,0 +1,28 @@
+{
+    "mdb_source_id": 2270,
+    "data_type": "gtfs",
+    "provider": "GTrans",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Gardena",
+        "bounding_box": {
+            "minimum_latitude": 33.788719,
+            "maximum_latitude": 33.952458,
+            "minimum_longitude": -118.378302,
+            "maximum_longitude": -118.223258,
+            "extracted_on": "2024-11-27T20:43:04+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://ridegtrans.com/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-gtrans-gtfs-2270.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

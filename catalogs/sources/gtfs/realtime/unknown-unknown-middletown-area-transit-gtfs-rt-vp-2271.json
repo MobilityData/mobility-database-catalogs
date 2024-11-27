@@ -1,0 +1,12 @@
+{
+    "mdb_source_id": 2271,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Middletown Area Transit",
+    "urls": {
+        "direct_download": "https://passio3.com/9town/passioTransit/gtfs/realtime",
+        "authentication_type": 0
+    }
+}

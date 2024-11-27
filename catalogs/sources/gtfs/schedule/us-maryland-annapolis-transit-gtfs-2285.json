@@ -1,0 +1,29 @@
+{
+    "mdb_source_id": 2285,
+    "data_type": "gtfs",
+    "provider": "Annapolis Transit",
+    "feed_contact_email": "GIS@annapolis.gov",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Maryland",
+        "municipality": "Annapolis",
+        "bounding_box": {
+            "minimum_latitude": 38.948299,
+            "maximum_latitude": 38.994644,
+            "minimum_longitude": -76.5570743435139,
+            "maximum_longitude": -76.484032093254,
+            "extracted_on": "2024-11-27T22:09:06+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.arcgis.com/sharing/rest/content/items/c307923d57ab4871aff79491b4a1bfd3/data",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maryland-annapolis-transit-gtfs-2285.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

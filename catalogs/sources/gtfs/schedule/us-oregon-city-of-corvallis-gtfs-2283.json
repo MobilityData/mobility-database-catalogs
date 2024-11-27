@@ -1,0 +1,28 @@
+{
+    "mdb_source_id": 2283,
+    "data_type": "gtfs",
+    "provider": "City of Corvallis",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Corvallis",
+        "bounding_box": {
+            "minimum_latitude": 44.530912,
+            "maximum_latitude": 44.614915,
+            "minimum_longitude": -123.324677,
+            "maximum_longitude": -123.234437,
+            "extracted_on": "2024-11-27T22:09:05+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://www.corvallistransit.com/rtt/public/resource/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-city-of-corvallis-gtfs-2283.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

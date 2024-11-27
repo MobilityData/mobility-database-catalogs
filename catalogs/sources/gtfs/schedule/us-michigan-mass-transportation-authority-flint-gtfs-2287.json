@@ -1,0 +1,28 @@
+{
+    "mdb_source_id": 2287,
+    "data_type": "gtfs",
+    "provider": "Mass Transportation Authority Flint",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Michigan",
+        "municipality": "Flint",
+        "bounding_box": {
+            "minimum_latitude": 42.517709,
+            "maximum_latitude": 43.13383362611715,
+            "minimum_longitude": -84.00011960662218,
+            "maximum_longitude": -83.30232390816667,
+            "extracted_on": "2024-11-27T22:09:07+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/5191/google_transit.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-michigan-mass-transportation-authority-flint-gtfs-2287.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

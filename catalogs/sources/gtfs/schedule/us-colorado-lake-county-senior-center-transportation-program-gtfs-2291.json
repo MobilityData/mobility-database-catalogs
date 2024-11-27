@@ -21,10 +21,5 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-lake-county-senior-center-transportation-program-gtfs-2291.zip?alt=media"
     },
-    "redirect": [
-        {
-            "id": "",
-            "comment": " "
-        }
-    ]
+    "redirect": []
 }

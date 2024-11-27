@@ -7,7 +7,7 @@
         "fares-v1",
         "fares-v2"
     ],
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -25,5 +25,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-ridgerunner-gtfs-311.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": 2279,
+            "comment": " "
+        }
+    ]
 }

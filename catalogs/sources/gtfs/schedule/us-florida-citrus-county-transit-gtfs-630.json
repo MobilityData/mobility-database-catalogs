@@ -5,7 +5,7 @@
     "features": [
         "fares-v1"
     ],
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Florida",
@@ -20,6 +20,13 @@
     },
     "urls": {
         "direct_download": "https://ftis.org/PostFileDownload.aspx?id=152A0",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-citrus-county-transit-gtfs-630.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2259",
+            "comment": " "
+        }
+    ]
 }

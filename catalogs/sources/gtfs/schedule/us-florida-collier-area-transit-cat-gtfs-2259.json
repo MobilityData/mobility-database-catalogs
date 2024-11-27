@@ -1,0 +1,28 @@
+{
+    "mdb_source_id": 2259,
+    "data_type": "gtfs",
+    "provider": "Collier Area Transit (CAT)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Florida",
+        "municipality": "Collier County",
+        "bounding_box": {
+            "minimum_latitude": 25.9120818,
+            "maximum_latitude": 26.444741,
+            "minimum_longitude": -81.8262208,
+            "maximum_longitude": -81.3890111,
+            "extracted_on": "2024-11-27T18:57:26+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://cat.cadavl.com:4431/CAT/GTFS/GTFS_CAT.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-collier-area-transit-cat-gtfs-2259.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "mdb_source_id": 2260,
+    "data_type": "gtfs",
+    "provider": "Breeze Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Florida",
+        "municipality": "Sarasota",
+        "bounding_box": {
+            "minimum_latitude": 27.0388126367811,
+            "maximum_latitude": 27.493355,
+            "minimum_longitude": -82.5876874115126,
+            "maximum_longitude": -82.205356,
+            "extracted_on": "2024-11-27T18:57:27+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://breezerider.tripsparkhost.com/gtfs/2024Winter%20R02/google_transit.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-breeze-transit-gtfs-2260.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

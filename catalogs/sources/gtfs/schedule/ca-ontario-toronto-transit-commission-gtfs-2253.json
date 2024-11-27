@@ -1,0 +1,29 @@
+{
+    "mdb_source_id": 2253,
+    "data_type": "gtfs",
+    "provider": "Toronto Transit Commission",
+    "name": "Static feed for realtime",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Ontario",
+        "municipality": "Toronto",
+        "bounding_box": {
+            "minimum_latitude": 43.59181,
+            "maximum_latitude": 43.90975,
+            "minimum_longitude": -79.649908,
+            "maximum_longitude": -79.123111,
+            "extracted_on": "2024-11-27T16:48:57+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/bd4809dd-e289-4de8-bbde-c5c00dafbf4f/resource/28514055-d011-4ed7-8bb0-97961dfe2b66/download/SurfaceGTFS.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-toronto-transit-commission-gtfs-2253.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

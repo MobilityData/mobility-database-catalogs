@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 551,
     "data_type": "gtfs",
-    "provider": "9 Town Transit",
+    "provider": "Middletown Area Transit (MAT)",
     "features": [
         "fares-v1",
         "flex-v1"
@@ -9,7 +9,7 @@
     "location": {
         "country_code": "US",
         "subdivision_name": "Connecticut",
-        "municipality": "Centerbrook",
+        "municipality": "Middletown",
         "bounding_box": {
             "minimum_latitude": 41.2614311359534,
             "maximum_latitude": 41.5612866,

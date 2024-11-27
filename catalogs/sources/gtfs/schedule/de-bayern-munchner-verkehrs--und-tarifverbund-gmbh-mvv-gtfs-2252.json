@@ -20,10 +20,5 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-bayern-munchner-verkehrs--und-tarifverbund-gmbh-mvv-gtfs-2252.zip?alt=media",
         "license": "https://www.mvv-muenchen.de/fahrplanauskunft/fuer-entwickler/opendata/index.html"
     },
-    "redirect": [
-        {
-            "id": "",
-            "comment": " "
-        }
-    ]
+    "redirect": []
 }

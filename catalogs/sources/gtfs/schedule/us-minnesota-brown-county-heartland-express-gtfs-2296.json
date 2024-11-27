@@ -1,0 +1,30 @@
+{
+    "mdb_source_id": 2296,
+    "data_type": "gtfs",
+    "provider": "Brown County Heartland Express",
+    "name": "Fixed route + flex",
+    "feed_contact_email": "support+test+browncounty-mn-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Minnesota",
+        "municipality": "Brown County",
+        "bounding_box": {
+            "minimum_latitude": 44.28741495361129,
+            "maximum_latitude": 44.3393958836996,
+            "minimum_longitude": -94.50656548281547,
+            "maximum_longitude": -94.43291134889424,
+            "extracted_on": "2024-11-27T22:42:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/browncounty-mn-us/browncounty-mn-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-minnesota-brown-county-heartland-express-gtfs-2296.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "mdb_source_id": 2292,
+    "data_type": "gtfs",
+    "provider": "Mountain Metro Transit",
+    "name": "Flex",
+    "feed_contact_email": "support+coloradosprings-co-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Colorado Springs",
+        "bounding_box": {
+            "minimum_latitude": 38.875356,
+            "maximum_latitude": 38.875356,
+            "minimum_longitude": -104.813228,
+            "maximum_longitude": -104.813228,
+            "extracted_on": "2024-11-27T22:42:08+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/coloradosprings-co-us/coloradosprings-co-us--flex-v2.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-mountain-metro-transit-gtfs-2292.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

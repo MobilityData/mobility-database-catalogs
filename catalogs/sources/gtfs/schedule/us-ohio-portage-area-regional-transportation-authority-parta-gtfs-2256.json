@@ -20,10 +20,5 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-ohio-portage-area-regional-transportation-authority-parta-gtfs-2256.zip?alt=media"
     },
-    "redirect": [
-        {
-            "id": "",
-            "comment": " "
-        }
-    ]
+    "redirect": []
 }

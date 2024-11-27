@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2294,
+    "data_type": "gtfs",
+    "provider": "Mountain Express",
+    "name": "Flex",
+    "feed_contact_email": "support+mountainexpress-co-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Pagosa Springs",
+        "bounding_box": {
+            "minimum_latitude": 37.196161,
+            "maximum_latitude": 37.196161,
+            "minimum_longitude": -107.048344,
+            "maximum_longitude": -107.048344,
+            "extracted_on": "2024-11-27T22:42:09+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/mountainexpress-co-us/mountainexpress-co-us--flex-v2.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-mountain-express-gtfs-2294.zip?alt=media"
+    },
+    "redirect": []
+}

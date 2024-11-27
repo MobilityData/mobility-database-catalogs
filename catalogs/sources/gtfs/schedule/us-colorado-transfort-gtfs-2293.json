@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2293,
+    "data_type": "gtfs",
+    "provider": "Transfort",
+    "name": "Flex",
+    "feed_contact_email": "support+transfort-co-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Fort Collins",
+        "bounding_box": {
+            "minimum_latitude": 40.542844,
+            "maximum_latitude": 40.542844,
+            "minimum_longitude": -105.06543,
+            "maximum_longitude": -105.06543,
+            "extracted_on": "2024-11-27T22:42:09+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/transfort-co-us/transfort-co-us--flex-v2.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-transfort-gtfs-2293.zip?alt=media"
+    },
+    "redirect": []
+}

@@ -19,10 +19,5 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maryland-washington-county-transit-gtfs-2286.zip?alt=media"
     },
-    "redirect": [
-        {
-            "id": "",
-            "comment": " "
-        }
-    ]
+    "redirect": []
 }

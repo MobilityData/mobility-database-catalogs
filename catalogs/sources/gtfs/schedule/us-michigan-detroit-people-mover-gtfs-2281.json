@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2281,
+    "data_type": "gtfs",
+    "provider": "Detroit People Mover",
+    "feed_contact_email": "jaho@thepeoplemover.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Michigan",
+        "municipality": "Detroit",
+        "bounding_box": {
+            "minimum_latitude": 42.32523254,
+            "maximum_latitude": 42.3357815636203,
+            "minimum_longitude": -83.05267078,
+            "maximum_longitude": -83.03998301,
+            "extracted_on": "2024-11-27T22:09:04+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://hosted-gtfs-feeds.s3.amazonaws.com/DPM/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-michigan-detroit-people-mover-gtfs-2281.zip?alt=media"
+    },
+    "redirect": []
+}

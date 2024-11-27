@@ -6,7 +6,7 @@
     ],
     "provider": "Empresa Malagueña de Transportes (EMT)",
     "static_reference": [
-        2112
+        2212
     ],
     "urls": {
         "direct_download": "http://gtfs.emtmalaga.es/GTFSRTapi/api/alert",

@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2308,
+    "data_type": "gtfs",
+    "provider": "Four County Transit",
+    "feed_contact_email": "support+test+fourcounty-va-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Virginia",
+        "bounding_box": {
+            "minimum_latitude": 36.31063478725751,
+            "maximum_latitude": 37.4202860557693,
+            "minimum_longitude": -82.7598975358909,
+            "maximum_longitude": -80.0201581392688,
+            "extracted_on": "2024-11-28T18:37:38+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/fourcounty-va-us/fourcounty-va-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-four-county-transit-gtfs-2308.zip?alt=media"
+    },
+    "redirect": []
+}

@@ -1,0 +1,29 @@
+{
+    "mdb_source_id": 2298,
+    "data_type": "gtfs",
+    "provider": "Lewiston Transit System and Asotin County Public Transportation Benefit Area (PTBA)",
+    "feed_contact_email": "support+test+asotincounty-wa-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "municipality": "Asotin County",
+        "bounding_box": {
+            "minimum_latitude": 46.33640049552297,
+            "maximum_latitude": 46.42206687221992,
+            "minimum_longitude": -117.0828290280758,
+            "maximum_longitude": -116.96004179047584,
+            "extracted_on": "2024-11-28T18:06:06+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/asotincounty-wa-us/asotincounty-wa-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-lewiston-transit-system-and-asotin-county-public-transportation-benefit-area-ptba-gtfs-2298.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

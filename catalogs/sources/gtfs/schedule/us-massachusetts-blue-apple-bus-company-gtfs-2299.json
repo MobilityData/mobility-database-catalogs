@@ -1,0 +1,29 @@
+{
+    "mdb_source_id": 2299,
+    "data_type": "gtfs",
+    "provider": "Blue Apple Bus Company",
+    "feed_contact_email": "support+test+blueapplebus-ma-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Massachusetts",
+        "municipality": "Mansfield",
+        "bounding_box": {
+            "minimum_latitude": 42.032634959410544,
+            "maximum_latitude": 42.369823054008414,
+            "minimum_longitude": -71.21982175926358,
+            "maximum_longitude": -71.01810743990518,
+            "extracted_on": "2024-11-28T18:06:07+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/blueapplebus-ma-us/blueapplebus-ma-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-blue-apple-bus-company-gtfs-2299.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "mdb_source_id": 2312,
+    "data_type": "gtfs",
+    "provider": "Hudson Link",
+    "feed_contact_email": "support+test+hudsonlink-ny-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Rockland County",
+        "bounding_box": {
+            "minimum_latitude": 41.03117126072729,
+            "maximum_latitude": 41.116730186373104,
+            "minimum_longitude": -74.15207854868513,
+            "maximum_longitude": -73.76347806948289,
+            "extracted_on": "2024-11-28T18:37:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/hudsonlink-ny-us/hudsonlink-ny-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-hudson-link-gtfs-2312.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

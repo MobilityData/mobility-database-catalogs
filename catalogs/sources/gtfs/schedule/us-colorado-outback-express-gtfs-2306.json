@@ -1,0 +1,29 @@
+{
+    "mdb_source_id": 2306,
+    "data_type": "gtfs",
+    "provider": "Outback Express",
+    "name": "Flex",
+    "feed_contact_email": "support+eccog-co-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "bounding_box": {
+            "minimum_latitude": 39.30449,
+            "maximum_latitude": 39.30449,
+            "minimum_longitude": -102.27146,
+            "maximum_longitude": -102.27146,
+            "extracted_on": "2024-11-28T18:37:37+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/eccog-co-us/eccog-co-us--flex-v2.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-outback-express-gtfs-2306.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

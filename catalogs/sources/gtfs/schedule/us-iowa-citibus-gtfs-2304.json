@@ -1,0 +1,29 @@
+{
+    "mdb_source_id": 2304,
+    "data_type": "gtfs",
+    "provider": "Citibus",
+    "feed_contact_email": "support+test+davenport-ia-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Iowa",
+        "municipality": "Davenport",
+        "bounding_box": {
+            "minimum_latitude": 41.50384823,
+            "maximum_latitude": 41.59495513265733,
+            "minimum_longitude": -90.63719474,
+            "maximum_longitude": -90.5140457936736,
+            "extracted_on": "2024-11-28T18:37:36+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/davenport-ia-us/davenport-ia-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-iowa-citibus-gtfs-2304.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

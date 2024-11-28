@@ -1,0 +1,29 @@
+{
+    "mdb_source_id": 2318,
+    "data_type": "gtfs",
+    "provider": "Lady of the Lake",
+    "feed_contact_email": "support+lakechelan-wa-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "municipality": "Chelan",
+        "bounding_box": {
+            "minimum_latitude": 47.8359985825051,
+            "maximum_latitude": 48.3802605094528,
+            "minimum_longitude": -120.8383679433712,
+            "maximum_longitude": -120.038486316595,
+            "extracted_on": "2024-11-28T19:40:45+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/lakechelan-wa-us/lakechelan-wa-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-lady-of-the-lake-gtfs-2318.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

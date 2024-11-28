@@ -1,0 +1,29 @@
+{
+    "mdb_source_id": 2323,
+    "data_type": "gtfs",
+    "provider": "City of Miami Gardens",
+    "feed_contact_email": "support+test+miamigardens-fl-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US ",
+        "subdivision_name": "Florida",
+        "municipality": "Miami Gardens",
+        "bounding_box": {
+            "minimum_latitude": 25.911877,
+            "maximum_latitude": 25.97227087,
+            "minimum_longitude": -80.288456,
+            "maximum_longitude": -80.198009,
+            "extracted_on": "2024-11-28T19:40:49+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/miamigardens-fl-us/miamigardens-fl-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-city-of-miami-gardens-gtfs-2323.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

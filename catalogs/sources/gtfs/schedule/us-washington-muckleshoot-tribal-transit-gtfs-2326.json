@@ -1,0 +1,29 @@
+{
+    "mdb_source_id": 2326,
+    "data_type": "gtfs",
+    "provider": "Muckleshoot Tribal Transit",
+    "feed_contact_email": "support+test+muckleshoot-wa-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "municipality": "Auburn",
+        "bounding_box": {
+            "minimum_latitude": 47.22837139311024,
+            "maximum_latitude": 47.30572654162684,
+            "minimum_longitude": -122.24261212484114,
+            "maximum_longitude": -122.102499037372,
+            "extracted_on": "2024-11-28T19:40:51+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/muckleshoot-wa-us/muckleshoot-wa-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-muckleshoot-tribal-transit-gtfs-2326.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

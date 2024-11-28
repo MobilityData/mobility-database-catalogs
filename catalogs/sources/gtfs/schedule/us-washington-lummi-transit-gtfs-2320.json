@@ -1,0 +1,28 @@
+{
+    "mdb_source_id": 2320,
+    "data_type": "gtfs",
+    "provider": "Lummi Transit",
+    "feed_contact_email": "support+test+lummitransit-wa-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "bounding_box": {
+            "minimum_latitude": 48.71973569924907,
+            "maximum_latitude": 48.8481842098685,
+            "minimum_longitude": -122.68274404201154,
+            "maximum_longitude": -122.48034642849206,
+            "extracted_on": "2024-11-28T19:40:46+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/lummitransit-wa-us/lummitransit-wa-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-lummi-transit-gtfs-2320.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

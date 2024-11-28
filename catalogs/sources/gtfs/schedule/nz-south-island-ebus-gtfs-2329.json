@@ -1,0 +1,29 @@
+{
+    "mdb_source_id": 2329,
+    "data_type": "gtfs",
+    "provider": "eBus",
+    "feed_contact_email": "support+test+nsn-nz@trilliumtransit.com",
+    "location": {
+        "country_code": "NZ",
+        "subdivision_name": "South Island",
+        "municipality": "Nelson",
+        "bounding_box": {
+            "minimum_latitude": -41.40649057,
+            "maximum_latitude": -41.10733201,
+            "minimum_longitude": 173.0032153,
+            "maximum_longitude": 173.3251283,
+            "extracted_on": "2024-11-28T19:40:52+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/nsn-nz/nsn-nz.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/nz-south-island-ebus-gtfs-2329.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

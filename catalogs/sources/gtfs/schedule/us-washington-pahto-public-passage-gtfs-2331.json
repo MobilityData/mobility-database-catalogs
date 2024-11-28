@@ -1,0 +1,28 @@
+{
+    "mdb_source_id": 2331,
+    "data_type": "gtfs",
+    "provider": "Pahto Public Passage",
+    "feed_contact_email": "support+pahtopublicpassage-wa-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US ",
+        "subdivision_name": "Washington",
+        "bounding_box": {
+            "minimum_latitude": 45.81288919067222,
+            "maximum_latitude": 46.5635830286691,
+            "minimum_longitude": -120.822779353375,
+            "maximum_longitude": -120.1804378612242,
+            "extracted_on": "2024-11-28T19:40:54+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/pahtopublicpassage-wa-us/pahtopublicpassage-wa-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-pahto-public-passage-gtfs-2331.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

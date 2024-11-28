@@ -1,0 +1,28 @@
+{
+    "mdb_source_id": 2314,
+    "data_type": "gtfs",
+    "provider": "Kalispel Tribal Transit (KalTran)",
+    "feed_contact_email": "support+test+kaltran-wa-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "bounding_box": {
+            "minimum_latitude": 47.768296326065,
+            "maximum_latitude": 48.7409927050067,
+            "minimum_longitude": -117.710848110621,
+            "maximum_longitude": -117.060830956315,
+            "extracted_on": "2024-11-28T19:40:43+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/kaltran-wa-us/kaltran-wa-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-kalispel-tribal-transit-kaltran-gtfs-2314.zip?alt=media"
+    },
+    "redirect": [
+        {
+            "id": "",
+            "comment": " "
+        }
+    ]
+}

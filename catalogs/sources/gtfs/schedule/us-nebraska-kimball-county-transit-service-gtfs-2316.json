@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2316,
+    "data_type": "gtfs",
+    "provider": "Kimball County Transit Service",
+    "feed_contact_email": "support+kimballcountytransit-ne-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Nebraska",
+        "municipality": "Kimball",
+        "bounding_box": {
+            "minimum_latitude": 39.740959,
+            "maximum_latitude": 41.88755607133948,
+            "minimum_longitude": -105.00107211421486,
+            "maximum_longitude": -100.745244,
+            "extracted_on": "2024-11-28T19:40:44+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/kimballcountytransit-ne-us/kimballcountytransit-ne-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-nebraska-kimball-county-transit-service-gtfs-2316.zip?alt=media"
+    },
+    "redirect": []
+}

@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2325,
+    "data_type": "gtfs",
+    "provider": "The Moccasin Express",
+    "feed_contact_email": "support+moccasinexpress-wa-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "bounding_box": {
+            "minimum_latitude": 47.6435731653652,
+            "maximum_latitude": 48.2409653798417,
+            "minimum_longitude": -118.32451400220036,
+            "maximum_longitude": -117.41596661814,
+            "extracted_on": "2024-11-28T19:40:50+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/moccasinexpress-wa-us/moccasinexpress-wa-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-the-moccasin-express-gtfs-2325.zip?alt=media"
+    },
+    "redirect": []
+}

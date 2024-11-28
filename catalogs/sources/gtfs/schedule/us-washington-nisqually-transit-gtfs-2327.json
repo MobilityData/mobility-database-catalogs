@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2327,
+    "data_type": "gtfs",
+    "provider": "Nisqually Transit",
+    "feed_contact_email": "support+test+nisqually-wa-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "bounding_box": {
+            "minimum_latitude": 46.962021,
+            "maximum_latitude": 47.44357840082483,
+            "minimum_longitude": -122.873596,
+            "maximum_longitude": -122.29938955852892,
+            "extracted_on": "2024-11-28T19:40:51+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/nisqually-wa-us/nisqually-wa-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-nisqually-transit-gtfs-2327.zip?alt=media"
+    },
+    "redirect": []
+}

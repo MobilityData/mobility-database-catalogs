@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2328,
+    "data_type": "gtfs",
+    "provider": "North Lake Tahoe Express",
+    "name": "24 hour advance reservations required",
+    "feed_contact_email": "support+test+nlte-nv-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Nevada",
+        "bounding_box": {
+            "minimum_latitude": 39.139377,
+            "maximum_latitude": 39.50729,
+            "minimum_longitude": -120.239174,
+            "maximum_longitude": -119.775261,
+            "extracted_on": "2024-11-28T19:40:52+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/nlte-nv-us/nlte-nv-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-nevada-north-lake-tahoe-express-gtfs-2328.zip?alt=media"
+    },
+    "redirect": []
+}

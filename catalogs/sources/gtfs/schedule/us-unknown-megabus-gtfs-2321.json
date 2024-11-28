@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 2321,
+    "data_type": "gtfs",
+    "provider": "Megabus",
+    "feed_contact_email": "support+test+megabus-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "bounding_box": {
+            "minimum_latitude": 25.796253,
+            "maximum_latitude": 45.497753,
+            "minimum_longitude": -121.50401,
+            "maximum_longitude": -73.56585,
+            "extracted_on": "2024-11-28T19:40:48+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/megabus-us/megabus-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-unknown-megabus-gtfs-2321.zip?alt=media"
+    },
+    "redirect": []
+}

@@ -39,6 +39,8 @@ struct defaults {
     static let csvLineSeparator   : String = "\n"
     static let csvColumnSeparator : String = ","
     static let newline            : String = "\n"
+    static let tab                : String = "\t"
+    static let whitespace         : String = " "
     static let comma              : String = ","
     static let singleQuote        : String = "'"
     static let apostrophe         : String = "ʼ"
@@ -448,22 +450,17 @@ func main() {
             throw ScriptError.incorrectArgumentsCount
         }
     } catch ScriptError.noData {
-        print("ERROR: \(ScriptError.noData.description)")
-        exit(1)
+        print("ERROR: \(ScriptError.noData.description)") ; exit(1)
     } catch ScriptError.networkError {
-        print("ERROR:\(ScriptError.networkError.description) ")
-        exit(2)
+        print("ERROR:\(ScriptError.networkError.description) ") ; exit(2)
     } catch ScriptError.parseError {
-        exit(2)
+        print("ERROR: \(ScriptError.parseError.description)") ; exit(2)
     } catch ScriptError.incorrectArgumentsCount {
-        print("ERROR: \(ScriptError.incorrectArgumentsCount.description)")
-        exit(1)
+        print("ERROR: \(ScriptError.incorrectArgumentsCount.description)") ; exit(1)
     } catch ScriptError.insufficientNumberOfColumns {
-        print("ERROR: \(ScriptError.insufficientNumberOfColumns.description)")
-        exit(1)
+        print("ERROR: \(ScriptError.insufficientNumberOfColumns.description)") ; exit(1)
     } catch {
-        print("ERROR: Unexpected error: \(error.localizedDescription)")
-        exit(255)  // General error catch-all
+        print("ERROR: Unexpected error: \(error.localizedDescription)") ;  exit(255)  // General error catch-all
     }
 }
 
@@ -657,9 +654,7 @@ func extractDate(from dateToConvert: String, usingGREP dateFormatAsGREP: Regex<A
 
 /// Generates a Python-like array inside a string from a comma-separated input string.
 ///
-/// This function takes a raw input string, splits it by commas, and formats each
-/// element into a specific JSON-like structure with `id` and `comment` keys.
-/// If the input string is empty, it returns a default empty value.
+/// This function takes a raw input string, splits it by commas, and formats each element into a specific JSON-like structure with `id` and `comment` keys. If the input string is empty, it returns a default empty value.
 ///
 /// - Parameter rawData: A comma-separated string of values to be formatted.
 /// - Returns: A Python-like array inside a string representating the input values, or a default empty value if the input is empty.
@@ -669,13 +664,17 @@ func redirectArray(for rawData: String) -> String {
     guard !rawData.isEmpty else { return defaults.emptyValueRaw }
 
     let openingPrefix       : String = ", redirects=["
-    let prefix              : String = "{\"\"id\"\": \""
-    let suffix              : String = "\", \"\"comment\"\": \"\" \"\"}"
+    let prefix              : String = "{\"\"id\"\": "
+    let suffix              : String = ", \"\"comment\"\": \"\" \"\"}"
     let closingSuffix       : String = "]"
     let keyValuePairsJoiner : String = ", "
 
-    let redirectEntries : String = rawData
-        .components(separatedBy: defaults.comma)
+    let rawDataClean : String = rawData.replacingOccurrences(of: "\"", with: "")
+
+    guard rawDataClean.count >= 3 else { return "\(openingPrefix)\(closingSuffix)" }
+
+    let redirectEntries : String = rawDataClean
+        .components(separatedBy: defaults.whitespace)
         .map { prefix + $0 + suffix }
         .joined(separator: keyValuePairsJoiner)
 

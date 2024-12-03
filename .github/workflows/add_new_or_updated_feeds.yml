@@ -162,7 +162,7 @@ jobs:
         shell: bash
 
       - name: Post notification in Slack channel of update
-        if: success() && steps.commit-push.outcome == 'success'
+        if: success() && steps.commit-push-create-pr.outcome == 'success'
         uses: slackapi/slack-github-action@v1.26.0
         with:
           payload: |

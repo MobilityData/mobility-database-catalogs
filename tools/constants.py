@@ -90,6 +90,7 @@ FEED_CONTACT_EMAIL = "feed_contact_email"
 REDIRECTS = "redirect"
 REDIRECT_ID = "id"
 REDIRECT_COMMENT = "comment"
+IS_OFFICIAL = "is_official"
 
 # TIME CONSTANTS
 SIX_MONTHS_IN_WEEKS = 26

@@ -57,6 +57,7 @@ from tools.constants import (
     REDIRECT_ID,
     REDIRECT_COMMENT,
     REDIRECTS,
+    IS_OFFICIAL
 )
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
@@ -402,6 +403,7 @@ class Source(ABC):
         authentication_info_url (str, optional): URL for authentication information.
         api_key_parameter_name (str, optional): The name of the API key parameter, if applicable.
         license_url (str, optional): URL for the license information of the data.
+        is_official (str, optional): Flag indicating if the source comes from the agency itself or not.
 
     Note:
         This class is designed to be subclassed. Subclasses must implement
@@ -422,6 +424,7 @@ class Source(ABC):
         self.authentication_info_url = urls.pop(AUTHENTICATION_INFO, None)
         self.api_key_parameter_name = urls.pop(API_KEY_PARAMETER_NAME, None)
         self.license_url = urls.pop(LICENSE, None)
+        self.is_official = urls.pop(IS_OFFICIAL, None)
 
     @abstractmethod
     def __str__(self):
@@ -558,6 +561,7 @@ class GtfsScheduleSource(Source):
             STATUS: self.status,
             FEED_CONTACT_EMAIL: self.feed_contact_email,
             REDIRECTS: self.redirects,
+            IS_OFFICIAL: self.is_official,
         }
         return json.dumps(self.schematize(**attributes), ensure_ascii=False)
 
@@ -655,6 +659,9 @@ class GtfsScheduleSource(Source):
         feed_contact_email = kwargs.get(FEED_CONTACT_EMAIL)
         if feed_contact_email is not None:
             self.feed_contact_email = feed_contact_email
+        is_official = kwargs.get(IS_OFFICIAL)
+        if is_official is not None:
+            self.is_official = is_official
 
         # Update the redirects
         redirects = kwargs.get(REDIRECTS)
@@ -756,6 +763,7 @@ class GtfsScheduleSource(Source):
                 LICENSE: kwargs.pop(LICENSE, None),
             },
             REDIRECTS: kwargs.pop(REDIRECTS, None),
+            IS_OFFICIAL: kwargs.pop(IS_OFFICIAL, None),
         }
         if schema[NAME] is None:
             del schema[NAME]
@@ -779,6 +787,8 @@ class GtfsScheduleSource(Source):
             del schema[FEED_CONTACT_EMAIL]
         if schema[REDIRECTS] is None:
             del schema[REDIRECTS]
+        if schema[IS_OFFICIAL] is None:
+            del schema[IS_OFFICIAL]
         return schema
 
 
@@ -842,6 +852,7 @@ class GtfsRealtimeSource(Source):
             LICENSE: self.license_url,
             FEATURES: self.features,
             STATUS: self.status,
+            IS_OFFICIAL: self.is_official,
         }
         return json.dumps(self.schematize(**attributes), ensure_ascii=False)
 
@@ -948,6 +959,9 @@ class GtfsRealtimeSource(Source):
         status = kwargs.get(STATUS)
         if status is not None:
             self.status = status
+        is_official = kwargs.get(IS_OFFICIAL)
+        if is_official is not None:
+            self.is_official = is_official
         return self
 
     @classmethod
@@ -1006,6 +1020,7 @@ class GtfsRealtimeSource(Source):
                 API_KEY_PARAMETER_NAME: kwargs.pop(API_KEY_PARAMETER_NAME, None),
                 LICENSE: kwargs.pop(LICENSE, None),
             },
+            IS_OFFICIAL: kwargs.pop(IS_OFFICIAL, None),
         }
         if schema[NAME] is None:
             del schema[NAME]
@@ -1025,4 +1040,6 @@ class GtfsRealtimeSource(Source):
             del schema[FEATURES]
         if schema[STATUS] is None:
             del schema[STATUS]
+        if schema[IS_OFFICIAL] is None:
+            del schema[IS_OFFICIAL]
         return schema

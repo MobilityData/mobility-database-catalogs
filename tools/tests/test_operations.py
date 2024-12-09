@@ -32,6 +32,7 @@ class TestOperations(TestCase):
         test_note = "test_note"
         test_status = "active"
         test_features = ["fares"]
+        test_is_official = "True"
         under_test = add_gtfs_realtime_source(
             entity_type=test_entity_type,
             provider=test_provider,
@@ -45,6 +46,7 @@ class TestOperations(TestCase):
             note=test_note,
             status=test_status,
             features=test_features,
+            is_official=test_is_official,
         )
         self.assertEqual(under_test, mock_catalog())
         self.assertEqual(mock_catalog.call_count, 2)
@@ -65,6 +67,7 @@ class TestOperations(TestCase):
         test_note = "test_note"
         test_status = "active"
         test_features = ["flex-v2"]
+        test_is_official = "True"
         under_test = update_gtfs_realtime_source(
             mdb_source_id=test_mdb_source_id,
             entity_type=test_entity_type,
@@ -79,6 +82,7 @@ class TestOperations(TestCase):
             note=test_note,
             status=test_status,
             features=test_features,
+            is_official=test_is_official,
         )
         self.assertEqual(under_test, mock_catalog())
         self.assertEqual(mock_catalog.call_count, 2)
@@ -99,6 +103,7 @@ class TestOperations(TestCase):
         test_license_url = "test_license_url"
         test_status = "active"
         test_features = ["flex"]
+        test_is_official = "True"
         feed_contact_email = "test contact email"
         redirects = [
             {"id": 123, "comment": "test_url"},
@@ -121,6 +126,7 @@ class TestOperations(TestCase):
             features=test_features,
             feed_contact_email=feed_contact_email,
             redirects=redirects,
+            is_official=test_is_official,
         )
         self.assertEqual(under_test, mock_catalog())
         self.assertEqual(mock_catalog.call_count, 2)
@@ -142,6 +148,7 @@ class TestOperations(TestCase):
         test_license_url = "test_license_url"
         test_status = "active"
         test_features = ["flex"]
+        test_is_official = "True"
         feed_contact_email = "test contact email changed"
         redirects = [
             {"id": 123, "comment": "test_url"},
@@ -165,6 +172,7 @@ class TestOperations(TestCase):
             features=test_features,
             feed_contact_email=feed_contact_email,
             redirects=redirects,
+            is_official=test_is_official,
         )
         self.assertEqual(under_test, mock_catalog())
         self.assertEqual(mock_catalog.call_count, 2)

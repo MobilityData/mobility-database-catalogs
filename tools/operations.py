@@ -482,3 +482,29 @@ def get_sources_by_feature(
             globals()[f"{catalog_cls}"]().get_sources_by_feature(feature=feature)
         )
     return dict(sorted(sources.items()))
+
+def get_sources_by_is_official(
+    is_official,
+    data_type=ALL,
+):
+    """
+    Get the sources with the given is_offical flag.
+
+    This function retrieves sources from the specified data type in the Mobility Catalogs
+    that have the given is_official flag.
+
+    Args:
+        is_official (str): The feature to filter sources by.
+        data_type (str, optional): The type of data to retrieve sources for. Defaults to ALL.
+            Possible values are 'ALL', 'GTFS', 'GTFS-RT', etc.
+
+    Returns:
+        dict: A dictionary of sorted sources with the specified is_official flag from the specified catalog.
+    """
+    source_type_map = globals()[f"{data_type.upper().replace('-', '_')}_MAP"]
+    sources = {}
+    for catalog_cls in source_type_map[CATALOGS]:
+        sources.update(
+            globals()[f"{catalog_cls}"]().get_sources_by_is_official(is_official=is_official)
+        )
+    return dict(sorted(sources.items()))

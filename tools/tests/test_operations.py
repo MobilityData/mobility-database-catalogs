@@ -13,6 +13,7 @@ from tools.operations import (
     get_latest_datasets,
     get_sources_by_feature,
     get_sources_by_status,
+    get_sources_by_is_official,
     CATALOGS,
 )
 
@@ -276,3 +277,13 @@ class TestOperations(TestCase):
         self.assertEqual(mock_schedule_catalog().get_sources_by_status.call_count, 1)
         self.assertEqual(mock_realtime_catalog.call_count, 1)
         self.assertEqual(mock_realtime_catalog().get_sources_by_status.call_count, 1)
+
+    @patch("tools.operations.GtfsRealtimeSourcesCatalog", autospec=True)
+    @patch("tools.operations.GtfsScheduleSourcesCatalog", autospec=True)
+    def test_get_sources_by_is_official(self, mock_schedule_catalog, mock_realtime_catalog):
+        test_is_official = "True"
+        under_test = get_sources_by_is_official(is_official=test_is_official, data_type=ALL)
+        self.assertEqual(mock_schedule_catalog.call_count, 1)
+        self.assertEqual(mock_schedule_catalog().get_sources_by_is_official.call_count, 1)
+        self.assertEqual(mock_realtime_catalog.call_count, 1)
+        self.assertEqual(mock_realtime_catalog().get_sources_by_is_official.call_count, 1)

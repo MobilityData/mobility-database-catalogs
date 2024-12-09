@@ -136,7 +136,7 @@ class Catalog(ABC):
         catalog = {}
         for path, sub_dirs, files in os.walk(catalog_path):
             for file in files:
-                with open(os.path.join(path, file)) as fp:
+                with open(os.path.join(path, file), encoding='utf-8') as fp:
                     entity_json = json.load(fp)
                     entity_id = entity_json[id_key]
                     catalog[entity_id] = entity_cls(filename=file, **entity_json)
@@ -264,6 +264,13 @@ class SourcesCatalog(Catalog):
             source_id: source.as_json()
             for source_id, source in self.catalog.items()
             if source.has_status(status)
+        }
+    
+    def get_sources_by_is_official(self, is_official):
+        return {
+            source_id: source.as_json()
+            for source_id, source in self.catalog.items()
+            if source.is_official == is_official
         }
 
     def add(self, **kwargs):
@@ -451,6 +458,10 @@ class Source(ABC):
         pass
 
     @abstractmethod
+    def has_is_official(self, is_official):
+        pass
+
+    @abstractmethod
     def is_overlapping_bounding_box(
         self, minimum_latitude, maximum_latitude, minimum_longitude, maximum_longitude
     ):
@@ -579,6 +590,9 @@ class GtfsScheduleSource(Source):
 
     def has_status(self, status):
         return self.status == status or (self.status is None and status == ACTIVE)
+    
+    def has_is_official(self, is_official):
+        return self.is_official == is_official
 
     def is_overlapping_bounding_box(
         self, minimum_latitude, maximum_latitude, minimum_longitude, maximum_longitude

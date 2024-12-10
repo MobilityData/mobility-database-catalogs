@@ -270,7 +270,7 @@ class SourcesCatalog(Catalog):
         return {
             source_id: source.as_json()
             for source_id, source in self.catalog.items()
-            if source.is_official == is_official
+            if source.has_is_official(is_official)
         }
 
     def add(self, **kwargs):
@@ -425,13 +425,13 @@ class Source(ABC):
         self.filename = kwargs.pop(FILENAME)
         self.features = kwargs.pop(FEATURES, None)
         self.status = kwargs.pop(STATUS, None)
+        self.is_official = kwargs.pop(IS_OFFICIAL, None)
         urls = kwargs.get(URLS, {})
         self.direct_download_url = urls.pop(DIRECT_DOWNLOAD)
         self.authentication_type = urls.pop(AUTHENTICATION_TYPE, None)
         self.authentication_info_url = urls.pop(AUTHENTICATION_INFO, None)
         self.api_key_parameter_name = urls.pop(API_KEY_PARAMETER_NAME, None)
         self.license_url = urls.pop(LICENSE, None)
-        self.is_official = urls.pop(IS_OFFICIAL, None)
 
     @abstractmethod
     def __str__(self):
@@ -914,6 +914,9 @@ class GtfsRealtimeSource(Source):
 
     def has_status(self, status):
         return self.status == status or (self.status is None and status == ACTIVE)
+    
+    def has_is_official(self, is_official):
+        return self.is_official == is_official
 
     def is_overlapping_bounding_box(
         self, minimum_latitude, maximum_latitude, minimum_longitude, maximum_longitude

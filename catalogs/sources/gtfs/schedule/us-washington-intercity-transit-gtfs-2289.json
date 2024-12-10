@@ -2,6 +2,7 @@
     "mdb_source_id": 2289,
     "data_type": "gtfs",
     "provider": "Intercity Transit",
+    "status": "deprecated",
     "name": "Flex",
     "feed_contact_email": "support+intercitytransit-wa-us@trilliumtransit.com",
     "location": {

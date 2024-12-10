@@ -2,6 +2,7 @@
     "mdb_source_id": 2167,
     "data_type": "gtfs",
     "provider": "Hopelink Transportation",
+    "status": "deprecated",
     "name": "Flex",
     "feed_contact_email": "support+hopelink-wa-us@trilliumtransit.com",
     "location": {

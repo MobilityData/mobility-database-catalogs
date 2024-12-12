@@ -18,9 +18,9 @@
         }
     },
     "urls": {
-        "direct_download": "https://mobilitydatabase.org/feeds/DOES-NOT-EXIST",
+        "direct_download": "https://mobilitydatabase.org",
         "authentication_type": 0,
-        "latest": "https://mobilitydatabase.org/feeds/DOES-NOT-EXIST"
+        "latest": "https://mobilitydatabase.org/"
     },
     "redirect": []
 }

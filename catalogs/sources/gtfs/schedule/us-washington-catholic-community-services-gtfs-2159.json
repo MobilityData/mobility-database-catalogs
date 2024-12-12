@@ -18,7 +18,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://data.trilliumtransit.com/gtfs/catholiccommunity-wa-us/catholiccommunity-wa-us-northwest--flex-v2.zip",
+        "direct_download": "",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-catholic-community-services-gtfs-2159.zip?alt=media"
     },

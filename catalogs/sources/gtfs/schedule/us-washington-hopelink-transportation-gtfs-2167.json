@@ -3,8 +3,7 @@
     "data_type": "gtfs",
     "provider": "Hopelink Transportation",
     "status": "deprecated",
-    "name": "Flex",
-    "feed_contact_email": "support+hopelink-wa-us@trilliumtransit.com",
+    "name": "do not use - deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Washington",

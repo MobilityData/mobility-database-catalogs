@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Sound Generations: Hyde Shuttle",
     "status": "deprecated",
-    "name": "Flex",
+    "name": "do not use - deprecfated",
     "feed_contact_email": "support+soundgenerations-wa-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
@@ -18,9 +18,9 @@
         }
     },
     "urls": {
-        "direct_download": "https://mobilitydatabase.org/feeds/DOES-NOT-EXIST",
+        "direct_download": "https://data.trilliumtransit.com/gtfs/soundgenerations-wa-us/soundgenerations-wa-us-hyde--flex-v2.zip",
         "authentication_type": 0,
-        "latest": "https://mobilitydatabase.org/feeds/DOES-NOT-EXIST"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-sound-generations-hyde-shuttle-gtfs-2183.zip?alt=media"
     },
     "redirect": []
 }

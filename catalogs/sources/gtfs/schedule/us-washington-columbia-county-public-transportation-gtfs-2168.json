@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Columbia County Public Transportation",
     "status": "deprecated",
-    "name": "Flex",
+    "name": "Do not use - deprecated",
     "feed_contact_email": "support+columbiacounty-wa-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
@@ -18,9 +18,9 @@
         }
     },
     "urls": {
-        "direct_download": "https://mobilitydatabase.org/feeds/DOES-NOT-EXIST",
+        "direct_download": "http://data.trilliumtransit.com/gtfs/columbiacounty-wa-us/columbiacounty-wa-us--flex-v2.zip",
         "authentication_type": 0,
-        "latest": "https://mobilitydatabase.org/feeds/DOES-NOT-EXIST"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-columbia-county-public-transportation-gtfs-2168.zip?alt=media"
     },
     "redirect": []
 }

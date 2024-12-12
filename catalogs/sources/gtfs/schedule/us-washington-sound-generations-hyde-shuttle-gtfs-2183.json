@@ -2,7 +2,8 @@
     "mdb_source_id": 2183,
     "data_type": "gtfs",
     "provider": "Sound Generations: Hyde Shuttle",
-    "name": "Flex",
+    "status": "deprecated",
+    "name": "do not use - deprecfated",
     "feed_contact_email": "support+soundgenerations-wa-us@trilliumtransit.com",
     "location": {
         "country_code": "US",

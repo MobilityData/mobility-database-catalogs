@@ -4,7 +4,6 @@
     "provider": "COAST Transportation",
     "name": "Do not use - deprecated",
     "status": "deprecated",
-    "feed_contact_email": "support+coasttransportation-wa-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Washington",

@@ -3,7 +3,6 @@
     "data_type": "gtfs",
     "provider": "COAST Transportation",
     "status": "deprecated",
-    "name": "Flex",
     "feed_contact_email": "support+coasttransportation-wa-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
@@ -17,9 +16,9 @@
         }
     },
     "urls": {
-        "direct_download": "",
+        "direct_download": "https://mobilitydatabase.org/feeds/DOES-NOT-EXIST",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-coast-transportation-gtfs-2162.zip?alt=media"
+        "latest": "https://mobilitydatabase.org/feeds/DOES-NOT-EXIST"
     },
     "redirect": []
 }

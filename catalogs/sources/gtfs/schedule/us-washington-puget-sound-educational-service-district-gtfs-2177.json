@@ -19,7 +19,7 @@
     "urls": {
         "direct_download": "https://data.trilliumtransit.com/gtfs/psesd-wa-us/psesd-wa-us--flex-v2.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-puget-sound-educational-service-district-gtfs-2177.zip?alt=media
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-puget-sound-educational-service-district-gtfs-2177.zip?alt=media"
     },
     "redirect": []
 }

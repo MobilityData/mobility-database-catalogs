@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Catholic Community Services",
     "status": "deprecated",
-    "name": "Flex",
+    "name": "Do not use - deprecated",
     "feed_contact_email": "support+catholiccommunity-wa-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
@@ -18,9 +18,9 @@
         }
     },
     "urls": {
-        "direct_download": "https://mobilitydatabase.org",
+        "direct_download": "https://data.trilliumtransit.com/gtfs/catholiccommunity-wa-us/catholiccommunity-wa-us-king--flex-v2.zip",
         "authentication_type": 0,
-        "latest": "https://mobilitydatabase.org/"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-catholic-community-services-gtfs-2158.zip?alt=media"
     },
     "redirect": []
 }

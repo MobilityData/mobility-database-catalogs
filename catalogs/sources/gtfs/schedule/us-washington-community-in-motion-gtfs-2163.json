@@ -18,9 +18,9 @@
         }
     },
     "urls": {
-        "direct_download": "",
+        "direct_download": "https://mobilitydatabase.org/feeds/DOES-NOT-EXIST",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-community-in-motion-gtfs-2163.zip?alt=media"
+        "latest": "https://mobilitydatabase.org/feeds/DOES-NOT-EXIST"
     },
     "redirect": []
 }

@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Eastside Friends of Seniors",
     "status": "deprecated",
-    "name": "Flex",
+    "name": "do not use - deprecated",
     "feed_contact_email": "support+eastside-wa-us@trilliumtransit.com",
     "location": {
         "country_code": "US",

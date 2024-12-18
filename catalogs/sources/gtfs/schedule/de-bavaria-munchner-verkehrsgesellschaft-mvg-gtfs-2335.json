@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2335,
+    "data_type": "gtfs",
+    "provider": "Münchner Verkehrsgesellschaft (MVG)",
+    "name": "Münchner Verkehrsgesellschaft",
+    "location": {
+        "country_code": "DE",
+        "subdivision_name": "Bavaria",
+        "municipality": "Munich",
+        "bounding_box": {
+            "minimum_latitude": 48.04187397,
+            "maximum_latitude": 48.26468205,
+            "minimum_longitude": 11.33169934,
+            "maximum_longitude": 11.7220353,
+            "extracted_on": "2024-12-18T19:07:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.mvg.de/static/gtfs/google_transit.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-bavaria-munchner-verkehrsgesellschaft-mvg-gtfs-2335.zip?alt=media",
+        "license": "https://www.mvg.de/verbindungen/Fahrplandaten.html"
+    },
+    "redirect": []
+}

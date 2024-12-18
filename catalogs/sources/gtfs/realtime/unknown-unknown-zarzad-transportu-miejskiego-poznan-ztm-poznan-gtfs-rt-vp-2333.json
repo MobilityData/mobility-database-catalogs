@@ -1,0 +1,13 @@
+{
+    "mdb_source_id": 2333,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Zarząd Transportu Miejskiego Poznań (ZTM Poznań)",
+    "urls": {
+        "direct_download": "https://www.ztm.poznan.pl/pl/dla-deweloperow/getGtfsRtFile/?file=vehicle_positions.pb",
+        "authentication_type": 0,
+        "license": "https://www.ztm.poznan.pl/otwarte-dane/dla-deweloperow/"
+    }
+}

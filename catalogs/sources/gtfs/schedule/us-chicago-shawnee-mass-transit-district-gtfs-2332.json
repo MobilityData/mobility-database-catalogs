@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 2332,
+    "data_type": "gtfs",
+    "provider": "Shawnee Mass Transit District",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Chicago",
+        "bounding_box": {
+            "minimum_latitude": 36.99635,
+            "maximum_latitude": 37.72413,
+            "minimum_longitude": -89.22708,
+            "maximum_longitude": -89.16154,
+            "extracted_on": "2024-12-18T19:07:16+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/11557/S1.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-chicago-shawnee-mass-transit-district-gtfs-2332.zip?alt=media"
+    },
+    "redirect": []
+}

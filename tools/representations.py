@@ -57,6 +57,7 @@ from tools.constants import (
     REDIRECT_ID,
     REDIRECT_COMMENT,
     REDIRECTS,
+    IS_OFFICIAL
 )
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
@@ -135,7 +136,7 @@ class Catalog(ABC):
         catalog = {}
         for path, sub_dirs, files in os.walk(catalog_path):
             for file in files:
-                with open(os.path.join(path, file)) as fp:
+                with open(os.path.join(path, file), encoding='utf-8') as fp:
                     entity_json = json.load(fp)
                     entity_id = entity_json[id_key]
                     catalog[entity_id] = entity_cls(filename=file, **entity_json)
@@ -263,6 +264,13 @@ class SourcesCatalog(Catalog):
             source_id: source.as_json()
             for source_id, source in self.catalog.items()
             if source.has_status(status)
+        }
+    
+    def get_sources_by_is_official(self, is_official):
+        return {
+            source_id: source.as_json()
+            for source_id, source in self.catalog.items()
+            if source.has_is_official(is_official)
         }
 
     def add(self, **kwargs):
@@ -402,6 +410,7 @@ class Source(ABC):
         authentication_info_url (str, optional): URL for authentication information.
         api_key_parameter_name (str, optional): The name of the API key parameter, if applicable.
         license_url (str, optional): URL for the license information of the data.
+        is_official (str, optional): Flag indicating if the source comes from the agency itself or not.
 
     Note:
         This class is designed to be subclassed. Subclasses must implement
@@ -416,6 +425,7 @@ class Source(ABC):
         self.filename = kwargs.pop(FILENAME)
         self.features = kwargs.pop(FEATURES, None)
         self.status = kwargs.pop(STATUS, None)
+        self.is_official = kwargs.pop(IS_OFFICIAL, None)
         urls = kwargs.get(URLS, {})
         self.direct_download_url = urls.pop(DIRECT_DOWNLOAD)
         self.authentication_type = urls.pop(AUTHENTICATION_TYPE, None)
@@ -445,6 +455,10 @@ class Source(ABC):
 
     @abstractmethod
     def has_status(self, status):
+        pass
+
+    @abstractmethod
+    def has_is_official(self, is_official):
         pass
 
     @abstractmethod
@@ -558,6 +572,7 @@ class GtfsScheduleSource(Source):
             STATUS: self.status,
             FEED_CONTACT_EMAIL: self.feed_contact_email,
             REDIRECTS: self.redirects,
+            IS_OFFICIAL: self.is_official,
         }
         return json.dumps(self.schematize(**attributes), ensure_ascii=False)
 
@@ -575,6 +590,9 @@ class GtfsScheduleSource(Source):
 
     def has_status(self, status):
         return self.status == status or (self.status is None and status == ACTIVE)
+    
+    def has_is_official(self, is_official):
+        return self.is_official == is_official
 
     def is_overlapping_bounding_box(
         self, minimum_latitude, maximum_latitude, minimum_longitude, maximum_longitude
@@ -655,6 +673,9 @@ class GtfsScheduleSource(Source):
         feed_contact_email = kwargs.get(FEED_CONTACT_EMAIL)
         if feed_contact_email is not None:
             self.feed_contact_email = feed_contact_email
+        is_official = kwargs.get(IS_OFFICIAL)
+        if is_official is not None:
+            self.is_official = is_official
 
         # Update the redirects
         redirects = kwargs.get(REDIRECTS)
@@ -756,6 +777,7 @@ class GtfsScheduleSource(Source):
                 LICENSE: kwargs.pop(LICENSE, None),
             },
             REDIRECTS: kwargs.pop(REDIRECTS, None),
+            IS_OFFICIAL: kwargs.pop(IS_OFFICIAL, None),
         }
         if schema[NAME] is None:
             del schema[NAME]
@@ -779,6 +801,8 @@ class GtfsScheduleSource(Source):
             del schema[FEED_CONTACT_EMAIL]
         if schema[REDIRECTS] is None:
             del schema[REDIRECTS]
+        if schema[IS_OFFICIAL] is None:
+            del schema[IS_OFFICIAL]
         return schema
 
 
@@ -842,6 +866,7 @@ class GtfsRealtimeSource(Source):
             LICENSE: self.license_url,
             FEATURES: self.features,
             STATUS: self.status,
+            IS_OFFICIAL: self.is_official,
         }
         return json.dumps(self.schematize(**attributes), ensure_ascii=False)
 
@@ -889,6 +914,9 @@ class GtfsRealtimeSource(Source):
 
     def has_status(self, status):
         return self.status == status or (self.status is None and status == ACTIVE)
+    
+    def has_is_official(self, is_official):
+        return self.is_official == is_official
 
     def is_overlapping_bounding_box(
         self, minimum_latitude, maximum_latitude, minimum_longitude, maximum_longitude
@@ -948,6 +976,9 @@ class GtfsRealtimeSource(Source):
         status = kwargs.get(STATUS)
         if status is not None:
             self.status = status
+        is_official = kwargs.get(IS_OFFICIAL)
+        if is_official is not None:
+            self.is_official = is_official
         return self
 
     @classmethod
@@ -1006,6 +1037,7 @@ class GtfsRealtimeSource(Source):
                 API_KEY_PARAMETER_NAME: kwargs.pop(API_KEY_PARAMETER_NAME, None),
                 LICENSE: kwargs.pop(LICENSE, None),
             },
+            IS_OFFICIAL: kwargs.pop(IS_OFFICIAL, None),
         }
         if schema[NAME] is None:
             del schema[NAME]
@@ -1025,4 +1057,6 @@ class GtfsRealtimeSource(Source):
             del schema[FEATURES]
         if schema[STATUS] is None:
             del schema[STATUS]
+        if schema[IS_OFFICIAL] is None:
+            del schema[IS_OFFICIAL]
         return schema

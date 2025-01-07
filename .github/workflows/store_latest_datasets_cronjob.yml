@@ -113,7 +113,6 @@ jobs:
         id: set-matrix
         run: |
           DATASETS=$(jq . ./urls_matrix.json -c)
-          echo $DATASETS
           echo "matrix=$DATASETS" >> $GITHUB_OUTPUT
       - name: Persist URLs matrix artifact
         if: always()

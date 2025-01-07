@@ -94,9 +94,11 @@ jobs:
                       BASE: file_base,
                       DIRECT_DOWNLOAD: urls[file_base][DIRECT_DOWNLOAD],
                       LATEST: urls[file_base][LATEST],
-                      AUTHENTICATION_TYPE: urls[file_base][AUTHENTICATION_TYPE],
-                      API_KEY_PARAMETER_NAME: urls[file_base][API_KEY_PARAMETER_NAME]
                   }
+                  if urls[file_base][AUTHENTICATION_TYPE]:
+                      file_information[API_KEY_PARAMETER_NAME] = urls[file_base][API_KEY_PARAMETER_NAME]
+                  if urls[API_KEY_PARAMETER_NAME]:
+                      file_information[API_KEY_PARAMETER_NAME] = urls[file_base][API_KEY_PARAMETER_NAME]
                   urls_data_string = urls_data_string + json.dumps(
                       file_information, separators=(",", ":")
                   )

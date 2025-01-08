@@ -91,8 +91,8 @@ jobs:
               job_json = json.loads(job)
               base = job_json[BASE]
               url = job_json[DIRECT_DOWNLOAD]
-              authentication_type = job_json[AUTHENTICATION_TYPE]
-              api_key_parameter_name = job_json[API_KEY_PARAMETER_NAME]
+              authentication_type = job_json.get(AUTHENTICATION_TYPE)
+              api_key_parameter_name = job_json.get(API_KEY_PARAMETER_NAME)
               api_key_parameter_value = api_source_secrets.get(base)
 
               # Download the dataset

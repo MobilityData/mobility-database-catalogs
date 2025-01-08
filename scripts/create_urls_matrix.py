@@ -31,6 +31,7 @@ HASH = "hash"
 
 # Report constants
 GET_URLS_REPORT = "get_urls_report.txt"
+IGNORE_STATUS = ["deprecated"]
 
 def create_matrix():
     """
@@ -44,7 +45,7 @@ def create_matrix():
         with open(os.path.join(ROOT, GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT, file), "r") as fp:
             file_json = json.load(fp)
             status = file_json.get("status")
-            if status == "deprecated" or status == "inactive":
+            if status in IGNORE_STATUS:
                 continue
             direct_download_url = file_json.get(URLS, {}).get(DIRECT_DOWNLOAD)
             latest_url = file_json.get(URLS, {}).get(LATEST)

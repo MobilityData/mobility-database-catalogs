@@ -3,6 +3,9 @@ import json
 import hashlib
 import numpy as np
 
+# This script is used to create a matrix of URLs to be used in the workflow.
+# The matrix is created from the GTFS schedule catalog files.
+# The matrix is written to a file named urls_matrix.json.
 
 # OS constants
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

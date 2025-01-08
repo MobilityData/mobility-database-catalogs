@@ -18,7 +18,7 @@ AUTHENTICATION_TYPE = "authentication_type"
 API_KEY_PARAMETER_NAME = "api_key_parameter_name"
 
 # GitHub constants
-MAX_JOB_NUMBER = 256
+MAX_JOB_NUMBER = 64
 
 # Matrix constants
 INCLUDE = "include"

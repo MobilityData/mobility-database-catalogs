@@ -150,7 +150,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: download_reports
+          name: download_reports-${{ matrix.hash }}
           path: download_reports
   validate-latest:
     needs: [ get-urls, store-datasets ]
@@ -228,5 +228,5 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: latest_reports
+          name: latest_reports-${{ matrix.hash }}
           path: latest_reports

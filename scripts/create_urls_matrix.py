@@ -40,6 +40,9 @@ def create_matrix():
         base = os.path.splitext(os.path.basename(file))[0]
         with open(os.path.join(ROOT, GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT, file), "r") as fp:
             file_json = json.load(fp)
+            status = file_json.get("status")
+            if status == "deprecated" or status == "inactive":
+                continue
             direct_download_url = file_json.get(URLS, {}).get(DIRECT_DOWNLOAD)
             latest_url = file_json.get(URLS, {}).get(LATEST)
             authentication_type = file_json.get(URLS, {}).get(AUTHENTICATION_TYPE)

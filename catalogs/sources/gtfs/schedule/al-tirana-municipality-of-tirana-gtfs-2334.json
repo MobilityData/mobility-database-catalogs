@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2334,
+    "data_type": "gtfs",
+    "provider": "Municipality of Tirana",
+    "status": "active",
+    "location": {
+        "country_code": "AL",
+        "subdivision_name": "Tirana",
+        "municipality": "Tirana",
+        "bounding_box": {
+            "minimum_latitude": 41.2830270048811,
+            "maximum_latitude": 41.3709366724,
+            "minimum_longitude": 19.6887486477716,
+            "maximum_longitude": 19.8680538792,
+            "extracted_on": "2025-01-09T23:17:29+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://pt.tirana.al/gtfs/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/al-tirana-municipality-of-tirana-gtfs-2334.zip?alt=media"
+    },
+    "redirect": []
+}

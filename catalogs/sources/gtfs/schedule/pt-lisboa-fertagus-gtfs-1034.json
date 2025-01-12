@@ -14,8 +14,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://www.transporlis.pt/Portals/0/OpenData/gtfs/zip/13/gtfs_13.zip",
+        "direct_download": "https://www.fertagus.pt/GTFSTMLzip/Fertagus_GTFS.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-lisboa-fertagus-gtfs-1034.zip?alt=media",
-        "license": "http://www.opendefinition.org/licenses/cc-zero"
     }
 }

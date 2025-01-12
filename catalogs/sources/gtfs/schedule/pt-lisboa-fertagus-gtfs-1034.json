@@ -15,6 +15,6 @@
     },
     "urls": {
         "direct_download": "https://www.fertagus.pt/GTFSTMLzip/Fertagus_GTFS.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-lisboa-fertagus-gtfs-1034.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-lisboa-fertagus-gtfs-1034.zip?alt=media"
     }
 }

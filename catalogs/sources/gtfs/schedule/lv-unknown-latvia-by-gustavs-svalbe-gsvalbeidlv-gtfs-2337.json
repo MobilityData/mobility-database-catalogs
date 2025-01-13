@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 2337,
+    "data_type": "gtfs",
+    "provider": "Latvia by Gustavs Svalbe gsvalbe.id.lv",
+    "location": {
+        "country_code": "LV",
+        "bounding_box": {
+            "minimum_latitude": 55.6756659,
+            "maximum_latitude": 58.0362951,
+            "minimum_longitude": 20.9879606,
+            "maximum_longitude": 28.1816125,
+            "extracted_on": "2025-01-10T17:08:28+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gsvalbe.id.lv/pieturas/dati/latvia.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lv-unknown-latvia-by-gustavs-svalbe-gsvalbeidlv-gtfs-2337.zip?alt=media"
+    },
+    "redirect": []
+}

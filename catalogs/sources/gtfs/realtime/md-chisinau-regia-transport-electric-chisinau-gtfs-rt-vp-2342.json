@@ -1,12 +1,12 @@
 {
-    "mdb_source_id": 2336,
+    "mdb_source_id": 2342,
     "data_type": "gtfs-rt",
     "entity_type": [
         "vp"
     ],
     "provider": "Regia Transport Electric Chișinău, Î.M. Parcul Urban de Autobuze",
     "static_reference": [
-        2334
+        2341
     ],
     "urls": {
         "direct_download": "https://chisinau-rt-feed.gtfs.ro/vehiclePositions"

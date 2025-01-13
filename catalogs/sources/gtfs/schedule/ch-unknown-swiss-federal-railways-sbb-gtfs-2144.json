@@ -2,7 +2,7 @@
     "mdb_source_id": 2144,
     "data_type": "gtfs",
     "provider": "Swiss Federal Railways (SBB)",
-    "name": "Systemaufgaben Kundeninformation (SKI+)”",
+    "name": "Systemaufgaben Kundeninformation (SKI+)",
     "location": {
         "country_code": "CH",
         "bounding_box": {
@@ -14,7 +14,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://opentransportdata.swiss/en/dataset/timetable-2024-gtfs2020/permalink",
+        "direct_download": "https://data.opentransportdata.swiss/en/dataset/timetable-2024-gtfs2020/permalink",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ch-unknown-swiss-federal-railways-sbb-gtfs-2144.zip?alt=media",
         "license": "https://opentransportdata.swiss/en/terms-of-use/#Definitions"

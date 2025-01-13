@@ -5,6 +5,9 @@
         "tu"
     ],
     "provider": "Zarząd Transportu Miejskiego Poznań (ZTM Poznań)",
+      "static_reference": [
+        982
+    ],
     "urls": {
         "direct_download": "https://www.ztm.poznan.pl/pl/dla-deweloperow/getGtfsRtFile/?file=trip_updates.pb",
         "authentication_type": 0,

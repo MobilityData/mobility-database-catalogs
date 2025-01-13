@@ -2,7 +2,7 @@
     "mdb_source_id": 2144,
     "data_type": "gtfs",
     "provider": "Swiss Federal Railways (SBB)",
-    "name": "Systemaufgaben Kundeninformation (SKI+)”",
+    "name": "Systemaufgaben Kundeninformation (SKI+)",
     "location": {
         "country_code": "CH",
         "bounding_box": {

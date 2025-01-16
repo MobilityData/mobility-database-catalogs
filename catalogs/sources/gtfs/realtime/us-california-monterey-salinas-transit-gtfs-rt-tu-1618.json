@@ -6,7 +6,7 @@
     ],
     "provider": "Monterey-Salinas Transit",
     "static_reference": [
-        56
+        "56"
     ],
     "urls": {
         "direct_download": "http://206.128.158.191/TMGTFSRealTimeWebService/TripUpdate/TripUpdates.pb",

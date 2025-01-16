@@ -6,7 +6,7 @@
     ],
     "provider": "Eastern Sierra Transit Authority",
     "static_reference": [
-        25
+        "25"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/esta/gtfs-rt-vehicle-positions",

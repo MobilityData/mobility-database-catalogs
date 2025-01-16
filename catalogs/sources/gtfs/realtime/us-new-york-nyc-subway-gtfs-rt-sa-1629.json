@@ -7,7 +7,7 @@
     "provider": "Metropolitan Transit Authority (MTA)",
     "name": "NYC Subway",
     "static_reference": [
-        516
+        "516"
     ],
     "urls": {
         "direct_download": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/camsys%2Fsubway-alerts",

@@ -6,7 +6,7 @@
     ],
     "provider": "Zarząd Transportu Metropolitalnego",
     "static_reference": [
-        1819
+        "1819"
     ],
     "urls": {
         "direct_download": "http://gtfsrt.metropoliagzm.pl:1111/gtfsrt/gzm/tripUpdates",

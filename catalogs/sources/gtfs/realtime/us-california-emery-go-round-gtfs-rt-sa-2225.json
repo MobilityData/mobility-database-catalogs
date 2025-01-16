@@ -6,7 +6,7 @@
     ],
     "provider": "Emery Go-Round",
     "static_reference": [
-        2224
+        "2224"
     ],
     "urls": {
         "direct_download": "https://emerygoround.tripshot.com/v1/gtfs/realtime/feed/egr?types=Alert",

@@ -6,7 +6,7 @@
     ],
     "provider": "Valley Metro",
     "static_reference": [
-        147
+        "147"
     ],
     "urls": {
         "direct_download": "https://app.mecatran.com/utw/ws/gtfsfeed/realtime/valleymetro?apiKey=4f22263f69671d7f49726c3011333e527368211f",

@@ -6,7 +6,7 @@
     ],
     "provider": "Miami Dade Transit",
     "static_reference": [
-        331
+        "331"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/miami/gtfs-rt-vehicle-positions/",

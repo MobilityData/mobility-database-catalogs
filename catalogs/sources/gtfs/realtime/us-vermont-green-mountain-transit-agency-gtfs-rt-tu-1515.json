@@ -6,7 +6,7 @@
     ],
     "provider": "Green Mountain Transit Agency",
     "static_reference": [
-        629
+        "629"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/green-mountain/gtfs-rt-trip-updates",

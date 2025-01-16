@@ -6,7 +6,7 @@
     ],
     "provider": "BC Transit (Kelowna Regional Transit System)",
     "static_reference": [
-        704
+        "704"
     ],
     "urls": {
         "direct_download": "http://kelowna.mapstrat.com/current/gtfrealtime_ServiceAlerts.bin",

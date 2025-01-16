@@ -6,7 +6,7 @@
     ],
     "provider": "Suffolk County Transit",
     "static_reference": [
-        548
+        "548"
     ],
     "urls": {
         "direct_download": "http://gtfsrealtime.suffolkcountyny.gov:8080/gtfsrealtime/VehiclePositions",

@@ -6,7 +6,7 @@
     ],
     "provider": "Sound Transit",
     "static_reference": [
-        268
+        "268"
     ],
     "urls": {
         "direct_download": "https://api.pugetsound.onebusaway.org/api/gtfs_realtime/alerts-for-agency/40.pb",

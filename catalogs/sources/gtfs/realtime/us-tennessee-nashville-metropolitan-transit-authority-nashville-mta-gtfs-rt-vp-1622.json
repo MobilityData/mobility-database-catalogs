@@ -6,7 +6,7 @@
     ],
     "provider": "Nashville Metropolitan Transit Authority (Nashville MTA)",
     "static_reference": [
-        360
+        "360"
     ],
     "urls": {
         "direct_download": "http://transitdata.nashvillemta.org/TMGTFSRealTimeWebService/vehicle/vehiclepositions.pb",

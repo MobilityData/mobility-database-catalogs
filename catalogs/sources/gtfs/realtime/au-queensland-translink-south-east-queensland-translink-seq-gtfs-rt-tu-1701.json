@@ -6,7 +6,7 @@
     ],
     "provider": "TransLink South East Queensland (TransLink SEQ)",
     "static_reference": [
-        668
+        "668"
     ],
     "urls": {
         "direct_download": "https://gtfsrt.api.translink.com.au/api/realtime/SEQ/TripUpdates",

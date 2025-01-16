@@ -6,7 +6,7 @@
     ],
     "provider": "Metro Christchurch",
     "static_reference": [
-        1313
+        "1313"
     ],
     "urls": {
         "direct_download": "https://apis.metroinfo.co.nz/rti/gtfsrt/v1/service-alerts.pb",

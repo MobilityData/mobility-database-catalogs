@@ -6,7 +6,7 @@
     ],
     "provider": "TheBus",
     "static_reference": [
-        10
+        "10"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/thebus/gtfs-rt-vehicle-positions",

@@ -6,7 +6,7 @@
     ],
     "provider": "Tri-Valley Transit",
     "static_reference": [
-        852
+        "852"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/trivalleytransit/gtfs-rt-trip-updates",

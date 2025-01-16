@@ -6,7 +6,7 @@
     ],
     "provider": "Lane Transit District",
     "static_reference": [
-        131
+        "131"
     ],
     "urls": {
         "direct_download": "http://feed.ltd.org/gtfs-realtime/vehicle",

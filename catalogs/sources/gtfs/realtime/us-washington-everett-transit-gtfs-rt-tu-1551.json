@@ -6,7 +6,7 @@
     ],
     "provider": "Everett Transit",
     "static_reference": [
-        288
+        "288"
     ],
     "urls": {
         "direct_download": "https://api.pugetsound.onebusaway.org/api/gtfs_realtime/trip-updates-for-agency/97.pb",

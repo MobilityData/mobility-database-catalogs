@@ -6,7 +6,7 @@
     ],
     "provider": "Cascades East Transit",
     "static_reference": [
-        138
+        "138"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/coic/gtfs-rt-vehicle-positions",

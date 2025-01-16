@@ -6,7 +6,7 @@
     ],
     "provider": "City of Corvallis",
     "static_reference": [
-        136
+        "136"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/ocwcog-corvallis/gtfs-rt-vehicle-positions",

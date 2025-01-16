@@ -6,7 +6,7 @@
     ],
     "provider": "Beach Cities Transit",
     "static_reference": [
-        803
+        "803"
     ],
     "urls": {
         "direct_download": "https://redondobeachbct.com/gtfs-rt/tripupdates",

@@ -6,7 +6,7 @@
     ],
     "provider": "Madera County Connection",
     "static_reference": [
-        572
+        "572"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/madera/gtfs-rt-vehicle-positions",

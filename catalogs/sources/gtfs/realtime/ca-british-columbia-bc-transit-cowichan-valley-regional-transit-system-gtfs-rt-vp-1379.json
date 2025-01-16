@@ -6,7 +6,7 @@
     ],
     "provider": "BC Transit (Cowichan Valley Regional Transit System)",
     "static_reference": [
-        694
+        "694"
     ],
     "urls": {
         "direct_download": "https://bct.tmix.se/gtfs-realtime/vehicleupdates.pb?operatorIds=10",

@@ -6,7 +6,7 @@
     ],
     "provider": "Stanislaus Regional Transit Authority (StanRTA)",
     "static_reference": [
-        1332
+        "1332"
     ],
     "urls": {
         "direct_download": "http://max.availtec.com/InfoPoint/GTFS-Realtime.ashx?Type=Tripupdate",

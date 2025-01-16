@@ -6,7 +6,7 @@
     ],
     "provider": "Pražská integrovaná doprava",
     "static_reference": [
-        767
+        "767"
     ],
     "urls": {
         "direct_download": "https://api.golemio.cz/v2/vehiclepositions/gtfsrt/vehicle_positions.pb",

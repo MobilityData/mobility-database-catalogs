@@ -7,7 +7,7 @@
     "provider": "Metropolitan Transit Authority (MTA)",
     "name": "Metro North Railroad",
     "static_reference": [
-        524
+        "524"
     ],
     "urls": {
         "direct_download": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/camsys%2Fmnr-alerts",

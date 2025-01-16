@@ -6,7 +6,7 @@
     ],
     "provider": "Port Alberni",
     "static_reference": [
-        761
+        "761"
     ],
     "urls": {
         "direct_download": "https://bct.tmix.se/gtfs-realtime/tripupdates.pb?operatorIds=11",

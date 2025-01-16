@@ -6,7 +6,7 @@
     ],
     "provider": "Lake Transit Authority",
     "static_reference": [
-        68
+        "68"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/lake-county/gtfs-rt-trip-updates",

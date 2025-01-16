@@ -6,7 +6,7 @@
     ],
     "provider": "Hillsborough Area Regional Transit",
     "static_reference": [
-        325
+        "325"
     ],
     "urls": {
         "direct_download": "http://api.tampa.onebusaway.org:8088/trip-updates",

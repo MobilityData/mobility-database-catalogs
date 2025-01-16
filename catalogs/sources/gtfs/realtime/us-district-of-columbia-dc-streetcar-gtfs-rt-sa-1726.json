@@ -6,7 +6,7 @@
     ],
     "provider": "DC Streetcar",
     "static_reference": [
-        487
+        "487"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/dc-streetcar/gtfs-rt-alerts/",

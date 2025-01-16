@@ -6,7 +6,7 @@
     ],
     "provider": "Denton County Transportation Authority",
     "static_reference": [
-        151
+        "151"
     ],
     "urls": {
         "direct_download": "http://api.transitime.org/api/v1/key/dca04420/agency/dcta/command/gtfs-rt/vehiclePositions?format=bin",

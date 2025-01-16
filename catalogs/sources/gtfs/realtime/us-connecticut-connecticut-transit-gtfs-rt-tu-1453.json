@@ -6,7 +6,7 @@
     ],
     "provider": "Connecticut Transit",
     "static_reference": [
-        553
+        "553"
     ],
     "urls": {
         "direct_download": "https://s3.amazonaws.com/cttransit-realtime-prod/tripupdates.pb",

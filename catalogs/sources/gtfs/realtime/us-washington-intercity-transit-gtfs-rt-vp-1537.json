@@ -6,7 +6,7 @@
     ],
     "provider": "Intercity Transit",
     "static_reference": [
-        266
+        "266"
     ],
     "urls": {
         "direct_download": "https://its.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition",

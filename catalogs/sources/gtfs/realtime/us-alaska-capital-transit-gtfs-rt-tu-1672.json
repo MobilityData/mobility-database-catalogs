@@ -6,7 +6,7 @@
     ],
     "provider": "Capital Transit",
     "static_reference": [
-        294
+        "294"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/juneau/gtfs-rt-trip-updates",

@@ -6,7 +6,7 @@
     ],
     "provider": "Towson Loop",
     "static_reference": [
-        1784
+        "1784"
     ],
     "urls": {
         "direct_download": "https://passio3.com/towson/passioTransit/gtfs/realtime/vehiclePositions",

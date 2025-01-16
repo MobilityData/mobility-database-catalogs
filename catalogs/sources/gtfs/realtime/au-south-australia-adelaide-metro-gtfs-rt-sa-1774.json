@@ -6,7 +6,7 @@
     ],
     "provider": "Adelaide Metro",
     "static_reference": [
-        660
+        "660"
     ],
     "urls": {
         "direct_download": "https://gtfs.adelaidemetro.com.au/v1/realtime/service_alerts",

@@ -6,7 +6,7 @@
     ],
     "provider": "Tillamook County Transportation District",
     "static_reference": [
-        246
+        "246"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/tillamook/gtfs-rt-trip-updates",

@@ -6,7 +6,7 @@
     ],
     "provider": "Regia Transport Electric Chișinău, Î.M. Parcul Urban de Autobuze",
     "static_reference": [
-        2341
+        "2341"
     ],
     "urls": {
         "direct_download": "https://chisinau-rt-feed.gtfs.ro/tripUpdates"

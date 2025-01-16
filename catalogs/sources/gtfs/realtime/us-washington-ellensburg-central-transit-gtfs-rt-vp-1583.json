@@ -6,7 +6,7 @@
     ],
     "provider": "Ellensburg Central Transit",
     "static_reference": [
-        303
+        "303"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/central-transit-wa/gtfs-rt-vehicle-positions",

@@ -6,7 +6,7 @@
     ],
     "provider": "Metropolitan Atlanta Rapid Transit Authority (MARTA)",
     "static_reference": [
-        368
+        "368"
     ],
     "urls": {
         "direct_download": "https://gtfs-rt.itsmarta.com/TMGTFSRealTimeWebService/tripupdate/tripupdates.pb",

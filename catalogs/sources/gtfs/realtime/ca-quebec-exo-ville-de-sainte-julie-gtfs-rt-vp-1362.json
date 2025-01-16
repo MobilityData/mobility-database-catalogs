@@ -6,7 +6,7 @@
     ],
     "provider": "Exo Ville de Sainte-Julie",
     "static_reference": [
-        753
+        "753"
     ],
     "urls": {
         "direct_download": "https://opendata.exo.quebec/ServiceGTFSR/VehiclePosition.pb?agency=OMITSJU",

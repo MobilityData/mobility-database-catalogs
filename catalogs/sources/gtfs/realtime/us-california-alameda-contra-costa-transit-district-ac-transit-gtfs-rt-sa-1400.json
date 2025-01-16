@@ -6,7 +6,7 @@
     ],
     "provider": "Alameda-Contra Costa Transit District (AC Transit)",
     "static_reference": [
-        1244
+        "1244"
     ],
     "urls": {
         "direct_download": "http://api.actransit.org/transit/gtfsrt/alerts",

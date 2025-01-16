@@ -5,7 +5,7 @@
         "tu"
     ],
     "provider": "LA Metro",
-    "static_reference": [30],
+    "static_reference": ["30"],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/lametro/gtfs-rt-trip-updates",
         "authentication_type": 2,

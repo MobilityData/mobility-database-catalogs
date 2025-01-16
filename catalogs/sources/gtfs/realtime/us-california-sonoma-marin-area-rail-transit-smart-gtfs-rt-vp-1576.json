@@ -5,7 +5,7 @@
         "vp"
     ],
     "provider": "Sonoma Marin Area Rail Transit (SMART)",
-    "static_reference": [815],
+    "static_reference": ["815"],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/smart/gtfs-rt-vehicle-positions",
         "authentication_type": 2,

@@ -25,7 +25,7 @@
     },
     "redirect": [
         {
-            "id": 2092,
+            "id": "2092",
             "comment": "Only the source URL changed, see feed 2092."
         }
     ]

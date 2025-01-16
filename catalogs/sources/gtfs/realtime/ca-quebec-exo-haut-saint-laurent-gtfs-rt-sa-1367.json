@@ -6,7 +6,7 @@
     ],
     "provider": "Exo Haut-Saint-Laurent",
     "static_reference": [
-        745
+        "745"
     ],
     "urls": {
         "direct_download": "https://opendata.exo.quebec/ServiceGTFSR/Alert.pb?agency=CITHSL",

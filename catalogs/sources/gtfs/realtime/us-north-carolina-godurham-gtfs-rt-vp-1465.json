@@ -6,7 +6,7 @@
     ],
     "provider": "GoDurham",
     "static_reference": [
-        377
+        "377"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/godurham/gtfs-rt-vehicle-positions",

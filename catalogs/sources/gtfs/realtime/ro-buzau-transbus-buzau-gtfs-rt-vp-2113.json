@@ -6,7 +6,7 @@
     ],
     "provider": "Transbus Buzău",
     "static_reference": [
-        2106
+        "2106"
     ],
     "urls": {
         "direct_download": "https://gtfsagent.transportpublic.ro/transbus/vehiclePositions"

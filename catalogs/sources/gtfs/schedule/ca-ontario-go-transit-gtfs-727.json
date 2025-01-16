@@ -4,7 +4,7 @@
     "provider": "Go Transit",
     "redirect": [
         {
-            "id": 1993
+            "id": "1993"
         }
     ],
     "features": [

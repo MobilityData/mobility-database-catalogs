@@ -6,7 +6,7 @@
     ],
     "provider": "Greater Cleveland Regional Transit Authority",
     "static_reference": [
-        406
+        "406"
     ],
     "urls": {
         "direct_download": "http://gtfs.gcrta.org/TMGTFSRealTimeWebService/Vehicle/VehiclePositions.pb",

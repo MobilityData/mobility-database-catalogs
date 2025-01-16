@@ -6,7 +6,7 @@
     ],
     "provider": "King County Metro",
     "static_reference": [
-        1330
+        "1330"
     ],
     "urls": {
         "direct_download": "https://s3.amazonaws.com/kcm-alerts-realtime-prod/vehiclepositions.pb",

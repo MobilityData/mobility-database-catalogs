@@ -8,7 +8,7 @@
     "provider": "Maryland Transit Administration",
     "name": "MARC Train",
     "static_reference": [
-        468
+        "468"
     ],
     "note": "This source includes Vehicle Position and Trip Updates entities under the same feed.",
     "urls": {

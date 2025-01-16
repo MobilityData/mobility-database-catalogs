@@ -6,7 +6,7 @@
     ],
     "provider": "Kern Transit",
     "static_reference": [
-        47
+        "47"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/kern-transit/gtfs-rt-vehicle-positions",

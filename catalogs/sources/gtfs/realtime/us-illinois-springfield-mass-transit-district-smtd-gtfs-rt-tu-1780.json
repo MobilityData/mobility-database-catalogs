@@ -6,7 +6,7 @@
     ],
     "provider": "Springfield Mass Transit District (SMTD)",
     "static_reference": [
-        385
+        "385"
     ],
     "urls": {
         "direct_download": "http://ride.smtd.org/gtfsrt/trips",

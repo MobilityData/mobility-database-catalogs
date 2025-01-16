@@ -6,7 +6,7 @@
     ],
     "provider": "BC Transit (Campbell River Transit)",
     "static_reference": [
-        691
+        "691"
     ],
     "urls": {
         "direct_download": "https://bct.tmix.se/gtfs-realtime/tripupdates.pb?operatorIds=12",

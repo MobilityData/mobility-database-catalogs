@@ -6,7 +6,7 @@
     ],
     "provider": "Hamilton Street Railway",
     "static_reference": [
-        723
+        "723"
     ],
     "urls": {
         "direct_download": "https://opendata.hamilton.ca/GTFS-RT/GTFS_TripUpdates.pb",

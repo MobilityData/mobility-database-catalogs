@@ -6,7 +6,7 @@
     ],
     "provider": "London Transit Commission",
     "static_reference": [
-        2
+        "2"
     ],
     "urls": {
         "direct_download": "http://gtfs.ltconline.ca/TripUpdate/TripUpdates.pb",

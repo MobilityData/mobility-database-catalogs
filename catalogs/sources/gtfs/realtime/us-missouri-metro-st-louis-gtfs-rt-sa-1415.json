@@ -6,7 +6,7 @@
     ],
     "provider": "Metro St. Louis",
     "static_reference": [
-        190
+        "190"
     ],
     "urls": {
         "direct_download": "https://www.metrostlouis.org/RealTimeData/StlRealTimeAlerts.pb",

@@ -6,7 +6,7 @@
     ],
     "provider": "The Current",
     "static_reference": [
-        428
+        "428"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/thecurrent/gtfs-rt-vehicle-positions",

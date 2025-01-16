@@ -6,7 +6,7 @@
     ],
     "provider": "San Joaquin Regional Transit District (RTD)",
     "static_reference": [
-        886
+        "886"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/san-joaquin/gtfs-rt-trip-updates",

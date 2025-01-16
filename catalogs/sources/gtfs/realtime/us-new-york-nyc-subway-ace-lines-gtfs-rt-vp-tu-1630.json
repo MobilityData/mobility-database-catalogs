@@ -8,7 +8,7 @@
     "provider": "Metropolitan Transit Authority (MTA)",
     "name": "NYC Subway ACE Lines",
     "static_reference": [
-        516
+        "516"
     ],
     "note": "This source includes Vehicle Position and Trip Updates entities under the same feed.",
     "urls": {

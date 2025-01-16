@@ -4,7 +4,7 @@
     "provider": "Société de Transport de Sherbrooke",
     "redirect": [
         {
-            "id": 1996
+            "id": "1996"
         }
     ],
     "features": [

@@ -6,7 +6,7 @@
     ],
     "provider": "Asheville Rides Transit",
     "static_reference": [
-        903
+        "903"
     ],
     "urls": {
         "direct_download": "http://gtfs-realtime.trilliumtransit.com/gtfs-realtime/feed/asheville-nc-us/service_alerts.proto",

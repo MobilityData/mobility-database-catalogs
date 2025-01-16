@@ -6,7 +6,7 @@
     ],
     "provider": "MiWay",
     "static_reference": [
-        730
+        "730"
     ],
     "urls": {
         "direct_download": "https://www.miapp.ca/GTFS_RT/Vehicle/VehiclePositions.pb",

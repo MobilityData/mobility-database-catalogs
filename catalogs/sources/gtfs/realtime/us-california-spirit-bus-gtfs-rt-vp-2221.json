@@ -6,7 +6,7 @@
     ],
     "provider": "Spirit Bus",
     "static_reference": [
-        2202
+        "2202"
     ],
     "urls": {
         "direct_download": "https://passio3.com/montereyp/passioTransit/gtfs/realtime/vehiclePositions",

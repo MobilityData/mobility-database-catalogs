@@ -6,7 +6,7 @@
     ],
     "provider": "Virginia Railway Express",
     "static_reference": [
-        478
+        "478"
     ],
     "urls": {
         "direct_download": "http://www.vre.org/gtfs-realtime/TripUpdateFeed",

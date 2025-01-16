@@ -6,7 +6,7 @@
     ],
     "provider": "Barrie Transit",
     "static_reference": [
-        3
+        "3"
     ],
     "urls": {
         "direct_download": "http://www.myridebarrie.ca/gtfs/GTFS_VehiclePositions.pb",

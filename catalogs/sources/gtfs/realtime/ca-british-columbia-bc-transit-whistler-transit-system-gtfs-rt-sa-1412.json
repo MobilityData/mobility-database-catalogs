@@ -6,7 +6,7 @@
     ],
     "provider": "BC Transit (Whistler Transit System)",
     "static_reference": [
-        702
+        "702"
     ],
     "urls": {
         "direct_download": "http://whistler.mapstrat.com/current/gtfrealtime_ServiceAlerts.bin",

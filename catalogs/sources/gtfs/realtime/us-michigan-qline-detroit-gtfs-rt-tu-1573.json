@@ -6,7 +6,7 @@
     ],
     "provider": "Qline Detroit",
     "static_reference": [
-        802
+        "802"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/detroit-m1-rail/gtfs-rt-trip-updates",

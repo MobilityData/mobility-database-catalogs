@@ -6,7 +6,7 @@
     ],
     "provider": "Transit Authority of Northern Kentucky (TANK)",
     "static_reference": [
-        367
+        "367"
     ],
     "urls": {
         "direct_download": "http://66.42.202.74:89/api/tripupdates",

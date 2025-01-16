@@ -6,7 +6,7 @@
     ],
     "provider": "Foothill Transit",
     "static_reference": [
-        101
+        "101"
     ],
     "urls": {
         "direct_download": "https://foothill_3rdparty.rideralerts.com/myStop/GTFS-Realtime.ashx?&Type=VehiclePosition&serverid=0",

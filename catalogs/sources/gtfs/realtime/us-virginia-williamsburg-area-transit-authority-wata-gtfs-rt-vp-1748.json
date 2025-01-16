@@ -6,7 +6,7 @@
     ],
     "provider": "Williamsburg Area Transit Authority (WATA)",
     "static_reference": [
-        474
+        "474"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/wata/gtfs-rt-vehicle-positions",

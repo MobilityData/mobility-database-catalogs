@@ -6,7 +6,7 @@
     ],
     "provider": "Benton Area Transportation",
     "static_reference": [
-        126
+        "126"
     ],
     "urls": {
         "direct_download": "http://gtfs-realtime.trilliumtransit.com/gtfs-realtime/feed/benton-or-us/service_alerts.proto",

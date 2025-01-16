@@ -6,7 +6,7 @@
     ],
     "provider": "Milwaukee County Transit System (MCTS)",
     "static_reference": [
-        2127
+        "2127"
     ],
     "urls": {
         "direct_download": "https://realtime.ridemcts.com/gtfsrt/alerts",

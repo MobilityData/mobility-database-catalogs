@@ -6,7 +6,7 @@
     ],
     "provider": "Orange County Transportation Authority (OCTA)",
     "static_reference": [
-        15
+        "15"
     ],
     "urls": {
         "direct_download": "http://api.octa.net/GTFSRealTime/protoBuf/VehiclePositions.aspx",

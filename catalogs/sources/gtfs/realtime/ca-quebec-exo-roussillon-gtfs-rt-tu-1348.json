@@ -6,7 +6,7 @@
     ],
     "provider": "Exo Roussillon",
     "static_reference": [
-        747
+        "747"
     ],
     "urls": {
         "direct_download": "https://opendata.exo.quebec/ServiceGTFSR/TripUpdate.pb?agency=CITROUS",

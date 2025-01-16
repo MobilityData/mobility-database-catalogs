@@ -6,7 +6,7 @@
     ],
     "provider": "Edmonton Transit System",
     "static_reference": [
-        714
+        "714"
     ],
     "urls": {
         "direct_download": "http://gtfs.edmonton.ca/TMGTFSRealTimeWebService/Vehicle/VehiclePositions.pb",

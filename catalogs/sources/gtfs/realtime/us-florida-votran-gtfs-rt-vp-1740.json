@@ -6,7 +6,7 @@
     ],
     "provider": "Votran",
     "static_reference": [
-        349
+        "349"
     ],
     "urls": {
         "direct_download": "http://realtimevotran.availtec.com/infopoint/GTFS-Realtime.ashx?&Type=VehiclePosition",

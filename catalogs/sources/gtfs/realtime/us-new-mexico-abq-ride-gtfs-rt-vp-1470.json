@@ -6,7 +6,7 @@
     ],
     "provider": "ABQ RIDE",
     "static_reference": [
-        166
+        "166"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/abq-ride/gtfs-rt-vehicle-positions",

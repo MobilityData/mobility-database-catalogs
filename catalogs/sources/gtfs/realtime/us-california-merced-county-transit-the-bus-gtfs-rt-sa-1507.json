@@ -6,7 +6,7 @@
     ],
     "provider": "Merced County Transit (The Bus)",
     "static_reference": [
-        86
+        "86"
     ],
     "urls": {
         "direct_download": "https://thebuslive.com/gtfs-rt/alerts",

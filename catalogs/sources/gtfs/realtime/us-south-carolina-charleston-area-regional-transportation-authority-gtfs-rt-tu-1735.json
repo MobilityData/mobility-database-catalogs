@@ -6,7 +6,7 @@
     ],
     "provider": "Charleston Area Regional Transportation Authority",
     "static_reference": [
-        352
+        "352"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/bcdcog/gtfs-rt-trip-updates",

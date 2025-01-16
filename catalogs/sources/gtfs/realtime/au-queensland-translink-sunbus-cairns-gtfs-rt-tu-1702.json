@@ -6,7 +6,7 @@
     ],
     "provider": "TransLink Sunbus Cairns",
     "static_reference": [
-        674
+        "674"
     ],
     "urls": {
         "direct_download": "https://gtfsrt.api.translink.com.au/api/realtime/CNS/TripUpdates",

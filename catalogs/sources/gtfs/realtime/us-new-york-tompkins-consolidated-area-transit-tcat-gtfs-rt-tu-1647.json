@@ -6,7 +6,7 @@
     ],
     "provider": "Tompkins Consolidated Area Transit (TCAT)",
     "static_reference": [
-        535
+        "535"
     ],
     "urls": {
         "direct_download": "https://realtimetcatbus.availtec.com/InfoPoint/GTFS-Realtime.ashx?&Type=TripUpdate",

@@ -7,7 +7,7 @@
     ],
     "provider": "Middletown Area Transit",
     "static_reference": [
-        551
+        "551"
     ],
     "urls": {
         "direct_download": "https://passio3.com/9town/passioTransit/gtfs/realtime",

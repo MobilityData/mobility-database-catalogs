@@ -6,7 +6,7 @@
     ],
     "provider": "Duluth Transit",
     "static_reference": [
-        301
+        "301"
     ],
     "urls": {
         "direct_download": "https://duluthtransit.com/gtfsrt/Alert/Alerts.pb",

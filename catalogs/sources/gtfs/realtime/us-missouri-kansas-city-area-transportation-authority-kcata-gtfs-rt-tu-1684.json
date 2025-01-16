@@ -6,7 +6,7 @@
     ],
     "provider": "Kansas City Area Transportation Authority (KCATA)",
     "static_reference": [
-        187
+        "187"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/kcata/gtfs-rt-trip-updates",

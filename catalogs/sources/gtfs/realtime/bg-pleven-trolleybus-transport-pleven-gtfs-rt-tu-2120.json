@@ -6,7 +6,7 @@
     ],
     "provider": "Trolleybus Transport Pleven",
     "static_reference": [
-        2119
+        "2119"
     ],
     "urls": {
         "direct_download": "https://pleven-rt-feed.gtfs.ro/tripUpdates"

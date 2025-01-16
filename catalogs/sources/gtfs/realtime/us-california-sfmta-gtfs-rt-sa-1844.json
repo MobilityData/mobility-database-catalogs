@@ -6,7 +6,7 @@
     ],
     "provider": "San Francisco Municipal Transportation Agency (SFMTA)",
     "static_reference": [
-        50
+        "50"
     ],
     "urls": {
         "direct_download": "http://api.511.org/transit/servicealerts?agency=SF",

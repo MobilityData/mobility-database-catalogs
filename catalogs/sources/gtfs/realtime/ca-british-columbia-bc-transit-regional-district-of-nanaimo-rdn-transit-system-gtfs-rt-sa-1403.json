@@ -6,7 +6,7 @@
     ],
     "provider": "BC Transit - Regional District of Nanaimo (RDN) Transit System",
     "static_reference": [
-        692
+        "692"
     ],
     "urls": {
         "direct_download": "http://nanaimo.mapstrat.com/current/gtfrealtime_ServiceAlerts.bin",

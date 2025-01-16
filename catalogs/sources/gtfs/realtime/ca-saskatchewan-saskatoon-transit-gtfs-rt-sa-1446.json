@@ -6,7 +6,7 @@
     ],
     "provider": "Saskatoon Transit",
     "static_reference": [
-        716
+        "716"
     ],
     "urls": {
         "direct_download": "http://apps2.saskatoon.ca/app/data/Alert/Alerts.pb",

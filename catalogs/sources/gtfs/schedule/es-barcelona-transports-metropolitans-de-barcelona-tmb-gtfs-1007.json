@@ -2,7 +2,7 @@
     "mdb_source_id": 1007,
     "data_type": "gtfs",
     "provider": "Transports Metropolitans de Barcelona (TMB)",
-    "status": "inactive",
+    "status": "active",
     "location": {
         "country_code": "ES",
         "subdivision_name": "Barcelona",
@@ -15,7 +15,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://navitia.opendatasoft.com/explore/dataset/es/files/5dd5c0e92f2050c35ef4b809a92c7849/download/",
+        "direct_download": "https://api.tmb.cat/v1/static/datasets/gtfs.zip?app_key=8504ae3a636b155724a1c7e140ee039f&app_id=4c132798",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-barcelona-transports-metropolitans-de-barcelona-tmb-gtfs-1007.zip?alt=media"
     }
 }

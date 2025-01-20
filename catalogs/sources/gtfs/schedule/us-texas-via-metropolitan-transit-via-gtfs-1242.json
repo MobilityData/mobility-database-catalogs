@@ -2,6 +2,7 @@
     "mdb_source_id": 1242,
     "data_type": "gtfs",
     "provider": "VIA Metropolitan Transit (VIA)",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Texas",
@@ -16,7 +17,14 @@
     },
     "urls": {
         "direct_download": "https://transitfeeds.com/p/via-metropolitan-transit/62/latest/download",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-texas-via-metropolitan-transit-via-gtfs-1242.zip?alt=media",
         "license": "https://www.viainfo.net/developers-resources/"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2349",
+            "comment": " "
+        }
+    ]
 }

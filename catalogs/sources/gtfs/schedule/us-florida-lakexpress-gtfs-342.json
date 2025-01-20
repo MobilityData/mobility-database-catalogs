@@ -1,8 +1,8 @@
 {
     "mdb_source_id": 342,
     "data_type": "gtfs",
-    "provider": "LakeXpress",
-    "status": "inactive",
+    "provider": "SunTran",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Florida",
@@ -17,6 +17,13 @@
     },
     "urls": {
         "direct_download": "https://ftis.org/PostFileDownload.aspx?id=450A0",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-lakexpress-gtfs-342.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2355",
+            "comment": " "
+        }
+    ]
 }

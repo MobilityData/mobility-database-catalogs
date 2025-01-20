@@ -2,6 +2,7 @@
     "mdb_source_id": 110,
     "data_type": "gtfs",
     "provider": "Regional Transportation Commission of Southern Nevada (RTC)",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -15,7 +16,14 @@
     },
     "urls": {
         "direct_download": "http://rtcws.rtcsnv.com/g/google_transit.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-regional-transportation-commission-of-southern-nevada-rtc-gtfs-110.zip?alt=media",
         "license": "https://www.rtcsnv.com/ways-to-travel/transit-services/for-developers/"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2352",
+            "comment": " "
+        }
+    ]
 }

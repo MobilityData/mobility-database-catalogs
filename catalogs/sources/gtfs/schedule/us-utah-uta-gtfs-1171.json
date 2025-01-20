@@ -2,6 +2,7 @@
     "mdb_source_id": 1171,
     "data_type": "gtfs",
     "provider": "UTA",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Utah",
@@ -16,6 +17,13 @@
     },
     "urls": {
         "direct_download": "https://transitfeeds.com/p/utah-transportation-authority/59/latest/download",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-utah-uta-gtfs-1171.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2350",
+            "comment": " "
+        }
+    ]
 }

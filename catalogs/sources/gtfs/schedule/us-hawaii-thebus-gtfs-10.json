@@ -2,6 +2,7 @@
     "mdb_source_id": 10,
     "data_type": "gtfs",
     "provider": "TheBus",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Hawaii",
@@ -16,6 +17,13 @@
     },
     "urls": {
         "direct_download": "http://webapps.thebus.org/transitdata/Production/google_transit.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-hawaii-thebus-gtfs-10.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2351",
+            "comment": " "
+        }
+    ]
 }

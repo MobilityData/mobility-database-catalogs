@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 342,
     "data_type": "gtfs",
-    "provider": "SunTran",
+    "provider": "LakeXpress",
     "status": "deprecated",
     "location": {
         "country_code": "US",
@@ -22,7 +22,7 @@
     },
     "redirect": [
         {
-            "id": "2355",
+            "id": "",
             "comment": " "
         }
     ]

@@ -7,7 +7,7 @@
     "provider": "Linja-Karjala Oy, Savo-Karjalan Linja Oy",
     "name": "Joensuu",
     "static_reference": [
-        1227
+        "1227"
     ],
     "urls": {
         "direct_download": "https://data.waltti.fi/joensuu/api/gtfsrealtime/v1.0/feed/tripupdate",

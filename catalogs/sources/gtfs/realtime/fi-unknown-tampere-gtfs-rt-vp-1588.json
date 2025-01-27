@@ -7,7 +7,7 @@
     "provider": "Tampereen joukkoliikenne (JOLI)",
     "name": "Tampere",
     "static_reference": [
-        866
+        "866"
     ],
     "urls": {
         "direct_download": "https://data.waltti.fi/tampere/api/gtfsrealtime/v1.0/feed/vehicleposition",

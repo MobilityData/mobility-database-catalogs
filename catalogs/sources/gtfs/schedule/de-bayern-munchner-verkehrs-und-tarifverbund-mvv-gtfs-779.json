@@ -1,7 +1,8 @@
 {
     "mdb_source_id": 779,
     "data_type": "gtfs",
-    "provider": "Münchner Verkehrs und Tarifverbund (MVV)",
+    "provider": "Münchner Verkehrs- und Tarifverbund GmbH (MVV)",
+    "status": "deprecated",
     "location": {
         "country_code": "DE",
         "subdivision_name": "Bayern",
@@ -16,7 +17,14 @@
     },
     "urls": {
         "direct_download": "https://www.mvv-muenchen.de/fileadmin/mediapool/02-Fahrplanauskunft/03-Downloads/openData/mvv_gtfs.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-bayern-munchner-verkehrs-und-tarifverbund-mvv-gtfs-779.zip?alt=media",
         "license": "https://www.mvv-muenchen.de/fahrplanauskunft/fuer-entwickler/opendata/index.html"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2252",
+            "comment": " "
+        }
+    ]
 }

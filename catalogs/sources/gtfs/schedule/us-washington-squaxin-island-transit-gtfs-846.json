@@ -6,10 +6,11 @@
     "features": [
         "fares-v1"
     ],
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Washington",
-        "municipality": "Olympia",
+        "municipality": "Squaxin island",
         "bounding_box": {
             "minimum_latitude": 47.006266,
             "maximum_latitude": 47.2141,
@@ -23,5 +24,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-squaxin-island-transit-gtfs-846.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "2197",
+            "comment": " "
+        }
+    ]
 }

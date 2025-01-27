@@ -6,7 +6,7 @@
     ],
     "provider": "Metro St. Louis",
     "static_reference": [
-        190
+        "190"
     ],
     "urls": {
         "direct_download": "http://www.metrostlouis.org/RealTimeData/StlRealTimeTrips.pb",

@@ -6,7 +6,7 @@
     ],
     "provider": "Cincinnati Metro",
     "static_reference": [
-        307
+        "307"
     ],
     "urls": {
         "direct_download": "https://tmgtfsprd.sorttrpcloud.com/TMGTFSRealTimeWebService/vehicle/vehiclepositions.pb",

@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2151,
+    "data_type": "gtfs",
+    "provider": "Daytrip Shuttle",
+    "feed_contact_email": "daytrip@daytrip.com",
+    "location": {
+        "country_code": "CR",
+        "subdivision_name": "San Jose",
+        "bounding_box": {
+            "minimum_latitude": 9.38958264345442,
+            "maximum_latitude": 10.470481841317453,
+            "minimum_longitude": -84.64355939199687,
+            "maximum_longitude": -84.07225403001142,
+            "extracted_on": "2024-11-04T18:49:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.daytrip.com/gtfs_cr.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cr-san-jose-daytrip-shuttle-gtfs-2151.zip?alt=media",
+        "license": "https://creativecommons.org/licenses/by/4.0/deed"
+    },
+    "redirect": []
+}

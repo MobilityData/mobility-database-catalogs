@@ -6,7 +6,7 @@
     ],
     "provider": "Mountain Line Transit",
     "static_reference": [
-        1979
+        "1979"
     ],
     "urls": {
         "direct_download": "https://mountainline.syncromatics.com/gtfs-rt/tripupdates",

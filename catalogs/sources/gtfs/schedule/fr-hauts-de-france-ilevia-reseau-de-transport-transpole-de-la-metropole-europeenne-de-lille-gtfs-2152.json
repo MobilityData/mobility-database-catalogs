@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2152,
+    "data_type": "gtfs",
+    "provider": "Ilévia (Réseau de transport Transpole de la Métropole Européenne de Lille)",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Hauts-de-France",
+        "municipality": "Lille",
+        "bounding_box": {
+            "minimum_latitude": 50.512395,
+            "maximum_latitude": 50.788235,
+            "minimum_longitude": 2.800832,
+            "maximum_longitude": 3.273467,
+            "extracted_on": "2024-11-04T18:49:04+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/81995/81995.20241104.060921.630251.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-hauts-de-france-ilevia-reseau-de-transport-transpole-de-la-metropole-europeenne-de-lille-gtfs-2152.zip?alt=media",
+        "license": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/"
+    },
+    "redirect": []
+}

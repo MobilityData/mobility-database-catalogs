@@ -6,7 +6,7 @@
     ],
     "provider": "Transit Authority of River City (TARC)",
     "static_reference": [
-        364
+        "364"
     ],
     "urls": {
         "direct_download": "http://gtfsrealtime.ridetarc.org/realtime/Vehicle/VehiclePositions.pb",

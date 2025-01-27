@@ -1,11 +1,11 @@
 {
     "mdb_source_id": 902,
     "data_type": "gtfs",
-    "provider": "GRTC Transit System ",
+    "provider": "GRTC Transit System",
     "location": {
         "country_code": "US",
         "subdivision_name": "Virginia",
-        "municipality": "Redmond",
+        "municipality": "Richmond",
         "bounding_box": {
             "minimum_latitude": 37.226432,
             "maximum_latitude": 37.663725,

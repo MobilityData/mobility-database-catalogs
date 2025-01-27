@@ -6,7 +6,7 @@
     ],
     "provider": "Suburban Mobility Authority for Regional Transit (SMART)",
     "static_reference": [
-        414
+        "414"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/detroit-smartbus/gtfs-rt-trip-updates",

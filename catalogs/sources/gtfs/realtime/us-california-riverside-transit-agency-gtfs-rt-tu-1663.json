@@ -6,7 +6,7 @@
     ],
     "provider": "Riverside Transit Agency",
     "static_reference": [
-        98
+        "98"
     ],
     "urls": {
         "direct_download": "https://rtabus.com/gtfsrt/trips",

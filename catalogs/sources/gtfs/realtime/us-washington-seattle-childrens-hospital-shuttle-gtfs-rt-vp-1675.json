@@ -6,7 +6,7 @@
     ],
     "provider": "Seattle Children's Hospital Shuttle",
     "static_reference": [
-        270
+        "270"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/seattle-childrens/gtfs-rt-vehicle-positions",

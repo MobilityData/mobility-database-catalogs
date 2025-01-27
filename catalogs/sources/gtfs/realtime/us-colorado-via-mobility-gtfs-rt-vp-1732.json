@@ -6,7 +6,7 @@
     ],
     "provider": "Via Mobility",
     "static_reference": [
-        180
+        "180"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/via/gtfs-rt-vehicle-positions",

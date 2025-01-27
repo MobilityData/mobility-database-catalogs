@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2174,
+    "data_type": "gtfs",
+    "provider": "MOVE Stanislaus",
+    "name": "Flex",
+    "feed_contact_email": "support+movestanislaus-ca-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Stanislaus County",
+        "bounding_box": {
+            "minimum_latitude": 36.77304181138773,
+            "maximum_latitude": 38.57258200514849,
+            "minimum_longitude": -122.16031928717226,
+            "maximum_longitude": -119.77991647227012,
+            "extracted_on": "2024-11-12T16:54:53+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/movestanislaus-ca-us/movestanislaus-ca-us--flex-v2.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-move-stanislaus-gtfs-2174.zip?alt=media"
+    },
+    "redirect": []
+}

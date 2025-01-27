@@ -6,7 +6,7 @@
     ],
     "provider": "Asociația de Dezvoltare Intercomunitară pentru Transport Public București – Ilfov (TPBI)",
     "static_reference": [
-        2098
+        "2098"
     ],
     "urls": {
         "direct_download": "https://gtfs.tpbi.ro/api/gtfs-rt/vehiclePositions"

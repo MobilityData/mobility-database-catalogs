@@ -6,7 +6,7 @@
     ],
     "provider": "Grand River Transit",
     "static_reference": [
-        721
+        "721"
     ],
     "urls": {
         "direct_download": "http://webapps.regionofwaterloo.ca/api/grt-routes/api/vehiclepositions",

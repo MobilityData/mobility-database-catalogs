@@ -4,7 +4,7 @@
     "provider": "Delmarva Community Transit",
     "location": {
         "country_code": "US",
-        "subdivision_name": "District of Columbia",
+        "subdivision_name": "Maryland",
         "municipality": "Kent",
         "bounding_box": {
             "minimum_latitude": 38.366366,

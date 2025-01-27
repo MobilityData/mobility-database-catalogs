@@ -6,7 +6,7 @@
     ],
     "provider": "Exo Les Moulins",
     "static_reference": [
-        754
+        "754"
     ],
     "urls": {
         "direct_download": "https://opendata.exo.quebec/ServiceGTFSR/Alert.pb?agency=MRCLM",

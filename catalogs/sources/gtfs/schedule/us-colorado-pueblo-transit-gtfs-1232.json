@@ -2,6 +2,7 @@
     "mdb_source_id": 1232,
     "data_type": "gtfs",
     "provider": "Pueblo Transit",
+    "name": "Flex",
     "feed_contact_email": "support+pueblo-co-us@trilliumtransit.com",
     "features": [
         "fares-v1",

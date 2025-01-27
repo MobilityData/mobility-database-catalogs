@@ -1,11 +1,11 @@
 {
     "mdb_source_id": 1221,
     "data_type": "gtfs",
-    "provider": "Société de transport de Montréal",
+    "provider": "Société de transport de Montréal (STM)",
     "features": [
         "fares-v1"
     ],
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "CA",
         "subdivision_name": "Québec",
@@ -20,7 +20,14 @@
     },
     "urls": {
         "direct_download": "https://transitfeeds.com/p/societe-de-transport-de-montreal/39/latest/download",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-societe-de-transport-de-montreal-gtfs-1221.zip?alt=media",
         "license": "https://www.stm.info/en/about/developers/terms-use"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2126",
+            "comment": " "
+        }
+    ]
 }

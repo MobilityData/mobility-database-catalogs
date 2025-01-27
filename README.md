@@ -6,7 +6,7 @@ The Mobility Database Catalogs is a list of open mobility data feeds from across
 
 [You can see our API code and infrastructure here](https://github.com/MobilityData/mobility-feed-api).
 
-To search feeds easily, you can download [the CSV spreadsheet](https://bit.ly/catalogs-csv). If you want to filter for specific types of feeds, [you can learn how to here](#get-and-filter-feeds).
+To search feeds easily, you can download [the CSV spreadsheet](https://share.mobilitydata.org/catalogs-csv). If you want to filter for specific types of feeds, [you can learn how to here](#get-and-filter-feeds).
 
 
 ## Table of Contents
@@ -24,7 +24,7 @@ To search feeds easily, you can download [the CSV spreadsheet](https://bit.ly/ca
 
 ## Browsing and Consuming The Spreadsheet
 
-If you're only interested in browsing the feeds or pulling all the latest URLs, [download the CSV](https://bit.ly/catalogs-csv). You can cross reference IDs from the Mobility Database, TransitFeeds and Transitland with [this ID map spreadsheet](https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit?resourcekey#gid=1787149399).
+If you're only interested in browsing the feeds or pulling all the latest URLs, [download the CSV](https://share.mobilitydata.org/catalogs-csv). You can cross reference IDs from the Mobility Database, TransitFeeds and Transitland with [this ID map spreadsheet](https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit?resourcekey#gid=1787149399).
 
 If you are consuming the spreadsheet, we recommend downloading a new version every time you use it, since the `latest.url` is occasionally updated to match any changes made to the provider and subdivision name within the feed file.
 
@@ -55,8 +55,8 @@ Contains the JSON schemas used to validate the feeds in the integration tests.
 | features      | Array of Enums | Optional | An array of features which can be any of: <ul><li>`fares-v2`</li><li>`fares-v1`</li><li>`flex-v1`</li><li>`flex-v2`</li><li>`pathways`</li></ul>|  
 | status        | Enum | Optional | Describes status of the feed. Should be one of: <ul><li>`active`: Feed should be used in public trip planners.</li><li>`deprecated`: Feed is explicitly deprecated and should not be used in public trip planners.</li><li>`inactive`: Feed hasn't been recently updated and should be used at risk of providing outdated information.</li><li>`development`: Feed is being used for development purposes and should not be used in public trip planners.</li></ul>Feed is assumed to be `active` if status is not explicitly provided.|  
 |redirect| Object | Optional | When a feed is deprecated by a provider and replaced with a new URL, redirect information is provided to point to the new feed.|
-| - id      | Foreign ID of mdb_source_id | Optional | New feed that replaces the current feed that is out of date or no longer maintained by the provider. |
-| - comment | Text | Optional | comment to explain redirect if needed (e.g new aggregate feed) |
+| - id      | String | Optional | New feed ID that replaces the current feed that is out of date or no longer maintained by the provider. |
+| - comment | Optional | Optional | comment to explain redirect if needed (e.g new aggregate feed) |
 |location| Object | Required |Contains  <ul><li>Text that describes the feed's location in the `country_code`, `subdivision_name`, and `municipality` fields.</li><li>Latitude, longitude, date and time that describes the feed's bounding box in the `bounding_box` subobject. </li></ul>|
 | - country_code       | Text |Required                  | ISO 3166-1 alpha-2 code designating the country where the feed service is located. For a list of valid codes [see here](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).                                                    |
 | - subdivision_name  | Text |Optional              | ISO 3166-2 subdivision name designating the subdivision (e.g province, state, region) where the feed service is located. For a list of valid names [see here](https://unece.org/trade/uncefact/unlocode-country-subdivisions-iso-3166-2).|  
@@ -91,9 +91,9 @@ Contains the JSON schemas used to validate the feeds in the integration tests.
 | features      | Array of Enums | Optional | An array of features which can be any of: <ul><li>`occupancy`</li></ul> |  
 | status        | Enum | Optional |  Describes status of the feed. Should be one of: <ul><li>`active`: Feed should be used in public trip planners.</li><li>`deprecated`: Feed is explicitly deprecated and should not be used in public trip planners.</li><li>`inactive`: Feed hasn't been recently updated and should be used at risk of providing outdated information.</li><li>`development`: Feed is being used for development purposes and should not be used in public trip planners.</li></ul>Feed is assumed to be `active` if status is not explicitly provided.|  |  
 |redirect| Object | Optional | When a feed is deprecated by a provider and replaced with a new URL, redirect information is provided to point to the new feed.|
-| - id      | Foreign ID of mdb_source_id | Optional | New feed that replaces the current feed that is out of date or no longer maintained by the provider. |
+| - id      | String | Optional | New feed ID that replaces the current feed that is out of date or no longer maintained by the provider. |
 | - comment | String | Optional | comment to explain redirect if needed (e.g new aggregate feed) |
-| static_reference |  Array of Integers |Optional              | A list of the static feeds that the real time feed is associated with, represented by their MDB source IDs. |  
+| static_reference |  Array of Strings |Optional              | A list of the static feeds that the real time feed is associated with, represented by their MDB source IDs. |  
 |urls| Object | Required | Contains URLs associated with the feed in the `direct_download_url` and `license_url` fields, and the authentication info for `direct_download_url` in the `authentication_type`, `authentication_info_url` and `api_key_parameter_name` fields.
 |- direct_download_url |URL|Required     | URL that responds with an encoded [GTFS Realtime protocol buffer message](https://github.com/google/transit/tree/master/gtfs-realtime/spec/en#data-format).                                                                                                
 |- authentication_type |Enum|Optional | The **authentication_type** field defines the type of authentication required to access the URL. Valid values for this field are: <ul> <li>**0** or **(empty)** - No authentication required.</li><li>**1** - The authentication requires an API key, which should be passed as value of the parameter `api_key_parameter_name` in the URL. Please visit URL in `authentication_info_url` for more information. </li><li>**2** - The authentication requires an HTTP header, which should be passed as the value of the header `api_key_parameter_name` in the HTTP request. </li></li>**3**: Ad-hoc authentication required, visit URL in `authentication_info_url` for more information.</li></ul> When not provided, the authentication type is assumed to be **0**.|
@@ -101,7 +101,7 @@ Contains the JSON schemas used to validate the feeds in the integration tests.
 |- api_key_parameter_name |Text|Conditionally required | The **api_key_parameter_name** field defines the name of the parameter to pass in the URL to provide the API key. This field is required for `authentication_type=1` and `authentication_type=2`.   |  
 |- license_url  |URL| Optional     | The license information for  `direct_download_url`.
 
-In [the CSV](https://bit.ly/catalogs-csv), realtime feeds include the location metadata of their static reference when provided.
+In [the CSV](https://share.mobilitydata.org/catalogs-csv), realtime feeds include the location metadata of their static reference when provided.
 
 ## Installation
 

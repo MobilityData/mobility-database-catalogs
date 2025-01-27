@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2180,
+    "data_type": "gtfs",
+    "provider": "San Joaquin Regional Transit District",
+    "name": "Flex",
+    "feed_contact_email": "support+sanjoaquin-ca-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "San Joaquin County",
+        "bounding_box": {
+            "minimum_latitude": 37.882768,
+            "maximum_latitude": 37.945186,
+            "minimum_longitude": -121.284615,
+            "maximum_longitude": -121.282411,
+            "extracted_on": "2024-11-12T16:54:56+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/sanjoaquin-ca-us/sanjoaquin-ca-us--flex-v2.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-san-joaquin-regional-transit-district-gtfs-2180.zip?alt=media"
+    },
+    "redirect": []
+}

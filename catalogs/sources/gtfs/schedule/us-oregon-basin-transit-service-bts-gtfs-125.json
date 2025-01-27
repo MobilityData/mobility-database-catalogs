@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 125,
     "data_type": "gtfs",
-    "provider": "Basin Transit Service  (BTS)",
+    "provider": "Basin Transit Service (BTS)",
     "feed_contact_email": "support+test+basin-or-us@trilliumtransit.com",
     "location": {
         "country_code": "US",

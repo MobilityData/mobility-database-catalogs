@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 1217,
     "data_type": "gtfs",
-    "provider": "TransLink Brisbane ",
+    "provider": "TransLink Brisbane",
     "name": "Kilcoy",
     "status": "inactive",
     "location": {

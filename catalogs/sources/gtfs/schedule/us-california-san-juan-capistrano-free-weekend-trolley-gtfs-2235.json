@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2235,
+    "data_type": "gtfs",
+    "provider": "San Juan Capistrano Free Weekend Trolley",
+    "feed_contact_email": "hello@calitp.org",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "San Juan Capistrano",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2024-11-26T22:01:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.calitp.org/production/SanJuanCapistranoGTFS.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-san-juan-capistrano-free-weekend-trolley-gtfs-2235.zip?alt=media"
+    },
+    "redirect": []
+}

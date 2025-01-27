@@ -6,7 +6,7 @@
     ],
     "provider": "Gunnison Valley Transportation Authority (RTA)",
     "static_reference": [
-        163
+        "163"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/gunnison/gtfs-rt-vehicle-positions",

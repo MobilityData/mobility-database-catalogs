@@ -3,7 +3,7 @@
     "data_type": "gtfs-rt",
     "entity_type": ["tu"],
     "provider": "Ilévia (Métropole Européenne de Lille)",
-    "static_reference": [1201],
+    "static_reference": ["1201"],
     "urls": {
         "direct_download": "https://proxy.transport.data.gouv.fr/resource/ilevia-lille-gtfs-rt"
     }

@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2264,
+    "data_type": "gtfs",
+    "provider": "Rock Region Metro",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Arkansas",
+        "municipality": "Pulaski County",
+        "bounding_box": {
+            "minimum_latitude": 34.640959,
+            "maximum_latitude": 34.814462,
+            "minimum_longitude": -92.443057,
+            "maximum_longitude": -92.188661,
+            "extracted_on": "2024-11-27T19:28:05+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://rrmetro.org/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-arkansas-rock-region-metro-gtfs-2264.zip?alt=media"
+    },
+    "redirect": []
+}

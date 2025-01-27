@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 2183,
+    "data_type": "gtfs",
+    "provider": "Sound Generations: Hyde Shuttle",
+    "status": "deprecated",
+    "name": "do not use - deprecfated",
+    "feed_contact_email": "support+soundgenerations-wa-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "municipality": "Seattle",
+        "bounding_box": {
+            "minimum_latitude": 47.306433,
+            "maximum_latitude": 47.755958,
+            "minimum_longitude": -122.38670677086192,
+            "maximum_longitude": -121.91552308267664,
+            "extracted_on": "2024-11-12T16:54:57+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/soundgenerations-wa-us/soundgenerations-wa-us-hyde--flex-v2.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-sound-generations-hyde-shuttle-gtfs-2183.zip?alt=media"
+    },
+    "redirect": []
+}

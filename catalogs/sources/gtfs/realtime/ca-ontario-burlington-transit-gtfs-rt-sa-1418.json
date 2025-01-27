@@ -6,7 +6,7 @@
     ],
     "provider": "Burlington Transit",
     "static_reference": [
-        724
+        "724"
     ],
     "urls": {
         "direct_download": "http://opendata.burlington.ca/gtfs-rt/GTFS_ServiceAlerts.pb",

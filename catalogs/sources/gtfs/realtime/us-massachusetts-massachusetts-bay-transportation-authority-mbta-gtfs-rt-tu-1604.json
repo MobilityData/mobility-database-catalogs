@@ -6,7 +6,7 @@
     ],
     "provider": "Massachusetts Bay Transportation Authority (MBTA)",
     "static_reference": [
-        437
+        "437"
     ],
     "urls": {
         "direct_download": "https://cdn.mbta.com/realtime/TripUpdates.pb",

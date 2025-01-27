@@ -6,7 +6,7 @@
     ],
     "provider": "Compania de Transport Public Iași",
     "static_reference": [
-        2116
+        "2116"
     ],
     "urls": {
         "direct_download": "https://iasi-rt-feed.gtfs.ro/vehiclePositions"

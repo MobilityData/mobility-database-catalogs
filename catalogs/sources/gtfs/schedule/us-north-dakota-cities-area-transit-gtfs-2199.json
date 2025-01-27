@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2199,
+    "data_type": "gtfs",
+    "provider": "Cities Area Transit",
+    "feed_contact_email": "support+test+cityofgrandforks-nd-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "North Dakota",
+        "municipality": "Grand Forks",
+        "bounding_box": {
+            "minimum_latitude": 47.874921,
+            "maximum_latitude": 47.94908,
+            "minimum_longitude": -97.109559,
+            "maximum_longitude": -97.010581,
+            "extracted_on": "2024-11-18T19:45:31+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/cityofgrandforks-nd-us/cityofgrandforks-nd-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-north-dakota-cities-area-transit-gtfs-2199.zip?alt=media"
+    },
+    "redirect": []
+}

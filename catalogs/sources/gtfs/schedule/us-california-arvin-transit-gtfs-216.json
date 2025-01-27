@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Arvin Transit",
     "feed_contact_email": "support+test+arvin-ca-us@trilliumtransit.com",
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -21,5 +21,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-arvin-transit-gtfs-216.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "2233",
+            "comment": " "
+        }
+    ]
 }

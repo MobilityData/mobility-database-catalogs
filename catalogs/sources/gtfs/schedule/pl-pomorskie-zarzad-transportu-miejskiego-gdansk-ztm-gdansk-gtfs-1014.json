@@ -22,11 +22,11 @@
     },
     "redirect": [
         {
-            "id": 2093,
+            "id": "2093",
             "comment": "See 2093 for a replacement feed for Gdańsk."
         },
         {
-            "id": 2094,
+            "id": "2094",
             "comment": "See 2094 for a replacement feed for Gdynia."
         }
     ]

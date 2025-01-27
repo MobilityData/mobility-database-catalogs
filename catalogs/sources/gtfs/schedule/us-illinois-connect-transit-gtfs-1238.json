@@ -2,7 +2,7 @@
     "mdb_source_id": 1238,
     "data_type": "gtfs",
     "provider": "Connect Transit",
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Illinois",
@@ -17,7 +17,14 @@
     },
     "urls": {
         "direct_download": "https://transitfeeds.com/p/connect-transit/668/latest/download",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-illinois-connect-transit-gtfs-1238.zip?alt=media",
         "license": "https://www.connect-transit.com/routes/general_transit_feed_specification.asp"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2267",
+            "comment": " "
+        }
+    ]
 }

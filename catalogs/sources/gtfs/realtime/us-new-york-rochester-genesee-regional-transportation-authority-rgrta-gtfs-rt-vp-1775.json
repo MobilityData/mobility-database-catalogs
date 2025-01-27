@@ -6,7 +6,7 @@
     ],
     "provider": "Rochester-Genesee Regional Transportation Authority (RGRTA)",
     "static_reference": [
-        533
+        "533"
     ],
     "urls": {
         "direct_download": "https://api.rgrta.com/rtgvehicles?key=00e2dbf6b15742febb37d0a1d7d3acd5",

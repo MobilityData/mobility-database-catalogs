@@ -6,7 +6,7 @@
     ],
     "provider": "BC Transit (Squamish)",
     "static_reference": [
-        701
+        "701"
     ],
     "urls": {
         "direct_download": "http://squamish.mapstrat.com/current/gtfrealtime_ServiceAlerts.bin",

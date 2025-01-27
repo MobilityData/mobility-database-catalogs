@@ -1,0 +1,14 @@
+{
+    "mdb_source_id": 2343,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Regia Transport Electric Chișinău, Î.M. Parcul Urban de Autobuze",
+    "static_reference": [
+        "2341"
+    ],
+    "urls": {
+        "direct_download": "https://chisinau-rt-feed.gtfs.ro/tripUpdates"
+    }
+}

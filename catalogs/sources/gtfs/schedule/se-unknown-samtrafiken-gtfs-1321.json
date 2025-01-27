@@ -2,7 +2,7 @@
     "mdb_source_id": 1321,
     "data_type": "gtfs",
     "provider": "Samtrafiken, SJ, NSB, NSB/SJ, Visingsöleden, UL, Sörmlandstrafiken, ÖstgötaTrafiken, JLT, Länstrafiken Kronoberg, KLT, Region Gotland, Blekingetrafiken, Gällivare Stadstrafik, Hallandstrafiken, Värmlandstrafik, VL, Dalatrafik, X-trafik, Din Tur, Destination Gotland, Länstrafiken Jämtland, Länstrafiken Västerbotten, Länstrafiken Norrbotten, SL, Skånetrafiken, Flygbussarna, Västtrafik, Ventrafiken, Arlanda Express, Länstrafiken Örebro, Öresundståg, BT Buss, Mälartåg, Vy Tåg, Värmlandstrafik, Waxholmsbolaget, FlixTrain, Bus4You, Nettbuss Express, Skelleftebuss, Y-buss, MasExpressen, Silverlinjen, Härjedalingen, Merresor Express, ForSea, Snälltåget, Nikkaluoktaexpressen, Trafikverket Färjerederiet, Bergkvarabuss, Vy Nattåg, Vy Norrtåg, Krösatågen, Tågab, Karlstadsbuss, Luleå Lokaltrafik, Trosabussen, Ressels Rederi, Haparanda lokaltrafik, Roslagens Sjötrafik, Piteå Lokaltrafik, Strömma, Boden Stadstrafik, Snötåget, Kiruna Stadstrafik, Stadsbussarna Östersund, Krösatågen, SJ NORGE, Skärgårdsbåtarna i Uddevalla, MTRX, Stavsnäs Båttaxi, Söne Buss, Kalix stadstrafik, Flixbus, Stockholms stad",
-    "name": "TrafikLab ",
+    "name": "TrafikLab",
     "location": {
         "country_code": "SE",
         "bounding_box": {

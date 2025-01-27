@@ -4,9 +4,9 @@
     "entity_type": [
         "sa"
     ],
-    "provider": "Tillamook County Transportation District ",
+    "provider": "Tillamook County Transportation District",
     "static_reference": [
-        246
+        "246"
     ],
     "urls": {
         "direct_download": "http://gtfs-realtime.trilliumtransit.com/gtfs-realtime/feed/tillamook-or-us/service_alerts.proto",

@@ -7,7 +7,7 @@
     "provider": "Mountain View Transportation Management Association (MVgo)",
     "status": "deprecated",
     "static_reference": [
-        60
+        "60"
     ],
     "urls": {
         "direct_download": "https://ridemvgo.org/gtfs-rt/vehiclepositions",
@@ -15,7 +15,7 @@
     },
     "redirect": [
         {
-            "id": 2110
+            "id": "2110"
         }
     ]
 }

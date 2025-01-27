@@ -9,7 +9,7 @@
     "provider": "Canberra Metro Operations",
     "name": "Canberra Metro Light Rail",
     "static_reference": [
-        935
+        "935"
     ],
     "note": "This source includes Vehicle Position, Trip Updates and Service Alerts entities under the same feed.",
     "urls": {

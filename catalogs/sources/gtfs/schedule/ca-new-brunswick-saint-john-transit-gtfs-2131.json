@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2131,
+    "data_type": "gtfs",
+    "provider": "Saint John Transit",
+    "feed_contact_email": "csjtransit@gmail.com",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "New Brunswick",
+        "municipality": "Saint John",
+        "bounding_box": {
+            "minimum_latitude": 45.233333,
+            "maximum_latitude": 45.439881,
+            "minimum_longitude": -66.196188,
+            "maximum_longitude": -65.838695,
+            "extracted_on": "2024-10-25T20:26:07+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.arcgis.com/sharing/rest/content/items/d6f4783521364429a2e51a64c60ae234/data",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-new-brunswick-saint-john-transit-gtfs-2131.zip?alt=media",
+        "license": "https://catalogue-saintjohn.opendata.arcgis.com/datasets/d6f4783521364429a2e51a64c60ae234/about"
+    },
+    "redirect": []
+}

@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 2133,
+    "data_type": "gtfs",
+    "provider": "Métropole Aix-Marseille",
+    "name": " Lecar / Pays dʼAix Mobilité",
+    "status": "active",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "FR-PAC",
+        "municipality": "Pays dʼAix",
+        "bounding_box": {
+            "minimum_latitude": 43.374863,
+            "maximum_latitude": 43.730992,
+            "minimum_longitude": 5.169758,
+            "maximum_longitude": 5.776785,
+            "extracted_on": "2024-10-22T16:24:48+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://app.mecatran.com/utw/ws/gtfsfeed/static/mamp-pam?apiKey=596e694f3330142c525b7d6b123a5b055f744058",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-fr-pac-metropole-aix-marseille-gtfs-2133.zip?alt=media",
+        "license": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/"
+    },
+    "redirect": []
+}

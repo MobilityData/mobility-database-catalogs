@@ -6,7 +6,7 @@
     ],
     "provider": "Bay Town Trolley",
     "static_reference": [
-        337
+        "337"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/bay-town-trolley/gtfs-rt-trip-updates",

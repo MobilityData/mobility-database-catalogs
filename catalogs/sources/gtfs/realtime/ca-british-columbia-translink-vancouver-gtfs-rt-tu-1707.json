@@ -6,7 +6,7 @@
     ],
     "provider": "TransLink Vancouver",
     "static_reference": [
-        696
+        "696"
     ],
     "urls": {
         "direct_download": "https://gtfs.translink.ca/v2/gtfsrealtime",

@@ -7,7 +7,7 @@
         "fares-v1",
         "flex-v1"
     ],
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Vermont",
@@ -25,5 +25,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-vermont-the-current-gtfs-428.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "2194",
+            "comment": " "
+        }
+    ]
 }

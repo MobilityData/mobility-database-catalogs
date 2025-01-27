@@ -5,7 +5,7 @@
         "vp"
     ],
     "provider": "Durham Region Transit",
-    "static_reference": [726],
+    "static_reference": ["726"],
     "urls": {
         "direct_download": "https://drtonline.durhamregiontransit.com/gtfsrealtime/VehiclePositions",
         "authentication_type": 0,

@@ -6,7 +6,7 @@
     ],
     "provider": "Community Transit",
     "static_reference": [
-        287
+        "287"
     ],
     "urls": {
         "direct_download": "http://s3.amazonaws.com/commtrans-realtime-prod/vehiclepositions.pb",

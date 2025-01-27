@@ -2,6 +2,7 @@
     "mdb_source_id": 1885,
     "data_type": "gtfs",
     "provider": "DiviaMobilités",
+    "status": "deprecated",
     "location": {
         "country_code": "FR",
         "subdivision_name": "Bourgogne-Franche-Comté",
@@ -16,7 +17,14 @@
     },
     "urls": {
         "direct_download": "https://data.explore.divia.fr/api/datasets/1.0/gtfs-divia-mobilites/attachments/gtfs_diviamobilites_current_zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-bourgogne-franche-comte-diviamobilites-gtfs-1885.zip?alt=media",
         "license": "https://transport.data.gouv.fr/datasets/gtfs-diviamobilites"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2153",
+            "comment": " "
+        }
+    ]
 }

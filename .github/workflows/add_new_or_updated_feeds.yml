@@ -88,27 +88,27 @@ jobs:
           PYTHONIOENCODING: "utf8" #ascii
         shell: bash
         run: |
+            echo -e "\n\n"
             echo "BEGIN VIRTUAL ENV && SETUP PIP"
-            echo -e "\n"
             python -m venv env
             source env/bin/activate
             pip install --upgrade pip
             pip install virtualenv --quiet
             pip install gtfs_kit --quiet
             pip install unidecode --quiet
+            echo "DONE VIRTUAL ENV && SETUP PIP"
+            echo -e "\n\n"
+            echo "BEGIN SEND COMMAND TO PYTHON"
 
-            echo "BEGIN"
-
-            sections=$(echo '${{ steps.process-csv.outputs.PYTHON_SCRIPT_ARGS }}' | sed 's/""/"/g' | sed "s/’/'/g" | awk -F'§' '{for (i=1; i<=NF; i++) print $i}')
-            set -x # this should force GitHub to output every echo commands
+            sections=$(echo '${{ steps.process-csv.outputs.PYTHON_SCRIPT_ARGS }}' | sed 's/""/"/g' | sed "s/’/'/g" | sed 's/"comment": "}/"comment": ""}/g' | awk -F'§' '{for (i=1; i<=NF; i++) print $i}')
             for section in "${sections[@]}"; do
-                echo "processing line: ${section}"
+                # echo "processing line: ${section}"
                 output=$(eval "python -c 'from tools.operations import *; ${section}'")
-                echo "$output"
+                # echo "$output"
             done
-            set +x
 
-            echo "DONE"
+            echo "DONE SEND COMMAND TO PYTHON"
+            echo -e "\n\n"
             git status
 
       - name: Commit, push, and create PR
@@ -162,7 +162,7 @@ jobs:
         shell: bash
 
       - name: Post notification in Slack channel of update
-        if: success() && steps.commit-push.outcome == 'success'
+        if: success() && steps.commit-push-create-pr.outcome == 'success'
         uses: slackapi/slack-github-action@v1.26.0
         with:
           payload: |

@@ -6,7 +6,7 @@
     ],
     "provider": "Transcollines",
     "static_reference": [
-        739
+        "739"
     ],
     "urls": {
         "direct_download": "http://67.212.79.244:8080/hermes_st_Transcollines/pb/tripUpdates.pb",

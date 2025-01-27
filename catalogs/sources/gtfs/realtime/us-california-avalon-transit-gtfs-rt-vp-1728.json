@@ -6,7 +6,7 @@
     ],
     "provider": "Avalon Transit",
     "static_reference": [
-        12
+        "12"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/avalon/gtfs-rt-vehicle-positions",

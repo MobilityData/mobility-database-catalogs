@@ -7,7 +7,7 @@
     "provider": "Metropolitan Transit Authority (MTA)",
     "name": "Long Island Rail Road",
     "static_reference": [
-        507
+        "507"
     ],
     "urls": {
         "direct_download": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/camsys%2Flirr-alerts",

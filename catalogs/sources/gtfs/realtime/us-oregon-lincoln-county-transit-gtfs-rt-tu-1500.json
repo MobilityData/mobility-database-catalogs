@@ -6,7 +6,7 @@
     ],
     "provider": "Lincoln County Transit",
     "static_reference": [
-        23
+        "23"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/lincoln-county/gtfs-rt-trip-updates",

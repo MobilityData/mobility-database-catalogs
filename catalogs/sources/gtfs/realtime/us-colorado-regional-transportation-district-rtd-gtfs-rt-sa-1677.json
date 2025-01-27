@@ -6,7 +6,7 @@
     ],
     "provider": "Regional Transportation District (RTD)",
     "static_reference": [
-        178
+        "178"
     ],
     "urls": {
         "direct_download": "https://www.rtd-denver.com/files/gtfs-rt/Alerts.pb",

@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2126,
+    "data_type": "gtfs",
+    "provider": "Société de transport de Montréal (STM)",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Québec",
+        "municipality": "Montréal",
+        "bounding_box": {
+            "minimum_latitude": 45.402668,
+            "maximum_latitude": 45.701116,
+            "minimum_longitude": -73.956204,
+            "maximum_longitude": -73.480581,
+            "extracted_on": "2024-10-25T19:51:05+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.stm.info/sites/default/files/gtfs/gtfs_stm.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-societe-de-transport-de-montreal-stm-gtfs-2126.zip?alt=media",
+        "license": "https://www.stm.info/en/about/developers/terms-use"
+    },
+    "redirect": []
+}

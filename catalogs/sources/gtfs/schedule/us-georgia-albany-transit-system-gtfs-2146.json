@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2146,
+    "data_type": "gtfs",
+    "provider": "Albany Transit System",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Georgia",
+        "municipality": "Albany",
+        "bounding_box": {
+            "minimum_latitude": 31.531277,
+            "maximum_latitude": 31.619913,
+            "minimum_longitude": -84.225708,
+            "maximum_longitude": -84.053348,
+            "extracted_on": "2024-10-28T14:55:31+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/11834/ats_albany_ga_us(2).zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-georgia-albany-transit-system-gtfs-2146.zip?alt=media"
+    },
+    "redirect": []
+}

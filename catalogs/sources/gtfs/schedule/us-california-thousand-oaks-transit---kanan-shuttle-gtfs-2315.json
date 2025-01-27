@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2315,
+    "data_type": "gtfs",
+    "provider": "Thousand Oaks Transit - Kanan Shuttle",
+    "feed_contact_email": "support+test+kananshuttle-ca-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Thousand Oaks",
+        "bounding_box": {
+            "minimum_latitude": 34.14493889,
+            "maximum_latitude": 34.1842317200421,
+            "minimum_longitude": -118.7848807074,
+            "maximum_longitude": -118.75582222,
+            "extracted_on": "2024-11-28T19:40:43+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/kananshuttle-ca-us/kananshuttle-ca-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-thousand-oaks-transit---kanan-shuttle-gtfs-2315.zip?alt=media"
+    },
+    "redirect": []
+}

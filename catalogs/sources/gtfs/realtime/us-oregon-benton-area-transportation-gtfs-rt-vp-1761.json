@@ -6,7 +6,7 @@
     ],
     "provider": "Benton Area Transportation",
     "static_reference": [
-        126
+        "126"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/ocwcog-benton/gtfs-rt-vehicle-positions",

@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2159,
+    "data_type": "gtfs",
+    "provider": "Catholic Community Services",
+    "status": "deprecated",
+    "name": "Do not use - deprecated",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "municipality": "Snohomish County",
+        "bounding_box": {
+            "minimum_latitude": 45.778397,
+            "maximum_latitude": 48.084238,
+            "minimum_longitude": -123.953011,
+            "maximum_longitude": -122.094207,
+            "extracted_on": "2024-11-12T16:54:47+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/catholiccommunity-wa-us/catholiccommunity-wa-us-northwest--flex-v2.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-catholic-community-services-gtfs-2159.zip?alt=media"
+    },
+    "redirect": []
+}

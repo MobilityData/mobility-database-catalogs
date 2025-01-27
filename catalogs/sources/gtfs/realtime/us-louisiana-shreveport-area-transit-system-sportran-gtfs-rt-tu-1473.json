@@ -6,7 +6,7 @@
     ],
     "provider": "Shreveport Area Transit System (SporTran)",
     "static_reference": [
-        1060
+        "1060"
     ],
     "urls": {
         "direct_download": "https://sportranbus.com/gtfs-rt/tripupdates",

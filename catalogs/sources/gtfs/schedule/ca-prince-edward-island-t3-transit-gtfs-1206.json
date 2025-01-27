@@ -5,7 +5,7 @@
     "features": [
         "fares-v1"
     ],
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "CA",
         "subdivision_name": "Prince Edward Island",
@@ -20,6 +20,13 @@
     },
     "urls": {
         "direct_download": "https://transitfeeds.com/p/t3-transit/591/latest/download",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-prince-edward-island-t3-transit-gtfs-1206.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2132",
+            "comment": " "
+        }
+    ]
 }

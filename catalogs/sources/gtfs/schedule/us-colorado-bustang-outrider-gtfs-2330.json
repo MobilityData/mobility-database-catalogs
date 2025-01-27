@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2330,
+    "data_type": "gtfs",
+    "provider": "Bustang Outrider",
+    "feed_contact_email": "support+test+outrider-co-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US ",
+        "subdivision_name": "Colorado",
+        "bounding_box": {
+            "minimum_latitude": 37.1710509961293,
+            "maximum_latitude": 40.62412791590873,
+            "minimum_longitude": -108.564242,
+            "maximum_longitude": -102.618435,
+            "extracted_on": "2024-11-28T19:40:53+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/outrider-co-us/outrider-co-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-bustang-outrider-gtfs-2330.zip?alt=media"
+    },
+    "redirect": []
+}

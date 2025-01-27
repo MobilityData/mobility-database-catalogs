@@ -6,7 +6,7 @@
     ],
     "provider": "Merrimack Valley Regional Transit Authority (MVRTA)",
     "static_reference": [
-        445
+        "445"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/massdot-mvrta/gtfs-rt-vehicle-positions",

@@ -6,6 +6,7 @@
         "fares-v1",
         "fares-v2"
     ],
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -19,6 +20,13 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/paloverde_valley-ca-us/paloverde_valley-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-palo-verde-valley-transit-agency-gtfs-18.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2190",
+            "comment": " "
+        }
+    ]
 }

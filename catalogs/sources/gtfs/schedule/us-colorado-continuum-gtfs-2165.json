@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2165,
+    "data_type": "gtfs",
+    "provider": "Continuum",
+    "name": "Flex",
+    "feed_contact_email": "support+continuum-co-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Aurora",
+        "bounding_box": {
+            "minimum_latitude": 39.69889,
+            "maximum_latitude": 39.69889,
+            "minimum_longitude": -104.78719,
+            "maximum_longitude": -104.78719,
+            "extracted_on": "2024-11-12T16:54:49+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/continuum-co-us/continuum-co-us--flex-v2.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-continuum-gtfs-2165.zip?alt=media"
+    },
+    "redirect": []
+}

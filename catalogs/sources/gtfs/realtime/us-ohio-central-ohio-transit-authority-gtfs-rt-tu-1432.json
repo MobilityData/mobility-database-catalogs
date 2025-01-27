@@ -6,7 +6,7 @@
     ],
     "provider": "Central Ohio Transit Authority",
     "static_reference": [
-        404
+        "404"
     ],
     "urls": {
         "direct_download": "http://realtime.cota.com/TMGTFSRealTimeWebService/TripUpdate/TripUpdates.pb",

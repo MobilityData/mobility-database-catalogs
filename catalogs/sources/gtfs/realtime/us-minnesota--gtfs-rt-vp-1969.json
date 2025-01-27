@@ -7,7 +7,7 @@
     "provider": "Minnesota Valley Transit Authority",
     "name": "",
     "static_reference": [
-        206
+        "206"
     ],
     "urls": {
         "direct_download": "https://srv.mvta.com/infoPoint/GTFS-realtime.ashx?Type=VehiclePosition",

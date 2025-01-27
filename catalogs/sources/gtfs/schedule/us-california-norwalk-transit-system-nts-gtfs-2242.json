@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2242,
+    "data_type": "gtfs",
+    "provider": "Norwalk Transit System (NTS)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Norwalk",
+        "bounding_box": {
+            "minimum_latitude": 41.0215759277,
+            "maximum_latitude": 41.2362480164,
+            "minimum_longitude": -73.630867,
+            "maximum_longitude": -73.036446,
+            "extracted_on": "2024-11-26T22:01:43+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://mystop.norwalktransit.com/InfoPoint/gtfs-zip.ashx",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-norwalk-transit-system-nts-gtfs-2242.zip?alt=media"
+    },
+    "redirect": []
+}

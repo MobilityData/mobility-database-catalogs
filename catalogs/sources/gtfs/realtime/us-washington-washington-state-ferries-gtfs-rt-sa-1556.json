@@ -6,7 +6,7 @@
     ],
     "provider": "Washington State Ferries",
     "static_reference": [
-        1331
+        "1331"
     ],
     "urls": {
         "direct_download": "https://api.pugetsound.onebusaway.org/api/gtfs_realtime/alerts-for-agency/95.pb",

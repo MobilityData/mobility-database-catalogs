@@ -6,7 +6,7 @@
     ],
     "provider": "Santa Clara Valley Transportation Authority (VTA)",
     "static_reference": [
-        57
+        "57"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/vta/gtfs-rt-vehicle-positions/",

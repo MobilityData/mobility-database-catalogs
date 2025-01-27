@@ -5,6 +5,7 @@
     "features": [
         "fares-v1"
     ],
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Washington",
@@ -19,6 +20,13 @@
     },
     "urls": {
         "direct_download": "http://oregon-gtfs.com/gtfs_data/wahkiakumferry-or-us/wahkiakumferry-or-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-wahkiakum-ferry-gtfs-604.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2193",
+            "comment": " "
+        }
+    ]
 }

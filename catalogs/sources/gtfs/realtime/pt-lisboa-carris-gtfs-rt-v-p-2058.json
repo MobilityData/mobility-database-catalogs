@@ -6,7 +6,7 @@
     ],
     "provider": "Carris",
     "static_reference": [
-        1032
+        "1032"
     ],
     "urls": {
         "direct_download": "https://gateway.carris.pt/gateway/gtfs/api/v2.8/GTFS/realtime/vehiclepositions"

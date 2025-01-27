@@ -6,7 +6,7 @@
     ],
     "provider": "Linn Shuttle",
     "static_reference": [
-        137
+        "137"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/ocwcog-linn-shuttle/gtfs-rt-vehicle-positions",

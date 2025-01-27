@@ -6,6 +6,7 @@
     "features": [
         "fares-v1"
     ],
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Wisconsin",
@@ -23,5 +24,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-wisconsin-janesville-transit-system-gtfs-393.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "2239",
+            "comment": " "
+        }
+    ]
 }

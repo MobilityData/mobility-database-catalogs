@@ -35,7 +35,7 @@
     "static_reference": {
       "type": "array",
       "items": {
-        "type": "number"
+        "type": "string"
       },
       "description": "A list of the static sources that the real time source is associated with, represented by their MDB source IDs. Although optional, if not provided, the location of this source will be set to unknown."
     },

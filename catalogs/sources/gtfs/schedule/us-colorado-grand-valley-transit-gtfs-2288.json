@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2288,
+    "data_type": "gtfs",
+    "provider": "Grand Valley Transit",
+    "name": "Flex",
+    "feed_contact_email": "support+grandvalleytransit-co-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Grand Junction",
+        "bounding_box": {
+            "minimum_latitude": 39.028988,
+            "maximum_latitude": 39.028988,
+            "minimum_longitude": -108.64989,
+            "maximum_longitude": -108.64989,
+            "extracted_on": "2024-11-27T22:42:06+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/grandvalleytransit-co-us/grandvalleytransit-co-us--flex-v2.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-grand-valley-transit-gtfs-2288.zip?alt=media"
+    },
+    "redirect": []
+}

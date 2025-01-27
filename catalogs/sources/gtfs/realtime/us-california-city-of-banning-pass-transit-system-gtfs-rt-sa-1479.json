@@ -6,7 +6,7 @@
     ],
     "provider": "City of Banning Pass Transit System",
     "static_reference": [
-        220
+        "220"
     ],
     "urls": {
         "direct_download": "http://gtfs-realtime.trilliumtransit.com/gtfs-realtime/feed/banning-ca-us/service_alerts.proto",

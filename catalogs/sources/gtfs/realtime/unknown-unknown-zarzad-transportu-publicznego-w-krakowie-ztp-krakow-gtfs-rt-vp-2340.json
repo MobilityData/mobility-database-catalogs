@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 2340,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Zarząd Transportu Publicznego w Krakowie (ZTP Kraków)",
+    "static_reference": [
+        "1326"
+    ],
+    "urls": {
+        "direct_download": "https://gtfs.ztp.krakow.pl/VehiclePositions_T.pb",
+        "authentication_type": 0
+    }
+}

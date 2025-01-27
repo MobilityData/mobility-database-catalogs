@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2170,
+    "data_type": "gtfs",
+    "provider": "La Junta Transit",
+    "name": "Flex",
+    "feed_contact_email": "support+lajunta-co-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "La Junta",
+        "bounding_box": {
+            "minimum_latitude": 37.97952,
+            "maximum_latitude": 37.97952,
+            "minimum_longitude": -103.540594,
+            "maximum_longitude": -103.540594,
+            "extracted_on": "2024-11-12T16:54:51+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/lajunta-co-us/lajunta-co-us--flex-v2.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-la-junta-transit-gtfs-2170.zip?alt=media"
+    },
+    "redirect": []
+}

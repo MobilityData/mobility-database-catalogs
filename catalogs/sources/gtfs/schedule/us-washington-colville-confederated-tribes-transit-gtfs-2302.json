@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2302,
+    "data_type": "gtfs",
+    "provider": "Colville Confederated Tribes Transit",
+    "feed_contact_email": "support+test+ccttransit-wa-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "bounding_box": {
+            "minimum_latitude": 48.133455826020906,
+            "maximum_latitude": 48.627703253094666,
+            "minimum_longitude": -119.00128728315228,
+            "maximum_longitude": -117.908538209353,
+            "extracted_on": "2024-11-28T18:06:08+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/ccttransit-wa-us/ccttransit-wa-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-colville-confederated-tribes-transit-gtfs-2302.zip?alt=media"
+    },
+    "redirect": []
+}

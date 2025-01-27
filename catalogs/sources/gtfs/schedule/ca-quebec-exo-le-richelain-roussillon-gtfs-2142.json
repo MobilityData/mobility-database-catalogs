@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2142,
+    "data_type": "gtfs",
+    "provider": "Exo Le Richelain / Roussillon",
+    "status": "active",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Québec",
+        "bounding_box": {
+            "minimum_latitude": 45.347647,
+            "maximum_latitude": 45.541144,
+            "minimum_longitude": -73.649157,
+            "maximum_longitude": -73.387584,
+            "extracted_on": "2024-10-01T15:20:15+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://exo.quebec/xdata/lrrs/google_transit.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-exo-le-richelain-roussillon-gtfs-2142.zip?alt=media",
+        "license": "https://exo.quebec/fr/a-propos/donnees-ouvertes"
+    },
+    "redirect": []
+}

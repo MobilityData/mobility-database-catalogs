@@ -2,6 +2,7 @@
     "mdb_source_id": 603,
     "data_type": "gtfs",
     "provider": "Town of Telluride",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Colorado",
@@ -16,6 +17,13 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/telluride-co-us/telluride-co-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-town-of-telluride-gtfs-603.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2195",
+            "comment": " "
+        }
+    ]
 }

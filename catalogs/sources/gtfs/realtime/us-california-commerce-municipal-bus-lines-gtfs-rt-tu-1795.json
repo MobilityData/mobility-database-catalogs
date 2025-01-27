@@ -6,7 +6,7 @@
     ],
     "provider": "Commerce Municipal Bus Lines",
     "static_reference": [
-        994
+        "994"
     ],
     "urls": {
         "direct_download": "https://citycommbus.com/gtfs-rt/tripupdates"

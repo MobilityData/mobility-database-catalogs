@@ -1,10 +1,11 @@
 {
     "mdb_source_id": 860,
     "data_type": "gtfs",
-    "provider": "Praha",
+    "provider": "Prazska integrovana doprava (PID)",
+    "status": "deprecated",
     "location": {
         "country_code": "CZ",
-        "subdivision_name": "Praha, Hlavní město",
+        "subdivision_name": "Praha, Hlavn\u00ed m\u011bsto",
         "bounding_box": {
             "minimum_latitude": 49.007848,
             "maximum_latitude": 50.951224,
@@ -15,6 +16,13 @@
     },
     "urls": {
         "direct_download": "http://opendata.iprpraha.cz/DPP/JR/jrdata.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cz-praha-praha-gtfs-860.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "767",
+            "comment": " "
+        }
+    ]
 }

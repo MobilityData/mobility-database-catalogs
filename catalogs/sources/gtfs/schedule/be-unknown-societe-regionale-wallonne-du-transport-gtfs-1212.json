@@ -2,6 +2,7 @@
     "mdb_source_id": 1212,
     "data_type": "gtfs",
     "provider": "Société Régionale Wallonne du Transport",
+    "name": "Transport En Commun (TEC)",
     "location": {
         "country_code": "BE",
         "bounding_box": {
@@ -14,6 +15,8 @@
     },
     "urls": {
         "direct_download": "http://opendata.tec-wl.be/Current%20GTFS/TEC-GTFS.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/be-unknown-societe-regionale-wallonne-du-transport-gtfs-1212.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

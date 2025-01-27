@@ -6,7 +6,7 @@
     ],
     "provider": "Arlington Transit",
     "static_reference": [
-        485
+        "485"
     ],
     "urls": {
         "direct_download": "https://realtime.arlingtontransit.com/gtfsrt/trips",

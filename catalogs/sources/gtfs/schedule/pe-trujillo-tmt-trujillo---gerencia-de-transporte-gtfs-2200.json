@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2200,
+    "data_type": "gtfs",
+    "provider": "TMT Trujillo - Gerencia de Transporte",
+    "location": {
+        "country_code": "PE",
+        "subdivision_name": "Trujillo",
+        "bounding_box": {
+            "minimum_latitude": -8.2240322,
+            "maximum_latitude": -7.9920813,
+            "minimum_longitude": -79.1232817,
+            "maximum_longitude": -78.946644,
+            "extracted_on": "2024-11-18T19:45:31+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://raw.githubusercontent.com/trufi-association/Trujillo-OMUS/refs/heads/main/GTFS-Peru-Trujillo/out/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pe-trujillo-tmt-trujillo---gerencia-de-transporte-gtfs-2200.zip?alt=media",
+        "license": "https://github.com/trufi-association/Trujillo-OMUS/blob/main/LICENSE"
+    },
+    "redirect": []
+}

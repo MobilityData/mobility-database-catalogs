@@ -6,7 +6,7 @@
     ],
     "provider": "Capital Area Transportation Authority",
     "static_reference": [
-        402
+        "402"
     ],
     "urls": {
         "direct_download": "http://developers.cata.org/gtfsrt/tripupdate/tripupdates.pb",

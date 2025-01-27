@@ -6,7 +6,7 @@
     ],
     "provider": "Nassau Inter-County Express (NICE Bus)",
     "static_reference": [
-        521
+        "521"
     ],
     "urls": {
         "direct_download": "http://nicebus.com/downloads/gtfs/NYC_NICE.proto",

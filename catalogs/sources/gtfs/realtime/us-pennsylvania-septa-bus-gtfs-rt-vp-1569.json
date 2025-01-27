@@ -7,7 +7,7 @@
     "provider": "Southeastern Pennsylvania Transportation Authority (SEPTA)",
     "name": "SEPTA Bus",
     "static_reference": [
-        502
+        "502"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/septa/gtfs-rt-vehicle-positions",

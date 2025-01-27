@@ -7,11 +7,11 @@
         "fares-v1",
         "fares-v2"
     ],
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
-        "municipality": "Sacremento",
+        "municipality": "Sacramento",
         "bounding_box": {
             "minimum_latitude": 38.133123,
             "maximum_latitude": 38.581806,
@@ -25,5 +25,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-south-county-transit-link-gtfs-817.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "2203",
+            "comment": " "
+        }
+    ]
 }

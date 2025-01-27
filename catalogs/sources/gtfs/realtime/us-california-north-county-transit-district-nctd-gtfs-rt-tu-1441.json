@@ -6,7 +6,7 @@
     ],
     "provider": "North County Transit District (NCTD)",
     "static_reference": [
-        14
+        "14"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/nctd/gtfs-rt-trip-updates",

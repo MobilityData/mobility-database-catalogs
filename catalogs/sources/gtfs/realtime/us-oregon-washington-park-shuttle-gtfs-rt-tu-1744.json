@@ -6,7 +6,7 @@
     ],
     "provider": "Washington Park Shuttle",
     "static_reference": [
-        254
+        "254"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/washington-park/gtfs-rt-trip-updates",

@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2197,
+    "data_type": "gtfs",
+    "provider": "Squaxin Island Transit",
+    "feed_contact_email": "support+test+squaxinisland-wa-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "municipality": "Squaxin island",
+        "bounding_box": {
+            "minimum_latitude": 47.00369484621686,
+            "maximum_latitude": 47.1302113908372,
+            "minimum_longitude": -123.40814666225204,
+            "maximum_longitude": -123.08043517542164,
+            "extracted_on": "2024-11-18T19:45:31+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/squaxinisland-wa-us/squaxinisland-wa-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-squaxin-island-transit-gtfs-2197.zip?alt=media"
+    },
+    "redirect": []
+}

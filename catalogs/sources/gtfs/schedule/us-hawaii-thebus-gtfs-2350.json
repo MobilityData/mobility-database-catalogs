@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 2350,
+    "data_type": "gtfs",
+    "provider": "TheBus",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Hawaii",
+        "bounding_box": {
+            "minimum_latitude": 21.255957,
+            "maximum_latitude": 21.70332,
+            "minimum_longitude": -158.228463,
+            "maximum_longitude": -157.662429,
+            "extracted_on": "2025-01-20T15:35:26+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.thebus.org/transitdata/production/google_transit.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-hawaii-thebus-gtfs-2350.zip?alt=media"
+    },
+    "redirect": []
+}

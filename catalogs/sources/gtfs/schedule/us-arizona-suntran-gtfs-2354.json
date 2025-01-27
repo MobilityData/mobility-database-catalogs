@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 2354,
+    "data_type": "gtfs",
+    "provider": "SunTran",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Arizona",
+        "bounding_box": {
+            "minimum_latitude": 31.868367,
+            "maximum_latitude": 32.484435,
+            "minimum_longitude": -112.872267,
+            "maximum_longitude": -110.77245,
+            "extracted_on": "2025-01-20T15:35:43+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.suntran.com/wp-content/uploads/2024/07/SunTranGTFS.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-arizona-suntran-gtfs-2354.zip?alt=media"
+    },
+    "redirect": []
+}

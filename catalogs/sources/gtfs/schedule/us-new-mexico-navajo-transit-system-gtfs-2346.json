@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 2346,
+    "data_type": "gtfs",
+    "provider": "Navajo Transit System",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New Mexico",
+        "bounding_box": {
+            "minimum_latitude": 35.1968262,
+            "maximum_latitude": 36.8055,
+            "minimum_longitude": -110.3294962,
+            "maximum_longitude": -108.2278735,
+            "extracted_on": "2025-01-20T15:35:02+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/5372/Navajo_Transit_GTFS.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-mexico-navajo-transit-system-gtfs-2346.zip?alt=media"
+    },
+    "redirect": []
+}

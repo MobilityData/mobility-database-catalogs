@@ -15,8 +15,8 @@
         }
     },
     "urls": {
-        "direct_download": "http://googlehsrdocs.hamilton.ca/",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-hamilton-street-railway-gtfs-723.zip?alt=media",
+        "direct_download": "https://opendata.hamilton.ca/GTFS-Static/2025Winter_GTFSStatic.zip",
+        "latest": "https://opendata.hamilton.ca/GTFS-Static/2025Winter_GTFSStatic.zip",
         "license": "https://www.hamilton.ca/city-initiatives/strategies-actions/open-accessible-data"
     }
 }

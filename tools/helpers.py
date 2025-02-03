@@ -3,7 +3,7 @@ import os
 import datetime
 import gtfs_kit
 import requests
-from requests.exceptions import RequestException
+from requests.exceptions import RequestException, HTTPError
 import pandas as pd
 from pandas.errors import ParserError
 from unidecode import unidecode
@@ -15,6 +15,7 @@ from tools.constants import (
     MDB_SOURCE_FILENAME,
     ZIP,
 )
+from urllib.parse import urlparse
 
 #########################
 # I/O FUNCTIONS
@@ -55,7 +56,7 @@ def to_csv(path, catalog, columns):
     """
     Save a catalog to a CSV file.
 
-    This function normalizes a catalog, optionally filters it by specified columns, 
+    This function normalizes a catalog, optionally filters it by specified columns,
     and saves it to a CSV file at the given path.
 
     Args:
@@ -83,7 +84,7 @@ def download_dataset(
 
     Args:
         url (str): The URL of the dataset to download.
-        authentication_type (int): The type of authentication to use. 
+        authentication_type (int): The type of authentication to use.
             0: No authentication.
             1: API key as a query parameter.
             2: API key as a header.
@@ -112,6 +113,46 @@ def download_dataset(
             url, params=params, headers=headers, allow_redirects=True
         )
         zip_file_req.raise_for_status()
+
+    except HTTPError as e:
+        #403 error fallback handler
+        if e.response.status_code == 403:
+            print(f"403 error. Retry with different headers for: {url}")
+
+            parsed_url = urlparse(url)
+
+            fallback_headers = {
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7"
+                              ") AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,"
+                          "*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+                "Accept-Language": "en-US,en;q=0.9",
+                "Accept-Encoding": "gzip, deflate, br",
+                "Referer": f"{parsed_url.scheme}://{parsed_url.netloc}/",
+                "Host": parsed_url.netloc,
+                "Connection": "keep-alive",
+                "Sec-Fetch-Dest": "document",
+                "Sec-Fetch-Mode": "navigate",
+                'Sec-Fetch-Site': 'same-origin',
+            }
+
+            try:
+                # Retry with fallback header
+                zip_file_req = requests.get(
+                    url,
+                    params=params,
+                    headers=fallback_headers,
+                    allow_redirects=True
+                )
+                zip_file_req.raise_for_status()
+            except Exception as fallback_e:
+                raise RequestException(
+                    f"FAILURE! retry attempts failed for {url}: {fallback_e}"
+                )
+        else:
+            raise RequestException(
+                f"FAILURE! Exception {e} occurred when downloading URL {url}.\n"
+            )
     except RequestException as e:
         raise RequestException(
             f"FAILURE! Exception {e} occurred when downloading URL {url}.\n"
@@ -186,7 +227,7 @@ def are_overlapping_edges(
         filter_maximum (float): The maximum coordinate of the filter edge.
 
     Returns:
-        bool: True if the two edges are overlapping, False otherwise. 
+        bool: True if the two edges are overlapping, False otherwise.
               Returns False if one or more coordinates are None.
     """
     return (

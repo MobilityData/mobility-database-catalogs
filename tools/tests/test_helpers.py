@@ -520,3 +520,52 @@ class TestInOutFunctions(TestCase):
             api_key_parameter_name=test_api_key_parameter_name,
             api_key_parameter_value=test_api_key_parameter_value,
         )
+
+    @patch("tools.helpers.open")
+    @patch("tools.helpers.uuid.uuid4")
+    @patch("tools.helpers.os")
+    @patch("tools.helpers.requests.get")
+    def test_download_dataset_403_fallback_success(self, mock_requests, mock_os, mock_uuid4, mock_open):
+        from requests.exceptions import HTTPError
+
+        response_403 = Mock(status_code=403)
+        response_403.raise_for_status.side_effect = HTTPError(response=response_403)
+
+        response_200 = Mock(status_code=200, content=b"file_content")
+
+        mock_requests.side_effect = [response_403, response_200]
+        mock_os.path.join.return_value = self.test_path
+
+        under_test = download_dataset(url=self.test_url, authentication_type=0, api_key_parameter_name=None,
+            api_key_parameter_value=None, )
+
+        self.assertEqual(under_test, self.test_path)
+        self.assertEqual(mock_requests.call_count, 2)
+
+    @patch("tools.helpers.open")
+    @patch("tools.helpers.uuid.uuid4")
+    @patch("tools.helpers.os")
+    @patch("tools.helpers.requests.get")
+    def test_download_dataset_403_fallback_failure(self, mock_requests, mock_os, mock_uuid4, mock_open):
+        from requests.exceptions import HTTPError
+        test_authentication_type = 0
+        test_api_key_parameter_name = None
+        test_api_key_parameter_value = None
+
+        response_403_1 = Mock(status_code=403)
+        response_403_1.raise_for_status.side_effect = HTTPError(response=response_403_1)
+        response_403_2 = Mock(status_code=403)
+        response_403_2.raise_for_status.side_effect = HTTPError(response=response_403_2)
+
+        mock_requests.side_effect = [response_403_1, response_403_2]
+
+        mock_os.path.join.return_value = self.test_path
+        self.assertRaises(RequestException, download_dataset, url=self.test_url,
+            authentication_type=test_authentication_type, api_key_parameter_name=test_api_key_parameter_name,
+            api_key_parameter_value=test_api_key_parameter_value, )
+
+        self.assertEqual(mock_requests.call_count, 2)
+        mock_os.path.join.assert_called_once()
+        mock_os.getcwd.assert_called_once()
+        mock_uuid4.assert_called_once()
+        mock_open.assert_not_called()

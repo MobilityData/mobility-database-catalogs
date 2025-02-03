@@ -20,6 +20,7 @@ from tools.helpers import (
 )
 import pandas as pd
 from freezegun import freeze_time
+from requests.exceptions import HTTPError
 
 
 class TestVerificationFunctions(TestCase):
@@ -526,7 +527,6 @@ class TestInOutFunctions(TestCase):
     @patch("tools.helpers.os")
     @patch("tools.helpers.requests.get")
     def test_download_dataset_403_fallback_success(self, mock_requests, mock_os, mock_uuid4, mock_open):
-        from requests.exceptions import HTTPError
 
         response_403 = Mock(status_code=403)
         response_403.raise_for_status.side_effect = HTTPError(response=response_403)
@@ -547,7 +547,6 @@ class TestInOutFunctions(TestCase):
     @patch("tools.helpers.os")
     @patch("tools.helpers.requests.get")
     def test_download_dataset_403_fallback_failure(self, mock_requests, mock_os, mock_uuid4, mock_open):
-        from requests.exceptions import HTTPError
         test_authentication_type = 0
         test_api_key_parameter_name = None
         test_api_key_parameter_value = None

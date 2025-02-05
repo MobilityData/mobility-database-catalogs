@@ -19,6 +19,7 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/hu-unknown-volanbusz-gtfs-1836.zip?alt=media"
     },
     "redirect": [
-        "tld-5862"
+        "id": "tld-5862",
+        "comment": " "
     ]
 }

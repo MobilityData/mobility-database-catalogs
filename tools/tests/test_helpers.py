@@ -409,8 +409,8 @@ class TestInOutFunctions(TestCase):
             api_key_parameter_value=test_api_key_parameter_value,
         )
         self.assertEqual(under_test, self.test_path)
-        self.assertEqual(mock_requests.call_args.kwargs["params"], {})
-        self.assertEqual(mock_requests.call_args.kwargs["headers"], {})
+        self.assertEqual(mock_requests.call_args.kwargs["params"], None)
+        self.assertEqual(mock_requests.call_args.kwargs["headers"], None)
         mock_requests.assert_called_once()
         mock_os.path.join.assert_called_once()
         mock_os.getcwd.assert_called_once()
@@ -435,8 +435,8 @@ class TestInOutFunctions(TestCase):
             api_key_parameter_value=test_api_key_parameter_value,
         )
         self.assertEqual(under_test, self.test_path)
-        self.assertEqual(mock_requests.call_args.kwargs["params"], {})
-        self.assertEqual(mock_requests.call_args.kwargs["headers"], {})
+        self.assertEqual(mock_requests.call_args.kwargs["params"], None)
+        self.assertEqual(mock_requests.call_args.kwargs["headers"], None)
         mock_requests.assert_called_once()
         mock_os.path.join.assert_called_once()
         mock_os.getcwd.assert_called_once()
@@ -465,7 +465,7 @@ class TestInOutFunctions(TestCase):
             mock_requests.call_args.kwargs["params"],
             {test_api_key_parameter_name: test_api_key_parameter_value},
         )
-        self.assertEqual(mock_requests.call_args.kwargs["headers"], {})
+        self.assertEqual(mock_requests.call_args.kwargs["headers"], None)
         mock_requests.assert_called_once()
         mock_os.path.join.assert_called_once()
         mock_os.getcwd.assert_called_once()
@@ -490,7 +490,7 @@ class TestInOutFunctions(TestCase):
             api_key_parameter_value=test_api_key_parameter_value,
         )
         self.assertEqual(under_test, self.test_path)
-        self.assertEqual(mock_requests.call_args.kwargs["params"], {})
+        self.assertEqual(mock_requests.call_args.kwargs["params"], None)
         self.assertEqual(
             mock_requests.call_args.kwargs["headers"],
             {test_api_key_parameter_name: test_api_key_parameter_value},

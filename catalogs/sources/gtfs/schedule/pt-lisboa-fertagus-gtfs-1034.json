@@ -21,7 +21,9 @@
         "license": "http://www.opendefinition.org/licenses/cc-zero"
     },
     "redirect": [
-        "id": "tld-715",
-        "comment": " "
+        {
+            "id": "tld-715",
+            "comment": " "
+        }
     ]
 }

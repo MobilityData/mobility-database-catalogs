@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2361,
+    "data_type": "gtfs",
+    "provider": "Dana Point Trolley",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Dana Point",
+        "bounding_box": {
+            "minimum_latitude": 33.455141532,
+            "maximum_latitude": 33.4912559608,
+            "minimum_longitude": -117.7193641663,
+            "maximum_longitude": -117.6575213963,
+            "extracted_on": "2025-02-05T21:37:16+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://dptrolley.com/Secure/Admin/Reports/GTFSDownload.aspx",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-dana-point-trolley-gtfs-2361.zip?alt=media"
+    },
+    "redirect": []
+}

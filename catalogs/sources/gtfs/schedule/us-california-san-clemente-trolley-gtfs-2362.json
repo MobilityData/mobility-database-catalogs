@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2362,
+    "data_type": "gtfs",
+    "provider": "San Clemente Trolley",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "San Clemente",
+        "bounding_box": {
+            "minimum_latitude": 33.4053777091,
+            "maximum_latitude": 33.4562876419,
+            "minimum_longitude": -117.65951,
+            "maximum_longitude": -117.5977120714,
+            "extracted_on": "2025-02-05T21:37:16+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://sctrolley.com/Secure/Admin/Reports/GTFSDownload.aspx",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-san-clemente-trolley-gtfs-2362.zip?alt=media"
+    },
+    "redirect": []
+}

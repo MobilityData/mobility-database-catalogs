@@ -2,6 +2,7 @@
     "mdb_source_id": 2147,
     "data_type": "gtfs",
     "provider": "Metro do Porto",
+    "status": "deprecated",
     "location": {
         "country_code": "PT",
         "subdivision_name": "Porto",
@@ -20,5 +21,10 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-porto-metro-do-porto-gtfs-2147.zip?alt=media",
         "license": "https://opendata.porto.digital/dataset/horarios-paragens-e-rotas-em-formato-gtfs"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "2357",
+            "comment": " "
+        }
+    ]
 }

@@ -20,5 +20,7 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-lisboa-fertagus-gtfs-1034.zip?alt=media",
         "license": "http://www.opendefinition.org/licenses/cc-zero"
     },
-    "redirect": []
+    "redirect": [
+        "tld-716"
+    ]
 }

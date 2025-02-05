@@ -14,6 +14,8 @@ from tools.constants import (
     MDB_ARCHIVES_LATEST_URL_TEMPLATE,
     MDB_SOURCE_FILENAME,
     ZIP,
+    FALLBACK_HEADERS,
+
 )
 from urllib.parse import urlparse
 
@@ -73,92 +75,56 @@ def to_csv(path, catalog, columns):
     catalog.to_csv(path, sep=",", index=False)
 
 
-def download_dataset(
-    url, authentication_type, api_key_parameter_name, api_key_parameter_value
-):
+def download_dataset(url, authentication_type, api_key_parameter_name=None, api_key_parameter_value=None):
     """
-    Download a dataset from a given URL with optional authentication.
+    Downloads a dataset from the given URL using specified authentication mechanisms.
+    The method performs a request to the URL with API key passed as either a query
+    parameter or a header, based on the chosen authentication type. If the download
+    fails with certain 403 errors, a fallback request with alternative headers is attempted.
+    It writes the dataset contents to a temporary file and returns the file path.
 
-    This function downloads a dataset from the specified URL using optional
-    API key authentication and saves it to a file in the current working directory.
-
-    Args:
-        url (str): The URL of the dataset to download.
-        authentication_type (int): The type of authentication to use.
-            0: No authentication.
-            1: API key as a query parameter.
-            2: API key as a header.
-        api_key_parameter_name (str, optional): The name of the API key parameter.
-        api_key_parameter_value (str, optional): The value of the API key.
-
-    Returns:
-        str: The path to the downloaded file.
-
-    Raises:
-        RequestException: If an error occurs during the download process.
+    :param url: The dataset's source URL.
+    :type url: str
+    :param authentication_type: The type of authentication mechanism to use (e.g.,
+        1 for parameter-based, 2 for header-based).
+    :type authentication_type: int
+    :param api_key_parameter_name: The name of the API key parameter/header. It is
+        optional if the dataset is publicly accessible or no authentication is
+        required.
+    :type api_key_parameter_name: str, optional
+    :param api_key_parameter_value: The value of the API key to authenticate the
+        request. It is optional if no authentication is required.
+    :type api_key_parameter_value: str, optional
+    :return: The file path where the downloaded dataset is temporarily stored.
+    :type return: str
+    :raises RequestException: If all attempts to download the dataset fail.
     """
 
-    file_name = str(uuid.uuid4())
-    file_path = os.path.join(os.getcwd(), file_name)
+    def make_request(url, params=None, headers=None):
+        try:
+            response = requests.get(url, params=params, headers=headers, allow_redirects=True)
+            response.raise_for_status()
+            return response.content
+        except HTTPError as e:
+            return None if e.response.status_code == 403 else RequestException(
+                f"HTTP error {e} when accessing {url}. A fallback attempt with alternative headers will be made.")
+        except RequestException as e:
+            raise RequestException(f"Request failed: {e}")
 
-    params = {}
-    headers = {}
-    if authentication_type == 1:
-        params[api_key_parameter_name] = api_key_parameter_value
-    elif authentication_type == 2:
-        headers[api_key_parameter_name] = api_key_parameter_value
+    file_path = os.path.join(os.getcwd(), str(uuid.uuid4()))
 
-    try:
-        zip_file_req = requests.get(
-            url, params=params, headers=headers, allow_redirects=True
-        )
-        zip_file_req.raise_for_status()
+    params = {api_key_parameter_name: api_key_parameter_value} if authentication_type == 1 else None
+    headers = {api_key_parameter_name: api_key_parameter_value} if authentication_type == 2 else None
 
-    except HTTPError as e:
-        #403 error fallback handler
-        if e.response.status_code == 403:
-            print(f"403 error. Retry with different headers for: {url}")
+    zip_file = make_request(url, params, headers) or (
+        make_request(url, params, {**FALLBACK_HEADERS, **(headers or {}),
+                                   "Referer": f"{urlparse(url).scheme}://{urlparse(url).netloc}/",
+                                   "Host": urlparse(url).netloc})
+                     )
 
-            parsed_url = urlparse(url)
+    if zip_file is None:
+        raise RequestException(f"FAILURE! Retry attempts failed for {url}.")
 
-            fallback_headers = {
-                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7"
-                              ") AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
-                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,"
-                          "*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
-                "Accept-Language": "en-US,en;q=0.9",
-                "Accept-Encoding": "gzip, deflate, br",
-                "Referer": f"{parsed_url.scheme}://{parsed_url.netloc}/",
-                "Host": parsed_url.netloc,
-                "Connection": "keep-alive",
-                "Sec-Fetch-Dest": "document",
-                "Sec-Fetch-Mode": "navigate",
-                'Sec-Fetch-Site': 'same-origin',
-            }
-
-            try:
-                # Retry with fallback header
-                zip_file_req = requests.get(
-                    url,
-                    params=params,
-                    headers=fallback_headers,
-                    allow_redirects=True
-                )
-                zip_file_req.raise_for_status()
-            except Exception as fallback_e:
-                raise RequestException(
-                    f"FAILURE! retry attempts failed for {url}: {fallback_e}"
-                )
-        else:
-            raise RequestException(
-                f"FAILURE! Exception {e} occurred when downloading URL {url}.\n"
-            )
-    except RequestException as e:
-        raise RequestException(
-            f"FAILURE! Exception {e} occurred when downloading URL {url}.\n"
-        )
-
-    zip_file = zip_file_req.content
     with open(file_path, "wb") as f:
         f.write(zip_file)
 

@@ -2,7 +2,7 @@
     "mdb_source_id": 371,
     "data_type": "gtfs",
     "provider": "Buc Shuttle",
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Georgia",
@@ -17,6 +17,8 @@
     },
     "urls": {
         "direct_download": "http://documents.atlantaregional.com/transitdata/gtfs_Buc.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-georgia-buc-shuttle-gtfs-371.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

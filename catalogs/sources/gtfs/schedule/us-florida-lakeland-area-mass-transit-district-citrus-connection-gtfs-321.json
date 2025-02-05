@@ -20,7 +20,9 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-lakeland-area-mass-transit-district-citrus-connection-gtfs-321.zip?alt=media"
     },
     "redirect": [
-        "id": "tld-5899",
-        "comment": " "
+        {
+            "id": "tld-5899",
+            "comment": " "
+        }
     ]
 }

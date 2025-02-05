@@ -561,7 +561,7 @@ class TestInOutFunctions(TestCase):
         mock_os.path.join.return_value = self.test_path
         self.assertRaises(RequestException, download_dataset, url=self.test_url,
             authentication_type=test_authentication_type, api_key_parameter_name=test_api_key_parameter_name,
-            api_key_parameter_value=test_api_key_parameter_value, )
+                          api_key_parameter_value=test_api_key_parameter_value, )
 
         self.assertEqual(mock_requests.call_count, 2)
         mock_os.path.join.assert_called_once()

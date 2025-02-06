@@ -675,7 +675,7 @@ func redirectArray(for rawData: String) -> String {
 
     let redirectEntries : String = rawDataClean
         .components(separatedBy: defaults.whitespace)
-        .map { prefix + $0 + suffix }
+        .map { prefix + "\"\"\($0)\"\"" + suffix }
         .joined(separator: keyValuePairsJoiner)
 
     return "\(openingPrefix)\(redirectEntries)\(closingSuffix)"

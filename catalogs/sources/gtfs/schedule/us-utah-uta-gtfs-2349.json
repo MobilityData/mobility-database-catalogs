@@ -2,9 +2,13 @@
     "mdb_source_id": 2349,
     "data_type": "gtfs",
     "provider": "UTA",
+    "name": "",
+    "feed_contact_email": "",
+    "status": "deprecated",
     "location": {
-        "country_code": "US",
-        "subdivision_name": "Utah",
+        "country_code": "",
+        "subdivision_name": "",
+        "municipality": "",
         "bounding_box": {
             "minimum_latitude": 39.975518,
             "maximum_latitude": 41.528157,
@@ -16,7 +20,14 @@
     "urls": {
         "direct_download": "https://gtfsfeed.rideuta.com/gtfs.zip",
         "authentication_type": 0,
+        "authentication_info": "",
+        "api_key_parameter_name": "",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-utah-uta-gtfs-2349.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "170",
+            "comment": " "
+        }
+    ]
 }

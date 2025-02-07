@@ -2,11 +2,13 @@
     "mdb_source_id": 144,
     "data_type": "gtfs",
     "provider": "SunTran",
-    "feed_contact_email": "SunTranInfo@TucsonAZ.gov",
+    "name": "",
+    "feed_contact_email": "",
+    "status": "deprecated",
     "location": {
-        "country_code": "US",
-        "subdivision_name": "Arizona",
-        "municipality": "Tucson",
+        "country_code": "",
+        "subdivision_name": "",
+        "municipality": "",
         "bounding_box": {
             "minimum_latitude": 31.868367,
             "maximum_latitude": 32.484435,
@@ -18,8 +20,15 @@
     "urls": {
         "direct_download": "https://www.suntran.com/wp-content/uploads/2021/08/SunTranGTFS.zip",
         "authentication_type": 0,
+        "authentication_info": "",
+        "api_key_parameter_name": "",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-arizona-suntran-gtfs-144.zip?alt=media",
         "license": "https://www.suntran.com/developers_terms.php"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "2354",
+            "comment": " "
+        }
+    ]
 }

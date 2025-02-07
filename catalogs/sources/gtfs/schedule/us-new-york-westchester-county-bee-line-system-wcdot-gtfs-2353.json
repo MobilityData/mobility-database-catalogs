@@ -2,9 +2,13 @@
     "mdb_source_id": 2353,
     "data_type": "gtfs",
     "provider": "Westchester County Bee-Line System (WCDOT)",
+    "name": "",
+    "feed_contact_email": "",
+    "status": "",
     "location": {
-        "country_code": "US",
-        "subdivision_name": "New York",
+        "country_code": "",
+        "subdivision_name": "",
+        "municipality": "",
         "bounding_box": {
             "minimum_latitude": 40.74128,
             "maximum_latitude": 41.421923,
@@ -16,6 +20,8 @@
     "urls": {
         "direct_download": "https://planning.westchestergov.com/images/stories/zip/GTFS.zip",
         "authentication_type": 0,
+        "authentication_info": "",
+        "api_key_parameter_name": "",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-westchester-county-bee-line-system-wcdot-gtfs-2353.zip?alt=media"
     },
     "redirect": []

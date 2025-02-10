@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "SunTran",
     "feed_contact_email": "SunTranInfo@TucsonAZ.gov",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Arizona",
@@ -21,5 +22,10 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-arizona-suntran-gtfs-144.zip?alt=media",
         "license": "https://www.suntran.com/developers_terms.php"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "2354",
+            "comment": " "
+        }
+    ]
 }

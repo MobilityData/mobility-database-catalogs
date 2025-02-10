@@ -2,6 +2,7 @@
     "mdb_source_id": 2349,
     "data_type": "gtfs",
     "provider": "UTA",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Utah",
@@ -18,5 +19,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-utah-uta-gtfs-2349.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "170",
+            "comment": " "
+        }
+    ]
 }

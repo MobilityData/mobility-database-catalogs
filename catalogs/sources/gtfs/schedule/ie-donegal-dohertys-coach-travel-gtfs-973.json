@@ -1,7 +1,8 @@
 {
     "mdb_source_id": 973,
     "data_type": "gtfs",
-    "provider": "Doherty's Coach Travel",
+    "provider": "Dohertyʼs Coach Travel",
+    "status": "deprecated",
     "location": {
         "country_code": "IE",
         "subdivision_name": "Donegal",
@@ -15,6 +16,13 @@
     },
     "urls": {
         "direct_download": "https://www.transportforireland.ie/transitData/google_transit_sdoherty.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-donegal-dohertys-coach-travel-gtfs-973.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "tld-5576",
+            "comment": " "
+        }
+    ]
 }

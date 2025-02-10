@@ -2,13 +2,8 @@
     "mdb_source_id": 1292,
     "data_type": "gtfs",
     "provider": "Rejseplanen",
-    "name": "",
-    "feed_contact_email": "",
-    "status": "",
     "location": {
-        "country_code": "",
-        "subdivision_name": "",
-        "municipality": "",
+        "country_code": "DK",
         "bounding_box": {
             "minimum_latitude": 53.552502176324,
             "maximum_latitude": 57.739058058049,
@@ -18,10 +13,8 @@
         }
     },
     "urls": {
-        "direct_download": "http://www.rejseplanen.info/labs/GTFS.zip",
+        "direct_download": "https://www.rejseplanen.info/labs/GTFS.zip",
         "authentication_type": 0,
-        "authentication_info": "",
-        "api_key_parameter_name": "",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/dk-unknown-rejseplanen-gtfs-1292.zip?alt=media"
     },
     "redirect": []

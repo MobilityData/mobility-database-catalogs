@@ -16,7 +16,8 @@
     "urls": {
         "direct_download": "https://planning.westchestergov.com/images/stories/zip/GTFS.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-westchester-county-bee-line-system-wcdot-gtfs-2353.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-westchester-county-bee-line-system-wcdot-gtfs-2353.zip?alt=media",
+        "license": "https://planning.westchestergov.com/transportation-planning/gfts-developers-transit-api/transit-api-service-terms-of-service"
     },
     "redirect": []
 }

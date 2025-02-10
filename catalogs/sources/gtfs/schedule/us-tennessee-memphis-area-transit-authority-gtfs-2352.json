@@ -2,8 +2,6 @@
     "mdb_source_id": 2352,
     "data_type": "gtfs",
     "provider": "Memphis Area Transit Authority",
-    "name": "",
-    "feed_contact_email": "",
     "status": "deprecated",
     "location": {
         "country_code": "US",

@@ -2,6 +2,7 @@
     "mdb_source_id": 971,
     "data_type": "gtfs",
     "provider": "PJ Martley",
+    "status": "deprecated",
     "location": {
         "country_code": "IE",
         "subdivision_name": "Dublin",
@@ -16,6 +17,13 @@
     },
     "urls": {
         "direct_download": "https://www.transportforireland.ie/transitData/google_transit_pjmartley.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-dublin-pj-martley-gtfs-971.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2364",
+            "comment": " "
+        }
+    ]
 }

@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 2364,
+    "data_type": "gtfs",
+    "provider": "National Transport Authority",
+    "name": "Aggregate feed for Ireland",
+    "location": {
+        "country_code": "IE",
+        "bounding_box": {
+            "minimum_latitude": 51.46855,
+            "maximum_latitude": 55.37705,
+            "minimum_longitude": -10.46157,
+            "maximum_longitude": -5.93626793243424,
+            "extracted_on": "2025-02-10T19:30:30+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/Data/GTFS_All.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-unknown-national-transport-authority-gtfs-2364.zip?alt=media"
+    },
+    "redirect": []
+}

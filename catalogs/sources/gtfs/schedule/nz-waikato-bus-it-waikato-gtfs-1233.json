@@ -1,8 +1,9 @@
 {
     "mdb_source_id": 1233,
     "data_type": "gtfs",
-    "provider": "Bus It Waikato",
+    "provider": "Waikato Regional Council",
     "feed_contact_email": "support+test+busit-nz@trilliumtransit.com",
+    "status": "deprecated",
     "location": {
         "country_code": "NZ",
         "subdivision_name": "Waikato",
@@ -19,5 +20,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/nz-waikato-bus-it-waikato-gtfs-1233.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "tld-6738",
+            "comment": " "
+        }
+    ]
 }

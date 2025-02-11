@@ -114,6 +114,7 @@ jobs:
       - name: Checking GitHub CLI Authentication
         run: gh auth status
         env:
+          GH_TOKEN: ${{ env.CREDENTIALS }}
           GITHUB_TOKEN: ${{ env.CREDENTIALS }}
         shell: bash
 
@@ -164,6 +165,7 @@ jobs:
           echo "pr-url=$PR_URL" >> $GITHUB_OUTPUT
           echo "new-file-count=$NEW_FILE_COUNT" >> $GITHUB_OUTPUT
         env:
+          GH_TOKEN: ${{ env.CREDENTIALS }}
           GITHUB_TOKEN: ${{ env.CREDENTIALS }}
         shell: bash
 

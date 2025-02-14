@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2366,
+    "data_type": "gtfs",
+    "provider": "Alilaguna S.p.A.",
+    "name": "Bus",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Veneto",
+        "municipality": "Venice",
+        "bounding_box": {
+            "minimum_latitude": 45.044586,
+            "maximum_latitude": 45.661942,
+            "minimum_longitude": 11.882432,
+            "maximum_longitude": 12.384969,
+            "extracted_on": "2025-02-14T16:26:50+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://actv.avmspa.it/sites/default/files/attachments/opendata/automobilistico/actv_aut.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-veneto-alilaguna-spa-gtfs-2366.zip?alt=media",
+        "license": "https://actv.avmspa.it/en/content/catalogo-dei-dati-metadati-e-banche-dati-actv"
+    },
+    "redirect": []
+}

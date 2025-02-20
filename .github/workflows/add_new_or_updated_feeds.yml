@@ -18,7 +18,8 @@ env:
 
 jobs:
   add-new-updated-feeds:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
+    
     steps:
       - name: Setup global variables
         id: global_vars

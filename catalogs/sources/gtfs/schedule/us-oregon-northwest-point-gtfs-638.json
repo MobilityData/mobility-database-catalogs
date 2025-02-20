@@ -19,7 +19,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://oregon-gtfs.com/gtfs_data/northwestpoint-or-us/northwestpoint-or-us.zip",
+        "direct_download": "https://oregon-gtfs.trilliumtransit.com/gtfs_data/northwestpoint-or-us/northwestpoint-or-us.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-northwest-point-gtfs-638.zip?alt=media"
     }
 }

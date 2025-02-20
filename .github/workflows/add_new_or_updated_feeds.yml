@@ -21,10 +21,14 @@ env:
 
     REVIEWERS_JSON: "[\"emmambd\"]" # List of GitHub usernames of the reviewers, in a JSON array : ["username1", "username2"]
 
+
 jobs:
   add-new-updated-feeds:
     runs-on: ubuntu-22.04
-    
+    permissions:
+      contents: write  # Allows pushing to branches
+      pull-requests: write  # Allows creating and managing PRs
+
     steps:
       - name: Setup global variables
         id: global_vars

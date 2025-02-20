@@ -134,14 +134,14 @@ jobs:
           BRANCH_NAME=${{ steps.create_branch_name.outputs.BRANCH }}
 
           # Fetch the latest changes from main
-          #git fetch origin main
+          git fetch origin main
 
           # Create or reset the branch to the current main
           git checkout -B "$BRANCH_NAME" origin/main
 
           # Configure git
-          git config --global user.name "${{ env.USERNAME }}"
-          git config --global user.email "${{ env.USERNAME_EMAIL }}"
+          # git config --global user.name "${{ env.USERNAME }}"
+          # git config --global user.email "${{ env.USERNAME_EMAIL }}"
         
           # Check Git authentication
           git config --get user.name
@@ -153,13 +153,13 @@ jobs:
           # Count new files
           NEW_FILE_COUNT=$(git status --porcelain | grep -c "^A")
           
-          # Commit changes
+          echo "Commit changes: $NEW_FILE_COUNT"
           git commit -m "Automated commit — New/Updated feed(s)"
           
-          # Force push changes to the branch
+          echo "Force push changes to the branch"
           git push -f origin "$BRANCH_NAME" || (echo "Git push failed!" && git remote -v && git branch -vv && exit 1)
           
-          # Check if a PR already exists
+          echo "Check if a PR already exists"
           EXISTING_PR=$(gh pr list --head "$BRANCH_NAME" --json number -q '.[0].number')
           
           if [ -n "$EXISTING_PR" ]; then

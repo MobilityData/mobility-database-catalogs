@@ -112,12 +112,19 @@ jobs:
             echo -e "\n\n"
             git status
 
-      - name: Checking GitHub CLI Authentication
-        run: gh auth status
+      - name: Checking GitHub CLI and Git Authentication
+        run: |
+            # Check GitHub CLI authentication
+            gh auth status
+        
+            # Check Git authentication
+            git config --get user.name
+            git config --get user.email
         env:
-          GH_TOKEN: ${{ env.CREDENTIALS }}
-          GITHUB_TOKEN: ${{ env.CREDENTIALS }}
+            GH_TOKEN: ${{ env.CREDENTIALS }}
+            GITHUB_TOKEN: ${{ env.CREDENTIALS }}
         shell: bash
+
 
       - name: Commit, push, and create PR
         id: commit-push-create-pr
@@ -126,7 +133,7 @@ jobs:
           BRANCH_NAME=${{ steps.create_branch_name.outputs.BRANCH }}
 
           # Fetch the latest changes from main
-          git fetch origin main
+          #git fetch origin main
 
           # Create or reset the branch to the current main
           git checkout -B "$BRANCH_NAME" origin/main

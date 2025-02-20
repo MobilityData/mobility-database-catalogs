@@ -1,13 +1,16 @@
+import datetime
 import json
 import os
-import datetime
-import gtfs_kit
-import requests
-from requests.exceptions import RequestException, HTTPError
-import pandas as pd
-from pandas.errors import ParserError
-from unidecode import unidecode
 import uuid
+from urllib.parse import urlparse
+
+import gtfs_kit
+import pandas as pd
+import requests
+from pandas.errors import ParserError
+from requests.exceptions import RequestException, HTTPError
+from unidecode import unidecode
+
 from tools.constants import (
     STOP_LAT,
     STOP_LON,
@@ -17,7 +20,7 @@ from tools.constants import (
     FALLBACK_HEADERS,
 
 )
-from urllib.parse import urlparse
+
 
 #########################
 # I/O FUNCTIONS
@@ -102,12 +105,28 @@ def download_dataset(url, authentication_type, api_key_parameter_name=None, api_
 
     def make_request(url, params=None, headers=None):
         try:
-            response = requests.get(url, params=params, headers=headers, allow_redirects=True)
+            response = requests.get(url, params=params, headers=headers, allow_redirects=True, verify=True)
             response.raise_for_status()
             return response.content
+        except requests.exceptions.SSLError as ssl_err:
+            ca_bundle_path = os.environ.get("SSL_CERT_PATH")
+            if ca_bundle_path and os.path.exists(ca_bundle_path):
+                print(f"SSL verification failed. Retrying with custom CA bundle: {ca_bundle_path}")
+                try:
+                    response = requests.get(url, params=params, headers=headers, allow_redirects=True,
+                                            verify=ca_bundle_path)
+                    response.raise_for_status()
+                    return response.content
+                except Exception as e:
+                    print(f"SSL retry failed: {e}")
+                    return None
+            else:
+                print("Custom CA bundle not found. SSL verification failed.")
+                return None
         except HTTPError as e:
             return None if e.response.status_code == 403 else RequestException(
-                f"HTTP error {e} when accessing {url}. A fallback attempt with alternative headers will be made.")
+                f"HTTP error {e} when accessing {url}. Fallback headers will be tried."
+            )
         except RequestException as e:
             raise RequestException(f"Request failed: {e}")
 
@@ -116,11 +135,11 @@ def download_dataset(url, authentication_type, api_key_parameter_name=None, api_
     params = {api_key_parameter_name: api_key_parameter_value} if authentication_type == 1 else None
     headers = {api_key_parameter_name: api_key_parameter_value} if authentication_type == 2 else None
 
-    zip_file = make_request(url, params, headers) or (
-        make_request(url, params, {**FALLBACK_HEADERS, **(headers or {}),
-                                   "Referer": f"{urlparse(url).scheme}://{urlparse(url).netloc}/",
-                                   "Host": urlparse(url).netloc})
-                     )
+    zip_file = make_request(url, params, headers) or make_request(
+        url,
+        params,
+        {**FALLBACK_HEADERS, **(headers or {}), "Referer": f"{urlparse(url).scheme}://{urlparse(url).netloc}/"}
+    )
 
     if zip_file is None:
         raise RequestException(f"FAILURE! Retry attempts failed for {url}.")
@@ -137,14 +156,14 @@ def download_dataset(url, authentication_type, api_key_parameter_name=None, api_
 
 
 def are_overlapping_boxes(
-    source_minimum_latitude,
-    source_maximum_latitude,
-    source_minimum_longitude,
-    source_maximum_longitude,
-    filter_minimum_latitude,
-    filter_maximum_latitude,
-    filter_minimum_longitude,
-    filter_maximum_longitude,
+        source_minimum_latitude,
+        source_maximum_latitude,
+        source_minimum_longitude,
+        source_maximum_longitude,
+        filter_minimum_latitude,
+        filter_maximum_latitude,
+        filter_minimum_longitude,
+        filter_maximum_longitude,
 ):
     """
     Verifies if two boxes are overlapping in two dimensions.
@@ -178,7 +197,7 @@ def are_overlapping_boxes(
 
 
 def are_overlapping_edges(
-    source_minimum, source_maximum, filter_minimum, filter_maximum
+        source_minimum, source_maximum, filter_minimum, filter_maximum
 ):
     """
     Verifies if two edges are overlapping in one dimension.
@@ -238,7 +257,7 @@ def is_readable(file_path, load_func):
 
 
 def create_latest_url(
-    country_code, subdivision_name, provider, data_type, mdb_source_id
+        country_code, subdivision_name, provider, data_type, mdb_source_id
 ):
     """
     Creates the latest URL for an MDB Source.
@@ -270,7 +289,7 @@ def create_latest_url(
 
 
 def create_filename(
-    country_code, subdivision_name, provider, data_type, mdb_source_id, extension
+        country_code, subdivision_name, provider, data_type, mdb_source_id, extension
 ):
     """
     Creates the filename for an MDB Source.
@@ -401,9 +420,9 @@ def extract_gtfs_bounding_box(file_path):
 
     stops_required_columns = {STOP_LAT, STOP_LON}
     stops_are_present = (
-        stops is not None
-        and stops_required_columns.issubset(stops.columns)
-        and not (stops[STOP_LAT].dropna().empty or stops[STOP_LON].dropna().empty)
+            stops is not None
+            and stops_required_columns.issubset(stops.columns)
+            and not (stops[STOP_LAT].dropna().empty or stops[STOP_LON].dropna().empty)
     )
 
     minimum_latitude = stops[STOP_LAT].dropna().min() if stops_are_present else None

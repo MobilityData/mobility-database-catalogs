@@ -134,10 +134,10 @@ jobs:
           BRANCH_NAME=${{ steps.create_branch_name.outputs.BRANCH }}
 
           # Fetch the latest changes from main
-          git fetch origin main
+          # git fetch origin main
 
           # Create or reset the branch to the current main
-          git checkout -B "$BRANCH_NAME" origin/main
+          git checkout -B "$BRANCH_NAME"
 
           # Configure git
           # git config --global user.name "${{ env.USERNAME }}"

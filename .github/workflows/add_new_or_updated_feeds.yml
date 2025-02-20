@@ -116,10 +116,6 @@ jobs:
         run: |
             # Check GitHub CLI authentication
             gh auth status
-        
-            # Check Git authentication
-            git config --get user.name
-            git config --get user.email
         env:
             GH_TOKEN: ${{ env.CREDENTIALS }}
             GITHUB_TOKEN: ${{ env.CREDENTIALS }}
@@ -141,6 +137,10 @@ jobs:
           # Configure git
           git config --global user.name "${{ env.USERNAME }}"
           git config --global user.email "${{ env.USERNAME_EMAIL }}"
+        
+          # Check Git authentication
+          git config --get user.name
+          git config --get user.email
           
           # Add changes
           git add .

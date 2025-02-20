@@ -15,7 +15,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://oregon-gtfs.com/gtfs_data/sandy-or-us/sandy-or-us.zip",
+        "direct_download": "https://oregon-gtfs.trilliumtransit.com/gtfs_data/sandy-or-us/sandy-or-us.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-sandy-area-metro-sam-gtfs-261.zip?alt=media"
     }
 }

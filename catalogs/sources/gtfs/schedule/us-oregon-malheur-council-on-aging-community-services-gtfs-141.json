@@ -15,7 +15,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://oregon-gtfs.com/gtfs_data/mcacs-or-us/mcacs-or-us.zip",
+        "direct_download": "https://oregon-gtfs.trilliumtransit.com/gtfs_data/mcacs-or-us/mcacs-or-us.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-malheur-council-on-aging-community-services-gtfs-141.zip?alt=media"
     }
 }

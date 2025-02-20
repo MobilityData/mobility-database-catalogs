@@ -5,6 +5,11 @@ on:
 #    schedule:
 #      - cron: '55 3 * * *' # Run every night
 
+permissions:
+  contents: write   # Permissions to read/write content like code
+  issues: write     # Permissions to create issues or comment on issues
+  pull-requests: write  # Permissions to create/merge pull requests
+
 env:
     DATE_FORMAT: "[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}|[0-9]{4}-[0-9]{2}-[0-9]{2}" # this is the format we need to compare dates between the CSV and the local system.
     DATE_FORMAT_DESIRED: "MM/dd/yyyy"

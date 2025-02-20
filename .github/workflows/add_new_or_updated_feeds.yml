@@ -60,7 +60,6 @@ jobs:
         with:
             ref: ${{ env.BASE }}
             fetch-depth: 0
-            # token: ${{ env.CREDENTIALS }}
 
       - name: Create new branch
         shell: bash
@@ -122,9 +121,9 @@ jobs:
         run: |
             # Check GitHub CLI authentication
             gh auth status
-        # env:
-        #     GH_TOKEN: ${{ env.CREDENTIALS }}
-        #     GITHUB_TOKEN: ${{ env.CREDENTIALS }}
+        env:
+            GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
 
 
@@ -178,9 +177,9 @@ jobs:
           # Set the PR URL as an output
           echo "pr-url=$PR_URL" >> $GITHUB_OUTPUT
           echo "new-file-count=$NEW_FILE_COUNT" >> $GITHUB_OUTPUT
-        # env:
-          # GH_TOKEN: ${{ env.CREDENTIALS }}
-          # GITHUB_TOKEN: ${{ env.CREDENTIALS }}
+        env:
+            GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
 
       - name: Post notification in Slack channel of update

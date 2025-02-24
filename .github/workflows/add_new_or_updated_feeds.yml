@@ -70,8 +70,8 @@ jobs:
         run: |
             git pull
             git checkout -b ${{ steps.create_branch_name.outputs.BRANCH }}
-            # git reset --hard ${{ env.BASE }}
-            # git clean -df
+            git reset --hard ${{ env.BASE }}
+            git clean -df
 
       - name: Download CSV and process each lines
         id: process-csv
@@ -138,18 +138,18 @@ jobs:
           BRANCH_NAME=${{ steps.create_branch_name.outputs.BRANCH }}
 
           # Fetch the latest changes from main
-          # git fetch origin main
+          git fetch origin main
 
           # Create or reset the branch to the current main
-          git checkout "$BRANCH_NAME"
+          git checkout -B "$BRANCH_NAME" origin/main
 
           # Configure git
           # git config --global user.name "${{ env.USERNAME }}"
           # git config --global user.email "${{ env.USERNAME_EMAIL }}"
         
           # Check Git authentication
-          git config --get user.name
-          git config --get user.email
+          # git config --get user.name
+          # git config --get user.email
           
           # Add changes
           git add .

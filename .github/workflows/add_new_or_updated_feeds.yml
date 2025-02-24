@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: write   # Permissions to read/write content like code
-  issues: write     # Permissions to create issues or comment on issues
   pull-requests: write  # Permissions to create/merge pull requests
 
 env:
@@ -26,10 +25,7 @@ env:
 
 jobs:
   add-new-updated-feeds:
-    runs-on: ubuntu-22.04
-    permissions:
-      contents: write   # Permissions to read/write content like code
-      pull-requests: write  # Permissions to create/merge pull requests
+    runs-on: ubuntu-latest
     steps:
       - name: Setup global variables
         id: global_vars
@@ -53,7 +49,6 @@ jobs:
             export-env: true # Export loaded secrets as environment variables
         env:
             OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
-            # CREDENTIALS: "op://rbiv7rvkkrsdlpcrz3bmv7nmcu/ifkeehu5gzi7wy5ub5qvwkaire/credential"
             # The URL to obtain the csv file with the data of the google form. Taken from the "GiHub Actions — URLs" entry in 1password
             CSV_URL: "op://rbiv7rvkkrsdlpcrz3bmv7nmcu/qkn5esttmtojawglm4l6t2bqaa/al2gjfhiuddabkp7o26hszuvia"
             SLACK_WEBHOOK_URL: "op://rbiv7rvkkrsdlpcrz3bmv7nmcu/Slack webhook URLs/rdpfgrmnbxqaelgi5oky3lryz4/internal-add-feeds"
@@ -130,29 +125,6 @@ jobs:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
 
-      # - name: Ensure grep is installed
-      #   run: |
-      #     echo "Checking if grep is installed..."
-          
-      #     if ! command -v grep &> /dev/null; then
-      #       echo "Error: grep is not installed! Attempting to install..."
-            
-      #       # Install grep on Ubuntu
-      #       sudo apt-get update && sudo apt-get install -y grep
-
-      #       # Verify installation
-      #       if ! command -v grep &> /dev/null; then
-      #         echo "Installation failed. grep is still missing!"
-      #         exit 1
-      #       else
-      #         echo "grep installed successfully ✅"
-      #       fi
-      #     else
-      #       echo "grep is already installed ✅"
-      #     fi
-      #   shell: bash
-
-
       - name: Commit, push, and create PR
         id: commit-push-create-pr
         if: steps.process-csv.outputs.PYTHON_SCRIPT_ARGS != ''
@@ -167,8 +139,8 @@ jobs:
           git checkout -B "$BRANCH_NAME" origin/main
 
           # Configure git
-          # git config --global user.name "${{ env.USERNAME }}"
-          # git config --global user.email "${{ env.USERNAME_EMAIL }}"
+          git config --global user.name "${{ env.USERNAME }}"
+          git config --global user.email "${{ env.USERNAME_EMAIL }}"
         
           # Check Git authentication
           # git config --get user.name
@@ -191,7 +163,6 @@ jobs:
           echo "----------"
 
           echo "Count new files"
-          # NEW_FILE_COUNT=$(git status --porcelain | grep -c "^A")
           NEW_FILE_COUNT=$(git status --porcelain | awk '$1 == "A" {count++} END {print count+0}')
           echo "----------"
 
@@ -225,8 +196,8 @@ jobs:
           echo "pr-url=$PR_URL" >> $GITHUB_OUTPUT
           echo "new-file-count=$NEW_FILE_COUNT" >> $GITHUB_OUTPUT
         env:
-            GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
 
       - name: Post notification in Slack channel of update

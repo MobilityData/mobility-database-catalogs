@@ -164,17 +164,25 @@ jobs:
           git add .
           echo "----------"
 
-          # Count new files
-          NEW_FILE_COUNT=$(git status --porcelain | grep -c "^A")
+          echo "Check commit"
+          git status --porcelain
+          echo "----------"
           
+          echo "Count new files"
+          NEW_FILE_COUNT=$(git status --porcelain | grep -c "^A")
+          echo "----------"
+
           echo "Commit changes: $NEW_FILE_COUNT"
           git commit -m "Automated commit — New/Updated feed(s)"
-          
+          echo "----------"
+          echo "Set upstream to $BRANCH_NAME"
           git push --set-upstream origin "$BRANCH_NAME"
+          echo "----------"
 
           echo "Force push changes to the branch"
           git push origin HEAD
-          
+          echo "----------"
+
           echo "Check if a PR already exists"
           EXISTING_PR=$(gh pr list --head "$BRANCH_NAME" --json number -q '.[0].number')
           

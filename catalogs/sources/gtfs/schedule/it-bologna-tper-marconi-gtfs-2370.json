@@ -18,7 +18,7 @@
     "urls": {
         "direct_download": "https://solweb.tper.it/web/tools/open-data/open-data-download.aspx?source=solweb.tper.it&filename=gtfsmex&version=20241223&format=zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-bologna-tper-marconi-gtfs-2370.json.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-bologna-tper-marconi-gtfs-2370.zip?alt=media",
         "license": "https://solweb.tper.it/web/tools/open-data/open-data.aspx"
     }
 }

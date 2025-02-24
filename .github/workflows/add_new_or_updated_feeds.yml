@@ -138,6 +138,7 @@ jobs:
           BRANCH_NAME=${{ steps.create_branch_name.outputs.BRANCH }}
 
           # Fetch the latest changes from main
+          echo "fetching from origin"
           git fetch origin main
 
           # Create or reset the branch to the current main
@@ -151,7 +152,8 @@ jobs:
           # git config --get user.name
           # git config --get user.email
           
-          # Add changes
+          git diff
+          echo "Add changes"
           git add .
 
           # Count new files

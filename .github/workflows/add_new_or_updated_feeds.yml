@@ -27,7 +27,9 @@ env:
 jobs:
   add-new-updated-feeds:
     runs-on: ubuntu-22.04
-
+    permissions:
+      contents: write   # Permissions to read/write content like code
+      pull-requests: write  # Permissions to create/merge pull requests
     steps:
       - name: Setup global variables
         id: global_vars

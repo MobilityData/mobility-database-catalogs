@@ -152,17 +152,17 @@ jobs:
           # git config --get user.name
           # git config --get user.email
           
-          printf "Status:\"
+          printf "Status:\n"
           git status
           printf "----------\n"
           echo "Diff"
           git diff
           echo "Listing"
           ls -al
-          printf "Listed-----"
+          printf "----------\n"
           echo "Add changes"
           git add .
-          echo "Files added--------" 
+          printf "----------\n"
 
           # Count new files
           NEW_FILE_COUNT=$(git status --porcelain | grep -c "^A")

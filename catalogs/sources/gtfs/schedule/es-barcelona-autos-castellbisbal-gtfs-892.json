@@ -2,6 +2,7 @@
     "mdb_source_id": 892,
     "data_type": "gtfs",
     "provider": "Autos Castellbisbal, Mohn, Oliveras, Rosanbus, Soler i Sauret, Tusgsal, Barcelona City Tour, Monbus, Avanza",
+    "name": "AMB Bus",
     "location": {
         "country_code": "ES",
         "subdivision_name": "Barcelona",
@@ -14,7 +15,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://www.ambmobilitat.cat/OpenData/google_transit.zip",
+        "direct_download": "https://www.ambmobilitat.cat/OpenData/google_transit.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-barcelona-autos-castellbisbal-gtfs-892.zip?alt=media"
     }
 }

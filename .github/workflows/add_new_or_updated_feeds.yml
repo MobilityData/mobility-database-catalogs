@@ -19,9 +19,6 @@ env:
     BASE: "main"
 
     REVIEWERS_JSON: "[\"emmambd\"]" # List of GitHub usernames of the reviewers, in a JSON array : ["username1", "username2"]
-    ACTIONS_STEP_DEBUG: true
-    ACTIONS_RUNNER_DEBUG: true
-
 
 jobs:
   add-new-updated-feeds:
@@ -120,9 +117,13 @@ jobs:
         run: |
             # Check GitHub CLI authentication
             gh auth status
+        
+            # Check Git authentication
+            git config --get user.name
+            git config --get user.email
         env:
-            GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
 
       - name: Commit, push, and create PR
@@ -141,19 +142,7 @@ jobs:
           # Configure git
           git config --global user.name "${{ env.USERNAME }}"
           git config --global user.email "${{ env.USERNAME_EMAIL }}"
-        
-          # Check Git authentication
-          # git config --get user.name
-          # git config --get user.email
-          
-          echo "Status"
-          git status
-          echo "----------"
-          echo "Diff"
-          git diff
-          echo "Listing"
-          ls -al
-          echo "----------"
+
           echo "Add changes"
           git add .
           echo "----------"
@@ -169,12 +158,9 @@ jobs:
           echo "Commit changes: $NEW_FILE_COUNT"
           git commit -m "Automated commit — New/Updated feed(s)"
           echo "----------"
-          echo "Set upstream to $BRANCH_NAME"
-          git push --set-upstream origin "$BRANCH_NAME"
-          echo "----------"
 
           echo "Force push changes to the branch"
-          git push origin HEAD
+          git push -f origin "$BRANCH_NAME" || (echo "Git push failed!" && git remote -v && git branch -vv && exit 1)
           echo "----------"
 
           echo "Check if a PR already exists"
@@ -244,7 +230,7 @@ jobs:
           SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
 
       - name: Post notification in Slack in case of failure
-        # if: failure()
+        if: failure()
         uses: slackapi/slack-github-action@v1.26.0
         with:
           payload: |

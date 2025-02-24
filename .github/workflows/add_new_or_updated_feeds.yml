@@ -130,6 +130,28 @@ jobs:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
 
+      - name: Ensure grep is installed
+        run: |
+          echo "Checking if grep is installed..."
+          
+          if ! command -v grep &> /dev/null; then
+            echo "Error: grep is not installed! Attempting to install..."
+            
+            # Install grep on Ubuntu
+            sudo apt-get update && sudo apt-get install -y grep
+
+            # Verify installation
+            if ! command -v grep &> /dev/null; then
+              echo "Installation failed. grep is still missing!"
+              exit 1
+            else
+              echo "grep installed successfully ✅"
+            fi
+          else
+            echo "grep is already installed ✅"
+          fi
+        shell: bash
+
 
       - name: Commit, push, and create PR
         id: commit-push-create-pr
@@ -167,9 +189,10 @@ jobs:
           echo "Check commit"
           git status --porcelain
           echo "----------"
-          
+
           echo "Count new files"
           NEW_FILE_COUNT=$(git status --porcelain | grep -c "^A")
+          # NEW_FILE_COUNT=$(git status --porcelain | awk '$1 == "A" {count++} END {print count+0}')
           echo "----------"
 
           echo "Commit changes: $NEW_FILE_COUNT"

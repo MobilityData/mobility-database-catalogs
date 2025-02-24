@@ -20,6 +20,8 @@ env:
     BASE: "main"
 
     REVIEWERS_JSON: "[\"emmambd\"]" # List of GitHub usernames of the reviewers, in a JSON array : ["username1", "username2"]
+    ACTIONS_STEP_DEBUG: true
+    ACTIONS_RUNNER_DEBUG: true
 
 
 jobs:
@@ -156,6 +158,8 @@ jobs:
           echo "Commit changes: $NEW_FILE_COUNT"
           git commit -m "Automated commit — New/Updated feed(s)"
           
+          git push --set-upstream origin "$BRANCH_NAME"
+
           echo "Force push changes to the branch"
           git push origin HEAD
           

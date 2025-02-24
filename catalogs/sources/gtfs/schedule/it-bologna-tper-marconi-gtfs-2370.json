@@ -2,6 +2,7 @@
     "mdb_source_id": 2370,
     "data_type": "gtfs",
     "provider": "Trasporto Passeggeri Emilia-Romagna",
+    "name": Marconi Express
     "location": {
         "country_code": "IT",
         "subdivision_name": "Emilia-Romagna",

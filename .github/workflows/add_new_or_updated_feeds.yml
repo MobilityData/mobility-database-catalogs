@@ -157,7 +157,7 @@ jobs:
           git commit -m "Automated commit — New/Updated feed(s)"
           
           echo "Force push changes to the branch"
-          git push origin HEAD || (echo "Git push failed!" && git remote -v && git branch -vv && exit 1)
+          git push origin HEAD
           
           echo "Check if a PR already exists"
           EXISTING_PR=$(gh pr list --head "$BRANCH_NAME" --json number -q '.[0].number')

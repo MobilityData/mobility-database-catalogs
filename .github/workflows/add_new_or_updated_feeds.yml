@@ -141,7 +141,7 @@ jobs:
           echo "fetching from origin"
           git fetch origin main
 
-          # Create or reset the branch to the current main
+          echo "Create or reset the branch to the current main"
           git checkout -B "$BRANCH_NAME" origin/main
 
           # Configure git
@@ -152,6 +152,7 @@ jobs:
           # git config --get user.name
           # git config --get user.email
           
+          echo "Diff"
           git diff
           echo "Add changes"
           git add .

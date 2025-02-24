@@ -113,19 +113,6 @@ jobs:
             echo -e "\n\n"
             git status
 
-      - name: Checking GitHub CLI and Git Authentication
-        run: |
-            # Check GitHub CLI authentication
-            gh auth status
-        
-            # Check Git authentication
-            git config --get user.name
-            git config --get user.email
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        shell: bash
-
       - name: Commit, push, and create PR
         id: commit-push-create-pr
         if: steps.process-csv.outputs.PYTHON_SCRIPT_ARGS != ''

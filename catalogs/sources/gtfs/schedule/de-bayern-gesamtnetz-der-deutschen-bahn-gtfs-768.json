@@ -1,7 +1,8 @@
 {
     "mdb_source_id": 768,
     "data_type": "gtfs",
-    "provider": "Gesamtnetz der deutschen Bahn",
+    "provider": "Long-distance rail transport in Germany",
+    "name": "gtfs.de - GTFS for Germany Data provided by DELFI e.V",
     "location": {
         "country_code": "DE",
         "subdivision_name": "",
@@ -15,6 +16,8 @@
     },
     "urls": {
         "direct_download": "https://download.gtfs.de/germany/fv_free/latest.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-bayern-gesamtnetz-der-deutschen-bahn-gtfs-768.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

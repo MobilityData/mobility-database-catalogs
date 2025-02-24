@@ -20,7 +20,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://oregon-gtfs.com/gtfs_data/eugenetocoosbay-or-us/eugenetocoosbay-or-us.zip",
+        "direct_download": "https://oregon-gtfs.trilliumtransit.com/gtfs_data/eugenetocoosbay-or-us/eugenetocoosbay-or-us.zip",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-eugene-to-coos-bay-gtfs-634.zip?alt=media"
     },

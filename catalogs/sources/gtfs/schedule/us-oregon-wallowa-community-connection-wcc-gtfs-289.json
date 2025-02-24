@@ -15,7 +15,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://oregon-gtfs.com/gtfs_data/northeast-or-us/northeast-or-us.zip",
+        "direct_download": "https://oregon-gtfs.trilliumtransit.com/gtfs_data/northeast-or-us/northeast-or-us.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-wallowa-community-connection-wcc-gtfs-289.zip?alt=media"
     }
 }

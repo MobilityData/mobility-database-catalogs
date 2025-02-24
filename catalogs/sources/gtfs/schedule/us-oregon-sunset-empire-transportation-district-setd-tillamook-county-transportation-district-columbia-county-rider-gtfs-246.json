@@ -19,7 +19,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://oregon-gtfs.com/gtfs_data/tillamook-or-us/tillamook-or-us.zip",
+        "direct_download": "https://oregon-gtfs.trilliumtransit.com/gtfs_data/tillamookcounty-or-us/tillamookcounty-or-us.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-sunset-empire-transportation-district-setd-tillamook-county-transportation-district-columbia-county-rider-gtfs-246.zip?alt=media"
     }
 }

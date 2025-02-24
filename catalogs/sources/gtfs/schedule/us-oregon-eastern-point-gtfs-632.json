@@ -20,7 +20,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://oregon-gtfs.com/gtfs_data/easternpoint-or-us/easternpoint-or-us.zip",
+        "direct_download": "https://oregon-gtfs.trilliumtransit.com/gtfs_data/easternpoint-or-us/easternpoint-or-us.zip",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-eastern-point-gtfs-632.zip?alt=media"
     },

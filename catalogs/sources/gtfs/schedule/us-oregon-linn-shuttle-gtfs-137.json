@@ -15,7 +15,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://oregon-gtfs.com/gtfs_data/linnshuttle-or-us/linnshuttle-or-us.zip",
+        "direct_download": "https://oregon-gtfs.trilliumtransit.com/gtfs_data/linnshuttle-or-us/linnshuttle-or-us.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-linn-shuttle-gtfs-137.zip?alt=media",
         "license": "https://oregon-gtfs.trilliumtransit.com"
     }

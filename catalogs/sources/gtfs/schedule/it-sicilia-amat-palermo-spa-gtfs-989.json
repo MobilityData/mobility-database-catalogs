@@ -2,7 +2,7 @@
     "mdb_source_id": 989,
     "data_type": "gtfs",
     "provider": "AMAT Palermo S.P.A.",
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "IT",
         "subdivision_name": "Sicilia",
@@ -18,5 +18,10 @@
     "urls": {
         "direct_download": "https://www.comune.palermo.it/gtfs/amat_feed_gtfs.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-sicilia-amat-palermo-spa-gtfs-989.zip?alt=media"
-    }
+    },
+     "redirect": [
+        {
+            "id": "2373"
+        }
+    ]
 }

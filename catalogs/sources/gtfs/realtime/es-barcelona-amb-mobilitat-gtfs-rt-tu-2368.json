@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 2368,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "AMB Mobilitat",
+    "static_reference": [
+        "892"
+    ],
+    "urls": {
+        "direct_download": "https://www.ambmobilitat.cat/transit/trips-updates/trips.bin",
+        "authentication_type": 0,
+        "license": "https://www.amb.cat/en/web/area-metropolitana/dades-obertes/cataleg/detall/-/dataset/gtfs-real-time-bus-service/6332347/11692"
+    }
+}

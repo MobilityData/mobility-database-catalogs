@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 2375,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Lvivavtodor",
+    "static_reference": [
+        "2374"
+    ],
+    "urls": {
+        "direct_download": "https://track.ua-gis.com/gtfs/lviv/trip_updates",
+        "authentication_type": 0,
+        "license": "https://opendata.city-adm.lviv.ua/ne/dataset/lviv-public-transport-gtfs-real-time/resource/d45fd95a-ffc9-45b1-be05-52012707d51f?inner_span=True"
+    }
+}

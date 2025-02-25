@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2373,
+    "data_type": "gtfs",
+    "provider": "AMAT Palermo S.P.A.",
+    "feed_contact_email": "r.caporrimo@amat.pa.it", 
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Silicia",
+        "municipality": "Palermo",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2024-02-24T16:25:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://opendata.comune.palermo.it/js/server/uploads/dataset/gtfs/amat_gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-sicilia-amat-palermo-spa-gtfs-2373.zip?alt=media",
+        "license": "https://opendata.comune.palermo.it/opendata-dataset.php?dataset=1303"
+    }
+}

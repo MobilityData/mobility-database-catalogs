@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2379,
+    "data_type": "gtfs",
+    "provider": "Société de transport collectif de Pierre-De Saurel",
+    "feed_contact_email": "info@stcpierredesaurel.ca", 
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Québec",
+        "municipality": "Sorel-Tracy",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2024-02-24T16:25:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://zenbus.net/gtfs/static/download.zip?dataset=pierre-de-saurel",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-sorel-tracy-stc-gtfs-2379.zip?alt=media"
+    }
+}

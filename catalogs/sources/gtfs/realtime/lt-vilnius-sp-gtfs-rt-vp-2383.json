@@ -11,6 +11,6 @@
     ],
     "urls": {
         "direct_download": "https://www.stops.lt/vilnius/vehicle_positions.pb",
-        "authentication_type": 0,
+        "authentication_type": 0
     }
 }

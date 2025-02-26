@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2386,
+    "data_type": "gtfs",
+    "provider": "Agglobus",
+    "name": "Communauté d'agglomération du grand Gueret", 
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Nouvelle Aquitaine",
+        "municipality": "Guéret",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2024-02-24T16:25:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.centrevaldeloire.fr/api/explore/v2.1/catalog/datasets/agglobus-offre-theorique-mobilite-reseau-urbain-de-bourges/files/03b395ff43085db427c8f51d83e88643",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-gueret-bbus-agglobus-gtfs-2386.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/agglobus-offre-theorique-mobilite-reseau-urbain-de-bourges"
+    }
+}

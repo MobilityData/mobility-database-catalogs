@@ -11,6 +11,6 @@
     ],
     "urls": {
         "direct_download": "https://www.stops.lt/vilnius/trip_updates.pb",
-        "authentication_type": 0,
+        "authentication_type": 0
     }
 }

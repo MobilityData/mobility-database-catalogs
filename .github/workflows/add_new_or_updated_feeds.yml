@@ -5,6 +5,10 @@ on:
 #    schedule:
 #      - cron: '55 3 * * *' # Run every night
 
+permissions:
+  contents: write   # Permissions to read/write content like code
+  pull-requests: write  # Permissions to create/merge pull requests
+
 env:
     DATE_FORMAT: "[0-9]{1,2}/[0-9]{1,2}/[0-9]{4}|[0-9]{4}-[0-9]{2}-[0-9]{2}" # this is the format we need to compare dates between the CSV and the local system.
     DATE_FORMAT_DESIRED: "MM/dd/yyyy"
@@ -18,8 +22,7 @@ env:
 
 jobs:
   add-new-updated-feeds:
-    runs-on: ubuntu-22.04
-    
+    runs-on: ubuntu-latest
     steps:
       - name: Setup global variables
         id: global_vars
@@ -43,7 +46,6 @@ jobs:
             export-env: true # Export loaded secrets as environment variables
         env:
             OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
-            CREDENTIALS: "op://rbiv7rvkkrsdlpcrz3bmv7nmcu/ifkeehu5gzi7wy5ub5qvwkaire/credential"
             # The URL to obtain the csv file with the data of the google form. Taken from the "GiHub Actions — URLs" entry in 1password
             CSV_URL: "op://rbiv7rvkkrsdlpcrz3bmv7nmcu/qkn5esttmtojawglm4l6t2bqaa/al2gjfhiuddabkp7o26hszuvia"
             SLACK_WEBHOOK_URL: "op://rbiv7rvkkrsdlpcrz3bmv7nmcu/Slack webhook URLs/rdpfgrmnbxqaelgi5oky3lryz4/internal-add-feeds"
@@ -54,7 +56,6 @@ jobs:
         with:
             ref: ${{ env.BASE }}
             fetch-depth: 0
-            token: ${{ env.CREDENTIALS }}
 
       - name: Create new branch
         shell: bash
@@ -112,20 +113,6 @@ jobs:
             echo -e "\n\n"
             git status
 
-      - name: Checking GitHub CLI and Git Authentication
-        run: |
-            # Check GitHub CLI authentication
-            gh auth status
-        
-            # Check Git authentication
-            git config --get user.name
-            git config --get user.email
-        env:
-            GH_TOKEN: ${{ env.CREDENTIALS }}
-            GITHUB_TOKEN: ${{ env.CREDENTIALS }}
-        shell: bash
-
-
       - name: Commit, push, and create PR
         id: commit-push-create-pr
         if: steps.process-csv.outputs.PYTHON_SCRIPT_ARGS != ''
@@ -133,28 +120,37 @@ jobs:
           BRANCH_NAME=${{ steps.create_branch_name.outputs.BRANCH }}
 
           # Fetch the latest changes from main
-          #git fetch origin main
+          echo "fetching from origin"
+          git fetch origin main
 
-          # Create or reset the branch to the current main
+          echo "Create or reset the branch to the current main"
           git checkout -B "$BRANCH_NAME" origin/main
 
           # Configure git
           git config --global user.name "${{ env.USERNAME }}"
           git config --global user.email "${{ env.USERNAME_EMAIL }}"
-          
-          # Add changes
-          git add .
 
-          # Count new files
-          NEW_FILE_COUNT=$(git status --porcelain | grep -c "^A")
-          
-          # Commit changes
+          echo "Add changes"
+          git add .
+          echo "----------"
+
+          echo "Check commit"
+          git status --porcelain
+          echo "----------"
+
+          echo "Count new files"
+          NEW_FILE_COUNT=$(git status --porcelain | awk '$1 == "A" {count++} END {print count+0}')
+          echo "----------"
+
+          echo "Commit changes: $NEW_FILE_COUNT"
           git commit -m "Automated commit — New/Updated feed(s)"
-          
-          # Force push changes to the branch
+          echo "----------"
+
+          echo "Force push changes to the branch"
           git push -f origin "$BRANCH_NAME" || (echo "Git push failed!" && git remote -v && git branch -vv && exit 1)
-          
-          # Check if a PR already exists
+          echo "----------"
+
+          echo "Check if a PR already exists"
           EXISTING_PR=$(gh pr list --head "$BRANCH_NAME" --json number -q '.[0].number')
           
           if [ -n "$EXISTING_PR" ]; then
@@ -173,8 +169,8 @@ jobs:
           echo "pr-url=$PR_URL" >> $GITHUB_OUTPUT
           echo "new-file-count=$NEW_FILE_COUNT" >> $GITHUB_OUTPUT
         env:
-          GH_TOKEN: ${{ env.CREDENTIALS }}
-          GITHUB_TOKEN: ${{ env.CREDENTIALS }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
 
       - name: Post notification in Slack channel of update

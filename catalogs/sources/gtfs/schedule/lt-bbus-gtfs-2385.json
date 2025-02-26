@@ -16,6 +16,6 @@
     "urls": {
         "direct_download": "https://www.stops.lt/LVA/lva/gtfs.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lt-bbus-gtfs-2385.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lt-bbus-gtfs-2385.zip?alt=media"
     }
 }

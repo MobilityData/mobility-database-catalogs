@@ -129,7 +129,7 @@ def update_gtfs_realtime_source(
         note (str, optional): Additional notes regarding the source. Defaults to None.
         status (str, optional): The status of the GTFS Realtime source. Defaults to None.
         features (list, optional): A list of features of the GTFS Realtime source. Defaults to None.
-        s_official (str, optional): Flag indicating if the source comes from the agency itself or not. Defaults to None.
+        is_official (str, optional): Flag indicating if the source comes from the agency itself or not. Defaults to None.
         
     Returns:
         GtfsRealtimeSourcesCatalog: The catalog with the updated GTFS Realtime source.

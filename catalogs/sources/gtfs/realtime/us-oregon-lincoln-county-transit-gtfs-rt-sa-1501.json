@@ -6,7 +6,7 @@
     ],
     "provider": "Lincoln County Transit",
     "static_reference": [
-        23
+        "23"
     ],
     "urls": {
         "direct_download": "http://gtfs-realtime.trilliumtransit.com/gtfs-realtime/feed/lincolncounty-or-us/service_alerts.proto",

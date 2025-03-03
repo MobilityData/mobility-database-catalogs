@@ -7,7 +7,7 @@
     "provider": "Humboldt Transit",
     "name": "Redwood Transit System",
     "static_reference": [
-        19
+        "19"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/redwood/gtfs-rt-trip-updates",

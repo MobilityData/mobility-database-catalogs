@@ -7,11 +7,11 @@
     "provider": "Metro Transit",
     "status": "deprecated",
     "static_reference": [
-        394
+        "394"
     ],
     "redirect": [
         {
-            "id": 2095,
+            "id": "2095",
             "comment": "New AVL feed redirect"
         }
     ],

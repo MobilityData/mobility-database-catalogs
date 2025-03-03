@@ -1,7 +1,8 @@
 {
     "mdb_source_id": 909,
     "data_type": "gtfs",
-    "provider": "RVS",
+    "provider": "Karlsruher Verkehrsverbund",
+    "status": "deprecated",
     "location": {
         "country_code": "DE",
         "subdivision_name": "Baden-Württemberg",
@@ -16,7 +17,14 @@
     },
     "urls": {
         "direct_download": "https://www.nvbw.de/fileadmin/user_upload/service/open_data/fahrplandaten_mit_liniennetz/rvs.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-baden-wurttemberg-rvs-gtfs-909.zip?alt=media",
         "license": "https://www.nvbw.de/open-data/fahrplandaten/fahrplandaten-mit-liniennetz"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2231",
+            "comment": " "
+        }
+    ]
 }

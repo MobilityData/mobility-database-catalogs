@@ -2,6 +2,7 @@
     "mdb_source_id": 527,
     "data_type": "gtfs",
     "provider": "Westchester County Bee-Line System (WCDOT)",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "New York",
@@ -16,6 +17,13 @@
     },
     "urls": {
         "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Westchester_County_Bee-Line_System.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-westchester-county-bee-line-system-wcdot-gtfs-527.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2353",
+            "comment": " "
+        }
+    ]
 }

@@ -194,9 +194,8 @@ def add_gtfs_schedule_source(
         status (str, optional): The status of the GTFS Schedule source. Defaults to None.
         features (list, optional): A list of features of the GTFS Schedule source. Defaults to None.
         feed_contact_email (str, optional): The contact email for the feed. Defaults to None.
-        redirects (list, optional): A list of redirect information for the source. Defaults to None.
+        redirects (list, optional): A list of redirect information for the source. Each redirect should be a dict with 'id' (str) and 'comment' (str). Defaults to None.
         is_official (str, optional): Flag indicating if the source comes from the agency itself or not. Defaults to None.
-    
     Returns:
         GtfsScheduleSourcesCatalog: The catalog with the newly added GTFS Schedule source.
     """
@@ -264,9 +263,8 @@ def update_gtfs_schedule_source(
         status (str, optional): The status of the GTFS Schedule source. Defaults to None.
         features (list, optional): A list of features of the GTFS Schedule source. Defaults to None.
         feed_contact_email (str, optional): The contact email for the feed. Defaults to None.
-        redirects (list, optional): A list of redirect information for the source. Defaults to None.
+        redirects (list, optional): A list of redirect information for the source. Each redirect should be a dict with 'id' (str) and 'comment' (str). Defaults to None.
         is_official (str, optional): Flag indicating if the source comes from the agency itself or not. Defaults to None.
-        
     Returns:
         GtfsScheduleSourcesCatalog: The catalog with the updated GTFS Schedule source.
     """

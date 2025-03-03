@@ -2,6 +2,7 @@
     "mdb_source_id": 970,
     "data_type": "gtfs",
     "provider": "Dublin Bus Nitelink",
+    "status": "deprecated",
     "location": {
         "country_code": "IE",
         "subdivision_name": "Dublin",
@@ -16,7 +17,14 @@
     },
     "urls": {
         "direct_download": "https://www.transportforireland.ie/transitData/google_transit_nitelink.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-dublin-dublin-bus-nitelink-gtfs-970.zip?alt=media",
         "license": "https://data.gov.ie/licence"
-    }
+    },
+    "redirect": [
+        {
+            "id": "tld-635",
+            "comment": " "
+        }
+    ]
 }

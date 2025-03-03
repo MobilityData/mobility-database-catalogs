@@ -6,7 +6,7 @@
     ],
     "provider": "Exo Vallée du Richelieu",
     "static_reference": [
-        752
+        "752"
     ],
     "urls": {
         "direct_download": "https://opendata.exo.quebec/ServiceGTFSR/TripUpdate.pb?agency=CITVR",

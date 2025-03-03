@@ -5,7 +5,7 @@
     "status": "deprecated",
     "redirect": [
         {
-            "id": 1999
+            "id": "1999"
         }
     ],
     "location": {

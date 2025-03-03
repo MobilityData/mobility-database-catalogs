@@ -7,7 +7,7 @@
     "provider": "Exo",
     "name": "Exo Trains",
     "static_reference": [
-        748
+        "748"
     ],
     "urls": {
         "direct_download": "https://opendata.exo.quebec/ServiceGTFSR/Alert.pb",

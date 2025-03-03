@@ -6,7 +6,7 @@
     "features": [
         "fares-v1"
     ],
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Oregon",
@@ -25,5 +25,10 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-city-of-corvallis-gtfs-136.zip?alt=media",
         "license": "https://oregon-gtfs.trilliumtransit.com"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "2283",
+            "comment": " "
+        }
+    ]
 }

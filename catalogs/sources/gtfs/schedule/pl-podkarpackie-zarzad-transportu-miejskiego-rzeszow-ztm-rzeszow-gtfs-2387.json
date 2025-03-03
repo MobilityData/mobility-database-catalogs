@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 2387,
+    "data_type": "gtfs",
+    "provider": "Zarząd Transportu Miejskiego Rzeszów (ZTM Rzeszów)",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Podkarpackie",
+        "municipality": "Rzeszów",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2022-03-17T19:50:18+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://mkuran.pl/gtfs/rzeszow.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-podkarpackie-zarzad-transportu-miejskiego-rzeszow-ztm-rzeszow-gtfs-2387.zip?alt=media"
+    }
+}

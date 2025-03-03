@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 2385,
+    "data_type": "gtfs",
+    "provider": "B-Bus",
+    "name": "Transrevis, Vlasava", 
+    "location": {
+        "country_code": "LT",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2024-02-24T16:25:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.stops.lt/LVA/lva/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lt-bbus-gtfs-2385.zip?alt=media"
+    }
+}

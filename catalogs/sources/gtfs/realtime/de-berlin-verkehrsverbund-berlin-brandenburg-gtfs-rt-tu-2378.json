@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 2378,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Verkehrsverbind Berlin Brandenburg",
+    "static_reference": [
+        "782"
+    ],
+    "urls": {
+        "direct_download": "https://production.gtfsrt.vbb.de/data",
+        "authentication_type": 0,
+        "license": "https://www.vbb.de/vbb-services/api-open-data/safira-daten/"
+    }
+}

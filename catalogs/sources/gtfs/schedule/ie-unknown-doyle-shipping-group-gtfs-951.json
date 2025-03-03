@@ -2,6 +2,7 @@
     "mdb_source_id": 951,
     "data_type": "gtfs",
     "provider": "Doyle Shipping Group",
+    "status": "deprecated",
     "location": {
         "country_code": "IE",
         "bounding_box": {
@@ -14,6 +15,8 @@
     },
     "urls": {
         "direct_download": "https://www.transportforireland.ie/transitData/google_transit_ferries.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-unknown-doyle-shipping-group-gtfs-951.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

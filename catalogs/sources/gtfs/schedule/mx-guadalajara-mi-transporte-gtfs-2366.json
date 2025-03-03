@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2366,
+    "data_type": "gtfs",
+    "provider": "Mi Transporte, Mi Transporte Eléctrico, Mi Macro, Mi Tren, SiTren",
+    "name": "Public Transport Routes in the Metropolitan Area of ​​Guadalajara",
+    "location": {
+        "country_code": "MX",
+        "subdivision_name": "Jalisco",
+        "municipality": "Guadajalara Metropolitan Area",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2024-02-24T22:18:38+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://datos.jalisco.gob.mx/sites/default/files/gtfs_amg_20240312.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/mx-guadalajara-mi-transporte-gtfs-2366.zip?alt=media",
+        "license": "https://datos.jalisco.gob.mx/dataset/actualizacion-de-rutas-de-transporte-publico-colectivo-y-masivo-en-la-zona-metropolitana-de"
+    }
+}

@@ -6,7 +6,7 @@
     ],
     "provider": "NYC Ferry",
     "static_reference": [
-        515
+        "515"
     ],
     "urls": {
         "direct_download": "http://nycferry.connexionz.net/rtt/public/utility/gtfsrealtime.aspx/tripupdate",

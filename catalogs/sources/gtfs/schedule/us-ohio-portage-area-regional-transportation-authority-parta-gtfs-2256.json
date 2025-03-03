@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2256,
+    "data_type": "gtfs",
+    "provider": "Portage Area Regional Transportation Authority (PARTA)",
+    "feed_contact_email": "support@passiotech.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Ohio",
+        "municipality": "Portage County",
+        "bounding_box": {
+            "minimum_latitude": 41.066915905,
+            "maximum_latitude": 41.514017,
+            "minimum_longitude": -81.695556,
+            "maximum_longitude": -81.038023,
+            "extracted_on": "2024-11-27T18:57:21+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://passio3.com/parta/passioTransit/gtfs/google_transit.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-ohio-portage-area-regional-transportation-authority-parta-gtfs-2256.zip?alt=media"
+    },
+    "redirect": []
+}

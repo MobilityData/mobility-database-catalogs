@@ -6,7 +6,7 @@
     ],
     "provider": "Anchorage People Mover",
     "static_reference": [
-        225
+        "225"
     ],
     "urls": {
         "direct_download": "http://gtfs-rt.codeforanchorage.org/people_mover.pb",

@@ -2,8 +2,8 @@
     "mdb_source_id": 2177,
     "data_type": "gtfs",
     "provider": "Puget Sound Educational Service District",
-    "name": "Flex",
-    "feed_contact_email": "support+psesd-wa-us@trilliumtransit.com",
+    "status": "deprecated",
+    "name": "do not use - deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Washington",

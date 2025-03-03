@@ -6,7 +6,7 @@
     ],
     "provider": "Tahoe Transportation District (TTD)",
     "static_reference": [
-        897
+        "897"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/bluego/gtfs-rt-vehicle-positions",

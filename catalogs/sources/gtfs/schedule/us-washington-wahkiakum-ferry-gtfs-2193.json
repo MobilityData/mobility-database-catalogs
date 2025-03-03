@@ -16,7 +16,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://oregon-gtfs.trilliumtransit.com/gtfs_data/wahkiakumferry-wa-us/wahkiakumferry-wa-us.zip",
+        "direct_download": "https://data.trilliumtransit.com/gtfs/wahkiakumferry-wa-us/wahkiakumferry-wa-us.zip",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-wahkiakum-ferry-gtfs-2193.zip?alt=media"
     },

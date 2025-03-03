@@ -6,7 +6,7 @@
     ],
     "provider": "Rhode Island Public Transit Authority",
     "static_reference": [
-        624
+        "624"
     ],
     "urls": {
         "direct_download": "http://realtime.ripta.com:81/api/vehiclepositions?format=gtfs.proto",

@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2324,
+    "data_type": "gtfs",
+    "provider": "Middletown Area Transit",
+    "feed_contact_email": "support+test+middletown-ny-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York ",
+        "municipality": "Middletown",
+        "bounding_box": {
+            "minimum_latitude": 41.422013,
+            "maximum_latitude": 41.4642470822942,
+            "minimum_longitude": -74.444488,
+            "maximum_longitude": -74.358734722909,
+            "extracted_on": "2024-11-28T19:40:49+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/middletown-ny-us/middletown-ny-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-middletown-area-transit-gtfs-2324.zip?alt=media"
+    },
+    "redirect": []
+}

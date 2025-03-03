@@ -2,6 +2,7 @@
     "mdb_source_id": 946,
     "data_type": "gtfs",
     "provider": "Airport Hopper",
+    "status": "deprecated",
     "location": {
         "country_code": "IE",
         "subdivision_name": "Dublin",
@@ -16,6 +17,8 @@
     },
     "urls": {
         "direct_download": "https://www.transportforireland.ie/transitData/google_transit_dualway.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-dublin-airport-hopper-gtfs-946.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

@@ -682,8 +682,8 @@ class GtfsScheduleSource(Source):
         if redirects is not None:
             self.redirects = [
                 {
-                    REDIRECT_ID: elem.get(REDIRECT_ID), REDIRECT_COMMENT: elem.get(REDIRECT_COMMENT)
-                 } for elem in redirects
+                    REDIRECT_ID: str(elem.get(REDIRECT_ID)), REDIRECT_COMMENT: elem.get(REDIRECT_COMMENT)
+                } for elem in redirects
             ]
             self.redirects = list(filter(lambda x: x.get(REDIRECT_ID) is not None, self.redirects))
         return self
@@ -878,7 +878,7 @@ class GtfsRealtimeSource(Source):
         static_sources = []
         if static_reference is not None:
             static_sources = [
-                cls.static_catalog.get_source(source_id)
+                cls.static_catalog.get_source(str(source_id))
                 for source_id in static_reference
             ]
         return static_sources

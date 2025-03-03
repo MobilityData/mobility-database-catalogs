@@ -9,7 +9,7 @@
     "location": {
         "country_code": "US",
         "subdivision_name": "Washington",
-        "municipality": "Wenatchee ",
+        "municipality": "Wenatchee",
         "bounding_box": {
             "minimum_latitude": 47.362503,
             "maximum_latitude": 47.885025,

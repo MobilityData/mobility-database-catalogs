@@ -7,7 +7,7 @@
     "provider": "Port Authority of Allegheny County",
     "name": "Port Authority of Allegheny County Rail",
     "static_reference": [
-        409
+        "409"
     ],
     "urls": {
         "direct_download": "http://truetime.portauthority.org/gtfsrt-train/vehicles",

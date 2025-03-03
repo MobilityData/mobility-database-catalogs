@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 2191,
     "data_type": "gtfs",
-    "provider": "Boulder County ",
+    "provider": "Boulder County",
     "feed_contact_email": "support+test+viamobilityservices-co-us@trilliumtransit.com",
     "location": {
         "country_code": "US",

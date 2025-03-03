@@ -2,8 +2,8 @@
     "mdb_source_id": 2162,
     "data_type": "gtfs",
     "provider": "COAST Transportation",
-    "name": "Flex",
-    "feed_contact_email": "support+coasttransportation-wa-us@trilliumtransit.com",
+    "name": "Do not use - deprecated",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Washington",

@@ -4,9 +4,9 @@
     "entity_type": [
         "sa"
     ],
-    "provider": "Metro Transit",
+    "provider": "Metro Transit - City of Madison",
     "static_reference": [
-        394
+        "394"
     ],
     "urls": {
         "direct_download": "https://metromap.cityofmadison.com/gtfsrt/alerts",

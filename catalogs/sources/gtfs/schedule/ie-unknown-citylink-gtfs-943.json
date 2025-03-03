@@ -2,6 +2,7 @@
     "mdb_source_id": 943,
     "data_type": "gtfs",
     "provider": "Citylink",
+    "status": "deprecated",
     "location": {
         "country_code": "IE",
         "bounding_box": {
@@ -14,7 +15,14 @@
     },
     "urls": {
         "direct_download": "https://www.transportforireland.ie/transitData/google_transit_citylink.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-unknown-citylink-gtfs-943.zip?alt=media",
         "license": "https://data.gov.ie/licence"
-    }
+    },
+    "redirect": [
+        {
+            "id": "tld-637",
+            "comment": " "
+        }
+    ]
 }

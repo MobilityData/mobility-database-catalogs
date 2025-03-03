@@ -6,7 +6,7 @@
     ],
     "provider": "Turlock Transit",
     "static_reference": [
-        619
+        "619"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/turlock/gtfs-rt-trip-updates",

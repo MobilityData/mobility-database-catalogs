@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 2228,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Foothill Transit",
+    "static_reference": [
+        "101"
+    ],
+    "urls": {
+        "direct_download": "https://foothill_3rdparty.rideralerts.com/myStop/GTFS-Realtime.ashx?&Type=Alert",
+        "authentication_type": 0,
+        "license": "https://www.foothilltransit.org/about/developer-resources/developer-license-agreement/"
+    }
+}

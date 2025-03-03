@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2353,
+    "data_type": "gtfs",
+    "provider": "Westchester County Bee-Line System (WCDOT)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "bounding_box": {
+            "minimum_latitude": 40.74128,
+            "maximum_latitude": 41.421923,
+            "minimum_longitude": -73.989067,
+            "maximum_longitude": -73.659724,
+            "extracted_on": "2025-01-20T15:35:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://planning.westchestergov.com/images/stories/zip/GTFS.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-westchester-county-bee-line-system-wcdot-gtfs-2353.zip?alt=media",
+        "license": "https://planning.westchestergov.com/transportation-planning/gfts-developers-transit-api/transit-api-service-terms-of-service"
+    },
+    "redirect": []
+}

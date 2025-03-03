@@ -1,15 +1,15 @@
 {
     "mdb_source_id": 562,
     "data_type": "gtfs",
-    "provider": "La Campana",
+    "provider": "City of Bell (La Campana)",
     "features": [
         "fares-v1"
     ],
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
-        "municipality": "Los Angeles",
+        "municipality": "Bell",
         "bounding_box": {
             "minimum_latitude": 33.9653511222492,
             "maximum_latitude": 33.9824536922432,
@@ -20,6 +20,13 @@
     },
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/lacampana-ca-us/lacampana-ca-us.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-la-campana-gtfs-562.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2249",
+            "comment": " "
+        }
+    ]
 }

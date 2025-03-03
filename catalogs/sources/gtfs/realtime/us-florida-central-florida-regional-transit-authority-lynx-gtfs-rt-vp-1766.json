@@ -6,7 +6,7 @@
     ],
     "provider": "Central Florida Regional Transit Authority (LYNX)",
     "static_reference": [
-        347
+        "347"
     ],
     "urls": {
         "direct_download": "http://gtfsrt.golynx.com/gtfsrt/GTFS_VehiclePositions.pb",

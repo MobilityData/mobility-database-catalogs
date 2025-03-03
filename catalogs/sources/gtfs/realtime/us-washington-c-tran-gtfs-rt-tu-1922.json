@@ -6,7 +6,7 @@
     ],
     "provider": "C-TRAN",
     "static_reference": [
-        258
+        "258"
     ],
     "urls": {
         "direct_download": "http://gtfs-rt.c-tran.org/gtfsrealtime/TripUpdates",

@@ -6,7 +6,7 @@
     ],
     "provider": "Nevada County Connects (Gold Country Stage)",
     "static_reference": [
-        84
+        "84"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/gold-country-stage/gtfs-rt-alerts/",

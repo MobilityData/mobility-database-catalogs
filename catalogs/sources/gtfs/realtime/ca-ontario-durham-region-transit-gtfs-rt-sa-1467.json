@@ -5,7 +5,7 @@
         "sa"
     ],
     "provider": "Durham Region Transit",
-    "static_reference": [726],
+    "static_reference": ["726"],
     "urls": {
         "direct_download": "https://maps.durham.ca/OpenDataGTFS/alerts.pb",
         "authentication_type": 0,

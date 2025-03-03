@@ -6,7 +6,7 @@
     ],
     "provider": "MOOver!",
     "static_reference": [
-        434
+        "434"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/moover/gtfs-rt-vehicle-positions",

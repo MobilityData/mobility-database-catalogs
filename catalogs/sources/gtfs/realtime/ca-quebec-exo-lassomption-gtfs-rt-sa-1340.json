@@ -6,7 +6,7 @@
     ],
     "provider": "Exo L'Assomption",
     "static_reference": [
-        755
+        "755"
     ],
     "urls": {
         "direct_download": "https://opendata.exo.quebec/ServiceGTFSR/Alert.pb?agency=MRCLASSO",

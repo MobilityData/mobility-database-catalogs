@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Société des transports de Rimouski",
     "feed_contact_email": "support+test+str-qc-ca@trilliumtransit.com",
+    "status": "deprecated",
     "location": {
         "country_code": "CA",
         "subdivision_name": "Québec",
@@ -20,5 +21,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-societe-des-transports-de-rimouski-gtfs-760.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "2276",
+            "comment": " "
+        }
+    ]
 }

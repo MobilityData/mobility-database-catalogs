@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 394,
     "data_type": "gtfs",
-    "provider": "Metro Transit",
+    "provider": "Metro Transit - City of Madison",
     "feed_contact_email": "mymetrobus@cityofmadison.com",
     "features": [
         "fares-v1"

@@ -15,7 +15,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://opentransportdata.swiss/de/dataset/gtfsflex/permalink",
+        "direct_download": "https://data.opentransportdata.swiss/de/dataset/gtfsflex/permalink",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-unknown-postauto-ag-gtfs-2053.zip?alt=media"
     },

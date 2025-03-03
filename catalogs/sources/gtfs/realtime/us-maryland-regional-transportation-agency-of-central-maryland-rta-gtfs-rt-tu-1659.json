@@ -6,7 +6,7 @@
     ],
     "provider": "Regional Transportation Agency of Central Maryland (RTA)",
     "static_reference": [
-        489
+        "489"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/rtamaryland/gtfs-rt-trip-updates",

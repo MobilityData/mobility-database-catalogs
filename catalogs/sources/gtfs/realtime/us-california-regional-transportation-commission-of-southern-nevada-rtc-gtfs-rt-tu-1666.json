@@ -6,7 +6,7 @@
     ],
     "provider": "Regional Transportation Commission of Southern Nevada (RTC)",
     "static_reference": [
-        110
+        "110"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/las-vegas-rtc/gtfs-rt-trip-updates",

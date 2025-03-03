@@ -2,6 +2,7 @@
     "mdb_source_id": 968,
     "data_type": "gtfs",
     "provider": "Michael Kilbride",
+    "status": "deprecated",
     "location": {
         "country_code": "IE",
         "subdivision_name": "Kilkenny",
@@ -16,6 +17,13 @@
     },
     "urls": {
         "direct_download": "https://www.transportforireland.ie/transitData/google_transit_mkilbride.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-kilkenny-michael-kilbride-gtfs-968.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "tld-5576",
+            "comment": " "
+        }
+    ]
 }

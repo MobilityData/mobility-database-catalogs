@@ -6,7 +6,7 @@
     ],
     "provider": "Halifax Transit",
     "static_reference": [
-        734
+        "734"
     ],
     "urls": {
         "direct_download": "http://gtfs.halifax.ca/realtime/Alert/Alerts.pb",

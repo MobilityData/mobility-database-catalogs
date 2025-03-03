@@ -6,7 +6,7 @@
     ],
     "provider": "Cascades East Transit",
     "static_reference": [
-        138
+        "138"
     ],
     "urls": {
         "direct_download": "http://gtfs-realtime.trilliumtransit.com/gtfs-realtime/feed/cascadeseast-or-us/service_alerts.proto",

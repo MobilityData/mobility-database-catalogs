@@ -6,7 +6,7 @@
     ],
     "provider": "BC Transit (Comox Valley Transit System)",
     "static_reference": [
-        693
+        "693"
     ],
     "urls": {
         "direct_download": "https://comox.mapstrat.com/current/gtfrealtime_ServiceAlerts.bin",

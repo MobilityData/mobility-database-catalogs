@@ -2,6 +2,7 @@
     "mdb_source_id": 938,
     "data_type": "gtfs",
     "provider": "JJ/Bernard Kavanagh",
+    "status": "deprecated",
     "location": {
         "country_code": "IE",
         "bounding_box": {
@@ -14,6 +15,13 @@
     },
     "urls": {
         "direct_download": "https://www.transportforireland.ie/transitData/google_transit_bkavanagh.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-unknown-jjbernard-kavanagh-gtfs-938.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "tld-592",
+            "comment": " "
+        }
+    ]
 }

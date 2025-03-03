@@ -6,7 +6,7 @@
     ],
     "provider": "Thunder Bay Transit",
     "static_reference": [
-        736
+        "736"
     ],
     "urls": {
         "direct_download": "http://api.nextlift.ca/gtfs-realtime/alerts.pb",

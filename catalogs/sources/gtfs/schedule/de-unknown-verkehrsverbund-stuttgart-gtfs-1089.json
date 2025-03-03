@@ -1,8 +1,8 @@
 {
     "mdb_source_id": 1089,
     "data_type": "gtfs",
-    "provider": "Verkehrsverbund Stuttgart",
-    "name": "gtfs.de - GTFS für Deutschland, Daten bereitgestellt von DELFI e.V.",
+    "provider": "Regional Rail Transport Germany",
+    "name": "gtfs.de - GTFS for Germany Data provided by DELFI e.V",
     "location": {
         "country_code": "DE",
         "bounding_box": {
@@ -15,6 +15,8 @@
     },
     "urls": {
         "direct_download": "https://download.gtfs.de/germany/rv_free/latest.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-unknown-verkehrsverbund-stuttgart-gtfs-1089.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

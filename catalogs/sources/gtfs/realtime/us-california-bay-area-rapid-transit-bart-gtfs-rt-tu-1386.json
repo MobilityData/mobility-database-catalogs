@@ -6,7 +6,7 @@
     ],
     "provider": "Bay Area Rapid Transit (BART)",
     "static_reference": [
-        53
+        "53"
     ],
     "urls": {
         "direct_download": "http://api.bart.gov/gtfsrt/tripupdate.aspx",

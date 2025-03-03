@@ -6,7 +6,7 @@
     ],
     "provider": "Exo Laurentides",
     "static_reference": [
-        744
+        "744"
     ],
     "urls": {
         "direct_download": "https://opendata.exo.quebec/ServiceGTFSR/VehiclePosition.pb?agency=CITLA",

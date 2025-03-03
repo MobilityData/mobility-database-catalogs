@@ -6,7 +6,7 @@
     ],
     "provider": "Sunset Empire Transportation District",
     "static_reference": [
-        246
+        "246"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/setd/gtfs-rt-vehicle-positions",

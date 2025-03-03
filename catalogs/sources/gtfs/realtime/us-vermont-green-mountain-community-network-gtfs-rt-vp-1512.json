@@ -6,7 +6,7 @@
     ],
     "provider": "Green Mountain Community Network",
     "static_reference": [
-        539
+        "539"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/bennington-gmcn/gtfs-rt-vehicle-positions",

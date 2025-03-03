@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2269,
+    "data_type": "gtfs",
+    "provider": "StarTran",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Nebraska",
+        "municipality": "Lincoln",
+        "bounding_box": {
+            "minimum_latitude": 40.726212,
+            "maximum_latitude": 40.879581,
+            "minimum_longitude": -96.795436,
+            "maximum_longitude": -96.593608,
+            "extracted_on": "2024-11-27T19:28:09+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://startran.connexionz.net/rtt/public/resource/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-nebraska-startran-gtfs-2269.zip?alt=media"
+    },
+    "redirect": []
+}

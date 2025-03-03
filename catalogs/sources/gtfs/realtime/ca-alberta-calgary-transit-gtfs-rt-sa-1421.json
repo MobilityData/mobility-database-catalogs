@@ -6,7 +6,7 @@
     ],
     "provider": "Calgary Transit",
     "static_reference": [
-        712
+        "712"
     ],
     "urls": {
         "direct_download": "http://transitdata.calgary.ca/ctransit/alerts.pb",

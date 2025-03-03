@@ -6,7 +6,7 @@
     "feed_contact_email": "support+southwestrides-co-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
-        "subdivision_name": "Colorado ",
+        "subdivision_name": "Colorado",
         "municipality": "Durango",
         "bounding_box": {
             "minimum_latitude": 37.268845,

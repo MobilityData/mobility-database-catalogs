@@ -6,7 +6,7 @@
     ],
     "provider": "Zarząd Dróg i Transportu Miejskiego (ZDiTM)",
     "static_reference": [
-        981
+        "981"
     ],
     "urls": {
         "direct_download": "https://www.zditm.szczecin.pl/storage/gtfs/gtfs-rt-trips.pb",

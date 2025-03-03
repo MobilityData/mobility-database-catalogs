@@ -6,7 +6,7 @@
     ],
     "provider": "Exo Chambly-Richelieu-Carignan",
     "static_reference": [
-        750
+        "750"
     ],
     "urls": {
         "direct_download": "https://opendata.exo.quebec/ServiceGTFSR/TripUpdate.pb?agency=CITCRC",

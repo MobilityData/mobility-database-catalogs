@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2310,
+    "data_type": "gtfs",
+    "provider": "Guemes Island Ferry",
+    "feed_contact_email": "support+test+guemesislandferry-wa-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Washington",
+        "municipality": "Skagit County",
+        "bounding_box": {
+            "minimum_latitude": 48.51848861136108,
+            "maximum_latitude": 48.52832532504746,
+            "minimum_longitude": -122.62466178982564,
+            "maximum_longitude": -122.62355207752464,
+            "extracted_on": "2024-11-28T18:37:39+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/guemesislandferry-wa-us/guemesislandferry-wa-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-guemes-island-ferry-gtfs-2310.zip?alt=media"
+    },
+    "redirect": []
+}

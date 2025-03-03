@@ -7,7 +7,7 @@
     "provider": "Southeastern Pennsylvania Transportation Authority (SEPTA)",
     "name": "SEPTA Rail",
     "static_reference": [
-        503
+        "503"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/septa-rail/gtfs-rt-vehicle-positions",

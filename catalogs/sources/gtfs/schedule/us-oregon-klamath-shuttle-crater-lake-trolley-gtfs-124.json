@@ -20,7 +20,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://oregon-gtfs.com/gtfs_data/craterlaketrolley-or-us/craterlaketrolley-or-us.zip",
+        "direct_download": "https://oregon-gtfs.trilliumtransit.com/gtfs_data/craterlaketrolley-or-us/craterlaketrolley-or-us.zip",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-klamath-shuttle-crater-lake-trolley-gtfs-124.zip?alt=media"
     },

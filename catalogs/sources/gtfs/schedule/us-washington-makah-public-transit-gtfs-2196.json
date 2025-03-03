@@ -4,7 +4,7 @@
     "provider": "Makah Public Transit",
     "feed_contact_email": "support+test+makah-wa-us@trilliumtransit.com",
     "location": {
-        "country_code": "US ",
+        "country_code": "US",
         "subdivision_name": "Washington",
         "municipality": "Makah",
         "bounding_box": {

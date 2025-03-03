@@ -6,7 +6,7 @@
     ],
     "provider": "Exo Sorel-Varennes",
     "static_reference": [
-        741
+        "741"
     ],
     "urls": {
         "direct_download": "https://opendata.exo.quebec/ServiceGTFSR/TripUpdate.pb?agency=CITSV",

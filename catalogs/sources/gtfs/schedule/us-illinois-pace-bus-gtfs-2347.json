@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 2347,
+    "data_type": "gtfs",
+    "provider": "Pace Bus",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Illinois",
+        "bounding_box": {
+            "minimum_latitude": 41.4039756,
+            "maximum_latitude": 42.4574028,
+            "minimum_longitude": -88.6210093,
+            "maximum_longitude": -87.5226126,
+            "extracted_on": "2025-01-20T15:35:07+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.pacebus.com/gtfsdownload",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-illinois-pace-bus-gtfs-2347.zip?alt=media"
+    },
+    "redirect": []
+}

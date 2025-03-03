@@ -7,7 +7,7 @@
     "provider": "Haarasilta Toivo Samuli, Järvisen Liikenne Oy, Koiviston Auto Oy, Lehtimäen Liikenne Oy, Bus Travel Oy Reissu Ruoti, Tilausliikenne Kuisma Ky",
     "name": "Lahti",
     "static_reference": [
-        1129
+        "1129"
     ],
     "urls": {
         "direct_download": "https://data.waltti.fi/lahti/api/gtfsrealtime/v1.0/feed/vehicleposition",

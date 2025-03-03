@@ -7,7 +7,7 @@
     "provider": "SeaLink Pine Harbour, Waikato Regional Council, Pavlovich Transport Solutions, AT Metro",
     "name": "Auckland Transport Developer",
     "static_reference": [
-        1029
+        "1029"
     ],
     "urls": {
         "direct_download": "https://api.at.govt.nz/v2/public/realtime/servicealerts",

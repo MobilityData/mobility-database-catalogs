@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "John Paul Healy, Kyanitedale Ltd, Philip Farrell, Cummer Coaches Ltd, EastPoint, Galway Bus Ltd, Martin Leydon Coaches, John O'Donoghue & Sons, Gorey Bus Links, McGonagle Bus and Coach Hire, GoBus, Avalen Limited, Treacy Coaches, Barrys Coaches, Bus4u, Dunnes Coaches, K. Buggy Coaches Llimited, Donal Harrington, Joe Doherty Bus Hire, Matthew Whelan Mini Bus Hire, Michael Donegan, O'Donoghues, McConnon Travel, Kelly Travel, Hallahans Bus and Coach Hire, Foyle Coaches North West Busways Ltd, Westlink Coaches, Patrick Gallagher Travel, St.Kevin's Bus Service, Nash Minibus & Coach Hire, Sillan Tours, Island Ferries Teoranta, Andrew Wharton, Gleneagle Hotel (Killarney) Ltd, Keelings Retail UC, James Carolan, Flagline Coaches, Gap Of Dunloe Tours, Pat Naughton, Patrick Gallagher, Eugene Deffely, Flight Link Limited, Joe Moroney Coach Hire Ltd, Fair Isle",
     "name": "Single route operators",
+    "status": "deprecated",
     "location": {
         "country_code": "IE",
         "bounding_box": {
@@ -15,6 +16,13 @@
     },
     "urls": {
         "direct_download": "https://www.transportforireland.ie/transitData/google_transit_sro.zip",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-unknown-john-paul-healy-gtfs-1097.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "tld-5576",
+            "comment": " "
+        }
+    ]
 }

@@ -107,8 +107,8 @@ class TestOperations(TestCase):
         test_is_official = "True"
         feed_contact_email = "test contact email"
         redirects = [
-            {"id": 123, "comment": "test_url"},
-            {"id": 456, "comment": "test_url"},
+            {"id": "123", "comment": "test_url"},
+            {"id": "456", "comment": "test_url"},
             {"wrong_key": "test_value"}
         ]
         under_test = add_gtfs_schedule_source(
@@ -152,8 +152,8 @@ class TestOperations(TestCase):
         test_is_official = "True"
         feed_contact_email = "test contact email changed"
         redirects = [
-            {"id": 123, "comment": "test_url"},
-            {"id": 123, "comment": "test_url changed"},
+            {"id": "123", "comment": "test_url"},
+            {"id": "123", "comment": "test_url changed"},
             {"wrong_key": "test_value"}
         ]
         under_test = update_gtfs_schedule_source(

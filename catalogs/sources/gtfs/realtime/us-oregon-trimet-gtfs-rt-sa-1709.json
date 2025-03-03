@@ -6,7 +6,7 @@
     ],
     "provider": "TriMet",
     "static_reference": [
-        247
+        "247"
     ],
     "urls": {
         "direct_download": "http://developer.trimet.org/ws/V1/FeedSpecAlerts/",

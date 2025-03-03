@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 2180,
     "data_type": "gtfs",
-    "provider": "San Joaquin Regional Transit District ",
+    "provider": "San Joaquin Regional Transit District",
     "name": "Flex",
     "feed_contact_email": "support+sanjoaquin-ca-us@trilliumtransit.com",
     "location": {

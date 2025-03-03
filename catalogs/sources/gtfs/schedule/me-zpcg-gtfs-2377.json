@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 2377,
+    "data_type": "gtfs",
+    "provider": "Željeznički prevoz Crne Gore", 
+    "location": {
+        "country_code": "ME",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2024-02-24T16:25:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://jbb.ghsq.de/gtfs/me-zpcg.gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/me-zpcg-gtfs-2377.zip?alt=media",
+        "license": "https://jbb.ghsq.de/kde/2024/02/25/Call-for-feeds-Make-your-region-available-in-our-open-transit-router.html"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 2380,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu",
+        "sa",
+        "vp"
+    ],
+    "provider": "Société de transport collectif de Pierre-De Saurel",
+    "static_reference": [
+        "2379"
+    ],
+    "urls": {
+        "direct_download": "https://zenbus.net/gtfs/rt/poll.proto?dataset=pierre-de-saurel",
+        "authentication_type": 0
+    }
+}

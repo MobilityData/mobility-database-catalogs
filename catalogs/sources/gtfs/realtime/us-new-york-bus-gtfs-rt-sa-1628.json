@@ -7,7 +7,7 @@
     "provider": "Metropolitan Transit Authority (MTA)",
     "name": "Bus",
     "static_reference": [
-        510
+        "510"
     ],
     "urls": {
         "direct_download": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/camsys%2Fbus-alerts",

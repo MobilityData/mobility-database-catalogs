@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2363,
+    "data_type": "gtfs",
+    "provider": "Danville Mass Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Illinois",
+        "municipality": "Danville",
+        "bounding_box": {
+            "minimum_latitude": 39.97452163696289,
+            "maximum_latitude": 40.203575134277344,
+            "minimum_longitude": -88.24101257324219,
+            "maximum_longitude": -87.53973388671875,
+            "extracted_on": "2025-02-10T19:29:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.ridedmt.org/home/showpublisheddocument/1979/638106764822070000",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-illinois-danville-mass-transit-gtfs-2363.zip?alt=media",
+        "license": "https://www.ridedmt.org/schedules-fares/gtfs-feed"
+    },
+    "redirect": []
+}

@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2300,
+    "data_type": "gtfs",
+    "provider": "Biddeford Saco Old Orchard Beach Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Maine",
+        "municipality": "Biddeford",
+        "bounding_box": {
+            "minimum_latitude": 43.453067,
+            "maximum_latitude": 43.663383,
+            "minimum_longitude": -70.514467,
+            "maximum_longitude": -70.256683,
+            "extracted_on": "2024-11-28T18:06:07+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/bsoob-me-us/bsoob-me-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maine-biddeford-saco-old-orchard-beach-transit-gtfs-2300.zip?alt=media"
+    },
+    "redirect": []
+}

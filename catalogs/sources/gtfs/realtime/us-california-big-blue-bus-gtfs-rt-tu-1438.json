@@ -6,7 +6,7 @@
     ],
     "provider": "Big Blue Bus",
     "static_reference": [
-        37
+        "37"
     ],
     "urls": {
         "direct_download": "http://gtfs.bigbluebus.com/tripupdates.bin",

@@ -6,7 +6,7 @@
     ],
     "provider": "Kingston Transit",
     "static_reference": [
-        733
+        "733"
     ],
     "urls": {
         "direct_download": "https://api.cityofkingston.ca/gtfs-realtime/tripupdates.pb",

@@ -6,7 +6,7 @@
     ],
     "provider": "York Region Transit",
     "static_reference": [
-        728
+        "728"
     ],
     "urls": {
         "direct_download": "http://rtu.york.ca/gtfsrealtime/TripUpdates",

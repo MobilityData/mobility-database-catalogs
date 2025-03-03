@@ -6,7 +6,7 @@
     ],
     "provider": "Rural Community Transportation (RCT)",
     "static_reference": [
-        448
+        "448"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/rct/gtfs-rt-vehicle-positions",

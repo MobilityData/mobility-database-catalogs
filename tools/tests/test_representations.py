@@ -38,6 +38,7 @@ from tools.representations import (
     NOTE,
     FEATURES,
     STATUS,
+    IS_OFFICIAL,
     json,
 )
 
@@ -227,6 +228,16 @@ class TestSourcesCatalog(TestCase):
         under_test = instance.get_sources_by_status(status=test_status)
         self.assertEqual(under_test, {self.test_source_key: self.test_json})
 
+    @patch("tools.representations.Catalog.aggregate")
+    def test_get_sources_by_is_official(self, mock_aggregate):
+        mock_aggregate.return_value = self.test_catalog
+        self.test_source.has_is_official.return_value = True
+        self.test_another_source.has_is_official.return_value = False
+        instance = SourcesCatalog(**self.test_kwargs)
+        test_is_official = "True"
+        under_test = instance.get_sources_by_is_official(is_official=test_is_official)
+        self.assertEqual(under_test, {self.test_source_key: self.test_json})        
+
     @patch("tools.representations.SourcesCatalog.save")
     @patch("tools.representations.isinstance")
     @patch("tools.representations.Catalog.identify")
@@ -294,6 +305,7 @@ class TestGtfsScheduleSource(TestCase):
         self.test_feature = "some_feature"
         self.test_features = [self.test_feature]
         self.test_status = "some_status"
+        self.test_is_official = "some_is_official"
         self.test_filename = "some_filename"
         self.test_country_code = "some_country_code"
         self.test_subdivision_name = "some_subdivision_name"
@@ -331,6 +343,7 @@ class TestGtfsScheduleSource(TestCase):
             LICENSE: self.test_license_url,
             FEATURES: self.test_features,
             STATUS: self.test_status,
+            IS_OFFICIAL: self.test_is_official,
         }
         self.test_schema = {
             MDB_SOURCE_ID: self.test_mdb_source_id,
@@ -339,6 +352,7 @@ class TestGtfsScheduleSource(TestCase):
             NAME: self.test_name,
             FEATURES: self.test_features,
             STATUS: self.test_status,
+            IS_OFFICIAL: self.test_is_official,
             LOCATION: {
                 COUNTRY_CODE: self.test_country_code,
                 SUBDIVISION_NAME: self.test_subdivision_name,
@@ -447,6 +461,15 @@ class TestGtfsScheduleSource(TestCase):
         self.assertTrue(under_test)
         under_test = instance.has_status(status=test_another_status)
         self.assertFalse(under_test)
+
+    def test_has_is_official(self):
+        test_is_official = self.test_is_official
+        test_another_is_official = "some_other_is_official"
+        instance = GtfsScheduleSource(filename=self.test_filename, **self.test_schema)
+        under_test = instance.has_is_official(is_official=test_is_official)
+        self.assertTrue(under_test)
+        under_test = instance.has_is_official(is_official=test_another_is_official)
+        self.assertFalse(under_test)        
 
     @patch("tools.representations.os")
     @patch("tools.representations.get_iso_time")
@@ -651,6 +674,7 @@ class TestGtfsRealtimeSource(TestCase):
         self.test_feature = "some_feature"
         self.test_features = [self.test_feature]
         self.test_status = "some_status"
+        self.test_is_official = "some_is_official"
         self.test_kwargs = {
             MDB_SOURCE_ID: self.test_mdb_source_id,
             DATA_TYPE: self.test_data_type,
@@ -667,6 +691,7 @@ class TestGtfsRealtimeSource(TestCase):
             LICENSE: self.test_license_url,
             FEATURES: self.test_features,
             STATUS: self.test_status,
+            IS_OFFICIAL: self.test_is_official,
         }
         self.test_schema = {
             MDB_SOURCE_ID: self.test_mdb_source_id,
@@ -685,6 +710,7 @@ class TestGtfsRealtimeSource(TestCase):
                 API_KEY_PARAMETER_NAME: self.test_api_key_parameter_name,
                 LICENSE: self.test_license_url,
             },
+            IS_OFFICIAL: self.test_is_official,
         }
 
     @patch("tools.representations.GtfsRealtimeSource.static_catalog")
@@ -812,6 +838,16 @@ class TestGtfsRealtimeSource(TestCase):
         under_test = instance.has_status(status=test_status)
         self.assertTrue(under_test)
         under_test = instance.has_status(status=test_another_status)
+        self.assertFalse(under_test)
+
+    @patch("tools.representations.GtfsRealtimeSource.static_catalog")
+    def test_has_is_official(self, mock_static_catalog):
+        test_is_official = self.test_is_official
+        test_another_is_official = "some_other_is_official"
+        instance = GtfsRealtimeSource(filename=self.test_filename, **self.test_schema)
+        under_test = instance.has_is_official(is_official=test_is_official)
+        self.assertTrue(under_test)
+        under_test = instance.has_is_official(is_official=test_another_is_official)
         self.assertFalse(under_test)
 
     @patch("tools.representations.GtfsRealtimeSource.static_catalog")

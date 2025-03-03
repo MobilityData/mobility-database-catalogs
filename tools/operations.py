@@ -21,6 +21,7 @@ from tools.constants import (
     MDB_SOURCE_ID,
     FEED_CONTACT_EMAIL,
     REDIRECTS,
+    IS_OFFICIAL
 )
 from tools.representations import GtfsScheduleSourcesCatalog, GtfsRealtimeSourcesCatalog
 
@@ -42,10 +43,11 @@ def add_gtfs_realtime_source(
     api_key_parameter_name=None,
     license_url=None,
     name=None,
-    static_reference=None,
+    static_reference=None,                                                                                                                              
     note=None,
     status=None,
     features=None,
+    is_official=None,
 ):
     """
     Add a new GTFS Realtime source to the Mobility Catalogs.
@@ -66,7 +68,8 @@ def add_gtfs_realtime_source(
         note (str, optional): Additional notes regarding the source. Defaults to None.
         status (str, optional): The status of the GTFS Realtime source. Defaults to None.
         features (list, optional): A list of features of the GTFS Realtime source. Defaults to None.
-
+        is_official (str, optional): Flag indicating if the source comes from the agency itself or not. Defaults to None.
+    
     Returns:
         GtfsRealtimeSourcesCatalog: The catalog with the newly added GTFS Realtime source.
     """
@@ -84,6 +87,7 @@ def add_gtfs_realtime_source(
         LICENSE: license_url,
         STATUS: status,
         FEATURES: features,
+        IS_OFFICIAL: is_official
     }
     catalog.add(**data)
     return catalog
@@ -103,6 +107,7 @@ def update_gtfs_realtime_source(
     note=None,
     status=None,
     features=None,
+    is_official = None,
 ):
     """
     Update an existing GTFS Realtime source in the Mobility Catalogs.
@@ -124,7 +129,8 @@ def update_gtfs_realtime_source(
         note (str, optional): Additional notes regarding the source. Defaults to None.
         status (str, optional): The status of the GTFS Realtime source. Defaults to None.
         features (list, optional): A list of features of the GTFS Realtime source. Defaults to None.
-
+        is_official (str, optional): Flag indicating if the source comes from the agency itself or not. Defaults to None.
+        
     Returns:
         GtfsRealtimeSourcesCatalog: The catalog with the updated GTFS Realtime source.
     """
@@ -143,6 +149,7 @@ def update_gtfs_realtime_source(
         LICENSE: license_url,
         STATUS: status,
         FEATURES: features,
+        IS_OFFICIAL: is_official,
     }
     catalog.update(**data)
     return catalog
@@ -164,6 +171,7 @@ def add_gtfs_schedule_source(
     features=None,
     feed_contact_email=None,
     redirects=None,
+    is_official=None,
 ):
     """
     Add a new GTFS Schedule source to the Mobility Catalogs.
@@ -187,7 +195,7 @@ def add_gtfs_schedule_source(
         features (list, optional): A list of features of the GTFS Schedule source. Defaults to None.
         feed_contact_email (str, optional): The contact email for the feed. Defaults to None.
         redirects (list, optional): A list of redirect information for the source. Each redirect should be a dict with 'id' (str) and 'comment' (str). Defaults to None.
-
+        is_official (str, optional): Flag indicating if the source comes from the agency itself or not. Defaults to None.
     Returns:
         GtfsScheduleSourcesCatalog: The catalog with the newly added GTFS Schedule source.
     """
@@ -208,6 +216,7 @@ def add_gtfs_schedule_source(
         FEATURES: features,
         FEED_CONTACT_EMAIL: feed_contact_email,
         REDIRECTS: redirects,
+        IS_OFFICIAL: is_official,
     }
     catalog.add(**data)
     return catalog
@@ -230,6 +239,7 @@ def update_gtfs_schedule_source(
     features=None,
     feed_contact_email=None,
     redirects=None,
+    is_official=None,
 ):
     """
     Update a GTFS Schedule source in the Mobility Catalogs.
@@ -254,7 +264,7 @@ def update_gtfs_schedule_source(
         features (list, optional): A list of features of the GTFS Schedule source. Defaults to None.
         feed_contact_email (str, optional): The contact email for the feed. Defaults to None.
         redirects (list, optional): A list of redirect information for the source. Each redirect should be a dict with 'id' (str) and 'comment' (str). Defaults to None.
-
+        is_official (str, optional): Flag indicating if the source comes from the agency itself or not. Defaults to None.
     Returns:
         GtfsScheduleSourcesCatalog: The catalog with the updated GTFS Schedule source.
     """
@@ -276,6 +286,7 @@ def update_gtfs_schedule_source(
         FEATURES: features,
         FEED_CONTACT_EMAIL: feed_contact_email,
         REDIRECTS: redirects,
+        IS_OFFICIAL: is_official,
     }
     catalog.update(**data)
     return catalog
@@ -467,5 +478,31 @@ def get_sources_by_feature(
     for catalog_cls in source_type_map[CATALOGS]:
         sources.update(
             globals()[f"{catalog_cls}"]().get_sources_by_feature(feature=feature)
+        )
+    return dict(sorted(sources.items()))
+
+def get_sources_by_is_official(
+    is_official,
+    data_type=ALL,
+):
+    """
+    Get the sources with the given is_offical flag.
+
+    This function retrieves sources from the specified data type in the Mobility Catalogs
+    that have the given is_official flag.
+
+    Args:
+        is_official (str): The feature to filter sources by.
+        data_type (str, optional): The type of data to retrieve sources for. Defaults to ALL.
+            Possible values are 'ALL', 'GTFS', 'GTFS-RT', etc.
+
+    Returns:
+        dict: A dictionary of sorted sources with the specified is_official flag from the specified catalog.
+    """
+    source_type_map = globals()[f"{data_type.upper().replace('-', '_')}_MAP"]
+    sources = {}
+    for catalog_cls in source_type_map[CATALOGS]:
+        sources.update(
+            globals()[f"{catalog_cls}"]().get_sources_by_is_official(is_official=is_official)
         )
     return dict(sorted(sources.items()))

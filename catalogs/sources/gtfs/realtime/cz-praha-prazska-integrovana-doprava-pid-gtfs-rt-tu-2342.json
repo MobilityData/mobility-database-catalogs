@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 2342,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Prazska integrovana doprava (PID))",
+    "static_reference": [
+        "767"
+    ],
+    "urls": {
+        "direct_download": "https://api.golemio.cz/v2/vehiclepositions/gtfsrt/trip_updates.pb",
+        "authentication_type": 0
+    }
+}

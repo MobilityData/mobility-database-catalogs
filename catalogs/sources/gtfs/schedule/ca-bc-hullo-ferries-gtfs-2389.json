@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 2344,
+    "mdb_source_id": 2389,
     "data_type": "gtfs",
     "provider": "Hullo Ferries",
     "location": {
@@ -16,6 +16,6 @@
     "urls": {
         "direct_download": "https://hullo.com/gtfs/gtfs-hullo.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-bc-hullo-ferries-gtfs-2344.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-bc-hullo-ferries-gtfs-2389.zip?alt=media"
     }
 }

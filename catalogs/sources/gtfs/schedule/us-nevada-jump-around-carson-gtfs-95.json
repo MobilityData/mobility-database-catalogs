@@ -21,5 +21,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-nevada-jump-around-carson-gtfs-95.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "tld-688",
+            "comment": " "
+        }
+    ]
 }

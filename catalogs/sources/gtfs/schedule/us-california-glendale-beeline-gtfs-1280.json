@@ -17,5 +17,11 @@
     "urls": {
         "direct_download": "https://transitfeeds.com/p/glendale-beeline/917/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-glendale-beeline-gtfs-1280.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "tld-471",
+            "comment": " "
+        }
+    ]
 }

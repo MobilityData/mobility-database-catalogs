@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "NVBW",
     "name": "Verkehrsverbund Hegau-Bodensee",
+    "status": "deprecated",
     "location": {
         "country_code": "DE",
         "subdivision_name": "Baden-Württemberg",
@@ -18,5 +19,11 @@
         "direct_download": "https://www.nvbw.de/fileadmin/user_upload/service/open_data/fahrplandaten_mit_liniennetz/vhb.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ch-unknown-lk2-gtfs-914.zip?alt=media",
         "license": "https://www.nvbw.de/open-data/lizenz"
-    }
+    },
+     "redirect": [
+        {
+            "id": "2393",
+            "comment": " "
+        }
+    ]
 }

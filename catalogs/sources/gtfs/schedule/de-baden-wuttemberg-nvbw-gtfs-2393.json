@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2393,
+    "data_type": "gtfs",
+    "provider": "NVBW - Nahverkehrsgesellschaft Baden-Württemberg mbH",
+    "name": "Aggregate feed for Baden-Württemberg", 
+    "location": {
+        "country_code": "DE",
+        "subdivision_name": "Baden-Wuttemberg",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2024-02-24T16:25:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.nvbw.de/fileadmin/user_upload/service/open_data/fahrplandaten_mit_liniennetz/bwgesamt.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-baden-wuttemberg-nvbw-gtfs-2393.json.zip?alt=media",
+        "license": "https://www.nvbw.de/open-data/lizenz"
+    }
+}

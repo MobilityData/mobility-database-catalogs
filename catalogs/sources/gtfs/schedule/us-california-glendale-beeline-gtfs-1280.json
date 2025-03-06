@@ -2,6 +2,7 @@
     "mdb_source_id": 1280,
     "data_type": "gtfs",
     "provider": "Glendale Beeline",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

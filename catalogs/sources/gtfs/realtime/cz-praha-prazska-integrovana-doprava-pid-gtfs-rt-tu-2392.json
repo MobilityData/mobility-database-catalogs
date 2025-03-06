@@ -1,15 +1,15 @@
 {
-    "mdb_source_id": 2345,
+    "mdb_source_id": 2392,
     "data_type": "gtfs-rt",
     "entity_type": [
-        "vp"
+        "tu"
     ],
     "provider": "Prazska integrovana doprava (PID))",
     "static_reference": [
         "767"
     ],
     "urls": {
-        "direct_download": "https://api.golemio.cz/v2/vehiclepositions/gtfsrt/vehicle_positions.pb",
+        "direct_download": "https://api.golemio.cz/v2/vehiclepositions/gtfsrt/trip_updates.pb",
         "authentication_type": 0
     }
 }

@@ -13,6 +13,7 @@ CSV_COLUMNS = [
     'location.subdivision_name',
     'location.municipality',
     'provider',
+    'is_official',
     'name',
     'note',
     'feed_contact_email',
@@ -31,7 +32,7 @@ CSV_COLUMNS = [
     'status',
     'features',
     'redirect.id',
-    'redirect.comment'
+    'redirect.comment',
 ]
 
 # tools.constants

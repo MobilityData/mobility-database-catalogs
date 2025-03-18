@@ -9,10 +9,7 @@
         "180"
     ],
     "urls": {
-        "direct_download": "https://api.goswift.ly/real-time/via/gtfs-rt-vehicle-positions",
-        "authentication_type": 2,
-        "authentication_info": "https://goswift.ly/realtime-api-key",
-        "api_key_parameter_name": "authorization",
-        "license": "https://www.goswift.ly/api-license"
+        "direct_download": "https://passio3.com/viaboulder/passioTransit/gtfs/realtime/vehiclePositions",
+        "authentication_type": 0
     }
 }

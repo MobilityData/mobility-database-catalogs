@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Yosemite Area Regional Transportation System (YARTS)",
     "feed_contact_email": "support+yarts@planeteria.com",
-    "is_official": "True", 
+    "is_official": True,
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

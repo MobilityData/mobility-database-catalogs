@@ -5,6 +5,7 @@
         "vp"
     ],
     "provider": "Via Mobility",
+    "status": "deprecated",
     "static_reference": [
         "180"
     ],

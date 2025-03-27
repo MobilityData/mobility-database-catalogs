@@ -2,6 +2,7 @@
     "mdb_source_id": 2252,
     "data_type": "gtfs",
     "provider": "Münchner Verkehrs- und Tarifverbund GmbH (MVV)",
+    "status": "deprecated",
     "location": {
         "country_code": "DE",
         "subdivision_name": "Bayern",

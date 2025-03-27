@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2394,
+    "data_type": "gtfs",
+    "provider": "Yosemite Area Regional Transportation System (YARTS)",
+    "feed_contact_email": "support+yarts@planeteria.com",
+    "is_official": "True", 
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Yosemite",
+        "bounding_box": {
+            "minimum_latitude": 36.738144,
+            "maximum_latitude": 37.980406,
+            "minimum_longitude": -120.515457,
+            "maximum_longitude": -118.964912,
+            "extracted_on": "2022-03-14T20:11:49+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.planeteria.com/gtfs/yosemite-ca-us/yosemite-ca-us-gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-yosemite-area-regional-transportation-system-yarts-gtfs-2394.zip?alt=media"
+    },
+    "redirect": []
+}

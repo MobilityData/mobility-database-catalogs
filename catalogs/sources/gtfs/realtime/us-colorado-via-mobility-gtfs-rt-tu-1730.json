@@ -1,6 +1,7 @@
 {
     "mdb_source_id": 1730,
     "data_type": "gtfs-rt",
+    "status": "deprecated",
     "entity_type": [
         "tu"
     ],
@@ -14,5 +15,11 @@
         "authentication_info": "https://goswift.ly/realtime-api-key",
         "api_key_parameter_name": "authorization",
         "license": "https://www.goswift.ly/api-license"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2397",
+            "comment": " "
+        }
+    ]
 }

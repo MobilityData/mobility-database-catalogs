@@ -20,5 +20,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-via-mobility-gtfs-180.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": 2395,
+            "comment": " "
+        }
+    ]
 }

@@ -4,8 +4,7 @@
     "provider": "Via Mobility",
     "location": {
         "country_code": "US",
-        "subdivision_name": "Colorado",
-        }
+        "subdivision_name": "Colorado"
     },
     "urls": {
         "direct_download": "https://passio3.com/viaboulder/passioTransit/gtfs/google_transit.zip",
@@ -13,3 +12,4 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-via-mobility-gtfs-2395.zip?alt=media"
     },
     "redirect": []
+}

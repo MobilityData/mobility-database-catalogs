@@ -21,5 +21,10 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-bavaria-munchner-verkehrs--und-tarifverbund-gmbh-mvv-gtfs-2365.zip?alt=media",
         "license": "https://www.mvv-muenchen.de/fahrplanauskunft/fuer-entwickler/opendata/index.html"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "2399",
+            "comment": " "
+        }
+    ]
 }

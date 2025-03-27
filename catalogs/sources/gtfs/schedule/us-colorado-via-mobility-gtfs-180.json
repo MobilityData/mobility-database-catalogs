@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Via Mobility",
     "feed_contact_email": "support+test+viamobilityservices-co-us@trilliumtransit.com",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Colorado",

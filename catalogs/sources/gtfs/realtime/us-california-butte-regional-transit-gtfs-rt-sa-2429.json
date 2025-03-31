@@ -5,6 +5,7 @@
         "sa"
     ],
     "provider": "Butte Regional Transit (B-Line)",
+    "is_official": "True",
     "static_reference": [
         "ntd-90208"
     ],

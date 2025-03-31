@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 2400,
+    "data_type": "gtfs",
+    "provider": "Empresa Municipal de Transportes de Fuenlabrada (EMTF)",
+    "feed_contact_email": "emtf@emtf.es",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Madrid",
+        "municipality": "Fuenlabrada",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-03-31T17:07:38+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://api.control.optibus.co/opendata/v1/gtfs?uid=c-5cfcd2d1",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-madrid-fuenlabrada-emtf-gtfs-2400.zip?alt=media"
+    }
+}

@@ -5,6 +5,7 @@
         "sa"
     ],
     "provider": "Santa Cruz Metro (SCMTD)",
+    "is_official": "True",
     "static_reference": [
         "2425"
     ],

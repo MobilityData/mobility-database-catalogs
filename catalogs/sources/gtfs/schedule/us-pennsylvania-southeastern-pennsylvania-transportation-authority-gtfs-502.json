@@ -19,8 +19,8 @@
         }
     },
     "urls": {
-        "direct_download": "http://www3.septa.org/developer/google_bus.zip",
+        "direct_download": "https://www3.septa.org/developer/google_bus.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-pennsylvania-southeastern-pennsylvania-transportation-authority-gtfs-502.zip?alt=media",
-        "license": "http://www3.septa.org/developer/"
+        "license": "https://www3.septa.org/developer/"
     }
 }

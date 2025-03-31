@@ -12,6 +12,6 @@
     ],
     "urls": {
         "direct_download": "https://api.control.optibus.co/opendata/v1/gtfs-rt/trip-updates?uid=c-5cfcd2d1",
-        "authentication_type": 0,
+        "authentication_type": 0
     }
 }

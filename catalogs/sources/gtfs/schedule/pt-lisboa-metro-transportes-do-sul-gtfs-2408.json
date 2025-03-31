@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Metro Transportes do Sul, Metro Sul do Tejo",
     "feed_contact_email": "ccesar@mts.pt", 
-    "is_official": "True',
+    "is_official": "True",
     "location": {
         "country_code": "PT",
         "subdivision_name": "Lisboa",

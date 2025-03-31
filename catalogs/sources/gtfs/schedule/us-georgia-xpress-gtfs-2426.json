@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Xpress",
     "feed_contact_email": "openrecordsrequest@srta.ga.gov",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Georgia",

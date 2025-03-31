@@ -2,6 +2,7 @@
     "mdb_source_id": 2355,
     "data_type": "gtfs",
     "provider": "Xpress",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Georgia",
@@ -18,5 +19,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-georgia-xpress-gtfs-2355.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "2426",
+            "comment": " "
+        }
+    ]
 }

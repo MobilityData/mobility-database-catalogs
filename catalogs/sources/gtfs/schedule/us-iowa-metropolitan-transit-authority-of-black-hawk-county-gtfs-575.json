@@ -2,6 +2,7 @@
     "mdb_source_id": 575,
     "data_type": "gtfs",
     "provider": "Metropolitan Transit Authority of Black Hawk County",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Iowa",
@@ -17,5 +18,11 @@
     "urls": {
         "direct_download": "http://mettransit.org/sites/default/files/MET_Transit_GTFS.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-iowa-metropolitan-transit-authority-of-black-hawk-county-gtfs-575.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2414",
+            "comment": " "
+        }
+    ]
 }

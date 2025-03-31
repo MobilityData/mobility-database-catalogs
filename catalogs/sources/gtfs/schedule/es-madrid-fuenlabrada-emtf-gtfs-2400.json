@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Empresa Municipal de Transportes de Fuenlabrada (EMTF)",
     "feed_contact_email": "emtf@emtf.es",
+    "is_official": "True", 
     "location": {
         "country_code": "ES",
         "subdivision_name": "Madrid",

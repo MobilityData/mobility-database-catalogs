@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 2427,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Butte Regional Transit (B-Line)",
+    "is_official": "True",
+    "static_reference": [
+        "ntd-90208"
+    ],
+    "urls": {
+        "direct_download": "https://planmyride.blinetransit.com/gtfsrealtime/GTFS_TripUpdates.pb",
+        "authentication_type": 0
+    }
+}

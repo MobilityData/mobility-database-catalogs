@@ -5,6 +5,7 @@
         "vp"
     ],
     "provider": "Connecticut Transit",
+    "status": "deprecated",
     "static_reference": [
         "553"
     ],
@@ -12,5 +13,11 @@
         "direct_download": "https://s3.amazonaws.com/cttransit-realtime-prod/vehiclepositions.pb",
         "authentication_type": 0,
         "license": "https://www.cttransit.com/about/developers/terms-of-use"
-    }
+    },
+     "redirect": [
+        {
+            "id": "2422",
+            "comment": " "
+        }
+    ]
 }

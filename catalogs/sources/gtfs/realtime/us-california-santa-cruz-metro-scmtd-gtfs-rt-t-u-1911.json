@@ -5,8 +5,9 @@
         "tu"
     ],
     "provider": "Santa Cruz Metro (SCMTD)",
+    "is_official": "True",
     "static_reference": [
-        "1211"
+        "2425"
     ],
     "urls": {
         "direct_download": "https://rt.scmetro.org/gtfsrt/trips",

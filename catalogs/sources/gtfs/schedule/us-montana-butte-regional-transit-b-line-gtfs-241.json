@@ -2,6 +2,7 @@
     "mdb_source_id": 241,
     "data_type": "gtfs",
     "provider": "Butte Regional Transit (B-Line)",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Montana",

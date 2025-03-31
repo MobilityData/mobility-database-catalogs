@@ -11,6 +11,6 @@
     ],
     "urls": {
         "direct_download": "https://proxy.transport.data.gouv.fr/resource/riom-rlv-mobilites-gtfs-rt-trip-update",
-        "authentication_type": 0,
+        "authentication_type": 0
     }
 }

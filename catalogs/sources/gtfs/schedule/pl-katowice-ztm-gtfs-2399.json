@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 2399,
+    "data_type": "gtfs",
+    "provider": "ZTM Katowice",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Górnośląsko-Zagłębiowska Metropolia",
+        "municipality": "Katowice",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2022-03-23T18:44:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/gtfs-proxies/24-ZTM-Katowice/releases/latest/download/24-ZTM-Katowice.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-katowice-ztm-gtfs-2399.zip?alt=media"
+    }
+}

@@ -3,7 +3,6 @@
     "data_type": "gtfs",
     "provider": "Jump Around Carson",
     "status": "deprecated",
-    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Nevada",

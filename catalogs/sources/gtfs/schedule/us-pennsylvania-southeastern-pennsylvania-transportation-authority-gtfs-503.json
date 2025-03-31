@@ -2,6 +2,7 @@
     "mdb_source_id": 503,
     "data_type": "gtfs",
     "provider": "Southeastern Pennsylvania Transportation Authority (SEPTA)",
+    "is_official": "True",
     "name": "Rail",
     "location": {
         "country_code": "US",
@@ -16,8 +17,8 @@
         }
     },
     "urls": {
-        "direct_download": "http://www3.septa.org/developer/google_rail.zip",
+        "direct_download": "https://www3.septa.org/developer/google_rail.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-pennsylvania-southeastern-pennsylvania-transportation-authority-gtfs-503.zip?alt=media",
-        "license": "http://www3.septa.org/developer/"
+        "license": "https://www3.septa.org/developer/"
     }
 }

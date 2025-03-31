@@ -1,9 +1,9 @@
 {
-    "mdb_source_id": 2390,
+    "mdb_source_id": 2407,
     "data_type": "gtfs",
     "provider": "Metro Sabanas",
     "feed_contact_email": "cdsgg1@gmail.com",
-    "status": "deprecated",
+    "is_official": "True",
     "name": "Ruta del Corazon", 
     "location": {
         "country_code": "CO",
@@ -18,14 +18,8 @@
         }
     },
     "urls": {
-        "direct_download": "https://drive.usercontent.google.com/uc?id=1Zld_syGjp3y6dnY0d9Ly-2btT22x-rbY&export=download",
+        "direct_download": "https://raw.githubusercontent.com/davidgutierrez/GTFS/main/Sincelejo/GTFS.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/co-sucre-sincelejo-metro-sabanas-gtfs-2390.zip?alt=media"
-    },
-    "redirect": [
-        {
-            "id": "2407",
-            "comment": " "
-        }
-    ]
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/co-sucre-sincelejo-metro-sabanas-gtfs-2407.zip?alt=media"
+    }
 }

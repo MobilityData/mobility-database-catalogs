@@ -2,7 +2,7 @@
     "mdb_source_id": 465,
     "data_type": "gtfs",
     "provider": "Niagara Frontier Transportation Authority (NFTA)",
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "New York",
@@ -18,5 +18,11 @@
     "urls": {
         "direct_download": "http://www.nfta.com/metro/__googletransit/google_transit.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-niagara-frontier-transportation-authority-nfta-gtfs-465.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "tld-6748",
+            "comment": " "
+        }
+    ]
 }

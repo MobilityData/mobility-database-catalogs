@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 2410,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Southeastern Pennsylvania Transportation Authority (SEPTA)",
+    "name": "SEPTA Bus",
+    "static_reference": [
+        "502"
+    ],
+    "urls": {
+        "direct_download": "https://www3.septa.org/gtfsrt/septa-pa-us/Service/rtServiceAlerts.pb",
+        "authentication_type": 0,
+        "license": "https://www3.septa.org/developer/"
+    }
+}

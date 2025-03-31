@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2408,
+    "data_type": "gtfs",
+    "provider": "Metro Transportes do Sul, Metro Sul do Tejo",
+    "feed_contact_email": "ccesar@mts.pt", 
+    "is_official": "True',
+    "location": {
+        "country_code": "PT",
+        "subdivision_name": "Lisboa",
+        "municipality": "Almada",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-03-31T21:00:22+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://mts.pt/imt/MTS-20240129.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-lisboa-metro-transportes-do-sul-gtfs-2408.zip?alt=media",
+        "license": "https://nap-portugal.imt-ip.pt/nap/multimodalsupplydetail/200"
+    }
+}

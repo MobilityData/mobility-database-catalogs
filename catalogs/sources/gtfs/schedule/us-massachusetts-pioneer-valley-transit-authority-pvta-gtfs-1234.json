@@ -17,5 +17,11 @@
         "direct_download": "https://transitfeeds.com/p/massdot/104/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-pioneer-valley-transit-authority-pvta-gtfs-1234.zip?alt=media",
         "license": "https://www.mass.gov/doc/developers-license-agreement-11132009/download"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2416",
+            "comment": " "
+        }
+    ]
 }

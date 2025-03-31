@@ -15,7 +15,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://www.blinetransit.com/documents/Google%20Transit/google_transit.zip",
+        "direct_download": "https://www.blinetransit.com/documents/Google%20Transit/google_transit.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-montana-butte-regional-transit-b-line-gtfs-241.zip?alt=media"
     }
 }

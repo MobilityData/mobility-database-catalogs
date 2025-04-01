@@ -1,8 +1,8 @@
 {
-    "mdb_source_id": 1299,
+    "mdb_source_id": 2430,
     "data_type": "gtfs",
     "provider": "Fredericksburg Regional Transit",
-    "status": "deprecated",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Virginia",
@@ -15,13 +15,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://www.arcgis.com/sharing/rest/content/items/d1483daba66d43358e29682c91907817/data",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-fredericksburg-regional-transit-gtfs-1299.zip?alt=media"
-    },
-    "redirect": [
-        {
-            "id": "2430",
-            "comment": " "
-        }
-    ]
+        "direct_download": "https://www.fredericksburgva.gov/DocumentCenter/View/28958/FXBGO-GTFS-Q1-CY2025",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-fredericksburg-regional-transit-gtfs-2430.zip?alt=media"
+    }
 }

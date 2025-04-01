@@ -2,6 +2,7 @@
     "mdb_source_id": 145,
     "data_type": "gtfs",
     "provider": "City of Sierra Vista",
+    "status": "deprecated",
     "features": [
         "fares-v1"
     ],
@@ -21,5 +22,11 @@
     "urls": {
         "direct_download": "http://demopro.nationalrtap.org/admin/GTFSzipFiles/3746/google_transit.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-arizona-city-of-sierra-vista-gtfs-145.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "tld-679",
+            "comment": " "
+        }
+    ]
 }

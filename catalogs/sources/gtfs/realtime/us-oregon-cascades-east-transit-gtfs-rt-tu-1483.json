@@ -5,6 +5,7 @@
         "tu"
     ],
     "provider": "Cascades East Transit",
+    "status": "deprecated",
     "static_reference": [
         "138"
     ],
@@ -14,5 +15,11 @@
         "authentication_info": "https://goswift.ly/realtime-api-key",
         "api_key_parameter_name": "authorization",
         "license": "https://www.goswift.ly/api-license"
-    }
+    },
+    "redirect": [
+        {
+            "id": "tld-4067-tu",
+            "comment": " "
+        }
+    ]
 }

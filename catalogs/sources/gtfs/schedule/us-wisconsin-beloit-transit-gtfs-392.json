@@ -3,6 +3,8 @@
     "data_type": "gtfs",
     "provider": "Beloit Transit",
     "feed_contact_email": "support+test+beloittransit-wi-us@trilliumtransit.com",
+    "status": "deprecated",
+    "is_official": "False",
     "features": [
         "fares-v1"
     ],
@@ -23,5 +25,7 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-wisconsin-beloit-transit-gtfs-392.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        "tld-77"
+    ]
 }

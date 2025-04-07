@@ -26,6 +26,9 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-wisconsin-beloit-transit-gtfs-392.zip?alt=media"
     },
     "redirect": [
-        "tld-77"
+        {
+            "id": "tld-77",
+            "comment": " "
+        }
     ]
 }

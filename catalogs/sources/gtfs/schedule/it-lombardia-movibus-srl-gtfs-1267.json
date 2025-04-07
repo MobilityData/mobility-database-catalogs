@@ -2,7 +2,7 @@
     "mdb_source_id": 1267,
     "data_type": "gtfs",
     "provider": "Movibus S.r.l.",
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "IT",
         "subdivision_name": "Lombardia",
@@ -19,5 +19,11 @@
         "direct_download": "https://transitfeeds.com/p/movibus-s-r-l/1232/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-lombardia-movibus-srl-gtfs-1267.zip?alt=media",
         "license": "http://dati.mit.gov.it/catalog/dataset/orari-autobus-lombardia"
-    }
+    },
+    "redirect": [
+        {
+            "id": "tld-2233",
+            "comment": " "
+        }
+    ]
 }

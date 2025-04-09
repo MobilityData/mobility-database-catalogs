@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 2431,
+    "data_type": "gtfs",
+    "provider": "Eurostar, Thalys, SNCF, DB ICE, DB Intercity, c2c Service, Chiltern Railways Service, First Great Western Service, Gatwick Express Service, East Coast, Heathrow Express Service, Hull Trains Service, East Midland Trains, Greater Anglia, London Midland, Southern Service, South Eastern Trains Service, South West Trains Service, Virgin Trains Service, Grand Central, Heathrow Connect, Thameslink, Great Northern, UK Rail (from SIDH), First ScotRail Service, GTR, Eurostar",
+    "is_official": "True",
+    "location": {
+        "country_code": "FR",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-04-9T00:24:32+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.eurostar.com/assets/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-eurostar-gtfs-2431.json.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/eurostar-gtfs"
+    }
+}

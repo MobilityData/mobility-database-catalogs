@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2435,
+    "data_type": "gtfs",
+    "provider": "CORTRAN",
+    "is_official": "True",
+    "feed_contact_email": "support+cortran-va-us@trilliumtransit.com", 
+    "name": "Flex",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Virginia",
+        "municipality": "Roanoke",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-04-09T17:57:45+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/cortran-va-us/cortran-va-us--flex-v2.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-roanoke-cortran-flex-gtfs-2435.zip?alt=media"
+    }
+}

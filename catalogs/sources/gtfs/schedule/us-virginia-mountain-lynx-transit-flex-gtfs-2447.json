@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2447,
+    "data_type": "gtfs",
+    "provider": "Mountain Lynx Transit",
+    "is_official": "True",
+    "feed_contact_email": "support+districtthree-va-us@trilliumtransit.com", 
+    "name": "Flex",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Virginia",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-04-09T17:57:45+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/districtthree-va-us/districtthree-va-us--flex-v2.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-mountain-lynx-transit-flex-gtfs-2447.zip?alt=media"
+    }
+}

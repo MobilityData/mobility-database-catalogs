@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2446,
+    "data_type": "gtfs",
+    "provider": "Cape Cod Regional Transit Authority",
+    "is_official": "True",
+    "feed_contact_email": "support+capecod-ma-us@trilliumtransit.com", 
+    "name": "Flex",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Massachusetts",
+        "municipality": "Cape Cod",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-04-09T17:57:45+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/capecod-ma-us/capecod-ma-us--flex-v2.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-cape-cod-rta-flex-gtfs-2446.zip?alt=media"
+    }
+}

@@ -48,7 +48,7 @@ Contains the JSON schemas used to validate the feeds in the integration tests.
 
 ### Spreadsheet
 
-The JSON files are added to the pipeline for https://github.com/MobilityData/mobility-feed-api and combined with other feeds that are automatically imported into https://github.com/MobilityData/mobility-feed-api from sources outside the catalogs repo. [The Canonical GTFS Schedule Validator](https://gtfs-validator.mobilitydata.org/) is run on all feeds, and then the results are exported as a [spreadsheet]((https://files.mobilitydatabase.org/feeds_v2.csv).
+The JSON files are added to the pipeline for https://github.com/MobilityData/mobility-feed-api and combined with other feeds that are automatically imported into https://github.com/MobilityData/mobility-feed-api from sources outside the catalogs repo. [The Canonical GTFS Schedule Validator](https://gtfs-validator.mobilitydata.org/) is run on all feeds, and then the results are exported as a [spreadsheet](https://files.mobilitydatabase.org/feeds_v2.csv).
 
 ## GTFS Schedule Spreadsheet Schema
 

@@ -1,7 +1,8 @@
 {
     "mdb_source_id": 1021,
     "data_type": "gtfs",
-    "provider": "MapaNica Managua",
+    "provider": "Instituto Regulador del Transporte del Municipio de Managua",
+    "name": "MapaNica Managua",
     "location": {
         "country_code": "NI",
         "subdivision_name": "Managua",

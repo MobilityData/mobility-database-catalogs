@@ -6,7 +6,7 @@ The Mobility Database Catalogs is a list of open mobility data feeds from across
 
 [You can see our API code and infrastructure here](https://github.com/MobilityData/mobility-feed-api).
 
-To search feeds easily, you can download [the CSV spreadsheet](https://share.mobilitydata.org/catalogs-csv). If you want to filter for specific types of feeds, [you can learn how to here](#get-and-filter-feeds).
+To search feeds easily, you can download [the CSV spreadsheet](https://files.mobilitydatabase.org/feeds_v2.csv) If you want to filter for specific types of feeds, [you can learn how to here](#get-and-filter-feeds).
 
 
 ## Table of Contents
@@ -24,7 +24,7 @@ To search feeds easily, you can download [the CSV spreadsheet](https://share.mob
 
 ## Browsing and Consuming The Spreadsheet
 
-If you're only interested in browsing the feeds or pulling all the latest URLs, [download the CSV](https://share.mobilitydata.org/catalogs-csv). You can cross reference IDs from the Mobility Database, TransitFeeds and Transitland with [this ID map spreadsheet](https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit?resourcekey#gid=1787149399).
+If you're only interested in browsing the feeds or pulling all the latest URLs, [download the CSV](https://files.mobilitydatabase.org/feeds_v2.csv). This is the second version of the spreadsheet, which includes all feeds available on the Mobility Database, as well as automatically extracted features and feed status information. You can cross reference IDs from the Mobility Database, TransitFeeds and Transitland with [this ID map spreadsheet](https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit?resourcekey#gid=1787149399).
 
 If you are consuming the spreadsheet, we recommend downloading a new version every time you use it, since the `latest.url` is occasionally updated to match any changes made to the provider and subdivision name within the feed file.
 
@@ -42,27 +42,31 @@ Contains the feeds of the Mobility Database Catalogs. Every single feed is repre
 
 Contains the tools to search, add and update the feeds. The `tools.operations` module contains the project operations (get, add and update). The `tools.helpers` module contains helper functions that support the `tools.operations` module. The `tools.constants` module contains the project constants.
 
-### Schemas
+### JSON Schemas
 
 Contains the JSON schemas used to validate the feeds in the integration tests.
 
-## GTFS Schedule Schema
+### Spreadsheet
+
+The JSON files are added to the pipeline for https://github.com/MobilityData/mobility-feed-api and combined with other feeds that are automatically imported into https://github.com/MobilityData/mobility-feed-api from sources outside the catalogs repo. [The Canonical GTFS Schedule Validator](https://gtfs-validator.mobilitydata.org/) is run on all feeds, and then the results are exported as a [spreadsheet](https://files.mobilitydatabase.org/feeds_v2.csv).
+
+## GTFS Schedule Spreadsheet Schema
 
 |Field Name|Type|Presence|Definition|  
 |-|-|-|-|
 | mdb_source_id |  Unique ID | System generated | Unique numerical identifier for the feed.      |
 | data_type     | Enum| Required| The data format that the feed uses: `gtfs`.|
-| features      | Array of Enums | Optional | An array of features which can be any of: <ul><li>`fares-v2`</li><li>`fares-v1`</li><li>`flex-v1`</li><li>`flex-v2`</li><li>`pathways`</li></ul>|  
-| status        | Enum | Optional | Describes status of the feed. Should be one of: <ul><li>`active`: Feed should be used in public trip planners.</li><li>`deprecated`: Feed is explicitly deprecated and should not be used in public trip planners.</li><li>`inactive`: Feed hasn't been recently updated and should be used at risk of providing outdated information.</li><li>`development`: Feed is being used for development purposes and should not be used in public trip planners.</li></ul>Feed is assumed to be `active` if status is not explicitly provided.|
+| features      | Array of Enums | Optional | An array of features that the feed includes based on https://gtfs.org/getting-started/features/overview/. This list is automatically extracted from [the Canonical GTFS Schedule Validator](https://gtfs-validator.mobilitydata.org/).
+| status        | Enum | Optional | Describes status of the feed. Should be one of: <ul><li>`active`: Feed should be used in public trip planners.</li><li>`deprecated`: Feed is explicitly deprecated and should not be used in public trip planners.</li><li>`inactive`: Feed hasn't been recently updated and should be used at risk of providing outdated information.</li><li>`development`: Feed is being used for development purposes and should not be used in public trip planners.</li></ul> `active` and `inactive` statuses are updated based on the [feedServiceWindowStart and feedServiceWindowEnd values extracted from the Canonical GTFS Schedule Validator](https://gtfs-validator.mobilitydata.org/rules.html#JsonReportFeedInfo-type).|
 | is_official        | Enum | Optional | Flag indicating if the source comes from the agency itself or not.  <ul><li>`True`: Feed comes from the agency as an authorized source.</li><li>`False`: Feed is created by researchers or partners unaffiliated with the agency or municipality.</li></ul>Feed's is_official flag is assumed to be `False` if it is not explicitly provided.|  
 |redirect| Object | Optional | When a feed is deprecated by a provider and replaced with a new URL, redirect information is provided to point to the new feed.|
 | - id      | String | Optional | New feed ID that replaces the current feed that is out of date or no longer maintained by the provider. |
 | - comment | Optional | Optional | comment to explain redirect if needed (e.g new aggregate feed) |
 |location| Object | Required |Contains  <ul><li>Text that describes the feed's location in the `country_code`, `subdivision_name`, and `municipality` fields.</li><li>Latitude, longitude, date and time that describes the feed's bounding box in the `bounding_box` subobject. </li></ul>|
-| - country_code       | Text |Required                  | ISO 3166-1 alpha-2 code designating the country where the feed service is located. For a list of valid codes [see here](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).                                                    |
-| - subdivision_name  | Text |Optional              | ISO 3166-2 subdivision name designating the subdivision (e.g province, state, region) where the feed service is located. For a list of valid names [see here](https://unece.org/trade/uncefact/unlocode-country-subdivisions-iso-3166-2).|  
-| - municipality  | Text |Optional              | Primary municipality in which the feed service is located.|  
-| - bounding_box  | Object|System generated             | Bounding box of the feed  when it was first added to the catalog. Contains `minimum_latitude`, `maximum_latitude`, `minimum_longitude`, `maximum_longitude` and `extracted_on` fields. If the bounding box information displays as "null", you can check any potential feed errors with [the GTFS validator](https://github.com/MobilityData/gtfs-validator).   |  
+| - country_code       | Text |Required                  | ISO 3166-1 alpha-2 code designating the country where the feed service is located based on the number of stops. When multiple countries are included, the country with the most stops is displayed. For a list of valid codes [see here](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).                                                    |
+| - subdivision_name  | Text |Optional              | ISO 3166-2 subdivision name designating the subdivision (e.g province, state, region) where the feed service is located based on the number of stops. When multiple subdivisions are included, the one with the most stops is displayed. For a list of valid names [see here](https://unece.org/trade/uncefact/unlocode-country-subdivisions-iso-3166-2).|  
+| - municipality  | Text |Optional              | Municipality in which the feed service is located based on the number of stops. When there are multiple municipalities, the one with the most stops is displayed |  
+| - bounding_box  | Object|System generated             | Bounding box of the feed based on stops. Contains `minimum_latitude`, `maximum_latitude`, `minimum_longitude`, `maximum_longitude` and `extracted_on` fields. If the bounding box information displays as "null", you can check any potential feed errors with [the GTFS validator](https://github.com/MobilityData/gtfs-validator).   |  
 | --minimum_latitude    | Latitude | System generated                    | The minimum latitude for the feed's bounding box.  
 | --maximum_latitude    | Latitude | System generated                    | The maximum latitude for the feed's bounding box.  
 | --minimum_longitude    | Longitude | System generated                    | The minimum longitude for the feed's bounding box.  
@@ -79,7 +83,7 @@ Contains the JSON schemas used to validate the feeds in the integration tests.
 | - latest | URL | System generated | A stable URL for the latest dataset of a feed. |
 |- license |URL| Optional     | The license information for the direct download URL.  |
 
-## GTFS Realtime Schema
+## GTFS Realtime Spreadsheet Schema
 
 |Field Name|Type|Presence|Definition|  
 |-|-|-|-|

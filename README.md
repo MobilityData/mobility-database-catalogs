@@ -24,7 +24,7 @@ To search feeds easily, you can download [the CSV spreadsheet](https://files.mob
 
 ## Browsing and Consuming The Spreadsheet
 
-If you're only interested in browsing the feeds or pulling all the latest URLs, [download the CSV](https://files.mobilitydatabase.org/feeds_v2.csv). This is the second version of the spreadsheet, which includes automatically extracted features and feed status information. You can cross reference IDs from the Mobility Database, TransitFeeds and Transitland with [this ID map spreadsheet](https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit?resourcekey#gid=1787149399).
+If you're only interested in browsing the feeds or pulling all the latest URLs, [download the CSV](https://files.mobilitydatabase.org/feeds_v2.csv). This is the second version of the spreadsheet, which includes all feeds available on the Mobility Database, as well as automatically extracted features and feed status information. You can cross reference IDs from the Mobility Database, TransitFeeds and Transitland with [this ID map spreadsheet](https://docs.google.com/spreadsheets/d/1Q96KDppKsn2khdrkraZCQ7T_qRSfwj7WsvqXvuMt4Bc/edit?resourcekey#gid=1787149399).
 
 If you are consuming the spreadsheet, we recommend downloading a new version every time you use it, since the `latest.url` is occasionally updated to match any changes made to the provider and subdivision name within the feed file.
 

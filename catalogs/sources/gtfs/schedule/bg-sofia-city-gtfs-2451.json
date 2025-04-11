@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2451,
+    "data_type": "gtfs",
+    "provider": "Urban Mobility Center - Sofia Traffic",
+    "status": "active",
+    "is_official": "False", 
+    "location": {
+        "country_code": "BG",
+        "subdivision_name": "Sofia City",
+        "municipality": "Sofia",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-04-11T10:46:23+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://raw.githubusercontent.com/Dimitar5555/sofiatraffic-gtfs/master/result.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/bg-sofia-city-gtfs-2451.zip?alt=media",
+        "license": "https://github.com/Dimitar5555/sofiatraffic-gtfs"
+    },
+    "redirect": []
+}

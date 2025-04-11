@@ -2,7 +2,7 @@
     "mdb_source_id": 1078,
     "data_type": "gtfs",
     "provider": "Agder Kollektivtrafikk AS, AtB, Avinor, Boreal Norge AS, Brakar, Bussring, Snelandia, Flåmsbana, FlixBus, Flytoget, Vy, Go-Ahead Nordic, Go Fjords, Havila, Hurtigruten, Gjendebåten AS, Innlandstrafikk, Skibladner, Boreal Norge AS, Norled AS, Boreal Sjø AS, Fjord1 ASA, Kolumbus, AMBU Pendlerrute, The Fjords, Geiranger Fjordservice, Gripruta, FRAM, Sundbåten, Flybussen Norgesbuss, Norsk Industriarbeidermuseum, Nordland fylkeskommune, Vy, NOR-WAY Bussekspress AS, Bygdøyfergen, Oscarsborgfergen, Østfold kollektivtrafikk, Ruter, SJ NORD, SJ AB, Skyss, Kringom, Norled, Lustrabaatane, Farte, Tide AS, Troms fylkestrafikk, Torghatten, Ulriken, Unibuss, VKT, Vy Travel, Vy, Vy Buss",
-    "name": "Norway Aggregated",
+    "name": "Entur — Norway Aggregated",
     "location": {
         "country_code": "NO",
         "bounding_box": {

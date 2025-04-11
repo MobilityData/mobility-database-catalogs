@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Urban Mobility Center - Sofia Traffic",
     "status": "active",
+    "is_official": "False", 
     "location": {
         "country_code": "BG",
         "subdivision_name": "Sofia City",

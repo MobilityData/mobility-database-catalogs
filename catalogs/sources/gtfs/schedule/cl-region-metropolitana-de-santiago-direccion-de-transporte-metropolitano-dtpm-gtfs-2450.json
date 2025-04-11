@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2450,
+    "data_type": "gtfs",
+    "provider": "Red Metropolitana de Movilida, EFE Trenes de Chile, Bus de Acercamiento Aeropuerto, Metro de Santiago",
+    "name": "Dirección de Transporte Metropolitano (DTPM)",
+    "location": {
+        "country_code": "CL",
+        "subdivision_name": "Región Metropolitana de Santiago",
+        "bounding_box": {
+            "minimum_latitude": -34.170505,
+            "maximum_latitude": -33.3193343927293,
+            "minimum_longitude": -70.8739928645606,
+            "maximum_longitude": -70.4936483461678,
+            "extracted_on": "2024-10-28T14:55:30+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.dtpm.cl/descargas/gtfs/03%20GTFS_Final_03marzo.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cl-region-metropolitana-de-santiago-direccion-de-transporte-metropolitano-dtpm-gtfs-2450.zip?alt=media",
+        "license": "https://www.dtpm.cl/index.php/gtfs-vigente"
+    },
+    "redirect": []
+}

@@ -6,7 +6,7 @@
     ],
     "provider": "Alameda-Contra Costa Transit District (AC Transit)",
     "static_reference": [
-        "1244"
+        "2455"
     ],
     "urls": {
         "direct_download": "http://api.actransit.org/transit/gtfsrt/vehicles",

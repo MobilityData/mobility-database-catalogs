@@ -2,6 +2,7 @@
     "mdb_source_id": 2455,
     "data_type": "gtfs",
     "provider": "Alameda-Contra Costa Transit District (AC Transit)",
+    "is_official": "True",
     "feed_contact_email": "DevSupport@actransit.org",
     "location": {
         "country_code": "US",

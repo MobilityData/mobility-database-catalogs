@@ -1,9 +1,9 @@
 {
-    "mdb_source_id": 303,
+    "mdb_source_id": 2456,
     "data_type": "gtfs",
     "provider": "City of Ellensburg Public Transit (Central Transit)",
-    "feed_contact_email": "marcy@mjcaction.com",
-    "status": "deprecated",
+    "feed_contact_email": "support+test+ellensburg-wa-us@trilliumtransit.com",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Washington",
@@ -17,14 +17,9 @@
         }
     },
     "urls": {
-        "direct_download": "http://mjcaction.com/MJC_GTFS_Public/centraltransit_google_transit.zip",
+        "direct_download": "https://data.trilliumtransit.com/gtfs/ellensburg-wa-us/ellensburg-wa-us.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-central-transit-ellensburg-gtfs-303.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-central-transit-ellensburg-gtfs-2456.zip?alt=media"
     },
-    "redirect": [
-        {
-            "id": "2456",
-            "comment": " "
-        }
-    ]
+    "redirect": []
 }

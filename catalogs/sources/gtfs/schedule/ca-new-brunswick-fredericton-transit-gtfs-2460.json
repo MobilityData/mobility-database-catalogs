@@ -1,8 +1,8 @@
 {
-    "mdb_source_id": 764,
+    "mdb_source_id": 2460,
     "data_type": "gtfs",
     "provider": "Fredericton Transit",
-    "status": "deprecated",
+    "is_official": "True",
     "location": {
         "country_code": "CA",
         "subdivision_name": "New Brunswick",
@@ -16,13 +16,8 @@
         }
     },
     "urls": {
-        "direct_download": "https://www.arcgis.com/sharing/rest/content/items/36704575683245329a1b208bcbc72e72/data",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-new-brunswick-fredericton-transit-gtfs-764.zip?alt=media"
-    },
-     "redirect": [
-        {
-            "id": "2460",
-            "comment": " "
-        }
-    ]
+        "direct_download": "https://fredericton.tmix.se/Tmix.Cap.TdExport.WebApi/gtfs/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-new-brunswick-fredericton-transit-gtfs-2460.zip?alt=media",
+        "license": "https://www.arcgis.com/home/item.html?id=0bc9093b47c744fdb82af7e830ed8590"
+    }
 }

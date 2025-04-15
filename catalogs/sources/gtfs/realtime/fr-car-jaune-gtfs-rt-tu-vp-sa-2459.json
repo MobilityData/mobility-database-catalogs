@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 2459,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu",
+        "vp",
+        "sa"
+    ],
+    "provider": "Car Jaune",
+    "is_official": "True", 
+    "static_reference": [
+        "2458"
+    ],
+    "urls": {
+        "direct_download": "https://pysae.com/api/v2/groups/car-jaune/gtfs-rt",
+        "authentication_type": 0,
+        "license": "https://transport.data.gouv.fr/datasets/horaires-theoriques-au-format-gtfs-et-horaires-temps-reel-au-format-gtfs-rt-du-reseau-car-jaune-a-la-reunion"
+    }
+}

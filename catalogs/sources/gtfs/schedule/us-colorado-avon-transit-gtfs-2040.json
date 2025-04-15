@@ -4,7 +4,7 @@
     "provider": "Avon Transit",
     "name": "Flex v2 included",
     "feed_contact_email": "support+avon-co-us@trilliumtransit.com",
-    "status": "active",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Colorado",
@@ -22,5 +22,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-avon-transit-gtfs-2040.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "2433",
+            "comment": " "
+        }
+    ]
 }

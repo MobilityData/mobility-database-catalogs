@@ -1,8 +1,8 @@
 {
-    "mdb_source_id": 1244,
+    "mdb_source_id": 2455,
     "data_type": "gtfs",
     "provider": "Alameda-Contra Costa Transit District (AC Transit)",
-    "status": "deprecated",
+    "is_official": "True",
     "feed_contact_email": "DevSupport@actransit.org",
     "location": {
         "country_code": "US",
@@ -17,15 +17,12 @@
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/ac-transit/1269/latest/download",
-        "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-alameda-contra-costa-transit-district-ac-transit-gtfs-1244.zip?alt=media",
+        "direct_download": "https://api.actransit.org/transit/gtfs/download",
+        "authentication_type": 1,
+        "authentication_info": "https://api.actransit.org/transit",
+        "api_key_parameter_name": "token",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-alameda-contra-costa-transit-district-ac-transit-gtfs-2455.zip?alt=media",
         "license": "https://www.actransit.org/data-terms-and-conditions/"
     },
-     "redirect": [
-        {
-            "id": "2455",
-            "comment": " "
-        }
-    ]
+    "redirect": []
 }

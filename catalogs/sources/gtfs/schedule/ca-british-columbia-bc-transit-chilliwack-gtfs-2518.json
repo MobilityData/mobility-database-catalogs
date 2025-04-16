@@ -2,6 +2,7 @@
     "mdb_source_id": 2518,
     "data_type": "gtfs",
     "provider": "BC Transit (Chilliwack)",
+    "is_official": "True",
     "location": {
         "country_code": "CA",
         "subdivision_name": "British Columbia",

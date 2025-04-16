@@ -5,6 +5,7 @@
         "tu"
     ],
     "provider": "BC Transit (Hazelton)",
+    "is_official": "True",
     "static_reference": [
         "2462"
     ],

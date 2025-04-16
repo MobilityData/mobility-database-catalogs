@@ -17,7 +17,7 @@
     },
     "urls": {
         "direct_download": "https://bct.tmix.se/Tmix.Cap.TdExport.WebApi/gtfs/?operatorIds=41",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-transit-smithers-gtfs-2473.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-transit-nanaimo-gtfs-2473.zip?alt=media",
         "license": "https://www.bctransit.com/open-data/terms-of-use"
     }
 }

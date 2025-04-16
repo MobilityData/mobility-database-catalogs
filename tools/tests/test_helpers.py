@@ -1,5 +1,11 @@
 from unittest import TestCase, skip
 from unittest.mock import patch, Mock
+
+import pandas as pd
+import requests
+from freezegun import freeze_time
+from requests.exceptions import HTTPError
+
 from tools.helpers import (
     are_overlapping_edges,
     are_overlapping_boxes,
@@ -18,9 +24,6 @@ from tools.helpers import (
     normalize,
     download_dataset,
 )
-import pandas as pd
-from freezegun import freeze_time
-from requests.exceptions import HTTPError
 
 
 class TestVerificationFunctions(TestCase):
@@ -396,7 +399,7 @@ class TestInOutFunctions(TestCase):
     @patch("tools.helpers.os")
     @patch("tools.helpers.requests.get")
     def test_download_dataset_auth_type_empty(
-        self, mock_requests, mock_os, mock_uuid4, mock_open
+            self, mock_requests, mock_os, mock_uuid4, mock_open
     ):
         test_authentication_type = None
         test_api_key_parameter_name = None
@@ -422,7 +425,7 @@ class TestInOutFunctions(TestCase):
     @patch("tools.helpers.os")
     @patch("tools.helpers.requests.get")
     def test_download_dataset_auth_type_0(
-        self, mock_requests, mock_os, mock_uuid4, mock_open
+            self, mock_requests, mock_os, mock_uuid4, mock_open
     ):
         test_authentication_type = 0
         test_api_key_parameter_name = None
@@ -448,7 +451,7 @@ class TestInOutFunctions(TestCase):
     @patch("tools.helpers.os")
     @patch("tools.helpers.requests.get")
     def test_download_dataset_auth_type_1(
-        self, mock_requests, mock_os, mock_uuid4, mock_open
+            self, mock_requests, mock_os, mock_uuid4, mock_open
     ):
         test_authentication_type = 1
         test_api_key_parameter_name = "some_name"
@@ -477,7 +480,7 @@ class TestInOutFunctions(TestCase):
     @patch("tools.helpers.os")
     @patch("tools.helpers.requests.get")
     def test_download_dataset_auth_type_2(
-        self, mock_requests, mock_os, mock_uuid4, mock_open
+            self, mock_requests, mock_os, mock_uuid4, mock_open
     ):
         test_authentication_type = 2
         test_api_key_parameter_name = "some_name"
@@ -506,7 +509,7 @@ class TestInOutFunctions(TestCase):
     @patch("tools.helpers.os")
     @patch("tools.helpers.requests.get")
     def test_download_dataset_exception(
-        self, mock_requests, mock_os, mock_uuid4, mock_open
+            self, mock_requests, mock_os, mock_uuid4, mock_open
     ):
         test_authentication_type = None
         test_api_key_parameter_name = None
@@ -527,7 +530,6 @@ class TestInOutFunctions(TestCase):
     @patch("tools.helpers.os")
     @patch("tools.helpers.requests.get")
     def test_download_dataset_403_fallback_success(self, mock_requests, mock_os, mock_uuid4, mock_open):
-
         response_403 = Mock(status_code=403)
         response_403.raise_for_status.side_effect = HTTPError(response=response_403)
 
@@ -537,7 +539,7 @@ class TestInOutFunctions(TestCase):
         mock_os.path.join.return_value = self.test_path
 
         under_test = download_dataset(url=self.test_url, authentication_type=0, api_key_parameter_name=None,
-            api_key_parameter_value=None, )
+                                      api_key_parameter_value=None, )
 
         self.assertEqual(under_test, self.test_path)
         self.assertEqual(mock_requests.call_count, 2)
@@ -555,16 +557,53 @@ class TestInOutFunctions(TestCase):
         response_403_1.raise_for_status.side_effect = HTTPError(response=response_403_1)
         response_403_2 = Mock(status_code=403)
         response_403_2.raise_for_status.side_effect = HTTPError(response=response_403_2)
+        response_403_3 = Mock(status_code=403)
+        response_403_3.raise_for_status.side_effect = HTTPError(response=response_403_3)
 
-        mock_requests.side_effect = [response_403_1, response_403_2]
+        mock_requests.side_effect = [response_403_1, response_403_2, response_403_3]
 
         mock_os.path.join.return_value = self.test_path
         self.assertRaises(RequestException, download_dataset, url=self.test_url,
-            authentication_type=test_authentication_type, api_key_parameter_name=test_api_key_parameter_name,
-                          api_key_parameter_value=test_api_key_parameter_value, )
+                          authentication_type=test_authentication_type,
+                          api_key_parameter_name=test_api_key_parameter_name,
+                          api_key_parameter_value=test_api_key_parameter_value)
 
-        self.assertEqual(mock_requests.call_count, 2)
+        self.assertEqual(mock_requests.call_count, 3)
         mock_os.path.join.assert_called_once()
         mock_os.getcwd.assert_called_once()
         mock_uuid4.assert_called_once()
         mock_open.assert_not_called()
+
+    @patch("tools.helpers.open")
+    @patch("tools.helpers.uuid.uuid4")
+    @patch("tools.helpers.os")
+    @patch("tools.helpers.requests.get")
+    def test_download_dataset_ssl_error_fallback(self, mock_requests, mock_os, mock_uuid4, mock_open):
+        test_authentication_type = 0
+        test_api_key_parameter_name = None
+        test_api_key_parameter_value = None
+
+        ssl_error = requests.exceptions.SSLError("SSL Certificate Verification Failed")
+
+        response_200 = Mock(status_code=200, content=b"file_content")
+
+        mock_requests.side_effect = [ssl_error, response_200]
+        mock_os.path.join.return_value = self.test_path
+
+        under_test = download_dataset(
+            url=self.test_url,
+            authentication_type=test_authentication_type,
+            api_key_parameter_name=test_api_key_parameter_name,
+            api_key_parameter_value=test_api_key_parameter_value,
+        )
+
+        self.assertEqual(under_test, self.test_path)
+        self.assertEqual(mock_requests.call_count, 2)
+
+        self.assertTrue(mock_requests.call_args_list[0].kwargs["verify"])
+        self.assertFalse(mock_requests.call_args_list[1].kwargs["verify"])
+
+        mock_os.path.join.assert_called_once()
+        mock_os.getcwd.assert_called_once()
+        mock_uuid4.assert_called_once()
+        mock_open.assert_called_once()

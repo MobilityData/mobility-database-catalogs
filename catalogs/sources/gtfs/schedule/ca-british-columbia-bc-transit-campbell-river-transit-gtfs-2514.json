@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 2514,
+    "data_type": "gtfs",
+    "provider": "BC Transit (Campbell River Transit)",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "British Columbia",
+        "municipality": "Campbell River",
+        "bounding_box": {
+            "minimum_latitude": 49.869973,
+            "maximum_latitude": 50.063857,
+            "minimum_longitude": -125.286389,
+            "maximum_longitude": -125.129018,
+            "extracted_on": "2022-03-16T22:04:08+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://bct.tmix.se/Tmix.Cap.TdExport.WebApi/gtfs/?operatorIds=12",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-transit-campbell-river-transit-gtfs-2514.zip?alt=media",
+        "license": "https://www.bctransit.com/open-data/terms-of-use"
+    }
+}

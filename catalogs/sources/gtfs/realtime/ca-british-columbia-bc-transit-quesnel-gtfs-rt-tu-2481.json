@@ -5,6 +5,7 @@
         "tu"
     ],
     "provider": "BC Transit (Quesnel)",
+    "is_official": "True",
     "static_reference": [
         "2463"
     ],

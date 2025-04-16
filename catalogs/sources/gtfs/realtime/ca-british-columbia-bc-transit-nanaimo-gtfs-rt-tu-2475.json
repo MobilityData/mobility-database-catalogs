@@ -5,6 +5,7 @@
         "tu"
     ],
     "provider": "BC Transit (Nanaimo)",
+    "is_official": "True",
     "static_reference": [
         "2473"
     ],

@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 2519,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "BC Transit (Chilliwack)",
+    "is_official": "True",
+    "static_reference": [
+        "2518"
+    ],
+    "urls": {
+        "direct_download": "https://bct.tmix.se/gtfs-realtime/alerts.pb?operatorIds=13",
+        "authentication_type": 0,
+        "license": "https://www.bctransit.com/open-data/terms-of-use"
+    }
+}

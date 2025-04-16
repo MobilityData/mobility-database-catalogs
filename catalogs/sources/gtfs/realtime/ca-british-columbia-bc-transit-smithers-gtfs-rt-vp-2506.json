@@ -7,7 +7,7 @@
     "provider": "BC Transit (Smithers)",
     "is_official": "True",
     "static_reference": [
-        "2471"
+        "2472"
     ],
     "urls": {
         "direct_download": "https://bct.tmix.se/gtfs-realtime/vehicleupdates.pb?operatorIds=31",

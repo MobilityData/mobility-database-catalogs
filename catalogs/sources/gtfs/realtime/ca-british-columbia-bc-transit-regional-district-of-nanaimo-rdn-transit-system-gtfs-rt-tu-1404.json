@@ -5,6 +5,7 @@
         "tu"
     ],
     "provider": "BC Transit - Regional District of Nanaimo (RDN) Transit System",
+    "status": "deprecated",
     "static_reference": [
         "692"
     ],
@@ -12,5 +13,11 @@
         "direct_download": "http://nanaimo.mapstrat.com/current/gtfrealtime_TripUpdates.bin",
         "authentication_type": 0,
         "license": "https://www.bctransit.com/open-data/terms-of-use"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2475",
+            "comment": " "
+        }
+    ]
 }

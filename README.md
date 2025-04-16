@@ -73,11 +73,11 @@ Contains the JSON schemas used to validate the feeds in the integration tests.
 | name        |  Text |Optional              | An optional description of the feed, e.g to specify if the feed is an aggregate of multiple providers, or which network is represented by the feed. |
 |urls| Object | Required | Contains URLs associated with the feed in the `direct_download_url`, `latest`, and `license` fields. |
 |- direct_download |URL|Optional     | URL that automatically opens the feed. |
-| - latest | URL | System generated | A stable URL for the latest dataset of a feed. |
-|- license |URL| Optional     | The license information for the direct download URL.  |
 |- authentication_type |Enum|Optional | The **authentication_type** field defines the type of authentication required to access the URL. Valid values for this field are: <ul> <li>**0** or **(empty)** - No authentication required.</li><li>**1** - The authentication requires an API key, which should be passed as value of the parameter `api_key_parameter_name` in the URL. Please visit URL in `authentication_info_url` for more information. </li><li>**2** - The authentication requires an HTTP header, which should be passed as the value of the header `api_key_parameter_name` in the HTTP request. </li></ul> When not provided, the authentication type is assumed to be **0**.|
 |- authentication_info_url | URL| Conditionally required | If authentication is required, the **authentication_info_url** field contains a URL to a human-readable page describing how the authentication should be performed and how credentials can be created. This field is required for `authentication_type=1` and `authentication_type=2`. |
 |- api_key_parameter_name |Text|Conditionally required | The **api_key_parameter_name** field defines the name of the parameter to pass in the URL to provide the API key. This field is required for `authentication_type=1` and `authentication_type=2`.   |
+| - latest | URL | System generated | A stable URL for the latest dataset of a feed. |
+|- license |URL| Optional     | The license information for the direct download URL.  |
 
 
 #### GTFS Realtime Schema

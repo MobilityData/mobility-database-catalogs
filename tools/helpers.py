@@ -8,7 +8,6 @@ import gtfs_kit
 import pandas as pd
 import requests
 from pandas.errors import ParserError
-from requests.exceptions import RequestException, HTTPError
 from unidecode import unidecode
 
 from tools.constants import (

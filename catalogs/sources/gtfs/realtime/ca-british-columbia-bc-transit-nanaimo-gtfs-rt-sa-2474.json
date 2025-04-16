@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 2474,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "BC Transit (Nanaimo)",
+    "static_reference": [
+        "2473"
+    ],
+    "urls": {
+        "direct_download": "https://bct.tmix.se/gtfs-realtime/alerts.pb?operatorIds=41",
+        "authentication_type": 0,
+        "license": "https://www.bctransit.com/open-data/terms-of-use"
+    }
+}

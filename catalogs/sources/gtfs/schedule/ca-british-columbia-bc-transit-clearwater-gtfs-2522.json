@@ -2,6 +2,7 @@
     "mdb_source_id": 2522,
     "data_type": "gtfs",
     "provider": "BC Transit (Clearwater)",
+    "is_official": "True",
     "location": {
         "country_code": "CA",
         "subdivision_name": "British Columbia",

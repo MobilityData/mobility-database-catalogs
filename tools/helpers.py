@@ -78,76 +78,78 @@ def to_csv(path, catalog, columns):
     catalog.to_csv(path, sep=",", index=False)
 
 
+def get_fallback_headers(url, original_headers=None):
+    """Generate browser-like fallback headers for a given URL"""
+    return {
+        **FALLBACK_HEADERS,
+        **(original_headers or {}),
+        "Referer": f"{urlparse(url).scheme}://{urlparse(url).netloc}/",
+        "Host": urlparse(url).netloc
+    }
+
+
 def download_dataset(url, authentication_type, api_key_parameter_name=None, api_key_parameter_value=None):
     """
     Downloads a dataset from the given URL using specified authentication mechanisms.
     The method performs a request to the URL with API key passed as either a query
-    parameter or a header, based on the chosen authentication type. If the download
-    fails with certain 403 errors, a fallback request with alternative headers is attempted.
-    It writes the dataset contents to a temporary file and returns the file path.
-
-    :param url: The dataset's source URL.
-    :type url: str
-    :param authentication_type: The type of authentication mechanism to use (e.g.,
-        1 for parameter-based, 2 for header-based).
-    :type authentication_type: int
-    :param api_key_parameter_name: The name of the API key parameter/header. It is
-        optional if the dataset is publicly accessible or no authentication is
-        required.
-    :type api_key_parameter_name: str, optional
-    :param api_key_parameter_value: The value of the API key to authenticate the
-        request. It is optional if no authentication is required.
-    :type api_key_parameter_value: str, optional
-    :return: The file path where the downloaded dataset is temporarily stored.
-    :type return: str
-    :raises RequestException: If all attempts to download the dataset fail.
+    parameter or a header, based on the chosen authentication type. It implements
+    adaptive fallback strategies for HTTP 403 errors and SSL certificate errors.
     """
-
-    def make_request(url, params=None, headers=None):
-        try:
-            response = requests.get(url, params=params, headers=headers, allow_redirects=True, verify=True)
-            response.raise_for_status()
-            return response.content
-        except requests.exceptions.SSLError as ssl_err:
-            ca_bundle_path = os.environ.get("SSL_CERT_PATH")
-            if ca_bundle_path and os.path.exists(ca_bundle_path):
-                print(f"SSL verification failed. Retrying with custom CA bundle: {ca_bundle_path}")
-                try:
-                    response = requests.get(url, params=params, headers=headers, allow_redirects=True,
-                                            verify=ca_bundle_path)
-                    response.raise_for_status()
-                    return response.content
-                except Exception as e:
-                    print(f"SSL retry failed: {e}")
-                    return None
-            else:
-                print("Custom CA bundle not found. SSL verification failed.")
-                return None
-        except HTTPError as e:
-            return None if e.response.status_code == 403 else RequestException(
-                f"HTTP error {e} when accessing {url}. Fallback headers will be tried."
-            )
-        except RequestException as e:
-            raise RequestException(f"Request failed: {e}")
-
     file_path = os.path.join(os.getcwd(), str(uuid.uuid4()))
 
     params = {api_key_parameter_name: api_key_parameter_value} if authentication_type == 1 else None
     headers = {api_key_parameter_name: api_key_parameter_value} if authentication_type == 2 else None
 
-    zip_file = make_request(url, params, headers) or make_request(
-        url,
-        params,
-        {**FALLBACK_HEADERS, **(headers or {}), "Referer": f"{urlparse(url).scheme}://{urlparse(url).netloc}/"}
-    )
+    tried_options = set()
+    current_headers = headers
+    verify_ssl = True
 
-    if zip_file is None:
-        raise RequestException(f"FAILURE! Retry attempts failed for {url}.")
+    for attempt in range(3):
+        try:
+            response = requests.get(
+                url,
+                params=params,
+                headers=current_headers,
+                allow_redirects=True,
+                verify=verify_ssl
+            )
+            response.raise_for_status()
 
-    with open(file_path, "wb") as f:
-        f.write(zip_file)
+            if not verify_ssl:
+                import warnings
+                warnings.warn(
+                    f"SSL verification was disabled when downloading {url}."
+                )
 
-    return file_path
+            with open(file_path, "wb") as f:
+                f.write(response.content)
+            return file_path
+
+        except requests.exceptions.HTTPError as e:
+            if e.response.status_code == 403 and "fallback_headers" not in tried_options:
+                current_headers = get_fallback_headers(url, headers)
+                tried_options.add("fallback_headers")
+                continue
+
+        except requests.exceptions.SSLError:
+            if "disable_ssl" not in tried_options:
+                verify_ssl = False
+                tried_options.add("disable_ssl")
+                continue
+
+        except requests.exceptions.RequestException:
+            pass
+
+        if "fallback_headers" not in tried_options:
+            current_headers = get_fallback_headers(url, headers)
+            tried_options.add("fallback_headers")
+        elif "disable_ssl" not in tried_options:
+            verify_ssl = False
+            tried_options.add("disable_ssl")
+        else:
+            break
+
+    raise requests.exceptions.RequestException(f"FAILURE! All download attempts failed for {url}.")
 
 
 #########################

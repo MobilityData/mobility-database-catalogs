@@ -5,8 +5,9 @@
         "vp"
     ],
     "provider": "BC Transit (Campbell River Transit)",
+    "is_official": "True",
     "static_reference": [
-        "691"
+        "2514"
     ],
     "urls": {
         "direct_download": "https://bct.tmix.se/gtfs-realtime/vehicleupdates.pb?operatorIds=12",

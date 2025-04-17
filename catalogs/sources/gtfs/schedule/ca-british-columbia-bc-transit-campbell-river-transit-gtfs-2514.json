@@ -1,8 +1,8 @@
 {
-    "mdb_source_id": 691,
+    "mdb_source_id": 2514,
     "data_type": "gtfs",
     "provider": "BC Transit (Campbell River Transit)",
-    "status": "deprecated",
+    "is_official": "True",
     "location": {
         "country_code": "CA",
         "subdivision_name": "British Columbia",
@@ -16,13 +16,8 @@
         }
     },
     "urls": {
-        "direct_download": "https://www.bctransit.com/data/gtfs/campbell-river.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-transit-campbell-river-transit-gtfs-691.zip?alt=media"
-    },
-    "redirect": [
-        {
-            "id": "2514",
-            "comment": " "
-        }
-    ]
+        "direct_download": "https://bct.tmix.se/Tmix.Cap.TdExport.WebApi/gtfs/?operatorIds=12",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-transit-campbell-river-transit-gtfs-2514.zip?alt=media",
+        "license": "https://www.bctransit.com/open-data/terms-of-use"
+    }
 }

@@ -2,6 +2,7 @@
     "mdb_source_id": 697,
     "data_type": "gtfs",
     "provider": "BC Transit (Central Fraser Valley Transit System)",
+    "status": "deprecated",
     "location": {
         "country_code": "CA",
         "subdivision_name": "British Columbia",
@@ -18,5 +19,11 @@
         "direct_download": "https://www.bctransit.com/data/gtfs/central-fraser-valley.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-transit-central-fraser-valley-transit-system-gtfs-697.zip?alt=media",
         "license": "https://www.bctransit.com/open-data/terms-of-use"
-    }
+    },
+    "redirect": [
+        {
+            "id": "1991",
+            "comment": " "
+        }
+    ]
 }

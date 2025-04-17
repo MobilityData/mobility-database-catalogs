@@ -7,7 +7,7 @@
     "provider": "BC Transit (Clearwater)",
     "is_official": "True",
     "static_reference": [
-        "2521"
+        "2515"
     ],
     "urls": {
         "direct_download": "https://bct.tmix.se/gtfs-realtime/alerts.pb?operatorIds=35",

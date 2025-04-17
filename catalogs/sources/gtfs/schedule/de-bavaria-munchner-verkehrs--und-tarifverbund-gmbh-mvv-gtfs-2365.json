@@ -2,6 +2,7 @@
     "mdb_source_id": 2365,
     "data_type": "gtfs",
     "provider": "Münchner Verkehrs- und Tarifverbund GmbH (MVV)",
+    "status": "deprecated",
     "name": "MVV regional bus",
     "location": {
         "country_code": "DE",
@@ -21,5 +22,10 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-bavaria-munchner-verkehrs--und-tarifverbund-gmbh-mvv-gtfs-2365.zip?alt=media",
         "license": "https://www.mvv-muenchen.de/fahrplanauskunft/fuer-entwickler/opendata/index.html"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "779",
+            "comment": " "
+        }
+    ]
 }

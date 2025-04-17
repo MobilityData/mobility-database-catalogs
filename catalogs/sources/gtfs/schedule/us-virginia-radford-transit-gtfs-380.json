@@ -2,6 +2,7 @@
     "mdb_source_id": 380,
     "data_type": "gtfs",
     "provider": "Radford Transit",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Virginia",
@@ -17,5 +18,12 @@
     "urls": {
         "direct_download": "https://passio3.com/radford/passioTransit/gtfs/google_transit.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-radford-transit-gtfs-380.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2415",
+            "comment": " "
+        }
+    ]
+    
 }

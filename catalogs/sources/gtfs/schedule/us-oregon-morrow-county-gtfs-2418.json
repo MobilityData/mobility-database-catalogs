@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2418,
+    "data_type": "gtfs",
+    "provider": "Morrow County Public Transit",
+    "feed_contact_email": "trillium.support@optibus.com", 
+    "is_official": "True",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Morrow County",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-03-31T23:17:52+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://oregon-gtfs.trilliumtransit.com/gtfs_data/morrowcounty-or-us/morrowcounty-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-morrow-county-gtfs-2418.zip?alt=media"
+    }
+}

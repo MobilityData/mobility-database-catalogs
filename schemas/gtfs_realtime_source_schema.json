@@ -171,6 +171,11 @@
           }
         }
       }
+    },
+    "is_official": {
+      "type": "string",
+      "description": "True if a feed comes directly from the agency, False if a feed is created by researchers or partners unaffiliated with the agency or municipality.",
+      "enum": ["True", "False"]
     }
   },
   "required": ["mdb_source_id", "data_type", "entity_type", "provider", "urls"]

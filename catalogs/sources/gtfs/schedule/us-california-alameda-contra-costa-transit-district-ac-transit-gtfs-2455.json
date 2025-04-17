@@ -1,0 +1,28 @@
+{
+    "mdb_source_id": 2455,
+    "data_type": "gtfs",
+    "provider": "Alameda-Contra Costa Transit District (AC Transit)",
+    "is_official": "True",
+    "feed_contact_email": "DevSupport@actransit.org",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Oakland",
+        "bounding_box": {
+            "minimum_latitude": 37.409768,
+            "maximum_latitude": 38.017813,
+            "minimum_longitude": -122.421947,
+            "maximum_longitude": -121.886829,
+            "extracted_on": "2022-03-23T23:19:13+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://api.actransit.org/transit/gtfs/download",
+        "authentication_type": 1,
+        "authentication_info": "https://api.actransit.org/transit",
+        "api_key_parameter_name": "token",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-alameda-contra-costa-transit-district-ac-transit-gtfs-2455.zip?alt=media",
+        "license": "https://www.actransit.org/data-terms-and-conditions/"
+    },
+    "redirect": []
+}

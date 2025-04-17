@@ -2,6 +2,7 @@
     "mdb_source_id": 2010,
     "data_type": "gtfs",
     "provider": "METROFOR",
+    "status": "deprecated",
     "location": {
         "country_code": "BR",
         "subdivision_name": "Ceará",
@@ -19,5 +20,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/br-ceara-metrofor-gtfs-2010.zip?alt=media",
         "license": "https://www.metrofor.ce.gov.br/gtfs/"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2367"
+        }
+    ]
 }

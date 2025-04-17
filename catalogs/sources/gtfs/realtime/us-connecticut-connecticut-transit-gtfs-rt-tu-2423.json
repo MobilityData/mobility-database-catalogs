@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 2423,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Connecticut Transit",
+    "is_official": "True",
+    "static_reference": [
+        "553"
+    ],
+    "urls": {
+        "direct_download": "https://cttprdtmgtfs.ctttrpcloud.com/TMGTFSRealTimeWebService/TripUpdate/TripUpdates.pb",
+        "authentication_type": 0,
+        "license": "https://www.cttransit.com/about/developers/terms-of-use"
+    }
+}

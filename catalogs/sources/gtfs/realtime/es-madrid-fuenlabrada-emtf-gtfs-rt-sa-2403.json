@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 2403,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Empresa Municipal de Transportes de Fuenlabrada (EMTF)",
+    "is_official": "True", 
+    "feed_contact_email": "emtf@emtf.es",
+    "static_reference": [
+        "2400"
+    ],
+    "urls": {
+        "direct_download": "https://api.control.optibus.co/opendata/v1/gtfs-rt/alerts?uid=c-5cfcd2d1",
+        "authentication_type": 0
+    }
+}

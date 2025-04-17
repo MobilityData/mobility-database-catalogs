@@ -1,7 +1,8 @@
 {
     "mdb_source_id": 142,
     "data_type": "gtfs",
-    "provider": "ValleyRide",
+    "provider": "Valley Regional Transit",
+    "is_official": "True",
     "features": [
         "fares-v1"
     ],
@@ -19,6 +20,7 @@
     },
     "urls": {
         "direct_download": "https://www.valleyregionaltransit.org/GTFS/vrt_transit1.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-idaho-valleyride-gtfs-142.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-idaho-valleyride-gtfs-142.zip?alt=media",
+        "license": "https://www.valleyregionaltransit.org/about-us/resources/"
     }
 }

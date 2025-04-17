@@ -2,6 +2,7 @@
     "mdb_source_id": 345,
     "data_type": "gtfs",
     "provider": "Gainesville Regional Transit System",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Florida",
@@ -17,5 +18,11 @@
     "urls": {
         "direct_download": "https://ftis.org/PostFileDownload.aspx?id=468A0",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-gainesville-regional-transit-system-gtfs-345.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2412",
+            "comment": " "
+        }
+    ]
 }

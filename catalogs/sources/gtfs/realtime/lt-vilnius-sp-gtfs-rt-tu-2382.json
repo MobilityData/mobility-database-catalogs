@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 2382,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "SĮ 'Susisiekimo paslaugos'",
+    "name": "Vilnius Transport",
+    "static_reference": [
+        "1044"
+    ],
+    "urls": {
+        "direct_download": "https://www.stops.lt/vilnius/trip_updates.pb",
+        "authentication_type": 0
+    }
+}

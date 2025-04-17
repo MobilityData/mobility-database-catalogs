@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 2414,
+    "data_type": "gtfs",
+    "provider": "Metropolitan Transit Authority of Black Hawk County",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Iowa",
+        "municipality": "Black Hawk County",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-03-31T20:09:50+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/cedarfalls-ia-us/cedarfalls-ia-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-iowa-metropolitan-transit-authority-of-black-hawk-county-gtfs-2414.zip?alt=media"
+    }
+}

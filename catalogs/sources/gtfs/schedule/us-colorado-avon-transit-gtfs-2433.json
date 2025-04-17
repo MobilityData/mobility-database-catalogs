@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 2433,
+    "data_type": "gtfs",
+    "provider": "Avon Transit",
+    "feed_contact_email": "mobility@avon.org",
+    "is_official": "True",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "municipality": "Avon",
+        "bounding_box": {
+            "minimum_latitude": 39.6039284878294,
+            "maximum_latitude": 39.639706,
+            "minimum_longitude": -106.537655,
+            "maximum_longitude": -106.501871,
+            "extracted_on": "2025-04-09T17:42:49+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.avon.org/DocumentCenter/View/25051/TownOfAvon_gtfs",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-avon-transit-gtfs-2433.zip?alt=media",
+        "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "redirect": []
+}

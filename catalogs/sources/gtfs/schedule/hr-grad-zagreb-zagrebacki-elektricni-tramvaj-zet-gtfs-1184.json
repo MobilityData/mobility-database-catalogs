@@ -2,7 +2,7 @@
     "mdb_source_id": 1184,
     "data_type": "gtfs",
     "provider": "Zagrebački Električni Tramvaj (ZET)",
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "HR",
         "subdivision_name": "Grad Zagreb",
@@ -18,5 +18,11 @@
         "direct_download": "https://transitfeeds.com/p/zet-zagreba-ki-elektri-ni-tramvaj/1007/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/hr-grad-zagreb-zagrebacki-elektricni-tramvaj-zet-gtfs-1184.zip?alt=media",
         "license": "https://www.zet.hr/odredbe/datoteke-u-gtfs-formatu/669"
-    }
+    },
+    "redirect": [
+        {
+            "id": "tld-1071",
+            "comment": " "
+        }
+    ]
 }

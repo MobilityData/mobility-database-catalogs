@@ -2,6 +2,7 @@
     "mdb_source_id": 1209,
     "data_type": "gtfs",
     "provider": "Kochi Metro",
+    "status": "deprecated",
     "features": [
         "fares-v1"
     ],
@@ -21,5 +22,11 @@
         "direct_download": "https://kmrl.e-smartlab.com/wp-content/uploads/2018/02/KMRL-Open-Data.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/in-kerala-kochi-metro-gtfs-1209.zip?alt=media",
         "license": "https://kochimetro.org/opendata/TermsOfUse.pdf"
-    }
+    },
+     "redirect": [
+        {
+            "id": "tld-1031",
+            "comment": " "
+        }
+    ]
 }

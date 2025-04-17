@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 2395,
+    "data_type": "gtfs",
+    "provider": "Via Mobility",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Colorado",
+        "bounding_box": {
+            "minimum_latitude": 39.930438,
+            "maximum_latitude": 40.0633309480155,
+            "minimum_longitude": -105.594805,
+            "maximum_longitude": -105.16944,
+            "extracted_on": "2022-03-14T21:16:07+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://passio3.com/viaboulder/passioTransit/gtfs/google_transit.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-via-mobility-gtfs-2395.zip?alt=media"
+    },
+    "redirect": []
+}

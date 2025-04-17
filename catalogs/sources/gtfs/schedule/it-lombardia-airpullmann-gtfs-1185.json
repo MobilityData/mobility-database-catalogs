@@ -2,7 +2,7 @@
     "mdb_source_id": 1185,
     "data_type": "gtfs",
     "provider": "Airpullmann",
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "IT",
         "subdivision_name": "Lombardia",
@@ -18,5 +18,12 @@
     "urls": {
         "direct_download": "https://transitfeeds.com/p/air-pullman-s-p-a/1233/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-lombardia-airpullmann-gtfs-1185.zip?alt=media"
-    }
+    },
+     "redirect": [
+        {
+            "id": "tld-2232",
+            "comment": " "
+        }
+    ]
+    
 }

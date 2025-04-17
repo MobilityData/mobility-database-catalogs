@@ -6,7 +6,7 @@
     ],
     "provider": "Zarząd Transportu Publicznego w Krakowie (ZTP Kraków)",
     "static_reference": [
-        "1326"
+        "1270"
     ],
     "urls": {
         "direct_download": "https://gtfs.ztp.krakow.pl/ServiceAlerts_T.pb",

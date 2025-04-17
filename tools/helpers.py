@@ -1,13 +1,16 @@
+import datetime
 import json
 import os
-import datetime
-import gtfs_kit
-import requests
-from requests.exceptions import RequestException, HTTPError
-import pandas as pd
-from pandas.errors import ParserError
-from unidecode import unidecode
 import uuid
+from urllib.parse import urlparse
+
+import gtfs_kit
+import pandas as pd
+import requests
+from pandas.errors import ParserError
+from requests.exceptions import RequestException, HTTPError
+from unidecode import unidecode
+
 from tools.constants import (
     STOP_LAT,
     STOP_LON,
@@ -15,9 +18,8 @@ from tools.constants import (
     MDB_SOURCE_FILENAME,
     ZIP,
     FALLBACK_HEADERS,
-
 )
-from urllib.parse import urlparse
+
 
 #########################
 # I/O FUNCTIONS
@@ -75,60 +77,78 @@ def to_csv(path, catalog, columns):
     catalog.to_csv(path, sep=",", index=False)
 
 
+def get_fallback_headers(url, original_headers=None):
+    """Generate browser-like fallback headers for a given URL"""
+    return {
+        **FALLBACK_HEADERS,
+        **(original_headers or {}),
+        "Referer": f"{urlparse(url).scheme}://{urlparse(url).netloc}/",
+        "Host": urlparse(url).netloc
+    }
+
+
 def download_dataset(url, authentication_type, api_key_parameter_name=None, api_key_parameter_value=None):
     """
     Downloads a dataset from the given URL using specified authentication mechanisms.
     The method performs a request to the URL with API key passed as either a query
-    parameter or a header, based on the chosen authentication type. If the download
-    fails with certain 403 errors, a fallback request with alternative headers is attempted.
-    It writes the dataset contents to a temporary file and returns the file path.
-
-    :param url: The dataset's source URL.
-    :type url: str
-    :param authentication_type: The type of authentication mechanism to use (e.g.,
-        1 for parameter-based, 2 for header-based).
-    :type authentication_type: int
-    :param api_key_parameter_name: The name of the API key parameter/header. It is
-        optional if the dataset is publicly accessible or no authentication is
-        required.
-    :type api_key_parameter_name: str, optional
-    :param api_key_parameter_value: The value of the API key to authenticate the
-        request. It is optional if no authentication is required.
-    :type api_key_parameter_value: str, optional
-    :return: The file path where the downloaded dataset is temporarily stored.
-    :type return: str
-    :raises RequestException: If all attempts to download the dataset fail.
+    parameter or a header, based on the chosen authentication type. It implements
+    adaptive fallback strategies for HTTP 403 errors and SSL certificate errors.
     """
-
-    def make_request(url, params=None, headers=None):
-        try:
-            response = requests.get(url, params=params, headers=headers, allow_redirects=True)
-            response.raise_for_status()
-            return response.content
-        except HTTPError as e:
-            return None if e.response.status_code == 403 else RequestException(
-                f"HTTP error {e} when accessing {url}. A fallback attempt with alternative headers will be made.")
-        except RequestException as e:
-            raise RequestException(f"Request failed: {e}")
-
     file_path = os.path.join(os.getcwd(), str(uuid.uuid4()))
 
     params = {api_key_parameter_name: api_key_parameter_value} if authentication_type == 1 else None
     headers = {api_key_parameter_name: api_key_parameter_value} if authentication_type == 2 else None
 
-    zip_file = make_request(url, params, headers) or (
-        make_request(url, params, {**FALLBACK_HEADERS, **(headers or {}),
-                                   "Referer": f"{urlparse(url).scheme}://{urlparse(url).netloc}/",
-                                   "Host": urlparse(url).netloc})
-                     )
+    tried_options = set()
+    current_headers = headers
+    verify_ssl = True
 
-    if zip_file is None:
-        raise RequestException(f"FAILURE! Retry attempts failed for {url}.")
+    for attempt in range(3):
+        try:
+            response = requests.get(
+                url,
+                params=params,
+                headers=current_headers,
+                allow_redirects=True,
+                verify=verify_ssl
+            )
+            response.raise_for_status()
 
-    with open(file_path, "wb") as f:
-        f.write(zip_file)
+            if not verify_ssl:
+                import warnings
+                warnings.warn(
+                    f"SSL verification was disabled when downloading {url}."
+                )
 
-    return file_path
+            with open(file_path, "wb") as f:
+                f.write(response.content)
+            return file_path
+
+        except requests.exceptions.HTTPError as e:
+            if e.response.status_code == 403 and "fallback_headers" not in tried_options:
+                current_headers = get_fallback_headers(url, headers)
+                tried_options.add("fallback_headers")
+                continue
+
+        except requests.exceptions.SSLError:
+            if "disable_ssl" not in tried_options:
+                verify_ssl = False
+                tried_options.add("disable_ssl")
+                continue
+
+        except requests.exceptions.RequestException:
+            pass
+
+        if "fallback_headers" not in tried_options:
+            current_headers = get_fallback_headers(url, headers)
+            tried_options.add("fallback_headers")
+        elif "disable_ssl" not in tried_options:
+            verify_ssl = False
+            tried_options.add("disable_ssl")
+        else:
+            break
+
+    raise requests.exceptions.RequestException(f"FAILURE! All download attempts failed for {url}.")
 
 
 #########################
@@ -137,14 +157,14 @@ def download_dataset(url, authentication_type, api_key_parameter_name=None, api_
 
 
 def are_overlapping_boxes(
-    source_minimum_latitude,
-    source_maximum_latitude,
-    source_minimum_longitude,
-    source_maximum_longitude,
-    filter_minimum_latitude,
-    filter_maximum_latitude,
-    filter_minimum_longitude,
-    filter_maximum_longitude,
+        source_minimum_latitude,
+        source_maximum_latitude,
+        source_minimum_longitude,
+        source_maximum_longitude,
+        filter_minimum_latitude,
+        filter_maximum_latitude,
+        filter_minimum_longitude,
+        filter_maximum_longitude,
 ):
     """
     Verifies if two boxes are overlapping in two dimensions.
@@ -178,7 +198,7 @@ def are_overlapping_boxes(
 
 
 def are_overlapping_edges(
-    source_minimum, source_maximum, filter_minimum, filter_maximum
+        source_minimum, source_maximum, filter_minimum, filter_maximum
 ):
     """
     Verifies if two edges are overlapping in one dimension.
@@ -238,7 +258,7 @@ def is_readable(file_path, load_func):
 
 
 def create_latest_url(
-    country_code, subdivision_name, provider, data_type, mdb_source_id
+        country_code, subdivision_name, provider, data_type, mdb_source_id
 ):
     """
     Creates the latest URL for an MDB Source.
@@ -270,7 +290,7 @@ def create_latest_url(
 
 
 def create_filename(
-    country_code, subdivision_name, provider, data_type, mdb_source_id, extension
+        country_code, subdivision_name, provider, data_type, mdb_source_id, extension
 ):
     """
     Creates the filename for an MDB Source.
@@ -401,9 +421,9 @@ def extract_gtfs_bounding_box(file_path):
 
     stops_required_columns = {STOP_LAT, STOP_LON}
     stops_are_present = (
-        stops is not None
-        and stops_required_columns.issubset(stops.columns)
-        and not (stops[STOP_LAT].dropna().empty or stops[STOP_LON].dropna().empty)
+            stops is not None
+            and stops_required_columns.issubset(stops.columns)
+            and not (stops[STOP_LAT].dropna().empty or stops[STOP_LON].dropna().empty)
     )
 
     minimum_latitude = stops[STOP_LAT].dropna().min() if stops_are_present else None

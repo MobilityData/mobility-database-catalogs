@@ -185,8 +185,19 @@ jobs:
               os.makedirs(os.path.dirname(zip_path), exist_ok=True)
 
               try:
+                  # First attempt with SSL verification
                   zip_file_req = requests.get(url, params=params, headers=headers, allow_redirects=True)
                   zip_file_req.raise_for_status()
+              except requests.exceptions.SSLError as ssl_err:
+                  print(f"{base}: SSL verification failed. Retrying without verification.")
+                  try:
+                      zip_file_req = requests.get(url, params=params, headers=headers, allow_redirects=True, verify=False)
+                      zip_file_req.raise_for_status()
+                      print(f"Warning: SSL verification was disabled for {url}. This is a security risk.")
+                  except Exception as retry_e:
+                      raise Exception(
+                          f"{base}: Exception {retry_e} occurred when downloading the URL {url} with SSL verification disabled.\n"
+                      )
               except Exception as e:
                   raise Exception(
                       f"{base}: Exception {e} occurred when downloading the URL {url}.\n"

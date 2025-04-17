@@ -7,7 +7,7 @@
     "provider": "BC Transit (Agassiz-Harrison)",
     "is_official": "True",
     "static_reference": [
-        "2506"
+        "1991"
     ],
     "urls": {
         "direct_download": "https://bct.tmix.se/gtfs-realtime/alerts.pb?operatorIds=13",

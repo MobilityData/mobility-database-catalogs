@@ -1,10 +1,10 @@
 {
-    "mdb_source_id": 2516,
+    "mdb_source_id": 2508,
     "data_type": "gtfs-rt",
     "entity_type": [
         "tu"
     ],
-    "provider": "BC Transit (Central Fraser Valley, Chilliwack)",
+    "provider": "BC Transit (Central Fraser Valley, Chilliwack, Agassiz-Harrison)",
     "is_official": "True",
     "static_reference": [
         "1991"

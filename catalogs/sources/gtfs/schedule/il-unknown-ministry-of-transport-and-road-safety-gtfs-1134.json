@@ -2,6 +2,7 @@
     "mdb_source_id": 1134,
     "data_type": "gtfs",
     "provider": "Ministry of Transport and Road Safety",
+    "status": "deprecated",
     "features": [
         "fares-v1"
     ],
@@ -18,5 +19,11 @@
     "urls": {
         "direct_download": "https://transitfeeds.com/p/ministry-of-transport-and-road-safety/820/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/il-unknown-ministry-of-transport-and-road-safety-gtfs-1134.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2519",
+            "comment": " "
+        }
+    ]
 }

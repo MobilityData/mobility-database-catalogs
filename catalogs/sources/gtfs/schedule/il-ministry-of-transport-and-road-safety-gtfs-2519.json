@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 2519,
+    "data_type": "gtfs",
+    "provider": "Ministry of Transport and Road Safety",
+    "is_official": "True",
+    "feed_contact_email": "gtfs-support@avivamcg.com",
+    "location": {
+        "country_code": "IL",
+        "bounding_box": {
+            "minimum_latitude": 29.492446,
+            "maximum_latitude": 33.283674,
+            "minimum_longitude": 34.284672,
+            "maximum_longitude": 35.839108,
+            "extracted_on": "2022-03-23T18:30:31+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.mot.gov.il/gtfsfiles/israel-public-transportation.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/il-ministry-of-transport-and-road-safety-gtfs-2519.zip?alt=media",
+        "license": "https://www.gov.il/he/pages/gtfs_general_transit_feed_specifications"
+    }
+}

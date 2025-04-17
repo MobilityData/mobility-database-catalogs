@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 2516,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "BC Transit (Central Fraser Valley, Chilliwack, Agassiz-Harrison)",
+    "is_official": "True",
+    "static_reference": [
+        "1991"
+    ],
+    "urls": {
+        "direct_download": "https://bct.tmix.se/gtfs-realtime/tripupdates.pb?operatorIds=13",
+        "authentication_type": 0,
+        "license": "https://www.bctransit.com/open-data/terms-of-use"
+    }
+}

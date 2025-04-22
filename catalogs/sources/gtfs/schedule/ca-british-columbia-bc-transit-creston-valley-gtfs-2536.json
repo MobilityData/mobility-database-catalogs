@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 2535,
+    "mdb_source_id": 2536,
     "data_type": "gtfs",
     "provider": "BC Transit (Creston Valley)",
     "is_official": "True",
@@ -17,7 +17,7 @@
     },
     "urls": {
         "direct_download": "https://bct.tmix.se/Tmix.Cap.TdExport.WebApi/gtfs/?operatorIds=16",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-transit-creston-valley-gtfs-2535.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-transit-creston-valley-gtfs-2536.zip?alt=media",
         "license": "https://www.bctransit.com/open-data/terms-of-use"
     }
 }

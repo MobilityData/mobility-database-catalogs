@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 2533,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "BC Transit (Cranbrook)",
+    "static_reference": [
+        "2532"
+    ],
+    "urls": {
+        "direct_download": "hhttps://bct.tmix.se/gtfs-realtime/alerts.pb?operatorIds=21",
+        "authentication_type": 0,
+        "license": "https://www.bctransit.com/open-data/terms-of-use"
+    }
+}

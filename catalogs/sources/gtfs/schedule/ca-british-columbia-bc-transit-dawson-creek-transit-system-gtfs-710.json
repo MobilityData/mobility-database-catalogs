@@ -2,6 +2,7 @@
     "mdb_source_id": 710,
     "data_type": "gtfs",
     "provider": "BC Transit (Dawson Creek Transit System)",
+    "is_official": "True",
     "location": {
         "country_code": "CA",
         "subdivision_name": "British Columbia",
@@ -16,6 +17,7 @@
     },
     "urls": {
         "direct_download": "https://bct.tmix.se/Tmix.Cap.TdExport.WebApi/gtfs/?operatorIds=27",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-transit-dawson-creek-transit-system-gtfs-710.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-transit-dawson-creek-transit-system-gtfs-710.zip?alt=media",
+        "license": "https://www.bctransit.com/open-data/terms-of-use"
     }
 }

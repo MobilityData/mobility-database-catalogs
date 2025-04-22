@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 2555,
+    "data_type": "gtfs",
+    "provider": "BC Transit (Kelowna Regional Transit System)",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "British Columbia",
+        "municipality": "Kelowna",
+        "bounding_box": {
+            "minimum_latitude": 49.751924,
+            "maximum_latitude": 50.073517,
+            "minimum_longitude": -119.790038,
+            "maximum_longitude": -119.347167,
+            "extracted_on": "2025-04-22T22:05:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://bct.tmix.se/Tmix.Cap.TdExport.WebApi/gtfs/?operatorIds=47",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-transit-kelowna-regional-transit-system-gtfs-2555.zip?alt=media",
+        "license": "https://www.bctransit.com/open-data/terms-of-use"
+    }
+}

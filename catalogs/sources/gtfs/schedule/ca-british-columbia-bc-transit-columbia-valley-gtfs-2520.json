@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 2520,
     "data_type": "gtfs",
-    "provider": "BC Transit (Columbia Valley)",
+    "provider": "BC Transit (Columbia Valley | Cranbrook | Elk Valley)",
     "is_official": "True",
     "location": {
         "country_code": "CA",

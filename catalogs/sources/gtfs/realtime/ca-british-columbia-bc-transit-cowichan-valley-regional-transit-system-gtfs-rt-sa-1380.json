@@ -5,18 +5,12 @@
         "sa"
     ],
     "provider": "BC Transit (Cowichan Valley Regional Transit System)",
-    "status": "deprecated",
+    "is_official": "True",
     "static_reference": [
-        "694"
+        "2528"
     ],
     "urls": {
         "direct_download": "https://bct.tmix.se/gtfs-realtime/alerts.pb?operatorIds=10",
         "authentication_type": 0
-    },
-    "redirect": [
-        {
-            "id": "2529",
-            "comment": " "
-        }
-    ]
+    }
 }

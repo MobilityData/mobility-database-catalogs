@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 2541,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "BC Transit (Dawson Creek)",
+    "is_official": "True",
+    "static_reference": [
+        "710"
+    ],
+    "urls": {
+        "direct_download": "https://bct.tmix.se/gtfs-realtime/tripupdates.pb?operatorIds=27",
+        "authentication_type": 0,
+        "license": "https://www.bctransit.com/open-data/terms-of-use"
+    }
+}

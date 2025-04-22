@@ -9,7 +9,7 @@
         "2551"
     ],
     "urls": {
-        "direct_download": https://bct.tmix.se/gtfs-realtime/vehicleupdates.pb?operatorIds=46",
+        "direct_download": "https://bct.tmix.se/gtfs-realtime/vehicleupdates.pb?operatorIds=46",
         "authentication_type": 0,
         "license": "https://www.bctransit.com/open-data/terms-of-use"
     }

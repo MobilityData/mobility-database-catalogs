@@ -5,8 +5,9 @@
         "tu"
     ],
     "provider": "BC Transit (Cowichan Valley Regional Transit System)",
+    "is_official": "True",
     "static_reference": [
-        "694"
+        "2528"
     ],
     "urls": {
         "direct_download": "https://bct.tmix.se/gtfs-realtime/tripupdates.pb?operatorIds=10",

@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 2534,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "BC Transit (Shuswap)",
+    "is_official": "True",
+    "static_reference": [
+        "2508"
+    ],
+    "urls": {
+        "direct_download": "https://bct.tmix.se/gtfs-realtime/tripupdates.pb?operatorIds=14",
+        "authentication_type": 0,
+        "license": "https://www.bctransit.com/open-data/terms-of-use"
+    }
+}

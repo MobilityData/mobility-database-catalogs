@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2532,
+    "data_type": "gtfs",
+    "provider": "BC Transit (South Okanagan-Similkameen)",
+    "is_official": "True",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "British Columbia",
+        "municipality": "South Okanagan-Similkameen",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-04-22T22:05:13+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://bct.tmix.se/Tmix.Cap.TdExport.WebApi/gtfs/?operatorIds=15",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-transit-south-okanagan-similkameen-gtfs-2532.zip?alt=media",
+        "license": "https://www.bctransit.com/open-data/terms-of-use"
+    }
+}

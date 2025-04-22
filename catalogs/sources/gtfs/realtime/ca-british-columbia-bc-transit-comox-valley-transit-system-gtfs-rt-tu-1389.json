@@ -5,6 +5,7 @@
         "tu"
     ],
     "provider": "BC Transit (Comox Valley Transit System)",
+    "status": "deprecated",
     "static_reference": [
         "693"
     ],
@@ -12,5 +13,11 @@
         "direct_download": "https://comox.mapstrat.com/current/gtfrealtime_TripUpdates.bin",
         "authentication_type": 0,
         "license": "https://www.bctransit.com/open-data/terms-of-use"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2526",
+            "comment": " "
+        }
+    ]
 }

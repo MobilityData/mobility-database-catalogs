@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 2521,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "BC Transit (Columbia Valley | Cranbrook | Elk Valley | Kimberley)",
+    "is_official": "True",
+    "static_reference": [
+        "2520"
+    ],
+    "urls": {
+        "direct_download": "https://bct.tmix.se/gtfs-realtime/alerts.pb?operatorIds=21",
+        "authentication_type": 0,
+        "license": "https://www.bctransit.com/open-data/terms-of-use"
+    }
+}

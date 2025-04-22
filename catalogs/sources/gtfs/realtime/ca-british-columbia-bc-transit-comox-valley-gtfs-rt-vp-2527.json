@@ -1,16 +1,16 @@
 {
-    "mdb_source_id": 2508,
+    "mdb_source_id": 2527,
     "data_type": "gtfs-rt",
     "entity_type": [
-        "tu"
+        "vp"
     ],
-    "provider": "BC Transit (Central Fraser Valley, Chilliwack, Agassiz-Harrison)",
+    "provider": "BC Transit (Comox Valley Transit System)",
     "is_official": "True",
     "static_reference": [
-        "1991"
+        "2524"
     ],
     "urls": {
-        "direct_download": "https://bct.tmix.se/gtfs-realtime/tripupdates.pb?operatorIds=13",
+        "direct_download": "https://bct.tmix.se/gtfs-realtime/vehicleupdates.pb?operatorIds=45",
         "authentication_type": 0,
         "license": "https://www.bctransit.com/open-data/terms-of-use"
     }

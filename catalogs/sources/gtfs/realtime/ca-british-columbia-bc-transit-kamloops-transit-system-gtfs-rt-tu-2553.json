@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 2553,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "BC Transit (Kamloops Transit System)",
+    "static_reference": [
+        "2551"
+    ],
+    "urls": {
+        "direct_download": "https://bct.tmix.se/gtfs-realtime/tripupdates.pb?operatorIds=46",
+        "authentication_type": 0,
+        "license": "https://www.bctransit.com/open-data/terms-of-use"
+    }
+}

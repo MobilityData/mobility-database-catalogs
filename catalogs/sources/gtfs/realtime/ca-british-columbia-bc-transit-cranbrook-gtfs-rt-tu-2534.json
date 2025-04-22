@@ -5,6 +5,7 @@
         "tu"
     ],
     "provider": "BC Transit (Cranbrook)",
+    "is_official": "True",
     "static_reference": [
         "2532"
     ],

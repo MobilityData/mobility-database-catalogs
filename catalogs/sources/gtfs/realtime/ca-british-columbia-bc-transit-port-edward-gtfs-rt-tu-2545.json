@@ -4,13 +4,13 @@
     "entity_type": [
         "tu"
     ],
-    "provider": "BC Transit (Elk Valley)",
+    "provider": "BC Transit (Port Edward)",
     "is_official": "True",
     "static_reference": [
         "2543"
     ],
     "urls": {
-        "direct_download": "https://bct.tmix.se/gtfs-realtime/tripupdates.pb?operatorIds=21",
+        "direct_download": "https://bct.tmix.se/gtfs-realtime/tripupdates.pb?operatorIds=23",
         "authentication_type": 0,
         "license": "https://www.bctransit.com/open-data/terms-of-use"
     }

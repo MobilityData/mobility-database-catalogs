@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 2569,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "BC Transit (Sunshine Coast Transit System)",
+    "is_official": "True",
+    "static_reference": [
+        "2567"
+    ],
+    "urls": {
+        "direct_download": "https://bct.tmix.se/gtfs-realtime/tripupdates.pb?operatorIds=18",
+        "authentication_type": 0,
+        "license": "https://www.bctransit.com/open-data/terms-of-use"
+    }
+}

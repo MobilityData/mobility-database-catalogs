@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2579,
+    "data_type": "gtfs",
+    "provider": "BC Transit (West Kootenay Transit System)",
+    "is_official": "True",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "British Columbia",
+        "municipality": "Nelson",
+        "bounding_box": {
+            "minimum_latitude": 49.071572,
+            "maximum_latitude": 50.296696,
+            "minimum_longitude": -118.140813,
+            "maximum_longitude": -116.896812,
+            "extracted_on": "2022-03-16T22:05:12+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://bct.tmix.se/Tmix.Cap.TdExport.WebApi/gtfs/?operatorIds=20",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-transit-west-kootenay-transit-system-gtfs-2579.zip?alt=media",
+        "license": "https://www.bctransit.com/open-data/terms-of-use/"
+    }
+}

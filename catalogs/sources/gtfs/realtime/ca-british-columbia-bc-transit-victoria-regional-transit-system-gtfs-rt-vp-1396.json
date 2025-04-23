@@ -5,6 +5,7 @@
         "vp"
     ],
     "provider": "BC Transit (Victoria Regional Transit System)",
+    "status": "deprecated",
     "static_reference": [
         "695"
     ],
@@ -12,5 +13,11 @@
         "direct_download": "http://victoria.mapstrat.com/current/gtfrealtime_VehiclePositions.bin",
         "authentication_type": 0,
         "license": "https://www.bctransit.com/open-data/terms-of-use"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2574",
+            "comment": " "
+        }
+    ]
 }

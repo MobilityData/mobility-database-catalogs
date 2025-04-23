@@ -5,8 +5,9 @@
         "sa"
     ],
     "provider": "Hamilton Street Railway",
+    "is_official": "True",
     "static_reference": [
-        "723"
+        "2358"
     ],
     "urls": {
         "direct_download": "https://opendata.hamilton.ca/GTFS-RT/GTFS_ServiceAlerts.pb",

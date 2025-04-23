@@ -5,6 +5,7 @@
         "tu"
     ],
     "provider": "Barrie Transit",
+    "is_official": "True",
     "static_reference": [
         "3"
     ],

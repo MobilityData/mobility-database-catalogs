@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2563,
+    "data_type": "gtfs",
+    "provider": "BC Transit (Squamish)",
+    "is_official": "True",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "British Columbia",
+        "municipality": "Squamish",
+        "bounding_box": {
+            "minimum_latitude": 49.696302,
+            "maximum_latitude": 49.774333,
+            "minimum_longitude": -123.157502,
+            "maximum_longitude": -123.099042,
+            "extracted_on": "2022-03-16T22:05:03+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://bct.tmix.se/Tmix.Cap.TdExport.WebApi/gtfs/?operatorIds=43",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-transit-squamish-gtfs-2563.zip?alt=media",
+        "license": "https://www.bctransit.com/open-data/terms-of-use"
+    }
+}

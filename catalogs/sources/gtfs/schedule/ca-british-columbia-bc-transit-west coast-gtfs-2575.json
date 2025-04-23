@@ -17,7 +17,7 @@
     },
     "urls": {
         "direct_download": "https://bct.tmix.se/Tmix.Cap.TdExport.WebApi/gtfs/?operatorIds=51",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-transit-west coast-gtfs-2575.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-transit-west-coast-gtfs-2575.zip?alt=media",
         "license": "https://www.bctransit.com/open-data/terms-of-use/"
     }
 }

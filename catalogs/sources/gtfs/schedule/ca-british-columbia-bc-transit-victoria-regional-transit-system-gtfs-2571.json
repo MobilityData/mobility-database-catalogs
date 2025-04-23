@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 2571,
+    "data_type": "gtfs",
+    "provider": "BC Transit (Victoria Regional Transit System)",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "British Columbia",
+        "municipality": "Victoria",
+        "bounding_box": {
+            "minimum_latitude": 48.33716,
+            "maximum_latitude": 48.697757,
+            "minimum_longitude": -123.795435,
+            "maximum_longitude": -123.275822,
+            "extracted_on": "2022-03-16T22:04:36+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://bct.tmix.se/Tmix.Cap.TdExport.WebApi/gtfs/?operatorIds=48",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-transit-victoria-regional-transit-system-gtfs-2571.zip?alt=media"
+    }
+}

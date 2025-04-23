@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "BC Transit (Columbia Valley | Cranbrook | Elk Valley | Kimberley)",
     "is_official": "True",
+    "name": "East Kootenay",
     "location": {
         "country_code": "CA",
         "subdivision_name": "British Columbia",

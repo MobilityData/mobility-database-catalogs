@@ -2,6 +2,7 @@
     "mdb_source_id": 1995,
     "data_type": "gtfs",
     "provider": "Union Pearson Express (UP Express)",
+    "is_official": "True",
     "location": {
         "country_code": "CA",
         "subdivision_name": "Ontario",

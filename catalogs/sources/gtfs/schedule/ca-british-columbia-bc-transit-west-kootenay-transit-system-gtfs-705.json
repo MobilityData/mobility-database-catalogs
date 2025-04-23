@@ -2,6 +2,7 @@
     "mdb_source_id": 705,
     "data_type": "gtfs",
     "provider": "BC Transit (West Kootenay Transit System)",
+    "status": "deprecated",
     "location": {
         "country_code": "CA",
         "subdivision_name": "British Columbia",
@@ -17,5 +18,11 @@
     "urls": {
         "direct_download": "https://www.bctransit.com/data/gtfs/west-kootenay.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-transit-west-kootenay-transit-system-gtfs-705.zip?alt=media"
-    }
+    },
+     "redirect": [
+        {
+            "id": "2579",
+            "comment": " "
+        }
+    ]
 }

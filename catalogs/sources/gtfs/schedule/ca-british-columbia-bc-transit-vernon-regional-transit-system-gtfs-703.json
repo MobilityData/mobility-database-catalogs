@@ -2,7 +2,7 @@
     "mdb_source_id": 703,
     "data_type": "gtfs",
     "provider": "BC Transit (Vernon Regional Transit System)",
-    "status": "deprecated',
+    "status": "deprecated",
     "location": {
         "country_code": "CA",
         "subdivision_name": "British Columbia",

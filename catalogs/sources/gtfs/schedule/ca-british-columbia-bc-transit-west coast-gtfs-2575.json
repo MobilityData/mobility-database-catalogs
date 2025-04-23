@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2575,
+    "data_type": "gtfs",
+    "provider": "BC Transit (West Coast)",
+    "is_official": "True",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "British Columbia",
+        "municipality": "West Coast",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-04-23T22:04:36+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://bct.tmix.se/Tmix.Cap.TdExport.WebApi/gtfs/?operatorIds=51",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-transit-west coast-gtfs-2575.zip?alt=media",
+        "license": "https://www.bctransit.com/open-data/terms-of-use/"
+    }
+}

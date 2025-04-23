@@ -1,8 +1,8 @@
 {
-    "mdb_source_id": 700,
+    "mdb_source_id": 2567,
     "data_type": "gtfs",
     "provider": "BC Transit (Sunshine Coast Transit System)",
-    "status": "deprecated",
+    "is_official": "True",
     "location": {
         "country_code": "CA",
         "subdivision_name": "British Columbia",
@@ -15,14 +15,8 @@
         }
     },
     "urls": {
-        "direct_download": "https://www.bctransit.com/data/gtfs/sunshine-coast.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-transit-sunshine-coast-transit-system-gtfs-700.zip?alt=media",
+        "direct_download": "https://bct.tmix.se/Tmix.Cap.TdExport.WebApi/gtfs/?operatorIds=18",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-transit-sunshine-coast-transit-system-gtfs-2567.zip?alt=media",
         "license": "https://www.bctransit.com/open-data/terms-of-use"
-    },
-     "redirect": [
-        {
-            "id": "2567",
-            "comment": " "
-        }
-    ]
+    }
 }

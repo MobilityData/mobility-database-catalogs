@@ -2,6 +2,7 @@
     "mdb_source_id": 762,
     "data_type": "gtfs",
     "provider": "South Okanagan-Similkameen",
+    "status": "deprecated",
     "location": {
         "country_code": "CA",
         "subdivision_name": "British Columbia",
@@ -17,5 +18,11 @@
         "direct_download": "https://www.bctransit.com/data/gtfs/south-okanagan-similkameen.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-south-okanagan-similkameen-gtfs-762.zip?alt=media",
         "license": "https://www.bctransit.com/open-data/terms-of-use"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2532",
+            "comment": " "
+        }
+    ]
 }

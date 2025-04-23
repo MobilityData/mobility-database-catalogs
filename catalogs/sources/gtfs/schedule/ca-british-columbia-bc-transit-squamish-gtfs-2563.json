@@ -1,8 +1,8 @@
 {
-    "mdb_source_id": 701,
+    "mdb_source_id": 2563,
     "data_type": "gtfs",
     "provider": "BC Transit (Squamish)",
-    "status": "deprecated",
+    "is_official": "True",
     "location": {
         "country_code": "CA",
         "subdivision_name": "British Columbia",
@@ -16,14 +16,8 @@
         }
     },
     "urls": {
-        "direct_download": "http://squamish.mapstrat.com/current/google_transit.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-transit-squamish-gtfs-701.zip?alt=media",
+        "direct_download": "https://bct.tmix.se/Tmix.Cap.TdExport.WebApi/gtfs/?operatorIds=43",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-bc-transit-squamish-gtfs-2563.zip?alt=media",
         "license": "https://www.bctransit.com/open-data/terms-of-use"
-    },
-    "redirect": [
-        {
-            "id": "2563",
-            "comment": " "
-        }
-    ]
+    }
 }

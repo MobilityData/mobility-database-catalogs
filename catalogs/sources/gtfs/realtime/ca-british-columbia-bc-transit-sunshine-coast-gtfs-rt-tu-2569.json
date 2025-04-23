@@ -1,16 +1,16 @@
 {
-    "mdb_source_id": 2533,
+    "mdb_source_id": 2569,
     "data_type": "gtfs-rt",
     "entity_type": [
-        "sa"
+        "tu"
     ],
-    "provider": "BC Transit (Shuswap | Vernon)",
+    "provider": "BC Transit (Sunshine Coast Transit System)",
     "is_official": "True",
     "static_reference": [
-        "2508"
+        "2567"
     ],
     "urls": {
-        "direct_download": "https://bct.tmix.se/gtfs-realtime/alerts.pb?operatorIds=14",
+        "direct_download": "https://bct.tmix.se/gtfs-realtime/tripupdates.pb?operatorIds=18",
         "authentication_type": 0,
         "license": "https://www.bctransit.com/open-data/terms-of-use"
     }

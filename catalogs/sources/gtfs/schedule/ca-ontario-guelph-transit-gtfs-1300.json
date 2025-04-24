@@ -2,6 +2,7 @@
     "mdb_source_id": 1300,
     "data_type": "gtfs",
     "provider": "Guelph Transit",
+    "status": "deprecated",
     "location": {
         "country_code": "CA",
         "subdivision_name": "Ontario",
@@ -17,5 +18,11 @@
     "urls": {
         "direct_download": "https://transitfeeds.com/p/guelph-transit/53/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-guelph-transit-gtfs-1300.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "tld-408",
+            "comment": " "
+        }
+    ]
 }

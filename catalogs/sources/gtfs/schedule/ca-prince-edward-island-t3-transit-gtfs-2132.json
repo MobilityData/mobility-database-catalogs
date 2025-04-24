@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "T3 Transit",
     "feed_contact_email": "support+test+coachatlantic-pe-ca@trilliumtransit.com",
+    "is_official": "True",
     "location": {
         "country_code": "CA",
         "subdivision_name": "Prince Edward Island",
@@ -18,8 +19,7 @@
     "urls": {
         "direct_download": "https://data.trilliumtransit.com/gtfs/coachatlantic-pe-ca/coachatlantic-pe-ca.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-prince-edward-island-t3-transit-gtfs-2132.zip?alt=media",
-        "license": "https://catalogue-saintjohn.opendata.arcgis.com/datasets/d6f4783521364429a2e51a64c60ae234/about"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-prince-edward-island-t3-transit-gtfs-2132.zip?alt=media"
     },
     "redirect": []
 }

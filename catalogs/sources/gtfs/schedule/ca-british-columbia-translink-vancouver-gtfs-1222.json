@@ -1,7 +1,8 @@
 {
     "mdb_source_id": 1222,
     "data_type": "gtfs",
-    "provider": "TransLink Vancouver",
+    "provider": "TransLink Vancouver", 
+    "status": "deprecated",
     "location": {
         "country_code": "CA",
         "subdivision_name": "British Columbia",
@@ -20,5 +21,10 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-british-columbia-translink-vancouver-gtfs-1222.zip?alt=media",
         "license": "https://developer.translink.ca/ServicesGtfs/GtfsData"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "696",
+            "comment": " "
+        }
+    ]
 }

@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "BC Transit (Central Fraser Valley | Chilliwack | Agassiz-Harrison | Hope)",
     "is_official": "True",
+    "name": "Fraser Valley Region",
     "location": {
         "country_code": "CA",
         "subdivision_name": "British Columbia",

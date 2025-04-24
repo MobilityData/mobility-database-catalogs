@@ -2,6 +2,7 @@
     "mdb_source_id": 1978,
     "data_type": "gtfs",
     "provider": "GERTIE (Gabriola Community Bus)",
+    "status": "deprecated",
     "location": {
         "country_code": "CA",
         "subdivision_name": "British Columbia",
@@ -18,5 +19,11 @@
         "direct_download": "https://drive.usercontent.google.com/download?id=1HOuJU_5SLttet9NDw_PmvW6gZKwatWl_&export=download&authuser=0",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-bc-gertie-gabriola-community-bus-gtfs-1978.zip?alt=media",
         "license": "https://creativecommons.org/licenses/by-nc/4.0/"
-    }
+    },
+    "redirect": [
+        {
+            "id": "tld-6756",
+            "comment": " "
+        }
+    ]
 }

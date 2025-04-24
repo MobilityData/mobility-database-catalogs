@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Winnipeg Transit",
     "feed_contact_email": "311@winnipeg.ca",
+    "is_official": "True",
     "location": {
         "country_code": "CA",
         "subdivision_name": "Manitoba",

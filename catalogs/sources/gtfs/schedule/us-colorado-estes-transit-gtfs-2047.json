@@ -3,8 +3,8 @@
     "data_type": "gtfs",
     "provider": "Estes Transit",
     "name": "Flex v2 included",
-    "is_official": "True",
     "feed_contact_email": "support+estestransit-co-us@trilliumtransit.com",
+    "is_official": "True",
     "status": "active",
     "location": {
         "country_code": "US",

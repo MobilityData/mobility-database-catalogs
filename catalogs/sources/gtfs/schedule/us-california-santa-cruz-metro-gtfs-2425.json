@@ -2,8 +2,8 @@
     "mdb_source_id": 2425,
     "data_type": "gtfs",
     "provider": "Santa Cruz Metro (SCMTD)",
-    "is_official": "True",
     "feed_contact_email": "gtfs@scmtd.com",
+    "is_official": "True",
     "features": [
         "fares-v1",
         "fares-v2"

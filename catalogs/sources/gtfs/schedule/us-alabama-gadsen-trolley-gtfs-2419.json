@@ -2,9 +2,9 @@
     "mdb_source_id": 2419,
     "data_type": "gtfs",
     "provider": "City of Gadsen",
+    "feed_contact_email": "cvest@cityofgadsden.com",
     "name": "COG Trolley Routes",
     "is_official": "True",
-    "feed_contact_email": "cvest@cityofgadsden.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Alabama",

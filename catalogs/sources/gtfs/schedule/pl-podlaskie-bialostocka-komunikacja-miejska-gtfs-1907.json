@@ -1,13 +1,13 @@
 {
     "mdb_source_id": 1907,
     "data_type": "gtfs",
-    "provider": "Bia\u0142ostocka Komunikacja Miejska",
+    "provider": "Białostocka Komunikacja Miejska",
     "is_official": "True",
     "status": "active",
     "location": {
         "country_code": "PL",
         "subdivision_name": "Podlaskie",
-        "municipality": "Bia\u0142ystok",
+        "municipality": "Białystok",
         "bounding_box": {
             "minimum_latitude": 52.918111,
             "maximum_latitude": 53.239542,

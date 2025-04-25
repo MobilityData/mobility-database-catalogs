@@ -2,9 +2,9 @@
     "mdb_source_id": 2443,
     "data_type": "gtfs",
     "provider": "RADAR",
-    "feed_contact_email": "support+radar-va-us@trilliumtransit.com",
     "name": "Flex",
     "is_official": "True",
+    "feed_contact_email": "support+radar-va-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Virginia",

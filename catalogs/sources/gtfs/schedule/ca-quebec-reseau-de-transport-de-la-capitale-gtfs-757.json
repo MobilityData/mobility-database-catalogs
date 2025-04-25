@@ -1,12 +1,12 @@
 {
     "mdb_source_id": 757,
     "data_type": "gtfs",
-    "provider": "R\u00e9seau de transport de la Capitale",
+    "provider": "Réseau de transport de la Capitale",
     "is_official": "True",
     "location": {
         "country_code": "CA",
-        "subdivision_name": "Qu\u00e9bec",
-        "municipality": "Qu\u00e9bec",
+        "subdivision_name": "Québec",
+        "municipality": "Québec",
         "bounding_box": {
             "minimum_latitude": 46.734726,
             "maximum_latitude": 46.943394,

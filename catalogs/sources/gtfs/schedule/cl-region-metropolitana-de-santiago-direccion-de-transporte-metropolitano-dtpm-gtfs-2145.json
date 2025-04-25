@@ -1,12 +1,12 @@
 {
     "mdb_source_id": 2145,
     "data_type": "gtfs",
-    "provider": "Direcci\u00f3n de Transporte Metropolitano (DTPM)",
+    "provider": "Dirección de Transporte Metropolitano (DTPM)",
     "is_official": "True",
     "status": "deprecated",
     "location": {
         "country_code": "CL",
-        "subdivision_name": "Regi\u00f3n Metropolitana de Santiago",
+        "subdivision_name": "Región Metropolitana de Santiago",
         "bounding_box": {
             "minimum_latitude": -34.170505,
             "maximum_latitude": -33.3193343927293,

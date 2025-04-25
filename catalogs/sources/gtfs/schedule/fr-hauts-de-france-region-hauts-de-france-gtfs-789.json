@@ -1,8 +1,8 @@
 {
     "mdb_source_id": 789,
     "data_type": "gtfs",
-    "provider": "R\u00e9gion Hauts-de-France",
-    "name": "R\u00e9seau scolaire de la Somme",
+    "provider": "Région Hauts-de-France",
+    "name": "Réseau scolaire de la Somme",
     "is_official": "True",
     "location": {
         "country_code": "FR",

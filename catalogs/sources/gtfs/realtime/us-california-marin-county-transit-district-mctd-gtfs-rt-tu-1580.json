@@ -5,6 +5,7 @@
         "tu"
     ],
     "provider": "Marin County Transit District (MCTD)",
+    "is_official": "True",
     "static_reference": [
         "71"
     ],

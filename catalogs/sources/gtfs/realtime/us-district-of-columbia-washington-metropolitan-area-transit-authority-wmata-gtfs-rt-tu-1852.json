@@ -5,6 +5,7 @@
         "tu"
     ],
     "provider": "Washington Metropolitan Area Transit Authority (WMATA)",
+    "is_official": "True",
     "static_reference": [
         "1847"
     ],

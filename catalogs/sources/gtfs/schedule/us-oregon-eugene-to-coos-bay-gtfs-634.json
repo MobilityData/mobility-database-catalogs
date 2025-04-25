@@ -2,8 +2,8 @@
     "mdb_source_id": 634,
     "data_type": "gtfs",
     "provider": "Eugene to Coos Bay",
-    "is_official": "True",
     "feed_contact_email": "support+eugenetocoosbay-or-us@trilliumtransit.com",
+    "is_official": "True",
     "features": [
         "fares-v1"
     ],

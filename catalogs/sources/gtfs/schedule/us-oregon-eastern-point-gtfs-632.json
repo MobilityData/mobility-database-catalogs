@@ -2,8 +2,8 @@
     "mdb_source_id": 632,
     "data_type": "gtfs",
     "provider": "Eastern Point",
-    "is_official": "True",
     "feed_contact_email": "support+test+easternpoint-or-us@trilliumtransit.com",
+    "is_official": "True",
     "features": [
         "fares-v1"
     ],

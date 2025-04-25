@@ -2,9 +2,9 @@
     "mdb_source_id": 2446,
     "data_type": "gtfs",
     "provider": "Cape Cod Regional Transit Authority",
-    "name": "Flex",
     "is_official": "True",
     "feed_contact_email": "support+capecod-ma-us@trilliumtransit.com",
+    "name": "Flex",
     "location": {
         "country_code": "US",
         "subdivision_name": "Massachusetts",

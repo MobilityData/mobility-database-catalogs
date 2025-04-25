@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Ketchikan Gateway Borough",
     "name": "The Bus",
+    "is_official": "True",
     "features": [
         "fares-v1"
     ],

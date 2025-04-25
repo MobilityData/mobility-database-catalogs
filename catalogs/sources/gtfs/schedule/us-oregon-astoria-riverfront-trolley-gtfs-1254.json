@@ -2,6 +2,7 @@
     "mdb_source_id": 1254,
     "data_type": "gtfs",
     "provider": "Astoria Riverfront Trolley",
+    "is_official": "True",
     "feed_contact_email": "support+test+astoria-or-us@trilliumtransit.com",
     "location": {
         "country_code": "US",

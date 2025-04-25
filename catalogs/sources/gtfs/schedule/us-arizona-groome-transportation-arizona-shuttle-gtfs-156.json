@@ -2,6 +2,7 @@
     "mdb_source_id": 156,
     "data_type": "gtfs",
     "provider": "Groome Transportation - Arizona Shuttle",
+    "is_official": "True",
     "feed_contact_email": "support+test+arizonashuttle-az-us@trilliumtransit.com",
     "features": [
         "fares-v1"

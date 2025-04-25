@@ -2,6 +2,7 @@
     "mdb_source_id": 628,
     "data_type": "gtfs",
     "provider": "Union City Transit",
+    "is_official": "True",
     "feed_contact_email": "support+test+unioncity-ca-us@trilliumtransit.com",
     "location": {
         "country_code": "US",

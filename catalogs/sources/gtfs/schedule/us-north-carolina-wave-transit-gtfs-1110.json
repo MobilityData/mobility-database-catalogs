@@ -2,8 +2,9 @@
     "mdb_source_id": 1110,
     "data_type": "gtfs",
     "provider": "Wave Transit",
-    "status": "active",
     "name": "fixed route",
+    "is_official": "True",
+    "status": "active",
     "location": {
         "country_code": "US",
         "subdivision_name": "North Carolina",

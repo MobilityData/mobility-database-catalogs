@@ -2,6 +2,7 @@
     "mdb_source_id": 27,
     "data_type": "gtfs",
     "provider": "Airport Valet Express",
+    "is_official": "True",
     "feed_contact_email": "support+airportvaletexpress-ca-us@trilliumtransit.com",
     "features": [
         "fares-v1"

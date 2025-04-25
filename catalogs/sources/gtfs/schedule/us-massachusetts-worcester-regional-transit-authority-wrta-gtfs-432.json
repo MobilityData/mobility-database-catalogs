@@ -2,6 +2,7 @@
     "mdb_source_id": 432,
     "data_type": "gtfs",
     "provider": "Worcester Regional Transit Authority (WRTA)",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Massachusetts",

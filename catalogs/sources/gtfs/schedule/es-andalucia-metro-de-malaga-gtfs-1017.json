@@ -1,12 +1,13 @@
 {
     "mdb_source_id": 1017,
     "data_type": "gtfs",
-    "provider": "Metro de Málaga",
+    "provider": "Metro de M\u00e1laga",
     "name": "GTFS static",
+    "is_official": "True",
     "location": {
         "country_code": "ES",
-        "subdivision_name": "Andalucía",
-        "municipality": "Málaga",
+        "subdivision_name": "Andaluc\u00eda",
+        "municipality": "M\u00e1laga",
         "bounding_box": {
             "minimum_latitude": 36.684725,
             "maximum_latitude": 36.7195,

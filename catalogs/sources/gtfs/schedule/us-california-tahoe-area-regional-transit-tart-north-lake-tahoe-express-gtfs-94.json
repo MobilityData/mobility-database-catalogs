@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Tahoe Area Regional Transit (TART), North Lake Tahoe Express",
     "name": "Placer County",
+    "is_official": "True",
     "features": [
         "fares-v1"
     ],

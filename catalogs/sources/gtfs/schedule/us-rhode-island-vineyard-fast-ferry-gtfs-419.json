@@ -2,6 +2,7 @@
     "mdb_source_id": 419,
     "data_type": "gtfs",
     "provider": "Vineyard Fast Ferry",
+    "is_official": "True",
     "feed_contact_email": "support+test+vineyardfastferry-ri-us@trilliumtransit.com",
     "location": {
         "country_code": "US",

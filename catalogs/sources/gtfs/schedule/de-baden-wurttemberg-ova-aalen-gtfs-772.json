@@ -2,9 +2,10 @@
     "mdb_source_id": 772,
     "data_type": "gtfs",
     "provider": "OVA-Aalen, OVA-Bopfingen, Beck+Schubert",
+    "is_official": "True",
     "location": {
         "country_code": "DE",
-        "subdivision_name": "Baden-Württemberg",
+        "subdivision_name": "Baden-W\u00fcrttemberg",
         "bounding_box": {
             "minimum_latitude": 0.0,
             "maximum_latitude": 48.9455003669179,

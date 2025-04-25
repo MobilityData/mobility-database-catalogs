@@ -2,6 +2,7 @@
     "mdb_source_id": 877,
     "data_type": "gtfs",
     "provider": "City of Tracy (TRACER)",
+    "is_official": "True",
     "feed_contact_email": "support+test+tracy-ca-us@trilliumtransit.com",
     "features": [
         "fares-v2",

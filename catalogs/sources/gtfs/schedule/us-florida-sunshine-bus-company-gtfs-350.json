@@ -2,6 +2,7 @@
     "mdb_source_id": 350,
     "data_type": "gtfs",
     "provider": "Sunshine Bus Company",
+    "is_official": "True",
     "feed_contact_email": "support+test+sunshinebuscompany-fl-us@trilliumtransit.com",
     "location": {
         "country_code": "US",

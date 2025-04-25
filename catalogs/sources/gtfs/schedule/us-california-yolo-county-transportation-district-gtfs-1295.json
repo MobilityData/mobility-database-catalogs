@@ -2,6 +2,7 @@
     "mdb_source_id": 1295,
     "data_type": "gtfs",
     "provider": "Yolo County Transportation District (Yolobus)",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

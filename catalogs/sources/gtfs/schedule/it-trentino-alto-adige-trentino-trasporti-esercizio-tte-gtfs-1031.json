@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Trentino Trasporti Esercizio (TTE)",
     "name": "Extraurbano",
+    "is_official": "True",
     "location": {
         "country_code": "IT",
         "subdivision_name": "Trentino-Alto Adige",

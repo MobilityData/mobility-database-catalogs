@@ -1,10 +1,11 @@
 {
     "mdb_source_id": 749,
     "data_type": "gtfs",
-    "provider": "Société de transport de Laval",
+    "provider": "Soci\u00e9t\u00e9 de transport de Laval",
+    "is_official": "True",
     "location": {
         "country_code": "CA",
-        "subdivision_name": "Québec",
+        "subdivision_name": "Qu\u00e9bec",
         "municipality": "Laval",
         "bounding_box": {
             "minimum_latitude": 45.504517,

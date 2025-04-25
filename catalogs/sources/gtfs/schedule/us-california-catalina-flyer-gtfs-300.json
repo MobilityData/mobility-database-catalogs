@@ -2,6 +2,7 @@
     "mdb_source_id": 300,
     "data_type": "gtfs",
     "provider": "Catalina Flyer",
+    "is_official": "True",
     "feed_contact_email": "support+test+catalinaflyer-ca-us@trilliumtransit.com",
     "features": [
         "fares-v1"

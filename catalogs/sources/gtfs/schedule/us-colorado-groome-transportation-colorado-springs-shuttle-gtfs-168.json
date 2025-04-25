@@ -2,6 +2,7 @@
     "mdb_source_id": 168,
     "data_type": "gtfs",
     "provider": "Groome Transportation - Colorado Springs Shuttle",
+    "is_official": "True",
     "feed_contact_email": "support+test+coloradoshuttle-co-us@trilliumtransit.com",
     "location": {
         "country_code": "US",

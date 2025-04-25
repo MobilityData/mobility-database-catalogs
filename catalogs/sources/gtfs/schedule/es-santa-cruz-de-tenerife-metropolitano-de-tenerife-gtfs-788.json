@@ -2,6 +2,7 @@
     "mdb_source_id": 788,
     "data_type": "gtfs",
     "provider": "Metropolitano de Tenerife",
+    "is_official": "True",
     "location": {
         "country_code": "ES",
         "subdivision_name": "Santa Cruz de Tenerife",

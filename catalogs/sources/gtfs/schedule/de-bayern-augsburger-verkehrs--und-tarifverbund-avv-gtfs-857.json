@@ -2,6 +2,7 @@
     "mdb_source_id": 857,
     "data_type": "gtfs",
     "provider": "Augsburger Verkehrs- und Tarifverbund (AVV)",
+    "is_official": "True",
     "location": {
         "country_code": "DE",
         "subdivision_name": "Bayern",

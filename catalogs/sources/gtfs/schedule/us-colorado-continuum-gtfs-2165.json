@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Continuum",
     "name": "Flex",
+    "is_official": "True",
     "feed_contact_email": "support+continuum-co-us@trilliumtransit.com",
     "location": {
         "country_code": "US",

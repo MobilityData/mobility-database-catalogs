@@ -2,6 +2,7 @@
     "mdb_source_id": 879,
     "data_type": "gtfs",
     "provider": "Garden of the Gods",
+    "is_official": "True",
     "feed_contact_email": "support+test+gardenofthegods-co-us@trilliumtransit.com",
     "location": {
         "country_code": "US",

@@ -1,14 +1,15 @@
 {
     "mdb_source_id": 1026,
     "data_type": "gtfs",
-    "provider": "Ile-de-France Mobilité",
-    "name": "Horaires prévues sur les lignes de transport en commun d'Ile-de-France (GTFS Datahub)",
+    "provider": "Ile-de-France Mobilit\u00e9",
+    "name": "Horaires pr\u00e9vues sur les lignes de transport en commun d'Ile-de-France (GTFS Datahub)",
+    "is_official": "True",
     "features": [
         "pathways"
     ],
     "location": {
         "country_code": "FR",
-        "subdivision_name": "Île-de-France",
+        "subdivision_name": "\u00cele-de-France",
         "municipality": "Paris",
         "bounding_box": {
             "minimum_latitude": 47.96107924372578,

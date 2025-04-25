@@ -1,14 +1,15 @@
 {
     "mdb_source_id": 1055,
     "data_type": "gtfs",
-    "provider": "Mobilités M - Tag",
-    "name": "Transports de l'Agglomération Grenobloise",
+    "provider": "Mobilit\u00e9s M - Tag",
+    "name": "Transports de l'Agglom\u00e9ration Grenobloise",
+    "is_official": "True",
     "features": [
         "fares-v1"
     ],
     "location": {
         "country_code": "FR",
-        "subdivision_name": "Auvergne-Rhône-Alpes",
+        "subdivision_name": "Auvergne-Rh\u00f4ne-Alpes",
         "municipality": "Grenoble",
         "bounding_box": {
             "minimum_latitude": 44.97015,

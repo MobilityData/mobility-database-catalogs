@@ -2,6 +2,7 @@
     "mdb_source_id": 2192,
     "data_type": "gtfs",
     "provider": "Bloom Bus",
+    "is_official": "True",
     "feed_contact_email": "support+test+bloombus-ma-us@trilliumtransit.com",
     "location": {
         "country_code": "US",

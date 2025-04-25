@@ -2,6 +2,7 @@
     "mdb_source_id": 116,
     "data_type": "gtfs",
     "provider": "Tehama Rural Area Express (TRAX), Susanville Indian Rancheria Public Transportation Program",
+    "is_official": "True",
     "features": [
         "fares-v2",
         "fares-v1"

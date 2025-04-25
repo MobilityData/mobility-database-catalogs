@@ -2,6 +2,7 @@
     "mdb_source_id": 332,
     "data_type": "gtfs",
     "provider": "Palm Tran",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Florida",

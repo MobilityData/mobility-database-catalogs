@@ -2,6 +2,7 @@
     "mdb_source_id": 296,
     "data_type": "gtfs",
     "provider": "Calabasas Transit System",
+    "is_official": "True",
     "feed_contact_email": "support+test+calabasas-ca-us@trilliumtransit.com",
     "features": [
         "fares-v1"

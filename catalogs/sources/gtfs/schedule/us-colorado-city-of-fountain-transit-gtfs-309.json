@@ -2,6 +2,7 @@
     "mdb_source_id": 309,
     "data_type": "gtfs",
     "provider": "City of Fountain Transit",
+    "is_official": "True",
     "feed_contact_email": "support+test+cityoffountaintransit-co-us@trilliumtransit.com",
     "location": {
         "country_code": "US",

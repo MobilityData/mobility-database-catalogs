@@ -9,7 +9,7 @@
         "1270"
     ],
     "urls": {
-        "direct_download": "https://gtfs.ztp.krakow.pl/VehiclePositions_T.pb",
+        "direct_download": "https://gtfs.ztp.krakow.pl/VehiclePositions.pb",
         "authentication_type": 0
     }
 }

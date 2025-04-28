@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2597,
+    "data_type": "gtfs",
+    "provider": "Zarząd Komunikacji Miejskiej w Elblągu (ZKM Elbląg)",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Warmian-Masurian",
+        "municipality": "Elbląg",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-04-28T17:46:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://mkuran.pl/gtfs/elblag.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-warmian-masurian-zkm-elblag-gtfs-2597.zip?alt=media",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "redirect": []
+}

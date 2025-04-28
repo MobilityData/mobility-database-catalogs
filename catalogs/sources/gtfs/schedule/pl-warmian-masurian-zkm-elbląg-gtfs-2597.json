@@ -16,7 +16,7 @@
     },
     "urls": {
         "direct_download": "https://mkuran.pl/gtfs/elblag.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-warmian-masurian-zkm-elbląg-gtfs-2597.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-warmian-masurian-zkm-elblag-gtfs-2597.zip?alt=media",
         "license": "http://creativecommons.org/publicdomain/zero/1.0/"
     },
     "redirect": []

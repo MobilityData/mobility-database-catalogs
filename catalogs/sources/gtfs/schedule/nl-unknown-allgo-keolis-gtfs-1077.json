@@ -2,7 +2,7 @@
     "mdb_source_id": 1077,
     "data_type": "gtfs",
     "provider": "allGo (Keolis), Arriva, Blue Amigo, Bravo (Arriva), Bravo (Hermes), Breng, Connexxion, De Lijn, EBS, Westerschelde Ferry, GVB, HTM, Blauwnet, Breng, DB, Eurobahn, NMBS, Arriva, NS, NS International, R-net, Valleilijn, VIAS, Keolis, NIAG, Overal (Connexxion), OV Regio IJsselmond, Qbuzz, RET, Syntus Utrecht, Texelhopper, Transdev, Twents (Keolis), U-OV",
-    "name": "Aggregate",
+    "name": "OVapi Aggregate",
     "location": {
         "country_code": "NL",
         "bounding_box": {

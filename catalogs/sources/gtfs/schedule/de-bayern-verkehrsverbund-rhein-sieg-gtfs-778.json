@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 778,
     "data_type": "gtfs",
-    "provider": "Verkehrsverbund Rhein-Sieg",
+    "provider": "Verkehrsverbund Rhein-Sieg (VRS)",
     "location": {
         "country_code": "DE",
         "subdivision_name": "Bayern",

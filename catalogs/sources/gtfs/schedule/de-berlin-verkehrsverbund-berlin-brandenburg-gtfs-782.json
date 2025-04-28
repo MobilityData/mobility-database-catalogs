@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 782,
     "data_type": "gtfs",
-    "provider": "Verkehrsverbund Berlin-Brandenburg",
+    "provider": "Verkehrsverbund Berlin-Brandenburg (VBB)",
     "features": [
         "pathways"
     ],

@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 1026,
     "data_type": "gtfs",
-    "provider": "Ile-de-France Mobilité",
+    "provider": " Île-de-France Mobilités (IDFM)",
     "name": "Horaires prévues sur les lignes de transport en commun d'Ile-de-France (GTFS Datahub)",
     "features": [
         "pathways"

@@ -5,13 +5,14 @@
         "sa"
     ],
     "provider": "Zarząd Transportu Publicznego w Krakowie (ZTP Kraków)",
+    "note": "Aggregate",
     "static_reference": [
         "2598",
         "1270",
         "1326"
     ],
     "urls": {
-        "direct_download": "https://gtfs.ztp.krakow.pl/ServiceAlerts_T.pb",
+        "direct_download": "https://gtfs.ztp.krakow.pl/ServiceAlerts.pb",
         "authentication_type": 0
     }
 }

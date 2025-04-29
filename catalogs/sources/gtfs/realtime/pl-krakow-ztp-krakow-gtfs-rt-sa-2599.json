@@ -1,6 +1,7 @@
 {
     "mdb_source_id": 2599,
     "data_type": "gtfs-rt",
+    "is_official": "True",
     "entity_type": [
         "sa"
     ],

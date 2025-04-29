@@ -5,6 +5,7 @@
         "tu"
     ],
     "provider": "Zarząd Transportu Publicznego w Krakowie (ZTP Kraków)",
+    "is_official": "True",
     "note": "Aggregate",
     "static_reference": [
         "2598",

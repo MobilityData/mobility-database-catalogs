@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 2599,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Zarząd Transportu Publicznego w Krakowie (ZTP Kraków)",
+    "static_reference": [
+        "2598",
+        "1270",
+        "1326"
+    ],
+    "urls": {
+        "direct_download": "https://gtfs.ztp.krakow.pl/ServiceAlerts_T.pb",
+        "authentication_type": 0
+    }
+}

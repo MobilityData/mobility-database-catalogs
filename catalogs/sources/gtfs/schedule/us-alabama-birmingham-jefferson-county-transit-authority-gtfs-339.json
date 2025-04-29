@@ -2,6 +2,7 @@
     "mdb_source_id": 339,
     "data_type": "gtfs",
     "provider": "Birmingham Jefferson County Transit Authority",
+    "status": "deprecated",
     "features": [
         "fares-v1"
     ],
@@ -20,5 +21,11 @@
     "urls": {
         "direct_download": "https://maxtransit.org/wp-content/uploads/2020/12/BJCTA-Working-GTFS-File.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-alabama-birmingham-jefferson-county-transit-authority-gtfs-339.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2263",
+            "comment": " "
+        }
+    ]
 }

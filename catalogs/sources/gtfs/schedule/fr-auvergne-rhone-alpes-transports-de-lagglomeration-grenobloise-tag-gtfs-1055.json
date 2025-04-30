@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Mobilités M - Tag",
     "name": "Transports de l'Agglomération Grenobloise",
+    "is_official": "True",
     "features": [
         "fares-v1"
     ],

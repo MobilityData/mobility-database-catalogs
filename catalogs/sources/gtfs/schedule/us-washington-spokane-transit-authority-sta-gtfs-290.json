@@ -2,6 +2,7 @@
     "mdb_source_id": 290,
     "data_type": "gtfs",
     "provider": "Spokane Transit Authority (STA)",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Washington",

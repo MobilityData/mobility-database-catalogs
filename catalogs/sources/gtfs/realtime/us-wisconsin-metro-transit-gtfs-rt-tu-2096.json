@@ -5,6 +5,7 @@
         "tu"
     ],
     "provider": "Metro Transit - City of Madison",
+    "is_official": "True",
     "static_reference": [
         "394"
     ],

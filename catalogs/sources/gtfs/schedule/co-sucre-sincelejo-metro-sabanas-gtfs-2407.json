@@ -3,8 +3,8 @@
     "data_type": "gtfs",
     "provider": "Metro Sabanas",
     "feed_contact_email": "cdsgg1@gmail.com",
+    "name": "Ruta del Corazon",
     "is_official": "True",
-    "name": "Ruta del Corazon", 
     "location": {
         "country_code": "CO",
         "subdivision_name": "Sucre",

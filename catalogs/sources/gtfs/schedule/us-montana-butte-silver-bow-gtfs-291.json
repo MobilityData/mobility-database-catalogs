@@ -2,6 +2,7 @@
     "mdb_source_id": 291,
     "data_type": "gtfs",
     "provider": "Butte-Silver Bow",
+    "is_official": "True",
     "feed_contact_email": "support+test+butte-mt-us@trilliumtransit.com",
     "features": [
         "fares-v1"

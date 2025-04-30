@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Key West Transit",
     "feed_contact_email": "support+test+keywest-fl-us@trilliumtransit.com",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Florida",

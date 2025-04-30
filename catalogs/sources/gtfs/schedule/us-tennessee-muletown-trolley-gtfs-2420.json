@@ -2,8 +2,8 @@
     "mdb_source_id": 2420,
     "data_type": "gtfs",
     "provider": "Muletown Trolley",
-    "feed_contact_email": "info@sctdd.org", 
     "is_official": "True",
+    "feed_contact_email": "info@sctdd.org",
     "location": {
         "country_code": "US",
         "subdivision_name": "Tennessee",

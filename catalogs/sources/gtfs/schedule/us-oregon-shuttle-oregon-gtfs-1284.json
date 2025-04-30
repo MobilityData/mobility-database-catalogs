@@ -2,6 +2,7 @@
     "mdb_source_id": 1284,
     "data_type": "gtfs",
     "provider": "Shuttle Oregon",
+    "is_official": "True",
     "feed_contact_email": "support+test+shuttleoregon-or-us@trilliumtransit.com",
     "location": {
         "country_code": "US",

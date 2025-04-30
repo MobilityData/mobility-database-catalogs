@@ -5,6 +5,7 @@
         "sa"
     ],
     "provider": "Exo Chambly-Richelieu-Carignan",
+    "is_official": "True",
     "static_reference": [
         "750"
     ],

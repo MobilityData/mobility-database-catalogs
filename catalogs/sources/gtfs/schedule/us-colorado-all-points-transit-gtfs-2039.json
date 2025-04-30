@@ -4,6 +4,7 @@
     "provider": "All Points Transit",
     "name": "Flex v2 included",
     "feed_contact_email": "support+allpointstransit-co-us@trilliumtransit.com",
+    "is_official": "True",
     "status": "active",
     "location": {
         "country_code": "US",

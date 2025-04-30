@@ -5,8 +5,8 @@
         "tu"
     ],
     "provider": "Empresa Municipal de Transportes de Fuenlabrada (EMTF)",
+    "is_official": "True",
     "feed_contact_email": "emtf@emtf.es",
-    "is_official": "True", 
     "static_reference": [
         "2400"
     ],

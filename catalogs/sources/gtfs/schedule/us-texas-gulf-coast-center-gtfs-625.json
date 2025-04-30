@@ -2,6 +2,7 @@
     "mdb_source_id": 625,
     "data_type": "gtfs",
     "provider": "Connect Transit",
+    "is_official": "True",
     "feed_contact_email": "support+test+gulfcoastcenter-tx-us@trilliumtransit.com",
     "location": {
         "country_code": "US",

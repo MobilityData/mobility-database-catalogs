@@ -5,6 +5,7 @@
         "sa"
     ],
     "provider": "Exo Ville de Sainte-Julie",
+    "is_official": "True",
     "static_reference": [
         "753"
     ],

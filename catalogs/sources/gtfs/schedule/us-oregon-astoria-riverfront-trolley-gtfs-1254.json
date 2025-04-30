@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Astoria Riverfront Trolley",
     "feed_contact_email": "support+test+astoria-or-us@trilliumtransit.com",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Oregon",

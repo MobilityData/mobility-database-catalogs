@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Eastern Point",
     "feed_contact_email": "support+test+easternpoint-or-us@trilliumtransit.com",
+    "is_official": "True",
     "features": [
         "fares-v1"
     ],

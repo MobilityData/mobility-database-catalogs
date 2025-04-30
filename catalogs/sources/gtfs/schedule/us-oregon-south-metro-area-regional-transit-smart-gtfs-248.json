@@ -2,6 +2,7 @@
     "mdb_source_id": 248,
     "data_type": "gtfs",
     "provider": "South Metro Area Regional Transit (SMART)",
+    "is_official": "True",
     "feed_contact_email": "support@gmvsync.com",
     "location": {
         "country_code": "US",

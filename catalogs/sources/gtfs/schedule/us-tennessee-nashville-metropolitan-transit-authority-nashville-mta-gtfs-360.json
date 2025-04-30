@@ -2,6 +2,7 @@
     "mdb_source_id": 360,
     "data_type": "gtfs",
     "provider": "Nashville Metropolitan Transit Authority (Nashville MTA)",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Tennessee",

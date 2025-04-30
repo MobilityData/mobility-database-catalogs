@@ -2,6 +2,7 @@
     "mdb_source_id": 2263,
     "data_type": "gtfs",
     "provider": "Birmingham Jefferson County Transit Authority (MAX)",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Alabama",

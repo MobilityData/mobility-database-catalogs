@@ -2,6 +2,7 @@
     "mdb_source_id": 2318,
     "data_type": "gtfs",
     "provider": "Lady of the Lake",
+    "is_official": "True",
     "feed_contact_email": "support+lakechelan-wa-us@trilliumtransit.com",
     "location": {
         "country_code": "US",

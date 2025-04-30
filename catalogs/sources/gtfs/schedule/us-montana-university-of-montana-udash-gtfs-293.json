@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "University of Montana (UDASH)",
     "feed_contact_email": "support+test+udash-mt-us@trilliumtransit.com",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Montana",

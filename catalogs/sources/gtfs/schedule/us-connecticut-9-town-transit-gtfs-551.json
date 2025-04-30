@@ -2,6 +2,7 @@
     "mdb_source_id": 551,
     "data_type": "gtfs",
     "provider": "Middletown Area Transit (MAT)",
+    "is_official": "True",
     "features": [
         "fares-v1",
         "flex-v1"

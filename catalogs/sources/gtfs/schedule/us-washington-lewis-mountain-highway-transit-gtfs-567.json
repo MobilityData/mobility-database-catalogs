@@ -2,6 +2,7 @@
     "mdb_source_id": 567,
     "data_type": "gtfs",
     "provider": "L.E.W.I.S. Mountain Highway Transit",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Washington",

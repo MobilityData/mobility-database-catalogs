@@ -2,6 +2,7 @@
     "mdb_source_id": 435,
     "data_type": "gtfs",
     "provider": "Bay State Cruise Company",
+    "is_official": "True",
     "feed_contact_email": "support+test+baystatecruisecompany-ma-us@trilliumtransit.com",
     "location": {
         "country_code": "US",

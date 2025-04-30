@@ -2,6 +2,7 @@
     "mdb_source_id": 743,
     "data_type": "gtfs",
     "provider": "Exo La Presqu'île",
+    "is_official": "True",
     "location": {
         "country_code": "CA",
         "subdivision_name": "Québec",

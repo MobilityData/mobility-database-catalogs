@@ -5,6 +5,7 @@
         "vp"
     ],
     "provider": "C-TRAN",
+    "is_official": "True",
     "static_reference": [
         "258"
     ],

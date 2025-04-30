@@ -2,6 +2,7 @@
     "mdb_source_id": 193,
     "data_type": "gtfs",
     "provider": "Des Moines Area Regional Transit Authority (DART)",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Iowa",

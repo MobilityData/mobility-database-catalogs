@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Metro St. Louis",
     "name": "Loop Trolley",
+    "is_official": "True",
     "feed_contact_email": "transitInformation@metrostouis.org",
     "status": "active",
     "location": {

@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Exo",
     "name": "Trains",
+    "is_official": "True",
     "location": {
         "country_code": "CA",
         "subdivision_name": "Québec",

@@ -2,6 +2,7 @@
     "mdb_source_id": 442,
     "data_type": "gtfs",
     "provider": "Middlesex 3 TMA",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Massachusetts",

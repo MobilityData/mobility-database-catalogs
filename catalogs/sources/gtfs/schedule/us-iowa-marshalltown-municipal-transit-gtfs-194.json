@@ -2,6 +2,7 @@
     "mdb_source_id": 194,
     "data_type": "gtfs",
     "provider": "Marshalltown Municipal Transit",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Iowa",

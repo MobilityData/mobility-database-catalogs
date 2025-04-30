@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Eugene to BEND",
     "feed_contact_email": "support+pacificcrestlines-or-us@trilliumtransit.com",
+    "is_official": "True",
     "features": [
         "fares-v1"
     ],

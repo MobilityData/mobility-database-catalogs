@@ -4,6 +4,7 @@
     "provider": "Continuum",
     "name": "Flex",
     "feed_contact_email": "support+continuum-co-us@trilliumtransit.com",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Colorado",

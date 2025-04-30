@@ -2,6 +2,7 @@
     "mdb_source_id": 568,
     "data_type": "gtfs",
     "provider": "Lower Columbia CAP (Community Action Program)",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Washington",

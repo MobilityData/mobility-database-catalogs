@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Canberra Metro Operations",
     "name": "Light Rail",
+    "is_official": "True",
     "location": {
         "country_code": "AU",
         "subdivision_name": "Australian Capital Territory",

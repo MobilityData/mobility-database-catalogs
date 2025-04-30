@@ -2,6 +2,7 @@
     "mdb_source_id": 2314,
     "data_type": "gtfs",
     "provider": "Kalispel Tribal Transit (KalTran)",
+    "is_official": "True",
     "feed_contact_email": "support+test+kaltran-wa-us@trilliumtransit.com",
     "location": {
         "country_code": "US",

@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Garden of the Gods",
     "feed_contact_email": "support+test+gardenofthegods-co-us@trilliumtransit.com",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Colorado",

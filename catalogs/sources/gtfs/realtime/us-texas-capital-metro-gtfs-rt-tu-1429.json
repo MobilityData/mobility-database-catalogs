@@ -5,6 +5,7 @@
         "tu"
     ],
     "provider": "Capital Metro",
+    "is_official": "True",
     "static_reference": [
         "150"
     ],

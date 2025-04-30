@@ -5,6 +5,7 @@
         "sa"
     ],
     "provider": "Bay Area Rapid Transit (BART)",
+    "is_official": "True",
     "static_reference": [
         "53"
     ],

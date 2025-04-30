@@ -2,6 +2,7 @@
     "mdb_source_id": 601,
     "data_type": "gtfs",
     "provider": "Logan Express",
+    "is_official": "True",
     "feed_contact_email": "support+loganexpress-ma-us@trilliumtransit.com",
     "features": [
         "fares-v1"

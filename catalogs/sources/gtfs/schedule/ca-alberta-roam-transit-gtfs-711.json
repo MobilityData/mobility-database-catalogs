@@ -2,6 +2,7 @@
     "mdb_source_id": 711,
     "data_type": "gtfs",
     "provider": "Roam Transit",
+    "is_official": "True",
     "features": [
         "fares-v1"
     ],

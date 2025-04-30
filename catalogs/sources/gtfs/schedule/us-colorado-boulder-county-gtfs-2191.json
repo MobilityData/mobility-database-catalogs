@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Boulder County",
     "feed_contact_email": "support+test+viamobilityservices-co-us@trilliumtransit.com",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Colorado",

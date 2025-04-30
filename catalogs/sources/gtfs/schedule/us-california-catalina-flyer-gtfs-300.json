@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Catalina Flyer",
     "feed_contact_email": "support+test+catalinaflyer-ca-us@trilliumtransit.com",
+    "is_official": "True",
     "features": [
         "fares-v1"
     ],

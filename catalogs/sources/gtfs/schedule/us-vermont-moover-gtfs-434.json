@@ -2,6 +2,7 @@
     "mdb_source_id": 434,
     "data_type": "gtfs",
     "provider": "MOOver",
+    "is_official": "True",
     "feed_contact_email": "support+test+dvtamoover-vt-us@trilliumtransit.com",
     "features": [
         "fares-v1",

@@ -6,6 +6,7 @@
     ],
     "provider": "Exo",
     "name": "Exo Trains",
+    "is_official": "True",
     "static_reference": [
         "748"
     ],

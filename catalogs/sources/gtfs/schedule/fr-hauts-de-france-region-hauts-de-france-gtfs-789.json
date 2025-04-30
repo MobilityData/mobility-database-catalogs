@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Région Hauts-de-France",
     "name": "Réseau scolaire de la Somme",
+    "is_official": "True",
     "location": {
         "country_code": "FR",
         "subdivision_name": "Hauts-de-France",

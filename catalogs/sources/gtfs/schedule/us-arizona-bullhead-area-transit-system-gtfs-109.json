@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Bullhead Area Transit System",
     "feed_contact_email": "support+test+bullheadareatransit-az-us@trilliumtransit.com",
+    "is_official": "True",
     "features": [
         "fares-v1"
     ],

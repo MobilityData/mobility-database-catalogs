@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Porterville Transit",
     "feed_contact_email": "support+test+tcrta-ca-us@trilliumtransit.com",
+    "is_official": "True",
     "features": [
         "fares-v1",
         "fares-v2"

@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Cascais Próxima, E.M., S.A.",
     "name": "MobiCascais",
+    "is_official": "True",
     "location": {
         "country_code": "PT",
         "subdivision_name": "Lisboa",

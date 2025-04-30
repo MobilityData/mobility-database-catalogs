@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "City of Tracy (TRACER)",
     "feed_contact_email": "support+test+tracy-ca-us@trilliumtransit.com",
+    "is_official": "True",
     "features": [
         "fares-v2",
         "fares-v1"

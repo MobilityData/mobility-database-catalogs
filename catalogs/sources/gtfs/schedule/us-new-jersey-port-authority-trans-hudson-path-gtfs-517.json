@@ -2,6 +2,7 @@
     "mdb_source_id": 517,
     "data_type": "gtfs",
     "provider": "Port Authority Trans-Hudson (PATH)",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "New Jersey",

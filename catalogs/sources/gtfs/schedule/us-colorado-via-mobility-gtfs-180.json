@@ -2,7 +2,6 @@
     "mdb_source_id": 180,
     "data_type": "gtfs",
     "provider": "Via Mobility",
-    "is_official": "True",
     "feed_contact_email": "support+test+viamobilityservices-co-us@trilliumtransit.com",
     "status": "deprecated",
     "location": {

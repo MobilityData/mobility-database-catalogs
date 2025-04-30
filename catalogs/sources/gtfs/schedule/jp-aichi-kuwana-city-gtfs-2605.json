@@ -17,6 +17,6 @@
     },
     "urls": {
         "direct_download": "https://api.gtfs-data.jp/v2/organizations/kuwanacity/feeds/communitybus/files/feed.zip?rid=next",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/jp-aichi-kuwana-city-gtfs-2605.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/jp-aichi-kuwana-city-gtfs-2605.zip?alt=media"
     }
 }

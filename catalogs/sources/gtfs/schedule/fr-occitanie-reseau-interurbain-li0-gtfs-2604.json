@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2604,
+    "data_type": "gtfs",
+    "provider": "Réseau interurbain liO Occitanie",
+    "is_official": "True", 
+    "feed_contact_email": "app-lio@laregion.fr",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Occitanie",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-03-31T21:28:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://app.mecatran.com/utw/ws/gtfsfeed/static/lio?apiKey=2b160d626f783808095373766f18714901325e45&type=gtfs_lio",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-occitanie-reseau-interurbain-li0-gtfs-2604.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/reseau-lio-occitanie"
+    }
+}

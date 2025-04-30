@@ -3,7 +3,6 @@
     "data_type": "gtfs",
     "provider": "Dirección de Transporte Metropolitano (DTPM)",
     "is_official": "True",
-    "status": "deprecated",
     "location": {
         "country_code": "CL",
         "subdivision_name": "Región Metropolitana de Santiago",

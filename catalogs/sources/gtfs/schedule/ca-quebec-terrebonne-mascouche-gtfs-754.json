@@ -2,6 +2,7 @@
     "mdb_source_id": 754,
     "data_type": "gtfs",
     "provider": "Terrebonne-Mascouche",
+    "is_official": "True",
     "location": {
         "country_code": "CA",
         "subdivision_name": "Québec",
@@ -16,6 +17,6 @@
     "urls": {
         "direct_download": "https://exo.quebec/xdata/mrclm/google_transit.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-terrebonne-mascouche-gtfs-754.zip?alt=media",
-        "license": "https://www.donneesquebec.ca/fr/licence/#cc-by"
+        "license": "https://www.donneesquebec.ca/licence/"
     }
 }

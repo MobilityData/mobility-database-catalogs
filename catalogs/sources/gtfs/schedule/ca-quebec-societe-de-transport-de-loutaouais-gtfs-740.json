@@ -17,6 +17,7 @@
     },
     "urls": {
         "direct_download": "https://contenu.sto.ca/GTFS/GTFS.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-societe-de-transport-de-loutaouais-gtfs-740.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-societe-de-transport-de-loutaouais-gtfs-740.zip?alt=media",
+        "license": "https://www.sto.ca/affaires/espace-developpeurs-donnees-ouvertes/conditions-dutilisation-donnees-ouvertes-et-cle-api-de-la-sto/"
     }
 }

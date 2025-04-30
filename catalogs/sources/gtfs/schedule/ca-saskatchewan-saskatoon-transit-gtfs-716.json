@@ -17,6 +17,7 @@
     },
     "urls": {
         "direct_download": "http://apps2.saskatoon.ca/app/data/google_transit.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-saskatchewan-saskatoon-transit-gtfs-716.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-saskatchewan-saskatoon-transit-gtfs-716.zip?alt=media",
+        "license": "https://www.saskatoon.ca/services-residents/connect-your-city/open-data#:~:text=The%20data%20and%20information%20shared%20on%20Open%20Data,on%20services%20such%20as%20transit%20and%20procurement%20%28purchasing%29"
     }
 }

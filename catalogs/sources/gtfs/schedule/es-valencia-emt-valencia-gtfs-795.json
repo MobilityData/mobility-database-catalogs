@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 795,
     "data_type": "gtfs",
-    "provider": "EMT Valencia",
+    "provider": "Empresa Municipal de Transportes de Valencia (EMT Valencia)",
     "location": {
         "country_code": "ES",
         "subdivision_name": "València",

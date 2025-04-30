@@ -4,7 +4,8 @@
     "entity_type": [
         "vp"
     ],
-    "provider": "Transcollines",
+    "provider": "Régie intermunicipale de transport des Collines (Transcollines)",
+    "is_official": "True",
     "static_reference": [
         "739"
     ],

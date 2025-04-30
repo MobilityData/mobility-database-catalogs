@@ -17,6 +17,7 @@
     },
     "urls": {
         "direct_download": "https://exo.quebec/xdata/omitsju/google_transit.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-exo-ville-de-sainte-julie-gtfs-753.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-exo-ville-de-sainte-julie-gtfs-753.zip?alt=media",
+        "license": "https://www.donneesquebec.ca/licence/"
     }
 }

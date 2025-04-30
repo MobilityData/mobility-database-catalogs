@@ -2,7 +2,7 @@
     "mdb_source_id": 2013,
     "data_type": "gtfs",
     "provider": "Bangalore Metropolitan Transport Corporation (BMTC)",
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "IN",
         "subdivision_name": "Karnataka",
@@ -20,5 +20,11 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/in-karnataka-bangalore-metropolitan-transport-corporation-bmtc-gtfs-2013.zip?alt=media",
         "license": "https://github.com/openbangalore/gtfs-data/blob/master/LICENSE"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2595",
+            "comment": " "
+        }
+    ]
 }

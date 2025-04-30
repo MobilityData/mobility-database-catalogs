@@ -17,6 +17,7 @@
     },
     "urls": {
         "direct_download": "https://cdn.rtcquebec.ca/Site_Internet/DonneesOuvertes/googletransit.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-reseau-de-transport-de-la-capitale-gtfs-757.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-reseau-de-transport-de-la-capitale-gtfs-757.zip?alt=media",
+        "license": "https://www.donneesquebec.ca/recherche/dataset/rtc-gtfs-arrets-et-les-parcours"
     }
 }

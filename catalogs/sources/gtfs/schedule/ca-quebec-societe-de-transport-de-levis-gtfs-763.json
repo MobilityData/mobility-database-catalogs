@@ -2,6 +2,7 @@
     "mdb_source_id": 763,
     "data_type": "gtfs",
     "provider": "Société de transport de Lévis",
+    "is_official": "True",
     "features": [
         "fares-v1"
     ],
@@ -19,6 +20,7 @@
     },
     "urls": {
         "direct_download": "https://www.stlevis.ca/sites/default/files/public/assets/gtfs/transit/gtfs_stlevis.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-societe-de-transport-de-levis-gtfs-763.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-societe-de-transport-de-levis-gtfs-763.zip?alt=media",
+        "license": "https://creativecommons.org/licenses/by/4.0/deed.fr"
     }
 }

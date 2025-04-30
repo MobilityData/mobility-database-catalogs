@@ -15,6 +15,7 @@
     },
     "urls": {
         "direct_download": "https://www.viarail.ca/sites/all/files/gtfs/viarail.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-unknown-via-rail-canada-gtfs-735.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-unknown-via-rail-canada-gtfs-735.zip?alt=media",
+        "license": "https://www.viarail.ca/en/developer-resources"
     }
 }

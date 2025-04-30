@@ -16,8 +16,8 @@
         }
     },
     "urls": {
-        "direct_download": "http://www.stl.laval.qc.ca/opendata/GTF_STL.zip",
+        "direct_download": "https://www.stl.laval.qc.ca/opendata/GTF_STL.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-societe-de-transport-de-laval-gtfs-749.zip?alt=media",
-        "license": "http://www.stl.laval.qc.ca/en/stl-synchro/developers/"
+        "license": "https://stlaval.ca/a-propos/diffusion/donnees-ouvertes"
     }
 }

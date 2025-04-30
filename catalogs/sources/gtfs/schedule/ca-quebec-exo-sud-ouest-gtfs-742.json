@@ -16,6 +16,7 @@
     },
     "urls": {
         "direct_download": "https://exo.quebec/xdata/citso/google_transit.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-exo-sud-ouest-gtfs-742.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-exo-sud-ouest-gtfs-742.zip?alt=media",
+        "license": "https://www.donneesquebec.ca/licence/"
     }
 }

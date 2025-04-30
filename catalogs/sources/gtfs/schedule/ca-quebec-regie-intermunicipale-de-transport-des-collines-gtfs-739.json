@@ -1,7 +1,8 @@
 {
     "mdb_source_id": 739,
     "data_type": "gtfs",
-    "provider": "Régie intermunicipale de transport des Collines",
+    "provider": "Régie intermunicipale de transport des Collines (Transcollines)",
+    "is_official": "True",
     "feed_contact_email": "gtfs@transcollines.ca",
     "location": {
         "country_code": "CA",
@@ -18,7 +19,8 @@
     "urls": {
         "direct_download": "https://github.com/transcollines/gtfs/raw/master/transcollines-qc-ca.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-regie-intermunicipale-de-transport-des-collines-gtfs-739.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-regie-intermunicipale-de-transport-des-collines-gtfs-739.zip?alt=media",
+        "license": "https://github.com/transcollines/GTFS?tab=License-1-ov-file#readme"
     },
     "redirect": []
 }

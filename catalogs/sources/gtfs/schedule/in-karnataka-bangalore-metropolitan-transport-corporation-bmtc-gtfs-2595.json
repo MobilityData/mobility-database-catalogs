@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 2595,
+    "data_type": "gtfs",
+    "provider": "Bangalore Metropolitan Transport Corporation (BMTC)",
+    "location": {
+        "country_code": "IN",
+        "subdivision_name": "Karnataka",
+        "municipality": "Bengaluru",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2024-02-27T16:14:05+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/Vonter/bmtc-gtfs/raw/refs/heads/main/gtfs/bmtc.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/in-karnataka-bangalore-metropolitan-transport-corporation-bmtc-gtfs-2013.zip?alt=media"
+    }
+}

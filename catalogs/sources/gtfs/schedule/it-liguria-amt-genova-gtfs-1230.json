@@ -2,6 +2,7 @@
     "mdb_source_id": 1230,
     "data_type": "gtfs",
     "provider": "AMT Genova",
+    "status": "deprecated",
     "location": {
         "country_code": "IT",
         "subdivision_name": "Liguria",
@@ -18,5 +19,11 @@
         "direct_download": "https://transitfeeds.com/p/amt-genova/1011/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-liguria-amt-genova-gtfs-1230.zip?alt=media",
         "license": "https://www.amt.genova.it/amt/amministrazione-trasparente/open-data/"
-    }
+    },
+     "redirect": [
+        {
+            "id": "2610",
+            "comment": " "
+        }
+    ]
 }

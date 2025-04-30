@@ -2,6 +2,7 @@
     "mdb_source_id": 2145,
     "data_type": "gtfs",
     "provider": "Dirección de Transporte Metropolitano (DTPM)",
+    "status": "deprecated",
     "location": {
         "country_code": "CL",
         "subdivision_name": "Región Metropolitana de Santiago",

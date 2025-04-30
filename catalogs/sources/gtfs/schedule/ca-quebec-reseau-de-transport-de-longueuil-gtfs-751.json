@@ -2,6 +2,7 @@
     "mdb_source_id": 751,
     "data_type": "gtfs",
     "provider": "Réseau de transport de Longueuil",
+    "is_official": "True",
     "location": {
         "country_code": "CA",
         "subdivision_name": "Québec",
@@ -15,8 +16,8 @@
         }
     },
     "urls": {
-        "direct_download": "http://www.rtl-longueuil.qc.ca/transit/latestfeed/RTL.zip",
+        "direct_download": "https://www.rtl-longueuil.qc.ca/transit/latestfeed/RTL.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-reseau-de-transport-de-longueuil-gtfs-751.zip?alt=media",
-        "license": "http://www.rtl-longueuil.qc.ca/fr-CA/donnees-ouvertes/"
+        "license": "https://www.rtl-longueuil.qc.ca/CMS/MediaFree/file/GTFS/Conditions_GTFS.pdf"
     }
 }

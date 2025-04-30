@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2603,
+    "data_type": "gtfs",
+    "provider": "Rouyn-Noranda",
+    "is_official": "True",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "Québec",
+        "municipality": "Rouyn-Noranda",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-04-20T13:16:08+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.donneesquebec.ca/recherche/dataset/41ae2192-51ec-4e20-9a1a-6dd1ffd43777/resource/c08636e0-5ce0-4bcf-9fb3-e3be76665c84/download/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-rouyn-noranda-gtfs-2603.zip?alt=media",
+        "license": "https://www.donneesquebec.ca/licence/"
+    }
+}

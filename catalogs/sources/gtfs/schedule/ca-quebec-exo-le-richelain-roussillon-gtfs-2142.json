@@ -2,6 +2,7 @@
     "mdb_source_id": 2142,
     "data_type": "gtfs",
     "provider": "Exo Le Richelain / Roussillon",
+    "is_official": "True",
     "status": "active",
     "location": {
         "country_code": "CA",

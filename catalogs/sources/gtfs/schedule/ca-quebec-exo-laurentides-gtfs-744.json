@@ -2,6 +2,7 @@
     "mdb_source_id": 744,
     "data_type": "gtfs",
     "provider": "Exo Laurentides",
+    "is_official": "True",
     "location": {
         "country_code": "CA",
         "subdivision_name": "Québec",
@@ -15,6 +16,7 @@
     },
     "urls": {
         "direct_download": "https://exo.quebec/xdata/citla/google_transit.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-exo-laurentides-gtfs-744.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-exo-laurentides-gtfs-744.zip?alt=media",
+        "license": "https://www.donneesquebec.ca/licence/"
     }
 }

@@ -5,6 +5,7 @@
         "sa"
     ],
     "provider": "Edmonton Transit System",
+    "status": "deprecated",
     "is_official": "True",
     "static_reference": [
         "714"

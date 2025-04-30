@@ -2,6 +2,7 @@
     "mdb_source_id": 557,
     "data_type": "gtfs",
     "provider": "Hawai'i Mass Transit Agency (Hele-On Bus)",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Hawaii",
@@ -17,5 +18,11 @@
     "urls": {
         "direct_download": "http://www.heleonbus.org/transit-info-and-statistics/MTA_FEED4.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-hawaii-hawaii-mass-transit-agency-hele-on-bus-gtfs-557.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2608",
+            "comment": " "
+        }
+    ]
 }

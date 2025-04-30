@@ -18,6 +18,6 @@
     },
     "urls": {
         "direct_download": "https://api.gtfs-data.jp/v2/organizations/tsu-airportline/feeds/airportline/files/feed.zip?rid=next",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/jp-mie-tsu-city-airport-line-city-gtfs-2606.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/jp-mie-tsu-city-airport-line-gtfs-2606.zip?alt=media",
     }
 }

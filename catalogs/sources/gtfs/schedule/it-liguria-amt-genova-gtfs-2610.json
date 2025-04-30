@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2610,
+    "data_type": "gtfs",
+    "provider": "AMT Genova",
+    "is_official": "True",
+    "name": "Accessible to European users only",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Liguria",
+        "municipality": "Genoa",
+        "bounding_box": {
+            "minimum_latitude": 44.380802,
+            "maximum_latitude": 44.534306,
+            "minimum_longitude": 8.695372,
+            "maximum_longitude": 9.056105,
+            "extracted_on": "2022-03-23T23:15:42+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.amt.genova.it/amt/GTFS/GTFS_AMT_GENOVA.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-liguria-amt-genova-gtfs-2610.zip?alt=media",
+        "license": "https://www.amt.genova.it/amt/societa_trasparente/altri-contenuti/open-data"
+    }
+}

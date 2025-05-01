@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Aomori City Bus",
     "feed_contact_email": "sonosujiya@gmail.com",
+    "status": "deprecated",
     "features": [
         "fares-v1"
     ],
@@ -22,5 +23,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/jp-aomori-aomori-city-bus-gtfs-874.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "2607",
+            "comment": " "
+        }
+    ]
 }

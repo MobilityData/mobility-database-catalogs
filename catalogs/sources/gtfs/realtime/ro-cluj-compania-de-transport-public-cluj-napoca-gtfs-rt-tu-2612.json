@@ -1,0 +1,14 @@
+{
+    "mdb_source_id": 2612,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Compania de Transport Public Cluj-Napoca",
+    "static_reference": [
+        "2121"
+    ],
+    "urls": {
+        "direct_download": "https://cluj-rt-feed.gtfs.ro/tripUpdates"
+    }
+}

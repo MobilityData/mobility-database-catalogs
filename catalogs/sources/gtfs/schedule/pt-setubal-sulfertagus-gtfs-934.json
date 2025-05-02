@@ -17,5 +17,11 @@
     "urls": {
         "direct_download": "https://www.transporlis.pt/Portals/0/OpenData/gtfs/zip/21/gtfs_21.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-setubal-sulfertagus-gtfs-934.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "tld-715",
+            "comment": " "
+        }
+    ]
 }

@@ -16,6 +16,7 @@
     },
     "urls": {
         "direct_download": "https://www.fairfaxva.gov/home/showpublisheddocument/22883/638499935919070000",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-fairfax-cue-bus-cue-gtfs-2609.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-fairfax-cue-bus-cue-gtfs-2609.zip?alt=media",
+        "license": "https://www.fairfaxva.gov/government/public-works/cue-bus-map-schedule#GTFS%20Schedule%20Data%20anchor"
     }
 }

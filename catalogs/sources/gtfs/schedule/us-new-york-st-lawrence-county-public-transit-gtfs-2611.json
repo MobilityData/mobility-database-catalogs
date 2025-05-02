@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 2607,
+    "mdb_source_id": 2611,
     "data_type": "gtfs",
     "provider": "St Lawrence County Public Transit",
     "feed_contact_email": "support@passiotech.com",
@@ -18,7 +18,7 @@
     },
     "urls": {
         "direct_download": "https://passio3.com/stlawrence/passioTransit/gtfs/google_transit.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-st-lawrence-county-public-transit-gtfs-2607.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-st-lawrence-county-public-transit-gtfs-2611.zip?alt=media",
         "license": "https://data.ny.gov/download/77gx-ii52/application/pdf"
     }
 }

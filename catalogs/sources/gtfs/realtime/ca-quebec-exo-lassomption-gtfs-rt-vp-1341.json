@@ -5,6 +5,7 @@
         "vp"
     ],
     "provider": "Exo L'Assomption",
+    "is_official": "True",
     "static_reference": [
         "755"
     ],

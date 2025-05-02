@@ -5,6 +5,7 @@
         "sa"
     ],
     "provider": "Exo Les Moulins",
+    "is_official": "True",
     "static_reference": [
         "754"
     ],

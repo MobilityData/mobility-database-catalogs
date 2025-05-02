@@ -2,6 +2,7 @@
     "mdb_source_id": 406,
     "data_type": "gtfs",
     "provider": "Greater Cleveland Regional Transit Authority",
+    "is_official": "True",
     "feed_contact_email": "webmaster@gcrta.org",
     "location": {
         "country_code": "US",

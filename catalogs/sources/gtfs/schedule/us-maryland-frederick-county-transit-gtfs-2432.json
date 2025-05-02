@@ -2,8 +2,8 @@
     "mdb_source_id": 2432,
     "data_type": "gtfs",
     "provider": "Frederick County TransIT",
-    "feed_contact_email": "support@passiotech.com", 
     "is_official": "True",
+    "feed_contact_email": "support@passiotech.com",
     "location": {
         "country_code": "US",
         "subdivision_name": "Maryland",

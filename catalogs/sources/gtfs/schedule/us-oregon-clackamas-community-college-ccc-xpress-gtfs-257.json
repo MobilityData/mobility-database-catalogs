@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Clackamas Community College (CCC) Xpress",
     "feed_contact_email": "support+test+cccxpress-or-us@trilliumtransit.com",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Oregon",

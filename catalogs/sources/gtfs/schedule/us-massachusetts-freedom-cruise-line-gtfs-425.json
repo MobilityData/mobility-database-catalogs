@@ -2,6 +2,7 @@
     "mdb_source_id": 425,
     "data_type": "gtfs",
     "provider": "Freedom Cruise Line",
+    "is_official": "True",
     "feed_contact_email": "support+test+freedomcruiseline-ma-us@trilliumtransit.com",
     "location": {
         "country_code": "US",

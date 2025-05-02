@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Bent County Transit",
     "feed_contact_email": "support+test+bentcounty-co-us@trilliumtransit.com",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Colorado",

@@ -2,6 +2,7 @@
     "mdb_source_id": 538,
     "data_type": "gtfs",
     "provider": "Capital District Transportation Authority (CDTA)",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "New York",

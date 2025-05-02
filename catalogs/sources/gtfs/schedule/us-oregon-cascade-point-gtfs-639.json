@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Cascade POINT",
     "feed_contact_email": "support+test+cascadespoint-or-us@trilliumtransit.com",
+    "is_official": "True",
     "features": [
         "fares-v1"
     ],

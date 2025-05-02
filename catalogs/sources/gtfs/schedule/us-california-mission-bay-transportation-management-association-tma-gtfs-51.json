@@ -2,6 +2,7 @@
     "mdb_source_id": 51,
     "data_type": "gtfs",
     "provider": "Mission Bay Transportation Management Association (TMA)",
+    "is_official": "True",
     "features": [
         "fares-v2",
         "fares-v1"

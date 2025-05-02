@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2607,
+    "data_type": "gtfs",
+    "provider": "Aomori City Bus",
+    "feed_contact_email": "sonosujiya@gmail.com",
+    "is_official": "True",
+    "location": {
+        "country_code": "JP",
+        "subdivision_name": "Aomori",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-05-01T15:29:06+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/006/168/r7shibus_current.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/jp-aomori-aomori-city-bus-gtfs-2607.zip?alt=media"
+    },
+    "redirect": []
+}

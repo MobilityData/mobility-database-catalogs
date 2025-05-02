@@ -2,6 +2,7 @@
     "mdb_source_id": 633,
     "data_type": "gtfs",
     "provider": "Valley Retriever Busline",
+    "is_official": "True",
     "feed_contact_email": "support+valleyretriever-or-us@trilliumtransit.com",
     "status": "inactive",
     "location": {

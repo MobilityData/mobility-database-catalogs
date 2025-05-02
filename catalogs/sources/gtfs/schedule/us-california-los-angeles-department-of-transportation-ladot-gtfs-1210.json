@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Los Angeles Department of Transportation (LADOT, DASH, Commuter Express)",
     "name": "Bus",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

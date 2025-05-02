@@ -4,6 +4,7 @@
     "provider": "Wave Transit",
     "status": "active",
     "name": "fixed route",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "North Carolina",

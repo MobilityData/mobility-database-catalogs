@@ -2,6 +2,7 @@
     "mdb_source_id": 624,
     "data_type": "gtfs",
     "provider": "Rhode Island Public Transit Authority",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Rhode Island",

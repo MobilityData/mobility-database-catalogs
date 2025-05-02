@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Renfe",
     "name": "Alta-Velocidad-Larga Distancia-Media Distancia",
+    "is_official": "True",
     "location": {
         "country_code": "ES",
         "bounding_box": {

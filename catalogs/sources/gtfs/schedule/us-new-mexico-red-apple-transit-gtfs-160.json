@@ -2,6 +2,7 @@
     "mdb_source_id": 160,
     "data_type": "gtfs",
     "provider": "Red Apple Transit",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "New Mexico",

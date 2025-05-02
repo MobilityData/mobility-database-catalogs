@@ -2,6 +2,7 @@
     "mdb_source_id": 412,
     "data_type": "gtfs",
     "provider": "Erie Metropolitan Transit Authority",
+    "is_official": "True",
     "feed_contact_email": "support+test+eriemta-pa-us@trilliumtransit.com",
     "location": {
         "country_code": "US",

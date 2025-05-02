@@ -20,7 +20,7 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-unknown-fluo-grand-est-67-gtfs-1075.zip?alt=media",
         "license": "https://www.nvbw.de/open-data/fahrplandaten/fahrplandaten-mit-liniennetz"
     },
-     "redirect": [
+    "redirect": [
         {
             "id": "2393",
             "comment": " "

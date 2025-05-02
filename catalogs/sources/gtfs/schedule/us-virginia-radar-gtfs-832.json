@@ -2,6 +2,7 @@
     "mdb_source_id": 832,
     "data_type": "gtfs",
     "provider": "RADAR",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Virginia",

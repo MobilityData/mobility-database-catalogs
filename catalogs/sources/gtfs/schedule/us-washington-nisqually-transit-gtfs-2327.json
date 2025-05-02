@@ -2,6 +2,7 @@
     "mdb_source_id": 2327,
     "data_type": "gtfs",
     "provider": "Nisqually Transit",
+    "is_official": "True",
     "feed_contact_email": "support+test+nisqually-wa-us@trilliumtransit.com",
     "location": {
         "country_code": "US",

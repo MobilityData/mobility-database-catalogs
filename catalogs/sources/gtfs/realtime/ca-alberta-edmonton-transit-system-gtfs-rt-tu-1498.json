@@ -5,6 +5,7 @@
         "tu"
     ],
     "provider": "Edmonton Transit System",
+    "is_official": "True",
     "static_reference": [
         "714"
     ],

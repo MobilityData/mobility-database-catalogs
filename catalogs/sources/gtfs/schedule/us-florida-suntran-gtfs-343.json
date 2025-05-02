@@ -2,6 +2,7 @@
     "mdb_source_id": 343,
     "data_type": "gtfs",
     "provider": "SunTran",
+    "is_official": "True",
     "feed_contact_email": "support+test+suntran-fl-us@trilliumtransit.com",
     "location": {
         "country_code": "US",

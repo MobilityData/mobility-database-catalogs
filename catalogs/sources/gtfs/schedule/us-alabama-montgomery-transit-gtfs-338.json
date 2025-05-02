@@ -2,6 +2,7 @@
     "mdb_source_id": 338,
     "data_type": "gtfs",
     "provider": "Montgomery Transit",
+    "is_official": "True",
     "features": [
         "fares-v1"
     ],

@@ -2,6 +2,7 @@
     "mdb_source_id": 192,
     "data_type": "gtfs",
     "provider": "Sioux Area Metro (SAM)",
+    "is_official": "True",
     "feed_contact_email": "support+test+siouxareametro-sd-us@trilliumtransit.com",
     "location": {
         "country_code": "US",

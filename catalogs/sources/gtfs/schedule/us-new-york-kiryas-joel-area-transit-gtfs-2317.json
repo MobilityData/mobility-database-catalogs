@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Kiryas Joel Area Transit",
     "feed_contact_email": "support+test+kiryasjoel-ny-us@trilliumtransit.com",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "New York ",

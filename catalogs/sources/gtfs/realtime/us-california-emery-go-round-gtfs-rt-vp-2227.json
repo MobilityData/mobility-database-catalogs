@@ -5,6 +5,7 @@
         "vp"
     ],
     "provider": "Emery Go-Round",
+    "is_official": "True",
     "static_reference": [
         "2224"
     ],

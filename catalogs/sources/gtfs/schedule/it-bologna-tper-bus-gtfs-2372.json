@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Trasporto Passeggeri Emilia-Romagna",
     "name": "Rete bus Bologna",
+    "is_official": "True",
     "location": {
         "country_code": "IT",
         "subdivision_name": "Emilia-Romagna",

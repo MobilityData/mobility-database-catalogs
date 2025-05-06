@@ -129,7 +129,10 @@ jobs:
           for job in jobs:
               print(job)
               try:
-              job_json = json.loads(job)
+                job_json = json.loads(job)
+              except Exception as e:
+                print(e)
+                continue
               base = job_json[BASE]
               url = URL_STORAGE_PREFIX + job_json[LATEST]
 

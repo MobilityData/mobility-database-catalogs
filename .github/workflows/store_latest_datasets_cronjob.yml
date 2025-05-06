@@ -199,7 +199,7 @@ jobs:
                 job_json = json.loads(job)
               except Exception as e:
                 print(e)
-                continue
+                exit(1)
               base = job_json[BASE]
               url = URL_STORAGE_PREFIX + job_json[LATEST]
 

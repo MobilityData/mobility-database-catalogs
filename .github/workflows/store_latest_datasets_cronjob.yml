@@ -88,7 +88,7 @@ jobs:
                 job_json = json.loads(job)
               except Exception as e:
                 print(e)
-                continue
+                exit(1)
               base = job_json[BASE]
               url = job_json[DIRECT_DOWNLOAD]
               authentication_type = job_json.get(AUTHENTICATION_TYPE)

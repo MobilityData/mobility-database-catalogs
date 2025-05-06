@@ -15,7 +15,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://data.renfe.com/dataset/34be0058-3a3d-4ee1-89cd-512e1226f53f/resource/25d6b043-9e47-4f99-bd91-edd51d782450/download/google_transit.zip",
+        "direct_download": "https://ssl.renfe.com/gtransit/Fichero_AV_LD/google_transit.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-unknown-alta-velocidad-larga-distancia-media-distancia-gtfs-790.zip?alt=media",
         "license": "http://data.renfe.com/legal"
     }

@@ -1,0 +1,24 @@
+{
+  "id": "mdb-blueskylimovail",
+  "name": "Blue Sky Limo LLC",
+  "urls": {
+    "static_current": "https://blueskylimovail.com/blueskylimo_gtfs.zip"
+  },
+  "location": {
+    "country_code": "US",
+    "subdivision_name": "Colorado",
+    "municipality": "Vail"
+  },
+  "tags": ["shuttle", "private", "airport", "ski"],
+  "contacts": {
+    "agency_email": "info@blueskylimovail.com",
+    "agency_url": "https://blueskylimovail.com"
+  },
+  "license": {
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "type": "cc-by"
+  },
+  "features": {
+    "type": "gtfs"
+  }
+}

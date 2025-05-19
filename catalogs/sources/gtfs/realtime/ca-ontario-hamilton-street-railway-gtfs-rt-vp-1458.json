@@ -7,7 +7,7 @@
     "provider": "Hamilton Street Railway",
     "is_official": "True", 
     "static_reference": [
-        "2358"
+        "2615"
     ],
     "urls": {
         "direct_download": "https://opendata.hamilton.ca/GTFS-RT/GTFS_VehiclePositions.pb",

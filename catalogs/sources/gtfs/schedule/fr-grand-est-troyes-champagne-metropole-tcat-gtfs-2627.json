@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2627,
+    "data_type": "gtfs",
+    "provider": "Transports en Commun de l’Agglomération Troyenne (TCAT)",
+    "is_official": "True",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Grand Est",
+        "municipality": " Troyes Champagne Métropole",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-05-19T18:34:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://static.data.gouv.fr/resources/donnees-tcat-troyes-champagne-metropole-1/20250428-121833/gtfs-navineo.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-grand-est-troyes-champagne-metropole-tcat-gtfs-2627.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/donnees-tcat-troyes-champagne-metropole-1"
+    }
+}

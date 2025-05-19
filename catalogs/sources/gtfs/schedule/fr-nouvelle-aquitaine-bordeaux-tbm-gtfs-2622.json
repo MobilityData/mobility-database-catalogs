@@ -2,7 +2,7 @@
     "mdb_source_id": 2622,
     "data_type": "gtfs",
     "provider": "Transports Bordeaux Métropole (TBM)",
-    "is_official': "True",
+    "is_official": "True",
     "feed_contact_email": "support@mecatran.com",
     "location": {
         "country_code": "FR",

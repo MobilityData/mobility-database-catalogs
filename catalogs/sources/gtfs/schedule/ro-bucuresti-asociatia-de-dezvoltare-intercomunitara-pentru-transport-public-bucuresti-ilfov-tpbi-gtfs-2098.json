@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Asociația de Dezvoltare Intercomunitară pentru Transport Public București – Ilfov (TPBI)",
     "status": "active",
+    "is_official": "True",
     "location": {
         "country_code": "RO",
         "subdivision_name": "București",

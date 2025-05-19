@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 2626,
+    "data_type": "gtfs",
+    "provider": "INTERCOM",
+    "is_official": "True",
+    "feed_contact_email": "intercom@transdev.com",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Bourgogne Franche Comté",
+        "municipality": "Sens",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-05-19T14:56:39+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://static.data.gouv.fr/resources/horaires-du-reseau-de-bus-intercom-3/20240829-161146/gtfs-open-data.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-sens-intercom-gtfs-2626.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/horaires-du-reseau-de-bus-intercom-3"
+    },
+    "redirect": []
+}

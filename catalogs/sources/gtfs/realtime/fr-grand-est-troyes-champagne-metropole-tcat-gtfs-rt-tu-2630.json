@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 2630,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Transports en Commun de l’Agglomération Troyenne (TCAT)",
+    "is_official": "True", 
+    "static_reference": [
+        "2627"
+    ],
+    "urls": {
+        "direct_download": "http://94.143.218.42:13485/ProfilGtfsRt2_0RSProducer-TCAT/TripUpdate.pb",
+        "authentication_type": 0,
+        "license": "https://transport.data.gouv.fr/datasets/offres-de-services-bus-tram-et-scolaire-au-format-gtfs-gtfs-rt-siri-lite-1"
+    }
+}

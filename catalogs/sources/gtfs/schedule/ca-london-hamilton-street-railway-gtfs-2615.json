@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 2615,
+    "data_type": "gtfs",
+    "provider": "Hamilton Street Railway",
+    "name": "HSR GTFS Schedule",
+    "is_official": "True",
+    "location": {
+        "country_code": "CA",
+        "subdivision_name": "London",
+        "municipality": "Hamilton",
+        "bounding_box": {
+            "minimum_latitude": 43.156343,
+            "maximum_latitude": 43.337134,
+            "minimum_longitude": -80.1281,
+            "maximum_longitude": -79.63931,
+            "extracted_on": "2025-02-05T21:37:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://opendata.hamilton.ca/GTFS-Static/google_transit.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-london-hamilton-street-railway-gtfs-2615.zip?alt=media",
+        "license": "https://www.hamilton.ca/city-council/data-maps/open-data/open-data-licence-terms-and-conditions"
+    },
+    "redirect": []
+}

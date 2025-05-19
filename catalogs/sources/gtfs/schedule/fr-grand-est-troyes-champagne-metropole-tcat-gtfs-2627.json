@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Transports en Commun de l’Agglomération Troyenne (TCAT)",
     "is_official": "True",
+    "name": "Navineo"
     "location": {
         "country_code": "FR",
         "subdivision_name": "Grand Est",

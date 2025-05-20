@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 2620,
+    "data_type": "gtfs",
+    "provider": "Renfe",
+    "name": "Alta-Velocidad-Larga Distancia-Media Distancia",
+    "is_official": "True",
+    "location": {
+        "country_code": "ES",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-05-19T13:30:07+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://ssl.renfe.com/gtransit/Fichero_AV_LD/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-renfe-alta-velocidad-larga-distancia-media-distancia-gtfs-2620.zip?alt=media",
+        "license": "https://data.renfe.com/dataset/horarios-de-alta-velocidad-larga-distancia-y-media-distancia/resource/25d6b043-9e47-4f99-bd91-edd51d782450"
+    }
+}

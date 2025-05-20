@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 2621,
+    "data_type": "gtfs",
+    "provider": "Burns Paiute Tribal Transit",
+    "is_official": "True",
+    "feed_contact_email": "support+test+burnspaiute-or-us@trilliumtransit.com",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-05-19T13:30:07+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://oregon-gtfs.trilliumtransit.com/gtfs_data/burnspaiute-or-us/burnspaiute-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-burns-paiute-tribal-transit-gtfs-2621.zip?alt=media"
+    }
+}

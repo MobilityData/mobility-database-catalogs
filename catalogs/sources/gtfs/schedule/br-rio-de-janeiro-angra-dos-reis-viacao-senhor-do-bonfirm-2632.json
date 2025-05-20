@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2632,
+    "data_type": "gtfs",
+    "provider": "Viação Senhor do Bonfim",
+    "is_official": "True",
+    "feed_contact_email": "grferr.82@gmail.com",
+    "location": {
+        "country_code": "BR",
+        "subdivision_name": "Rio de Janeiro",
+        "municipality": "Angra dos Reis",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-05-19T18:13:09+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://drive.usercontent.google.com/uc?id=1l8BUIOaNZiu7hbO1UxMB1e9EaXm5s4Wa&export=download",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/br-rio-de-janeiro-angra-dos-reis-viacao-senhor-do-bonfirm-2632.zip?alt=media"
+    }
+}

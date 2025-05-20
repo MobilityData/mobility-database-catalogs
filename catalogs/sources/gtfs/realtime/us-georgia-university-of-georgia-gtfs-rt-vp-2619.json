@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 2619,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "University of Georgia",
+    "is_official": "True", 
+    "static_reference": [
+        "tld-2276"
+    ],
+    "urls": {
+        "direct_download": "https://passio3.com/uga/passioTransit/gtfs/realtime/vehiclePositions",
+        "authentication_type": 0
+    }
+}

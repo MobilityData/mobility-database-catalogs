@@ -67,45 +67,42 @@ jobs:
           import json
           import requests
           from zipfile import ZipFile
-
           # OS constants
           ROOT = os.getcwd()
           DATASETS = "datasets"
           FOLDER = """${{ matrix.hash }}"""
           DOWNLOAD_REPORTS = "download_reports"
-
           # Jobs constants
           BASE = "base"
           DIRECT_DOWNLOAD = "direct_download"
           AUTHENTICATION_TYPE = "authentication_type"
           API_KEY_PARAMETER_NAME = "api_key_parameter_name"
-
           # Secrets constants
           API_SOURCE_SECRETS = "API_SOURCE_SECRETS"
-
           # Load API source secrets
           api_source_secrets = json.loads(os.environ[API_SOURCE_SECRETS])
-
           jobs = """${{ matrix.data }}""".split()
           for job in jobs:
-              job_json = json.loads(job)
+              print(job)
+              try:
+                job_json = json.loads(job)
+              except Exception as e:
+                print(e)
+                exit(1)
               base = job_json[BASE]
               url = job_json[DIRECT_DOWNLOAD]
               authentication_type = job_json.get(AUTHENTICATION_TYPE)
               api_key_parameter_name = job_json.get(API_KEY_PARAMETER_NAME)
               api_key_parameter_value = api_source_secrets.get(base)
-
               # Download the dataset
               zip_path = os.path.join(ROOT, DATASETS, FOLDER, f"{base}.zip")
               os.makedirs(os.path.dirname(zip_path), exist_ok=True)
-
               params = {}
               headers = {}
               if authentication_type == 1:
                   params[api_key_parameter_name] = api_key_parameter_value
               elif authentication_type == 2:
                   headers[api_key_parameter_name] = api_key_parameter_value
-
               is_downloadable = True
               try:
                   zip_file_req = requests.get(url, params=params, headers=headers, allow_redirects=True)
@@ -115,7 +112,6 @@ jobs:
                   file_log = (
                       f"{base}: FAILURE! Exception {e} occurred when downloading URL {url}.\n"
                   )
-
               if is_downloadable:
                   zip_file = zip_file_req.content
                   with open(zip_path, "wb") as f:
@@ -198,7 +194,12 @@ jobs:
 
           jobs = """${{ matrix.data }}""".split()
           for job in jobs:
-              job_json = json.loads(job)
+              print(job)
+              try:
+                job_json = json.loads(job)
+              except Exception as e:
+                print(e)
+                exit(1)
               base = job_json[BASE]
               url = URL_STORAGE_PREFIX + job_json[LATEST]
 

@@ -4,7 +4,7 @@
     "entity_type": [
         "sa"
     ],
-    "provider": "BC Transit (Central Fraser Valley, Chilliwack, https://bct.tmix.se/gtfs-realtime/alerts.pb?operatorIds=13)",
+    "provider": "BC Transit (Central Fraser Valley| Chilliwack| Agassiz-Harrison | Hope)",
     "is_official": "True",
     "static_reference": [
         "1991"

@@ -2,6 +2,7 @@
     "mdb_source_id": 1169,
     "data_type": "gtfs",
     "provider": "Transperth",
+    "status": "deprecated",
     "location": {
         "country_code": "AU",
         "subdivision_name": "Western Australia",
@@ -17,5 +18,12 @@
     "urls": {
         "direct_download": "https://transitfeeds.com/p/transperth/2/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-western-australia-transperth-gtfs-1169.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "1086",
+            "comment": " "
+        }
+    ]
+    
 }

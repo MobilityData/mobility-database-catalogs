@@ -18,7 +18,7 @@
         "direct_download": "https://www.transportforireland.ie/transitData/Data/GTFS_Irish_Rail.zip",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-irish-rail-gtfs-2367.zip?alt=media",
-         "license": "https://www.transportforireland.ie/transitData/PT_Data.html"
+        "license": "https://www.transportforireland.ie/transitData/PT_Data.html"
     },
     "redirect": []
 }

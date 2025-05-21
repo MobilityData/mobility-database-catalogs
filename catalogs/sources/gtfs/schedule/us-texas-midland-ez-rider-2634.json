@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 2634,
+    "data_type": "gtfs",
+    "provider": "EZ Rider",
+    "is_official": "True",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Texas",
+        "municipality": "Midland",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-05-21T18:13:09+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://nebula.wsimg.com/40f314b8788fcc32949e0fe528a3c625?AccessKeyId=9E919CD400BCF69A0E80",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-texas-midland-ez-rider-2634.zip?alt=media"
+    }
+}

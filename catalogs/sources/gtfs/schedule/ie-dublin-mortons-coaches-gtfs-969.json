@@ -2,6 +2,8 @@
     "mdb_source_id": 969,
     "data_type": "gtfs",
     "provider": "Morton's Coaches",
+    "status": "deprecated",
+    "name": "Transport for Ireland (TFI) / National Transport Authority",
     "location": {
         "country_code": "IE",
         "subdivision_name": "Dublin",

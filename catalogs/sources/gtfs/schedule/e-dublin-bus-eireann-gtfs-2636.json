@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2636,
+    "data_type": "gtfs",
+    "provider": "Bus Éireann",
+    "name": "Transport for Ireland (TFI) / National Transport Authority",
+    "is_official": "True",
+    "location": {
+        "country_code": "IE",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-05-21T19:30:30+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/Data/GTFS_Bus_Eireann.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-dublin-bus-eireann-gtfs-2636.zip?alt=media",
+        "license": "https://www.transportforireland.ie/transitData/PT_Data.html"
+    },
+    "redirect": []
+}

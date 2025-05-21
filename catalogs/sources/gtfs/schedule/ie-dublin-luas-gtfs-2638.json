@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 2638,
+    "data_type": "gtfs",
+    "provider": "LUAS",
+    "name": "Transport for Ireland (TFI) / National Transport Authority",
+    "is_official": "True",
+    "location": {
+        "country_code": "IE",
+        "subdivision_name": "Dublin",
+        "municipality": "Dublin", 
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-05-21T19:30:30+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.transportforireland.ie/transitData/Data/GTFS_LUAS.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-dublin-luas-gtfs-2638.zip?alt=media",
+        "license": "https://www.transportforireland.ie/transitData/PT_Data.html"
+    },
+    "redirect": []
+}

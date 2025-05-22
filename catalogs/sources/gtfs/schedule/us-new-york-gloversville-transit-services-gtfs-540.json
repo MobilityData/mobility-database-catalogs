@@ -2,6 +2,7 @@
     "mdb_source_id": 540,
     "data_type": "gtfs",
     "provider": "Gloversville Transit Services",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "New York",
@@ -17,5 +18,11 @@
     "urls": {
         "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Gloversville_Transit_Services.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-gloversville-transit-services-gtfs-540.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2650",
+            "comment": " "
+        }
+    ]
 }

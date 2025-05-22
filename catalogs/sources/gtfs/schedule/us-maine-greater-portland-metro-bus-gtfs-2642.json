@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 2642,
+    "data_type": "gtfs",
+    "provider": "Greater Portland Metro Bus",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Maine",
+        "municipality": "Portland",
+        "bounding_box": {
+            "minimum_latitude": 43.630787,
+            "maximum_latitude": 43.913791,
+            "minimum_longitude": -70.448168,
+            "maximum_longitude": -69.96248,
+            "extracted_on": "2022-03-16T15:34:51+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.gptd.cadavl.com/GPTD/GTFS/GTFS_GPTD.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maine-greater-portland-metro-bus-gtfs-2642.zip?alt=media",
+        "license": "https://www.gpmetro.org/about-us/projects-initiatives/developers/"
+    }
+}

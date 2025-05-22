@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Renfe Cercanias",
     "name": "Horarios cercanías — los trenes Cercanías y Rodalies",
+    "status": "deprecated",
     "location": {
         "country_code": "ES",
         "bounding_box": {
@@ -16,5 +17,11 @@
     "urls": {
         "direct_download": "http://data.renfe.com/dataset/77525d66-f095-46d0-80c0-37f735d4342f/resource/6f1523c6-a9e3-48e3-9ace-bb107a762be6/download/fomento_transit.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-unknown-renfe-cercanias-gtfs-1065.zip?alt=media"
-    }
+    },
+     "redirect": [
+        {
+            "id": "2653",
+            "comment": " "
+        }
+    ]
 }

@@ -2,6 +2,7 @@
     "mdb_source_id": 1268,
     "data_type": "gtfs",
     "provider": "Quadri orari traghetti",
+    "status": "deprecated",
     "location": {
         "country_code": "IT",
         "subdivision_name": "Regione Autonoma della Sardegna",
@@ -16,5 +17,11 @@
     "urls": {
         "direct_download": "https://transitfeeds.com/p/quadri-orari-traghetti/1169/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-regione-autonoma-della-sardegna-quadri-orari-traghetti-gtfs-1268.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "1047",
+            "comment": " "
+        }
+    ]
 }

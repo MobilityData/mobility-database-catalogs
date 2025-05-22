@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 2653,
+    "data_type": "gtfs",
+    "provider": "Renfe Cercanias",
+    "name": "Commuter train schedules for Cercanías and Rodalies trains",
+    "location": {
+        "country_code": "ES",
+        "bounding_box": {
+            "minimum_latitude": 36.4680361,
+            "maximum_latitude": 43.58952,
+            "minimum_longitude": -6.2882055,
+            "maximum_longitude": 3.163259,
+            "extracted_on": "2022-03-17T20:33:47+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://ssl.renfe.com/ftransit/Fichero_CER_FOMENTO/fomento_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-unknown-renfe-cercanias-gtfs-2653.zip?alt=media",
+        "license": "https://data.renfe.com/dataset/horarios-cercanias/resource/6f1523c6-a9e3-48e3-9ace-bb107a762be6"
+    }
+}

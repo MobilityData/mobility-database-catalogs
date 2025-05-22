@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 2641,
+    "data_type": "gtfs",
+    "provider": "South Portland",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Maine",
+        "municipality": "Portland",
+        "bounding_box": {
+            "minimum_latitude": 43.61424,
+            "maximum_latitude": 43.657989,
+            "minimum_longitude": -70.357592,
+            "maximum_longitude": -70.230007,
+            "extracted_on": "2022-03-16T15:34:48+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.remix.com/South_Portland_Bus_ME_US.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maine-south-portland-gtfs-2641.zip?alt=media",
+        "license": "https://www.gpmetro.org/about-us/projects-initiatives/developers/"
+    }
+}

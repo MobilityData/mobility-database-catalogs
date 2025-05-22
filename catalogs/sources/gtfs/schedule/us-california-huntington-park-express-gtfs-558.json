@@ -6,7 +6,7 @@
     "features": [
         "fares-v2"
     ],
-    "status": "active",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -24,5 +24,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-huntington-park-express-gtfs-558.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "2648",
+            "comment": " "
+        }
+    ]
 }

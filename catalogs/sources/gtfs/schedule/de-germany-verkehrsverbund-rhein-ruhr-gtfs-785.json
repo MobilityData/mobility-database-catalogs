@@ -2,6 +2,7 @@
     "mdb_source_id": 785,
     "data_type": "gtfs",
     "provider": "Verkehrsverbund Rhein-Ruhr",
+    "status": "deprecated",
     "location": {
         "country_code": "DE",
         "subdivision_name": "Nordrhein-Westfalen",
@@ -18,5 +19,11 @@
         "direct_download": "https://www.opendata-oepnv.de/dataset/496eea5d-d6ef-4dc2-aeb0-d15c4fbf3178/resource/9874f617-0b5d-46c4-93da-cc0bb8598fd1/download/20220129_gtfs_vrr.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-germany-verkehrsverbund-rhein-ruhr-gtfs-785.zip?alt=media",
         "license": "https://opendata.ruhr/dataset/soll-fahrplandaten-vrr"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2651",
+            "comment": " "
+        }
+    ]
 }

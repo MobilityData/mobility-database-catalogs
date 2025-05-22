@@ -2,6 +2,7 @@
     "mdb_source_id": 454,
     "data_type": "gtfs",
     "provider": "Greater Portland Metro Bus",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Maine",
@@ -18,5 +19,11 @@
         "direct_download": "http://smttracker.com/downloads/gtfs/greater-portland-me.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maine-greater-portland-metro-bus-gtfs-454.zip?alt=media",
         "license": "http://smttracker.com/developer-terms-of-use/"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2642",
+            "comment": " "
+        }
+    ]
 }

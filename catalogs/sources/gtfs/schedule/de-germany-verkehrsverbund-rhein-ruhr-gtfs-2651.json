@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 2651,
+    "data_type": "gtfs",
+    "provider": "Verkehrsverbund Rhein-Ruhr",
+    "location": {
+        "country_code": "DE",
+        "subdivision_name": "Nordrhein-Westfalen",
+        "municipality": "",
+        "bounding_box": {
+            "minimum_latitude": 50.3493192,
+            "maximum_latitude": 52.2906704,
+            "minimum_longitude": 5.8534852,
+            "maximum_longitude": 9.4481208,
+            "extracted_on": "2022-03-17T13:29:27+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.opendata-oepnv.de/dataset/496eea5d-d6ef-4dc2-aeb0-d15c4fbf3178/resource/773be6b9-daec-4c39-971a-c9e5668f148b/download/20250508_gtfs_vrr_od.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-germany-verkehrsverbund-rhein-ruhr-gtfs-2651.zip?alt=media",
+        "license": "https://www.opendata-oepnv.de/ht/de/organisation/verkehrsverbuende/vrr/startseite?tx_vrrkit_view%5Baction%5D=details&tx_vrrkit_view%5Bcontroller%5D=View&tx_vrrkit_view%5Bdataset_name%5D=soll-fahrplandaten-vrr&cHash=02c1406b5f625dd48a64d0dd29805e2c"
+    }
+}

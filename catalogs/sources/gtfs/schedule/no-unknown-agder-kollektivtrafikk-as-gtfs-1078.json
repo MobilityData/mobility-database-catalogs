@@ -1,8 +1,9 @@
 {
     "mdb_source_id": 1078,
     "data_type": "gtfs",
-    "provider": "Agder Kollektivtrafikk AS, AtB, Avinor, Boreal Norge AS, Brakar, Bussring, Snelandia, Flåmsbana, FlixBus, Flytoget, Vy, Go-Ahead Nordic, Go Fjords, Havila, Hurtigruten, Gjendebåten AS, Innlandstrafikk, Skibladner, Boreal Norge AS, Norled AS, Boreal Sjø AS, Fjord1 ASA, Kolumbus, AMBU Pendlerrute, The Fjords, Geiranger Fjordservice, Gripruta, FRAM, Sundbåten, Flybussen Norgesbuss, Norsk Industriarbeidermuseum, Nordland fylkeskommune, Vy, NOR-WAY Bussekspress AS, Bygdøyfergen, Oscarsborgfergen, Østfold kollektivtrafikk, Ruter, SJ NORD, SJ AB, Skyss, Kringom, Norled, Lustrabaatane, Farte, Tide AS, Troms fylkestrafikk, Torghatten, Ulriken, Unibuss, VKT, Vy Travel, Vy, Vy Buss",
-    "name": "Entur — Norway Aggregated",
+    "provider": "Entur",
+    "is_official": "True",
+    "name": "Norway Aggregated",
     "location": {
         "country_code": "NO",
         "bounding_box": {
@@ -15,6 +16,7 @@
     },
     "urls": {
         "direct_download": "https://storage.googleapis.com/marduk-production/outbound/gtfs/rb_norway-aggregated-gtfs.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/no-unknown-agder-kollektivtrafikk-as-gtfs-1078.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/no-unknown-agder-kollektivtrafikk-as-gtfs-1078.zip?alt=media",
+        "license": "https://developer.entur.org/stops-and-timetable-data"
     }
 }

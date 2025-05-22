@@ -2,6 +2,7 @@
     "mdb_source_id": 376,
     "data_type": "gtfs",
     "provider": "Chapel Hill Transit (CHT)",
+    "status": "deprecated",
     "feed_contact_email": "support+test+chapel-hill-transit-nc-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
@@ -20,5 +21,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-north-carolina-chapel-hill-transit-cht-gtfs-376.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "tld-89",
+            "comment": " "
+        }
+    ]
 }

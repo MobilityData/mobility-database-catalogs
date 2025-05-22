@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 2645,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Greater Portland Metro Bus",
+    "is_official": "True",
+    "static_reference": [
+        "2642"
+    ],
+    "urls": {
+        "direct_download": "https://gtfsrt.gptd.cadavl.com/ProfilGtfsRt2_0RSProducer-GPTD/VehiclePosition.pb",
+        "authentication_type": 0,
+        "license": "https://www.gpmetro.org/about-us/projects-initiatives/developers/"
+    }
+}

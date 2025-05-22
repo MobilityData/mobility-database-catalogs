@@ -1,8 +1,8 @@
 {
-    "mdb_source_id": 453,
+    "mdb_source_id": 2641,
     "data_type": "gtfs",
     "provider": "South Portland",
-    "status": "deprecated",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Maine",
@@ -16,14 +16,8 @@
         }
     },
     "urls": {
-        "direct_download": "http://smttracker.com/downloads/gtfs/south-portland-me-us.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maine-south-portland-gtfs-453.zip?alt=media",
-        "license": "http://smttracker.com/developer-terms-of-use/"
-    },
-    "redirect": [
-        {
-            "id": "2641",
-            "comment": " "
-        }
-    ]
+        "direct_download": "https://gtfs.remix.com/South_Portland_Bus_ME_US.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maine-south-portland-gtfs-2641.zip?alt=media",
+        "license": "https://www.gpmetro.org/about-us/projects-initiatives/developers/"
+    }
 }

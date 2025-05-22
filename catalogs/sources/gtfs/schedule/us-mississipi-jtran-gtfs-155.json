@@ -2,7 +2,7 @@
     "mdb_source_id": 155,
     "data_type": "gtfs",
     "provider": "JTRAN",
-    "is_official": "True",
+    "status": "deprecated",
     "feed_contact_email": "support+test+jatran-ms-us@trilliumtransit.com",
     "location": {
         "country_code": "US",
@@ -21,5 +21,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-mississipi-jtran-gtfs-155.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "2652",
+            "comment": " "
+        }
+    ]
 }

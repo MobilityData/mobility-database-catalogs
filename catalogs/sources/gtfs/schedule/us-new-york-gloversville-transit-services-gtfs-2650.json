@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2650,
+    "data_type": "gtfs",
+    "provider": "Gloversville Transit System",
+    "is_official": "True",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Schenectady",
+        "bounding_box": {
+            "minimum_latitude": 42.935495,
+            "maximum_latitude": 43.071231,
+            "minimum_longitude": -74.399364,
+            "maximum_longitude": -74.184569,
+            "extracted_on": "2022-03-16T17:28:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Gloversville_Transit_System.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-gloversville-transit-services-gtfs-2650.zip?alt=media",
+        "license": "https://www.ride-gts.com/"
+    }
+}

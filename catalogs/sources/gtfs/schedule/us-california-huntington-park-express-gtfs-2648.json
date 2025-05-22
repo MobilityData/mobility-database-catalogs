@@ -1,12 +1,8 @@
 {
-    "mdb_source_id": 558,
+    "mdb_source_id": 2648,
     "data_type": "gtfs",
     "provider": "Huntington Park Express",
-    "feed_contact_email": "csinteractive@metro.net",
-    "features": [
-        "fares-v2"
-    ],
-    "status": "deprecated",
+    "feed_contact_email": "hello@calitp.org",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -20,14 +16,9 @@
         }
     },
     "urls": {
-        "direct_download": "https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/huntingtonpark-ca-us/huntingtonpark-ca-us.zip",
+        "direct_download": "https://www.hpca.gov/DocumentCenter/View/11702",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-huntington-park-express-gtfs-558.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-huntington-park-express-gtfs-2648.zip?alt=media"
     },
-    "redirect": [
-        {
-            "id": "2648",
-            "comment": " "
-        }
-    ]
+    "redirect": []
 }

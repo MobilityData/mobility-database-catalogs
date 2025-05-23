@@ -2,6 +2,7 @@
     "mdb_source_id": 1245,
     "data_type": "gtfs",
     "provider": "City of Glendale",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -17,5 +18,11 @@
     "urls": {
         "direct_download": "https://transitfeeds.com/p/city-of-glendale/628/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-city-of-glendale-gtfs-1245.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "tld-471",
+            "comment": " "
+        }
+    ]
 }

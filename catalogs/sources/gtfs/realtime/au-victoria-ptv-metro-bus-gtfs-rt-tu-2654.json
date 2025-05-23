@@ -1,0 +1,18 @@
+{
+    "mdb_source_id": 2654,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Public Transport Victoria (PTV) Metro Bus",
+    "static_reference": [
+        "657"
+    ],
+    "urls": {
+        "direct_download": "https://data-exchange-api.vicroads.vic.gov.au/opendata/v1/gtfsr/metrobus-tripupdates",
+        "authentication_type": 2,
+        "authentication_info": "https://data-exchange.vicroads.vic.gov.au/signin",
+        "api_key_parameter_name": "Ocp-Apim-Subscription-Key",
+        "license": "https://data-exchange.vicroads.vic.gov.au/terms_of_use"
+    }
+}

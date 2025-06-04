@@ -5,11 +5,18 @@
         "sa"
     ],
     "provider": "Transit Authority of River City (TARC)",
+    "status": "deprecated",
     "static_reference": [
         "364"
     ],
     "urls": {
         "direct_download": "http://gtfsrealtime.ridetarc.org/realtime/Alert/Alerts.pb",
         "authentication_type": 0
-    }
+    },
+    "redirect": [
+        {
+            "id": "2663",
+            "comment": " "
+        }
+    ]
 }

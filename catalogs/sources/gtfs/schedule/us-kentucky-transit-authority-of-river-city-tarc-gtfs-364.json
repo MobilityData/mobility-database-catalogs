@@ -2,6 +2,7 @@
     "mdb_source_id": 364,
     "data_type": "gtfs",
     "provider": "Transit Authority of River City (TARC)",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Kentucky",
@@ -17,5 +18,11 @@
     "urls": {
         "direct_download": "http://googletransit.ridetarc.org/feed/google_transit.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-kentucky-transit-authority-of-river-city-tarc-gtfs-364.zip?alt=media"
-    }
+    },
+     "redirect": [
+        {
+            "id": "2662",
+            "comment": " "
+        }
+    ]
 }

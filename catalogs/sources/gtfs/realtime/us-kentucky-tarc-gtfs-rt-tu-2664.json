@@ -5,7 +5,7 @@
         "tu"
     ],
     "provider": "Transit Authority of River City (TARC)",
-    "is_official": True",
+    "is_official": "True",
     "static_reference": [
         "2662"
     ],

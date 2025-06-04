@@ -17,7 +17,7 @@
         }
     },
     "urls": {
-        "direct_download": "hhttps://dati.comune.milano.it/gtfs.zip",
+        "direct_download": "https://dati.comune.milano.it/gtfs.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-lombardia-milan-atm-gtfs-2666.zip?alt=media",
         "license": "https://dati.comune.milano.it/dataset/ds929-orari-del-trasporto-pubblico-locale-nel-comune-di-milano-in-formato-gtfs"
     }

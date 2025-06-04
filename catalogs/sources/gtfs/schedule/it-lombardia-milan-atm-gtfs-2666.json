@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Azienda Trasporti MIlanesi (ATM)",
     "is_official": "True",
+    "name": "Accessible to European users only", 
     "location": {
         "country_code": "IT",
         "subdivision_name": "Lombardia",

@@ -12,6 +12,6 @@
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/pioneer-valley-pvta/gtfs-rt-alerts/v2",
         "authentication_type": 0,
-        "license": "https://www.goswift.ly/api-license",
+        "license": "https://www.goswift.ly/api-license"
     }
 }

@@ -16,7 +16,9 @@
     },
     "urls": {
         "direct_download": "https://transitfeeds.com/p/matbus/833/latest/download",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-north-dakota-matbus-gtfs-1285.zip?alt=media",
         "license": "http://www.matbus.com/GTFSFeed.htm"
-    }
+    },
+    "redirect": []
 }

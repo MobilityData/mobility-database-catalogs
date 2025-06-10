@@ -17,6 +17,8 @@
     },
     "urls": {
         "direct_download": "https://transitfeeds.com/p/communaute-urbaine-du-grand-nancy/596/latest/download",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-meurthe-et-moselle-reseau-urbain-stan-gtfs-1256.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

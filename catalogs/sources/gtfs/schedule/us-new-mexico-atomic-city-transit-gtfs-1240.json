@@ -16,6 +16,8 @@
     },
     "urls": {
         "direct_download": "https://transitfeeds.com/p/atomic-city-transit/1130/latest/download",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-mexico-atomic-city-transit-gtfs-1240.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

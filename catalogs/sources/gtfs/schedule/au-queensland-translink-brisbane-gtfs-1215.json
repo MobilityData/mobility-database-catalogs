@@ -18,7 +18,9 @@
     },
     "urls": {
         "direct_download": "https://transitfeeds.com/p/translink/6/latest/download",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-translink-brisbane-gtfs-1215.zip?alt=media",
         "license": "https://data.qld.gov.au/dataset/general-transit-feed-specification-gtfs-qconnect/resource/699184c3-8c0e-44db-8a83-7e23709aefbe"
-    }
+    },
+    "redirect": []
 }

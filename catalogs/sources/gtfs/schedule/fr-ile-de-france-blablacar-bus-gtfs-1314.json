@@ -16,6 +16,8 @@
     },
     "urls": {
         "direct_download": "https://transitfeeds.com/p/idbus/519/latest/download",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-ile-de-france-blablacar-bus-gtfs-1314.zip?alt=media"
-    }
+    },
+    "redirect": []
 }

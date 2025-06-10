@@ -17,7 +17,9 @@
     },
     "urls": {
         "direct_download": "https://transitfeeds.com/p/star/208/latest/download",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-ile-de-france-star-gtfs-1159.zip?alt=media",
         "license": "https://data.explore.star.fr/explore/dataset/tco-busmetro-horaires-gtfs-versions-td/information/"
-    }
+    },
+    "redirect": []
 }

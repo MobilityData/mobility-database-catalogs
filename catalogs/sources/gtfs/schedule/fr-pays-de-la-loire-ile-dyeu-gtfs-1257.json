@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 1257,
     "data_type": "gtfs",
-    "provider": "Ile d'Yeu",
+    "provider": "Ile dʼYeu",
     "location": {
         "country_code": "FR",
         "subdivision_name": "Pays-de-la-Loire",
@@ -16,7 +16,9 @@
     },
     "urls": {
         "direct_download": "https://transitfeeds.com/p/region-des-pays-de-la-loire/1070/latest/download",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-pays-de-la-loire-ile-dyeu-gtfs-1257.zip?alt=media",
         "license": "http://opendatacommons.org/licenses/odbl/"
-    }
+    },
+    "redirect": []
 }

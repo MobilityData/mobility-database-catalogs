@@ -16,7 +16,9 @@
     },
     "urls": {
         "direct_download": "https://transitfeeds.com/p/pkp-szybka-kolej-miejska-w-trojmie-cie/1116/latest/download",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-pomorskie-pkp-szybka-kolej-miejska-w-trojmiescie-gtfs-1290.zip?alt=media",
         "license": "http://przyjazdy.pl/gtfs"
-    }
+    },
+    "redirect": []
 }

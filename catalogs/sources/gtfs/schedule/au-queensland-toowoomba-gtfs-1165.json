@@ -2,7 +2,7 @@
     "mdb_source_id": 1165,
     "data_type": "gtfs",
     "provider": "Toowoomba",
-    "status": "inactive",
+    "status": "active",
     "location": {
         "country_code": "AU",
         "subdivision_name": "Queensland",
@@ -16,9 +16,10 @@
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/translink/17/latest/download",
+        "direct_download": "https://gtfsrt.api.translink.com.au/GTFS/TWB_GTFS.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-toowoomba-gtfs-1165.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-toowoomba-gtfs-1165.zip?alt=media",
+        "license": "https://creativecommons.org/licenses/by/4.0/"
     },
     "redirect": []
 }

@@ -15,7 +15,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/blacksburg-transit/359/latest/download",
+        "direct_download": "http://www.bt4uclassic.org/gtfs/google_transit.zip",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-blacksburg-transit-gtfs-1189.zip?alt=media"
     },

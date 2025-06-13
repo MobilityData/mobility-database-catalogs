@@ -2,7 +2,7 @@
     "mdb_source_id": 1286,
     "data_type": "gtfs",
     "provider": "Offre de transport du réseau Libellus",
-    "status": "inactive",
+    "status": "active",
     "location": {
         "country_code": "FR",
         "subdivision_name": "Occitanie",
@@ -16,9 +16,10 @@
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/mazamet/1218/latest/download",
+        "direct_download": "https://www.data.gouv.fr/fr/datasets/r/70c9f936-129e-41f4-940a-8e6f272535d1",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-occitanie-offre-de-transport-du-reseau-libellus-gtfs-1286.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-occitanie-offre-de-transport-du-reseau-libellus-gtfs-1286.zip?alt=media",
+        "license": "http://opendatacommons.org/licenses/odbl/summary/"
     },
     "redirect": []
 }

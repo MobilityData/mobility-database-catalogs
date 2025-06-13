@@ -1,11 +1,11 @@
 {
     "mdb_source_id": 1290,
     "data_type": "gtfs",
-    "provider": "PKP Szybka Kolej Miejska w Trójmieście",
+    "provider": "PKP Szybka Kolej Miejska w Tr\u00f3jmie\u015bcie",
     "location": {
         "country_code": "PL",
         "subdivision_name": "Pomorskie",
-        "municipality": "Trójmieście",
+        "municipality": "Tr\u00f3jmie\u015bcie",
         "bounding_box": {
             "minimum_latitude": 54.1210638,
             "maximum_latitude": 54.6058525,
@@ -15,10 +15,10 @@
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/pkp-szybka-kolej-miejska-w-trojmie-cie/1116/latest/download",
+        "direct_download": "https://www.skm.pkp.pl/gtfs-mi-kpd.zip",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-pomorskie-pkp-szybka-kolej-miejska-w-trojmiescie-gtfs-1290.zip?alt=media",
-        "license": "http://przyjazdy.pl/gtfs"
+        "license": "https://bip.skm.pkp.pl/otwarte-dane"
     },
     "redirect": []
 }

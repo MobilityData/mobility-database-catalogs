@@ -15,10 +15,10 @@
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/delhi-transport-corporation/1047/latest/download",
+        "direct_download": "https://github.com/transitland/gtfs-archives-not-hosted-elsewhere/raw/master/delhi-bus.zip",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/in-delhi-delhi-transport-corporation-gtfs-1262.zip?alt=media",
-        "license": "https://otd.delhi.gov.in/static/assets/terms-and-conditions.pdf"
+        "license": "https://opendata.iiitd.edu.in/terms"
     },
     "redirect": []
 }

@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 1224,
     "data_type": "gtfs",
-    "provider": "Rurtalbahn GmbH | ABELLIO Rail | VIAS GmbH| Aachener Straßenbahn und Energieversorgungs-AG | Rurtalbus GmbH | WestVerkehr GmbH | Staatsbahnen | National Express | ASEAG Netliner",
+    "provider": "Rurtalbahn GmbH | ABELLIO Rail | VIAS GmbH| Aachener Stra\u00dfenbahn und Energieversorgungs-AG | Rurtalbus GmbH | WestVerkehr GmbH | Staatsbahnen | National Express | ASEAG Netliner",
     "location": {
         "country_code": "DE",
         "subdivision_name": "Nordrhein-Westfalen",
@@ -15,7 +15,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/aachener-verkehrsverbund/836/latest/download",
+        "direct_download": "http://opendata.avv.de/current_GTFS/AVV_GTFS_Masten_mit_SPNV.zip",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-nordrhein-westfalen-rurtalbahn-gmbh-gtfs-1224.zip?alt=media"
     },

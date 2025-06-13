@@ -19,7 +19,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/bizkaibus/653/latest/download",
+        "direct_download": "https://baliabideak.bizkaia.eus/Bizkaibus/GTFS/Bizkaibus.zip",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-bizkaia-bizkaibus-gtfs-1135.zip?alt=media"
     },

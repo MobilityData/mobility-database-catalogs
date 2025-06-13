@@ -21,5 +21,10 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-alberta-strathcona-county-transit-gtfs-1297.zip?alt=media",
         "license": "https://data.strathcona.ca/Transportation/Strathcona-County-Transit-Bus-Schedule-GTFS-Data-F/2ek5-rxs5"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "714",
+            "comment": " "
+        }
+    ]
 }

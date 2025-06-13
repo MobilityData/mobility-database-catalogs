@@ -14,7 +14,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/colectivos-buenos-aires/1037/latest/download",
+        "direct_download": "https://cdn.buenosaires.gob.ar/datosabiertos/datasets/transporte-y-obras-publicas/colectivos-gtfs/colectivos-gtfs.zip",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ar-buenos-aires-colectivos-buenos-aires-gtfs-1220.zip?alt=media",
         "license": "https://data.buenosaires.gob.ar/dataset/colectivos-gtfs"

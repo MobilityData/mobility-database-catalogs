@@ -2,7 +2,7 @@
     "mdb_source_id": 1159,
     "data_type": "gtfs",
     "provider": "STAR",
-    "status": "inactive",
+    "status": "active",
     "location": {
         "country_code": "FR",
         "subdivision_name": "Île-de-France",
@@ -16,10 +16,10 @@
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/star/208/latest/download",
+        "direct_download": "https://eu.ftp.opendatasoft.com/star/gtfs/GTFS_2_20250620_20250629_20250603111256.zip",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-ile-de-france-star-gtfs-1159.zip?alt=media",
-        "license": "https://data.explore.star.fr/explore/dataset/tco-busmetro-horaires-gtfs-versions-td/information/"
+        "license": "https://opendatacommons.org/licenses/odbl/1.0/, https://doc.transport.data.gouv.fr/presentation-et-mode-demploi-du-pan/conditions-dutilisation-des-donnees/licence-odbl"
     },
     "redirect": []
 }

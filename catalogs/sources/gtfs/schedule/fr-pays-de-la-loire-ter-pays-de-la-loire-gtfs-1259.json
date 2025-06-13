@@ -15,10 +15,10 @@
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/region-des-pays-de-la-loire/1073/latest/download",
+        "direct_download": "https://eu.ftp.opendatasoft.com/sncf/plandata/export-ter-gtfs-last.zip",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-pays-de-la-loire-ter-pays-de-la-loire-gtfs-1259.zip?alt=media",
-        "license": "https://opendatacommons.org/licenses/odbl/"
+        "license": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/"
     },
     "redirect": []
 }

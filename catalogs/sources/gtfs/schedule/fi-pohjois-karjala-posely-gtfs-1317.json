@@ -2,7 +2,7 @@
     "mdb_source_id": 1317,
     "data_type": "gtfs",
     "provider": "POSELY",
-    "status": "active",
+    "status": "inactive",
     "location": {
         "country_code": "FI",
         "subdivision_name": "Pohjois-Karjala",
@@ -15,7 +15,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://dev.hsl.fi/gtfs.waltti/posjoe.zip",
+        "direct_download": "https://transitfeeds.com/p/liikennevirasto/733/latest/download",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fi-pohjois-karjala-posely-gtfs-1317.zip?alt=media"
     },

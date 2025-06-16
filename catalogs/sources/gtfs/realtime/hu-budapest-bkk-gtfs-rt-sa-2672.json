@@ -11,7 +11,7 @@
     ],
     "urls": {
         "direct_download": "https://go.bkk.hu/api/query/v1/ws/gtfs-rt/full/Alerts.pb",
-        "authentication_type": 1
+        "authentication_type": 1,
         "authentication_info": "https://fiok.bkk.hu/auth",
         "api_key_parameter_name": "key",
         "license": "https://opendata.bkk.hu/data-sources"

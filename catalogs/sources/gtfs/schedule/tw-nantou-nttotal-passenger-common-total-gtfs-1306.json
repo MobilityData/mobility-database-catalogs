@@ -1,8 +1,8 @@
 {
     "mdb_source_id": 1306,
     "data_type": "gtfs",
-    "provider": "NT_Total passenger (common total) | NT_\u5357\u6295\u5ba2\u904b(\u516c\u7e3d) | NT_\u5168\u822a\u5ba2\u904b(\u516c\u7e3d)",
-    "status": "inactive",
+    "provider": "NT_Total passenger (common total), NT_南投客運(公總), NT_全航客運(公總)",
+    "status": "deprecated",
     "location": {
         "country_code": "TW",
         "subdivision_name": "Nantou",
@@ -15,9 +15,14 @@
         }
     },
     "urls": {
-        "direct_download": "http://gtfs.taichung.gov.tw/bnb/api/gtfs/nt/latest",
+        "direct_download": "https://transitfeeds.com/p/taiwan/958/latest/download",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/tw-nantou-nttotal-passenger-common-total-gtfs-1306.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "mdb-1074",
+            "comment": " "
+        }
+    ]
 }

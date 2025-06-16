@@ -2,7 +2,7 @@
     "mdb_source_id": 1167,
     "data_type": "gtfs",
     "provider": "Bowen",
-    "status": "active",
+    "status": "deprecated",
     "location": {
         "country_code": "AU",
         "subdivision_name": "Queensland",
@@ -16,10 +16,15 @@
         }
     },
     "urls": {
-        "direct_download": "https://gtfsrt.api.translink.com.au/GTFS/BOW_GTFS.zip",
+        "direct_download": "https://transitfeeds.com/p/translink/5/latest/download",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-bowen-gtfs-1167.zip?alt=media",
         "license": "https://creativecommons.org/licenses/by/4.0/"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "mdb-675",
+            "comment": " "
+        }
+    ]
 }

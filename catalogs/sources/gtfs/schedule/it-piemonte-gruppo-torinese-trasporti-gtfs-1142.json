@@ -6,7 +6,7 @@
     "features": [
         "fares-v1"
     ],
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "IT",
         "subdivision_name": "Piemonte",
@@ -20,9 +20,14 @@
         }
     },
     "urls": {
-        "direct_download": "https://www.gtt.to.it/open_data/gtt_gtfs.zip",
+        "direct_download": "https://transitfeeds.com/p/gruppo-torinese-trasporti/51/latest/download",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-piemonte-gruppo-torinese-trasporti-gtfs-1142.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "tld-564",
+            "comment": " "
+        }
+    ]
 }

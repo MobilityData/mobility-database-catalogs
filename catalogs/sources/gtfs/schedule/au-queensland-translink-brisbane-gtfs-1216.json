@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "TransLink Brisbane",
     "name": "Gympie",
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "AU",
         "subdivision_name": "Queensland",
@@ -17,10 +17,15 @@
         }
     },
     "urls": {
-        "direct_download": "https://gtfsrt.api.translink.com.au/GTFS/GYM_GTFS.zip",
+        "direct_download": "https://transitfeeds.com/p/translink/9/latest/download",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-translink-brisbane-gtfs-1216.zip?alt=media",
         "license": "https://data.qld.gov.au/dataset/general-transit-feed-specification-gtfs-qconnect/resource/254f67be-ea12-4da1-8475-c5424359290e"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "mdb-671",
+            "comment": " "
+        }
+    ]
 }

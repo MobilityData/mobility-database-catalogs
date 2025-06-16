@@ -2,7 +2,7 @@
     "mdb_source_id": 1168,
     "data_type": "gtfs",
     "provider": "Gladstone",
-    "status": "active",
+    "status": "deprecated",
     "location": {
         "country_code": "AU",
         "subdivision_name": "Queensland",
@@ -16,9 +16,14 @@
         }
     },
     "urls": {
-        "direct_download": "https://gtfsrt.api.translink.com.au/GTFS/GLT_GTFS.zip",
+        "direct_download": "https://transitfeeds.com/p/translink/8/latest/download",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-gladstone-gtfs-1168.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "mdb-667",
+            "comment": " "
+        }
+    ]
 }

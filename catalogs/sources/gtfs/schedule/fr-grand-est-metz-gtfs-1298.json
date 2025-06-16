@@ -15,7 +15,10 @@
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/metz-metropole/850/latest/download",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-grand-est-metz-gtfs-1298.zip?alt=media"
-    }
+        "direct_download": "https://data.lemet.fr/documents/LEMET-gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-grand-est-metz-gtfs-1298.zip?alt=media",
+        "license": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/"
+    },
+    "redirect": []
 }

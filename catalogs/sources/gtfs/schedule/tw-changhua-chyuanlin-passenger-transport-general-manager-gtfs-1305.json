@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 1305,
     "data_type": "gtfs",
-    "provider": "CH_Yuanlin Passenger Transport (General Manager) | CH_\u4e2d\u9e7f\u5ba2\u904b(\u516c\u7e3d) | CH_\u5f70\u5316\u5ba2\u904b(\u516c\u7e3d)",
+    "provider": "CH_Yuanlin Passenger Transport (General Manager) | CH_中鹿客運(公總) | CH_彰化客運(公總)",
     "status": "inactive",
     "location": {
         "country_code": "TW",
@@ -15,7 +15,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://tcbnb.maxwin.com.tw/bnb/api/gtfs/ch/latest",
+        "direct_download": "https://transitfeeds.com/p/taiwan/956/latest/download",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/tw-changhua-chyuanlin-passenger-transport-general-manager-gtfs-1305.zip?alt=media"
     },

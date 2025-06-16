@@ -14,9 +14,14 @@
         }
     },
     "urls": {
-        "direct_download": "https://github.com/sakayph/gtfs/archive/master.zip#gtfs-master",
+        "direct_download": "https://transitfeeds.com/p/philippines/71/latest/download",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ph-unknown-philippines-gtfs-1269.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "mdb-1106",
+            "comment": " "
+        }
+    ]
 }

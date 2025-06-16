@@ -1,11 +1,11 @@
 {
     "mdb_source_id": 1290,
     "data_type": "gtfs",
-    "provider": "PKP Szybka Kolej Miejska w Tr\u00f3jmie\u015bcie",
+    "provider": "PKP Szybka Kolej Miejska w Trójmieście",
     "location": {
         "country_code": "PL",
         "subdivision_name": "Pomorskie",
-        "municipality": "Tr\u00f3jmie\u015bcie",
+        "municipality": "TTrójmieście",
         "bounding_box": {
             "minimum_latitude": 54.1210638,
             "maximum_latitude": 54.6058525,

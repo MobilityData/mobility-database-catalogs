@@ -10,6 +10,7 @@
     ],
     "urls": {
         "direct_download": "https://gtfsrt.api.translink.com.au/api/realtime/CNS/VehiclePositions",
-        "authentication_type": 0
+        "authentication_type": 0,
+        "license": "https://translink.com.au/about-translink/open-data"
     }
 }

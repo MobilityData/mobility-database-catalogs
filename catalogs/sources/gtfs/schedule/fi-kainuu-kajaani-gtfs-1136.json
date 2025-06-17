@@ -2,7 +2,7 @@
     "mdb_source_id": 1136,
     "data_type": "gtfs",
     "provider": "Kajaani",
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "FI",
         "subdivision_name": "Kainuu",
@@ -18,5 +18,11 @@
     "urls": {
         "direct_download": "https://transitfeeds.com/p/city-of-kajaani/1103/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fi-kainuu-kajaani-gtfs-1136.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "tld-829",
+            "comment": " "
+        }
+    ]
 }

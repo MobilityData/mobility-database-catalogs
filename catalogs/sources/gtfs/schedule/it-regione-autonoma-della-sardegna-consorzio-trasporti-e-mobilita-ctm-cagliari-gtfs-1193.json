@@ -5,7 +5,7 @@
     "features": [
         "fares-v1"
     ],
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "IT",
         "subdivision_name": "Regione Autonoma della Sardegna",
@@ -22,5 +22,11 @@
         "direct_download": "https://transitfeeds.com/p/ctm-cagliari/1098/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-regione-autonoma-della-sardegna-consorzio-trasporti-e-mobilita-ctm-cagliari-gtfs-1193.zip?alt=media",
         "license": "http://dati.regione.sardegna.it/dataset/quadri-orari-ctm"
-    }
+    },
+    "redirect": [
+        {
+            "id": "tld-576",
+            "comment": " "
+        }
+    ]
 }

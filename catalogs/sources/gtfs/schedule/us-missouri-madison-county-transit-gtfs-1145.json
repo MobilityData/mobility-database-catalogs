@@ -2,6 +2,7 @@
     "mdb_source_id": 1145,
     "data_type": "gtfs",
     "provider": "Madison County Transit",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Missouri",
@@ -17,5 +18,11 @@
     "urls": {
         "direct_download": "https://transitfeeds.com/p/madison-county-transit/1146/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-missouri-madison-county-transit-gtfs-1145.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "tld-4136",
+            "comment": " "
+        }
+    ]
 }

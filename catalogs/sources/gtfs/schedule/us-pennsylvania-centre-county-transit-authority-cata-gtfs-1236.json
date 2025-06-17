@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Centre County Transit Authority (CATA)",
     "name": "CATABUS",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Pennsylvania",
@@ -19,5 +20,11 @@
         "direct_download": "https://transitfeeds.com/p/catabus/536/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-pennsylvania-centre-county-transit-authority-cata-gtfs-1236.zip?alt=media",
         "license": "https://catabus.com/developer-tools/"
-    }
+    },
+    "redirect": [
+        {
+            "id": "tld-366",
+            "comment": " "
+        }
+    ]
 }

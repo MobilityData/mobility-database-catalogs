@@ -19,10 +19,10 @@
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/region-des-pays-de-la-loire/969/latest/download",
+        "direct_download": "https://app.mecatran.com/utw/ws/gtfsfeed/static/lilapresquile?apiKey=3b5f1b483e47272d497403293c565f2c6a440b5c",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-pays-de-la-loire-lila-gtfs-1261.zip?alt=media",
-        "license": "https://data.nantesmetropole.fr/explore/dataset/234400034_032-012_gtfs_lila/information/"
+        "license": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/"
     },
     "redirect": []
 }

@@ -2,7 +2,7 @@
     "mdb_source_id": 1163,
     "data_type": "gtfs",
     "provider": "Innisfail",
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "AU",
         "subdivision_name": "Queensland",
@@ -17,6 +17,14 @@
     },
     "urls": {
         "direct_download": "https://transitfeeds.com/p/translink/10/latest/download",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-innisfail-gtfs-1163.zip?alt=media"
-    }
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-innisfail-gtfs-1163.zip?alt=media",
+        "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "redirect": [
+        {
+            "id": "mdb-673",
+            "comment": " "
+        }
+    ]
 }

@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 2673,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Budapesti Közlekedési Központ (BKK)",
+    "feed_contact_email": "bkk@bkk.hu",
+    "static_reference": [
+        "990"
+    ],
+    "urls": {
+        "direct_download": "https://go.bkk.hu/api/query/v1/ws/gtfs-rt/full/TripUpdates.pb",
+        "authentication_type": 1,
+        "authentication_info": "https://fiok.bkk.hu/auth",
+        "api_key_parameter_name": "key",
+        "license": "https://opendata.bkk.hu/data-sources"
+    }
+}

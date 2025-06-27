@@ -2,6 +2,7 @@
     "mdb_source_id": 1253,
     "data_type": "gtfs",
     "provider": "Bilbobus",
+    "status": "deprecated",
     "feed_contact_email": "webmaster@bilbao.eus",
     "location": {
         "country_code": "ES",
@@ -20,5 +21,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-bizkaia-bilbobus-gtfs-1253.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "mdb-2681",
+            "comment": " "
+        }
+    ]
 }

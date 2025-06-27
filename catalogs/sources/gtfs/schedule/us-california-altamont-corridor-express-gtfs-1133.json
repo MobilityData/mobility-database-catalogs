@@ -1,21 +1,28 @@
 {
-    "mdb_source_id": 1133,
-    "data_type": "gtfs",
-    "provider": "Altamont Corridor Express",
-    "location": {
-        "country_code": "US",
-        "subdivision_name": "California",
-        "municipality": "Stockton",
-        "bounding_box": {
-            "minimum_latitude": 37.329568,
-            "maximum_latitude": 37.957058,
-            "minimum_longitude": -122.007598,
-            "maximum_longitude": -121.263664,
-            "extracted_on": "2022-03-23T18:28:32+00:00"
-        }
-    },
-    "urls": {
-        "direct_download": "https://transitfeeds.com/p/altamont-corridor-express/823/latest/download",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-altamont-corridor-express-gtfs-1133.zip?alt=media"
+  "mdb_source_id": 1133,
+  "data_type": "gtfs",
+  "provider": "Altamont Corridor Express",
+  "status": "deprecated",
+  "location": {
+    "country_code": "US",
+    "subdivision_name": "California",
+    "municipality": "Stockton",
+    "bounding_box": {
+      "minimum_latitude": 37.329568,
+      "maximum_latitude": 37.957058,
+      "minimum_longitude": -122.007598,
+      "maximum_longitude": -121.263664,
+      "extracted_on": "2022-03-23T18:28:32+00:00"
     }
+  },
+  "urls": {
+    "direct_download": "https://transitfeeds.com/p/altamont-corridor-express/823/latest/download",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-altamont-corridor-express-gtfs-1133.zip?alt=media"
+  },
+  "redirect": [
+    {
+      "id": "mdb-2679",
+      "comment": " "
+    }
+  ]
 }

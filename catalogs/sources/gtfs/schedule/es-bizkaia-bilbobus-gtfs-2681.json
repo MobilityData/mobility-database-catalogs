@@ -1,0 +1,18 @@
+{
+    "mdb_source_id": 2681,
+    "data_type": "gtfs",
+    "provider": "Bilbobus",
+    "feed_contact_email": "webmaster@bilbao.eus",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Bizkaia",
+        "municipality": "Bilbao",
+    },
+    "urls": {
+        "direct_download": "https://nap.transportes.gob.es/api/Fichero/download/1460",
+        "authentication_type": 2,
+        "authentication_info": "https://nap.transportes.gob.es/",
+        "api_key_parameter_name": "ApiKey",
+        "license": "https://nap.transportes.gob.es/licencia-datos"
+    }
+}

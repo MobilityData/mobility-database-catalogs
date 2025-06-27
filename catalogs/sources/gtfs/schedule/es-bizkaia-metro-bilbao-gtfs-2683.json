@@ -1,8 +1,7 @@
 {
-    "mdb_source_id": 1200,
+    "mdb_source_id": 2683,
     "data_type": "gtfs",
     "provider": "Metro Bilbao",
-    "status": "deprecated",
     "location": {
         "country_code": "ES",
         "subdivision_name": "Bizkaia",
@@ -16,13 +15,10 @@
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/metro-bilbao/656/latest/download",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-bizkaia-metro-bilbao-gtfs-1200.zip?alt=media"
-    },
-    "redirect": [
-        {
-            "id": "mdb-2683",
-            "comment": " "
-        }
-    ]
+        "direct_download": "https://nap.transportes.gob.es/api/Fichero/download/1267",
+        "authentication_type": 2,
+        "authentication_info": "https://nap.transportes.gob.es/",
+        "api_key_parameter_name": "ApiKey",
+        "license": "https://nap.transportes.gob.es/licencia-datos"
+    }
 }

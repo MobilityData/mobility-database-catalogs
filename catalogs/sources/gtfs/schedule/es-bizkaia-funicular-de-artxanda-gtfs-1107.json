@@ -2,6 +2,7 @@
     "mdb_source_id": 1107,
     "data_type": "gtfs",
     "provider": "Funicular de Artxanda",
+    "status": "deprecated",
     "location": {
         "country_code": "ES",
         "subdivision_name": "Bizkaia",
@@ -17,5 +18,11 @@
     "urls": {
         "direct_download": "https://transitfeeds.com/p/artxanda-funicular/657/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-bizkaia-funicular-de-artxanda-gtfs-1107.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "mdb-2680",
+            "comment": " "
+        }
+    ]
 }

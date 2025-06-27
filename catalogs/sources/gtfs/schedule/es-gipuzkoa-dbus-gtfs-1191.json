@@ -17,5 +17,11 @@
     "urls": {
         "direct_download": "https://transitfeeds.com/p/compania-del-tranvia-de-san-sebastian/702/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-gipuzkoa-dbus-gtfs-1191.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "mdb-2682",
+            "comment": " "
+        }
+    ]
 }

@@ -10,7 +10,8 @@
     },
     "urls": {
         "direct_download": "https://nap.transportes.gob.es/api/Fichero/download/1264",
-         "authentication_type": 2,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-bizkaia-funicular-de-artxanda-gtfs-2680.zip?alt=media",
+        "authentication_type": 2,
         "authentication_info": "https://nap.transportes.gob.es/",
         "api_key_parameter_name": "ApiKey",
         "license": "https://nap.transportes.gob.es/licencia-datos"

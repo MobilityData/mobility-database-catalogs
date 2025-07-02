@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 2680,
+    "mdb_source_id": 2679,
     "data_type": "gtfs",
     "provider": "Boston Harbor Islands Ferry",
     "feed_contact_email": "erica_cole@nps.gov",
@@ -18,7 +18,7 @@
     "urls": {
         "direct_download": "https://www.nps.gov/external-resources/gtfs/boha/boston-harbor-islands-ferry.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-boston-harbor-islands-ferry-gtfs-2680.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-boston-harbor-islands-ferry-gtfs-2679.zip?alt=media"
     },
     "redirect": []
 }

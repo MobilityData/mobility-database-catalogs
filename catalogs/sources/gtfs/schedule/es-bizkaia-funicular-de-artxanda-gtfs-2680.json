@@ -2,6 +2,7 @@
     "mdb_source_id": 2680,
     "data_type": "gtfs",
     "provider": "Funicular de Artxanda",
+    "is_official": "True",
     "location": {
         "country_code": "ES",
         "subdivision_name": "Bizkaia",

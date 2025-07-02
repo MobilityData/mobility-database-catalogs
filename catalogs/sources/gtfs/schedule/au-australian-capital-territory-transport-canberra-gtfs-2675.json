@@ -18,6 +18,9 @@
     "urls": {
         "direct_download": "https://transport.api.act.gov.au/gtfs/data/gtfs/v2/gtfs.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-australian-capital-territory-transport-canberra-gtfs-2675.zip?alt=media",
+        "authentication_type": 2,
+        "api_key_parameter_name": "authorization", 
+        "authentication_info": "https://www.transport.act.gov.au/__data/assets/pdf_file/0005/2865398/MyWayPlus-GTFS-developer-access-guide-v1.1.pdf",
         "license": "https://www.transport.act.gov.au/contact-us/information-for-developers"
     }
 }

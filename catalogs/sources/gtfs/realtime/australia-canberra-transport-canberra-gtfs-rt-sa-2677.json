@@ -11,7 +11,9 @@
     ],
     "urls": {
         "direct_download": "https://transport.api.act.gov.au/gtfs/data/gtfs/v2/service-alerts.pb",
-        "authentication_type": 0,
+        "authentication_type": 2,
+        "api_key_parameter_name": "authorization", 
+        "authentication_info": "https://www.transport.act.gov.au/__data/assets/pdf_file/0005/2865398/MyWayPlus-GTFS-developer-access-guide-v1.1.pdf",
         "license": "https://www.transport.act.gov.au/contact-us/information-for-developers"
     }
 }

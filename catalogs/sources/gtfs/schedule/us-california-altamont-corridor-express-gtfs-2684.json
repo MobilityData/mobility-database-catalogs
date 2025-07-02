@@ -16,7 +16,7 @@
     },
     "urls": {
         "direct_download": "http://api.511.org/transit/datafeeds?operator_id=CE",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-altamont-corridor-express-gtfs-2684.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-altamont-corridor-express-gtfs-2684.zip?alt=media",
         "authentication_type": 1,
         "authentication_info": "https://511.org/open-data/token",
         "api_key_parameter_name": "api_key",

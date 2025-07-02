@@ -17,6 +17,7 @@
     },
     "urls": {
         "direct_download": "https://nap.transportes.gob.es/api/Fichero/download/1267",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-bizkaia-metro-bilbao-gtfs-2683.zip?alt=media",
         "authentication_type": 2,
         "authentication_info": "https://nap.transportes.gob.es/",
         "api_key_parameter_name": "ApiKey",

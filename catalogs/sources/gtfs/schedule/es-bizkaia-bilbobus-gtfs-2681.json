@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Bilbobus",
     "feed_contact_email": "webmaster@bilbao.eus",
+    "is_official": "True",
     "location": {
         "country_code": "ES",
         "subdivision_name": "Bizkaia",

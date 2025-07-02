@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 2683,
+    "data_type": "gtfs",
+    "provider": "Metro Bilbao",
+    "is_official": "True",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Bizkaia",
+        "municipality": "Bilbao",
+        "bounding_box": {
+            "minimum_latitude": 43.23521,
+            "maximum_latitude": 43.40162,
+            "minimum_longitude": -3.03896,
+            "maximum_longitude": -2.88125,
+            "extracted_on": "2022-03-23T18:53:03+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://nap.transportes.gob.es/api/Fichero/download/1267",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-bizkaia-metro-bilbao-gtfs-2683.zip?alt=media",
+        "authentication_type": 2,
+        "authentication_info": "https://nap.transportes.gob.es/",
+        "api_key_parameter_name": "ApiKey",
+        "license": "https://nap.transportes.gob.es/licencia-datos"
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 2680,
+    "data_type": "gtfs",
+    "provider": "Funicular de Artxanda",
+    "is_official": "True",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Bizkaia",
+        "municipality": "Bilbao",
+         "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-06-02T18:53:03+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://nap.transportes.gob.es/api/Fichero/download/1264",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-bizkaia-funicular-de-artxanda-gtfs-2680.zip?alt=media",
+        "authentication_type": 2,
+        "authentication_info": "https://nap.transportes.gob.es/",
+        "api_key_parameter_name": "ApiKey",
+        "license": "https://nap.transportes.gob.es/licencia-datos"
+    }
+}

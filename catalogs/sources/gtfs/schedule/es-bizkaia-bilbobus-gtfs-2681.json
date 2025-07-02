@@ -1,0 +1,27 @@
+{
+    "mdb_source_id": 2681,
+    "data_type": "gtfs",
+    "provider": "Bilbobus",
+    "feed_contact_email": "webmaster@bilbao.eus",
+    "is_official": "True",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Bizkaia",
+        "municipality": "Bilbao",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-06-02T18:53:03+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://nap.transportes.gob.es/api/Fichero/download/1460",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-bizkaia-bilbobus-gtfs-2681.zip?alt=media",
+        "authentication_type": 2,
+        "authentication_info": "https://nap.transportes.gob.es/",
+        "api_key_parameter_name": "ApiKey",
+        "license": "https://nap.transportes.gob.es/licencia-datos"
+    }
+}

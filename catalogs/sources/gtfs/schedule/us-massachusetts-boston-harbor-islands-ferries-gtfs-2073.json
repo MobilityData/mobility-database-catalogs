@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Boston Harbor Islands Ferries",
     "feed_contact_email": "erica_cole@nps.gov",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Massachusetts",

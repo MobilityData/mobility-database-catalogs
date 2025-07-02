@@ -6,7 +6,14 @@
     "location": {
         "country_code": "ES",
         "subdivision_name": "Gipuzkoa",
-        "municipality": "San Sebastián"
+        "municipality": "San Sebastián",
+         "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-06-02T18:53:03+00:00"
+        }
     },
     "urls": {
         "direct_download": "https://nap.transportes.gob.es/api/Fichero/download/1196",

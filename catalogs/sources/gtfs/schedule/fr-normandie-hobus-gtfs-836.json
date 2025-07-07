@@ -2,6 +2,7 @@
     "mdb_source_id": 836,
     "data_type": "gtfs",
     "provider": "Hobus",
+    "status": "deprecated",
     "location": {
         "country_code": "FR",
         "subdivision_name": "Normandie",
@@ -18,5 +19,11 @@
         "direct_download": "https://zenbus.net/gtfs/static/download.zip?dataset=hobus",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-normandie-hobus-gtfs-836.zip?alt=media",
         "license": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-du-reseau-hobus-de-honfleur-gtfs-gtfs-rt"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2685",
+            "comment": " "
+        }
+    ]
 }

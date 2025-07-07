@@ -1,7 +1,8 @@
 {
     "mdb_source_id": 1290,
     "data_type": "gtfs",
-    "provider": "PKP Szybka Kolej Miejska w Trójmieście",
+    "provider": " PKP Szybka Kolej Miejska (SKM)",
+    "is_official": "True",
     "location": {
         "country_code": "PL",
         "subdivision_name": "Pomorskie",
@@ -18,7 +19,7 @@
         "direct_download": "https://www.skm.pkp.pl/gtfs-mi-kpd.zip",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-pomorskie-pkp-szybka-kolej-miejska-w-trojmiescie-gtfs-1290.zip?alt=media",
-        "license": "https://bip.skm.pkp.pl/otwarte-dane"
+        "license": "https://bip.skm.pkp.pl/c60/rozklad-jazdy"
     },
     "redirect": []
 }

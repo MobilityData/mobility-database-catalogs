@@ -6,6 +6,7 @@
     ],
     "provider": "Budapesti Közlekedési Központ (BKK)",
     "feed_contact_email": "bkk@bkk.hu",
+    "is_official": "True",
     "static_reference": [
         "990"
     ],

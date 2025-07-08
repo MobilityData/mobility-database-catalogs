@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2688,
+    "data_type": "gtfs",
+    "provider": "Essex County Council",
+    "location": {
+        "country_code": "GB",
+        "subdivision_name": "Essex",
+        "municipality": "Essex County",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-07-07T00:00:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.essex.gov.uk/download/2ydj8/gl4/gtfs.zip",
+        "license": "https://data.essex.gov.uk/dataset/2ydj8/essex-bus-network-data",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-essex-essex-county-essex-county-council-gtfs-2688.zip?alt=media"
+    },
+    "is_official": "True"
+}

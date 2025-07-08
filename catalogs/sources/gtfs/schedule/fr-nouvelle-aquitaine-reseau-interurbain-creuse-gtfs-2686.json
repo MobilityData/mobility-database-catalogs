@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2686,
+    "data_type": "gtfs",
+    "provider": "Réseau interurbain - Creuse",
+    "name": "Cars Régionaux 23 - Creuse",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Nouvelle-Aquitaine",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-07-07T00:00:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.pigma.org/public/opendata/nouvelle_aquitaine_mobilites/publication/creuse-aggregated-gtfs.zip",
+        "license": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-des-reseaux-naq-cre-nva-m-1",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-nouvelle-aquitaine-reseau-interurbain-creuse-gtfs-2686.zip?alt=media"
+    },
+    "is_official": "True"
+}

@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 2690,
+    "data_type": "gtfs",
+    "provider": "Junta de Extremadura",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Extremadura",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-07-07T00:00:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://ideex.es/Geoportal/files/gtfs/Gtfs_Ex.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-extremadura-junta-de-extremadura-gtfs-2690.zip?alt=media"
+    },
+    "feed_contact_email": "jose.pinero@gpex.es",
+    "is_official": "True"
+}

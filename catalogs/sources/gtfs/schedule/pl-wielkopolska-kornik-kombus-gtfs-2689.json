@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2689,
+    "data_type": "gtfs",
+    "provider": "Kombus",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Wielkopolska",
+        "municipality": "Kórnik",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-07-07T00:00:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://kbadmin.vot.pl/gtfs/kombus.zip",
+        "license": "https://www.kombus.pl/deweloperzy/specyfikacja-i-gtfs/",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-wielkopolska-kornik-kombus-gtfs-2689.zip?alt=media"
+    },
+    "is_official": "True"
+}

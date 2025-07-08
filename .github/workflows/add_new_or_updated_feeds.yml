@@ -65,57 +65,37 @@ jobs:
             git reset --hard ${{ env.BASE }}
             git clean -df
 
-      - name: Download CSV and process each lines
-        id: process-csv
+      - name: Download GTFS Catalog CSV
+        id: download-csv
         run: |
-            cd ${{ github.workspace }}/scripts
-            OUTPUT=$(swift process_csv_in_github_action.swift "${{ env.CSV_URL }}" "${{ env.YESTERDAYS_DATE }}" "${{ env.DATE_FORMAT }}" "${{ env.DATE_FORMAT_DESIRED }}")
-            echo "PYTHON_SCRIPT_ARGS=${OUTPUT}" >> $GITHUB_OUTPUT
-            
-            # Count the number of feeds in the output
-            COUNT=$(echo "$input_string" | grep -o '§' | wc -l)
-            COUNT=$((COUNT + 1))
-            echo "NUMBER_OF_FEEDS=${COUNT}" >> $GITHUB_OUTPUT
+          # Download the Google Sheet as CSV using gdown or wget/curl. Adjust as needed for your environment.
+          # This example uses gdown (pip install gdown) for public sheets, or you can use Google Sheets API for private.
+          pip install gdown --quiet
+          gdown --fuzzy "https://docs.google.com/spreadsheets/d/10eIUxWVtLmc2EATiwivgXBf4bOMErOnq7GFIoRedXHU/export?format=csv" -O "OpenMobilityData source updates - PROD - GTFS Catalog.csv"
 
       - name: Setup Python
-        if: steps.process-csv.outputs.PYTHON_SCRIPT_ARGS != ''
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11' # install the python version needed
+          python-version: '3.11'
 
-      - name: Create + activate a Python virtual env & run script
-        if: steps.process-csv.outputs.PYTHON_SCRIPT_ARGS != ''
+      - name: Create + activate a Python virtual env & run GTFS catalog automation
         env:
           PYTHONPATH: ${{ github.workspace }}/tools
-          PYTHONIOENCODING: "utf8" #ascii
+          PYTHONIOENCODING: "utf8"
         shell: bash
         run: |
-            echo -e "\n\n"
-            echo "BEGIN VIRTUAL ENV && SETUP PIP"
-            python -m venv env
-            source env/bin/activate
-            pip install --upgrade pip
-            pip install virtualenv --quiet
-            pip install gtfs_kit --quiet
-            pip install unidecode --quiet
-            echo "DONE VIRTUAL ENV && SETUP PIP"
-            echo -e "\n\n"
-            echo "BEGIN SEND COMMAND TO PYTHON"
-
-            sections=$(echo '${{ steps.process-csv.outputs.PYTHON_SCRIPT_ARGS }}' | sed 's/""/"/g' | sed "s/’/'/g" | sed 's/"comment": "}/"comment": ""}/g' | awk -F'§' '{for (i=1; i<=NF; i++) print $i}')
-            for section in "${sections[@]}"; do
-                # echo "processing line: ${section}"
-                output=$(eval "python -c 'from tools.operations import *; ${section}'")
-                # echo "$output"
-            done
-
-            echo "DONE SEND COMMAND TO PYTHON"
-            echo -e "\n\n"
-            git status
+          python -m venv env
+          source env/bin/activate
+          pip install --upgrade pip
+          pip install virtualenv --quiet
+          pip install gdown --quiet
+          pip install unidecode --quiet
+          # Run the automation script (assumes CSV is in repo root)
+          python3 scripts/gtfs_catalog_automation.py
+          git status
 
       - name: Commit, push, and create PR
         id: commit-push-create-pr
-        if: steps.process-csv.outputs.PYTHON_SCRIPT_ARGS != ''
         run: |
           BRANCH_NAME=${{ steps.create_branch_name.outputs.BRANCH }}
 

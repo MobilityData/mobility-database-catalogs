@@ -1,0 +1,12 @@
+{
+    "mdb_source_id": 2698,
+    "data_type": "gtfs-rt",
+    "entity_type": ["vp"],
+    "provider": "Bilbobus",
+    "urls": {
+        "direct_download": "https://www.euskadi.eus/gtfs-realtime-posicion-autobuses-bilbobus/web01-a2inform/eu/#:~:text=OCTET%2DSTREAM%20%2D%20OCTET%2DSTREAM"
+    },
+    "license": "https://www.euskadi.eus/gtfs-realtime-posicion-autobuses-bilbobus/web01-a2inform/eu/",
+    "is_official": "True",
+    "static_reference": ["2681"]
+}

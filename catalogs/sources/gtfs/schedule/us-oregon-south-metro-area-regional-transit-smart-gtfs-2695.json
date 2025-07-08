@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 248,
+    "mdb_source_id": 2695,
     "data_type": "gtfs",
     "provider": "South Metro Area Regional Transit (SMART)",
     "is_official": "True",
@@ -17,14 +17,9 @@
         }
     },
     "urls": {
-        "direct_download": "http://data.trilliumtransit.com/gtfs/wilsonville-or-us/wilsonville-or-us.zip",
+        "direct_download": "https://mysmartbus.com/gtfs",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-south-metro-area-regional-transit-smart-gtfs-248.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-south-metro-area-regional-transit-smart-gtfs-2695.zip?alt=media"
     },
-    "status": "deprecated",
-    "redirect": [
-        {
-            "id": "2695"
-        }
-    ]
+    "redirect": []
 }

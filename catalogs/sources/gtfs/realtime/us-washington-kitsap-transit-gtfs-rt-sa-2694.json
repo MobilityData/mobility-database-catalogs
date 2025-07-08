@@ -1,0 +1,13 @@
+{
+    "mdb_source_id": 2694,
+    "data_type": "gtfs-rt",
+    "entity_type": ["sa"],
+    "provider": "Kitsap Transit",
+    "urls": {
+        "direct_download": "https://cdn.simplifytransit.com/kitsap-transit/alerts/service-alerts.pb"
+    },
+    "license": "http://www.kitsaptransit.com/privacy-policy#developer",
+    "is_official": "True",
+    "static_reference": ["1304"],
+    "feed_contact_email": "lindsayc@kitsaptransit.com"
+}

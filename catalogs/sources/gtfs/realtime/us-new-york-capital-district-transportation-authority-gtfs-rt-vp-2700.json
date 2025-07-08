@@ -1,0 +1,13 @@
+{
+    "mdb_source_id": 2700,
+    "data_type": "gtfs-rt",
+    "entity_type": ["vp"],
+    "provider": "Capital District Transportation Authority",
+    "urls": {
+        "direct_download": "http://gtfs.cdta.org:8080/gtfsrealtime/VehiclePositions"
+    },
+    "license": "https://www.cdta.org/developer-license-agreement/169",
+    "is_official": "True",
+    "static_reference": ["538"],
+    "feed_contact_email": "richf@cdta.org"
+}

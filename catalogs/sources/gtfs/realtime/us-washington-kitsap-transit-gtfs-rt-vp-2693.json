@@ -1,0 +1,13 @@
+{
+    "mdb_source_id": 2693,
+    "data_type": "gtfs-rt",
+    "entity_type": ["vp"],
+    "provider": "Kitsap Transit",
+    "urls": {
+        "direct_download": "https://kttracker.com/gtfsrt/vehicles?debug"
+    },
+    "license": "http://www.kitsaptransit.com/privacy-policy#developer",
+    "is_official": "True",
+    "static_reference": ["1304"],
+    "feed_contact_email": "lindsayc@kitsaptransit.com"
+}

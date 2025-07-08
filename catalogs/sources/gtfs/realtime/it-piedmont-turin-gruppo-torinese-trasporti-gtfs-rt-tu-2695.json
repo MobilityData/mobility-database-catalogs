@@ -1,0 +1,13 @@
+{
+    "mdb_source_id": 2695,
+    "data_type": "gtfs-rt",
+    "entity_type": ["tu"],
+    "provider": "Gruppo Torinese Trasporti",
+    "urls": {
+        "direct_download": "https://percorsieorari.gtt.to.it/das_gtfsrt/trip_update.as"
+    },
+    "license": "https://www.gtt.to.it/gtt_gtfs_license.html",
+    "is_official": "True",
+    "static_reference": ["2687"],
+    "feed_contact_email": "campagna.a@gtt.to.it"
+}

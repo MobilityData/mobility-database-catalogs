@@ -16,7 +16,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://drive.google.com/file/d/1KM9Uw-faLxz5XGpZkpaOaF65TavtGfEL/view?usp=drive_link",
+        "direct_download": "https://drive.usercontent.google.com/u/0/uc?id=1KM9Uw-faLxz5XGpZkpaOaF65TavtGfEL&export=download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-castilla-y-leon-arroyo-de-la-encomienda-la-regional-vallisoletana-sa-arroyobus-gtfs-2691.zip?alt=media"
     },
     "feed_contact_email": "arroyobusmaps@gmail.com",

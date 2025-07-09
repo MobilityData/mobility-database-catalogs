@@ -1,0 +1,13 @@
+{
+    "mdb_source_id": 2698,
+    "data_type": "gtfs-rt",
+    "entity_type": ["sa"],
+    "provider": "South Metro Area Regional Transit (SMART)",
+    "urls": {
+        "direct_download": "https://mysmartbus.com/gtfs-rt/alerts"
+    },
+    "is_official": "True",
+    "static_reference": ["2695"],
+    "feed_contact_email": "support@gmvsync.com",
+    "license": "https://gtfs-directory.syncromatics.com/"
+}

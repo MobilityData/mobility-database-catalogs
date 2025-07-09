@@ -1,0 +1,12 @@
+{
+    "mdb_source_id": 2692,
+    "data_type": "gtfs-rt",
+    "entity_type": ["tu"],
+    "provider": "Kitsap Transit",
+    "urls": {
+        "direct_download": "https://kttracker.com/gtfsrt/trips?debug"
+    },
+    "license": "http://www.kitsaptransit.com/privacy-policy#developer",
+    "is_official": "True",
+    "static_reference": ["1304"]
+}

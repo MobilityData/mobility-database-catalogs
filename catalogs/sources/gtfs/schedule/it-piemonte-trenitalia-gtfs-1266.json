@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "TRENITALIA, Gruppo Torinese Trasporti (GTT)",
     "name": "SFM (Railway)",
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "IT",
         "subdivision_name": "Piemonte",
@@ -19,5 +19,10 @@
     "urls": {
         "direct_download": "https://transitfeeds.com/p/gruppo-torinese-trasporti/664/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-piemonte-trenitalia-gtfs-1266.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2687"
+        }
+    ]
 }

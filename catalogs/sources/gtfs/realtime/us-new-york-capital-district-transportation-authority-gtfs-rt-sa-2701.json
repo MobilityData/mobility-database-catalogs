@@ -1,0 +1,13 @@
+{
+    "mdb_source_id": 2701,
+    "data_type": "gtfs-rt",
+    "entity_type": ["sa"],
+    "provider": "Capital District Transportation Authority",
+    "urls": {
+        "direct_download": "https://www.cdta.org/gtfsrealtime/ServiceAlerts"
+    },
+    "license": "https://www.cdta.org/developer-license-agreement/169",
+    "is_official": "True",
+    "static_reference": ["538"],
+    "feed_contact_email": "richf@cdta.org"
+}

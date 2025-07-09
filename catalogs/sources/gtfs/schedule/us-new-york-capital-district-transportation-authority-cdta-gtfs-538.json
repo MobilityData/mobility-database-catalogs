@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Capital District Transportation Authority (CDTA)",
     "is_official": "True",
+    "feed_contact_email": "richf@cdta.org",
     "location": {
         "country_code": "US",
         "subdivision_name": "New York",

@@ -7,7 +7,7 @@
         "direct_download": "https://mysmartbus.com/gtfs-rt/tripupdates"
     },
     "is_official": "True",
-    "static_reference": ["2695"],
+    "static_reference": ["2706"],
     "feed_contact_email": "support@gmvsync.com",
     "license": "https://gtfs-directory.syncromatics.com/"
 }

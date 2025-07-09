@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 2708,
+    "mdb_source_id": 2345,
     "data_type": "gtfs",
     "provider": "Municipality of Tirana",
     "status": "active",
@@ -17,7 +17,7 @@
     },
     "urls": {
         "direct_download": "https://pt.tirana.al/gtfs/gtfs.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/al-tirana-municipality-of-tirana-gtfs-2708.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/al-tirana-municipality-of-tirana-gtfs-2345.zip?alt=media"
     },
     "redirect": []
 }

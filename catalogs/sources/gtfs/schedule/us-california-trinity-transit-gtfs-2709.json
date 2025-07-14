@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Trinity Transit",
     "feed_contact_email": "transit@trinitycounty.org",
-    "is_official": "true",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

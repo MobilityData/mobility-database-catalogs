@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Kocaeli Toplu Taşıma",
     "is_official": "True",
-    "name": "Accessible to Turkish users only, individual text files provided"
+    "name": "Accessible to Turkish users only, individual text files provided",
     "location": {
         "country_code": "TR",
         "subdivision_name": "Kocaeli",

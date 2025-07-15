@@ -2,7 +2,7 @@
     "mdb_source_id": 1122,
     "data_type": "gtfs",
     "provider": "Kocaeli",
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "TR",
         "subdivision_name": "Kocaeli",
@@ -18,5 +18,10 @@
     "urls": {
         "direct_download": "http://kocaeli.bel.tr/webfiles/userfiles/files/birimler/bilgi-islem-dairesi-baskanligi/kocaeli-gtfs.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/tr-kocaeli-kocaeli-gtfs-1122.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2710"
+        }
+    ]
 }

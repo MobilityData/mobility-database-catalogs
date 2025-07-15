@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2710,
+    "data_type": "gtfs",
+    "provider": "Kocaeli Toplu Taşıma",
+    "is_official": "True",
+    "name": "Accessible to Turkish users only, individual text files provided",
+    "location": {
+        "country_code": "TR",
+        "subdivision_name": "Kocaeli",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-07-15T14:58:38+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://veri.kocaeli.bel.tr/dataset/toplu-ulasim-verisi",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/tr-kocaeli-kocaeli-gtfs-2710.zip?alt=media",
+        "license": "https://opendefinition.org/licenses/cc-by/"
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 2708,
+    "data_type": "gtfs",
+    "provider": "SamTrans",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "San Mateo County",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-07-14T00:00:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://api.511.org/transit/datafeeds?operator_id=SM",
+        "license": "https://511.org/about/terms",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-san-mateo-county-samtrans-gtfs-2708.zip?alt=media",
+        "authentication_type": 1,
+        "authentication_info": "https://511.org/open-data/token",
+        "api_key_parameter_name": "apikey"
+    },
+    "is_official": "True"
+}

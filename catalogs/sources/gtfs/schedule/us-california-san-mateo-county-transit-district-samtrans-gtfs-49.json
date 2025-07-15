@@ -5,6 +5,7 @@
     "features": [
         "fares-v1"
     ],
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -21,5 +22,11 @@
         "direct_download": "http://www.samtrans.com/Assets/GTFS/samtrans/ST-GTFS.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-san-mateo-county-transit-district-samtrans-gtfs-49.zip?alt=media",
         "license": "http://www.samtrans.com/Developer.html"
-    }
+    },
+     "redirect": [
+        {
+            "id": "2708",
+            "comment": " "
+        }
+    ]
 }

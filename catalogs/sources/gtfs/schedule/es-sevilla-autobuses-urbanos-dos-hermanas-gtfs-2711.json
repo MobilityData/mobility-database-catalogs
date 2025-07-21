@@ -16,7 +16,9 @@
     },
     "urls": {
         "direct_download": "https://nap.transportes.gob.es/api/Fichero/download/1384",
-        "authentication_type": 0,
+        "authentication_type": 2,
+        "authentication_info": "https://nap.transportes.gob.es/",
+        "api_key_parameter_name": "ApiKey",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-sevilla-autobuses-urbanos-dos-hermanas-gtfs-2711.zip?alt=media",
         "license": "https://nap.transportes.gob.es/licencia-datos"
     }

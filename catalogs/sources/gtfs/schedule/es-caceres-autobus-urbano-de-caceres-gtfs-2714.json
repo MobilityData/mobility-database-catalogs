@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Vectalia Movilidad (Autobús urbano de Cáceres)",
     "name": "Sourced from the Spanish National Access Point, run by MIMTRANS",
+    "is_official": "True",
     "location": {
         "country_code": "ES",
         "subdivision_name": "Cáceres",

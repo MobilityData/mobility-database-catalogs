@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2711,
+    "data_type": "gtfs",
+    "provider": "Autobuses Urbanos Dos Hermanas",
+    "name": "Sourced from the Spanish National Access Point, run by MIMTRANS",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Sevilla",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-07-21T23:55:26+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://nap.transportes.gob.es/api/Fichero/download/1384",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-sevilla-autobuses-urbanos-dos-hermanas-gtfs-2711.zip?alt=media",
+        "license": "https://nap.transportes.gob.es/licencia-datos"
+    }
+}

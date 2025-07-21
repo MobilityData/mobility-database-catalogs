@@ -2,7 +2,7 @@
     "mdb_source_id": 2691,
     "data_type": "gtfs",
     "provider": "La Regional Vallisoletana S.A",
-    "name": "ArroyoBus",
+    "name": "ArroyoBus data made by volunteers",
     "location": {
         "country_code": "ES",
         "subdivision_name": "Castilla y León",
@@ -16,7 +16,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://drive.usercontent.google.com/u/0/uc?id=1KM9Uw-faLxz5XGpZkpaOaF65TavtGfEL&export=download",
+        "direct_download": "https://drive.usercontent.google.com/u/0/uc?id=1Kzk10f1895vmUF3u2V1YWIpKY0czTTNk&export=download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-castilla-y-leon-arroyo-de-la-encomienda-la-regional-vallisoletana-sa-arroyobus-gtfs-2691.zip?alt=media"
     },
     "feed_contact_email": "arroyobusmaps@gmail.com"

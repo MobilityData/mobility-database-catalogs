@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 2714,
+    "data_type": "gtfs",
+    "provider": "Vectalia Movilidad (Autobús urbano de Cáceres)",
+    "name": "Sourced from the Spanish National Access Point, run by MIMTRANS",
+    "is_official": "True",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Cáceres",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-07-21T23:55:26+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://nap.transportes.gob.es/api/Fichero/download/1292",
+        "authentication_type": 2,
+        "authentication_info": "https://nap.transportes.gob.es/",
+        "api_key_parameter_name": "ApiKey",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-caceres-autobus-urbano-de-caceres-gtfs-2714.zip?alt=media",
+        "license": "https://nap.transportes.gob.es/licencia-datos"
+    }
+}

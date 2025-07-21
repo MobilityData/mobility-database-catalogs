@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2713,
+    "data_type": "gtfs",
+    "provider": "AUCORSA (Autobuses de Córdoba, S.A.)",
+    "name": "Sourced from the Spanish National Access Point, run by MIMTRANS",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Córdoba",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-07-21T23:55:26+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://nap.transportes.gob.es/api/Fichero/download/1375",
+        "authentication_type": 2,
+        "authentication_info": "https://nap.transportes.gob.es/",
+        "api_key_parameter_name": "ApiKey",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-aucorsa-gtfs-2713.zip?alt=media",
+        "license": "https://nap.transportes.gob.es/licencia-datos"
+    }
+}

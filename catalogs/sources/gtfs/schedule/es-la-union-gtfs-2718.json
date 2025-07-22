@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Autobuses La Unión (ALU)",
     "is_official": "True",
+    "name": "Sourced from the Spanish National Access Point, run by MIMTRANS",
     "location": {
         "country_code": "ES",
         "bounding_box": {

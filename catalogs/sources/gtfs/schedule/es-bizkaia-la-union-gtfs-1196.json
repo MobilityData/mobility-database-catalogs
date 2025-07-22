@@ -2,6 +2,7 @@
     "mdb_source_id": 1196,
     "data_type": "gtfs",
     "provider": "La Union",
+    "status": "deprecated",
     "location": {
         "country_code": "ES",
         "subdivision_name": "Bizkaia",
@@ -17,5 +18,11 @@
     "urls": {
         "direct_download": "https://transitfeeds.com/p/la-union/659/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-bizkaia-la-union-gtfs-1196.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2718",
+            "comment": " "
+        }
+    ]
 }

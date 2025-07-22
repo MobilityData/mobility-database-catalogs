@@ -16,7 +16,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://nap.transportes.gob.es/api/Fichero/download/1384",
+        "direct_download": "https://nap.transportes.gob.es/api/Fichero/download/1582",
         "authentication_type": 2,
         "authentication_info": "https://nap.transportes.gob.es/",
         "api_key_parameter_name": "ApiKey",

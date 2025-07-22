@@ -1,7 +1,10 @@
 {
     "mdb_source_id": 791,
     "data_type": "gtfs",
-    "provider": "Autobuses Interurbanos Madrid (CRTM)",
+    "provider": "Consorcio Regional de Transportes de Madrid CRTM Intercity Buses (Autobuses Interurbanos Madrid)",
+    "name": "Powered by CRTM: http://www.crtm.es/",
+    "is_official": "True",
+    "feed_contact_email": "opendata@crtm.es",
     "location": {
         "country_code": "ES",
         "subdivision_name": "Madrid",

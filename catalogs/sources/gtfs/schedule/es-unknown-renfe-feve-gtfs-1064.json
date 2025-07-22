@@ -2,7 +2,7 @@
     "mdb_source_id": 1064,
     "data_type": "gtfs",
     "provider": "Renfe Feve",
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "ES",
         "bounding_box": {
@@ -16,5 +16,11 @@
     "urls": {
         "direct_download": "http://data.renfe.com/dataset/5f80afa2-798c-46a4-8f96-bca0835b3cf0/resource/e593b825-78c2-45e1-a8ca-9fbea2f3faff/download/horarios-feve.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-unknown-renfe-feve-gtfs-1064.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2717",
+            "comment": " "
+        }
+    ]
 }

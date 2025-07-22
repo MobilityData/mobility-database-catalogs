@@ -2,6 +2,7 @@
     "mdb_source_id": 1913,
     "data_type": "gtfs",
     "provider": "Transporte Públicos de Andalucía",
+    "status": "deprecated",
     "location": {
         "country_code": "ES",
         "subdivision_name": "Andalucía",
@@ -16,5 +17,12 @@
     "urls": {
         "direct_download": "https://drive.google.com/uc?id=1A6U2XyXo1VDd-sdUq8FU_P5wqFPNY45f&export=download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-andalucia-transporte-publicos-de-andalucia-gtfs-1913.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2721",
+            "comment": " "
+        }
+    ]
+    
 }

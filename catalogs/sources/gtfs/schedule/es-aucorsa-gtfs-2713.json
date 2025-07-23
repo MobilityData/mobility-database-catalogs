@@ -2,7 +2,7 @@
     "mdb_source_id": 2713,
     "data_type": "gtfs",
     "provider": "AUCORSA (Autobuses de Córdoba S.A.)",
-    "name": "Sourced from the Spanish National Access Point, run by MIMTRANS",
+    "name": "Raw data from the Spanish National Access Point, powered by MIMTRANS (https://www.transportes.gob.es)",
     "is_official": "True",
     "location": {
         "country_code": "ES",

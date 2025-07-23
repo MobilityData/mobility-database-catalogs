@@ -1,25 +1,26 @@
 {
-    "mdb_source_id": 2716,
+    "mdb_source_id": 2731,
     "data_type": "gtfs",
-    "provider": "Transports Municipals D’Egara (TMESA)",
+    "provider": "Lurraldebus Ekialdebus",
     "is_official": "True",
     "name": "Raw data from the Spanish National Access Point, powered by MIMTRANS (https://www.transportes.gob.es)",
     "location": {
         "country_code": "ES",
+        "subdivision_name": "Guipúzcoa",
         "bounding_box": {
             "minimum_latitude": null,
             "maximum_latitude": null,
             "minimum_longitude": null,
             "maximum_longitude": null,
-            "extracted_on": "2025-07-21T23:55:26+00:00"
+            "extracted_on": "2025-07-22T20:31:45+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://nap.transportes.gob.es/api/Fichero/download/1175",
+        "direct_download": "https://nap.transportes.gob.es/api/Fichero/download/1201",
         "authentication_type": 2,
         "authentication_info": "https://nap.transportes.gob.es/",
         "api_key_parameter_name": "ApiKey",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-tmesa-gtfs-2716.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-guipuzcoa-ekialdebus-gtfs-2731.zip?alt=media",
         "license": "https://nap.transportes.gob.es/licencia-datos"
     }
 }

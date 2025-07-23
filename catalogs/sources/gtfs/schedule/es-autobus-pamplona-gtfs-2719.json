@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Autobús Comarca de Pamplona",
     "is_official": "True",
-    "name": "Sourced from the Spanish National Access Point, run by MIMTRANS",
+    "name": "Raw data from the Spanish National Access Point, powered by MIMTRANS (https://www.transportes.gob.es)",
     "location": {
         "country_code": "ES",
         "subdivision_name": "Navarre",

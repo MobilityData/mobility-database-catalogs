@@ -4,7 +4,7 @@
     "provider": "ClackCo Connects (Clackamas County)",
     "name": "Static feed for realtime", 
     "feed_contact_email": "support@passiotech.com",
-    "is_official: "True",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Oregon",

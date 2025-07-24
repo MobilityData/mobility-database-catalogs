@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2741,
+    "data_type": "gtfs",
+    "provider": "ClackCo Connects (Clackamas County)",
+    "name": "Flex", 
+    "feed_contact_email": "support+clackamascounty-or-us@trilliumtransit.com",
+    "is_official": "True",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-07-24T21:14:31+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://oregon-gtfs.trilliumtransit.com/gtfs_data/clackamascounty-or-us/clackamascounty-or-us--flex-v2.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-clackamas-county-clackco-flex-gtfs-2741.zip?alt=media"
+    },
+    "redirect": []
+}

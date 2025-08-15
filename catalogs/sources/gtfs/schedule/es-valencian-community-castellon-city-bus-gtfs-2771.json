@@ -1,13 +1,13 @@
 {
     "mdb_source_id": 2771,
     "data_type": "gtfs",
-    "provider": "Castelló de la Plana Town Hall (city bus)
+    "provider": "Castelló de la Plana Town Hall (city bus)",
     "is_official": "True",
     "name": "Raw data from the Spanish National Access Point, powered by MIMTRANS (https://www.transportes.gob.es)",
     "location": {
         "country_code": "ES",
         "subdivision_name": "Valencian Community",
-        "municipality: "Castellón",
+        "municipality": "Castellón",
         "bounding_box": {
             "minimum_latitude": null,
             "maximum_latitude": null,

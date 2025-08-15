@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2820,
+    "data_type": "gtfs",
+    "provider": "Consorcio Regional de Transportes de Madrid CRTM Madrid City Bus (Autobús urbano de Madrid)",
+    "name": "Powered by CRTM: http://www.crtm.es/",
+    "is_official": "True"
+    "feed_contact_email": "opendata@crtm.es",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Madrid",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-07-22T18:59:09+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.arcgis.com/sharing/rest/content/items/357e63c2904f43aeb5d8a267a64346d8/data",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-madrid-crtm-city-bus-gtfs-2820.zip?alt=media",
+        "license": "https://www.crtm.es/licencia-de-uso"
+    }
+}

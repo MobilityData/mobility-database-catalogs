@@ -1,13 +1,12 @@
 {
-    "mdb_source_id": 2747,
+    "mdb_source_id": 2829,
     "data_type": "gtfs",
-    "provider": "FGV - Generalitat Valenciana Metro de Valencia",
+    "provider": "FGV - Generalitat Valenciana Trains and trams in Alicante and the Costa Blanca",
     "is_official": "True",
     "name": "Raw data from the Spanish National Access Point, powered by MIMTRANS (https://www.transportes.gob.es)",
     "location": {
         "country_code": "ES",
         "subdivision": "Valencian Community",
-        "municipality": "Valencia", 
         "bounding_box": {
             "minimum_latitude": null,
             "maximum_latitude": null,
@@ -17,11 +16,11 @@
         }
     },
     "urls": {
-        "direct_download": "https://nap.transportes.gob.es/api/Fichero/download/1168",
+        "direct_download": "https://nap.transportes.gob.es/api/Fichero/download/1167",
         "authentication_type": 2,
         "authentication_info": "https://nap.transportes.gob.es/",
         "api_key_parameter_name": "ApiKey",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-valencia-metro-de-valencia-gtfs-2747.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-valencian-community-fgv-alicante-costa-blanca-gtfs-2829.zip?alt=media",
         "license": "https://nap.transportes.gob.es/licencia-datos"
     }
 }

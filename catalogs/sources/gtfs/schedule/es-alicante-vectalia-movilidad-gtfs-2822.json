@@ -1,12 +1,12 @@
 {
-    "mdb_source_id": 2743,
+    "mdb_source_id": 2822,
     "data_type": "gtfs",
-    "provider": "Autoridad de Transporte Metropolitano del Área de Barcelona (ATM) Buses and trains in Catalonia (full version)",
+    "provider": "Vectalia Movilidad (Autobuses urbanos de Alicante)",
     "is_official": "True",
     "name": "Raw data from the Spanish National Access Point, powered by MIMTRANS (https://www.transportes.gob.es)",
     "location": {
         "country_code": "ES",
-        "subdivision": "Catalonia",
+        "subdivision_name": "Alicante",
         "bounding_box": {
             "minimum_latitude": null,
             "maximum_latitude": null,
@@ -16,11 +16,11 @@
         }
     },
     "urls": {
-        "direct_download": "https://nap.transportes.gob.es/api/Fichero/download/2060",
+        "direct_download": "https://nap.transportes.gob.es/api/Fichero/download/1607",
         "authentication_type": 2,
         "authentication_info": "https://nap.transportes.gob.es/",
         "api_key_parameter_name": "ApiKey",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-atm-autobuses-trains-complete-gtfs-2743.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-alicante-vectalia-movilidad-gtfs-2822.zip?alt=media",
         "license": "https://nap.transportes.gob.es/licencia-datos"
     }
 }

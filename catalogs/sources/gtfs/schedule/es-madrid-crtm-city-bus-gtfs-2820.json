@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Consorcio Regional de Transportes de Madrid CRTM Madrid City Bus (Autobús urbano de Madrid)",
     "name": "Powered by CRTM: http://www.crtm.es/",
-    "is_official": "True"
+    "is_official": "True",
     "feed_contact_email": "opendata@crtm.es",
     "location": {
         "country_code": "ES",

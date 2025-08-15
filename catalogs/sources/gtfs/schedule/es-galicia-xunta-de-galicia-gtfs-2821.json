@@ -1,7 +1,7 @@
 {
-    "mdb_source_id": 2765,
+    "mdb_source_id": 2821,
     "data_type": "gtfs",
-    "provider": "Xunta de Galicia Buses,
+    "provider": "Xunta de Galicia Buses",
     "is_official": "True",
     "name": "Raw data from the Spanish National Access Point, powered by MIMTRANS (https://www.transportes.gob.es)",
     "location": {
@@ -20,7 +20,7 @@
         "authentication_type": 2,
         "authentication_info": "https://nap.transportes.gob.es/",
         "api_key_parameter_name": "ApiKey",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-galicia-xunta-de-galicia-gtfs-2765.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-galicia-xunta-de-galicia-gtfs-2821.zip?alt=media",
         "license": "https://nap.transportes.gob.es/licencia-datos"
     }
 }

@@ -1,13 +1,11 @@
  {
     "mdb_source_id": 2752,
     "data_type": "gtfs",
-    "provider": "AUVASA (Valladolid city bus)",
+    "provider": "Autocares Rías Baixas",
     "is_official": "True",
     "name": "Raw data from the Spanish National Access Point, powered by MIMTRANS (https://www.transportes.gob.es)",
     "location": {
         "country_code": "ES",
-        "subdivision": "Castile and Léon",
-        "municipality": "Valladolid",
         "bounding_box": {
             "minimum_latitude": null,
             "maximum_latitude": null,
@@ -17,11 +15,11 @@
         }
     },
     "urls": {
-        "direct_download": "https://nap.transportes.gob.es/api/Fichero/download/1563",
+        "direct_download": "https://nap.transportes.gob.es/api/Fichero/download/1843",
         "authentication_type": 2,
         "authentication_info": "https://nap.transportes.gob.es/",
         "api_key_parameter_name": "ApiKey",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-castile-and-leon-valladolid-auvasa-gtfs-2752.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-autocares-rias-baixas-gtfs-2752.zip?alt=media",
         "license": "https://nap.transportes.gob.es/licencia-datos"
     }
 }

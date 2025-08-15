@@ -1,13 +1,13 @@
 {
     "mdb_source_id": 2769,
     "data_type": "gtfs",
-    "provider": "Granada City Council (Granada city bus)
+    "provider": "Granada City Council (Granada city bus)",
     "is_official": "True",
     "name": "Raw data from the Spanish National Access Point, powered by MIMTRANS (https://www.transportes.gob.es)",
     "location": {
         "country_code": "ES",
         "subdivision_name": "Andalusia",
-        "municipality: "Grenada",
+        "municipality": "Grenada",
         "bounding_box": {
             "minimum_latitude": null,
             "maximum_latitude": null,

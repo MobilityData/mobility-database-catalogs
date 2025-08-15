@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 2757,
     "data_type": "gtfs",
-    "provider": "Auif Irunbus (Lurraldebus auif)",
+    "provider": "Lurraldebus TBH (Interurban Tolosa Buruntzaldea)",
     "is_official": "True",
     "name": "Raw data from the Spanish National Access Point, powered by MIMTRANS (https://www.transportes.gob.es)",
     "location": {
@@ -16,11 +16,11 @@
         }
     },
     "urls": {
-        "direct_download": "https://nap.transportes.gob.es/api/Fichero/download/1199",
+        "direct_download": "https://nap.transportes.gob.es/api/Fichero/download/1608",
         "authentication_type": 2,
         "authentication_info": "https://nap.transportes.gob.es/",
         "api_key_parameter_name": "ApiKey",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-guipuzcoa-auif-irunbus-gtfs-2757.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-guipuzcoa-lurraldebus-tbh-gtfs-2757.zip?alt=media",
         "license": "https://nap.transportes.gob.es/licencia-datos"
     }
 }

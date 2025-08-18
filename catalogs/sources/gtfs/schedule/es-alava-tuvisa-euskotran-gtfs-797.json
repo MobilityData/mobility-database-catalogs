@@ -1,8 +1,9 @@
 {
     "mdb_source_id": 797,
     "data_type": "gtfs",
-    "provider": "Tuvisa-EuskoTran",
+    "provider": "TUVISA (Transportes Urbanos de Vitoria)",
     "feed_contact_email": "tuvisa@vitoria-gasteiz.org",
+    "is_official": "True",
     "location": {
         "country_code": "ES",
         "subdivision_name": "Álava",
@@ -18,7 +19,8 @@
     "urls": {
         "direct_download": "http://www.vitoria-gasteiz.org/we001/http/vgTransit/google_transit.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-alava-tuvisa-euskotran-gtfs-797.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-alava-tuvisa-euskotran-gtfs-797.zip?alt=media",
+        "license": "https://www.vitoria-gasteiz.org/wb021/was/contenidoAction.do?idioma=es&uid=app_j34_0021"
     },
     "redirect": []
 }

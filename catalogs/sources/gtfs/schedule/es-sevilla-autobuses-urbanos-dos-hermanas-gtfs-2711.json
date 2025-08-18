@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 2711,
     "data_type": "gtfs",
-    "provider": "Autobuses Urbanos Dos Hermanas",
+    "provider": "Urban Buses Dos Hermanas",
     "name": "Raw data from the Spanish National Access Point, powered by MIMTRANS (https://www.transportes.gob.es)",
     "is_official": "True",
     "location": {

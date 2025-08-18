@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 2808,
     "data_type": "gtfs",
-    "provider": "La Veloz, SA (Buses from the Belchite countryside area to Zaragoza (C12))",
+    "provider": "La Veloz SA (Buses from the Belchite countryside area to Zaragoza (C12))",
     "is_official": "True",
     "name": "Raw data from the Spanish National Access Point, powered by MIMTRANS (https://www.transportes.gob.es)",
     "location": {

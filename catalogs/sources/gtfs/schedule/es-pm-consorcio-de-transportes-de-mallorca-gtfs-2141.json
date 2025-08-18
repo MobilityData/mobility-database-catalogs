@@ -4,7 +4,7 @@
     "provider": "Consorcio de Transportes de Mallorca",
     "name": "TIB Mallorca",
     "is_official": "True",
-    "status": "active",
+    "feed_contact_email": "info@consorcidetransports.com",
     "location": {
         "country_code": "ES",
         "subdivision_name": "PM",

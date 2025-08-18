@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 2653,
     "data_type": "gtfs",
-    "provider": "Renfe Cercanias",
+    "provider": "Renfe commuter trains (Cercanias)",
     "is_offical": "True",
     "name": "Commuter train schedules for Cercanías and Rodalies trains",
     "location": {

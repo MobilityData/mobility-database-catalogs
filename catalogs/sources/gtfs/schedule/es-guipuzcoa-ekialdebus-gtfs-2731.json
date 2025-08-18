@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Lurraldebus Ekialdebus",
     "is_official": "True",
+    "feed_contact_email": "sanchez@gmail.com",
     "name": "Raw data from the Spanish National Access Point, powered by MIMTRANS (https://www.transportes.gob.es)",
     "location": {
         "country_code": "ES",

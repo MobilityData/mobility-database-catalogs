@@ -2,6 +2,7 @@
     "mdb_source_id": 2359,
     "data_type": "gtfs",
     "provider": "Transports Metropolitans de Barcelona (TMB)",
+    "is_official": "True",
     "name": "TMB",
     "location": {
         "country_code": "ES",

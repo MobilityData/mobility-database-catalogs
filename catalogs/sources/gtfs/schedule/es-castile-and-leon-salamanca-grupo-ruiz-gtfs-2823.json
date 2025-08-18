@@ -1,27 +1,27 @@
 {
-    "mdb_source_id": 2682,
+    "mdb_source_id": 2823,
     "data_type": "gtfs",
-    "provider": "dBus (Donostiabus)",
+    "provider": "Salamanca de Transportes, S.A. (Grupo Ruiz)",
     "is_official": "True",
     "name": "Raw data from the Spanish National Access Point, powered by MIMTRANS (https://www.transportes.gob.es)",
     "location": {
         "country_code": "ES",
-        "subdivision_name": "Gipuzkoa",
-        "municipality": "San Sebastián",
-         "bounding_box": {
+        "subdivision_name": "Castile and León",
+        "municipality": "Salamanca",
+        "bounding_box": {
             "minimum_latitude": null,
             "maximum_latitude": null,
             "minimum_longitude": null,
             "maximum_longitude": null,
-            "extracted_on": "2025-06-02T18:53:03+00:00"
+            "extracted_on": "2025-08-12T20:31:45+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://nap.transportes.gob.es/api/Fichero/download/1196",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-gipuzkoa-dbus-gtfs-2682.zip?alt=media",
+        "direct_download": "https://nap.transportes.gob.es/api/Fichero/download/1598",
         "authentication_type": 2,
         "authentication_info": "https://nap.transportes.gob.es/",
         "api_key_parameter_name": "ApiKey",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-castile-and-leon-salamanca-grupo-ruiz-gtfs-2823.zip?alt=media",
         "license": "https://nap.transportes.gob.es/licencia-datos"
     }
 }

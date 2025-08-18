@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 1003,
     "data_type": "gtfs",
-    "provider": "TRAM",
+    "provider": "TRAM Barcelona (Tranvía Metropolitano Barcelona)",
     "is_official": "True",
     "location": {
         "country_code": "ES",

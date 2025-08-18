@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2802,
+    "data_type": "gtfs",
+    "provider": "Consorcio Regional de Transportes de Madrid CRTM Light Rail Network (Red de Metro Ligero)",
+    "name": "Powered by CRTM: http://www.crtm.es/",
+    "is_official": "True",
+    "feed_contact_email": "opendata@crtm.es",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Madrid",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-07-22T18:59:09+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.arcgis.com/sharing/rest/content/items/aaed26cc0ff64b0c947ac0bc3e033196/data",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-madrid-crtm-light-rail-gtfs-2802.zip?alt=media",
+        "license": "https://www.crtm.es/licencia-de-uso"
+    }
+}

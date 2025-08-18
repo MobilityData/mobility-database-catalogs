@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 1004,
     "data_type": "gtfs",
-    "provider": "Trambesòs",
+    "provider": "TRAM Barcelona Besós (Tranvía Metropolitano Barcelona)",
     "is_official": "True",
     "location": {
         "country_code": "ES",

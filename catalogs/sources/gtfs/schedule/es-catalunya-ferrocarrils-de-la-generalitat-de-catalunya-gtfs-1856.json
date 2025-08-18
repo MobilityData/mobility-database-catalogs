@@ -1,7 +1,8 @@
 {
     "mdb_source_id": 1856,
     "data_type": "gtfs",
-    "provider": "Ferrocarrils de la Generalitat de Catalunya",
+    "provider": "Railways of the Generalitat of Catalonia (Ferrocarrils de la Generalitat de Catalunya)",
+    "is_official": "True",
     "feed_contact_email": "njimenez@fgc.cat",
     "location": {
         "country_code": "ES",

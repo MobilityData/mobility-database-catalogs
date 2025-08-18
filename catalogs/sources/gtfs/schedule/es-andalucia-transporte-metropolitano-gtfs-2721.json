@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 2721,
     "data_type": "gtfs",
-    "provider": "Red de Consorcios de Transporte Metropolitano de Andalucía",
+    "provider": "Network of Metropolitan Transport Consortiums of Andalusia",
     "is_official": "True",
     "name": "Raw data from the Spanish National Access Point, powered by MIMTRANS (https://www.transportes.gob.es)",
     "location": {

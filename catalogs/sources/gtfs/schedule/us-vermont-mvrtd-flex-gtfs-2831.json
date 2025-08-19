@@ -5,6 +5,7 @@
     "feed_contact_email": "support+test+thebus-vt-us@trilliumtransit.com",
     "is_official": "True",
     "name": "Flex",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Vermont",
@@ -21,5 +22,10 @@
         "direct_download": "https://data.trilliumtransit.com/gtfs/thebus-vt-us/thebus-vt-us--flex-v2.zip",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-vermont-mvrtd-flex-gtfs-2831.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2833"
+        }
+    ]
 }

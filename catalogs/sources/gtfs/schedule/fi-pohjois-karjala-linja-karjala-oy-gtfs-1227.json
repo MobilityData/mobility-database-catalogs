@@ -1,7 +1,8 @@
 {
     "mdb_source_id": 1227,
     "data_type": "gtfs",
-    "provider": "Linja-Karjala Oy, Savo-Karjalan Linja Oy",
+    "provider": "Waltti - Joensuu",
+    "is_official": "True",
     "location": {
         "country_code": "FI",
         "subdivision_name": "Pohjois-Karjala",
@@ -16,6 +17,7 @@
     },
     "urls": {
         "direct_download": "https://tvv.fra1.digitaloceanspaces.com/207.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fi-pohjois-karjala-linja-karjala-oy-gtfs-1227.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fi-pohjois-karjala-linja-karjala-oy-gtfs-1227.zip?alt=media",
+        "license": "https://creativecommons.org/licenses/by/4.0/"
     }
 }

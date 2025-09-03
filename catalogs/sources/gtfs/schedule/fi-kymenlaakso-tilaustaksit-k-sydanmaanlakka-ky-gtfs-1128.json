@@ -1,7 +1,8 @@
 {
     "mdb_source_id": 1128,
     "data_type": "gtfs",
-    "provider": "Tilaustaksit K. Sydänmaanlakka Ky, KYMEN CHARTERLINE OY, Kari Väisänen Ky, Matkatoimisto Matka-Majuri Ky, Linja-autoliikenne P. Puolakka Ky, Linjaliikenne Martti Laurila Oy, Oy Pohjolan Liikenne Ab, Elimäen Liikenne Oy, Anjalankosken Linja Oy",
+    "provider": "Waltti - Kouvola",
+    "is_official": "True",
     "location": {
         "country_code": "FI",
         "subdivision_name": "Kymenlaakso",
@@ -16,6 +17,7 @@
     },
     "urls": {
         "direct_download": "https://tvv.fra1.digitaloceanspaces.com/219.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fi-kymenlaakso-tilaustaksit-k-sydanmaanlakka-ky-gtfs-1128.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fi-kymenlaakso-tilaustaksit-k-sydanmaanlakka-ky-gtfs-1128.zip?alt=media",
+        "license": "https://creativecommons.org/licenses/by/4.0/"
     }
 }

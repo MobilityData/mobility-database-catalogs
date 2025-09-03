@@ -2,6 +2,7 @@
     "mdb_source_id": 1130,
     "data_type": "gtfs",
     "provider": "Mikkeli",
+    "is_official": "True",
     "location": {
         "country_code": "FI",
         "subdivision_name": "Etelä-Savo",
@@ -16,6 +17,7 @@
     },
     "urls": {
         "direct_download": "https://tvv.fra1.digitaloceanspaces.com/227.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fi-etela-savo-mikkeli-gtfs-1130.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fi-etela-savo-mikkeli-gtfs-1130.zip?alt=media",
+        "license": "https://opendata.waltti.fi/docs#gtfs-packages"
     }
 }

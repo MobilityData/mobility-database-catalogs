@@ -1,8 +1,8 @@
 {
-    "mdb_source_id": 1031,
+    "mdb_source_id": 2841,
     "data_type": "gtfs",
     "provider": "Trentino Trasporti Esercizio (TTE)",
-    "name": "Extraurbano",
+    "name": "Urbano",
     "is_official": "True",
     "feed_contact_email": "info@trentinotrasporti.it",
     "location": {
@@ -18,7 +18,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://www.ttesercizio.it/opendata/google_transit_extraurbano_tte.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-trentino-alto-adige-trentino-trasporti-esercizio-tte-gtfs-1031.zip?alt=media"
+        "direct_download": "http://www.ttesercizio.it/opendata/google_transit_urbano_tte.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-trentino-alto-adige-trentino-trasporti-esercizio-tte-gtfs-2841.zip?alt=media"
     }
 }

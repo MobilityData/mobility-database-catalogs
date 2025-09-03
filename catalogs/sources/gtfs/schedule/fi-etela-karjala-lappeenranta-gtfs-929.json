@@ -2,6 +2,7 @@
     "mdb_source_id": 929,
     "data_type": "gtfs",
     "provider": "Lappeenranta",
+    "is_official": "True",
     "location": {
         "country_code": "FI",
         "subdivision_name": "Etelä-Karjala",

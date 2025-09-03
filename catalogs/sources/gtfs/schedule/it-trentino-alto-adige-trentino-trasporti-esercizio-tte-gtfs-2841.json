@@ -18,7 +18,7 @@
         }
     },
     "urls": {
-        "direct_download": "ttesercizio.it/opendata/google_transit_urbano_tte.zip",
+        "direct_download": "http://www.ttesercizio.it/opendata/google_transit_urbano_tte.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-trentino-alto-adige-trentino-trasporti-esercizio-tte-gtfs-2841.zip?alt=media"
     }
 }

@@ -4,6 +4,7 @@
     "provider": "Trentino Trasporti Esercizio (TTE)",
     "name": "Extraurbano",
     "is_official": "True",
+    "feed_contact_email": "info@trentinotrasporti.it",
     "location": {
         "country_code": "IT",
         "subdivision_name": "Trentino-Alto Adige",

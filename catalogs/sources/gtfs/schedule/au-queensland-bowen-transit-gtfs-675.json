@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 675,
     "data_type": "gtfs",
-    "provider": "Bowen Transit",
+    "provider": "TransLink Bowen",
     "location": {
         "country_code": "AU",
         "subdivision_name": "Queensland",

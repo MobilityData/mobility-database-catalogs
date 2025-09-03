@@ -1,7 +1,8 @@
 {
     "mdb_source_id": 1127,
     "data_type": "gtfs",
-    "provider": "KYMEN CHARTERLINE OY, Jyrkilä Oy, Kaakon Kumipyörät Oy, Liikenne Vuorela Oy, Oy Pohjolan liikenne Ab, Savonlinja Oy",
+    "provider": "Waltti - Kotka",
+    "is_official": "True",
     "location": {
         "country_code": "FI",
         "subdivision_name": "Kymenlaakso",
@@ -16,6 +17,7 @@
     },
     "urls": {
         "direct_download": "https://tvv.fra1.digitaloceanspaces.com/217.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fi-kymenlaakso-kymen-charterline-oy-gtfs-1127.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fi-kymenlaakso-kymen-charterline-oy-gtfs-1127.zip?alt=media",
+        "license": "https://creativecommons.org/licenses/by/4.0/"
     }
 }

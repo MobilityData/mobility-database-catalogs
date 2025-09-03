@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2842,
+    "data_type": "gtfs",
+    "provider": "Cara'bus",
+    "is_official": "True",
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Nouvelle-Aquitaine",
+        "municipality": "Royan",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-09-06T21:26:27+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.agglo-royan.fr/dataset/9b761974-a195-4e33-91b7-ecee3b368016/resource/d4915904-ebd0-43cf-9b35-fbfc04ce91fd/download/gtfs_20250613_092554_tdra.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-royan-carabus-gtfs-2842.zip?alt=media",
+        "license": "https://transport.data.gouv.fr/datasets/donnees-gtfs-du-reseau-de-transport-public-cara-bus"
+    }
+}

@@ -1,7 +1,8 @@
 {
-    "mdb_source_id": 2840,
+    "mdb_source_id": 2836,
     "data_type": "gtfs",
     "provider": "Mobiave",
+    "is_official": "True",
     "location": {
         "country_code": "PT",
         "subdivision_name": "Ave,Área Metropolitana do Porto",
@@ -17,7 +18,7 @@
     "urls": {
         "direct_download": "https://map.mobility.ubiwhere.com/dataset/fe6015e4-86c7-437a-8d31-10759fe21a1d/resource/7ac67ef8-015c-42e8-9546-f6f0be956270/download/gtfs_vnf.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-ave-mobiave-gtfs-2840.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-ave-mobiave-gtfs-2836.zip?alt=media",
         "license": "https://map.mobility.ubiwhere.com/dataset/veiculo-de-transporte-de-passageiros-de-vila-nova-de-famalicao"
     },
     "redirect": []

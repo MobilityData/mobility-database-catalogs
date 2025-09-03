@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 2835,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Renfe commuter trains (Cercanias)",
+    "static_reference": [
+        "2653"
+    ],
+    "urls": {
+        "direct_download": "https://gtfsrt.renfe.com/vehicle_positions.pb",
+        "authentication_type": 0,
+        "license": "https://data.renfe.com/dataset/ubicacion-vehiculos"
+    }
+}

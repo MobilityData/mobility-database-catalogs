@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 2834,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Renfe commuter trains (Cercanias)",
+    "static_reference": [
+        "2653"
+    ],
+    "urls": {
+        "direct_download": "https://gtfsrt.renfe.com/trip_updates.pb",
+        "authentication_type": 0,
+        "license": "https://data.renfe.com/dataset/horarios-viaje-cercanias"
+    }
+}

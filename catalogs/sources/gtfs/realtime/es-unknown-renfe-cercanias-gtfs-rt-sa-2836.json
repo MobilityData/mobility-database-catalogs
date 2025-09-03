@@ -1,0 +1,13 @@
+{
+    "mdb_source_id": 2836,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Renfe commuter trains (Cercanias)",
+    "urls": {
+        "direct_download": "https://gtfsrt.renfe.com/alerts.pb",
+        "authentication_type": 0,
+        "license": "https://data.renfe.com/dataset/incidencias-avisos"
+    }
+}

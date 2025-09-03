@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 2840,
+    "data_type": "gtfs",
+    "provider": "Mobiave",
+    "location": {
+        "country_code": "PT",
+        "subdivision_name": "Ave,Área Metropolitana do Porto",
+        "municipality": "Famalicão,Santo Tirso,Trofa",
+        "bounding_box": {
+            "minimum_latitude": 41.300434,
+            "maximum_latitude": 41.477368,
+            "minimum_longitude": -8.623817,
+            "maximum_longitude": -8.324232,
+            "extracted_on": "2025-09-03T16:19:37+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://map.mobility.ubiwhere.com/dataset/fe6015e4-86c7-437a-8d31-10759fe21a1d/resource/7ac67ef8-015c-42e8-9546-f6f0be956270/download/gtfs_vnf.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-ave-mobiave-gtfs-2840.zip?alt=media",
+        "license": "https://map.mobility.ubiwhere.com/dataset/veiculo-de-transporte-de-passageiros-de-vila-nova-de-famalicao"
+    },
+    "redirect": []
+}

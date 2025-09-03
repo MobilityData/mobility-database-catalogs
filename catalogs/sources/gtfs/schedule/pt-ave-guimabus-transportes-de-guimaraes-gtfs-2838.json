@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2838,
+    "data_type": "gtfs",
+    "provider": "Guimabus - Transportes de Guimarães",
+    "is_official": "True",
+    "location": {
+        "country_code": "PT",
+        "subdivision_name": "Ave",
+        "municipality": "Guimarães",
+        "bounding_box": {
+            "minimum_latitude": 41.365302,
+            "maximum_latitude": 41.539364,
+            "minimum_longitude": -8.427469,
+            "maximum_longitude": -8.228296,
+            "extracted_on": "2025-09-03T16:19:30+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://map.mobility.ubiwhere.com/dataset/ee6d46e4-9f19-4f4a-ab93-1a3cd69df349/resource/08f1ee6c-2d3f-4fb3-a861-5d6fb347a6d4/download/gtfs_gui.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-ave-guimabus-transportes-de-guimaraes-gtfs-2838.zip?alt=media",
+        "license": "https://map.mobility.ubiwhere.com/dataset/operador-de-sptp-de-guimaraes"
+    },
+    "redirect": []
+}

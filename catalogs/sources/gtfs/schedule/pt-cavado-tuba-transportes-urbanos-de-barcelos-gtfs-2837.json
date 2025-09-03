@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2837,
+    "data_type": "gtfs",
+    "provider": "TUBA - Transportes Urbanos de Barcelos",
+    "is_official": "True",
+    "location": {
+        "country_code": "PT",
+        "subdivision_name": "Cávado",
+        "municipality": "Barcelos",
+        "bounding_box": {
+            "minimum_latitude": 41.4152617727,
+            "maximum_latitude": 41.6537567059,
+            "minimum_longitude": -8.756146,
+            "maximum_longitude": -8.507689,
+            "extracted_on": "2025-09-03T16:19:33+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://map.mobility.ubiwhere.com/dataset/1842a15c-1aec-4f65-8e29-e57c8b4cbd74/resource/a595ee4b-bf86-4323-b1f4-7e3b3eb00e5e/download/gtfs_bar.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-cavado-tuba-transportes-urbanos-de-barcelos-gtfs-2837.zip?alt=media",
+        "license": "https://map.mobility.ubiwhere.com/dataset/paragem-de-passageiros-de-barcelos"
+    },
+    "redirect": []
+}

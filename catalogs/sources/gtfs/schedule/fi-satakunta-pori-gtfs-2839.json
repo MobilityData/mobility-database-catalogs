@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 2839,
+    "data_type": "gtfs",
+    "provider": "Waltti - Pori",
+    "is_official": "True",
+    "location": {
+        "country_code": "FI",
+        "subdivision_name": "Satakunta",
+        "municipality": "Pori",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-09-03T23:55:04+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://tvv.fra1.digitaloceanspaces.com/231.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fi-satakunta-pori-gtfs-2839.zip?alt=media",
+        "license": "https://creativecommons.org/licenses/by/4.0/"
+    }
+}

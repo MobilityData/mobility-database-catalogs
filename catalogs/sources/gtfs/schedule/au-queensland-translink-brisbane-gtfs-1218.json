@@ -22,5 +22,10 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-translink-brisbane-gtfs-1218.zip?alt=media",
         "license": "https://creativecommons.org/licenses/by/4.0/"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "675",
+            "comment": " "
+        }
+    ]
 }

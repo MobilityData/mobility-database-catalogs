@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Connecticut Transit",
     "name": "Hartford Line - Rail",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Connecticut",
@@ -17,5 +18,11 @@
     "urls": {
         "direct_download": "http://www.hartfordline.com/files/gtfs/gtfs.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-connecticut-connecticut-transit-gtfs-597.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2840",
+            "comment": " "
+        }
+    ]
 }

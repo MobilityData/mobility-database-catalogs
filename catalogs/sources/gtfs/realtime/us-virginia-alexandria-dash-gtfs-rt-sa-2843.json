@@ -5,12 +5,12 @@
         "sa"
     ],
     "provider": "Alexandria Transit Company (DASH)",
+    "is_official": "True",
     "static_reference": [
         "482"
     ],
     "urls": {
         "direct_download": "https://api.goswift.ly/real-time/alexandria-dash/gtfs-rt-alerts/v2",
-      
         "authentication_type": 2,
         "authentication_info": "https://goswift.ly/realtime-api-key",
         "api_key_parameter_name": "Authorization",

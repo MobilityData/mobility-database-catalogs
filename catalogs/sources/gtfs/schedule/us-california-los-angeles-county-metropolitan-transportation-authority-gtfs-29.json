@@ -1,8 +1,9 @@
 {
     "mdb_source_id": 29,
     "data_type": "gtfs",
-    "provider": "Los Angeles County Metropolitan Transportation Authority",
+    "provider": "Los Angeles County Metropolitan Transportation Authority (LA Metro)",
     "name": "Bus",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

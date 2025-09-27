@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Urban Mobility Center - Sofia Traffic",
     "status": "active",
-    "is_official": "False", 
+    "is_official": "True", 
     "location": {
         "country_code": "BG",
         "subdivision_name": "Sofia City",
@@ -17,9 +17,9 @@
         }
     },
     "urls": {
-        "direct_download": "https://raw.githubusercontent.com/Dimitar5555/sofiatraffic-gtfs/master/result.zip",
+        "direct_download": "https://gtfs.sofiatraffic.bg/api/v1/static",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/bg-sofia-city-gtfs-2451.zip?alt=media",
-        "license": "https://github.com/Dimitar5555/sofiatraffic-gtfs"
+        "license": "https://www.sofiatraffic.bg/bg/info-center/gtfs-danni"
     },
     "redirect": []
 }

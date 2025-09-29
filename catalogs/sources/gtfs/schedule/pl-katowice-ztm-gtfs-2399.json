@@ -2,6 +2,7 @@
     "mdb_source_id": 2399,
     "data_type": "gtfs",
     "provider": "ZTM Katowice",
+    "feed_contact_email": "kancelaria@metropoliaztm.pl",
     "location": {
         "country_code": "PL",
         "subdivision_name": "Górnośląsko-Zagłębiowska Metropolia",

@@ -7,8 +7,7 @@
     "feed_contact_email": "ppavlov@theoremus.com", 
     "location": {
         "country_code": "BG",
-        "subdivision_name": "Sofia City",
-        }
+        "subdivision_name": "Sofia City"
     },
     "urls": {
         "direct_download": "https://gtfs.sofiatraffic.bg/api/v1/static",
@@ -17,3 +16,4 @@
     },
     "redirect": []
 }
+

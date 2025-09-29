@@ -4,6 +4,7 @@
     "provider": "Urban Mobility Center - Sofia Traffic",
     "status": "active",
     "is_official": "False", 
+    "status": "deprecated",
     "location": {
         "country_code": "BG",
         "subdivision_name": "Sofia City",
@@ -21,5 +22,10 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/bg-sofia-city-gtfs-2451.zip?alt=media",
         "license": "https://github.com/Dimitar5555/sofiatraffic-gtfs"
     },
-    "redirect": []
+     "redirect": [
+        {
+            "id": "2848",
+            "comment": " "
+        }
+    ]
 }

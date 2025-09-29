@@ -1,12 +1,12 @@
 {
-    "mdb_source_id": 2846,
+    "mdb_source_id": 2850,
     "data_type": "gtfs-rt",
     "entity_type": [
         "tu"
     ],
     "provider": "Urban Mobility Center - Sofia Traffic",
     "static_reference": [
-        "2451"
+        "2848"
     ],
     "urls": {
         "direct_download": "https://gtfs.sofiatraffic.bg/api/v1/trip-updates",

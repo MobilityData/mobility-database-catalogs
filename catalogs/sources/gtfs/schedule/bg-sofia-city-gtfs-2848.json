@@ -7,7 +7,14 @@
     "feed_contact_email": "ppavlov@theoremus.com", 
     "location": {
         "country_code": "BG",
-        "subdivision_name": "Sofia City"
+        "subdivision_name": "Sofia City",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-09-29T18:44:40+00:00"
+        }
     },
     "urls": {
         "direct_download": "https://gtfs.sofiatraffic.bg/api/v1/static",

@@ -4,7 +4,7 @@
     "entity_type": ["vp"],
     "provider": "Transport for New South Wales",
     "urls": {
-        "direct_download": "https://api.transport.nsw.gov.au/v2/gtfs/vehiclepos/",
+        "direct_download": "https://api.transport.nsw.gov.au/v2/gtfs/vehiclepos/sydneytrains",
         "authentication_type": 2,
         "authentication_info": "https://opendata.transport.nsw.gov.au/data/user/register",
         "api_key_parameter_name": "apikey"

@@ -5,6 +5,7 @@
         "vp"
     ],
     "provider": "Urban Mobility Center - Sofia Traffic",
+    "feed_contact_email": "ppavlov@theoremus.com", 
     "is_official": "True",
     "static_reference": [
         "2848"

@@ -24,15 +24,24 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
         run: |
+          set -e
           python -m pip install --upgrade pip
-          pip install pytest wheel numpy
+          python -m pip install pytest wheel numpy
+
           sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
           sudo apt-get update
-          sudo apt-get install gdal-bin python3-gdal
-          sudo apt-get install libgdal-dev
-          pip install GDAL==$(gdal-config --version) --global-option=build_ext --global-option="-I/usr/include/gdal"
-          sudo apt-get install libspatialindex-dev
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          sudo apt-get install -y gdal-bin libgdal-dev python3-gdal libspatialindex-dev
+
+          export CFLAGS="$(gdal-config --cflags)"
+          export LDFLAGS="$(gdal-config --libs)"
+          export CPATH="$(gdal-config --cflags | sed 's/-I//g' | awk '{print $1}'):$CPATH" || true
+          export CPLUS_INCLUDE_PATH="$(gdal-config --cflags | sed 's/-I//g' | awk '{print $1}'):$CPLUS_INCLUDE_PATH" || true
+
+          python -m pip install "GDAL==$(gdal-config --version)" || \
+            python -m pip install --no-binary GDAL "GDAL==$(gdal-config --version)"
+
+          # Install repo requirements
+          if [ -f requirements.txt ]; then python -m pip install -r requirements.txt; fi
       - name: Unit tests with pytest
         run: |
           pytest --ignore=./tests/test_integration.py --html=mobility-catalogs-unit-tests-report.html --self-contained-html

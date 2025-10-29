@@ -1,6 +1,7 @@
 {
     "mdb_source_id": 1857,
     "data_type": "gtfs",
+    "status": "deprecated",
     "provider": "Société des Transports Intercommunaux de Bruxelles/Maatschappij voor het Intercommunaal Vervoer te Brussel (STIB / MIVB)",
     "name": "unofficial feed with data quality improvements",
     "location": {
@@ -15,6 +16,12 @@
             "extracted_on": "2023-01-17T21:31:48+00:00"
         }
     },
+    "redirect": [
+        {
+            "id": "1088",
+            "comment": " "
+        }
+    ],
     "urls": {
         "direct_download": "https://data.gtfs.be/stib/gtfs/be-stib-gtfs.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/be-unknown-stib-mivb-gtfs-1857.zip?alt=media",

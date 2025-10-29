@@ -24,7 +24,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
+          python -m pip install "pip<24.1"
           pip install pytest wheel numpy
           sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
           sudo apt-get update

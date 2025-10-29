@@ -1,8 +1,8 @@
 {
-    "mdb_source_id": 1187,
+    "mdb_source_id": 2854,
     "data_type": "gtfs",
     "provider": "Metra",
-    "status": "deprecated",
+    "is_official": "True",
     "features": [
         "fares-v1"
     ],
@@ -18,15 +18,9 @@
             "extracted_on": "2022-03-23T18:50:28+00:00"
         }
     },
-    "redirect": [
-        {
-            "id": "2854",
-            "comment": " "
-        }
-    ],
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/metra/169/latest/download",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-illinois-metra-gtfs-1187.zip?alt=media",
-        "license": "https://metrarail.com/developers"
+        "direct_download": "https://schedules.metrarail.com/gtfs/schedule.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-illinois-metra-gtfs-2854.zip?alt=media",
+        "license": "https://metra.com/gtfs-realtime-api-key-request-license-agreement"
     }
 }

@@ -1,0 +1,28 @@
+{
+  "mdb_source_id": 2856,
+  "data_type": "gtfs",
+  "provider": "City of Coolidge",
+  "location": {
+    "country_code": "US",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-10-30 18:02:52.254648+00:00"
+    },
+    "subdivision_name": "Arizona",
+    "municipality": "Coolidge"
+  },
+  "urls": {
+    "direct_download": "https://coolidgeaz.govoffice2.com/vertical/Sites/%7BAE188E70-DD7F-47BE-99EF-B58B70641DF9%7D/uploads/coolidge_gtfs.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-arizona-coolidge-city-of-coolidg-gtfs-2856.zip?alt=media",
+    "authentication_type": 0
+  },
+  "name": "Cotton Express and Central Arizona Regional Transit",
+  "feed_contact_email": "eheet@coolidgeaz.com",
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

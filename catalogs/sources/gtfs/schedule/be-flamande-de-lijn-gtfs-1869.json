@@ -2,6 +2,7 @@
     "mdb_source_id": 1869,
     "data_type": "gtfs",
     "provider": "De Lijn",
+    "status": "deprecated",
     "name": "unofficial feed with data quality improvements",
     "location": {
         "country_code": "BE",
@@ -14,6 +15,12 @@
             "extracted_on": "2023-01-18T20:49:13+00:00"
         }
     },
+    "redirect": [
+        {
+            "id": "684",
+            "comment": " "
+        }
+    ],
     "urls": {
         "direct_download": "https://data.gtfs.be/delijn/gtfs/be-delijn-gtfs.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/be-flamande-de-lijn-gtfs-1869.zip?alt=media",

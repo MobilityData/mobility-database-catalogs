@@ -6,8 +6,9 @@
     ],
     "provider": "Redding Area Bus Authority",
     "static_reference": [
-        "1972"
+        "2852"
     ],
+    "is_official": "True",
     "urls": {
         "direct_download": "http://gtfs-realtime.trilliumtransit.com/gtfs-realtime/feed/redding-ca-us/service_alerts.proto",
         "authentication_type": 2,

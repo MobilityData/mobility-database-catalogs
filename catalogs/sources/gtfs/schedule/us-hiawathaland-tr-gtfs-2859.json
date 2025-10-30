@@ -1,0 +1,26 @@
+{
+  "mdb_source_id": 2859,
+  "data_type": "gtfs",
+  "provider": "Hiawathaland Transit",
+  "location": {
+    "country_code": "US",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-10-30 18:02:52.270455+00:00"
+    }
+  },
+  "urls": {
+    "direct_download": "https://data.trilliumtransit.com/gtfs/threerivers-mn-us/threerivers-mn-us--flex-v2.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-hiawathaland-tr-gtfs-2859.zip?alt=media",
+    "authentication_type": 0
+  },
+  "name": "",
+  "feed_contact_email": "support+threerivers-mn-us@trilliumtransit.com",
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

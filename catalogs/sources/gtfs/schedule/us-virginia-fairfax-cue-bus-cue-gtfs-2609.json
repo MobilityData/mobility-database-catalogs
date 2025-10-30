@@ -2,6 +2,7 @@
     "mdb_source_id": 2609,
     "data_type": "gtfs",
     "provider": "Fairfax CUE Bus (CUE)",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Virginia",
@@ -14,6 +15,12 @@
             "extracted_on": "2022-03-16T17:24:21+00:00"
         }
     },
+     "redirect": [
+        {
+            "id": "2862",
+            "comment": " "
+        }
+    ],
     "urls": {
         "direct_download": "https://www.fairfaxva.gov/home/showpublisheddocument/22883/638499935919070000",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-fairfax-cue-bus-cue-gtfs-2609.zip?alt=media",

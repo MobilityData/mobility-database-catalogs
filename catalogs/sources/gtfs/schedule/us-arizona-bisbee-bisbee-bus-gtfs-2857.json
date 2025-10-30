@@ -1,0 +1,28 @@
+{
+  "mdb_source_id": 2857,
+  "data_type": "gtfs",
+  "provider": "Bisbee Bus",
+  "location": {
+    "country_code": "US",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-10-30 18:02:52.260288+00:00"
+    },
+    "subdivision_name": "Arizona",
+    "municipality": "Bisbee"
+  },
+  "urls": {
+    "direct_download": "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/11816/Bisbee_AZ_GTFS.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-arizona-bisbee-bisbee-bus-gtfs-2857.zip?alt=media",
+    "authentication_type": 0
+  },
+  "name": "",
+  "feed_contact_email": "anovoa@seago.org",
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

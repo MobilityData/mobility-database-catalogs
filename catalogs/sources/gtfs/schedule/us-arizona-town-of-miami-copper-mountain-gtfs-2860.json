@@ -1,0 +1,28 @@
+{
+  "mdb_source_id": 2860,
+  "data_type": "gtfs",
+  "provider": "Copper Mountain Transit",
+  "location": {
+    "country_code": "US",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-10-30 18:02:52.240559+00:00"
+    },
+    "subdivision_name": "Arizona",
+    "municipality": "Town of Miami"
+  },
+  "urls": {
+    "direct_download": "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/11492/CMT_gtfs.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-arizona-town-of-miami-copper-mountain-gtfs-2860.zip?alt=media",
+    "authentication_type": 0
+  },
+  "name": "",
+  "feed_contact_email": "transit@miamiaz.gov",
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

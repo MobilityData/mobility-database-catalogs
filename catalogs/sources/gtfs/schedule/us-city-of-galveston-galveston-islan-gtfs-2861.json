@@ -1,0 +1,27 @@
+{
+  "mdb_source_id": 2861,
+  "data_type": "gtfs",
+  "provider": "Galveston Island Transit",
+  "location": {
+    "country_code": "US",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-10-30 18:02:52.281653+00:00"
+    },
+    "municipality": "City of Galveston"
+  },
+  "urls": {
+    "direct_download": "https://gtfs.remix.com/island_transit_us.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-city-of-galveston-galveston-islan-gtfs-2861.zip?alt=media",
+    "authentication_type": 0
+  },
+  "name": "Galveston Island Transit",
+  "feed_contact_email": "GTFSIslandTransit@galvestontx.gov",
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

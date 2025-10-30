@@ -1,0 +1,25 @@
+{
+  "mdb_source_id": 2862,
+  "data_type": "gtfs",
+  "provider": "CUE Bus",
+  "location": {
+    "country_code": "US",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-10-30 18:02:52.225934+00:00"
+    }
+  },
+  "urls": {
+    "direct_download": "https://data.trilliumtransit.com/gtfs/cuebus-va-us/cuebus-va-us.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-cue-bus-gtfs-2862.zip?alt=media",
+    "authentication_type": 0
+  },
+  "feed_contact_email": "support+test+cuebus-va-us@trilliumtransit.com",
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

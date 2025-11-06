@@ -1,0 +1,29 @@
+{
+  "mdb_source_id": 2865,
+  "data_type": "gtfs",
+  "provider": "Gobierno del estado de México (Government of the State of Mexico)",
+  "name": "Toluca y Área Metropolitana",
+  "feed_contact_email": "leonardo.gutierrez@trufi-association.org",
+  "location": {
+    "country_code": "MX",
+    "subdivision_name": "Mexico",
+    "municipality": "Toluca",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-11-06 18:02:52.236271+00:00"
+    }
+  },
+  "urls": {
+    "direct_download": "https://datos.movimex.gob.mx/gtfs/toluca.gtfs.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/mx-toluca-gobierno-del-estado-de-mexico-gtfs-2865.zip?alt=media",
+    "authentication_type": 0,
+    "license": "https://www.openstreetmap.org/copyright"
+  },
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

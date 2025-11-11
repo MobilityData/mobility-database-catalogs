@@ -2,6 +2,7 @@
     "mdb_source_id": 2867,
     "data_type": "gtfs",
     "provider": "Indian Railways",
+    "name": "Unofficial data",
     "feed_contact_email": "pradha.krishna.cse17@itbhu.ac.in",
     "status": "active",
     "location": {

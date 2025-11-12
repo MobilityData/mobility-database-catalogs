@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2867,
+    "data_type": "gtfs",
+    "provider": "Indian Railways",
+    "name": "Unofficial data",
+    "feed_contact_email": "pradha.krishna.cse17@itbhu.ac.in",
+    "status": "active",
+    "location": {
+        "country_code": "IN",
+        "bounding_box": {
+            "minimum_latitude": 8.088208,
+            "maximum_latitude": 34.2577,
+            "minimum_longitude": 68.980064,
+            "maximum_longitude": 95.7255,
+            "extracted_on": "2025-11-01T10:11:34+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/Neo2308/indianrailways-gtfs/raw/refs/heads/main/gtfs/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/in-unknown-indian-railways-gtfs-2867.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "False"
+}

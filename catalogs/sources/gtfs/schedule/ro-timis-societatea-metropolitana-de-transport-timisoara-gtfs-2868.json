@@ -4,7 +4,7 @@
     "provider": "Societatea Metropolitană de Transport Timișoara",
     "status": "active",
     "is_official": "True",
-    "feed_contact_email": "relatii.publice@smtt.ro"
+    "feed_contact_email": "relatii.publice@smtt.ro",
     "location": {
         "country_code": "RO",
         "subdivision_name": "Timiș",

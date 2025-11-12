@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 2870,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Ottawa-Carleton Regional Transit Commission (OC Transpo)",
+    "is_official": "True",
+    "static_reference": [
+        "mdb-2154"
+    ],
+    "urls": {
+        "direct_download": "https://nextrip-public-api.azure-api.net/octranspo/gtfs-rt-tp/beta/v1/TripUpdates",
+        "authentication_type": 1,
+        "authentication_info": "https://nextrip-public-api.developer.azure-api.net/",
+        "api_key_parameter_name": "apikey",
+        "license": "https://www.octranspo.com/en/plan-your-trip/travel-tools/developers/dev-terms/"
+    }
+}

@@ -12,7 +12,7 @@
     "urls": {
         "direct_download": "https://nextrip-public-api.azure-api.net/octranspo/gtfs-rt-tp/beta/v1/TripUpdates",
         "authentication_type": 1,
-        "authentication_info": "https://www.translink.ca/about-us/doing-business-with-translink/app-developer-resources/register",
+        "authentication_info": "https://nextrip-public-api.developer.azure-api.net/",
         "api_key_parameter_name": "apikey",
         "license": "https://www.octranspo.com/en/plan-your-trip/travel-tools/developers/dev-terms/"
     }

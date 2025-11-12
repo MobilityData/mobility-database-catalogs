@@ -12,6 +12,8 @@
     "urls": {
         "direct_download": "https://nextrip-public-api.azure-api.net/octranspo/gtfs-rt-vp/beta/v1/VehiclePositions",
         "authentication_type": 1,
+        "authentication_info": "https://nextrip-public-api.developer.azure-api.net/",
+        "api_key_parameter_name": "apikey",
         "license": "https://www.octranspo.com/en/plan-your-trip/travel-tools/developers/dev-terms/"
     }
 }

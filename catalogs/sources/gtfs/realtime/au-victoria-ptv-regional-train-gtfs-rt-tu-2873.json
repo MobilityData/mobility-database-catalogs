@@ -1,15 +1,15 @@
 {
-    "mdb_source_id": 2654,
+    "mdb_source_id": 2873,
     "data_type": "gtfs-rt",
     "entity_type": [
         "tu"
     ],
-    "provider": "Public Transport Victoria (PTV) Metro Bus",
+    "provider": "Public Transport Victoria (PTV) V/Line Regional Train",
     "static_reference": [
         "657"
     ],
     "urls": {
-        "direct_download": "https://api.opendata.transport.vic.gov.au/opendata/public-transport/gtfs/realtime/v1/bus/trip-updates",
+        "direct_download": "https://api.opendata.transport.vic.gov.au/opendata/public-transport/gtfs/realtime/v1/vline/trip-updates",
         "authentication_type": 2,
         "authentication_info": "https://data-exchange.vicroads.vic.gov.au/signin",
         "api_key_parameter_name": "Ocp-Apim-Subscription-Key",

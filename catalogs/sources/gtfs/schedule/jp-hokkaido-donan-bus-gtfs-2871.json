@@ -2,6 +2,7 @@
     "mdb_source_id": 2871,
     "data_type": "gtfs",
     "provider": "Donan Bus",
+    "is_official": "True",
     "features": [
         "fares-v1"
     ],

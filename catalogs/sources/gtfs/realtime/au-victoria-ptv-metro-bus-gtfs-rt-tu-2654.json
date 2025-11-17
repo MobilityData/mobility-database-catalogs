@@ -5,6 +5,7 @@
         "tu"
     ],
     "provider": "Public Transport Victoria (PTV) Metro Bus",
+    "is_official": "True",
     "static_reference": [
         "657"
     ],

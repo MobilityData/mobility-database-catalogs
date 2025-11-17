@@ -1,11 +1,11 @@
 {
-    "mdb_source_id": 1019,
+    "mdb_source_id": 2871,
     "data_type": "gtfs",
     "provider": "Donan Bus",
     "features": [
         "fares-v1"
     ],
-    "status": "deprecated",
+    "status": "active",
     "location": {
         "country_code": "JP",
         "subdivision_name": "Hokkaidô",
@@ -18,14 +18,8 @@
         }
     },
     "urls": {
-        "direct_download": "https://github.com/aruneko/DonanbusGTFS/archive/refs/tags/2020.0401.1.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/jp-hokkaido-donan-bus-gtfs-1019.zip?alt=media",
+        "direct_download": "https://ckan.hoda.jp/dataset/24d1dd70-5395-4d6b-b41f-0d83e8eabdb9/resource/a70d369c-405c-4c25-996c-c70aa53682bc/download/dounan_bus.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/jp-hokkaido-donan-bus-gtfs-2871.zip?alt=media",
         "license": "https://github.com/aruneko/DonanbusGTFS/tree/master"
-    },
-    "redirect": [
-        {
-            "id": "2871",
-            "comment": " "
-        }
-    ]
+    }
 }

@@ -5,11 +5,12 @@
         "sa"
     ],
     "provider": "Public Transport Victoria (PTV) Metro Train",
+    "is_official": "True",
     "static_reference": [
         "657"
     ],
     "urls": {
-        "direct_download": "https://data-exchange-api.vicroads.vic.gov.au/opendata/v1/gtfsr/metrotrain-servicealerts",
+        "direct_download": "https://api.opendata.transport.vic.gov.au/opendata/public-transport/gtfs/realtime/v1/metro/service-alerts",
         "authentication_type": 2,
         "authentication_info": "https://data-exchange.vicroads.vic.gov.au/signin",
         "api_key_parameter_name": "Ocp-Apim-Subscription-Key",

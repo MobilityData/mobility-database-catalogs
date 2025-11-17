@@ -2,7 +2,7 @@
     "mdb_source_id": 872,
     "data_type": "gtfs",
     "provider": "Kobe Subway",
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "JP",
         "subdivision_name": "Hyôgo",

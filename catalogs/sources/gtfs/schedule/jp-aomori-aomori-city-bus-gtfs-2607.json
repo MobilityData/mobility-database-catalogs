@@ -2,6 +2,7 @@
     "mdb_source_id": 2607,
     "data_type": "gtfs",
     "provider": "Aomori City Bus",
+    "status": "deprecated",
     "feed_contact_email": "sonosujiya@gmail.com",
     "is_official": "True",
     "location": {

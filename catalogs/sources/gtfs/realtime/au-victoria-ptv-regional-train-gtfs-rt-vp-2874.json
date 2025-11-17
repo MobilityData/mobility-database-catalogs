@@ -1,16 +1,16 @@
 {
-    "mdb_source_id": 2660,
+    "mdb_source_id": 2874,
     "data_type": "gtfs-rt",
     "entity_type": [
         "vp"
     ],
-    "provider": "Public Transport Victoria (PTV) Yarra Trams",
+    "provider": "Public Transport Victoria (PTV) V/Line Regional Train",
     "is_official": "True",
     "static_reference": [
         "657"
     ],
     "urls": {
-        "direct_download": "https://api.opendata.transport.vic.gov.au/opendata/public-transport/gtfs/realtime/v1/tram/vehicle-positions",
+        "direct_download": "https://api.opendata.transport.vic.gov.au/opendata/public-transport/gtfs/realtime/v1/vline/vehicle-positions",
         "authentication_type": 2,
         "authentication_info": "https://data-exchange.vicroads.vic.gov.au/signin",
         "api_key_parameter_name": "Ocp-Apim-Subscription-Key",

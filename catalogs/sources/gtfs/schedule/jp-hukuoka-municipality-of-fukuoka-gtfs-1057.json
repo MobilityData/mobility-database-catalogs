@@ -2,6 +2,7 @@
     "mdb_source_id": 1057,
     "data_type": "gtfs",
     "provider": "Municipality of Fukuoka, (福岡市営渡船)",
+    "status": "deprecated",
     "location": {
         "country_code": "JP",
         "subdivision_name": "Hukuoka",

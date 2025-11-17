@@ -5,6 +5,7 @@
         "vp"
     ],
     "provider": "Public Transport Victoria (PTV) V/Line Regional Train",
+    "is_official": "True",
     "static_reference": [
         "657"
     ],

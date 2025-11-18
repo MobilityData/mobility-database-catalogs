@@ -1,0 +1,27 @@
+{
+  "mdb_source_id": 2880,
+  "data_type": "gtfs",
+  "provider": "C-Tran",
+  "location": {
+    "country_code": "US",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-11-18 20:20:25.834113+00:00"
+    },
+    "subdivision_name": "Washington",
+    "municipality": "Vancouver"
+  },
+  "urls": {
+    "direct_download": "https://www.c-tran.com/images/Google/GoogleTransitUpload.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-vancouver-ctran-gtfs-2880.zip?alt=media",
+    "authentication_type": 0
+  },
+  "name": "Springfield MicroMoo",
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

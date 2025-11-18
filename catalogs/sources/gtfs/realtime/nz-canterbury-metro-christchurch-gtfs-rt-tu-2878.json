@@ -1,8 +1,8 @@
 {
-    "mdb_source_id": 1793,
+    "mdb_source_id": 2878,
     "data_type": "gtfs-rt",
     "entity_type": [
-        "sa"
+        "tu"
     ],
     "provider": "Metro Christchurch",
     "is_official": "True",
@@ -10,7 +10,7 @@
         "1313"
     ],
     "urls": {
-        "direct_download": "https://apis.metroinfo.co.nz/rti/gtfsrt/v1/service-alerts.pb",
+        "direct_download": "https://apis.metroinfo.co.nz/rti/gtfsrt/v1/trip-updates.pb",
         "authentication_type": 2,
         "authentication_info": "https://apidevelopers.metroinfo.co.nz/",
         "api_key_parameter_name": "Ocp-Apim-Subscription-Key",

@@ -20,7 +20,7 @@
         }
     },
     "urls": {
-        "direct_download": "https:/data.trilliumtransit.com/gtfs/tcrta-ca-us/tcrta-ca-us.zip",
+        "direct_download": "https://data.trilliumtransit.com/gtfs/tcrta-ca-us/tcrta-ca-us.zip",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-tulare-county-area-transit-gtfs-646.zip?alt=media"
     },

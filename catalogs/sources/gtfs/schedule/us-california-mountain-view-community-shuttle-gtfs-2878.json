@@ -1,0 +1,28 @@
+{
+  "mdb_source_id": 2878,
+  "data_type": "gtfs",
+  "provider": "Mountain View Community Shuttle",
+  "location": {
+    "country_code": "US",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-11-18 20:20:25.824994+00:00"
+    },
+    "subdivision_name": "California",
+    "municipality": "Mountain View"
+  },
+  "urls": {
+    "direct_download": "https://gtfs.mvcommunityshuttle.com/gtfs.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-mountain-view-mountain-view-c-gtfs-2878.zip?alt=media",
+    "authentication_type": 0,
+    "license": "https://opendatacommons.org/licenses/by/summary/"
+  },
+  "feed_contact_email": "nfo@mvcommunityshuttle.com",
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

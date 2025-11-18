@@ -4,6 +4,7 @@
     "provider": "Swiss Federal Railways (SBB)",
     "name": "Flex v2 included",
     "status": "active",
+    "is_official": "True",
     "location": {
         "country_code": "CH",
         "bounding_box": {

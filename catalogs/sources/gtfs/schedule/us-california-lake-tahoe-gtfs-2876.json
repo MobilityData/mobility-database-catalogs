@@ -1,0 +1,29 @@
+{
+  "mdb_source_id": 2876,
+  "data_type": "gtfs",
+  "provider": "Keep Tahoe Blue",
+  "location": {
+    "country_code": "US",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-11-17 18:21:16.031697+00:00"
+    },
+    "subdivision_name": "Lake Tahoe",
+    "municipality": "Lake Tahoe"
+  },
+  "urls": {
+    "direct_download": "https://keeptahoeblue.sharepoint.com/sites/LeaguetoSaveLakeTahoe-CommunityEngagement/_layouts/15/guestaccess.aspx?share=EdcHnLwMfdJLscvyGDDa8FwB_bLXkpj9XIuG5GFiKdlKJw&e=1yNB6c&download=1",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-lake-tahoe-tahoe-regional-planning-agency-keep-tahoe-blue-gtfs-2876.zip?alt=media",
+    "authentication_type": 0,
+    "license": "https://keeptahoeblue.sharepoint.com/sites/LeaguetoSaveLakeTahoe-CommunityEngagement/_layouts/15/guestaccess.aspx?share=EdcHnLwMfdJLscvyGDDa8FwB_bLXkpj9XIuG5GFiKdlKJw&e=1yNB6c&download=1"
+  },
+  "name": "Emerald Bay Shuttle",
+  "feed_contact_email": "gavin@keeptahoeblue.org",
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

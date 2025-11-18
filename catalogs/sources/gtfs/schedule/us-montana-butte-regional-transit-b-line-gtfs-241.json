@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Butte Regional Transit (B-Line)",
     "is_official": "True",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Montana",
@@ -16,7 +17,13 @@
         }
     },
     "urls": {
-        "direct_download": "https://www.blinetransit.com/documents/Google%20Transit/google_transit.zip",
+        "direct_download": "https://d16k74nzx9emoe.cloudfront.net/c4326823-2c12-4f59-82f1-3fc4d987e12b/google_transit.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-montana-butte-regional-transit-b-line-gtfs-241.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "ntd-90208",
+            "comment": " "
+        }
+    ]
 }

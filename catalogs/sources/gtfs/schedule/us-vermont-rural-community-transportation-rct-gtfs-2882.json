@@ -2,7 +2,6 @@
     "mdb_source_id": 448,
     "data_type": "gtfs",
     "provider": "Rural Community Transportation (RCT)",
-    "status": "deprecated",
     "is_official": "True",
     "features": [
         "fares-v1",
@@ -20,13 +19,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://data.trilliumtransit.com/gtfs/ruralcommunity-vt-us/ruralcommunity-vt-us.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-vermont-rural-community-transportation-rct-gtfs-448.zip?alt=media"
-    },
-    "redirect": [
-        {
-            "id": "2882",
-            "comment": " "
-        }
-    ]
+        "direct_download": "https://data.trilliumtransit.com/gtfs/ruralcommunity-vt-us/ruralcommunity-vt-us--flex-v2.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-vermont-rural-community-transportation-rct-gtfs-2882.zip?alt=media"
+    }
 }

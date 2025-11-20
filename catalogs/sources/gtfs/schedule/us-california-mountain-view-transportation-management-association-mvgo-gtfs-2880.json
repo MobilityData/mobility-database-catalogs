@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 2025,
+    "mdb_source_id": 2880,
     "data_type": "gtfs",
     "provider": "Mountain View Transportation Management Association (MVgo)",
     "is_official": "True",
@@ -19,7 +19,7 @@
     "urls": {
         "direct_download": "https://gtfs.mvgo.org/gtfs.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-mountain-view-transportation-management-association-mvgo-gtfs-2025.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-mountain-view-transportation-management-association-mvgo-gtfs-2880.zip?alt=media",
         "license": "https://mvgo.org/developers/"
     },
     "redirect": []

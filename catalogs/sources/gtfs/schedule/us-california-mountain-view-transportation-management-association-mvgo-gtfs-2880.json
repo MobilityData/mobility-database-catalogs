@@ -3,7 +3,6 @@
     "data_type": "gtfs",
     "provider": "Mountain View Transportation Management Association (MVgo)",
     "is_official": "True",
-    "status": "deprecated",
     "feed_contact_email": "https://mvgo.org/developers/",
     "location": {
         "country_code": "US",
@@ -23,10 +22,5 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-mountain-view-transportation-management-association-mvgo-gtfs-2025.zip?alt=media",
         "license": "https://mvgo.org/developers/"
     },
-    "redirect": [
-        {
-            "id": "2880",
-            "comment": " "
-        }
-    ]
+    "redirect": []
 }

@@ -19,7 +19,6 @@
     "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-vancouver-ctran-gtfs-2885.zip?alt=media",
     "authentication_type": 0
   },
-  "name": "Springfield MicroMoo",
   "features": [],
   "status": "active",
   "is_official": "True",

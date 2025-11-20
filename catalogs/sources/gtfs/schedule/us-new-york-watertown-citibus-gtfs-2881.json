@@ -17,11 +17,5 @@
     "urls": {
         "direct_download": "https://passio3.com/watertown/passioTransit/gtfs/google_transit.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-watertown-citibus-gtfs-2881.zip?alt=media"
-    },
-    "redirect": [
-        {
-            "id": "2881",
-            "comment": " "
-        }
-    ]
+    }
 }

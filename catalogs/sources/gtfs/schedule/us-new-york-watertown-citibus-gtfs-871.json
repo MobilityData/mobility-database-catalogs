@@ -2,7 +2,7 @@
     "mdb_source_id": 871,
     "data_type": "gtfs",
     "provider": "Watertown Citibus",
-    "status": "deprecated",
+    "status": "active",
     "location": {
         "country_code": "US",
         "subdivision_name": "New York",
@@ -19,10 +19,5 @@
         "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Watertown_Citibus.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-watertown-citibus-gtfs-871.zip?alt=media"
     },
-    "redirect": [
-        {
-            "id": "2881",
-            "comment": " "
-        }
-    ]
+    "redirect": []
 }

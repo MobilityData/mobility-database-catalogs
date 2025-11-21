@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2882,
+    "data_type": "gtfs",
+    "provider": "Rural Community Transportation (RCT)",
+    "is_official": "True",
+    "features": [
+        "fares-v1",
+        "flex-v1"
+    ],
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Vermont",
+        "bounding_box": {
+            "minimum_latitude": 44.141096561202,
+            "maximum_latitude": 45.004295166893,
+            "minimum_longitude": -73.1211839,
+            "maximum_longitude": -71.7685947,
+            "extracted_on": "2022-03-16T15:34:38+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.trilliumtransit.com/gtfs/ruralcommunity-vt-us/ruralcommunity-vt-us--flex-v2.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-vermont-rural-community-transportation-rct-gtfs-2882.zip?alt=media"
+    }
+}

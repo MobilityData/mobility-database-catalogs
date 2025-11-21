@@ -15,7 +15,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://www.centro.org/CentroGTFS/CentroGTFS.zip",
+        "direct_download": "https://www.centro.org/CentroGTFS/CentroGTFS.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-centro-gtfs-534.zip?alt=media"
     }
 }

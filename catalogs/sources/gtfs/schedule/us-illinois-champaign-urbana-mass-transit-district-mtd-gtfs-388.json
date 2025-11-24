@@ -18,11 +18,5 @@
         "direct_download": "http://developer.cumtd.com/gtfs/google_transit.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-illinois-champaign-urbana-mass-transit-district-mtd-gtfs-388.zip?alt=media",
         "license": "https://developer.cumtd.com/terms-of-use/"
-    },
-    "redirect": [
-        {
-            "id": "2886",
-            "comment": " "
-        }
-    ]
+    }
 }

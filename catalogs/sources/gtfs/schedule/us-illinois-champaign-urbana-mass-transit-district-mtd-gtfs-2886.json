@@ -1,0 +1,28 @@
+{
+  "mdb_source_id": 2886,
+  "data_type": "gtfs",
+  "provider": "Champaign-Urbana Mass Transit District (MTD)",
+  "location": {
+    "country_code": "US",
+    "municipality": "Champaign County",
+    "subdivision_name": "Illinois",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-11-24 16:27:44.792258+00:00"
+    }
+  },
+  "urls": {
+    "direct_download": "https://developer.mtd.org/gtfs/google_transit.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-champaign-county-champaign-urban-gtfs-2886.zip?alt=media",
+    "authentication_type": 0,
+    "license": "https://developer.mtd.org/terms-of-use/"
+  },
+  "feed_contact_email": "developer@mtd.org",
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

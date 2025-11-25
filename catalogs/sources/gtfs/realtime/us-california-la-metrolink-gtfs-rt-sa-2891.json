@@ -9,7 +9,9 @@
     "direct_download": "https://cdn.simplifytransit.com/metrolink/alerts/service-alerts.pb",
     "authentication_type": 0
   },
-  "static_reference": [],
+  "static_reference": [
+      "96"
+  ],
   "features": [],
   "note": "",
   "status": "active",

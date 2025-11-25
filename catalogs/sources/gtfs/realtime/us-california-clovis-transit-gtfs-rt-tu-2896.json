@@ -9,7 +9,9 @@
     "direct_download": "https://passio3.com/clovis/passioTransit/gtfs/realtime/tripUpdates",
     "authentication_type": 0
   },
-  "static_reference": [],
+  "static_reference": [
+      "2894"
+  ],
   "features": [],
   "note": "",
   "status": "active",

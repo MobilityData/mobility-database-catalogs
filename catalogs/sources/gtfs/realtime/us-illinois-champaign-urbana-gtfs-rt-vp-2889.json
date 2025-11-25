@@ -10,7 +10,9 @@
     "authentication_type": 0
   },
   "feed_contact_email": "developer@mtd.org",
-  "static_reference": [],
+  "static_reference": [
+      "ntd-50060"
+  ],
   "features": [],
   "note": "",
   "status": "active",

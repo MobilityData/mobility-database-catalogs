@@ -1,0 +1,22 @@
+{
+  "mdb_source_id": 2892,
+  "data_type": "gtfs-rt",
+  "entity_type": [
+    "tu"
+  ],
+  "provider": "MetroLink",
+  "urls": {
+    "direct_download": "https://metrolink-gtfsrt.gbsdigital.us/feed/gtfsrt-trips",
+    "authentication_type": 2,
+    "authentication_info": "https://metrolinktrains.com/about/gtfs/gtfs-rt-access/",
+    "api_key_parameter_name": "X-Api-Key"
+  },
+  "static_reference": [
+      "96"
+  ],
+  "features": [],
+  "note": "",
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 2894,
+    "data_type": "gtfs",
+    "provider": "Clovis Transit",
+    "feed_contact_email": "support@passiotech.com",
+    "features": [],
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Clovis",
+        "bounding_box": {
+        "minimum_latitude": null,
+        "maximum_latitude": null,
+        "minimum_longitude": null,
+        "maximum_longitude": null,
+        "extracted_on": "2025-11-24 22:43:41.772819+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://passio3.com/clovis/passioTransit/gtfs/google_transit.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-clovis-transit-gtfs-2894.zip?alt=media"
+    },
+    "redirect": []
+}

@@ -1,0 +1,26 @@
+{
+  "mdb_source_id": 2886,
+  "data_type": "gtfs",
+  "provider": "San Francisco Municipal Transportation Agency (SFMTA - Muni)",
+  "location": {
+    "country_code": "US",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-11-24 20:20:14.460404+00:00"
+    },
+    "municipality": "San Francisco"
+  },
+  "urls": {
+    "direct_download": "https://muni-gtfs.apps.sfmta.com/data/muni_gtfs-current.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-san-francisco-san-francisco-m-gtfs-2886.zip?alt=media",
+    "authentication_type": 0,
+    "license": "https://www.sfmta.com/reports/gtfs-transit-data"
+  },
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

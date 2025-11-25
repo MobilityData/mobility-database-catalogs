@@ -1,0 +1,20 @@
+{
+  "mdb_source_id": 2897,
+  "data_type": "gtfs-rt",
+  "entity_type": [
+    "vp"
+  ],
+  "provider": "Clovis Transit",
+  "urls": {
+    "direct_download": "https://passio3.com/clovis/passioTransit/gtfs/realtime/vehiclePositions",
+    "authentication_type": 0
+  },
+  "static_reference": [
+      "2894"
+  ],
+  "features": [],
+  "note": "",
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

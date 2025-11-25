@@ -1,0 +1,20 @@
+{
+  "mdb_source_id": 2895,
+  "data_type": "gtfs-rt",
+  "entity_type": [
+    "sa"
+  ],
+  "provider": "Clovis Transit",
+  "urls": {
+    "direct_download": "https://passio3.com/clovis/passioTransit/gtfs/realtime/serviceAlerts",
+    "authentication_type": 0
+  },
+  "static_reference": [
+      "2894"
+  ],
+  "features": [],
+  "note": "",
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

@@ -1,7 +1,8 @@
 {
     "mdb_source_id": 50,
     "data_type": "gtfs",
-    "provider": "San Francisco Municipal Transportation Agency (SFMTA, Muni)",
+    "status": "deprecated",
+    "provider": "San Francisco Municipal Transportation Agency (SFMTA - Muni)",
     "features": [
         "fares-v1"
     ],
@@ -21,5 +22,11 @@
         "direct_download": "https://gtfs.sfmta.com/transitdata/google_transit.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-san-francisco-municipal-transportation-agency-sfmta-gtfs-50.zip?alt=media",
         "license": "http://www.sfmta.com/about-sfmta/reports/gtfs-transit-data"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2886",
+            "comment": " "
+        }
+    ]
 }

@@ -1,0 +1,26 @@
+{
+  "mdb_source_id": 2890,
+  "data_type": "gtfs",
+  "provider": "Trinity Metro",
+  "location": {
+    "country_code": "US",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-11-24 20:20:14.469584+00:00"
+    },
+    "municipality": "Dallas Fort Worth"
+  },
+  "urls": {
+    "direct_download": "https://gtfsdata.ridetm.org/gtfs/fwtatransitdata.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-dallas-fort-worth-trinity-metro-gtfs-2890.zip?alt=media",
+    "authentication_type": 0,
+    "license": "https://ridetrinitymetro.org/gtfs-data/"
+  },
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

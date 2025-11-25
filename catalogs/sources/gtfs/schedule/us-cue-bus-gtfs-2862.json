@@ -19,7 +19,12 @@
   },
   "feed_contact_email": "support+test+cuebus-va-us@trilliumtransit.com",
   "features": [],
-  "status": "active",
+  "status": "deprecated",
   "is_official": "True",
-  "redirect": []
+  "redirect": [
+      {
+          "id": "2885",
+          "comment": " "
+      }
+  ]
 }

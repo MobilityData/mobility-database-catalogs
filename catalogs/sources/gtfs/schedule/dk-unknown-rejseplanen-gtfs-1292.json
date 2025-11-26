@@ -2,6 +2,8 @@
     "mdb_source_id": 1292,
     "data_type": "gtfs",
     "provider": "Rejseplanen",
+    "is_official": "True",
+    "name": "Denmark Aggregate",
     "location": {
         "country_code": "DK",
         "bounding_box": {

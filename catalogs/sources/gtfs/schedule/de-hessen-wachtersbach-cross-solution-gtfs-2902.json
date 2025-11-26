@@ -1,0 +1,29 @@
+{
+  "mdb_source_id": 2902,
+  "data_type": "gtfs",
+  "provider": "CROSS Solution",
+  "location": {
+    "country_code": "DE",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-11-26 19:33:48.552556+00:00"
+    },
+    "subdivision_name": "Hessen",
+    "municipality": "Wächtersbach"
+  },
+  "urls": {
+    "direct_download": "https://citybus-waechtersbach-8be41f.gitlab.io/citybus-waechtersbach-gtfs.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-hessen-wachtersbach-cross-solution-gtfs-2902.zip?alt=media",
+    "authentication_type": 0,
+    "license": "https://gitlab.com/cbleek/citybus-waechtersbach/-/blob/main/LICENSE?ref_type=heads"
+  },
+  "name": "CityBus Wächtersbach",
+  "feed_contact_email": "bleek@cross-solution.de",
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

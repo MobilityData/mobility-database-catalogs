@@ -2,7 +2,7 @@
     "mdb_source_id": 2143,
     "data_type": "gtfs",
     "provider": "Regia Autonomă De Transport Brașov",
-    "status": "active",
+    "status": "deprecated",
     "location": {
         "country_code": "RO",
         "subdivision_name": "Brașov",
@@ -19,5 +19,10 @@
         "direct_download": "https://github.com/szjozsef/osm2gtfs/raw/refs/heads/master/output/gtfs/ro-ratbv.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-brasov-regia-autonoma-de-transport-brasov-gtfs-2143.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "2903",
+            "comment": " "
+        }
+    ]
 }

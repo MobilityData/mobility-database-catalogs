@@ -1,0 +1,24 @@
+{
+  "mdb_source_id": 2904,
+  "data_type": "gtfs",
+  "provider": "Czech national bus feed JDF",
+  "location": {
+    "country_code": "CZ",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-11-26 19:33:48.562181+00:00"
+    }
+  },
+  "urls": {
+    "direct_download": "https://owncloud.cesnet.cz/index.php/s/IMvVXZIHOuORDrB/download",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cz-czech-national--gtfs-2904.zip?alt=media",
+    "authentication_type": 0
+  },
+  "name": "Czech national feed (without PID, IDS JMK, Flixbus and PMDP)",
+  "features": [],
+  "status": "active",
+  "redirect": []
+}

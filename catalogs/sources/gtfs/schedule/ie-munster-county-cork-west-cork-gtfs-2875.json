@@ -19,7 +19,7 @@
     "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ie-munster-county-cork-west-cork-conne-gtfs-2875.zip?alt=media",
     "authentication_type": 0
   },
-  "name": "West Cork Connect",
+  "name": "Transport for Ireland (TFI) / National Transport Authority",
   "feed_contact_email": "info@addtransit.com",
   "features": [],
   "status": "active",

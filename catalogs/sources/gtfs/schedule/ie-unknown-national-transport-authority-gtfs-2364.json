@@ -2,7 +2,7 @@
     "mdb_source_id": 2364,
     "data_type": "gtfs",
     "provider": "Transport for Ireland (TFI)",
-    "name": "Aggregate Ireland feed from National Transport Authority",
+    "name": "Transport for Ireland (TFI) / National Transport Authority",
     "location": {
         "country_code": "IE",
         "bounding_box": {

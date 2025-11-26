@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 2988,
+    "data_type": "gtfs",
+    "provider": "Swiss Federal Railways (SBB)",
+    "name": "Systemaufgaben Kundeninformation (SKI+)",
+    "location": {
+        "country_code": "CH",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-11-26-T15:19:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.opentransportdata.swiss/dataset/timetable-2026-gtfs2020/permalink",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ch-unknown-swiss-federal-railways-sbb-gtfs-2988.zip?alt=media",
+        "license": "https://opentransportdata.swiss/en/terms-of-use/#Definitions"
+    }
+}

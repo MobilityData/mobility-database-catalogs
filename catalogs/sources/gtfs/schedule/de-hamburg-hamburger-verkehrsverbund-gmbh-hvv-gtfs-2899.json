@@ -2,6 +2,7 @@
     "mdb_source_id": 2899,
     "data_type": "gtfs",
     "provider": "Hamburger Verkehrsverbund GmbH (HVV)",
+    "is_official": "True",
     "status": "active",
     "location": {
         "country_code": "DE",

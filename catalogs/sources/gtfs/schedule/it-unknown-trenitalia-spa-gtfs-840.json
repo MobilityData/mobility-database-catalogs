@@ -16,5 +16,11 @@
     "urls": {
         "direct_download": "http://dati.toscana.it/dataset/8bb8f8fe-fe7d-41d0-90dc-49f2456180d1/resource/4f85393b-357d-443d-8378-65de4198505f/download/trenitalia.gtfs",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-unknown-trenitalia-spa-gtfs-840.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "1319",
+            "comment": " "
+        }
+    ]
 }

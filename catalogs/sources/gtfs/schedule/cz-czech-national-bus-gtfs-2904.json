@@ -20,6 +20,6 @@
   "name": "Czech national feed (without PID, IDS JMK, Flixbus and PMDP)",
   "features": [],
   "status": "active",
-  "is_official": "True",
+  "is_official": "",
   "redirect": []
 }

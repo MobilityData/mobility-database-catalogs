@@ -6,6 +6,7 @@
         "tu"
     ],
     "provider": "motionbuscard",
+    "is_official": "True",
     "urls": {
         "direct_download": "http://20.19.98.194:8328/Api/api/gtfs-realtime"
     }

@@ -2,6 +2,7 @@
     "mdb_source_id": 1915,
     "data_type": "gtfs",
     "provider": "OSYPA",
+    "is_official": "True",
     "location": {
         "country_code": "CY",
         "bounding_box": {

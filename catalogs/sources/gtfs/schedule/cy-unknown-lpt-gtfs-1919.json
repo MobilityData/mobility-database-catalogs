@@ -2,6 +2,7 @@
     "mdb_source_id": 1919,
     "data_type": "gtfs",
     "provider": "LPT",
+    "is_official": "True",
     "location": {
         "country_code": "CY",
         "bounding_box": {

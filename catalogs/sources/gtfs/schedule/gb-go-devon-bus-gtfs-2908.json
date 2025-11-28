@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 2908,
+    "data_type": "gtfs",
+    "provider": "Go Devon Bus",
+    "location": {
+        "country_code": "GB",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-11-27 17:03:48.547784+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.discoverpassenger.com/operator/godevonbus/dataset/current/download/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-go-devon-bus-gtfs-2908.zip?alt=media",
+        "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+}

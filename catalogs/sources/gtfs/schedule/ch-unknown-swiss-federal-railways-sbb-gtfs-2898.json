@@ -1,9 +1,9 @@
 {
     "mdb_source_id": 2898,
     "data_type": "gtfs",
-    "provider": "Swiss Federal Railways (SBB)",
+    "provider": "Systemaufgaben Kundeninformation SKI+",
     "is_official": "True",
-    "name": "2026 Systemaufgaben Kundeninformation (SKI+)",
+    "name": "Switzerland Aggregate 2026",
     "location": {
         "country_code": "CH",
         "bounding_box": {

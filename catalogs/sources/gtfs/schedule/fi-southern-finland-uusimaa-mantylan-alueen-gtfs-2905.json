@@ -15,7 +15,7 @@
     "municipality": "Uusimaa"
   },
   "urls": {
-    "direct_download": "https://github.com/eidancottierr-jpg/mal-testgtfs",
+    "direct_download": "https://github.com/eidancottierr-jpg/mal-testgtfs/raw/refs/heads/main/mantyla_gtfs_schdl.zip",
     "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fi-southern-finland-uusimaa-mantylan-alueen-gtfs-2905.zip?alt=media",
     "authentication_type": 0
   },

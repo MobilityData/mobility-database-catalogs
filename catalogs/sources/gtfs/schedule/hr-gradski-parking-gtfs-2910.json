@@ -1,5 +1,5 @@
 {
-  "mdb_source_id": 2915,
+  "mdb_source_id": 2910,
   "data_type": "gtfs",
   "provider": "Gradski parking d.o.o.",
   "location": {
@@ -14,7 +14,7 @@
   },
   "urls": {
     "direct_download": "https://www.gradski-parking.hr/upload/stranice/2022/08/2022-08-30/89/gtfs.zip",
-    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/hr-gradski-parking-gtfs-2915.zip?alt=media",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/hr-gradski-parking-gtfs-2910.zip?alt=media",
     "authentication_type": 0
   },
   "features": [],

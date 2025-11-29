@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 2916,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Metlink",
+    "is_official": "True",
+    "static_reference": [
+        "1132"
+    ],
+    "urls": {
+        "direct_download": "https://api.opendata.metlink.org.nz/v1/gtfs-rt/servicealerts",
+        "authentication_type": 2,
+        "authentication_info": "https://opendata.metlink.org.nz/",
+        "api_key_parameter_name": "x-api-key",
+        "license": "https://opendata.metlink.org.nz/getting-started"
+    }
+}

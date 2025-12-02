@@ -21,7 +21,12 @@
   },
   "name": "RATBV",
   "features": [],
-  "status": "active",
+  "status": "deprecated",
   "is_official": "False",
-  "redirect": []
+  "redirect": [
+    {
+      "id": "2143",
+      "comment": " "
+    }
+  ]
 }

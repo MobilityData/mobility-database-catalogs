@@ -1,0 +1,28 @@
+{
+  "mdb_source_id": 2921,
+  "data_type": "gtfs",
+  "provider": "Transtejo Soflusa (TTSL)",
+  "location": {
+    "country_code": "PT",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-12-08 23:07:40.966486+00:00"
+    },
+    "subdivision_name": "Lisbon",
+    "municipality": "Lisbon"
+  },
+  "urls": {
+    "direct_download": "https://api.transtejo.pt/files/GTFS.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-lisbon-lisbon-transtejo-soflu-gtfs-2921.zip?alt=media",
+    "authentication_type": 0,
+    "license": "https://docs.carrismetropolitana.pt/covered-area"
+  },
+  "name": "Transtejo Soflusa (TTSL)",
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

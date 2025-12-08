@@ -2,7 +2,7 @@
     "mdb_source_id": 1005,
     "data_type": "gtfs",
     "provider": "Dopravný podnik Bratislava, a.s.",
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "SK",
         "subdivision_name": "Bratislavský kraj",
@@ -18,5 +18,11 @@
         "direct_download": "https://opendata.bratislava.sk/dataset/download/cestovny-poriadok-20220725/1",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/sk-bratislavsky-kraj-dopravny-podnik-bratislava-gtfs-1005.zip?alt=media",
         "license": "https://opendata.bratislava.sk/en/dataset/show/cestovny-poriadok-20210801"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2918",
+            "comment": " "
+        }
+    ]
 }

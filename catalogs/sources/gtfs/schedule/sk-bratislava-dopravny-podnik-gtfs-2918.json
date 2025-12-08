@@ -21,5 +21,6 @@
   },
   "features": [],
   "status": "active",
+  "is_official": "True",
   "redirect": []
 }

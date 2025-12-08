@@ -14,16 +14,12 @@
     "subdivision_name": "Bratislavský kraj"
   },
   "urls": {
-    "direct_download": "http://transiq.xhyrom.dev/gtfs/sk/ids-bk_regional.zip",
+    "direct_download": "https://transiq.xhyrom.dev/gtfs/sk/ids-bk_regional.zip",
     "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/sk-bratislavsky-kraj-ids-bk-regional-gtfs-2919.zip?alt=media",
     "authentication_type": 0
   },
   "name": "ARRIVA Mobility Solutions",
   "features": [],
   "status": "active",
-<<<<<<< HEAD
-  "is_official": "True",
-=======
->>>>>>> 91ec9ba (add: IDS BK Regional Bus schedule feed; addresses issue #1012)
   "redirect": []
 }

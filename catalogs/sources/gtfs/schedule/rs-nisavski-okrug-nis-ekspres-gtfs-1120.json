@@ -2,6 +2,7 @@
     "mdb_source_id": 1120,
     "data_type": "gtfs",
     "provider": "Niš-ekspres, Lasta a.d. Beograd, Strela-Obrenovac",
+    "status": "deprecated",
     "location": {
         "country_code": "RS",
         "subdivision_name": "Nišavski okrug",
@@ -17,5 +18,11 @@
     "urls": {
         "direct_download": "https://data.gov.rs/en/datasets/r/b8fdbafe-10af-4b1a-a647-5f50e1dd33fb",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/rs-nisavski-okrug-nis-ekspres-gtfs-1120.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2918",
+            "comment": " "
+        }
+    ]
 }

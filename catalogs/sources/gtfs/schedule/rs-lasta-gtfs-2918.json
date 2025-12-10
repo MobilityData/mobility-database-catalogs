@@ -1,5 +1,5 @@
 {
-  "mdb_source_id": 2924,
+  "mdb_source_id": 2918,
   "data_type": "gtfs",
   "provider": "Lasta",
   "location": {
@@ -14,7 +14,7 @@
   },
   "urls": {
     "direct_download": "https://arweave.net/7mSCw5oriFDVXWHd0yd1qxhzPAB5gvBeMbUGGBVHoos",
-    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/rs-lasta-gtfs-2924.zip?alt=media",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/rs-lasta-gtfs-2918.zip?alt=media",
     "authentication_type": 0
   },
   "feed_contact_email": "info@polazak.com",

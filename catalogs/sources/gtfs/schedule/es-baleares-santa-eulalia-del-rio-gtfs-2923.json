@@ -1,0 +1,28 @@
+{
+  "mdb_source_id": 2923,
+  "data_type": "gtfs",
+  "provider": "Santa Eulalia Ferry",
+  "location": {
+    "country_code": "ES",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-12-08 23:23:44.098460+00:00"
+    },
+    "subdivision_name": "Baleares",
+    "municipality": "Santa Eulalia del Río"
+  },
+  "urls": {
+    "direct_download": "https://www.santaeulaliaferry.com/gtfs_feed_2025.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-baleares-santa-eulalia-del-rio-gtfs-2923.zip?alt=media",
+    "authentication_type": 0
+  },
+  "name": "Santa Eulalia Cityboat",
+  "feed_contact_email": "info@santaeulaliaferry.com",
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

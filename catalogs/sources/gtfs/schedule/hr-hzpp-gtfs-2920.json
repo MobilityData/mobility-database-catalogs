@@ -1,0 +1,24 @@
+{
+  "mdb_source_id": 2920,
+  "data_type": "gtfs",
+  "provider": "HŽ Passenger Transport",
+  "location": {
+    "country_code": "HR",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-12-08 23:07:40.970474+00:00"
+    }
+  },
+  "urls": {
+    "direct_download": "https://www.hzpp.hr/api/v1/repository/download/852f76d2-8df3-4957-b30b-dc4b88b1caca",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/hr-hzpp-gtfs-2920.zip?alt=media",
+    "authentication_type": 0
+  },
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

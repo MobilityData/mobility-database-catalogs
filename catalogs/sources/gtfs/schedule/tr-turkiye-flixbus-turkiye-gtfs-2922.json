@@ -1,0 +1,26 @@
+{
+  "mdb_source_id": 2922,
+  "data_type": "gtfs",
+  "provider": "Flixbus Türkiye",
+  "location": {
+    "country_code": "TR",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-12-08 23:23:44.106414+00:00"
+    },
+    "subdivision_name": "Türkiye"
+  },
+  "urls": {
+    "direct_download": "http://gtfs.gis.flix.tech/gtfs_generic_turkey.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/tr-turkiye-flixbus-turkiye-gtfs-2922.zip?alt=media",
+    "authentication_type": 0
+  },
+  "name": "Flixbus Türkiye",
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

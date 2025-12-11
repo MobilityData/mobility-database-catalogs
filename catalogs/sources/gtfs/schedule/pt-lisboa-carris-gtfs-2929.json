@@ -1,0 +1,27 @@
+{
+  "mdb_source_id": 2929,
+  "data_type": "gtfs",
+  "provider": "Carris",
+  "location": {
+    "country_code": "PT",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-12-10 20:50:54.858775+00:00"
+    },
+    "municipality": "Lisbon"
+  },
+  "urls": {
+    "direct_download": "https://gateway.carris.pt/gateway/gtfs/api/v2.11/GTFS",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-lisbon-carris-gtfs-2929.zip?alt=media",
+    "authentication_type": 0
+  },
+  "name": "Carris",
+  "feed_contact_email": "pedro.silva@tecmic.pt",
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

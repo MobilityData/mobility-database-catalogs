@@ -1,0 +1,25 @@
+{
+  "mdb_source_id": 2926,
+  "data_type": "gtfs",
+  "provider": "Autobusos Interurbans",
+  "location": {
+    "country_code": "ES",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-12-11 16:23:44.098460+00:00"
+    },
+    "subdivision_name": "Catalonia",
+    "municipality": ""
+  },
+  "urls": {
+    "direct_download": "https://territori.gencat.cat/web/.content/home/serveis/visors-cartografia/bases-cartografiques/infraestructures-mobilitat/autobusos-interurbans/busos-interurbans-GTFS.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-catalonia-autobusos-interurbans-gtfs-2926.zip?alt=media",
+    "authentication_type": 0
+  },
+  "features": [],
+  "status": "active",
+  "redirect": []
+}

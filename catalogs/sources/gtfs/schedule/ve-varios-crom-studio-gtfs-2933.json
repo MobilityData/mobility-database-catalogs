@@ -1,0 +1,26 @@
+{
+  "mdb_source_id": 2933,
+  "data_type": "gtfs",
+  "provider": "Crom Studio",
+  "location": {
+    "country_code": "VE",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-12-11 20:47:17.487113+00:00"
+    },
+    "municipality": "Metro de Maracaibo"
+  },
+  "urls": {
+    "direct_download": "https://transporte.cromstudio.com.ve/data/horarios.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ve-varios-crom-studio-gtfs-2933.zip?alt=media",
+    "authentication_type": 0
+  },
+  "name": "Metro de Maracaibo y Terminales de Pasajeros de varios municipips",
+  "feed_contact_email": "soporte@cromstudio.com.ve",
+  "features": [],
+  "status": "active",
+  "redirect": []
+}

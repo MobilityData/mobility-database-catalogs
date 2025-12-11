@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": xxxx,
+    "data_type": "gtfs",
+    "provider": "xxx",
+    "name": "Libellule Sytral Mobilités",
+    "features": [
+    ],
+    "location": {
+        "country_code": "FR",
+        "subdivision_name": "Auvergne-Rhône-Alpes",
+        "municipality": "Communauté d'Agglomération de Villefranche Beaujolais Saône",
+        "bounding_box": {
+            "minimum_latitude": 45.969,
+            "maximum_latitude": 46.065,
+            "minimum_longitude": 4.563,
+            "maximum_longitude": 4.768,
+            "extracted_on": "2024-02-07T13:02:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "",
+        "latest": "",
+        "license": ""
+    }
+}

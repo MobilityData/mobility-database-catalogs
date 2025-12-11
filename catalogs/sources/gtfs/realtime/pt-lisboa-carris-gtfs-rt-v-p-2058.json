@@ -10,5 +10,11 @@
     ],
     "urls": {
         "direct_download": "https://gateway.carris.pt/gateway/gtfs/api/v2.8/GTFS/realtime/vehiclepositions"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2930",
+            "comment": " "
+        }
+    ]
 }

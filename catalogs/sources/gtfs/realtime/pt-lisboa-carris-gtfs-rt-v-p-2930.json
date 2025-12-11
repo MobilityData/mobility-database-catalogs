@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 2930,
+    "data_type": "gtfs-rt",
+    "is_official": "True",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Carris",
+    "static_reference": [
+        "2929"
+    ],
+    "urls": {
+        "direct_download": "https://gateway.carris.pt/gateway/gtfs/api/v2.11/GTFS/realtime/vehiclepositions"
+    }
+}

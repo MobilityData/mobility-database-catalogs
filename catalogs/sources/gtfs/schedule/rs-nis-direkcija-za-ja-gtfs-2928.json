@@ -1,0 +1,24 @@
+{
+  "mdb_source_id": 2928,
+  "data_type": "gtfs",
+  "provider": "Direkcija za javni prevoz Niš",
+  "location": {
+    "country_code": "RS",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-12-10 20:50:54.874066+00:00"
+    },
+    "municipality": "Niš"
+  },
+  "urls": {
+    "direct_download": "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/nis-gtfs/latest/nis_gtfs.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/rs-nis-direkcija-za-ja-gtfs-2928.zip?alt=media",
+    "authentication_type": 0
+  },
+  "features": [],
+  "status": "active",
+  "redirect": []
+}

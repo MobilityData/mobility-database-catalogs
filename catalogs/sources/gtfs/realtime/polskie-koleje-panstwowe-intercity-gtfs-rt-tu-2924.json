@@ -1,0 +1,20 @@
+{
+  "mdb_source_id": 2924,
+  "data_type": "gtfs-rt",
+  "entity_type": [
+    "tu"
+  ],
+  "provider": "Polskie Koleje Państwowe Intercity (PKP Intercity)",
+  "urls": {
+    "direct_download": "https://gtfs.kasznia.net/rt/pkpic.pb",
+    "authentication_type": 0
+  },
+  "static_reference": [
+    "2088"
+  ],
+  "features": [],
+  "note": "",
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

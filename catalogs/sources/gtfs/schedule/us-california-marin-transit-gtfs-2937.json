@@ -1,0 +1,28 @@
+{
+    "mdb_source_id": 2937,
+    "data_type": "gtfs",
+    "provider": "Marin Transit",
+    "is_official": "True",
+    "feed_contact_email": "gtfs@marintransit.org",
+    "features": [
+        "fares-v1"
+    ],
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "San Francisco",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2025-12-11 20:47:17.501873+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://marintransit.gov/data/google_transit.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-marin-transit-gtfs-2937.zip?alt=media"
+    },
+    "redirect": []
+}

@@ -1,0 +1,28 @@
+{
+  "mdb_source_id": 2935,
+  "data_type": "gtfs",
+  "provider": "ARCE - Agência Reguladora do Estado do Ceará",
+  "location": {
+    "country_code": "BR",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-12-11 20:47:17.492885+00:00"
+    },
+    "subdivision_name": "Região Metropolitana de Fortaleza",
+    "municipality": "Fortaleza"
+  },
+  "urls": {
+    "direct_download": "https://www.arce.ce.gov.br/wp-content/uploads/sites/53/2018/11/GTFS_Arce_01082025.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/br-regiao-metropolitana-de-fortaleza-fortaleza-arce-agencia-gtfs-2935.zip?alt=media",
+    "authentication_type": 0,
+    "license": "https://www.arce.ce.gov.br/download/transportes/"
+  },
+  "name": "Ônibus ARCE",
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

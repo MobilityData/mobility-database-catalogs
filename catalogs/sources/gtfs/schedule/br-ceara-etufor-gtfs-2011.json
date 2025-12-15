@@ -2,6 +2,7 @@
     "mdb_source_id": 2011,
     "data_type": "gtfs",
     "provider": "Etufor",
+    "status": "deprecated",
     "location": {
         "country_code": "BR",
         "subdivision_name": "Ceará",

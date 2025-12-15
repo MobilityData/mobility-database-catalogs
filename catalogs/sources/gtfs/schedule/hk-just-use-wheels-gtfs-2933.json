@@ -1,0 +1,25 @@
+{
+  "mdb_source_id": 2933,
+  "data_type": "gtfs",
+  "provider": "Just Use Wheels",
+  "location": {
+    "country_code": "HK",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-12-11 20:47:17.514547+00:00"
+    }
+  },
+  "urls": {
+    "direct_download": "http://feed.justusewheels.com/hk.gtfs.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/hk-just-use-wheels-gtfs-2933.zip?alt=media",
+    "authentication_type": 0,
+    "license": "https://opendatacommons.org/licenses/odbl/1.0/"
+  },
+  "name": "Just Use Wheels",
+  "features": [],
+  "status": "active",
+  "redirect": []
+}

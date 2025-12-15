@@ -1,0 +1,26 @@
+{
+  "mdb_source_id": 2934,
+  "data_type": "gtfs",
+  "provider": "Fortaleza",
+  "location": {
+    "country_code": "BR",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-12-11 20:47:17.497410+00:00"
+    },
+    "municipality": "Fortaleza"
+  },
+  "urls": {
+    "direct_download": "https://dados.fortaleza.ce.gov.br/dataset/d6f1e64c-aca3-4867-8f39-53b7c9c2d211/resource/7058bfbe-5ba2-45f4-9a91-af1508a7c05b/download/arquivo_gtfs_03.10.2025.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/br-fortaleza-fortaleza-gtfs-2934.zip?alt=media",
+    "authentication_type": 0
+  },
+  "name": "ETUFOR",
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

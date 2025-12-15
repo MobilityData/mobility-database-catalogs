@@ -2,6 +2,7 @@
     "mdb_source_id": 2011,
     "data_type": "gtfs",
     "provider": "Etufor",
+    "status": "deprecated",
     "location": {
         "country_code": "BR",
         "subdivision_name": "Ceará",
@@ -19,5 +20,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/br-ceara-etufor-gtfs-2011.zip?alt=media",
         "license": "https://dados.fortaleza.ce.gov.br/dataset/51afc610-d48b-4fa8-8dea-9c65747148c7/resource/51e3d494-3b41-4328-a971-964e2cdd8a22"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2934"
+        }
+    ]
 }

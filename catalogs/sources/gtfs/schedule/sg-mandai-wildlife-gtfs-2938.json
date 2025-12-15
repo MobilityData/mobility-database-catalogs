@@ -1,0 +1,25 @@
+{
+  "mdb_source_id": 2938,
+  "data_type": "gtfs",
+  "provider": "Mandai Wildlife Reserve",
+  "location": {
+    "country_code": "SG",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-12-11 20:47:17.510511+00:00"
+    }
+  },
+  "urls": {
+    "direct_download": "https://www.mandai.com/content/dam/mandai/misc/gtfs.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/sg-mandai-wildlife-gtfs-2938.zip?alt=media",
+    "authentication_type": 0
+  },
+  "feed_contact_email": "enquiry@mandai.com",
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

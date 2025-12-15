@@ -1,0 +1,28 @@
+{
+  "mdb_source_id": 2936,
+  "data_type": "gtfs",
+  "provider": "Alexandria DOT",
+  "location": {
+    "country_code": "US",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-12-11 20:47:17.501873+00:00"
+    },
+    "municipality": "City of Alexandria"
+  },
+  "urls": {
+    "direct_download": "https://data.trilliumtransit.com/gtfs/cityofalexandria-va-us/cityofalexandria-va-us--flex-v2.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-city-of-alexandria-alexandria-dot-gtfs-2936.zip?alt=media",
+    "authentication_type": 0
+  },
+  "name": "City of Alexandria",
+  "features": [
+      "flex-v2"
+  ],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

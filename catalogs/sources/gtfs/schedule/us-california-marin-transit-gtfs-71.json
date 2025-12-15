@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Marin Transit",
     "feed_contact_email": "gtfs@marintransit.org",
+    "status": "deprecated",
     "features": [
         "fares-v1"
     ],

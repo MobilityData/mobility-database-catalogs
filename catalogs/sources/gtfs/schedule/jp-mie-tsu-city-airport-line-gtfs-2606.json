@@ -4,6 +4,7 @@
     "provider": "Tsu Airport Line",
     "is_official": "True",
     "feed_contact_email": "mieru@rosenzu.com",
+    "status": "deprecated",
     "location": {
         "country_code": "JP",
         "subdivision_name": "Mie",

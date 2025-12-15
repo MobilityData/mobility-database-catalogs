@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Kuwana City",
     "is_official": "True",
+    "status": "deprecated",
     "location": {
         "country_code": "JP",
         "subdivision_name": "Mie",

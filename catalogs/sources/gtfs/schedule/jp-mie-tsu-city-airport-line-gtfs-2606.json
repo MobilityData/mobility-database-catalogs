@@ -4,6 +4,7 @@
     "provider": "Tsu Airport Line",
     "is_official": "True",
     "feed_contact_email": "mieru@rosenzu.com",
+    "status": "deprecated",
     "location": {
         "country_code": "JP",
         "subdivision_name": "Mie",
@@ -20,5 +21,11 @@
         "direct_download": "https://api.gtfs-data.jp/v2/organizations/tsu-airportline/feeds/airportline/files/feed.zip?rid=next",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/jp-mie-tsu-city-airport-line-gtfs-2606.zip?alt=media",
         "license": "https://creativecommons.org/licenses/by/4.0/deed.ja"
-    }
+    },
+    "redirect": [
+        {
+            "id": "jbda-tsu-airportline-airportline",
+            "comment": " "
+        }
+    ]
 }

@@ -1,0 +1,27 @@
+{
+  "mdb_source_id": 2945,
+  "data_type": "gtfs",
+  "provider": "КП Бучатранссервіс",
+  "location": {
+    "country_code": "UA",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-12-17 14:34:56.563840+00:00"
+    },
+    "municipality": "Bucha"
+  },
+  "urls": {
+    "direct_download": "https://gw.x24.digital/api/bu/gtfs/v1/download/static",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ua-bucha-gtfs-2945.zip?alt=media",
+    "authentication_type": 2,
+    "authentication_info": "https://omr.gov.ua/ua/city/departments/dtks/open-data/",
+    "api_key_parameter_name": "ApiKey"
+  },
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

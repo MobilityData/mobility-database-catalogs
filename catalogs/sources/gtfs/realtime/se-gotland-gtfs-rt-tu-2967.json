@@ -1,0 +1,18 @@
+{
+    "mdb_source_id": 2967,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Gotland",
+    "static_reference": [
+        "2939"
+    ],
+    "urls": {
+        "direct_download": "https://opendata.samtrafiken.se/gtfs-rt-sweden/gotland/TripUpdatesSweden.pb",
+        "authentication_type": 1,
+        "authentication_info": "https://developer.trafiklab.se/register",
+        "api_key_parameter_name": "key",
+        "license": "https://www.trafiklab.se/api/gtfs-datasets/gtfs-sweden/#licence"
+    }
+}

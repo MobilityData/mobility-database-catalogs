@@ -1,0 +1,28 @@
+{
+  "mdb_source_id": 2939,
+  "data_type": "gtfs",
+  "provider": "Trafiklab",
+  "location": {
+    "country_code": "SE",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-12-17 14:34:56.548875+00:00"
+    }
+  },
+  "urls": {
+    "direct_download": "https://opendata.samtrafiken.se/gtfs-sweden/sweden.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/se-trafiklab-gtfs-2939.zip?alt=media",
+    "authentication_type": 1,
+    "authentication_info": "https://developer.trafiklab.se/register",
+    "api_key_parameter_name": "key",
+    "license": "https://www.trafiklab.se/api/gtfs-datasets/gtfs-sweden/#licence"
+  },
+  "name": "GTFS Sweden 3",
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

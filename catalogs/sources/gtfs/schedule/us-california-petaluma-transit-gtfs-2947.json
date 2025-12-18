@@ -1,0 +1,29 @@
+{
+  "mdb_source_id": 2947,
+  "data_type": "gtfs",
+  "provider": "Petaluma Transit",
+  "location": {
+    "country_code": "US",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-12-17 14:34:56.572248+00:00"
+    },
+    "subdivision_name": "California",
+    "municipality": "Petaluma"
+  },
+  "urls": {
+    "direct_download": "http://api.511.org/transit/datafeeds?operator_id=PE",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-petaluma-transit-gtfs-2947.zip?alt=media",
+    "authentication_type": 1,
+    "authentication_info": "https://511.org/open-data/token",
+    "api_key_parameter_name": "api_key",
+    "license": "https://511.org/sites/default/files/pdfs/511_Data_Agreement_Final.pdf"
+  },
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

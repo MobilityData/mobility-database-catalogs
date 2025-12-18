@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Petaluma Transit",
     "is_official": "True",
+    "status": "deprecated",
     "features": [
         "fares-v1"
     ],
@@ -21,5 +22,11 @@
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/petalumatransit-petaluma-ca-us/petalumatransit-petaluma-ca-us.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-petaluma-transit-gtfs-72.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2947",
+            "comment": " "
+        }
+    ]
 }

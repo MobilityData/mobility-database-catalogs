@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Santa Rosa CityBus",
     "is_official": "True",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -18,5 +19,11 @@
     "urls": {
         "direct_download": "https://www.srcity.org/DocumentCenter/View/38683/Santa_Rosa_GTFS",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-santa-rosa-citybus-gtfs-1986.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2948",
+            "comment": " "
+        }
+    ]
 }

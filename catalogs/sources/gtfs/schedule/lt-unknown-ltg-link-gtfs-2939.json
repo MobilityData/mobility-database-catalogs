@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 2939,
+    "data_type": "gtfs",
+    "provider": "LTG Link",
+    "feed_contact_email": "jbb@kaidan.im",
+    "location": {
+        "country_code": "LT",
+        "bounding_box": {
+            "minimum_latitude": 50.068665,
+            "maximum_latitude": 59.440006,
+            "minimum_longitude": 14.549407,
+            "maximum_longitude": 26.706459,
+            "extracted_on": "2025-12-19T23:55:02+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://jbb.ghsq.de/gtfs/lt-ltglink.gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lt-unknown-ltg-link-gtfs-2939.zip?alt=media"
+    },
+    "redirect": []
+}

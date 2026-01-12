@@ -21,7 +21,7 @@
     "api_key_parameter_name": "ApiKey"
   },
   "features": [],
-  "status": "active",
+  "status": "inactive",
   "is_official": "True",
   "redirect": []
 }

@@ -5,6 +5,7 @@
         "sa"
     ],
     "provider": "Gotland",
+    "is_official": "True",
     "static_reference": [
         "2939"
     ],

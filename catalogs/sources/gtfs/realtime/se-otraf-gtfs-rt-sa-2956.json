@@ -5,6 +5,7 @@
         "sa"
     ],
     "provider": "Östgötatrafiken",
+    "is_official": "True",
     "static_reference": [
         "2939"
     ],

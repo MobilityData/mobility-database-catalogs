@@ -5,6 +5,7 @@
         "tu"
     ],
     "provider": "Värmlandstrafik",
+    "is_official": "True",
     "static_reference": [
         "2939"
     ],

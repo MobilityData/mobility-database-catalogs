@@ -4,6 +4,7 @@
     "provider": "Clovis Transit",
     "feed_contact_email": "support@passiotech.com",
     "features": [],
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

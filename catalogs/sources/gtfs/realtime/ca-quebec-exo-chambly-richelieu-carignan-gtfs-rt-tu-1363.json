@@ -15,5 +15,11 @@
         "authentication_info": "https://exo.quebec/fr/a-propos/donnees-ouvertes/FormulaireDemandeAcces",
         "api_key_parameter_name": "token",
         "license": "https://exo.quebec/fr/a-propos/donnees-ouvertes/FormulaireDemandeAcces"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2992",
+            "comment": " "
+        }
+    ]
 }

@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 3022,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Exo Le Richelain et Roussillon",
+    "is_official": "True",
+    "static_reference": [
+        "2142"
+    ],
+    "urls": {
+        "direct_download": "https://opendata.exo.quebec/ServiceGTFSR/TripUpdate.pb?agency=LRRS",
+        "authentication_type": 1,
+        "authentication_info": "https://exo.quebec/fr/a-propos/donnees-ouvertes/FormulaireDemandeAcces",
+        "api_key_parameter_name": "token",
+        "license": "https://exo.quebec/fr/a-propos/donnees-ouvertes/FormulaireDemandeAcces"
+    }
+}

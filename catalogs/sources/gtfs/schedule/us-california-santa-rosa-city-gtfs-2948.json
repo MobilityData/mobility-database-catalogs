@@ -1,0 +1,30 @@
+{
+  "mdb_source_id": 2948,
+  "data_type": "gtfs",
+  "provider": "Santa Rosa CityBus",
+  "location": {
+    "country_code": "US",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-12-17 14:34:56.567988+00:00"
+    },
+    "subdivision_name": "California",
+    "municipality": "Santa Rosa"
+  },
+  "urls": {
+    "direct_download": "http://api.511.org/transit/datafeeds?operator_id=SR",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-santa-rosa-city-gtfs-2948.zip?alt=media",
+    "authentication_type": 1,
+    "authentication_info": "https://511.org/open-data/token",
+    "api_key_parameter_name": "api_key",
+    "license": "https://511.org/sites/default/files/pdfs/511_Data_Agreement_Final.pdf"
+  },
+  "feed_contact_email": "tellus@srcity.org",
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 2966,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Kalmar Länstrafik",
+    "is_official": "True",
+    "static_reference": [
+        "2939"
+    ],
+    "urls": {
+        "direct_download": "https://opendata.samtrafiken.se/gtfs-rt-sweden/klt/VehiclePositionsSweden.pb",
+        "authentication_type": 1,
+        "authentication_info": "https://developer.trafiklab.se/register",
+        "api_key_parameter_name": "key",
+        "license": "https://www.trafiklab.se/api/gtfs-datasets/gtfs-sweden/#licence"
+    }
+}

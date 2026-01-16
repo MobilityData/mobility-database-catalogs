@@ -1,0 +1,28 @@
+{
+  "mdb_source_id": 2946,
+  "data_type": "gtfs",
+  "provider": "Odesa",
+  "location": {
+    "country_code": "UA",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-12-17 14:34:56.559416+00:00"
+    },
+    "municipality": "Odesa"
+  },
+  "urls": {
+    "direct_download": "https://gw.x24.digital/api/od-all/gtfs/v1/download/static",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ua-odesa-gtfs-2946.zip?alt=media",
+    "authentication_type": 2,
+    "authentication_info": "https://omr.gov.ua/ua/city/departments/dtks/open-data/",
+    "api_key_parameter_name": "ApiKey",
+    "license": "https://omr.gov.ua/ua/city/departments/dtks/open-data/"
+  },
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

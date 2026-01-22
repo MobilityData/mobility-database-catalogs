@@ -14,7 +14,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/collegamenti-marittimi-moby/1163/latest/download",
+        "direct_download": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00031_1_GTFS_dati_grimaldi.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-regione-autonoma-della-sardegna-collegamenti-marittimi-grimaldi-gtfs-1192.zip?alt=media"
     }
 }

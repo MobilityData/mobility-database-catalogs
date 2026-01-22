@@ -15,7 +15,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://www.sardegnamobilita.it/opendata/dati_privati.zip",
+        "direct_download": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00007_1_dati_privati.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-regione-autonoma-della-sardegna-asara-giuseppe-eredi-autoservizi-srl-gtfs-1049.zip?alt=media"
     }
 }

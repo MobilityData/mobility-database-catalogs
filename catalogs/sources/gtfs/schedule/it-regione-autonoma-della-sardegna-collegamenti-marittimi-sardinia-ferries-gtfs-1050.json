@@ -14,7 +14,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://www.sardegnamobilita.it/opendata/dati_sardinia_ferries.zip",
+        "direct_download": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00028_1_dati_sardinia_ferries.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-regione-autonoma-della-sardegna-collegamenti-marittimi-sardinia-ferries-gtfs-1050.zip?alt=media"
     }
 }

@@ -1,10 +1,11 @@
 {
-    "mdb_source_id": 1052,
+    "mdb_source_id": 2997,
     "data_type": "gtfs",
     "provider": "TRENITALIA",
     "features": [
         "fares-v1"
     ],
+    "is_official": "True",
     "location": {
         "country_code": "IT",
         "subdivision_name": "Regione Autonoma della Sardegna",
@@ -17,7 +18,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://www.sardegnamobilita.it/opendata/dati_trenitalia.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-regione-autonoma-della-sardegna-trenitalia-gtfs-1052.zip?alt=media"
+        "direct_download": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00008_1_dati_trenitalia.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-regione-autonoma-della-sardegna-trenitalia-gtfs-2997.zip?alt=media"
     }
 }

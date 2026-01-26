@@ -1,9 +1,9 @@
 {
-    "mdb_source_id": 1049,
+    "mdb_source_id": 2993,
     "data_type": "gtfs",
     "provider": "ASARA GIUSEPPE EREDI AUTOSERVIZI S.R.L.",
     "name": "Quadri orari linee contributate",
-    "status": "deprecated",
+    "is_official": "True",
     "location": {
         "country_code": "IT",
         "subdivision_name": "Regione Autonoma della Sardegna",
@@ -16,13 +16,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://www.sardegnamobilita.it/opendata/dati_privati.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-regione-autonoma-della-sardegna-asara-giuseppe-eredi-autoservizi-srl-gtfs-1049.zip?alt=media"
-    },
-    "redirect": [
-        {
-            "id": "2993",
-            "comment": " "
-        }
-    ]
+        "direct_download": "http://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00007_1_dati_privati.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-regione-autonoma-della-sardegna-asara-giuseppe-eredi-autoservizi-srl-gtfs-2993.zip?alt=media"
+    }
 }

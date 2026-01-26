@@ -1,0 +1,29 @@
+{
+  "mdb_source_id": 2941,
+  "data_type": "gtfs",
+  "provider": "NOMAGO, storitve mobilnosti in potovanj, d.o.o.",
+  "location": {
+    "country_code": "SI",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2025-12-17 14:34:56.548875+00:00"
+    }
+  },
+  "urls": {
+    "direct_download": "https://b2b.nap.si/data/b2b.gtfs.brezice",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/si-municipality-of-brezice-gtfs-2941.zip?alt=media",
+    "authentication_type": 2,
+    "authentication_info": "https://nap.si/resources/doc/nap_B2B_en.pdf",
+    "api_key_parameter_name": "Authorization",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/deed.sl"
+  },
+  "name": "NOMAGO",
+  "feed_contact_email": "info@nomago.si",
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

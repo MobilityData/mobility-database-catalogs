@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 2939,
+    "mdb_source_id": 2991,
     "data_type": "gtfs",
     "provider": "LTG Link",
     "feed_contact_email": "jbb@kaidan.im",
@@ -16,7 +16,7 @@
     "urls": {
         "direct_download": "https://jbb.ghsq.de/gtfs/lt-ltglink.gtfs.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lt-unknown-ltg-link-gtfs-2939.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lt-unknown-ltg-link-gtfs-2991.zip?alt=media"
     },
     "redirect": []
 }

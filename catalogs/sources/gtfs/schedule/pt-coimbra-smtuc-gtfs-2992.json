@@ -1,9 +1,8 @@
 {
-    "mdb_source_id": 2851,
+    "mdb_source_id": 2992,
     "data_type": "gtfs",
     "provider": "SMTUC",
     "is_official": "True",
-    "status": "deprecated",
     "location": {
         "country_code": "PT",
         "subdivision_name": "Região de Coimbra",
@@ -17,15 +16,10 @@
         }
     },
     "urls": {
-        "direct_download": "https://dados.gov.pt/pt/datasets/r/cd70bb17-9ff3-4358-903c-2a7d4d965078",
+        "direct_download": "https://dados.gov.pt/pt/datasets/r/bdae1dd0-74e5-4c52-8234-b7cb1cf5bee2",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-regiao-de-coimbra-smtuc-gtfs-2851.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-regiao-de-coimbra-smtuc-gtfs-2992.zip?alt=media",
         "license": "https://dados.gov.pt/pt/datasets/gtfs-estaticos-servicos-municipalizados-de-transportes-urbanos-de-coimbra/"
     },
-    "redirect": [
-        {
-            "id": "2992",
-            "comment": " "
-        }
-    ]
+    "redirect": []
 }

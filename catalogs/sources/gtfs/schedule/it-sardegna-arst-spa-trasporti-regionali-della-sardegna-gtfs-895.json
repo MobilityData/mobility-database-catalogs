@@ -15,7 +15,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://www.arstspa.info/arst-cagliari-it.zip",
+        "direct_download": "https://www.arstspa.info/arst-cagliari-it.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-sardegna-arst-spa-trasporti-regionali-della-sardegna-gtfs-895.zip?alt=media"
     }
 }

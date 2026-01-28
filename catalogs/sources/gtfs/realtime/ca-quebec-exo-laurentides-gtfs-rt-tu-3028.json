@@ -1,16 +1,16 @@
 {
-    "mdb_source_id": 2993,
+    "mdb_source_id": 3028,
     "data_type": "gtfs-rt",
     "entity_type": [
-        "vp"
+        "tu"
     ],
-    "provider": "Exo Chambly-Richelieu-Carignan",
+    "provider": "Exo Laurentides",
     "is_official": "True",
     "static_reference": [
-        "750"
+        "744"
     ],
     "urls": {
-        "direct_download": "https://exo.chrono-saeiv.com/api/opendata/v1/CITCRC/vehicleposition",
+        "direct_download": "https://exo.chrono-saeiv.com/api/opendata/v1/CITLA/tripupdate",
         "authentication_type": 1,
         "authentication_info": "https://exo.quebec/fr/a-propos/donnees-ouvertes/FormulaireDemandeAcces",
         "api_key_parameter_name": "token",

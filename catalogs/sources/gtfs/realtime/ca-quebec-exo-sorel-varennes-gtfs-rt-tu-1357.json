@@ -1,6 +1,7 @@
 {
     "mdb_source_id": 1357,
     "data_type": "gtfs-rt",
+    "status": "deprecated",
     "entity_type": [
         "tu"
     ],
@@ -15,5 +16,11 @@
         "authentication_info": "https://exo.quebec/fr/a-propos/donnees-ouvertes/FormulaireDemandeAcces",
         "api_key_parameter_name": "token",
         "license": "https://exo.quebec/fr/a-propos/donnees-ouvertes/FormulaireDemandeAcces"
-    }
+    },
+    "redirect": [
+        {
+            "id": "3001",
+            "comment": " "
+        }
+    ]
 }

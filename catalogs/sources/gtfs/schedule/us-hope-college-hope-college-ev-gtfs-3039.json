@@ -1,0 +1,27 @@
+{
+  "mdb_source_id": 3039,
+  "data_type": "gtfs",
+  "provider": "Hope College Evening Shuttle",
+  "location": {
+    "country_code": "US",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2026-01-29 20:21:30.862141+00:00"
+    },
+    "municipality": "Hope College"
+  },
+  "urls": {
+    "direct_download": "https://hope-college-cit.github.io/shuttle/hope-shuttle-gtfs.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-hope-college-hope-college-ev-gtfs-3039.zip?alt=media",
+    "authentication_type": 0
+  },
+  "name": "Hope College Evening Shuttle",
+  "feed_contact_email": "herzog@hope.edu",
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

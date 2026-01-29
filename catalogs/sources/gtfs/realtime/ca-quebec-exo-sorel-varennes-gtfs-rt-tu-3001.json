@@ -7,7 +7,7 @@
     "provider": "Exo Sorel-Varennes",
     "is_official": "True",
     "static_reference": [
-        "747"
+        "741"
     ],
     "urls": {
         "direct_download": "https://exo.chrono-saeiv.com/api/opendata/v1/CITSV/tripupdate",

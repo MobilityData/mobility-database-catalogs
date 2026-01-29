@@ -1,0 +1,27 @@
+{
+  "mdb_source_id": 3037,
+  "data_type": "gtfs",
+  "provider": "Columbia County Rider",
+  "location": {
+    "country_code": "US",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2026-01-29 20:21:30.851406+00:00"
+    }
+  },
+  "urls": {
+    "direct_download": "https://oregon-gtfs.trilliumtransit.com/gtfs_data/columbiacounty-or-us/columbiacounty-or-us--flex-v2.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-columbia-county-gtfs-3037.zip?alt=media",
+    "authentication_type": 0
+  },
+  "features": [
+      "flex-v2"
+  ],
+  "feed_contact_email": "support+test+columbiacounty-or-us@trilliumtransit.com",
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

@@ -1,8 +1,7 @@
 {
-    "mdb_source_id": 505,
+    "mdb_source_id": 3035,
     "data_type": "gtfs",
     "provider": "PATCO Speedline",
-    "status": "deprecated",
     "is_official": "True",
     "location": {
         "country_code": "US",
@@ -15,14 +14,9 @@
             "extracted_on": "2022-03-16T17:25:05+00:00"
         }
     },
+    "feed_contact_email": "JDPachell@drpa.org",
     "urls": {
-        "direct_download": "http://www.ridepatco.org/developers/PortAuthorityTransitCorporation.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-jersey-patco-speedline-gtfs-505.zip?alt=media"
-    },
-    "redirect": [
-        {
-            "id": "3035",
-            "comment": " "
-        }
-    ]
+        "direct_download": "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13562/PATCO_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-jersey-patco-speedline-gtfs-3035.zip?alt=media"
+    }
 }

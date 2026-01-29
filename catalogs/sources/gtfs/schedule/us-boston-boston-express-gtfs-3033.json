@@ -14,7 +14,7 @@
     "municipality": "Boston"
   },
   "urls": {
-    "direct_download": "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/11782/20251125.zip",
+    "direct_download": "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/11782/GTFS.zip",
     "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-boston-boston-express-gtfs-3033.zip?alt=media",
     "authentication_type": 0
   },

@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 3011,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Exo L'Assomption",
+    "is_official": "True",
+    "static_reference": [
+        "755"
+    ],
+    "urls": {
+        "direct_download": "https://exo.chrono-saeiv.com/api/opendata/v1/MRCLASSO/vehicleposition",
+        "authentication_type": 1,
+        "authentication_info": "https://exo.quebec/fr/a-propos/donnees-ouvertes/FormulaireDemandeAcces",
+        "api_key_parameter_name": "token",
+        "license": "https://exo.quebec/fr/a-propos/donnees-ouvertes/FormulaireDemandeAcces"
+    }
+}

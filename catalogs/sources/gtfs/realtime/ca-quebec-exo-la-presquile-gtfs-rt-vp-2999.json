@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 2999,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Exo La Presqu'île",
+    "is_official": "True",
+    "static_reference": [
+        "743"
+    ],
+    "urls": {
+        "direct_download": "https://exo.chrono-saeiv.com/api/opendata/v1/CITPI/vehicleposition",
+        "authentication_type": 1,
+        "authentication_info": "https://exo.quebec/fr/a-propos/donnees-ouvertes/FormulaireDemandeAcces",
+        "api_key_parameter_name": "token",
+        "license": "https://exo.quebec/fr/a-propos/donnees-ouvertes/FormulaireDemandeAcces"
+    }
+}

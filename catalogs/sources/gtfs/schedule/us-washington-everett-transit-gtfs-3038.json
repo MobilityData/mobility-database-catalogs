@@ -1,8 +1,7 @@
 {
-    "mdb_source_id": 288,
+    "mdb_source_id": 3038,
     "data_type": "gtfs",
     "provider": "Everett Transit",
-    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Washington",
@@ -16,13 +15,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://gtfs.sound.obaweb.org/prod/97_gtfs.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-everett-transit-gtfs-288.zip?alt=media"
-    },
-    "redirect": [
-        {
-            "id": "3038",
-            "comment": " "
-        }
-    ]
+        "direct_download": "https://everett.prod.mapstrat.com/current/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-everett-transit-gtfs-3038.zip?alt=media"
+    }
 }

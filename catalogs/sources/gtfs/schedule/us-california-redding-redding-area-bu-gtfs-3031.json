@@ -1,5 +1,5 @@
 {
-  "mdb_source_id": 2852,
+  "mdb_source_id": 3031,
   "data_type": "gtfs",
   "provider": "Redding Area Bus Authority",
   "location": {
@@ -15,17 +15,13 @@
     "municipality": "Redding"
   },
   "urls": {
-    "direct_download": "https://rabagtfs.z5.web.core.windows.net/rabagtfs.zip",
-    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-redding-redding-area-bu-gtfs-2852.zip?alt=media",
+    "direct_download": "https://gtfs.remix.com/redding_area_bus_authority.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-redding-redding-area-bu-gtfs-3031.zip?alt=media",
     "authentication_type": 0,
     "license": "https://rabaride.com/resources/about_raba/index.php#collapselinks-18-50b1"
   },
   "feed_contact_email": "george.peterson@tkl360.com",
-  "status": "deprecated",
+  "status": "active",
   "is_official": "True",
-    "redirect": [
-        {
-            "id": "3031"
-        }
-    ]
+  "redirect": []
 }

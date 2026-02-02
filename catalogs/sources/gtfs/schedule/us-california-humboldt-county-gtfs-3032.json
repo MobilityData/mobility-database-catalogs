@@ -1,12 +1,10 @@
 {
-    "mdb_source_id": 19,
+    "mdb_source_id": 3032,
     "data_type": "gtfs",
     "provider": "Humboldt Transit Authority",
-    "feed_contact_email": "support+test+humboldtcounty-ca-us@trilliumtransit.com",
-    "status": "deprecated",
+    "feed_contact_email": "frontdesk@hta.org",
     "features": [
-        "fares-v1",
-        "fares-v2"
+        "fares-v1"
     ],
     "location": {
         "country_code": "US",
@@ -20,15 +18,11 @@
             "extracted_on": "2022-03-14T20:06:35+00:00"
         }
     },
+    "is_official": "True",
     "urls": {
-        "direct_download": "http://data.trilliumtransit.com/gtfs/humboldtcounty-ca-us/humboldtcounty-ca-us.zip",
+        "direct_download": "https://hta.optibus.co/public_api/v1/feeds/gtfs",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-humboldt-county-gtfs-19.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-humboldt-county-gtfs-3032.zip?alt=media"
     },
-    "redirect": [
-        {
-            "id": "3032",
-            "comment": " "
-        }
-    ]
+    "redirect": []
 }

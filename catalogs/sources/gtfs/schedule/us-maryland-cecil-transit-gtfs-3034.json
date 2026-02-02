@@ -2,6 +2,7 @@
     "mdb_source_id": 3034,
     "data_type": "gtfs",
     "provider": "Cecil Transit",
+    "status": "inactive",
     "location": {
         "country_code": "US",
         "subdivision_name": "Maryland",
@@ -13,6 +14,8 @@
             "extracted_on": "2022-03-16T17:25:04+00:00"
         }
     },
+    "is_official": "True",
+    "feed_contact_email": " support@passiotech.com",
     "urls": {
         "direct_download": "https://passio3.com/cecil/passioTransit/gtfs/google_transit.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maryland-cecil-transit-gtfs-3034.zip?alt=media"

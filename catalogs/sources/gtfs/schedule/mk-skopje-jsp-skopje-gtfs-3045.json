@@ -1,0 +1,25 @@
+{
+  "mdb_source_id": 3045,
+  "data_type": "gtfs",
+  "provider": "JSP Skopje",
+  "location": {
+    "country_code": "MK",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2026-02-05 17:38:44.821020+00:00"
+    },
+    "municipality": "Skopje"
+  },
+  "urls": {
+    "direct_download": "https://www.modeshift.app/api/v1/9814b106-2afe-47c8-919b-bdec6a5e521e/transport/gtfs/gtfs.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/mk-skopje-jsp-skopje-gtfs-3045.zip?alt=media",
+    "authentication_type": 0
+  },
+  "features": [],
+  "status": "inactive",
+  "is_official": "True",
+  "redirect": []
+}

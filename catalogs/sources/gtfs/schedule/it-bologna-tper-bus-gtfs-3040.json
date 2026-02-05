@@ -1,9 +1,8 @@
 {
-    "mdb_source_id": 2372,
+    "mdb_source_id": 3040,
     "data_type": "gtfs",
     "provider": "Trasporto Passeggeri Emilia-Romagna",
     "name": "Rete bus Bologna",
-    "status": "deprecated",
     "is_official": "True",
     "location": {
         "country_code": "IT",
@@ -18,15 +17,9 @@
         }
     },
     "urls": {
-        "direct_download": "https://solweb.tper.it/web/tools/open-data/open-data-download.aspx?source=solweb.tper.it&filename=gommagtfsbo&version=20250220&format=zip",
+        "direct_download": "https://solweb.tper.it/web/tools/open-data/open-data-download.aspx?source=solweb.tper.it&filename=gommagtfsbo&version=20260122&format=zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-bologna-tper-bus-gtfs-2372.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-bologna-tper-bus-gtfs-3040.zip?alt=media",
         "license": "https://solweb.tper.it/web/tools/open-data/open-data.aspx"
-    },
-     "redirect": [
-        {
-            "id": "3040",
-            "comment": " "
-        }
-    ]
+    }
 }

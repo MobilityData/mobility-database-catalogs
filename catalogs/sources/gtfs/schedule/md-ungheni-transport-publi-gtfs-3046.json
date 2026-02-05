@@ -1,0 +1,28 @@
+{
+  "mdb_source_id": 3046,
+  "data_type": "gtfs",
+  "provider": "Transport Public Ungheni",
+  "location": {
+    "country_code": "MD",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2026-02-05 17:38:44.825718+00:00"
+    },
+    "municipality": "Ungheni"
+  },
+  "urls": {
+    "direct_download": "https://github.com/UngheniTransport/gtfs/raw/refs/heads/main/ungheni_gtfs.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/md-ungheni-transport-publi-gtfs-3046.zip?alt=media",
+    "authentication_type": 0,
+    "license": "https://unghenitransport.md/index.php/retea-de-transport/open-data"
+  },
+  "name": "Transport Public Ungheni",
+  "feed_contact_email": "gtfs@unghenitransport.md",
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

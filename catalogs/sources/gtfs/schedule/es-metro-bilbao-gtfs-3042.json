@@ -1,0 +1,26 @@
+{
+  "mdb_source_id": 3042,
+  "data_type": "gtfs",
+  "provider": "Metro Bilbao",
+  "location": {
+    "country_code": "ES",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2026-02-05 17:38:44.803718+00:00"
+    }
+  },
+  "urls": {
+    "direct_download": "https://ctb-gtfs.s3.eu-south-2.amazonaws.com/metrobilbao.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-metro-bilbao-gtfs-3042.zip?alt=media",
+    "authentication_type": 0,
+    "license": "https://data.ctb.eus/en/pages/legal-notice"
+  },
+  "name": "Metro Bilbao",
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

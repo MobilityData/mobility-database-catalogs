@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Trasporto Passeggeri Emilia-Romagna",
     "name": "Trasporto gomma Ferrara",
+    "status": "deprecated",
     "is_official": "True",
     "location": {
         "country_code": "IT",
@@ -24,7 +25,7 @@
     },
      "redirect": [
         {
-            "id": "3041",
+            "id": "3042",
             "comment": " "
         }
     ]

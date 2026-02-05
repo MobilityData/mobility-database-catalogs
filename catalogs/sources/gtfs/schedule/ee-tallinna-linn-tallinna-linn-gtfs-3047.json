@@ -1,0 +1,28 @@
+{
+  "mdb_source_id": 3047,
+  "data_type": "gtfs",
+  "provider": "Tallinna Linn",
+  "location": {
+    "country_code": "EE",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2026-02-05 17:38:44.831397+00:00"
+    },
+    "municipality": "Tallinna linn"
+  },
+  "urls": {
+    "direct_download": "https://eu-gtfs.remix.com/tallinn.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ee-tallinna-linn-tallinna-linn-gtfs-3047.zip?alt=media",
+    "authentication_type": 0,
+    "license": "https://peatus.ee/content/teenusest"
+  },
+  "name": "TLT",
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "feed_contact_email": "peatus@agri.ee",
+  "redirect": []
+}

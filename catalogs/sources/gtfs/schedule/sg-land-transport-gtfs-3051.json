@@ -1,0 +1,26 @@
+{
+  "mdb_source_id": 3051,
+  "data_type": "gtfs",
+  "provider": "Land Transport Authority (Singapore)",
+  "location": {
+    "country_code": "SG",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2026-02-05 17:38:44.853006+00:00"
+    }
+  },
+  "urls": {
+    "direct_download": "https://github.com/thecrapone/singapore-gtfs-2026/raw/main/singapore-gtfs.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/sg-land-transport--gtfs-3051.zip?alt=media",
+    "authentication_type": 0,
+    "license": "https://data.gov.sg/open-data-licence"
+  },
+  "name": "Singapore Public Transport",
+  "features": [],
+  "status": "active",
+  "is_official": "False",
+  "redirect": []
+}

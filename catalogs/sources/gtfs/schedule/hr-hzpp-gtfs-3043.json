@@ -1,5 +1,5 @@
 {
-  "mdb_source_id": 2920,
+  "mdb_source_id": 3043,
   "data_type": "gtfs",
   "provider": "HŽ Passenger Transport",
   "location": {
@@ -13,17 +13,12 @@
     }
   },
   "urls": {
-    "direct_download": "https://www.hzpp.hr/api/v1/repository/download/852f76d2-8df3-4957-b30b-dc4b88b1caca",
-    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/hr-hzpp-gtfs-2920.zip?alt=media",
+    "direct_download": "https://www.hzpp.hr/GTFS_files.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/hr-hzpp-gtfs-3043.zip?alt=media",
     "authentication_type": 0
   },
   "features": [],
-  "status": "deprecated",
+  "status": "active",
   "is_official": "True",
-  "redirect": [
-    {
-        "id": "3043",
-        "comment": " "
-    }
-  ]
+  "redirect": []
 }

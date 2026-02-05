@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Trasporto Passeggeri Emilia-Romagna",
     "name": "Trasporto gomma Ferrara",
+    "status": "deprecated",
     "is_official": "True",
     "location": {
         "country_code": "IT",
@@ -21,5 +22,11 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-bologna-tper-ferrara-gtfs-2371.zip?alt=media",
         "license": "https://solweb.tper.it/web/tools/open-data/open-data.aspx"
-    }
+    },
+     "redirect": [
+        {
+            "id": "3042",
+            "comment": " "
+        }
+    ]
 }

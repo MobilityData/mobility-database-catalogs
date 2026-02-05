@@ -1,0 +1,25 @@
+{
+  "mdb_source_id": 3044,
+  "data_type": "gtfs",
+  "provider": "inbus.ua",
+  "location": {
+    "country_code": "UA",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2026-02-05 17:38:44.816218+00:00"
+    }
+  },
+  "urls": {
+    "direct_download": "https://gtfs.fsn1.your-objectstorage.com/feeds/gtfs.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ua-inbusua-gtfs-3044.zip?alt=media",
+    "authentication_type": 0
+  },
+  "feed_contact_email": "support@inbus.ua",
+  "features": [],
+  "status": "inactive",
+  "is_official": "True",
+  "redirect": []
+}

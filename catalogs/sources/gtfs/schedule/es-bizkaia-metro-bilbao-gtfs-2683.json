@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Metro Bilbao",
     "is_official": "True",
+    "status": "deprecated",
     "name": "Raw data from the Spanish National Access Point, powered by MIMTRANS (https://www.transportes.gob.es)",
     "location": {
         "country_code": "ES",
@@ -23,5 +24,11 @@
         "authentication_info": "https://nap.transportes.gob.es/",
         "api_key_parameter_name": "ApiKey",
         "license": "https://nap.transportes.gob.es/licencia-datos"
-    }
+    },
+     "redirect": [
+        {
+            "id": "3042",
+            "comment": " "
+        }
+    ]
 }

@@ -1,0 +1,27 @@
+{
+  "mdb_source_id": 3048,
+  "data_type": "gtfs",
+  "provider": "Translink South East Queensland (Translink SEQ)",
+  "location": {
+    "country_code": "AU",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2026-02-05 17:38:44.836274+00:00"
+    },
+    "subdivision_name": "Queensland"
+  },
+  "urls": {
+    "direct_download": "https://gtfsrt.api.translink.com.au/gtfs/SEQ_SCH_GTFS.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-translink-south-gtfs-3048.zip?alt=media",
+    "authentication_type": 0,
+    "license": "https://www.data.qld.gov.au/dataset/general-transit-feed-specification-gtfs-translink/resource/e43b6b9f-fc2b-4630-a7c9-86dd5483552b"
+  },
+  "name": "SEQ School Services",
+  "features": [],
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

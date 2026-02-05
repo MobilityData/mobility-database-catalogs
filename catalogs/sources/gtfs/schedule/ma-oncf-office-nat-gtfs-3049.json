@@ -1,0 +1,26 @@
+{
+  "mdb_source_id": 3049,
+  "data_type": "gtfs",
+  "provider": "ONCF (Office National des Chemins de Fer)",
+  "location": {
+    "country_code": "MA",
+    "bounding_box": {
+      "minimum_latitude": null,
+      "maximum_latitude": null,
+      "minimum_longitude": null,
+      "maximum_longitude": null,
+      "extracted_on": "2026-02-05 17:38:44.841157+00:00"
+    }
+  },
+  "urls": {
+    "direct_download": "https://github.com/newsbubbles/rail_maroc_oncf/raw/main/oncf_gtfs.zip",
+    "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ma-oncf-office-nat-gtfs-3049.zip?alt=media",
+    "authentication_type": 0,
+    "license": "https://opendatacommons.org/licenses/odbl/1-0/"
+  },
+  "name": "ONCF Rail",
+  "features": [],
+  "status": "active",
+  "is_official": "False",
+  "redirect": []
+}

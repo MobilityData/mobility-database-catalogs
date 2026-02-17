@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 3056,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Metro Bilbao",
+    "static_reference": [
+        "3052"
+    ],
+    "urls": {
+        "direct_download": "https://ctb-gtfs-rt.s3.eu-south-2.amazonaws.com/metro-bilbao-service-alerts.pb",
+        "authentication_type": 0,
+        "license": "https://data.ctb.eus/en/pages/legal-notice"
+    }
+}

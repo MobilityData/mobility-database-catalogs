@@ -5,6 +5,7 @@
         "sa"
     ],
     "provider": "Metro Bilbao",
+    "is_official": "True",
     "static_reference": [
         "2682"
     ],

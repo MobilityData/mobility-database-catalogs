@@ -6,6 +6,7 @@
     ],
     "provider": "Southeastern Pennsylvania Transportation Authority (SEPTA)",
     "name": "SEPTA Bus",
+    "is_official": "True",
     "static_reference": [
         "502"
     ],

@@ -6,6 +6,7 @@
     ],
     "provider": "Southeastern Pennsylvania Transportation Authority (SEPTA)",
     "name": "SEPTA Rail",
+    "is_official": "True",
     "static_reference": [
         "503"
     ],

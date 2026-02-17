@@ -4,6 +4,7 @@
     "entity_type": [
         "tu"
     ],
+    "is_official": "True",
     "provider": "Metro Bilbao",
     "static_reference": [
         "3052"

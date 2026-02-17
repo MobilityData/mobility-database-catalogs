@@ -4,6 +4,7 @@
     "entity_type": [
         "sa"
     ],
+    "is_official": "True",
     "provider": "Caltrain",
     "static_reference": [
         "54"

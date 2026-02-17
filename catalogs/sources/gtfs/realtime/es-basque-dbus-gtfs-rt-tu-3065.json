@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 3065,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Metro Bilbao",
+    "static_reference": [
+        "2682"
+    ],
+    "urls": {
+        "direct_download": "https://opendata.euskadi.eus/transport/moveuskadi/dbus/gtfsrt_dbus_trip_updates.pb",
+        "authentication_type": 0,
+        "license": "https://nap.transportes.gob.es/licencia-datos"
+    }
+}

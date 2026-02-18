@@ -1,0 +1,13 @@
+{
+    "mdb_source_id": 3071,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Motion",
+    "is_official": "True",
+    "urls": {
+        "direct_download": "http://20.19.98.194:8328/Api/api/gtfs-realtime",
+        "authentication_type": 0
+    }
+}

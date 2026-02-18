@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 3074,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Everett Transit",
+    "static_reference": [
+        "3038"
+    ],
+    "is_official": "True",
+    "urls": {
+        "direct_download": "https://everett.mapstrat.com/current/gtfrealtime_VehiclePositions.bin",
+        "authentication_type": 0,
+        "license": "https://www.soundtransit.org/help-contacts/business-information/open-transit-data-otd/transit-data-terms-use"
+    }
+}

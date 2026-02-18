@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 3064,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "dBus (Donostiabus)",
+    "is_official": "True",
+    "static_reference": [
+        "2682"
+    ],
+    "urls": {
+        "direct_download": "https://opendata.euskadi.eus/transport/moveuskadi/dbus/gtfsrt_dbus_alerts.pb",
+        "authentication_type": 0,
+        "license": "https://nap.transportes.gob.es/licencia-datos"
+    }
+}

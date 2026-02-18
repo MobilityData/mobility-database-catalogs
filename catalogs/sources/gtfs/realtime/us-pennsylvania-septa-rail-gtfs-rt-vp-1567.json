@@ -6,6 +6,7 @@
     ],
     "provider": "Southeastern Pennsylvania Transportation Authority (SEPTA)",
     "name": "SEPTA Rail",
+    "status": "deprecated",
     "static_reference": [
         "503"
     ],
@@ -15,5 +16,11 @@
         "authentication_info": "https://goswift.ly/realtime-api-key",
         "api_key_parameter_name": "authorization",
         "license": "https://www.goswift.ly/api-license"
-    }
+    },
+     "redirect": [
+        {
+            "id": "3060",
+            "comment": " "
+        }
+    ]
 }

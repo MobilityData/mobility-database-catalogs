@@ -1,0 +1,18 @@
+{
+    "mdb_source_id": 3063,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Southeastern Pennsylvania Transportation Authority (SEPTA)",
+    "name": "SEPTA Bus",
+    "is_official": "True",
+    "static_reference": [
+        "502"
+    ],
+    "urls": {
+        "direct_download": "https://www3.septa.org/gtfsrt/septa-pa-us/Vehicle/rtVehiclePosition.pb",
+        "authentication_type": 0,
+        "license": "https://www3.septa.org/developer/"
+    }
+}

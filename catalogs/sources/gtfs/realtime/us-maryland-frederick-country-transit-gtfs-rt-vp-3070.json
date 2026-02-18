@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 3070,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Frederick County TransIT",
+    "is_official": "True",
+    "static_reference": [
+        "2432"
+    ],
+    "urls": {
+        "direct_download": "https://passio3.com/frederick/passioTransit/gtfs/realtime/vehiclePositions",
+        "authentication_type": 0
+    }
+}

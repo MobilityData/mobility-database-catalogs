@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 3059,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Ilévia",
+    "is_official": "True",
+    "static_reference": [
+        "tdg-81995"
+    ],
+    "urls": {
+        "direct_download": "https://proxy.transport.data.gouv.fr/resource/ilevia-lille-gtfs-rt",
+        "authentication_type": 0
+    }
+}

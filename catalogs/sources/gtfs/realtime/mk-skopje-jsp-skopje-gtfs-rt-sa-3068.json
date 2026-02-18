@@ -1,0 +1,15 @@
+{
+	"mdb_source_id": 3068,
+  	"data_type": "gtfs-rt",
+  	"entity_type": [
+		"sa"
+  	],
+  	"provider": "JSP Skopje",
+  	"static_reference": [
+		"3045"
+  	],
+  	"urls": {
+		"direct_download": "https://www.modeshift.app/api/v1/9814b106-2afe-47c8-919b-bdec6a5e521e/transport/gtfsrt/alerts.pb",
+		"authentication_type": 0
+  }
+}

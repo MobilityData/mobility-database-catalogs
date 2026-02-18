@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 3080,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "is_official": "True",
+    "provider": "Cecil Transit",
+    "static_reference": [
+        "3034"
+    ],
+    "urls": {
+        "direct_download": "https://passio3.com/cecil/passioTransit/gtfs/realtime/vehiclePositions",
+        "authentication_type": 0
+    }
+}

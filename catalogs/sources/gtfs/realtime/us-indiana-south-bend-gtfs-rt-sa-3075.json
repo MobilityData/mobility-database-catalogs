@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 3075,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "is_official": "True",
+    "provider": "South Bend Public Transportation Corporation",
+    "static_reference": [
+        "585"
+    ],
+    "urls": {
+        "direct_download": "https://passio3.com/transpo/passioTransit/gtfs/realtime/serviceAlerts",
+        "authentication_type": 0
+    }
+}

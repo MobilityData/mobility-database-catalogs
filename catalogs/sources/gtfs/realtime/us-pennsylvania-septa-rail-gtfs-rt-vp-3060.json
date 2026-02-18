@@ -11,7 +11,7 @@
         "503"
     ],
     "urls": {
-        "direct_download": "https://www3.septa.org/gtfsrt/septarail-pa-us/Vehicle/rtVehiclePositions.pb",
+        "direct_download": "https://www3.septa.org/gtfsrt/septarail-pa-us/Vehicle/rtVehiclePosition.pb",
         "authentication_type": 0,
         "license": "https://www3.septa.org/developer/"
     }

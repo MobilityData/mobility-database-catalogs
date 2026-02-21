@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 3084,
+    "data_type": "gtfs",
+    "provider": "European Sleeper",
+    "feed_contact_email": "jbb@kaidan.im",
+    "location": {
+        "country_code": "NL",
+        "bounding_box": {
+            "minimum_latitude": 48.8804,
+            "maximum_latitude": 52.548645,
+            "minimum_longitude": 2.354973,
+            "maximum_longitude": 14.436094,
+            "extracted_on": "2026-02-21T02:33:17+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://jbb.ghsq.de/gtfs/eu-es.gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/nl-unknown-european-sleeper-gtfs-3084.zip?alt=media"
+    },
+    "redirect": []
+}

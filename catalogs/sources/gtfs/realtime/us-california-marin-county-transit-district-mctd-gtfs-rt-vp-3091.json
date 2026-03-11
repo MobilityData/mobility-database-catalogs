@@ -1,0 +1,18 @@
+{
+    "mdb_source_id": 3091,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Marin County Transit District (MCTD)",
+    "static_reference": [
+        "2937"
+    ],
+    "urls": {
+        "direct_download": "https://api.goswift.ly/real-time/marin-transit/gtfs-rt-vehicle-positions",
+        "authentication_type": 1,
+        "authentication_info": "https://goswift.ly/realtime-api-key",
+        "api_key_parameter_name": "Authorization",
+        "license": "https://www.goswift.ly/api-license"
+    }
+}

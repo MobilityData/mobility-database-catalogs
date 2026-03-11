@@ -4,6 +4,7 @@
     "entity_type": [
         "tu"
     ],
+    "status": "deprecated",
     "provider": "Marin County Transit District (MCTD)",
     "is_official": "True",
     "static_reference": [
@@ -12,5 +13,11 @@
     "urls": {
         "direct_download": "https://marintransit.net/gtfs-rt/tripupdates",
         "authentication_type": 0
-    }
+    },
+     "redirect": [
+        {
+            "id": "3090",
+            "comment": " "
+        }
+    ]
 }

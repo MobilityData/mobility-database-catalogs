@@ -1,0 +1,18 @@
+{
+    "mdb_source_id": 3085,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Maryland Transit Administration (MTA) Commuter Bus",
+    "static_reference": [
+        "467"
+    ],
+    "urls": {
+        "direct_download": "https://api.goswift.ly/real-time/mta-maryland-commuter-bus/gtfs-rt-vehicle-positions",
+        "authentication_type": 2,
+        "authentication_info": "https://goswift.ly/realtime-api-key",
+        "api_key_parameter_name": "Authorization",
+        "license": "https://www.goswift.ly/api-license"
+    }
+}

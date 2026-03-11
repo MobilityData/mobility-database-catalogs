@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 3090,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Marin County Transit District (MCTD)",
+    "is_official": "True",
+    "static_reference": [
+        "2937"
+    ],
+    "urls": {
+        "direct_download": "https://api.goswift.ly/real-time/marin-transit/gtfs-rt-trip-updates",
+        "authentication_type": 1,
+        "authentication_info": "https://goswift.ly/realtime-api-key",
+        "api_key_parameter_name": "Authorization",
+        "license": "https://www.goswift.ly/api-license"
+    }
+}

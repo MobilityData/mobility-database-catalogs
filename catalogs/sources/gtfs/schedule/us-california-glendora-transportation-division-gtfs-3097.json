@@ -1,12 +1,13 @@
 {
-    "mdb_source_id": 609,
+    "mdb_source_id": 3097,
     "data_type": "gtfs",
     "provider": "Glendora Transportation Division",
     "feed_contact_email": "csinteractive@metro.net",
     "features": [
+        "fares-v1",
         "fares-v2"
     ],
-    "status": "deprecated",
+    "status": "active",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -19,13 +20,9 @@
         }
     },
     "urls": {
-        "direct_download": "https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/glendora-ca-us/glendora-ca-us.zip",
+        "direct_download": "https://www.cityofglendora.gov/files/assets/city/v/3/recreation-amp-human-services/transportation/documents/gtfs-6-2025.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-glendora-transportation-division-gtfs-609.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-glendora-transportation-division-gtfs-3097.zip?alt=media"
     },
-    "redirect": [
-        {
-            "id": "3097"
-        }
-    ]
+    "redirect": []
 }

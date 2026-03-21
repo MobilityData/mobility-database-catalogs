@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Horários do Funchal - Transportes Públicos, S.A",
     "name": "Horários do Funchal",
+    "is_official": "True",
     "location": {
         "country_code": "PT",
         "subdivision_name": "Região Autónoma da Madeira",

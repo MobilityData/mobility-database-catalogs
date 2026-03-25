@@ -1,9 +1,9 @@
 {
-    "mdb_source_id": 122,
+    "mdb_source_id": 3103,
     "data_type": "gtfs",
     "provider": "Rogue Valley Transportation District (RVTD)",
     "is_official": "True",
-    "status": "deprecated",
+    "feed_contact_email": "seisma@rvtd.org",
     "location": {
         "country_code": "US",
         "subdivision_name": "Oregon",
@@ -17,13 +17,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://data.trilliumtransit.com/gtfs/rvtd-or-us/rvtd-or-us.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-rogue-valley-transportation-district-rvtd-gtfs-122.zip?alt=media"
-    },
-    "redirect": [
-        {
-            "id": "3103",
-            "comment": " "
-        }
-    ]
+        "direct_download": "https://rvtd.org/wp-content/uploads/2026/03/rvtd-or-us.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-rogue-valley-transportation-district-rvtd-gtfs-3103.zip?alt=media"
+    }
 }

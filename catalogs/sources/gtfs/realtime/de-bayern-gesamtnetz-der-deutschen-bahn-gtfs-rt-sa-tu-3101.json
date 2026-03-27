@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 3101,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu",
+        "sa"
+    ],
+    "provider": "DELFI Realtime Data",
+    "static_reference": [
+        "1090",
+        "1089",
+        "768"
+    ],
+    "urls": {
+        "direct_download": "https://realtime.gtfs.de/realtime-free.pb",
+        "authentication_type": 0,
+        "license": "https://gtfs.de/en/realtime/"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 3102,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Empresa Municipal de Transportes de Madrid (EMT Madrid)",
+    "static_reference": [
+        "793"
+    ],
+    "urls": {
+        "direct_download": "https://openapi.emtmadrid.es/v1/bus/servicealerts/proto",
+        "authentication_type": 0,
+        "license": "https://datos.emtmadrid.es/dataset/tiempo-real-para-autobuses-de-emt"
+    }
+}

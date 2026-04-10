@@ -1,9 +1,8 @@
 {
-    "mdb_source_id": 2207,
+    "mdb_source_id": 3094,
     "data_type": "gtfs",
     "provider": "Glenn Transit Service",
-    "feed_contact_email": "hello@calitp.org",
-    "status": "deprecated",
+    "feed_contact_email": "chernandez@countyofglenn.net",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -17,13 +16,9 @@
         }
     },
     "urls": {
-        "direct_download": "https://cdn.hibuwebsites.com/af26dd3d53e046cf8ce6ac6dc92e7b14/files/uploaded/glenn-transit-service-google-transit-2024-01-19.zip",
+        "direct_download": "https://cdn.hibuwebsites.com/af26dd3d53e046cf8ce6ac6dc92e7b14/files/uploaded/glenn-county-transit-service-google-transit-2026-01.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-glenn-transit-service-gtfs-2207.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-glenn-transit-service-gtfs-3094.zip?alt=media"
     },
-    "redirect": [
-        {
-            "id": "3094"
-        }
-    ]
+    "redirect": []
 }

@@ -1,9 +1,8 @@
 {
-    "mdb_source_id": 2803,
+    "mdb_source_id": 3081,
     "data_type": "gtfs",
     "provider": "Reus Transport",
     "is_official": "True",
-    "status": "deprecated",
     "name": "Raw data from the Spanish National Access Point, powered by MIMTRANS (https://www.transportes.gob.es)",
     "location": {
         "country_code": "ES",
@@ -18,17 +17,8 @@
         }
     },
     "urls": {
-        "direct_download": "https://nap.transportes.gob.es/api/Fichero/download/1788",
-        "authentication_type": 2,
-        "authentication_info": "https://nap.transportes.gob.es/",
-        "api_key_parameter_name": "ApiKey",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-tarragona-reus-transport-gtfs-2803.zip?alt=media",
+        "direct_download": "https://api.sparelabs.com/v1/gtfs/generate/organization/78112279-c065-4987-be69-bc18ab604142",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-tarragona-reus-transport-gtfs-3081.zip?alt=media",
         "license": "https://nap.transportes.gob.es/licencia-datos"
-    },
-     "redirect": [
-        {
-            "id": "3081",
-            "comment": " "
-        }
-    ]
+    }
 }

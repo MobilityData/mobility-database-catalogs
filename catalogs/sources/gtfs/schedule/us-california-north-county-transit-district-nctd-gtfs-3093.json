@@ -1,8 +1,7 @@
 {
-    "mdb_source_id": 14,
+    "mdb_source_id": 3093,
     "data_type": "gtfs",
     "provider": "North County Transit District (NCTD)",
-    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -16,12 +15,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://www.gonctd.com/google_transit.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-north-county-transit-district-nctd-gtfs-14.zip?alt=media"
-    },
-    "redirect": [
-        {
-            "id": "3093"
-        }
-    ]
+        "direct_download": "https://lfportal.nctd.org/staticGTFS/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-north-county-transit-district-nctd-gtfs-3093.zip?alt=media"
+    }
 }

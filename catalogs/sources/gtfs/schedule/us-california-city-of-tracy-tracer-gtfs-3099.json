@@ -1,14 +1,9 @@
 {
-    "mdb_source_id": 877,
+    "mdb_source_id": 3099,
     "data_type": "gtfs",
     "provider": "City of Tracy (TRACER)",
     "feed_contact_email": "support+test+tracy-ca-us@trilliumtransit.com",
     "is_official": "True",
-    "features": [
-        "fares-v2",
-        "fares-v1"
-    ],
-    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -22,13 +17,9 @@
         }
     },
     "urls": {
-        "direct_download": "http://data.trilliumtransit.com/gtfs/tracy-ca-us/tracy-ca-us.zip",
+        "direct_download": "https://s3.amazonaws.com/etatransit.gtfs/tracer.etaspot.net/gtfs.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-city-of-tracy-tracer-gtfs-877.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-city-of-tracy-tracer-gtfs-3099.zip?alt=media"
     },
-    "redirect": [
-        {
-            "id": "3099"
-        }
-    ]
+    "redirect": []
 }

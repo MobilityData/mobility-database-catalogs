@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3082,
+    "mdb_source_id": 3105,
     "data_type": "gtfs",
     "provider": "Boxcar",
     "name": "Boxcar Commuter Bus",
@@ -15,6 +15,5 @@
     },
     "urls": {
         "direct_download": "https://boxcar-gtfs.vercel.app/api/gtfs"
-    },
-    "feed_contact_url": "https://www.boxcar.com"
+    }
 }

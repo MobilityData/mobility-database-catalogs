@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 2596,
+    "mdb_source_id": 3106,
     "data_type": "gtfs",
     "provider": "Nuup Bussii A/S",
     "status": "active",
@@ -18,6 +18,6 @@
     "urls": {
         "direct_download": "https://github.com/thomasryde/nuup-bussii-gtfs/releases/latest/download/nuup-bussii-gtfs.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gl-nuuk-kommuneqarfik-sermersooq-nuup-bussii-gtfs-2596.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gl-nuuk-kommuneqarfik-sermersooq-nuup-bussii-gtfs-3106.zip?alt=media"
     }
 }

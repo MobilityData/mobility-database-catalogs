@@ -10,7 +10,8 @@
             "minimum_latitude": 40.5700,
             "maximum_latitude": 41.0200,
             "minimum_longitude": -74.6500,
-            "maximum_longitude": -73.9600
+            "maximum_longitude": -73.9600,
+            "extracted_on": "2026-04-10T00:00:00+00:00"
         }
     },
     "urls": {

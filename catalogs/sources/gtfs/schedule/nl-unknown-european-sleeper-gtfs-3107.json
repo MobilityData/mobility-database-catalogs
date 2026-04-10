@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3081,
+    "mdb_source_id": 3107,
     "data_type": "gtfs",
     "provider": "European Sleeper",
     "feed_contact_email": "jbb@kaidan.im",
@@ -15,7 +15,7 @@
     },
     "urls": {
         "direct_download": "https://jbb.ghsq.de/gtfs/eu-es.gtfs.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/nl-unknown-european-sleeper-gtfs-3081.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/nl-unknown-european-sleeper-gtfs-3107.zip?alt=media"
     },
     "redirect": []
 }

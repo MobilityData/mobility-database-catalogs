@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 3110,
+    "data_type": "gtfs",
+    "provider": "MTA",
+    "name": "Metro-North Railroad",
+    "is_official": "True",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "New York City",
+        "bounding_box": {
+            "minimum_latitude": 40.572635,
+            "maximum_latitude": 40.762524,
+            "minimum_longitude": -74.040876,
+            "maximum_longitude": -73.779519,
+            "extracted_on": "2026-04-13T29:34:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://rrgtfsfeeds.s3.amazonaws.com/gtfsmnr.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-mta-new-york-city-transit-gtfs-3110.zip?alt=media",
+        "license": "http://web.mta.info/developers/developer-data-terms.html"
+    }
+}

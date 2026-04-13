@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 3115,
+    "data_type": "gtfs",
+    "provider": "Suffolk County Transit",
+    "is_official": "True",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "bounding_box": {
+            "minimum_latitude": 40.623699,
+            "maximum_latitude": 41.155227,
+            "minimum_longitude": -73.437479,
+            "maximum_longitude": -71.859667,
+            "extracted_on": "2026-04-13T21:09:20.344560Z"
+        }
+    },
+    "urls": {
+        "direct_download": "https://tracksctbus.org/gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-suffolk-county-transit-gtfs-3115.zip?alt=media"
+    }
+}

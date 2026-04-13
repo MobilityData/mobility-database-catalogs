@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Merced County Transit (The Bus)",
     "is_official": "True",
+    "status": "deprecated",
     "features": [
         "fares-v1",
         "fares-v2"
@@ -22,5 +23,11 @@
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/mercedthebus-ca-us/mercedthebus-ca-us.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-merced-county-transit-the-bus-gtfs-86.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "3108",
+            "comment": " "
+        }
+    ]
 }

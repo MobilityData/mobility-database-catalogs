@@ -8,10 +8,10 @@
         "subdivision_name": "Washington",
         "municipality": "Aberdeen",
         "bounding_box": {
-            "minimum_latitude": 46.19019607,
-            "maximum_latitude": 46.97647798,
-            "minimum_longitude": -124.05531183,
-            "maximum_longitude": -123.73147396,
+            "minimum_latitude": 46.190196,
+            "maximum_latitude": 46.976478,
+            "minimum_longitude": -124.055312,
+            "maximum_longitude": -123.731474,
             "extracted_on": "2026-04-13T20:34:00+00:00"
         }
     },

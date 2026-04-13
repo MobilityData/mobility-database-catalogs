@@ -16,9 +16,9 @@
         "municipality": "Corvallis",
         "bounding_box": {
             "minimum_latitude": 44.539028,
-            "maximum_latitude": 44.67828,
-            "minimum_longitude": -124.05396483388,
-            "maximum_longitude": -123.066012766411,
+            "maximum_latitude": 44.678280,
+            "minimum_longitude": -124.053965,
+            "maximum_longitude": -123.066013,
             "extracted_on": "2026-04-13T20:34:00+00:00"
         }
     },

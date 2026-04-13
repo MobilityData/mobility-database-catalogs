@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3111,
+    "data_type": "gtfs",
+    "provider": "Gobierno del Estado de Aguascalientes",
+    "is_official": "True",
+    "status": "inactive",
+    "location": {
+        "country_code": "MX",
+        "subdivision_name": "Aguascalientes",
+        "municipality": "Estado de Aguascalientes",
+        "bounding_box": {
+            "minimum_latitude": 21.793511,
+            "maximum_latitude": 21.999031,
+            "minimum_longitude": -102.386037,
+            "maximum_longitude": -102.187443,
+            "extracted_on": "2026-04-13T20:34:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://datos.jalisco.gob.mx/sites/default/files/gtfs_amg_20240312.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/mx-aguascalientes-gtfs-3111.zip?alt=media"
+    }
+}

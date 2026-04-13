@@ -19,12 +19,11 @@
             "maximum_latitude": 44.67828,
             "minimum_longitude": -124.05396483388,
             "maximum_longitude": -123.066012766411,
-            "extracted_on": "2026-04-13T29:34:00+00:00"
+            "extracted_on": "2026-04-13T20:34:00+00:00"
         }
     },
     "urls": {
         "direct_download": "https://oregon-gtfs.trilliumtransit.com/gtfs_data/benton-or-us/benton-or-us--flex-v2.zip",
-        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-benton-area-transportation-gtfs-3109.zip?alt=media",
         "license": "https://oregon-gtfs.trilliumtransit.com"
     },

@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3118,
+    "mdb_source_id": 3117,
     "data_type": "gtfs",
     "provider": "Merced County Transit (The Bus)",
     "is_official": "True",
@@ -18,6 +18,6 @@
     },
     "urls": {
         "direct_download": "https://thebuslive.com/gtfs",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-merced-county-transit-the-bus-gtfs-3118.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-merced-county-transit-the-bus-gtfs-3117.zip?alt=media"
     }
 }

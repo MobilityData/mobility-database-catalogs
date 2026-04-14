@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3117,
+    "mdb_source_id": 3116,
     "data_type": "gtfs",
     "provider": "Columbia County Public Transportation",
     "location": {
@@ -16,6 +16,6 @@
     },
     "urls": {
         "direct_download": "https://github.com/columbia-county-ny-transit/gtfs-generator/raw/refs/heads/main/columbia_county_gtfs.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-columbia-county-gtfs-3117.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-columbia-county-gtfs-3116.zip?alt=media"
     }
 }

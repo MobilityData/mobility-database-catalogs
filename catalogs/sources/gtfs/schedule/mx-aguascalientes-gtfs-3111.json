@@ -17,7 +17,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://datos.jalisco.gob.mx/sites/default/files/gtfs_amg_20240312.zip",
+        "direct_download": "https://www.aguascalientes.gob.mx/portalgea/file/otros/gdeda-aguascalientes-mx.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/mx-aguascalientes-gtfs-3111.zip?alt=media"
     }
 }

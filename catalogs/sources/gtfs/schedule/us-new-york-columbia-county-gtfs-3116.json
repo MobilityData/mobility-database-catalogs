@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 3116,
+    "data_type": "gtfs",
+    "provider": "Columbia County Public Transportation",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Columbia County",
+        "bounding_box": {
+            "minimum_latitude": 42.246178,
+            "maximum_latitude": 42.679127,
+            "minimum_longitude": -73.809450,
+            "maximum_longitude": -73.595886,
+            "extracted_on": "2026-04-13T21:27:58.074805"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/columbia-county-ny-transit/gtfs-generator/raw/refs/heads/main/columbia_county_gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-columbia-county-gtfs-3116.zip?alt=media"
+    }
+}

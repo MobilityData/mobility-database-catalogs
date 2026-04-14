@@ -2,6 +2,7 @@
     "mdb_source_id": 548,
     "data_type": "gtfs",
     "provider": "Suffolk County Transit",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "New York",
@@ -16,5 +17,11 @@
     "urls": {
         "direct_download": "https://www.suffolkcountyny.gov/Portals/0/formsdocs/publicworks/Zip/google_transit.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-suffolk-county-transit-gtfs-548.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "3115",
+            "comment": " "
+        }
+    ]
 }

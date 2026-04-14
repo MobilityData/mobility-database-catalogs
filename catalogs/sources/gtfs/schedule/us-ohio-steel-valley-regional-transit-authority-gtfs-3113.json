@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3113,
+    "data_type": "gtfs",
+    "provider": "Steel Valley Regional Transit Authority",
+    "status": "inactive",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Ohio",
+        "municipality": "Steubenville",
+        "bounding_box": {
+            "minimum_latitude": 39.830132,
+            "maximum_latitude": 40.150499,
+            "minimum_longitude": -83.162655,
+            "maximum_longitude": -82.771726,
+            "extracted_on": "2022-03-16T15:32:20+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://svrta.com/wp-content/uploads/2025/12/svrta-steubenville-oh-us-2.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-ohio-steel-valley-regional-transit-authority-gtfs-3113.zip?alt=media",
+        "license": "https://svrta.com/website-disclaimer/"
+    }
+}

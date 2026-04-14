@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3114,
+    "data_type": "gtfs",
+    "provider": "Rochester Transit Service",
+    "name": "Livingston County",
+    "is_official": "True",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New York",
+        "municipality": "Rochester-Genesee",
+        "bounding_box": {
+            "minimum_latitude": 42.558130,
+            "maximum_latitude": 43.162713,
+            "minimum_longitude": -77.991811,
+            "maximum_longitude": -77.442345,
+            "extracted_on": "2026-04-13T21:09:20.344560Z"
+        }
+    },
+    "urls": {
+        "direct_download": "https://scheduledata.rgrta.com/Regionals/Livingston.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-rts-livingston-gtfs-3114.zip?alt=media"
+    }
+}

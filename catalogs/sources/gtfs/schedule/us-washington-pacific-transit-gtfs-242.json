@@ -2,6 +2,7 @@
     "mdb_source_id": 242,
     "data_type": "gtfs",
     "provider": "Pacific Transit",
+    "status": "deprecated",
     "feed_contact_email": "marcy@mjcaction.com",
     "location": {
         "country_code": "US",
@@ -20,5 +21,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-pacific-transit-gtfs-242.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "3112",
+            "comment": " "
+        }
+    ]
 }

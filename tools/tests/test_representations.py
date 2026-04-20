@@ -24,6 +24,9 @@ from tools.representations import (
     MINIMUM_LONGITUDE,
     MAXIMUM_LONGITUDE,
     EXTRACTED_ON,
+    EXTRACTED_FILESIZE,
+    EXTRACTED_CALENDAR_START,
+    EXTRACTED_CALENDAR_END,
     DIRECT_DOWNLOAD,
     LATEST,
     LICENSE,
@@ -315,6 +318,9 @@ class TestGtfsScheduleSource(TestCase):
         self.test_min_lon = "some_min_lon"
         self.test_max_lon = "some_max_lon"
         self.test_extracted_on = "some_extraction_time"
+        self.test_extracted_filesize = "some_extraction_filesize"
+        self.test_extracted_calendar_start = "some_extraction_calendar_start"
+        self.test_extracted_calendar_end = "some_extraction_calendar_end"
         self.test_direct_download_url = "some_direct_download_url"
         self.test_authentication_type = "some_authentication_type"
         self.test_authentication_info_url = "some_authentication_info_url"
@@ -335,6 +341,9 @@ class TestGtfsScheduleSource(TestCase):
             MINIMUM_LONGITUDE: self.test_min_lon,
             MAXIMUM_LONGITUDE: self.test_max_lon,
             EXTRACTED_ON: self.test_extracted_on,
+            EXTRACTED_FILESIZE: self.test_extracted_filesize,
+            EXTRACTED_CALENDAR_START: self.test_extracted_calendar_start,
+            EXTRACTED_CALENDAR_END: self.test_extracted_calendar_end,
             DIRECT_DOWNLOAD: self.test_direct_download_url,
             AUTHENTICATION_TYPE: self.test_authentication_type,
             AUTHENTICATION_INFO: self.test_authentication_info_url,
@@ -363,6 +372,9 @@ class TestGtfsScheduleSource(TestCase):
                     MINIMUM_LONGITUDE: self.test_min_lon,
                     MAXIMUM_LONGITUDE: self.test_max_lon,
                     EXTRACTED_ON: self.test_extracted_on,
+                    EXTRACTED_FILESIZE: self.test_extracted_filesize,
+                    EXTRACTED_CALENDAR_START: self.test_extracted_calendar_start,
+                    EXTRACTED_CALENDAR_END: self.test_extracted_calendar_end,
                 },
             },
             URLS: {
@@ -473,6 +485,8 @@ class TestGtfsScheduleSource(TestCase):
 
     @patch("tools.representations.os")
     @patch("tools.representations.get_iso_time")
+    @patch("tools.representations.get_filesize")
+    @patch("tools.representations.extract_gtfs_calendar_range")
     @patch("tools.representations.extract_gtfs_bounding_box")
     @patch("tools.representations.is_readable")
     @patch("tools.representations.download_dataset")
@@ -481,6 +495,8 @@ class TestGtfsScheduleSource(TestCase):
         mock_download_dataset,
         mock_read_func,
         mock_bounding_box,
+        mock_calendar,
+        mock_filesize,
         mock_time,
         mock_os,
     ):
@@ -499,6 +515,9 @@ class TestGtfsScheduleSource(TestCase):
         self.assertEqual(under_test.bbox_min_lon, self.test_min_lon)
         self.assertEqual(under_test.bbox_max_lon, self.test_max_lon)
         self.assertEqual(under_test.bbox_extracted_on, self.test_extracted_on)
+        self.assertEqual(under_test.bbox_extracted_filesize, self.test_extracted_filesize)
+        self.assertEqual(under_test.bbox_extracted_calendar_start, self.test_extracted_calendar_start)
+        self.assertEqual(under_test.bbox_extracted_calendar_end, self.test_extracted_calendar_end)
         self.assertEqual(under_test.provider, self.test_provider)
         self.assertEqual(under_test.name, self.test_name)
         self.assertEqual(under_test.country_code, self.test_country_code)
@@ -514,6 +533,9 @@ class TestGtfsScheduleSource(TestCase):
         test_min_lon = "another_min_lon"
         test_max_lon = "another_max_lon"
         test_extracted_on = "another_extraction_time"
+        test_extracted_filesize = "another_extraction_filesize"
+        test_extracted_calendar_start = "another_extraction_calendar_start"
+        test_extracted_calendar_end = "another_extraction_calendar_end"
         test_provider = "another_provider"
         test_name = "another_name"
         test_country_code = "another_country_code"
@@ -529,6 +551,11 @@ class TestGtfsScheduleSource(TestCase):
             test_max_lon,
         )
         mock_time.return_value = test_extracted_on
+        mock_filesize.return_value = test_extracted_filesize
+        mock_calendar.return_value = (
+            test_extracted_calendar_start,
+            test_extracted_calendar_end
+        )
         under_test = instance.update(
             **{
                 PROVIDER: test_provider,
@@ -554,6 +581,9 @@ class TestGtfsScheduleSource(TestCase):
         self.assertEqual(under_test.bbox_min_lon, test_min_lon)
         self.assertEqual(under_test.bbox_max_lon, test_max_lon)
         self.assertEqual(under_test.bbox_extracted_on, test_extracted_on)
+        self.assertEqual(under_test.bbox_extracted_filesize, test_extracted_filesize)
+        self.assertEqual(under_test.bbox_extracted_calendar_start, test_extracted_calendar_start)
+        self.assertEqual(under_test.bbox_extracted_calendar_end, test_extracted_calendar_end)
         self.assertEqual(under_test.provider, test_provider)
         self.assertEqual(under_test.name, test_name)
         self.assertEqual(under_test.country_code, test_country_code)
@@ -567,6 +597,8 @@ class TestGtfsScheduleSource(TestCase):
     @patch("tools.representations.create_latest_url")
     @patch("tools.representations.create_filename")
     @patch("tools.representations.get_iso_time")
+    @patch("tools.representations.get_filesize")
+    @patch("tools.representations.extract_gtfs_calendar_range")
     @patch("tools.representations.extract_gtfs_bounding_box")
     @patch("tools.representations.is_readable")
     @patch("tools.representations.download_dataset")
@@ -575,6 +607,8 @@ class TestGtfsScheduleSource(TestCase):
         mock_download_dataset,
         mock_read_func,
         mock_bounding_box,
+        mock_calendar,
+        mock_filesize,
         mock_time,
         mock_filename,
         mock_latest_url,
@@ -594,6 +628,11 @@ class TestGtfsScheduleSource(TestCase):
             "some_max_lon",
         )
         mock_time.return_value = "some_time"
+        mock_filesize.return_value = "some_filesize"
+        mock_calendar.return_value = (
+            "some_calendar_start",
+            "some_calendar_end",
+        )
         mock_filename.return_value = "some_filename"
         mock_latest_url.return_value = "some_latest_url"
         mock_schema.return_value = deepcopy(self.test_schema)
@@ -603,6 +642,9 @@ class TestGtfsScheduleSource(TestCase):
         del self.test_kwargs[MINIMUM_LONGITUDE]
         del self.test_kwargs[MAXIMUM_LONGITUDE]
         del self.test_kwargs[EXTRACTED_ON]
+        del self.test_kwargs[EXTRACTED_FILESIZE]
+        del self.test_kwargs[EXTRACTED_CALENDAR_START]
+        del self.test_kwargs[EXTRACTED_CALENDAR_END]
         del self.test_kwargs[LATEST]
         under_test = GtfsScheduleSource.build(**self.test_kwargs)
         self.assertIsNotNone(under_test)

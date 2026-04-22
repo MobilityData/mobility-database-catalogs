@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 3121,
+    "data_type": "gtfs",
+    "provider": "VšĮ \"Žaliasis regionas\"",
+    "location": {
+        "country_code": "LT",
+        "subdivision_name": "Žaliasis regionas",
+        "bounding_box": {
+            "minimum_latitude": "55.059090",
+            "maximum_latitude": "55.927820",
+            "minimum_longitude": "21.138290",
+            "maximum_longitude": "23.509150",
+            "extracted_on": "2026-04-22T19:03:13.673013"
+        }
+    },
+    "urls": {
+        "direct_download": "https://stops.lt/taurage/taurage/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lt-vsI-zaliasis-regionas-gtfs-3121.zip?alt=media"
+    }
+}

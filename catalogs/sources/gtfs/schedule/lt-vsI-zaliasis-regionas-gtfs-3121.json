@@ -6,10 +6,10 @@
         "country_code": "LT",
         "subdivision_name": "Žaliasis regionas",
         "bounding_box": {
-            "minimum_latitude": "55.059090",
-            "maximum_latitude": "55.927820",
-            "minimum_longitude": "21.138290",
-            "maximum_longitude": "23.509150",
+            "minimum_latitude": 55.059090,
+            "maximum_latitude": 55.927820,
+            "minimum_longitude": 21.138290,
+            "maximum_longitude": 23.509150,
             "extracted_on": "2026-04-22T19:03:13.673013"
         }
     },

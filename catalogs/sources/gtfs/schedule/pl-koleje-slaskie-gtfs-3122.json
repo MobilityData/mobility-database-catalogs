@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 3122,
+    "data_type": "gtfs",
+    "provider": "Koleje Śląskie",
+    "name": "railway",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Śląskie",
+        "bounding_box": {
+            "minimum_latitude": "49.308334",
+            "maximum_latitude": "51.209250",
+            "minimum_longitude": "18.226595",
+            "maximum_longitude": "20.015326",
+            "extracted_on": "2026-04-22T19:12:54.475596"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/gtfs-proxies/24-Koleje-Slaskie/releases/latest/download/24-Koleje-Slaskie.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-koleje-slaskie-gtfs-3122.zip?alt=media"
+    }
+}

@@ -15,7 +15,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://crtm.maps.arcgis.com/sharing/rest/content/items/5c7f2951962540d69ffe8f640d94c246/data",
+        "direct_download": "https://crtm.maps.arcgis.com/sharing/rest/content/items/5c7f2951962540d69ffe8f640d94c246/data",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-madrid-metro-de-madrid-gtfs-794.zip?alt=media",
         "license": "http://www.crtm.es/licencia-de-uso"
     }

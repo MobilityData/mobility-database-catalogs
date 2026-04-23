@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 3124,
+    "data_type": "gtfs",
+    "provider": "Metropolitana di Catania - Ferrovia Circumetnea",
+    "name": "Ferrovia Circumetnea",
+    "status": "inactive",
+    "is_official": "True",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Sicilia",
+        "municipality": "Catania",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2026-04-22T16:25:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.circumetnea.it/download/general-transit-feed-specification-fce-01-02-2025-28-02-2028/?wpdmdl=17798&refresh=69c2e93fcbfb51774381375",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-metropolitana-di-catania-ferrovia-circumetnea-gtfs-3124.zip?alt=media"
+    }
+}

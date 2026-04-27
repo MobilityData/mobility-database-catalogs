@@ -12,9 +12,7 @@
     ],
     "urls": {
         "direct_download": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-si",
-        "authentication_type": 2,
-        "authentication_info": "https://api.mta.info/#/signup",
-        "api_key_parameter_name": "x-api-key",
+        "authentication_type": 0,
         "license": "https://api.mta.info/#/DataFeedAgreement"
     }
 }

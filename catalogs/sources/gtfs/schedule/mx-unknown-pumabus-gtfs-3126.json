@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Pumabús, Corredores Concesionados, Sistema de Transporte Colectivo Metro, Metrobús, Servicio de Tren Ligero, Ferrocarriles Suburbanos, Trolebús, Red de Transporte de Pasajeros, Cablebus",
     "name": "Ciudad de México - Secretaría de Movilidad (SEMOVI)",
+    "status": "deprecated",
     "location": {
         "country_code": "MX",
         "subdivision_name": "Mexico City",
@@ -19,5 +20,11 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/mx-cdmx-gtfs-3126.zip?alt=media",
         "license": "https://datos.cdmx.gob.mx/dataset/gtfs"
-    }
+    },
+    "redirect": [
+        {
+            "id": "1830",
+            "comment": " "
+        }
+    ]
 }

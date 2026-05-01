@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 3108,
+    "data_type": "gtfs",
+    "provider": "Georgian Railway",
+    "feed_contact_email": "jbb@kaidan.im",
+    "location": {
+        "country_code": "GE",
+        "bounding_box": {
+            "minimum_latitude": 41.47543,
+            "maximum_latitude": 42.510464,
+            "minimum_longitude": 41.677818,
+            "maximum_longitude": 45.098003,
+            "extracted_on": "2026-04-13T19:37:49+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://jbb.ghsq.de/gtfs/ge-georgian-railway.gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ge-unknown-georgian-railway-gtfs-3108.zip?alt=media"
+    },
+    "redirect": []
+}

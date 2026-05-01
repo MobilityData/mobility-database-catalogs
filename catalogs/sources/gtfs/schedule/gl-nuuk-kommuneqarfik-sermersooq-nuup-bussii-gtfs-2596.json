@@ -2,6 +2,7 @@
     "mdb_source_id": 2596,
     "data_type": "gtfs",
     "provider": "Nuup Bussii A/S",
+    "status": "deprecated",
     "location": {
         "country_code": "GL",
         "subdivision_name": "Nuuk",
@@ -18,5 +19,11 @@
         "direct_download": "http://70.34.208.164/gtfs.zip",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gl-nuuk-kommuneqarfik-sermersooq-nuup-bussii-gtfs-2596.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "3106",
+            "comment": " "
+        }
+    ]
 }

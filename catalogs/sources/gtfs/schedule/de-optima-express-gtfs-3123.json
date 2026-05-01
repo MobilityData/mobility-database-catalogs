@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 3123,
+    "data_type": "gtfs",
+    "provider": "Optima Express",
+    "location": {
+        "country_code": "DE",
+        "bounding_box": {
+            "minimum_latitude": 41.655796,
+            "maximum_latitude": 46.621048,
+            "minimum_longitude": 13.866726,
+            "maximum_longitude": 26.579254,
+            "extracted_on": "2026-04-22T19:17:44.257347"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/jonaes/gtfs/raw/refs/heads/main/output/optima_gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-optima-express-gtfs-3123.zip?alt=media"
+    }
+}

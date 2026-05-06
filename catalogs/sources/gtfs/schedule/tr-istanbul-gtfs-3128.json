@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 3128,
+    "data_type": "gtfs",
+    "provider": "Istanbul IETT GTFS Data",
+    "location": {
+        "country_code": "TR",
+        "subdivision_name": "Istanbul",
+        "municipality": "Istanbul",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2026-05-05T16:25:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.ibb.gov.tr/en/dataset/iett-gtfs-verisi",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/tr-istanbul-gtfs-3128.zip?alt=media"
+    }
+}

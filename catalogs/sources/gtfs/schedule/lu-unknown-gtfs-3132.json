@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 3132,
     "data_type": "gtfs",
-    "provider": "/",
+    "provider": "Administration des transports publics, Luxembourg",
     "location": {
         "country_code": "LU",
         "bounding_box": {

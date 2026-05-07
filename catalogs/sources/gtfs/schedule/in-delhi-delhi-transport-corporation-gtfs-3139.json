@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 3139,
+    "data_type": "gtfs",
+    "provider": "Delhi Transport Corporation",
+    "location": {
+        "country_code": "IN",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2026-05-07T18:35:02+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://raw.githubusercontent.com/transitland/gtfs-archives-not-hosted-elsewhere/3db26c0092b6efeb1886a99b4fc0765122b0282b/delhi-bus.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/in-delhi-delhi-transport-corporation-gtfs-3139.zip?alt=media"
+    },
+    "redirect": []
+}

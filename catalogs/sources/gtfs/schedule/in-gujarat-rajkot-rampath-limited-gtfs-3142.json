@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 3142,
+    "data_type": "gtfs",
+    "provider": "Rajkot Rampath Limited",
+    "location": {
+        "country_code": "IN",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2026-05-07T18:35:03+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/croyla/rrl-gtfs/raw/refs/heads/main/gtfs_compat.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/in-gujarat-rajkot-rampath-limited-gtfs-3142.zip?alt=media"
+    },
+    "redirect": []
+}

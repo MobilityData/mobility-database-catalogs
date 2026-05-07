@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 3133,
+    "data_type": "gtfs",
+    "provider": "Algoa Bus",
+    "location": {
+        "country_code": null,
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2026-05-07T18:35:01+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://drive.google.com/file/d/1aznf-L6ejtttrmdF897uoGNR28AL3oaz/view?usp=drive_link",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/unknown-unknown-algoa-bus-gtfs-3133.zip?alt=media"
+    },
+    "redirect": []
+}

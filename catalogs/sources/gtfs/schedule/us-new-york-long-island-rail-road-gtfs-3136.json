@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 3136,
+    "data_type": "gtfs",
+    "provider": "Long Island Rail Road",
+    "location": {
+        "country_code": "US",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2026-05-07T18:35:02+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://rrgtfsfeeds.s3.amazonaws.com/gtfslirr.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-long-island-rail-road-gtfs-3136.zip?alt=media"
+    },
+    "redirect": []
+}

@@ -13,7 +13,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://drive.google.com/file/d/1aznf-L6ejtttrmdF897uoGNR28AL3oaz/view?usp=drive_link",
+        "direct_download": "https://drive.google.com/uc?export=download&id=1aznf-L6ejtttrmdF897uoGNR28AL3oaz",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/unknown-unknown-algoa-bus-gtfs-3133.zip?alt=media"
     },

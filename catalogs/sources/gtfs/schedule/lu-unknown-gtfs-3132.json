@@ -13,7 +13,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://download.data.public.lu/resources/horaires-et-arrets-des-transport-publics-gtfs/20260305-052957/gtfs-20260304-20260430.zip",
+        "direct_download": "https://data.public.lu/fr/datasets/r/41ca1930-761a-42c3-a297-72facd2ad43e",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lu-unknown-gtfs-3132.zip?alt=media"
     },

@@ -16,7 +16,8 @@
     "urls": {
         "direct_download": "https://gismaps.guelph.ca/Pages/GTFS/google_transit.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-guelph-transit-gtfs-3140.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-guelph-transit-gtfs-3140.zip?alt=media",
+        "license": "https://explore.guelph.ca/pages/open-data-license"
     },
     "redirect": []
 }

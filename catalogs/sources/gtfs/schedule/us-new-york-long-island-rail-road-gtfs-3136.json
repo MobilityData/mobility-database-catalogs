@@ -16,7 +16,8 @@
     "urls": {
         "direct_download": "https://rrgtfsfeeds.s3.amazonaws.com/gtfslirr.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-long-island-rail-road-gtfs-3136.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-long-island-rail-road-gtfs-3136.zip?alt=media",
+        "license": "https://www.mta.info/developers"
     },
     "redirect": []
 }

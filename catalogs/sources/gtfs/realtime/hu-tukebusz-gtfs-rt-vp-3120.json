@@ -1,0 +1,12 @@
+{
+    "mdb_source_id": 3120,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Tükebusz",
+    "urls": {
+        "direct_download": "http://menobusz.tukebusz.hu:30080/mobilapp/GTFS/RTx_positions.x",
+        "authentication_type": 0
+    }
+}

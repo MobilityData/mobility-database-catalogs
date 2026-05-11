@@ -1,9 +1,8 @@
 {
-    "mdb_source_id": 2846,
+    "mdb_source_id": 3125,
     "data_type": "gtfs",
     "provider": "MZK Kutno",
     "feed_contact_email": "admin@zbiorkom.live",
-    "status": "deprecated",
     "location": {
         "country_code": "PL",
         "subdivision_name": "Mazowieckie",
@@ -13,17 +12,11 @@
             "maximum_latitude": null,
             "minimum_longitude": null,
             "maximum_longitude": null,
-            "extracted_on": "2025-09-08T18:44:40+00:00"
+            "extracted_on": "2026-04-22T18:44:40+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://cdn.zbiorkom.live/gtfs/kutno.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-mazowieckie-kutno-mzk-kutno-gtfs-2846.zip?alt=media"
-    },
-    "redirect": [
-        {
-            "id": "3125",
-            "comment": " "
-        }
-    ]
+        "direct_download": "https://api.zbiorkom.live/api6-open/kutno/gtfs/default",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-mazowieckie-kutno-mzk-kutno-gtfs-3125.zip?alt=media"
+    }
 }

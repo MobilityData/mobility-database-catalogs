@@ -2,6 +2,7 @@
     "mdb_source_id": 3142,
     "data_type": "gtfs",
     "provider": "Rajkot Rampath Limited",
+    "is_official": "False",
     "location": {
         "country_code": "IN",
         "bounding_box": {

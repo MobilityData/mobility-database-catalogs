@@ -2,6 +2,7 @@
     "mdb_source_id": 3139,
     "data_type": "gtfs",
     "provider": "Delhi Transport Corporation",
+    "is_official": "False",
     "location": {
         "country_code": "IN",
         "bounding_box": {

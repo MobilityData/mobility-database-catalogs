@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3132,
+    "data_type": "gtfs",
+    "provider": "Administration des transports publics, Luxembourg",
+    "is_official": "True",
+    "location": {
+        "country_code": "LU",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2026-05-07T18:35:01+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.public.lu/fr/datasets/r/41ca1930-761a-42c3-a297-72facd2ad43e",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lu-unknown-gtfs-3132.zip?alt=media",
+        "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "redirect": []
+}

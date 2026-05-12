@@ -2,7 +2,8 @@
     "mdb_source_id": 62,
     "data_type": "gtfs",
     "provider": "San Francisco Bay Area Water Emergency Transportation Authority (WETA)",
-    "feed_contact_email": "gtfs@sanfranciscobayferry.com",
+    "feed_contact_email": "support+test+sfbayferry-ca-us@trilliumtransit.com",
+    "status": "deprecated",
     "features": [
         "fares-v1",
         "pathways"
@@ -20,10 +21,15 @@
         }
     },
     "urls": {
-        "direct_download": "https://gtfs.sanfranciscobayferry.com/gtfs.zip",
+        "direct_download": "http://data.trilliumtransit.com/gtfs/sfbayferry-ca-us/sfbayferry-ca-us.zip",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-san-francisco-bay-area-water-emergency-transportation-authority-gtfs-62.zip?alt=media",
-        "license": "https://opendatacommons.org/licenses/by/summary/"
+        "license": "http://assets.511.org/pdf/nextgen/developers/511_Data_Agreement_Final.pdf"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "3143",
+            "comment": " "
+        }
+    ]
 }

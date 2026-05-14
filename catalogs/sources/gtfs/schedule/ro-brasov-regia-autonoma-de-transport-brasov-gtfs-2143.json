@@ -2,6 +2,7 @@
     "mdb_source_id": 2143,
     "data_type": "gtfs",
     "provider": "Regia Autonomă De Transport Brașov",
+    "is_official": "False",
     "status": "active",
     "location": {
         "country_code": "RO",

@@ -15,7 +15,7 @@
     "urls": {
         "direct_download": "https://webapps.regionofwaterloo.ca/api/grt-routes/api/staticfeeds/2",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-grt-ion-light-rail-gtfs-3151.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-grt-ion-light-rail-gtfs-3151.zip?alt=media"
     },
     "redirect": [],
     "is_official": "True"

@@ -1,7 +1,8 @@
 {
     "mdb_source_id": 2014,
     "data_type": "gtfs",
-    "provider": "UK aggregate feed",
+    "provider": "BODS UK aggregate feed",
+    "is_official": "True",
     "name": "aggregate feed",
     "location": {
         "country_code": "GB",

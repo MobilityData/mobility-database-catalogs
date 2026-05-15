@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Boxcar",
     "name": "Boxcar Commuter Bus",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "New Jersey",

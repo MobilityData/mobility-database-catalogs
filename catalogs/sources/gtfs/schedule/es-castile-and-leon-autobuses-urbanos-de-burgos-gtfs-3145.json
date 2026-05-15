@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 3145,
+    "data_type": "gtfs",
+    "provider": "Autobuses urbanos de Burgos",
+    "location": {
+        "country_code": "ES",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2026-05-15T19:13:18+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.aytoburgos.es/GTFS/Google_transit.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-castile-and-leon-autobuses-urbanos-de-burgos-gtfs-3145.zip?alt=media"
+    },
+    "redirect": []
+}

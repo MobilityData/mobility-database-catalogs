@@ -2,6 +2,7 @@
     "mdb_source_id": 2085,
     "data_type": "gtfs",
     "provider": "Komunikacja Autobusowa Świnoujście (KA Świnoujście)",
+    "is_official": "False",
     "location": {
         "country_code": "PL",
         "subdivision_name": "Zachodniopomorskie",

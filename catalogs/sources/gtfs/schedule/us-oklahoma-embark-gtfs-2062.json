@@ -2,6 +2,7 @@
     "mdb_source_id": 2062,
     "data_type": "gtfs",
     "provider": "Embark",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Oklahoma",

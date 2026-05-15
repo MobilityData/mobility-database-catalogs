@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Ventura County Transportation Commission",
     "feed_contact_email": "abolan@tmdinc.net",
+    "is_official": "True",
     "features": [
         "fares-v1"
     ],

@@ -2,6 +2,7 @@
     "mdb_source_id": 1887,
     "data_type": "gtfs",
     "provider": "Néva",
+    "status": "deprecated",
     "location": {
         "country_code": "FR",
         "subdivision_name": "Normandie",

@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Kauno viešasis transportas (KVT)",
     "name": "Kaunas",
+    "is_official": "True",
     "location": {
         "country_code": "LT",
         "subdivision_name": "Kauno Apskritis",

@@ -3,7 +3,9 @@
     "data_type": "gtfs",
     "provider": "SkyBus Hobart",
     "location": {
-        "country_code": null,
+        "country_code": "AU",
+        "subdivision_name": "Tasmania",
+        "municipality": "Hobart",
         "bounding_box": {
             "minimum_latitude": null,
             "maximum_latitude": null,
@@ -15,7 +17,7 @@
     "urls": {
         "direct_download": "https://paueasasskybusgtfs.blob.core.windows.net/gtfs-live/TAS/gtfs.zip?sp=rl&st=2026-02-18T06:46:07Z&se=2027-02-28T15:01:07Z&spr=https&sv=2024-11-04&sr=c&sig=x%2FlTHzTlGBw5D1RxF3VDkcGPf5xYjRceeXAoOjzRfnM%3D",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/unknown-unknown-skybus-hobart-gtfs-3147.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-hobart-skybus-hobart-gtfs-3147.zip?alt=media"
     },
     "redirect": []
 }

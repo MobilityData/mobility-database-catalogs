@@ -17,5 +17,6 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/sk-region-of-kosice-kosice-dzk-gtfs-3154.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [],
+    "is_official": "True"
 }

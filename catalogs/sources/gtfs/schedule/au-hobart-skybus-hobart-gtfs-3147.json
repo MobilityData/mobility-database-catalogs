@@ -19,5 +19,6 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-hobart-skybus-hobart-gtfs-3147.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [],
+    "is_official": "True"
 }

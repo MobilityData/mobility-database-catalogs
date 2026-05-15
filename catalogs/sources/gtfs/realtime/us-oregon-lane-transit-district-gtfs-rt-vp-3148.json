@@ -12,5 +12,6 @@
         "direct_download": "https://feed.ltd.org/TMGTFSRealTimeWebService/GTFS/google_transit.zip",
         "authentication_type": 0
     },
-    "redirect": []
+    "redirect": [],
+    "is_official": "True"
 }

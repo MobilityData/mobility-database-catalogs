@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Regional Rail Transport Germany",
     "name": "gtfs.de - GTFS for Germany Data provided by DELFI e.V",
+    "is_official": "True",
     "location": {
         "country_code": "DE",
         "bounding_box": {

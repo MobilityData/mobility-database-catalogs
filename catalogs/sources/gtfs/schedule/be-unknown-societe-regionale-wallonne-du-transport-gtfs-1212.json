@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Société Régionale Wallonne du Transport",
     "name": "Transport En Commun (TEC)",
+    "is_official": "True",
     "location": {
         "country_code": "BE",
         "bounding_box": {

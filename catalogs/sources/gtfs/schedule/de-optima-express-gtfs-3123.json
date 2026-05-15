@@ -2,6 +2,7 @@
     "mdb_source_id": 3123,
     "data_type": "gtfs",
     "provider": "Optima Express",
+    "is_official": "False", 
     "location": {
         "country_code": "DE",
         "bounding_box": {

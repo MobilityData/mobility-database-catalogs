@@ -2,6 +2,7 @@
     "mdb_source_id": 804,
     "data_type": "gtfs",
     "provider": "Rensselaer County (Yankee Trails)",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "New York",

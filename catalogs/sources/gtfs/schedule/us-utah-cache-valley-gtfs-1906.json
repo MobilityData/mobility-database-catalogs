@@ -2,6 +2,7 @@
     "mdb_source_id": 1906,
     "data_type": "gtfs",
     "provider": "Cache Valley Transit District",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Utah",
@@ -16,5 +17,11 @@
     "urls": {
         "direct_download": "https://cvtd.us:91/developer/googlefeed/google_transit.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-utah-cache-valley-gtfs-1906.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "ntd-80028",
+            "comment": " "
+        }
+    ]
 }

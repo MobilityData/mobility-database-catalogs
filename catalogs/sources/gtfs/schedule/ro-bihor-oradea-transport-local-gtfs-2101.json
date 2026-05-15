@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Oradea Transport Local",
     "status": "active",
+    "is_official": "True",
     "location": {
         "country_code": "RO",
         "subdivision_name": "Bihor",

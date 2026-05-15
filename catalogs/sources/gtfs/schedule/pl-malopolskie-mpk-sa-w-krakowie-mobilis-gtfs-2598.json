@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Zarząd Transportu Publicznego w Krakowie (ZTP Kraków)",
     "name": "Mobilis",
+    "is_official": "True",
     "location": {
         "country_code": "PL",
         "subdivision_name": "Małopolskie",

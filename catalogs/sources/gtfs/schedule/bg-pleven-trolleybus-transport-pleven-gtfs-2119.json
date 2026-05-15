@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Trolleybus Transport Pleven",
     "status": "active",
+    "is_official": "True",
     "location": {
         "country_code": "BG",
         "subdivision_name": "Pleven",

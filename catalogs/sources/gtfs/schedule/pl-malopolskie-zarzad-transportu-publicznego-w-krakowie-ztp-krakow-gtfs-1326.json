@@ -2,6 +2,7 @@
     "mdb_source_id": 1326,
     "data_type": "gtfs",
     "provider": "Zarząd Transportu Publicznego w Krakowie (ZTP Kraków)",
+    "is_official": "True",
     "name": "Autobus",
     "location": {
         "country_code": "PL",

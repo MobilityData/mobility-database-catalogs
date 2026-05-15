@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Duffy's Buses and Stewarts & Sons Coaches",
     "name": "Bundaberg",
+    "is_official": "True",
     "location": {
         "country_code": "AU",
         "subdivision_name": "Queensland",

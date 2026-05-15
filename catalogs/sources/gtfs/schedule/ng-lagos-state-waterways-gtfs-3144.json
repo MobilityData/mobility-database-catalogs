@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 3144,
+    "data_type": "gtfs",
+    "provider": "Lagos State Waterways",
+    "feed_contact_email": "info@lagosferries.com",
+    "status": "active",
+    "location": {
+        "country_code": "NG",
+        "subdivision_name": "Lagos State",
+        "bounding_box": {
+            "minimum_latitude": 6.3703,
+            "maximum_latitude": 6.6931,
+            "minimum_longitude": 3.1992,
+            "maximum_longitude": 3.3992,
+            "extracted_on": "2026-05-15T16:24:50+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://lagosferries.com/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ng-lagos-state-waterways-gtfs-3144.zip?alt=media"
+    },
+    "redirect": []
+}

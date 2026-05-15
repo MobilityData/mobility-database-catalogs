@@ -4,6 +4,7 @@
     "provider": "Lagos State Waterways",
     "feed_contact_email": "info@lagosferries.com",
     "status": "active",
+    "is_official": "True",
     "location": {
         "country_code": "NG",
         "subdivision_name": "Lagos State",

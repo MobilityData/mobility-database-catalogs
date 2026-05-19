@@ -2,6 +2,7 @@
     "mdb_source_id": 414,
     "data_type": "gtfs",
     "provider": "Suburban Mobility Authority for Regional Transit (SMART)",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Michigan",

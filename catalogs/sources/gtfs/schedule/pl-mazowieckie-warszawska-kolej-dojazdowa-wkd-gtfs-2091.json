@@ -2,6 +2,7 @@
     "mdb_source_id": 2091,
     "data_type": "gtfs",
     "provider": "Warszawska Kolej Dojazdowa (WKD)",
+    "is_official": "False",
     "location": {
         "country_code": "PL",
         "subdivision_name": "Mazowieckie",

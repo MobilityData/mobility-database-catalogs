@@ -2,6 +2,7 @@
     "mdb_source_id": 1895,
     "data_type": "gtfs",
     "provider": "La Navette de la CC Sel et Vermois",
+    "status": "deprecated",
     "location": {
         "country_code": "FR",
         "subdivision_name": "Grand Est",

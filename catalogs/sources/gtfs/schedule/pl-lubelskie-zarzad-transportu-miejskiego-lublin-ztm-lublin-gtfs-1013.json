@@ -2,6 +2,7 @@
     "mdb_source_id": 1013,
     "data_type": "gtfs",
     "provider": "Zarząd Transportu Miejskiego Lublin (ZTM Lublin)",
+    "is_official": "False",
     "location": {
         "country_code": "PL",
         "subdivision_name": "Lubelskie",

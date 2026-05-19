@@ -2,6 +2,7 @@
     "mdb_source_id": 651,
     "data_type": "gtfs",
     "provider": "TransLink Maryborough-Hervey Bay",
+    "is_official": "True",
     "location": {
         "country_code": "AU",
         "subdivision_name": "Queensland",

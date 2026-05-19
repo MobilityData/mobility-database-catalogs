@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Georgian Railway",
     "feed_contact_email": "jbb@kaidan.im",
+    "is_official": "False",
     "location": {
         "country_code": "GE",
         "bounding_box": {

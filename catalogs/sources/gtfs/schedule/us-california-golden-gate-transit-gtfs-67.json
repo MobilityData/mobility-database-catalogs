@@ -2,6 +2,7 @@
     "mdb_source_id": 67,
     "data_type": "gtfs",
     "provider": "Golden Gate Transit",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

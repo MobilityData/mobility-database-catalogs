@@ -2,6 +2,7 @@
     "mdb_source_id": 2337,
     "data_type": "gtfs",
     "provider": "Latvia by Gustavs Svalbe gsvalbe.id.lv",
+    "is_official": "False",
     "location": {
         "country_code": "LV",
         "bounding_box": {

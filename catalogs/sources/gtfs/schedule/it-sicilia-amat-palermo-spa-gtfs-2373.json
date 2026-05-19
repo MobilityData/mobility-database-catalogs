@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "AMAT Palermo S.P.A.",
     "feed_contact_email": "r.caporrimo@amat.pa.it", 
+    "is_official": "True",
     "location": {
         "country_code": "IT",
         "subdivision_name": "Silicia",

@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Société de transport collectif de Pierre-De Saurel",
     "feed_contact_email": "info@stcpierredesaurel.ca", 
+    "is_official": "True",
     "location": {
         "country_code": "CA",
         "subdivision_name": "Québec",

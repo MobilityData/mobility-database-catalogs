@@ -2,6 +2,7 @@
     "mdb_source_id": 2089,
     "data_type": "gtfs",
     "provider": "Urząd Miasta Torunia (MZK Toruń)",
+    "is_official": "False",
     "location": {
         "country_code": "PL",
         "subdivision_name": "Kujawsko-pomorskie",

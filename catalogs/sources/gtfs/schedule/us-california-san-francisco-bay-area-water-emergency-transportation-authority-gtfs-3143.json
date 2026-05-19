@@ -2,6 +2,7 @@
     "mdb_source_id": 3143,
     "data_type": "gtfs",
     "provider": "San Francisco Bay Area Water Emergency Transportation Authority (WETA)",
+    "is_official": "True",
     "feed_contact_email": "gtfs@sanfranciscobayferry.com",
     "features": [
         "fares-v1",

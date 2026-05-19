@@ -2,6 +2,7 @@
     "mdb_source_id": 985,
     "data_type": "gtfs",
     "provider": "Cars Région Auvergne-Rhône-Alpes (Transisère)",
+    "status": "deprecated",
     "location": {
         "country_code": "FR",
         "subdivision_name": "Auvergne-Rhône-Alpes",

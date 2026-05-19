@@ -2,6 +2,7 @@
     "mdb_source_id": 184,
     "data_type": "gtfs",
     "provider": "Metropolitan Tulsa Transit Authority (MTTA)",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Oklahoma",
@@ -17,5 +18,11 @@
     "urls": {
         "direct_download": "http://gtfs.tulsatransit.org/google_transit.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oklahoma-metropolitan-tulsa-transit-authority-mtta-gtfs-184.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "tld-235",
+            "comment": " "
+        }
+    ]
 }

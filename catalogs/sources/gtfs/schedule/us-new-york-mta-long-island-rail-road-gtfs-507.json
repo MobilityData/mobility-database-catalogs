@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Metropolitan Transit Authority (MTA)",
     "name": "Long Island Rail Road",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "New York",

@@ -2,6 +2,7 @@
     "mdb_source_id": 584,
     "data_type": "gtfs",
     "provider": "Newburgh Beacon Shuttle (Leprechaun Lines)",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "New York",
@@ -18,5 +19,11 @@
         "direct_download": "https://s3.amazonaws.com/datatools-511ny/public/Newburgh_Beacon_Shuttle.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-newburgh-beacon-shuttle-leperchaun-lines-gtfs-584.zip?alt=media",
         "license": "https://data.ny.gov/download/77gx-ii52/application/pdf"
-    }
+    },
+     "redirect": [
+        {
+            "id": "mdb-910",
+            "comment": " "
+        }
+    ]
 }

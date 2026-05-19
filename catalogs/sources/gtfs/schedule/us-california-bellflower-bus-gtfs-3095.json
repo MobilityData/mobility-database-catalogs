@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Bellflower Bus",
     "feed_contact_email": "ksmith@bellflower.ca.gov",
+    "is_official": "True",
     "status": "active",
     "location": {
         "country_code": "US",

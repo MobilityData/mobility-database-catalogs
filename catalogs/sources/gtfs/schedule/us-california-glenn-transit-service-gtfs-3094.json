@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Glenn Transit Service",
     "feed_contact_email": "chernandez@countyofglenn.net",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

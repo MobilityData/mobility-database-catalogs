@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Long Island Rail Road",
     "is_official": "True",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "bounding_box": {
@@ -19,5 +20,10 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-york-long-island-rail-road-gtfs-3136.zip?alt=media",
         "license": "https://www.mta.info/developers"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "507",
+            "comment": " "
+        }
+    ]
 }

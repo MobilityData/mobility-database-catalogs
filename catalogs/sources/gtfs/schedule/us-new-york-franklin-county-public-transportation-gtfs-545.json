@@ -2,6 +2,7 @@
     "mdb_source_id": 545,
     "data_type": "gtfs",
     "provider": "Franklin County Public Transportation",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "New York",

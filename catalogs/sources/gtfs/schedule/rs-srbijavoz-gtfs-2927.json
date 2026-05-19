@@ -2,6 +2,7 @@
   "mdb_source_id": 2927,
   "data_type": "gtfs",
   "provider": "Srbijavoz",
+  "is_official": "False",
   "location": {
     "country_code": "RS",
     "bounding_box": {

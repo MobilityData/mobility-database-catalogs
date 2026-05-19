@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "LTG Link",
     "feed_contact_email": "jbb@kaidan.im",
+    "is_official": "False",
     "location": {
         "country_code": "LT",
         "bounding_box": {

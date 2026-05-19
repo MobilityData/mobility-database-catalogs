@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Maryland Transit Administration",
     "name": "MARC Train",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Maryland",

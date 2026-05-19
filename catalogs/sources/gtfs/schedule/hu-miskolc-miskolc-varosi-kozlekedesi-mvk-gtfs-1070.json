@@ -2,6 +2,7 @@
     "mdb_source_id": 1070,
     "data_type": "gtfs",
     "provider": "Miskolc Városi Közlekedési (MVK)",
+    "status": "deprecated",
     "location": {
         "country_code": "HU",
         "subdivision_name": "Miskolc",
@@ -16,5 +17,11 @@
     "urls": {
         "direct_download": "https://gtfsapi.mvkzrt.hu/gtfs/gtfs.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/hu-miskolc-miskolc-varosi-kozlekedesi-mvk-gtfs-1070.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "tld-883",
+            "comment": " "
+        }
+    ]
 }

@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Mobilités M - TouGo",
     "name": "Transports interubains du Grésivaudan",
+    "status": "deprecated",
     "features": [
         "fares-v1"
     ],

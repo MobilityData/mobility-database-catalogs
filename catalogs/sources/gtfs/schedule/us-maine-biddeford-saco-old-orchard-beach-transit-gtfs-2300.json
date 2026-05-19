@@ -2,7 +2,7 @@
     "mdb_source_id": 2300,
     "data_type": "gtfs",
     "provider": "Biddeford Saco Old Orchard Beach Transit",
-    "is_official": "True",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Maine",
@@ -20,5 +20,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maine-biddeford-saco-old-orchard-beach-transit-gtfs-2300.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "tld-4756",
+            "comment": " "
+        }
+    ]
 }

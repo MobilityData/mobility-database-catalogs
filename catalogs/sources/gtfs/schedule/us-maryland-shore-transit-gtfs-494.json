@@ -18,5 +18,12 @@
         "direct_download": "https://github.com/mobilityequity/maryland-local-gtfs/raw/master/Shore_GTFS.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maryland-shore-transit-gtfs-494.zip?alt=media",
         "license": "https://github.com/mobilityequity/maryland-local-gtfs/blob/master/README.md"
-    }
+    },
+    "status": "deprecated",
+    "redirect": [
+        {
+            "id": "mdb-3149",
+            "comment": ""
+        }
+    ]
 }

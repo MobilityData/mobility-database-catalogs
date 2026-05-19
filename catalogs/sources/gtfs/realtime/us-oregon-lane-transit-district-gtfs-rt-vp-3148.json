@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 3148,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Lane Transit District LTD",
+    "static_reference": [
+        "131"
+    ],
+    "urls": {
+        "direct_download": "https://feed.ltd.org/TMGTFSRealTimeWebService/GTFS/google_transit.zip",
+        "authentication_type": 0
+    },
+    "redirect": [],
+    "is_official": "True"
+}

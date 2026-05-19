@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Department of Transport, Public Transport",
     "name": "Darwin public bus network",
+    "is_official": "True",
     "location": {
         "country_code": "AU",
         "subdivision_name": "Northern Territory",

@@ -2,6 +2,7 @@
     "mdb_source_id": 2100,
     "data_type": "gtfs",
     "provider": "CT BUS Constanța",
+    "is_official": "True",
     "status": "active",
     "location": {
         "country_code": "RO",

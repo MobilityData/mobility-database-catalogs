@@ -2,6 +2,7 @@
     "mdb_source_id": 2070,
     "data_type": "gtfs",
     "provider": "Kalamazoo Metro Transit",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Michigan",
@@ -19,5 +20,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-michigan-kalamazoo-metro-transit-gtfs-2070.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "tld-674",
+            "comment": " "
+        }
+    ]
 }

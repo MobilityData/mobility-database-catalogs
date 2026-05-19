@@ -1,0 +1,14 @@
+{
+    "mdb_source_id": 3174,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "BAS.MY Johor Bahru",
+    "urls": {
+        "direct_download": "https://api.data.gov.my/gtfs-realtime/vehicle-position/mybas-johor",
+        "authentication_type": 0
+    },
+    "redirect": [],
+    "is_official": "True"
+}

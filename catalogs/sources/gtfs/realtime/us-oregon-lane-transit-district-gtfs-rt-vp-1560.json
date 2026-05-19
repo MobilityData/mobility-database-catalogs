@@ -11,5 +11,12 @@
     "urls": {
         "direct_download": "http://feed.ltd.org/gtfs-realtime/vehicle",
         "authentication_type": 0
-    }
+    },
+    "status": "deprecated",
+    "redirect": [
+        {
+            "id": "mdb-3148",
+            "comment": ""
+        }
+    ]
 }

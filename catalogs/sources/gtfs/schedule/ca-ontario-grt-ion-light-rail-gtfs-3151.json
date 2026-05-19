@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 3151,
+    "data_type": "gtfs",
+    "provider": "GRT ION Light Rail",
+    "location": {
+        "country_code": "US",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2026-05-15T19:13:19+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://webapps.regionofwaterloo.ca/api/grt-routes/api/staticfeeds/2",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-grt-ion-light-rail-gtfs-3151.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "True"
+}

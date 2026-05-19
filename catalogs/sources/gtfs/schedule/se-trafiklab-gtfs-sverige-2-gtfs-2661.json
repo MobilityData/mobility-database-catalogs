@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "TrafikLab",
     "name": "GTFS Sverige 2",
+    "is_official": "True",
     "location": {
         "country_code": "SE",
         "bounding_box": {

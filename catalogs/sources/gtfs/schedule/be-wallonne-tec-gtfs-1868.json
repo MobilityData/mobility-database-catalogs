@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "TEC",
     "name": "unofficial feed with data quality improvements",
+    "is_official": "False",
     "location": {
         "country_code": "BE",
         "subdivision_name": "wallonne, Région",

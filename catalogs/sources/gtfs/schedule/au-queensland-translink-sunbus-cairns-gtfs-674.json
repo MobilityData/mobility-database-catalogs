@@ -2,6 +2,7 @@
     "mdb_source_id": 674,
     "data_type": "gtfs",
     "provider": "TransLink Sunbus Cairns",
+    "is_official": "True",
     "location": {
         "country_code": "AU",
         "subdivision_name": "Queensland",

@@ -2,6 +2,7 @@
     "mdb_source_id": 201,
     "data_type": "gtfs",
     "provider": "Metro Rock Island County Metropolitan Mass Transit District",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Illinois",

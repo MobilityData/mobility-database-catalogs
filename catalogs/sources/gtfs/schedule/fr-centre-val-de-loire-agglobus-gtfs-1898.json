@@ -19,7 +19,8 @@
         "direct_download": "https://data.centrevaldeloire.fr/api/v2/catalog/datasets/agglobus-offre-theorique-mobilite-reseau-urbain-de-bourges/files/03b395ff43085db427c8f51d83e88643",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-centre-val-de-loire-agglobus-gtfs-1898.zip?alt=media",
         "license": "https://transport.data.gouv.fr/datasets/agglobus-offre-theorique-mobilite-reseau-urbain-de-bourges"
-    }"redirect": [
+    },
+    "redirect": [
         {
             "id": "tdg-83519",
             "comment": " "

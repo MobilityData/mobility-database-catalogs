@@ -2,6 +2,7 @@
     "mdb_source_id": 2997,
     "data_type": "gtfs",
     "provider": "TRENITALIA",
+    "status": "deprecated",
     "features": [
         "fares-v1"
     ],
@@ -20,5 +21,11 @@
     "urls": {
         "direct_download": "https://www.sardegnamobilita.it/opendata/R_SARDEGTRASP_00008_1_dati_trenitalia.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-regione-autonoma-della-sardegna-trenitalia-gtfs-2997.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "1052",
+            "comment": " "
+        }
+    ]
 }

@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Transurbis Zalău",
     "status": "active",
+    "is_official": "True",
     "location": {
         "country_code": "RO",
         "subdivision_name": "Sălaj",

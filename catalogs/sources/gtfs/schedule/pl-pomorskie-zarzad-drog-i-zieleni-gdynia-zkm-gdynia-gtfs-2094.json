@@ -2,6 +2,7 @@
     "mdb_source_id": 2094,
     "data_type": "gtfs",
     "provider": "Zarząd Dróg i Zieleni Gdynia (ZKM Gdynia)",
+    "is_official": "True",
     "location": {
         "country_code": "PL",
         "subdivision_name": "Pomorskie",

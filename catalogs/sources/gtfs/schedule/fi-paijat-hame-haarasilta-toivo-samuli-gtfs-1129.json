@@ -2,6 +2,7 @@
     "mdb_source_id": 1129,
     "data_type": "gtfs",
     "provider": "Haarasilta Toivo Samuli, Järvisen Liikenne Oy, Koiviston Auto Oy, Lehtimäen Liikenne Oy, Bus Travel Oy Reissu Ruoti, Tilausliikenne Kuisma Ky",
+    "is_official": "True",
     "location": {
         "country_code": "FI",
         "subdivision_name": "Päijät-Häme",

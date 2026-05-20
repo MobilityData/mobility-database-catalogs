@@ -2,6 +2,7 @@
     "mdb_source_id": 1224,
     "data_type": "gtfs",
     "provider": "Rurtalbahn GmbH | ABELLIO Rail | VIAS GmbH| Aachener Stra\u00dfenbahn und Energieversorgungs-AG | Rurtalbus GmbH | WestVerkehr GmbH | Staatsbahnen | National Express | ASEAG Netliner",
+    "is_official": "True",
     "location": {
         "country_code": "DE",
         "subdivision_name": "Nordrhein-Westfalen",

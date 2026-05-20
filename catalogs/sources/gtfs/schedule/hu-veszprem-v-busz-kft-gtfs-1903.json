@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "V-BUSZ KFT",
     "name": "Veszprém city local buses",
+    "is_official": "True",
     "location": {
         "country_code": "HU",
         "subdivision_name": "Veszprém",

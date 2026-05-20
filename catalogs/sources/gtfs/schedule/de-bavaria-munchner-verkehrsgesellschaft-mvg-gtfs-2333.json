@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Münchner Verkehrsgesellschaft (MVG)",
     "name": "Münchner Verkehrsgesellschaft",
+    "is_official": "True",
     "location": {
         "country_code": "DE",
         "subdivision_name": "Bavaria",

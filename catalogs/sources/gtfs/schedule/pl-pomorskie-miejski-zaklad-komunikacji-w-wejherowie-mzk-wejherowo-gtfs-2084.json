@@ -2,6 +2,7 @@
     "mdb_source_id": 2084,
     "data_type": "gtfs",
     "provider": "Miejski Zakład Komunikacji w Wejherowie (MZK Wejherowo)",
+    "is_official": "False",
     "location": {
         "country_code": "PL",
         "subdivision_name": "Pomorskie",

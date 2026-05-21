@@ -2,6 +2,7 @@
     "mdb_source_id": 3122,
     "data_type": "gtfs",
     "provider": "Koleje Śląskie",
+    "is_official": "False",
     "name": "railway",
     "location": {
         "country_code": "PL",

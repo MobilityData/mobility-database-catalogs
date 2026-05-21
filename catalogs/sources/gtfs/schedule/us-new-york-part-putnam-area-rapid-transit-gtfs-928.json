@@ -2,6 +2,7 @@
     "mdb_source_id": 928,
     "data_type": "gtfs",
     "provider": "PART Putnam Area Rapid Transit",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "New York",

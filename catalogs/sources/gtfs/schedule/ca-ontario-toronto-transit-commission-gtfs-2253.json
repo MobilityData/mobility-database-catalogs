@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Toronto Transit Commission (TTC)",
     "name": "Static feed for beta realtime feed",
+    "is_official": "True",
     "status": "development",
     "location": {
         "country_code": "CA",

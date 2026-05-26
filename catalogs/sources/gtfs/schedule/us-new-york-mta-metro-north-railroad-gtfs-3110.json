@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "MTA",
     "name": "Metro-North Railroad",
-    "status': "deprecated",
+    "status": "deprecated",
     "is_official": "True",
     "location": {
         "country_code": "US",

@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Transilien SNCF",
     "is_official": "True",
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "FR",
         "subdivision_name": "Île-de-France",
@@ -19,5 +19,11 @@
     "urls": {
         "direct_download": "http://files.transilien.com/horaires/gtfs/export-TN-GTFS-LAST.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-ile-de-france-transilien-sncf-gtfs-1069.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "tdg-67595",
+            "comment": " "
+        }
+    ]
 }

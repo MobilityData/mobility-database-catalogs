@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 3176,
+    "data_type": "gtfs",
+    "provider": "Tokyo Metropolitan Bureau of Transportation - Toei Train",
+    "location": {
+        "country_code": "JP",
+        "subdivision_name": "Tokyo",
+        "bounding_box": {
+            "minimum_latitude": 35.121414,
+            "maximum_latitude": 35.865506,
+            "minimum_longitude": 138.303494,
+            "maximum_longitude": 139.155846,
+            "extracted_on": "2022-03-17T15:29:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://api-public.odpt.org/api/v4/files/Toei/data/Toei-Train-GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/jp-tokyo-toei-train-gtfs-3176.zip?alt=media"
+    }
+}

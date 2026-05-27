@@ -16,6 +16,7 @@
     },
     "urls": {
         "direct_download": "https://api-public.odpt.org/api/v4/files/Toei/data/Toei-Train-GTFS.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/jp-tokyo-toei-train-gtfs-3176.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/jp-tokyo-toei-train-gtfs-3176.zip?alt=media",
+        "license": "https://creativecommons.org/licenses/by/4.0/"
     }
 }

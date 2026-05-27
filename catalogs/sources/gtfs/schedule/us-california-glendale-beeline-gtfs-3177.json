@@ -1,8 +1,8 @@
 {
-    "mdb_source_id": 1280,
+    "mdb_source_id": 3177,
     "data_type": "gtfs",
     "provider": "Glendale Beeline",
-    "status": "deprecated",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -16,13 +16,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://transitfeeds.com/p/glendale-beeline/917/latest/download",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-glendale-beeline-gtfs-1280.zip?alt=media"
-    },
-    "redirect": [
-        {
-            "id": "3177",
-            "comment": " "
-        }
-    ]
+        "direct_download": "https://www.glendaleca.gov/home/showdocument?id=29549",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-glendale-beeline-gtfs-3177.zip?alt=media"
+    }
 }

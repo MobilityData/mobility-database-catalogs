@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 3190,
+    "data_type": "gtfs",
+    "provider": "Consiliul Județean Buzău - Transport județean",
+    "location": {
+        "country_code": "RO",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2026-05-28T17:39:36+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/Andrei7506238/Buzau-Transit-Open-GTFS/releases/download/gtfs-latest/buzau-gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-unknown-consiliul-judetean-buzau---transport-judetean-gtfs-3190.zip?alt=media"
+    },
+    "redirect": []
+}

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 3189,
+    "data_type": "gtfs",
+    "provider": "Komunikacja miejska w Jarosławiu",
+    "location": {
+        "country_code": "PL",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2026-05-28T17:39:36+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/rozkladnik/gtfs-pwik-jaroslaw/releases/latest/download/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-subcarpathian-voivodeship-komunikacja-miejska-w-jarosawiu-gtfs-3189.zip?alt=media"
+    },
+    "redirect": []
+}

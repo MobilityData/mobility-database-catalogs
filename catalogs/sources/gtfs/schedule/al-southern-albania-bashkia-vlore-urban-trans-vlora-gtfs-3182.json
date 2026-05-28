@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 3182,
+    "data_type": "gtfs",
+    "provider": "Urban Trans Vlora",
+    "location": {
+        "country_code": "AL",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2026-05-28T17:39:35+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/denisdemaj233/gtfs-vlora/releases/download/v1/gtfs-vlore.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/al-southern-albania-bashkia-vlore-urban-trans-vlora-gtfs-3182.zip?alt=media"
+    },
+    "redirect": []
+}

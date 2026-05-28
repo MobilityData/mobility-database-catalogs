@@ -22,12 +22,6 @@
     "name": "Philly PHLASH",
     "feed_contact_email": "phlash@phlvisitorcenter.com",
     "features": [],
-    "status": "deprecated",
     "is_official": "True",
-    "redirect": [
-        {
-            "id": "mdb-3179",
-            "comment": ""
-        }
-    ]
+    "redirect": []
 }

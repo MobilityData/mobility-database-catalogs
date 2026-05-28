@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 3180,
+    "data_type": "gtfs",
+    "provider": "PKS w Rzeszowie S.A.",
+    "is_official": "False",
+    "location": {
+        "country_code": "PL",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2026-05-28T17:39:35+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.mpkrzeszow.pl/gtfs-pks/latest.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-subcarpathian-voivodeship-pks-w-rzeszowie-sa-gtfs-3180.zip?alt=media"
+    },
+    "redirect": []
+}

@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 3185,
+    "data_type": "gtfs",
+    "provider": "Kumejima Ocean Jet Co., Ltd.",
+    "is_official": "True",
+    "location": {
+        "country_code": "JP",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2026-05-28T17:39:35+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://portai.jp/wp-content/uploads/2026/05/gtfs-koj-v1.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/jp-okinawa-prefecture-kumejima-ocean-jet-co-gtfs-3185.zip?alt=media"
+    },
+    "redirect": []
+}

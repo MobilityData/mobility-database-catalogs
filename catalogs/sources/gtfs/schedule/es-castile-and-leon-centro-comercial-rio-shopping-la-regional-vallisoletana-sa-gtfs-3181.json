@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 3181,
+    "data_type": "gtfs",
+    "provider": "Centro Comercial RÍO Shopping (La Regional Vallisoletana S.A)",
+    "is_official": "False",
+    "location": {
+        "country_code": "ES",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2026-05-28T17:39:35+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/10198aprieto/rioshoppingbus-gtfs/archive/refs/heads/main.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-castile-and-leon-centro-comercial-rio-shopping-la-regional-vallisoletana-sa-gtfs-3181.zip?alt=media"
+    },
+    "redirect": []
+}

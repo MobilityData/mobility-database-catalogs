@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3187,
+    "data_type": "gtfs",
+    "provider": "Springfield Mass Transit District (SMTD)",
+    "is_official": "True",
+    "feed_contact_email": "customerservice@smtd.org",
+    "location": {
+        "country_code": "US",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2026-05-28T17:39:36+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://ride.smtd.org/gtfs/smtd_gtfs_feed.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-illinois-springfield-mass-transit-district-smtd-gtfs-3187.zip?alt=media"
+    },
+    "redirect": []
+}

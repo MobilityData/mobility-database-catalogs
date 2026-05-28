@@ -18,5 +18,12 @@
     "urls": {
         "direct_download": "http://data.smtd.org/gtfs/smtd_gtfs_feed.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-illinois-springfield-mass-transit-district-smtd-gtfs-385.zip?alt=media"
-    }
+    },
+    "status": "deprecated",
+    "redirect": [
+        {
+            "id": "mdb-3187",
+            "comment": ""
+        }
+    ]
 }

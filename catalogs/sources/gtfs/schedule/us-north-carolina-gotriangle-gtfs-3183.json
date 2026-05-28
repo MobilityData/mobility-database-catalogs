@@ -2,6 +2,8 @@
     "mdb_source_id": 3183,
     "data_type": "gtfs",
     "provider": "GoTriangle",
+    "is_official": "True",
+    "feed_contact_email": "customerservice@gotriangle.org",
     "location": {
         "country_code": "US",
         "bounding_box": {

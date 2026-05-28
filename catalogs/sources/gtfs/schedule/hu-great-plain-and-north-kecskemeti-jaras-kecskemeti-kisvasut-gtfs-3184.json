@@ -2,6 +2,7 @@
     "mdb_source_id": 3184,
     "data_type": "gtfs",
     "provider": "Kecskeméti Kisvasút",
+    "is_official": "True",
     "location": {
         "country_code": "HU",
         "bounding_box": {

@@ -2,6 +2,7 @@
     "mdb_source_id": 470,
     "data_type": "gtfs",
     "provider": "Maryland Transit Administration Metro Subway",
+    "is_official": "True",
     "name": "Metro SubwayLink",
     "features": [
         "fares-v2",

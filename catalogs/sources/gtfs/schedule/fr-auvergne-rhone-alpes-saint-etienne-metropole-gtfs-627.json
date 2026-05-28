@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Saint-Etienne Métropole",
     "name": "Réseau de transport stéphanois (STAS)",
+    "status": "deprecated",
     "location": {
         "country_code": "FR",
         "subdivision_name": "Auvergne-Rhône-Alpes",
@@ -19,5 +20,11 @@
         "direct_download": "https://www.data.gouv.fr/fr/datasets/r/8b3e71e2-1155-4fb0-bf4a-cdddbb496e29",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-auvergne-rhone-alpes-saint-etienne-metropole-gtfs-627.zip?alt=media",
         "license": "https://transport.data.gouv.fr/datasets/donnees-horaires-theoriques-gtfs-du-reseau-de-transport-de-la-metropole-de-saint-etienne-stas/"
-    }
+    },
+    "redirect": [
+        {
+            "id": "tdg-81023",
+            "comment": " "
+        }
+    ]
 }

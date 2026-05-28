@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Kayak Transit (CTUIR)",
     "feed_contact_email": "support+test+ctuir-or-us@trilliumtransit.com",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Oregon",

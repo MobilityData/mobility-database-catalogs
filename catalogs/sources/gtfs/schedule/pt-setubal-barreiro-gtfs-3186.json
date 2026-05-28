@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Transportes Colectivos do Barreiro",
     "name": "Transportes Colectivos do Barreiro",
+    "is_official": "True",
     "location": {
         "country_code": "PT",
         "subdivision_name": "Setúbal",

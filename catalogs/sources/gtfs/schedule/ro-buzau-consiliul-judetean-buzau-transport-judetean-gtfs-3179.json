@@ -2,6 +2,7 @@
     "mdb_source_id": 3179,
     "data_type": "gtfs",
     "provider": "Consiliul Județean Buzău - Transport județean",
+    "is_official": "False",
     "location": {
         "country_code": "RO",
         "bounding_box": {

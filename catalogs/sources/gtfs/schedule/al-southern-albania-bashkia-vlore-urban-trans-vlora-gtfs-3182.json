@@ -2,6 +2,7 @@
     "mdb_source_id": 3182,
     "data_type": "gtfs",
     "provider": "Urban Trans Vlora",
+    "is_official": "False",
     "location": {
         "country_code": "AL",
         "bounding_box": {

@@ -1,9 +1,8 @@
 {
-    "mdb_source_id": 749,
+    "mdb_source_id": 3190,
     "data_type": "gtfs",
     "provider": "Société de transport de Laval",
     "is_official": "True",
-    "status": "deprecated",
     "location": {
         "country_code": "CA",
         "subdivision_name": "Québec",
@@ -17,13 +16,8 @@
         }
     },
     "urls": {
-        "direct_download": "https://www.stl.laval.qc.ca/opendata/GTF_STL.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-societe-de-transport-de-laval-gtfs-749.zip?alt=media",
+        "direct_download": "https://www.stlaval.ca/datas/opendata/GTF_STL.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-societe-de-transport-de-laval-gtfs-3190.zip?alt=media",
         "license": "https://stlaval.ca/a-propos/diffusion/donnees-ouvertes"
-    },
-    "redirect": [
-        {
-            "id": "3190"
-        }
-    ]
+    }
 }

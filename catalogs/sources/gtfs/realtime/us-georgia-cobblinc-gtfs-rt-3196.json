@@ -7,6 +7,7 @@
     ],
     "provider": "CobbLinc",
     "is_official": "True",
+    "feed_contact_email": "Cobblincis@cobbcounty.gov",
     "static_reference": [
         "3193"
     ],

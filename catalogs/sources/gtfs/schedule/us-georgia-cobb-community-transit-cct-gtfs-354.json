@@ -2,6 +2,7 @@
     "mdb_source_id": 354,
     "data_type": "gtfs",
     "provider": "Cobb Community Transit (CCT)",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Georgia",
@@ -17,5 +18,11 @@
     "urls": {
         "direct_download": "https://www.arcgis.com/sharing/rest/content/items/1ce8e370a12c41b5854d8baa21f8451c/data",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-georgia-cobb-community-transit-cct-gtfs-354.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "3193",
+            "comment": " "
+        }
+    ]
 }

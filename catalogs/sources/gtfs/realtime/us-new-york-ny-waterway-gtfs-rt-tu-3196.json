@@ -5,7 +5,7 @@
         "tu"
     ],
     "provider": "NY Waterway",
-    "note": "Full - only used for 511 integration"
+    "note": "Full - only used for 511 integration",
     "is_official": "True",
     "static_reference": [
         "3192"

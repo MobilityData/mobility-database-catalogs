@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 3196,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "NY Waterway",
+    "note": "Full - only used for 511 integration"
+    "is_official": "True",
+    "static_reference": [
+        "3192"
+    ],
+    "urls": {
+        "direct_download": "https://nywaterway.connexionz.net/rtt/public/utility/gtfsrealtime.aspx/tripupdate2",
+        "authentication_type": 0
+    }
+}

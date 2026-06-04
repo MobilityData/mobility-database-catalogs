@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "CobbLinc",
     "is_official": "True", 
+    "feed_contact_email": "Cobblincis@cobbcounty.gov",
     "location": {
         "country_code": "US",
         "subdivision_name": "Georgia",

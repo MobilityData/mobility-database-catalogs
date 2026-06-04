@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 3207,
+    "data_type": "gtfs",
+    "provider": "Dry Tortugas National Park",
+    "is_official": "True",
+    "name": "DRTO Ferry Service",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Florida",
+        "bounding_box": {
+            "minimum_latitude": 22.9433339258299,
+            "maximum_latitude": 24.7482826522346,
+            "minimum_longitude": 51.6293473899297,
+            "maximum_longitude": 55.9240267180399,
+            "extracted_on": "2022-05-16T16:41:19+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.nps.gov/external-resources/gtfs/drto/drto-ferry-service.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-drto-ferry-service-gtfs-3207.zip?alt=media"
+    }
+}

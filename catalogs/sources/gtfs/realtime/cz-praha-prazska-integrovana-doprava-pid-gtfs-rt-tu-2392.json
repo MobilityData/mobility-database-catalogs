@@ -5,6 +5,8 @@
         "tu"
     ],
     "provider": "Prazska integrovana doprava (PID))",
+    "is_official": "True",
+    "feed_contact_email": "golemio@operatorict.cz",
     "static_reference": [
         "767"
     ],

@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3202,
+    "data_type": "gtfs",
+    "provider": "El Paso Transportation Authority",
+    "feed_contact_email": "support@peaktransit.com",
+    "is_official: "True",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Texas",
+        "municipality": "El Paso",
+        "bounding_box": {
+            "minimum_latitude": 22.9433339258299,
+            "maximum_latitude": 24.7482826522346,
+            "minimum_longitude": 51.6293473899297,
+            "maximum_longitude": 55.9240267180399,
+            "extracted_on": "2022-05-16T16:41:19+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.peaktransit.com/staticgtfs/193/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-texas-el-paso-transportation-authority-gtfs-3202.zip?alt=media"
+    }
+}

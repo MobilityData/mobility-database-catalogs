@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 3204,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "El Paso Transportation Authority",
+    "feed_contact_email": "support@peaktransit.com",
+    "is_official": "True",
+    "static_reference": [
+        "3202"
+    ],
+    "urls": {
+        "direct_download": "https://data.peaktransit.com/gtfsrt/193/VehiclePosition.pb",
+        "authentication_type": 0
+    }
+}

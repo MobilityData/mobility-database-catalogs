@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "El Paso Transportation Authority",
     "feed_contact_email": "support@peaktransit.com",
-    "is_official: "True",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Texas",

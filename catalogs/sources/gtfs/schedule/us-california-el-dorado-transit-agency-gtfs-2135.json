@@ -4,7 +4,7 @@
     "provider": "El Dorado Transit Agency",
     "name": "El Dorado County Transit Authority",
     "is_official": "True",
-    "status": "active",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -22,5 +22,10 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-el-dorado-transit-agency-gtfs-2135.zip?alt=media",
         "license": "https://eldoradotransit.com/trip-planner-information/gtfs-data/"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "mdb-75",
+            "comment": " "
+        }
+    ]
 }

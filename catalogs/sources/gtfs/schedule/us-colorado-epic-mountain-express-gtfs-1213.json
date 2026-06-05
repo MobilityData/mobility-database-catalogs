@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Epic Mountain Express",
     "feed_contact_email": "support+test+cme-co-us@trilliumtransit.com",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Colorado",
@@ -20,5 +21,10 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-epic-mountain-express-gtfs-1213.zip?alt=media",
         "license": "https://colorado-gtfs.trilliumtransit.com/"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "mdb-172",
+            "comment": " "
+        }
+    ]
 }

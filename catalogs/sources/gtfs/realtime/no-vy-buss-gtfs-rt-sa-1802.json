@@ -5,11 +5,18 @@
         "vp"
     ],
     "provider": "Vy Buss (SE)",
+    "status": "deprecated",
     "static_reference": [
         "1078"
     ],
     "urls": {
         "direct_download": "https://api.entur.io/realtime/v1/gtfs-rt/vehicle-positions?datasource=VYB",
         "license": "https://data.norge.no/nlod/en/"
-    }
+    },
+    "redirect": [
+        {
+            "id": "1801",
+            "comment": " "
+        }
+    ]
 }

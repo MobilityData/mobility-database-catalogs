@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3204,
+    "data_type": "gtfs",
+    "provider": "Boston Harbor Island National Recreation Area",
+    "is_official": "True",
+    "name": "Cathleen Stone Island Ferry",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Massachusetts",
+        "municipality": "Boston",
+        "bounding_box": {
+            "minimum_latitude": 22.9433339258299,
+            "maximum_latitude": 24.7482826522346,
+            "minimum_longitude": 51.6293473899297,
+            "maximum_longitude": 55.9240267180399,
+            "extracted_on": "2022-05-16T16:41:19+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.nps.gov/external-resources/gtfs/boha/cathleen-stone-island-ferry.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-boston-cathleen-stone-island-ferry-gtfs-3204.zip?alt=media"
+    }
+}

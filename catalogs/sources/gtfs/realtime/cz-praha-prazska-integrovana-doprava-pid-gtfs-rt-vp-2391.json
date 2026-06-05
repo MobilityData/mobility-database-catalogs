@@ -4,7 +4,9 @@
     "entity_type": [
         "vp"
     ],
-    "provider": "Prazska integrovana doprava (PID))",
+    "provider": "Prazska integrovana doprava (PID)",
+    "is_official": "True",
+    "feed_contact_email": "golemio@operatorict.cz",
     "static_reference": [
         "767"
     ],

@@ -1,8 +1,8 @@
 {
     "mdb_source_id": 1905,
     "data_type": "gtfs",
-    "provider": "National Park Service",
-    "name": "Grand Canyon National Park - South Rim Shuttle",
+    "provider": "Grand Canyon National Park",
+    "name": "South Rim Shuttle",
     "is_official": "True",
     "location": {
         "country_code": "US",
@@ -16,7 +16,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://nps.gov/external-resources/gtfs/grca/south-rim-shuttle-service.zip",
+        "direct_download": "https://www.nps.gov/external-resources/gtfs/grca/south-rim-shuttle-service.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-arizona-national-park-service-gtfs-1905.zip?alt=media"
     }
 }

@@ -5,7 +5,7 @@
         "sa"
     ],
     "provider": "Metro Christchurch",
-    "status': "deprecated",
+    "status": "deprecated",
     "is_official": "True",
     "static_reference": [
         "1313"

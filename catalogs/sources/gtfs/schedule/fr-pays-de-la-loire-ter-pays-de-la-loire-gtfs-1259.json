@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "TER Pays de la Loire",
     "name": "Cars SNCF transports à la demande",
+    "status": "deprecated",
     "is_official": "True",
     "location": {
         "country_code": "FR",
@@ -21,5 +22,9 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-pays-de-la-loire-ter-pays-de-la-loire-gtfs-1259.zip?alt=media",
         "license": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "tdg-83582"
+        }
+    ]
 }

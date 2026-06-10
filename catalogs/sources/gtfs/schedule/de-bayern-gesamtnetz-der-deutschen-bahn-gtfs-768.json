@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Long-distance rail transport in Germany",
     "name": "gtfs.de - GTFS for Germany Data provided by DELFI e.V",
-    "is_official": "True",
+    "is_official": "False",
     "location": {
         "country_code": "DE",
         "subdivision_name": "",

@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 3215,
+    "data_type": "gtfs",
+    "provider": "DELFI Germany-wide scheduled timetable data (GTFS)",
+    "is_official": "True",
+    "name": "User registration required to download"
+    "location": {
+        "country_code": "DE",
+        "bounding_box": {
+            "minimum_latitude": -35.182685,
+            "maximum_latitude": -34.042402,
+            "minimum_longitude": -60.97663,
+            "maximum_longitude": -57.730345,
+            "extracted_on": "2022-03-23T23:10:49+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.opendata-oepnv.de/fileadmin/datasets/delfi/20260608_fahrplaene_gesamtdeutschland_gtfs.zip",
+        "authentication_type": 0,
+        "authentication_info_url": "https://www.opendata-oepnv.de/ht/de/standards/registrierung",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-delfi-nationwide-gtfs-3215.zip?alt=media",
+        "license": "http://www.opendefinition.org/licenses/cc-by"
+    },
+    "redirect": []
+}

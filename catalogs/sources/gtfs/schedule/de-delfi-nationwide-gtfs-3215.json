@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "DELFI Germany-wide scheduled timetable data (GTFS)",
     "is_official": "True",
-    "name": "User registration required to download"
+    "name": "User registration required to download",
     "location": {
         "country_code": "DE",
         "bounding_box": {

@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 3214,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Acadia National Park - Island Explorer",
+    "is_official": "True",
+    "static_reference": [
+        "tld-6900"
+    ],
+    "urls": {
+        "direct_download": "https://islandexplorertracker.availtec.com/InfoPoint/GTFS-Realtime.ashx?&Type=VehiclePosition&serverid=0",
+        "authentication_type": 0
+    }
+}

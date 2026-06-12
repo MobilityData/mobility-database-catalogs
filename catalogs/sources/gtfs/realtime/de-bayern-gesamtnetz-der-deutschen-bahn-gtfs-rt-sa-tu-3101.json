@@ -5,7 +5,8 @@
         "tu",
         "sa"
     ],
-    "provider": "DELFI Realtime Data",
+    "provider": "gtfs.de DELFI Realtime data",
+    "is_official": "False",
     "static_reference": [
         "1090",
         "1089",

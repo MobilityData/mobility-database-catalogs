@@ -15,7 +15,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://www.opendata-oepnv.de/fileadmin/datasets/delfi/20260608_fahrplaene_gesamtdeutschland_gtfs.zip",
+        "direct_download": "https://www.opendata-oepnv.de/index.php?id=1384&tx_vrrkit_view%5Bsharing%5D=eyJkYXRhc2V0IjoiZGV1dHNjaGxhbmR3ZWl0ZS1zb2xsZmFocnBsYW5kYXRlbi1ndGZzIiwidXNlcklkIjo1MDM4fQ%3D%3D&tx_vrrkit_view%5Baction%5D=download&tx_vrrkit_view%5Bcontroller%5D=View",
         "authentication_type": 0,
         "authentication_info_url": "https://www.opendata-oepnv.de/ht/de/standards/registrierung",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-delfi-nationwide-gtfs-3215.zip?alt=media",

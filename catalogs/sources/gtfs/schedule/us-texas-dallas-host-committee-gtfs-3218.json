@@ -6,7 +6,7 @@
     "location": {
         "country_code": "US",
         "subdivision_name": "Texas",
-        "municipality": "Dallas"
+        "municipality": "Dallas",
         "bounding_box": {
             "minimum_latitude": 24.720541,
             "maximum_latitude": 25.411596,

@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 3220,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Helsingin seudun liikenne",
+    "name": "Helsingin seudun liikenne",
+    "static_reference": [
+        "865"
+    ],
+    "urls": {
+        "direct_download": "https://realtime.hsl.fi/realtime/service-alerts/v2/hsl",
+        "authentication_type": 0,
+        "license": "https://www.hsl.fi/en/hsl/open-data#gtfs-rt-ap-is"
+    }
+}

@@ -4,13 +4,13 @@
     "entity_type": [
         "tu"
     ],
-    "provider": "Sonoma Marin Area Rail Transit (SMART)",
+    "provider": "Sonoma-Marin Area Rail Transit (SMART)",
     "static_reference": ["815"],
     "urls": {
-        "direct_download": "https://api.goswift.ly/real-time/smart/gtfs-rt-trip-updates",
-        "authentication_type": 2,
-        "authentication_info": "https://goswift.ly/realtime-api-key",
-        "api_key_parameter_name": "authorization",
-        "license": "https://www.goswift.ly/api-license"
+        "direct_download": "https://api.511.org/transit/tripupdates?agency=SA",
+        "authentication_type": 1,
+        "authentication_info": "https://511.org/open-data/token",
+        "api_key_parameter_name": "api_key",
+        "license": "https://511.org/sites/default/files/pdfs/511_Data_Agreement_Final.pdf"
     }
 }

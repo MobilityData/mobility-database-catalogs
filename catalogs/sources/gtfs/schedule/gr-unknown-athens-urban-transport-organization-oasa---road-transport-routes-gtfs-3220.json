@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 3220,
+    "data_type": "gtfs",
+    "provider": "Athens Urban Transport Organization (OASA) - Road Transport Routes",
+    "location": {
+        "country_code": "GR",
+        "bounding_box": {
+            "minimum_latitude": 37.7175255,
+            "maximum_latitude": 38.3278109,
+            "minimum_longitude": 23.320223,
+            "maximum_longitude": 24.036624,
+            "extracted_on": "2026-06-12T19:57:56+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.gov.gr/dataset/fb049bb1-aea6-4443-95fa-8b941dd6a057/resource/119db488-16ea-4c76-b560-41c472872390/download/osy_gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gr-unknown-athens-urban-transport-organization-oasa---road-transport-routes-gtfs-3220.zip?alt=media"
+    },
+    "redirect": []
+}

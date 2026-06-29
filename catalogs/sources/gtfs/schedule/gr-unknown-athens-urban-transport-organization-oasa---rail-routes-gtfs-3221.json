@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3219,
+    "mdb_source_id": 3221,
     "data_type": "gtfs",
     "provider": "Athens Urban Transport Organization (OASA) - Rail Routes",
     "location": {
@@ -14,7 +14,7 @@
     },
     "urls": {
         "direct_download": "https://data.gov.gr/dataset/4e897a75-975a-4ce7-af65-f32ea01f93b9/resource/5e3858ee-d9ba-48c2-9015-744ea160976d/download/stasy_gtfs.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gr-unknown-athens-urban-transport-organization-oasa---rail-routes-gtfs-3224.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gr-unknown-athens-urban-transport-organization-oasa---rail-routes-gtfs-3221.zip?alt=media"
     },
     "redirect": []
 }

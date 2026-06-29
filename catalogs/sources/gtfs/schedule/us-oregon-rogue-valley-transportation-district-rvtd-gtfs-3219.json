@@ -1,10 +1,9 @@
 {
-    "mdb_source_id": 3103,
+    "mdb_source_id": 3219,
     "data_type": "gtfs",
     "provider": "Rogue Valley Transportation District (RVTD)",
     "is_official": "True",
     "feed_contact_email": "seisma@rvtd.org",
-    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Oregon",
@@ -14,17 +13,11 @@
             "maximum_latitude": 42.481486,
             "minimum_longitude": -122.9667,
             "maximum_longitude": -122.671537,
-            "extracted_on": "2022-03-14T21:12:48+00:00"
+            "extracted_on": "2026-06-26T21:12:48+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://rvtd.org/wp-content/uploads/2026/05/rvtd-or-us.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-rogue-valley-transportation-district-rvtd-gtfs-3103.zip?alt=media"
-    },
-     "redirect": [
-        {
-            "id": "3219",
-            "comment": " "
-        }
-    ]
+        "direct_download": "https://gtfs.rvtd.cadavl.com/RVTD/GTFS/GTFS_RVTD.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-rogue-valley-transportation-district-rvtd-gtfs-3219.zip?alt=media"
+    }
 }

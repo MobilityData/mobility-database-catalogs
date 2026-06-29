@@ -4,13 +4,17 @@
     "entity_type": [
         "tu"
     ],
-    "provider": "Sonoma-Marin Area Rail Transit (SMART)",
+    "provider": "Sonoma Marin Area Rail Transit (SMART)",
     "static_reference": ["815"],
     "urls": {
-        "direct_download": "https://api.511.org/transit/tripupdates?agency=SA",
-        "authentication_type": 1,
-        "authentication_info": "https://511.org/open-data/token",
-        "api_key_parameter_name": "api_key",
-        "license": "https://511.org/sites/default/files/pdfs/511_Data_Agreement_Final.pdf"
-    }
+        "direct_download": "http://data.trilliumtransit.com/gtfs/smart-ca-us/smart-ca-us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-sonoma-marin-area-rail-transit-smart-gtfs-815.zip?alt=media"
+    },
+     "redirect": [
+        {
+            "id": "3223",
+            "comment": " "
+        }
+    ]
 }

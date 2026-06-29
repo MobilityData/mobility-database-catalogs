@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 3232,
+    "data_type": "gtfs",
+    "provider": "Transports Metropolitans de Barcelona (TMB)",
+    "is_official": "True",
+    "name": "TMB",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Barcelona",
+        "municipality": "Barcelona",
+        "bounding_box": {
+            "minimum_latitude": 41.287565,
+            "maximum_latitude": 41.499727,
+            "minimum_longitude": 2.046171,
+            "maximum_longitude": 2.245194,
+            "extracted_on": "2026-06-29T21:37:06+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://developer.tmb.cat/downloads/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-barcelona-transports-metropolitans-de-barcelona-tmb-gtfs-3232.zip?alt=media"
+    },
+    "redirect": []
+}

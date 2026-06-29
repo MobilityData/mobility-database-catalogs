@@ -1,6 +1,7 @@
 {
     "mdb_source_id": 3231,
     "data_type": "gtfs-rt",
+    "is_official": "True",
     "entity_type": [
         "tu",
         "vp"

@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3219,
+    "mdb_source_id": 3226,
     "data_type": "gtfs",
     "provider": "Московский транспорт - Moscow Transport",
     "status": "inactive",
@@ -16,6 +16,6 @@
     },
     "urls": {
         "direct_download": "https://greens3.transitpdf.com/files/sourcedata/moscow-official.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ru-moscow-busmaps-gtfs-3219.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ru-moscow-busmaps-gtfs-3226.zip?alt=media"
     }
 }

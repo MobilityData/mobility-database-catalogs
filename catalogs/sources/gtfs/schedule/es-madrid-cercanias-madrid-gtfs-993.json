@@ -1,8 +1,10 @@
 {
     "mdb_source_id": 993,
     "data_type": "gtfs",
-    "provider": "Cercanías Madrid",
-    "status": "deprecated",
+    "provider": "Consorcio Regional de Transportes de Madrid CRTM EMT (Red de EMT)",
+    "name": "Powered by CRTM: http://www.crtm.es/",
+    "is_official": "True",
+    "feed_contact_email": "opendata@crtm.es",
     "location": {
         "country_code": "ES",
         "subdivision_name": "Madrid",
@@ -11,17 +13,13 @@
             "maximum_latitude": 40.5172566213243,
             "minimum_longitude": -3.83657,
             "maximum_longitude": -3.54249327469938,
-            "extracted_on": "2022-03-17T18:59:09+00:00"
+            "extracted_on": "2026-06-29T18:59:09+00:00"
         }
     },
     "urls": {
         "direct_download": "https://www.arcgis.com/sharing/rest/content/items/868df0e58fca47e79b942902dffd7da0/data",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-madrid-cercanias-madrid-gtfs-993.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-madrid-cercanias-madrid-gtfs-993.zip?alt=media",
+        "license": "http://www.crtm.es/licencia-de-uso"
     },
-    "redirect": [
-        {
-            "id": "2720",
-            "comment": " "
-        }
-    ]
+    "redirect": []
 }

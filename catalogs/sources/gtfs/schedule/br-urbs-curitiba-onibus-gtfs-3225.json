@@ -2,6 +2,7 @@
     "mdb_source_id": 3225,
     "data_type": "gtfs",
     "provider": "URBS Curitiba",
+    "is_official": "False",
     "location": {
         "country_code": "BR",
         "subdivision_name": "Paraná",

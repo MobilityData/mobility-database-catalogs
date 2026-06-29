@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Sonoma-Marin Area Rail Transit (SMART)",
     "is_official": "True",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

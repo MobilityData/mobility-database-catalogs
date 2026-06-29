@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Московский транспорт - Moscow Transport",
     "status": "inactive",
+    "is_official": "False",
     "location": {
         "country_code": "RU",
         "subdivision_name": "Moscow Oblast",

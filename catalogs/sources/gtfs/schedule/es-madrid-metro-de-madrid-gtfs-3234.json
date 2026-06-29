@@ -1,9 +1,10 @@
 {
-    "mdb_source_id": 794,
+    "mdb_source_id": 3234,
     "data_type": "gtfs",
-    "provider": "Metro de Madrid",
+    "provider": "Consorcio Regional de Transportes de Madrid CRTM Metro de Madrid (Red de Metro)",
+    "name": "Powered by CRTM: http://www.crtm.es/",
     "is_official": "True",
-    "status": "deprecated",
+    "feed_contact_email": "opendata@crtm.es",
     "location": {
         "country_code": "ES",
         "subdivision_name": "Madrid",
@@ -17,13 +18,7 @@
     },
     "urls": {
         "direct_download": "https://crtm.maps.arcgis.com/sharing/rest/content/items/5c7f2951962540d69ffe8f640d94c246/data",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-madrid-metro-de-madrid-gtfs-794.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-madrid-metro-de-madrid-gtfs-3234.zip?alt=media",
         "license": "http://www.crtm.es/licencia-de-uso"
-    },
-    "redirect": [
-        {
-            "id": "3234",
-            "comment": " "
-        }
-    ]
+    }
 }

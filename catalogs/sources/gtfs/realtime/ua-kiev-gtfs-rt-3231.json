@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 3231,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu",
+        "vp"
+    ],
+    "provider": "Kiev",
+    "static_reference": [
+        "3230"
+    ],
+    "urls": {
+        "direct_download": "http://193.23.225.214:732/api/realtime",
+        "authentication_type": 0,
+        "license": "https://creativecommons.org/licenses/by/4.0/"
+    }
+}

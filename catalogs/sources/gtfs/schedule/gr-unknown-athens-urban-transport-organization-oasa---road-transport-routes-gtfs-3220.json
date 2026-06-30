@@ -15,7 +15,7 @@
     },
     "urls": {
         "direct_download": "https://data.gov.gr/dataset/fb049bb1-aea6-4443-95fa-8b941dd6a057/resource/119db488-16ea-4c76-b560-41c472872390/download/osy_gtfs.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gr-unknown-athens-urban-transport-organization-oasa-road-transport-routes-gtfs-3220.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gr-unknown-athens-urban-transport-organization-oasa---road-transport-routes-gtfs-3220.zip?alt=media"
     },
     "redirect": []
 }

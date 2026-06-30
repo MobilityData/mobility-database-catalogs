@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3229,
+    "data_type": "gtfs",
+    "provider": "Romanian Railway Operators",
+    "name": "S.C. Informatică Feroviară S.A. open data converted to GTFS",
+    "feed_contact_email": "jbb@kaidan.im",
+    "location": {
+        "country_code": "RO",
+        "bounding_box": {
+            "minimum_latitude": 43.771992,
+            "maximum_latitude": 47.984528,
+            "minimum_longitude": 20.404856,
+            "maximum_longitude": 28.789612,
+            "extracted_on": "2026-06-29T21:35:27+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://jbb.ghsq.de/gtfs/ro-railway.gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-unknown-romanian-railway-operators-gtfs-3229.zip?alt=media",
+        "license": "https://data.gov.ro/base/images/logoinst/OGL-ROU-1.0.pdf"
+    },
+    "redirect": []
+}

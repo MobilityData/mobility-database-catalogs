@@ -8,8 +8,8 @@
     "provider": "Verkehrsverbund Berlin-Brandenburg (VBB)",
     "static_reference": [
         "782",
-        "3236",
-        "3235"
+        "3233",
+        "3234"
     ],
     "urls": {
         "direct_download": "https://production.gtfsrt.vbb.de/data",

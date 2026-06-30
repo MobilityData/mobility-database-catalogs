@@ -4,7 +4,6 @@
     "provider": "Consorcio Regional de Transportes de Madrid CRTM Intercity Buses (Madrid Intercity Buses)",
     "name": "Powered by CRTM: http://www.crtm.es/",
     "is_official": "True",
-    "status": "deprecated",
     "feed_contact_email": "opendata@crtm.es",
     "location": {
         "country_code": "ES",
@@ -21,11 +20,5 @@
         "direct_download": "http://crtm.maps.arcgis.com/sharing/rest/content/items/885399f83408473c8d815e40c5e702b7/data",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-madrid-autobuses-interurbanos-madrid-crtm-gtfs-791.zip?alt=media",
         "license": "http://www.crtm.es/licencia-de-uso"
-    },
-    "redirect": [
-        {
-            "id": "3233",
-            "comment": " "
-        }
-    ]
+    }
 }

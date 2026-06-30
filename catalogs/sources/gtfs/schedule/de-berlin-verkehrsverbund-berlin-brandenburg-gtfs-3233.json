@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3236,
+    "mdb_source_id": 3233,
     "data_type": "gtfs",
     "provider": "Verkehrsverbund Berlin-Brandenburg (VBB)",
     "name": "Powered by VBB: http://www.vbb.de/",
@@ -18,7 +18,7 @@
     },
     "urls": {
         "direct_download": "https://unternehmen.vbb.de/fileadmin/user_upload/VBB/Dokumente/API-Datensaetze/gtfs-mastscharf/GTFS.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-berlin-verkehrsverbund-berlin-brandenburg-gtfs-3236.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-berlin-verkehrsverbund-berlin-brandenburg-gtfs-3233.zip?alt=media",
         "license": "https://creativecommons.org/licenses/by/4.0/deed.en"
     }
 }

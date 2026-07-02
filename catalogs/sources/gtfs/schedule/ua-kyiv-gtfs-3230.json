@@ -1,12 +1,12 @@
 {
     "mdb_source_id": 3230,
     "data_type": "gtfs",
-    "provider": "Kiev",
+    "provider": "Kyiv",
     "is_official": "True",
     "location": {
         "country_code": "UA",
-        "subdivision_name": "Kiev Oblast",
-        "municipality": "Kiev",
+        "subdivision_name": "Kyiv Oblast",
+        "municipality": "Kyiv",
         "bounding_box": {
             "minimum_latitude": null,
             "maximum_latitude": null,
@@ -18,7 +18,7 @@
     "urls": {
         "direct_download": "http://193.23.225.211:8002/export-gtfs-static",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ua-kiev-gtfs-3230.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ua-kyiv-gtfs-3230.zip?alt=media",
         "license": "https://creativecommons.org/licenses/by/4.0/"
     }
 }

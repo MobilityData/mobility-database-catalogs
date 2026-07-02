@@ -19,7 +19,7 @@
     },
     "urls": {
         "direct_download": "https://eu-gtfs.remix.com/estonia_unified_gtfs.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ee-unknown-abuss-ou-gtfs-1095.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ee-unknown-abuss-ou-gtfs-3235.zip?alt=media",
         "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed",
         "authentication_type": 0
     },

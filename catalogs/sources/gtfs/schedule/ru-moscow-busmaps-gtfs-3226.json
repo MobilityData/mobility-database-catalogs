@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 3226,
+    "data_type": "gtfs",
+    "provider": "Московский транспорт - Moscow Transport",
+    "status": "inactive",
+    "is_official": "False",
+    "location": {
+        "country_code": "RU",
+        "subdivision_name": "Moscow Oblast",
+        "bounding_box": {
+            "minimum_latitude": 55.550571,
+            "maximum_latitude": 56.363597,
+            "minimum_longitude": 37.971031,
+            "maximum_longitude": 38.278776,
+            "extracted_on": "2026-06-23T18:50:21+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://greens3.transitpdf.com/files/sourcedata/moscow-official.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ru-moscow-busmaps-gtfs-3226.zip?alt=media"
+    }
+}

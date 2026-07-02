@@ -2,6 +2,7 @@
     "mdb_source_id": 3220,
     "data_type": "gtfs",
     "provider": "Athens Urban Transport Organization (OASA) - Road Transport Routes",
+    "is_official": "True",
     "location": {
         "country_code": "GR",
         "bounding_box": {

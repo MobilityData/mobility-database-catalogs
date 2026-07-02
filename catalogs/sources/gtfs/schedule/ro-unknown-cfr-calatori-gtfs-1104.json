@@ -2,7 +2,6 @@
     "mdb_source_id": 1104,
     "data_type": "gtfs",
     "provider": "CFR Călători, Astra Trans Carpatic, Calea Ferată din Moldova, Interregional Calatori, Regio Călători, Softrans, Transferoviar Calatori",
-    "status": "deprecated",
     "location": {
         "country_code": "RO",
         "bounding_box": {
@@ -16,11 +15,5 @@
     "urls": {
         "direct_download": "https://github.com/vasile/data.gov.ro-gtfs-exporter/archive/master.zip#data.gov.ro-gtfs-exporter-master/gtfs-out",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-unknown-cfr-calatori-gtfs-1104.zip?alt=media"
-    },
-     "redirect": [
-        {
-            "id": "3236",
-            "comment": " "
-        }
-    ]
+    }
 }

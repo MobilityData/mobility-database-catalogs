@@ -18,7 +18,7 @@
     "urls": {
         "direct_download": "http://193.23.225.211:8002/export-gtfs-static",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ua-kyiv-gtfs-3230.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ua-kiev-gtfs-3230.zip?alt=media",
         "license": "https://creativecommons.org/licenses/by/4.0/"
     }
 }

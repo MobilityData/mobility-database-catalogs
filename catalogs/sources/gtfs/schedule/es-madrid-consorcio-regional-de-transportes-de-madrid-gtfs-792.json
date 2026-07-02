@@ -4,6 +4,7 @@
     "provider": "Consorcio Regional de Transportes de Madrid",
     "name": "Metro Ligero de Madrid",
     "is_official": "True",
+    "status": "deprecated",
     "location": {
         "country_code": "ES",
         "subdivision_name": "Madrid",
@@ -19,5 +20,11 @@
     "urls": {
         "direct_download": "https://crtm.maps.arcgis.com/sharing/rest/content/items/aaed26cc0ff64b0c947ac0bc3e033196/data",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-madrid-consorcio-regional-de-transportes-de-madrid-gtfs-792.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "2802",
+            "comment": " "
+        }
+    ]
 }

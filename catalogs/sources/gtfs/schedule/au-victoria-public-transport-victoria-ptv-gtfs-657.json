@@ -2,6 +2,7 @@
     "mdb_source_id": 657,
     "data_type": "gtfs",
     "provider": "Public Transport Victoria (PTV)",
+    "status": "deprecated",
     "location": {
         "country_code": "AU",
         "subdivision_name": "Victoria",
@@ -18,5 +19,11 @@
         "direct_download": "http://data.ptv.vic.gov.au/downloads/gtfs.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-victoria-public-transport-victoria-ptv-gtfs-657.zip?alt=media",
         "license": "https://www.data.vic.gov.au/data/dataset/ptv-timetable-and-geographic-information-2015-gtfs"
-    }
+    },
+     "redirect": [
+        {
+            "id": "3340",
+            "comment": " "
+        }
+    ]
 }

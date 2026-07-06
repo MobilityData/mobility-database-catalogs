@@ -7,7 +7,7 @@
     "provider": "Public Transport Victoria (PTV) V/Line Regional Train",
     "is_official": "True",
     "static_reference": [
-        "657"
+        "3340"
     ],
     "urls": {
         "direct_download": "https://api.opendata.transport.vic.gov.au/opendata/public-transport/gtfs/realtime/v1/vline/trip-updates",

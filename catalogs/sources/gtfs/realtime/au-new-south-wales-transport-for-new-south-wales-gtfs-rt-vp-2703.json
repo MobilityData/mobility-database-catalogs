@@ -2,14 +2,14 @@
     "mdb_source_id": 2703,
     "data_type": "gtfs-rt",
     "entity_type": ["vp"],
-    "provider": "Transport for New South Wales",
+    "provider": "Transport for New South Wales - Sydney Trains",
     "urls": {
         "direct_download": "https://api.transport.nsw.gov.au/v2/gtfs/vehiclepos/sydneytrains",
         "authentication_type": 2,
         "authentication_info": "https://opendata.transport.nsw.gov.au/data/user/register",
-        "api_key_parameter_name": "apikey"
+        "api_key_parameter_name": "Authorization"
     },
-    "license": "https://opendata.transport.nsw.gov.au/datalicence",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
     "is_official": "True",
     "static_reference": ["2449"]
 }

@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3340,
+    "data_type": "gtfs",
+    "provider": "Public Transport Victoria (PTV)",
+    "is_official": "True",
+    "location": {
+        "country_code": "AU",
+        "subdivision_name": "Victoria",
+        "municipality": "Melbourne",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2026-07-06T18:51:23+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://opendata.transport.vic.gov.au/dataset/3f4e292e-7f8a-4ffe-831f-1953be0fe448/resource/fb152201-859f-4882-9206-b768060b50ad/download/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-victoria-public-transport-victoria-ptv-gtfs-3340.zip?alt=media",
+        "license": "https://creativecommons.org/licenses/by/4.0/"
+    }
+}

@@ -1,17 +1,15 @@
 {
-    "mdb_source_id": 2702,
+    "mdb_source_id": 3341,
     "data_type": "gtfs-rt",
     "entity_type": ["tu"],
-    "provider": "Transport for New South Wales - Sydney Trains",
+    "provider": "Transport for New South Wales - Metro",
     "urls": {
-        "direct_download": "https://api.transport.nsw.gov.au/v2/gtfs/realtime/sydneytrains",
+        "direct_download": "https://api.transport.nsw.gov.au/v2/gtfs/realtime/metro",
         "authentication_type": 2,
         "authentication_info": "https://opendata.transport.nsw.gov.au/data/user/register",
         "api_key_parameter_name": "Authorization"
     },
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "is_official": "True",
-    "static_reference": [
-        "2449"
-    ]
+    "static_reference": ["2449"]
 }

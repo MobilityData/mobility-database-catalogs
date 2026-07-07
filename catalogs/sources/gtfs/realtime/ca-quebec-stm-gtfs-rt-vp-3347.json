@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 3347,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "STM",
+    "is_official": "True",
+    "static_reference": [
+        "2126"
+    ],
+    "urls": {
+        "direct_download": "https://api.stm.info/pub/od/gtfs-rt/ic/v2/vehiclePositions",
+        "authentication_type": 2,
+        "authentication_info": "https://portail.developpeurs.stm.info/apihub/#/",
+        "api_key_parameter_name": "apiKey",
+        "license": "https://www.stm.info/en/about/developers/terms-use"
+    }
+}

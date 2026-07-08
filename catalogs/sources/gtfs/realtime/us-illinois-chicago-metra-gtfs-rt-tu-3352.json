@@ -1,0 +1,24 @@
+{
+  "mdb_source_id": 3352,
+  "data_type": "gtfs-rt",
+  "entity_type": [
+    "tu"
+  ],
+  "provider": "Metra",
+  "urls": {
+    "direct_download": "https://gtfspublic.metrarr.com/gtfs/public/tripupdates",
+    "authentication_type": 1,
+    "authentication_info": "https://metra.com/developers",
+    "api_key_parameter_name": "api_token",
+    "license": "https://metra.com/developers"
+  },
+  "feed_contact_email": "FOIA@metrarr.com",
+  "static_reference": [
+      "2854"
+  ],
+  "features": [],
+  "note": "",
+  "status": "active",
+  "is_official": "True",
+  "redirect": []
+}

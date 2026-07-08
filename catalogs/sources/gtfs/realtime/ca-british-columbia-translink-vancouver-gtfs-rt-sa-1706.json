@@ -8,11 +8,18 @@
     "static_reference": [
         "696"
     ],
+    "status": "deprecated",
     "urls": {
         "direct_download": "https://gtfs.translink.ca/v2/gtfsalerts",
         "authentication_type": 1,
         "authentication_info": "https://www.translink.ca/about-us/doing-business-with-translink/app-developer-resources/register",
         "api_key_parameter_name": "apikey",
         "license": "https://developer.translink.ca/Home/TermsOfUse"
-    }
+    },
+    "redirect": [
+        {
+            "id": "3348",
+            "comment": " "
+        }
+    ]
 }

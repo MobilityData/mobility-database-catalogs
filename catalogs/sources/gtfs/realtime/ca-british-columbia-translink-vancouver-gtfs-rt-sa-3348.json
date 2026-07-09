@@ -1,25 +1,18 @@
 {
-    "mdb_source_id": 1705,
+    "mdb_source_id": 3348,
     "data_type": "gtfs-rt",
     "entity_type": [
-        "vp"
+        "sa"
     ],
     "provider": "TransLink Vancouver",
     "static_reference": [
         "696"
     ],
-    "status": "deprecated",
     "urls": {
-        "direct_download": "https://gtfs.translink.ca/v2/gtfsposition",
+        "direct_download": "https://gtfsapi.translink.ca/v3/gtfsalerts",
         "authentication_type": 1,
         "authentication_info": "https://www.translink.ca/about-us/doing-business-with-translink/app-developer-resources/register",
         "api_key_parameter_name": "apikey",
         "license": "https://developer.translink.ca/Home/TermsOfUse"
-    },
-    "redirect": [
-        {
-            "id": "3350",
-            "comment": " "
-        }
-    ]
+    }
 }

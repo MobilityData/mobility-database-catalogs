@@ -274,6 +274,13 @@ class SourcesCatalog(Catalog):
             if source.has_is_official(is_official)
         }
 
+    def get_sources_by_is_stable(self):
+        return {
+            source_id: source.as_json()
+            for source_id, source in self.catalog.items()
+            if source.has_unstable_producer_url("False") or source.has_unstable_producer_url(None)
+        }
+
     def add(self, **kwargs):
         mdb_source_id = self.identify(self.root)
         redirects = kwargs.pop(REDIRECTS, [])
@@ -427,6 +434,7 @@ class Source(ABC):
         self.features = kwargs.pop(FEATURES, None)
         self.status = kwargs.pop(STATUS, None)
         self.is_official = kwargs.pop(IS_OFFICIAL, None)
+        self.unstable_producer_url = kwargs.pop(UNSTABLE_PRODUCER_URL, None)
         urls = kwargs.get(URLS, {})
         self.direct_download_url = urls.pop(DIRECT_DOWNLOAD)
         self.authentication_type = urls.pop(AUTHENTICATION_TYPE, None)
@@ -461,6 +469,9 @@ class Source(ABC):
     @abstractmethod
     def has_is_official(self, is_official):
         pass
+
+    def has_unstable_producer_url(self, unstable_producer_url):
+        return self.unstable_producer_url == unstable_producer_url
 
     @abstractmethod
     def is_overlapping_bounding_box(
@@ -548,7 +559,6 @@ class GtfsScheduleSource(Source):
         self.latest_url = urls.pop(LATEST)
         self.feed_contact_email = kwargs.pop(FEED_CONTACT_EMAIL, None)
         self.redirects = kwargs.pop(REDIRECTS, [])
-        self.unstable_producer_url = kwargs.pop(UNSTABLE_PRODUCER_URL, None)
 
     def __str__(self):
         attributes = {
@@ -596,9 +606,6 @@ class GtfsScheduleSource(Source):
     
     def has_is_official(self, is_official):
         return self.is_official == is_official
-
-    def has_unstable_producer_url(self, unstable_producer_url):
-        return self.unstable_producer_url == unstable_producer_url
 
     def is_overlapping_bounding_box(
         self, minimum_latitude, maximum_latitude, minimum_longitude, maximum_longitude

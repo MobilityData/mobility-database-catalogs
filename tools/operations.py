@@ -513,3 +513,28 @@ def get_sources_by_is_official(
             globals()[f"{catalog_cls}"]().get_sources_by_is_official(is_official=is_official)
         )
     return dict(sorted(sources.items()))
+
+
+def get_sources_by_is_stable(
+    data_type=ALL,
+):
+    """
+    Get the sources with a stable producer URL.
+
+    This function retrieves sources from the specified data type in the Mobility Catalogs
+    where unstable_producer_url is "False" or not set (null).
+
+    Args:
+        data_type (str, optional): The type of data to retrieve sources for. Defaults to ALL.
+            Possible values are 'ALL', 'GTFS', 'GTFS-RT', etc.
+
+    Returns:
+        dict: A dictionary of sorted sources with a stable producer URL from the specified catalog.
+    """
+    source_type_map = globals()[f"{data_type.upper().replace('-', '_')}_MAP"]
+    sources = {}
+    for catalog_cls in source_type_map[CATALOGS]:
+        sources.update(
+            globals()[f"{catalog_cls}"]().get_sources_by_is_stable()
+        )
+    return dict(sorted(sources.items()))

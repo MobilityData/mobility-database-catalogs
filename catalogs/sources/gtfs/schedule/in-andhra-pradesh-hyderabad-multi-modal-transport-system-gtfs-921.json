@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Hyderabad Multi-Modal Transport System",
     "is_official": "True",
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "IN",
         "subdivision_name": "Andhra Pradesh",
@@ -20,5 +20,11 @@
         "direct_download": "https://drive.google.com/uc?export=download&id=1Hiv3FLp40cLXPPi9Ne8rO8m1W9hjBPs3",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/in-andhra-pradesh-hyderabad-multi-modal-transport-system-gtfs-921.zip?alt=media",
         "license": "https://hmrl.co.in/open-data.html"
-    }
+    },
+    "redirect": [
+        {
+            "id": "3361",
+            "comment": " "
+        }
+    ]
 }

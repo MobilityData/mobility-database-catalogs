@@ -2,7 +2,7 @@
     "mdb_source_id": 904,
     "data_type": "gtfs",
     "provider": "Road and Transport Authority (RTA)",
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "AE",
         "subdivision_name": "Dubayy",
@@ -18,5 +18,11 @@
         "direct_download": "https://github.com/transitland/gtfs-archives-not-hosted-elsewhere/raw/master/dubai-rta.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ae-dubayy-road-and-transport-authority-rta-gtfs-904.zip?alt=media",
         "license": "https://www.dubaipulse.gov.ae/data/rta_gtfs-open/datafiles/605e9d34-cfea-4bed-9b31-3b2ce86c7a25/rta-public-transports#preview"
-    }
+    },
+    "redirect": [
+        {
+            "id": "3359",
+            "comment": " "
+        }
+    ]
 }

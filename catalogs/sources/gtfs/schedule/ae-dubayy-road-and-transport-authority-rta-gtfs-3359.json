@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3359,
+    "data_type": "gtfs",
+    "provider": "Road and Transport Authority (RTA)",
+    "status": "inactive",
+    "is_official": "False",
+    "location": {
+        "country_code": "AE",
+        "subdivision_name": "Dubayy",
+        "bounding_box": {
+            "minimum_latitude": 24.720541,
+            "maximum_latitude": 25.411596,
+            "minimum_longitude": 54.970379,
+            "maximum_longitude": 56.132683,
+            "extracted_on": "2026-07-16T18:13:09+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.gitlab.com/Lach-anonym/dubai-gtfs/-/jobs/artifacts/main/raw/gtfs.zip?job=download-republish-gtfs",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ae-dubayy-road-and-transport-authority-rta-gtfs-3359.zip?alt=media",
+        "license": "https://www.dubaipulse.gov.ae/docs/DDE%20_%20DRAFT_Open_Data%20Licence_LONG_Form_English%203.pdf"
+    }
+}

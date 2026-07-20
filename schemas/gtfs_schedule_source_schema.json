@@ -206,6 +206,11 @@
       "type": "string",
       "description": "True if a feed comes directly from the agency, False if a feed is created by researchers or partners unaffiliated with the agency or municipality.",
       "enum": ["True","False"]
+    },
+    "unstable_producer_url": {
+      "type": ["string", "null"],
+      "description": "True if the producer URL is known to be unstable (e.g. changes frequently), False otherwise.",
+      "enum": [null, "True", "False"]
     }
   },
   "required": ["mdb_source_id", "data_type", "provider", "location", "urls"]

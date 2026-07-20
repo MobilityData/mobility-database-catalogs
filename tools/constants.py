@@ -91,6 +91,7 @@ REDIRECTS = "redirect"
 REDIRECT_ID = "id"
 REDIRECT_COMMENT = "comment"
 IS_OFFICIAL = "is_official"
+UNSTABLE_PRODUCER_URL = "unstable_producer_url"
 
 # TIME CONSTANTS
 SIX_MONTHS_IN_WEEKS = 26

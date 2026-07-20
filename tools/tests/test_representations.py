@@ -39,6 +39,7 @@ from tools.representations import (
     FEATURES,
     STATUS,
     IS_OFFICIAL,
+    UNSTABLE_PRODUCER_URL,
     json,
 )
 
@@ -306,6 +307,7 @@ class TestGtfsScheduleSource(TestCase):
         self.test_features = [self.test_feature]
         self.test_status = "some_status"
         self.test_is_official = "some_is_official"
+        self.test_unstable_producer_url = "some_unstable_producer_url"
         self.test_filename = "some_filename"
         self.test_country_code = "some_country_code"
         self.test_subdivision_name = "some_subdivision_name"
@@ -344,6 +346,7 @@ class TestGtfsScheduleSource(TestCase):
             FEATURES: self.test_features,
             STATUS: self.test_status,
             IS_OFFICIAL: self.test_is_official,
+            UNSTABLE_PRODUCER_URL: self.test_unstable_producer_url,
         }
         self.test_schema = {
             MDB_SOURCE_ID: self.test_mdb_source_id,
@@ -353,6 +356,7 @@ class TestGtfsScheduleSource(TestCase):
             FEATURES: self.test_features,
             STATUS: self.test_status,
             IS_OFFICIAL: self.test_is_official,
+            UNSTABLE_PRODUCER_URL: self.test_unstable_producer_url,
             LOCATION: {
                 COUNTRY_CODE: self.test_country_code,
                 SUBDIVISION_NAME: self.test_subdivision_name,
@@ -469,7 +473,16 @@ class TestGtfsScheduleSource(TestCase):
         under_test = instance.has_is_official(is_official=test_is_official)
         self.assertTrue(under_test)
         under_test = instance.has_is_official(is_official=test_another_is_official)
-        self.assertFalse(under_test)        
+        self.assertFalse(under_test)
+
+    def test_has_unstable_producer_url(self):
+        test_unstable_producer_url = self.test_unstable_producer_url
+        test_another_unstable_producer_url = "some_other_unstable_producer_url"
+        instance = GtfsScheduleSource(filename=self.test_filename, **self.test_schema)
+        under_test = instance.has_unstable_producer_url(unstable_producer_url=test_unstable_producer_url)
+        self.assertTrue(under_test)
+        under_test = instance.has_unstable_producer_url(unstable_producer_url=test_another_unstable_producer_url)
+        self.assertFalse(under_test)
 
     @patch("tools.representations.os")
     @patch("tools.representations.get_iso_time")

@@ -21,7 +21,8 @@ from tools.constants import (
     MDB_SOURCE_ID,
     FEED_CONTACT_EMAIL,
     REDIRECTS,
-    IS_OFFICIAL
+    IS_OFFICIAL,
+    UNSTABLE_PRODUCER_URL,
 )
 from tools.representations import GtfsScheduleSourcesCatalog, GtfsRealtimeSourcesCatalog
 
@@ -172,6 +173,7 @@ def add_gtfs_schedule_source(
     feed_contact_email=None,
     redirects=None,
     is_official=None,
+    unstable_producer_url=None,
 ):
     """
     Add a new GTFS Schedule source to the Mobility Catalogs.
@@ -196,6 +198,7 @@ def add_gtfs_schedule_source(
         feed_contact_email (str, optional): The contact email for the feed. Defaults to None.
         redirects (list, optional): A list of redirect information for the source. Each redirect should be a dict with 'id' (str) and 'comment' (str). Defaults to None.
         is_official (str, optional): Flag indicating if the source comes from the agency itself or not. Defaults to None.
+        unstable_producer_url (str, optional): Indicates if the producer URL is unstable. Possible values: "True", "False". Defaults to None.
     Returns:
         GtfsScheduleSourcesCatalog: The catalog with the newly added GTFS Schedule source.
     """
@@ -217,6 +220,7 @@ def add_gtfs_schedule_source(
         FEED_CONTACT_EMAIL: feed_contact_email,
         REDIRECTS: redirects,
         IS_OFFICIAL: is_official,
+        UNSTABLE_PRODUCER_URL: unstable_producer_url,
     }
     catalog.add(**data)
     return catalog
@@ -240,6 +244,7 @@ def update_gtfs_schedule_source(
     feed_contact_email=None,
     redirects=None,
     is_official=None,
+    unstable_producer_url=None,
 ):
     """
     Update a GTFS Schedule source in the Mobility Catalogs.
@@ -265,6 +270,7 @@ def update_gtfs_schedule_source(
         feed_contact_email (str, optional): The contact email for the feed. Defaults to None.
         redirects (list, optional): A list of redirect information for the source. Each redirect should be a dict with 'id' (str) and 'comment' (str). Defaults to None.
         is_official (str, optional): Flag indicating if the source comes from the agency itself or not. Defaults to None.
+        unstable_producer_url (str, optional): Indicates if the producer URL is unstable. Possible values: "True", "False". Defaults to None.
     Returns:
         GtfsScheduleSourcesCatalog: The catalog with the updated GTFS Schedule source.
     """
@@ -287,6 +293,7 @@ def update_gtfs_schedule_source(
         FEED_CONTACT_EMAIL: feed_contact_email,
         REDIRECTS: redirects,
         IS_OFFICIAL: is_official,
+        UNSTABLE_PRODUCER_URL: unstable_producer_url,
     }
     catalog.update(**data)
     return catalog

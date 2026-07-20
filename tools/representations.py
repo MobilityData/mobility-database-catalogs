@@ -57,7 +57,8 @@ from tools.constants import (
     REDIRECT_ID,
     REDIRECT_COMMENT,
     REDIRECTS,
-    IS_OFFICIAL
+    IS_OFFICIAL,
+    UNSTABLE_PRODUCER_URL,
 )
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
@@ -547,6 +548,7 @@ class GtfsScheduleSource(Source):
         self.latest_url = urls.pop(LATEST)
         self.feed_contact_email = kwargs.pop(FEED_CONTACT_EMAIL, None)
         self.redirects = kwargs.pop(REDIRECTS, [])
+        self.unstable_producer_url = kwargs.pop(UNSTABLE_PRODUCER_URL, None)
 
     def __str__(self):
         attributes = {
@@ -573,6 +575,7 @@ class GtfsScheduleSource(Source):
             FEED_CONTACT_EMAIL: self.feed_contact_email,
             REDIRECTS: self.redirects,
             IS_OFFICIAL: self.is_official,
+            UNSTABLE_PRODUCER_URL: self.unstable_producer_url,
         }
         return json.dumps(self.schematize(**attributes), ensure_ascii=False)
 
@@ -593,6 +596,9 @@ class GtfsScheduleSource(Source):
     
     def has_is_official(self, is_official):
         return self.is_official == is_official
+
+    def has_unstable_producer_url(self, unstable_producer_url):
+        return self.unstable_producer_url == unstable_producer_url
 
     def is_overlapping_bounding_box(
         self, minimum_latitude, maximum_latitude, minimum_longitude, maximum_longitude
@@ -676,6 +682,9 @@ class GtfsScheduleSource(Source):
         is_official = kwargs.get(IS_OFFICIAL)
         if is_official is not None:
             self.is_official = is_official
+        unstable_producer_url = kwargs.get(UNSTABLE_PRODUCER_URL)
+        if unstable_producer_url is not None:
+            self.unstable_producer_url = unstable_producer_url
 
         # Update the redirects
         redirects = kwargs.get(REDIRECTS)
@@ -778,6 +787,7 @@ class GtfsScheduleSource(Source):
             },
             REDIRECTS: kwargs.pop(REDIRECTS, None),
             IS_OFFICIAL: kwargs.pop(IS_OFFICIAL, None),
+            UNSTABLE_PRODUCER_URL: kwargs.pop(UNSTABLE_PRODUCER_URL, None),
         }
         if schema[NAME] is None:
             del schema[NAME]
@@ -803,6 +813,8 @@ class GtfsScheduleSource(Source):
             del schema[REDIRECTS]
         if schema[IS_OFFICIAL] is None:
             del schema[IS_OFFICIAL]
+        if schema[UNSTABLE_PRODUCER_URL] is None:
+            del schema[UNSTABLE_PRODUCER_URL]
         return schema
 
 

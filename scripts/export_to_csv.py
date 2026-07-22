@@ -14,7 +14,7 @@ CSV_COLUMNS = [
     'location.municipality',
     'provider',
     'is_official',
-    'unstable_producer_url',
+    'is_producer_url_unstable',
     'name',
     'note',
     'feed_contact_email',

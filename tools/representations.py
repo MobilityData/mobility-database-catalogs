@@ -58,7 +58,7 @@ from tools.constants import (
     REDIRECT_COMMENT,
     REDIRECTS,
     IS_OFFICIAL,
-    UNSTABLE_PRODUCER_URL,
+    IS_PRODUCER_URL_UNSTABLE,
 )
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
@@ -278,7 +278,7 @@ class SourcesCatalog(Catalog):
         return {
             source_id: source.as_json()
             for source_id, source in self.catalog.items()
-            if source.has_unstable_producer_url("False") or source.has_unstable_producer_url(None)
+            if source.has_is_producer_url_unstable("False") or source.has_is_producer_url_unstable(None)
         }
 
     def add(self, **kwargs):
@@ -434,7 +434,7 @@ class Source(ABC):
         self.features = kwargs.pop(FEATURES, None)
         self.status = kwargs.pop(STATUS, None)
         self.is_official = kwargs.pop(IS_OFFICIAL, None)
-        self.unstable_producer_url = kwargs.pop(UNSTABLE_PRODUCER_URL, None)
+        self.is_producer_url_unstable = kwargs.pop(IS_PRODUCER_URL_UNSTABLE, None)
         urls = kwargs.get(URLS, {})
         self.direct_download_url = urls.pop(DIRECT_DOWNLOAD)
         self.authentication_type = urls.pop(AUTHENTICATION_TYPE, None)
@@ -470,8 +470,8 @@ class Source(ABC):
     def has_is_official(self, is_official):
         pass
 
-    def has_unstable_producer_url(self, unstable_producer_url):
-        return self.unstable_producer_url == unstable_producer_url
+    def has_is_producer_url_unstable(self, is_producer_url_unstable):
+        return self.is_producer_url_unstable == is_producer_url_unstable
 
     @abstractmethod
     def is_overlapping_bounding_box(
@@ -585,7 +585,7 @@ class GtfsScheduleSource(Source):
             FEED_CONTACT_EMAIL: self.feed_contact_email,
             REDIRECTS: self.redirects,
             IS_OFFICIAL: self.is_official,
-            UNSTABLE_PRODUCER_URL: self.unstable_producer_url,
+            IS_PRODUCER_URL_UNSTABLE: self.is_producer_url_unstable,
         }
         return json.dumps(self.schematize(**attributes), ensure_ascii=False)
 
@@ -689,9 +689,9 @@ class GtfsScheduleSource(Source):
         is_official = kwargs.get(IS_OFFICIAL)
         if is_official is not None:
             self.is_official = is_official
-        unstable_producer_url = kwargs.get(UNSTABLE_PRODUCER_URL)
-        if unstable_producer_url is not None:
-            self.unstable_producer_url = unstable_producer_url
+        is_producer_url_unstable = kwargs.get(IS_PRODUCER_URL_UNSTABLE)
+        if is_producer_url_unstable is not None:
+            self.is_producer_url_unstable = is_producer_url_unstable
 
         # Update the redirects
         redirects = kwargs.get(REDIRECTS)
@@ -794,7 +794,7 @@ class GtfsScheduleSource(Source):
             },
             REDIRECTS: kwargs.pop(REDIRECTS, None),
             IS_OFFICIAL: kwargs.pop(IS_OFFICIAL, None),
-            UNSTABLE_PRODUCER_URL: kwargs.pop(UNSTABLE_PRODUCER_URL, None),
+            IS_PRODUCER_URL_UNSTABLE: kwargs.pop(IS_PRODUCER_URL_UNSTABLE, None),
         }
         if schema[NAME] is None:
             del schema[NAME]
@@ -820,8 +820,8 @@ class GtfsScheduleSource(Source):
             del schema[REDIRECTS]
         if schema[IS_OFFICIAL] is None:
             del schema[IS_OFFICIAL]
-        if schema[UNSTABLE_PRODUCER_URL] is None:
-            del schema[UNSTABLE_PRODUCER_URL]
+        if schema[IS_PRODUCER_URL_UNSTABLE] is None:
+            del schema[IS_PRODUCER_URL_UNSTABLE]
         return schema
 
 

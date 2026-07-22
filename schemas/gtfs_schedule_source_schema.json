@@ -207,7 +207,7 @@
       "description": "True if a feed comes directly from the agency, False if a feed is created by researchers or partners unaffiliated with the agency or municipality.",
       "enum": ["True","False"]
     },
-    "unstable_producer_url": {
+    "is_producer_url_unstable": {
       "type": ["string", "null"],
       "description": "True if the producer URL is known to be unstable (e.g. changes frequently), False otherwise.",
       "enum": [null, "True", "False"]

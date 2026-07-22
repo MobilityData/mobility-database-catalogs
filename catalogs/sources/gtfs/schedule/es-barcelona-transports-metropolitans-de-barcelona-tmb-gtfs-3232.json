@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Transports Metropolitans de Barcelona (TMB)",
     "is_official": "True",
+    "status": "deprecated",
     "name": "TMB",
     "location": {
         "country_code": "ES",
@@ -23,5 +24,10 @@
         "api_key_parameter_name": "app_key",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-barcelona-transports-metropolitans-de-barcelona-tmb-gtfs-3232.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "2359",
+            "comment": " "
+        }
+    ]
 }

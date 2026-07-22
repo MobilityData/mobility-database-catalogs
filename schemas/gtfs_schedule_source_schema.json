@@ -42,58 +42,45 @@
         },
         "bounding_box": {
           "type": "object",
-          "description": "This is the bounding box of the data source when it was first added to the catalog. It includes the date and timestamp the bounding box was extracted in UTC.",
-          "oneOf": [
-            {
-              "properties": {
-                "minimum_latitude": {
-                  "type": "number",
-                  "minimum": -90,
-                  "maximum": 90
-                },
-                "maximum_latitude": {
-                  "type": "number",
-                  "minimum": -90,
-                  "maximum": 90
-                },
-                "minimum_longitude": {
-                  "type": "number",
-                  "minimum": -180,
-                  "maximum": 180
-                },
-                "maximum_longitude": {
-                  "type": "number",
-                  "minimum": -180,
-                  "maximum": 180
-                },
-                "extracted_on": {
-                  "type": "string",
-                  "format": "date-time"
-                }
-              }
+          "description": "This is the bounding box of the data source and metadata when it was first added to the catalog. It includes the date and timestamp the bounding box was extracted in UTC, filesize in bytes, and calendar daterange.",
+          "properties": {
+            "minimum_latitude": {
+              "type": ["number", "null"],
+              "minimum": -90,
+              "maximum": 90
             },
-            {
-              "properties": {
-                "minimum_latitude": {
-                  "type": "null"
-                },
-                "maximum_latitude": {
-                  "type": "null"
-                },
-                "minimum_longitude": {
-                  "type": "null"
-                },
-                "maximum_longitude": {
-                  "type": "null"
-                },
-                "extracted_on": {
-                  "type": "string",
-                  "format": "date-time"
-                }
-              }
+            "maximum_latitude": {
+              "type": ["number", "null"],
+              "minimum": -90,
+              "maximum": 90
+            },
+            "minimum_longitude": {
+              "type": ["number", "null"],
+              "minimum": -180,
+              "maximum": 180
+            },
+            "maximum_longitude": {
+              "type": ["number", "null"],
+              "minimum": -180,
+              "maximum": 180
+            },
+            "extracted_on": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "extracted_filesize": {
+              "type": ["number", "null"]
+            },
+            "extracted_calendar_start": {
+              "type": ["string", "null"],
+              "format": "date"
+            },
+            "extracted_calendar_end": {
+              "type": ["string", "null"],
+              "format": "date"
             }
-          ],
-          "required": ["minimum_latitude", "maximum_latitude", "minimum_longitude", "maximum_longitude", "extracted_on"]
+          },
+          "required": ["minimum_latitude", "maximum_latitude", "minimum_longitude", "maximum_longitude", "extracted_on", "extracted_filesize", "extracted_calendar_start", "extracted_calendar_end"]
         }
       },
       "required": ["country_code", "bounding_box"]

@@ -17,10 +17,11 @@
         }
     },
     "urls": {
-        "direct_download": "https://developer.tmb.cat/downloads/gtfs.zip",
+        "direct_download": "https://api.tmb.cat/v1/static/datasets/gtfs.zip?app_id=ca07cd5b",
         "authentication_type": 1,
         "authentication_info": "https://developer.tmb.cat/",
         "api_key_parameter_name": "app_key",
+        "license": "https://developer.tmb.cat/"
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-barcelona-transports-metropolitans-de-barcelona-tmb-gtfs-2359.zip?alt=media"
     }
 }

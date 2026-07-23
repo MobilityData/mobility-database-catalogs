@@ -12,6 +12,16 @@ on:
         description: 'true to upload the resulting csv to google so it becomes the official catalog csv'
         required: false
         default: 'true'
+      csv_file_name:
+        description: 'Name of the CSV object to produce/upload in the mdb-csv bucket. Use a non-default name (e.g. sources_test.csv) to test without overwriting sources.csv or notifying mobility-feed-api.'
+        required: false
+        default: 'sources.csv'
+
+# Single source of truth for the destination CSV name, shared by both jobs.
+# On push events there are no inputs, so it falls back to sources.csv.
+# Reference everywhere as ${{ env.CSV_FILE_NAME }} (or $CSV_FILE_NAME inside run steps).
+env:
+  CSV_FILE_NAME: ${{ github.event.inputs.csv_file_name || 'sources.csv' }}
 
 jobs:
   export-to-csv:
@@ -26,7 +36,7 @@ jobs:
         run: |
           # Avoid using the latest version (24.1) of pip since they removed support for the
           # --global-option used during GDAL library installation.
-          # Reconsider later if the problem is corrected. 
+          # Reconsider later if the problem is corrected.
           python -m pip install "pip<24.1"
           pip install pytest wheel numpy
           sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
@@ -37,13 +47,17 @@ jobs:
           sudo apt-get install libspatialindex-dev
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Export the catalog of sources as CSV
-        run: python3 scripts/export_to_csv.py
+        run: |
+          python3 scripts/export_to_csv.py
+          if [ "$CSV_FILE_NAME" != "sources.csv" ]; then
+            mv sources.csv "$CSV_FILE_NAME"
+          fi
 
       - name: Upload the catalog of sources CSV artifact
         uses: actions/upload-artifact@v4
         with:
-          name: sources.csv
-          path: sources.csv
+          name: ${{ env.CSV_FILE_NAME }}
+          path: ${{ env.CSV_FILE_NAME }}
 
   store-csv:
     needs: [ export-to-csv ]
@@ -56,8 +70,8 @@ jobs:
       - name: Download the catalog of sources CSV artifact
         uses: actions/download-artifact@v4
         with:
-          name: sources.csv
-          path: sources.csv
+          name: ${{ env.CSV_FILE_NAME }}
+          path: ${{ env.CSV_FILE_NAME }}
       - name: Set up and authorize Cloud
         uses: google-github-actions/auth@v2
         with:
@@ -66,12 +80,15 @@ jobs:
         id: upload-csv
         uses: google-github-actions/upload-cloud-storage@v2
         with:
-          path: sources.csv
+          path: ${{ env.CSV_FILE_NAME }}
           destination: mdb-csv
           parent: false
 
+      # Only notify mobility-feed-api when producing the official sources.csv.
+      # A custom file name (e.g. sources_test.csv) is a test upload and must not trigger a DB update.
       - name: Load secrets from 1Password to be used for sending notification
         id: onepw_secrets
+        if: ${{ env.CSV_FILE_NAME == 'sources.csv' }}
         uses: 1password/load-secrets-action@v2.0.0
         with:
           export-env: true # Export loaded secrets as environment variables
@@ -80,6 +97,7 @@ jobs:
           CREDENTIALS: "op://rbiv7rvkkrsdlpcrz3bmv7nmcu/ifkeehu5gzi7wy5ub5qvwkaire/credential"
 
       - name: Send a notification to mobility-feed-api
+        if: ${{ env.CSV_FILE_NAME == 'sources.csv' }}
         uses: peter-evans/repository-dispatch@v2
         with:
           token: ${{ env.CREDENTIALS }}

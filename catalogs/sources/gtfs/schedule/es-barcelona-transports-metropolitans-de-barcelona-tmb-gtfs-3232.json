@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Transports Metropolitans de Barcelona (TMB)",
     "is_official": "True",
+    "status": "deprecated",
     "name": "TMB",
     "location": {
         "country_code": "ES",
@@ -17,11 +18,15 @@
         }
     },
     "urls": {
-        "direct_download": "https://api.tmb.cat/v1/static/datasets/gtfs.zip?app_id=ca07cd5b",
-        "authentication_type": 1,
-        "authentication_info": "https://developer.tmb.cat/",
-        "api_key_parameter_name": "app_key",
+        "direct_download": "https://developer.tmb.cat/downloads/gtfs.zip",
+        "authentication_type": 0,
+        "license": "https://developer.tmb.cat/",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-barcelona-transports-metropolitans-de-barcelona-tmb-gtfs-3232.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "2359",
+            "comment": "Same feed as mdb-2359"
+        }
+    ]
 }

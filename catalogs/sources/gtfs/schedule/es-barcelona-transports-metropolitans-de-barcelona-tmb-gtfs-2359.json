@@ -21,7 +21,7 @@
         "authentication_type": 1,
         "authentication_info": "https://developer.tmb.cat/",
         "api_key_parameter_name": "app_key",
-        "license": "https://developer.tmb.cat/"
+        "license": "https://developer.tmb.cat/",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-barcelona-transports-metropolitans-de-barcelona-tmb-gtfs-2359.zip?alt=media"
     }
 }

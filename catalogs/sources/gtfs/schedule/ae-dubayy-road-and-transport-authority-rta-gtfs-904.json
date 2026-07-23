@@ -14,6 +14,7 @@
             "extracted_on": "2022-03-17T18:13:09+00:00"
         }
     },
+    "is_producer_url_unstable": "False",
     "urls": {
         "direct_download": "https://github.com/transitland/gtfs-archives-not-hosted-elsewhere/raw/master/dubai-rta.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ae-dubayy-road-and-transport-authority-rta-gtfs-904.zip?alt=media",

@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 3384,
+    "data_type": "gtfs",
+    "provider": "TS Laevad OÜ",
+    "name": "TS Laevad OÜ parvlaevaühendused",
+    "feed_contact_email": "peatus@agri.ee",
+    "status": "active",
+    "location": {
+        "country_code": "EE",
+        "bounding_box": {
+            "minimum_latitude": 58.5731054,
+            "maximum_latitude": 58.9047595,
+            "minimum_longitude": 23.0461342,
+            "maximum_longitude": 23.5084146,
+            "extracted_on": "2026-07-25T10:35:46+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://eu-gtfs.remix.com/tslaevad.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ee-unknown-ts-laevad-ou-gtfs-3384.zip?alt=media",
+        "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed"
+    },
+    "redirect": [],
+    "is_official": "True"
+}

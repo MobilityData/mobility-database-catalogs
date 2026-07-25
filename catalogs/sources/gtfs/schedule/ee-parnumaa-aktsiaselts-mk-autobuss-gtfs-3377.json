@@ -1,0 +1,27 @@
+{
+    "mdb_source_id": 3377,
+    "data_type": "gtfs",
+    "provider": "Aktsiaselts MK Autobuss, Atko Bussiliinid AS, GoBus AS, SEBE Aktsiaselts",
+    "name": "Pärnumaa",
+    "feed_contact_email": "peatus@agri.ee",
+    "status": "active",
+    "location": {
+        "country_code": "EE",
+        "subdivision_name": "Pärnumaa",
+        "bounding_box": {
+            "minimum_latitude": 0.2206108,
+            "maximum_latitude": 59.6539063,
+            "minimum_longitude": 21.8616849,
+            "maximum_longitude": 60.5537851,
+            "extracted_on": "2026-07-25T10:35:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://eu-gtfs.remix.com/parnumaa.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ee-parnumaa-aktsiaselts-mk-autobuss-gtfs-3377.zip?alt=media",
+        "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed"
+    },
+    "redirect": [],
+    "is_official": "True"
+}

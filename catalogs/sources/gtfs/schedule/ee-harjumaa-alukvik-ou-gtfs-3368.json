@@ -1,0 +1,30 @@
+{
+    "mdb_source_id": 3368,
+    "data_type": "gtfs",
+    "provider": "Alukvik OÜ, Ekspressbussiliinid osaühing, GoBus AS, HANSABUSS AS, SEBE Aktsiaselts",
+    "name": "Harjumaa",
+    "feed_contact_email": "peatus@agri.ee",
+    "features": [
+        "fares-v1"
+    ],
+    "status": "active",
+    "location": {
+        "country_code": "EE",
+        "subdivision_name": "Harjumaa",
+        "bounding_box": {
+            "minimum_latitude": 0.2206108,
+            "maximum_latitude": 59.6539063,
+            "minimum_longitude": 21.8616849,
+            "maximum_longitude": 60.5537851,
+            "extracted_on": "2026-07-25T10:35:36+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://eu-gtfs.remix.com/harjumaa.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ee-harjumaa-alukvik-ou-gtfs-3368.zip?alt=media",
+        "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed"
+    },
+    "redirect": [],
+    "is_official": "True"
+}

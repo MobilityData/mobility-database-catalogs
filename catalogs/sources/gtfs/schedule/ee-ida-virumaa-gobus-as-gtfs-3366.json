@@ -1,0 +1,28 @@
+{
+    "mdb_source_id": 3366,
+    "data_type": "gtfs",
+    "provider": "GoBus AS, NAJA OÜ, OSAÜHING FREMANTI, OV Ida-Bus OÜ",
+    "name": "Kohtla-Järve linn",
+    "feed_contact_email": "peatus@agri.ee",
+    "status": "active",
+    "location": {
+        "country_code": "EE",
+        "subdivision_name": "Ida-Virumaa",
+        "municipality": "Kohtla-Järve linn",
+        "bounding_box": {
+            "minimum_latitude": 58.9843861,
+            "maximum_latitude": 59.4634758,
+            "minimum_longitude": 26.7881726,
+            "maximum_longitude": 28.2024793,
+            "extracted_on": "2026-07-25T10:35:35+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://eu-gtfs.remix.com/kohtla_jarve.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ee-ida-virumaa-gobus-as-gtfs-3366.zip?alt=media",
+        "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed"
+    },
+    "redirect": [],
+    "is_official": "True"
+}

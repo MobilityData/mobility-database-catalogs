@@ -1,0 +1,18 @@
+{
+    "mdb_source_id": 3411,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "ELRON",
+    "static_reference": [
+        "3153"
+    ],
+    "note": "Unofficial community-maintained feed: Elron's realtime data converted to GTFS Realtime by the Transitous project. Not published by Elron.",
+    "status": "active",
+    "urls": {
+        "direct_download": "https://crowdsourcing.transitous.org/gtfsrt/ee-elron/trip-updates.pb",
+        "authentication_type": 0
+    },
+    "is_official": "False"
+}

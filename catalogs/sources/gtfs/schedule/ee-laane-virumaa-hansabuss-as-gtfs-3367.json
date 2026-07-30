@@ -1,0 +1,28 @@
+{
+    "mdb_source_id": 3367,
+    "data_type": "gtfs",
+    "provider": "HANSABUSS AS",
+    "name": "Rakvere linn",
+    "feed_contact_email": "peatus@agri.ee",
+    "status": "active",
+    "location": {
+        "country_code": "EE",
+        "subdivision_name": "Lääne-Virumaa",
+        "municipality": "Rakvere linn",
+        "bounding_box": {
+            "minimum_latitude": 58.9291564,
+            "maximum_latitude": 59.6162829,
+            "minimum_longitude": 25.6583155,
+            "maximum_longitude": 26.9382895,
+            "extracted_on": "2026-07-25T10:34:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://eu-gtfs.remix.com/rakvere.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ee-laane-virumaa-hansabuss-as-gtfs-3367.zip?alt=media",
+        "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed"
+    },
+    "redirect": [],
+    "is_official": "True"
+}

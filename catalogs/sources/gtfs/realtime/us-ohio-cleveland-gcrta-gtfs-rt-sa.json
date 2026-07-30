@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 3412,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Greater Cleveland Regional Transit Authority (GCRTA)",
+    "static_reference": [
+        "406"
+    ],
+    "urls": {
+        "direct_download": "https://gtfs-rt.gcrta.vontascloud.com/TMGTFSRealTimeWebService/Alert/Alerts.pb",
+        "authentication_type": 0,
+        "license": "https://www.riderta.com/developers"
+    },
+
+}

@@ -5,11 +5,17 @@
         "tu"
     ],
     "provider": "Greater Cleveland Regional Transit Authority",
+    "status": "deprecated",
     "static_reference": [
         "406"
     ],
     "urls": {
         "direct_download": "http://gtfs.gcrta.org/TMGTFSRealTimeWebService/TripUpdate/TripUpdates.pb",
         "authentication_type": 0
-    }
+    },
+     "redirect": [
+        {
+            "id": "3411"
+        }
+    ]
 }

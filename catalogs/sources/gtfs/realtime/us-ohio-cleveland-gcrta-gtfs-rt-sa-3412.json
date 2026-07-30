@@ -12,6 +12,5 @@
         "direct_download": "https://gtfs-rt.gcrta.vontascloud.com/TMGTFSRealTimeWebService/Alert/Alerts.pb",
         "authentication_type": 0,
         "license": "https://www.riderta.com/developers"
-    },
-
+    }
 }

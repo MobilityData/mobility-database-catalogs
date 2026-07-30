@@ -4,6 +4,7 @@
     "provider": "Pasažieru Vilciens",
     "name": "Vivi",
     "feed_contact_email": "maris.lusis@vivi.lv",
+    "is_official": "True",
     "features": [
         "fares-v1"
     ],

@@ -4,7 +4,7 @@
     "provider": "Road and Transport Authority (RTA)",
     "status": "inactive",
     "is_official": "False",
-    "is_seasonal": "True",
+    "is_seasonal": false,
     "location": {
         "country_code": "AE",
         "subdivision_name": "Dubayy",

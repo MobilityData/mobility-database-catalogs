@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Road and Transport Authority (RTA)",
     "status": "deprecated",
-    "is_seasonal": false,
+    "is_seasonal": "True",
     "location": {
         "country_code": "AE",
         "subdivision_name": "Dubayy",

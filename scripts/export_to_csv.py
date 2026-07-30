@@ -4,6 +4,13 @@ import pandas as pd
 import os
 import json
 
+# --- TEMPORARY TEST FILTER --------------------------------------------------
+# Restricts the exported catalog to a handful of feeds so testing is fast.
+# Set to None (or an empty collection) to export the full catalog.
+# Remove this block to restore normal behavior.
+TEST_SOURCE_IDS = [1329, 904, 3359, 3182]
+# ---------------------------------------------------------------------------
+
 CSV_PATH = "./sources.csv"
 CSV_COLUMNS = [
     'mdb_source_id',
@@ -73,6 +80,14 @@ for catalog_path in [gtfs_schedule_catalog_path, gtfs_realtime_catalog_path]:
                 entity_json = json.load(fp)
                 entity_id = entity_json[MDB_SOURCE_ID]
                 catalog[entity_id] = entity_json
+
+# --- TEMPORARY TEST FILTER: keep only a small subset of feeds ---------------
+if TEST_SOURCE_IDS:
+    keep_ids = set(TEST_SOURCE_IDS)
+    catalog = {source_id: source for source_id, source in catalog.items() if source_id in keep_ids}
+    print(f"[export_to_csv] TEST FILTER active. Exporting {len(catalog)} feeds: {sorted(catalog)}")
+# ---------------------------------------------------------------------------
+
 # Complete the GTFS Realtime Sources: location information from their static reference
 # and pipe delimited static reference and entity type
 for source_id, source in catalog.items():

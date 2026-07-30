@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 3391,
+    "data_type": "gtfs-rt",
+    "is_official": "True",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Transportes Metropolitanos de Lisboa",
+    "static_reference": [
+        "3388"
+    ],
+    "urls": {
+        "direct_download": "https://go.tmlmobilidade.pt/hub/api/v1/alerts/gtfs",
+        "authentication_type": 0,
+        "license": "https://github.com/tmlmobilidade/go?tab=AGPL-3.0-1-ov-file"
+    }
+}

@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Department of Municipalities and Transport",
     "name": "Integrated Transport Center of Abu Dhabi",
+    "is_seasonal": true,
     "location": {
         "country_code": "AE",
         "subdivision_name": "Abu Dhabi Emirate",

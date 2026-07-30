@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Urban Trans Vlora",
     "is_official": "False",
+    "is_seasonal": null,
     "location": {
         "country_code": "AL",
         "bounding_box": {

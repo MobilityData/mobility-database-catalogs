@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 3383,
+    "data_type": "gtfs",
+    "provider": "Aktsiaselts MK Autobuss, Arilix OÜ, AS ANNISTON, AS Lux Express Estonia, Estonian Lines OÜ, GoBus AS, HANSABUSS AS, Kalle Bussid OÜ, MK Reis OÜ, osaühing Tulisilm, OÜ Baltic Shuttle, Sirel Reisid OÜ, Taisto Express OÜ",
+    "name": "Siseriiklikud kaugbussiliinid",
+    "feed_contact_email": "peatus@agri.ee",
+    "status": "active",
+    "location": {
+        "country_code": "EE",
+        "bounding_box": {
+            "minimum_latitude": 0.2206108,
+            "maximum_latitude": 59.6539063,
+            "minimum_longitude": 21.8616849,
+            "maximum_longitude": 60.5537851,
+            "extracted_on": "2026-07-25T10:35:46+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://eu-gtfs.remix.com/kaugliinid.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ee-unknown-aktsiaselts-mk-autobuss-gtfs-3383.zip?alt=media",
+        "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed"
+    },
+    "redirect": [],
+    "is_official": "True"
+}

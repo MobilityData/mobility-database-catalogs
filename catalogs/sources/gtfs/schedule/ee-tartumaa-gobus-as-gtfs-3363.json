@@ -1,0 +1,28 @@
+{
+    "mdb_source_id": 3363,
+    "data_type": "gtfs",
+    "provider": "GoBus AS, HANSABUSS AS, SEBE Aktsiaselts",
+    "name": "Tartu linn",
+    "feed_contact_email": "peatus@agri.ee",
+    "status": "active",
+    "location": {
+        "country_code": "EE",
+        "subdivision_name": "Tartumaa",
+        "municipality": "Tartu linn",
+        "bounding_box": {
+            "minimum_latitude": 0.2206108,
+            "maximum_latitude": 59.6539063,
+            "minimum_longitude": 21.8616849,
+            "maximum_longitude": 60.5537851,
+            "extracted_on": "2026-07-25T10:35:34+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://eu-gtfs.remix.com/tartu.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ee-tartumaa-gobus-as-gtfs-3363.zip?alt=media",
+        "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed"
+    },
+    "redirect": [],
+    "is_official": "True"
+}

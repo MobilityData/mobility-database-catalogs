@@ -1,0 +1,27 @@
+{
+    "mdb_source_id": 3380,
+    "data_type": "gtfs",
+    "provider": "Atko Bussiliinid AS, Estonian Lines OÜ, GoBus AS",
+    "name": "Viljandimaa",
+    "feed_contact_email": "peatus@agri.ee",
+    "status": "active",
+    "location": {
+        "country_code": "EE",
+        "subdivision_name": "Viljandimaa",
+        "bounding_box": {
+            "minimum_latitude": 0.2206108,
+            "maximum_latitude": 59.6539063,
+            "minimum_longitude": 21.8616849,
+            "maximum_longitude": 60.5537851,
+            "extracted_on": "2026-07-25T10:35:44+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://eu-gtfs.remix.com/viljandimaa.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ee-viljandimaa-atko-bussiliinid-as-gtfs-3380.zip?alt=media",
+        "license": "https://www.agri.ee/regionaalareng-uhistransport/uhistransport-ja-reisimine/uhistranspordiregistri-avaandmed"
+    },
+    "redirect": [],
+    "is_official": "True"
+}

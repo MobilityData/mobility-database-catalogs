@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 3408,
+    "data_type": "gtfs",
+    "provider": "JAX Mass Transit District",
+    "is_official": "True",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Illinois",
+        "municipality": "Jackson County",
+        "bounding_box": {
+            "minimum_latitude": 55.874955000775294,
+            "maximum_latitude": 57.7746047262964,
+            "minimum_longitude": 21.0165956136552,
+            "maximum_longitude": 28.1167317149993,
+            "extracted_on": "2026-07-29T20:03:08+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://passio3.com/JCMTD/passioTransit/gtfs/google_transit.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-illinois-jackson-county-jax-mass-transit-district-gtfs-3408.zip?alt=media",
+        "license": "https://proxy.busone.app/cotral/readme"
+    },
+    "redirect": []
+}

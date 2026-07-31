@@ -8,7 +8,7 @@
     ],
     "provider": "Rzeszowski Transport Miejski",
     "feed_contact_email": "kwasacz@mpkrzeszow.pl",
-    "is_official": "True",
+    "is_official": "False",
     "static_reference": [
         "3156"
     ],

@@ -7,7 +7,7 @@
     ],
     "provider": "Transportes Metropolitanos de Lisboa",
     "static_reference": [
-        "3388"
+        "3412"
     ],
     "urls": {
         "direct_download": "https://go.tmlmobilidade.pt/hub/api/v1/realtime/vehicles/positions/gtfs",

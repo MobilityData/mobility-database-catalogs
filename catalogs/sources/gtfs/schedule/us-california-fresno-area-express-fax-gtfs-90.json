@@ -3,9 +3,6 @@
     "data_type": "gtfs",
     "provider": "Fresno Area Express (FAX)",
     "is_official": "True",
-    "features": [
-        "fares-v1"
-    ],
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -19,7 +16,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://gis4u.fresno.gov/downloads/fax_gtfs.zip",
+        "direct_download": "https://gis4u.fresno.gov/downloads/fax_gtfs.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-fresno-area-express-fax-gtfs-90.zip?alt=media"
     }
 }

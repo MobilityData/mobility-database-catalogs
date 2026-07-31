@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3409,
+    "data_type": "gtfs",
+    "provider": "Singapore typical weekday",
+    "is_official": "False",
+    "location": {
+        "country_code": "SG",
+        "bounding_box": {
+            "minimum_latitude": 55.874955000775294,
+            "maximum_latitude": 57.7746047262964,
+            "minimum_longitude": 21.0165956136552,
+            "maximum_longitude": 28.1167317149993,
+            "extracted_on": "2026-07-29T20:03:08+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/Vorld/singapore-gtfs/releases/download/v2026-07-12/singapore-gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/sg-singapore-typical-weekday-gtfs-3409.zip?alt=media",
+        "license": "https://github.com/Vorld/singapore-gtfs#licence"
+    },
+    "redirect": []
+}

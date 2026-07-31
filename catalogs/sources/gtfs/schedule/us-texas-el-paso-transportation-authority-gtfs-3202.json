@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "El Paso Transportation Authority",
     "feed_contact_email": "support@peaktransit.com",
+    "status": "deprecated",
     "is_official": "True",
     "location": {
         "country_code": "US",
@@ -19,5 +20,11 @@
     "urls": {
         "direct_download": "https://data.peaktransit.com/staticgtfs/193/gtfs.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-texas-el-paso-transportation-authority-gtfs-3202.zip?alt=media"
-    }
+    },
+     "redirect": [
+        {
+            "id": "3419",
+            "comment": " "
+        }
+    ]
 }

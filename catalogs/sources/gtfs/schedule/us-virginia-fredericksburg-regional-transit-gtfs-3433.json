@@ -6,7 +6,7 @@
     "location": {
         "country_code": "US",
         "subdivision_name": "Virginia",
-        "municipality: "Fredericksburg",
+        "municipality": "Fredericksburg",
         "bounding_box": {
             "minimum_latitude": 45.22369,
             "maximum_latitude": 45.49509,
@@ -17,7 +17,7 @@
     },
     "urls": {
         "direct_download": "https://www.fredericksburgva.gov/DocumentCenter/View/31122/FXBGO-GTFS---CY2026",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-hampshire-manchester-transit-authority-gtfs-3433.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-fredericksburg-regional-transit-gtfs-3433.zip?alt=media",
         "license": "https://www.fredericksburgva.gov/1937/Developer-Resources",
     }
 }

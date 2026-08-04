@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 3429,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu",
+        "vp",
+        "sa"
+    ],
+    "provider": "Rzeszowski Transport Miejski",
+    "feed_contact_email": "kwasacz@mpkrzeszow.pl",
+    "is_official": "False",
+    "static_reference": [
+        "3156"
+    ],
+    "urls": {
+        "direct_download": "https://www.mpkrzeszow.pl/gtfs/rt/gtfsrt.pb",
+        "authentication_type": 0,
+        "license": "https://www.mpkrzeszow.pl/otwartedane/"
+    }
+}

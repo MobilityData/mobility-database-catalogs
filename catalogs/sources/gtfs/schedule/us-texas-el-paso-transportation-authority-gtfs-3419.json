@@ -1,9 +1,8 @@
 {
-    "mdb_source_id": 3202,
+    "mdb_source_id": 3419,
     "data_type": "gtfs",
     "provider": "El Paso Transportation Authority",
-    "feed_contact_email": "support@peaktransit.com",
-    "status": "deprecated",
+    "feed_contact_email": "director@etaelpaso.gov",
     "is_official": "True",
     "location": {
         "country_code": "US",
@@ -18,13 +17,8 @@
         }
     },
     "urls": {
-        "direct_download": "https://data.peaktransit.com/staticgtfs/193/gtfs.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-texas-el-paso-transportation-authority-gtfs-3202.zip?alt=media"
-    },
-     "redirect": [
-        {
-            "id": "3419",
-            "comment": " "
-        }
-    ]
+        "direct_download": "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/11511/GTFS_EPCT.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-texas-el-paso-transportation-authority-gtfs-3419.zip?alt=media",
+        "license": "https://etaelpaso.gov/privacy-policy/"
+    }
 }

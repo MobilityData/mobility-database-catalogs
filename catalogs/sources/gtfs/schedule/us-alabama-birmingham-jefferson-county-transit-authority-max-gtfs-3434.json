@@ -1,9 +1,8 @@
 {
-    "mdb_source_id": 2263,
+    "mdb_source_id": 3434,
     "data_type": "gtfs",
     "provider": "Birmingham Jefferson County Transit Authority (MAX)",
     "is_official": "True",
-    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Alabama",
@@ -17,13 +16,9 @@
         }
     },
     "urls": {
-        "direct_download": "https://maxtransit.org/wp-content/uploads/2024/09/google_transit_Working.zip",
+        "direct_download": "https://maxtransit.org/GTFS/2026/google_transit_Working.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-alabama-birmingham-jefferson-county-transit-authority-max-gtfs-2263.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-alabama-birmingham-jefferson-county-transit-authority-max-gtfs-3434.zip?alt=media"
     },
-    "redirect": [
-        {
-            "id": "3434"
-        }
-    ]
+    "redirect": []
 }

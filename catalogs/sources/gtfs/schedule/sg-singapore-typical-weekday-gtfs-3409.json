@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Singapore typical weekday",
     "is_official": "False",
+    "feed_contact_email": "kulkarnivenugopal@outlook.com",
     "location": {
         "country_code": "SG",
         "bounding_box": {

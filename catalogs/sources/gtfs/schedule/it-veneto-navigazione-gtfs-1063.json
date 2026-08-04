@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 1063,
     "data_type": "gtfs",
-    "provider": "Navigazione",
+    "provider": "Azienda del Consorzio Trasporti Veneziano (ACTV) Navigazione",
     "is_official": "True",
     "location": {
         "country_code": "IT",
@@ -17,6 +17,7 @@
     },
     "urls": {
         "direct_download": "http://actv.avmspa.it/sites/default/files/attachments/opendata/navigazione/actv_nav.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-veneto-navigazione-gtfs-1063.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-veneto-navigazione-gtfs-1063.zip?alt=media",
+        "license": "https://actv.avmspa.it/it/content/catalogo-dei-dati-metadati-e-banche-dati-actv"
     }
 }

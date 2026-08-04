@@ -40,6 +40,7 @@ from tools.representations import (
     STATUS,
     IS_OFFICIAL,
     IS_PRODUCER_URL_UNSTABLE,
+    IS_SEASONAL,
     json,
 )
 
@@ -308,6 +309,7 @@ class TestGtfsScheduleSource(TestCase):
         self.test_status = "some_status"
         self.test_is_official = "some_is_official"
         self.test_is_producer_url_unstable = "some_is_producer_url_unstable"
+        self.test_is_seasonal = "some_is_seasonal"
         self.test_filename = "some_filename"
         self.test_country_code = "some_country_code"
         self.test_subdivision_name = "some_subdivision_name"
@@ -347,6 +349,7 @@ class TestGtfsScheduleSource(TestCase):
             STATUS: self.test_status,
             IS_OFFICIAL: self.test_is_official,
             IS_PRODUCER_URL_UNSTABLE: self.test_is_producer_url_unstable,
+            IS_SEASONAL: self.test_is_seasonal,
         }
         self.test_schema = {
             MDB_SOURCE_ID: self.test_mdb_source_id,
@@ -357,6 +360,7 @@ class TestGtfsScheduleSource(TestCase):
             STATUS: self.test_status,
             IS_OFFICIAL: self.test_is_official,
             IS_PRODUCER_URL_UNSTABLE: self.test_is_producer_url_unstable,
+            IS_SEASONAL: self.test_is_seasonal,
             LOCATION: {
                 COUNTRY_CODE: self.test_country_code,
                 SUBDIVISION_NAME: self.test_subdivision_name,
@@ -482,6 +486,15 @@ class TestGtfsScheduleSource(TestCase):
         under_test = instance.has_is_producer_url_unstable(is_producer_url_unstable=test_is_producer_url_unstable)
         self.assertTrue(under_test)
         under_test = instance.has_is_producer_url_unstable(is_producer_url_unstable=test_another_is_producer_url_unstable)
+        self.assertFalse(under_test)
+
+    def test_has_is_seasonal(self):
+        test_is_seasonal = self.test_is_seasonal
+        test_another_is_seasonal = "some_other_is_seasonal"
+        instance = GtfsScheduleSource(filename=self.test_filename, **self.test_schema)
+        under_test = instance.has_is_seasonal(is_seasonal=test_is_seasonal)
+        self.assertTrue(under_test)
+        under_test = instance.has_is_seasonal(is_seasonal=test_another_is_seasonal)
         self.assertFalse(under_test)
 
     @patch("tools.representations.os")

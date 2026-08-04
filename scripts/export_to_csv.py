@@ -15,6 +15,7 @@ CSV_COLUMNS = [
     'provider',
     'is_official',
     'is_producer_url_unstable',
+    'is_seasonal',
     'name',
     'note',
     'feed_contact_email',

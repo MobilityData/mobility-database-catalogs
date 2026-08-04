@@ -106,6 +106,7 @@ class TestOperations(TestCase):
         test_features = ["flex"]
         test_is_official = "True"
         test_is_producer_url_unstable = "True"
+        test_is_seasonal = "True"
         feed_contact_email = "test contact email"
         redirects = [
             {"id": "123", "comment": "test_url"},
@@ -130,6 +131,7 @@ class TestOperations(TestCase):
             redirects=redirects,
             is_official=test_is_official,
             is_producer_url_unstable=test_is_producer_url_unstable,
+            is_seasonal=test_is_seasonal,
         )
         self.assertEqual(under_test, mock_catalog())
         self.assertEqual(mock_catalog.call_count, 2)
@@ -153,6 +155,7 @@ class TestOperations(TestCase):
         test_features = ["flex"]
         test_is_official = "True"
         test_is_producer_url_unstable = "False"
+        test_is_seasonal = "False"
         feed_contact_email = "test contact email changed"
         redirects = [
             {"id": "123", "comment": "test_url"},
@@ -178,6 +181,7 @@ class TestOperations(TestCase):
             redirects=redirects,
             is_official=test_is_official,
             is_producer_url_unstable=test_is_producer_url_unstable,
+            is_seasonal=test_is_seasonal,
         )
         self.assertEqual(under_test, mock_catalog())
         self.assertEqual(mock_catalog.call_count, 2)

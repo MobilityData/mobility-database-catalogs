@@ -92,6 +92,7 @@ REDIRECT_ID = "id"
 REDIRECT_COMMENT = "comment"
 IS_OFFICIAL = "is_official"
 IS_PRODUCER_URL_UNSTABLE = "is_producer_url_unstable"
+IS_SEASONAL = "is_seasonal"
 
 # TIME CONSTANTS
 SIX_MONTHS_IN_WEEKS = 26

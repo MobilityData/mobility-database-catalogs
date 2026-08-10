@@ -23,6 +23,7 @@ from tools.constants import (
     REDIRECTS,
     IS_OFFICIAL,
     IS_PRODUCER_URL_UNSTABLE,
+    IS_SEASONAL,
 )
 from tools.representations import GtfsScheduleSourcesCatalog, GtfsRealtimeSourcesCatalog
 
@@ -174,6 +175,7 @@ def add_gtfs_schedule_source(
     redirects=None,
     is_official=None,
     is_producer_url_unstable=None,
+    is_seasonal=None,
 ):
     """
     Add a new GTFS Schedule source to the Mobility Catalogs.
@@ -199,6 +201,7 @@ def add_gtfs_schedule_source(
         redirects (list, optional): A list of redirect information for the source. Each redirect should be a dict with 'id' (str) and 'comment' (str). Defaults to None.
         is_official (str, optional): Flag indicating if the source comes from the agency itself or not. Defaults to None.
         is_producer_url_unstable (str, optional): Indicates if the producer URL is unstable. Possible values: "True", "False". Defaults to None.
+        is_seasonal (str, optional): Indicates if the feed is only available seasonally. Possible values: "True", "False". Defaults to None.
     Returns:
         GtfsScheduleSourcesCatalog: The catalog with the newly added GTFS Schedule source.
     """
@@ -221,6 +224,7 @@ def add_gtfs_schedule_source(
         REDIRECTS: redirects,
         IS_OFFICIAL: is_official,
         IS_PRODUCER_URL_UNSTABLE: is_producer_url_unstable,
+        IS_SEASONAL: is_seasonal,
     }
     catalog.add(**data)
     return catalog
@@ -245,6 +249,7 @@ def update_gtfs_schedule_source(
     redirects=None,
     is_official=None,
     is_producer_url_unstable=None,
+    is_seasonal=None,
 ):
     """
     Update a GTFS Schedule source in the Mobility Catalogs.
@@ -271,6 +276,7 @@ def update_gtfs_schedule_source(
         redirects (list, optional): A list of redirect information for the source. Each redirect should be a dict with 'id' (str) and 'comment' (str). Defaults to None.
         is_official (str, optional): Flag indicating if the source comes from the agency itself or not. Defaults to None.
         is_producer_url_unstable (str, optional): Indicates if the producer URL is unstable. Possible values: "True", "False". Defaults to None.
+        is_seasonal (str, optional): Indicates if the feed is only available seasonally. Possible values: "True", "False". Defaults to None.
     Returns:
         GtfsScheduleSourcesCatalog: The catalog with the updated GTFS Schedule source.
     """
@@ -294,6 +300,7 @@ def update_gtfs_schedule_source(
         REDIRECTS: redirects,
         IS_OFFICIAL: is_official,
         IS_PRODUCER_URL_UNSTABLE: is_producer_url_unstable,
+        IS_SEASONAL: is_seasonal,
     }
     catalog.update(**data)
     return catalog
@@ -536,5 +543,30 @@ def get_sources_by_is_stable(
     for catalog_cls in source_type_map[CATALOGS]:
         sources.update(
             globals()[f"{catalog_cls}"]().get_sources_by_is_stable()
+        )
+    return dict(sorted(sources.items()))
+
+
+def get_sources_by_is_seasonal(
+    data_type=ALL,
+):
+    """
+    Get the sources that are only available seasonally.
+
+    This function retrieves sources from the specified data type in the Mobility Catalogs
+    where is_seasonal is "True".
+
+    Args:
+        data_type (str, optional): The type of data to retrieve sources for. Defaults to ALL.
+            Possible values are 'ALL', 'GTFS', 'GTFS-RT', etc.
+
+    Returns:
+        dict: A dictionary of sorted seasonal sources from the specified catalog.
+    """
+    source_type_map = globals()[f"{data_type.upper().replace('-', '_')}_MAP"]
+    sources = {}
+    for catalog_cls in source_type_map[CATALOGS]:
+        sources.update(
+            globals()[f"{catalog_cls}"]().get_sources_by_is_seasonal()
         )
     return dict(sorted(sources.items()))

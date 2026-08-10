@@ -211,6 +211,11 @@
       "type": ["string", "null"],
       "description": "True if the producer URL is known to be unstable (e.g. changes frequently), False otherwise.",
       "enum": [null, "True", "False"]
+    },
+    "is_seasonal": {
+      "type": ["string", "null"],
+      "description": "True if the feed is only available seasonally (e.g. summer or winter service), False otherwise.",
+      "enum": [null, "True", "False"]
     }
   },
   "required": ["mdb_source_id", "data_type", "provider", "location", "urls"]

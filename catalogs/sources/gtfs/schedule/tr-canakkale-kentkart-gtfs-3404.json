@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 3404,
     "data_type": "gtfs",
-    "provider": "KentKart Canakkale",
+    "provider": "KentKart Canakkale - Third party generated from KentKart",
     "is_official": "False",
     "location": {
         "country_code": "TR",

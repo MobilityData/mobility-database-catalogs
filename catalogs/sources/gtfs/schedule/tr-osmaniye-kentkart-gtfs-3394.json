@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 3394,
     "data_type": "gtfs",
-    "provider": "KentKart Osmaniye",
+    "provider": "KentKart Osmaniye - Third party generated from KentKart",
     "is_official": "False",
     "location": {
         "country_code": "TR",

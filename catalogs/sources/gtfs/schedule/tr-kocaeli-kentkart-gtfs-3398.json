@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 3398,
     "data_type": "gtfs",
-    "provider": "KentKart Kocaeli",
+    "provider": "KentKart Kocaeli - Third party generated from KentKart",
     "is_official": "False",
     "location": {
         "country_code": "TR",

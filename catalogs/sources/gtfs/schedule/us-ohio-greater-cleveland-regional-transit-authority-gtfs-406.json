@@ -17,7 +17,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://www.riderta.com/sites/default/files/gtfs/latest/google_transit.zip",
+        "direct_download": "https://www.riderta.com/sites/default/files/gtfs/latest/google_transit.zip",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-ohio-greater-cleveland-regional-transit-authority-gtfs-406.zip?alt=media",
         "license": "http://www.riderta.com/developers"

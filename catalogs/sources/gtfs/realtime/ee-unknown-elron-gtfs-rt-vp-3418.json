@@ -1,0 +1,18 @@
+{
+    "mdb_source_id": 3418,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "ELRON",
+    "static_reference": [
+        "3153"
+    ],
+    "note": "Unofficial community-maintained feed: Elron's realtime data converted to GTFS Realtime, served by jbb.ghsq.de as part of the Transitous project pipeline. Not published by Elron.",
+    "status": "active",
+    "urls": {
+        "direct_download": "https://jbb.ghsq.de/gtfs/elron/VehiclePositions",
+        "authentication_type": 0
+    },
+    "is_official": "False"
+}

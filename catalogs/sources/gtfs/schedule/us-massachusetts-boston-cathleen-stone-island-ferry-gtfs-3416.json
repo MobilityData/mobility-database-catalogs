@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3204,
+    "mdb_source_id": 3416,
     "data_type": "gtfs",
     "provider": "Boston Harbor Island National Recreation Area",
     "is_official": "True",
@@ -18,6 +18,6 @@
     },
     "urls": {
         "direct_download": "https://www.nps.gov/external-resources/gtfs/boha/cathleen-stone-island-ferry.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-boston-cathleen-stone-island-ferry-gtfs-3204.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-boston-cathleen-stone-island-ferry-gtfs-3416.zip?alt=media"
     }
 }

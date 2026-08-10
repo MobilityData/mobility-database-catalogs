@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3426,
+    "data_type": "gtfs",
+    "provider": "Vapi City Bus Service",
+    "is_official": "False",
+    "location": {
+        "country_code": "IN",
+        "subdivision_name": "Gujarat",
+        "municipality": "Vapi",
+        "bounding_box": {
+            "minimum_latitude": 45.22369,
+            "maximum_latitude": 45.49509,
+            "minimum_longitude": 12.258713,
+            "maximum_longitude": 12.447123,
+            "extracted_on": "2022-03-17T19:50:28+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/shubhamvelani/VapiGTFS/releases/download/v1.0.0/Vapi_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/in-gujarat-vapi-city-bus-service-gtfs-3426.zip?alt=media",
+        "license": "https://github.com/shubhamvelani/VapiGTFS/"
+    }
+}

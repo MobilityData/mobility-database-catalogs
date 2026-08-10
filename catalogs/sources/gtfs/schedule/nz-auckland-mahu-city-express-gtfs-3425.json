@@ -1,0 +1,20 @@
+{
+    "mdb_source_id": 3425,
+    "data_type": "gtfs",
+    "provider": "Mahu City Express",
+    "location": {
+        "country_code": "NZ",
+        "subdivision_name": "Auckland",
+        "bounding_box": {
+            "minimum_latitude": 45.22369,
+            "maximum_latitude": 45.49509,
+            "minimum_longitude": 12.258713,
+            "maximum_longitude": 12.447123,
+            "extracted_on": "2022-03-17T19:50:28+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://addtransit.com/gtfsfile/97011/MahuCityExpress.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/nz-auckland-mahu-city-express-gtfs-3425.zip?alt=media"
+    }
+}

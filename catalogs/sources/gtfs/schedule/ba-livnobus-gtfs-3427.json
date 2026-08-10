@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 3427,
+    "data_type": "gtfs",
+    "provider": "Turistička agencija Li-Bus d.o.o. (Livnobus)",
+    "is_official": "True",
+    "feed_contact_email": "gtfs@livnobus.com",
+    "location": {
+        "country_code": "BA",
+        "bounding_box": {
+            "minimum_latitude": 45.22369,
+            "maximum_latitude": 45.49509,
+            "minimum_longitude": 12.258713,
+            "maximum_longitude": 12.447123,
+            "extracted_on": "2022-03-17T19:50:28+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://livnobus.com/gtfs/google-transit",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ba-livnobus-gtfs-3427.zip?alt=media"
+    }
+}

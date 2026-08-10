@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 3403,
     "data_type": "gtfs",
-    "provider": "KentKart Duzce",
+    "provider": "KentKart Duzce - Third party generated from KentKart",
     "is_official": "False",
     "location": {
         "country_code": "TR",

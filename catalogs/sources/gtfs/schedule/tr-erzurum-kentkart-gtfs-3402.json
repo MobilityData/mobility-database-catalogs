@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 3402,
     "data_type": "gtfs",
-    "provider": "KentKart Erzurum",
+    "provider": "KentKart Erzurum - Third party generated from KentKart",
     "is_official": "False",
     "location": {
         "country_code": "TR",

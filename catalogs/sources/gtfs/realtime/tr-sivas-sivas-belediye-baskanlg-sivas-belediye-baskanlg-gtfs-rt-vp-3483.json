@@ -8,8 +8,7 @@
     ],
     "urls": {
         "direct_download": "https://mobilapi.sivas.bel.tr/gtfs/realtime/vehicle-positions.pb",
-        "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/tr-sivas-sivas-belediye-baskanlg-sivas-belediye-baskanlg-gtfs-3483.zip?alt=media"
+        "authentication_type": 0
     },
     "redirect": []
 }

@@ -2,6 +2,9 @@
     "mdb_source_id": 3454,
     "data_type": "gtfs",
     "provider": "Zaratán",
+    "is_official": "True",
+    "is_seasonal": "False",
+    "is_producer_url_unstable": "False",
     "location": {
         "country_code": "ES",
         "bounding_box": {

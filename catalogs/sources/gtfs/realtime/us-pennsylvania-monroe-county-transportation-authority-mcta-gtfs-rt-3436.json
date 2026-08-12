@@ -1,7 +1,11 @@
 {
     "mdb_source_id": 3436,
     "data_type": "gtfs-rt",
-    "entity_type": [],
+    "entity_type": [
+        "vp"
+    ],
+    "name": "Pocono Pony",
+    "is_official": "True",
     "provider": "Monroe County Transportation Authority (MCTA)",
     "urls": {
         "direct_download": "https://ponytracker.availtec.com/InfoPoint/gtfs-realtime.ashx?type=vehicleposition",

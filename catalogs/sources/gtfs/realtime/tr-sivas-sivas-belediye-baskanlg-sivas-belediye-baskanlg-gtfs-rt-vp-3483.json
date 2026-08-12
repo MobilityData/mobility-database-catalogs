@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3489,
+    "mdb_source_id": 3483,
     "data_type": "gtfs-rt",
     "provider": "Sivas Belediye Başkanlığı",
     "is_official": "True",
@@ -9,7 +9,7 @@
     "urls": {
         "direct_download": "https://mobilapi.sivas.bel.tr/gtfs/realtime/vehicle-positions.pb",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/tr-sivas-sivas-belediye-baskanlg-sivas-belediye-baskanlg-gtfs-3489.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/tr-sivas-sivas-belediye-baskanlg-sivas-belediye-baskanlg-gtfs-3483.zip?alt=media"
     },
     "redirect": []
 }

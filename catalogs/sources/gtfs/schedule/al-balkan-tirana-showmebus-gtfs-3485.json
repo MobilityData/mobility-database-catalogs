@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3491,
+    "mdb_source_id": 3485,
     "data_type": "gtfs",
     "provider": "ShowMeBus",
     "location": {
@@ -15,7 +15,7 @@
     "urls": {
         "direct_download": "https://showmebus.com/google-transit/gtfs.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/al-balkan-tirana-showmebus-gtfs-3491.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/al-balkan-tirana-showmebus-gtfs-3485.zip?alt=media"
     },
     "redirect": []
 }

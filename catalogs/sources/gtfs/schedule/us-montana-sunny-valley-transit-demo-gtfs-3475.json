@@ -1,8 +1,7 @@
 {
-    "mdb_source_id": 3486,
+    "mdb_source_id": 3475,
     "data_type": "gtfs",
-    "provider": "WSTA",
-    "is_official": "True",
+    "provider": "Sunny Valley Transit (Demo)",
     "location": {
         "country_code": "US",
         "bounding_box": {
@@ -10,13 +9,13 @@
             "maximum_latitude": null,
             "minimum_longitude": null,
             "maximum_longitude": null,
-            "extracted_on": "2026-08-12T20:08:29+00:00"
+            "extracted_on": "2026-08-12T20:08:27+00:00"
         }
     },
     "urls": {
-        "direct_download": "https://ridewsta.com/gtfs",
+        "direct_download": "https://feeds.gtfsx.com/svt-demo/gtfs.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-north-carolina-winston-salem-wsta-gtfs-3486.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-montana-sunny-valley-transit-demo-gtfs-3475.zip?alt=media"
     },
     "redirect": []
 }

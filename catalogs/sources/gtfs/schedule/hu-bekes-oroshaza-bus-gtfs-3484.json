@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3490,
+    "mdb_source_id": 3484,
     "data_type": "gtfs",
     "provider": "BUS",
     "location": {
@@ -15,7 +15,7 @@
     "urls": {
         "direct_download": "https://gtfs.gpspositions.net/storage/exports/OROSH_V_ONK/gtfs_latest.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/hu-bekes-oroshaza-bus-gtfs-3490.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/hu-bekes-oroshaza-bus-gtfs-3484.zip?alt=media"
     },
     "redirect": []
 }

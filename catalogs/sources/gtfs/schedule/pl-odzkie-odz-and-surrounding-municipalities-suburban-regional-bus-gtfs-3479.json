@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3484,
+    "mdb_source_id": 3479,
     "data_type": "gtfs",
     "provider": "Suburban & Regional Bus",
     "is_official": "False",
@@ -16,7 +16,7 @@
     "urls": {
         "direct_download": "https://raw.githubusercontent.com/qbx-tt/gtfs-lodz-suburban/main/gtfs-lodz-suburban.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-odzkie-odz-and-surrounding-municipalities-suburban-regional-bus-gtfs-3484.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-odzkie-odz-and-surrounding-municipalities-suburban-regional-bus-gtfs-3479.zip?alt=media"
     },
     "redirect": []
 }

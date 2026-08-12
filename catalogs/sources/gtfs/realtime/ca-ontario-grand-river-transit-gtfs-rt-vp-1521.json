@@ -5,8 +5,10 @@
         "vp"
     ],
     "provider": "Grand River Transit",
+    "is_official": "True",
     "static_reference": [
-        "721"
+        "3150",
+        "3151"
     ],
     "urls": {
         "direct_download": "http://webapps.regionofwaterloo.ca/api/grt-routes/api/vehiclepositions",

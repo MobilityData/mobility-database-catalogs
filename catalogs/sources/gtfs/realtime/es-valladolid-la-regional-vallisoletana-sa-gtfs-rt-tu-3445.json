@@ -1,0 +1,18 @@
+{
+    "mdb_source_id": 3445,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "name": "ArroyoBus",
+    "provider": "La Regional Vallisoletana S.A",
+    "is_official": "False",
+    "static_reference": [
+        "2691"
+    ],
+    "urls": {
+        "direct_download": "https://gtfs-rt-arroyoencomienda.lovable.app/api/gtfs-rt/trip-updates?format=json",
+        "authentication_type": 0
+    },
+    "redirect": []
+}

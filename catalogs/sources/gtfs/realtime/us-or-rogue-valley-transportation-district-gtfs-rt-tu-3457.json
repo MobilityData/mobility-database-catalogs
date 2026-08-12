@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 3457,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "is_official": "True",
+    "provider": "Rogue Valley Transportation District",
+    "urls": {
+        "direct_download": "https://gtfsrt.rvtd.cadavl.com/ProfilGtfsRt2_0RSProducer-RVTD/TripUpdate.pb",
+        "authentication_type": 0
+    },
+    "static_reference": [
+        "3219"
+    ],
+    "redirect": []
+}

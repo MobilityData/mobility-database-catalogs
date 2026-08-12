@@ -1,0 +1,14 @@
+{
+    "mdb_source_id": 3449,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Kecskeméti Kisvasút",
+    "is_official": "True",
+    "urls": {
+        "direct_download": "https://kecskemetikisvasut.hu/jk-gtfs-rt/vehicle-positions.pb",
+        "authentication_type": 0
+    },
+    "redirect": []
+}

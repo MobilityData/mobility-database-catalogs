@@ -2,6 +2,9 @@
     "mdb_source_id": 3460,
     "data_type": "gtfs",
     "provider": "Dopravní podnik měst Liberce a Jablonce nad Nisou a.s.",
+    "is_official": "True",
+    "is_seasonal": "False",
+    "is_producer_url_unstable": "False",
     "location": {
         "country_code": "CZ",
         "bounding_box": {

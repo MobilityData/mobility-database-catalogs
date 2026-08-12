@@ -11,5 +11,8 @@
         "direct_download": "https://ponytracker.availtec.com/InfoPoint/gtfs-realtime.ashx?type=tripupdate",
         "authentication_type": 0
     },
+    "static_reference": [
+        "1042"
+    ],
     "redirect": []
 }

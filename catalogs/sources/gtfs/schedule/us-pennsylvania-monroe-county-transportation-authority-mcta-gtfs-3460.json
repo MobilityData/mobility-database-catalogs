@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 523,
+    "mdb_source_id": 3460,
     "data_type": "gtfs",
     "provider": "Monroe County Transportation Authority (MCTA)",
     "features": [
@@ -16,14 +16,9 @@
             "extracted_on": "2022-03-16T17:27:00+00:00"
         }
     },
+    "is_official": "True",
     "urls": {
-        "direct_download": "https://www.gomcta.com/google_transit.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-pennsylvania-monroe-county-transportation-authority-mcta-gtfs-523.zip?alt=media"
-    },
-     "redirect": [
-        {
-            "id": "3460",
-            "comment": " "
-        }
-    ]
+        "direct_download": "https://ponytracker.availtec.com/InfoPoint/gtfs-zip.ashx",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-pennsylvania-monroe-county-transportation-authority-mcta-gtfs-3460.zip?alt=media"
+    }
 }

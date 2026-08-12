@@ -1,7 +1,10 @@
 {
     "mdb_source_id": 3452,
     "data_type": "gtfs-rt",
-    "entity_type": [],
+    "entity_type": [
+        "vp"
+    ],
+    "is_official": "True",
     "provider": "TEP PARMA",
     "urls": {
         "direct_download": "https://s3.eu-south-1.amazonaws.com/temporeale.cl.tep.pr.it/temporeale/vehicle_positions.pb",

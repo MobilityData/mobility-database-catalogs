@@ -1,7 +1,10 @@
 {
     "mdb_source_id": 3451,
     "data_type": "gtfs-rt",
-    "entity_type": [],
+    "entity_type": [
+        "tu"
+    ],
+    "is_official": "True",
     "provider": "TEP PARMA",
     "urls": {
         "direct_download": "https://s3.eu-south-1.amazonaws.com/temporeale.cl.tep.pr.it/temporeale/trip_updates.pb",

@@ -1,10 +1,10 @@
 {
-    "mdb_source_id": 3482,
+    "mdb_source_id": 3478,
     "data_type": "gtfs",
-    "provider": "INCOFER",
-    "is_official": "True",
+    "provider": "Kompa Vojka-Kyselica",
+    "is_official": "False",
     "location": {
-        "country_code": "CR",
+        "country_code": "SK",
         "bounding_box": {
             "minimum_latitude": null,
             "maximum_latitude": null,
@@ -14,9 +14,9 @@
         }
     },
     "urls": {
-        "direct_download": "https://feeds.simovi.org/incofer/schedule/feed.zip",
+        "direct_download": "https://github.gtfs.sk/kompa-vojka/gtfs.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cr-gran-area-metropolitana-san-jose-incofer-gtfs-3482.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/sk-trnava-region-vojka-nad-dunajim-kompa-vojka-kyselica-gtfs-3478.zip?alt=media"
     },
     "redirect": []
 }

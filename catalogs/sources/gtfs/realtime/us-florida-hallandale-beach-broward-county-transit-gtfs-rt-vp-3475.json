@@ -1,8 +1,8 @@
 {
-    "mdb_source_id": 3478,
+    "mdb_source_id": 3475,
     "data_type": "gtfs-rt",
     "entity_type": [
-        "sa"
+        "vp"
     ],
     "static_reference": [
         "330"
@@ -10,7 +10,7 @@
     "is_official": "True",
     "provider": "Broward County Transit",
     "urls": {
-        "direct_download": "https://myride2.broward.org/gtfsrealtime/api/alerts",
+        "direct_download": "https://myride2.broward.org/gtfsrealtime/api/vehiclepositions",
         "authentication_type": 0
     },
     "redirect": []

@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 3460,
+    "data_type": "gtfs",
+    "provider": "Dopravní podnik měst Liberce a Jablonce nad Nisou a.s.",
+    "location": {
+        "country_code": "CZ",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2026-08-12T04:02:44+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.dpmlj.cz/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cz-liberecky-kraj-liberec-dopravni-podnik-mest-liberce-a-jablonce-nad-nisou-as-gtfs-3460.zip?alt=media"
+    },
+    "redirect": []
+}

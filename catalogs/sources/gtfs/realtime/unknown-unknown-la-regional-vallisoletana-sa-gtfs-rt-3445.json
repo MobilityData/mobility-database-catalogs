@@ -1,0 +1,11 @@
+{
+    "mdb_source_id": 3445,
+    "data_type": "gtfs-rt",
+    "entity_type": [],
+    "provider": "La Regional Vallisoletana S.A",
+    "urls": {
+        "direct_download": "https://gtfs-rt-arroyoencomienda.lovable.app/api/gtfs-rt/trip-updates?format=json",
+        "authentication_type": 0
+    },
+    "redirect": []
+}

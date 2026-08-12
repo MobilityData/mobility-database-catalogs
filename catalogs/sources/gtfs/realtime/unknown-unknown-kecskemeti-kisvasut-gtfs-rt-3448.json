@@ -1,0 +1,11 @@
+{
+    "mdb_source_id": 3448,
+    "data_type": "gtfs-rt",
+    "entity_type": [],
+    "provider": "Kecskeméti Kisvasút",
+    "urls": {
+        "direct_download": "https://kecskemetikisvasut.hu/jk-gtfs-rt/trip-updates.pb",
+        "authentication_type": 0
+    },
+    "redirect": []
+}

@@ -1,0 +1,11 @@
+{
+    "mdb_source_id": 3444,
+    "data_type": "gtfs-rt",
+    "entity_type": [],
+    "provider": "Shore Transit",
+    "urls": {
+        "direct_download": "https://myride.shoretransit.org/gtfs/GTFS_ServiceAlerts.pb",
+        "authentication_type": 0
+    },
+    "redirect": []
+}

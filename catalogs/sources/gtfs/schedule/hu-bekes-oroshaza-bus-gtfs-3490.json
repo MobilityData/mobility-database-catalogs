@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 3490,
+    "data_type": "gtfs",
+    "provider": "BUS",
+    "location": {
+        "country_code": "HU",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2026-08-12T20:08:30+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.gpspositions.net/storage/exports/OROSH_V_ONK/gtfs_latest.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/hu-bekes-oroshaza-bus-gtfs-3490.zip?alt=media"
+    },
+    "redirect": []
+}

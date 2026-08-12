@@ -1,0 +1,11 @@
+{
+    "mdb_source_id": 3478,
+    "data_type": "gtfs-rt",
+    "entity_type": [],
+    "provider": "Blagoevgrad Transport",
+    "urls": {
+        "direct_download": "https://api.modeshift.com/v1/tenants/d2835d46-0fbd-4d65-aa94-a17a6304b460/gtfsrt/alerts.pb",
+        "authentication_type": 0
+    },
+    "redirect": []
+}

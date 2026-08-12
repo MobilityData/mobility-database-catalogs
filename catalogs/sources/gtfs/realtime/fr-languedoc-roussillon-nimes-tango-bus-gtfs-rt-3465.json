@@ -1,0 +1,11 @@
+{
+    "mdb_source_id": 3465,
+    "data_type": "gtfs-rt",
+    "entity_type": [],
+    "provider": "Tango Bus",
+    "urls": {
+        "direct_download": "http://185.220.72.38:8085/ProfilGtfsRt2_0RSProducer-TANGO/TripUpdate.pb",
+        "authentication_type": 0
+    },
+    "redirect": []
+}

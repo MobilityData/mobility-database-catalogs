@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 3489,
+    "data_type": "gtfs",
+    "provider": "Sivas Belediye Başkanlığı",
+    "location": {
+        "country_code": "TR",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2026-08-12T20:08:30+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://mobilapi.sivas.bel.tr/gtfs/realtime/vehicle-positions.pb",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/tr-sivas-sivas-belediye-baskanlg-sivas-belediye-baskanlg-gtfs-3489.zip?alt=media"
+    },
+    "redirect": []
+}

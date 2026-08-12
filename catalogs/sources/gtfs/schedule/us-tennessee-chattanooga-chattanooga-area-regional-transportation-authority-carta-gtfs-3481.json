@@ -2,6 +2,7 @@
     "mdb_source_id": 3481,
     "data_type": "gtfs",
     "provider": "Chattanooga Area Regional Transportation Authority (CARTA)",
+    "is_official": "False",
     "location": {
         "country_code": "US",
         "bounding_box": {

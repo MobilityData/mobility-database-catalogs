@@ -1,7 +1,12 @@
 {
     "mdb_source_id": 3468,
     "data_type": "gtfs-rt",
-    "entity_type": [],
+    "entity_type": [
+        "vp"
+    ],
+    "static_reference": [
+        "3470"
+    ],
     "provider": "Marne Bois Bateau Bus",
     "urls": {
         "direct_download": "https://gtfs-rt.infra-hubup.fr/rivercat/vehicle_positions",

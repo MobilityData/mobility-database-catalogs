@@ -2,6 +2,7 @@
     "mdb_source_id": 3461,
     "data_type": "gtfs",
     "provider": "Македонски Железници Транспорт / North Macedonia Railways Transport",
+    "is_official": "False",
     "location": {
         "country_code": "MK",
         "bounding_box": {

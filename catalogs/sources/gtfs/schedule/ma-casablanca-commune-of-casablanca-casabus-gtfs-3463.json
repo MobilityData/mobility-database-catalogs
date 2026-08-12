@@ -2,6 +2,7 @@
     "mdb_source_id": 3463,
     "data_type": "gtfs",
     "provider": "Casabus",
+    "is_official": "False",
     "location": {
         "country_code": "MA",
         "bounding_box": {

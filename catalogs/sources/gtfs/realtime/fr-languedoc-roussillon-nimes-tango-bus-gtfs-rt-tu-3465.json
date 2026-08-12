@@ -1,0 +1,18 @@
+{
+    "mdb_source_id": 3465,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "static_reference": [
+        "tdg-82911"
+    ],
+    "is_official": "True",
+    "provider": "Tango Bus",
+    "urls": {
+        "direct_download": "http://185.220.72.38:8085/ProfilGtfsRt2_0RSProducer-TANGO/TripUpdate.pb",
+        "authentication_type": 0,
+        "license": "https://www.data.gouv.fr/pages/legal/licences/etalab-2.0"
+    },
+    "redirect": []
+}

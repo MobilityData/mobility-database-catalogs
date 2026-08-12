@@ -2,6 +2,7 @@
     "mdb_source_id": 3464,
     "data_type": "gtfs",
     "provider": "Colonia del Sacramento - Bus",
+    "is_official": "False",
     "location": {
         "country_code": "UY",
         "bounding_box": {

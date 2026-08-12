@@ -18,11 +18,5 @@
         "direct_download": "https://www.dpmlj.cz/gtfs.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cz-liberecky-kraj-dopravni-podnik-mest-liberce-a-jablonce-nad-nisou-gtfs-1902.zip?alt=media"
     },
-    "status": "deprecated",
-    "redirect": [
-        {
-            "id": "mdb-3460",
-            "comment": ""
-        }
-    ]
+    "status": "active"
 }

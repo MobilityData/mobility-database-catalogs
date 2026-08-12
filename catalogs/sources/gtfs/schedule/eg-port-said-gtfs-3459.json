@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3459,
+    "data_type": "gtfs",
+    "provider": "Port Said Transit",
+    "is_official": "False",
+    "status": "active",
+    "location": {
+        "country_code": "EG",
+        "subdivision_name": "Portsaid",
+        "municipality": "Portsaid",
+        "bounding_box": {
+            "minimum_latitude": 29.744741,
+            "maximum_latitude": 30.295128,
+            "minimum_longitude": 30.877106,
+            "maximum_longitude": 31.755386,
+            "extracted_on": "2026-08-12T21:04:44+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/youssefelzedy/PortSaid-Transit-GTFS/releases/latest/download/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/eg-port-said-gtfs-3459.zip?alt=media"
+    }
+}

@@ -20,6 +20,7 @@
         "direct_download": "https://www.gomcta.com/google_transit.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-pennsylvania-monroe-county-transportation-authority-mcta-gtfs-523.zip?alt=media"
     },
+    "status": "deprecated",
      "redirect": [
         {
             "id": "3460",

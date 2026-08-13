@@ -1,0 +1,17 @@
+{
+    "data_type": "gtfs",
+    "provider": "Lanka Metro Transit",
+    "name": "LMT Metrobus",
+    "location": {
+        "country_code": "LK",
+        "subdivision_name": "Western Province",
+        "municipality": "Colombo"
+    },
+    "urls": {
+        "direct_download": "https://api.transit.seyone.dev/api/v1/gtfs/download?agency=LMT",
+        "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "features": [],
+    "status": "active",
+    "is_official": false
+}

@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "FlexCom Kommunikációs Kft.",
     "is_official": "True",
+    "name": "Orosháza Bus",
     "location": {
         "country_code": "HU",
         "bounding_box": {

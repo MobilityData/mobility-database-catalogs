@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3462,
+    "data_type": "gtfs",
+    "provider": "Jaunt",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Virginia",
+        "municipality": "Charlottesville",
+        "bounding_box": {
+            "minimum_latitude": 38.031599,
+            "maximum_latitude": 38.130205,
+            "minimum_longitude": -78.508578,
+            "maximum_longitude": -78.444702,
+            "extracted_on": "2026-08-14T16:45:08+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.remix.com/jaunt_charlottesville_va_us.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-jaunt-gtfs-3462.zip?alt=media"
+    },
+    "redirect": []
+}

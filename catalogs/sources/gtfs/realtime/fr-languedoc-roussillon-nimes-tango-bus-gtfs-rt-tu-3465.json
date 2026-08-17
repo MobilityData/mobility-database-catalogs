@@ -7,7 +7,7 @@
     "static_reference": [
         "tdg-82911"
     ],
-    "is_official": "True",
+    "is_official": "False",
     "provider": "Tango Bus",
     "urls": {
         "direct_download": "http://185.220.72.38:8085/ProfilGtfsRt2_0RSProducer-TANGO/TripUpdate.pb",

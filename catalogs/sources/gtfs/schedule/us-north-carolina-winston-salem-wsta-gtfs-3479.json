@@ -1,7 +1,7 @@
 {
     "mdb_source_id": 3479,
     "data_type": "gtfs",
-    "provider": "WSTA",
+    "provider": "Winston Salem Transit Authority (WSTA)",
     "is_official": "True",
     "location": {
         "country_code": "US",

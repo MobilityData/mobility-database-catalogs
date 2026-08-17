@@ -5,6 +5,7 @@
         "sa"
     ],
     "provider": "Île-de-France Mobilités",
+    "is_official": "False",
     "urls": {
         "direct_download": "http://gtfsidfm.clarifygdps.com/gtfs-rt-alerts-idfm",
         "authentication_type": 0

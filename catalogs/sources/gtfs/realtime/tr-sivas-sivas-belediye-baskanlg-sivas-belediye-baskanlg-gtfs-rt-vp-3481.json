@@ -1,0 +1,14 @@
+{
+    "mdb_source_id": 3481,
+    "data_type": "gtfs-rt",
+    "provider": "Sivas Belediye Başkanlığı",
+    "is_official": "True",
+    "entity_type": [
+        "vp"
+    ],
+    "urls": {
+        "direct_download": "https://mobilapi.sivas.bel.tr/gtfs/realtime/vehicle-positions.pb",
+        "authentication_type": 0
+    },
+    "redirect": []
+}

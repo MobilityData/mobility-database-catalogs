@@ -1,7 +1,9 @@
 {
     "mdb_source_id": 3439,
     "data_type": "gtfs-rt",
-    "entity_type": [],
+    "entity_type": [
+        "vp"
+    ],
     "provider": "Druskininkai",
     "urls": {
         "direct_download": "https://www.stops.lt/druskininkai/vehicle_positions.pb",

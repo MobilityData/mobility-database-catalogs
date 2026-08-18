@@ -1,13 +1,17 @@
 {
+    "mdb_source_id": 3489,
     "data_type": "gtfs-rt",
     "entity_type": [
         "vp"
     ],
     "provider": "Lanka Metro Transit",
     "name": "LMT Metrobus Realtime (Vehicle Positions)",
+    "static_reference": [
+        "3490"
+    ],
     "urls": {
         "direct_download": "https://api.transit.seyone.dev/api/v1/realtime/vehicle-positions",
         "license": "https://creativecommons.org/licenses/by/4.0/"
     },
-    "is_official": false
+    "is_official": "False"
 }

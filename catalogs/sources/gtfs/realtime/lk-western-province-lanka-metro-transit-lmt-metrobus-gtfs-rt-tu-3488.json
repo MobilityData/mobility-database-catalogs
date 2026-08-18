@@ -1,13 +1,17 @@
 {
+    "mdb_source_id": 3488,
     "data_type": "gtfs-rt",
     "entity_type": [
         "tu"
     ],
     "provider": "Lanka Metro Transit",
     "name": "LMT Metrobus Realtime (Trip Updates)",
+    "static_reference": [
+        "3490"
+    ],
     "urls": {
         "direct_download": "https://api.transit.seyone.dev/api/v1/realtime/trip-updates",
         "license": "https://creativecommons.org/licenses/by/4.0/"
     },
-    "is_official": false
+    "is_official": "False"
 }

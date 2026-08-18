@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 3484,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "FlexCom Kommunikációs Kft.",
+    "name": "Orosháza Bus",
+    "is_official": "True",
+    "static_reference": [
+        "3482"
+    ],
+    "urls": {
+        "direct_download": "https://gtfs.gpspositions.net/storage/realtime/OROSH_V_ONK/vehicle_positions.pb",
+        "authentication_type": 0
+    }
+}

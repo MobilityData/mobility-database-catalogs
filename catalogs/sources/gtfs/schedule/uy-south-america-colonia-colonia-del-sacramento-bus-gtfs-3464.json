@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 3464,
+    "data_type": "gtfs",
+    "provider": "Colonia del Sacramento - Bus",
+    "is_official": "False",
+    "location": {
+        "country_code": "UY",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2026-08-12T20:08:24+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/manufarfaro/colonia-gtfs/releases/download/v0.3.0/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/uy-south-america-colonia-colonia-del-sacramento---bus-gtfs-3464.zip?alt=media"
+    },
+    "redirect": []
+}

@@ -17,6 +17,7 @@
     },
     "urls": {
         "direct_download": "https://api.transit.seyone.dev/api/v1/gtfs/download?agency=LMT",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lk-western-province-lanka-metro-transit-lmt-metrobus-gtfs.zip?alt=media",
         "license": "https://creativecommons.org/licenses/by/4.0/"
     },
     "features": [],

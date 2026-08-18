@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3461,
+    "mdb_source_id": 3491,
     "data_type": "gtfs",
     "provider": "Mi Teleférico",
     "name": "Lines of Mi Teleférico (cable car) in La Paz, Bolivia",
@@ -22,11 +22,9 @@
     },
     "urls": {
         "direct_download": "https://datosbolivia.github.io/gtfs/mi-teleferico.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/bo-l-mi-teleferico-gtfs-3461.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/bo-l-mi-teleferico-gtfs-3491.zip?alt=media",
         "license": "https://spdx.org/licenses/CC-BY-4.0.html"
     },
     "redirect": [],
-    "is_official": false,
-    "is_producer_url_unstable": false,
-    "is_seasonal": false
+    "is_official": "False"
 }

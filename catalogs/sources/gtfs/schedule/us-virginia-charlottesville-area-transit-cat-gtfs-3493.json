@@ -1,7 +1,8 @@
 {
-    "mdb_source_id": 3461,
+    "mdb_source_id": 3493,
     "data_type": "gtfs",
     "provider": "Charlottesville Area Transit (CAT)",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Virginia",
@@ -17,7 +18,7 @@
     "urls": {
         "direct_download": "https://apps.charlottesville.gov/publicfiles/GTFS.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-charlottesville-area-transit-cat-gtfs-3461.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-charlottesville-area-transit-cat-gtfs-3493.zip?alt=media"
     },
     "redirect": []
 }

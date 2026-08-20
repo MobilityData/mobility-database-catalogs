@@ -2,19 +2,24 @@
     "mdb_source_id": 884,
     "data_type": "gtfs",
     "provider": "Rīgas Satiksme",
+    "feed_contact_email": "info@rigassatiksme.lv",
     "location": {
         "country_code": "LV",
         "subdivision_name": "Rīga",
         "bounding_box": {
             "minimum_latitude": 56.85944,
-            "maximum_latitude": 57.07113,
+            "maximum_latitude": 57.07655,
             "minimum_longitude": 23.90414,
             "maximum_longitude": 24.37973,
-            "extracted_on": "2022-03-17T18:09:41+00:00"
+            "extracted_on": "2026-08-20T15:36:24+00:00"
         }
     },
     "urls": {
-        "direct_download": "http://saraksti.rigassatiksme.lv/riga/gtfs.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lv-riga-rigas-satiksme-gtfs-884.zip?alt=media"
-    }
+        "direct_download": "https://data.gov.lv/dati/dataset/6d78358a-0095-4ce3-b119-6cde5d0ac54f/resource/3f7719a3-cc74-416a-b3a6-d7933b0d655e/download/marsrutusaraksti06_2026.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lv-riga-rigas-satiksme-gtfs-884.zip?alt=media",
+        "license": "https://data.gov.lv/dati/lv/dataset/marsrutu-saraksti-rigas-satiksme-sabiedriskajam-transportam"
+    },
+    "redirect": [],
+    "is_official": "True",
+    "is_producer_url_unstable": "True"
 }

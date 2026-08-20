@@ -11,5 +11,6 @@
     ],
     "urls": {
         "direct_download": "https://gateway.carris.pt/gateway/gtfs/api/v2.11/GTFS/realtime/vehiclepositions"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

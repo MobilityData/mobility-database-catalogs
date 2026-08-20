@@ -20,5 +20,6 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-unknown-mat-mobilites-gtfs-2139.zip?alt=media",
         "license": "https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/43126/43126.20240709.120931.048325.zip"
     },
-    "redirect": []
+    "redirect": [],
+    "is_producer_url_unstable": "True"
 }

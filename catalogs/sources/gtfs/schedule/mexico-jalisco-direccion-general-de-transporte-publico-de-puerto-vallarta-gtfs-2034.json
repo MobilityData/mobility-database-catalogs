@@ -22,5 +22,6 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/mexico-jalisco-direccion-general-de-transporte-publico-de-puerto-vallarta-gtfs-2034.zip?alt=media",
         "license": "https://datos.jalisco.gob.mx/dataset/rutas-del-nuevo-modelo-mitransporte-en-puerto-vallarta"
     },
-    "redirect": []
+    "redirect": [],
+    "is_producer_url_unstable": "True"
 }

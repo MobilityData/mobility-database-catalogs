@@ -20,5 +20,6 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-illinois-danville-mass-transit-gtfs-2363.zip?alt=media",
         "license": "https://www.ridedmt.org/schedules-fares/gtfs-feed"
     },
-    "redirect": []
+    "redirect": [],
+    "is_producer_url_unstable": "True"
 }

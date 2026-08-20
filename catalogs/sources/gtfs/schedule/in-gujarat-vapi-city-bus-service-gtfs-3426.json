@@ -19,5 +19,6 @@
         "direct_download": "https://github.com/shubhamvelani/VapiGTFS/releases/download/v1.0.0/Vapi_GTFS.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/in-gujarat-vapi-city-bus-service-gtfs-3426.zip?alt=media",
         "license": "https://github.com/shubhamvelani/VapiGTFS/"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

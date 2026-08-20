@@ -18,5 +18,6 @@
     "urls": {
         "direct_download": "https://www.butlercountyrta.com/wp-content/uploads/2019/11/Bcrta-GTFS-1.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-ohio-butler-county-regional-transit-authority-gtfs-240.zip?alt=media"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

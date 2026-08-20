@@ -21,5 +21,6 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-ile-de-france-star-gtfs-1159.zip?alt=media",
         "license": "https://doc.transport.data.gouv.fr/presentation-et-mode-demploi-du-pan/conditions-dutilisation-des-donnees/licence-odbl"
     },
-    "redirect": []
+    "redirect": [],
+    "is_producer_url_unstable": "True"
 }

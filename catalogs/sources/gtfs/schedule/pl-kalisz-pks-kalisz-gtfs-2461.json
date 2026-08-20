@@ -19,5 +19,6 @@
         "direct_download": "https://pks.kalisz.pl/wp-content/uploads/2024/10/PKS_20240927.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-kalisz-pks-kalisz-gtfs-2461.zip?alt=media",
         "license": "https://pks.kalisz.pl/gtfs/"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

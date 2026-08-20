@@ -18,5 +18,6 @@
     "urls": {
         "direct_download": "https://dipl.nt.gov.au/data-feeds/bus-gtfs/google-transit-alice-springs.zip?v=0.7.0",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-northern-territory-department-of-transport-public-transport-gtfs-683.zip?alt=media"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

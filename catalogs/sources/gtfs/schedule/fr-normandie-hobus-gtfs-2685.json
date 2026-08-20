@@ -19,5 +19,6 @@
         "direct_download": "https://static.data.gouv.fr/resources/hobus-honfleur/20250110-080454/pt-th-offer-hobus-gtfs-20250109-812-opendata.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-normandie-hobus-gtfs-2685.zip?alt=media",
         "license": "https://transport.data.gouv.fr/datasets/hobus-honfleur"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

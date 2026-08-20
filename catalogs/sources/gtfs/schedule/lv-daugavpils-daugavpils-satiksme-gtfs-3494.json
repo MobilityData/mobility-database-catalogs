@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 3494,
+    "data_type": "gtfs",
+    "provider": "Daugavpils satiksme",
+    "location": {
+        "country_code": "LV",
+        "subdivision_name": "Daugavpils",
+        "municipality": "Daugavpils",
+        "bounding_box": {
+            "minimum_latitude": 55.836,
+            "maximum_latitude": 55.94345,
+            "minimum_longitude": 26.44675,
+            "maximum_longitude": 26.6204333,
+            "extracted_on": "2026-08-20T15:30:15+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://satiksme.daugavpils.lv/saraksti/GTFS.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lv-daugavpils-daugavpils-satiksme-gtfs-3494.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "True"
+}

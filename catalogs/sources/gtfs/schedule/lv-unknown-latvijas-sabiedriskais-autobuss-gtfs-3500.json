@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 3500,
+    "data_type": "gtfs",
+    "provider": "Latvijas Sabiedriskais autobuss",
+    "location": {
+        "country_code": "LV",
+        "bounding_box": {
+            "minimum_latitude": 56.3761,
+            "maximum_latitude": 57.53751,
+            "minimum_longitude": 21.01835,
+            "maximum_longitude": 27.58513,
+            "extracted_on": "2026-08-20T15:30:16+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://marsruti.lv/LSA/lsa/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lv-unknown-latvijas-sabiedriskais-autobuss-gtfs-3500.zip?alt=media"
+    },
+    "redirect": []
+}

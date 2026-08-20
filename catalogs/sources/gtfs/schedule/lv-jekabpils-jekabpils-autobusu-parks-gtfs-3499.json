@@ -1,0 +1,29 @@
+{
+    "mdb_source_id": 3499,
+    "data_type": "gtfs",
+    "provider": "Jēkabpils autobusu parks",
+    "feed_contact_email": "pieturas.app@gmail.com",
+    "features": [
+        "fares-v1"
+    ],
+    "location": {
+        "country_code": "LV",
+        "subdivision_name": "Jēkabpils",
+        "municipality": "Jēkabpils",
+        "bounding_box": {
+            "minimum_latitude": 56.469221,
+            "maximum_latitude": 56.5642571,
+            "minimum_longitude": 25.763094,
+            "maximum_longitude": 25.974847,
+            "extracted_on": "2026-08-20T15:30:16+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gsvalbe.id.lv/pieturas/dati/gtfs/jekabpils.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lv-jekabpils-jekabpils-autobusu-parks-gtfs-3499.zip?alt=media",
+        "license": "https://gsvalbe.id.lv/pieturas/avoti.html"
+    },
+    "redirect": [],
+    "is_official": "False"
+}

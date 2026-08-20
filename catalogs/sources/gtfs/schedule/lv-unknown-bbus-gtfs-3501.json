@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 3501,
+    "data_type": "gtfs",
+    "provider": "BBus",
+    "name": "Pierīga",
+    "location": {
+        "country_code": "LV",
+        "bounding_box": {
+            "minimum_latitude": 56.86597,
+            "maximum_latitude": 57.14895,
+            "minimum_longitude": 23.60304,
+            "maximum_longitude": 24.48021,
+            "extracted_on": "2026-08-20T15:30:16+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://marsruti.lv/pieriga/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lv-unknown-bbus-gtfs-3501.zip?alt=media"
+    },
+    "redirect": []
+}

@@ -2,6 +2,7 @@
     "mdb_source_id": 3495,
     "data_type": "gtfs",
     "provider": "Jelgavas autobusu parks",
+    "is_official": "True",
     "location": {
         "country_code": "LV",
         "subdivision_name": "Jelgava",

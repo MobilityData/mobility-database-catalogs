@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "BBus",
     "name": "Pierīga",
+    "is_official": "True",
     "location": {
         "country_code": "LV",
         "bounding_box": {

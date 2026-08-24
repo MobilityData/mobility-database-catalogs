@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Jūrmalas autobusu satiksme",
     "feed_contact_email": "justinas.vysniauskas@vilniustransport.lt",
+    "status": "deprecated",
     "location": {
         "country_code": "LV",
         "subdivision_name": "Jūrmala",
@@ -21,5 +22,10 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lv-jurmala-jurmalas-autobusu-satiksme-gtfs-2018.zip?alt=media",
         "license": "https://judu.lt/wp-content/uploads/2022/03/Duomenu-naudojimo-salygos-lt.pdf"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "3497",
+            "comment": "Jūrmala city bus service is now operated by Hansabuss; old marsruti.lv feed returns 404."
+        }
+    ]
 }

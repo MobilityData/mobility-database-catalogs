@@ -19,5 +19,11 @@
         "direct_download": "https://www.nagai-unyu.net/rosen/GTFS/nagai/GTFS-JP_nagaibus-gunma-jp.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/jp-gunma-nagai-transport-gtfs-984.zip?alt=media",
         "license": "https://www.nagai-unyu.net/open-data/"
-    }
+    },
+    "redirect": [
+        {
+            "id": "odpt-NagaiTransportation-AllLines",
+            "comment": ""
+        }
+    ]
 }

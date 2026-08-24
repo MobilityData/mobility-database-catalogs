@@ -1,0 +1,29 @@
+{
+    "mdb_source_id": 3496,
+    "data_type": "gtfs",
+    "provider": "VTU Valmiera",
+    "feed_contact_email": "pieturas.app@gmail.com",
+    "features": [
+        "fares-v1"
+    ],
+    "location": {
+        "country_code": "LV",
+        "subdivision_name": "Valmiera",
+        "municipality": "Valmiera",
+        "bounding_box": {
+            "minimum_latitude": 57.500217,
+            "maximum_latitude": 57.566528,
+            "minimum_longitude": 25.336699,
+            "maximum_longitude": 25.451794,
+            "extracted_on": "2026-08-20T15:30:16+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gsvalbe.id.lv/pieturas/dati/gtfs/valmiera.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lv-valmiera-vtu-valmiera-gtfs-3496.zip?alt=media",
+        "license": "https://gsvalbe.id.lv/pieturas/avoti.html"
+    },
+    "redirect": [],
+    "is_official": "False"
+}

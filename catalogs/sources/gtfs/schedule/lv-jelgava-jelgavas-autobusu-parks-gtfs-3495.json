@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 3495,
+    "data_type": "gtfs",
+    "provider": "Jelgavas autobusu parks",
+    "is_official": "True",
+    "location": {
+        "country_code": "LV",
+        "subdivision_name": "Jelgava",
+        "municipality": "Jelgava",
+        "bounding_box": {
+            "minimum_latitude": 56.5308,
+            "maximum_latitude": 56.70262,
+            "minimum_longitude": 23.5854,
+            "maximum_longitude": 23.85366,
+            "extracted_on": "2026-08-20T15:30:15+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://data.lvnap.lv/jap/gtfs-lv-jap.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lv-jelgava-jelgavas-autobusu-parks-gtfs-3495.zip?alt=media"
+    },
+    "redirect": []
+}

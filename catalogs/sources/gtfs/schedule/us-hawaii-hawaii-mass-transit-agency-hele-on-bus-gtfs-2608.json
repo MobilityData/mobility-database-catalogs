@@ -18,6 +18,5 @@
     "urls": {
         "direct_download": "https://www.heleonbus.hawaiicounty.gov/home/showpublisheddocument/307470/638458319827900000",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-hawaii-hawaii-mass-transit-agency-hele-on-bus-gtfs-2608.zip?alt=media"
-    },
-    "is_producer_url_unstable": "True"
+    }
 }

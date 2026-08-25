@@ -20,6 +20,5 @@
         "direct_download": "https://dipl.nt.gov.au/data-feeds/bus-gtfs/google-transit-darwin.zip?v=0.16.0",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-northern-territory-department-of-transport-gtfs-680.zip?alt=media",
         "license": "https://dipl.nt.gov.au/data/bus-timetable-data-and-geographic-information"
-    },
-    "is_producer_url_unstable": "True"
+    }
 }

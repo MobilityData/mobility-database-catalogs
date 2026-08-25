@@ -53,57 +53,6 @@ REPORT_COLUMNS = [
     "matched_text",
 ]
 
-# A sentinel that no pattern can match, used to blank out stable tokens before scanning.
-SENTINEL = "\x00"
-
-
-#########################
-# STABLE TOKENS
-#########################
-
-# Substrings that look like dates or versions but never change when the feed is
-# republished. They are blanked out before the unstable patterns run, so they cannot
-# contribute a match. Every entry here corresponds to a real cluster in the catalog.
-STABLE_PATTERNS = [
-    # CKAN dataset and resource keys.
-    (
-        "uuid",
-        re.compile(
-            r"[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}",
-            re.IGNORECASE,
-        ),
-    ),
-    # ArcGIS item ids, Wix and hibu site keys, opendatasoft file ids. Deliberately only
-    # 32 hex characters: a 40 character run is a git commit SHA, which is not stable.
-    ("hex_id", re.compile(r"(?<![0-9a-f])[0-9a-f]{32}(?![0-9a-f])", re.IGNORECASE)),
-    # Azure storage service API version. This is the freshest looking date in a SAS URL
-    # and it never changes, unlike the st= and se= window which we do want to see.
-    ("azure_service_version", re.compile(r"[?&]sv=\d{4}-\d{2}-\d{2}")),
-    ("azure_signature", re.compile(r"[?&]sig=[^&]*")),
-    # Credentials. A 40 hex character Mecatran apiKey reads exactly like a pinned git
-    # commit, and no date inside a key ever means anything.
-    (
-        "credential",
-        re.compile(
-            r"(?<=[?&])(?:api_?key|access_?token|token|key|subscription-key)=[^&]*",
-            re.IGNORECASE,
-        ),
-    ),
-    # A bare /vN/ path segment is an API version, not a feed version.
-    ("api_version_segment", re.compile(r"(?<=/)v\d{1,2}(?=/|$)", re.IGNORECASE)),
-    # So is a /vN.0/ segment: the zero minor is decorative. data.waltti.fi serves eleven
-    # feeds from /v1.0/. A non-zero minor is kept, because gateway.carris.pt really did
-    # move from /v2.8/ to /v2.11/.
-    (
-        "api_version_segment_dotted",
-        re.compile(r"(?<=/)v?\d{1,2}\.0(?=/|$)", re.IGNORECASE),
-    ),
-    # The numeric feed key in a transitfeeds.com permalink.
-    ("transitfeeds_id", re.compile(r"/p/[^/]+/\d+(?=/latest)")),
-    # Google Drive file ids.
-    ("drive_file_id", re.compile(r"(?<=[?&]id=)[A-Za-z0-9_-]{25,}")),
-]
-
 
 #########################
 # UNSTABLE PATTERNS
@@ -198,27 +147,8 @@ UNSTABLE_PATTERNS = [
             re.IGNORECASE,
         ),
     ),
-    # A dotted version bumps on every publication: api/v2.8/, ?v=0.16.0, v1.0.0.
-    (
-        "dotted_version",
-        re.compile(r"(?<![\w.])v?\d{1,4}\.\d{1,4}(?:\.\d{1,4})?(?!\d)", re.IGNORECASE),
-    ),
-    # A multi digit counter, as in GTFS-V126. A bare vN is an API version, not a feed one.
-    ("large_version_counter", re.compile(r"(?<![a-z0-9])v\d{2,}(?!\d)", re.IGNORECASE)),
     ("version_query_parameter", re.compile(r"[?&]version=\d{4,}", re.IGNORECASE)),
     ("epoch_timestamp", re.compile(r"(?<!\d)1\d{9}(?:\.0)?(?!\d)")),
-    # .NET DateTime.Ticks, which changes on every republish.
-    ("dotnet_ticks", re.compile(r"(?<!\d)6\d{17}(?!\d)")),
-    ("pinned_git_sha", re.compile(r"(?<=/)[0-9a-f]{40}(?=/)", re.IGNORECASE)),
-    (
-        "cache_buster",
-        re.compile(
-            r"[?&](?:refresh|cachebust|nocache|timestamp|_ts)=[0-9a-f]{8,}",
-            re.IGNORECASE,
-        ),
-    ),
-    # The expiry window of an Azure shared access signature is a hard rotation deadline.
-    ("shared_access_signature_window", re.compile(r"[?&]s[te]=\d{4}-\d{2}-\d{2}")),
 ]
 
 # Signals too noisy to act on, surfaced by --weak so they can be reviewed by hand.
@@ -257,21 +187,6 @@ def scannable(url):
     return unquote(f"{parts.path}?{parts.query}#{parts.fragment}")
 
 
-def redact_stable_tokens(text):
-    """
-    Blanks out substrings that look like a date or a version but never change.
-
-    Args:
-        text (str): The text to redact.
-
-    Returns:
-        str: The text with every stable token replaced by sentinel characters.
-    """
-    for _, pattern in STABLE_PATTERNS:
-        text = pattern.sub(lambda match: SENTINEL * len(match.group()), text)
-    return text
-
-
 def find_signals(url, patterns):
     """
     Applies a set of named patterns to the scannable part of a URL.
@@ -287,7 +202,7 @@ def find_signals(url, patterns):
     Returns:
         list: A list of (rule name, matched text) tuples, in pattern order.
     """
-    text = redact_stable_tokens(scannable(url))
+    text = scannable(url)
     signals = []
     for name, pattern in patterns:
         for match in pattern.finditer(text):

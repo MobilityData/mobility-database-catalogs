@@ -109,20 +109,7 @@ UNSTABLE_URLS = [
         "http://datos.gob.cl/dataset/cef4c471-2837-412b-a78e-1d4c6a261bf9/resource/"
         "7887a7e7-9af6-4fc8-b19f-8ff4ea474d1c/download/temuco24nov16.zip",
     ),
-    (
-        "dotted_version",
-        "https://dipl.nt.gov.au/data-feeds/bus-gtfs/google-transit-darwin.zip?v=0.16.0",
-    ),
-    # gateway.carris.pt really did move from v2.8 to v2.11, so a non-zero minor counts.
-    ("dotted_version", "https://gateway.carris.pt/gateway/gtfs/api/v2.11/GTFS"),
-    (
-        "dotted_version",
-        "https://github.com/shubhamvelani/VapiGTFS/releases/download/v1.0.0/Vapi_GTFS.zip",
-    ),
-    (
-        "large_version_counter",
-        "https://www.dtpm.cl/descargas/gtfs/GTFS-V126-PO20241019.zip",
-    ),
+    # gateway.carris.pt really did move from v2.8 to v2.11,
     (
         "version_query_parameter",
         "https://solweb.tper.it/web/tools/open-data/open-data-download.aspx?"
@@ -132,28 +119,6 @@ UNSTABLE_URLS = [
         "epoch_timestamp",
         "https://www.wroclaw.pl/open-data/87b09b32-f076-4475-8ec9-6020ed1f9ac0/"
         "1513602900.0_OtwartyWroclaw_rozklad_jazdy_GTFS.zip",
-    ),
-    (
-        "dotnet_ticks",
-        "https://www.heleonbus.hawaiicounty.gov/home/showpublisheddocument/307470/"
-        "638458319827900000",
-    ),
-    (
-        "pinned_git_sha",
-        "https://raw.githubusercontent.com/transitland/"
-        "gtfs-archives-not-hosted-elsewhere/"
-        "3db26c0092b6efeb1886a99b4fc0765122b0282b/delhi-bus.zip",
-    ),
-    (
-        "cache_buster",
-        "https://www.circumetnea.it/download/"
-        "general-transit-feed-specification-fce-01-02-2025-28-02-2028/"
-        "?wpdmdl=17798&refresh=69c2e93fcbfb51774381375",
-    ),
-    (
-        "shared_access_signature_window",
-        "https://paueasasskybusgtfs.blob.core.windows.net/gtfs-live/VIC/gtfs.zip?"
-        "sp=rl&st=2026-02-18T06:46:07Z&se=2027-02-28T15:01:07Z&sv=2024-11-04&sr=b&sig=x",
     ),
 ]
 
@@ -176,7 +141,7 @@ STABLE_URLS = [
     "https://transport.api.act.gov.au/gtfs/data/gtfs/v2/gtfs.zip",
     "https://gitlab.com/api/v4/projects/vekejsn%2Fgtfs-generators/packages/generic/"
     "nis-gtfs/latest/nis_gtfs.zip",
-    # A zero minor is decorative. data.waltti.fi serves eleven feeds from /v1.0/.
+    # A bare API version path segment.
     "https://data.waltti.fi/tampere/api/gtfsrealtime/v1.0/feed/tripupdate",
     "https://stibmivb.opendatasoft.com/api/datasets/1.0/gtfs-files-production/"
     "alternative_exports/gtfszip/",
@@ -185,7 +150,7 @@ STABLE_URLS = [
     # A permanent ArcGIS item id.
     "https://www.arcgis.com/sharing/rest/content/items/"
     "1a25440bf66f499bae2657ec7fb40144/data",
-    # A 40 hex character Mecatran credential, not a pinned git commit.
+    # A 40 hex character Mecatran credential.
     "https://app.mecatran.com/utw/ws/gtfsfeed/static/lio"
     "?apiKey=2b160d626f783808095373766f18714901325e45&type=gtfs_lio",
     # A Google Drive file id.
@@ -235,14 +200,3 @@ class TestScannable(TestCase):
             "https://www.dtpm.cl/descargas/gtfs/03%20GTFS_Final_03marzo.zip"
         )
         self.assertIn("03 GTFS_Final_03marzo.zip", under_test)
-
-
-class TestRedactStableTokens(TestCase):
-    def test_keeps_signature_window_but_drops_service_version(self):
-        under_test = identify_unstable_urls.redact_stable_tokens(
-            "/gtfs.zip?st=2026-02-18&se=2027-02-28&sv=2024-11-04&sig=abc"
-        )
-        self.assertIn("2026-02-18", under_test)
-        self.assertIn("2027-02-28", under_test)
-        self.assertNotIn("2024-11-04", under_test)
-        self.assertNotIn("abc", under_test)

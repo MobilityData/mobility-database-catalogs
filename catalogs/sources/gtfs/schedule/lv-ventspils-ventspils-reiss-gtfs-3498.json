@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 3498,
+    "data_type": "gtfs",
+    "provider": "Ventspils reiss",
+    "feed_contact_email": "pieturas.app@gmail.com",
+    "location": {
+        "country_code": "LV",
+        "subdivision_name": "Ventspils",
+        "municipality": "Ventspils",
+        "bounding_box": {
+            "minimum_latitude": 57.2187931122142,
+            "maximum_latitude": 57.4819797097205,
+            "minimum_longitude": 21.5318920035368,
+            "maximum_longitude": 21.7427136536304,
+            "extracted_on": "2026-08-20T15:30:16+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gsvalbe.id.lv/pieturas/dati/gtfs/ventspils.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lv-ventspils-ventspils-reiss-gtfs-3498.zip?alt=media",
+        "license": "https://gsvalbe.id.lv/pieturas/avoti.html"
+    },
+    "redirect": [],
+    "is_official": "False"
+}

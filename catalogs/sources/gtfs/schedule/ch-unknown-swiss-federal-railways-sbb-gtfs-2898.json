@@ -19,5 +19,6 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ch-unknown-swiss-federal-railways-sbb-gtfs-2898.zip?alt=media",
         "license": "https://opentransportdata.swiss/en/terms-of-use/#Definitions"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

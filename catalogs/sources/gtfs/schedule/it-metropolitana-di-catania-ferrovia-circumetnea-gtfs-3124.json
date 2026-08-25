@@ -21,5 +21,6 @@
         "direct_download": "https://www.circumetnea.it/download/general-transit-feed-specification-fce-01-02-2025-28-02-2028/?wpdmdl=17798&refresh=69c2e93fcbfb51774381375",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-metropolitana-di-catania-ferrovia-circumetnea-gtfs-3124.zip?alt=media"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

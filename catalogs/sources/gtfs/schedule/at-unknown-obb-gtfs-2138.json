@@ -20,5 +20,6 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/at-unknown-obb-gtfs-2138.zip?alt=media",
         "license": "https://data.oebb.at/de/datensaetze~soll-fahrplan-gtfs~"
     },
-    "redirect": []
+    "redirect": [],
+    "is_producer_url_unstable": "True"
 }

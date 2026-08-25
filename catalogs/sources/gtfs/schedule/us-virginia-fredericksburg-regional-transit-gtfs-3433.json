@@ -19,5 +19,6 @@
         "direct_download": "https://www.fredericksburgva.gov/DocumentCenter/View/31122/FXBGO-GTFS---CY2026",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-fredericksburg-regional-transit-gtfs-3433.zip?alt=media",
         "license": "https://www.fredericksburgva.gov/1937/Developer-Resources"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

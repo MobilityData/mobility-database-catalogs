@@ -17,5 +17,6 @@
     "urls": {
         "direct_download": "https://salinacitygo.com/wp-content/uploads/2022/11/export-2022-11-30T10-18-07.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-kansas-salina-gtfs-1867.zip?alt=media"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

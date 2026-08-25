@@ -22,5 +22,6 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-sens-intercom-gtfs-2626.zip?alt=media",
         "license": "https://transport.data.gouv.fr/datasets/horaires-du-reseau-de-bus-intercom-3"
     },
-    "redirect": []
+    "redirect": [],
+    "is_producer_url_unstable": "True"
 }

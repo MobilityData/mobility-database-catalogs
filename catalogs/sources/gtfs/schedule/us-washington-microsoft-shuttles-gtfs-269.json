@@ -18,5 +18,6 @@
     "urls": {
         "direct_download": "https://github.com/cookieguru/microsoft-gtfs/releases/download/20150518150359/gtfs_20150518150359.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-microsoft-shuttles-gtfs-269.zip?alt=media"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

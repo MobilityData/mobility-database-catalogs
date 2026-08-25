@@ -19,5 +19,6 @@
         "direct_download": "https://static.data.gouv.fr/resources/donnees-tcat-troyes-champagne-metropole-1/20250424-134618/gtfs.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-grand-est-troyes-champagne-metropole-tcat-gtfs-2628.zip?alt=media",
         "license": "https://transport.data.gouv.fr/datasets/donnees-tcat-troyes-champagne-metropole-1"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

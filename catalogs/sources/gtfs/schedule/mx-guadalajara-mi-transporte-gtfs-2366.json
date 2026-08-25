@@ -20,5 +20,6 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/mx-guadalajara-mi-transporte-gtfs-2366.zip?alt=media",
         "license": "https://datos.jalisco.gob.mx/dataset/actualizacion-de-rutas-de-transporte-publico-colectivo-y-masivo-en-la-zona-metropolitana-de"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

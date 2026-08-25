@@ -24,5 +24,6 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-glendora-transportation-division-gtfs-3097.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [],
+    "is_producer_url_unstable": "True"
 }

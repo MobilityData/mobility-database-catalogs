@@ -18,5 +18,6 @@
     "urls": {
         "direct_download": "http://miramichitransit.ca/GTFS/MT_GTFS_2019.01.29.b.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-new-brunswick-miramichi-transit-gtfs-1806.zip?alt=media"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

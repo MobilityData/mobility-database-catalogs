@@ -19,5 +19,6 @@
         "direct_download": "https://data.agglo-royan.fr/dataset/9b761974-a195-4e33-91b7-ecee3b368016/resource/d4915904-ebd0-43cf-9b35-fbfc04ce91fd/download/gtfs_20250613_092554_tdra.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-royan-carabus-gtfs-2842.zip?alt=media",
         "license": "https://transport.data.gouv.fr/datasets/donnees-gtfs-du-reseau-de-transport-public-cara-bus"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

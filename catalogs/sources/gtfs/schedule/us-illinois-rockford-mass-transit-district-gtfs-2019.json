@@ -20,5 +20,6 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-illinois-rockford-mass-transit-district-gtfs-2019.zip?alt=media",
         "license": "https://rmtd.org/gtfs/"
     },
-    "redirect": []
+    "redirect": [],
+    "is_producer_url_unstable": "True"
 }

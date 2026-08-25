@@ -18,5 +18,6 @@
     "urls": {
         "direct_download": "https://datos.gob.cl/dataset/22fa7b82-50ec-4c85-aa89-709a8e0dd268/resource/f4526a2f-dd8e-4943-ab12-be997ce04fbb/download/talca1sep16.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cl-maule-talca-gtfs-1866.zip?alt=media"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

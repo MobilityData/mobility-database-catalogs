@@ -1,0 +1,29 @@
+{
+    "mdb_source_id": 3497,
+    "data_type": "gtfs",
+    "provider": "Hansabuss",
+    "feed_contact_email": "pieturas.app@gmail.com",
+    "features": [
+        "fares-v1"
+    ],
+    "location": {
+        "country_code": "LV",
+        "subdivision_name": "Jūrmala",
+        "municipality": "Jūrmala",
+        "bounding_box": {
+            "minimum_latitude": 56.926387,
+            "maximum_latitude": 56.99528,
+            "minimum_longitude": 23.47445,
+            "maximum_longitude": 23.92215,
+            "extracted_on": "2026-08-20T15:30:16+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gsvalbe.id.lv/pieturas/dati/gtfs/jurmala.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/lv-jurmala-hansabuss-gtfs-3497.zip?alt=media",
+        "license": "https://gsvalbe.id.lv/pieturas/avoti.html"
+    },
+    "redirect": [],
+    "is_official": "False"
+}

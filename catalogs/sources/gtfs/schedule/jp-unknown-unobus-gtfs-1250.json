@@ -20,5 +20,11 @@
         "direct_download": "http://www3.unobus.co.jp/opendata/GTFS-JP.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/jp-unknown-unobus-gtfs-1250.zip?alt=media",
         "license": "http://www3.unobus.co.jp/opendata/"
-    }
+    },
+    "redirect": [
+        {
+            "id": "odpt-AkaiwaCity-AllLines",
+            "comment": ""
+        }
+    ]
 }

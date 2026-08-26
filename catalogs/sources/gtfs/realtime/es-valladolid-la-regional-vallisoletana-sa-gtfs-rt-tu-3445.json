@@ -7,6 +7,7 @@
     "name": "ArroyoBus",
     "provider": "La Regional Vallisoletana S.A",
     "is_official": "False",
+    "status": "deprecated",
     "static_reference": [
         "2691"
     ],
@@ -14,5 +15,10 @@
         "direct_download": "https://gtfs-rt-arroyoencomienda.lovable.app/api/gtfs-rt/trip-updates?format=json",
         "authentication_type": 0
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "3510",
+            "comment": " "
+        }
+    ]
 }

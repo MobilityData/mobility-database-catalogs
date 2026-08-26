@@ -8,7 +8,7 @@
     "name": "São José do Rio Preto",
     "is_official": "True",
     "static_reference": [
-        "3503"
+        "3505"
     ],
     "note": "GTFS-Realtime VehiclePositions served as JSON (not protobuf).",
     "urls": {

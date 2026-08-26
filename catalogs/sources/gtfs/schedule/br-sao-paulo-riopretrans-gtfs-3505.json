@@ -21,6 +21,6 @@
         "authentication_type": 1,
         "authentication_info": "https://sjrp.telefleet.com.br/gtfsapi.php",
         "api_key_parameter_name": "api_key",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/br-sao-paulo-riopretrans-gtfs-3503.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/br-sao-paulo-riopretrans-gtfs-3505.zip?alt=media"
     }
 }

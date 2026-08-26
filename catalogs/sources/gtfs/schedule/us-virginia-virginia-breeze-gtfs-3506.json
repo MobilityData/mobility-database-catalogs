@@ -1,7 +1,8 @@
 {
-    "mdb_source_id": 3503,
+    "mdb_source_id": 3506,
     "data_type": "gtfs",
     "provider": "Virginia Breeze",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Virginia",
@@ -17,7 +18,8 @@
     "urls": {
         "direct_download": "https://maps.tds.ai/download-feed/virginia-breeze-gtfs",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-virginia-breeze-gtfs-3503.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-virginia-breeze-gtfs-3506.zip?alt=media",
+        "license": "http://virginia-gtfs.com/"
     },
     "redirect": []
 }

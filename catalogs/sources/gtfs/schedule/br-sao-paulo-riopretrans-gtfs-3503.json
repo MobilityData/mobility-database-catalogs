@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 3503,
+    "data_type": "gtfs",
+    "provider": "Riopretrans",
+    "name": "São José do Rio Preto",
+    "is_official": "True",
+    "location": {
+        "country_code": "BR",
+        "subdivision_name": "São Paulo",
+        "municipality": "São José do Rio Preto",
+        "bounding_box": {
+            "minimum_latitude": -20.916526,
+            "maximum_latitude": -20.672341,
+            "minimum_longitude": -49.453808,
+            "maximum_longitude": -49.264412,
+            "extracted_on": "2026-08-26T00:28:15+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://sjrp.telefleet.com.br/gtfsapi.php/feed.zip",
+        "authentication_type": 1,
+        "authentication_info": "https://sjrp.telefleet.com.br/gtfsapi.php",
+        "api_key_parameter_name": "api_key",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/br-sao-paulo-riopretrans-gtfs-3503.zip?alt=media"
+    }
+}

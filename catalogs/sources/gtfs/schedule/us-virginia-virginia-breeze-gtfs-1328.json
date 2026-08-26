@@ -2,7 +2,7 @@
     "mdb_source_id": 1328,
     "data_type": "gtfs",
     "provider": "Virginia Breeze",
-    "is_official": "True",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Virginia",
@@ -18,5 +18,12 @@
         "direct_download": "https://data.trilliumtransit.com/gtfs/virginiabreeze-va-us/virginiabreeze-va-us.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-virginia-breeze-gtfs-1328.zip?alt=media",
         "license": "http://virginia-gtfs.com/"
-    }
+    },
+    "redirect": [
+        {
+            "id": "3503",
+            "comment": " "
+        }
+    ],
+    "is_official": "True"
 }

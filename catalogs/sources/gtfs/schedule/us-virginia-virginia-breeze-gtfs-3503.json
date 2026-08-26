@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3503,
+    "data_type": "gtfs",
+    "provider": "Virginia Breeze",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Virginia",
+        "municipality": "Richmond",
+        "bounding_box": {
+            "minimum_latitude": 36.588233,
+            "maximum_latitude": 38.956367,
+            "minimum_longitude": -82.1523,
+            "maximum_longitude": -75.985625,
+            "extracted_on": "2026-08-26T13:07:25+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://maps.tds.ai/download-feed/virginia-breeze-gtfs",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-virginia-breeze-gtfs-3503.zip?alt=media"
+    },
+    "redirect": []
+}

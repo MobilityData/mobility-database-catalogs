@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "La Regional Vallisoletana S.A",
     "name": "ArroyoBus",
+    "is_official": "True",
     "location": {
         "country_code": "ES",
         "subdivision_name": "Castilla y León",

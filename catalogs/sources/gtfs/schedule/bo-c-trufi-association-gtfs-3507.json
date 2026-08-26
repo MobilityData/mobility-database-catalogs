@@ -1,9 +1,10 @@
 {
-    "mdb_source_id": 3503,
+    "mdb_source_id": 3507,
     "data_type": "gtfs",
     "provider": "Trufi Association",
     "name": "Agregación de datos de transporte público en Cochabamba (tren metropolitano, micros, minibuses, y trufis) desde OpenStreetMap",
     "feed_contact_email": "idaasannmvgd@gmail.com",
+    "is_official": "False",
     "features": [],
     "status": "active",
     "location": {
@@ -20,7 +21,7 @@
     },
     "urls": {
         "direct_download": "https://raw.githubusercontent.com/trufi-association/trufi-gtfs-builder/refs/heads/main/examples/Bolivia-Cochabamba/out/cochabamba.gtfs.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/bo-c-trufi-association-gtfs-3503.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/bo-c-trufi-association-gtfs-3507.zip?alt=media",
         "license": "https://www.openstreetmap.org/copyright"
     },
     "redirect": []

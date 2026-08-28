@@ -18,5 +18,6 @@
     "urls": {
         "direct_download": "https://www.nps.gov/external-resources/gtfs/romo/rocky-mountain-national-park-shuttle.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-rocky-mountain-national-park-shuttles-gtfs-3211.zip?alt=media"
-    }
+    },
+    "is_seasonal": "True"
 }

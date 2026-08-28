@@ -17,5 +17,6 @@
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/rockymountainnationalpark-co-us/rockymountainnationalpark-co-us.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-colorado-rocky-mountain-national-park-shuttles-gtfs-176.zip?alt=media"
-    }
+    },
+    "is_seasonal": "True"
 }

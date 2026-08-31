@@ -24,5 +24,6 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-missouri-metro-st-louis-gtfs-2035.zip?alt=media",
         "license": "https://www.looptrolley.com/resources"
     },
-    "redirect": []
+    "redirect": [],
+    "is_seasonal": "True"
 }

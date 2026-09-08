@@ -1,24 +1,37 @@
-# Find schedule and realtime feeds whose producer URL carries evidence of a date or a
-# version, and flag them with is_producer_url_unstable = "True".
+# Flag feeds whose producer URL carries evidence of a date or a version with
+# is_producer_url_unstable = "True".
 #
 # A producer URL containing a date or a rotating version number will stop resolving once
 # the producer publishes again, so the feed needs manual attention more than twice a year.
 # See the is_producer_url_unstable row of README.md for the field definition.
 #
-# Dry run by default. Nothing is written unless --apply is passed, and the field is only
-# ever set to "True" -- feeds without evidence are left untouched.
+# There are two ways to pick the feeds to flag:
 #
-#   python scripts/identify_unstable_urls.py --report unstable_urls.csv --weak
-#   python scripts/identify_unstable_urls.py --apply
+#   Consume a report. The identification has already happened elsewhere, and the report
+#   names the feeds. This is the usual path, because the reports are produced against the
+#   whole Mobility Database, whose feeds are not all in this catalog, and because the rule
+#   table below is deliberately narrower than the one those reports were built with.
+#
+#     python scripts/identify_unstable_urls.py unstable_feeds.html --apply
+#
+#   Scan the catalog with the rule table, which is what --scan does. Useful for spotting
+#   feeds that have drifted since the last report.
+#
+#     python scripts/identify_unstable_urls.py --scan --report unstable_urls.csv --weak
+#
+# Dry run by default in both modes. Nothing is written unless --apply is passed, and the
+# field is only ever set to "True" -- feeds not named or not matched are left untouched.
 #
 # This script is intentionally standalone (standard library only). tools.helpers pulls in
 # gtfs_kit, which needs GDAL, so scripts/ re-declares the handful of constants it needs
 # instead of importing the tools package. Same convention as scripts/create_urls_matrix.py.
 import argparse
 import csv
+import io
 import json
 import os
 import re
+from html.parser import HTMLParser
 from urllib.parse import unquote, urlsplit
 
 # OS constants
@@ -41,6 +54,16 @@ IS_PRODUCER_URL_UNSTABLE = "is_producer_url_unstable"
 # Field constants
 TRUE = "True"
 DEPRECATED = "deprecated"
+
+# Report input constants
+STABLE_ID = "stable_id"
+RULES = "rules"
+MATCHED_TEXT = "matched_text"
+# Only mdb- stable ids live in this catalog. A report covers the whole Mobility Database,
+# so the other prefixes it carries are counted and skipped rather than treated as errors.
+MDB_PREFIX = "mdb-"
+HTML_EXTENSIONS = (".html", ".htm")
+CSV_EXTENSIONS = (".csv",)
 
 # Report constants
 REPORT_COLUMNS = [
@@ -226,6 +249,223 @@ def is_unstable(url):
 
 
 #########################
+# REPORT INPUT
+#########################
+
+
+class ReportTableParser(HTMLParser):
+    """
+    Collects the cells of every table row in an HTML report.
+
+    The reports carry inline style attributes on every tag and wrap the producer URL in an
+    anchor, so the cell text has to be gathered across nested tags rather than read off a
+    single data event. Header rows are dropped: a th cell marks the row as a header.
+
+    Attributes:
+        rows (list): One list of cell strings per body row, in document order.
+    """
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.rows = []
+        self._row = None
+        self._cell = None
+        self._is_header_row = False
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "tr":
+            self._row = []
+            self._is_header_row = False
+        elif tag in ("td", "th") and self._row is not None:
+            self._cell = []
+            if tag == "th":
+                self._is_header_row = True
+
+    def handle_endtag(self, tag):
+        if tag in ("td", "th") and self._cell is not None:
+            self._row.append(" ".join("".join(self._cell).split()))
+            self._cell = None
+        elif tag == "tr" and self._row is not None:
+            if self._row and not self._is_header_row:
+                self.rows.append(self._row)
+            self._row = None
+
+    def handle_data(self, data):
+        if self._cell is not None:
+            self._cell.append(data)
+
+
+def report_row(stable_id, rules="", matched_text=""):
+    """
+    Builds one parsed report row.
+
+    Args:
+        stable_id (str): The feed's stable id, as the report spells it.
+        rules (str, optional): The rules the report says fired. Defaults to empty.
+        matched_text (str, optional): The text the report says matched. Defaults to empty.
+
+    Returns:
+        dict: The row, keyed by STABLE_ID, RULES and MATCHED_TEXT.
+    """
+    return {STABLE_ID: stable_id, RULES: rules, MATCHED_TEXT: matched_text}
+
+
+def parse_html_report(text):
+    """
+    Reads the rows of an HTML report table.
+
+    The column order is the one the reports use: stable id, producer URL, identifier,
+    matched text. The identifier and matched text columns are carried through so the
+    review CSV keeps the provenance of each flag instead of re-deriving it.
+
+    Args:
+        text (str): The contents of the HTML report.
+
+    Returns:
+        list: The parsed rows.
+    """
+    parser = ReportTableParser()
+    parser.feed(text)
+    parser.close()
+    rows = []
+    for cells in parser.rows:
+        # A header row that used td rather than th still names its first column.
+        if not cells[0] or cells[0] == STABLE_ID:
+            continue
+        rows.append(
+            report_row(
+                cells[0],
+                cells[2] if len(cells) > 2 else "",
+                cells[3] if len(cells) > 3 else "",
+            )
+        )
+    return rows
+
+
+def parse_csv_report(text):
+    """
+    Reads the rows of a CSV report.
+
+    Accepts either a stable_id column or the mdb_source_id column this script's own
+    --report writes, so a review CSV can be fed straight back in.
+
+    Args:
+        text (str): The contents of the CSV report.
+
+    Returns:
+        list: The parsed rows.
+    """
+    rows = []
+    for record in csv.DictReader(io.StringIO(text)):
+        stable_id = record.get(STABLE_ID) or record.get(MDB_SOURCE_ID) or ""
+        if not stable_id.strip():
+            continue
+        rows.append(
+            report_row(
+                stable_id.strip(),
+                (record.get(RULES) or "").strip(),
+                (record.get(MATCHED_TEXT) or "").strip(),
+            )
+        )
+    return rows
+
+
+def parse_plain_report(text):
+    """
+    Reads a plain list of stable ids, one per line.
+
+    Blank lines and lines starting with # are skipped, so a list can be commented.
+
+    Args:
+        text (str): The contents of the list.
+
+    Returns:
+        list: The parsed rows.
+    """
+    rows = []
+    for line in text.splitlines():
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        rows.append(report_row(line))
+    return rows
+
+
+def parse_report(path):
+    """
+    Reads one report, picking the parser from the file extension.
+
+    Args:
+        path (str): The path of the report to read.
+
+    Returns:
+        list: The parsed rows.
+    """
+    with open(path, encoding="utf-8") as fp:
+        text = fp.read()
+    extension = os.path.splitext(path)[1].lower()
+    if extension in HTML_EXTENSIONS:
+        return parse_html_report(text)
+    if extension in CSV_EXTENSIONS:
+        return parse_csv_report(text)
+    return parse_plain_report(text)
+
+
+def parse_reports(paths):
+    """
+    Reads every report and merges them on stable id.
+
+    The first mention of a stable id wins, so a rerun that passes both an old and a new
+    report keeps the earlier provenance rather than the later empty one.
+
+    Args:
+        paths (list): The paths of the reports to read.
+
+    Returns:
+        tuple: The merged rows and the total number of rows read before merging.
+    """
+    merged = {}
+    total = 0
+    for path in paths:
+        for row in parse_report(path):
+            total += 1
+            merged.setdefault(row[STABLE_ID], row)
+    return list(merged.values()), total
+
+
+def to_source_id(stable_id):
+    """
+    Converts a stable id to the mdb_source_id this catalog keys on.
+
+    Args:
+        stable_id (str): A stable id, either mdb- prefixed or a bare number.
+
+    Returns:
+        int: The source id, or None when the id belongs to another catalog.
+    """
+    value = stable_id.strip()
+    if value.startswith(MDB_PREFIX):
+        value = value[len(MDB_PREFIX) :]
+    try:
+        return int(value)
+    except ValueError:
+        return None
+
+
+def id_prefix(stable_id):
+    """
+    Names the catalog a skipped stable id belongs to, for the run summary.
+
+    Args:
+        stable_id (str): The stable id that could not be converted.
+
+    Returns:
+        str: The prefix ahead of the first dash, or the id itself when there is no dash.
+    """
+    return stable_id.split("-")[0] if "-" in stable_id else stable_id
+
+
+#########################
 # CATALOG
 #########################
 
@@ -268,6 +508,22 @@ def load_sources(data_type):
                 with open(file_path) as fp:
                     sources.append((file_path, json.load(fp)))
     return sorted(sources, key=lambda entry: entry[1].get(MDB_SOURCE_ID, 0))
+
+
+def index_sources(data_type):
+    """
+    Reads every source file and keys them on mdb_source_id.
+
+    Args:
+        data_type (str): One of GTFS, GTFS_RT or ALL.
+
+    Returns:
+        dict: mdb_source_id mapped to its (file path, source dict) pair.
+    """
+    return {
+        source.get(MDB_SOURCE_ID): (file_path, source)
+        for file_path, source in load_sources(data_type)
+    }
 
 
 def flag_source(file_path, source):
@@ -348,37 +604,171 @@ def parse_args(argv=None):
     parser = argparse.ArgumentParser(
         description=(
             "Flag schedule and realtime feeds whose producer URL shows evidence of a "
-            'date or a version by setting is_producer_url_unstable to "True".'
+            'date or a version by setting is_producer_url_unstable to "True". Give one '
+            "or more reports naming the feeds to flag, or --scan to identify them with "
+            "the rule table instead."
         )
+    )
+    parser.add_argument(
+        "reports",
+        nargs="*",
+        help=(
+            "Reports naming the feeds to flag. An .html report table, a .csv with a "
+            "stable_id or mdb_source_id column, or a file of stable ids one per line. "
+            "Ids outside this catalog are counted and skipped."
+        ),
+    )
+    parser.add_argument(
+        "--scan",
+        action="store_true",
+        help="Identify feeds with the rule table instead of reading a report.",
     )
     parser.add_argument(
         "--data-type",
         choices=[GTFS, GTFS_RT, ALL],
         default=ALL,
-        help="Which catalog to scan. Defaults to all.",
+        help="Which catalog to work on. Defaults to all.",
     )
     parser.add_argument(
         "--apply",
         action="store_true",
-        help='Write is_producer_url_unstable = "True" into matching files.',
+        help='Write is_producer_url_unstable = "True" into the selected files.',
     )
     parser.add_argument(
         "--include-deprecated",
         action="store_true",
-        help="Also scan sources whose status is deprecated. Skipped by default.",
+        help=(
+            "Scan mode only. Also scan sources whose status is deprecated, which are "
+            "skipped by default. A report is authoritative, so consuming one never "
+            "filters on status."
+        ),
     )
     parser.add_argument("--report", help="Path of the review CSV to write.")
     parser.add_argument(
         "--weak",
         action="store_true",
-        help="Also list the weak signals that are never flagged, for manual review.",
+        help=(
+            "Scan mode only. Also list the weak signals that are never flagged, for "
+            "manual review."
+        ),
     )
-    return parser.parse_args(argv)
+    args = parser.parse_args(argv)
+    if args.scan and args.reports:
+        parser.error("give reports to consume or --scan to identify, not both.")
+    if not args.scan and not args.reports:
+        parser.error("give at least one report to consume, or --scan to identify.")
+    for option, name in (
+        (args.include_deprecated, "--include-deprecated"),
+        (args.weak, "--weak"),
+    ):
+        if option and not args.scan:
+            parser.error(f"{name} only applies to --scan.")
+    return args
 
 
-def main(argv=None):
-    args = parse_args(argv)
+def consume_reports(args):
+    """
+    Flags the feeds the given reports name.
 
+    The report decides which feeds are unstable, so nothing here re-tests the URL and
+    nothing filters on status. An id the catalog does not hold is reported rather than
+    passed over, because it means the report and the catalog have drifted apart.
+
+    Args:
+        args (Namespace): The parsed command line arguments.
+
+    Returns:
+        list: The review rows for the feeds that were flagged.
+    """
+    rows, total = parse_reports(args.reports)
+    sources = index_sources(args.data_type)
+
+    flagged = []
+    already_set = []
+    unresolved = []
+    skipped = {}
+
+    for row in rows:
+        stable_id = row[STABLE_ID]
+        source_id = to_source_id(stable_id)
+        if source_id is None:
+            prefix = id_prefix(stable_id)
+            skipped[prefix] = skipped.get(prefix, 0) + 1
+            continue
+        if source_id not in sources:
+            unresolved.append(stable_id)
+            continue
+
+        file_path, source = sources[source_id]
+        url = source.get(URLS, {}).get(DIRECT_DOWNLOAD, "")
+
+        # A value that is already there was set by a human, whose judgement beats this
+        # script. A hand-set "False" therefore suppresses a false positive permanently.
+        if source.get(IS_PRODUCER_URL_UNSTABLE) is not None:
+            already_set.append((source, url))
+            continue
+
+        flagged.append(
+            {
+                "mdb_source_id": source_id,
+                "data_type": source.get(DATA_TYPE),
+                "provider": source.get(PROVIDER),
+                "status": source.get(STATUS) or "",
+                "direct_download": url,
+                "rules": row[RULES],
+                "matched_text": row[MATCHED_TEXT],
+            }
+        )
+        if args.apply:
+            flag_source(file_path, source)
+
+    flagged.sort(key=lambda row: row["mdb_source_id"])
+    for row in flagged:
+        print(f"{row['mdb_source_id']:>5}  {row['rules']:<40}  {row['matched_text']}")
+        print(f"       {row['direct_download']}")
+
+    print()
+    report_count = len(args.reports)
+    plural = "" if report_count == 1 else "s"
+    print(
+        f"Read {report_count} report{plural}, {total} rows, {len(rows)} unique stable ids."
+    )
+    if skipped:
+        detail = ", ".join(
+            f"{prefix} {count}"
+            for prefix, count in sorted(skipped.items(), key=lambda item: -item[1])
+        )
+        print(f"Skipped {sum(skipped.values())} ids outside this catalog: {detail}.")
+    print(f"Unstable producer URLs: {len(flagged)}")
+
+    if already_set:
+        print()
+        print(f"Named but left alone, the field is already set: {len(already_set)}")
+        for source, url in already_set:
+            value = source.get(IS_PRODUCER_URL_UNSTABLE)
+            print(f"  {source.get(MDB_SOURCE_ID):>5}  {value:<6}  {url}")
+
+    if unresolved:
+        print()
+        print(
+            f"Named but not in the catalog, the report has drifted: {len(unresolved)}"
+        )
+        for stable_id in unresolved:
+            print(f"  {stable_id}")
+
+    return flagged
+
+
+def scan_catalog(args):
+    """
+    Flags the feeds whose producer URL the rule table matches.
+
+    Args:
+        args (Namespace): The parsed command line arguments.
+
+    Returns:
+        list: The review rows for the feeds that were flagged.
+    """
     flagged = []
     already_set = []
     skipped_deprecated = 0
@@ -454,16 +844,23 @@ def main(argv=None):
             print(f"  {source.get(MDB_SOURCE_ID):>5}  {rules:<40}  {matched}")
             print(f"         {url}")
 
+    return flagged
+
+
+def main(argv=None):
+    args = parse_args(argv)
+
+    flagged = scan_catalog(args) if args.scan else consume_reports(args)
+
     if args.report:
         write_report(args.report, flagged)
         print()
         print(f"Report written to {args.report}")
 
+    print()
     if args.apply:
-        print()
         print(f"Wrote is_producer_url_unstable to {len(flagged)} files.")
     else:
-        print()
         print("Dry run, nothing written. Pass --apply to write.")
 
 

@@ -1,5 +1,7 @@
 import importlib.util
+import json
 import os
+from tempfile import TemporaryDirectory
 from unittest import TestCase
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
@@ -200,3 +202,142 @@ class TestScannable(TestCase):
             "https://www.dtpm.cl/descargas/gtfs/03%20GTFS_Final_03marzo.zip"
         )
         self.assertIn("03 GTFS_Final_03marzo.zip", under_test)
+
+
+# The exact row shape the reports use: inline style attributes on every tag, a th header
+# row, and the producer URL wrapped in an anchor.
+HTML_REPORT = """
+<html><body><table><tbody>
+<tr><th style="padding:8px">stable_id</th><th style="padding:8px">producer_url</th>
+    <th style="padding:8px">identifier</th><th style="padding:8px">matched_text</th></tr>
+<tr><td style="padding:8px; white-space:nowrap;">  mdb-1260  </td>
+    <td style="padding:8px">200<a href="https://example.org/20200911/gtfs.zip"
+        style="color:#3959FA" target="_blank">https://example.org/20200911/gtfs.zip</a></td>
+    <td style="padding:8px">iso_date</td>
+    <td style="padding:8px">20200911</td></tr>
+<tr><td style="padding:8px">tld-4253</td>
+    <td style="padding:8px">200https://example.org/RMTDGTFS4.4.25update.zip</td>
+    <td style="padding:8px">locale_date</td>
+    <td style="padding:8px">4.4.25</td></tr>
+<tr><td style="padding:8px">ntd-80010</td>
+    <td style="padding:8px">404https://example.org/wp-content/uploads/2022/10/a.zip</td>
+    <td style="padding:8px">wordpress_upload_folder|delimited_year</td>
+    <td style="padding:8px">wp-content/uploads/2022/10/|2022</td></tr>
+</tbody></table></body></html>
+"""
+
+
+class TestToSourceId(TestCase):
+    def test_strips_the_mdb_prefix(self):
+        self.assertEqual(identify_unstable_urls.to_source_id("mdb-1234"), 1234)
+
+    def test_accepts_a_bare_number(self):
+        self.assertEqual(identify_unstable_urls.to_source_id(" 1234 "), 1234)
+
+    def test_rejects_other_catalogs(self):
+        for stable_id in ("tld-4253", "ntd-80010", "ntd-90164-2", "tfs-7", "tdg-1"):
+            with self.subTest(stable_id=stable_id):
+                self.assertIsNone(identify_unstable_urls.to_source_id(stable_id))
+
+
+class TestParseHtmlReport(TestCase):
+    def setUp(self):
+        self.rows = identify_unstable_urls.parse_html_report(HTML_REPORT)
+
+    def test_skips_the_header_row(self):
+        self.assertEqual(len(self.rows), 3)
+        self.assertNotIn("stable_id", [row["stable_id"] for row in self.rows])
+
+    def test_reads_the_stable_id_column(self):
+        self.assertEqual(
+            [row["stable_id"] for row in self.rows],
+            ["mdb-1260", "tld-4253", "ntd-80010"],
+        )
+
+    def test_carries_the_provenance_columns(self):
+        self.assertEqual(self.rows[0]["rules"], "iso_date")
+        self.assertEqual(self.rows[0]["matched_text"], "20200911")
+        self.assertEqual(
+            self.rows[2]["rules"], "wordpress_upload_folder|delimited_year"
+        )
+
+
+class TestParseCsvReport(TestCase):
+    def test_reads_a_stable_id_column(self):
+        rows = identify_unstable_urls.parse_csv_report(
+            "stable_id,rules,matched_text\nmdb-561,iso_date,20160210\n"
+        )
+        self.assertEqual(
+            rows,
+            [{"stable_id": "mdb-561", "rules": "iso_date", "matched_text": "20160210"}],
+        )
+
+    def test_reads_the_mdb_source_id_column_this_script_writes(self):
+        rows = identify_unstable_urls.parse_csv_report(
+            "mdb_source_id,provider,rules,matched_text\n561,LISERCO,iso_date,20160210\n"
+        )
+        self.assertEqual(rows[0]["stable_id"], "561")
+        self.assertEqual(rows[0]["rules"], "iso_date")
+
+    def test_skips_rows_without_an_id(self):
+        rows = identify_unstable_urls.parse_csv_report("stable_id\nmdb-561\n\n  \n")
+        self.assertEqual(len(rows), 1)
+
+
+class TestParsePlainReport(TestCase):
+    def test_reads_one_id_per_line_and_skips_comments(self):
+        rows = identify_unstable_urls.parse_plain_report(
+            "# feeds to flag\nmdb-561\n\n  mdb-1260  \n"
+        )
+        self.assertEqual([row["stable_id"] for row in rows], ["mdb-561", "mdb-1260"])
+
+
+class TestParseReports(TestCase):
+    def test_merges_on_stable_id_keeping_the_first_mention(self):
+        with TemporaryDirectory() as directory:
+            first = os.path.join(directory, "first.csv")
+            second = os.path.join(directory, "second.txt")
+            with open(first, "w") as fp:
+                fp.write("stable_id,rules\nmdb-561,iso_date\n")
+            with open(second, "w") as fp:
+                fp.write("mdb-561\nmdb-1260\n")
+
+            rows, total = identify_unstable_urls.parse_reports([first, second])
+
+        self.assertEqual(total, 3)
+        by_id = {row["stable_id"]: row for row in rows}
+        self.assertEqual(sorted(by_id), ["mdb-1260", "mdb-561"])
+        self.assertEqual(by_id["mdb-561"]["rules"], "iso_date")
+
+
+class TestFlagSource(TestCase):
+    SOURCE = {
+        "mdb_source_id": 561,
+        "data_type": "gtfs",
+        "urls": {"direct_download": "https://example.org/gtfs.zip"},
+    }
+
+    def flag(self, ends_with_newline):
+        with TemporaryDirectory() as directory:
+            path = os.path.join(directory, "source.json")
+            with open(path, "w") as fp:
+                json.dump(self.SOURCE, fp, indent=4, ensure_ascii=False)
+                if ends_with_newline:
+                    fp.write("\n")
+
+            source = dict(self.SOURCE)
+            identify_unstable_urls.flag_source(path, source)
+            with open(path) as fp:
+                return fp.read()
+
+    def test_appends_the_field_as_the_last_key(self):
+        written = json.loads(self.flag(ends_with_newline=False))
+        self.assertEqual(written["is_producer_url_unstable"], "True")
+        self.assertEqual(list(written)[-1], "is_producer_url_unstable")
+
+    def test_keeps_a_trailing_newline(self):
+        self.assertTrue(self.flag(ends_with_newline=True).endswith("}\n"))
+
+    def test_keeps_the_absence_of_a_trailing_newline(self):
+        self.assertTrue(self.flag(ends_with_newline=False).endswith("}"))
+        self.assertFalse(self.flag(ends_with_newline=False).endswith("\n"))

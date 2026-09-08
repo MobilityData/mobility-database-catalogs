@@ -19,5 +19,6 @@
         "direct_download": "https://svrta.com/wp-content/uploads/2025/12/svrta-steubenville-oh-us-2.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-ohio-steel-valley-regional-transit-authority-gtfs-3113.zip?alt=media",
         "license": "https://svrta.com/website-disclaimer/"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

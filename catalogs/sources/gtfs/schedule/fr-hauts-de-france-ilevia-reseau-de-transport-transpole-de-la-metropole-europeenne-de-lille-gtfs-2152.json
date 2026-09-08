@@ -20,5 +20,6 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-hauts-de-france-ilevia-reseau-de-transport-transpole-de-la-metropole-europeenne-de-lille-gtfs-2152.zip?alt=media",
         "license": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/"
     },
-    "redirect": []
+    "redirect": [],
+    "is_producer_url_unstable": "True"
 }

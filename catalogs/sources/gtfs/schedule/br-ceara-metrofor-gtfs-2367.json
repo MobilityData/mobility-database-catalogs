@@ -20,5 +20,6 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/br-ceara-metrofor-gtfs-2367.zip?alt=media",
         "license": "https://www.metrofor.ce.gov.br/gtfs/"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

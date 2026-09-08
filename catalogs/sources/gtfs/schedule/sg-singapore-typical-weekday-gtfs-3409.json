@@ -20,5 +20,6 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/sg-singapore-typical-weekday-gtfs-3409.zip?alt=media",
         "license": "https://github.com/Vorld/singapore-gtfs#licence"
     },
-    "redirect": []
+    "redirect": [],
+    "is_producer_url_unstable": "True"
 }

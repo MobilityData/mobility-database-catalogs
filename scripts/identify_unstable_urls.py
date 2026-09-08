@@ -1,5 +1,5 @@
-# Flag feeds whose producer URL carries evidence of a date or a version with
-# is_producer_url_unstable = "True".
+# Find schedule and realtime feeds whose producer URL carries evidence of a date or a
+# version, and flag them with is_producer_url_unstable = "True".
 #
 # A producer URL containing a date or a rotating version number will stop resolving once
 # the producer publishes again, so the feed needs manual attention more than twice a year.
@@ -26,44 +26,38 @@
 # gtfs_kit, which needs GDAL, so scripts/ re-declares the handful of constants it needs
 # instead of importing the tools package. Same convention as scripts/create_urls_matrix.py.
 import argparse
-import csv
-import io
-import json
 import os
 import re
-from html.parser import HTMLParser
+import sys
 from urllib.parse import unquote, urlsplit
 
-# OS constants
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# The report reading and catalog writing live next door, shared with the other marking
+# scripts. Reach them by directory rather than as a package, because scripts/ is not one
+# and this file is also loaded by path from the tests.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-# tools.constants
-GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT = "catalogs/sources/gtfs/schedule"
-GTFS_REALTIME_CATALOG_PATH_FROM_ROOT = "catalogs/sources/gtfs/realtime"
-GTFS = "gtfs"
-GTFS_RT = "gtfs-rt"
-ALL = "all"
-MDB_SOURCE_ID = "mdb_source_id"
-DATA_TYPE = "data_type"
-PROVIDER = "provider"
-STATUS = "status"
-URLS = "urls"
-DIRECT_DOWNLOAD = "direct_download"
-IS_PRODUCER_URL_UNSTABLE = "is_producer_url_unstable"
-
-# Field constants
-TRUE = "True"
-DEPRECATED = "deprecated"
-
-# Report input constants
-STABLE_ID = "stable_id"
-RULES = "rules"
-MATCHED_TEXT = "matched_text"
-# Only mdb- stable ids live in this catalog. A report covers the whole Mobility Database,
-# so the other prefixes it carries are counted and skipped rather than treated as errors.
-MDB_PREFIX = "mdb-"
-HTML_EXTENSIONS = (".html", ".htm")
-CSV_EXTENSIONS = (".csv",)
+from catalog_reports import (  # noqa: E402
+    ALL,
+    DATA_TYPE,
+    DEPRECATED,
+    DIRECT_DOWNLOAD,
+    GTFS,
+    GTFS_RT,
+    IS_PRODUCER_URL_UNSTABLE,
+    MDB_SOURCE_ID,
+    PROVIDER,
+    STABLE_ID,
+    STATUS,
+    TRUE,
+    URLS,
+    id_prefix,
+    index_sources,
+    load_sources,
+    parse_reports,
+    set_source_field,
+    to_source_id,
+    write_report,
+)
 
 # Report constants
 REPORT_COLUMNS = [
@@ -75,6 +69,10 @@ REPORT_COLUMNS = [
     "rules",
     "matched_text",
 ]
+# The reports spell the rule column identifier, this script's own review CSV spells it
+# rules. Either is accepted so a CSV it wrote can be fed straight back in.
+RULES_COLUMNS = ("rules", "identifier")
+MATCHED_TEXT_COLUMNS = ("matched_text",)
 
 
 #########################
@@ -249,281 +247,8 @@ def is_unstable(url):
 
 
 #########################
-# REPORT INPUT
-#########################
-
-
-class ReportTableParser(HTMLParser):
-    """
-    Collects the cells of every table row in an HTML report.
-
-    The reports carry inline style attributes on every tag and wrap the producer URL in an
-    anchor, so the cell text has to be gathered across nested tags rather than read off a
-    single data event. Header rows are dropped: a th cell marks the row as a header.
-
-    Attributes:
-        rows (list): One list of cell strings per body row, in document order.
-    """
-
-    def __init__(self):
-        super().__init__(convert_charrefs=True)
-        self.rows = []
-        self._row = None
-        self._cell = None
-        self._is_header_row = False
-
-    def handle_starttag(self, tag, attrs):
-        if tag == "tr":
-            self._row = []
-            self._is_header_row = False
-        elif tag in ("td", "th") and self._row is not None:
-            self._cell = []
-            if tag == "th":
-                self._is_header_row = True
-
-    def handle_endtag(self, tag):
-        if tag in ("td", "th") and self._cell is not None:
-            self._row.append(" ".join("".join(self._cell).split()))
-            self._cell = None
-        elif tag == "tr" and self._row is not None:
-            if self._row and not self._is_header_row:
-                self.rows.append(self._row)
-            self._row = None
-
-    def handle_data(self, data):
-        if self._cell is not None:
-            self._cell.append(data)
-
-
-def report_row(stable_id, rules="", matched_text=""):
-    """
-    Builds one parsed report row.
-
-    Args:
-        stable_id (str): The feed's stable id, as the report spells it.
-        rules (str, optional): The rules the report says fired. Defaults to empty.
-        matched_text (str, optional): The text the report says matched. Defaults to empty.
-
-    Returns:
-        dict: The row, keyed by STABLE_ID, RULES and MATCHED_TEXT.
-    """
-    return {STABLE_ID: stable_id, RULES: rules, MATCHED_TEXT: matched_text}
-
-
-def parse_html_report(text):
-    """
-    Reads the rows of an HTML report table.
-
-    The column order is the one the reports use: stable id, producer URL, identifier,
-    matched text. The identifier and matched text columns are carried through so the
-    review CSV keeps the provenance of each flag instead of re-deriving it.
-
-    Args:
-        text (str): The contents of the HTML report.
-
-    Returns:
-        list: The parsed rows.
-    """
-    parser = ReportTableParser()
-    parser.feed(text)
-    parser.close()
-    rows = []
-    for cells in parser.rows:
-        # A header row that used td rather than th still names its first column.
-        if not cells[0] or cells[0] == STABLE_ID:
-            continue
-        rows.append(
-            report_row(
-                cells[0],
-                cells[2] if len(cells) > 2 else "",
-                cells[3] if len(cells) > 3 else "",
-            )
-        )
-    return rows
-
-
-def parse_csv_report(text):
-    """
-    Reads the rows of a CSV report.
-
-    Accepts either a stable_id column or the mdb_source_id column this script's own
-    --report writes, so a review CSV can be fed straight back in.
-
-    Args:
-        text (str): The contents of the CSV report.
-
-    Returns:
-        list: The parsed rows.
-    """
-    rows = []
-    for record in csv.DictReader(io.StringIO(text)):
-        stable_id = record.get(STABLE_ID) or record.get(MDB_SOURCE_ID) or ""
-        if not stable_id.strip():
-            continue
-        rows.append(
-            report_row(
-                stable_id.strip(),
-                (record.get(RULES) or "").strip(),
-                (record.get(MATCHED_TEXT) or "").strip(),
-            )
-        )
-    return rows
-
-
-def parse_plain_report(text):
-    """
-    Reads a plain list of stable ids, one per line.
-
-    Blank lines and lines starting with # are skipped, so a list can be commented.
-
-    Args:
-        text (str): The contents of the list.
-
-    Returns:
-        list: The parsed rows.
-    """
-    rows = []
-    for line in text.splitlines():
-        line = line.strip()
-        if not line or line.startswith("#"):
-            continue
-        rows.append(report_row(line))
-    return rows
-
-
-def parse_report(path):
-    """
-    Reads one report, picking the parser from the file extension.
-
-    Args:
-        path (str): The path of the report to read.
-
-    Returns:
-        list: The parsed rows.
-    """
-    with open(path, encoding="utf-8") as fp:
-        text = fp.read()
-    extension = os.path.splitext(path)[1].lower()
-    if extension in HTML_EXTENSIONS:
-        return parse_html_report(text)
-    if extension in CSV_EXTENSIONS:
-        return parse_csv_report(text)
-    return parse_plain_report(text)
-
-
-def parse_reports(paths):
-    """
-    Reads every report and merges them on stable id.
-
-    The first mention of a stable id wins, so a rerun that passes both an old and a new
-    report keeps the earlier provenance rather than the later empty one.
-
-    Args:
-        paths (list): The paths of the reports to read.
-
-    Returns:
-        tuple: The merged rows and the total number of rows read before merging.
-    """
-    merged = {}
-    total = 0
-    for path in paths:
-        for row in parse_report(path):
-            total += 1
-            merged.setdefault(row[STABLE_ID], row)
-    return list(merged.values()), total
-
-
-def to_source_id(stable_id):
-    """
-    Converts a stable id to the mdb_source_id this catalog keys on.
-
-    Args:
-        stable_id (str): A stable id, either mdb- prefixed or a bare number.
-
-    Returns:
-        int: The source id, or None when the id belongs to another catalog.
-    """
-    value = stable_id.strip()
-    if value.startswith(MDB_PREFIX):
-        value = value[len(MDB_PREFIX) :]
-    try:
-        return int(value)
-    except ValueError:
-        return None
-
-
-def id_prefix(stable_id):
-    """
-    Names the catalog a skipped stable id belongs to, for the run summary.
-
-    Args:
-        stable_id (str): The stable id that could not be converted.
-
-    Returns:
-        str: The prefix ahead of the first dash, or the id itself when there is no dash.
-    """
-    return stable_id.split("-")[0] if "-" in stable_id else stable_id
-
-
-#########################
 # CATALOG
 #########################
-
-
-def catalog_paths(data_type):
-    """
-    Lists the catalog directories to scan for the given data type.
-
-    Args:
-        data_type (str): One of GTFS, GTFS_RT or ALL.
-
-    Returns:
-        list: The absolute paths of the catalog directories to walk.
-    """
-    paths = []
-    if data_type in (GTFS, ALL):
-        paths.append(os.path.join(ROOT, GTFS_SCHEDULE_CATALOG_PATH_FROM_ROOT))
-    if data_type in (GTFS_RT, ALL):
-        paths.append(os.path.join(ROOT, GTFS_REALTIME_CATALOG_PATH_FROM_ROOT))
-    return paths
-
-
-def load_sources(data_type):
-    """
-    Reads every source file for the given data type.
-
-    Args:
-        data_type (str): One of GTFS, GTFS_RT or ALL.
-
-    Returns:
-        list: A list of (file path, source dict) tuples, sorted by mdb_source_id.
-    """
-    sources = []
-    for catalog_path in catalog_paths(data_type):
-        for path, _, files in os.walk(catalog_path):
-            for file in files:
-                if not file.endswith(".json"):
-                    continue
-                file_path = os.path.join(path, file)
-                with open(file_path) as fp:
-                    sources.append((file_path, json.load(fp)))
-    return sorted(sources, key=lambda entry: entry[1].get(MDB_SOURCE_ID, 0))
-
-
-def index_sources(data_type):
-    """
-    Reads every source file and keys them on mdb_source_id.
-
-    Args:
-        data_type (str): One of GTFS, GTFS_RT or ALL.
-
-    Returns:
-        dict: mdb_source_id mapped to its (file path, source dict) pair.
-    """
-    return {
-        source.get(MDB_SOURCE_ID): (file_path, source)
-        for file_path, source in load_sources(data_type)
-    }
 
 
 def flag_source(file_path, source):
@@ -531,25 +256,16 @@ def flag_source(file_path, source):
     Writes is_producer_url_unstable = "True" into a source file.
 
     The field is appended as the last top-level key so the rest of the file keeps its
-    existing key order, which holds the diff down to the added line. The dump matches
-    tools.helpers.to_json: four space indent and non-ASCII preserved. Whether the file
-    ends in a newline is carried over from the file itself, because the catalog is split
-    on that point and rewriting it either way would only add noise to the diff.
+    existing key order, which holds the diff down to the added line.
 
     Args:
         file_path (str): The path of the source file to rewrite.
-        source (dict): The parsed source, which is mutated in place.
+        source (dict): The parsed source.
 
     Returns:
         None
     """
-    with open(file_path) as fp:
-        ends_with_newline = fp.read().endswith("\n")
-    source[IS_PRODUCER_URL_UNSTABLE] = TRUE
-    with open(file_path, "w") as fp:
-        json.dump(source, fp, indent=4, ensure_ascii=False)
-        if ends_with_newline:
-            fp.write("\n")
+    set_source_field(file_path, source, IS_PRODUCER_URL_UNSTABLE, TRUE)
 
 
 #########################
@@ -578,21 +294,22 @@ def format_signals(signals):
     return "|".join(names), "|".join(matches)
 
 
-def write_report(path, rows):
+def column(row, names):
     """
-    Writes the review report.
+    Reads the first of the given columns the report row actually carries.
 
     Args:
-        path (str): The path of the CSV file to write.
-        rows (list): The report rows, as dicts keyed by REPORT_COLUMNS.
+        row (dict): A parsed report row.
+        names (tuple): The column names to try, in order of preference.
 
     Returns:
-        None
+        str: The value, or an empty string when the row carries none of them.
     """
-    with open(path, "w", newline="") as fp:
-        writer = csv.DictWriter(fp, fieldnames=REPORT_COLUMNS)
-        writer.writeheader()
-        writer.writerows(rows)
+    for name in names:
+        value = row.get(name)
+        if value:
+            return value
+    return ""
 
 
 #########################
@@ -715,8 +432,8 @@ def consume_reports(args):
                 "provider": source.get(PROVIDER),
                 "status": source.get(STATUS) or "",
                 "direct_download": url,
-                "rules": row[RULES],
-                "matched_text": row[MATCHED_TEXT],
+                "rules": column(row, RULES_COLUMNS),
+                "matched_text": column(row, MATCHED_TEXT_COLUMNS),
             }
         )
         if args.apply:
@@ -738,7 +455,9 @@ def consume_reports(args):
             f"{prefix} {count}"
             for prefix, count in sorted(skipped.items(), key=lambda item: -item[1])
         )
-        print(f"Skipped {sum(skipped.values())} ids outside this catalog: {detail}.")
+        count = sum(skipped.values())
+        noun = "id" if count == 1 else "ids"
+        print(f"Skipped {count} {noun} outside this catalog: {detail}.")
     print(f"Unstable producer URLs: {len(flagged)}")
 
     if already_set:
@@ -853,7 +572,7 @@ def main(argv=None):
     flagged = scan_catalog(args) if args.scan else consume_reports(args)
 
     if args.report:
-        write_report(args.report, flagged)
+        write_report(args.report, REPORT_COLUMNS, flagged)
         print()
         print(f"Report written to {args.report}")
 

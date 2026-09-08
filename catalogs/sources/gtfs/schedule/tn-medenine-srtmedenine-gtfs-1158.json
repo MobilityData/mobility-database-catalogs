@@ -2,6 +2,7 @@
     "mdb_source_id": 1158,
     "data_type": "gtfs",
     "provider": "SRTMedenine",
+    "is_official": "True",
     "location": {
         "country_code": "TN",
         "subdivision_name": "Médenine",

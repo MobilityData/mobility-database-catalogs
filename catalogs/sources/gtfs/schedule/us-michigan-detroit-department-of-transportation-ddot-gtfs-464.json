@@ -2,6 +2,7 @@
     "mdb_source_id": 464,
     "data_type": "gtfs",
     "provider": "Detroit Department of Transportation (DDOT)",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Michigan",

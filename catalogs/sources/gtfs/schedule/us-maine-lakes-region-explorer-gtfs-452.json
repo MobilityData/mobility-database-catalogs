@@ -2,6 +2,7 @@
     "mdb_source_id": 452,
     "data_type": "gtfs",
     "provider": "Lakes Region Explorer",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Maine",

@@ -2,6 +2,7 @@
     "mdb_source_id": 996,
     "data_type": "gtfs",
     "provider": "Grasse Sillages Scolaire",
+    "is_official": "True",
     "name": "Communauté urbaine du Pays de Grasse - Réveils Scolaires de Grasse",
     "location": {
         "country_code": "FR",

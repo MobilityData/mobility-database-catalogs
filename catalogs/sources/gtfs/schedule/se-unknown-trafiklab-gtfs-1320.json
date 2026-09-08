@@ -19,10 +19,11 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/se-unknown-trafiklab-gtfs-1320.zip?alt=media",
         "license": "https://www.trafiklab.se/node/17865/license"
     },
-     "redirect": [
+    "redirect": [
         {
             "id": "2661",
             "comment": " "
         }
-    ]
+    ],
+    "is_producer_url_unstable": "True"
 }

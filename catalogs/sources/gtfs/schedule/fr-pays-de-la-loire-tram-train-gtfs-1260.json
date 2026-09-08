@@ -19,5 +19,6 @@
         "direct_download": "https://transitfeeds.com/p/region-des-pays-de-la-loire/1074/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-pays-de-la-loire-tram-train-gtfs-1260.zip?alt=media",
         "license": "https://opendatacommons.org/licenses/odbl/"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

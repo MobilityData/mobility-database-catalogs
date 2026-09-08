@@ -19,5 +19,6 @@
         "direct_download": "https://transitfeeds.com/p/opentransit/354/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/jp-sizuoka-susonohru-gtfs-1302.zip?alt=media",
         "license": "http://opentrans.it/"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

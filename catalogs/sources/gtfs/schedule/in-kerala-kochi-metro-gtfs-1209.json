@@ -23,10 +23,11 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/in-kerala-kochi-metro-gtfs-1209.zip?alt=media",
         "license": "https://kochimetro.org/opendata/TermsOfUse.pdf"
     },
-     "redirect": [
+    "redirect": [
         {
             "id": "tld-1031",
             "comment": " "
         }
-    ]
+    ],
+    "is_producer_url_unstable": "True"
 }

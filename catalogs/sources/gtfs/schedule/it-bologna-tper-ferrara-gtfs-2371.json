@@ -23,10 +23,11 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-bologna-tper-ferrara-gtfs-2371.zip?alt=media",
         "license": "https://solweb.tper.it/web/tools/open-data/open-data.aspx"
     },
-     "redirect": [
+    "redirect": [
         {
             "id": "3042",
             "comment": " "
         }
-    ]
+    ],
+    "is_producer_url_unstable": "True"
 }

@@ -20,10 +20,11 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-liguria-amt-genova-gtfs-1230.zip?alt=media",
         "license": "https://www.amt.genova.it/amt/amministrazione-trasparente/open-data/"
     },
-     "redirect": [
+    "redirect": [
         {
             "id": "2610",
             "comment": " "
         }
-    ]
+    ],
+    "is_producer_url_unstable": "True"
 }

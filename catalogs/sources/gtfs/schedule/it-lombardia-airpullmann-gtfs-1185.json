@@ -19,11 +19,11 @@
         "direct_download": "https://transitfeeds.com/p/air-pullman-s-p-a/1233/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-lombardia-airpullmann-gtfs-1185.zip?alt=media"
     },
-     "redirect": [
+    "redirect": [
         {
             "id": "tld-2232",
             "comment": " "
         }
-    ]
-    
+    ],
+    "is_producer_url_unstable": "True"
 }

@@ -26,5 +26,6 @@
             "comment": " "
         }
     ],
-    "status": "deprecated"
+    "status": "deprecated",
+    "is_producer_url_unstable": "True"
 }

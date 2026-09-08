@@ -17,5 +17,6 @@
     "urls": {
         "direct_download": "https://transitfeeds.com/p/blue-gold-fleet/824/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-blue-gold-fleet-gtfs-1178.zip?alt=media"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

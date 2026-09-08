@@ -24,5 +24,6 @@
     "urls": {
         "direct_download": "https://static.data.gouv.fr/resources/lignes-regulieres-de-transports-en-pays-de-grasse/20210203-152533/20210101-gtfs-sillagesurbain.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-provence-alpes-cote-dazur-sillages-urbain-gtfs-997.zip?alt=media"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

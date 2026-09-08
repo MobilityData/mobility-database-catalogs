@@ -19,5 +19,6 @@
         "direct_download": "https://transitfeeds.com/p/komia-liikenne/1225/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fi-etela-pohjanmaa-komia-liikenne-gtfs-1255.zip?alt=media",
         "license": "https://www.komialiikenne.fi"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

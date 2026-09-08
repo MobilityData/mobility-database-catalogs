@@ -17,5 +17,6 @@
     "urls": {
         "direct_download": "https://transitfeeds.com/p/kwanwiang-transport/785/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/th-chiang-mai-kwanwiang-transport-gtfs-1315.zip?alt=media"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

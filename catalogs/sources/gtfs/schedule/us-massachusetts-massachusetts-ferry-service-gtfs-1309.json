@@ -17,5 +17,6 @@
     "urls": {
         "direct_download": "https://transitfeeds.com/p/massdot/109/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-massachusetts-massachusetts-ferry-service-gtfs-1309.zip?alt=media"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

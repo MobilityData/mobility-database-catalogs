@@ -16,5 +16,6 @@
     "urls": {
         "direct_download": "https://transitfeeds.com/p/coopthai-nct/787/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/th-unknown-coopthai-gtfs-1274.zip?alt=media"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

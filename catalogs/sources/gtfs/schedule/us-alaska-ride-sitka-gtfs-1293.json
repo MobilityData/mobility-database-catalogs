@@ -18,5 +18,6 @@
     "urls": {
         "direct_download": "https://transitfeeds.com/p/ride-sitka/713/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-alaska-ride-sitka-gtfs-1293.zip?alt=media"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

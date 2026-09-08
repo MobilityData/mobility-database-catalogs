@@ -22,10 +22,11 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-alameda-contra-costa-transit-district-ac-transit-gtfs-1244.zip?alt=media",
         "license": "https://www.actransit.org/data-terms-and-conditions/"
     },
-     "redirect": [
+    "redirect": [
         {
             "id": "2455",
             "comment": " "
         }
-    ]
+    ],
+    "is_producer_url_unstable": "True"
 }

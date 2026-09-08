@@ -28,5 +28,6 @@
         "direct_download": "https://transitfeeds.com/p/metra/169/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-illinois-metra-gtfs-1187.zip?alt=media",
         "license": "https://metrarail.com/developers"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

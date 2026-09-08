@@ -20,10 +20,11 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-hamburg-hamburger-verkehrsverbund-gmbh-hvv-gtfs-1226.zip?alt=media",
         "license": "https://www.govdata.de/dl-de/by-2-0"
     },
-     "redirect": [
+    "redirect": [
         {
             "id": "2899",
             "comment": " "
         }
-    ]
+    ],
+    "is_producer_url_unstable": "True"
 }

@@ -18,5 +18,6 @@
     "urls": {
         "direct_download": "https://transitfeeds.com/p/chiang-mai-university/788/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/th-chiang-mai-chiang-mai-university-cmu-gtfs-1310.zip?alt=media"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

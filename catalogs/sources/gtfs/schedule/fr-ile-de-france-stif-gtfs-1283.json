@@ -19,5 +19,6 @@
         "direct_download": "https://transitfeeds.com/p/stif/822/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-ile-de-france-stif-gtfs-1283.zip?alt=media",
         "license": "http://stif.info/"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

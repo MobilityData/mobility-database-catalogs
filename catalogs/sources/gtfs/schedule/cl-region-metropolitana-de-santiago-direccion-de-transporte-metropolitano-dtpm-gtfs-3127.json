@@ -22,10 +22,11 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/cl-region-metropolitana-de-santiago-direccion-de-transporte-metropolitano-dtpm-gtfs-3127.zip?alt=media",
         "license": "https://www.dtpm.cl/index.php/gtfs-vigente"
     },
-     "redirect": [
+    "redirect": [
         {
             "id": "3357",
             "comment": " "
         }
-    ]
+    ],
+    "is_producer_url_unstable": "True"
 }

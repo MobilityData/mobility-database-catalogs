@@ -22,10 +22,11 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-bologna-tper-marconi-gtfs-2370.zip?alt=media",
         "license": "https://solweb.tper.it/web/tools/open-data/open-data.aspx"
     },
-     "redirect": [
+    "redirect": [
         {
             "id": "3041",
             "comment": " "
         }
-    ]
+    ],
+    "is_producer_url_unstable": "True"
 }

@@ -21,5 +21,6 @@
     "urls": {
         "direct_download": "https://transitfeeds.com/p/wroute/1159/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-ontario-wroute-gtfs-1174.zip?alt=media"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

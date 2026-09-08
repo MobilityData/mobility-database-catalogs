@@ -20,5 +20,6 @@
         "direct_download": "https://transitfeeds.com/p/citymapper/894/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-england-citymapper-gtfs-1249.zip?alt=media",
         "license": "https://opendatacommons.org/licenses/pddl/1.0/"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

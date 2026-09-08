@@ -23,5 +23,6 @@
     "urls": {
         "direct_download": "https://transitfeeds.com/p/mountain-line/243/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-arizona-mountain-line-gtfs-1148.zip?alt=media"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

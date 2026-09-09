@@ -2,6 +2,7 @@
     "mdb_source_id": 2200,
     "data_type": "gtfs",
     "provider": "TMT Trujillo - Gerencia de Transporte",
+    "is_official": "False",
     "location": {
         "country_code": "PE",
         "subdivision_name": "Trujillo",

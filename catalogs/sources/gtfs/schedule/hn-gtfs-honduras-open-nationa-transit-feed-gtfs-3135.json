@@ -2,6 +2,7 @@
     "mdb_source_id": 3135,
     "data_type": "gtfs",
     "provider": "GTFS Honduras Open (National Transit Feed)",
+    "is_official": "False",
     "location": {
         "country_code": "HN",
         "bounding_box": {

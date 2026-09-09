@@ -2,6 +2,7 @@
     "mdb_source_id": 1120,
     "data_type": "gtfs",
     "provider": "Niš-ekspres, Lasta a.d. Beograd, Strela-Obrenovac",
+    "is_official": "True",
     "location": {
         "country_code": "RS",
         "subdivision_name": "Nišavski okrug",

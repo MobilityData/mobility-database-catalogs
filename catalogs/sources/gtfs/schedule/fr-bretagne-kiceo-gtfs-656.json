@@ -19,5 +19,11 @@
         "direct_download": "https://ratpdev-mosaic-prod-bucket-raw.s3-eu-west-1.amazonaws.com/21/exports/1/gtfs.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-bretagne-kiceo-gtfs-656.zip?alt=media",
         "license": "https://transport.data.gouv.fr/datasets/offre-de-transport-du-reseau-de-vannes-kiceo-donnees-theoriques-et-temps-reel/"
-    }
+    },
+    "redirect": [
+        {
+            "id": "tdg-82553",
+            "comment": " "
+        }
+    ]
 }

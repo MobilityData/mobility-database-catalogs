@@ -19,5 +19,11 @@
         "direct_download": "https://zenbus.net/gtfs/static/download.zip?dataset=alesy",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-occitanie-alesy-gtfs-1889.zip?alt=media",
         "license": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-du-reseau-ntecc-ales-gtfs-gtfs-rt"
-    }
+    },
+     "redirect": [
+        {
+            "id": "tdg-75062",
+            "comment": " "
+        }
+    ]
 }

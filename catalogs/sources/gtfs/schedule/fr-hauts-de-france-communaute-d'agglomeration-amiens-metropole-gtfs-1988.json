@@ -2,6 +2,7 @@
     "mdb_source_id": 1988,
     "data_type": "gtfs",
     "provider": "Communauté dʼAgglomération Amiens Métropole",
+    "is_official": "True",
     "location": {
         "country_code": "FR",
         "subdivision_name": "Hauts-de-France",

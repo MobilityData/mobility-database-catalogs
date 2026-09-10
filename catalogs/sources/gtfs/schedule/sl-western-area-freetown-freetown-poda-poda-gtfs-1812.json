@@ -2,6 +2,7 @@
     "mdb_source_id": 1812,
     "data_type": "gtfs",
     "provider": "Freetown Poda-Poda, Sierra Leone Road Transport Corporation, Tagrin Ferry, Freetown Taxi Cab",
+    "is_official": "False",
     "features": [
         "fares-v1"
     ],

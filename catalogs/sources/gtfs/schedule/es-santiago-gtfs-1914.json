@@ -2,6 +2,7 @@
     "mdb_source_id": 1914,
     "data_type": "gtfs",
     "provider": "Ayuntamiento del Municipio de Santiago, Oficina Metropolitana de Servicios de Autobuses, Instituto Nacional de Tránsito y Transporte Terrestre",
+    "is_official": "True",
     "location": {
         "country_code": "DO",
         "subdivision_name": "Santiago",

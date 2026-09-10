@@ -2,6 +2,7 @@
     "mdb_source_id": 561,
     "data_type": "gtfs",
     "provider": "LISERCO, LINCOSUR, LISANCO",
+    "is_official": "True",
     "status": "inactive",
     "location": {
         "country_code": "CL",

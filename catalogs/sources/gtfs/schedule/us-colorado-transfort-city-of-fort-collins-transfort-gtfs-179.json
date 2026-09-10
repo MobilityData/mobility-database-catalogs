@@ -2,6 +2,7 @@
     "mdb_source_id": 179,
     "data_type": "gtfs",
     "provider": "Transfort – City of Fort Collins (Transfort)",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Colorado",

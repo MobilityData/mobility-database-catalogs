@@ -2,6 +2,7 @@
     "mdb_source_id": 841,
     "data_type": "gtfs",
     "provider": "Régie des Transports Métropolitains (RTM)",
+    "is_official": "True",
     "location": {
         "country_code": "FR",
         "subdivision_name": "Provence-Alpes-Côte-d’Azur",

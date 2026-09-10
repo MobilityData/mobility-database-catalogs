@@ -2,6 +2,7 @@
     "mdb_source_id": 647,
     "data_type": "gtfs",
     "provider": "Trenes Argentinos",
+    "is_official": "True",
     "status": "inactive",
     "location": {
         "country_code": "AR",

@@ -2,6 +2,7 @@
     "mdb_source_id": 1899,
     "data_type": "gtfs",
     "provider": "Les Saisies",
+    "is_official": "True",
     "name": "Seasonal shuttle",
     "location": {
         "country_code": "FR",

@@ -2,6 +2,7 @@
     "mdb_source_id": 924,
     "data_type": "gtfs",
     "provider": "Transit Orange / Newburgh Local Transit",
+    "is_official": "True",
     "features": [
         "fares-v1"
     ],

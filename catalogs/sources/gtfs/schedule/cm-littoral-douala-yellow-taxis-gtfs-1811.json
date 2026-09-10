@@ -2,6 +2,7 @@
     "mdb_source_id": 1811,
     "data_type": "gtfs",
     "provider": "Douala Yellow Taxis",
+    "is_official": "False",
     "features": [
         "fares-v1"
     ],

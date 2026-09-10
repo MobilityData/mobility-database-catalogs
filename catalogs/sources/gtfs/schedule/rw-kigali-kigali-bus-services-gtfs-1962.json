@@ -2,6 +2,7 @@
     "mdb_source_id": 1962,
     "data_type": "gtfs",
     "provider": "Kigali Bus Services, Rwanda Federation of Transport Cooperatives (RFTC), Royal Express",
+    "is_official": "True",
     "name": "wet conditions data collection",
     "features": [
         "fares-v1"

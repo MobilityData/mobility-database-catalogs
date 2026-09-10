@@ -2,6 +2,7 @@
     "mdb_source_id": 1332,
     "data_type": "gtfs",
     "provider": "Stanislaus Regional Transit Authority (StanRTA)",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

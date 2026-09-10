@@ -2,6 +2,7 @@
     "mdb_source_id": 1835,
     "data_type": "gtfs",
     "provider": "Kochi buses and boats",
+    "is_official": "False",
     "name": "city and Mofussil buses, Ordinary buses and boats",
     "location": {
         "country_code": "IN",

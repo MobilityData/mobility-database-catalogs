@@ -2,6 +2,7 @@
     "mdb_source_id": 856,
     "data_type": "gtfs",
     "provider": "Compagnie des Transports Strasbourgeois (CTS)",
+    "is_official": "True",
     "location": {
         "country_code": "FR",
         "subdivision_name": "Grand Est",
@@ -16,5 +17,11 @@
     "urls": {
         "direct_download": "http://opendata.cts-strasbourg.fr/fichiers/gtfs/google_transit.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-grand-est-compagnie-des-transports-strasbourgeois-cts-gtfs-856.zip?alt=media"
-    }
+    },
+     "redirect": [
+        {
+            "id": "tdg-79220",
+            "comment": " "
+        }
+    ]
 }

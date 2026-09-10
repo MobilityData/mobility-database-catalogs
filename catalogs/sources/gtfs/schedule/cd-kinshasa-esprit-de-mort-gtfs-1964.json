@@ -2,6 +2,7 @@
     "mdb_source_id": 1964,
     "data_type": "gtfs",
     "provider": "Esprit de Mort, Esprit de Vie, Transco, Taxi Jaune",
+    "is_official": "True",
     "name": "wet conditions data collection",
     "features": [
         "fares-v1"

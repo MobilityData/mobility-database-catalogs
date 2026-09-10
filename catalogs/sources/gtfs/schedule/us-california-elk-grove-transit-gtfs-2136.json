@@ -2,6 +2,7 @@
     "mdb_source_id": 2136,
     "data_type": "gtfs",
     "provider": "Elk Grove Transit",
+    "is_official": "True",
     "status": "active",
     "location": {
         "country_code": "US",

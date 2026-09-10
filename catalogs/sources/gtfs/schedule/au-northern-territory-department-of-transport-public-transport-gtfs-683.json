@@ -2,6 +2,7 @@
     "mdb_source_id": 683,
     "data_type": "gtfs",
     "provider": "Department of Transport - Public Transport",
+    "is_official": "True",
     "name": "Alice Springs public bus network",
     "location": {
         "country_code": "AU",

@@ -2,6 +2,7 @@
     "mdb_source_id": 1960,
     "data_type": "gtfs",
     "provider": "Harare Kombis, City Shuttle",
+    "is_official": "True",
     "status": "inactive",
     "location": {
         "country_code": "ZW",

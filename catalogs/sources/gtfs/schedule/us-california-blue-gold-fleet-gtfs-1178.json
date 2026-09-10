@@ -2,7 +2,6 @@
     "mdb_source_id": 1178,
     "data_type": "gtfs",
     "provider": "Blue & Gold Fleet",
-    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",

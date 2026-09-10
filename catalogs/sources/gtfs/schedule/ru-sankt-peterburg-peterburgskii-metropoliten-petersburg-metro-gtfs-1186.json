@@ -2,7 +2,6 @@
     "mdb_source_id": 1186,
     "data_type": "gtfs",
     "provider": "Петербургский метрополитен - Petersburg Metro",
-    "is_official": "True",
     "features": [
         "fares-v1"
     ],

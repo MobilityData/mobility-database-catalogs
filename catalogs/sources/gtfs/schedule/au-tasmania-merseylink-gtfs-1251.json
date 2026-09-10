@@ -2,7 +2,6 @@
     "mdb_source_id": 1251,
     "data_type": "gtfs",
     "provider": "MerseyLink",
-    "is_official": "True",
     "features": [
         "fares-v1"
     ],

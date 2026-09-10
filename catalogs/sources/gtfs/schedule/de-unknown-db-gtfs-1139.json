@@ -2,7 +2,6 @@
     "mdb_source_id": 1139,
     "data_type": "gtfs",
     "provider": "DB, SBB, EC, ÖBB, NS, DSB, MAV, CD, PKP, RE, DPN, RZD, SWX, CFL",
-    "is_official": "True",
     "status": "inactive",
     "location": {
         "country_code": "DE",

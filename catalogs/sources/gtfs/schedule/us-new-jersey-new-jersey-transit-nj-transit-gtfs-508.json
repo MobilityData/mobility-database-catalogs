@@ -2,6 +2,7 @@
     "mdb_source_id": 508,
     "data_type": "gtfs",
     "provider": "New Jersey Transit (NJ Transit)",
+    "is_official": "True",
     "name": "Bus",
     "location": {
         "country_code": "US",

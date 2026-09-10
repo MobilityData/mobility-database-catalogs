@@ -2,6 +2,7 @@
     "mdb_source_id": 1038,
     "data_type": "gtfs",
     "provider": "Transtejo",
+    "is_official": "True",
     "location": {
         "country_code": "PT",
         "subdivision_name": "Lisboa",

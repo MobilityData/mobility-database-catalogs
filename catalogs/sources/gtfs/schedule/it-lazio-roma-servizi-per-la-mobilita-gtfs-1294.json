@@ -2,6 +2,7 @@
     "mdb_source_id": 1294,
     "data_type": "gtfs",
     "provider": "Roma Servizi per la Mobilità",
+    "is_official": "True",
     "location": {
         "country_code": "IT",
         "subdivision_name": "Lazio",

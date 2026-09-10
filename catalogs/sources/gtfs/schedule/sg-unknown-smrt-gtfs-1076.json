@@ -2,6 +2,7 @@
     "mdb_source_id": 1076,
     "data_type": "gtfs",
     "provider": "SMRT, SBS Transit (SBST), Land Transport Authority (LTA), Go Ahead Singapore (GAS), Tower Transit (TTS)",
+    "is_official": "False",
     "location": {
         "country_code": "SG",
         "bounding_box": {

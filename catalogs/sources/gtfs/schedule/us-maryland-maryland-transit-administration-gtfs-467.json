@@ -2,6 +2,7 @@
     "mdb_source_id": 467,
     "data_type": "gtfs",
     "provider": "Maryland Transit Administration",
+    "is_official": "True",
     "name": "Commuter Bus",
     "location": {
         "country_code": "US",

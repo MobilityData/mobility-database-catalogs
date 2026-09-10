@@ -2,6 +2,8 @@
     "mdb_source_id": 1892,
     "data_type": "gtfs",
     "provider": "Tout'enbus",
+    "is_official": "True",
+    "status": "deprecated",
     "location": {
         "country_code": "FR",
         "subdivision_name": "Auvergne-Rhône-Alpes",
@@ -18,5 +20,11 @@
         "direct_download": "https://zenbus.net/gtfs/static/download.zip?dataset=toutenbus",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-auvergne-rhone-alpes-toutenbus-gtfs-1892.zip?alt=media",
         "license": "https://transport.data.gouv.fr/datasets/horaires-theoriques-et-temps-reel-du-reseau-toutenbus-aubenas-gtfs-gtfs-rt"
-    }
+    },
+    "redirect": [
+        {
+            "id": "tdg-81255",
+            "comment": " "
+        }
+    ]
 }

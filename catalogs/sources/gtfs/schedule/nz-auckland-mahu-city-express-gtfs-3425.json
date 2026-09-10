@@ -2,6 +2,7 @@
     "mdb_source_id": 3425,
     "data_type": "gtfs",
     "provider": "Mahu City Express",
+    "is_official": "True",
     "location": {
         "country_code": "NZ",
         "subdivision_name": "Auckland",

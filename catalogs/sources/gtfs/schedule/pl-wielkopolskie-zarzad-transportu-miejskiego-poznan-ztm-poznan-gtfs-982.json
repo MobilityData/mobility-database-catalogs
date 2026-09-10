@@ -2,6 +2,7 @@
     "mdb_source_id": 982,
     "data_type": "gtfs",
     "provider": "Zarząd Transportu Miejskiego Poznań (ZTM Poznań)",
+    "is_official": "True",
     "location": {
         "country_code": "PL",
         "subdivision_name": "Wielkopolskie",

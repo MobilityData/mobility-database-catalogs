@@ -2,6 +2,7 @@
     "mdb_source_id": 1831,
     "data_type": "gtfs",
     "provider": "Office of Transport and Traffic Policy and Planning",
+    "is_official": "True",
     "features": [
         "fares-v1"
     ],

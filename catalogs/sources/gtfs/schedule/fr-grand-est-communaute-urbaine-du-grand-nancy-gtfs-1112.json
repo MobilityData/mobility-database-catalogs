@@ -2,6 +2,8 @@
     "mdb_source_id": 1112,
     "data_type": "gtfs",
     "provider": "Communauté urbaine du Grand Nancy",
+    "is_official": "True",
+    "status": "deprecated",
     "location": {
         "country_code": "FR",
         "subdivision_name": "Grand-Est",
@@ -17,5 +19,11 @@
     "urls": {
         "direct_download": "https://www.data.gouv.fr/fr/datasets/r/e7e78cd7-e186-4923-a272-9713fbc28b45",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-grand-est-communaute-urbaine-du-grand-nancy-gtfs-1112.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "tdg-80431",
+            "comment": " "
+        }
+    ]
 }

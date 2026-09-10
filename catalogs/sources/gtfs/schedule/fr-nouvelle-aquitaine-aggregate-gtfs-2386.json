@@ -2,7 +2,9 @@
     "mdb_source_id": 2386,
     "data_type": "gtfs",
     "provider": "Nouvelle-Aquitaine Mobilités",
-    "name": "Agrégat des réseaux urbains et interurbains", 
+    "is_official": "True",
+    "name": "Agrégat des réseaux urbains et interurbains",
+    "status": "deprecated",
     "location": {
         "country_code": "FR",
         "subdivision_name": "Nouvelle Aquitaine",
@@ -19,5 +21,11 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/fr-nouvelle-aquitaine-aggregate-gtfs-2386.zip?alt=media",
         "license": "https://transport.data.gouv.fr/datasets/arrets-horaires-et-parcours-theoriques-des-reseaux-nva-mobilite-agreges-1"
-    }
+    },
+    "redirect": [
+        {
+            "id": "tdg-82321",
+            "comment": " "
+        }
+    ]
 }

@@ -2,6 +2,7 @@
     "mdb_source_id": 1908,
     "data_type": "gtfs",
     "provider": "Koleje Małopolskie",
+    "is_official": "True",
     "name": "railway",
     "location": {
         "country_code": "PL",

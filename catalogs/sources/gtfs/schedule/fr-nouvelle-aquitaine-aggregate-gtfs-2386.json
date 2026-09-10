@@ -4,6 +4,7 @@
     "provider": "Nouvelle-Aquitaine Mobilités",
     "is_official": "True",
     "name": "Agrégat des réseaux urbains et interurbains",
+    "status": "deprecated",
     "location": {
         "country_code": "FR",
         "subdivision_name": "Nouvelle Aquitaine",

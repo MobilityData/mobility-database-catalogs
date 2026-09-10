@@ -4,6 +4,7 @@
     "provider": "Fluo",
     "is_official": "True",
     "name": "Shuttle to Meuse TGV station",
+    "status": "deprecated",
     "location": {
         "country_code": "FR",
         "subdivision_name": "Grand Est",

@@ -4,6 +4,7 @@
     "provider": "Grasse Sillages Scolaire",
     "is_official": "True",
     "name": "Communauté urbaine du Pays de Grasse - Réveils Scolaires de Grasse",
+    "status": "deprecated",
     "location": {
         "country_code": "FR",
         "subdivision_name": "Provence-Alpes-Côte-d'Azur",

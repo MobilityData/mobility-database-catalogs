@@ -2,6 +2,7 @@
     "mdb_source_id": 1023,
     "data_type": "gtfs",
     "provider": "MapaNica Estelí",
+    "is_official": "True",
     "location": {
         "country_code": "NI",
         "subdivision_name": "Estelí",

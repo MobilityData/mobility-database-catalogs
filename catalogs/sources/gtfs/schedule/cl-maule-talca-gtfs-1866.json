@@ -2,6 +2,7 @@
     "mdb_source_id": 1866,
     "data_type": "gtfs",
     "provider": "Abate Molina Ltda, Sotratal s.a, Taxutal s.a, Interbus, Talmocur, Buscarril",
+    "is_official": "True",
     "status": "inactive",
     "location": {
         "country_code": "CL",

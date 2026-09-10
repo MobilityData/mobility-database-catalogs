@@ -2,6 +2,7 @@
     "mdb_source_id": 649,
     "data_type": "gtfs",
     "provider": "Port Phillip Ferries",
+    "is_official": "False",
     "status": "inactive",
     "location": {
         "country_code": "AU",

@@ -2,6 +2,7 @@
     "mdb_source_id": 2078,
     "data_type": "gtfs",
     "provider": "Divers opérateurs",
+    "is_official": "False",
     "location": {
         "country_code": "CI",
         "subdivision_name": "Abidjan",

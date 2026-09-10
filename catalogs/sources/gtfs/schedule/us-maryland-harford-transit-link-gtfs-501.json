@@ -2,6 +2,7 @@
     "mdb_source_id": 501,
     "data_type": "gtfs",
     "provider": "Harford Transit LINK",
+    "is_official": "False",
     "location": {
         "country_code": "US",
         "subdivision_name": "Maryland",

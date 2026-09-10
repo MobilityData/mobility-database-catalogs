@@ -2,6 +2,7 @@
     "mdb_source_id": 1180,
     "data_type": "gtfs",
     "provider": "MRC les Moulins",
+    "is_official": "True",
     "location": {
         "country_code": "CA",
         "subdivision_name": "Québec",

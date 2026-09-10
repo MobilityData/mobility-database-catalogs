@@ -2,6 +2,7 @@
     "mdb_source_id": 3097,
     "data_type": "gtfs",
     "provider": "Glendora Transportation Division",
+    "is_official": "True",
     "feed_contact_email": "csinteractive@metro.net",
     "features": [
         "fares-v1",

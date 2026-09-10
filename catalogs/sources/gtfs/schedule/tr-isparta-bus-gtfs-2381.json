@@ -2,6 +2,7 @@
     "mdb_source_id": 2381,
     "data_type": "gtfs",
     "provider": "Isparta Özel Halk Otobüsleri",
+    "is_official": "True",
     "location": {
         "country_code": "TR",
         "subdivision_name": "Isparta",

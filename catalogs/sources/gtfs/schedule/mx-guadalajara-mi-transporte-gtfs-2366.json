@@ -2,6 +2,7 @@
     "mdb_source_id": 2366,
     "data_type": "gtfs",
     "provider": "Mi Transporte, Mi Transporte Eléctrico, Mi Macro, Mi Tren, SiTren",
+    "is_official": "True",
     "name": "Public Transport Routes in the Metropolitan Area of ​​Guadalajara",
     "location": {
         "country_code": "MX",

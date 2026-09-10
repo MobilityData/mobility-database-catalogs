@@ -2,6 +2,7 @@
     "mdb_source_id": 3113,
     "data_type": "gtfs",
     "provider": "Steel Valley Regional Transit Authority",
+    "is_official": "True",
     "status": "inactive",
     "location": {
         "country_code": "US",

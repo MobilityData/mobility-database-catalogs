@@ -2,6 +2,7 @@
     "mdb_source_id": 1813,
     "data_type": "gtfs",
     "provider": "14-Seater Paratransit Taxi, Buses operated by Pioneer or Awakula Enumme",
+    "is_official": "False",
     "status": "inactive",
     "location": {
         "country_code": "UG",

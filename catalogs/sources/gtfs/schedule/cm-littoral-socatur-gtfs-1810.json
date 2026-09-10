@@ -2,6 +2,7 @@
     "mdb_source_id": 1810,
     "data_type": "gtfs",
     "provider": "Socatur",
+    "is_official": "False",
     "features": [
         "fares-v1"
     ],

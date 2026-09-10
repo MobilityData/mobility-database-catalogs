@@ -2,6 +2,7 @@
     "mdb_source_id": 2353,
     "data_type": "gtfs",
     "provider": "Westchester County Bee-Line System (WCDOT)",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "New York",

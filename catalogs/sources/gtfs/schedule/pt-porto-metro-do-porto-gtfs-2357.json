@@ -2,6 +2,7 @@
     "mdb_source_id": 2357,
     "data_type": "gtfs",
     "provider": "Metro do Porto",
+    "is_official": "True",
     "name": "Metro do Porto",
     "location": {
         "country_code": "PT",

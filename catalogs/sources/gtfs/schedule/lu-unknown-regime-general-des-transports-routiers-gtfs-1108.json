@@ -2,6 +2,7 @@
     "mdb_source_id": 1108,
     "data_type": "gtfs",
     "provider": "Régime Général des Transports Routiers, Ville de Luxembourg - Service Autobus, Chemins de Fer Luxembourgeois, Syndicat des Tramways Intercommunaux dans le Canton d'Esch, Luxtram, Société Nationale des Chemins de Fer Luxembourgeois",
+    "is_official": "True",
     "location": {
         "country_code": "LU",
         "bounding_box": {

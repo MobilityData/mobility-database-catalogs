@@ -2,6 +2,7 @@
     "mdb_source_id": 1125,
     "data_type": "gtfs",
     "provider": "POS-ELY Joensuu",
+    "is_official": "True",
     "status": "inactive",
     "location": {
         "country_code": "FI",

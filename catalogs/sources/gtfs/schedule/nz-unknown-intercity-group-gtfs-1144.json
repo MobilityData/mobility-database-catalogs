@@ -2,6 +2,7 @@
     "mdb_source_id": 1144,
     "data_type": "gtfs",
     "provider": "InterCity Group",
+    "is_official": "True",
     "status": "inactive",
     "location": {
         "country_code": "NZ",

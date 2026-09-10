@@ -2,6 +2,7 @@
     "mdb_source_id": 1102,
     "data_type": "gtfs",
     "provider": "Porvoon Museorautatie, Pieksämäen Höyryveturiyhdistys ry",
+    "is_official": "True",
     "name": "Matkustajajunat",
     "location": {
         "country_code": "FI",

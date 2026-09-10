@@ -2,6 +2,7 @@
     "mdb_source_id": 402,
     "data_type": "gtfs",
     "provider": "Capital Area Transportation Authority (CATA)",
+    "is_official": "True",
     "location": {
         "country_code": "US",
         "subdivision_name": "Michigan",

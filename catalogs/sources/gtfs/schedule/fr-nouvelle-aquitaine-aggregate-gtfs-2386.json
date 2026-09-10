@@ -2,7 +2,8 @@
     "mdb_source_id": 2386,
     "data_type": "gtfs",
     "provider": "Nouvelle-Aquitaine Mobilités",
-    "name": "Agrégat des réseaux urbains et interurbains", 
+    "is_official": "True",
+    "name": "Agrégat des réseaux urbains et interurbains",
     "location": {
         "country_code": "FR",
         "subdivision_name": "Nouvelle Aquitaine",

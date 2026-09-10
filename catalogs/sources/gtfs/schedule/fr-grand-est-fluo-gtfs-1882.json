@@ -2,6 +2,7 @@
     "mdb_source_id": 1882,
     "data_type": "gtfs",
     "provider": "Fluo",
+    "is_official": "True",
     "name": "Shuttle to Meuse TGV station",
     "location": {
         "country_code": "FR",

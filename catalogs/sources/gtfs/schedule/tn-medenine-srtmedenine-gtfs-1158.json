@@ -17,5 +17,6 @@
     "urls": {
         "direct_download": "https://transitfeeds.com/p/srtmedenine/1204/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/tn-medenine-srtmedenine-gtfs-1158.zip?alt=media"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

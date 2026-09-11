@@ -19,5 +19,6 @@
         "direct_download": "https://transitfeeds.com/p/przyjazdy-pl-plock/1211/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-mazowieckie-komunikacja-miejska-plock-gtfs-1150.zip?alt=media",
         "license": "https://gtfs.pl/gtfs/plock"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

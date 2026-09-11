@@ -21,5 +21,6 @@
     "urls": {
         "direct_download": "https://transitfeeds.com/p/cuneo/622/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-piemonte-bus-company-srl-gtfs-1194.zip?alt=media"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

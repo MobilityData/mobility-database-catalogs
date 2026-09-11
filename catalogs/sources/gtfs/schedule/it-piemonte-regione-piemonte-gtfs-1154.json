@@ -18,5 +18,6 @@
         "direct_download": "https://transitfeeds.com/p/regione-piemonte/1192/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-piemonte-regione-piemonte-gtfs-1154.zip?alt=media",
         "license": "http://www.dati.piemonte.it/catalogodati/dato/100939-.html"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

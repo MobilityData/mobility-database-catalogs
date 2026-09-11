@@ -16,5 +16,6 @@
     "urls": {
         "direct_download": "https://transitfeeds.com/p/association-of-train-operating-companies/284/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-unknown-chiltern-railways-gtfs-1311.zip?alt=media"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

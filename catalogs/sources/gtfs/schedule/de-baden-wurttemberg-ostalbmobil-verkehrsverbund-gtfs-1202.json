@@ -19,5 +19,6 @@
         "direct_download": "https://transitfeeds.com/p/ostalbmobil-verkehrsverbund/1236/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-baden-wurttemberg-ostalbmobil-verkehrsverbund-gtfs-1202.zip?alt=media",
         "license": "https://www.nvbw.de/aufgaben/digitale-mobilitaet/lizenz/"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

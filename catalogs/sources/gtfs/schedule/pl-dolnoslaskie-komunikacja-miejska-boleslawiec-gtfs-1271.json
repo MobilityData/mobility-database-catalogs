@@ -18,5 +18,6 @@
     "urls": {
         "direct_download": "https://transitfeeds.com/p/przyjazdy-pl-boles-awiec/1209/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-dolnoslaskie-komunikacja-miejska-boleslawiec-gtfs-1271.zip?alt=media"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

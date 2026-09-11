@@ -16,5 +16,6 @@
     "urls": {
         "direct_download": "https://transitfeeds.com/p/filsland-verkehrsverbund/1185/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-unknown-filsland-verkehrsverbund-gtfs-1183.zip?alt=media"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

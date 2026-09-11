@@ -19,5 +19,6 @@
         "direct_download": "https://transitfeeds.com/p/indygo/210/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-indiana-indygo-gtfs-1237.zip?alt=media",
         "license": "http://www.indygo.net/about-indygo/indygo-developer-content-area/indygo-gtfs-terms-of-use/"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

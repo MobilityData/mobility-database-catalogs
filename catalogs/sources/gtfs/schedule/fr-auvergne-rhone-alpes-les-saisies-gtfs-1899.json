@@ -4,6 +4,7 @@
     "provider": "Les Saisies",
     "is_official": "True",
     "name": "Seasonal shuttle",
+    "is_seasonal": "True",
     "location": {
         "country_code": "FR",
         "subdivision_name": "Auvergne-Rhône-Alpes",

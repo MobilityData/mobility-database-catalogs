@@ -17,5 +17,6 @@
     "urls": {
         "direct_download": "https://transitfeeds.com/p/trainose/1193/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gr-thessaloniki-trainose-gtfs-1161.zip?alt=media"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

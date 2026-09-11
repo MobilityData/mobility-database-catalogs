@@ -25,5 +25,6 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/rs-sumadijski-okrug-kragujevac-gtfs-1273.zip?alt=media",
         "license": "https://www.kgbus.rs/"
     },
-    "redirect": []
+    "redirect": [],
+    "is_producer_url_unstable": "True"
 }

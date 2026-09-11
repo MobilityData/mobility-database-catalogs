@@ -16,5 +16,6 @@
     "urls": {
         "direct_download": "https://transitfeeds.com/p/societe-nationale-des-transports-ferroviaires/1084/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/dz-unknown-societe-nationale-des-transports-ferroviaires-sntf-algeria-gtfs-1199.zip?alt=media"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

@@ -18,5 +18,6 @@
     "urls": {
         "direct_download": "https://transitfeeds.com/p/b-rgerbus-leupoldsgr-n-landkreis-hof/1126/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/de-bayern-burgerbus-leupoldsgrun-landkreis-hof-gtfs-1152.zip?alt=media"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

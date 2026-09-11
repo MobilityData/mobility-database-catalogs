@@ -20,5 +20,6 @@
     "urls": {
         "direct_download": "https://transitfeeds.com/p/saint-petersburg/826/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ru-sankt-peterburg-peterburgskii-metropoliten-petersburg-metro-gtfs-1186.zip?alt=media"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

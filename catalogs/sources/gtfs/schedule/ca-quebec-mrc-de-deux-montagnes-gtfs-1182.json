@@ -18,5 +18,6 @@
     "urls": {
         "direct_download": "https://transitfeeds.com/p/agence-metropolitaine-de-transport/141/latest/download",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ca-quebec-mrc-de-deux-montagnes-gtfs-1182.zip?alt=media"
-    }
+    },
+    "is_producer_url_unstable": "True"
 }

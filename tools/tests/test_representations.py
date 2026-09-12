@@ -701,6 +701,7 @@ class TestGtfsRealtimeSource(TestCase):
         self.test_features = [self.test_feature]
         self.test_status = "some_status"
         self.test_is_official = "some_is_official"
+        self.test_is_producer_url_unstable = "some_is_producer_url_unstable"
         self.test_kwargs = {
             MDB_SOURCE_ID: self.test_mdb_source_id,
             DATA_TYPE: self.test_data_type,
@@ -718,6 +719,7 @@ class TestGtfsRealtimeSource(TestCase):
             FEATURES: self.test_features,
             STATUS: self.test_status,
             IS_OFFICIAL: self.test_is_official,
+            IS_PRODUCER_URL_UNSTABLE: self.test_is_producer_url_unstable,
         }
         self.test_schema = {
             MDB_SOURCE_ID: self.test_mdb_source_id,
@@ -737,6 +739,7 @@ class TestGtfsRealtimeSource(TestCase):
                 LICENSE: self.test_license_url,
             },
             IS_OFFICIAL: self.test_is_official,
+            IS_PRODUCER_URL_UNSTABLE: self.test_is_producer_url_unstable,
         }
 
     @patch("tools.representations.GtfsRealtimeSource.static_catalog")
@@ -874,6 +877,16 @@ class TestGtfsRealtimeSource(TestCase):
         under_test = instance.has_is_official(is_official=test_is_official)
         self.assertTrue(under_test)
         under_test = instance.has_is_official(is_official=test_another_is_official)
+        self.assertFalse(under_test)
+
+    @patch("tools.representations.GtfsRealtimeSource.static_catalog")
+    def test_has_is_producer_url_unstable(self, mock_static_catalog):
+        test_is_producer_url_unstable = self.test_is_producer_url_unstable
+        test_another_is_producer_url_unstable = "some_other_is_producer_url_unstable"
+        instance = GtfsRealtimeSource(filename=self.test_filename, **self.test_schema)
+        under_test = instance.has_is_producer_url_unstable(is_producer_url_unstable=test_is_producer_url_unstable)
+        self.assertTrue(under_test)
+        under_test = instance.has_is_producer_url_unstable(is_producer_url_unstable=test_another_is_producer_url_unstable)
         self.assertFalse(under_test)
 
     @patch("tools.representations.GtfsRealtimeSource.static_catalog")

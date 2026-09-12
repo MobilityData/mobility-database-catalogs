@@ -34,6 +34,7 @@ class TestOperations(TestCase):
         test_status = "active"
         test_features = ["fares"]
         test_is_official = "True"
+        test_is_producer_url_unstable = "True"
         under_test = add_gtfs_realtime_source(
             entity_type=test_entity_type,
             provider=test_provider,
@@ -48,6 +49,7 @@ class TestOperations(TestCase):
             status=test_status,
             features=test_features,
             is_official=test_is_official,
+            is_producer_url_unstable=test_is_producer_url_unstable,
         )
         self.assertEqual(under_test, mock_catalog())
         self.assertEqual(mock_catalog.call_count, 2)
@@ -69,6 +71,7 @@ class TestOperations(TestCase):
         test_status = "active"
         test_features = ["flex-v2"]
         test_is_official = "True"
+        test_is_producer_url_unstable = "False"
         under_test = update_gtfs_realtime_source(
             mdb_source_id=test_mdb_source_id,
             entity_type=test_entity_type,
@@ -84,6 +87,7 @@ class TestOperations(TestCase):
             status=test_status,
             features=test_features,
             is_official=test_is_official,
+            is_producer_url_unstable=test_is_producer_url_unstable,
         )
         self.assertEqual(under_test, mock_catalog())
         self.assertEqual(mock_catalog.call_count, 2)

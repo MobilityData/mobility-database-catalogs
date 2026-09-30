@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 3504,
+    "data_type": "gtfs",
+    "provider": "Sekretarijat za saobraćaj",
+    "name": "Putevi Podgorica",
+    "is_official": "True",
+    "is_producer_url_unstable": "True",
+    "location": {
+        "country_code": "ME",
+        "subdivision_name": "Podgorica",
+        "municipality": "Podgorica",
+        "bounding_box": {
+            "minimum_latitude": 42.4306,
+            "maximum_latitude": 42.4683,
+            "minimum_longitude": 19.264412,
+            "maximum_longitude": 19.453808,
+            "extracted_on": "2026-08-26T00:28:15+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://podgorica.me/wp-content/uploads/2026/04/GTFS-v1.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/me-podgorica-putevi-gtfs-3504.zip?alt=media"
+    }
+}

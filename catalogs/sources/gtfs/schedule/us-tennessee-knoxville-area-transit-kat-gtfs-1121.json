@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Knoxville Area Transit (KAT)",
     "feed_contact_email": "support@gmvsync.com",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Tennessee",
@@ -21,5 +22,10 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-tennessee-knoxville-area-transit-kat-gtfs-1121.zip?alt=media",
         "license": "http://www.knoxvilletn.gov/government/opendata/knoxville_area_transit_kat_gtfs_feed"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "3512",
+            "comment": ""
+        }
+    ]
 }

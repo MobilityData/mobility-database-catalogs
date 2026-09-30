@@ -3,7 +3,6 @@
     "data_type": "gtfs",
     "provider": "Loudoun County Transit",
     "name": "Flex",
-    "is_official": "True",
     "feed_contact_email": "trillium.support@optibus.com",
     "location": {
         "country_code": "US",
@@ -19,6 +18,8 @@
     "urls": {
         "direct_download": "https://data.trilliumtransit.com/gtfs/loudouncounty-va-us/loudouncounty-va-us--flex-v2.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-loudoun-county-transit-gtfs-2411.zip?alt=media",
-        "license": "http://virginia-gtfs.com/"
-    }
+        "license": "https://drpt.virginia.gov/data/gtfs-feed-clearinghouse/"
+    },
+    "redirect": [],
+    "is_official": "True"
 }

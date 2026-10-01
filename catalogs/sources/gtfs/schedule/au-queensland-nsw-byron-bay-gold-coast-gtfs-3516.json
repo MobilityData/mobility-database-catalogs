@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3505,
+    "mdb_source_id": 3516,
     "data_type": "gtfs",
     "provider": "Byron Bay Express",
     "name": "Byron Bay Express",
@@ -20,6 +20,6 @@
     "urls": {
         "direct_download": "https://byronbayexpress.com.au/wp-content/uploads/2026/09/byronbayexpress_gtfs.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-nsw-byron-bay-gold-coast-gtfs-3505.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/au-queensland-nsw-byron-bay-gold-coast-gtfs-3516.zip?alt=media"
     }
 }

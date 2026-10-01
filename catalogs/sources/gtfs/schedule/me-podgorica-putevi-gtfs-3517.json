@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3504,
+    "mdb_source_id": 3517,
     "data_type": "gtfs",
     "provider": "Sekretarijat za saobraćaj",
     "name": "Putevi Podgorica",
@@ -20,6 +20,6 @@
     "urls": {
         "direct_download": "https://podgorica.me/wp-content/uploads/2026/04/GTFS-v1.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/me-podgorica-putevi-gtfs-3504.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/me-podgorica-putevi-gtfs-3517.zip?alt=media"
     }
 }

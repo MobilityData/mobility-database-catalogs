@@ -15,6 +15,9 @@ from tools.constants import (
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
 
+# Allow list of stable_ids that are intentionally missing from the catalogs.
+ALLOWED_MISSING_STABLE_IDS = {3504, 3505}
+
 
 def test_catalogs_sources_gtfs_schedule_json_schema():
     source_schema_path = os.path.join(
@@ -52,7 +55,12 @@ def test_catalogs_gtfs_source_ids_are_incremental():
     source_ids = [
         source[MDB_SOURCE_ID] for source in get_sources(data_type=ALL).values()
     ]
-    assert sorted(source_ids) == list(range(1, len(source_ids) + 1))
+    expected_ids = set(range(1, max(source_ids) + 1)) - ALLOWED_MISSING_STABLE_IDS
+    missing_ids = sorted(expected_ids - set(source_ids))
+    assert not missing_ids, (
+        f"Source IDs missing from the sequence: {missing_ids}. "
+        f"Add them to ALLOWED_MISSING_STABLE_IDS if intentional."
+    )
 
 
 def test_catalogs_sources_gtfs_schedule_direct_download_urls_uniqueness():

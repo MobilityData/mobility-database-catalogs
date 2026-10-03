@@ -16,7 +16,7 @@
         }
     },
     "urls": {
-        "direct_download": "http://www.kc-metro.com/gtf/google_transit.zip",
+        "direct_download": "https://ridekc.org/static-gtfs",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-missouri-kansas-city-area-transportation-authority-kcata-gtfs-187.zip?alt=media"
     }
 }

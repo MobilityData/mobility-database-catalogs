@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Kansas City Area Transportation Authority (KCATA)",
     "is_official": "True",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Missouri",
@@ -18,5 +19,11 @@
     "urls": {
         "direct_download": "http://www.kc-metro.com/gtf/google_transit.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-missouri-kansas-city-area-transportation-authority-kcata-gtfs-187.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "3519",
+            "comment": " "
+        }
+    ]
 }

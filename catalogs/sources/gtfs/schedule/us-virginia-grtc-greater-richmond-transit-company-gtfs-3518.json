@@ -16,7 +16,7 @@
     },
     "urls": {
         "direct_download": "https://www.ridegrtc.com/wp-content/uploads/2025/02/gtfs.zip",
-        "authentication_type": "0",
+        "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-grtc-greater-richmond-transit-company-gtfs-3518.zip?alt=media",
         "license": "https://drpt.virginia.gov/data/gtfs-feed-clearinghouse/"
     },

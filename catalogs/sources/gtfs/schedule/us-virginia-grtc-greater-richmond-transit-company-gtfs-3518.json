@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 3518,
+    "data_type": "gtfs",
+    "provider": "GRTC (Greater Richmond Transit Company)",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Virginia",
+        "municipality": "Richmond",
+        "bounding_box": {
+            "minimum_latitude": 37.226895,
+            "maximum_latitude": 37.676455,
+            "minimum_longitude": -77.655376,
+            "maximum_longitude": -77.302671,
+            "extracted_on": "2026-10-01T19:43:55+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.ridegrtc.com/wp-content/uploads/2025/02/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-grtc-greater-richmond-transit-company-gtfs-3518.zip?alt=media",
+        "license": "https://drpt.virginia.gov/data/gtfs-feed-clearinghouse/"
+    },
+    "redirect": []
+}

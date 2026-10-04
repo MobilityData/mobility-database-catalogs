@@ -2,7 +2,7 @@
     "mdb_source_id": 902,
     "data_type": "gtfs",
     "provider": "GRTC Transit System",
-    "is_official": "False",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Virginia",
@@ -19,5 +19,12 @@
         "direct_download": "https://github.com/transitland/gtfs-archives-not-hosted-elsewhere/raw/master/grtc.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-virginia-grtc-transit-system-gtfs-902.zip?alt=media",
         "license": "http://ridegrtc.com/gtfs-files-developer-license-agreement-and-terms-of-use"
-    }
+    },
+    "redirect": [
+        {
+            "id": "3518",
+            "comment": ""
+        }
+    ],
+    "is_official": "False"
 }

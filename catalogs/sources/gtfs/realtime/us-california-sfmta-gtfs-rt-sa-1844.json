@@ -4,9 +4,9 @@
     "entity_type": [
         "sa"
     ],
-    "provider": "San Francisco Municipal Transportation Agency (SFMTA)",
+    "provider": "San Francisco Municipal Transportation Agency (SFMTA - Muni)",
     "static_reference": [
-        "50"
+        "2886"
     ],
     "urls": {
         "direct_download": "http://api.511.org/transit/servicealerts?agency=SF",

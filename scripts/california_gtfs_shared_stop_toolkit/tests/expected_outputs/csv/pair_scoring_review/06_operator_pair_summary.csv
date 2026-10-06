@@ -1,0 +1,24 @@
+operator_a,operator_b,shared_stop_classification,pair_count
+los angeles county metropolitan transportation authority,orange county transportation authority,Likely Shared Stop Candidate,28
+los angeles county metropolitan transportation authority,long beach transit,High-Confidence Shared Stop Candidate,26
+orange county transportation authority,long beach transit,Likely Shared Stop Candidate,14
+los angeles county metropolitan transportation authority,orange county transportation authority,Uncertain Shared Stop Candidate,12
+los angeles county metropolitan transportation authority,orange county transportation authority,Likely Separate Physical Points,12
+long beach transit,orange county transportation authority,Likely Shared Stop Candidate,8
+los angeles county metropolitan transportation authority,orange county transportation authority,High-Confidence Shared Stop Candidate,5
+orange county transportation authority,long beach transit,Uncertain Shared Stop Candidate,5
+orange county transportation authority,foothill transit,Uncertain Shared Stop Candidate,4
+los angeles county metropolitan transportation authority,long beach transit,Evidence-Assisted Rescue Candidate,4
+los angeles county metropolitan transportation authority,long beach transit,Uncertain Shared Stop Candidate,4
+orange county transportation authority,long beach transit,Context Only / Not Shared Stop Candidate,4
+alameda-contra costa transit district,orange county transportation authority,Uncertain Shared Stop Candidate,4
+los angeles county metropolitan transportation authority,alameda-contra costa transit district,Likely Shared Stop Candidate,4
+long beach transit,foothill transit,High-Confidence Shared Stop Candidate,3
+los angeles county metropolitan transportation authority,foothill transit,High-Confidence Shared Stop Candidate,3
+los angeles county metropolitan transportation authority,long beach transit,Likely Shared Stop Candidate,2
+alameda-contra costa transit district,commute.org and menlo park community shuttles schedule,Likely Shared Stop Candidate,1
+alameda-contra costa transit district,foothill transit,High-Confidence Shared Stop Candidate,1
+long beach transit,foothill transit,Likely Shared Stop Candidate,1
+foothill transit,commute.org and menlo park community shuttles schedule,Likely Shared Stop Candidate,1
+los angeles county metropolitan transportation authority,foothill transit,Likely Shared Stop Candidate,1
+orange county transportation authority,long beach transit,High-Confidence Shared Stop Candidate,1

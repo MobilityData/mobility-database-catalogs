@@ -1,0 +1,20 @@
+rule,score_delta,severity,notes
+exact_coordinate,35,positive,"Strong spatial evidence, but exact reuse can occur at terminals or generalized centroids."
+normalized_name_exact,25,positive,Normalized stop names are identical.
+normalized_name_high_similarity,18,positive,Normalized stop names are highly similar.
+normalized_name_medium_similarity,8,positive,Normalized stop names are moderately similar.
+intersection_signature_exact,20,positive,Both stop names resolve to the same normalized intersection.
+shared_name_tokens,8,positive,Stop names share multiple useful tokens.
+same_platform_code,6,positive,Published platform_code values agree; modest evidence only because values are feed-specific.
+different_platform_code_same_feed,-45,hard_conflict,Different platform_code values within one feed are strong evidence of distinct boarding locations.
+different_platform_code_cross_feed,-20,caution,Different platform_code values across feeds may reflect agency-specific labels; route to review rather than treating as definitive.
+explicit_different_platform_token,-45,hard_conflict,Names/descriptions explicitly identify different bays/platforms/gates/tracks.
+opposite_direction,-50,hard_conflict,Opposite-direction evidence is strong evidence of distinct physical boarding points.
+same_parent_station_same_feed,10,positive,Same parent_station within one feed supports shared facility context.
+different_parent_station_same_feed,-25,hard_conflict,Different comparable parent_station values within one feed indicate distinct hierarchy/facility context.
+station_vs_boarding_level_conflict,-35,hard_conflict,A station-level record is not the same physical boarding point as a stop/platform/boarding-area child.
+large_exact_coordinate_group,-15,caution,Large exact-coordinate groups can reflect generalized station/terminal coordinates or multiple boarding positions.
+side_position_conflict,-50,hard_conflict,Near-side vs far-side wording indicates different stop positions. (Moved from the code's built-in defaults; value unchanged.)
+opposite_side_text_conflict,-50,hard_conflict,Stop text places the records on opposite sides. (Moved from the code's built-in defaults; value unchanged.)
+boarding_side_both_likely_same_direction,4,positive,Same-direction served routes and both points on the plausible curbside. (Moved from the code's built-in defaults; value unchanged.)
+boarding_side_likely_unlikely_same_direction,-6,caution,Same-direction served routes but one point is on the implausible boarding side. (Moved from the code's built-in defaults; value unchanged.)

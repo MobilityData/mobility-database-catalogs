@@ -1,0 +1,25 @@
+category,code,plain_language_label
+recommendation_reason,TWO_OPERATOR_DISAGREEMENT_OVER_25FT,Two agencies disagree by more than 25 ft
+recommendation_reason,NO_OPERATOR_MAJORITY_WITHIN_25FT,No agency majority agrees within 25 ft
+recommendation_reason,COMPETING_OPERATOR_MAJORITY_CLUSTERS,Competing agency location clusters
+recommendation_reason,NO_CROSS_OPERATOR_LOCATION_MATCH_SELECTED,No single cross-agency boarding-location match selected
+recommendation_reason,INSUFFICIENT_VALID_CROSS_OPERATOR_GEOMETRY,Insufficient Valid Cross Operator Geometry
+route_evidence,SAME_DIRECTION_STRONGLY_CORROBORATES,Same route direction
+route_evidence,SAME_DIRECTION_CORROBORATES,Same route direction
+route_evidence,SAME_DIRECTION_CORROBORATION_ONLY,Same route direction
+route_evidence,SAME_DIRECTION_CORROBORATION_WITH_ROUTE_VARIATION,Same route direction + other route directions
+route_evidence,DIFFERENT_ROUTE_MOVEMENT_CONTEXT,Different/mixed route directions - neutral
+route_evidence,MIXED_ROUTE_MOVEMENT_CONTEXT,Different/mixed route directions - neutral
+route_evidence,ROUTE_MOVEMENT_VARIATION_ONLY,Different/mixed route directions - neutral
+route_evidence,NO_SHAPE_CONTEXT,No route direction data
+shape_context,NO_GTFS_SHAPE_ID,No GTFS route shape
+shape_context,SHAPE_CONTEXT_AVAILABLE,No route direction data
+shape_context,NO_SHAPE_CONTEXT_OTHER,No route direction data
+shape_context,NO_SHAPE_CONTEXT_UNDIAGNOSED,No route direction data
+road_context,SAME_NEAREST_ALL_ROADS_ROUTE,Same roadway
+road_context,DIFFERENT_NEAREST_ALL_ROADS_ROUTE,Different nearby roadways
+road_context,INTERSECTION_OR_MULTI_ROAD_CONTEXT,Intersection / multiple roads
+road_context,SINGLE_NEAREST_ROUTE_CONTEXT,Single roadway context
+road_context,MULTIPLE_NEAREST_ROUTE_ALIGNMENTS,Multiple nearby road alignments
+road_context,NO_ROAD_MATCH_WITHIN_500FT,No nearby Caltrans road match
+road_context,ROAD_CONTEXT_INCOMPLETE,Road Context Incomplete

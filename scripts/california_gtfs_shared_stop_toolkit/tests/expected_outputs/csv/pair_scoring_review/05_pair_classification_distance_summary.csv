@@ -1,0 +1,13 @@
+shared_stop_classification,distance_band,pair_count
+Context Only / Not Shared Stop Candidate,0-25 ft strong spatial agreement,4
+Evidence-Assisted Rescue Candidate,200-250 ft evidence-assisted rescue,4
+High-Confidence Shared Stop Candidate,0-25 ft strong spatial agreement,26
+High-Confidence Shared Stop Candidate,25-75 ft normal candidate range,13
+Likely Separate Physical Points,0-25 ft strong spatial agreement,8
+Likely Separate Physical Points,25-75 ft normal candidate range,4
+Likely Shared Stop Candidate,0-25 ft strong spatial agreement,33
+Likely Shared Stop Candidate,25-75 ft normal candidate range,3
+Likely Shared Stop Candidate,75-150 ft displaced-stop candidate range,24
+Uncertain Shared Stop Candidate,0-25 ft strong spatial agreement,4
+Uncertain Shared Stop Candidate,25-75 ft normal candidate range,12
+Uncertain Shared Stop Candidate,75-150 ft displaced-stop candidate range,13

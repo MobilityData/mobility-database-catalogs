@@ -1,0 +1,7 @@
+min_ft,max_ft,base_score,label,notes
+0.0,25,35,0-25 ft strong spatial agreement,"Very close agreement. This is separate from the final 25-ft issue threshold, which applies only after an existing point is recommended."
+25.0001,75,24,25-75 ft normal candidate range,Plausible shared physical point when corroborated by identity/context evidence.
+75.0001,150,12,75-150 ft displaced-stop candidate range,"Keeps plausible displaced-stop cases (for example a stop placed about 100 ft from its partner) in the scored range, with fewer distance points than closer bands."
+150.0001,200,0,150-200 ft evidence-assisted rescue,Distance contributes no positive score. Strong non-distance identity evidence is required to connect a group.
+200.0001,250,0,200-250 ft evidence-assisted rescue,Review-only rescue band; strong non-distance evidence required.
+250.0001,300,0,250-300 ft evidence-assisted rescue,Outer rescue band; strong non-distance evidence required.

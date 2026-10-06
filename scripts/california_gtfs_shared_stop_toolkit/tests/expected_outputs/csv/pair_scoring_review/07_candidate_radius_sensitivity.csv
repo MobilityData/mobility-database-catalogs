@@ -1,0 +1,10 @@
+radius_ft,pair_count,unique_source_record_count,connectable_pair_count,high_confidence_pair_count,likely_pair_count,uncertain_pair_count,rescue_pair_count
+25,75,99,63,26,33,4,0
+50,83,109,67,28,35,4,0
+75,107,130,91,39,36,16,0
+100,140,152,124,39,59,26,0
+125,142,156,126,39,59,28,0
+150,144,157,128,39,60,29,0
+200,144,157,128,39,60,29,0
+250,148,165,128,39,60,29,4
+300,148,165,128,39,60,29,4

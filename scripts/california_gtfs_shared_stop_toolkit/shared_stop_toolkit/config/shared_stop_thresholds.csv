@@ -1,0 +1,11 @@
+setting,value,notes
+candidate_max_ft,300,Largest pair distance scored. Warehouse pairs farther apart than this are ignored.
+primary_max_ft,150,Normal shared-stop range. Pairs up to this distance can join records into a group. Set at 150 ft so plausible displaced stops around 100 ft are scored normally instead of sitting at the edge of the range.
+rescue_min_ft,150,Start of the evidence-assisted rescue range. Pairs between this distance and rescue_max_ft are scored and reported for review only; they never join records into a group.
+rescue_max_ft,300,End of the evidence-assisted rescue range.
+high_confidence_score,80,Minimum pair/group evidence score for high-confidence shared-stop candidates inside the primary range.
+likely_score,65,Minimum pair score for a likely shared-stop candidate inside the primary range.
+uncertain_score,40,Minimum pair score for an uncertain shared-stop candidate inside the primary range.
+group_edge_min_score,40,Minimum score for a <=150 ft cross-operator pair to connect source records into a candidate group.
+group_high_confidence_min_score,80,Every observed primary-range cross-operator member pair must meet this score for a high-confidence group.
+large_exact_group_caution_size,5,Exact-coordinate groups at or above this size receive a caution against automatic high-confidence treatment.

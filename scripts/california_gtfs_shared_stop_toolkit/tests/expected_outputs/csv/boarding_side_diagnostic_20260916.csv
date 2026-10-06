@@ -1,0 +1,20 @@
+﻿Physical Location ID,Distance Bucket,Agency 1,Stop ID 1,BoardingSide 1,Agency 2,Stop ID 2,BoardingSide 2,Clean Distinction
+SPL_0968aa85e461,WITHIN_25FT,Los Angeles County Metropolitan Transportation Authority,ME1010,,Long Beach Transit,LB1011,,N
+SPL_f3dc559095b4,WITHIN_25FT,Los Angeles County Metropolitan Transportation Authority,ME1025,,Long Beach Transit,LB1026,,N
+SPL_ba18f440112a,WITHIN_25FT,Los Angeles County Metropolitan Transportation Authority,ME1027,,Long Beach Transit,LB1029,,N
+SPL_71b21235dc2c,OVER_25FT_OR_REVIEW,Los Angeles County Metropolitan Transportation Authority,ME1048,LIKELY,Orange County Transportation Authority,OC1049,LIKELY,N
+SPL_6493e900c517,WITHIN_25FT,Los Angeles County Metropolitan Transportation Authority,ME1050,,Long Beach Transit,LB1051,,N
+SPL_874515c3cfd7,OVER_25FT_OR_REVIEW,Los Angeles County Metropolitan Transportation Authority,ME1063,LIKELY,Orange County Transportation Authority,OC1064,LIKELY,N
+SPL_fffea14379fd,WITHIN_25FT,Los Angeles County Metropolitan Transportation Authority,ME1065,,Long Beach Transit,LB1066,,N
+SPL_04eb9a2e3866,WITHIN_25FT,Los Angeles County Metropolitan Transportation Authority,ME1067,,Long Beach Transit,LB1069,,N
+SPL_53c550ad09da,OVER_25FT_OR_REVIEW,Los Angeles County Metropolitan Transportation Authority,ME1072,LIKELY,Orange County Transportation Authority,OC1073,LIKELY,N
+SPL_366c4a9496b8,WITHIN_25FT,Los Angeles County Metropolitan Transportation Authority,ME1090,,Long Beach Transit,LB1091,,N
+SPL_47306fcf1d7e,WITHIN_25FT,Los Angeles County Metropolitan Transportation Authority,ME1105,,Long Beach Transit,LB1106,,N
+SPL_db950e4ce192,WITHIN_25FT,Los Angeles County Metropolitan Transportation Authority,ME1107,,Long Beach Transit,LB1109,,N
+SPL_a757793ad311,OVER_25FT_OR_REVIEW,Los Angeles County Metropolitan Transportation Authority,ME1128,LIKELY,Orange County Transportation Authority,OC1129,LIKELY,N
+SPL_1c2ea9ac73b4,WITHIN_25FT,Los Angeles County Metropolitan Transportation Authority,ME1130,,Long Beach Transit,LB1131,,N
+SPL_92de146bc51b,OVER_25FT_OR_REVIEW,Los Angeles County Metropolitan Transportation Authority,ME1143,LIKELY,Orange County Transportation Authority,OC1144,LIKELY,N
+SPL_4571fdc82ebd,WITHIN_25FT,Los Angeles County Metropolitan Transportation Authority,ME1145,,Long Beach Transit,LB1146,,N
+SPL_01111fb646e3,WITHIN_25FT,Los Angeles County Metropolitan Transportation Authority,ME1147,,Long Beach Transit,LB1149,,N
+SPL_2421f3579d20,OVER_25FT_OR_REVIEW,Los Angeles County Metropolitan Transportation Authority,ME1152,LIKELY,Orange County Transportation Authority,OC1153,LIKELY,N
+SPL_3a9477593c78,OVER_25FT_OR_REVIEW,Los Angeles County Metropolitan Transportation Authority,4389,LIKELY,Orange County Transportation Authority,0732,LIKELY,N

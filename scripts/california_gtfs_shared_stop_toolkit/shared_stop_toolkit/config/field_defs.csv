@@ -1,0 +1,28 @@
+field_name,field_type,field_length,order,active,notes,field_alias
+GTFS_stop_name,TEXT,255,1,Y,Copy of the warehouse stop_name (GTFS stop_name). Used for name and intersection evidence.,GTFS Stop Name
+GTFS_stop_desc,TEXT,500,2,Y,Copy of the warehouse stop_desc (GTFS stop_desc).,GTFS Stop Desc
+GTFS_tts_stop_name,TEXT,255,3,Y,Copy of the warehouse tts_stop_name (GTFS text-to-speech name).,GTFS Text-to-Speech Stop Name
+GTFS_stop_code,TEXT,100,4,Y,Copy of the warehouse stop_code (public-facing GTFS stop code).,GTFS Stop Code
+GTFS_stop_id,TEXT,255,5,Y,Copy of the warehouse stop_id (the agency's GTFS stop_id).,GTFS Stop ID
+feed_name,TEXT,200,6,Y,Warehouse feed name (human-readable feed label). Keys agency_aliases.csv and the regional-feed exclusion. Not the same as feed_key.,GTFS Feed
+review_reason,TEXT,1000,20,Y,Plain-text reasons behind the QA status.,Review Reason
+cross_agency_shared_stop_candidate,TEXT,5,33,Y,Y when the record is in at least one scored cross-agency pair within the candidate_max_ft envelope (300 ft). A candidate only; it does not confirm a shared stop.,Cross-Agency Shared Stop Candidate
+shared_stop_group_id,TEXT,100,34,Y,Shared-stop group ID (SSG_ plus a hash of the member source keys). Records join a group through pairs that can connect. A group does not by itself confirm one physical stop.,Shared Stop Group ID
+shared_stop_group_recommendation,TEXT,120,35,Y,Group-level recommendation after cross-agency coherence and conflict checks.,Shared Stop Group Recommendation
+shared_stop_confidence,TEXT,20,36,Y,"Plain-language confidence for the group or record (for example High, Review, Low / Caution, Conflict). A heuristic, not a probability.",Shared Stop Confidence
+shared_stop_best_score,LONG,,37,Y,Highest pair score involving this record.,Shared Stop Best Score
+shared_stop_pair_count,LONG,,38,Y,Number of scored cross-agency pairs involving this record within the candidate_max_ft envelope (300 ft).,Shared Stop Pair Count
+shared_stop_nearest_distance_ft,DOUBLE,,39,Y,Distance in feet to the nearest other-agency record among this record's scored pairs.,Shared Stop Nearest Distance (ft)
+shared_stop_best_match_agency_name,TEXT,255,40,Y,agency_name (the toolkit's normalized agency label) of the record in this record's highest-scoring pair.,Shared Stop Best Match Agency Name
+shared_stop_best_match_source_key,TEXT,500,41,Y,source_key of the record in this record's highest-scoring pair.,Shared Stop Best Match Source Key
+shared_stop_evidence_summary,TEXT,1500,42,Y,"Short summary of the best pair's classification and evidence, plus the group review reason when the record is in a group.",Shared Stop Evidence Summary
+shared_stop_conflict_codes,TEXT,500,43,Y,Hard physical-separation conflict codes from this record's pairs or group (for example opposite direction).,Shared Stop Conflict Codes
+shared_stop_operator_count,LONG,,44,Y,"Number of distinct operators in the record's group, or among the record and its pair partners when it is not in a group.",Shared Stop Operator Count
+agency_name,TEXT,255,50,Y,The toolkit's agency/operator label: warehouse analysis_name after agency_aliases.csv is applied. Not the GTFS agency.txt agency_name.,Agency
+exact_coordinate_group_size,LONG,,58,Y,"Optional warehouse field: number of records sharing the exact same coordinates. Pair scoring adds a caution at large_exact_group_caution_size; if the field is absent, 1 is assumed.",Exact Coordinate Group Size
+GTFS_platform_code,TEXT,50,63,Y,Copy of the warehouse platform_code (GTFS platform_code). Used as platform evidence.,GTFS Platform Code
+GTFS_parent_station,TEXT,255,64,Y,Copy of the warehouse parent_station (GTFS parent_station). Compared only within the same feed.,GTFS Parent Station
+GTFS_location_type,TEXT,10,66,Y,Copy of the warehouse location_type (GTFS location_type).,GTFS Location Type
+source_key,TEXT,500,74,Y,"Stable record key used by every step: the pair-file key when the stop appears in a nearby pair, otherwise WH_ plus a hash of the stop's warehouse identifiers.",Source Key
+GTFS_stop_lat,DOUBLE,,80,Y,Copy of the warehouse stop_lat (GTFS latitude).,GTFS Latitude
+GTFS_stop_lon,DOUBLE,,81,Y,Copy of the warehouse stop_lon (GTFS longitude).,GTFS Longitude

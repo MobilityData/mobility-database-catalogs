@@ -1,0 +1,5 @@
+﻿exclusion_type,value,purpose
+regional_feed,Bay Area 511 Regional Schedule,Exclude the regional aggregate copy because operator feeds provide the same stops.
+rail_route_type,0,Exclude stops served only by rail modes from the curbside shared-stop analysis.
+rail_route_type,1,Exclude stops served only by rail modes from the curbside shared-stop analysis.
+rail_route_type,2,Exclude stops served only by rail modes from the curbside shared-stop analysis.

@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 3564,
+    "data_type": "gtfs-rt",
+    "is_official": "False",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Autolinee Toscane - BusOne",
+    "static_reference": [
+        "3563"
+    ],
+    "urls": {
+        "direct_download": "https://proxy.busone.app/toscana/gtfs-rt/trip-updates.pb",
+        "authentication_type": 0,
+        "license": "https://proxy.busone.app/toscana/readme"
+    }
+}

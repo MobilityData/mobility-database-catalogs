@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 3551,
+    "data_type": "gtfs",
+    "provider": "TEP S.p.A.",
+    "is_official": "False",
+    "name": "BusOne",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Emilia-Romagna",
+        "municipality": "Parma",
+        "bounding_box": {
+            "minimum_latitude": 44.36991215,
+            "maximum_latitude": 45.02104097,
+            "minimum_longitude": 9.44243043,
+            "maximum_longitude": 10.56159646,
+            "extracted_on": "2026-10-07T19:15:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://proxy.busone.app/tep/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-emilia-romagna-tep-spa-gtfs-3551.zip?alt=media",
+        "license": "https://proxy.busone.app/tep/readme"
+    },
+    "redirect": []
+}

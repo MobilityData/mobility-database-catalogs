@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3533,
+    "mdb_source_id": 3530,
     "data_type": "gtfs",
     "provider": "Provincial Land Transport Office Nakhonratchasrima",
     "status": "active",
@@ -18,6 +18,6 @@
     },
     "urls": {
         "direct_download": "https://www.koratcitylab.org/gtfs/nma_1_17_gtfs.zip",
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/th-nakhon-ratchasima-provincial-land-transport-office-gtfs-3533.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/th-nakhon-ratchasima-provincial-land-transport-office-gtfs-3530.zip?alt=media"
     }
 }

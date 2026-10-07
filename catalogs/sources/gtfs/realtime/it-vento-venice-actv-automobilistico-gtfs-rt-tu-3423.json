@@ -7,7 +7,7 @@
     "provider": "Azienda del Consorzio Trasporti Veneziano (ACTV) Automobilistico",
     "is_official": "True",
     "static_reference": [
-        "1063"
+        "3530"
     ],
     "urls": {
         "direct_download": "https://tpl.actv.it/aut/GTFSRT/tripUpdates",

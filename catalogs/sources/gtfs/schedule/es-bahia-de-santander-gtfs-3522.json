@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 3522,
+    "data_type": "gtfs",
+    "provider": "Los Reginas",
+    "is_official": "True",
+    "name": " Los Reginas. Bahía de Santander Ferry Norte",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Cantabria",
+        "bounding_box": {
+            "minimum_latitude": null,
+            "maximum_latitude": null,
+            "minimum_longitude": null,
+            "maximum_longitude": null,
+            "extracted_on": "2026-10-06T20:31:45+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/juanmacuevas/ferrynorte-gtfs/releases/download/los-reginas/los-reginas_gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-bahia-de-santander-gtfs-3522.zip?alt=media",
+        "license": "https://creativecommons.org/licenses/by/4.0/"
+    }
+}

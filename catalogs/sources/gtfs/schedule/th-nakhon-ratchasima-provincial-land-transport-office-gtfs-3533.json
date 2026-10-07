@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3533,
+    "data_type": "gtfs",
+    "provider": "Provincial Land Transport Office Nakhonratchasrima",
+    "status": "active",
+    "is_official": "False",
+    "location": {
+        "country_code": "TH",
+        "subdivision_name": "Nakhon Ratchasima",
+        "municipality": "Mueang Nakhon Ratchasima",
+        "bounding_box": {
+            "minimum_latitude": 18.758568,
+            "maximum_latitude": 18.807697,
+            "minimum_longitude": 98.935385,
+            "maximum_longitude": 98.972451,
+            "extracted_on": "2026-10-06T18:44:29+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.koratcitylab.org/gtfs/nma_1_17_gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/th-nakhon-ratchasima-provincial-land-transport-office-gtfs-3533.zip?alt=media"
+    }
+}

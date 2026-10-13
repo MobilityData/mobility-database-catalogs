@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 3531,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Verkehrsverbund Rhein-Neckar",
+    "is_official": "True",
+    "static_reference": [
+        "1173"
+    ],
+    "urls": {
+        "direct_download": "https://www.vrn.de/service/entwickler/gtfs-realtime/",
+        "authentication_type": 0
+    }
+}

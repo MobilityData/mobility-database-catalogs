@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "De Lijn",
     "feed_contact_email": "info@delijn.be",
+    "status": "deprecated",
     "location": {
         "country_code": "BE",
         "subdivision_name": "Vlaams Gewest",
@@ -19,5 +20,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/be-vlaams-gewest-de-lijn-gtfs-684.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "3544",
+            "comment": " "
+        }
+    ]
 }

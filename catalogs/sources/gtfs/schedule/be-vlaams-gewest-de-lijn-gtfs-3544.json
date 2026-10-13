@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 3544,
+    "data_type": "gtfs",
+    "provider": "De Lijn",
+    "feed_contact_email": "info@delijn.be",
+    "location": {
+        "country_code": "BE",
+        "subdivision_name": "Vlaams Gewest",
+        "bounding_box": {
+            "minimum_latitude": 50.6451,
+            "maximum_latitude": 51.5605,
+            "minimum_longitude": 2.58059,
+            "maximum_longitude": 5.88695,
+            "extracted_on": "2026-10-13T22:03:20+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://api.delijn.be/gtfs/static/v3/gtfs_transit.zip",
+        "authentication_type": 2,
+        "api_key_parameter_name": "Ocp-Apim-Subscription-Key",
+        "authentication_info_url": "https://data.delijn.be/products",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/be-vlaams-gewest-de-lijn-gtfs-3544.zip?alt=media"
+    },
+    "redirect": []
+}

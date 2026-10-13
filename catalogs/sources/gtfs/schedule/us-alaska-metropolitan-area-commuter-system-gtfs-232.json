@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Metropolitan Area Commuter System",
     "is_official": "True",
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Alaska",
@@ -19,5 +19,11 @@
     "urls": {
         "direct_download": "https://www.fnsb.gov/DocumentCenter/View/690/General-Transit-Feed-Specification-ZIP",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-alaska-metropolitan-area-commuter-system-gtfs-232.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "3523",
+            "comment": " "
+        }
+    ]
 }

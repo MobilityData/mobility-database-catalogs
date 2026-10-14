@@ -22,6 +22,6 @@
         "license": "https://forms.office.com/e/EJ8tXaYFmV",
         "authentication_type": 1,
         "api_key_parameter_name": "subscription-key",
-        "authentication_info_url": "https://forms.office.com/e/EJ8tXaYFmV"
+        "authentication_info": "https://forms.office.com/e/EJ8tXaYFmV"
     }
 }

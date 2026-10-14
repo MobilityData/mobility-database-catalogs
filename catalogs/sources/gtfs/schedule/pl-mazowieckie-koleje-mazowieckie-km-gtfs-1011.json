@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Koleje Mazowieckie (KM)",
     "is_official": "False",
+    "status": "deprecated",
     "location": {
         "country_code": "PL",
         "subdivision_name": "Mazowieckie",
@@ -18,5 +19,11 @@
         "direct_download": "https://mkuran.pl/gtfs/kolejemazowieckie.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-mazowieckie-koleje-mazowieckie-km-gtfs-1011.zip?alt=media",
         "license": "https://bip.mazowieckie.com.pl/pl/ponowne-wykorzystywanie-informacji-sektora-publicznego"
-    }
+    },
+    "redirect": [
+        {
+            "id": "3191",
+            "comment": " "
+        }
+    ]
 }

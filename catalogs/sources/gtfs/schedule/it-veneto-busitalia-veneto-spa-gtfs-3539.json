@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 3539,
+    "data_type": "gtfs",
+    "provider": "Busitalia Veneto S.p.A.",
+    "is_official": "False",
+    "name": "BusOne",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Veneto",
+        "municipality": "Padua",
+        "bounding_box": {
+            "minimum_latitude": 44.8236541748047,
+            "maximum_latitude": 45.7781524658203,
+            "minimum_longitude": 11.1329374313354,
+            "maximum_longitude": 12.671215057373,
+            "extracted_on": "2026-10-07T19:15:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://proxy.busone.app/biv/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-veneto-busitalia-veneto-spa-gtfs-3539.zip?alt=media",
+        "license": "https://proxy.busone.app/biv/readme"
+    },
+    "redirect": []
+}

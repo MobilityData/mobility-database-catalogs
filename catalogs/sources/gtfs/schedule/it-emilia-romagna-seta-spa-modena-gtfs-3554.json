@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 3554,
+    "data_type": "gtfs",
+    "provider": "SETA S.p.A. - Modena",
+    "is_official": "False",
+    "name": "BusOne",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Emilia-Romagna",
+        "municipality": "Modena",
+        "bounding_box": {
+            "minimum_latitude": 44.132158,
+            "maximum_latitude": 44.941939,
+            "minimum_longitude": 10.503499,
+            "maximum_longitude": 11.289638,
+            "extracted_on": "2026-10-07T19:15:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://proxy.busone.app/seta-mo/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-emilia-romagna-seta-spa-modena-gtfs-3554.zip?alt=media",
+        "license": "https://proxy.busone.app/seta-mo/readme"
+    },
+    "redirect": []
+}

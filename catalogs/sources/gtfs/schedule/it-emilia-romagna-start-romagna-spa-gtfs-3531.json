@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 3531,
+    "data_type": "gtfs",
+    "provider": "START Romagna S.p.A.",
+    "is_official": "False",
+    "name": "BusOne",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Emilia-Romagna",
+        "bounding_box": {
+            "minimum_latitude": 43.6693,
+            "maximum_latitude": 44.61468,
+            "minimum_longitude": 11.53163,
+            "maximum_longitude": 12.75989,
+            "extracted_on": "2026-10-07T19:15:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://proxy.busone.app/start/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-emilia-romagna-start-romagna-spa-gtfs-3531.zip?alt=media",
+        "license": "https://proxy.busone.app/start/readme"
+    },
+    "redirect": []
+}

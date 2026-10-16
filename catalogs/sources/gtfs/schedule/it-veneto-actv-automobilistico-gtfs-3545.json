@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 3545,
+    "data_type": "gtfs",
+    "provider": "Azienda del Consorzio Trasporti Veneziano (ACTV) Automobilistico",
+    "is_official": "False",
+    "name": "BusOne",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Veneto",
+        "municipality": "Venice",
+        "bounding_box": {
+            "minimum_latitude": 45.044678,
+            "maximum_latitude": 45.661823,
+            "minimum_longitude": 11.882432,
+            "maximum_longitude": 12.390814,
+            "extracted_on": "2026-10-07T19:15:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://proxy.busone.app/actv-aut/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-veneto-actv-automobilistico-gtfs-3545.zip?alt=media",
+        "license": "https://proxy.busone.app/actv-aut/readme"
+    },
+    "redirect": []
+}

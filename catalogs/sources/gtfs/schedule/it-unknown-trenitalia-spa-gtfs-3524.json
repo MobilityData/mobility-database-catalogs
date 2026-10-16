@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 3524,
+    "data_type": "gtfs",
+    "provider": "TRENITALIA S.p.A.",
+    "is_official": "False",
+    "name": "BusOne",
+    "location": {
+        "country_code": "IT",
+        "bounding_box": {
+            "minimum_latitude": 36.730886,
+            "maximum_latitude": 50.106944,
+            "minimum_longitude": 2.374444,
+            "maximum_longitude": 18.165887,
+            "extracted_on": "2026-10-07T19:15:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://proxy.busone.app/trenitalia/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-unknown-trenitalia-spa-gtfs-3524.zip?alt=media",
+        "license": "https://proxy.busone.app/trenitalia/readme"
+    },
+    "redirect": []
+}

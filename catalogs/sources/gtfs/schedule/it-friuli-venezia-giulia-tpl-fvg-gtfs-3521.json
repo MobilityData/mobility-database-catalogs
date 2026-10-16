@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 3521,
+    "data_type": "gtfs",
+    "provider": "TPL FVG",
+    "is_official": "False",
+    "name": "BusOne",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Friuli Venezia Giulia",
+        "bounding_box": {
+            "minimum_latitude": 45.505375,
+            "maximum_latitude": 46.586703,
+            "minimum_longitude": 12.209625,
+            "maximum_longitude": 13.908667,
+            "extracted_on": "2026-10-07T19:15:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://proxy.busone.app/TPLFVG/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-friuli-venezia-giulia-tpl-fvg-gtfs-3521.zip?alt=media",
+        "license": "https://proxy.busone.app/TPLFVG/readme"
+    },
+    "redirect": []
+}

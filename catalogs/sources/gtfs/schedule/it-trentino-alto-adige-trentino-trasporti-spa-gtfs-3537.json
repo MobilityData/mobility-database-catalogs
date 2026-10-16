@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 3537,
+    "data_type": "gtfs",
+    "provider": "Trentino trasporti S.p.A.",
+    "is_official": "False",
+    "name": "BusOne",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Trentino-Alto Adige",
+        "municipality": "Trento",
+        "bounding_box": {
+            "minimum_latitude": 45.697001,
+            "maximum_latitude": 46.480186,
+            "minimum_longitude": 10.403518,
+            "maximum_longitude": 12.021336,
+            "extracted_on": "2026-10-07T19:15:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://proxy.busone.app/trentino/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-trentino-alto-adige-trentino-trasporti-spa-gtfs-3537.zip?alt=media",
+        "license": "https://proxy.busone.app/trentino/readme"
+    },
+    "redirect": []
+}

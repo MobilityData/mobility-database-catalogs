@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 3542,
+    "data_type": "gtfs",
+    "provider": "Gruppo Torinese Trasporti (GTT)",
+    "is_official": "False",
+    "name": "BusOne",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Piemonte",
+        "municipality": "Turin",
+        "bounding_box": {
+            "minimum_latitude": 44.3852,
+            "maximum_latitude": 45.53567,
+            "minimum_longitude": 7.14396,
+            "maximum_longitude": 8.45961,
+            "extracted_on": "2026-10-07T19:15:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://proxy.busone.app/gtt/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-piemonte-gruppo-torinese-trasporti-gtt-gtfs-3542.zip?alt=media",
+        "license": "https://proxy.busone.app/gtt/readme"
+    },
+    "redirect": []
+}

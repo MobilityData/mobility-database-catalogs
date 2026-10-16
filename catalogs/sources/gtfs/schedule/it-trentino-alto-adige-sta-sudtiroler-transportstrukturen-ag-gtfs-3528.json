@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 3528,
+    "data_type": "gtfs",
+    "provider": "STA - Südtiroler Transportstrukturen AG",
+    "is_official": "False",
+    "name": "BusOne",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Trentino-Alto Adige",
+        "municipality": "Bolzano",
+        "bounding_box": {
+            "minimum_latitude": 39.35948761,
+            "maximum_latitude": 48.29082489,
+            "minimum_longitude": 9.18599712,
+            "maximum_longitude": 18.16581769,
+            "extracted_on": "2026-10-07T19:15:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://proxy.busone.app/sta/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-trentino-alto-adige-sta-sudtiroler-transportstrukturen-ag-gtfs-3528.zip?alt=media",
+        "license": "https://proxy.busone.app/sta/readme"
+    },
+    "redirect": []
+}

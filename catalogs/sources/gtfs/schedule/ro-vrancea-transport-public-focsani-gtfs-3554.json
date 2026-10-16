@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 3554,
+    "data_type": "gtfs",
+    "provider": "Transport Public Focșani",
+    "location": {
+        "country_code": "RO",
+        "subdivision_name": "Vrancea",
+        "municipality": "Focșani",
+        "bounding_box": {
+            "minimum_latitude": 45.5994204,
+            "maximum_latitude": 45.7615373,
+            "minimum_longitude": 27.0428314,
+            "maximum_longitude": 27.3169483,
+            "extracted_on": "2026-10-16T05:50:22+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://tpfocsani.ro/images/gtfs/GTFS.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-vrancea-transport-public-focsani-gtfs-3554.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "True"
+}

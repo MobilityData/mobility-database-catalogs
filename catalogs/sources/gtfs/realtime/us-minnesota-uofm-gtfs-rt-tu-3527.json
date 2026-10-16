@@ -8,7 +8,7 @@
         "205"
     ],
     "is_official": "True",
-    "provider": "Broward County Transit",
+    "provider": "University of Minnesota",
     "urls": {
         "direct_download": "https://data.peaktransit.com/gtfsrt/88/TripUpdate.pb",
         "authentication_type": 0

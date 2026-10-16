@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 3567,
+    "data_type": "gtfs",
+    "provider": "Niko 992",
+    "name": "Samokov city transport",
+    "location": {
+        "country_code": "BG",
+        "subdivision_name": "Sofia Province",
+        "municipality": "Samokov",
+        "bounding_box": {
+            "minimum_latitude": 42.21177,
+            "maximum_latitude": 42.40221702073055,
+            "minimum_longitude": 23.365176618385306,
+            "maximum_longitude": 23.618533583011622,
+            "extracted_on": "2026-10-16T05:50:47+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://sipbg.gov.bg/bgnap/portal/api/catalog/files/f56d65db-c1f2-4dd9-b3d7-e8983eae7a69/download",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/bg-sofia-province-niko-992-gtfs-3567.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "True",
+    "is_producer_url_unstable": "True"
+}

@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 3564,
+    "data_type": "gtfs",
+    "provider": "Gradski Transport Dobrich, Patnicheski Prevozi",
+    "location": {
+        "country_code": "BG",
+        "subdivision_name": "Dobrich",
+        "municipality": "Dobrich",
+        "bounding_box": {
+            "minimum_latitude": 43.50688,
+            "maximum_latitude": 43.59621,
+            "minimum_longitude": 27.76599,
+            "maximum_longitude": 27.86417,
+            "extracted_on": "2026-10-16T05:50:46+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://sipbg.gov.bg/bgnap/portal/api/catalog/files/8b343269-c867-4963-a644-0e8f3a03561c/download",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/bg-dobrich-gradski-transport-dobrich-gtfs-3564.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "True",
+    "is_producer_url_unstable": "True"
+}

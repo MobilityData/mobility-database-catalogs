@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 3549,
+    "data_type": "gtfs",
+    "provider": "Transport Public Tulcea",
+    "location": {
+        "country_code": "RO",
+        "subdivision_name": "Tulcea",
+        "municipality": "Tulcea",
+        "bounding_box": {
+            "minimum_latitude": 45.151276,
+            "maximum_latitude": 45.2006,
+            "minimum_longitude": 28.749773,
+            "maximum_longitude": 28.87231,
+            "extracted_on": "2026-10-16T05:50:21+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://external.gtfs.ro/cities/ro-tulcea.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-tulcea-transport-public-tulcea-gtfs-3549.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "False"
+}

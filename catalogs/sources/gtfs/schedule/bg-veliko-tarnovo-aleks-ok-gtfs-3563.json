@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 3563,
+    "data_type": "gtfs",
+    "provider": "Aleks OK, ODPG Veliko Tarnovo, ET Nadezhda Hristova",
+    "location": {
+        "country_code": "BG",
+        "subdivision_name": "Veliko Tarnovo",
+        "municipality": "Veliko Tarnovo",
+        "bounding_box": {
+            "minimum_latitude": 43.06046,
+            "maximum_latitude": 43.09274,
+            "minimum_longitude": 25.59697,
+            "maximum_longitude": 25.65473,
+            "extracted_on": "2026-10-16T05:50:46+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://sipbg.gov.bg/bgnap/portal/api/catalog/files/34d5d718-dcf4-467d-b984-223c5ea88cca/download",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/bg-veliko-tarnovo-aleks-ok-gtfs-3563.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "True",
+    "is_producer_url_unstable": "True"
+}

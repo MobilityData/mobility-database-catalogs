@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 3606,
+    "data_type": "gtfs",
+    "provider": "Gradski Transport Varna",
+    "location": {
+        "country_code": "BG",
+        "subdivision_name": "Varna",
+        "municipality": "Varna",
+        "bounding_box": {
+            "minimum_latitude": 43.12679,
+            "maximum_latitude": 43.3077,
+            "minimum_longitude": 27.77632,
+            "maximum_longitude": 28.05189,
+            "extracted_on": "2026-10-16T05:50:45+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://sipbg.gov.bg/bgnap/portal/api/catalog/files/79642de1-da00-47b3-9417-994ccf53ed4e/download",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/bg-varna-gradski-transport-varna-gtfs-3606.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "True",
+    "is_producer_url_unstable": "True"
+}

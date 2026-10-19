@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 3598,
+    "data_type": "gtfs",
+    "provider": "Meditur Mediaș",
+    "location": {
+        "country_code": "RO",
+        "subdivision_name": "Sibiu",
+        "municipality": "Mediaș",
+        "bounding_box": {
+            "minimum_latitude": 46.11348,
+            "maximum_latitude": 46.188057,
+            "minimum_longitude": 24.323616,
+            "maximum_longitude": 24.380411,
+            "extracted_on": "2026-10-16T05:50:22+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://external.gtfs.ro/cities/ro-medias.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-sibiu-meditur-medias-gtfs-3598.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "False"
+}

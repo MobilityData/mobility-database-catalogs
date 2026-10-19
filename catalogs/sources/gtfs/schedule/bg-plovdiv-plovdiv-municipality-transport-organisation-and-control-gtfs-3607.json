@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 3607,
+    "data_type": "gtfs",
+    "provider": "Plovdiv Municipality Transport Organisation and Control",
+    "location": {
+        "country_code": "BG",
+        "subdivision_name": "Plovdiv",
+        "municipality": "Plovdiv",
+        "bounding_box": {
+            "minimum_latitude": 42.09573,
+            "maximum_latitude": 42.194,
+            "minimum_longitude": 24.6773,
+            "maximum_longitude": 24.80922,
+            "extracted_on": "2026-10-16T05:50:45+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://sipbg.gov.bg/bgnap/portal/api/catalog/files/2527423b-e006-438d-8743-19d987b609fd/download",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/bg-plovdiv-plovdiv-municipality-transport-organisation-and-control-gtfs-3607.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "True",
+    "is_producer_url_unstable": "True"
+}

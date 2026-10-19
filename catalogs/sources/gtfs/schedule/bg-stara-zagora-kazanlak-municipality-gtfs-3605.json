@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 3605,
+    "data_type": "gtfs",
+    "provider": "Kazanlak Municipality, Balkaninvest",
+    "location": {
+        "country_code": "BG",
+        "subdivision_name": "Stara Zagora",
+        "municipality": "Kazanlak",
+        "bounding_box": {
+            "minimum_latitude": 42.52928,
+            "maximum_latitude": 42.7124,
+            "minimum_longitude": 25.24551,
+            "maximum_longitude": 25.49536,
+            "extracted_on": "2026-10-16T05:50:44+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://sipbg.gov.bg/bgnap/portal/api/catalog/files/a1a711a6-73c9-409a-b24a-211f3f08550b/download",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/bg-stara-zagora-kazanlak-municipality-gtfs-3605.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "True",
+    "is_producer_url_unstable": "True"
+}

@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3528,
+    "mdb_source_id": 3573,
     "data_type": "gtfs",
     "provider": "STA - Südtiroler Transportstrukturen AG",
     "is_official": "False",
@@ -19,7 +19,7 @@
     "urls": {
         "direct_download": "https://proxy.busone.app/sta/gtfs.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-trentino-alto-adige-sta-sudtiroler-transportstrukturen-ag-gtfs-3528.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-trentino-alto-adige-sta-sudtiroler-transportstrukturen-ag-gtfs-3573.zip?alt=media",
         "license": "https://proxy.busone.app/sta/readme"
     },
     "redirect": []

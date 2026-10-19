@@ -7,7 +7,7 @@
     ],
     "provider": "ACTV Automobilistico - BusOne",
     "static_reference": [
-        "3545"
+        "3590"
     ],
     "urls": {
         "direct_download": "https://proxy.busone.app/actv-aut/gtfs-rt/vehicle-positions.pb",

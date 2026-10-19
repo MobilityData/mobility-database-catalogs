@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3521,
+    "mdb_source_id": 3566,
     "data_type": "gtfs",
     "provider": "TPL FVG",
     "is_official": "False",
@@ -18,7 +18,7 @@
     "urls": {
         "direct_download": "https://proxy.busone.app/TPLFVG/gtfs.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-friuli-venezia-giulia-tpl-fvg-gtfs-3521.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-friuli-venezia-giulia-tpl-fvg-gtfs-3566.zip?alt=media",
         "license": "https://proxy.busone.app/TPLFVG/readme"
     },
     "redirect": []

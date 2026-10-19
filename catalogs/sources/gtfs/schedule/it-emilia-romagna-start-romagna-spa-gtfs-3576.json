@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3531,
+    "mdb_source_id": 3576,
     "data_type": "gtfs",
     "provider": "START Romagna S.p.A.",
     "is_official": "False",
@@ -18,7 +18,7 @@
     "urls": {
         "direct_download": "https://proxy.busone.app/start/gtfs.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-emilia-romagna-start-romagna-spa-gtfs-3531.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-emilia-romagna-start-romagna-spa-gtfs-3576.zip?alt=media",
         "license": "https://proxy.busone.app/start/readme"
     },
     "redirect": []

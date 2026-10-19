@@ -1,16 +1,16 @@
 {
-    "mdb_source_id": 3540,
+    "mdb_source_id": 3586,
     "data_type": "gtfs-rt",
     "is_official": "False",
     "entity_type": [
-        "tu"
+        "vp"
     ],
     "provider": "Busitalia Veneto - BusOne",
     "static_reference": [
-        "3539"
+        "3584"
     ],
     "urls": {
-        "direct_download": "https://proxy.busone.app/biv/gtfs-rt/trip-updates.pb",
+        "direct_download": "https://proxy.busone.app/biv/gtfs-rt/vehicle-positions.pb",
         "authentication_type": 0,
         "license": "https://proxy.busone.app/biv/readme"
     }

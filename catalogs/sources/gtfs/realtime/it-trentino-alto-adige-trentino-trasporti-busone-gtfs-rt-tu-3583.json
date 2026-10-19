@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3538,
+    "mdb_source_id": 3583,
     "data_type": "gtfs-rt",
     "is_official": "False",
     "entity_type": [
@@ -7,7 +7,7 @@
     ],
     "provider": "Trentino Trasporti - BusOne",
     "static_reference": [
-        "3537"
+        "3582"
     ],
     "urls": {
         "direct_download": "https://proxy.busone.app/trentino/gtfs-rt/trip-updates.pb",

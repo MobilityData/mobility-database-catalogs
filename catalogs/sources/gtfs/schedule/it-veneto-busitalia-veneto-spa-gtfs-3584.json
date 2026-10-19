@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3539,
+    "mdb_source_id": 3584,
     "data_type": "gtfs",
     "provider": "Busitalia Veneto S.p.A.",
     "is_official": "False",
@@ -19,7 +19,7 @@
     "urls": {
         "direct_download": "https://proxy.busone.app/biv/gtfs.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-veneto-busitalia-veneto-spa-gtfs-3539.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-veneto-busitalia-veneto-spa-gtfs-3584.zip?alt=media",
         "license": "https://proxy.busone.app/biv/readme"
     },
     "redirect": []

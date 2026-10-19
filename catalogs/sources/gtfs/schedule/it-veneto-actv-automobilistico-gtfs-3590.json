@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3545,
+    "mdb_source_id": 3590,
     "data_type": "gtfs",
     "provider": "Azienda del Consorzio Trasporti Veneziano (ACTV) Automobilistico",
     "is_official": "False",
@@ -19,7 +19,7 @@
     "urls": {
         "direct_download": "https://proxy.busone.app/actv-aut/gtfs.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-veneto-actv-automobilistico-gtfs-3545.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-veneto-actv-automobilistico-gtfs-3590.zip?alt=media",
         "license": "https://proxy.busone.app/actv-aut/readme"
     },
     "redirect": []

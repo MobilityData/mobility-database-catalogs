@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3533,
+    "mdb_source_id": 3578,
     "data_type": "gtfs-rt",
     "is_official": "False",
     "entity_type": [
@@ -7,7 +7,7 @@
     ],
     "provider": "START Romagna - BusOne",
     "static_reference": [
-        "3531"
+        "3576"
     ],
     "urls": {
         "direct_download": "https://proxy.busone.app/start/gtfs-rt/vehicle-positions.pb",

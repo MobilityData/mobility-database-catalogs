@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3535,
+    "mdb_source_id": 3580,
     "data_type": "gtfs-rt",
     "is_official": "False",
     "entity_type": [
@@ -7,7 +7,7 @@
     ],
     "provider": "AMTAB - BusOne",
     "static_reference": [
-        "3534"
+        "3579"
     ],
     "urls": {
         "direct_download": "https://proxy.busone.app/amtab/gtfs-rt/trip-updates.pb",

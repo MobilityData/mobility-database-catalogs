@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 3597,
+    "data_type": "gtfs",
+    "provider": "Transmixt Bistrița, Exmitiani Ani Tour Năsăud",
+    "location": {
+        "country_code": "RO",
+        "subdivision_name": "Bistrița-Năsăud",
+        "municipality": "Bistrița",
+        "bounding_box": {
+            "minimum_latitude": 46.76715,
+            "maximum_latitude": 47.577915,
+            "minimum_longitude": 23.97295,
+            "maximum_longitude": 25.005568,
+            "extracted_on": "2026-10-16T05:50:22+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://external.gtfs.ro/cities/ro-bistrita.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-bistrita-nasaud-transmixt-bistrita-gtfs-3597.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "False"
+}

@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 3610,
+    "data_type": "gtfs",
+    "provider": "Patnicheski Prevozi Sliven",
+    "location": {
+        "country_code": "BG",
+        "subdivision_name": "Sliven",
+        "municipality": "Sliven",
+        "bounding_box": {
+            "minimum_latitude": 42.52121,
+            "maximum_latitude": 42.70284,
+            "minimum_longitude": 26.14869,
+            "maximum_longitude": 26.42877,
+            "extracted_on": "2026-10-16T05:50:47+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://sipbg.gov.bg/bgnap/portal/api/catalog/files/6bf05b1e-26c8-41fa-b25f-9f757c94e3e5/download",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/bg-sliven-patnicheski-prevozi-sliven-gtfs-3610.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "True",
+    "is_producer_url_unstable": "True"
+}

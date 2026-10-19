@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3546,
+    "mdb_source_id": 3615,
     "data_type": "gtfs",
     "provider": "Malyn city public transport (community feed by malin.kiev.ua)",
     "name": "Malyn (Zhytomyr Oblast, Ukraine) city buses - malin.kiev.ua",
@@ -20,7 +20,7 @@
     "urls": {
         "direct_download": "https://malin.kiev.ua/transport/gtfs.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ua-zhytomyr-oblast-malyn-city-public-transport-community-feed-by-malinkievua-gtfs-3546.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ua-zhytomyr-oblast-malyn-city-public-transport-community-feed-by-malinkievua-gtfs-3615.zip?alt=media",
         "license": "https://own-net.com/license.html"
     },
     "redirect": [],

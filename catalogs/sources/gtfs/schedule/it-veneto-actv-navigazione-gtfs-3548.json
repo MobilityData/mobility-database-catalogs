@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 3548,
+    "data_type": "gtfs",
+    "provider": "Azienda del Consorzio Trasporti Veneziano (ACTV) Navigazione",
+    "is_official": "False",
+    "name": "BusOne",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Veneto",
+        "municipality": "Venice",
+        "bounding_box": {
+            "minimum_latitude": 45.22369,
+            "maximum_latitude": 45.49509,
+            "minimum_longitude": 12.28028,
+            "maximum_longitude": 12.447123,
+            "extracted_on": "2026-10-07T19:15:59+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://proxy.busone.app/actv-nav/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-veneto-actv-navigazione-gtfs-3548.zip?alt=media",
+        "license": "https://proxy.busone.app/actv-nav/readme"
+    },
+    "redirect": []
+}

@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 3550,
+    "data_type": "gtfs-rt",
+    "is_official": "False",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "ACTV Navigazione - BusOne",
+    "static_reference": [
+        "3548"
+    ],
+    "urls": {
+        "direct_download": "https://proxy.busone.app/actv-nav/gtfs-rt/vehicle-positions.pb",
+        "authentication_type": 0,
+        "license": "https://proxy.busone.app/actv-nav/readme"
+    }
+}

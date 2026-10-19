@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3537,
+    "data_type": "gtfs",
+    "provider": "Casco Bay Lines",
+    "is_official": "True",
+    "status": "active",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Maine",
+        "municipality": "Casco Bay",
+        "bounding_box": {
+            "minimum_latitude": 43.655373,
+            "maximum_latitude": 43.71619,
+            "minimum_longitude": -70.248666,
+            "maximum_longitude": -70.11018,
+            "extracted_on": "2022-02-22T19:51:22+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.remix.com/Casco_Bay_Lines_Portland_ME_USA.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-maine-casco-bay-lines-gtfs-3537.zip?alt=media"
+    }
+}

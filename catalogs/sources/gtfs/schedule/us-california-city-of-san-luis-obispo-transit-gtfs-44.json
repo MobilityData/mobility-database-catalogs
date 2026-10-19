@@ -2,6 +2,7 @@
     "mdb_source_id": 44,
     "data_type": "gtfs",
     "provider": "City of San Luis Obispo Transit",
+    "status": "deprecated",
     "feed_contact_email": "marcy@mjcaction.com",
     "features": [
         "fares-v1"
@@ -23,5 +24,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-city-of-san-luis-obispo-transit-gtfs-44.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "3533",
+            "comment": " "
+        }
+    ]
 }

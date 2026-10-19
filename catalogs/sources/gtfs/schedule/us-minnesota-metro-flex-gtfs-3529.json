@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3529,
+    "data_type": "gtfs",
+    "provider": "Metro Transit",
+    "name": "Metro Micro Service Schedule (Flex)",
+    "is_official": "True",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Minnesota",
+        "municipality": "Minneapolis",
+        "bounding_box": {
+            "minimum_latitude": 44.725492,
+            "maximum_latitude": 45.560123,
+            "minimum_longitude": -94.157367,
+            "maximum_longitude": -92.805903,
+            "extracted_on": "2026-10-06T17:42:14+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://svc.metrotransit.org/mtgtfs/gtfs-flex.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-minnesota-metro-flex-gtfs-3529.zip?alt=media"
+    }
+}

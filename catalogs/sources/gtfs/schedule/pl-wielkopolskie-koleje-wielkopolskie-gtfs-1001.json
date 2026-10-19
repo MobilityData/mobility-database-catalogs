@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Koleje Wielkopolskie",
     "is_official": "True",
+    "status": "deprecated",
     "location": {
         "country_code": "PL",
         "subdivision_name": "Wielkopolskie",
@@ -17,5 +18,11 @@
     "urls": {
         "direct_download": "https://przyjazdy.pl/latest/kw.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-wielkopolskie-koleje-wielkopolskie-gtfs-1001.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "3191",
+            "comment": " "
+        }
+    ]
 }

@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Clallam Transit System",
     "feed_contact_email": "marcy@mjcaction.com",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Washington",
@@ -19,5 +20,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-washington-clallam-transit-system-gtfs-279.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "3532",
+            "comment": " "
+        }
+    ]
 }

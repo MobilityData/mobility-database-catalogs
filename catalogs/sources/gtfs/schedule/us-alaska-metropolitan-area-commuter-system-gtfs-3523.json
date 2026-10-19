@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3523,
+    "data_type": "gtfs",
+    "provider": "Metropolitan Area Commuter System",
+    "is_official": "True",
+    "is_producer_url_unstable": "True",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Alaska",
+        "municipality": "Fairbanks",
+        "bounding_box": {
+            "minimum_latitude": 64.74791061828516,
+            "maximum_latitude": 64.8996653247773,
+            "minimum_longitude": -147.8732170364887,
+            "maximum_longitude": -147.3279313082579,
+            "extracted_on": "2026-10-06T17:43:19+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://fnsb.gov/DocumentCenter/View/24935/General-Transit-Feed-Specification-2025zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-alaska-metropolitan-area-commuter-system-gtfs-3523.zip?alt=media"
+    }
+}

@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3569,
+    "mdb_source_id": 3614,
     "data_type": "gtfs",
     "provider": "BDZh Patnicheski Prevozi",
     "name": "Bulgarian Passenger Railway (BDZ)",
@@ -16,7 +16,7 @@
     "urls": {
         "direct_download": "https://sipbg.gov.bg/bgnap/portal/api/catalog/files/d954c83b-f17d-42e1-9cca-b19a318766d8/download",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/bg-unknown-bdzh-patnicheski-prevozi-gtfs-3569.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/bg-unknown-bdzh-patnicheski-prevozi-gtfs-3614.zip?alt=media"
     },
     "redirect": [],
     "is_official": "True",

@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3564,
+    "mdb_source_id": 3609,
     "data_type": "gtfs",
     "provider": "Gradski Transport Dobrich, Patnicheski Prevozi",
     "location": {
@@ -17,7 +17,7 @@
     "urls": {
         "direct_download": "https://sipbg.gov.bg/bgnap/portal/api/catalog/files/8b343269-c867-4963-a644-0e8f3a03561c/download",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/bg-dobrich-gradski-transport-dobrich-gtfs-3564.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/bg-dobrich-gradski-transport-dobrich-gtfs-3609.zip?alt=media"
     },
     "redirect": [],
     "is_official": "True",

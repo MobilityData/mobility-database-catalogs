@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3555,
+    "mdb_source_id": 3600,
     "data_type": "gtfs",
     "provider": "Transport Urban Reșița",
     "location": {
@@ -17,7 +17,7 @@
     "urls": {
         "direct_download": "https://gtfs.opendev.ro/GTFS-300.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-caras-severin-transport-urban-resita-gtfs-3555.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-caras-severin-transport-urban-resita-gtfs-3600.zip?alt=media"
     },
     "redirect": [],
     "is_official": "True"

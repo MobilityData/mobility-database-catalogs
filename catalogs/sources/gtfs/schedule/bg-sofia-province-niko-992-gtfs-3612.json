@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3567,
+    "mdb_source_id": 3612,
     "data_type": "gtfs",
     "provider": "Niko 992",
     "name": "Samokov city transport",
@@ -18,7 +18,7 @@
     "urls": {
         "direct_download": "https://sipbg.gov.bg/bgnap/portal/api/catalog/files/f56d65db-c1f2-4dd9-b3d7-e8983eae7a69/download",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/bg-sofia-province-niko-992-gtfs-3567.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/bg-sofia-province-niko-992-gtfs-3612.zip?alt=media"
     },
     "redirect": [],
     "is_official": "True",

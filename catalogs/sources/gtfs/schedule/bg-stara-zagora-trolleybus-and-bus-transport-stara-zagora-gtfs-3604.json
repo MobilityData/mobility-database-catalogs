@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3559,
+    "mdb_source_id": 3604,
     "data_type": "gtfs",
     "provider": "Trolleybus and Bus Transport Stara Zagora",
     "location": {
@@ -17,7 +17,7 @@
     "urls": {
         "direct_download": "https://sipbg.gov.bg/bgnap/portal/api/catalog/files/21fa52d7-7813-490d-9069-cf719de0534f/download",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/bg-stara-zagora-trolleybus-and-bus-transport-stara-zagora-gtfs-3559.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/bg-stara-zagora-trolleybus-and-bus-transport-stara-zagora-gtfs-3604.zip?alt=media"
     },
     "redirect": [],
     "is_official": "True",

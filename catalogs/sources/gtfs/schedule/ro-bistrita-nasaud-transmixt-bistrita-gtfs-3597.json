@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3552,
+    "mdb_source_id": 3597,
     "data_type": "gtfs",
     "provider": "Transmixt Bistrița, Exmitiani Ani Tour Năsăud",
     "location": {
@@ -17,7 +17,7 @@
     "urls": {
         "direct_download": "https://external.gtfs.ro/cities/ro-bistrita.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-bistrita-nasaud-transmixt-bistrita-gtfs-3552.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-bistrita-nasaud-transmixt-bistrita-gtfs-3597.zip?alt=media"
     },
     "redirect": [],
     "is_official": "False"

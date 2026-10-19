@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3558,
+    "mdb_source_id": 3603,
     "data_type": "gtfs",
     "provider": "Urbana Odorheiu Secuiesc",
     "location": {
@@ -17,7 +17,7 @@
     "urls": {
         "direct_download": "https://gtfs.opendev.ro/GTFS-320.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-harghita-urbana-odorheiu-secuiesc-gtfs-3558.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-harghita-urbana-odorheiu-secuiesc-gtfs-3603.zip?alt=media"
     },
     "redirect": [],
     "is_official": "True"

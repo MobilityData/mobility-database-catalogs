@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3546,
+    "mdb_source_id": 3591,
     "data_type": "gtfs",
     "provider": "Transurban Satu Mare",
     "location": {
@@ -17,7 +17,7 @@
     "urls": {
         "direct_download": "https://external.gtfs.ro/satumare/SATUMARE.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-satu-mare-transurban-satu-mare-gtfs-3546.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-satu-mare-transurban-satu-mare-gtfs-3591.zip?alt=media"
     },
     "redirect": [],
     "is_official": "False"

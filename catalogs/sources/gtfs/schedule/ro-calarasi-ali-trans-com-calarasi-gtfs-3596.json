@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3551,
+    "mdb_source_id": 3596,
     "data_type": "gtfs",
     "provider": "Ali Trans Com Călărași",
     "location": {
@@ -17,7 +17,7 @@
     "urls": {
         "direct_download": "https://external.gtfs.ro/cities/ro-calarasi.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-calarasi-ali-trans-com-calarasi-gtfs-3551.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-calarasi-ali-trans-com-calarasi-gtfs-3596.zip?alt=media"
     },
     "redirect": [],
     "is_official": "False"

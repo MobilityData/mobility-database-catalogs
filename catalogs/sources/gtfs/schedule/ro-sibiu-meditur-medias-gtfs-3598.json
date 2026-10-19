@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3553,
+    "mdb_source_id": 3598,
     "data_type": "gtfs",
     "provider": "Meditur Mediaș",
     "location": {
@@ -17,7 +17,7 @@
     "urls": {
         "direct_download": "https://external.gtfs.ro/cities/ro-medias.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-sibiu-meditur-medias-gtfs-3553.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-sibiu-meditur-medias-gtfs-3598.zip?alt=media"
     },
     "redirect": [],
     "is_official": "False"

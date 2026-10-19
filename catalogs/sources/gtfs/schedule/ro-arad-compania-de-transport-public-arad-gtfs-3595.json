@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3550,
+    "mdb_source_id": 3595,
     "data_type": "gtfs",
     "provider": "Compania de Transport Public Arad",
     "location": {
@@ -17,7 +17,7 @@
     "urls": {
         "direct_download": "https://external.gtfs.ro/cities/ro-arad.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-arad-compania-de-transport-public-arad-gtfs-3550.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-arad-compania-de-transport-public-arad-gtfs-3595.zip?alt=media"
     },
     "redirect": [],
     "is_official": "False"

@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3549,
+    "mdb_source_id": 3594,
     "data_type": "gtfs",
     "provider": "Transport Public Tulcea",
     "location": {
@@ -17,7 +17,7 @@
     "urls": {
         "direct_download": "https://external.gtfs.ro/cities/ro-tulcea.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-tulcea-transport-public-tulcea-gtfs-3549.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-tulcea-transport-public-tulcea-gtfs-3594.zip?alt=media"
     },
     "redirect": [],
     "is_official": "False"

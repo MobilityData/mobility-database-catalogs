@@ -2,10 +2,10 @@
     "mdb_source_id": 100,
     "data_type": "gtfs",
     "provider": "Anaheim Resort Transportation (ART)",
-    "is_official": "True",
     "features": [
         "fares-v1"
     ],
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -21,5 +21,7 @@
     "urls": {
         "direct_download": "https://art.tripshot.com/v1/gtfs.zip?regionId=CA558DDC-D7F2-4B48-9CAC-DEEA1134F820",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-anaheim-resort-transportation-art-gtfs-100.zip?alt=media"
-    }
+    },
+    "redirect": [],
+    "is_official": "True"
 }

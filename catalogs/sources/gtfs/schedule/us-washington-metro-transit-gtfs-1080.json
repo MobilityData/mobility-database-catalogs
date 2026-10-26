@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Metro Transit, Intercity Transit, City of Seattle, Community Transit, Pierce Transit, Sound Transit, Washington State Ferries, SeattleCenterMonorail, Everett Transit, Seattle Children's Hospital",
     "is_official": "True",
+    "status": "deprecated",
     "name": "Puget Sound Consolidated GTFS",
     "location": {
         "country_code": "US",

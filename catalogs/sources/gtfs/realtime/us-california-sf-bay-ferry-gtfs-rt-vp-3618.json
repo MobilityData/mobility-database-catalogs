@@ -1,0 +1,18 @@
+{
+    "mdb_source_id": 3618,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "San Francisco Bay Ferry",
+    "static_reference": [
+        "3143"
+    ],
+    "urls": {
+        "direct_download": "https://api.goswift.ly/real-time/sfbay-ferry/gtfs-rt-vehicle-positions",
+        "authentication_type": 2,
+        "authentication_info": "https://goswift.ly/api-key",
+        "api_key_parameter_name": "authorization",
+        "license": "https://opendatacommons.org/licenses/by/summary/"
+    }
+}

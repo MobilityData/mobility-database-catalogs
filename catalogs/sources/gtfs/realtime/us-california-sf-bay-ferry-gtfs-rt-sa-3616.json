@@ -5,6 +5,7 @@
         "sa"
     ],
     "provider": "San Francisco Bay Ferry",
+    "name": "Service Alerts",
     "static_reference": [
         "3143"
     ],

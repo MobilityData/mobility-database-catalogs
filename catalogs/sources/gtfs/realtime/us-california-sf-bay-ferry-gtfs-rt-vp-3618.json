@@ -5,6 +5,7 @@
         "vp"
     ],
     "provider": "San Francisco Bay Ferry",
+    "name": "Vehicle Positions",
     "static_reference": [
         "3143"
     ],

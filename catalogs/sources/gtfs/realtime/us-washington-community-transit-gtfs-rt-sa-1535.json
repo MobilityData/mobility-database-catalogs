@@ -4,6 +4,7 @@
     "entity_type": [
         "sa"
     ],
+    "status": "deprecated",
     "provider": "Community Transit",
     "static_reference": [
         "287"
@@ -12,5 +13,11 @@
         "direct_download": "http://s3.amazonaws.com/commtrans-realtime-prod/alerts.pb",
         "authentication_type": 0,
         "license": "https://www.communitytransit.org/opendata"
-    }
+    },
+    "redirect": [
+        {
+            "id": "1449",
+            "comment": " "
+        }
+    ]
 }

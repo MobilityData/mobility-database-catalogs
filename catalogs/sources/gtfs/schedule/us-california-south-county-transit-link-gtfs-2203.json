@@ -16,9 +16,10 @@
         }
     },
     "urls": {
-        "direct_download": "http://iportal.sacrt.com/gtfs/SCTLink/southcountytransitlink-ca-us.zip",
+        "direct_download": "https://apps.sacrt.com/gtfs/SCTLink/google_transit.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-south-county-transit-link-gtfs-2203.zip?alt=media"
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-south-county-transit-link-gtfs-2203.zip?alt=media",
+        "license": "https://www.sacrt.com/transit-data-portal/"
     },
     "redirect": []
 }

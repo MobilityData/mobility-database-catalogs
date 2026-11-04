@@ -50,6 +50,7 @@ def add_gtfs_realtime_source(
     status=None,
     features=None,
     is_official=None,
+    is_producer_url_unstable=None,
 ):
     """
     Add a new GTFS Realtime source to the Mobility Catalogs.
@@ -71,6 +72,7 @@ def add_gtfs_realtime_source(
         status (str, optional): The status of the GTFS Realtime source. Defaults to None.
         features (list, optional): A list of features of the GTFS Realtime source. Defaults to None.
         is_official (str, optional): Flag indicating if the source comes from the agency itself or not. Defaults to None.
+        is_producer_url_unstable (str, optional): Indicates if the producer URL is unstable. Possible values: "True", "False". Defaults to None.
     
     Returns:
         GtfsRealtimeSourcesCatalog: The catalog with the newly added GTFS Realtime source.
@@ -89,7 +91,8 @@ def add_gtfs_realtime_source(
         LICENSE: license_url,
         STATUS: status,
         FEATURES: features,
-        IS_OFFICIAL: is_official
+        IS_OFFICIAL: is_official,
+        IS_PRODUCER_URL_UNSTABLE: is_producer_url_unstable,
     }
     catalog.add(**data)
     return catalog
@@ -109,7 +112,8 @@ def update_gtfs_realtime_source(
     note=None,
     status=None,
     features=None,
-    is_official = None,
+    is_official=None,
+    is_producer_url_unstable=None,
 ):
     """
     Update an existing GTFS Realtime source in the Mobility Catalogs.
@@ -132,6 +136,7 @@ def update_gtfs_realtime_source(
         status (str, optional): The status of the GTFS Realtime source. Defaults to None.
         features (list, optional): A list of features of the GTFS Realtime source. Defaults to None.
         is_official (str, optional): Flag indicating if the source comes from the agency itself or not. Defaults to None.
+        is_producer_url_unstable (str, optional): Indicates if the producer URL is unstable. Possible values: "True", "False". Defaults to None.
         
     Returns:
         GtfsRealtimeSourcesCatalog: The catalog with the updated GTFS Realtime source.
@@ -152,6 +157,7 @@ def update_gtfs_realtime_source(
         STATUS: status,
         FEATURES: features,
         IS_OFFICIAL: is_official,
+        IS_PRODUCER_URL_UNSTABLE: is_producer_url_unstable,
     }
     catalog.update(**data)
     return catalog

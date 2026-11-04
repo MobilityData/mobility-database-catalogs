@@ -905,6 +905,7 @@ class GtfsRealtimeSource(Source):
             FEATURES: self.features,
             STATUS: self.status,
             IS_OFFICIAL: self.is_official,
+            IS_PRODUCER_URL_UNSTABLE: self.is_producer_url_unstable,
         }
         return json.dumps(self.schematize(**attributes), ensure_ascii=False)
 
@@ -1017,6 +1018,9 @@ class GtfsRealtimeSource(Source):
         is_official = kwargs.get(IS_OFFICIAL)
         if is_official is not None:
             self.is_official = is_official
+        is_producer_url_unstable = kwargs.get(IS_PRODUCER_URL_UNSTABLE)
+        if is_producer_url_unstable is not None:
+            self.is_producer_url_unstable = is_producer_url_unstable
         return self
 
     @classmethod
@@ -1076,6 +1080,7 @@ class GtfsRealtimeSource(Source):
                 LICENSE: kwargs.pop(LICENSE, None),
             },
             IS_OFFICIAL: kwargs.pop(IS_OFFICIAL, None),
+            IS_PRODUCER_URL_UNSTABLE: kwargs.pop(IS_PRODUCER_URL_UNSTABLE, None),
         }
         if schema[NAME] is None:
             del schema[NAME]
@@ -1097,4 +1102,6 @@ class GtfsRealtimeSource(Source):
             del schema[STATUS]
         if schema[IS_OFFICIAL] is None:
             del schema[IS_OFFICIAL]
+        if schema[IS_PRODUCER_URL_UNSTABLE] is None:
+            del schema[IS_PRODUCER_URL_UNSTABLE]
         return schema

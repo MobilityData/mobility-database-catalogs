@@ -117,7 +117,7 @@ The JSON files are added to the pipeline for https://github.com/MobilityData/mob
 
 #### MacOs
 
-To use and run this project properly, you must install all its requirements. Make sure Python 3.9+ and Pip are installed:
+To use and run this project properly, you must install all its requirements. Make sure Python 3.12+ and Pip are installed:
 
 ```sh
 $ python3 --version
@@ -127,7 +127,7 @@ $ pip --version
 If not, install them with:
 
 ```sh
-$ brew install python3.9
+$ brew install python@3.12
 $ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 $ sudo python get-pip.py
 ```
@@ -139,10 +139,10 @@ $ brew install GDAL
 $ brew install spatialindex
 ```
 
-It is recommended to set up a virtual environment before installing the requirements. To set up and activate a Python 3.9 virtual environment, enter the following commands:
+It is recommended to set up a virtual environment before installing the requirements. To set up and activate a Python 3.12 virtual environment, enter the following commands:
 
 ```sh
-$ python3.9 -m venv env
+$ python3.12 -m venv env
 $ source env/bin/activate
 ```
 

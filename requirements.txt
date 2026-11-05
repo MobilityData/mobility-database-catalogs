@@ -12,7 +12,7 @@ fiona==1.9.6
 flake8==4.0.1
 folium==0.12.1.post1
 freezegun==1.1.0
-geopandas==0.10.2
+geopandas==0.14.4
 gtfs_kit==6.1.1
 identify==2.4.5
 idna==3.3
@@ -20,11 +20,11 @@ iniconfig==1.1.1
 Jinja2==3.0.3
 json2html==1.3.0
 jsonschema==4.4.0
-MarkupSafe==2.0.1
+MarkupSafe==2.1.5
 mccabe==0.6.1
 munch==2.5.0
 nodeenv==1.6.0
-numpy==1.23.2
+numpy==1.26.4
 packaging==21.3
 pandas==2.2.2
 platformdirs==2.4.1
@@ -44,8 +44,8 @@ python-dateutil==2.8.2
 pytz==2021.3
 PyYAML==6.0.2
 requests==2.31.0
-Rtree==0.9.7
-Shapely==1.8.0
+Rtree==1.3.0
+Shapely==2.0.4
 six==1.16.0
 toml==0.10.2
 tzdata==2024.1

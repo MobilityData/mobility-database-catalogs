@@ -81,7 +81,7 @@ jobs:
         if: steps.process-csv.outputs.PYTHON_SCRIPT_ARGS != ''
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12' # install the python version needed
+          python-version: '3.14' # install the python version needed
 
       - name: Create + activate a Python virtual env & run script
         if: steps.process-csv.outputs.PYTHON_SCRIPT_ARGS != ''

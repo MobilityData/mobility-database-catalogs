@@ -28,23 +28,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Set up Python 3.12
+      - name: Set up Python 3.14
         uses: actions/setup-python@v5
         with:
-          python-version: 3.12
+          python-version: 3.14
       - name: Install dependencies
         run: |
-          # Avoid using the latest version (24.1) of pip since they removed support for the
-          # --global-option used during GDAL library installation.
-          # Reconsider later if the problem is corrected.
-          python -m pip install "pip<24.1"
-          pip install pytest wheel setuptools numpy
-          sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
-          sudo apt-get update
-          sudo apt-get install gdal-bin python3-gdal
-          sudo apt-get install libgdal-dev
-          pip install GDAL==$(gdal-config --version) --global-option=build_ext --global-option="-I/usr/include/gdal"
-          sudo apt-get install libspatialindex-dev
+          python -m pip install --upgrade pip
+          pip install pytest wheel
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Export the catalog of sources as CSV
         run: |

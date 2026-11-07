@@ -1,0 +1,15 @@
+{
+    "mdb_source_id": 3622,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "AUCORSA (Autobuses de Córdoba S.A.)",
+    "static_reference": [
+        2713
+    ],
+    "urls": {
+        "direct_download": "https://api.aucorsa.es/GTFSRTapi/api/alert",
+        "authentication_type": 0
+    }
+}

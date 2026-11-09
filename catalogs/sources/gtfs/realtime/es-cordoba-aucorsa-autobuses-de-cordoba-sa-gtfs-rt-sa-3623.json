@@ -6,7 +6,7 @@
     ],
     "provider": "AUCORSA (Autobuses de Córdoba S.A.)",
     "static_reference": [
-        2713
+        "2713"
     ],
     "urls": {
         "direct_download": "https://api.aucorsa.es/GTFSRTapi/api/alert",

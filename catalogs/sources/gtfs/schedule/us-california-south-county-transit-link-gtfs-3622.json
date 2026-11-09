@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 3622,
+    "data_type": "gtfs",
+    "provider": "South County Transit Link",
+    "is_official": "True",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Sacramento",
+        "bounding_box": {
+            "minimum_latitude": 38.133123,
+            "maximum_latitude": 38.581556,
+            "minimum_longitude": -121.612919,
+            "maximum_longitude": -121.27221,
+            "extracted_on": "2024-11-20T10:34:35+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://apps.sacrt.com/gtfs/SCTLink/google_transit.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-south-county-transit-link-gtfs-3622.zip?alt=media",
+        "license": "https://www.sacrt.com/transit-data-portal/"
+    },
+    "redirect": []
+}

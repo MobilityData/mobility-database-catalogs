@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 3629,
+    "data_type": "gtfs",
+    "provider": "Baku Community GTFS",
+    "status": "active",
+    "is_official": "False",
+    "location": {
+        "country_code": "AZ",
+        "subdivision_name": "Baku",
+        "bounding_box": {
+            "minimum_latitude": 0.0,
+            "maximum_latitude": 28.87865,
+            "minimum_longitude": 0.0,
+            "maximum_longitude": 77.49000549,
+            "extracted_on": "2026-07-18T00:16:51+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/ismatsamadov/route_efficiency/raw/main/output/redesign/gtfs_today.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/az-baku-community-gtfs-3629.zip?alt=media",
+        "license": "https://ismatsamadov.github.io/route_efficiency/"
+    },
+    "redirect": []
+}

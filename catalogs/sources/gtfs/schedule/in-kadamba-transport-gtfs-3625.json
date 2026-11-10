@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 3625,
+    "data_type": "gtfs",
+    "provider": "Kadamba Transport Corporation Ltd",
+    "status": "inactive",
+    "is_official": "True",
+    "location": {
+        "country_code": "IN",
+        "subdivision_name": "Goa",
+        "bounding_box": {
+            "minimum_latitude": 0.0,
+            "maximum_latitude": 28.87865,
+            "minimum_longitude": 0.0,
+            "maximum_longitude": 77.49000549,
+            "extracted_on": "2026-07-18T00:16:51+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://ktclgoa.com/uploads/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/in-kadamba-transport-gtfs-3625.zip?alt=media",
+        "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "redirect": []
+}

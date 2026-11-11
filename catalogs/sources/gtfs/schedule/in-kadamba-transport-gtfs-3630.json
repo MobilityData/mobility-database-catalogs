@@ -1,5 +1,5 @@
 {
-    "mdb_source_id": 3625,
+    "mdb_source_id": 3630,
     "data_type": "gtfs",
     "provider": "Kadamba Transport Corporation Ltd",
     "status": "inactive",
@@ -18,7 +18,7 @@
     "urls": {
         "direct_download": "https://ktclgoa.com/uploads/gtfs.zip",
         "authentication_type": 0,
-        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/in-kadamba-transport-gtfs-3625.zip?alt=media",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/in-kadamba-transport-gtfs-3630.zip?alt=media",
         "license": "https://creativecommons.org/licenses/by/4.0/"
     },
     "redirect": []

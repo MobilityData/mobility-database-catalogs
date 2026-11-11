@@ -1,0 +1,26 @@
+{
+    "mdb_source_id": 3631,
+    "data_type": "gtfs",
+    "provider": "Buses urbanos de Cuenca",
+    "name": "Urban bus lines of Cuenca, Ecuador (Morlaco)",
+    "status": "active",
+    "location": {
+        "country_code": "EC",
+        "subdivision_name": "Azuay",
+        "municipality": "Cuenca",
+        "bounding_box": {
+            "minimum_latitude": -3.011081,
+            "maximum_latitude": -2.78868,
+            "minimum_longitude": -79.09258,
+            "maximum_longitude": -78.88189,
+            "extracted_on": "2026-11-11T01:56:54+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://nezusas.github.io/morlaco/datos/gtfs/cuenca-buses.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ec-azuay-buses-urbanos-de-cuenca-gtfs-3631.zip?alt=media",
+        "license": "https://github.com/NezuSas/morlaco#licencia-de-los-datos"
+    },
+    "is_official": "False"
+}

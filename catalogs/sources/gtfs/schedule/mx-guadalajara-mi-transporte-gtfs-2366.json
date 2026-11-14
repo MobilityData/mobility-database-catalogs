@@ -3,11 +3,12 @@
     "data_type": "gtfs",
     "provider": "Mi Transporte, Mi Transporte Eléctrico, Mi Macro, Mi Tren, SiTren",
     "is_official": "True",
-    "name": "Public Transport Routes in the Metropolitan Area of ​​Guadalajara",
+    "name": "Public Transport Routes in the Metropolitan Area of Guadalajara",
+    "status": "deprecated",
     "location": {
         "country_code": "MX",
         "subdivision_name": "Jalisco",
-        "municipality": "Guadajalara Metropolitan Area",
+        "municipality": "Guadalajara Metropolitan Area",
         "bounding_box": {
             "minimum_latitude": null,
             "maximum_latitude": null,
@@ -22,5 +23,11 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/mx-guadalajara-mi-transporte-gtfs-2366.zip?alt=media",
         "license": "https://datos.jalisco.gob.mx/dataset/actualizacion-de-rutas-de-transporte-publico-colectivo-y-masivo-en-la-zona-metropolitana-de"
     },
-    "is_producer_url_unstable": "True"
+    "is_producer_url_unstable": "True",
+    "redirect": [
+        {
+            "id": "3632",
+            "comment": "SETRAN now publishes its current GTFS at a stable URL; this file has not been updated since March 2024."
+        }
+    ]
 }

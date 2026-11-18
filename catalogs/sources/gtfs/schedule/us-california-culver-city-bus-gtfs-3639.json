@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 3639,
+    "data_type": "gtfs",
+    "provider": "Culver City Bus",
+    "is_official": "True",
+    "features": [
+        "fares-v1"
+    ],
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Culver City",
+        "bounding_box": {
+            "minimum_latitude": 33.929593,
+            "maximum_latitude": 34.068294,
+            "minimum_longitude": -118.471525,
+            "maximum_longitude": -118.36869,
+            "extracted_on": "2022-07-26T16:06:33+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://web.culvercity.org/gtfs/gtfsexport.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-culver-city-bus-gtfs-3639.zip?alt=media"
+    }
+}

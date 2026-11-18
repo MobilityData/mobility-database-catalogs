@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 3640,
+    "data_type": "gtfs",
+    "provider": "Zaratán",
+    "is_official": "True",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Castilla y León",
+        "municipality": "Zaratán",
+        "bounding_box": {
+            "minimum_latitude": 42.0,
+            "maximum_latitude": 43.0,
+            "minimum_longitude": -118.471525,
+            "maximum_longitude": -118.36869,
+            "extracted_on": "2022-07-26T16:06:33+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/10198aprieto/GTFSValladolid/raw/ccb14d40c4822cca57e515d3d29a2941f0e791b8/Zarat%C3%A1n/GTFS%20Zarat%C3%A1n%20v1.1.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-castilla-y-leon-zaratan-bus-gtfs-3640.zip?alt=media"
+    }
+}

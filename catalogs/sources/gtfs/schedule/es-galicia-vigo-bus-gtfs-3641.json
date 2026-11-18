@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3641,
+    "data_type": "gtfs",
+    "provider": "Viguesa de Transportes, SL",
+    "name": "Vitrasa",
+    "is_official": "True",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Castilla y León",
+        "municipality": "Zaratán",
+        "bounding_box": {
+            "minimum_latitude": 42.0,
+            "maximum_latitude": 43.0,
+            "minimum_longitude": -118.471525,
+            "maximum_longitude": -118.36869,
+            "extracted_on": "2022-07-26T16:06:33+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://datos.vigo.org/data/transporte/gtfs_vigo.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-galicia-vigo-bus-gtfs-3641.zip?alt=media"
+    }
+}

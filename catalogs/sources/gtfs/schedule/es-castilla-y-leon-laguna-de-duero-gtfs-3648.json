@@ -7,7 +7,14 @@
     "location": {
         "country_code": "ES",
         "subdivision_name": "Castilla y León",
-        "municipality": "Laguna de Duero"
+        "municipality": "Laguna de Duero",
+        "bounding_box": {
+            "minimum_latitude": 0,
+            "maximum_latitude": 0,
+            "minimum_longitude": 0,
+            "maximum_longitude": 0,
+            "extracted_on": "2026-11-19T00:00:00+00:00"
+        }
     },
     "urls": {
         "direct_download": "https://github.com/10198aprieto/GTFSValladolid/raw/a3eb001cf8a5e59993e7eca4e91aef169dd0ddb8/LagunaDuero/LagunaDuero.zip",

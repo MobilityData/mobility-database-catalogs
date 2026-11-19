@@ -6,7 +6,14 @@
     "is_official": "True",
     "location": {
         "country_code": "IE",
-        "subdivision_name": "County Donegal"
+        "subdivision_name": "County Donegal",
+        "bounding_box": {
+            "minimum_latitude": 0,
+            "maximum_latitude": 0,
+            "minimum_longitude": 0,
+            "maximum_longitude": 0,
+            "extracted_on": "2026-11-19T00:00:00+00:00"
+        }
     },
     "urls": {
         "direct_download": "https://api.thearranmoreferry.com/gtfs/the-arranmore-ferry-gtfs-static.zip",

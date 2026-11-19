@@ -6,7 +6,14 @@
     "location": {
         "country_code": "BA",
         "subdivision_name": "Brčko district",
-        "municipality": "Brčko"
+        "municipality": "Brčko",
+        "bounding_box": {
+            "minimum_latitude": 0,
+            "maximum_latitude": 0,
+            "minimum_longitude": 0,
+            "maximum_longitude": 0,
+            "extracted_on": "2026-11-19T00:00:00+00:00"
+        }
     },
     "urls": {
         "direct_download": "https://raw.githubusercontent.com/to0ony/gtfs-brcko-district/main/gtfs.zip",

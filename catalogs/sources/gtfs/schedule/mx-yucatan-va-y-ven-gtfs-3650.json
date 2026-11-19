@@ -7,7 +7,14 @@
     "location": {
         "country_code": "MX",
         "subdivision_name": "Yucatán",
-        "municipality": "Mérida"
+        "municipality": "Mérida",
+        "bounding_box": {
+            "minimum_latitude": 0,
+            "maximum_latitude": 0,
+            "minimum_longitude": 0,
+            "maximum_longitude": 0,
+            "extracted_on": "2026-11-19T00:00:00+00:00"
+        }
     },
     "urls": {
         "direct_download": "https://transit-scheduler.com/api/export-gtfs/latest",

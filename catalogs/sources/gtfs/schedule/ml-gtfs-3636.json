@@ -14,7 +14,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://github.com/orgs/MobilityData/projects/84/views/1?pane=issue&itemId=309882421&issue=MobilityData%7Cmobility-database-catalogs%7C1786#:~:text=https%3A//gitlab.com/digitaltransport/data/africa/mali/%2D/raw/master/GTFS/GTFS.zip%3Finline%3Dfalse",
+        "direct_download": "https://gitlab.com/digitaltransport/data/africa/mali/-/raw/master/GTFS/GTFS.zip?inline=false",
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ml-gtfs-3636.zip?alt=media"
     },

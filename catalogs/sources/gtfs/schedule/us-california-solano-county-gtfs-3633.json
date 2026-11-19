@@ -1,0 +1,25 @@
+{
+    "mdb_source_id": 3633,
+    "data_type": "gtfs",
+    "provider": "Solano County Transit (SolTrans)",
+    "status": "active",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Solano County",
+        "bounding_box": {
+            "minimum_latitude": 20.415110,
+            "maximum_latitude": 21.381796,
+            "minimum_longitude": -105.314348,
+            "maximum_longitude": -101.879856,
+            "extracted_on": "2026-11-14T22:00:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://solanomobility.org/wp-content/uploads/2026/11/SE30GTFS.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-solano-county-gtfs-3633.zip?alt=media"
+    },
+    "is_official": "True",
+    "is_producer_url_unstable": "True"
+}

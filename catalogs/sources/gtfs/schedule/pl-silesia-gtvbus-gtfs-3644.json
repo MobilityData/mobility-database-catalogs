@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 3644,
+    "data_type": "gtfs",
+    "provider": "GTVBus",
+    "name": "GTVBus",
+    "is_official": "False",
+    "location": {
+        "country_code": "PL",
+        "subdivision_name": "Silesia",
+        "municipality": "Rudziniec",
+        "bounding_box": {
+            "minimum_latitude": 0,
+            "maximum_latitude": 0,
+            "minimum_longitude": 0,
+            "maximum_longitude": 0,
+            "extracted_on": "2026-11-19T00:00:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "http://lordprinz.5v.pl/rudziniec-gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pl-silesia-gtvbus-gtfs-3644.zip?alt=media"
+    }
+}

@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Culver City Bus",
     "is_official": "True",
+    "status": "deprecated",
     "features": [
         "fares-v1"
     ],
@@ -21,5 +22,11 @@
     "urls": {
         "direct_download": "https://www.culvercity.org/files/assets/public/documents/information-technology/maps/gtfsexport.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-culver-city-bus-gtfs-38.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "3639",
+            "comment": " "
+        }
+    ]
 }

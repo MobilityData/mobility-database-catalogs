@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Zaratán",
     "is_official": "False",
+    "status": "deprecated",
     "location": {
         "country_code": "ES",
         "bounding_box": {
@@ -18,5 +19,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-castilla-y-leon-zaratan-zaratan-gtfs-3454.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "3640",
+            "comment": " "
+        }
+    ]
 }

@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3649,
+    "data_type": "gtfs",
+    "provider": "Sofia & Samokov",
+    "is_official": "True",
+    "location": {
+        "country_code": "BG",
+        "subdivision_name": "Sofia",
+        "municipality": "Samokov",
+        "bounding_box": {
+            "minimum_latitude": 0,
+            "maximum_latitude": 0,
+            "minimum_longitude": 0,
+            "maximum_longitude": 0,
+            "extracted_on": "2026-11-19T00:00:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://sipbg.gov.bg/bgnap/portal/api/catalog/files/1d3a3a52-5c37-431c-8ec0-97d81e39561f/download",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/bg-sofia-unknown-agency-gtfs-3649.zip?alt=media"
+    }
+}

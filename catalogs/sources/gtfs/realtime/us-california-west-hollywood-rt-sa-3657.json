@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 3657,
+    "data_type": "gtfs-rt",
+    "is_official": "True",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "West Hollywood",
+    "name": "West Hollywood",
+    "static_reference": [
+        "3655"
+    ],
+    "urls": {
+        "direct_download": "https://cityofwesthollywood.tripshot.com/v2/gtfs/realtime/serviceAlert/CA558DDC-D7F2-4B48-9CAC-DEEA1134F820",
+        "authentication_type": 0
+    }
+}

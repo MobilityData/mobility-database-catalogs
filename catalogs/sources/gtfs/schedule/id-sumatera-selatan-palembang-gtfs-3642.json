@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3642,
+    "data_type": "gtfs",
+    "provider": "PT KAI (Persero), Divisi Regional III Palembang",
+    "name": "LRT Sumatera Selatan",
+    "is_official": "True",
+    "location": {
+        "country_code": "ID",
+        "subdivision_name": "Sumatera Selatan",
+        "municipality": "Palembang",
+        "bounding_box": {
+            "minimum_latitude": 42.0,
+            "maximum_latitude": 43.0,
+            "minimum_longitude": -118.471525,
+            "maximum_longitude": -118.36869,
+            "extracted_on": "2022-07-26T16:06:33+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://modahub.petakpeta.com/gtfs/lrt-palembang.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/id-sumatera-selatan-palembang-gtfs-3642.zip?alt=media"
+    }
+}

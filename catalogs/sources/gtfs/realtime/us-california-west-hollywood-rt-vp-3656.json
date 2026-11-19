@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 3656,
+    "data_type": "gtfs-rt",
+    "is_official": "True",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "West Hollywood",
+    "name": "West Hollywood",
+    "static_reference": [
+        "3655"
+    ],
+    "urls": {
+        "direct_download": "https://cityofwesthollywood.tripshot.com/v2/gtfs/realtime/vehiclePosition/CA558DDC-D7F2-4B48-9CAC-DEEA1134F820",
+        "authentication_type": 0
+    }
+}

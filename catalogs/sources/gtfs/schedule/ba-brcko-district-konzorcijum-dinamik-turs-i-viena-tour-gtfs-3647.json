@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 3647,
+    "data_type": "gtfs",
+    "provider": "Konzorcijum Dinamik Turs i Viena Tour",
+    "is_official": "False",
+    "location": {
+        "country_code": "BA",
+        "subdivision_name": "Brčko district",
+        "municipality": "Brčko"
+    },
+    "urls": {
+        "direct_download": "https://raw.githubusercontent.com/to0ony/gtfs-brcko-district/main/gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ba-brcko-district-konzorcijum-dinamik-turs-i-viena-tour-gtfs-3647.zip?alt=media"
+    }
+}

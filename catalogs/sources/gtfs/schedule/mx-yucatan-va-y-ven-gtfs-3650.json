@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 3650,
+    "data_type": "gtfs",
+    "provider": "Va-y-Ven",
+    "name": "Va-y-Ven",
+    "is_official": "True",
+    "location": {
+        "country_code": "MX",
+        "subdivision_name": "Yucatán",
+        "municipality": "Mérida"
+    },
+    "urls": {
+        "direct_download": "https://transit-scheduler.com/api/export-gtfs/latest",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/mx-yucatan-va-y-ven-gtfs-3650.zip?alt=media"
+    }
+}

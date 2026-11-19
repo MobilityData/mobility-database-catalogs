@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 3653,
+    "data_type": "gtfs",
+    "provider": "AD Galeb",
+    "is_official": "True",
+    "location": {
+        "country_code": "MK",
+        "subdivision_name": "Southwestern Statistical Region",
+        "municipality": "Ohrid"
+    },
+    "urls": {
+        "direct_download": "https://galeb.mk/gtfs/galeb-gtfs.zip",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/mk-southwestern-statistical-region-ad-galeb-gtfs-3653.zip?alt=media"
+    }
+}

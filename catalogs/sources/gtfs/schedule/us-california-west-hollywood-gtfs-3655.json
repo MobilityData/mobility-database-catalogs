@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 3655,
+    "data_type": "gtfs",
+    "provider": "West Hollywood",
+    "name": "West Hollywood",
+    "is_official": "True",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "West Hollywood"
+    },
+    "urls": {
+        "direct_download": "https://cityofwesthollywood.tripshot.com/v2/gtfs.zip?regionId=CA558DDC-D7F2-4B48-9CAC-DEEA1134F820",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-west-hollywood-gtfs-3655.zip?alt=media"
+    }
+}

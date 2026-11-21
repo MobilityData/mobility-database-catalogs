@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 3517,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Detroit Department of Transportation (DDOT)",
+    "static_reference": [
+        "464"
+    ],
+    "note": "Served by DDOT's rider-facing Clever Devices BusTime tracker (myddotbus.com); not referenced in DDOT's published developer documentation.",
+    "urls": {
+        "direct_download": "https://www.myddotbus.com/gtfsrt/trips",
+        "authentication_type": 0
+    },
+    "is_official": "True"
+}

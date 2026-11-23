@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Placer County Transit",
     "is_official": "True",
+    "status": "deprecated",
     "features": [
         "fares-v1",
         "fares-v2"
@@ -22,5 +23,11 @@
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/placercounty-ca-us/placercounty-ca-us.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-placer-county-transit-gtfs-77.zip?alt=media"
-    }
+    },
+     "redirect": [
+        {
+            "id": "3663",
+            "comment": " "
+        }
+    ]
 }

@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 3665,
+    "data_type": "gtfs",
+    "provider": "Rapid Rail",
+    "is_official": "True",
+    "location": {
+        "country_code": "IN",
+        "subdivision_name": "Delhi",
+        "municipality": "Delhi",
+        "bounding_box": {
+            "minimum_latitude": 0,
+            "maximum_latitude": 0,
+            "minimum_longitude": 0,
+            "maximum_longitude": 0,
+            "extracted_on": "2026-11-23T00:00:00+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://dts-backend.transportstack.in/api/dataset/otd/download-file?agency=ncrtc&category=static_gtfs&filename=ncrtc_static_gtfs_v1.zip",
+        "authentication_type": 0,
+        "license": "https://dts-backend.transportstack.in/api/document/download/5/02fde801-a396-4463-a7ba-3dab62638f68",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/in-delhi-rapid-rail-gtfs-3665.zip?alt=media"
+    }
+}

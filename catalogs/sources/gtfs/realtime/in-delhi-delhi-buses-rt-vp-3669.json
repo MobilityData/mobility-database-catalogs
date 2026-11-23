@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 3669,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "Delhi Buses",
+    "is_official": "True",
+    "static_reference": [
+        "3666"
+    ],
+    "urls": {
+        "direct_download": "https://dts-backend.transportstack.in/api/dataset/otd/get-file?agency=delhi-buses&category=realtime_gtfs&filename=VehiclePositions.pb",
+        "authentication_type": 2,
+        "api_key_parameter_name": "x-api-key",
+        "authentication_info": "https://delhi.transportstack.in/data-services/datadetails/7",
+        "license": "https://dts-backend.transportstack.in/api/document/download/5/02fde801-a396-4463-a7ba-3dab62638f68"
+    }
+}

@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Delhi Transport Corporation",
     "is_official": "False",
-    "status": "inactive",
+    "status": "deprecated",
     "location": {
         "country_code": "IN",
         "subdivision_name": "Delhi",
@@ -21,5 +21,10 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/in-delhi-delhi-transport-corporation-gtfs-1262.zip?alt=media",
         "license": "https://opendata.iiitd.edu.in/terms"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "3666",
+            "comment": "Replaced by official Delhi Buses feed"
+        }
+    ]
 }

@@ -2,10 +2,11 @@
     "mdb_source_id": 3660,
     "data_type": "gtfs-rt",
     "is_official": "True",
+    "status": "deprecated",
     "entity_type": [
         "sa"
     ],
-    "provider": "Comune di Cerignola",
+    "provider": "STC Società Trasporti Cerignola",
     "static_reference": [
         "3659"
     ],

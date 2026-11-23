@@ -1,0 +1,17 @@
+{
+    "mdb_source_id": 3661,
+    "data_type": "gtfs-rt",
+    "is_official": "True",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Comune di Cerignola",
+    "static_reference": [
+        "3659"
+    ],
+    "urls": {
+        "direct_download": "https://zibus.superdriver.it/GTFSRT.WebApi/api/gtfs/TripUpdates/binary",
+        "authentication_type": 0,
+        "license": "https://creativecommons.org/licenses/by/4.0/"
+    }
+}

@@ -5,7 +5,7 @@
         "sa"
     ],
     "provider": "Belgium National GTFS",
-    "is_official": "True",
+    "is_official": "False",
     "static_reference": [
         "3685"
     ],

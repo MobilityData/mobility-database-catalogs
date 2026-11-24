@@ -2,7 +2,7 @@
     "mdb_source_id": 3685,
     "data_type": "gtfs",
     "provider": "Belgium National GTFS",
-    "is_official": "True",
+    "is_official": "False",
     "location": {
         "country_code": "BE",
         "bounding_box": {

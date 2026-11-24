@@ -7,7 +7,7 @@
     "provider": "De Lijn",
     "is_official": "True",
     "static_reference": [
-        "3544"
+        "3689"
     ],
     "urls": {
         "direct_download": "https://api-management-opendata-production.azure-api.net/api/gtfs/feed/delijn/rt/alert/",

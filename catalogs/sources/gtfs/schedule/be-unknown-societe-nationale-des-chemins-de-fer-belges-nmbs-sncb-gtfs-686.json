@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "Société nationale des chemins de fer belges (NMBS-SNCB)",
     "is_official": "False",
+    "status": "deprecated", 
     "location": {
         "country_code": "BE",
         "bounding_box": {
@@ -16,5 +17,11 @@
     "urls": {
         "direct_download": "https://gtfs.irail.be/nmbs/gtfs/latest.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/be-unknown-societe-nationale-des-chemins-de-fer-belges-nmbs-sncb-gtfs-686.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "3677",
+            "comment": " "
+        }
+    ]
 }

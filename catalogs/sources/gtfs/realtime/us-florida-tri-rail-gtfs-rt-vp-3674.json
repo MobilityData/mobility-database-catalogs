@@ -1,0 +1,14 @@
+{
+    "mdb_source_id": 3674,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "vp"
+    ],
+    "provider": "South Florida Regional Transportation Authority (Tri-Rail)",
+    "is_official": "True",
+    "static_reference": ["3671"],
+    "urls": {
+        "direct_download": "https://gtfsr.tri-rail.com/download.aspx?file=position_updates.pb",
+        "authentication_type": 0
+    }
+}

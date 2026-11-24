@@ -3,6 +3,7 @@
     "data_type": "gtfs",
     "provider": "South Florida Regional Transportation Authority (Tri-Rail)",
     "is_official": "True",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "Florida",
@@ -18,5 +19,11 @@
     "urls": {
         "direct_download": "http://www.tri-rail.com/GTDF/Current/google_transit.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-florida-tri-rail-gtfs-333.zip?alt=media"
-    }
+    },
+     "redirect": [
+        {
+            "id": "3671",
+            "comment": " "
+        }
+    ]
 }

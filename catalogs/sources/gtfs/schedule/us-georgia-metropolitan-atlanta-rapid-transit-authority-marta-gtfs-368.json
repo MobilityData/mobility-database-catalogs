@@ -16,7 +16,7 @@
         }
     },
     "urls": {
-        "direct_download": "https://www.itsmarta.com/google_transit_feed/google_transit.zip",
+        "direct_download": "https://itsmarta.com/google_transit_feed/google_transit.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-georgia-metropolitan-atlanta-rapid-transit-authority-marta-gtfs-368.zip?alt=media"
     }
 }

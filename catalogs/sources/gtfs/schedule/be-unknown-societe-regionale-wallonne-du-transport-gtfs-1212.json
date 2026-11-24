@@ -19,11 +19,5 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/be-unknown-societe-regionale-wallonne-du-transport-gtfs-1212.zip?alt=media"
     },
-    "redirect": [
-        {
-            "id": "3676",
-            "comment": "Replaced by official TEC feed"
-        }
-    ],
-    "status": "deprecated"
+    "redirect": []
 }

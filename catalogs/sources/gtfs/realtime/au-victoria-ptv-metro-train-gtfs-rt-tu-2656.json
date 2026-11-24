@@ -7,7 +7,7 @@
     "provider": "Public Transport Victoria (PTV) Metro Train",
     "is_official": "True",
     "static_reference": [
-        "3340"
+        "3670"
     ],
     "urls": {
         "direct_download": "https://api.opendata.transport.vic.gov.au/opendata/public-transport/gtfs/realtime/v1/metro/trip-updates",

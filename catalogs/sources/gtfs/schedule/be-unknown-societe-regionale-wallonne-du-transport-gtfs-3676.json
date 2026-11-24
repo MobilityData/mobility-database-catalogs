@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 3676,
+    "data_type": "gtfs",
+    "provider": "Société Régionale Wallonne du Transport",
+    "name": "LETEC - Belgian Mobility Company",
+    "is_official": "True",
+    "location": {
+        "country_code": "BE",
+        "bounding_box": {
+            "minimum_latitude": 49.506805,
+            "maximum_latitude": 50.883023,
+            "minimum_longitude": 2.87512,
+            "maximum_longitude": 6.384263,
+            "extracted_on": "2022-03-23T23:03:12+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://api-management-opendata-production.azure-api.net/api/gtfs/feed/tec/static/",
+        "authentication_type": 0,
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/be-unknown-societe-regionale-wallonne-du-transport-gtfs-3676.zip?alt=media",
+        "license": "https://data.belgianmobility.io/en/terms.html"
+    },
+    "redirect": []
+}

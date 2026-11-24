@@ -1,0 +1,16 @@
+{
+    "mdb_source_id": 3686,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "tu"
+    ],
+    "provider": "Belgium National GTFS",
+    "is_official": "True",
+    "static_reference": [
+        "3685"
+    ],
+    "urls": {
+        "direct_download": "https://data.gtfs.be/rt/belgium/tripupdates.pb",
+        "authentication_type": 0
+    }
+}

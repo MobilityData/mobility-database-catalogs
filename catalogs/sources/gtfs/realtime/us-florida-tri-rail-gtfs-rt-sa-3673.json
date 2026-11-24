@@ -5,6 +5,7 @@
         "sa"
     ],
     "provider": "South Florida Regional Transportation Authority (Tri-Rail)",
+    "is_official": "True",
     "static_reference": ["3671"],
     "urls": {
         "direct_download": "https://gtfsr.tri-rail.com/download.aspx?file=alerts.pb",

@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 3675,
+    "data_type": "gtfs",
+    "provider": "Société des Transports Intercommunaux de Bruxelles/Maatschappij voor het Intercommunaal Vervoer te Brussel (STIB / MIVB)",
+    "name": "Belgian Mobility Company", 
+    "is_official": "True",
+    "location": {
+        "country_code": "BE",
+        "subdivision_name": "Bruxelles-Capitale, Région de",
+        "municipality": "Bruxelles",
+        "bounding_box": {
+            "minimum_latitude": 50.765858,
+            "maximum_latitude": 50.926445,
+            "minimum_longitude": 4.26531,
+            "maximum_longitude": 4.513476,
+            "extracted_on": "2023-01-17T20:25:11+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://api-management-opendata-production.azure-api.net/api/gtfs/feed/stibmivb/static/",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/be-bruxelles-capitale-societe-des-transports-intercommunaux-de-bruxellesmaatschappij-voor-het-intercommunaal-vervoer-te-brussel-stibmivb-gtfs-3675.zip?alt=media",
+        "license": "https://data.belgianmobility.io/en/terms.html"
+    }
+}

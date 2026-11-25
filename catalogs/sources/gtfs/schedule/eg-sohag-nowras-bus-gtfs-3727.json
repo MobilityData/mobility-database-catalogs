@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 3727,
+    "data_type": "gtfs",
+    "provider": "Nowras Bus",
+    "name": "Nowras Bus Intercity Coaches",
+    "location": {
+        "country_code": "EG",
+        "subdivision_name": "Sohag",
+        "municipality": "Dar El Salam",
+        "bounding_box": {
+            "minimum_latitude": 25.6957719,
+            "maximum_latitude": 31.178196,
+            "minimum_longitude": 29.9161243,
+            "maximum_longitude": 32.7396027,
+            "extracted_on": "2026-11-25T23:13:21+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.nowras-bus.online/data/gtfs/nowras-gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/eg-sohag-nowras-bus-gtfs-3727.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "True"
+}

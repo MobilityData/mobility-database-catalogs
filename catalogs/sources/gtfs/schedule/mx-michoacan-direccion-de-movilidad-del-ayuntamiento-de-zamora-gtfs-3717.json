@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3717,
+    "data_type": "gtfs",
+    "provider": "Dirección de Movilidad del Ayuntamiento de Zamora",
+    "location": {
+        "country_code": "MX",
+        "subdivision_name": "Michoacán",
+        "municipality": "Zamora de Hidalgo",
+        "bounding_box": {
+            "minimum_latitude": 19.9316149,
+            "maximum_latitude": 20.0949131,
+            "minimum_longitude": -102.4927687,
+            "maximum_longitude": -102.1812442,
+            "extracted_on": "2026-11-25T23:12:51+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://rutaton.zamora.gob.mx/gtfs/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/mx-michoacan-direccion-de-movilidad-del-ayuntamiento-de-zamora-gtfs-3717.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "True"
+}

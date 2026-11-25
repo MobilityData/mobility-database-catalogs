@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 3715,
+    "data_type": "gtfs",
+    "provider": "ONCF (Office National des Chemins de Fer)",
+    "name": "ONCF Rail",
+    "location": {
+        "country_code": "MA",
+        "bounding_box": {
+            "minimum_latitude": 21.364992,
+            "maximum_latitude": 35.839209,
+            "minimum_longitude": -16.960316,
+            "maximum_longitude": -1.924767,
+            "extracted_on": "2026-11-25T23:12:38+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/orhazal/oncf-gtfs-unofficial/raw/refs/heads/master/oncf-gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ma-unknown-oncf-office-national-des-chemins-de-fer-gtfs-3715.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "False"
+}

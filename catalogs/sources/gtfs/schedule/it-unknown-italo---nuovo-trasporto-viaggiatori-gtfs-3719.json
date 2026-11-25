@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 3719,
+    "data_type": "gtfs",
+    "provider": "Italo - Nuovo Trasporto Viaggiatori",
+    "name": "Italo (high speed trains & ItaloBus)",
+    "location": {
+        "country_code": "IT",
+        "bounding_box": {
+            "minimum_latitude": 38.10389,
+            "maximum_latitude": 46.539173,
+            "minimum_longitude": 7.66725,
+            "maximum_longitude": 16.869598,
+            "extracted_on": "2026-11-25T23:12:57+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://raw.githubusercontent.com/deryclem/italo-gtfs/refs/heads/main/gtfs-italo.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-unknown-italo---nuovo-trasporto-viaggiatori-gtfs-3719.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "False"
+}

@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 3723,
+    "data_type": "gtfs",
+    "provider": "PT MRT Jakarta",
+    "name": "MRT Jakarta",
+    "location": {
+        "country_code": "ID",
+        "subdivision_name": "Jakarta Raya",
+        "municipality": "Jakarta",
+        "bounding_box": {
+            "minimum_latitude": -6.292584,
+            "maximum_latitude": -6.1908686,
+            "minimum_longitude": 106.7738932,
+            "maximum_longitude": 106.8231663,
+            "extracted_on": "2026-11-25T23:13:11+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://modahub.petakpeta.com/gtfs/mrt-jakarta.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/id-jakarta-raya-pt-mrt-jakarta-gtfs-3723.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "True"
+}

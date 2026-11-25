@@ -1,0 +1,19 @@
+{
+    "mdb_source_id": 3682,
+    "data_type": "gtfs-rt",
+    "entity_type": [
+        "sa"
+    ],
+    "provider": "Société Régionale Wallonne du Transport",
+    "is_official": "True",
+    "static_reference": [
+        "3676"
+    ],
+    "urls": {
+        "direct_download": "https://api-management-opendata-production.azure-api.net/api/gtfs/feed/tec/rt/alert/",
+        "authentication_type": 2,
+        "authentication_info": "https://api-management-opendata-production.developer.azure-api.net/signup",
+        "api_key_parameter_name": "bmc-partner-key",
+        "license": "https://data.belgianmobility.io/en/terms.html"
+    }
+}

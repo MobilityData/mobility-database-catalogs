@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3700,
+    "data_type": "gtfs",
+    "provider": "Lathrop Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "California",
+        "municipality": "Lathrop",
+        "bounding_box": {
+            "minimum_latitude": 37.8036988,
+            "maximum_latitude": 37.8384044,
+            "minimum_longitude": -121.3093403,
+            "maximum_longitude": -121.2791517,
+            "extracted_on": "2026-11-25T22:36:38+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.remix.com/cityoflathrop.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-lathrop-transit-gtfs-3700.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "True"
+}

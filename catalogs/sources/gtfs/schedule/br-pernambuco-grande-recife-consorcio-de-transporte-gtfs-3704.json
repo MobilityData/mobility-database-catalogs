@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3704,
+    "data_type": "gtfs",
+    "provider": "Grande Recife Consórcio de Transporte",
+    "location": {
+        "country_code": "BR",
+        "subdivision_name": "Pernambuco",
+        "municipality": "Região Metropolitana do Recife",
+        "bounding_box": {
+            "minimum_latitude": -8.562075001063576,
+            "maximum_latitude": -7.733297223012397,
+            "minimum_longitude": -35.20076111102141,
+            "maximum_longitude": -34.82089999997349,
+            "extracted_on": "2026-11-25T22:37:03+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://www.granderecife.pe.gov.br/gtfs/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/br-pernambuco-grande-recife-consorcio-de-transporte-gtfs-3704.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "True"
+}

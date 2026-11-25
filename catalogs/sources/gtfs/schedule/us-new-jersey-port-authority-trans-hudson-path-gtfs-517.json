@@ -2,7 +2,7 @@
     "mdb_source_id": 517,
     "data_type": "gtfs",
     "provider": "Port Authority Trans-Hudson (PATH)",
-    "is_official": "True",
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "New Jersey",
@@ -18,5 +18,12 @@
     "urls": {
         "direct_download": "http://data.trilliumtransit.com/gtfs/path-nj-us/path-nj-us.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-jersey-port-authority-trans-hudson-path-gtfs-517.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "3696",
+            "comment": "Replaced by new producer URL"
+        }
+    ],
+    "is_official": "True"
 }

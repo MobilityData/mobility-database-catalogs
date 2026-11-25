@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3703,
+    "data_type": "gtfs",
+    "provider": "Transurb S.A.",
+    "location": {
+        "country_code": "RO",
+        "subdivision_name": "Galați",
+        "municipality": "Galați",
+        "bounding_box": {
+            "minimum_latitude": 45.3880242,
+            "maximum_latitude": 45.5504332,
+            "minimum_longitude": 27.97702,
+            "maximum_longitude": 28.1236429,
+            "extracted_on": "2026-11-25T22:36:41+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.com/Steinhagen/gtfs-galati/releases/download/gtfs-latest/gtfs-transurb.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ro-galati-transurb-sa-gtfs-3703.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "False"
+}

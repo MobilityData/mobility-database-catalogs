@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3697,
+    "data_type": "gtfs",
+    "provider": "People Mover",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "Oregon",
+        "municipality": "Grant County",
+        "bounding_box": {
+            "minimum_latitude": 43.5730477,
+            "maximum_latitude": 46.0523909,
+            "minimum_longitude": -121.300789,
+            "maximum_longitude": -116.9382,
+            "extracted_on": "2026-11-25T22:36:34+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://oregon-gtfs.trilliumtransit.com/gtfs_data/peoplemover-or-us/peoplemover-or-us--flex-v2.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-oregon-people-mover-gtfs-3697.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "True"
+}

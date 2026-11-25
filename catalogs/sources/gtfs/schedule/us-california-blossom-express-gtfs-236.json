@@ -7,6 +7,7 @@
         "fares-v2",
         "fares-v1"
     ],
+    "status": "deprecated",
     "location": {
         "country_code": "US",
         "subdivision_name": "California",
@@ -24,5 +25,10 @@
         "authentication_type": 0,
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-california-blossom-express-gtfs-236.zip?alt=media"
     },
-    "redirect": []
+    "redirect": [
+        {
+            "id": "3690",
+            "comment": "Replaced by new producer URL"
+        }
+    ]
 }

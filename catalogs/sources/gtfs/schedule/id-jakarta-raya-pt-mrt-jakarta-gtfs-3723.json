@@ -20,5 +20,5 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/id-jakarta-raya-pt-mrt-jakarta-gtfs-3723.zip?alt=media"
     },
     "redirect": [],
-    "is_official": "True"
+    "is_official": "False"
 }

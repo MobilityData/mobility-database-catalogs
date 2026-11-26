@@ -17,5 +17,5 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/om-unknown-eternity-road-land-transport-gtfs-3695.zip?alt=media"
     },
     "redirect": [],
-    "is_official": "True"
+    "is_official": "False"
 }

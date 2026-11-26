@@ -20,12 +20,5 @@
         "api_key_parameter_name": "Ocp-Apim-Subscription-Key",
         "authentication_info": "https://data.delijn.be/products",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/be-vlaams-gewest-de-lijn-gtfs-3544.zip?alt=media"
-    },
-    "redirect": [
-        {
-            "id": "3689",
-            "comment": "Replaced by official De Lijn feed"
-        }
-    ],
-    "status": "deprecated"
+    }
 }

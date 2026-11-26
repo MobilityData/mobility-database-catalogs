@@ -17,5 +17,5 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/al-unknown-bus-magus-gtfs-3699.zip?alt=media"
     },
     "redirect": [],
-    "is_official": "True"
+    "is_official": "False"
 }

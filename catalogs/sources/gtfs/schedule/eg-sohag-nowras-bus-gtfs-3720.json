@@ -20,5 +20,5 @@
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/eg-sohag-nowras-bus-gtfs-3720.zip?alt=media"
     },
     "redirect": [],
-    "is_official": "True"
+    "is_official": "False"
 }

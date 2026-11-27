@@ -2,8 +2,8 @@
     "mdb_source_id": 3201,
     "data_type": "gtfs",
     "provider": "Comune di Marsala",
-    "is_official": "True",
     "feed_contact_email": "assessore.enricolasala@comune.marsala.tp.it",
+    "status": "deprecated",
     "location": {
         "country_code": "IT",
         "subdivision_name": "Sicily",
@@ -19,5 +19,12 @@
     "urls": {
         "direct_download": "https://marsala-api.cloud.municipiumapp.it/s3/3885/allegati/gtfs/comunedi-marsala-it.zip",
         "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-sicily-marsala-comune-di-marsala-gtfs-3201.zip?alt=media"
-    }
+    },
+    "redirect": [
+        {
+            "id": "3722",
+            "comment": "Replaced by new producer URL"
+        }
+    ],
+    "is_official": "True"
 }

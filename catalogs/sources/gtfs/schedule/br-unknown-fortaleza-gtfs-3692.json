@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3692,
+    "data_type": "gtfs",
+    "provider": "Fortaleza",
+    "name": "ETUFOR",
+    "location": {
+        "country_code": "BR",
+        "municipality": "Fortaleza",
+        "bounding_box": {
+            "minimum_latitude": -3.894503,
+            "maximum_latitude": -3.694366,
+            "minimum_longitude": -38.645151,
+            "maximum_longitude": -38.410797,
+            "extracted_on": "2026-11-25T22:36:27+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://dados.fortaleza.ce.gov.br/dataset/d6f1e64c-aca3-4867-8f39-53b7c9c2d211/resource/7058bfbe-5ba2-45f4-9a91-af1508a7c05b/download/arquivo_google.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/br-unknown-fortaleza-gtfs-3692.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "True"
+}

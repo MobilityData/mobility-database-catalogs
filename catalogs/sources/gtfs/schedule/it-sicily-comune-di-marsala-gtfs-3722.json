@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3722,
+    "data_type": "gtfs",
+    "provider": "Comune di Marsala",
+    "location": {
+        "country_code": "IT",
+        "subdivision_name": "Sicily",
+        "municipality": "Marsala",
+        "bounding_box": {
+            "minimum_latitude": 37.69858063,
+            "maximum_latitude": 37.8985603,
+            "minimum_longitude": 12.42644102,
+            "maximum_longitude": 12.5568144,
+            "extracted_on": "2026-11-25T23:13:10+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://marsala-api.cloud.municipiumapp.it/s3/3885/allegati/comunedi-marsala-it.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/it-sicily-comune-di-marsala-gtfs-3722.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "True"
+}

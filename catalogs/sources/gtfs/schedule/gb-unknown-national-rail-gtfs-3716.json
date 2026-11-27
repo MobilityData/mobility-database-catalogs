@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 3716,
+    "data_type": "gtfs",
+    "provider": "National Rail",
+    "location": {
+        "country_code": "GB",
+        "bounding_box": {
+            "minimum_latitude": 49.91600038535297,
+            "maximum_latitude": 58.611377992593106,
+            "minimum_longitude": -8.096304482200516,
+            "maximum_longitude": 4.126165187197691,
+            "extracted_on": "2026-11-25T23:12:49+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://planarnetwork.github.io/gb-transit/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gb-unknown-national-rail-gtfs-3716.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "False"
+}

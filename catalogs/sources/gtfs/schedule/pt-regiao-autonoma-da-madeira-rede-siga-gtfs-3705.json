@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 3705,
+    "data_type": "gtfs",
+    "provider": "Rede SIGA",
+    "location": {
+        "country_code": "PT",
+        "subdivision_name": "Região Autónoma da Madeira",
+        "bounding_box": {
+            "minimum_latitude": 32.634289,
+            "maximum_latitude": 33.086597,
+            "minimum_longitude": -17.2476618045343,
+            "maximum_longitude": -16.298516,
+            "extracted_on": "2026-11-25T22:37:11+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gtfs.tiim.pt/rede-siga/rede-siga-gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/pt-regiao-autonoma-da-madeira-rede-siga-gtfs-3705.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "True"
+}

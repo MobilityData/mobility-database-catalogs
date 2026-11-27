@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 3695,
+    "data_type": "gtfs",
+    "provider": "Eternity Road Land Transport",
+    "location": {
+        "country_code": "OM",
+        "bounding_box": {
+            "minimum_latitude": 21.439814,
+            "maximum_latitude": 24.59663,
+            "minimum_longitude": 39.610524,
+            "maximum_longitude": 58.217758,
+            "extracted_on": "2026-11-25T22:36:31+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://server.shawy.om/api/v1/gtfs/feed.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/om-unknown-eternity-road-land-transport-gtfs-3695.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "False"
+}

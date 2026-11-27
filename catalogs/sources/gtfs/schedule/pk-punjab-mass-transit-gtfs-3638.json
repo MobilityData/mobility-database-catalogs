@@ -3,7 +3,7 @@
     "data_type": "gtfs",
     "provider": "Capital Development Authority, Punjab Masstransit Authority, Punjab Transport Company, Transport and Mass Transit Department Punjab, Sindh Mass Transit Authority",
     "name": "PakBus",
-    "is_official": "True",
+    "is_official": "False",
     "location": {
         "country_code": "ML",
         "bounding_box": {

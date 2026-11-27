@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3710,
+    "data_type": "gtfs",
+    "provider": "Düğüncübaşı 24 Nolu Yolcu Taşıma Kooperatifi",
+    "location": {
+        "country_code": "TR",
+        "subdivision_name": "Kırklareli",
+        "municipality": "Lüleburgaz",
+        "bounding_box": {
+            "minimum_latitude": 41.3326431,
+            "maximum_latitude": 41.4045229,
+            "minimum_longitude": 27.278123,
+            "maximum_longitude": 27.3548295,
+            "extracted_on": "2026-11-25T22:37:16+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://raw.githubusercontent.com/duguncubasihaber/duguncubasi-gtfs/main/google_transit.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/tr-kirklareli-duguncubasi-24-nolu-yolcu-tasima-kooperatifi-gtfs-3710.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "False"
+}

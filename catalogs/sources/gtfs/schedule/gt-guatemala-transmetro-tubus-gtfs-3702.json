@@ -1,0 +1,24 @@
+{
+    "mdb_source_id": 3702,
+    "data_type": "gtfs",
+    "provider": "Transmetro + TuBus",
+    "name": "AhíViene",
+    "location": {
+        "country_code": "GT",
+        "subdivision_name": "Guatemala",
+        "municipality": "Ciudad de Guatemala",
+        "bounding_box": {
+            "minimum_latitude": 14.564556,
+            "maximum_latitude": 14.67333,
+            "minimum_longitude": -90.56762,
+            "maximum_longitude": -90.446695,
+            "extracted_on": "2026-11-25T22:36:40+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://ahiviene.vercel.app/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/gt-guatemala-transmetro-tubus-gtfs-3702.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "False"
+}

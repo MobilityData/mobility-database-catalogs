@@ -1,0 +1,22 @@
+{
+    "mdb_source_id": 3712,
+    "data_type": "gtfs",
+    "provider": "Kenya Railways",
+    "name": "Madaraka Express",
+    "location": {
+        "country_code": "KE",
+        "bounding_box": {
+            "minimum_latitude": -4.021986,
+            "maximum_latitude": -1.354489,
+            "minimum_longitude": 36.898931,
+            "maximum_longitude": 39.579144,
+            "extracted_on": "2026-11-25T22:52:44+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://raw.githubusercontent.com/rapsoj/mapping-african-transit/main/Madaraka_Express_GTFS.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/ke-unknown-kenya-railways-gtfs-3712.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "False"
+}

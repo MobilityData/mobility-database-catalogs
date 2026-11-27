@@ -1,0 +1,21 @@
+{
+    "mdb_source_id": 3699,
+    "data_type": "gtfs",
+    "provider": "Bus Magus",
+    "location": {
+        "country_code": "AL",
+        "bounding_box": {
+            "minimum_latitude": 40.529948,
+            "maximum_latitude": 42.71087,
+            "minimum_longitude": 19.453545,
+            "maximum_longitude": 28.891111,
+            "extracted_on": "2026-11-25T22:36:37+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://busmagus.com/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/al-unknown-bus-magus-gtfs-3699.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "False"
+}

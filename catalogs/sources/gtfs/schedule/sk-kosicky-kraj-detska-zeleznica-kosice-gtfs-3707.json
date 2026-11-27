@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3707,
+    "data_type": "gtfs",
+    "provider": "Detská železnica Košice",
+    "location": {
+        "country_code": "SK",
+        "subdivision_name": "Košický kraj",
+        "municipality": "Košice",
+        "bounding_box": {
+            "minimum_latitude": 48.7498615,
+            "maximum_latitude": 48.7598432,
+            "minimum_longitude": 21.1834042,
+            "maximum_longitude": 21.2281075,
+            "extracted_on": "2026-11-25T22:37:13+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://github.gtfs.sk/mirror-dzk/gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/sk-kosicky-kraj-detska-zeleznica-kosice-gtfs-3707.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "False"
+}

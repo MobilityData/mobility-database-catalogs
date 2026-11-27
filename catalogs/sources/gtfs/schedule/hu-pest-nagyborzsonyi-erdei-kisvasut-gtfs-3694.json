@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3694,
+    "data_type": "gtfs",
+    "provider": "Nagybörzsönyi Erdei Kisvasút",
+    "location": {
+        "country_code": "HU",
+        "subdivision_name": "Pest",
+        "municipality": "Nagybörzsöny",
+        "bounding_box": {
+            "minimum_latitude": 47.901337,
+            "maximum_latitude": 47.931311,
+            "minimum_longitude": 18.837859,
+            "maximum_longitude": 18.877752,
+            "extracted_on": "2026-11-25T22:36:30+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://feeds.hostedfares.com/feed/nagyborzsonyikisvasut.hu/feeds/nagyborzsony/gtfs-data.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/hu-pest-nagyborzsonyi-erdei-kisvasut-gtfs-3694.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "False"
+}

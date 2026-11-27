@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3701,
+    "data_type": "gtfs",
+    "provider": "Roswell Transit",
+    "location": {
+        "country_code": "US",
+        "subdivision_name": "New Mexico",
+        "municipality": "Roswell",
+        "bounding_box": {
+            "minimum_latitude": 33.307153,
+            "maximum_latitude": 33.45,
+            "minimum_longitude": -104.526111,
+            "maximum_longitude": -104.519803,
+            "extracted_on": "2026-11-25T22:36:39+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13693/roswell_nm_gtfs.zip",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/us-new-mexico-roswell-transit-gtfs-3701.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "True"
+}

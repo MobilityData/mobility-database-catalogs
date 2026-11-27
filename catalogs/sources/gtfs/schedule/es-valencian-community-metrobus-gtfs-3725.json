@@ -1,0 +1,23 @@
+{
+    "mdb_source_id": 3725,
+    "data_type": "gtfs",
+    "provider": "Metrobús",
+    "location": {
+        "country_code": "ES",
+        "subdivision_name": "Valencian Community",
+        "municipality": "Valencia",
+        "bounding_box": {
+            "minimum_latitude": 39.226532,
+            "maximum_latitude": 39.82147519842793,
+            "minimum_longitude": -0.937817,
+            "maximum_longitude": -0.204291,
+            "extracted_on": "2026-11-25T23:13:18+00:00"
+        }
+    },
+    "urls": {
+        "direct_download": "https://gateway.softoursistemas.com/auth/public/gtfs/atmv-publico/active",
+        "latest": "https://storage.googleapis.com/storage/v1/b/mdb-latest/o/es-valencian-community-metrobus-gtfs-3725.zip?alt=media"
+    },
+    "redirect": [],
+    "is_official": "True"
+}
